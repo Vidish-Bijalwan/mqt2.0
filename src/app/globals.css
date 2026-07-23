@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  /* Legacy Colors */
+  --color-legacy-orange: #ff6600;
+  --color-legacy-orange-hover: #e65c00;
+  --color-legacy-nav-blue: #061b2e;
+  --color-legacy-nav-blue-hover: #0a2540;
+  --color-legacy-footer-bg: #093427; /* Dark green from screenshot */
+  --color-legacy-footer-border: #134f3c;
+  --color-legacy-gray-text: #666666;
+  --color-legacy-card-bg: #f8f9fa;
+  --color-legacy-light-gray: #e9ecef;
+  --color-legacy-social-fb: #3b5998;
+  --color-legacy-social-tw: #00aced;
+  --color-legacy-social-yt: #bb0000;
+  --color-legacy-social-ig: #517fa4;
+  --color-legacy-social-wa: #4dc247;
+  --color-legacy-social-in: #007bb6;
+
+  /* Aliases for ease of use in existing code */
+  --color-mqt-orange: var(--color-legacy-orange);
+  --color-mqt-orange-hover: var(--color-legacy-orange-hover);
+  --color-mqt-navy: var(--color-legacy-nav-blue);
+  --color-mqt-navy-soft: var(--color-legacy-nav-blue-hover);
+  --color-mqt-green: #35A829;
+  --color-mqt-bg: #ffffff;
+  --color-mqt-text: #333333;
+  --color-mqt-border: #eaeaea;
+
+  --font-sans: "Roboto", "Helvetica Neue", "Arial", sans-serif;
+
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  --shadow-card-hover: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-mqt-border);
+  }
+  body {
+    background-color: var(--color-mqt-bg);
+    color: var(--color-mqt-text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .nit-ribbon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 45px solid var(--color-legacy-orange);
+    border-right: 45px solid transparent;
+    z-index: 10;
+  }
+  
+  .nit-ribbon-text {
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    transform: rotate(-45deg);
+    z-index: 11;
+  }
+
+  .nav-divider {
+    border-right: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .arrow-right-shape {
+    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+  }
+}
