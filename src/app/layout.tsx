@@ -25,8 +25,59 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": `${siteConfig.domain}/#organization`,
+        "name": siteConfig.name,
+        "url": siteConfig.domain,
+        "logo": {
+          "@type": "ImageObject",
+          "url": `${siteConfig.domain}/logo/mqt-india-logo.png`
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": siteConfig.phone,
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@type": "TravelAgency",
+        "@id": `${siteConfig.domain}/#localbusiness`,
+        "name": siteConfig.name,
+        "url": siteConfig.domain,
+        "image": `${siteConfig.domain}/logo/mqt-india-logo.png`,
+        "telephone": siteConfig.phone,
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": siteConfig.address.street,
+          "addressLocality": siteConfig.address.city,
+          "addressRegion": siteConfig.address.state,
+          "postalCode": siteConfig.address.pin,
+          "addressCountry": siteConfig.address.country
+        },
+        "priceRange": "$$"
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${siteConfig.domain}/#website`,
+        "url": siteConfig.domain,
+        "name": siteConfig.name,
+        "description": siteConfig.description,
+        "publisher": {
+          "@id": `${siteConfig.domain}/#organization`
+        }
+      }
+    ]
+  };
+
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      </head>
       <body className={inter.className} suppressHydrationWarning>
         <div className="flex flex-col min-h-screen">
           <Navbar />

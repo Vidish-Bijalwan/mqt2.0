@@ -7,6 +7,7 @@ import EnquiryForm from "@/components/forms/EnquiryForm";
 import ItineraryAccordion from "@/components/ui/ItineraryAccordion";
 import PackageOverview from "@/components/ui/PackageOverview";
 import TrustIndicators from "@/components/ui/TrustIndicators";
+import RelatedPackages from "@/components/ui/RelatedPackages";
 import { siteConfig } from "@/data/siteConfig";
 import fs from 'fs';
 import path from 'path';
@@ -20,23 +21,42 @@ try {
   console.log("Error loading packageDetails.json", e);
 }
 
+function getFallbackImage(slug: string, category: string) {
+  return `/images/packages/${slug}.jpg`;
+}
+
 export function generateStaticParams() {
   return allPackages.map((pkg) => ({ slug: pkg.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
-  const pkg = allPackages.find((p) => p.slug === resolvedParams.slug);
-  if (!pkg) return { title: "Package Not Found" };
-  return {
-    title: pkg.title,
-    description: pkg.description?.substring(0, 160) || `Book ${pkg.title} with My Quick Trippers.`,
+  const slug = resolvedParams.slug;
+  const pkg = packageDetails[slug] || allPackages.find(p => p.slug === slug);
+  
+  const title = pkg ? `${pkg.title} | My Quick Trippers` : `${slug.replace(/-/g, ' ').toUpperCase()} | My Quick Trippers`;
+  const description = pkg?.overview?.substring(0, 160) || `Book the best ${title} with My Quick Trippers.`;
+
+  return { 
+    title,
+    description,
+    alternates: {
+      canonical: `${siteConfig.domain}/packages/${slug}`,
+    },
+    openGraph: {
+      title,
+      description,
+      url: `${siteConfig.domain}/packages/${slug}`,
+      type: 'article',
+      images: [{ url: `${siteConfig.domain}${getFallbackImage(slug, pkg?.category || '')}`, width: 1200, height: 630, alt: title }],
+    },
   };
 }
 
 export default async function PackageDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
-  const pkg = allPackages.find((p) => p.slug === resolvedParams.slug);
+  const slug = resolvedParams.slug;
+  const pkg = allPackages.find((p) => p.slug === slug);
   
   if (!pkg) {
     notFound();
@@ -45,8 +65,72 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
   // Get rich details
   const details = packageDetails[pkg.slug] || { overview: '', highlights: [], itinerary: [], faqs: [] };
 
+  const schemaGraph: any[] = [
+    {
+      "@type": ["TouristTrip", "Product"],
+      "name": pkg.title,
+      "description": details.overview || pkg.description || `Enjoy a wonderful trip: ${pkg.title}`,
+      "image": `${siteConfig.domain}${getFallbackImage(slug, pkg.category)}`,
+      "touristType": [
+        "Leisure",
+        "Family"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "price": pkg.price ? pkg.price.replace(/[^0-9]/g, '') || "15000" : "15000",
+        "availability": "https://schema.org/InStock",
+        "url": `${siteConfig.domain}/packages/${slug}`
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": siteConfig.domain
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": pkg.category || "Packages",
+          "item": `${siteConfig.domain}/packages?category=${encodeURIComponent(pkg.category || 'all')}`
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": pkg.title,
+          "item": `${siteConfig.domain}/packages/${slug}`
+        }
+      ]
+    }
+  ];
+
+  if (details.faqs && details.faqs.length > 0) {
+    schemaGraph.push({
+      "@type": "FAQPage",
+      "mainEntity": details.faqs.map((faq: any) => ({
+        "@type": "Question",
+        "name": faq.q,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.a
+        }
+      }))
+    });
+  }
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": schemaGraph
+  };
+
   return (
-    <div className="bg-gray-50 min-h-screen pb-16 font-sans">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <div className="bg-gray-50 min-h-screen pb-16 font-sans">
       
       {/* Breadcrumb Area */}
       <div className="bg-legacy-nav-blue text-white text-xs py-2 px-4 shadow-sm relative z-10">
@@ -71,11 +155,11 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
         {/* Photo Gallery Grid */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-2 h-[300px] md:h-[450px] mb-8 rounded-lg overflow-hidden shadow-sm">
           <div className="md:col-span-2 md:row-span-2 relative h-full group">
-             <Image src={pkg.image || "/images/packages/kashmir.webp"} alt={pkg.title} fill className="object-cover transition-transform duration-700 group-hover:scale-105" priority />
+             <Image src={pkg.image || "/images/packages/kashmir.webp"} alt={pkg.title} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition-transform duration-700 group-hover:scale-105" priority />
              <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors" />
           </div>
           <div className="hidden md:block relative h-full group">
-             <Image src={pkg.image || "/images/packages/kashmir.webp"} alt={`${pkg.title} Highlights`} fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+             <Image src={pkg.image || "/images/packages/kashmir.webp"} alt={`${pkg.title} Highlights`} fill sizes="(max-width: 768px) 100vw, 25vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
           <div className="hidden md:block relative h-full group bg-gray-200">
              {/* Placeholder for dynamic gallery images */}
@@ -86,7 +170,7 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
              <div className="absolute inset-0 flex items-center justify-center text-gray-400">Temple Darshan</div>
           </div>
           <div className="hidden md:block relative h-full group bg-gray-800">
-             <Image src={pkg.image || "/images/packages/kashmir.webp"} alt={pkg.title} fill className="object-cover opacity-60 transition-transform duration-700 group-hover:scale-105" />
+             <Image src={pkg.image || "/images/packages/kashmir.webp"} alt={pkg.title} fill sizes="(max-width: 768px) 100vw, 25vw" className="object-cover opacity-60 transition-transform duration-700 group-hover:scale-105" />
              <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center cursor-pointer hover:bg-black/50 transition-colors">
                 <span className="text-white font-bold text-sm bg-white/20 px-4 py-2 rounded-full backdrop-blur-sm mb-2">View All Images</span>
                 <span className="text-white text-xs">+12 Photos</span>
@@ -190,9 +274,9 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
                   <h2 className="text-2xl font-bold text-gray-800">FAQs - Frequently Asked Questions</h2>
                 </div>
                 <div className="space-y-4">
-                   {details.faqs.map((faq: any, idx: number) => (
+                    {details.faqs.map((faq: any, idx: number) => (
                       <div key={idx} className="border border-gray-100 rounded bg-gray-50/30 p-4">
-                         <h4 className="font-bold text-gray-800 text-sm mb-2">{faq.q}</h4>
+                         <h3 className="font-bold text-gray-800 text-sm mb-2">{faq.q}</h3>
                          <p className="text-gray-600 text-sm">{faq.a}</p>
                       </div>
                    ))}
@@ -273,7 +357,10 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
           </div>
 
         </div>
+        
+        <RelatedPackages category={pkg.category || 'Trending'} currentSlug={pkg.slug} />
       </div>
     </div>
+    </>
   );
 }

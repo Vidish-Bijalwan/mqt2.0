@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { siteConfig } from "@/data/siteConfig";
 import { navLinks } from "@/data/navLinks";
@@ -39,7 +40,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center">
              <div className="flex flex-col">
                <div className="flex items-center h-12">
-                 <img src="/images/mqt-logo.png" alt="My Quick Trippers" className="object-contain h-full" />
+                 <Image src="/images/mqt-logo.png" alt="My Quick Trippers" width={180} height={48} className="object-contain h-full w-auto" priority />
                </div>
              </div>
           </Link>
@@ -235,7 +236,7 @@ export default function Navbar() {
           ))}
           
           <div className="mt-4 pt-4 border-t border-gray-700 flex flex-col space-y-4">
-             <a href={`tel:${siteConfig.phoneRaw}`} className="flex items-center text-legacy-orange font-bold">
+             <a href={`tel:${siteConfig.phoneRaw}`} className="flex items-center text-brand-green font-bold">
                <Phone className="w-5 h-5 mr-2" /> Call: {siteConfig.phone}
              </a>
           </div>

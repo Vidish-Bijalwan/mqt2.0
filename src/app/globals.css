@@ -1,16 +1,32 @@
 @import "tailwindcss";
 
 @theme {
-  /* Legacy Colors */
-  --color-legacy-orange: #ff6600;
-  --color-legacy-orange-hover: #e65c00;
-  --color-legacy-nav-blue: #061b2e;
-  --color-legacy-nav-blue-hover: #0a2540;
-  --color-legacy-footer-bg: #093427; /* Dark green from screenshot */
-  --color-legacy-footer-border: #134f3c;
-  --color-legacy-gray-text: #666666;
-  --color-legacy-card-bg: #f8f9fa;
-  --color-legacy-light-gray: #e9ecef;
+  /* Brand Colors (Option 1: Bold & Energetic) */
+  --color-brand-orange: #F97316;
+  --color-brand-orange-light: #FFF7ED;
+  --color-brand-orange-dark: #EA580C;
+  
+  --color-brand-green: #16A34A;
+  --color-brand-green-light: #F0FDF4;
+  --color-brand-green-dark: #15803D;
+  
+  --color-brand-navy: #0F172A;
+  --color-brand-navy-light: #1E293B;
+  
+  --color-brand-blue: #0EA5E9;
+  
+  /* Legacy Color Aliases (Mapped to new brand colors) */
+  --color-legacy-orange: var(--color-brand-orange);
+  --color-legacy-orange-hover: var(--color-brand-orange-dark);
+  --color-legacy-nav-blue: var(--color-brand-navy);
+  --color-legacy-nav-blue-hover: var(--color-brand-navy-light);
+  --color-legacy-footer-bg: var(--color-brand-navy);
+  --color-legacy-footer-border: var(--color-brand-navy-light);
+  --color-legacy-gray-text: #64748B;
+  --color-legacy-card-bg: #F8FAFC;
+  --color-legacy-light-gray: #E2E8F0;
+  
+  /* Social Colors (kept as is for brand recognition) */
   --color-legacy-social-fb: #3b5998;
   --color-legacy-social-tw: #00aced;
   --color-legacy-social-yt: #bb0000;
@@ -19,11 +35,11 @@
   --color-legacy-social-in: #007bb6;
 
   /* Aliases for ease of use in existing code */
-  --color-mqt-orange: var(--color-legacy-orange);
-  --color-mqt-orange-hover: var(--color-legacy-orange-hover);
-  --color-mqt-navy: var(--color-legacy-nav-blue);
-  --color-mqt-navy-soft: var(--color-legacy-nav-blue-hover);
-  --color-mqt-green: #35A829;
+  --color-mqt-orange: var(--color-brand-orange);
+  --color-mqt-orange-hover: var(--color-brand-orange-dark);
+  --color-mqt-navy: var(--color-brand-navy);
+  --color-mqt-navy-soft: var(--color-brand-navy-light);
+  --color-mqt-green: var(--color-brand-green);
   --color-mqt-bg: #ffffff;
   --color-mqt-text: #333333;
   --color-mqt-border: #eaeaea;
@@ -75,5 +91,436 @@
 
   .arrow-right-shape {
     clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Poster Marquee — infinite-scroll destination poster carousel
+   NO hover scaling — glow effect only, zero overflow risk
+   ═══════════════════════════════════════════════════════════════ */
+
+@keyframes marquee-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ── Wrapper: a sealed, fixed-height band ── */
+.pm-wrapper {
+  width: 100%;
+  /* Completely sealed — nothing can leak out vertically or horizontally */
+  overflow: hidden;
+  /* Top spacing below the heading */
+  padding: 24px 0 28px;
+}
+
+/* ── Edge fade (horizontal only) ── */
+.pm-mask {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 5%,
+    black 95%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 5%,
+    black 95%,
+    transparent 100%
+  );
+}
+
+/* ── Scrolling track ── */
+.pm-track {
+  display: flex;
+  gap: 14px;
+  width: max-content;
+  animation: marquee-scroll linear infinite;
+  will-change: transform;
+  /* Pause on hover is handled via JS */
+}
+
+/* ── Individual card ── */
+.pm-card {
+  flex-shrink: 0;
+  position: relative;
+  width: 220px;
+  height: 160px;
+  border-radius: 10px;
+  overflow: hidden; /* sealed — nothing leaves this box */
+  cursor: pointer;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  padding: 0;
+  background: transparent;
+  /* Smooth glow/border transition on hover — NO scaling */
+  transition:
+    border-color 250ms ease,
+    box-shadow 250ms ease;
+}
+
+.pm-card:hover,
+.pm-card:focus-visible {
+  border-color: rgba(255, 140, 0, 0.85);
+  box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.35), 0 8px 30px rgba(0, 0, 0, 0.6);
+  outline: none;
+}
+
+/* Tactile press */
+.pm-card:active {
+  transform: scale(0.96);
+  transition-duration: 80ms;
+}
+
+/* ── Card image ── */
+.pm-card__img {
+  object-fit: cover;
+  /* 8% from left — brings the MQT 'M' logo fully into view */
+  object-position: 8% center;
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+  pointer-events: none;
+  transition: filter 250ms ease;
+}
+.pm-card:hover .pm-card__img {
+  filter: brightness(0.75);
+}
+
+/* ── Hover overlay ── */
+.pm-card__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 8px;
+  background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 55%);
+  opacity: 0;
+  transition: opacity 250ms ease;
+}
+.pm-card:hover .pm-card__overlay,
+.pm-card:focus-visible .pm-card__overlay {
+  opacity: 1;
+}
+
+.pm-card__label {
+  display: block;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.pm-card__cta {
+  display: block;
+  font-size: 11px;
+  color: rgba(255,200,80,1);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+/* ── Responsive card sizes ── */
+@media (min-width: 640px) {
+  .pm-card { width: 260px; height: 185px; }
+}
+@media (min-width: 1024px) {
+  .pm-card { width: 300px; height: 210px; }
+  .pm-wrapper { padding: 28px 0 32px; }
+}
+@media (min-width: 1440px) {
+  .pm-card { width: 340px; height: 235px; }
+}
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  .pm-track {
+    animation: none !important;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .pm-card { scroll-snap-align: start; }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Poster Lightbox — premium full-screen zoom/pan viewer
+   ═══════════════════════════════════════════════════════════════ */
+
+.poster-lb-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  flex-direction: column;
+  animation: lb-fadein 200ms ease;
+}
+
+@keyframes lb-fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ── Top bar ── */
+.poster-lb-topbar {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  gap: 12px;
+}
+
+.poster-lb-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.poster-lb-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.poster-lb-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 150ms ease;
+}
+.poster-lb-btn:hover { background: rgba(255,255,255,0.22); }
+
+.poster-lb-scale {
+  color: rgba(255,255,255,0.7);
+  font-size: 13px;
+  font-weight: 600;
+  min-width: 40px;
+  text-align: center;
+}
+
+.poster-lb-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: rgba(220, 50, 50, 0.25);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 150ms ease;
+  margin-left: 8px;
+}
+.poster-lb-close:hover { background: rgba(220, 50, 50, 0.65); }
+
+/* ── Image stage ── */
+.poster-lb-stage {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+}
+
+.poster-lb-img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+  transform-origin: center center;
+  transition: transform 120ms ease-out;
+  pointer-events: none;
+  border-radius: 4px;
+}
+
+/* ── Bottom bar ── */
+.poster-lb-bottombar {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.poster-lb-hint {
+  color: rgba(255,255,255,0.45);
+  font-size: 12px;
+  margin: 0;
+  line-height: 1.5;
+}
+.poster-lb-hint kbd {
+  display: inline-block;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 11px;
+  font-family: monospace;
+}
+
+.poster-lb-cta {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff6b00, #ff9500);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 4px 16px rgba(255, 100, 0, 0.4);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+  flex-shrink: 0;
+}
+.poster-lb-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(255, 100, 0, 0.55);
+}
+
+
+.poster-marquee-wrapper {
+  width: 100%;
+  /* Clip horizontal scroll but NOT vertical — let cards pop downward */
+  overflow-x: hidden;
+  overflow-y: visible;
+  /* Space above: just enough so the wrapper visually sits under the text */
+  margin-top: 20px;
+  /* Generous padding-bottom so scaled cards (1.25x = 212px tall) don't clip */
+  padding: 16px 0 80px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Edge fade masks — cards emerge/dissolve into background */
+.poster-marquee-mask {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 6%,
+    black 94%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 6%,
+    black 94%,
+    transparent 100%
+  );
+  /* Removed overflow: hidden here so cards can scale up beyond the track bounds */
+}
+
+/* The scrolling track — doubled items, so -50% = seamless */
+.poster-marquee-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: marquee-scroll linear infinite;
+  will-change: transform;
+}
+
+/* Individual card */
+.poster-card {
+  flex-shrink: 0;
+  /* Landscape 2:1 ratio to match cropped posters */
+  width: 240px;
+  height: 120px;
+  border-radius: 12px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  /* TOP origin = card scales downward only, never into the title above */
+  transform-origin: center top;
+  /* Bouncy "happy" easing for gamified feel */
+  transition:
+    transform 350ms cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 350ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  will-change: transform;
+  z-index: 1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  /* The image border radius ensures the corners look sharp when cropped */
+  overflow: hidden;
+}
+
+.poster-card:hover,
+.poster-card:focus-visible {
+  outline: none;
+}
+
+.poster-card--active {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Tactile click feeling */
+.poster-card:active {
+  transform: scale(0.95) !important;
+  transition-duration: 100ms;
+}
+
+.poster-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+
+/* ── Responsive tweaks ── */
+@media (min-width: 768px) {
+  .poster-card {
+    width: 280px;
+    height: 140px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .poster-card {
+    width: 340px;
+    height: 170px;
+  }
+}
+
+/* ── Reduced motion — static row, no animation ── */
+@media (prefers-reduced-motion: reduce) {
+  .poster-marquee-track {
+    animation: none !important;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px 0;
+  }
+  .poster-card {
+    scroll-snap-align: start;
   }
 }

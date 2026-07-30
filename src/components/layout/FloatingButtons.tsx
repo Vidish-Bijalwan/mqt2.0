@@ -17,7 +17,7 @@ export default function FloatingButtons() {
       </a>
       <a 
         href={`tel:${siteConfig.phoneRaw}`}
-        className="bg-mqt-orange hover:bg-mqt-orange-hover text-white p-4 rounded-full shadow-lg transition-transform hover:scale-110 flex items-center justify-center"
+        className="bg-brand-green hover:bg-green-700 text-white p-4 rounded-full shadow-lg transition-transform hover:scale-110 flex items-center justify-center"
         aria-label="Call Us"
       >
         <Phone className="w-6 h-6" />

@@ -5850,11 +5850,6 @@
     "permanent": true
   },
   {
-    "source": "/blog",
-    "destination": "/destinations/blog",
-    "permanent": true
-  },
-  {
     "source": "/dwarka-somnath-tour-from-mumbai.html",
     "destination": "/packages?filter=dwarka-somnath-tour-from-mumbai",
     "permanent": true

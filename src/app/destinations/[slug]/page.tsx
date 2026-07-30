@@ -29,12 +29,31 @@ const destinationKeywords: Record<string, string[]> = {
   "assam": ["guwahati", "kaziranga", "majuli", "shillong", "cherrapunji", "meghalaya"],
 };
 
+import { siteConfig } from "@/data/siteConfig";
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
   const slug = resolvedParams.slug.toLowerCase();
   const dest = destinations.find(d => d.slug.toLowerCase() === slug);
-  if (dest) return { title: `${dest.name} Tour Packages | My Quick Trippers` };
-  return { title: `${slug.replace(/-/g, ' ').toUpperCase()} | My Quick Trippers` };
+  const destData = destinationsData[slug];
+  
+  const title = dest ? `${dest.name} Tour Packages | My Quick Trippers` : `${slug.replace(/-/g, ' ').toUpperCase()} | My Quick Trippers`;
+  const description = destData?.content?.filter((c: any) => c.type === 'p').map((c: any) => c.text).join(' ').substring(0, 160) || `Explore the best ${title} with My Quick Trippers.`;
+
+  return { 
+    title,
+    description,
+    alternates: {
+      canonical: `${siteConfig.domain}/destinations/${slug}`,
+    },
+    openGraph: {
+      title,
+      description,
+      url: `${siteConfig.domain}/destinations/${slug}`,
+      type: 'website',
+      images: [{ url: `${siteConfig.domain}/images/hero/hero-bg-1.jpg`, width: 1200, height: 630, alt: title }],
+    },
+  };
 }
 
 export default async function DestinationPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -77,8 +96,23 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
   // Deduplicate packages based on slug
   const uniquePackages = Array.from(new Map(matchedPackages.map((p) => [p.slug, p])).values());
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "TouristDestination",
+    "name": titleName,
+    "description": destData?.content?.filter((c: any) => c.type === 'p').map((c: any) => c.text).join(' ').substring(0, 200) || `Explore ${titleName}`,
+    "url": `${siteConfig.domain}/destinations/${slug}`,
+    "touristType": [
+      "Leisure",
+      "Adventure",
+      "Family"
+    ]
+  };
+
   return (
-    <div className="bg-gray-50 min-h-screen pb-16">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <div className="bg-gray-50 min-h-screen pb-16">
       
       {/* Breadcrumbs Top Bar */}
       <div className="bg-white border-b border-gray-200 text-gray-600 text-[13px] py-2 px-4 shadow-sm mb-6">
@@ -121,7 +155,8 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
           
         </div>
         
+        </div>
       </div>
-    </div>
+    </>
   );
 }

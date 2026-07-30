@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import AutoLinker from '@/components/ui/AutoLinker';
 
 export default function DestinationDescription({ title, content }: { title: string, content: any[] }) {
   const [expanded, setExpanded] = useState(false);
@@ -9,7 +10,7 @@ export default function DestinationDescription({ title, content }: { title: stri
 
   // Render function for the blocks
   const renderBlock = (block: any, idx: number) => {
-    if (block.type === 'p') return <p key={idx} className="mb-4">{block.text}</p>;
+    if (block.type === 'p') return <p key={idx} className="mb-4"><AutoLinker text={block.text} /></p>;
     if (block.type === 'h2') return <h2 key={idx} className="text-xl font-bold text-gray-800 mt-6 mb-3">{block.text}</h2>;
     if (block.type === 'h3') return <h3 key={idx} className="text-lg font-bold text-gray-800 mt-4 mb-2">{block.text}</h3>;
     if (block.type === 'ul') return (

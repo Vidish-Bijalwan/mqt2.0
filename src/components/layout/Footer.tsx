@@ -5,11 +5,11 @@ import { MapPin, Phone, Mail, MessageCircle } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-legacy-footer-bg text-white text-[13px]">
+    <footer className="bg-brand-navy text-white text-[13px]">
       <div className="container mx-auto px-4 w-[95%] max-w-[1600px] pt-12 pb-6">
         
         {/* Top Section - Contacts & App Links */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10 pb-8 border-b border-legacy-footer-border">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10 pb-8 border-b border-brand-navy-light">
           {/* Regional Offices */}
           <div>
             <h4 className="text-[15px] text-gray-200 mb-3">Regional Associates Offices</h4>
@@ -26,7 +26,7 @@ export default function Footer() {
                <h4 className="text-[15px] text-gray-200 mb-1">Customer Support</h4>
                <p className="text-gray-400 text-[11px] mb-2">Request a quote, or just chat about your next vacation.<br/>We're always happy to help!</p>
                <div className="flex items-center text-legacy-orange font-bold text-lg mb-1">
-                 <Phone className="w-4 h-4 mr-2 text-legacy-orange" /> {siteConfig.phone}
+                 <Phone className="w-4 h-4 mr-2 text-brand-green" /> {siteConfig.phone}
                </div>
                <div className="flex items-center text-gray-300">
                  <Mail className="w-4 h-4 mr-2" /> {siteConfig.email}

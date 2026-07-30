@@ -22,8 +22,8 @@ export const allPackages: Package[] = [
     "route": "Guwahati",
     "description": "Enjoy a magical tour of Northeast India, focusing on Assam, Meghalaya, and Arunachal Pradesh! These states are popular for their natural beauty and charm. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹6,900",
+    "oldPrice": "₹4,600",
     "discount": ""
   },
   {
@@ -35,8 +35,8 @@ export const allPackages: Package[] = [
     "route": ": Arrival in Mumbai and Journey to Rajkot → Trip to Dwarkadhish and Nageshwar Jyotirlinga → Somnath Jyotirlinga Darshan → Somnath to Ujjain transfer → Arrival in Ujjain and Visit to Omkareshwar Temple → Ujjain  and Train to Haridwar",
     "description": "There are countless temples in India. However, Jyotirlingas hold a place of their own! Deemed as the ultimate pilgrimage, See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹6,800",
+    "oldPrice": "₹4,500",
     "discount": ""
   },
   {
@@ -48,8 +48,8 @@ export const allPackages: Package[] = [
     "route": "Arriving in Ayodhya - Feel the divine presence of Lord Rama → Cultural and spiritual escape in the city of Legends",
     "description": "Get the best 2 days Ayodhya Tour package deals to see some of the most famous spiritual and cultural places and take part in spiritual rituals with My Quick Trippers. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,100",
+    "oldPrice": "₹1,400",
     "discount": ""
   },
   {
@@ -61,8 +61,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Delhi  - Mathura → Mathura- Agra- Delhi",
     "description": "Explore the charm of Delhi, Mathura, and Agra in just 2 days with our amazing tour package. Start your trip in Delhi, the capital of India, where you can enjoy both history and modern life. Visit the iconic landmarks like India Gate, Qutub Minar and Lotus Temple, which shows the city's culture and architectural beauty. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -74,8 +74,8 @@ export const allPackages: Package[] = [
     "route": "Arrive Delhi- Kainchi Dham → Kainchi Dham - Delhi",
     "description": "This 2 days Kainchi Dham tour package is perfect for those looking for both spirituality and natural beauty. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,000",
+    "oldPrice": "₹1,300",
     "discount": ""
   },
   {
@@ -87,8 +87,8 @@ export const allPackages: Package[] = [
     "route": "Sightseeing at Western Group of Temples → Visit to Eastern Group of Temples and Departure",
     "description": "See temples that are dedicated to ancient gods, carvings that drew inspiration from life itself, and exquisite architecture that baffles even today’s great minds! To enjoy a seamless tour here, book our Khajuraho tour package that will take care of all the travel logistics for you so that you can enjoy your trip peacefully, as it’s supposed to be.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,800",
+    "oldPrice": "₹2,500",
     "discount": ""
   },
   {
@@ -100,8 +100,8 @@ export const allPackages: Package[] = [
     "route": "Bhubaneswar → Bhubaneswar - Dhauli - Pipli - Konark - Puri → Depart from Puri to Bhubaneshwar",
     "description": "Odisha is a beautiful state, known as the soul of India, located near the Bay of Bengal on the eastern coast. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -113,8 +113,8 @@ export const allPackages: Package[] = [
     "route": "Welcome to Guwahati → Guwahati city and Temple tour → Guwahati",
     "description": "Embark on a 3 day tour to Assam and let the surreal breezes of Northeast India embrace you. Capture the beauty of Guwahati with our carefully curated package including safe travels, cozy hotel stay, delicious meals and guided tours. Guwahati is the largest city in Assam located on the banks of Brahmaputra river.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹8,500",
+    "oldPrice": "₹5,650",
     "discount": ""
   },
   {
@@ -126,8 +126,8 @@ export const allPackages: Package[] = [
     "route": "Deoghar- A heaven for Heart and Soul → Sacred Darshan of Baba Baidyanath and Deoghar Sightseeing → Deoghar",
     "description": "The sacred soil of Deoghar, Jharkhand has held dearly the sacred sanctuary of Baba Baidyanath Dham. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,500",
+    "oldPrice": "₹1,680",
     "discount": ""
   },
   {
@@ -139,8 +139,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Delhi → Delhi - Agra sightseeing tour - Mathura → Mathura and Vrindavan sightseeing- Delhi",
     "description": "Enjoy your 3-day trip to explore famous places in India. Start your journey in Delhi, a city with modern buildings and historic sites. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,800",
+    "oldPrice": "₹1,850",
     "discount": ""
   },
   {
@@ -152,8 +152,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Plan a trip to Guwahati, the largest city in Assam! Also known as a gateway to the Northeast, this place’s beauty will make you fall in love with it at first glance. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,700",
+    "oldPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -178,8 +178,8 @@ export const allPackages: Package[] = [
     "route": "Madurai - Rameshwaram → In Rameswaram → Rameswaram - Madurai *Departure*",
     "description": "With our 3 Days Madurai Rameshwaram Tour Package you can explore the real charm of South India in just 3 days. It is a perfect choice for those who have limited time but still want to see everything - famous temples, local culture and calm beaches in a short trip. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,600",
+    "oldPrice": "₹1,100",
     "discount": ""
   },
   {
@@ -204,8 +204,8 @@ export const allPackages: Package[] = [
     "route": "Srisailam - Hyderabad ( → Hyderabad Sightseeing Departure",
     "description": "If you’re not sure how to plan for the 3 Days Srisailam Mallikarjuna Jyotirlinga Darshan , this package helps with everything you need for a smooth journey. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,400",
+    "oldPrice": "₹2,300",
     "discount": ""
   },
   {
@@ -217,8 +217,8 @@ export const allPackages: Package[] = [
     "route": "Arrival and Agartala Sightseeing → Sightseeing and Departure",
     "description": "Fancy a trip to North East India that is filled with culture, heritage, and omnipresent spirituality? See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -230,8 +230,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Indore to Ujjain → Ujjain to Omkareshwar Day → Omkareshwar temple - Indore",
     "description": "Feel spiritually nurtured by undertaking a spiritual pilgrimage with our Indore- Ujjain - Omkareshwar Tour Package that will help you visit the holiest sites of Lord Shiva, See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,600",
+    "oldPrice": "₹2,400",
     "discount": ""
   },
   {
@@ -256,8 +256,8 @@ export const allPackages: Package[] = [
     "route": "Pantnagar - Kainchi Dham → Kainchi Dham - Nainital - Dwarahat → Dwarahat to Mahavatar Babaji Cave → Dwarahat - Pantnagar",
     "description": "Have you ever wanted to visit a secret cave filled with peaceful surroundings, natural beauty and amazing stories? See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,800",
+    "oldPrice": "₹2,500",
     "discount": ""
   },
   {
@@ -269,8 +269,8 @@ export const allPackages: Package[] = [
     "route": "Bhubaneswar → Bhubaneswar - Dhauli - Pipli - Konark - Puri → Puri Exploration → Depart from Bhubaneswar",
     "description": "This place is admirable due to its rich culture, ancient historical sites, unique tribal cultures, and natural beauty. There are many famous temples in Odisha, such as the Jagannath Temple, which is known for its yearly festival called Rath Yatra. The Sun temple is also popular for its special architecture and it is recognized as a UNESCO World Heritage site in India.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -308,8 +308,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Kathmandu → Kathmandu Sightseeing → Kathmandu to Chitwan → Chitwan to Pokhara → Pokhara local sightseeing → Pokhara to Kathmandu",
     "description": "The 6-night and 7-day tour package to Nepal offers comfortable accommodation in luxury hotels, delicious meals, and well-planned sightseeing to the main attractions of Nepal.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹22,500",
+    "oldPrice": "₹15,000",
     "discount": ""
   },
   {
@@ -347,8 +347,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "The Adi Kailash Yatra is a sacred pilgrimage to the revered “Chhota Kailash,” located in the remote Himalayan region of Uttarakhand near the Indo–China border. Adi Kailash is considered one of the most holy abodes of Lord Shiva and holds deep spiritual significance for devotees. The journey offers a unique blend of devotion and natural beauty, surrounded by untouched mountains, rivers, and peaceful valleys. A key highlight of this Yatra is Om Parvat, where the naturally formed “ॐ” symbol on the",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹72,800",
+    "oldPrice": "₹48,500",
     "discount": ""
   },
   {
@@ -360,8 +360,8 @@ export const allPackages: Package[] = [
     "route": "Haldwani / Kathgodam - Dharchula → Acclimatisation day at Dharchula → Dharchula - Gunji → Gunji - Kalapani - Navidhang - Kuti → Kuti - Jollingkong → Jollingkong - Adi Kailash - Kuti",
     "description": "The Adi Kailash Om Parvat Yatra Package takes you on a transformative journey to sacred Adi Kailash and Om Parvat. All our packages have been curated by our experts who promise the best spiritual experiences. We're your trusted partner for a smooth pilgrimage and hassle-free tours. When you choose us, you can be assured that we will take care of all the aspects of the tour.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹72,800",
+    "oldPrice": "₹48,500",
     "discount": ""
   },
   {
@@ -386,8 +386,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Himachal is the land of Gods and a beautiful paradise for touring and for adventure activities in India. It is not that India lacks in attractions. From the sandy stretches of Rajasthan to lush green rainforests of the Northeast and the cold Himalayan ranges to the warm backwaters of Kerala, there is everything one could wish for. Passionate adventure seekers have plenty to explore in India. Adventure tour packages India are specially designed to give one the much sought-after thrill.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -412,8 +412,8 @@ export const allPackages: Package[] = [
     "route": "Trip to Kailashahar → Sightseeing and Departure",
     "description": "Set out on an adventurous 4 day journey to the Tripura capital, Agartala! While on this trip, See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,600",
+    "oldPrice": "₹1,100",
     "discount": ""
   },
   {
@@ -451,8 +451,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "When we hear about Agra our thoughts immediately gravitate towards Taj Mahal but there are so much more this heritage and historical city has to offer. Our Agra Tour Packages are crafted to give you complete Agra Tour. Riddled with historical stories every step of the way and air fragrant with traditional scents and cooked meals, this place is a pleasing experience for all 5 of your senses. We through our Agra travel packages offer a wholesome and a deeper look into the places, things, and peopl",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,600",
+    "oldPrice": "₹1,100",
     "discount": ""
   },
   {
@@ -464,8 +464,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Established on the banks of River Yamuna in Uttar Pradesh, Agra is believed to be one of the most happening holiday destinations in India. Seeking to plan a dream vacation? Pack your bags and move towards Agra, the land of Taj Mahal. The city is believed to be the seat of the great Mughal rulers who ruled over the city for ages. It’s not only Agra that is synonymous with Taj even though India is also synonymous with this wonderful architecture.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,600",
+    "oldPrice": "₹1,100",
     "discount": ""
   },
   {
@@ -529,8 +529,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Ahmedabad, the largest city in Gujarat, India, is a vibrant urban center known for its rich cultural heritage, historical significance, and thriving economy. As a UNESCO World Heritage City, Ahmedabad boasts a unique blend of traditional and modern influences, making it a must-visit destination",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹18,800",
+    "oldPrice": "₹12,500",
     "discount": ""
   },
   {
@@ -542,8 +542,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "A city as old as time itself. A city that has stayed in place and watched as the world has turned and the tides have changed. A city that has stood the test of time for thousands of years. In the words of Mark Twain, “Older than history, older than tradition, older even than legend, And looks twice as old as all of them put together.” Varanasi, the city that is more than just the spiritual capital of India. The city which can be aptly described as a melting pot where both life and death come tog",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹18,800",
+    "oldPrice": "₹12,500",
     "discount": ""
   },
   {
@@ -555,8 +555,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Aizawl, the capital city of Mizoram in northeastern India, is a captivating destination offering a blend of cultural richness, natural beauty, and vibrant traditions. Tour packages to Aizawl encapsulate a diverse array of experiences, catering to both adventure seekers and those craving a serene getaway.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -568,8 +568,8 @@ export const allPackages: Package[] = [
     "route": "Aurangabad → Aurangabad Sightseeing Tour → Aurangabad Departure",
     "description": "Want to see India’s glorious past? Then head straight to Ajanta & Ellora Caves, which will give you a taste of history and art in one bite! See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,400",
+    "oldPrice": "₹1,600",
     "discount": ""
   },
   {
@@ -581,8 +581,8 @@ export const allPackages: Package[] = [
     "route": "Mumbai → Guided Tour of Mumbai → Mumbai – Aurangabad → Aurangabad – Ajanta – Ellora → Aurangabad – Mumbai – Departure",
     "description": "This tour essentially packs the unique flavor of culture, taste, history and art with a refreshing doze of sights and serenity. If you are looking for a week out and nurture a love for history then, refresh your mind and body with this tour.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,400",
+    "oldPrice": "₹1,600",
     "discount": ""
   },
   {
@@ -594,8 +594,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Ajmer, a city in the heart of Rajasthan, India, holds profound cultural and historical significance, making it a compelling destination for travellers seeking a blend of spirituality, heritage, and natural beauty. Ajmer tour packages offer an enchanting exploration of this city’s multifaceted charm, catering to various interests and preferences.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -620,8 +620,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Alappuzha, fondly known as the “Venice of the East,” offers a captivating experience through its tour packages that showcase the rich tapestry of Kerala’s backwaters, lush greenery, cultural heritage, and serene landscapes. These tour packages are crafted to immerse travellers in the essence of this picturesque destination.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -646,8 +646,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Prayagraj Tour Packages offer a journey to find solace in India. What always attracts travellers from far and wide is Triveni Sangam- the sacred confluence of the sacred Ganga, Yamuna and Saraswati rivers. Devotees take a holy dip in its sacred swirling waters and connect with the powerful chorus of faith through chants. Apart from the spiritual Darshan at Prayagraj you can also stroll down the market places of Prayag, spending a day at the historical monument and landmark of Allahabad fort and",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹15,800",
+    "oldPrice": "₹10,500",
     "discount": ""
   },
   {
@@ -711,8 +711,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -763,8 +763,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "It is quite obvious to have some queries related to your next planned journey. This is the time to buckle up Yourself for the pious Amarnath Yatra 2024. We have compiled up some of the most common and valid questions running in the mind of a pilgrim.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹30,800",
+    "oldPrice": "₹20,500",
     "discount": ""
   },
   {
@@ -776,8 +776,8 @@ export const allPackages: Package[] = [
     "route": "Srinagar - Sonmarg → Srinagar Departure",
     "description": "Amarnath attracts millions of devotees from all over India and abroad. The most wondrous thing about this holy shrine is the ice lingam that renews itself each year, symbolising Lord Shiva's eternal presence. Traditionally, trekkers reach the cave at the end of the Lidder Valley after an arduous journey. However, the easiest and fastest way is to go by helicopter and complete the Amarnath Yatra package in just 2 nights and 3 days.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹4,200",
+    "oldPrice": "₹2,800",
     "discount": ""
   },
   {
@@ -789,8 +789,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "The Amarnath Yatra is a sacred journey to the holy Amarnath Cave . It is located in Jammu & Kashmir. Being located at high altitudes, this journey requires proper registration, though. In this article, we’ll talk about the complete Amarnath Yatra Registration 2026 process , fees , eligibility criteria , and documents required. We’ll also touch upon helicopter booking for this special pilgrimage. Read on to know more!",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,300",
+    "oldPrice": "₹1,550",
     "discount": ""
   },
   {
@@ -802,8 +802,8 @@ export const allPackages: Package[] = [
     "route": "Arrival Srinagar → Srinagar Sonamarg - Baltal → Baltal - Holy Cave - Baltal → Sonamarg - Srinagar → Srinagar - Gulmarg - Srinagar → Srinagar - Katra",
     "description": "One of the most astonishing pilgrimages of Hindus, Amarnath Yatra is an annual pilgrimage covered by thousands of devotees See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹11,200",
+    "oldPrice": "₹7,500",
     "discount": ""
   },
   {
@@ -815,8 +815,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Delhi – Amritsar → Amritsar → Amritsar – Jammu – Katra → Katra – Vaishno Devi Temple – Katra → Katra – Srinagar → Srinagar – Sonmarg",
     "description": "Namaste India trip presents you with an opportunity to gain some wonderful spiritual experiences through the outstanding Amarnath Yatra with Vaishno Devi tour package of 11 days and 10 nights. Witness the glory of God and goddesses by visiting some of the most pious and sacred Hindu destinations of pilgrimage like Amarnath and Vaishno Devi.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹30,800",
+    "oldPrice": "₹20,500",
     "discount": ""
   },
   {
@@ -828,8 +828,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Amarnath ranks among one of the toughest pilgrimages in the world but every pilgrim that successfully makes it to the cave experiences a newfound sense of achievement and bliss. With our Amarnath Tour Packages, you will be able to experience a smooth pilgrimage journey to get the divine Darshan of Baba Barfani. This holy cave shrine has the ice stalagmite depiction of Shivling. Each year, the holy Yatra opens for a limited duration of just 42 days where pilgrims make their way through the challe",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹30,800",
+    "oldPrice": "₹20,500",
     "discount": ""
   },
   {
@@ -880,8 +880,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Existed at a distance of 450 km from Delhi, Amritsar is one of the most pristine cities and renowned globally for the Golden Temple a.k.a. Harmandir Sahib Gurudwara. The literal meaning of the city is “holy pool of nectar” and it is the spiritual and cultural midpoint of the Sikh Religion. The city is famous for Baisakhi festival, Jallianwala Bagh massacre, Wagah Border proximity, Amritsari cuisine, and Punjabi hospitality. The city has a flourishing tourism industry. And to be a part of this gr",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹27,800",
+    "oldPrice": "₹18,500",
     "discount": ""
   },
   {
@@ -945,8 +945,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "One of the most exciting union territories of India, Andaman and Nicobar Islands is a mesmerizing archipelago established in the Bay of Bengal. My Quick Trippers offers you the widest range of Andaman holiday packages at very affordable rates. We have designed Andaman and Nicobar Tour Packages in such a way that it becomes suitable for travelers of every taste. Thousands of tourists from different corners of the world visit Andaman and Nicobar to experience mindfulness in the lap of nature. Whet",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹30,800",
+    "oldPrice": "₹20,500",
     "discount": ""
   },
   {
@@ -1010,8 +1010,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹6,900",
+    "oldPrice": "₹4,600",
     "discount": ""
   },
   {
@@ -1049,8 +1049,8 @@ export const allPackages: Package[] = [
     "route": "Guwahati",
     "description": "Enjoy a magical tour of Northeast India, focusing on Assam, Meghalaya, and Arunachal Pradesh! These states are popular for their natural beauty and charm. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹6,900",
+    "oldPrice": "₹4,600",
     "discount": ""
   },
   {
@@ -1062,8 +1062,8 @@ export const allPackages: Package[] = [
     "route": "Guwahati to Shillong → Shillong Day Visit to Cherrapunji → Shillong – Mawlynnong – Dawki Day Visit → Shillong to Guwahati → Guwahati City Sightseeing → Guwahati",
     "description": "Experience the beauty of Northeast India with our 5 nights/6 days tour package to Assam and Meghalaya.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹17,000",
     "discount": ""
   },
   {
@@ -1075,8 +1075,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Planning to explore Assam’s unique culture and heritage? Don’t go anywhere else, our Assam Tour Packages will be the best way of exploring the natural and cultural side this wonderful state has to offer. From transportation, meals, best hotels to tour guides, we handle all the travel logistics so that you can only focus on enjoying and creating memories with your loved ones. The rich biodiversity combined perfectly with the unique culture and heritage experiences makes Assam a must-visit tourist",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹8,500",
+    "oldPrice": "₹5,650",
     "discount": ""
   },
   {
@@ -1088,8 +1088,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Assam graces the northeastern region of the Indian subcontinent, south of the eastern Himalayan region, and all along the life-giving river of Brahmaputra and Barak river valley. Assam is mainly known for its tea and silk which is worth every bit of the hype it receives. Being a hill state it offers stunning views of the magnificent surroundings and unmatched natural greenery. Due to its peaceful vibe and untouched natural beauty, it has always been the center of attention for people looking to",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹8,500",
+    "oldPrice": "₹5,650",
     "discount": ""
   },
   {
@@ -1101,8 +1101,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Delhi - Srinagar → Auli Skiing Adventure → Auli/ Joshimath Drive. Shivpuri Camping → Shiv Puri -Rafting - Delhi",
     "description": "Enjoy a 5 Day spiritual and adventure trip to the captivating mountains of Uttarakhand- Dev Bhoomi. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,600",
+    "oldPrice": "₹1,100",
     "discount": ""
   },
   {
@@ -1127,8 +1127,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -1140,8 +1140,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Auli is India’s most sought-after travel destination for adventure lovers and solace seekers. It is India’s top-rated ski resort destination, specially developed for adventure tourism in Uttarakhand. But what is so special about Auli apart from Skiing adventures?",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -1192,8 +1192,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Ayodhya tour packages offer one-of-a-kind spiritual, cultural and historical experiences. Not only is it the most popular sacred destination for Hindu devotees, it is also a historical city and a cultural hub of living traditions. Devotees are mostly drawn to its sacred significance as the birthplace of Lord Rama, and Ayodhya is strongly linked to spirituality and Hindu mythology. Situated along the sacred Sarayu River's banks, the holy city is deeply linked with the Ramayana — referred to as th",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,000",
+    "oldPrice": "₹2,000",
     "discount": ""
   },
   {
@@ -1205,8 +1205,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "The city of Ayodhya is an important pilgrim place for Hindus in India. It is one of the seven holiest cities of India. Ayodhya is the birthplace of Lord Ram, who is an important deity in the Hindu pantheon. This small, quiet town attracts pilgrims from all over the country. Hindu pilgrims visiting Ayodhya during festivals and important religious functions consider a holy dip in the sacred Saryu River very auspicious.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,000",
+    "oldPrice": "₹2,000",
     "discount": ""
   },
   {
@@ -1218,8 +1218,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Dehradun → Dehradun - Kedarnath - Badrinath → Badrinath - Dehradun Departure",
     "description": "The pilgrimage to Badri Kedar is one of the holiest trips any devotee could take. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹15,000",
+    "oldPrice": "₹10,000",
     "discount": ""
   },
   {
@@ -1231,8 +1231,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Thinking about a trip to Badrinath Temple ? Before you begin the journey, it’s natural to have a few questions in mind—about travel routes, timings, weather, and basic arrangements.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,600",
+    "oldPrice": "₹1,100",
     "discount": ""
   },
   {
@@ -1257,8 +1257,8 @@ export const allPackages: Package[] = [
     "route": "Delhi – Haridwar → Haridwar – Guptkashi → Guptkashi – Sonprayag – Kedarnath → Kedarnath – Sonprayag – Rudraprayag → Rudraprayag – Badrinath Dham → Badrinath – Rudraprayag",
     "description": "Welcome to the abodes of the Gods on your Badrinath Kedarnath Do Dham Yatra! Perched high in the serene Himalayas, the sacred temples are dedicated to the almighty Gods. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,800",
+    "oldPrice": "₹2,500",
     "discount": ""
   },
   {
@@ -1270,8 +1270,8 @@ export const allPackages: Package[] = [
     "route": "Delhi – Haridwar → Haridwar – Guptkashi → Guptkashi – Sonprayag – Kedarnath → Kedarnath – Sonprayag – Rudraprayag → Rudraprayag – Badrinath Dham → Badrinath – Rudraprayag",
     "description": "Welcome to the abodes of the Gods on your Badrinath Kedarnath Do Dham Yatra! Perched high in the serene Himalayas, the sacred temples are dedicated to the almighty Gods. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,800",
+    "oldPrice": "₹2,500",
     "discount": ""
   },
   {
@@ -1283,8 +1283,8 @@ export const allPackages: Package[] = [
     "route": "Haridwar - Guptkashi → Guptkashi - Kedarnath → Kedarnath - Guptkashi → Guptkashi - Badrinath → Badrinath - Haridwar",
     "description": "Welcome to an absolutely wonderful and safe journey to the amazing high holy mountains of North India. People worldwide dream of visiting the beautiful temples of Lord Shiva and Lord Vishnu. Special Badrinath Kedarnath Yatra Package from Haridwar includes visiting these famous places easily. You travel safely in a personal car. You will get the best rooms and tasty food so you can relax fully. Just look at the high green hills and enjoy the fresh air.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹23,100",
+    "oldPrice": "₹15,400",
     "discount": ""
   },
   {
@@ -1309,8 +1309,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Badrinath visit does not mean just going to the temple of Badri Vishal and taking blessings from the lord. Being a highly pious place of worship with unmatched, pure spiritual energy encapsulating the place, many devotees make it a point to perform various puja services during their visit to Badrinath Dham for Char Dham Yatra .",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,900",
+    "oldPrice": "₹1,951",
     "discount": ""
   },
   {
@@ -1335,8 +1335,8 @@ export const allPackages: Package[] = [
     "route": "Delhi → Haridwar → Haridwar → Joshimath via Panch Prayag → Joshimath → Badrinath → Badrinath → Rudraprayag → Rudraprayag → Rishikesh → Delhi",
     "description": "Badrinath is one of the four sacred Char Dhams and among the 108 Divya Desams dedicated to Lord Vishnu. Situated at 3,300 metres on the banks of the Alaknanda, flanked by the Nar and Narayan mountain ranges with the Neelkanth peak rising behind it, Badrinath is not just a temple - it is the northernmost point of India's most important pilgrimage circuit. This 5-day Badrinath Yatra package from Delhi covers the complete road route: Haridwar, all five Panch Prayag confluences, Joshimath, Badrinath",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,000",
+    "oldPrice": "₹2,000",
     "discount": ""
   },
   {
@@ -1348,8 +1348,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "If you are searching for a Badrinath tour package in 2026, the two questions most pilgrims ask first are the same: how much will it cost, and will someone handle everything so I do not have to figure it out myself?",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,800",
+    "oldPrice": "₹1,200",
     "discount": ""
   },
   {
@@ -1374,8 +1374,8 @@ export const allPackages: Package[] = [
     "route": "Dehradun  – Badrinath – Dehradun",
     "description": "Badrinath is one of the most auspicious destinations. However, being situated in rather challenging Himalayan terrain, this holy abode is not very easy to reach via the road route. Therefore, we bring to you our all-inclusive Badrinath Yatra by Helicopter Tour Package. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹7,500",
+    "oldPrice": "₹5,000",
     "discount": ""
   },
   {
@@ -1387,8 +1387,8 @@ export const allPackages: Package[] = [
     "route": "Haridwar - Pipalkoti → Pipalkoti - Badrinath → Badrinath - Rudraprayag → Rudraprayag - Haridwar",
     "description": "Badrinath is a sacred site dedicated to Lord Vishnu. It's not only a part of the Chhota Dham circuit but also of the Bada Dham circuit. If you wish to bask in the spirituality of the place and also enjoy the stunning natural beauty all around, embark on this 4 Days / 3 Nights Tour of Sri Badrinath Ji . With our Badrinath Yatra Package from Haridwar, you get meals, accommodation, and full transport support. So why wait, book now and set out on a pilgrimage of a lifetime!",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹27,800",
+    "oldPrice": "₹18,500",
     "discount": ""
   },
   {
@@ -1400,8 +1400,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "The holy temple of Badrinath which graces the holy district of Chamoli and is placed on the bank of the holy river of Alaknanda marks as one of the most significant places of Vishnu worship. Being a part of not only the holy Chhota Char Dham Yatra but also of the all India Char Dham Yatra along with Rameshwaram in the south, Dwarkadheesh in the west and Jagannath Mandir in the east, the temple witnesses a massive footfall of devotees from all over the world when the temple doors open for Darshan",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,800",
+    "oldPrice": "₹1,200",
     "discount": ""
   },
   {
@@ -1426,8 +1426,8 @@ export const allPackages: Package[] = [
     "route": "Deoghar → Baba Baidyanath Temple and Sightseeing",
     "description": "Located in Deoghar, it is not only a revered pilgrimage of Lord Shiva, but is also an important Shaktipeeth, making it a powerful pilgrimage site. Every year, the Dham draws millions of devotees, especially in the peak season of the Shravan months, when hordes of Kanwar pilgrims arrive.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,900",
+    "oldPrice": "₹1,250",
     "discount": ""
   },
   {
@@ -1465,8 +1465,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Bali and Check In At Luxurious Resort/Villa → Visit to Tanjung Benoa Beach → Uluwatu Sightseeing & Kecak Fire Dance Show → Bali",
     "description": "Bali is a dream destination for couples looking for a romantic honeymoon. This 4-day Bali honeymoon tour package is specially designed for couples who want a mix of romance, relaxation, and a little adventure on their honeymoon.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,600",
+    "oldPrice": "₹1,080",
     "discount": ""
   },
   {
@@ -1491,8 +1491,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Bali and Sightseeing Places → Kintamani Village Tour & Tanah Lot Temple → Bali",
     "description": "Planning a Quick Trip to Bali? But confused about “what places to see,” “what are the key attractions to cover,” that too in 3-4 days? Well, relax! At My Quick Trippers, our Bali Sightseeing Tour Package give you the most fulfilling experiences to explore the island.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,800",
+    "oldPrice": "₹2,500",
     "discount": ""
   },
   {
@@ -1530,8 +1530,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Bali is one of the top tourist destinations in Indonesia. It treats you with its incredible beauty of white sandy beaches, glistening blue waters, lush green jungles, and ancient temples. Our Bali Tour Packages from India offer the ultimate escape to this dream island, where you can holiday without spending a fortune. Book now or call us to know more about this special trip.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -1556,8 +1556,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -1647,8 +1647,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -1660,8 +1660,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "India is blessed and endowed with numerous magnificent landscape features. From the Hills of the north to the beaches of the South, the subcontinent offers travelers numerous choices for sightseeing. Browse and select from our massive range of beach town tour packages in India where you will be made to travel to some of the most splendidly stunning beach towns and relax under the sun by the turquoise waves. From the beaches of Tamil Nadu and Kerala to a Goa beach tour and the Beaches of Maharash",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹40,500",
+    "oldPrice": "₹27,000",
     "discount": ""
   },
   {
@@ -1686,8 +1686,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -1764,8 +1764,8 @@ export const allPackages: Package[] = [
     "route": "Cochin Arrival - Guruvayur",
     "description": "This well-curated Kerala tour package mainly covers Munnar, Guruvayur, Alleppey and Thekkady in 7days and 6 nights. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,200",
+    "oldPrice": "₹2,100",
     "discount": ""
   },
   {
@@ -1829,8 +1829,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Chennai → Chennai - Kanchipuram - Mahabalipuram → Full Day Mahabalipuram Sightseeing → Mahabalipuram - Pondicherry → Full Day Sightseeing Of Thanjavur → Thanjavur - Trichy - Madurai",
     "description": "India is a land of marvels, cultures and traditions that date back to ages ago. Every part of India has something or the other to offer that makes a holiday here truly fascinating. South India is replete with magnificent temples, expansive tea plantations, immaculate shorelines and a unique culture to bind it all together. This best of South India Tour Package will take you on a holiday of lifetime to some of the most spectacular places on the planet. You will be taken from the gently rolling hi",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹27,800",
+    "oldPrice": "₹18,500",
     "discount": ""
   },
   {
@@ -1868,8 +1868,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Haldwani / Kathgodam → Dharchula → Gunji → Kalapani → Navidhang → Kuti → Jollingkong → Adi Kailash",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,800",
+    "oldPrice": "₹1,200",
     "discount": ""
   },
   {
@@ -1959,8 +1959,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Bhubaneswar → Bhubaneswar - Konark - Puri → Puri to Bhubaneswar",
     "description": "The Bhubaneswar Konark Puri Tour Package is planned to give you everything a traveler needs in one package. Your trip starts in Bhubaneswar, a city famous for its temples but there is much more to explore.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,100",
+    "oldPrice": "₹1,400",
     "discount": ""
   },
   {
@@ -1972,8 +1972,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Bhubaneswar → Bhubaneswar- Dhauli - Pipli - Konark - Puri → Puri - Raghurajpur - Chilika  - Gopalpur → In Gopalpur → Gopalpur - Bhubaneswar Departure",
     "description": "The Bhubaneswar Konark Puri Gopalpur Package takes you to Odisha’s best beaches, famous temples, monuments, and also lets you enjoy the local culture. Many people choose this tour, especially families, friends, and students. Everyone enjoys it. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,700",
+    "oldPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -1985,8 +1985,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Bhubaneswar - Konark – Puri → Puri – Pipli – Dhauli – Bhubaneswar",
     "description": "The Bhubaneswar Puri Konark tour package takes you to three famous places, all located in Odisha. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,100",
+    "oldPrice": "₹1,400",
     "discount": ""
   },
   {
@@ -1998,8 +1998,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Bhubaneswar - Konark – Puri → Puri – Pipli – Dhauli – Bhubaneswar",
     "description": "The Bhubaneswar Puri Konark tour package takes you to three famous places, all located in Odisha. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,100",
+    "oldPrice": "₹1,400",
     "discount": ""
   },
   {
@@ -2011,8 +2011,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -2024,8 +2024,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Bhutan, a country of Buddhist Culture is quite an expensive country as a travel destination but the story doesn’t end here only because the scenic beauty and the surprising elements of the country attracts tourist. Bhutanese are very well-educated, updated with the world news, and always fun-loving. Give yourself a chance to visit this Buddhist country and learn about the cultures. Walking along the fascinating Himalayan landscapes can give you a mesmerizing sight of the snow-capped mountains an",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹34,500",
+    "oldPrice": "₹22,999",
     "discount": ""
   },
   {
@@ -2037,8 +2037,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Green hills, majestic views, and a serene environment, every word seems to fall short while describing this heaven on earth. Tourism in Bhutan commenced in the year 1974 while keeping their primary focus on promoting the unique and traditional Bhutanese culture. Did you know that initially this glorious country was isolated and kept away from foreign visitors with an aim to preserve their vibrant culture and belief? Later on ever since it’s opening the place has been receiving numerous visitors",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹34,500",
+    "oldPrice": "₹22,999",
     "discount": ""
   },
   {
@@ -2114,8 +2114,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2133,8 +2133,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2152,8 +2152,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2171,8 +2171,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2190,8 +2190,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2209,8 +2209,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2228,8 +2228,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2247,8 +2247,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2266,8 +2266,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2285,8 +2285,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2304,8 +2304,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2323,8 +2323,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2342,8 +2342,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2361,8 +2361,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2380,8 +2380,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2399,8 +2399,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2418,8 +2418,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2437,8 +2437,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2456,8 +2456,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2475,8 +2475,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2494,8 +2494,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2513,8 +2513,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2532,8 +2532,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2551,8 +2551,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2570,8 +2570,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2589,8 +2589,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2608,8 +2608,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2627,8 +2627,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2646,8 +2646,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2665,8 +2665,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2684,8 +2684,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2703,8 +2703,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2722,8 +2722,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2741,8 +2741,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2760,8 +2760,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2779,8 +2779,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2798,8 +2798,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2817,8 +2817,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2836,8 +2836,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2855,8 +2855,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2874,8 +2874,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2893,8 +2893,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2912,8 +2912,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2931,8 +2931,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2950,8 +2950,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2969,8 +2969,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -2988,8 +2988,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3007,8 +3007,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3026,8 +3026,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3045,8 +3045,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3064,8 +3064,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3083,8 +3083,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3102,8 +3102,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3121,8 +3121,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3140,8 +3140,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3159,8 +3159,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3178,8 +3178,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3197,8 +3197,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3216,8 +3216,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3235,8 +3235,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3254,8 +3254,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3273,8 +3273,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3292,8 +3292,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3311,8 +3311,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3330,8 +3330,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3349,8 +3349,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3368,8 +3368,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3387,8 +3387,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3406,8 +3406,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3425,8 +3425,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3444,8 +3444,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3463,8 +3463,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3482,8 +3482,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3501,8 +3501,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3520,8 +3520,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3539,8 +3539,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3558,8 +3558,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3577,8 +3577,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3596,8 +3596,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3615,8 +3615,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3634,8 +3634,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3653,8 +3653,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3672,8 +3672,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3691,8 +3691,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3710,8 +3710,8 @@ export const allPackages: Package[] = [
       "Expert guide service",
       "Sightseeing as per itinerary"
     ],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -3775,8 +3775,8 @@ export const allPackages: Package[] = [
     "route": "Bodhgaya Arrival → Bodhgaya – Rajgir – Nalanda and Arriving at Patna → Patna – Vaishali – Kushinagar → Kushinagar – Lumbini → Lumbini – Kapilavastu – Sravasti → Sravasti – Varanasi",
     "description": "As the fourth largest world religion, Buddhism has made a strong base in the continent of Asia. Overall, it is preceded by Hinduism, Islam and Christianity in the entire globe.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹21,800",
+    "oldPrice": "₹14,500",
     "discount": ""
   },
   {
@@ -3788,8 +3788,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Buddhism is a religion embraced by millions across the globe. It is one of the oldest religions in the world whose origins date back to over 2,500 years ago. Ever since it was brought to light by Gautam Buddha at a very young age it has brought with it a sense of peace and belonging among its followers. According to some scholars, the basic roots of Buddhism is deeply steeped in the teachings of Hinduism. Being the world's 4th largest religion it has over 535 million followers i.e. about 7% of t",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹21,800",
+    "oldPrice": "₹14,500",
     "discount": ""
   },
   {
@@ -3866,8 +3866,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Experience the city of a rich history and cultural heritage, on your trip to Burhanpur, and the details will leave you awe-struck. Burhanpur is a historic town, where the charm of royalty and the essence of authenticity are preserved very beautifully. The Shahi Qila in the town, which is also known as the fort of Burhanpur is a really good example of extravagant Mughal architecture.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹30,000",
+    "oldPrice": "₹20,000",
     "discount": ""
   },
   {
@@ -3996,8 +3996,8 @@ export const allPackages: Package[] = [
     "route": "Dehradun – Gangotri – Yamunotri → Yamunotri – Kedarnath – Badrinath – Dehradun",
     "description": "One of the most acclaimed pilgrimages in India, Char Dham Yatra is renowned as the wish-granting Yatra. Yamunotri, Gangotri, Kedarnath, and Badrinath collectively form this revered circuit. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹330,000",
+    "oldPrice": "₹220,000",
     "discount": ""
   },
   {
@@ -4035,8 +4035,8 @@ export const allPackages: Package[] = [
     "route": "Hyderabad to Delhi → Delhi to Haridwar → Haridwar to Barkot via Dehradun → Barkot — Yamunotri — Barkot → Barkot to Uttarkashi → Uttarkashi — Gangotri — Uttarkashi",
     "description": "The Chardhams are some of the holiest sites in Hinduism. Set out on a memorable pilgrimage with our well-crafted Chardham Yatra package from Hyderabad . You'll visit Kedarnath , Badrinath , Gangotri , and Yamunotri . In this tour plan, you get meals, hotels, and transport . Enjoy a relaxing scenic road trip with experienced hill drivers and guided tours .",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹30,000",
+    "oldPrice": "₹20,000",
     "discount": ""
   },
   {
@@ -4048,8 +4048,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Chardham Yatra Packages 2026 are designed for devotees seeking blessings at Yamunotri, Gangotri, Kedarnath, and Badrinath in Uttarakhand . These itineraries include the required services to complete this soulful journey safely and securely.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹24,800",
+    "oldPrice": "₹16,500",
     "discount": ""
   },
   {
@@ -4061,8 +4061,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Dehradun → Dehradun - Yamunotri → Yamunotri - Gangotri → Gangotri - Kedarnath → Kedarnath - Badrinath → Badrinath - Dehradun",
     "description": "Chardham Yatra by Helicopter is the quickest and easiest method to visit the four holy Himalayan sacred sites, Yamunotri, Gangotri, Kedarnath, and Badrinath, in a brief period of time. This aerial pilgrimage has been planned to serve the elderly, families, and pilgrims with time constraints, thus avoiding roads and long walks. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹7,500",
+    "oldPrice": "₹5,000",
     "discount": ""
   },
   {
@@ -4074,8 +4074,8 @@ export const allPackages: Package[] = [
     "route": "Delhi - Rishikesh → Rishikesh - Barkot → Barkot - Yamunotri - Barkot → Barkot - Uttarkashi → Uttarkashi - Gangotri - Uttarkashi → Uttarkashi - Srinagar",
     "description": "The Chardhams of Uttarakhand are a must-visit for every devout Hindu. The pilgrimage to the holy Chardhams – Yamunotri , Gangotri , Kedarnath , and Badrinath – is believed to grant Moksha, liberation from the cycle of birth and death! Choose our Chardham Yatra Package from Delhi to make your pious journey easier and more comfortable.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹37,500",
+    "oldPrice": "₹25,000",
     "discount": ""
   },
   {
@@ -4087,8 +4087,8 @@ export const allPackages: Package[] = [
     "route": "Haridwar - Barkot → Barkot - Uttarkashi → Uttarkashi - Gangotri  - Uttarkashi → Uttarkashi - Guptkashi → Guptkashi - Gauri Kund  - Trek to Kedarnath → Trek from Kedarnath to Gauri Kund - Guptkashi",
     "description": "Chardham are holy sites dedicated to the Gods. The Chardham of Uttarakhand include Yamunotri , Gangotri , Kedarnath , and Badrinath . Since they are located at high altitudes, devotees have to brave harsh weather conditions. To make your pilgrimage easier and smoother, we bring to you expert-created Chardham Yatra Package from Haridwar !",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -4100,8 +4100,8 @@ export const allPackages: Package[] = [
     "route": "Arrive in Delhi → Delhi to Rishikesh → Rishikesh to Barkot → To Yamunotri & Back → Barkot to Uttarkashi → To Gangotri & back",
     "description": "Embark on a soulful journey to the Chardham sites with our Chardham Yatra Package from Ahmedabad. The Chardham Yatra comprises a tour of four of the religious destinations in Uttarakhand , including Gangotri , Yamunotri , Kedarnath , and Badrinath . Gangotri is the sacred abode of Goddess Ganga, and Yamunotri is a sacred site where you can seek the Goddess Yamunotri. Kedarnath houses Lord Kedar's Temple, and Badrinath is Lord Badri's sacred abode.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹52,500",
+    "oldPrice": "₹35,000",
     "discount": ""
   },
   {
@@ -4113,8 +4113,8 @@ export const allPackages: Package[] = [
     "route": "Bangalore - Delhi → Delhi to Rishikesh → Rishikesh to Barkot → Barkot - Yamunotri - Barkot → Barkot - Uttarkashi → Uttarkashi - Gangotri - Uttarkashi",
     "description": "Chardham journey takes you to four holy destinations of Kedarnath, Badrinath, Gangotri, and Yamunotri. My Quick Trippers offers you all inclusive Chardham Yatra package from Bangalore to make your journey easier. This tour includes your meals, hotels, and a dedicated transport vehicle with a professional driver . Attend the divine Aarti ceremonies , seek the blessings of God, and enjoy spirituality — all in utter comfort. Book now or give us a call to know more!",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹4,500",
+    "oldPrice": "₹3,000",
     "discount": ""
   },
   {
@@ -4139,8 +4139,8 @@ export const allPackages: Package[] = [
     "route": "Kolkata to Delhi → Delhi to Haridwar → Haridwar to Barkot → Barkot — Yamunotri Darshan — Barkot → Barkot to Uttarkashi → Uttarkashi — Gangotri Darshan — Uttarkashi",
     "description": "Planning a Chardham Yatra from Kolkata in 2026 means coordinating four high-altitude shrines, mandatory government registration, a 16 km mountain trek at Kedarnath, and hotel bookings across seven different towns — all before you even board your train to Delhi. Most pilgrims from West Bengal arrive at Haridwar underprepared: missing biometric registration slips, unaware of the Sonprayag vehicle ban, or carrying only cotton clothes for 3,583m altitude nights.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,800",
+    "oldPrice": "₹1,200",
     "discount": ""
   },
   {
@@ -4152,8 +4152,8 @@ export const allPackages: Package[] = [
     "route": "Mumbai – Delhi → Delhi - Haridwar → Haridwar - Barkot → Barkot - Yamunotri - Barkot → Barkot - Uttarkashi → Uttarkashi - Gangotri - Uttarkashi",
     "description": "Feel like being one with the divine with our Chardham Yatra Package from Mumbai , crafted by our experts to meet your unique needs. This sacred Yatra takes you on an exploration of Uttarakhand's four ancient temples, including Kedarnath , Badrinath , Gangotri , and Yamunotri . You can have the Darshan of Lord Kedar at Kedarnath, pay homage to Lord Badri at Badrinath, experience solitude at Gangotri, and seek the blessings of Mata Yamuna at Yamunotri Temple. We offer a wide range of packages, ran",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹63,000",
+    "oldPrice": "₹42,000",
     "discount": ""
   },
   {
@@ -4165,8 +4165,8 @@ export const allPackages: Package[] = [
     "route": "Nagpur to Delhi and Rishikesh → Rishikesh to Barkot → To Yamunotri & Back → Barkot to Uttarkashi → To Gangotri & Back → Uttarkashi to Srinagar",
     "description": "Explore Uttarakhand's spiritual side by booking the Chardham Yatra Package from Nagpur. The yatra begins at Nagpur and takes you to Gangotri, Yamunotri, Kedarnath, and Badrinath",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹61,400",
+    "oldPrice": "₹40,900",
     "discount": ""
   },
   {
@@ -4204,8 +4204,8 @@ export const allPackages: Package[] = [
     "route": "Surat - Rishikesh → Rishikesh - Barkot → Barkot - Yamunotri - Barkot → Barkot - Uttarkashi → Uttarkashi - Gangotri - Uttarkashi → Uttarkashi - Sitapur",
     "description": "The Chardham Yatra package from Surat allows you to embark on one of the holiest pilgrimages. In Hinduism, the Chardham Yatra is considered to be very important as it attracts thousands of devotees from both India and abroad. This holy pilgrimage gives you a chance to explore four sacred destinations, namely Yamunotri , Gangotri , Kedarnath , and Badrinath . With our tour packages, you can visit the shrines and partake in various sacred rituals.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹63,900",
+    "oldPrice": "₹42,600",
     "discount": ""
   },
   {
@@ -4230,8 +4230,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Char Dham Yatra is a holy Hindu pilgrimage that combines spirituality and religion with traveling to the scenic parts of the remote Garhwal regions. It involves offering prayer to the 4 holy ancient temples of Kedarnath, Badrinath, Gangotri, and Yamunotri. The historical and mythological accounts of these legendary shrines surpass time and ages and its significance is acknowledged ever since the place had become accessible to devotees. All these temples forming this pilgrimage are located in the",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹24,800",
+    "oldPrice": "₹16,500",
     "discount": ""
   },
   {
@@ -4282,8 +4282,8 @@ export const allPackages: Package[] = [
     "route": "Arrive at Chennai - Mahabalipuram - Pondicherry",
     "description": "Explore beautiful heritage of South India with our Chennai Mahabalipuram Thanjavur Trichy Madurai Tour. Journey starts from Chennai, a city full of history, temples and beautiful beaches. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹4,600",
+    "oldPrice": "₹3,100",
     "discount": ""
   },
   {
@@ -4425,8 +4425,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "China is an ancient country and one of those nations where one of the great human civilizations was born and nurtured, with a history spanning over 5000 years it is a tempting place for tourists on Tour Packages. Not only history the vast and varied geography of China is a huge attraction in itself, extending from the deserts in the west and to the ocean in the east, snowcapped mountains and green carpeted hilly region, this place provides unforgettable time on Tour Packages.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -4451,8 +4451,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -4477,8 +4477,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -4516,8 +4516,8 @@ export const allPackages: Package[] = [
     "route": "Cochin Arrival and Sightseeing → Cochin - Munnar → Munnar Sightseeing → Munnar - Thekkady → Thekkady - Alleppey → Alleppey - Cochin",
     "description": "Cochin Munnar Thekkady Alleppey Tour Package is perfect for travelers who want to see Kerala's nature, wildlife, and culture - all in one tour. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,200",
+    "oldPrice": "₹2,100",
     "discount": ""
   },
   {
@@ -4529,8 +4529,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -4555,8 +4555,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Colombo → Colombo – Sigiriya → Sigiriya – Kandy → Kandy – Beruwala → Bentota – Airport",
     "description": "Sri Lanka is popular for being a paradise on earth. Home to a wide variety of biodiversity, lush greenery, expansive coastline, sandy relaxing beaches and numerous other locations of religious significance Sri Lanka is treasure trove for travellers. The Colombo with Sigiriya and Kandy tour package which lasts for 5 days and 4 nights makes sure that you get the best of this island nation and take away with you a lifetime worth of memories.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,000",
+    "oldPrice": "₹2,000",
     "discount": ""
   },
   {
@@ -4594,8 +4594,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Located in Karnataka, India, Coorg is known as the “Scotland of India”. It has the charm of a long-lost world and tourists are pleased to discover historical and sacred places that can be admired, as well as spectacular views and recreational sites. Coorg is also a popular honeymoon destination. Why choose this peaceful town? There are a lot of reasons and the most important one is the fact that it offers you a break from your fast-paced life. You are going to spend some time in a place where th",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹27,000",
+    "oldPrice": "₹18,000",
     "discount": ""
   },
   {
@@ -4607,8 +4607,8 @@ export const allPackages: Package[] = [
     "route": "Arrive Delhi- Nainital → In Nainital → Nainital - Corbett → Corbett – Delhi",
     "description": "This 4-day Corbett Nainital Tour Package from Delhi is full of adventures and calm atmosphere you’ll remember forever. The journey begins in Nainital, where you’ll explore Naini Lake, shaped like a human eye and people enjoy its magical sunset views.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,200",
+    "oldPrice": "₹2,100",
     "discount": ""
   },
   {
@@ -4659,8 +4659,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "A holiday in Cordelia Cruise is a part of every traveller’s bucket list. Cordelia cruise packages are perfect for those who live for luxury and leisure when on vacation. It is a perfect blend of a beautiful sea journey, with ultimate comfort and limitless entertainment with amazing activities that the guests would enjoy thoroughly. Not to forget the fact that these packages with Cordelia cruises are budget-friendly and yet provide you with a lifetime experience of exploring the different shores",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -4685,8 +4685,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Anyone can go off on a vacation to any destination in India or elsewhere in the world. It is only the select few, the crème de la crème that can truly experience the most luxurious of holidays. It is luxury cruises that are the last word in travel, conjuring up visions of a glorious past, of rich and elegant people, of gracious lifestyles and life on a ship that befits royalty. Our Cruise Holidays Packages are truly worth exploring.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -4711,8 +4711,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -5179,8 +5179,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Dalhousie is one of the most popular hill stations in the district of Chamba located in Himachal Pradesh. Dalhousie is present in the outskirts of the Dhauladhar ranges in Himachal Pradesh. The hill station is named after Lord Dalhousie – the founder of the place. Surrounding Dalhousie there are 5 hills and they are- Tehra, Bakrota, Balun, Kathlog and Petreyn. It covers an area of about 13 sq km. Dalhousie ranges between the altitude of 1,525m – 2,378m above the level of the sea. The Dalhousie T",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹40,500",
+    "oldPrice": "₹27,000",
     "discount": ""
   },
   {
@@ -5244,8 +5244,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Fondly called “Queen of Hill Stations”, Darjeeling is reckoned for its panoramic landscapes, soul-soothing panoramas, aromatic tea gardens, and gorgeous monasteries. Nestled amidst the beautiful Himalayan ranges, Darjeeling is one of India’s most stunning holiday destinations, especially for backpackers. If you have never been to this treasure of West Bengal then check out our well-curated Darjeeling tour packages and enjoy your next holiday in this picturesque hill city.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹15,000",
+    "oldPrice": "₹9,999",
     "discount": ""
   },
   {
@@ -5257,8 +5257,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Darjeeling or the ‘mecca of tea’ needs no formal introduction. Crowned by the overlooking snowy peaks of Kanchenjunga, covered in fantastic rolling green tea gardens and complete with the iconic heritage Himalayan toy train, Darjeeling is every traveler’s dream destination and a must-visit for anyone who loves enjoying holidaying on the hills. This ‘Queen of the Himalayas’ is all about untouched beauty, old-world charm, and delicious local food which is combined with a common thread of very warm",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹15,000",
+    "oldPrice": "₹9,999",
     "discount": ""
   },
   {
@@ -5296,8 +5296,8 @@ export const allPackages: Package[] = [
     "route": "Delhi Sightseeing - Drive to Agra → Agra Sightseeing - Fatehpur Sikri - Drive to Jaipur → Jaipur Sightseeing - Drive to Delhi",
     "description": "Capture the soul of India with our cultural Delhi Agra Jaipur Tour Package. You'll get to see the royal and cultural history of the country like never before. This North India cultural circuit will have you exploring the best of the best that these cities have to offer. See the Taj Mahal in Agra up close, visit the historic Red Fort in Delhi, or get lost in Jaipur's majestic City Palace! Book now and go on a luxe and comfortable trip to these amazing three cities. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,600",
+    "oldPrice": "₹2,400",
     "discount": ""
   },
   {
@@ -5309,8 +5309,8 @@ export const allPackages: Package[] = [
     "route": "Delhi",
     "description": "The capital of India is not only the power hub of the subcontinent but it also holds some of the most mesmerizing and classical works of art. A comprehensive full day sightseeing tour of New Delhi ensures that you have a time to remember. Curated keeping in mind the client’s best interests we take you through some of the most breathtaking sites which are not only unique but also one of a kind.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,500",
+    "oldPrice": "₹1,644",
     "discount": ""
   },
   {
@@ -5322,8 +5322,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Delhi is rich in history! From its heritage buildings to its palaces to trendy markets, there's just so much to see here! Book our Delhi Tour Packages and we'll take you to all the great places here. With our services, you get meals, hotels, and transport, which will make your trip utterly comfortable and luxurious. Contact us now and let us help you uncover the real glory of the capital!",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹5,200",
+    "oldPrice": "₹3,500",
     "discount": ""
   },
   {
@@ -5348,8 +5348,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Delhi, the colourful capital of India is among the full of life and most culturally rich places that travellers, heritage explorers, and food explorers can visit. This exceptional melting pot of history, royal architecture, traditions and unstoppable modern vitality is an incredible place to visit in the world. Whether it is the great Mughal structures like the Red Fort and the Tomb of Humayun , or a religious place like Akshardham Temple, Jama Masjid or the peaceful Lotus Temple , there is some",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹5,200",
+    "oldPrice": "₹3,500",
     "discount": ""
   },
   {
@@ -5387,8 +5387,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Dharamshala is a beautiful one-of-a-kind hill station in Himachal Pradesh where impeccable natural beauty meets unmatched spirituality. Home of the Dalai Lama, the entire region is dotted with big and small monasteries and places of worship that have helped in making this place extremely peaceful, scenic, and with a level of positivity that cannot be experienced anywhere in the world. There are several places for a curious travel bug to explore. This place is the epitome of a spiritual travel de",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹40,500",
+    "oldPrice": "₹27,000",
     "discount": ""
   },
   {
@@ -5439,8 +5439,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "If you're short on time but looking for a spiritual elevation, then a Do Dham Yatra is perfect for you! Alternative to the full Char Dham circuit tour , this is a quicker, deeply fulfilling journey. Visiting the two Dhams - either Kedarnath & Badrinath or Gangotri & Yamunotri is a pilgrimage that provides all - faith, time, and comfort!",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹4,500",
+    "oldPrice": "₹3,000",
     "discount": ""
   },
   {
@@ -5452,8 +5452,8 @@ export const allPackages: Package[] = [
     "route": "Dehradun  – Kedarnath – Badrinath",
     "description": "Badrinath and Kedarnath are highly sacred temples in Hinduism. If you're thinking of visiting these temples in a comfortable way, without the physical stresses, then book the Do Dham Yatra by Helicopter 2026 . In this tour plan, our team will take care of your meals, ground transfers, VIP Darshan, helipad assistance, and more. Get in touch to know more about our custom plans! See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹7,500",
+    "oldPrice": "₹5,000",
     "discount": ""
   },
   {
@@ -5465,8 +5465,8 @@ export const allPackages: Package[] = [
     "route": "Delhi - Haridwar → Haridwar - Rishikesh - Barkot → Barkot - Yamunotri - Barkot → Barkot - Harsil → Harsil - Gangotri - Harsil → Harsil - Haridwar",
     "description": "Set out on the Gangotri Yamunotri Do Dham Yatra — one of the most peaceful and spiritually rewarding pilgrimages in Devbhoomi Uttarakhand. This journey takes you to two of the holiest shrines in the Garhwal Himalayas.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,800",
+    "oldPrice": "₹1,200",
     "discount": ""
   },
   {
@@ -5517,8 +5517,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "One of the largest cities of the United Arab Emirates, Dubai is the most sought after travel destination for tourists. Its attractions blow your heart away. There are so many things to do in Dubai that not even a single moment of yours gets dull. Our Dubai Tour Packages offer memorable and fun-filled experiences for you and your loved ones in Dubai. Our itineraries are perfect for a romantic honeymoon, family vacation or any short getaway with your friends. From flights, hotels to guided sightse",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,700",
+    "oldPrice": "₹1,150",
     "discount": ""
   },
   {
@@ -5556,8 +5556,8 @@ export const allPackages: Package[] = [
     "route": "In Delhi → Ahmedabad → Jamnagar – Dwarka → Dwarka – Somnath → Somnath – Ahmedabad",
     "description": "Dwarka and Somnath are holy cities located in the state of Gujarat. They are dedicated to different Gods in Hinduism and therefore hold immense religious significance. Our Dwarka Somnath Tour Package from Delhi is a 6 Days / 5 Nights trip that takes you to these beautiful cities in Gujarat. You will visit holy temples, old historic sites and enjoy the lovely blue sea that makes these cities special! Book now to enjoy a smooth and comfortable trip here.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -5569,8 +5569,8 @@ export const allPackages: Package[] = [
     "route": "In Hyderabad → Arrival in Ahmedabad → Sasan Gir to Somnath → Somnath to Porbandar to Dwarka → Dwarka → Dwarka to Ahmedabad",
     "description": "Gujarat is one of India's most culturally and spiritually significant states. Home to two of the four Char Dhams — Dwarka and Somnath (one of the 12 Jyotirlingas) — it draws pilgrims from across the country every year. Our Dwarka Somnath Tour Package from Hyderabad covers these two sacred cities along with Gir National Park and Porbandar. You'll attend Aartis at ancient temples, take a ferry to Bet Dwarka Island, and explore the birthplace of Mahatma Gandhi along the way.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹6,800",
+    "oldPrice": "₹4,500",
     "discount": ""
   },
   {
@@ -5582,8 +5582,8 @@ export const allPackages: Package[] = [
     "route": "Travel from Mumbai to Ahmedabad → Ahmedabad to Dwarka → Covering the Destinations in Dwarka → Dwarka to Somnath → Somnath to Ahmedabad → Ahmedabad",
     "description": "Get ready for a trip full of memories! Our Dwarka Somnath Tour Package from Mumbai is the right choice for those who want to explore Gujarat's temples, colourful festivals, and culture. On this trip, you will see Dwarka, the land of Lord Krishna, and in Somnath, you get to explore the famous Somnath Temple near the Arabian Sea with its beautiful sea view. Call us now to learn more about this journey!",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹30,900",
+    "oldPrice": "₹20,600",
     "discount": ""
   },
   {
@@ -5595,8 +5595,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Ahmedabad → Ahmedabad - Rajkot → Rajkot - Dwarka → Dwarka Sightseeing → Dwarka - Porbandar - Somnath → Somnath - Ahmedabad",
     "description": "Are you planning a Dwarka Somnath tour from Ahmedabad ? Let's visit two of these best places in Gujarat . Dwarka is known as the city where Lord Krishna lived, and it has the beautiful Dwarkadhish Temple, which is around 600 years old and also a part of the Char Dham pilgrimage .",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -5608,8 +5608,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Immersed in the history of ancient times, in possession of a kind of architecture that you don’t see anywhere else, and proud of having the land where Gods themselves walked, Dwarka is where you find cultural gems at every other corner. The sacred city is where Lord Krishna himself established his home - spirituality is just in the air here! Besides, there are so many things to do here. Many Dwarka tour packages include things like going on a temple spree, enjoying the coastal charm, sauntering",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹7,500",
+    "oldPrice": "₹5,000",
     "discount": ""
   },
   {
@@ -5621,8 +5621,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "A city as old as time itself. A city that has stayed in place and watched as the world has turned and the tides have changed. A city that has stood the test of time for thousands of years. In the words of Mark Twain, “Older than history, older than tradition, older even than legend, And looks twice as old as all of them put together.” Varanasi, the city that is more than just the spiritual capital of India. The city which can be aptly described as a melting pot where both life and death come tog",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹7,500",
+    "oldPrice": "₹5,000",
     "discount": ""
   },
   {
@@ -5712,8 +5712,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹12,800",
+    "oldPrice": "₹8,500",
     "discount": ""
   },
   {
@@ -5738,8 +5738,8 @@ export const allPackages: Package[] = [
     "route": "Arrive at Cochin",
     "description": "Kerala is an enchanting destination dotted with breathtaking landscapes, backwaters, historical locations, religious sites, and waterfalls that invite tourists for amazing trips and experiences. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,200",
+    "oldPrice": "₹2,100",
     "discount": ""
   },
   {
@@ -5842,8 +5842,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Family tour packages in India offer a wonderful opportunity for families to explore the diverse and culturally rich country together. These packages are specifically designed to cater to the needs and preferences of families, providing a hassle-free and enjoyable vacation experience. With a wide range of destinations and activities to choose from, India offers something for every member of the family.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹13,000",
+    "oldPrice": "₹8,700",
     "discount": ""
   },
   {
@@ -5907,8 +5907,8 @@ export const allPackages: Package[] = [
     "route": "Cochin and Sightseeing",
     "description": "Kerala is an amalgam of the very best of nature. The coconut palm trees, the houses made of red tiles, and the beautiful lakes and beaches will remain forever in every visitor’s heart. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,200",
+    "oldPrice": "₹2,100",
     "discount": ""
   },
   {
@@ -6349,8 +6349,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Gandhinagar, the capital city of Gujarat, is a prominent urban center known for its modern infrastructure, vibrant culture, and rich history. Established in 1960, it was named after Mahatma Gandhi, reflecting its association with India's independence movement. This city is not only a political hub but also a center for education, technology, and commerc",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹18,800",
+    "oldPrice": "₹12,500",
     "discount": ""
   },
   {
@@ -6427,8 +6427,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "The glistening white temple dedicated to goddess Ganga graces the bank of the gushing Bhagirathi River in Devbhoomi Uttarakhand. Being a crucial part of the holy Char Dham Yatra annual pilgrimage of India it is located in one of the most scenic and beautifully soothing regions of India. Gangotri tour packages play a vital role in witnessing the incredible spiritual aura of the pilgrimage to the utmost level. Reaching this humble temple when it opens for Darshan after remaining buried under snow",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹33,800",
+    "oldPrice": "₹22,500",
     "discount": ""
   },
   {
@@ -6453,8 +6453,8 @@ export const allPackages: Package[] = [
     "route": "Dehradun – Gangotri",
     "description": "As the name suggests Gangotri dham is dedicated to goddess Ganga who had made her way to earth after heavy penance performed by King Bhagirath. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹7,500",
+    "oldPrice": "₹5,000",
     "discount": ""
   },
   {
@@ -6466,8 +6466,8 @@ export const allPackages: Package[] = [
     "route": "Delhi - Haridwar → Haridwar - Uttarkashi → Gangotri Darshan → Uttarkashi - Rishikesh → Rishikesh - Delhi",
     "description": "The Gangotri Yatra from Delhi is a sacred pilgrimage to the holy Gangotri Temple , located in the Uttarkashi district of Uttarakhand and dedicated to Goddess Ganga. It is one of the most important shrines of the Chhota Char Dham Yatra, attracting devotees from across India.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹36,800",
+    "oldPrice": "₹24,500",
     "discount": ""
   },
   {
@@ -6492,8 +6492,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Lush valleys of tall green trees, narrow winding paths overlooked by the snowbound Himalayan peaks, clear blue skies, and an omnipresent vibe of deep spirituality are what the holy pilgrimage town of Gangotri is all about. Gangotri tourism is primarily centered around the visit to the holy temple of Gangotri Dham, which forms a major part of the holy Chhota Char Dham Yatra of Uttarakhand . The temple of Gangotri is placed on the bank of the holy Bhagirathi River, which, according to legend, is t",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹33,800",
+    "oldPrice": "₹22,500",
     "discount": ""
   },
   {
@@ -6518,8 +6518,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Searching for the perfect Gangtok tour packages for your family or friends? Or want to book the best Gangtok trekking collections? Then NamasteIndiaTrip is the right choice for you. We have added top tourist attractions in our tour packages for Gangtok at affordable prices. You can go through our creative Gangtok travel itineraries to plan for your Gangtok trip. Our Gangtok packages include various tourist attractions like Nathu La Pass, Rumtek Monastery, Tsomgo Lake, Kanchenjunga, Mangan, Do Dr",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹21,000",
+    "oldPrice": "₹13,999",
     "discount": ""
   },
   {
@@ -6544,8 +6544,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Gaya is a significant pilgrimage destination for Hindus and Buddhists. It is primarily known for its association with the rituals and ceremonies performed for the salvation of ancestors. Our Gaya tour packages offer a unique opportunity to explore the religious and cultural heritage of the city. Gaya itineraries often include a visit to this temple, allowing travellers to participate in the religious customs and seek blessings. You will also visit nearby attractions such as Barabar Caves, Dunges",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹31,000",
+    "oldPrice": "₹20,700",
     "discount": ""
   },
   {
@@ -6557,8 +6557,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Nestled in the northwestern state of Bihar, Gaya is one of the most popular pilgrimage places that resonates with cultural and religious significance. Gaya’s tourism is rooted in deep legends and stories of Lord Rama and Lord Buddha. It is a must-visit place for spiritually inclined travellers. This serene spiritual hub is about history, culture, and sacred rituals. As you explore the streets of Gaya, you will see many pilgrims seeking a profound blend of spirituality and cultural heritage. Ther",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹31,000",
+    "oldPrice": "₹20,700",
     "discount": ""
   },
   {
@@ -6609,8 +6609,8 @@ export const allPackages: Package[] = [
     "route": ": Goa Arrival → North Goa Exploration → South Goa → In Goa → Goa",
     "description": "Browse our well-thought-out 5-day Goa tour package that aims to provide travel enthusiasts with an ideal mix of comfort, leisure, and experiential journeys. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,200",
+    "oldPrice": "₹2,100",
     "discount": ""
   },
   {
@@ -6622,8 +6622,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Goa is a treat all year round since it boasts of magical tropical monsoon climate conditions. Replete with lush green foliage and home to a hot pot of a variety of flora and fauna, it is also the perfect getaway for relaxing vacation. Whether you are a family, honeymoon couple, solo traveller or adventurer, Our Goa Tour Packages are a feast of senses. So, don't wait to have a fun-filled vacay with your loved ones. Book our travel packages to enjoy the best deals and discounts on Goa Holidays.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹14,800",
+    "oldPrice": "₹9,900",
     "discount": ""
   },
   {
@@ -6648,8 +6648,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Goa is all about pine tree-lined roads, scenic beaches, and creating thrilling and memorable experiences that remain close to your heart for a long time. Traveling to Goa is all about opening up your heart and mind to the welcoming smiles of the locals, trying out delicious local Goan cuisines, and of course, indulging in sightseeing activities and adrenaline-pumping adventure activities. Unlike popular opinion, Goa is open for everyone to visit and fall in love with it.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹14,800",
+    "oldPrice": "₹9,900",
     "discount": ""
   },
   {
@@ -6661,8 +6661,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Haldwani / Kathgodam → Dharchula → Gunji → Kalapani → Navidhang → Kuti → Jollingkong → Adi Kailash",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,800",
+    "oldPrice": "₹1,200",
     "discount": ""
   },
   {
@@ -6674,8 +6674,8 @@ export const allPackages: Package[] = [
     "route": "Delhi Arrival → Delhi City Tour → Delhi – Agra → Agra – Jaipur → Jaipur City Tour → Jaipur – Goa / By Flight",
     "description": "India tourism with its foggy hill stations, captivating beaches, historical monuments, golden deserts, serene backwaters, pilgrimage sites, rich wildlife, and colorful fairs capture the heart of every tourist.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,800",
+    "oldPrice": "₹1,200",
     "discount": ""
   },
   {
@@ -6687,8 +6687,8 @@ export const allPackages: Package[] = [
     "route": "Arrive Delhi Sightseeing Tour → Delhi - Mathura – Agra → Agra Sightseeing tour - Jaipur → Jaipur Sightseeing – Delhi",
     "description": "The 4 days Golden Triangle Tour is a popular and exciting trip which covers Delhi, Agra and Jaipur in a short period. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,800",
+    "oldPrice": "₹2,540",
     "discount": ""
   },
   {
@@ -6700,8 +6700,8 @@ export const allPackages: Package[] = [
     "route": "Delhi → Delhi to Agra → Agra to Jaipur → A whole day trip in Jaipur City → Jaipur Departure",
     "description": "Our Indian culture is filled with varieties of history, which sounds interesting. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,500",
+    "oldPrice": "₹2,350",
     "discount": ""
   },
   {
@@ -6713,8 +6713,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "The Golden Triangle Trip is a unique journey that takes you to the culturally rich cities of Delhi, Agra, and Jaipur. This triangle-shaped trip is perfect for you if you want to see the country in its old glory. We are talking about its rich architecture, the majestic forts, and vibrant markets! This tour will have you stroll through the narrow lanes and iconic landmarks equally! Book My Quick Trippers's Golden Triangle Tour Packages now and experience the real India.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,800",
+    "oldPrice": "₹1,200",
     "discount": ""
   },
   {
@@ -6726,8 +6726,8 @@ export const allPackages: Package[] = [
     "route": "Delhi → Sightseeing in Delhi → Delhi to Agra → Jaipur to Agra → Jaipur sightseeing → Jaipur - Delhi",
     "description": "The Golden Triangle trip takes you on an exciting journey to the three famous cities in India such as Delhi, Agra, and Jaipur. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹5,200",
+    "oldPrice": "₹3,500",
     "discount": ""
   },
   {
@@ -6752,8 +6752,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "As we reminisce about the hundreds of trips we have organized across the culturally rich terrains of our nation, group tour departures are our favorite! There’s something extraordinary about being part of a cohort seeking the same goal, and sharing the pleasures and perils of a journey as one family. They say everyone we meet is brought together by the invisible ties of destiny.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹37,400",
+    "oldPrice": "₹24,900",
     "discount": ""
   },
   {
@@ -6843,8 +6843,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "So, you’re planning a trip to the ‘Jewel of the West’- Gujarat? Our Gujarat Tour Packages will showcase all the fascinating wonders of Gujarat at the best price. If you are thinking about spending some fun moments in the white salt desert under the full moon, viewing the hills of Palitana, royal places of Vadodara, or listening to the majestic Asiatic lions, then yes, you are viewing perfect Gujarat tour itineraries to make your holidays memorable with My Quick Trippers, one of the best trips of",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹10,500",
+    "oldPrice": "₹6,999",
     "discount": ""
   },
   {
@@ -6869,8 +6869,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "The westernmost, the coastal state of India Gujarat, is one of the most stunning oasis for travellers, spiritual seekers and offbeat places explorers. It is a goldmine for visitors from all over the world since it is home to the grand salt desert of Rann Kutch to the holy places of worship like Somnath Jyotirlinga and Dwarkadhish Temple. Apart from this Gujarat is also the final home for the endangered species of Asiatic lion in Gir National Park and the beaches here sure offer a tranquil getawa",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹10,500",
+    "oldPrice": "₹6,999",
     "discount": ""
   },
   {
@@ -6908,8 +6908,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹40,500",
+    "oldPrice": "₹27,000",
     "discount": ""
   },
   {
@@ -6934,8 +6934,8 @@ export const allPackages: Package[] = [
     "route": ": Arrival and Welcome in Thrissur → Exploring Athirapally Falls and Departure",
     "description": "The Guruvayur - Thrissur - Athirapally Tour Package takes the best out of a two-day plan of spiritual exploration and natural adventure. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹4,600",
+    "oldPrice": "₹3,100",
     "discount": ""
   },
   {
@@ -6947,8 +6947,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Go on this 4-day Guwahati–Shillong–Cherrapunji–Mawlynnong tour, which is designed by our expert travel team! With our well-crafted itinerary, you get to visit all the prime attractions in the places that we’ll be visiting. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,500",
+    "oldPrice": "₹2,350",
     "discount": ""
   },
   {
@@ -6973,8 +6973,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹30,000",
+    "oldPrice": "₹20,000",
     "discount": ""
   },
   {
@@ -7012,8 +7012,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -7025,8 +7025,8 @@ export const allPackages: Package[] = [
     "route": "HANOI ARRIVAL → HANOI - HALONG BAY → FLY TO DANANG - HOI AN → Full-Day Ba Na Hills Excursion → Fly To Ho Chi Minh - Cu Chi Tunnel → Mekong Delta",
     "description": "Book our Hanoi Danang Ho Chi Minh City Tour package and you're guaranteed to see the best of Vietnam. Your journey will begin from the cultural capital of Hanoi itself! Marvel at the ancient temples, colonial architecture, and beautiful lakesides that are its star attractions. Also, enjoy the luxe cruise across the Halong Bay which is beautifully surrounded by majestic emerald waters. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹4,200",
+    "oldPrice": "₹2,800",
     "discount": ""
   },
   {
@@ -7038,8 +7038,8 @@ export const allPackages: Package[] = [
     "route": "Hanoi - Halong Bay Day cruise - Hanoi  - SIC → Da Nang - Bana Hills - Golden Bridge - Da Nang  - SIC → Da Nang departure  - No guide",
     "description": "The 5 day Hanoi - Halong - Da Nang - Hoi An tour will take you through Vietnam's most vibrant cities and have you witness the age-old heritage in one single trip! Your tour will begin from the bustling city of Hanoi itself! This is the cultural heartland of the country, and you'll see everything here from ancient temples to serene lakes to lively markets. This city is a living example where history meets modern charm. Take it all in before you start cruising for Halong Bay, which is all surround",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹4,800",
+    "oldPrice": "₹3,200",
     "discount": ""
   },
   {
@@ -7051,8 +7051,8 @@ export const allPackages: Package[] = [
     "route": "Hanoi - Halong Bay - Return to Hanoi → Hanoi - Fly to Saigon - Half Day City Tour → Saigon - My Tho - Saigon → Saigon Departure",
     "description": "Explore the beauty and culture of Vietnam with this Hanoi Halong Saigon My Tho Tour Package . The journey starts from Hanoi, one of the favorite spot of every visitor. The main highlight here is Hoan Kiem Lake. The night view is completely amazing here, with colorful lights and a peaceful atmosphere. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,900",
+    "oldPrice": "₹2,600",
     "discount": ""
   },
   {
@@ -7064,8 +7064,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Travelling to Vietnam feels like turning the pages of an enchanting fairytale storybook. Our Hanoi-Ninh Binh-Halong-Da Nang-Hoi An Tour is an escape to some of the most serene corners of Vietnam. Your journey will start from the heart of Hanoi, where you tread the ancient halls of the Temple of literature and feel the delightful rush of trains passing just a foot away at the Train Street. Isn't it enchanting? The trail does not stop here. After the train view, you will visit the peaceful country",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹5,400",
+    "oldPrice": "₹3,600",
     "discount": ""
   },
   {
@@ -7103,8 +7103,8 @@ export const allPackages: Package[] = [
     "route": "Delhi - Dehradun → Dehradun - Mussoorie → Mussoorie - Dhanaulti - Rishikesh - Haridwar → Haridwar - Delhi",
     "description": "Experiencing the Haridwar Rishikesh Mussoorie Dhanaulti tour and see what makes this journey unique. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,200",
+    "oldPrice": "₹2,100",
     "discount": ""
   },
   {
@@ -7116,8 +7116,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Delhi - Rishikesh – Delhi",
     "description": "Then book our one day Haridwar Rishikesh Sightseeing Tour Package . This same-day trip packs all the must-visit locations in these two holy cities. Whether it’s watching the ever-so-pleasant Ganga Aarti at Har ki Pauri, enjoying the famous Jhulas of Rishikesh, or a refreshing stroll along the riversides, this trip checks all the boxes for a nice little pilgrimage tour.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹6,000",
+    "oldPrice": "₹4,000",
     "discount": ""
   },
   {
@@ -7129,8 +7129,8 @@ export const allPackages: Package[] = [
     "route": "Haridwar from Delhi → Haridwar – Dehradun - Mussoorie → Mussoorie - Dehradun - Rishikesh → Rishikesh – Haridwar - Delhi",
     "description": "Get ready for a spiritually uplifting journey to nurture your mind with the healing touch of divine in Haridwar and Rishikesh with scenic views of majestic Himalayan peaks and Shivalik ranges. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -7155,8 +7155,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Established on the banks of the River Ganges, Haridwar is a holy city located in the state of Uttarakhand. It's a widely held belief that taking a dip in the sacred River Ganga here makes one free from all committed sins. In addition, devotees come here to receive the blessings of the Goddess Ganga in order to lead a life full of prosperity and happiness. If you too want to seek the blessings of the Goddess Ganga, then check out My Quick Trippers's well-crafted Haridwar Tour Packages and set out",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -7168,8 +7168,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Welcome to the enchanting city of Haridwar. Cradled in the embrace of the Himalayan foothills. It’s not just a destination; it’s an invitation to a world where spirituality, history, and nature dance together. As you step into this ancient land, get ready for a journey that will weave unforgettable stories into the fabric of your soul. Feel the heartbeat of Haridwar as you witness the Ganga Aarti – a magical ritual where the river glows with countless oil lamps, and ancient hymns echo in the air",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -7181,8 +7181,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -7226,8 +7226,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Have you been searching for the most reliable Helicopter packages in India to carry you afloat the azure skies to the hidden gems in the majestic Himalayan ranges? Well, look no further! Our customized Helicopter packages present as diverse choices for your travel as the manifold hues of your moods.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹37,400",
+    "oldPrice": "₹24,900",
     "discount": ""
   },
   {
@@ -7239,8 +7239,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Hosted at Prayagraj this year, the Maha Kumbh Mela is one of the biggest spiritual gatherings in the whole world! The festival marks the physical beings’ pursuit of the divine and liberation from the cycle of birth and death. A helicopter ride to Maha Kumbh is a unique way to experience the heavenly congregation. You get to take in the beautiful aerial views of the magnificent festival, all from the comfort of your joyful helicopter ride! The Maha Kumbh Helicopter Yatra is also a great option fo",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,000",
+    "oldPrice": "₹1,300",
     "discount": ""
   },
   {
@@ -7343,8 +7343,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "When it comes to some of the most beautiful destinations in India, Himachal Pradesh appears as the crowning jewel of India. Our Himachal Tour Packages offer a comprehensive tour to explore the stunning beauty, culture and heritage of Himachal Pradesh in a most hassle-free manner. From enchantingly holy sites like Hadimba Devi, Bijli Mahadev, Manikaran Sahib to taking a fun ride on the UNESCO world heritage railway line of Shimla toy train journey, Himachal Pradesh embraces every traveler with op",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹9,000",
+    "oldPrice": "₹6,000",
     "discount": ""
   },
   {
@@ -7382,8 +7382,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "India is the birthplace of Hinduism with a majority of Hindu population (almost 80%) residing the country presently. Ever since the beginning of time, this colorful subcontinent has always been referred to as one of the holiest lands to ever exist on the face of the earth. With numerous mythological accounts and legends depicting that once this place was walked upon by gods and goddesses themselves, it is no doubt that India has a plethora of holy shrines and temples dedicated to any and every g",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹13,000",
+    "oldPrice": "₹8,700",
     "discount": ""
   },
   {
@@ -7395,8 +7395,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "A city as old as time itself. A city that has stayed in place and watched as the world has turned and the tides have changed. A city that has stood the test of time for thousands of years. In the words of Mark Twain, “Older than history, older than tradition, older even than legend, And looks twice as old as all of them put together.” Varanasi, the city that is more than just the spiritual capital of India. The city which can be aptly described as a melting pot where both life and death come tog",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹4,200",
+    "oldPrice": "₹2,800",
     "discount": ""
   },
   {
@@ -7421,8 +7421,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Maldives is a charming little island nation that spans across the equator. This collection of 1192 islands in the Indian Ocean is a magical paradise. The clear, azure blue skies stretching as far as the eyes can see, the clear waters and stunning villas for accommodation, Maldives is a place like no other. Let go of your worries and leave it all behind by exploring the island nation that is packed with some of the most interesting adventures and experiences waiting to happen. The perfect destina",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹27,800",
+    "oldPrice": "₹18,500",
     "discount": ""
   },
   {
@@ -7486,8 +7486,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "For newly wedded couples there is nothing like a specialized and custom honeymoon tour package.When it comes to honeymoon destinations, there is no lack of bewitchingly beautiful natural places in India that can help in the blossoming of love.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹24,800",
+    "oldPrice": "₹16,500",
     "discount": ""
   },
   {
@@ -7538,8 +7538,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Hong Kong, a special administrative region of China located on the south coast of Pearl River is filled with fascinations either natural or manmade. Walking along the streets of Wan Chai or Kowloon takes us back to the history of the city along with several natural admirations. All kinds of admiration including the best parks, island escapes, and mesmerizing scenic beauty are all available here.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹255,000",
+    "oldPrice": "₹170,000",
     "discount": ""
   },
   {
@@ -7551,8 +7551,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -7668,8 +7668,8 @@ export const allPackages: Package[] = [
     "route": "Cochin- Munnar",
     "description": "If you think you’ve explored everything, then visit Kerala’s beautiful lagoons, traditional dances, calm backwaters, and welcoming people. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹7,600",
+    "oldPrice": "₹5,100",
     "discount": ""
   },
   {
@@ -7707,8 +7707,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Haldwani / Kathgodam → Dharchula → Gunji → Kalapani → Navidhang → Kuti → Jollingkong → Adi Kailash",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,800",
+    "oldPrice": "₹1,200",
     "discount": ""
   },
   {
@@ -7720,8 +7720,8 @@ export const allPackages: Package[] = [
     "route": "Delhi – Haridwar → Haridwar – Joshimath → Joshimath – Badrinath → Badrinath – Devprayag / Srinagar → Devprayag / Srinagar – Rishikesh – Delhi → Delhi – Bhubaneshwar – Puri",
     "description": "One of the most vital and extremely important pilgrimage circuits among Hindu Vaishnavites, See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹11,200",
+    "oldPrice": "₹7,500",
     "discount": ""
   },
   {
@@ -7772,8 +7772,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "East or West, North or South, India does not lack wildlife sanctuaries and wildlife parks where you can indulge your wish to be at one with nature. India is vast; so you can pick a specific region and go off on a wonderful tour into the reserves to get a firsthand view and experience of the flora and fauna. India Wildlife Tour Packages come with an enticing repertoire of wildlife tours that will make you go into the hearts of forests and explore the exotic wildlife. Kashmir is better known for i",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹28,500",
+    "oldPrice": "₹18,999",
     "discount": ""
   },
   {
@@ -7811,8 +7811,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Indore - Maheshwar - Omkareshwar - Ujjain → Ujjain - Indore -",
     "description": "If you’re looking for a spiritual visit that is abundantly laced with temple visits, trip to serene Ghats, and spending time close to the holy rivers, then this trip is for you! See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,900",
+    "oldPrice": "₹1,250",
     "discount": ""
   },
   {
@@ -7824,8 +7824,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹17,800",
+    "oldPrice": "₹11,900",
     "discount": ""
   },
   {
@@ -7915,8 +7915,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Bhubaneswar - Puri → Puri - Jagannath Temple Darshan & Local Sightseeing → Puri - Chilika Lake - Puri → Puri - Konark - Bhubaneswar → Bhubaneswar - Departure",
     "description": "Lord Jagannath seat in Puri is a place that offers total relaxation and spiritual calling. This site is well-known for its treasure of religious sanctuaries, historically-significant artifacts, architectural excellence, the amazing weather and the seaside beauty.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,000",
+    "oldPrice": "₹2,000",
     "discount": ""
   },
   {
@@ -7941,8 +7941,8 @@ export const allPackages: Package[] = [
     "route": "Arrival Delhi - Jaipur → Jaipur sightseeing and heading back to Delhi.",
     "description": "Delve on a fascinating expedition in the bewitching states of Jaipur and Delhi. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,800",
+    "oldPrice": "₹1,200",
     "discount": ""
   },
   {
@@ -7954,8 +7954,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Jaipur was founded by Sawai Raja Jai Singh and is the capital of Rajasthan. Jaipur city has evolved into a great travel attraction in India and is one of the top three cities for being acclaimed Golden Triangle Tour along with Agra, the city of Taj, and Delhi, the capital of India. While traveling Jaipur tours you can visit the historical forts, flaunting palaces, full-of-life temples, brindle bazaars, and bouncy streets that have earned a special place in the hearts of the people. The uniquenes",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹22,500",
+    "oldPrice": "₹14,999",
     "discount": ""
   },
   {
@@ -7967,8 +7967,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "A city as old as time itself. A city that has stayed in place and watched as the world has turned and the tides have changed. A city that has stood the test of time for thousands of years. In the words of Mark Twain, “Older than history, older than tradition, older even than legend, And looks twice as old as all of them put together.” Varanasi, the city that is more than just the spiritual capital of India. The city which can be aptly described as a melting pot where both life and death come tog",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹22,500",
+    "oldPrice": "₹14,999",
     "discount": ""
   },
   {
@@ -8019,8 +8019,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Gracing the westernmost coast of the Saurashtra region in Gujarat, Jamnagar is the largest city on the western coast of India. A holiday in Jamnagar will make you realize that it is one of the hidden treasure troves of the West. Having been through a rich royal past, Jamnagar is dotted with several Forts, Palaces, and Temples which are reminiscent of the amazing heritage.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹18,800",
+    "oldPrice": "₹12,500",
     "discount": ""
   },
   {
@@ -8110,8 +8110,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Japan an Asian country which is also known as “Land of Rising Sun” and whose etiquettes, manners, values and culture are inspiring other countries and now are getting adopted by many countries. The country is a perfect blend where country’s ancient tradition is nicely transfused with the modern life which gives a natural essence to the Japan’s lives. Hakone, the most visited city of Japan and is the most selected place by International tourists also is renowned for “Mount Fuji” the tallest peak",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -8149,8 +8149,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "The Grand city of Jodhpur reverberates tales of the distant past in the barrenness of the desert. Jodhpur located in Rajasthan is popularly known as “The Sun City”. It is called so because it remains bright and sunny almost throughout the year. This city was founded by Rao Jodha (a chief) in 1459, and thus got its name Jodhpur. Previously this city was known as Marwar. It is the second largest city in Rajasthan. Jodhpur was partitioned into two divisions, namely the old city and the new city. A",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -8162,8 +8162,8 @@ export const allPackages: Package[] = [
     "route": "Majuli Trip → Trip to Kaziranga National Parka → Explore Kaziranga Park → Guwahati",
     "description": "Travel straight to the heart of Assam with this 5-day Jorhat Majuli Kaziranga Tour Package ! In this trip, you’ll get to be up close with Assam‘s culture. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹5,000",
+    "oldPrice": "₹3,300",
     "discount": ""
   },
   {
@@ -8175,8 +8175,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Junagadh translates into ‘old fort’ and is an ancient town that graces the foothills of the holy hills of Girnar. My Quick Trippers Junagadh tour packages will ensure that you get to experience the best that this historical town has to offer. A holiday in Junagadh will take you on a wonderful journey across historical sites, heritage buildings, and amazing stories from the past that will remain close to your heart for a lifetime.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹18,800",
+    "oldPrice": "₹12,500",
     "discount": ""
   },
   {
@@ -8201,8 +8201,8 @@ export const allPackages: Package[] = [
     "route": "Lucknow to Nepalgunj → Mansarovar Darshan - Return to Lucknow",
     "description": "Are you one of the Shiva Bhakts who desire to witness Mount Kailash and Mansarovar once in your lifetime? See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹11,200",
+    "oldPrice": "₹7,500",
     "discount": ""
   },
   {
@@ -8214,8 +8214,8 @@ export const allPackages: Package[] = [
     "route": "Arrival Lucknow - Nepalgunj → Aerial Darshan of Kailash → Departure to Lucknow",
     "description": "Mount Kailash Aerial Yatra package is specially curated for 2 Nights and 3 days for the pilgrims See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹9,800",
+    "oldPrice": "₹6,500",
     "discount": ""
   },
   {
@@ -8227,8 +8227,8 @@ export const allPackages: Package[] = [
     "route": "Kathmandu → Kathmandu - Nepalgunj → Taklakot - Rest for the Whole Day → Drive to Mansarovar Lake → 1st Day of Parikrama → 2nd Day of Parikrama",
     "description": "Kailash Mansarovar Yatra by Helicopter fulfills your desire of visiting the holy lake Mansarovar and Mt. Kailash in a faster and easier way. This package is ideal for elders and those who are pressed for time, allowing them to experience Mount Kailash’s sacredness. This package includes a helicopter journey to Hilsa and experiencing the Kailash Mansarovar Region’s sacredness.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹7,500",
+    "oldPrice": "₹5,000",
     "discount": ""
   },
   {
@@ -8240,8 +8240,8 @@ export const allPackages: Package[] = [
     "route": "Arrive Lucknow - Nepalgunj → Nepalgunj - Simikot → Simikot - Hilsa - Purang → Purang → Purang - Mansarovar → Mansarovar - Darchen",
     "description": "The path to God-realization melts away one’s sense of ‘I’, ego-consciousness, to enable one being an empty receptacle to receive the Divine.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹7,500",
+    "oldPrice": "₹5,000",
     "discount": ""
   },
   {
@@ -8253,8 +8253,8 @@ export const allPackages: Package[] = [
     "route": "Lucknow to Nepalgunj → Nepalgunj - Simikot - Hilsa - Purang → Stay at Purang → Purang to Mansarovar Lake → Mansarovar Lake to Darchen → First Day Parikrama of Mount Kailash",
     "description": "Kailash Mansarovar Yatra Package from Lucknow takes you on a journey of spiritual awakening and liberation. Complete Kailash Parikrama with Charan Sparsh and experience the sacred vibes of Lake Mansarovar. Our packages have been designed in a way that we take care of all the inclusions, such as all ground transportation, accommodation, meals, and an experienced guide.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹7,500",
+    "oldPrice": "₹5,000",
     "discount": ""
   },
   {
@@ -8266,8 +8266,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Kailash Mansarovar Yatra is one of the most spiritually fulfilling pilgrimages for Hindu devotees in India. The sacred Mount Kailash and Lake Mansarovar in the Tibet Autonomous Region of China hold immense spiritual significance for Hindu, Buddhist, Jain, and Bon pilgrims alike. Our Kailash Mansarovar Yatra packages are curated with care — covering every major route and budget — to make this sacred journey accessible and comfortable.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹7,500",
+    "oldPrice": "₹5,000",
     "discount": ""
   },
   {
@@ -8305,8 +8305,8 @@ export const allPackages: Package[] = [
     "route": "Arrive Delhi – Drive to Kainchi Dham → Morning at Kainchi Dham – Sightseeing in Nainital → Nainital - Delhi",
     "description": "In addition, we’ll also take you for a sightseeing tour of Nainital. In this 2 Nights and 3 Days Kainchi Dham tour package from Delhi , you can seize a once-in-a-lifetime experience with a cozy stay at well-appointed nearby accommodation along with delicious vegetarian meals. Additionally, you can access the local cultural experience by visiting the nearby markets, temples and villages.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,600",
+    "oldPrice": "₹2,400",
     "discount": ""
   },
   {
@@ -8318,8 +8318,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Our Kainchi Dham Tour Package offers a spiritual Yatra to the revered Ashram of Neem Karoli Baba in the Kumaon hills of Uttarakhand . Devotees from all over the world come here to seek the divine blessings of Maharaj Ji. The complex also houses many other deities such as Lord Rama and Hanuman.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,000",
+    "oldPrice": "₹2,026",
     "discount": ""
   },
   {
@@ -8331,8 +8331,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Guwahati - Museum & Brahmaputra Evening → Kamakhya Darshan + Guwahati Sightseeing + Departure",
     "description": "Witness the sacred temples resting on the lap of Nilachal Hills and experience the beauty of Northeast India with our well-crafted 2-day Kamakhya Temple tour package. The package includes comfortable hotel stays, daily breakfast, guided sightseeing, and safe AC transfers - ensuring a completely hassle-free pilgrimage journey. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹8,500",
+    "oldPrice": "₹5,650",
     "discount": ""
   },
   {
@@ -8383,8 +8383,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Explore the beauty of Kanyakumari through our meticulously crafted Kanyakumari Tour Packages at the best price. From top-rated hotels and meals to guided tours and transportation, we will handle the entire travel logistics so that you can freely enjoy the delightful shores of Kanyakumari Beach, take a holy dip in Triveni Sangam, see the Thiruvalluvar Statue, and many more attractions without any stress to get insights into the rich history and cultural heritage of the region.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹23,200",
+    "oldPrice": "₹15,500",
     "discount": ""
   },
   {
@@ -8396,8 +8396,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "If you have never been to Karnataka, a beautiful state nestled in the Southwestern region of India then check out the well-crafted Karnataka tour Packages offered by My Quick Trippers and enjoy your vacation to the utmost level. Karnataka Tourism experience ranges from magnificent heritage sites, lush hill stations, vibrant cultural festivals, to thrilling wildlife adventures which makes it one of the most sought-after travel destinations in India. It is also famous for its cultural offerings, i",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹23,200",
+    "oldPrice": "₹15,500",
     "discount": ""
   },
   {
@@ -8448,8 +8448,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Himachal Pradesh or the crowning gem of India is filled with explored and unexplored hamlets. From the dry treeless jagged landscape to the thriving rich green-covered rolling hills there is no dearth of places for one to indulge in. Kasauli is one such gorgeous cantonment town on the scenic hills of Solan district. Although established by the British Raj in 1842 it has become a hub of tourism in India. Being well connected and home to several ideal sightseeing options a fun-filled memorable tim",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹40,500",
+    "oldPrice": "₹27,000",
     "discount": ""
   },
   {
@@ -8461,8 +8461,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Kashi",
     "description": "Kashi Gaya Prayagraj Ayodhya Naimisharanya tour takes you to places where India’s spiritual heritage and traditions are still alive. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹5,100",
+    "oldPrice": "₹3,400",
     "discount": ""
   },
   {
@@ -8474,8 +8474,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "While traveling with family, nothing can be better than a memorable holiday on the hills. Our Kashmir Tour Packages are all about having a deeply immersive experience in the land where God meets nature. Travelers, explorers, and spiritual leaders have continually found Kashmir a deeply intriguing holiday destination that represents a combination of natural beauty and innate spirituality. In our Kashmir itineraries, you will get a chance try out delicious authentic Kashmiri cuisines, explore the",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹22,500",
+    "oldPrice": "₹15,000",
     "discount": ""
   },
   {
@@ -8487,8 +8487,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Ever since the ancient ages, Kashmir has always attracted not only lovers of nature but also sages and philosophers. Made out of green high Himalayan fields, gushing clear river water, and unmatched serenity, it has rightly been described as a ‘heaven on earth’ time and again. Glorified by the beauty of the greater Himalayan and Pir Panjal Mountain Ranges, this picturesque state will put Switzerland to shame.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹22,500",
+    "oldPrice": "₹15,000",
     "discount": ""
   },
   {
@@ -8500,8 +8500,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Kasol is a quaint hamlet resting on the lap of the Himalayas by the holy Parvati River and blessed with a serene environment. Famous for its hippie culture the spirituality here is evident owing to the presence of Manikaran Gurudwara. Colorful markets, the constant sound of the gushing river, hot water springs, and over overlooking lush mountains are every traveler’s dream come true. Zig-zagging your way through the hiking and trekking trails and getting really in touch with nature is something",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹40,500",
+    "oldPrice": "₹27,000",
     "discount": ""
   },
   {
@@ -8526,8 +8526,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Step ahead and tick all the must-visit landmark destinations in Kathmandu and other temple sites of Nepal in one go with our all-inclusive Kathmandu Tour Packages. Cover essential sightseeing spots in Kathmandu, the famous Pashupatinath Temple, and other heritage architecture at Durbar Square, a UNESCO World Heritage site. Most of our Kathmandu travel packages include hotel accommodation, transportation, meals, and sightseeing at all places. So, don't miss any opportunity to mingle with locals a",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -8539,8 +8539,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "A city as old as time itself. A city that has stayed in place and watched as the world has turned and the tides have changed. A city that has stood the test of time for thousands of years. In the words of Mark Twain, “Older than history, older than tradition, older even than legend, And looks twice as old as all of them put together.” Varanasi, the city that is more than just the spiritual capital of India. The city which can be aptly described as a melting pot where both life and death come tog",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -8552,8 +8552,8 @@ export const allPackages: Package[] = [
     "route": "Elephant and Jeep Safari in Kaziranga Park → Temple Visit and Departure",
     "description": "Welcome to the Kaziranga National Park! If you’re into wildlife even remotely, then you must come here. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,400",
+    "oldPrice": "₹1,600",
     "discount": ""
   },
   {
@@ -8565,8 +8565,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Dehradun → Visit Kedarnath → Visit Badrinath → Return to Dehradun",
     "description": "The Badrinath Kedarnath Yatra holds a special place in the hearts of Hindu pilgrims. Both the temples have immense spiritual significance and it’s no wonder many devotees take the Do Dham Yatra from Dehradun every year.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹217,500",
+    "oldPrice": "₹145,000",
     "discount": ""
   },
   {
@@ -8578,8 +8578,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Planning a trip to Kedarnath Temple ? Whether it’s your first time or you’ve been before, it’s normal to have a lot of questions—about registration, the best route, weather conditions, or where to stay.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,600",
+    "oldPrice": "₹1,100",
     "discount": ""
   },
   {
@@ -8617,8 +8617,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Lakhs of devotees make their way through the treacherous and challenging terrain of the Garhwal Himalayas to offer their prayers in Kedarnath . Darshan of Baba Kedar at the temple is free of cost. There are many people who come to Kedarnath with the intention of performing some puja rituals. This special puja is done with the help of the head priest at the temple.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,900",
+    "oldPrice": "₹1,270",
     "discount": ""
   },
   {
@@ -8643,8 +8643,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Dedicated to Lord Shiva, Kedarnath is the most challenging journey in all of the Char Dham Yatra temples . It is said that for every Hindu devotee, the Darshan of Lord Kedarnath is a must. Blessed are the people who get a chance to undertake the challenging journey to Baba Kedar once in a lifetime. Our Kedarnath Yatra Tour packages can fulfill your auspicious dream of landing at the sacred abode of Baba Kedar.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -8656,8 +8656,8 @@ export const allPackages: Package[] = [
     "route": "Dehradun - Kedarnath",
     "description": "Kedarnath, one of the most revered shrines of Lord Shiva, is nestled in the great Himalayas at 3,583 metres above sea level. The gorgeous shrine is surrounded by snow-capped mountains and magnificent glaciers that add to its charm and spiritual glory. Kedarnath Dham is among the 12 Jyotirlingas and here the deity is worshipped in an unusual pyramidal-shaped lingam. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,800",
+    "oldPrice": "₹1,212",
     "discount": ""
   },
   {
@@ -8669,8 +8669,8 @@ export const allPackages: Package[] = [
     "route": "Delhi to Haridwar → Haridwar to Guptkashi → Guptkashi - Kedarnath - Guptkashi → Guptkashi to Haridwar via Rishikesh → Haridwar to Delhi",
     "description": "Kedarnath Yatra is considered to be one of the most famous pilgrimage circuits in Uttarakhand. Known for its divine power and astonishing beauty, Kedarnath is a dream destination for nature lovers and spiritual enthusiasts. Kedarnath is a Panch Kedar of Lord Shiva and one among the twelve Jyotirlingas. Every year, millions of devotees embark on the Kedarnath Yatra Package from Delhi to seek Lord Shiva's blessings.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,800",
+    "oldPrice": "₹2,500",
     "discount": ""
   },
   {
@@ -8682,8 +8682,8 @@ export const allPackages: Package[] = [
     "route": "Haridwar – Guptkashi → Guptkashi – Kedarnath – Guptkashi → Guptkashi – Haridwar",
     "description": "Discover Kedarnath's rich cultural heritage and spiritual vibes with our well-crafted Kedarnath Yatra Package from Haridwar that has been curated by our experts. Kedarnath is dotted with many natural attractions and spiritual sites.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹15,000",
+    "oldPrice": "₹9,999",
     "discount": ""
   },
   {
@@ -8695,8 +8695,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Kedarnath is a holy, ancient place of Hindu worship where lord shiva is worshipped in the form of the king of the Kedar region. Located on the bank of the holy river of Mandakini, this temple is a primary and major pillar of the holy Char Dham Yatra along with Badrinath , Gangotri , and Yamunotri . Placed in the scenic district of Rudraprayag in the holy state of Devbhumi Uttarakhand , Kedarnath is famous for being the place that was built by the Pandava brothers, making it incredibly pious to t",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,500",
+    "oldPrice": "₹1,000",
     "discount": ""
   },
   {
@@ -8786,8 +8786,8 @@ export const allPackages: Package[] = [
     "route": "Cochin → Cochin- Munnar → Munnar Sightseeing → Cochin - Thekkady → Thekkady - Alleppey → Alleppey - Kovalam",
     "description": "Kerala is a magnificent masterpiece of nature, enriched with the cultures and traditions of the local folks. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹6,200",
+    "oldPrice": "₹4,100",
     "discount": ""
   },
   {
@@ -8812,8 +8812,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Kerala is one of the most famous tourist spot in South India. The backwaters, wonderful heritage, and Kerala’s beauty will make your holiday relaxing and enjoyable. This place has everything that travelers love, like waterfalls, tree houses, beaches, scenic views and more. Kerala is also called ‘the land of coconuts’ because coconut trees are found everywhere and an important part of the local culture and daily life.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹21,800",
+    "oldPrice": "₹14,500",
     "discount": ""
   },
   {
@@ -8825,8 +8825,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "On Kerala tour package from Chennai you will see green hills, enjoy calm backwaters and make memories with your family and friends. People from many countries visit here to enjoy its beautiful beaches, wildlife parks, old temples and tasty food.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹21,800",
+    "oldPrice": "₹14,500",
     "discount": ""
   },
   {
@@ -8838,8 +8838,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Kerala is the land of peaceful backwaters, green tea gardens and beautiful beaches along the Arabian Sea. It is famous for unique art and dance traditions. Visitors can enjoy beautiful views at Kovalam Beach, go on an adventurous hike in Munnar, or they can take a walk in Kochi. Kerala has many attractions for visitors and therefore, it is the best holiday destination for many tourists.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹21,800",
+    "oldPrice": "₹14,500",
     "discount": ""
   },
   {
@@ -8851,8 +8851,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Kerala is listed among the top ten state in the world by National Geographic for its natural beauty. There are multiple reasons to book a Kerala tour because of its scenic beauty, tea gardens, sandy beaches, and rich heritage. Visitors can enjoy beaches during the day and cultural programs in the evening. Houseboat rides on the backwaters are famous and give unique experiences in Kerala. There are some of the top places in Kerala known for their backwater rides and scenic beauty like Alleppey, K",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹21,800",
+    "oldPrice": "₹14,500",
     "discount": ""
   },
   {
@@ -8864,8 +8864,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Kerala’s cultural heritage, amazing destinations and traditions make it the best travel spot in India. Both domestic and international tourists visit Kerala to see its natural beauty. Our Kerala tour packages from Mumbai offer endless activities and sights to enjoy. Visitors can explore the beauty of Kerala with sunny hills, gardens, mysterious lagoons, beautiful views and more. Kerala is also called the ‘Spice Garden of India’ because it is popular for producing different types of spices.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹21,800",
+    "oldPrice": "₹14,500",
     "discount": ""
   },
   {
@@ -8877,8 +8877,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Kerala is known for its charm and it is the dream destination for many travelers. Whenever you visit, it is filled with green landscapes and beautiful sights. This place is truly attractive with its hill stations, backwaters, unique beaches, and waterfalls that always attract visitors. This state is called the center of Indian Ayurveda, where people from around the world visit here for its ancient healing treatments.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹21,800",
+    "oldPrice": "₹14,500",
     "discount": ""
   },
   {
@@ -8890,8 +8890,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Visit the beautiful Kerala, which is considered \"God's Own Country\". Whether it's its lush green landscapes, serene backwaters, or mist-covered hill stations, Kerala sure has a lot to impress its tourists. To avail a smooth and luxurious trip here, book our Kerala Tour Packages from Pune. Enjoy a real date with nature while we take care of all the travel logistics for you - meals, accommodation, and transport. To have a perfectly relaxing getaway here, contact us today!",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹21,800",
+    "oldPrice": "₹14,500",
     "discount": ""
   },
   {
@@ -8903,8 +8903,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Kerala is a wonderful destination because there’s always something special to explore. Visiting this place is a dream for many travelers, as it is filled with scenic views, tall palm trees, amazing beaches, peaceful backwaters and many more. Tourists can enjoy boating on the lake while exploring the beautiful views. Additionally they can also go hiking, try paragliding, and enjoy water sports.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹21,800",
+    "oldPrice": "₹14,500",
     "discount": ""
   },
   {
@@ -8916,8 +8916,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Kerala is one of the top holiday destinations in India. This beautiful state in South India is famous for its unique houseboat rides, peaceful backwaters, historical places, lovely lakes, and wildlife parks. Tourists can also enjoy traditional dance performances like Kathakali, which is among Kerala's most celebrated art forms. Kerala is not only great to explore but also a perfect place for food lovers. Some dishes visitors should try: Sadya, Appam with stew, Puttu, and Kadala curry.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹7,500",
+    "oldPrice": "₹5,000",
     "discount": ""
   },
   {
@@ -8942,8 +8942,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Home to the magnificent 600 km long shoreline of Arabian sea and gracing the tropical Malabar Coast of India, Kerala is truly every traveler’s dream destination and if not you must definitely include in your bucket list. When one thinks of Kerala people normally think of the shoreline and beaches lined by the lush green palm trees, peaceful houseboats on the backwaters and of course the glimmering water of the canals. Kerala tourism attracts travel enthusiasts from all over the world with varied",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹7,500",
+    "oldPrice": "₹5,000",
     "discount": ""
   },
   {
@@ -8955,8 +8955,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Khajjiar represents the best of Himalayan biodiversity. Dotted with forests of Deodar and vast expansive meadows, this hill station in Himachal Pradesh is every nature lover’s dream come true. Lined with thick forest cover, rolling green pastures, and refreshing air it is one of the top destinations for family getaways and extended weekend staycation. Over some time, Khajjiar has become the epitome of what real-time natural beauty should look like. It is one place where peace, serenity, and natu",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹40,500",
+    "oldPrice": "₹27,000",
     "discount": ""
   },
   {
@@ -8981,8 +8981,8 @@ export const allPackages: Package[] = [
     "route": "Jhansi - Orchha → Khajuraho Trip: Western Group of Temples → Khajuraho Trip: Eastern Group of Temples and Departure",
     "description": "Whether it’s the majestic forts, intricate architecture, or the royal palaces, this trip has everything in it to give you a glimpse into the cultural and historical past. Moreover, the regal aura, tranquil surroundings, and the fun Light and Sound Show make it a worthwhile tour that must be undertaken at least once in your lifetime! To enjoy a smooth trip here, book our Khajuraho Orchha tour package.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,600",
+    "oldPrice": "₹1,100",
     "discount": ""
   },
   {
@@ -8994,8 +8994,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Hop on this journey to Khajuraho, which is one of the most known and visited historical sites, famous for its rich art and culture and captivating monuments and temples with stunning ancient carvings. The temples at Khajuraho are a perfect example of how ancient art meets spirituality and creates magic. Khajuraho is listed as a UNESCO World Heritage Site. You can start this journey of art and religion by visiting the popular Kandariya Mahadev Temple where you find exquisite carvings of gods and",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹30,000",
+    "oldPrice": "₹20,000",
     "discount": ""
   },
   {
@@ -9007,8 +9007,8 @@ export const allPackages: Package[] = [
     "route": "Khatu Shyam Salasar Helicopter tour Itinerary or tour Plan",
     "description": "Book our Khatu Shyam Ji & Salasar helicopter Yatra package to explore two of Rajasthan’s most sacred destinations in a hassle-free way. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹127,500",
+    "oldPrice": "₹85,000",
     "discount": ""
   },
   {
@@ -9033,8 +9033,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "The most discussed and popular hill station in India will be known to you if you are planning for a holiday tour with Kodaikanal Tour Packages. A quiet hill station in the lap of spotless Palani Hills near Madurai situated in Tamilnadu. With its forests, rocks, charming lake and refreshing air, Kodaikanal is the most attractive place that you can enjoy with Kodaikanal honeymoon packages. When you are tired of the daily routine and want a break from the heat of the plains Kodaikanal Holiday packa",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -9124,8 +9124,8 @@ export const allPackages: Package[] = [
     "route": "Same Day Gangasagar Sightseeing Tour",
     "description": "Experience the charm of the Gangasagar Mela, where many pilgrims visit this sacred site to take a holy dip. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,600",
+    "oldPrice": "₹1,100",
     "discount": ""
   },
   {
@@ -9150,8 +9150,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Konark is the perfect example of the unmatchable blend of history, culture, and beauty of nature. It is a hidden gem, located on the eastern coast of India. On this 3–4-day trip, you will get to visit the beautiful Sun Temple, which is also listed as a UNESCO World Heritage site. At Sun Temple, you will see the power of Indian ancient architecture, and those brilliant sculptures are going to blow your mind. When in Konark, you cannot miss the Chandrabhaga beach, where you get to experience the m",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -9163,8 +9163,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -9254,8 +9254,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Himachal Pradesh is the crowning jewel of India which is home to not just some of the most stunning hill escape destinations in the world. Kullu is one such hamlet that is embedded deep inside the green hills and is surrounded by the blissful Himalayan ranges. Mainly famous for its vibrant culture and warm winter clothing this is one of the best places for you to experience sheer, unadulterated bliss. The hill station is placed on the banks of Beas River which supports the thriving biodiversity",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹40,500",
+    "oldPrice": "₹27,000",
     "discount": ""
   },
   {
@@ -9267,8 +9267,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -9280,8 +9280,8 @@ export const allPackages: Package[] = [
     "route": "Prayagraj → Kumbh Snan & Excursion → Drop",
     "description": "Kumbh Mela is one of the most grand and revered religious events that draws masses from all over the world. From Shahi Snan to witnessing Triveni Sangam to being a part of a community of over a million people, the Maha Kumbh Mela offers it all.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹12,000",
+    "oldPrice": "₹8,000",
     "discount": ""
   },
   {
@@ -9306,8 +9306,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹40,500",
+    "oldPrice": "₹27,000",
     "discount": ""
   },
   {
@@ -9319,8 +9319,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Kushinagar, located in the Indian state of Uttar Pradesh, is a significant pilgrimage site for Buddhists around the world. It holds immense historical and religious importance as it is believed to be the place where Gautama Buddha attained Parinirvana, or final enlightenment, and passed away. As a result, Kushinagar attracts a large number of devotees and tourists who come to pay their respects and explore the rich Buddhist heritage of the region.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹40,500",
+    "oldPrice": "₹27,000",
     "discount": ""
   },
   {
@@ -9332,8 +9332,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "When you think about Kutch, one thing comes to mind, white salt spreads across the land, as far as the eyes can see. These extensive stretches of huge chunks of salt land cover an area of over 45,000 sq. km. making it the largest district in India. Kutch tourism is all about glorifying the rich and extravagant culture and heritage of Kutch. The best way to experience this stark white salt desert that stretches out to the mouth of the Arabian Sea is by booking one of the numerous Kutch Tour Packa",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹18,800",
+    "oldPrice": "₹12,500",
     "discount": ""
   },
   {
@@ -9371,8 +9371,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Ever since it was established as a Buddhist kingdom, the history of Ladakh can be traced back to as early as the formation of the Himalayas. With the jagged terrain, tall sandy rocky structures and inhabited by ancient locals from all across the Himalayas and even Tibet, Ladakh is not just a place it’s an experience. Ladakh tour packages are perfect for the adventurous couple looking to explore new avenues, a group of friends going on an adventure or even solo travellers looking for some peace o",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹30,800",
+    "oldPrice": "₹20,500",
     "discount": ""
   },
   {
@@ -9384,8 +9384,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "A city as old as time itself. A city that has stayed in place and watched as the world has turned and the tides have changed. A city that has stood the test of time for thousands of years. In the words of Mark Twain, “Older than history, older than tradition, older even than legend, And looks twice as old as all of them put together.” Varanasi, the city that is more than just the spiritual capital of India. The city which can be aptly described as a melting pot where both life and death come tog",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹30,800",
+    "oldPrice": "₹20,500",
     "discount": ""
   },
   {
@@ -9397,8 +9397,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Lakshadweep, a stunning archipelago in the Arabian Sea, is renowned for its breathtaking landscapes, crystal-clear waters, and vibrant marine life. Tour packages to Lakshadweep offer a gateway to this tropical paradise, allowing travellers to experience its unparalleled beauty and tranquillity.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -9449,8 +9449,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Loyalty and referral should be rewarded, we get that. So if you traveled with My Quick Trippers, or are happy to recommend My Quick Trippers to friends, or are simply referred by your friend, find the rewards below – sweet tour coupons are calling!",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹4,500",
+    "oldPrice": "₹3,000",
     "discount": ""
   },
   {
@@ -9475,8 +9475,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Lucknow is a cultural and heritage hub of India. It is a place which displays the beautiful and colorfully vibrant mosaic of the bygone era coexisting perfectly with modern developments. The narrow lanes, delicious fragrant delicacies, humble folks, and a range of heritage buildings. Going on guided city tours, shopping for your perfect Chikankaari clothes, and enjoying the general environment of culture in every corner of the city will leave a lasting impression in your heart. This magnificent",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹40,500",
+    "oldPrice": "₹27,000",
     "discount": ""
   },
   {
@@ -9488,8 +9488,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Surprisingly, the story of Lucknow began not so very long ago. Though the city traces its origin to the Suryavanshi dynasty of Ayodhya in ancient times, and derives its name from Lakshmana (the brother of Lord Rama), Lucknow actually came into prominence during the 18th century. In 1732, Muhammad Shah, one of the later kings of the once-powerful Mughal dynasty, appointed Mohammed Amir Saadat Khan, a Persian adventurer of noble lineage, to the viceroyalty of the area known as Avadh, of which Luck",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹40,500",
+    "oldPrice": "₹27,000",
     "discount": ""
   },
   {
@@ -9527,8 +9527,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹285,000",
+    "oldPrice": "₹190,000",
     "discount": ""
   },
   {
@@ -9553,8 +9553,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Located in central India, Madhya Pradesh is a land of rich heritage and breathtaking natural beauty. Book our Madhya Pradesh Tour Packages and enjoy a hassle-free trip to the heart of India! With this trip, you get pre-booked hotels, timely meals, and dedicated transport. Enjoy the royal beauty of the state and see its unique charm. Contact us today!",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹9,400",
+    "oldPrice": "₹6,250",
     "discount": ""
   },
   {
@@ -9566,8 +9566,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Delhi → Delhi → Delhi – Bhopal → Bhopal → Bhopal – Ujjain – Indore → Indore – Mandu",
     "description": "Madhya Pradesh, a city rich in history, culture, and heritage boasts a huge number of sacred temples, architectural grandeur, wildlife sanctuaries, and there are many more things to allure its tourists.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹9,400",
+    "oldPrice": "₹6,250",
     "discount": ""
   },
   {
@@ -9592,8 +9592,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Gracing the central region of the Indian sub-continent is the historical and pious Land of Madhya Pradesh which is lovingly known as ‘Hindustan Ka Dil’ or the heart of India. Over the years this state has made a gradual increase in the tourism sector. This region of the Indian landscape is varied in its relief form and serves as home to a plethora of plants and animals. The rich sprawling forest cover, Gushing River, and the incredible historical account makes this state one of a kind. Tourism i",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹9,400",
+    "oldPrice": "₹6,250",
     "discount": ""
   },
   {
@@ -9605,8 +9605,8 @@ export const allPackages: Package[] = [
     "route": "Madurai - Rameshwaram",
     "description": "The Madurai Rameshwaram tour is one of Tamil Nadu's most rewarding pilgrimage and sightseeing circuits. Four days. Two cities. And more sacred sites, living legends, and coastal beauty than most people expect. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,000",
+    "oldPrice": "₹2,000",
     "discount": ""
   },
   {
@@ -9644,8 +9644,8 @@ export const allPackages: Package[] = [
     "route": "Delhi → Sightseeing in Delhi → Delhi to Agra → Jaipur to Agra → Jaipur sightseeing → Jaipur - Delhi",
     "description": "The Golden Triangle trip takes you on an exciting journey to the three famous cities in India such as Delhi, Agra, and Jaipur. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹5,200",
+    "oldPrice": "₹3,500",
     "discount": ""
   },
   {
@@ -9670,8 +9670,8 @@ export const allPackages: Package[] = [
     "route": "Mumbai - Bhimashankar - Ahmednagar → Ahmednagar - Shani Shinganapur - Parli Vaijnath - Parbhani → Parbhani - Aundha Nagnath - Aurangabad → Aurangabad - Grishneshwar - Ellora - Shirdi → Shirdi - Nasik - Trimbakeshwar - Mumbai",
     "description": "Thinking how to visit all five holy temples in a single journey? This 5 Jyotirlinga tour package of Maharashtra makes it simple and convenient. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,800",
+    "oldPrice": "₹2,500",
     "discount": ""
   },
   {
@@ -9683,8 +9683,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Mumbai  Trimbakeshwar  Panchavati - Shirdi → Shirdi  Grishneshwar - Ellora  Shani Shingnapur  Ahmednagar → Ahmednagar  Bhimashankar  Mumbai",
     "description": "This 3 Jyotirlinga Tour of Maharashtra is designed for pilgrims who want to visit three of Lord Shiva's most revered sacred shrines in a single, well-organised journey. You will be visiting Trimbakeshwar (Nashik), Grishneshwar (Aurangabad), and Bhimashankar (Sahyadri hills) — three of the twelve Jyotirlingas of India, all located within Maharashtra. Each shrine offers its own distinct spiritual significance, architecture, and setting. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,000",
+    "oldPrice": "₹2,000",
     "discount": ""
   },
   {
@@ -9696,8 +9696,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "If you have selected Maharashtra for holidays then forget simple vacation. Maharashtra is a perfect blend of history, culture, spirituality, nature and adventure. After all, it's the third largest state of India. Our Maharashtra Tour Packages promises an unforgettable trip through a collection of places where you can get quintessential Maharashtra experience. Through our itineraries, we will show you the most authentic side of Maharashtra. Step into the ancient caves of Ajanta & Ellora, forgotte",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹12,800",
+    "oldPrice": "₹8,500",
     "discount": ""
   },
   {
@@ -9709,8 +9709,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "A city as old as time itself. A city that has stayed in place and watched as the world has turned and the tides have changed. A city that has stood the test of time for thousands of years. In the words of Mark Twain, “Older than history, older than tradition, older even than legend, And looks twice as old as all of them put together.” Varanasi, the city that is more than just the spiritual capital of India. The city which can be aptly described as a melting pot where both life and death come tog",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹12,800",
+    "oldPrice": "₹8,500",
     "discount": ""
   },
   {
@@ -9735,8 +9735,8 @@ export const allPackages: Package[] = [
     "route": "Delhi- Babaji Cave → Babaji Cave Darshan → Babaji Cave to New Delhi",
     "description": "Take a spiritual journey from Chennai to the sacred Mahavatar Babaji Cave , See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,600",
+    "oldPrice": "₹1,100",
     "discount": ""
   },
   {
@@ -9748,8 +9748,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Delhi - Kukuchina → Visit Babaji’s Cave – Ranikhet → Departure to Delhi",
     "description": "Learn about the historical prominence of Mahavatar Babaji's Cave with our 2-night 3-day package from Delhi. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,600",
+    "oldPrice": "₹1,100",
     "discount": ""
   },
   {
@@ -9813,8 +9813,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Our Malaysia Tour Packages are a haven for people who love to explore cities and different cultures. It is one of the best International Tourist destinations for Indians. Being one of the seventeenth Megadiverse countries, it has many amazing tourist attractions. Malaysia is so diverse that you'll be mesmerized by its splendor. It's made up of 13 states-Kelantan, Terengganu, Pahang, Johor, Melaka, Negeri Sembilan, Selangor, Perak, Pulau Pinang, Kedah, Perlis, Sabah and Sarawak-and three Federal",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹4,500",
+    "oldPrice": "₹3,000",
     "discount": ""
   },
   {
@@ -9852,8 +9852,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "The Indian Himalayas are a goldmine for exquisite scenic beauty. No matter which road you take or where you head to, the wonderful Himalayan ranges will never fail to fascinate. Manali is one such Himalayan hamlet. Situated on the banks of the ancient Beas River, Manali is a favourite among travel lovers. Blessed with a mystic charm and adorned with fun sightseeing locations, it has rightfully been called the queen of hills. The peaceful environment, surrounded by historical wonders and adventur",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹11,200",
+    "oldPrice": "₹7,500",
     "discount": ""
   },
   {
@@ -9878,8 +9878,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "For an all-around holiday experience ranging from spiritual getaways to off-beat adventure opportunities this iconic hill station is the gem of a place. Our Manali Tour Packages are one of a kind. We ensure that you get the best Manali experience of your lifetime. Covered in the lush greenery of pines, oaks, and deodars accompanied by rejuvenating pure air and the promise of adventure in every corner, Manali is a truly magical dream destination that everyone from anywhere should explore at least",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹7,500",
+    "oldPrice": "₹5,000",
     "discount": ""
   },
   {
@@ -9917,8 +9917,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "If you google the best hill stations of India, Manali has to be on the list, and rightly so! Manali is the crowning glory of India that is nestled in the Himalayas and attracts thousands of domestic and international tourists throughout the year. Once referred to as the ‘end of the habitable world’ Manali is filled with bountiful views and an ever-present deep-seated sense of aura which is a result of centuries of harboring sages, great thinkers and philosophers. It is a haven and a great escape",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹7,500",
+    "oldPrice": "₹5,000",
     "discount": ""
   },
   {
@@ -9930,8 +9930,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -9969,8 +9969,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Delhi - Travel to Mathura - Explore Gokul Temple → Mathura to Vrindavan → Barsana – Nandgaon – Govardhan Parikrama – Delhi",
     "description": "Are you a Lord Krishna devotee? Then this 3 day trip in the state of Uttar Pradesh is for you! Book our Mathura Gokul Barsana and Vrindavan Tour Package and visit the lands of Lord Krishna in comfort and luxury. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,800",
+    "oldPrice": "₹1,860",
     "discount": ""
   },
   {
@@ -9982,8 +9982,8 @@ export const allPackages: Package[] = [
     "route": "Delhi – Mathura – Gokul",
     "description": "Welcome to the Mathura-Gokul-Vrindavan tour! This divine trip will take you to the birthplace of Lord Krishna and so many more places that are deeply linked to him. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹4,900",
+    "oldPrice": "₹3,240",
     "discount": ""
   },
   {
@@ -9995,8 +9995,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Are you planning a spiritual journey to the sacred city of Mathura in Uttar Pradesh? Our delightful Mathura Tour Packages cover all the holy temples and famous attractions to make your divine getaway one of a kind. Revered as the birthplace of Lord Krishna, Mathura holds immense significance for Hindu devotees. The city has kept the playful antics of lord Krishna alive through generations. The Mathura Yatra covers all the main attractions like Krishna Janmabhoomi, Vishram Ghat, Lord Dwarkadhish",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,000",
+    "oldPrice": "₹2,000",
     "discount": ""
   },
   {
@@ -10008,8 +10008,8 @@ export const allPackages: Package[] = [
     "route": "Delhi – Mathura → Mathura City Darshan – Delhi",
     "description": "Lord Krishna, the most revered god, resides in Mathura and Vrindavan, the two heavenly locations on earth. These places are unlike any other places on earth in terms of spirit and environment. Every year, millions of people travel here specifically for this reason.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -10021,8 +10021,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "India is a country of immense diversity in all fields of life, starting from religious to cultural to historical. Religion has been deeply ingrained into the Indian lifestyle for as far as one can remember, which is why India abounds in cities and towns all across the country which are devoted to fulfilling spiritual desires of people who come to visit these places from far and wide. Mathura is one such place which is considered one of the most sacred lands of India, and is filled to the brim at",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,000",
+    "oldPrice": "₹2,000",
     "discount": ""
   },
   {
@@ -10053,8 +10053,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹40,500",
+    "oldPrice": "₹27,000",
     "discount": ""
   },
   {
@@ -10092,8 +10092,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Meghalaya Tour packages make it possible to experience tourist sites, delicious food, a bustling nightlife, and fantastic shopping alternatives at reasonable prices. With NamasteIndiaTrip’s Meghalaya packages, you may bask in the splendor of nature and experience fascinating regions full of magical lakes and magnificent waterfalls. We provide the greatest rates on Meghalaya vacation packages while keeping in mind the need of families, couples, friends, and elderly folks. Our Meghalaya tourism pa",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹17,000",
     "discount": ""
   },
   {
@@ -10144,8 +10144,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹21,000",
+    "oldPrice": "₹13,999",
     "discount": ""
   },
   {
@@ -10222,8 +10222,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Muktinath Tour Package takes you to one of the holiest and one of the most sacred homes of the lord of Justice or Muktinath, an incarnation of Lord Vishnu. It is said that people who make the Char Dham Yatra and miss out on visiting Muktinath Dham then their Chardham remains incomplete. Our Muktinath Travel packages not only consist of Muktinath Darshan but also guarantees a complete exploration and sightseeing of Nepal. This will allow you to have a complete and wholesome pilgrimage via helicop",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹33,000",
+    "oldPrice": "₹22,000",
     "discount": ""
   },
   {
@@ -10326,8 +10326,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Deemed for being one of the most remote yet extremely spiritual pilgrimage destination in Nepal, Muktinath is a must visit. This abode of Vishnu is visited by devotees from all over India looking to have a spiritual enlightenment amidst the untouched natural beauty. There are several things that you should know before going on Muktinath Yatra. Here is a collection of important travel guide essentials like about the temple, history related to it, how to reach, and weather conditions among a range",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹33,000",
+    "oldPrice": "₹22,000",
     "discount": ""
   },
   {
@@ -10417,8 +10417,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Munnar is one of the most popular traveler’s destinations in Kerala. It is known to be one of the finest hill stations of the southern region often called as the green paradise by traveler worldwide. It is in fact a wonderful place with velvet lawns, exotic flora and fauna surrounded by the fresh air and pleasant aroma produce from the tea cultivation hillocks. This greenish heaven is a virgin hill located in between the three confluence mountain streams giving life and charm supporting the vege",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹21,800",
+    "oldPrice": "₹14,500",
     "discount": ""
   },
   {
@@ -10430,8 +10430,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "If you are the one seeking for a memorable Mussoorie trip then check out the widest range of meticulously crafted Mussoorie Tour Packages and select the one that matches your travel preference. Whether it will be a summer or winter holiday, Mussoorie always tops the list of preferred vacation destinations. Mussoorie, “the queen of hill stations” is adorned with the snowcapped peaks of the Himalayas studded with the green lofty mountains, gorgeous valleys, and the township. If you have never been",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹16,400",
+    "oldPrice": "₹10,900",
     "discount": ""
   },
   {
@@ -10456,8 +10456,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "The hill station of Mussoorie is located in the district of Dehradun on the Garhwal Himalayan ranges of Devbhoomi Uttarakhand. Located at a comfortable distance from many big towns like Delhi, Punjab, and Haryana, and UP, this queen of hills has always been the first choice for extended weekend getaways. Ever since the British started pouring in Mussoorie and turned it into their base for recovery, healing, and relaxation, it has turned into one of the most beloved hill stations of India.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹16,400",
+    "oldPrice": "₹10,900",
     "discount": ""
   },
   {
@@ -10469,8 +10469,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Haldwani / Kathgodam → Dharchula → Gunji → Kalapani → Navidhang → Kuti → Jollingkong → Adi Kailash",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,800",
+    "oldPrice": "₹1,200",
     "discount": ""
   },
   {
@@ -10482,8 +10482,8 @@ export const allPackages: Package[] = [
     "route": "Delhi Arrival → Delhi City Tour → Delhi – Agra/ → Jaipur/ → Jaipur City Tour → Jaipur- Shahpura Bagh/",
     "description": "India tourism with its foggy hill stations, captivating beaches, historical monuments, golden deserts, serene backwaters, pilgrimage sites, rich wildlife, and colorful fairs capture the heart of every tourist. Travel through the lovely Indian states and discover closely the resplendent colors and rich cultural locales of this incredible land. Our India tourism guide provides you a glimpse of travel and tourism in India, India tourism information about south India tourism, north India tourism, an",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,800",
+    "oldPrice": "₹1,200",
     "discount": ""
   },
   {
@@ -10495,8 +10495,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -10534,8 +10534,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹40,500",
+    "oldPrice": "₹27,000",
     "discount": ""
   },
   {
@@ -10547,8 +10547,8 @@ export const allPackages: Package[] = [
     "route": "Delhi to Nainital Journey → Nainital Sightseeing → Nainital to Delhi: Today is the Day of Our Departure",
     "description": "Excited for your Nainital tour package from Delhi? Experience the charm of this beautiful hill station on our amazing 3-day trip. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,600",
+    "oldPrice": "₹1,700",
     "discount": ""
   },
   {
@@ -10560,8 +10560,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Nainital is one of the best hill stations of India. One trip here and you'll return refreshed and rejuvenated! From its misty mornings to the thrilling ropeway ride amidst the snow-covered peaks, you have a lot to enjoy here. To go on a comfortable trip here, book our Nainital Tour Packages and take a scenic & smooth ride to the ever-so-beautiful lake city!",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹9,000",
+    "oldPrice": "₹6,000",
     "discount": ""
   },
   {
@@ -10586,8 +10586,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Nainital, one of the most popular Hill stations in the Kumaon, is renowned for its picturesque landscapes and serene lakes. Its scenic beauty compels the tourists to stay here forever. While Nainital boasts numerous captivating places that have left an indelible mark on the visitors, the heartbeat of Nainital tourism undeniably revolves around Naini Lake. This serene lake stands as a central attraction of Nainital.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹9,000",
+    "oldPrice": "₹6,000",
     "discount": ""
   },
   {
@@ -10703,8 +10703,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Nepal has something for everyone. It is known for being every mountaineer and trekker's ultimate delight, every devotee's prime pilgrimage spot and every nature lover's dream come true. Our Nepal Tour Packages will take you across some of the most popular and spiritual tourist attractions which will be a whimsical blend of both historically majestic and spiritually drenched tourist spots. Our Nepal sightseeing tour will delight your soul. People who are looking to spend some time away from the e",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹22,500",
+    "oldPrice": "₹15,000",
     "discount": ""
   },
   {
@@ -10716,8 +10716,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Nepal has successfully established itself as one of the most preferred destinations for backpackers, travelers, and explorers from all over the world. Home to majestic mountains, scenic lush views, spiritual pilgrimages, and unique culture Nepal is the best option for everyone including solo travelers, honeymoon goers, and people on a family holiday. The clean air and pristine environment which coexists in deep harmony with the locals residing there makes this place a Pandora box of thrill, adve",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹22,500",
+    "oldPrice": "₹15,000",
     "discount": ""
   },
   {
@@ -10807,8 +10807,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Looking for a memorable North East India tour package? Our planning a North East trip? NamasteIndiaTrip will provide you with the best North East packages that will sweep you off your feet. North East tours usually consist of states like Arunachal Pradesh, Meghalaya, Mizoram, Assam, Manipur, Nagaland, Sikkim, and Tripura which allows you to witness the charming regions of Northeast India. Our highly customized North East collections are prepared for your convenience and according to your prefere",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹19,500",
+    "oldPrice": "₹13,000",
     "discount": ""
   },
   {
@@ -10846,8 +10846,8 @@ export const allPackages: Package[] = [
     "route": "Delhi Arrival → Delhi City Tour/ Varanasi By Train → Arrive Varanasi → Varanasi – Khajuraho → Khajuraho – Jhansi – Agra → In Agra",
     "description": "Welcome in India! On Arrival at Delhi International Airport, My Quick Trippers Representative will greet and meet you and transfer you to Hotel. Check into Hotel. Evening time is free for you to explore Delhi Haat. Later back to hotel and Overnight stay at Delhi.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹27,800",
+    "oldPrice": "₹18,500",
     "discount": ""
   },
   {
@@ -10859,8 +10859,8 @@ export const allPackages: Package[] = [
     "route": "Dimapur – Benreu → Benreu – Dzuleke – Khonoma → Khonoma – Kohima → Explore Kohima → Kohima – Dimapur",
     "description": "Northeast India holds a timeless charm! It never fails to impress tourists with its countryside allure and quaint natural beauty. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -10924,8 +10924,8 @@ export const allPackages: Package[] = [
     "route": "Indore → Indore – Omkareshwar – Ujjain → Bhasma Aarti and Return to Indore",
     "description": "Experience spiritual fulfilment as you embark on a sacred aerial journey to Omkareshwar and Ujjain's sacred sites. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹127,500",
+    "oldPrice": "₹85,000",
     "discount": ""
   },
   {
@@ -10937,8 +10937,8 @@ export const allPackages: Package[] = [
     "route": "Delhi sightseeing tour",
     "description": "Start a day filled with unending excitement and the opportunity to visit the city's highlights with our Delhi Local Sightseeing Tour. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,500",
+    "oldPrice": "₹1,644",
     "discount": ""
   },
   {
@@ -11015,8 +11015,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -11054,8 +11054,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Forget about generic experiences. Our Odisha Tour Packages offers experiences which are one of a kind. From the living legacy of Lord Jagannath Puri Temple, Sun god’s trace on Konark’s stone wheel, iconic Pattachitra art, millions of Olive Ridley turtle at Rushikulya beach to Chilika Lake dolphin’s delightful play, Odisha offers best getaways to these singular experiences and make your holidays memorable with loved ones. So, travel with those who know it best. Book My Quick Trippers’s Odisha tou",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹9,000",
+    "oldPrice": "₹6,000",
     "discount": ""
   },
   {
@@ -11132,8 +11132,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹40,500",
+    "oldPrice": "₹27,000",
     "discount": ""
   },
   {
@@ -11171,8 +11171,8 @@ export const allPackages: Package[] = [
     "route": "Ahmedabad – Dwarka → Dwarka Sightseeing → Dwarka – Porbandar – Somnath → Somnath – Rajkot → Rajkot – Lothal – Dakor – Ahmedabad → Ahmedabad – Matru Gaya – Ambaji",
     "description": "The Panch Dwarka religious tour is one of the most sacred pilgrimages you can cover in India. This tour essentially consists of visiting the five sacred temples of Lord Krishna - Dwarkadhish Temple, Bet Dwarka, Ranchhodraiji Temple, Nathdwara Shrinathji Temple, and Kankroli Dwarkadhish Temple . Book our Pancha Dwaraka Tour Package and visit these shrines hassle-free. Give us a call now!",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹27,000",
+    "oldPrice": "₹18,000",
     "discount": ""
   },
   {
@@ -11197,8 +11197,8 @@ export const allPackages: Package[] = [
     "route": "Tirupati - Srikalahasti - Kanchipuram",
     "description": "Explore South India’s famous temples with the Pancha Bootha Sthalam Navagraha Tour Package. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹4,600",
+    "oldPrice": "₹3,100",
     "discount": ""
   },
   {
@@ -11387,8 +11387,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -11400,8 +11400,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹21,800",
+    "oldPrice": "₹14,500",
     "discount": ""
   },
   {
@@ -11452,8 +11452,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Pilgrimages in India make up a vital part of the spirituality and religious beliefs of the people of this colorful sub-continent.The ancient land of India has been walked on by the gods themselves along with prominent spiritual teachers, priests, sages, and philosophers in search of inner quests. Ever since the beginning of time these walks and trails across the Indian landmass have gained a lot of importance among the people who go on this quest for truth or the meaning of life from various par",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹13,400",
+    "oldPrice": "₹8,900",
     "discount": ""
   },
   {
@@ -11504,8 +11504,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Nepal is a beautiful land that captures immediate attention with its religious shrines and the scenic beauty of the lofty Himalayas, offering a burst of wildlife and trekking adventures. One can opt for long-duration trips ranging from 20 days, 19 nights to 15 days, 14 nights, combining India, Nepal, and Bhutan or Tibet wildlife tours. Shorter duration tours covering Kathmandu, Pokhara, Chitwan, and Nagarkot will last 6 days and 5 nights. Transport, meals, accommodation, and sightseeing are all-",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹27,900",
+    "oldPrice": "₹18,600",
     "discount": ""
   },
   {
@@ -11517,8 +11517,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "A city as old as time itself. A city that has stayed in place and watched as the world has turned and the tides have changed. A city that has stood the test of time for thousands of years. In the words of Mark Twain, “Older than history, older than tradition, older even than legend, And looks twice as old as all of them put together.” Varanasi, the city that is more than just the spiritual capital of India. The city which can be aptly described as a melting pot where both life and death come tog",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹27,900",
+    "oldPrice": "₹18,600",
     "discount": ""
   },
   {
@@ -11543,8 +11543,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -11556,8 +11556,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Porbandar, a coastal city located in the western Indian state of Gujarat, is renowned for its historical significance and natural beauty. Known as the birthplace of Mahatma Gandhi, the city holds a special place in India's history, symbolizing the legacy of peace and non-violence",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹18,800",
+    "oldPrice": "₹12,500",
     "discount": ""
   },
   {
@@ -11582,8 +11582,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -11608,8 +11608,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "The Prayagraj Maha Kumbh Mela is the largest religious gathering attracting people from all over the world. Read More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹27,800",
+    "oldPrice": "₹18,500",
     "discount": ""
   },
   {
@@ -11686,8 +11686,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Bhubaneswar and Temple Visits → Bhubaneswar – Dhauli – Pipli – Konark – Puri → Visit to Chilika Lake and Golden Beach → Bhubaneswar",
     "description": "Odisha is known as the soul of India for good reason. A well-planned Bhubaneswar Puri Konark Tour Package lets you experience the state's most iconic destinations within a compact 70 km triangle — Puri, Konark Sun Temple, and Bhubaneswar. Puri is one of the four sacred Char Dhams, home to the Jagannath Temple and the world-famous Rath Yatra. Konark's Sun Temple, built in the 13th century, is a UNESCO World Heritage Site and one of the finest examples of Kalinga architecture. Bhubaneswar, with ov",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -11699,8 +11699,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Our Puri Tour Packages are available from Delhi to Puri, catering to all budget styles. From visiting major attractions like Puri Jagannath Temple, Sun Temple , Chilika Lake to Chandrabhaga beach, to arranging for guided Darshan, you will get a hassle free Puri journey with My Quick Trippers.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -11803,8 +11803,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Jaipur → Jaipur Sightseeing → Jaipur – Pushkar → Pushkar – Udaipur → Udaipur Sightseeing → Udaipur",
     "description": "Apart from being known as the land of palaces and maharajas, Rajasthan is also one of the prime romantic destinations. With the atmosphere enveloped in colorful beauty and surreal landscapes, Rajasthan can be your next favorite exotic destination for you and your better half. Explore the many vibrant faces of Rajasthan with My Quick Trippers’s, 6 days and 5 nights romantic tour of Rajasthan.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹24,800",
+    "oldPrice": "₹16,500",
     "discount": ""
   },
   {
@@ -11829,8 +11829,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "No other place can beat Rajasthan in India when it comes to showcasing majestic forts and palaces, desert landscapes, food, vibrant festivals, art and culture. Every traveler dream of Rajasthan holidays once in their lifetime. Don't worry! Our Rajasthan Tour Packages will offer you an opportunity to deeply explore the land of Raja/Maharaja (Royal Kings). We have a variety of Rajasthan travel itineraries that cover the major tourist destinations of different cities in Rajasthan like Jaipur, Bikan",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹23,200",
+    "oldPrice": "₹15,500",
     "discount": ""
   },
   {
@@ -11855,8 +11855,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "What makes Rajasthan an exotic holiday destination? Is it the colorful culture, Delicious Food, Ethnic Tribes, remarkable architecture or the welcoming people who make you feel right at home? This place is not just a destination it is a whole experience. From living like the royals to going through the top tourist attractions and immersing yourself in its vibrant colorful culture, Rajasthan tourism has garnered some well-deserved attention from travelers and explorers from all over the world. Th",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹23,200",
+    "oldPrice": "₹15,500",
     "discount": ""
   },
   {
@@ -11881,8 +11881,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Rajkot, a prominent city in Gujarat, India, is known for its rich cultural heritage, vibrant history, and significant economic contributions. Established in the 16th century by the Jadeja clan, Rajkot has grown into one of the largest cities in the state and is often referred to as the \"Rajkot City of Kings\" due to its royal legacy",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹18,800",
+    "oldPrice": "₹12,500",
     "discount": ""
   },
   {
@@ -11920,8 +11920,8 @@ export const allPackages: Package[] = [
     "route": "Madurai - Rameshwaram → In Rameswaram - Full day Sightseeing Tour → Rameswaram - Kanyakumari → Kanyakumari - Kovalam - Thiruvananthapuram → Thiruvananthapuram",
     "description": "The Madurai Rameshwaram Kanyakumari tour package shows you temples, beaches, beautiful landscapes and rich South Indian culture. Journey begins in Madurai famous for its Meenakshi Amman Temple. An interesting fact about this temple is that it has around 33,000 carvings and statues covering every corner..",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹4,600",
+    "oldPrice": "₹3,100",
     "discount": ""
   },
   {
@@ -11998,8 +11998,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "At Namaste India, we believe that to travel is to truly live! But the real joy of travel, of anything in life for that matter, is in its being shared with one’s beloved ones. What if the joy of sharing travel comes with added financial benefits? This is exactly what our new Refer-a-Friend Rewards Program promises to do! We will gift you a plain Rs 2000 reduction in your future booking with us for every friend whom you sends our way. Additionally, your friend will enjoy a sharp Rs 1500 reduction",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -12024,8 +12024,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Hop on an exciting journey to a city known for its natural beauty and cultural relevance across India, and is visited by thousands of tourists every month to experience the beautiful blend of history, spirituality, and natural beauty. Your trip will start with the Rewa Fort which represents the rich cultural past of the city. Then you will experience the serene aura of the Venkateswara temple, which is a well-known spiritual site across the country.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹30,000",
+    "oldPrice": "₹20,000",
     "discount": ""
   },
   {
@@ -12050,8 +12050,8 @@ export const allPackages: Package[] = [
     "route": "From Delhi to Haridwar-Rishikesh → Haridwar-Rishikesh to Delhi",
     "description": "Set out on this spiritually charged trip to Haridwar and Rishikesh from Delhi. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -12076,8 +12076,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Rishikesh is one of the most sought-after weekend destinations in India. The city has emerged as a travel hub in the last few years. And there's no surprise there as it offers everything from spirituality to adventure activities. And it being tucked amidst the Himalayas provides the tourist with the much-needed tranquil ambience. To enjoy a smooth and comfortable trip here, simply book our Rishikesh Tour Packages. You'll love the inherent serenity of the city!",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹6,800",
+    "oldPrice": "₹4,500",
     "discount": ""
   },
   {
@@ -12089,8 +12089,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Rishikesh is a spiritual town in Uttarakhand where the convergence of peace and adventure, delights the heart. It is famously called Rishikesh the Yoga Capital of the World sitting in the Himalayas with magical sound hymns echoed by old temples and yoga centres. The morning Aarti by the river bank would be the most sought-after experience in this pious land. There are a lot of ashrams and yoga retreats in Rishikesh for those willing to explore their inner self. Every wanderer will find serenity",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹6,800",
+    "oldPrice": "₹4,500",
     "discount": ""
   },
   {
@@ -12206,8 +12206,8 @@ export const allPackages: Package[] = [
     "route": "Haridwar/ Dehradun – Rishikesh - Pipalkoti → Pipalkoti -Mana Village - Saraswati Pushkaralu- Badrinath → Badrinath - Srinagar → Srinagar – Devprayag - Haridwar -",
     "description": "Saraswati Pushkaralu is a Hindu festival dedicated to the River Saraswati. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹4,200",
+    "oldPrice": "₹2,800",
     "discount": ""
   },
   {
@@ -12219,8 +12219,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Saraswati Pushkaram is a holy festival of the River Saraswati that takes place once every 12 years. Devotees celebrate this because they believe taking a bath in the river cleanses their soul and gives them moksha (salvation). According to Purana, during Pushkaralu, Guru Brihaspati (Jupiter) increases the river’s holiness and importance. Many devotees visit here to perform puja and rituals for blessings.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹33,800",
+    "oldPrice": "₹22,500",
     "discount": ""
   },
   {
@@ -12232,8 +12232,8 @@ export const allPackages: Package[] = [
     "route": "Arrive Delhi – Haridwar → Haridwar – Rishikesh - Pipalkoti → Pipalkoti -Mana Village - Saraswati Pushkaralu- Badrinath → Badrinath - Srinagar → Srinagar – Devprayag - Haridwar - Delhi",
     "description": "The Saraswati Pushkaralu is a highly sacred festival, celebrated every 12 years! See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -12245,8 +12245,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Delhi - Haridwar → Haridwar – Rishikesh - Pipalkoti → Pipalkoti -Mana Village - Saraswati Pushkaralu- Badrinath → Badrinath - Srinagar → Srinagar – Devprayag- Haridwar - Delhi",
     "description": "Saraswati Pushkaram is an Indian festival celebrated near the Saraswati River. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,600",
+    "oldPrice": "₹2,400",
     "discount": ""
   },
   {
@@ -12388,8 +12388,8 @@ export const allPackages: Package[] = [
     "route": "Guwahati and Shillong → Visit to Cherrapunji → Shillong to Mawlynnong to Dawki → Shillong to Guwahati Trip → Full-Day Guwahati City Tour → Guwahati",
     "description": "Visit the Kamakhya temple that is dedicated to none other than the Goddess of desires herself! See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,300",
+    "oldPrice": "₹2,200",
     "discount": ""
   },
   {
@@ -12427,8 +12427,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Shimla, the queen of Hill Stations is a bliss for travelers who love mountains, nature, adventure and solace. It is one of the most popular places to visit in North India. Our Shimla Tour Packages are the best deals to make your Shimla Trip exciting and memorable. Perfect for all the travelers, Shimla's refreshing charm is unparalleled. With us, you can browse a wide range of Shimla travel packages ranging from a short weekend getaway of 2 nights 3 days to a full-fledged trip of 13 days and 12 n",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹16,500",
+    "oldPrice": "₹11,000",
     "discount": ""
   },
   {
@@ -12440,8 +12440,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Shimla → Sightseeing in Shimla → Shimla",
     "description": "Grab our beautifully designed 2 Nights / 3 Days long sightseeing tour in Shimla and visit the iconic attractions of this gorgeous hill station. Enjoy the magnificent snowfall at Kufri and admire the breathtaking beauty of the region adorned with astounding valleys and the lush green valleys.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹16,500",
+    "oldPrice": "₹11,000",
     "discount": ""
   },
   {
@@ -12466,8 +12466,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Tourism in Shimla has always been the topic of conversation among people of India not just in the present day but also ever since it was established as the summer capital. The quirky atmosphere, imminent presence of a divine vibe, and the opportunity to chill out are what makes Shimla one of a kind in its own way. Named after the avatar of goddess kali, Shyamala Devi, the cool air of Shimla is enough to wash your worries away and leave you feeling completely mesmerized with the untouched remarka",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹16,500",
+    "oldPrice": "₹11,000",
     "discount": ""
   },
   {
@@ -12479,8 +12479,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -12531,8 +12531,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Hop on this journey to the hidden gem of Madhya Pradesh, which is known for its lush green landscapes, heritage buildings, and overall natural beauty, Shivpuri. The trip starts with a serene visit to the Madhav National Park, where you will enjoy the calmness of dense forest, beautiful blue water lakes, and also, very diverse wildlife. This is going to be an out-of-the-world experience for nature enthusiasts, and also for adventure freaks. Shivpuri is also known for its historical architecture,",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹30,000",
+    "oldPrice": "₹20,000",
     "discount": ""
   },
   {
@@ -12570,8 +12570,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Sikkim, nestled in the lap of the Himalayas, is a small yet captivating state in northeastern India. Sikkim tour packages offer a unique opportunity to explore this hidden gem, known for its breathtaking landscapes, vibrant Buddhist culture, and adventure activities.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹21,000",
+    "oldPrice": "₹13,999",
     "discount": ""
   },
   {
@@ -12583,8 +12583,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Bagdogra – Gangtok → Gangtok – Tsomgo Lake Excursion – Gangtok → Gangtok – Lachen → Lachen – Gurudongmar Lake – Lachen → Lachen – Lachung → Lachung – Yumthang Valley – Gangtok",
     "description": "Sikkim is one of the gems of the Himalayas. This stunning hill station is tucked away in the northeastern part of India. It is blessed with Lush Green Hills, Rolling Meadows, thick forests, and impeccable views on all sides. Known for its unique culture, delicious foods, and humble locals, Sikkim is a must-visit hill station in India. This 7 days and 6 nights Sikkim tour package will take you on one of the most incredible adventures in North East India.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹21,000",
+    "oldPrice": "₹13,999",
     "discount": ""
   },
   {
@@ -12596,8 +12596,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Valleys, lakes and scenic beauty are a few adjectives which perfectly describes this home of the 3rd highest mountain in the world, Kanchenjunga. Gracing and beautifying the northeastern region of the Indian sub-continent this smallest state of India is replete with numerous incredible places of attractions especially if you are someone who loves being close to nature, understand the culture and rich heritage and spend some time in peace and drenched in the natural serenity. Every step of the wa",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹21,000",
+    "oldPrice": "₹13,999",
     "discount": ""
   },
   {
@@ -12687,8 +12687,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Our Singapore Tour Packages are a gateway to entering a city-island state-Singapore-where distinct joys are to be found in its enchanting attractions, ethnic neighborhoods, food culture, shopping, and nightlife. These packages are meant for those who are seeking adventure and want to try out different foods, socialise, shop at high-street brands, explore skyscrapers, and visit beautiful gardens and attractions. Well, why not? It is Asia's top-listed travel destination.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹4,900",
+    "oldPrice": "₹3,244",
     "discount": ""
   },
   {
@@ -12713,8 +12713,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Somnath is the unofficial religious city of India – housing the greats like Jyotirlinga, the confluence of three holy rivers, places where the Gods left their body for heavenly abodes…and much more! You haven’t seen the real spirituality until you go on a Somnath trip. And there’s more! Witness the epic carved gates giving a peek directly into ancient India. The history associated with this place is truly soul-stirring! Many Somnath tour packages include sites that are a blend of spirituality, h",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹27,800",
+    "oldPrice": "₹18,500",
     "discount": ""
   },
   {
@@ -12726,8 +12726,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "The Somnath temple is an important sacred site for Hindus and attracts scores of pilgrims every year. It is believed to be the first of the 12 Jyotirlingas of Lord Shiva. But far from being only a religious site, Somnath holds marvels of history, culture, art, architecture along with being in the lap of nature, outlined by the Arabian Sea.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹27,800",
+    "oldPrice": "₹18,500",
     "discount": ""
   },
   {
@@ -12739,8 +12739,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Sonmarg is that mesmerizing destination that will remind you of the landscapes in the Bollywood movies. It is popularly known as the Golden Meadows. Sonmarg is located in the Sind valley and you will experience beautiful views with flowers and mountains all around. It is a perfect holiday destination for those who enjoy some good treks and are adventure lovers, as Sonmarg is the base camp for a lot of interesting treks in Kashmir, most of these locations lead to breathtaking Himalayan lakes, whi",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹40,500",
+    "oldPrice": "₹27,000",
     "discount": ""
   },
   {
@@ -12921,8 +12921,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "If India is crowned by majestic Himalayan peaks in the North, the holy waves of Mother Ocean embrace her southern shores. Read More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹27,800",
+    "oldPrice": "₹18,500",
     "discount": ""
   },
   {
@@ -12947,8 +12947,8 @@ export const allPackages: Package[] = [
     "route": "Dehradun – Devprayag – Rudraprayag – Guptkashi/Sitapur → Kedarnath - Badrinath → Sitapur/Phata – Rishikesh – Dehradun",
     "description": "Embark on our special Do Dham Helicopter Tour, covering holy locations like Devprayag and Rudraprayag, in addition to Badrinath Kedarnath Yatra from Dehradun. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹210,000",
+    "oldPrice": "₹140,000",
     "discount": ""
   },
   {
@@ -13025,8 +13025,8 @@ export const allPackages: Package[] = [
     "route": "Colombo Airport - Chilaw - Sigiriya → Sigiriya - Trincomalee - Sigiriya → Sigiriya - Kandy → Kandy → Kandy - Nuwara Eliya → Nuwara Eliya - Ella Kataragama",
     "description": "It is a wonderful destination for travelers and is famous worldwide for its rich culture, amazing wildlife, top beaches, and everything is surrounded by green landscapes. Sri Lanka is known as the ‘Land of Ancient Civilizations'. To fully experience this amazing place, visitors can see the kingdom of Ravana, where Sita was trapped, and the locations where battles took place.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹4,600",
+    "oldPrice": "₹3,100",
     "discount": ""
   },
   {
@@ -13064,8 +13064,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Sri Lanka - Chilaw - Anuradhapura → Anuradhapura - Trincomalee → Trincomalee - Kandy → Kandy - Nuwara Eliya → Nuwara Eliya - Kataragama → Kataragama - Colombo",
     "description": "Sri Lanka is known all over the world for its natural beauty. It's a nature's precious gem, famous for its magnificent wildlife biodiversity and picturesque coastline! See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,300",
+    "oldPrice": "₹2,191",
     "discount": ""
   },
   {
@@ -13103,8 +13103,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Our Sri Lanka Tour Packages offer a taste of the island's stunning beaches, national parks, lush tea plantations, and cultural landmarks. People flock to this beautiful island nation located in South Asia, off the southeastern coast of India, to explore its scenic natural landscapes, diverse culture, and rich history.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹7,500",
+    "oldPrice": "₹5,000",
     "discount": ""
   },
   {
@@ -13116,8 +13116,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹40,500",
+    "oldPrice": "₹27,000",
     "discount": ""
   },
   {
@@ -13129,8 +13129,8 @@ export const allPackages: Package[] = [
     "route": ": Arrival in Hyderabad – Sightseeing → Temple Visit – Srisailam Sightseeing – Hyderabad",
     "description": "Want to go on a tour that is a reflection of culture, nature, and spirituality? See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,400",
+    "oldPrice": "₹1,600",
     "discount": ""
   },
   {
@@ -13142,8 +13142,8 @@ export const allPackages: Package[] = [
     "route": "Hyderabad - Srisailam → Srisailam - Hyderabad → Hyderabad Sightseeing → Hyderabad Sightseeing - Departure",
     "description": "The 4 Days Srisailam Mallikarjuna tour package from Hyderabad takes travellers to a destination where every spot feels special and worth exploring. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,900",
+    "oldPrice": "₹1,920",
     "discount": ""
   },
   {
@@ -13155,8 +13155,8 @@ export const allPackages: Package[] = [
     "route": ": Arrival in Hyderabad – Sightseeing → Temple Visit – Srisailam Sightseeing – Hyderabad",
     "description": "Want to go on a tour that is a reflection of culture, nature, and spirituality? See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,400",
+    "oldPrice": "₹1,600",
     "discount": ""
   },
   {
@@ -13181,8 +13181,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "From North to South and Northeast region India is endowed with majestic hilly areas which attract numerous people looking to get away from the scorching sun of the plains and beat the heat. We bring you a wonderful collection of tour packages that will not only rejuvenate your soul but will also bring you much-needed peace of mind. We take you to some of the most splendid and charming hill stations of Uttarakhand through some of our most sought-after summer special tour packages. From the pictur",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹21,000",
+    "oldPrice": "₹13,999",
     "discount": ""
   },
   {
@@ -13194,8 +13194,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Surat, located in the western Indian state of Gujarat, is a vibrant city known for its rich history, thriving economy, and cultural diversity. Often referred to as the \"Silk City\" for its flourishing textile industry and the \"Diamond City\" due to its significant diamond cutting and polishing centers,",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹18,800",
+    "oldPrice": "₹12,500",
     "discount": ""
   },
   {
@@ -13285,8 +13285,8 @@ export const allPackages: Package[] = [
     "route": "Arrive Chennai - Mahabalipuram - Pondicherry",
     "description": "As you begin the Tamil Nadu and Pondicherry Tour you’ll feel the magic of South India - simple, with welcoming people and full of hidden beauty. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹4,600",
+    "oldPrice": "₹3,100",
     "discount": ""
   },
   {
@@ -13298,8 +13298,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Another Temple Tour? Nah! Our Tamil Nadu Tour Packages offer experiences that turn your trip into exciting photo opportunities to cherish forever. We go beyond what is generic and connect you to the heart of Tamil Nadu. With us you will connect to stories of ancient temples of Tamil Nadu, hidden corners of beauty in pristine wildlife sanctuaries, food that takes you past the standard Dosa, show you unique rituals like Palliyarai Pooja and many more enchanting activities. The memories of our Tami",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹22,500",
+    "oldPrice": "₹14,999",
     "discount": ""
   },
   {
@@ -13311,8 +13311,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Tamil Nadu is one of the most magnificent places in India which adds on to its pride in immeasurable ways. Lying peacefully on the southernmost end of the sub-continent, Tamil Nadu is bordered by equally incredible destinations of Puducherry, Kerala, Karnataka and Andhra Pradesh making it perfect for backpacking in south India getaway. The beauty of the state is further amplified with the presence of the Eastern Ghats in the north along with the holy and spiritual ranges of Nilgiri Hills and Meg",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹22,500",
+    "oldPrice": "₹14,999",
     "discount": ""
   },
   {
@@ -13337,8 +13337,8 @@ export const allPackages: Package[] = [
     "route": "Arrival Chennai - Mahabalipuram - Pondicherry → Pondicherry- Chidambaram- Kumbakonam → Kumbakonam-Tanjore -Trichy → Trichy - Rameswaram → Rameshwaram - Madurai - Kodaikanal → Kodaikanal Sightseeing",
     "description": "This Tamil Nadu pilgrimage tour Package will surprise you with its mix of heritage, seaside beauty, and rich culture. From Chennai, the trip takes you first to Mahabalipuram, famous for the Pancha Rathas, where each temple is made from a single big stone.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹6,200",
+    "oldPrice": "₹4,100",
     "discount": ""
   },
   {
@@ -13350,8 +13350,8 @@ export const allPackages: Package[] = [
     "route": "Chennai Arrival → Chennai - Mahabalipuram → Mahabalipuram - Tanjore → Tanjore - Trichy - Madurai → Madurai - Rameshwaram → Rameshwaram - Kanyakumari",
     "description": "Tamilnadu, inarguably one of those wonderful states where you can witness the vivid cultures and traditions. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹6,800",
+    "oldPrice": "₹4,500",
     "discount": ""
   },
   {
@@ -13441,8 +13441,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "My Quick Trippers offers comprehensive Thailand Tour Packages for Indian tourists. Your story begins here- peaks of the north to the pearl-white beaches of the south, delightful chaos of floating markets, sacred and soothing rhythm of temple bells and electrifying energy of the night. Surrounded by the Gulf of Thailand and the Andaman Sea, Thailand is home to spellbinding beauty and vibrant culture with such an aura of festivity that it is just hard to resist. Our Thailand Itineraries are your g",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹30,800",
+    "oldPrice": "₹20,500",
     "discount": ""
   },
   {
@@ -13467,8 +13467,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -13545,8 +13545,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -13558,8 +13558,8 @@ export const allPackages: Package[] = [
     "route": "Tirupati Darshan-- Vellore --Tiruvannamalai → Tiruvannamalai - - Thanjavur  - -Tiruchirappalli → Tiruchirappalli - Madurai- → Madurai - Rameshwaram → Rameswaram - Kanyakumari - → Kanyakumari - Kovalam - Thiruvananthapuram",
     "description": "Experience the best that Andhra Pradesh and Tamil Nadu have to offer with our handcrafted packages, including visits to Tirupati, Thanjavur, Rameshwaram, Kanyakumari, and Madurai . These packages are an amalgamation of the best experiences, spiritual tours, adventure activities, and lip-smacking meals. Our guide will accompany you throughout the tour, ensuring you get to have the best experience of your life. With amenities like top-notch accommodation, tasty meals, and guided sightseeing, you'r",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,900",
+    "oldPrice": "₹2,600",
     "discount": ""
   },
   {
@@ -13571,8 +13571,8 @@ export const allPackages: Package[] = [
     "route": "Tirupati - Vellore -Tiruvannamalai → Tiruvannamalai - Thanjavur  -Tiruchirappalli → Tiruchirappalli - Madurai → Madurai - Rameshwaram → In Rameswaram → Rameswaram - Kanyakumari",
     "description": "On the Tirupati Thanjavur Rameshwaram Kanyakumari Madurai Tour, each city welcomes you with its own charm, rich history and cultural heritage. The journey begins from Tirupati. Don't miss its popular Venkateswara Temple. According to The Times of India around 50,000 people visit this temple every day. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,900",
+    "oldPrice": "₹2,600",
     "discount": ""
   },
   {
@@ -13584,8 +13584,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "There are many spiritual places in the world; but the essence of one, where you feel deep within your soul, is in Tirupati Balaji, Andhra Pradesh. By Tirupati Balaji, we mean the divine abode of Lord Venkateshwara (Lord Vishnu) at Tirumala Venkateshwara Temple. The thread of faith in Lord Venkateshwara is so strong among the pilgrims that it attracts millions of devotees from all over India to visit the seven hills of Tirumala. Our Tirupati Balaji Tour Packages will offer a comprehensive pilgrim",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -13597,8 +13597,8 @@ export const allPackages: Package[] = [
     "route": "Tirupati Arrival → Tirupati Temple Visit → Departing Tirupati",
     "description": "Tirupati is counted among the most important pilgrimage sites in the southern part of India. This place draws visitors in millions each year.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -15170,8 +15170,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Trivandrum, also known as Thiruvananthapuram, is the capital city of Kerala, India. It is a vibrant and culturally rich city that offers a wide range of experiences for visitors. Trivandrum tour packages provide an opportunity to explore the city’s historical sites, religious landmarks, beautiful beaches, and diverse cuisine.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -15196,8 +15196,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Udaipur, popularly known as the “City of Lakes” is located in Rajasthan, North West of India. Previously being the capital of Mewar, Udaipur was founded by Rana Udai Singh. This place finds a very important place in Indian history due to the bravery of the Rajput chiefs and rulers of Udaipur in preserving the independence, religion, and culture against the Mughals. Based on its glorious past and its colorful culture Udaipur has grown up to be a special tourist destination that attracts tourists",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -15209,8 +15209,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Indore – Sightseeing in Ujjain → Ujjain to Omkareshwar → Omkareshwar – Maheshwar – Mandu → Mandu Sightseeing + Indore",
     "description": "Want to go on a trip that is filled with cultural exploration, beautiful architecture, and spirituality through and through? Then book our Indore Ujjain Omkareshwar Maheshwar Mandu Tour Package and travel to these beautiful places in utter luxury and comfort. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹4,400",
+    "oldPrice": "₹2,900",
     "discount": ""
   },
   {
@@ -15222,8 +15222,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Indore → Indore - Ujjain Sightseeing → Ujjain - Omkareshwar → Omkareshwar - Indore",
     "description": "What’s one place that spoils you with beautiful Ghats, ancient temples, and cultural monuments? See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹4,400",
+    "oldPrice": "₹2,900",
     "discount": ""
   },
   {
@@ -15235,8 +15235,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Ujjain → Full-Day Ujjain Sightseeing → Ujjain Omkareshwar Tour and Departure",
     "description": "Take a trip to one of India's holiest cities, that is Ujjain. Revered as one of the Sapta Puris, the sacred place offers you rich culture, brilliant temples, and delicious cuisine. Book our Ujjain Tour Package from Ahmedabad and enjoy a seamless pilgrimage here. Really, the city has a lot of things to offer. From Bhasma Aarti to serene Ghats to myriads of beautiful shrines, the place would leave a forever mark on your mind and soul. Call us now to visit the heart of India!",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹9,800",
+    "oldPrice": "₹6,500",
     "discount": ""
   },
   {
@@ -15248,8 +15248,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Discover the spiritual and cultural richness of Ujjain with our specially curated tour package from Bangalore. Renowned as one of India's seven holiest cities, Ujjain is a treasure trove of ancient temples, historic sites, and vibrant traditions. Our package offers a comprehensive itinerary that includes visits to iconic landmarks such as the Mahakaleshwar Temple, known for its unique Shivling, and the serene ghats of the Shipra River. Immerse yourself in the city's rich heritage and witness the",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹9,800",
+    "oldPrice": "₹6,500",
     "discount": ""
   },
   {
@@ -15261,8 +15261,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Plan your trip with our Ujjain tour package from Chennai and visit one of India's most sacred pilgrimage place. People in Chennai are deeply religious, and that's why a trip to Ujjain feels even more special for them. This city has its own charm due to many temples, which makes it a special stop for travelers. Many people believe that visiting Ujjain fills them with inner peace.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹9,800",
+    "oldPrice": "₹6,500",
     "discount": ""
   },
   {
@@ -15274,8 +15274,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Embark on a transformative journey with NamasteIndiaTrip’s Ujjain tour package from Delhi. Ujjain, one of the seven Mukti Sthals, is a city steeped in spirituality and rich history, making it a must-visit for those seeking a deeper connection with their faith. This package includes visits to iconic landmarks such as the Mahakaleshwar Temple, where the ancient traditions of worship come alive, and the stunning Ram Ghat along the Shipra River. Immerse yourself in the vibrant atmosphere of the Kumb",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹9,800",
+    "oldPrice": "₹6,500",
     "discount": ""
   },
   {
@@ -15287,8 +15287,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Want to visit the two Jyotirlingas in one trip? Then book our Ujjain Tour Package from Hyderabad! This special tour plan combines the trip to the Mahakaleshwar Temple and Omkareshwar Temple in a single pilgrimage tour. Moreover, with this plan, you get to do a lot of sightseeing, too, in the state of Madhya Pradesh. Call us now to go on this spiritual journey like no other!",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹9,800",
+    "oldPrice": "₹6,500",
     "discount": ""
   },
   {
@@ -15300,8 +15300,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Discover the spiritual charm of Ujjain with our Ujjain Tour Package from Kolkata, crafted for travelers eager to delve into the city’s rich history and sacred traditions. This package features visits to renowned landmarks such as the Mahakaleshwar Temple and the mesmerizing Kshipra River, providing a perfect blend of spirituality and cultural exploration. Ideal for families, couples, or solo adventurers, our itinerary ensures that you experience the essence of Ujjain at a relaxed pace.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹9,800",
+    "oldPrice": "₹6,500",
     "discount": ""
   },
   {
@@ -15313,8 +15313,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Located on the banks of the holy Kshipra River, Ujjain is a sacred destination that must be visited at least once in your lifetime. The quaint city never fails to impress its tourists with its rich culture and age-old history, after all. And to enjoy a smooth tour in this spiritual land, book our Ujjain Tour package from Mumbai! With our services, you get to enjoy a seamless trip throughout -- from your accommodation to meals to transport, we'll handle everything. Call us now to go on this excit",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹9,800",
+    "oldPrice": "₹6,500",
     "discount": ""
   },
   {
@@ -15326,8 +15326,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Take a trip to the heart of India and get bathed in rich culture, heritage, and spirituality. Yes, we're talking about the holy city of Ujjain, which is also blessed with a Jyotirlinga! Believe it or not, the city receives footfall of thousands of tourists every single day, especially in the peak season. Book your Ujjain Tour Package from Nagpur and see all that's there to see in this sacred place. Call us to know more about this tour plan!",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹9,800",
+    "oldPrice": "₹6,500",
     "discount": ""
   },
   {
@@ -15339,8 +15339,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Your Ujjain Tour Package from Pune will take you to one of India's most spiritual cities, filled with temples, Ghats, and positive energy. Whether tourists are from India or abroad, everyone comes to enjoy Ujjain's beautiful heritage.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹9,800",
+    "oldPrice": "₹6,500",
     "discount": ""
   },
   {
@@ -15352,8 +15352,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Thinking of going to the sacred city of Ujjain? Then, book our Ujjain tour package from Rajkot and set out on a holy journey of Jyotirlinga Darshan, Ghat visits, and exciting sightseeing! With our tour plan, you get to enjoy delicious meals, pre-booked hotels, and a professional chauffeur assisting you with all the local transfers. To get the package, simply call us, and we'll get in touch!",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹9,800",
+    "oldPrice": "₹6,500",
     "discount": ""
   },
   {
@@ -15365,8 +15365,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Experience the spiritual essence of India with an Ujjain tour package from Surat, tailored for those seeking a journey filled with culture, tradition, and tranquility. Ujjain, one of the seven holiest cities in Hinduism, boasts magnificent temples, vibrant festivals, and a rich historical backdrop. Our package includes visits to revered sites such as the Mahakaleshwar Temple, the historic Bhartrihari Caves, and the serene ghats along the Shipra River, allowing you to fully immerse yourself in th",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹9,800",
+    "oldPrice": "₹6,500",
     "discount": ""
   },
   {
@@ -15378,8 +15378,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Ujjain Tour Package 2026 is the ideal way to explore one of India's seven sacred Moksha-puris and the spiritual heart of Madhya Pradesh. Home to the Mahakaleshwar Jyotirlinga — the only south-facing Jyotirlinga in India — Ujjain attracts devotees throughout the year for Darshan, Bhasma Aarti, and its centuries-old religious traditions.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹9,400",
+    "oldPrice": "₹6,250",
     "discount": ""
   },
   {
@@ -15404,8 +15404,8 @@ export const allPackages: Package[] = [
     "route": "Arrive at Varanasi → Varanasi - Vindhyachal – Prayagraj → Prayagraj - Ayodhya → Ayodhya - Lucknow → Lucknow - Naimisharanya  - Lucknow",
     "description": "Experience the best that Uttar Pradesh has to offer with our tour package See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,600",
+    "oldPrice": "₹2,400",
     "discount": ""
   },
   {
@@ -15417,8 +15417,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Uttar Pradesh Tour Packages are an invitation to the living pages of history. Come, step into a land which is a melting pot of cultures, birth place of many philosophies and religions, portal of ancient ghats and temples in Varanasi, realm of enlightenment at Bodhgaya and the sanctuary of sacred Ganga at Prayagraj where the great Kumbh Mela takes place with great pomp and show. It has one of the seven wonders of the world- Taj Mahal . In its very soil the epic tales of honour and duty were etche",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹8,800",
+    "oldPrice": "₹5,900",
     "discount": ""
   },
   {
@@ -15430,8 +15430,8 @@ export const allPackages: Package[] = [
     "route": "Delhi – Varanasi → Varanasi → Varanasi – Vindhyachal – Prayagraj → Prayagraj – Chitrakoot – Prayagraj → Lucknow → Lucknow – Dewa Sharif – Ayodhya – Lucknow",
     "description": "Are you planning a trip where you can attain the spiritual, adventurous, and heritage-rich experience? If yes, then browse our beautifully designed Best of Uttar Pradesh Tour Package. This 12 nights and 13 days long tour let you explore each and every beauty of the state and helps you enjoy the wonders of the place to the utmost level.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹8,800",
+    "oldPrice": "₹5,900",
     "discount": ""
   },
   {
@@ -15443,8 +15443,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Gracing the northern end of the Indian landscape is the extraordinary state of Uttar Pradesh. The glorious attractions and the rich cultural heritage of UP, over a period of time, has attracted a massive crowd of travelers from all over the world. But what makes UP so special? This list can go on and on, from being home to the 7th wonder of the world – Taj Mahal, the place where Lord Krishna himself was born and spent a majority part in Mathura / Vrindavan of his life and the iconic architectura",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹8,800",
+    "oldPrice": "₹5,900",
     "discount": ""
   },
   {
@@ -15482,8 +15482,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Devabhoomi -Uttarakhand is the name that incites a deep-seated sense of pure spirituality and wonderment. With our Uttarakhand Tour Packages, you will explore the land which was once trodden on by some of the greatest saints, sages, thinkers, philosophers, and gods themselves. Trek up to the starting point of Ganga River to Gaumukh Glacier, spend your nights camping under the clear starlit night sky or spend your holidays in luxury resorts feeling closer to nature. No matter where you want to go",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹7,600",
+    "oldPrice": "₹5,060",
     "discount": ""
   },
   {
@@ -15495,8 +15495,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Devbhoomi Uttarakhand is a hilly wonderland of sacred places, adventure spots, unexplored oasis and many more such interesting aspects. Crowned by the mighty and pure Himalayas and further beautified by the crystal-clear rivers making its way gracefully down the hills this hill station in the north is the best choice for spending your precious vacation days with your friends, family and loved ones. it is not only home to ancient temples and places of worship but it also harbours a range of high",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹7,600",
+    "oldPrice": "₹5,060",
     "discount": ""
   },
   {
@@ -15508,8 +15508,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Vadodara which is also known as Baroda is famous for being the 3rd largest city in Gujarat. It graces the banks of the holy river Vishwamitri and is 140 kms away from the state capital of Gandhinagar. If you are planning to visit Vadodara then the city is known for some of its most prominent landmarks such as the Laxmi Vilas Palace and the University of Vadodara. The colorful and vibrant culture of Gujarat as a state can be easily experienced here.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹18,800",
+    "oldPrice": "₹12,500",
     "discount": ""
   },
   {
@@ -15534,8 +15534,8 @@ export const allPackages: Package[] = [
     "route": "Arrive Delhi On to Jammu → Jammu to Katra → Katra to Mata Vaishno Devi and Back to Katra → Jammu to Delhi",
     "description": "One of the most revered pilgrimage sites in India, the Vaishno Devi Temple nestles in the serene Trikuta Hills of Jammu and Kashmir. Dedicated to Goddess Vaishno Devi—an incarnation of Durga—this sacred shrine draws millions of devotees yearly seeking divine blessings. The pilgrimage journey blends devotion, natural beauty, and spiritual fulfilment.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -15573,8 +15573,8 @@ export const allPackages: Package[] = [
     "route": "Arrival Varanasi → Varanasi - Vindhyachal - Prayagraj → Prayagraj - Ayodhya → Ayodhya - Lucknow → Lucknow - Naimisharanya - Lucknow",
     "description": "Ready to explore a state full of rich history and colorful culture? The Varanasi Prayagraj Ayodhya Naimisharanya Tour lets you experience it all. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,900",
+    "oldPrice": "₹2,600",
     "discount": ""
   },
   {
@@ -15586,8 +15586,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Varanasi → Varanasi – Sarnath – Varanasi → Varanasi – Prayagraj – Ayodhya → Prayagraj – Departure",
     "description": "The holy cities of Kashi Prayagraj and Ayodhya are known for their unparalleled spirituality. On this trip you'll be participating in rituals, visiting ancient temples and experiencing the national heritage - all in one pilgrimage. This trip will take you closer to the cultural treasure of the country than ever before! Book the Kashi Prayagraj Ayodhya tour package now and go on a holy trip of your lifetime!",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -15612,8 +15612,8 @@ export const allPackages: Package[] = [
     "route": "Arrive in Varanasi → Varanasi - Bodhgaya → Bodhgaya – Gaya  – Varanasi → Varanasi - Prayagraj – Varanasi",
     "description": "Have you ever thought why so many tourists travel to Varanasi and Bodhgaya every year? See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,400",
+    "oldPrice": "₹2,300",
     "discount": ""
   },
   {
@@ -15638,8 +15638,8 @@ export const allPackages: Package[] = [
     "route": "Arrive in Varanasi → Varanasi - Vindhyachal - Prayagraj → Prayagraj - Ayodhya → Ayodhya - Varanasi Departure",
     "description": "Explore India’s 4 famous cities where you will see hidden gems, rituals, and hear local stories that make every place special. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,600",
+    "oldPrice": "₹1,700",
     "discount": ""
   },
   {
@@ -15651,8 +15651,8 @@ export const allPackages: Package[] = [
     "route": "Arrive at Varanasi → Varanasi – Bodhgaya → Bodhgaya – Gaya  – Varanasi → Varanasi – Sarnath Sightseeing → Varanasi - Vidhyanchal - Prayagraj → Prayagraj - Ayodhya",
     "description": "Our Varanasi tour package with Prayagraj, Gaya, Bodhgaya, and Ayodhya takes you on a sacred journey to Uttar Pradesh and Bihar's famous attractions. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹4,800",
+    "oldPrice": "₹3,200",
     "discount": ""
   },
   {
@@ -15664,8 +15664,8 @@ export const allPackages: Package[] = [
     "route": "Varanasi – The city of Liberation → Varanasi – Sarnath Sightseeing",
     "description": "Witness the world where time stops to behold the divine in its most beautiful forms. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,400",
+    "oldPrice": "₹1,600",
     "discount": ""
   },
   {
@@ -15677,8 +15677,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Varanasi → Varanasi – Sarnath – Varanasi",
     "description": "Varanasi is one of the holiest cities in the world. It's popular for its omnipresent spiritual aura. Once you step on this divine land, you sense peace and an undeniable feeling of devotion. If you want to explore this holy city on a deeper level, then book our Varanasi Temple Tour Package! With this expert-crafted Varanasi temple tour itinerary, you get to see all the famous temples in Varanasi - ranging from Kashi Vishwanath Temple Darshan to the lesser-known Kaal Bhairav Temple! Book now or c",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹14,700",
+    "oldPrice": "₹9,800",
     "discount": ""
   },
   {
@@ -15690,8 +15690,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "One of the seven holiest cities in India, Varanasi is hailed as the spiritual capital of India. It welcomes millions of tourists from all around the globe. Devotees come to this holy place to take a dip in the holy River Ganges and to perform sacred rituals along the riverbank. The city is famous for still preserving the ancient way of living! To see it in its full glory, book our Varanasi Tour Packages now!",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -15716,8 +15716,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -15768,8 +15768,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Is Vietnam, the land of Blue Dragons, calling you? If yes, this would be the best travel decision of your life. Crafted with care for our Indian Travellers departing from DEL, My Quick Trippers offers a soul seducing escape to Travellers seeking cultural immersion, culinary delights, adventure and relaxation. Our Vietnam Tour Packages from Delhi include everything a traveller needs- direct & connecting flights, daily sumptuous meals, 4-5-star hotels, guided tours, and a Vietnam Visa approval let",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,200",
+    "oldPrice": "₹1,500",
     "discount": ""
   },
   {
@@ -15781,8 +15781,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "If you want to see the natural beauty, ancient architecture, and hustle-bustle of an active metropolis, all rolled into one, then come to Vietnam! This country enchants you with its green rice fields, mist-covered mountain peaks, rivers lakes, and unique floating villages! While you’re falling for its scenic landscapes, Vietnam will take you by surprise with its modern skyscrapers and vibrant city life. And that’s not all! Vietnam has a long history and places of sublime cultural importance - a",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹23,200",
+    "oldPrice": "₹15,500",
     "discount": ""
   },
   {
@@ -15807,8 +15807,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Nestled at the eastern tip of Mainland Southeast Asia is Vietnam, a serene and captivating country renowned for its breathtaking beauty and unique biodiversity. From exotic beaches to imposing citadels and old towns, the country has much to offer for all sorts of tourists. It has a great history (Vietnam War) and has a rich heritage. You can also go for street rides in Hanoi (the Capital). From hilly destinations to the seaside, the place has a lot to offer. With bustling cities, eight UNESCO Wo",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹23,200",
+    "oldPrice": "₹15,500",
     "discount": ""
   },
   {
@@ -15820,8 +15820,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹25,500",
+    "oldPrice": "₹16,999",
     "discount": ""
   },
   {
@@ -15859,8 +15859,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "The ancient temple of Triyuginarayan is a very popular pilgrimage hub located amidst the gently rolling hills and lush greenery. This humble-looking temple offers spiritual and religious value for its devotees since this is where Lord Shiva had entered into holy eternal matrimony with goddess Parvati. Due to its proximity to the holy Char Dham Temple of Kedarnath , a visit to this temple is often clubbed together with the wedding at Triyuginarayan temple. Triyuginarayan has always been a focal a",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹150,000",
+    "oldPrice": "₹100,000",
     "discount": ""
   },
   {
@@ -16002,8 +16002,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹11,200",
+    "oldPrice": "₹7,500",
     "discount": ""
   },
   {
@@ -16060,8 +16060,8 @@ export const allPackages: Package[] = [
     "route": "Arrive Delhi – Haridwar → Haridwar – Dehradun – Barkot / Janki Chatti → Barkot - Yamunotri Snan – Barkot → Barkot – Delhi",
     "description": "It is designed for pilgrims who want to seek the blessing of the goddess Yamuna on the auspicious event of Pushkaralu which takes place only once every 12 years. It is marked by the special astrological event when Jupiter enters Cancer. This holy tour will take you to the revered Yamunotri Temple from Delhi via Haridwar, Dehradun, Mussoorie, Barkot, and Janki Chatti.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹4,100",
+    "oldPrice": "₹2,750",
     "discount": ""
   },
   {
@@ -16073,8 +16073,8 @@ export const allPackages: Package[] = [
     "route": "Dehradun and Local Sightseeing → Dakpatthar Visit and Yamuna Pushkaralu Rituals → Haridwar / Dehradun",
     "description": "Get a once-in-a-lifetime opportunity to attend Yamuna Pushkaralu, one of the most revered Hindu festivals that is celebrated once every twelve years when Jupiter enters Gemini. This year it will be held from June 2, 2026, to June 13, 2026. It is believed that if you take a dip in the Yamuna River during this period, your soul gets purified and you get to seek divine blessings. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,000",
+    "oldPrice": "₹1,310",
     "discount": ""
   },
   {
@@ -16086,8 +16086,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "The Yamuna Pushkaralu Yatra Package offers pilgrims a rare opportunity to be a part of one of the most auspicious river festivals. This event occurs only once every 12 years when Jupiter transits into Cancer . The festival lasts for the whole 12 days. During the entirety of this period, it's believed that the holy River Yamuna is imbued with extraordinary divine powers. Taking a bath in this period in her holy waters provides the devotees with spiritual purification . It's also believed that pil",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹13,500",
+    "oldPrice": "₹8,990",
     "discount": ""
   },
   {
@@ -16099,8 +16099,8 @@ export const allPackages: Package[] = [
     "route": "Arrive Varanasi Sightseeing → Varanasi – Prayagraj → Prayagraj - Ayodhya → Ayodhya / Varanasi Departure",
     "description": "The Yamuna Pushkaralu Spiritual Tour offers you a trip of divine purification during the auspicious Yamuna Pushkaram. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,400",
+    "oldPrice": "₹2,270",
     "discount": ""
   },
   {
@@ -16112,8 +16112,8 @@ export const allPackages: Package[] = [
     "route": "Arrive Dehradun – Haridwar → Haridwar – Dehradun – Barkot /Jankichatti → Barkot - Yamunotri Shan – Barkot → Barkot - Dehradun",
     "description": "This holy tour will take you to the sacred Yamunotri. You also get to visit other holy towns, such as Haridwar and Barkot. We will also be making stops at Dehradun and Mussoorie. The Yamuna Pushkaram is a holy sacred event that takes place only once every 12 years. Visiting Yamunotri and taking a ritualistic bath during this period is highly auspicious.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹3,500",
+    "oldPrice": "₹2,310",
     "discount": ""
   },
   {
@@ -16125,8 +16125,8 @@ export const allPackages: Package[] = [
     "route": "Arrive Delhi - Kurukshetra → In Yamuna Snan - Haridwar → Haridwar - Delhi",
     "description": "Attend the Yamuna Pushkaralu festival and get ready to experience the divine power of the River Yamuna. See More",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹2,800",
+    "oldPrice": "₹1,840",
     "discount": ""
   },
   {
@@ -16138,8 +16138,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "The Temple opens on the religious day of ‘Akshaya Tritiya’ , which generally falls in the last week of April or the first week of May. In 2026, the doors of Yamunotri Temple, which remain closed during the winter season, were reopened on 19 April 2026 for devotees.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹1,800",
+    "oldPrice": "₹1,200",
     "discount": ""
   },
   {
@@ -16164,8 +16164,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Yamunotri is a sacred destination. It is nestled amidst the Himalayas valleys at high altitudes. Pilgrims have to bear cold and undergo trekking. To make your Yatra easier, we offer all-inclusive Yamunotri Tour Packages . In this tour plan, you'll be taken to the Yamunotri in a private SUV vehicle . In addition, all your hotels and transport will be pre-booked. To know more, give us a call.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹24,000",
+    "oldPrice": "₹16,000",
     "discount": ""
   },
   {
@@ -16203,8 +16203,8 @@ export const allPackages: Package[] = [
     "route": "Haridwar – Barkot → Barkot – Yamunotri – Barkot → Barkot – Haridwar",
     "description": "Yamunotri is the first step of the four pilgrimages of the sacred Char Dham Yatra and is located at an altitude of 3293 m above sea level.",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹17,200",
+    "oldPrice": "₹11,500",
     "discount": ""
   },
   {
@@ -16216,8 +16216,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Yamunotri Temple is located within the scenic and incredibly peaceful surroundings of the district of Uttarkashi. Set against the magnificent backdrop of a cascading waterfall, rolling green hills and an omnipresent feeling of spirituality Yamunotri Temple marks the first reachable point from where the holy river of Yamuna emerges. The temple itself seems like a very stark contrast with its brightly colored exteriors and sits elegantly on a plank of the Bandarpoonch Parvat. Inside the Temple one",
     "highlights": [],
-    "price": "",
-    "oldPrice": "",
+    "price": "₹24,000",
+    "oldPrice": "₹16,000",
     "discount": ""
   }
 ];

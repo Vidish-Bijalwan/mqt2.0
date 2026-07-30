@@ -45,6 +45,15 @@ export default function PackageListCard({ pkg }: { pkg: Package }) {
               </span>
             </div>
           )}
+
+          {/* Eco-Friendly Nature Tours Badge */}
+          {pkg.category && (pkg.category.toLowerCase().includes('wildlife') || pkg.category.toLowerCase().includes('nature') || pkg.category.toLowerCase().includes('hill station')) && (
+            <div className="absolute top-2 right-2 z-10">
+              <span className="bg-brand-green text-white text-[9px] font-bold px-2 py-1 rounded-sm shadow-sm flex items-center">
+                <span className="mr-1">🌱</span> Eco Tour
+              </span>
+            </div>
+          )}
         </Link>
       </div>
 

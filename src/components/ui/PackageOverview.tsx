@@ -1,4 +1,5 @@
 import { MapPin, Navigation, Info } from "lucide-react";
+import AutoLinker from "@/components/ui/AutoLinker";
 
 interface Temple {
   name: string;
@@ -99,7 +100,7 @@ export default function PackageOverview({ content, packageTitle }: { content: st
     <div className="space-y-8">
       {/* Introduction */}
       <div className="prose max-w-none text-gray-600 text-[15px] leading-relaxed whitespace-pre-line">
-        {introSection.trim()}
+        <AutoLinker text={introSection.trim()} />
       </div>
 
       {/* Visual Temple Cards (If Parsed Successfully) */}
@@ -155,7 +156,7 @@ export default function PackageOverview({ content, packageTitle }: { content: st
           <section>
             <h3 className="text-xl font-bold text-gray-800 mb-4 pb-2 border-b border-gray-100">Temple Significance</h3>
             <div className="prose max-w-none text-gray-600 text-[15px] leading-relaxed whitespace-pre-line">
-              {significanceSection.trim()}
+              <AutoLinker text={significanceSection.trim()} />
             </div>
           </section>
         )}
@@ -164,7 +165,7 @@ export default function PackageOverview({ content, packageTitle }: { content: st
           <section>
             <h3 className="text-xl font-bold text-gray-800 mb-4 pb-2 border-b border-gray-100">Travel Options</h3>
             <div className="prose max-w-none text-gray-600 text-[15px] leading-relaxed whitespace-pre-line">
-              {travelOptionsSection.trim()}
+              <AutoLinker text={travelOptionsSection.trim()} />
             </div>
           </section>
         )}
@@ -173,7 +174,7 @@ export default function PackageOverview({ content, packageTitle }: { content: st
           <section>
             <h3 className="text-xl font-bold text-gray-800 mb-4 pb-2 border-b border-gray-100">Best Time to Visit</h3>
             <div className="prose max-w-none text-gray-600 text-[15px] leading-relaxed whitespace-pre-line">
-              {bestTimeSection.trim()}
+              <AutoLinker text={bestTimeSection.trim()} />
             </div>
           </section>
         )}
@@ -185,7 +186,7 @@ export default function PackageOverview({ content, packageTitle }: { content: st
               Travel Tips for Devotees
             </h3>
             <div className="prose max-w-none text-gray-700 text-[14px] leading-relaxed whitespace-pre-line">
-              {tipsSection.trim()}
+              <AutoLinker text={tipsSection.trim()} />
             </div>
           </section>
         )}

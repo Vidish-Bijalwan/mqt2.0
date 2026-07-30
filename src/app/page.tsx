@@ -4,6 +4,7 @@ import PackageCard from "@/components/ui/PackageCard";
 import Image from "next/image";
 import Link from "next/link";
 import { Users, Heart, Landmark, Flame, Umbrella, Tent, Snowflake, Sun, CloudRain } from "lucide-react";
+import PosterMarquee from "@/components/ui/PosterMarquee";
 
 const PILGRIM_PACKAGES = allPackages.filter(p => p.category === "Pilgrimage").slice(0, 5);
 const NORTH_PACKAGES = allPackages.filter(p => p.category === "North India").slice(0, 5);
@@ -52,13 +53,13 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
       
-      {/* 1. Hero Banner */}
-      <section className="w-full h-[350px] relative">
-         <Image src="/images/packages/chardham.jpg" alt="India Tours" fill className="object-cover brightness-75" priority />
-         <div className="absolute inset-0 flex flex-col justify-center items-center text-center">
-            <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4 drop-shadow-lg">Discover the Magic of India</h1>
-            <p className="text-lg text-white font-medium drop-shadow-md">Explore authentic experiences with our expert guides</p>
+      {/* 1. Hero Banner with Poster Marquee */}
+      <section className="w-full bg-brand-navy relative">
+         <div className="pt-10 pb-2 text-center">
+           <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-3 drop-shadow-lg">Discover the Magic of India</h1>
+           <p className="text-base md:text-lg text-gray-300 font-medium drop-shadow-md">Explore authentic experiences with our expert guides</p>
          </div>
+         <PosterMarquee />
       </section>
 
       {/* 2. Top Trending Tour Packages */}
@@ -154,14 +155,14 @@ export default function Home() {
             <div className="w-12 h-1 bg-legacy-orange mx-auto mt-2 mb-4"></div>
             <p className="text-sm text-gray-500">
               Are you looking forward to visiting the exquisite wildlife sanctuaries{" "}
-              <Link href="/special-tours" className="text-blue-600 font-semibold">Read More</Link>
+              <Link href="/special-tours" className="text-brand-orange font-semibold hover:underline">Read More</Link>
             </p>
           </div>
           
           <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-[10px]">
              {THEMES.map((theme, i) => (
                 <Link key={i} href={theme.href} className="border border-gray-200 p-3 flex flex-col items-center justify-center rounded cursor-pointer hover:border-legacy-orange group transition-colors">
-                   <div className="w-10 h-10 mb-2 text-red-600 group-hover:text-black transition-colors flex items-center justify-center">
+                   <div className="w-10 h-10 mb-2 text-brand-orange group-hover:text-black transition-colors flex items-center justify-center">
                      <theme.icon className="w-8 h-8" strokeWidth={1.5} />
                    </div>
                    <span className="text-[10px] text-gray-700 font-medium text-center">{theme.name}</span>
@@ -178,8 +179,8 @@ export default function Home() {
             <h2 className="text-2xl font-bold text-gray-700">Experience The Best Of India</h2>
             <div className="w-12 h-1 bg-legacy-orange mx-auto mt-2 mb-4"></div>
             <p className="text-sm text-gray-500">
-              India is not a country where tourists come to see but is the country where visitors come to experience{" "}
-              <Link href="/about" className="text-blue-600 font-semibold">Read More</Link>
+              India has many things to offer and you can enjoy many things in this country.{" "}
+              <Link href="/india-tours" className="text-brand-orange font-semibold hover:underline">Read More</Link>
             </p>
           </div>
           

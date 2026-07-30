@@ -145,6 +145,10 @@ export const navLinks = [
     href: "/customer-center",
   },
   {
+    title: "Blog",
+    href: "/blog",
+  },
+  {
     title: "Contact Us",
     href: "/contact-us",
   }
