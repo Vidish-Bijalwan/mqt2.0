@@ -1,11 +1,20 @@
 import fullBlogDataRaw from "@/data/fullBlogData.json";
+import fullBlogDataCleanRaw from "@/data/fullBlogDataClean.json";
 import Image from "next/image";
 import Link from "next/link";
 import { Calendar, Phone } from "lucide-react";
 import { siteConfig } from "@/data/siteConfig";
 import { notFound } from "next/navigation";
 
+// Prefer the cleaned content (junk nav/form blocks removed); fall back to the
+// original scrape for any post missing from the cleaned set.
 const fullBlogData = fullBlogDataRaw as Record<string, any>;
+const fullBlogDataClean = fullBlogDataCleanRaw as Record<string, any>;
+
+function blogFor(slug: string) {
+  const clean = fullBlogDataClean[slug] || fullBlogDataClean[`blog__${slug}`];
+  return clean || fullBlogData[slug] || fullBlogData[`blog__${slug}`];
+}
 
 import { getBlogImage } from "@/data/blogImageMap";
 import AutoLinker from "@/components/ui/AutoLinker";
@@ -14,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const resolvedParams = await params;
   const slug = resolvedParams.slug.toLowerCase();
   
-  const blog = fullBlogData[slug] || fullBlogData[`blog__${slug}`];
+  const blog = blogFor(slug);
   if (!blog) return { title: `Blog | My Quick Trippers` };
 
   const image = getBlogImage(slug);
@@ -66,7 +75,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const resolvedParams = await params;
   const slug = resolvedParams.slug.toLowerCase();
   
-  const blog = fullBlogData[slug] || fullBlogData[`blog__${slug}`];
+  const blog = blogFor(slug);
   if (!blog) {
     notFound();
   }

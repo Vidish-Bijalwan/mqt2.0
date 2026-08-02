@@ -31,6 +31,24 @@ try {
   console.log("Error loading packageDetailsV2.json", e);
 }
 
+// Load V3 Package Details (clean, structured blocks regenerated from the
+// scraped folder — junk chrome removed, lists/headings/images structured)
+let packageDetailsV3: Record<string, any> = {};
+try {
+  const dataPathV3 = path.join(process.cwd(), 'src/data/packageDetailsV3.json');
+  packageDetailsV3 = JSON.parse(fs.readFileSync(dataPathV3, 'utf-8'));
+} catch (e) {
+  console.log("Error loading packageDetailsV3.json", e);
+}
+
+function detailsV2For(slug: string) {
+  return packageDetailsV2[slug] || packageDetailsV2[`${slug}.html`] || packageDetailsV2[`${slug}.htm`];
+}
+
+function detailsV3For(slug: string) {
+  return packageDetailsV3[slug];
+}
+
 function getFallbackImage(slug: string, category: string) {
   return `/images/packages/${slug}.jpg`;
 }
@@ -42,23 +60,25 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
   const slug = resolvedParams.slug;
-  const pkgV2 = packageDetailsV2[slug];
+  const pkgV3 = detailsV3For(slug);
+  const pkgV2 = detailsV2For(slug);
   const pkg = packageDetails[slug] || allPackages.find(p => p.slug === slug);
   
-  if (pkgV2?.seo) {
-    // Return preserved SEO tags from Agent 3 scraping
+  const seoSource = pkgV3?.seo || pkgV2?.seo;
+  if (seoSource) {
+    // Return preserved SEO tags from scraping (V3 clean data preferred)
     return {
-      title: pkgV2.seo.page_title,
-      description: pkgV2.seo.meta_description,
+      title: seoSource.page_title || seoSource.title,
+      description: seoSource.meta_description,
       alternates: {
-        canonical: pkgV2.seo.canonical_url || `${siteConfig.domain}/packages/${slug}`,
+        canonical: seoSource.canonical_url || `${siteConfig.domain}/packages/${slug}`,
       },
-      openGraph: pkgV2.seo.og_tags ? {
-        title: pkgV2.seo.og_tags['og:title'],
-        description: pkgV2.seo.og_tags['og:description'],
-        url: pkgV2.seo.og_tags['og:url'],
+      openGraph: seoSource.og_tags ? {
+        title: seoSource.og_tags['og:title'],
+        description: seoSource.og_tags['og:description'],
+        url: seoSource.og_tags['og:url'],
         type: 'article',
-        images: [{ url: pkgV2.seo.og_tags['og:image'] }],
+        images: [{ url: seoSource.og_tags['og:image'] }],
       } : undefined,
     };
   }
@@ -91,9 +111,21 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
     notFound();
   }
 
-  // Get rich details
-  const detailsV2 = packageDetailsV2[pkg.slug];
+  // Get rich details — V3 (clean) preferred, then V2, then legacy
+  const detailsV3 = detailsV3For(pkg.slug);
+  const detailsV2 = detailsV2For(pkg.slug);
   const details = packageDetails[pkg.slug] || { overview: '', highlights: [], itinerary: [], faqs: [] };
+  const blocks = detailsV3?.blocks || detailsV2?.blocks || null;
+
+  // Real gallery images: the package cover plus in-content images from the
+  // cleaned blocks (deduped), so the photo grid shows actual photos instead
+  // of gray placeholder boxes.
+  const galleryImages = [
+    pkg.image,
+    ...(blocks || [])
+      .filter((b: any) => b.type === 'image' && b.url)
+      .map((b: any) => b.url),
+  ].filter((url: string, idx: number, arr: string[]) => url && arr.indexOf(url) === idx).slice(0, 5);
 
   let jsonLd = detailsV2?.seo?.json_ld ? detailsV2.seo.json_ld : {
     "@context": "https://schema.org",
@@ -182,31 +214,28 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
 
       <div className="container mx-auto px-4 w-[95%] max-w-[1600px] mt-6">
         
-        {/* Photo Gallery Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-2 h-[300px] md:h-[450px] mb-8 rounded-lg overflow-hidden shadow-sm">
-          <div className="md:col-span-2 md:row-span-2 relative h-full group">
-             <Image src={pkg.image || "/images/packages/kashmir.webp"} alt={pkg.title} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition-transform duration-700 group-hover:scale-105" priority />
-             <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors" />
+        {/* Photo Gallery Grid — real images from package cover + content */}
+        {galleryImages.length > 0 && (
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-8 rounded-lg overflow-hidden shadow-sm">
+            <div className="col-span-2 row-span-2 relative h-[260px] md:h-[450px] group">
+              <Image src={galleryImages[0]} alt={pkg.title} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition-transform duration-700 group-hover:scale-105" priority />
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors" />
+            </div>
+            {galleryImages.slice(1).map((img, idx) => (
+              <div key={idx} className={`relative h-[130px] md:h-[222px] group ${idx >= 3 ? 'hidden md:block' : ''}`}>
+                <Image src={img} alt={`${pkg.title} — Photo ${idx + 1}`} fill sizes="(max-width: 768px) 50vw, 25vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
+              </div>
+            ))}
+            {galleryImages.length > 1 && galleryImages.slice(1).length < 4 && (
+              <div className="hidden md:flex relative h-[222px] group bg-gray-800">
+                <Image src={galleryImages[0]} alt={pkg.title} fill sizes="25vw" className="object-cover opacity-60 transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center">
+                  <span className="text-white font-bold text-sm bg-white/20 px-4 py-2 rounded-full backdrop-blur-sm">View Package</span>
+                </div>
+              </div>
+            )}
           </div>
-          <div className="hidden md:block relative h-full group">
-             <Image src={pkg.image || "/images/packages/kashmir.webp"} alt={`${pkg.title} Highlights`} fill sizes="(max-width: 768px) 100vw, 25vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
-          </div>
-          <div className="hidden md:block relative h-full group bg-gray-200">
-             {/* Placeholder for dynamic gallery images */}
-             <div className="absolute inset-0 flex items-center justify-center text-gray-400">Scenic View</div>
-          </div>
-          <div className="hidden md:block relative h-full group bg-gray-200">
-             {/* Placeholder for dynamic gallery images */}
-             <div className="absolute inset-0 flex items-center justify-center text-gray-400">Temple Darshan</div>
-          </div>
-          <div className="hidden md:block relative h-full group bg-gray-800">
-             <Image src={pkg.image || "/images/packages/kashmir.webp"} alt={pkg.title} fill sizes="(max-width: 768px) 100vw, 25vw" className="object-cover opacity-60 transition-transform duration-700 group-hover:scale-105" />
-             <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center cursor-pointer hover:bg-black/50 transition-colors">
-                <span className="text-white font-bold text-sm bg-white/20 px-4 py-2 rounded-full backdrop-blur-sm mb-2">View All Images</span>
-                <span className="text-white text-xs">+12 Photos</span>
-             </div>
-          </div>
-        </div>
+        )}
 
         {/* Trust Indicators (Social Proof alternative) */}
         <TrustIndicators />
@@ -216,9 +245,9 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
           {/* Main Left Content */}
           <div className="lg:col-span-2 space-y-8">
             
-            {detailsV2 ? (
+            {blocks ? (
               <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm border border-gray-100">
-                <BlockRenderer blocks={detailsV2.blocks} />
+                <BlockRenderer blocks={blocks} />
               </div>
             ) : (
               <>
