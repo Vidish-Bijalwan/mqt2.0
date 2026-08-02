@@ -4,19 +4,13 @@ import PackageListCard from "@/components/ui/PackageListCard";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import FilterSidebar from "@/components/ui/FilterSidebar";
+import { themeConfigs } from "@/data/themeConfig";
 
-// Mapping of themes to search keywords to properly filter the 1,200+ packages
-const THEME_KEYWORDS: Record<string, string[]> = {
-  "family": ["family", "kids", "leisure"],
-  "honeymoon": ["honeymoon", "romantic", "couple"],
-  "cultural": ["culture", "heritage", "temple", "historical", "fort"],
-  "pilgrimage": ["pilgrimage", "darshan", "yatra", "dham", "temple", "spiritual"],
-  "beaches": ["beach", "goa", "andaman", "island", "sea"],
-  "adventure": ["adventure", "trek", "safari", "rafting", "camping"],
-  "winter": ["winter", "snow", "ski", "kashmir", "auli"],
-  "summer": ["summer", "hill station", "manali", "shimla", "ooty"],
-  "monsoon": ["monsoon", "rain", "kerala", "meghalaya"]
-};
+// Map theme slugs to keywords (reuses shared config)
+const THEME_KEYWORDS: Record<string, string[]> = {};
+themeConfigs.forEach((t) => {
+  THEME_KEYWORDS[t.name.toLowerCase()] = t.keywords;
+});
 
 export const dynamicParams = true;
 

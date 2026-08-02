@@ -25,10 +25,10 @@ export const siteConfig = {
   logoAlt: "My Quick Trippers - MQT India Logo",
   social: {
     facebook: "https://www.facebook.com/myquicktrippers",
-    instagram: "https://www.instagram.com/myquicktrippers",
-    twitter: "https://x.com/myquicktrippers",
+    instagram: "https://www.instagram.com/mqt_india/",
+    twitter: "https://x.com/mqt_india",
     youtube: "https://www.youtube.com/@myquicktrippers",
-    linkedin: "https://www.linkedin.com/company/myquicktrippers",
+    linkedin: "https://www.linkedin.com/in/myquicktrippers-india-579069427/",
     whatsapp: "https://wa.me/918171158569",
   },
   offices: {

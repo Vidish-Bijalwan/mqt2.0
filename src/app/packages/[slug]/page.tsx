@@ -8,17 +8,27 @@ import ItineraryAccordion from "@/components/ui/ItineraryAccordion";
 import PackageOverview from "@/components/ui/PackageOverview";
 import TrustIndicators from "@/components/ui/TrustIndicators";
 import RelatedPackages from "@/components/ui/RelatedPackages";
+import BlockRenderer from "@/components/ui/BlockRenderer";
 import { siteConfig } from "@/data/siteConfig";
 import fs from 'fs';
 import path from 'path';
 
-// Load the newly generated rich package details payload
+// Load the newly generated rich package details payload (Legacy)
 let packageDetails: Record<string, any> = {};
 try {
   const dataPath = path.join(process.cwd(), 'src/data/packageDetails.json');
   packageDetails = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
 } catch (e) {
   console.log("Error loading packageDetails.json", e);
+}
+
+// Load V2 Package Details (Agent 3 output)
+let packageDetailsV2: Record<string, any> = {};
+try {
+  const dataPathV2 = path.join(process.cwd(), 'src/data/packageDetailsV2.json');
+  packageDetailsV2 = JSON.parse(fs.readFileSync(dataPathV2, 'utf-8'));
+} catch (e) {
+  console.log("Error loading packageDetailsV2.json", e);
 }
 
 function getFallbackImage(slug: string, category: string) {
@@ -32,8 +42,27 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
   const slug = resolvedParams.slug;
+  const pkgV2 = packageDetailsV2[slug];
   const pkg = packageDetails[slug] || allPackages.find(p => p.slug === slug);
   
+  if (pkgV2?.seo) {
+    // Return preserved SEO tags from Agent 3 scraping
+    return {
+      title: pkgV2.seo.page_title,
+      description: pkgV2.seo.meta_description,
+      alternates: {
+        canonical: pkgV2.seo.canonical_url || `${siteConfig.domain}/packages/${slug}`,
+      },
+      openGraph: pkgV2.seo.og_tags ? {
+        title: pkgV2.seo.og_tags['og:title'],
+        description: pkgV2.seo.og_tags['og:description'],
+        url: pkgV2.seo.og_tags['og:url'],
+        type: 'article',
+        images: [{ url: pkgV2.seo.og_tags['og:image'] }],
+      } : undefined,
+    };
+  }
+
   const title = pkg ? `${pkg.title} | My Quick Trippers` : `${slug.replace(/-/g, ' ').toUpperCase()} | My Quick Trippers`;
   const description = pkg?.overview?.substring(0, 160) || `Book the best ${title} with My Quick Trippers.`;
 
@@ -63,9 +92,12 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
   }
 
   // Get rich details
+  const detailsV2 = packageDetailsV2[pkg.slug];
   const details = packageDetails[pkg.slug] || { overview: '', highlights: [], itinerary: [], faqs: [] };
 
-  const schemaGraph: any[] = [
+  let jsonLd = detailsV2?.seo?.json_ld ? detailsV2.seo.json_ld : {
+    "@context": "https://schema.org",
+    "@graph": [
     {
       "@type": ["TouristTrip", "Product"],
       "name": pkg.title,
@@ -106,26 +138,24 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
         }
       ]
     }
-  ];
-
-  if (details.faqs && details.faqs.length > 0) {
-    schemaGraph.push({
-      "@type": "FAQPage",
-      "mainEntity": details.faqs.map((faq: any) => ({
-        "@type": "Question",
-        "name": faq.q,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": faq.a
-        }
-      }))
-    });
-  }
-
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": schemaGraph
+  ]
   };
+
+  if (!detailsV2?.seo?.json_ld) {
+    if (details.faqs && details.faqs.length > 0) {
+      jsonLd["@graph"].push({
+        "@type": "FAQPage",
+        "mainEntity": details.faqs.map((faq: any) => ({
+          "@type": "Question",
+          "name": faq.q,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.a
+          }
+        }))
+      });
+    }
+  }
 
   return (
     <>
@@ -186,18 +216,24 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
           {/* Main Left Content */}
           <div className="lg:col-span-2 space-y-8">
             
-            {/* Tour Overview */}
-            {(details.overview || pkg.description) && (
+            {detailsV2 ? (
               <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm border border-gray-100">
-                <div className="flex items-center mb-6 pb-4 border-b border-gray-100">
-                  <div className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center mr-4">
-                     <Image src="/logo.png" alt="MQT" width={24} height={24} className="opacity-50" />
-                  </div>
-                  <h2 className="text-2xl font-bold text-gray-800">Tour Overview</h2>
-                </div>
-                <PackageOverview content={details.overview || pkg.description} packageTitle={pkg.title} />
+                <BlockRenderer blocks={detailsV2.blocks} />
               </div>
-            )}
+            ) : (
+              <>
+                {/* Tour Overview (Legacy) */}
+                {(details.overview || pkg.description) && (
+                  <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm border border-gray-100">
+                    <div className="flex items-center mb-6 pb-4 border-b border-gray-100">
+                      <div className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center mr-4">
+                        <Image src="/logo.png" alt="MQT" width={24} height={24} className="opacity-50" />
+                      </div>
+                      <h2 className="text-2xl font-bold text-gray-800">Tour Overview</h2>
+                    </div>
+                    <PackageOverview content={details.overview || pkg.description} packageTitle={pkg.title} />
+                  </div>
+                )}
 
             {/* Highlights */}
             {details.highlights.length > 0 && (
@@ -265,23 +301,28 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
             </div>
 
             {/* FAQs */}
-            {details.faqs.length > 0 && (
+            {details.faqs && details.faqs.length > 0 && (
               <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm border border-gray-100">
                 <div className="flex items-center mb-6 pb-4 border-b border-gray-100">
                   <div className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center mr-4">
-                     <HelpCircle className="text-legacy-orange w-5 h-5" />
+                    <MessageCircleQuestion className="text-legacy-orange" size={20} />
                   </div>
-                  <h2 className="text-2xl font-bold text-gray-800">FAQs - Frequently Asked Questions</h2>
+                  <h2 className="text-2xl font-bold text-gray-800">Frequently Asked Questions</h2>
                 </div>
                 <div className="space-y-4">
-                    {details.faqs.map((faq: any, idx: number) => (
-                      <div key={idx} className="border border-gray-100 rounded bg-gray-50/30 p-4">
-                         <h3 className="font-bold text-gray-800 text-sm mb-2">{faq.q}</h3>
-                         <p className="text-gray-600 text-sm">{faq.a}</p>
-                      </div>
-                   ))}
+                  {details.faqs.map((faq: any, i: number) => (
+                    <div key={i} className="border border-gray-100 rounded-lg p-4 bg-gray-50/50">
+                        <h3 className="font-bold text-gray-800 mb-2 flex items-start gap-2">
+                          <HelpCircle size={18} className="text-legacy-orange shrink-0 mt-1" />
+                          {faq.q}
+                        </h3>
+                        <p className="text-gray-600 pl-7 text-sm leading-relaxed">{faq.a}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
+            )}
+            </>
             )}
 
           </div>

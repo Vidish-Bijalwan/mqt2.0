@@ -107,11 +107,29 @@ This file is 501 KB and loaded synchronously in `next.config.ts`. A single malfo
 
 ---
 
-## Current State Summary (July 2026)
+## AI Agent Architecture (August 2026)
+
+For the ongoing content migration to MyQuickTrippers, we have established a specialized AI agent pipeline to manage the transition from the raw `scraped_data/pages/` schema into production Next.js files:
+
+1. **Scraper & Recon Agent**
+   - *Role*: Executes `scraper.py` (v2), fetches raw HTML, parses structured `content_blocks`, CSS backgrounds, and SEO metadata. Outputs to `scraped_data/pages/<type>/<slug>/`.
+   - *Handoff*: Writes folder structure and `summary_report.json`.
+2. **Gap Analysis & Content Mapping Agent**
+   - *Role*: Analyzes `content_blocks` from the scraper output against the required MyQuickTrippers schemas (e.g. `PackageCardProps`, `allPackages.ts`). Identifies missing structural elements like missing prices or broken routing.
+   - *Handoff*: Writes a gap report and mappings to be used by the Rebranding Agent.
+3. **Rebranding & Content Generation Agent**
+   - *Role*: Processes raw scraped content block-by-block. Converts "Namaste India Trip" references to "My Quick Trippers". Extracts itinerary steps into structured JSON logic. Uplifts text to match the new premium brand voice.
+   - *Handoff*: Writes updated data JSON files and assets to `src/data/` and `public/images/`.
+4. **QA & Writeback Agent**
+   - *Role*: Validates the structural integrity of the final TS/TSX files and JSON data. Runs `npm run build` and `tsc` checks. Enforces design compliance.
+5. **Human-in-the-Loop Escalation**
+   - *Role*: Business-judgment escalation is a hardcoded protocol. If Agent 2 or 3 encounters unresolvable data conflicts (e.g., COVID-cancelled tours, completely missing price grids, mismatched itineraries), they log the slug to an `escalations.json` queue and block on human review rather than hallucinating content.
+
+---
+
+## Current State Summary (August 2026)
 
 - **Dev server:** Running on port 3001 (`npm run dev` in `myquicktrippers/`)
-- **Phase:** 3 (UI Polish) nearing completion
-- **Poster marquee:** Fully functional — ambient scroll, glow hover, lightbox with zoom/pan
-- **Major remaining work:** Missing page routes (pay-online, reviews, careers), image 404s, SEO metadata audit
-- **Performance concern:** `fullBlogData.json` at 13.5 MB — not yet addressed
-- **Last major change:** Complete rewrite of `PosterMarquee.tsx` and marquee CSS to eliminate scaling-based clipping
+- **Phase:** Content Migration & Scraper Audit
+- **Major Activity:** Executing v2 Scraper in the background. We discovered that the initial crawl missed 524 of the 1,205 target package slugs. v2 has been injected with the exact 1,205 target URLs to ensure a 100% attempt rate, executing a full HTML re-crawl across 1,786 unique URLs.
+- **Major remaining work:** Resolving missing slugs, completing the Scraper run, and launching the Gap Analysis & Rebranding Agents to process the new scraped structure.

@@ -40,7 +40,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center">
              <div className="flex flex-col">
                <div className="flex items-center h-12">
-                 <Image src="/images/mqt-logo.png" alt="My Quick Trippers" width={180} height={48} className="object-contain h-full w-auto" priority />
+                 <Image src="/images/mqt-logo.png" alt="My Quick Trippers" width={180} height={48} className="object-contain h-full" style={{ width: "auto" }} priority />
                </div>
              </div>
           </Link>

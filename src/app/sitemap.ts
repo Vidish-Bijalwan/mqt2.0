@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { siteConfig } from '@/data/siteConfig';
 import { allPackages } from '@/data/allPackages';
+import { experiences } from '@/data/experiencesData';
 import packageDetailsRaw from '@/data/packageDetails.json';
 import destinationsDataRaw from '@/data/destinationsData.json';
 import fullBlogDataRaw from '@/data/fullBlogData.json';
@@ -25,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { route: '/special-tours', priority: 0.8, freq: 'weekly' as const },
     { route: '/india-tours', priority: 0.8, freq: 'weekly' as const },
     { route: '/international-tours', priority: 0.7, freq: 'weekly' as const },
+    { route: '/experiences', priority: 0.85, freq: 'weekly' as const },
     { route: '/privacy-policy', priority: 0.3, freq: 'yearly' as const },
     { route: '/terms-and-conditions', priority: 0.3, freq: 'yearly' as const },
   ].map(({ route, priority, freq }) => ({
@@ -60,6 +62,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
+  // Experience category pages (SEO landing pages)
+  const experienceRoutes = experiences.map((exp) => ({
+    url: `${baseUrl}/experiences/${exp.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
+  }));
+
   // Blog posts (410 posts — organic traffic drivers)
   const blogRoutes = Object.keys(fullBlogData).map((slug) => {
     const cleanSlug = slug.startsWith('blog__') ? slug.replace('blog__', '') : slug;
@@ -74,6 +84,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticRoutes,
     ...destinationRoutes,
+    ...experienceRoutes,
     ...richPackageRoutes,
     ...basicPackageRoutes,
     ...blogRoutes,
