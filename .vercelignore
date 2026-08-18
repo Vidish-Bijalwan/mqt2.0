@@ -1,9 +1,5 @@
 # Heavy image directories that aren't needed for the build
 public/images/packages/hi-*
-public/images/og/
-public/images/posters/
-public/images/static/
-public/images/namaste-india/
 
 # Scripts and tooling not needed for production
 scripts/
