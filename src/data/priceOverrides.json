@@ -1,0 +1,1622 @@
+{
+  "12-jyotirlinga-tour-package": {
+    "mrp": "₹1,78,125",
+    "dealPrice": "₹1,42,500",
+    "originalMrp": "₹118,750",
+    "originalDealPrice": "₹95,000"
+  },
+  "2-days-ayodhya-tour-package": {
+    "mrp": "₹72,188",
+    "dealPrice": "₹57,750",
+    "originalMrp": "₹48,125",
+    "originalDealPrice": "₹38,500"
+  },
+  "adi-kailash-yatra-tour-packages": {
+    "mrp": "₹90,938",
+    "dealPrice": "₹72,750",
+    "originalMrp": "₹60,625",
+    "originalDealPrice": "₹48,500"
+  },
+  "agra-tour-packages": {
+    "mrp": "₹66,563",
+    "dealPrice": "₹53,250",
+    "originalMrp": "₹44,375",
+    "originalDealPrice": "₹35,500"
+  },
+  "allahabad-tour-packages": {
+    "mrp": "₹19,688",
+    "dealPrice": "₹15,750",
+    "originalMrp": "₹13,125",
+    "originalDealPrice": "₹10,500"
+  },
+  "assam-tour-packages": {
+    "mrp": "₹10,593",
+    "dealPrice": "₹8,475",
+    "originalMrp": "₹7,062",
+    "originalDealPrice": "₹5,650"
+  },
+  "ayodhya-tour-packages": {
+    "mrp": "₹9,375",
+    "dealPrice": "₹7,500",
+    "originalMrp": "₹6,250",
+    "originalDealPrice": "₹5,000"
+  },
+  "badrinath-tour-packages": {
+    "mrp": "₹4,688",
+    "dealPrice": "₹3,750",
+    "originalMrp": "₹3,125",
+    "originalDealPrice": "₹2,500"
+  },
+  "bali-tour-packages": {
+    "mrp": "₹5,438",
+    "dealPrice": "₹4,350",
+    "originalMrp": "₹3,625",
+    "originalDealPrice": "₹2,900"
+  },
+  "buddhist-pilgrimage-tour-packages": {
+    "mrp": "₹27,188",
+    "dealPrice": "₹21,750",
+    "originalMrp": "₹18,125",
+    "originalDealPrice": "₹14,500"
+  },
+  "chardham-tour-packages": {
+    "mrp": "₹45,000",
+    "dealPrice": "₹36,000",
+    "originalMrp": "₹30,000",
+    "originalDealPrice": "₹24,000"
+  },
+  "darjeeling-tour-packages": {
+    "mrp": "₹46,752",
+    "dealPrice": "₹37,403",
+    "originalMrp": "₹31,168",
+    "originalDealPrice": "₹24,935"
+  },
+  "delhi-tour-packages": {
+    "mrp": "₹6,563",
+    "dealPrice": "₹5,250",
+    "originalMrp": "₹4,375",
+    "originalDealPrice": "₹3,500"
+  },
+  "do-dham-tour-packages": {
+    "mrp": "₹5,625",
+    "dealPrice": "₹4,500",
+    "originalMrp": "₹3,750",
+    "originalDealPrice": "₹3,000"
+  },
+  "dubai-tour-packages": {
+    "mrp": "₹6,563",
+    "dealPrice": "₹5,250",
+    "originalMrp": "₹4,375",
+    "originalDealPrice": "₹3,500"
+  },
+  "dwarka-tour-packages": {
+    "mrp": "₹9,375",
+    "dealPrice": "₹7,500",
+    "originalMrp": "₹6,250",
+    "originalDealPrice": "₹5,000"
+  },
+  "gangtok-tour-packages": {
+    "mrp": "₹26,250",
+    "dealPrice": "₹21,000",
+    "originalMrp": "₹17,500",
+    "originalDealPrice": "₹14,000"
+  },
+  "goa-tour-packages": {
+    "mrp": "₹18,563",
+    "dealPrice": "₹14,850",
+    "originalMrp": "₹12,375",
+    "originalDealPrice": "₹9,900"
+  },
+  "golden-triangle-tour-packages": {
+    "mrp": "₹4,688",
+    "dealPrice": "₹3,750",
+    "originalMrp": "₹3,125",
+    "originalDealPrice": "₹2,500"
+  },
+  "gujarat-tour-packages": {
+    "mrp": "₹23,438",
+    "dealPrice": "₹18,750",
+    "originalMrp": "₹15,625",
+    "originalDealPrice": "₹12,500"
+  },
+  "haridwar-tour-packages": {
+    "mrp": "₹5,625",
+    "dealPrice": "₹4,500",
+    "originalMrp": "₹3,750",
+    "originalDealPrice": "₹3,000"
+  },
+  "himachal-tour-packages": {
+    "mrp": "₹11,250",
+    "dealPrice": "₹9,000",
+    "originalMrp": "₹7,500",
+    "originalDealPrice": "₹6,000"
+  },
+  "kainchi-dham-tour-packages": {
+    "mrp": "₹3,798",
+    "dealPrice": "₹3,039",
+    "originalMrp": "₹2,532",
+    "originalDealPrice": "₹2,026"
+  },
+  "kamakhya-temple-tour-package": {
+    "mrp": "₹10,593",
+    "dealPrice": "₹8,475",
+    "originalMrp": "₹7,062",
+    "originalDealPrice": "₹5,650"
+  },
+  "kanyakumari-tour-packages": {
+    "mrp": "₹29,063",
+    "dealPrice": "₹23,250",
+    "originalMrp": "₹19,375",
+    "originalDealPrice": "₹15,500"
+  },
+  "kashmir-tour-packages": {
+    "mrp": "₹28,125",
+    "dealPrice": "₹22,500",
+    "originalMrp": "₹18,750",
+    "originalDealPrice": "₹15,000"
+  },
+  "kathmandu-tour-packages": {
+    "mrp": "₹11,250",
+    "dealPrice": "₹9,000",
+    "originalMrp": "₹7,500",
+    "originalDealPrice": "₹6,000"
+  },
+  "kaziranga-tour-package": {
+    "mrp": "₹6,563",
+    "dealPrice": "₹5,250",
+    "originalMrp": "₹4,375",
+    "originalDealPrice": "₹3,500"
+  },
+  "kedarnath-tour-packages": {
+    "mrp": "₹4,688",
+    "dealPrice": "₹3,750",
+    "originalMrp": "₹3,125",
+    "originalDealPrice": "₹2,500"
+  },
+  "kerala-tour-packages-from-pune": {
+    "mrp": "₹27,188",
+    "dealPrice": "₹21,750",
+    "originalMrp": "₹18,125",
+    "originalDealPrice": "₹14,500"
+  },
+  "kerala-tour-packages": {
+    "mrp": "₹9,375",
+    "dealPrice": "₹7,500",
+    "originalMrp": "₹6,250",
+    "originalDealPrice": "₹5,000"
+  },
+  "kumbh-mela-tour-package-from-mumbai": {
+    "mrp": "₹15,000",
+    "dealPrice": "₹12,000",
+    "originalMrp": "₹10,000",
+    "originalDealPrice": "₹8,000"
+  },
+  "madhya-pradesh-tour-packages": {
+    "mrp": "₹12,188",
+    "dealPrice": "₹9,750",
+    "originalMrp": "₹8,125",
+    "originalDealPrice": "₹6,500"
+  },
+  "madurai-rameshwaram-tour-package": {
+    "mrp": "₹3,938",
+    "dealPrice": "₹3,150",
+    "originalMrp": "₹2,625",
+    "originalDealPrice": "₹2,100"
+  },
+  "malaysia-tour-packages": {
+    "mrp": "₹5,625",
+    "dealPrice": "₹4,500",
+    "originalMrp": "₹3,750",
+    "originalDealPrice": "₹3,000"
+  },
+  "manali-tour-packages": {
+    "mrp": "₹9,375",
+    "dealPrice": "₹7,500",
+    "originalMrp": "₹6,250",
+    "originalDealPrice": "₹5,000"
+  },
+  "mathura-tour-packages": {
+    "mrp": "₹4,685",
+    "dealPrice": "₹3,749",
+    "originalMrp": "₹3,123",
+    "originalDealPrice": "₹2,499"
+  },
+  "meghalaya-tour-packages": {
+    "mrp": "₹31,875",
+    "dealPrice": "₹25,500",
+    "originalMrp": "₹21,250",
+    "originalDealPrice": "₹17,000"
+  },
+  "nainital-tour-packages": {
+    "mrp": "₹11,250",
+    "dealPrice": "₹9,000",
+    "originalMrp": "₹7,500",
+    "originalDealPrice": "₹6,000"
+  },
+  "nepal-tour-packages": {
+    "mrp": "₹33,750",
+    "dealPrice": "₹27,000",
+    "originalMrp": "₹22,500",
+    "originalDealPrice": "₹18,000"
+  },
+  "orissa-tour-packages": {
+    "mrp": "₹19,688",
+    "dealPrice": "₹15,750",
+    "originalMrp": "₹13,125",
+    "originalDealPrice": "₹10,500"
+  },
+  "pokhara-tour-packages": {
+    "mrp": "₹34,875",
+    "dealPrice": "₹27,900",
+    "originalMrp": "₹23,250",
+    "originalDealPrice": "₹18,600"
+  },
+  "puri-konark-tour-packages": {
+    "mrp": "₹24,843",
+    "dealPrice": "₹19,875",
+    "originalMrp": "₹16,562",
+    "originalDealPrice": "₹13,250"
+  },
+  "puri-tour-packages": {
+    "mrp": "₹4,125",
+    "dealPrice": "₹3,300",
+    "originalMrp": "₹2,750",
+    "originalDealPrice": "₹2,200"
+  },
+  "rajasthan-tour-packages": {
+    "mrp": "₹29,063",
+    "dealPrice": "₹23,250",
+    "originalMrp": "₹19,375",
+    "originalDealPrice": "₹15,500"
+  },
+  "rishikesh-tour-packages": {
+    "mrp": "₹11,250",
+    "dealPrice": "₹9,000",
+    "originalMrp": "₹7,500",
+    "originalDealPrice": "₹6,000"
+  },
+  "shimla-tour-packages": {
+    "mrp": "₹20,625",
+    "dealPrice": "₹16,500",
+    "originalMrp": "₹13,750",
+    "originalDealPrice": "₹11,000"
+  },
+  "singapore-tour-packages": {
+    "mrp": "₹6,083",
+    "dealPrice": "₹4,866",
+    "originalMrp": "₹4,055",
+    "originalDealPrice": "₹3,244"
+  },
+  "somnath-tour-packages": {
+    "mrp": "₹34,688",
+    "dealPrice": "₹27,750",
+    "originalMrp": "₹23,125",
+    "originalDealPrice": "₹18,500"
+  },
+  "srilanka-tour-packages": {
+    "mrp": "₹9,375",
+    "dealPrice": "₹7,500",
+    "originalMrp": "₹6,250",
+    "originalDealPrice": "₹5,000"
+  },
+  "tamil-nadu-tour-packages": {
+    "mrp": "₹28,122",
+    "dealPrice": "₹22,499",
+    "originalMrp": "₹18,748",
+    "originalDealPrice": "₹14,999"
+  },
+  "thailand-tour-packages": {
+    "mrp": "₹38,438",
+    "dealPrice": "₹30,750",
+    "originalMrp": "₹25,625",
+    "originalDealPrice": "₹20,500"
+  },
+  "tirupati-tour-packages": {
+    "mrp": "₹10,500",
+    "dealPrice": "₹8,400",
+    "originalMrp": "₹7,000",
+    "originalDealPrice": "₹5,600"
+  },
+  "ujjain-tour-packages-from-ahmedabad": {
+    "mrp": "₹12,188",
+    "dealPrice": "₹9,750",
+    "originalMrp": "₹8,125",
+    "originalDealPrice": "₹6,500"
+  },
+  "ujjain-tour-packages-from-hyderabad": {
+    "mrp": "₹12,188",
+    "dealPrice": "₹9,750",
+    "originalMrp": "₹8,125",
+    "originalDealPrice": "₹6,500"
+  },
+  "ujjain-tour-packages-from-mumbai": {
+    "mrp": "₹12,188",
+    "dealPrice": "₹9,750",
+    "originalMrp": "₹8,125",
+    "originalDealPrice": "₹6,500"
+  },
+  "ujjain-tour-packages-from-nagpur": {
+    "mrp": "₹12,188",
+    "dealPrice": "₹9,750",
+    "originalMrp": "₹8,125",
+    "originalDealPrice": "₹6,500"
+  },
+  "ujjain-tour-packages-from-rajkot": {
+    "mrp": "₹12,188",
+    "dealPrice": "₹9,750",
+    "originalMrp": "₹8,125",
+    "originalDealPrice": "₹6,500"
+  },
+  "ujjain-tour-packages": {
+    "mrp": "₹11,718",
+    "dealPrice": "₹9,375",
+    "originalMrp": "₹7,812",
+    "originalDealPrice": "₹6,250"
+  },
+  "uttar-pradesh-tour-packages": {
+    "mrp": "₹38,438",
+    "dealPrice": "₹30,750",
+    "originalMrp": "₹25,625",
+    "originalDealPrice": "₹20,500"
+  },
+  "uttarakhand-tour-packages": {
+    "mrp": "₹19,688",
+    "dealPrice": "₹15,750",
+    "originalMrp": "₹13,125",
+    "originalDealPrice": "₹10,500"
+  },
+  "vietnam-tour-packages-from-delhi": {
+    "mrp": "₹28,125",
+    "dealPrice": "₹22,500",
+    "originalMrp": "₹18,750",
+    "originalDealPrice": "₹15,000"
+  },
+  "vietnam-tour-packages": {
+    "mrp": "₹53,438",
+    "dealPrice": "₹42,750",
+    "originalMrp": "₹35,625",
+    "originalDealPrice": "₹28,500"
+  },
+  "yamunotri-tour-packages": {
+    "mrp": "₹30,000",
+    "dealPrice": "₹24,000",
+    "originalMrp": "₹20,000",
+    "originalDealPrice": "₹16,000"
+  },
+  "3-days-madurai-rameshwaram-tour": {
+    "mrp": "₹21,750",
+    "dealPrice": "₹1,650",
+    "originalMrp": "₹14,500",
+    "originalDealPrice": "₹1,100"
+  },
+  "2nights-3days-orissa-tour-package": {
+    "mrp": "₹22,500",
+    "dealPrice": "₹2,250",
+    "originalMrp": "₹15,000",
+    "originalDealPrice": "₹1,500"
+  },
+  "2-days-khajuraho-tour": {
+    "mrp": "₹21,750",
+    "dealPrice": "₹900",
+    "originalMrp": "₹14,500",
+    "originalDealPrice": "₹600"
+  },
+  "3-days-srisailam-mallikarjuna-jyotirlinga-tour": {
+    "mrp": "₹22,800",
+    "dealPrice": "₹3,450",
+    "originalMrp": "₹15,200",
+    "originalDealPrice": "₹2,300"
+  },
+  "2-days-delhi-agra-mathura-vrindavan-tour": {
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
+    "originalMrp": "₹2,25,000",
+    "originalDealPrice": "₹1,200"
+  },
+  "4-days-odisha-tour-packages": {
+    "mrp": "₹25,500",
+    "dealPrice": "₹2,250",
+    "originalMrp": "₹17,000",
+    "originalDealPrice": "₹1,500"
+  },
+  "3-days-ujjain-omkareshwar-tour": {
+    "mrp": "₹21,750",
+    "dealPrice": "₹3,600",
+    "originalMrp": "₹14,500",
+    "originalDealPrice": "₹2,400"
+  },
+  "4-days-mahavatar-babaji-cave-tour": {
+    "mrp": "₹22,500",
+    "dealPrice": "₹3,750",
+    "originalMrp": "₹15,000",
+    "originalDealPrice": "₹2,500"
+  },
+  "3-days-delhi-agra-mathura-vrindavan-tour": {
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
+    "originalMrp": "₹2,25,000",
+    "originalDealPrice": "₹1,200"
+  },
+  "3-days-baidyanath-dham-tour": {
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
+    "originalMrp": "₹2,25,000",
+    "originalDealPrice": "₹1,200"
+  },
+  "3-days-tripura-sundari-tour": {
+    "mrp": "₹22,500",
+    "dealPrice": "₹2,250",
+    "originalMrp": "₹15,000",
+    "originalDealPrice": "₹1,500"
+  },
+  "adventure-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "agartala-tripura-sundari-tour": {
+    "mrp": "₹18,000",
+    "dealPrice": "₹1,650",
+    "originalMrp": "₹12,000",
+    "originalDealPrice": "₹1,100"
+  },
+  "adi-kailash-om-parvat-mt-kailash-yatra-by-helicopter": {
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
+    "originalMrp": "₹2,25,000",
+    "originalDealPrice": "₹1,200"
+  },
+  "5-days-kumbh-mela-packages": {
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
+    "originalMrp": "₹2,25,000",
+    "originalDealPrice": "₹1,200"
+  },
+  "ajmer-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "ajanta-ellora-caves-tour-from-aurangabad": {
+    "mrp": "₹18,750",
+    "dealPrice": "₹2,400",
+    "originalMrp": "₹12,500",
+    "originalDealPrice": "₹1,600"
+  },
+  "aizawl-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "alappuzha-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "agra-sightseeing-tour-from-delhi": {
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
+    "originalMrp": "₹2,25,000",
+    "originalDealPrice": "₹1,200"
+  },
+  "alwar-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "amarnath-yatra": {
+    "mrp": "₹68,250",
+    "dealPrice": "₹30,750",
+    "originalMrp": "₹45,500",
+    "originalDealPrice": "₹20,500"
+  },
+  "amarnath-yatra-with-kashmir-tour": {
+    "mrp": "₹82,500",
+    "dealPrice": "₹11,250",
+    "originalMrp": "₹55,000",
+    "originalDealPrice": "₹7,500"
+  },
+  "andaman-nicobar-holiday-packages": {
+    "mrp": "₹82,380",
+    "dealPrice": "₹30,750",
+    "originalMrp": "₹54,920",
+    "originalDealPrice": "₹20,500"
+  },
+  "badrinath-kedarnath-yatra-from-haridwar": {
+    "mrp": "₹28,875",
+    "dealPrice": "₹23,100",
+    "originalMrp": "₹19,250",
+    "originalDealPrice": "₹15,400"
+  },
+  "auli-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "auli-joshimath-devprayag-rishikesh-tour": {
+    "mrp": "₹24,000",
+    "dealPrice": "₹1,650",
+    "originalMrp": "₹16,000",
+    "originalDealPrice": "₹1,100"
+  },
+  "bali-honeymoon-package": {
+    "mrp": "₹1,620",
+    "dealPrice": "₹923",
+    "originalMrp": "₹1,080",
+    "originalDealPrice": "₹615"
+  },
+  "badrinath-kedarnath-yatra-from-delhi": {
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
+    "originalMrp": "₹2,25,000",
+    "originalDealPrice": "₹1,200"
+  },
+  "baidyanath-dham-tour-2-days": {
+    "mrp": "₹9,150",
+    "dealPrice": "₹750",
+    "originalMrp": "₹6,100",
+    "originalDealPrice": "₹500"
+  },
+  "belgaum-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "beach-vacation": {
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
+    "originalMrp": "₹33,750",
+    "originalDealPrice": "₹27,000"
+  },
+  "bangalore-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "baratang-island-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "best-of-gujarat-tour-package": {
+    "mrp": "₹38,438",
+    "dealPrice": "₹30,750",
+    "originalMrp": "₹25,625",
+    "originalDealPrice": "₹20,500"
+  },
+  "best-of-kerala-tour": {
+    "mrp": "₹37,500",
+    "dealPrice": "₹3,150",
+    "originalMrp": "₹25,000",
+    "originalDealPrice": "₹2,100"
+  },
+  "best-of-south-india-tour": {
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
+    "originalMrp": "₹2,25,000",
+    "originalDealPrice": "₹1,200"
+  },
+  "best-uttar-pradesh-tour": {
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
+    "originalMrp": "₹2,25,000",
+    "originalDealPrice": "₹1,200"
+  },
+  "bhubaneswar-konark-puri-3-days-tour": {
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
+    "originalMrp": "₹2,25,000",
+    "originalDealPrice": "₹1,200"
+  },
+  "burhanpur-tour-packages": {
+    "mrp": "₹37,500",
+    "dealPrice": "₹30,000",
+    "originalMrp": "₹25,000",
+    "originalDealPrice": "₹20,000"
+  },
+  "bhubaneswar-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "bhutan-tour-packages": {
+    "mrp": "₹4,50,000",
+    "dealPrice": "₹34,499",
+    "originalMrp": "₹3,00,000",
+    "originalDealPrice": "₹22,999"
+  },
+  "chardham-package-from-hyderabad": {
+    "mrp": "₹4,50,000",
+    "dealPrice": "₹30,000",
+    "originalMrp": "₹3,00,000",
+    "originalDealPrice": "₹20,000"
+  },
+  "bhubaneswar-konark-puri-gopalpur-package": {
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
+    "originalMrp": "₹2,25,000",
+    "originalDealPrice": "₹1,200"
+  },
+  "char-dham-yatra-by-helicopter": {
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹3,30,000",
+    "originalMrp": "₹2,25,000",
+    "originalDealPrice": "₹2,20,000"
+  },
+  "chardham-yatra-package-from-bangalore": {
+    "mrp": "₹3,75,000",
+    "dealPrice": "₹4,500",
+    "originalMrp": "₹2,50,000",
+    "originalDealPrice": "₹3,000"
+  },
+  "chardham-yatra-haridwar": {
+    "mrp": "₹3,60,000",
+    "dealPrice": "₹750",
+    "originalMrp": "₹2,40,000",
+    "originalDealPrice": "₹500"
+  },
+  "chardham-yatra-by-helicopter": {
+    "mrp": "₹3,60,750",
+    "dealPrice": "₹7,500",
+    "originalMrp": "₹2,40,500",
+    "originalDealPrice": "₹5,000"
+  },
+  "chardham-yatra-from-delhi": {
+    "mrp": "₹82,500",
+    "dealPrice": "₹37,500",
+    "originalMrp": "₹55,000",
+    "originalDealPrice": "₹25,000"
+  },
+  "chardham-yatra-package-from-ahmedabad": {
+    "mrp": "₹65,625",
+    "dealPrice": "₹52,500",
+    "originalMrp": "₹43,750",
+    "originalDealPrice": "₹35,000"
+  },
+  "chardham-yatra-package-from-nagpur": {
+    "mrp": "₹76,688",
+    "dealPrice": "₹61,350",
+    "originalMrp": "₹51,125",
+    "originalDealPrice": "₹40,900"
+  },
+  "chardham-yatra-package-from-mumbai": {
+    "mrp": "₹78,750",
+    "dealPrice": "₹63,000",
+    "originalMrp": "₹52,500",
+    "originalDealPrice": "₹42,000"
+  },
+  "chardham-yatra-package-from-kolkata": {
+    "mrp": "₹97,500",
+    "dealPrice": "₹750",
+    "originalMrp": "₹65,000",
+    "originalDealPrice": "₹500"
+  },
+  "chardham-yatra-package-from-surat": {
+    "mrp": "₹82,500",
+    "dealPrice": "₹37,500",
+    "originalMrp": "₹55,000",
+    "originalDealPrice": "₹25,000"
+  },
+  "chittorgarh-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "chennai-sightseeing-tour": {
+    "mrp": "₹18,750",
+    "dealPrice": "₹15,000",
+    "originalMrp": "₹12,500",
+    "originalDealPrice": "₹10,000"
+  },
+  "china-tour-packages": {
+    "mrp": "₹4,50,000",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹3,00,000",
+    "originalDealPrice": "₹16,999"
+  },
+  "chennai-mahabalipuram-thanjavur-trichy-madurai-tour": {
+    "mrp": "₹60,000",
+    "dealPrice": "₹4,650",
+    "originalMrp": "₹40,000",
+    "originalDealPrice": "₹3,100"
+  },
+  "chitradurga-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "coorg-tour-packages": {
+    "mrp": "₹52,500",
+    "dealPrice": "₹27,000",
+    "originalMrp": "₹35,000",
+    "originalDealPrice": "₹18,000"
+  },
+  "coimbatore-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "corbett-nainital-tour-package-from-delhi": {
+    "mrp": "₹22,500",
+    "dealPrice": "₹3,150",
+    "originalMrp": "₹15,000",
+    "originalDealPrice": "₹2,100"
+  },
+  "cochin-munnar-thekkady-alleppey-tour": {
+    "mrp": "₹37,500",
+    "dealPrice": "₹3,150",
+    "originalMrp": "₹25,000",
+    "originalDealPrice": "₹2,100"
+  },
+  "cruise-holidays-packages": {
+    "mrp": "₹1,12,500",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹75,000",
+    "originalDealPrice": "₹16,999"
+  },
+  "dharamsala-tour-packages": {
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
+    "originalMrp": "₹33,750",
+    "originalDealPrice": "₹27,000"
+  },
+  "cultural-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "dalhousie-tour-packages": {
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
+    "originalMrp": "₹33,750",
+    "originalDealPrice": "₹27,000"
+  },
+  "cordelia-cruise-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "do-dham-yatra-by-helicopter": {
+    "mrp": "₹2,10,000",
+    "dealPrice": "₹7,500",
+    "originalMrp": "₹1,40,000",
+    "originalDealPrice": "₹5,000"
+  },
+  "do-dham-yatra-gangotri-yamunotri": {
+    "mrp": "₹1,80,000",
+    "dealPrice": "₹1,800",
+    "originalMrp": "₹1,20,000",
+    "originalDealPrice": "₹1,200"
+  },
+  "dwarka-somnath-tour-from-ahmedabad": {
+    "mrp": "₹45,938",
+    "dealPrice": "₹36,750",
+    "originalMrp": "₹30,625",
+    "originalDealPrice": "₹24,500"
+  },
+  "enchanting-kerala": {
+    "mrp": "₹37,500",
+    "dealPrice": "₹3,150",
+    "originalMrp": "₹25,000",
+    "originalDealPrice": "₹2,100"
+  },
+  "dwarka-somnath-tour": {
+    "mrp": "₹45,938",
+    "dealPrice": "₹36,750",
+    "originalMrp": "₹30,625",
+    "originalDealPrice": "₹24,500"
+  },
+  "dwarka-somnath-gir-diu-tour": {
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
+    "originalMrp": "₹2,25,000",
+    "originalDealPrice": "₹1,200"
+  },
+  "family-tour-packages": {
+    "mrp": "₹46,350",
+    "dealPrice": "₹13,050",
+    "originalMrp": "₹30,900",
+    "originalDealPrice": "₹8,700"
+  },
+  "ek-dham-tour-packages": {
+    "mrp": "₹32,999",
+    "dealPrice": "₹12,750",
+    "originalMrp": "₹21,999",
+    "originalDealPrice": "₹8,500"
+  },
+  "goa-tour-package-5-days": {
+    "mrp": "₹37,500",
+    "dealPrice": "₹3,150",
+    "originalMrp": "₹25,000",
+    "originalDealPrice": "₹2,100"
+  },
+  "fascinating-kerala": {
+    "mrp": "₹37,500",
+    "dealPrice": "₹3,150",
+    "originalMrp": "₹25,000",
+    "originalDealPrice": "₹2,100"
+  },
+  "golden-triangle-tour-5-days": {
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
+    "originalMrp": "₹2,25,000",
+    "originalDealPrice": "₹1,200"
+  },
+  "grand-gujarat-tour": {
+    "mrp": "₹42,188",
+    "dealPrice": "₹33,750",
+    "originalMrp": "₹28,125",
+    "originalDealPrice": "₹22,500"
+  },
+  "gujarat-dekho": {
+    "mrp": "₹34,688",
+    "dealPrice": "₹27,750",
+    "originalMrp": "₹23,125",
+    "originalDealPrice": "₹18,500"
+  },
+  "golden-triangle-tour": {
+    "mrp": "₹36,900",
+    "dealPrice": "₹5,250",
+    "originalMrp": "₹24,600",
+    "originalDealPrice": "₹3,500"
+  },
+  "gujarat-historic-architecture-tour": {
+    "mrp": "₹57,188",
+    "dealPrice": "₹45,750",
+    "originalMrp": "₹38,125",
+    "originalDealPrice": "₹30,500"
+  },
+  "golden-triangle-sea-side-tour": {
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
+    "originalMrp": "₹2,25,000",
+    "originalDealPrice": "₹1,200"
+  },
+  "gulmarg-tour-packages": {
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
+    "originalMrp": "₹33,750",
+    "originalDealPrice": "₹27,000"
+  },
+  "gujarat-diu-tour": {
+    "mrp": "₹45,938",
+    "dealPrice": "₹36,750",
+    "originalMrp": "₹30,625",
+    "originalDealPrice": "₹24,500"
+  },
+  "gujarat-wildlife-tour": {
+    "mrp": "₹72,750",
+    "dealPrice": "₹63,750",
+    "originalMrp": "₹48,500",
+    "originalDealPrice": "₹42,500"
+  },
+  "guruvayur-thrissur-athirapally-package": {
+    "mrp": "₹21,750",
+    "dealPrice": "₹4,650",
+    "originalMrp": "₹14,500",
+    "originalDealPrice": "₹3,100"
+  },
+  "gujrat-somnath-tour": {
+    "mrp": "₹38,438",
+    "dealPrice": "₹30,750",
+    "originalMrp": "₹25,625",
+    "originalDealPrice": "₹20,500"
+  },
+  "hampi-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "gwalior-tour-packages": {
+    "mrp": "₹37,500",
+    "dealPrice": "₹30,000",
+    "originalMrp": "₹25,000",
+    "originalDealPrice": "₹20,000"
+  },
+  "hanoi-halong-saigon-my-tho-tour": {
+    "mrp": "₹42,600",
+    "dealPrice": "₹3,900",
+    "originalMrp": "₹28,400",
+    "originalDealPrice": "₹2,600"
+  },
+  "hanoi-halong-da-nang-hoi-an-tour": {
+    "mrp": "₹57,900",
+    "dealPrice": "₹4,800",
+    "originalMrp": "₹38,600",
+    "originalDealPrice": "₹3,200"
+  },
+  "hanoi-danang-ho-chi-minh-city-tour": {
+    "mrp": "₹55,950",
+    "dealPrice": "₹4,200",
+    "originalMrp": "₹37,300",
+    "originalDealPrice": "₹2,800"
+  },
+  "havelock-island-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "haridwar-rishikesh-mussoorie-dhanaulti-tour": {
+    "mrp": "₹22,500",
+    "dealPrice": "₹3,150",
+    "originalMrp": "₹15,000",
+    "originalDealPrice": "₹2,100"
+  },
+  "haridwar-rishikesh-sightseeing-tour": {
+    "mrp": "₹18,000",
+    "dealPrice": "₹6,000",
+    "originalMrp": "₹12,000",
+    "originalDealPrice": "₹4,000"
+  },
+  "haridwar-rishikesh-with-mussoorie-tour": {
+    "mrp": "₹21,000",
+    "dealPrice": "₹2,250",
+    "originalMrp": "₹14,000",
+    "originalDealPrice": "₹1,500"
+  },
+  "hanoi-ninh-binh-halong-da-nang-hoi-an-tour": {
+    "mrp": "₹54,600",
+    "dealPrice": "₹5,400",
+    "originalMrp": "₹36,400",
+    "originalDealPrice": "₹3,600"
+  },
+  "holidays-in-maldives": {
+    "mrp": "₹4,50,000",
+    "dealPrice": "₹3,00,000",
+    "originalMrp": "₹3,00,000",
+    "originalDealPrice": "₹2,00,000"
+  },
+  "hindu-tour-packages": {
+    "mrp": "₹2,82,000",
+    "dealPrice": "₹13,050",
+    "originalMrp": "₹1,88,000",
+    "originalDealPrice": "₹8,700"
+  },
+  "hongkong-tour-packages": {
+    "mrp": "₹4,50,000",
+    "dealPrice": "₹2,55,000",
+    "originalMrp": "₹3,00,000",
+    "originalDealPrice": "₹1,70,000"
+  },
+  "hospet-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "increasable-kerala": {
+    "mrp": "₹30,000",
+    "dealPrice": "₹7,650",
+    "originalMrp": "₹20,000",
+    "originalDealPrice": "₹5,100"
+  },
+  "indore-tour-packages": {
+    "mrp": "₹22,313",
+    "dealPrice": "₹17,850",
+    "originalMrp": "₹14,875",
+    "originalDealPrice": "₹11,900"
+  },
+  "india-wildlife-tour-packages": {
+    "mrp": "₹35,624",
+    "dealPrice": "₹28,499",
+    "originalMrp": "₹23,749",
+    "originalDealPrice": "₹18,999"
+  },
+  "india-chardham-yatra": {
+    "mrp": "₹97,500",
+    "dealPrice": "₹11,250",
+    "originalMrp": "₹65,000",
+    "originalDealPrice": "₹7,500"
+  },
+  "indore-to-ujjain-omkareshwar-tour": {
+    "mrp": "₹11,250",
+    "dealPrice": "₹750",
+    "originalMrp": "₹7,500",
+    "originalDealPrice": "₹500"
+  },
+  "jaipur-tour-packages": {
+    "mrp": "₹52,499",
+    "dealPrice": "₹22,499",
+    "originalMrp": "₹34,999",
+    "originalDealPrice": "₹14,999"
+  },
+  "japan-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "jodhpur-tour-packages": {
+    "mrp": "₹52,499",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹34,999",
+    "originalDealPrice": "₹16,999"
+  },
+  "jorhat-majuli-kaziranga-tour-package": {
+    "mrp": "₹27,750",
+    "dealPrice": "₹4,950",
+    "originalMrp": "₹18,500",
+    "originalDealPrice": "₹3,300"
+  },
+  "kailash-mansarovar-aerial-darshan-by-flight": {
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
+    "originalMrp": "₹2,25,000",
+    "originalDealPrice": "₹1,200"
+  },
+  "kailash-mansarovar-yatra": {
+    "mrp": "₹3,52,500",
+    "dealPrice": "₹7,500",
+    "originalMrp": "₹2,35,000",
+    "originalDealPrice": "₹5,000"
+  },
+  "karnataka-holiday-packages": {
+    "mrp": "₹90,750",
+    "dealPrice": "₹23,250",
+    "originalMrp": "₹60,500",
+    "originalDealPrice": "₹15,500"
+  },
+  "kashi-gaya-prayagraj-ayodhya-naimisharanya-package": {
+    "mrp": "₹52,800",
+    "dealPrice": "₹5,100",
+    "originalMrp": "₹35,200",
+    "originalDealPrice": "₹3,400"
+  },
+  "kasauli-tour-packages": {
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
+    "originalMrp": "₹33,750",
+    "originalDealPrice": "₹27,000"
+  },
+  "kainchi-dham-dunagiri-patal-bhuvaneshwar-package": {
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
+    "originalMrp": "₹2,25,000",
+    "originalDealPrice": "₹1,200"
+  },
+  "kasol-tour-packages": {
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
+    "originalMrp": "₹33,750",
+    "originalDealPrice": "₹27,000"
+  },
+  "kerala-beaches-tour": {
+    "mrp": "₹55,313",
+    "dealPrice": "₹44,250",
+    "originalMrp": "₹36,875",
+    "originalDealPrice": "₹29,500"
+  },
+  "kerala-spa-ayurveda-holidays": {
+    "mrp": "₹45,938",
+    "dealPrice": "₹36,750",
+    "originalMrp": "₹30,625",
+    "originalDealPrice": "₹24,500"
+  },
+  "kerala-tamil-nadu-tour-package": {
+    "mrp": "₹60,000",
+    "dealPrice": "₹6,150",
+    "originalMrp": "₹40,000",
+    "originalDealPrice": "₹4,100"
+  },
+  "kerala-with-kanyakumari": {
+    "mrp": "₹45,938",
+    "dealPrice": "₹36,750",
+    "originalMrp": "₹30,625",
+    "originalDealPrice": "₹24,500"
+  },
+  "khajjiar-tour-packages": {
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
+    "originalMrp": "₹33,750",
+    "originalDealPrice": "₹27,000"
+  },
+  "khatu-shyam-ji-salasar-balaji-yatra-by-helicopter": {
+    "mrp": "₹1,35,000",
+    "dealPrice": "₹1,27,500",
+    "originalMrp": "₹90,000",
+    "originalDealPrice": "₹85,000"
+  },
+  "khajuraho-tour-packages": {
+    "mrp": "₹37,500",
+    "dealPrice": "₹30,000",
+    "originalMrp": "₹25,000",
+    "originalDealPrice": "₹20,000"
+  },
+  "kodaikanal-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "khajuraho-orchha-tour": {
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
+    "originalMrp": "₹2,25,000",
+    "originalDealPrice": "₹1,200"
+  },
+  "kota-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "kushinagar-tour-packages": {
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
+    "originalMrp": "₹33,750",
+    "originalDealPrice": "₹27,000"
+  },
+  "kumarakom-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "kullu-tour-packages": {
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
+    "originalMrp": "₹33,750",
+    "originalDealPrice": "₹27,000"
+  },
+  "ladakh-tour-packages": {
+    "mrp": "₹42,750",
+    "dealPrice": "₹30,750",
+    "originalMrp": "₹28,500",
+    "originalDealPrice": "₹20,500"
+  },
+  "macau-tour-packages": {
+    "mrp": "₹4,50,000",
+    "dealPrice": "₹2,85,000",
+    "originalMrp": "₹3,00,000",
+    "originalDealPrice": "₹1,90,000"
+  },
+  "lakshadweep-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "lucknow-tour-packages": {
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
+    "originalMrp": "₹33,750",
+    "originalDealPrice": "₹27,000"
+  },
+  "loyalty-referral-programs": {
+    "mrp": "₹18,000",
+    "dealPrice": "₹4,500",
+    "originalMrp": "₹12,000",
+    "originalDealPrice": "₹3,000"
+  },
+  "maharashtra-5-jyotirlinga-package": {
+    "mrp": "₹25,500",
+    "dealPrice": "₹3,750",
+    "originalMrp": "₹17,000",
+    "originalDealPrice": "₹2,500"
+  },
+  "manali-honeymoon-packages": {
+    "mrp": "₹71,250",
+    "dealPrice": "₹11,250",
+    "originalMrp": "₹47,500",
+    "originalDealPrice": "₹7,500"
+  },
+  "mahavatar-babaji-cave-tour-from-chennai": {
+    "mrp": "₹15,000",
+    "dealPrice": "₹1,650",
+    "originalMrp": "₹10,000",
+    "originalDealPrice": "₹1,100"
+  },
+  "mathura-gokul-vrindavan-weekend-tour-from-delhi": {
+    "mrp": "₹15,300",
+    "dealPrice": "₹4,860",
+    "originalMrp": "₹10,200",
+    "originalDealPrice": "₹3,240"
+  },
+  "maharashtra-jyotirlinga-yatra-package": {
+    "mrp": "₹40,500",
+    "dealPrice": "₹900",
+    "originalMrp": "₹27,000",
+    "originalDealPrice": "₹600"
+  },
+  "magical-golden-triangle": {
+    "mrp": "₹36,900",
+    "dealPrice": "₹5,250",
+    "originalMrp": "₹24,600",
+    "originalDealPrice": "₹3,500"
+  },
+  "monsoon-tour-packages": {
+    "mrp": "₹46,350",
+    "dealPrice": "₹20,999",
+    "originalMrp": "₹30,900",
+    "originalDealPrice": "₹13,999"
+  },
+  "mangalore-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "mcleodganj-tour-packages": {
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
+    "originalMrp": "₹33,750",
+    "originalDealPrice": "₹27,000"
+  },
+  "mathura-gokul-barsana-vrindavan-tour": {
+    "mrp": "₹16,710",
+    "dealPrice": "₹2,790",
+    "originalMrp": "₹11,140",
+    "originalDealPrice": "₹1,860"
+  },
+  "mussoorie-tour-packages": {
+    "mrp": "₹41,850",
+    "dealPrice": "₹16,350",
+    "originalMrp": "₹27,900",
+    "originalDealPrice": "₹10,900"
+  },
+  "mysore-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "naimisharanya-tour-packages": {
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
+    "originalMrp": "₹33,750",
+    "originalDealPrice": "₹27,000"
+  },
+  "omkareshwar-mahakaleshwar-helicopter-tour": {
+    "mrp": "₹1,35,000",
+    "dealPrice": "₹1,27,500",
+    "originalMrp": "₹90,000",
+    "originalDealPrice": "₹85,000"
+  },
+  "myriad-india-highlights-tour": {
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
+    "originalMrp": "₹2,25,000",
+    "originalDealPrice": "₹1,200"
+  },
+  "ooty-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "pahalgam-tour-packages": {
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
+    "originalMrp": "₹33,750",
+    "originalDealPrice": "₹27,000"
+  },
+  "panch-dwaraka-tour": {
+    "mrp": "₹34,500",
+    "dealPrice": "₹27,000",
+    "originalMrp": "₹23,000",
+    "originalDealPrice": "₹18,000"
+  },
+  "pancha-bhoota-sthalam-navagraha-package": {
+    "mrp": "₹45,000",
+    "dealPrice": "₹4,650",
+    "originalMrp": "₹30,000",
+    "originalDealPrice": "₹3,100"
+  },
+  "phuket-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "pondicherry-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "port-blair-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "rameshwaram-madurai-tour": {
+    "mrp": "₹30,000",
+    "dealPrice": "₹4,650",
+    "originalMrp": "₹20,000",
+    "originalDealPrice": "₹3,100"
+  },
+  "rewa-tour-packages": {
+    "mrp": "₹37,500",
+    "dealPrice": "₹30,000",
+    "originalMrp": "₹25,000",
+    "originalDealPrice": "₹20,000"
+  },
+  "shivpuri-tour-packages": {
+    "mrp": "₹37,500",
+    "dealPrice": "₹30,000",
+    "originalMrp": "₹25,000",
+    "originalDealPrice": "₹20,000"
+  },
+  "shimoga-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "sikkim-tour-packages": {
+    "mrp": "₹40,500",
+    "dealPrice": "₹20,999",
+    "originalMrp": "₹27,000",
+    "originalDealPrice": "₹13,999"
+  },
+  "saraswati-pushkaralu-yatra-from-haridwar": {
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
+    "originalMrp": "₹2,25,000",
+    "originalDealPrice": "₹1,200"
+  },
+  "rishikesh-haridwar-trip-from-delhi": {
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
+    "originalMrp": "₹2,25,000",
+    "originalDealPrice": "₹1,200"
+  },
+  "sonamarg-tour-packages": {
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
+    "originalMrp": "₹33,750",
+    "originalDealPrice": "₹27,000"
+  },
+  "special-package-for-bhuj": {
+    "mrp": "₹34,688",
+    "dealPrice": "₹27,750",
+    "originalMrp": "₹23,125",
+    "originalDealPrice": "₹18,500"
+  },
+  "south-india-temple-tour-from-hyderabad": {
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
+    "originalMrp": "₹2,25,000",
+    "originalDealPrice": "₹1,200"
+  },
+  "south-india-temple-tour-from-bangalore": {
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
+    "originalMrp": "₹2,25,000",
+    "originalDealPrice": "₹1,200"
+  },
+  "south-india-temple-tour-from-ahmedabad": {
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
+    "originalMrp": "₹2,25,000",
+    "originalDealPrice": "₹1,200"
+  },
+  "srinagar-tour-packages": {
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
+    "originalMrp": "₹33,750",
+    "originalDealPrice": "₹27,000"
+  },
+  "sri-lanka-ramayana-tour": {
+    "mrp": "₹67,500",
+    "dealPrice": "₹3,287",
+    "originalMrp": "₹45,000",
+    "originalDealPrice": "₹2,191"
+  },
+  "srisailam-mallikarjuna-jyotirlinga-darshan": {
+    "mrp": "₹13,350",
+    "dealPrice": "₹2,400",
+    "originalMrp": "₹8,900",
+    "originalDealPrice": "₹1,600"
+  },
+  "srisailam-weekend-trip": {
+    "mrp": "₹13,350",
+    "dealPrice": "₹2,400",
+    "originalMrp": "₹8,900",
+    "originalDealPrice": "₹1,600"
+  },
+  "sri-lanka-visa": {
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
+    "originalMrp": "₹2,25,000",
+    "originalDealPrice": "₹1,200"
+  },
+  "summer-tour-packages": {
+    "mrp": "₹52,499",
+    "dealPrice": "₹20,999",
+    "originalMrp": "₹34,999",
+    "originalDealPrice": "₹13,999"
+  },
+  "srisailam-temple-tour-from-hyderabad": {
+    "mrp": "₹23,850",
+    "dealPrice": "₹2,880",
+    "originalMrp": "₹15,900",
+    "originalDealPrice": "₹1,920"
+  },
+  "tamil-nadu-pondicherry-tour": {
+    "mrp": "₹60,000",
+    "dealPrice": "₹4,650",
+    "originalMrp": "₹40,000",
+    "originalDealPrice": "₹3,100"
+  },
+  "tamilnadu-tour": {
+    "mrp": "₹60,000",
+    "dealPrice": "₹6,750",
+    "originalMrp": "₹40,000",
+    "originalDealPrice": "₹4,500"
+  },
+  "tamilnadu-pilgrimage-tour": {
+    "mrp": "₹60,000",
+    "dealPrice": "₹6,150",
+    "originalMrp": "₹40,000",
+    "originalDealPrice": "₹4,100"
+  },
+  "thanjavur-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "tirunelveli-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "trivandrum-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "tirupati-rameshwaram-kanyakumari-madurai-tour": {
+    "mrp": "₹42,600",
+    "dealPrice": "₹3,900",
+    "originalMrp": "₹28,400",
+    "originalDealPrice": "₹2,600"
+  },
+  "tirupati-thanjavur-kanyakumari-madurai-tour": {
+    "mrp": "₹42,600",
+    "dealPrice": "₹3,900",
+    "originalMrp": "₹28,400",
+    "originalDealPrice": "₹2,600"
+  },
+  "udaipur-tour-packages": {
+    "mrp": "₹52,499",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹34,999",
+    "originalDealPrice": "₹16,999"
+  },
+  "ujjain-omkareshwar-tour": {
+    "mrp": "₹22,725",
+    "dealPrice": "₹4,350",
+    "originalMrp": "₹15,150",
+    "originalDealPrice": "₹2,900"
+  },
+  "uttar-pradesh-darshan-tour": {
+    "mrp": "₹33,750",
+    "dealPrice": "₹3,600",
+    "originalMrp": "₹22,500",
+    "originalDealPrice": "₹2,400"
+  },
+  "vaishno-devi-tour": {
+    "mrp": "₹9,000",
+    "dealPrice": "₹2,250",
+    "originalMrp": "₹6,000",
+    "originalDealPrice": "₹1,500"
+  },
+  "ujjain-omkareshwar-mandu-tour-from-indore": {
+    "mrp": "₹24,600",
+    "dealPrice": "₹4,350",
+    "originalMrp": "₹16,400",
+    "originalDealPrice": "₹2,900"
+  },
+  "varanasi-allahabad-ayodhya-naimisharanya-tour": {
+    "mrp": "₹39,825",
+    "dealPrice": "₹3,900",
+    "originalMrp": "₹26,550",
+    "originalDealPrice": "₹2,600"
+  },
+  "varanasi-prayagraj-ayodhya-vindhyachal-tour": {
+    "mrp": "₹25,575",
+    "dealPrice": "₹2,550",
+    "originalMrp": "₹17,050",
+    "originalDealPrice": "₹1,700"
+  },
+  "varanasi-bodhgaya-prayagraj-package": {
+    "mrp": "₹34,575",
+    "dealPrice": "₹3,450",
+    "originalMrp": "₹23,050",
+    "originalDealPrice": "₹2,300"
+  },
+  "varanasi-travel-packages": {
+    "mrp": "₹57,750",
+    "dealPrice": "₹2,250",
+    "originalMrp": "₹38,500",
+    "originalDealPrice": "₹1,500"
+  },
+  "varanasi-sarnath-tour": {
+    "mrp": "₹14,700",
+    "dealPrice": "₹2,400",
+    "originalMrp": "₹9,800",
+    "originalDealPrice": "₹1,600"
+  },
+  "vellore-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "vijayapura-tour-packages": {
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
+    "originalMrp": "₹21,249",
+    "originalDealPrice": "₹16,999"
+  },
+  "wedding-at-triyuginarayan-temple": {
+    "mrp": "₹7,50,000",
+    "dealPrice": "₹1,50,000",
+    "originalMrp": "₹5,00,000",
+    "originalDealPrice": "₹1,00,000"
+  },
+  "varanasi-prayagraj-bodhgaya-ayodhya-tour": {
+    "mrp": "₹47,175",
+    "dealPrice": "₹4,800",
+    "originalMrp": "₹31,450",
+    "originalDealPrice": "₹3,200"
+  },
+  "winter-tour-packages": {
+    "mrp": "₹35,999",
+    "dealPrice": "₹11,250",
+    "originalMrp": "₹23,999",
+    "originalDealPrice": "₹7,500"
+  },
+  "yamuna-pushkaralu-yatra-to-kashi-ayodhya": {
+    "mrp": "₹26,100",
+    "dealPrice": "₹3,405",
+    "originalMrp": "₹17,400",
+    "originalDealPrice": "₹2,270"
+  },
+  "yamuna-pushkaralu-tour-from-delhi": {
+    "mrp": "₹31,950",
+    "dealPrice": "₹4,125",
+    "originalMrp": "₹21,300",
+    "originalDealPrice": "₹2,750"
+  },
+  "yamuna-pushkaralu-yatra-to-yamunotri": {
+    "mrp": "₹26,250",
+    "dealPrice": "₹3,465",
+    "originalMrp": "₹17,500",
+    "originalDealPrice": "₹2,310"
+  },
+  "yamuna-pushkaralu-yatra-from-dehradun": {
+    "mrp": "₹21,750",
+    "dealPrice": "₹1,965",
+    "originalMrp": "₹14,500",
+    "originalDealPrice": "₹1,310"
+  },
+  "yamuna-pushkaralu-yatra-with-kurukshetra-haridwar": {
+    "mrp": "₹21,750",
+    "dealPrice": "₹2,760",
+    "originalMrp": "₹14,500",
+    "originalDealPrice": "₹1,840"
+  }
+}
