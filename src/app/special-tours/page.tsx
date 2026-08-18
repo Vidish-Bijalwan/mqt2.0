@@ -6,7 +6,7 @@ const THEMES = [
   { name: "Family", href: "/special-tours/family", icon: Users, desc: "Create unforgettable memories with your loved ones." },
   { name: "Honeymoon", href: "/special-tours/honeymoon", icon: Heart, desc: "Romantic getaways for perfect beginnings." },
   { name: "Cultural", href: "/special-tours/cultural", icon: Landmark, desc: "Explore the rich heritage and history of India." },
-  { name: "Pilgrimage", href: "/india-tours/pilgrimage", icon: Flame, desc: "Spiritual journeys to sacred destinations." },
+  { name: "Pilgrimage", href: "/packages?category=Pilgrimage", icon: Flame, desc: "Spiritual journeys to sacred destinations." },
   { name: "Beaches", href: "/special-tours/beaches", icon: Umbrella, desc: "Relaxing escapes on pristine sandy shores." },
   { name: "Adventure", href: "/special-tours/adventure", icon: Tent, desc: "Thrilling treks, safaris, and outdoor expeditions." },
   { name: "Winter", href: "/special-tours/winter", icon: Snowflake, desc: "Snowy retreats and cozy winter holidays." },

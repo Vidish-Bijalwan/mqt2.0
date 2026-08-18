@@ -28,7 +28,7 @@ export const posterItems: PosterItem[] = [
   { name: "Tehri", imageUrl: "/images/posters/tehri.webp", href: "/packages/tehri-tour-packages" },
   { name: "Harshil", imageUrl: "/images/posters/harshil.webp", href: "/packages/harshil-tour-packages" },
   { name: "Barot", imageUrl: "/images/posters/barot.webp", href: "/packages/barot-tour-packages" },
-  { name: "Assam", imageUrl: "/images/posters/assam.webp", href: "/india-tours/assam" },
+  { name: "Assam", imageUrl: "/images/posters/assam.webp", href: "/destinations/assam" },
   { name: "Yelagiri", imageUrl: "/images/posters/yelagiri.webp", href: "/packages/yelagiri-tour-packages" },
   { name: "Nubra Valley", imageUrl: "/images/posters/nubra.webp", href: "/packages/nubra-valley-tour-packages" },
   { name: "Dhanushkodi", imageUrl: "/images/posters/dhanushkodi.webp", href: "/packages/dhanushkodi-tour-packages" },

@@ -1,13 +1,16 @@
 'use client';
 
+import { siteConfig } from "@/data/siteConfig";
+
 export default function FloatingWhatsApp() {
   return (
     <>
       {/* Floating WhatsApp Button - Bottom Left */}
       <a
-        href="https://wa.me/919876543210"
+        href={siteConfig.social.whatsapp}
         target="_blank"
         rel="noopener noreferrer"
+        data-track="floating_whatsapp"
         className="fixed bottom-6 left-6 z-50 flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group"
         style={{ boxShadow: '0 4px 15px rgba(37, 211, 102, 0.4)' }}
       >

@@ -223,16 +223,7 @@ function PosterLightbox({
 export default function PosterMarquee() {
   const trackRef = useRef<HTMLDivElement>(null);
   const [isPaused, setIsPaused] = useState(false);
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const [selectedPoster, setSelectedPoster] = useState<PosterItem | null>(null);
-
-  useEffect(() => {
-    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    setPrefersReducedMotion(mq.matches);
-    const h = (e: MediaQueryListEvent) => setPrefersReducedMotion(e.matches);
-    mq.addEventListener("change", h);
-    return () => mq.removeEventListener("change", h);
-  }, []);
 
   useEffect(() => {
     const h = () => setIsPaused(document.hidden);
@@ -261,7 +252,7 @@ export default function PosterMarquee() {
             ref={trackRef}
             className="pm-track"
             style={{
-              animationPlayState: isPaused || prefersReducedMotion ? "paused" : "running",
+              animationPlayState: isPaused ? "paused" : "running",
               animationDuration: `${LOOP_DURATION_S}s`,
             }}
           >

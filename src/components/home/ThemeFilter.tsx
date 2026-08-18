@@ -41,37 +41,26 @@ export default function ThemeFilter() {
 
   return (
     <div>
-      {/* Theme Filter Buttons */}
-      <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-[10px]">
+      {/* Theme Filter Buttons — reference .theme-touBox style */}
+      <ul className="nit-themes">
         {themeConfigs.map((theme, i) => {
           const isActive = selectedTheme === theme.name;
           const Icon = THEME_ICONS[theme.name];
           return (
-            <button
-              key={i}
-              type="button"
-              onClick={() => handleThemeClick(theme.name)}
-              aria-pressed={isActive}
-              className={`group border p-3 flex flex-col items-center justify-center rounded cursor-pointer transition-all duration-200 ${
-                isActive
-                  ? "border-legacy-orange bg-legacy-orange text-white shadow-md scale-105"
-                  : "border-gray-200 bg-white text-gray-700 hover:border-legacy-orange hover:shadow-sm"
-              }`}
-            >
-              <div className={`w-10 h-10 mb-2 flex items-center justify-center transition-colors duration-200 ${
-                isActive ? "text-white" : "text-brand-orange group-hover:text-black"
-              }`}>
-                {Icon && <Icon className="w-8 h-8" strokeWidth={isActive ? 2.5 : 1.5} />}
-              </div>
-              <span className={`text-[10px] font-medium text-center transition-colors duration-200 ${
-                isActive ? "text-white" : "text-gray-700"
-              }`}>
+            <li key={i}>
+              <button
+                type="button"
+                onClick={() => handleThemeClick(theme.name)}
+                aria-pressed={isActive}
+                className={isActive ? "nit-theme-active" : undefined}
+              >
+                {Icon ? <Icon className="nit-theme-ic" strokeWidth={1.5} /> : null}
                 {theme.name}
-              </span>
-            </button>
+              </button>
+            </li>
           );
         })}
-      </div>
+      </ul>
 
       {/* Filter Results */}
       {selectedTheme && activeThemeConfig && (
@@ -92,7 +81,7 @@ export default function ThemeFilter() {
           </div>
 
           {filtered.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-[10px]">
+            <div className="nit-grid">
               {filtered.map((pkg) => (
                 <PackageCard key={pkg.slug} pkg={pkg} />
               ))}

@@ -1,19 +1,29 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand Colors (Option 1: Bold & Energetic) */
-  --color-brand-orange: #F97316;
+  /* Brand Colors — matched to reference site (namasteindiatrip.com) values */
+  --color-brand-orange: #fb4d00;
   --color-brand-orange-light: #FFF7ED;
-  --color-brand-orange-dark: #EA580C;
+  --color-brand-orange-dark: #d94000;
   /* AA-compliant orange for small text on light backgrounds (4.5:1+ on white) */
   --color-brand-orange-text: #C2410C;
+
+  /* Reference site palette (measured from namasteindiatrip.com) */
+  --color-brand-indigo: #1a0dab;   /* card title links + button hover */
+  --color-price-area: #ebf1ff;     /* package card price strip bg */
+  --color-badge-green: #4CAF50;    /* discount badge */
+  --color-old-price: #fb4d00;      /* strikethrough old price + dur/dest icons */
+  --color-body-gray: #75706b;      /* secondary text */
+  --color-card-border: #d4d4d4;
+  --color-btn-border: #607D8B;     /* Quick enquiry button border */
+  --color-nit-teal: #004e47;       /* footer band */
   
   --color-brand-green: #16A34A;
   --color-brand-green-light: #F0FDF4;
   --color-brand-green-dark: #15803D;
   
-  --color-brand-navy: #0F172A;
-  --color-brand-navy-light: #1E293B;
+  --color-brand-navy: #061b30;
+  --color-brand-navy-light: #122b43;
   
   --color-brand-blue: #0EA5E9;
   
@@ -100,6 +110,412 @@
 
   .arrow-right-shape {
     clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+  }
+
+  /* ═══════════════════════════════════════════════════════════
+     Reference-site (namasteindiatrip.com) section header
+     .top-head-box  = centered h2 + 80px orange underline bar
+     ═══════════════════════════════════════════════════════════ */
+  .nit-head {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .nit-head h2 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #333;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    margin-bottom: 8px;
+    border-bottom: 1px dotted rgb(130, 130, 130);
+    display: inline-block;
+  }
+  .nit-middle-hr {
+    width: 80px;
+    height: 5px;
+    margin: 0 auto;
+    border-bottom: 5px solid var(--color-brand-orange);
+    background: linear-gradient(90deg, #ff6f61, #6b48ff);
+    border-radius: 5px;
+  }
+  .nit-head-sub {
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--color-body-gray);
+    margin-top: 10px;
+  }
+
+  /* ═══════════════════════════════════════════════════════════
+     Reference-site package card (.prc_row)
+     Image top (5px inset) → title/duration/route/amenities →
+     #ebf1ff price strip → Quick enquiry / View Tour buttons
+     ═══════════════════════════════════════════════════════════ */
+  .nit-pcard {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid var(--color-card-border);
+    border-radius: 6px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 22px;
+    color: var(--color-body-gray);
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  /* Whole-card stretched link — clicking anywhere on the card opens the tour */
+  .nit-pcard-stretch {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: block;
+  }
+  .nit-pcard-img,
+  .nit-pcard-title a,
+  .nit-prcEnq a {
+    position: relative;
+    z-index: 2;
+  }
+  .nit-pcard:hover {
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+  }
+  .nit-pcard-img {
+    display: block;
+    margin: 5px;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 262 / 176;
+    background: #e5e7eb;
+  }
+  .nit-pcard-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+  }
+  .nit-pcard-img:hover img {
+    transform: scale(1.15);
+  }
+  .nit-pcard-cant {
+    padding: 0 5px;
+    position: relative;
+  }
+  .nit-pcard-title {
+    line-height: 16px;
+    margin-bottom: 5px;
+    height: 20px;
+    overflow: hidden; /* reference clips long titles to one line */
+  }
+  .nit-pcard-title a {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: var(--color-brand-indigo);
+    display: block;
+    overflow: hidden;
+  }
+  .nit-pcard-dur {
+    font-size: 13px;
+    line-height: 22px;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .nit-pcard-dur svg {
+    color: var(--color-old-price);
+    width: 13px;
+    height: 13px;
+    flex-shrink: 0;
+  }
+  .nit-pcard-dest {
+    font-size: 14px;
+    line-height: 19px;
+    color: #000;
+    display: flex;
+    gap: 5px;
+    padding-bottom: 5px;
+    align-items: flex-start;
+  }
+  .nit-pcard-dest svg {
+    color: var(--color-old-price);
+    flex-shrink: 0;
+    width: 13px;
+    height: 13px;
+    margin-top: 1px;
+  }
+  .nit-destinx {
+    font-size: 13px;
+    line-height: 15px;
+    max-height: 14px;
+    overflow: hidden;
+  }
+  .nit-pcard-amen {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 0;
+    list-style: none;
+  }
+  .nit-pcard-amen li {
+    font-size: 10px;
+    color: #000;
+    text-align: center;
+    flex: 1;
+  }
+  .nit-amen-ic {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 4px auto;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .nit-pcard-price {
+    flex: 1;
+    background: var(--color-price-area);
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .nit-prOld {
+    text-align: center;
+    min-height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .nit-badge {
+    display: inline-block;
+    background: var(--color-badge-green);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    height: 19px;
+    padding: 0 10px 0 10px;
+    border-radius: 3px 4px 4px 3px;
+    border-left: 1px solid rgba(3, 169, 244, 0.26);
+    position: relative;
+  }
+  .nit-badge::before {
+    content: "";
+    position: absolute;
+    left: -8px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid var(--color-badge-green);
+  }
+  .nit-badge::after {
+    content: "";
+    background-color: #fff;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    top: 8px;
+  }
+  .nit-old {
+    color: var(--color-old-price);
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: line-through;
+  }
+  .nit-prCn {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #000;
+    margin-top: 5px;
+  }
+  .nit-prCn b {
+    font-weight: 700;
+  }
+  .nit-prCap {
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--color-body-gray);
+  }
+  .nit-prcEnq {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 10px;
+    align-items: center;
+  }
+  .nit-prcEnq a {
+    flex: 1;
+    padding: 3px 5px;
+    border: 1px solid #ddd;
+    font-size: 13px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 700;
+    color: #000;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  }
+  .nit-prcEnq a:first-child {
+    background: #fff;
+    border-color: var(--color-btn-border);
+    color: #000;
+  }
+  .nit-prcEnq a:last-child {
+    background: var(--color-brand-orange);
+    border-color: var(--color-brand-orange);
+    color: #fff;
+  }
+  .nit-prcEnq a:hover {
+    background: var(--color-brand-indigo) !important;
+    color: #fff !important;
+    border-color: var(--color-brand-indigo) !important;
+  }
+
+  /* ═══════════════════════════════════════════════════════════
+     Reference-site destination tiles (.inxBt > .cdxBt)
+     Image-only tiles, 7-up, dark shadow, hover opacity .9
+     ═══════════════════════════════════════════════════════════ */
+  .nit-inxBt {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .nit-cdxBt {
+    flex: 1 0 13%;
+    margin: 5px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3), 0 0px 0px rgba(0, 0, 0, 0.22);
+    position: relative;
+    display: block;
+    aspect-ratio: 191 / 236;
+  }
+  .nit-cdxBt img {
+    width: 100%;
+    display: block;
+  }
+  .nit-cdxBt:hover {
+    opacity: 0.9;
+  }
+  @media only screen and (max-width: 700px) {
+    .nit-cdxBt {
+      flex: 1 0 46% !important;
+    }
+  }
+
+  /* ═══════════════════════════════════════════════════════════
+     Reference-site theme tiles (.theme-touBox li a)
+     White tile, 60px icon, 13px bold label, hover #ddd
+     ═══════════════════════════════════════════════════════════ */
+  .nit-themes {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+  }
+  .nit-themes li {
+    display: inline-block;
+    width: 10%;
+    margin: 5px;
+    text-align: center;
+    vertical-align: top;
+  }
+  .nit-themes li button {
+    width: 100%;
+    display: block;
+    color: #333;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 22px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    background: #fff;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+  }
+  .nit-themes li button:hover {
+    background: #ddd;
+    color: #000;
+  }
+  .nit-themes li button .nit-theme-ic {
+    display: block;
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    color: var(--color-brand-orange);
+  }
+  .nit-themes li button.nit-theme-active {
+    background: #ddd;
+    color: #000;
+  }
+  @media only screen and (max-width: 700px) {
+    .nit-themes li {
+      width: 30% !important;
+      margin-left: 0 !important;
+    }
+    .nit-themes li button .nit-theme-ic {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  /* ── Package card grid: reference .prc_row_grid (gap 10px) ── */
+  .nit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(19%, 1fr));
+    grid-gap: 10px;
+  }
+  @media only screen and (max-width: 1360px) and (min-width: 1000px) {
+    .nit-grid {
+      grid-template-columns: repeat(auto-fill, minmax(24%, 1fr)) !important;
+    }
+  }
+  @media only screen and (max-width: 1000px) and (min-width: 768px) {
+    .nit-grid {
+      grid-template-columns: repeat(auto-fill, minmax(32%, 1fr)) !important;
+    }
+  }
+  @media (max-width: 767px) {
+    .nit-grid {
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)) !important;
+    }
+  }
+
+  /* ── Reference page gutter: full-width with 15px margins ── */
+  .nit-page {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  /* Reference mobile behavior: section headers shrink to 18px,
+     page gutters tighten to 10px */
+  @media only screen and (max-width: 767px) {
+    .nit-page {
+      padding: 0 10px;
+    }
+    .nit-head h2 {
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
 
   /* ── Premium CTA shine sweep (CSS-only “ripple” — no JS) ── */
@@ -279,16 +695,10 @@
   .pm-card { width: 340px; height: 235px; }
 }
 
-/* ── Reduced motion ── */
-@media (prefers-reduced-motion: reduce) {
-  .pm-track {
-    animation: none !important;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-  }
-  .pm-card { scroll-snap-align: start; }
-}
+/* ── Reduced motion ──
+   Product decision (site owner): the ambient marquee runs regardless of the
+   OS reduced-motion preference. Pausing still happens on hover and when the
+   tab is hidden (handled in JS). */
 
 /* ═══════════════════════════════════════════════════════════════
    Poster Lightbox — premium full-screen zoom/pan viewer

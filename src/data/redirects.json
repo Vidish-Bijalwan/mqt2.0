@@ -121,12 +121,12 @@
   },
   {
     "source": "/travel-guide__page__9.html",
-    "destination": "/packages?filter=travel-guide__page__9",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__9",
-    "destination": "/packages?filter=travel-guide__page__9",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -446,12 +446,12 @@
   },
   {
     "source": "/travel-guide__page__25.html",
-    "destination": "/packages?filter=travel-guide__page__25",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__25",
-    "destination": "/packages?filter=travel-guide__page__25",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -461,12 +461,12 @@
   },
   {
     "source": "/travel-guide__kashmir-guide__page__1.html",
-    "destination": "/packages?filter=travel-guide__kashmir-guide__page__1",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__kashmir-guide__page__1",
-    "destination": "/packages?filter=travel-guide__kashmir-guide__page__1",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -641,12 +641,12 @@
   },
   {
     "source": "/blog/destinations__page__18.html",
-    "destination": "/blog/category/18",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__18",
-    "destination": "/blog/category/18",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -741,12 +741,12 @@
   },
   {
     "source": "/blog/destinations__india__uttar-pradesh.html",
-    "destination": "/blog/category/uttar-pradesh",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__uttar-pradesh",
-    "destination": "/blog/category/uttar-pradesh",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -801,12 +801,12 @@
   },
   {
     "source": "/blog/destinations__india__bihar.html",
-    "destination": "/blog/category/bihar",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__bihar",
-    "destination": "/blog/category/bihar",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -831,12 +831,12 @@
   },
   {
     "source": "/blog/destinations__india__andhra-pradesh.html",
-    "destination": "/blog/category/andhra-pradesh",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__andhra-pradesh",
-    "destination": "/blog/category/andhra-pradesh",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -896,12 +896,12 @@
   },
   {
     "source": "/blog/destinations__page__21.html",
-    "destination": "/blog/category/21",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__21",
-    "destination": "/blog/category/21",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -986,12 +986,12 @@
   },
   {
     "source": "/travel-guide__andhra-pradesh-guide.html",
-    "destination": "/packages?filter=travel-guide__andhra-pradesh-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__andhra-pradesh-guide",
-    "destination": "/packages?filter=travel-guide__andhra-pradesh-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -1016,12 +1016,12 @@
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide__page__2.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide__page__2",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide__page__2",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide__page__2",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -1176,12 +1176,12 @@
   },
   {
     "source": "/blog/destinations__india__telangana__hyderabad.html",
-    "destination": "/blog/category/hyderabad",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__telangana__hyderabad",
-    "destination": "/blog/category/hyderabad",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -1271,22 +1271,22 @@
   },
   {
     "source": "/travel-guide__uttarakhand-guide__page__6.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__page__6",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__page__6",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__page__6",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/blog/destinations__maldives.html",
-    "destination": "/blog/category/maldives",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__maldives",
-    "destination": "/blog/category/maldives",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -1476,12 +1476,12 @@
   },
   {
     "source": "/pilgrimage-tour-package__page__1.html",
-    "destination": "/packages?filter=pilgrimage-tour-package__page__1",
+    "destination": "/packages/pilgrimage-tour-package",
     "permanent": true
   },
   {
     "source": "/pilgrimage-tour-package__page__1",
-    "destination": "/packages?filter=pilgrimage-tour-package__page__1",
+    "destination": "/packages/pilgrimage-tour-package",
     "permanent": true
   },
   {
@@ -1526,12 +1526,12 @@
   },
   {
     "source": "/blog/destinations__india__uttarakhand__char-dham-yatra__page__2.html",
-    "destination": "/blog/category/2",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__uttarakhand__char-dham-yatra__page__2",
-    "destination": "/blog/category/2",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -1646,12 +1646,12 @@
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide__badrinath-guide__page__1.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide__badrinath-guide__page__1",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide__badrinath-guide__page__1",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide__badrinath-guide__page__1",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -1811,12 +1811,12 @@
   },
   {
     "source": "/travel-guide__gujarat-guide__ahmedabad-guide.html",
-    "destination": "/packages?filter=travel-guide__gujarat-guide__ahmedabad-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__gujarat-guide__ahmedabad-guide",
-    "destination": "/packages?filter=travel-guide__gujarat-guide__ahmedabad-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -1831,12 +1831,12 @@
   },
   {
     "source": "/blog/destinations__india__page__3.html",
-    "destination": "/blog/category/3",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__page__3",
-    "destination": "/blog/category/3",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -1906,12 +1906,12 @@
   },
   {
     "source": "/travel-guide__gujarat-guide.html",
-    "destination": "/packages?filter=travel-guide__gujarat-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__gujarat-guide",
-    "destination": "/packages?filter=travel-guide__gujarat-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -1936,12 +1936,12 @@
   },
   {
     "source": "/travel-guide__himachal-pradesh-guide__page__1.html",
-    "destination": "/packages?filter=travel-guide__himachal-pradesh-guide__page__1",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__himachal-pradesh-guide__page__1",
-    "destination": "/packages?filter=travel-guide__himachal-pradesh-guide__page__1",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -2076,12 +2076,12 @@
   },
   {
     "source": "/blog/destinations__page__11.html",
-    "destination": "/blog/category/11",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__11",
-    "destination": "/blog/category/11",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -2181,12 +2181,12 @@
   },
   {
     "source": "/travel-guide__uttarakhand-guide__page__10.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__page__10",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__page__10",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__page__10",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -2206,12 +2206,12 @@
   },
   {
     "source": "/blog/destinations__page__6.html",
-    "destination": "/blog/category/6",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__6",
-    "destination": "/blog/category/6",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -2431,12 +2431,12 @@
   },
   {
     "source": "/travel-guide__page__27.html",
-    "destination": "/packages?filter=travel-guide__page__27",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__27",
-    "destination": "/packages?filter=travel-guide__page__27",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -2466,12 +2466,12 @@
   },
   {
     "source": "/blog/destinations__india__karnataka.html",
-    "destination": "/blog/category/karnataka",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__karnataka",
-    "destination": "/blog/category/karnataka",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -2596,12 +2596,12 @@
   },
   {
     "source": "/blog/destinations__bhutan.html",
-    "destination": "/blog/category/bhutan",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__bhutan",
-    "destination": "/blog/category/bhutan",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -2636,12 +2636,12 @@
   },
   {
     "source": "/blog/destinations__dubai.html",
-    "destination": "/blog/category/dubai",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__dubai",
-    "destination": "/blog/category/dubai",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -2756,12 +2756,12 @@
   },
   {
     "source": "/travel-guide__madhya-pradesh-guide.html",
-    "destination": "/packages?filter=travel-guide__madhya-pradesh-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__madhya-pradesh-guide",
-    "destination": "/packages?filter=travel-guide__madhya-pradesh-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -2796,12 +2796,12 @@
   },
   {
     "source": "/travel-guide__page__1.html",
-    "destination": "/packages?filter=travel-guide__page__1",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__1",
-    "destination": "/packages?filter=travel-guide__page__1",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -3011,22 +3011,22 @@
   },
   {
     "source": "/travel-guide__uttarakhand-guide__haridwar-guide.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__haridwar-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__haridwar-guide",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__haridwar-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/blog/destinations__qatar.html",
-    "destination": "/blog/category/qatar",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__qatar",
-    "destination": "/blog/category/qatar",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -3041,12 +3041,12 @@
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide__badrinath-guide__page__2.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide__badrinath-guide__page__2",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide__badrinath-guide__page__2",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide__badrinath-guide__page__2",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -3061,12 +3061,12 @@
   },
   {
     "source": "/blog/destinations__india__himachal-pradesh__page__2.html",
-    "destination": "/blog/category/2",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__himachal-pradesh__page__2",
-    "destination": "/blog/category/2",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -3171,12 +3171,12 @@
   },
   {
     "source": "/blog/destinations__india__jammu-kashmir__gulmarg.html",
-    "destination": "/blog/category/gulmarg",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__jammu-kashmir__gulmarg",
-    "destination": "/blog/category/gulmarg",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -3211,12 +3211,12 @@
   },
   {
     "source": "/travel-guide__page__4.html",
-    "destination": "/packages?filter=travel-guide__page__4",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__4",
-    "destination": "/packages?filter=travel-guide__page__4",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -3326,12 +3326,12 @@
   },
   {
     "source": "/travel-guide__gujarat-guide__somnath-guide.html",
-    "destination": "/packages?filter=travel-guide__gujarat-guide__somnath-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__gujarat-guide__somnath-guide",
-    "destination": "/packages?filter=travel-guide__gujarat-guide__somnath-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -3376,12 +3376,12 @@
   },
   {
     "source": "/blog/destinations__india__uttarakhand__page__3.html",
-    "destination": "/blog/category/3",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__uttarakhand__page__3",
-    "destination": "/blog/category/3",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -3421,12 +3421,12 @@
   },
   {
     "source": "/travel-guide__gujarat-guide__page__3.html",
-    "destination": "/packages?filter=travel-guide__gujarat-guide__page__3",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__gujarat-guide__page__3",
-    "destination": "/packages?filter=travel-guide__gujarat-guide__page__3",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -3531,12 +3531,12 @@
   },
   {
     "source": "/blog/destinations__india__jammu-kashmir.html",
-    "destination": "/blog/category/jammu-kashmir",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__jammu-kashmir",
-    "destination": "/blog/category/jammu-kashmir",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -3606,32 +3606,32 @@
   },
   {
     "source": "/travel-guide__himachal-pradesh-guide__manali-guide.html",
-    "destination": "/packages?filter=travel-guide__himachal-pradesh-guide__manali-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__himachal-pradesh-guide__manali-guide",
-    "destination": "/packages?filter=travel-guide__himachal-pradesh-guide__manali-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__page__4.html",
-    "destination": "/blog/category/4",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__page__4",
-    "destination": "/blog/category/4",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__7.html",
-    "destination": "/blog/category/7",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__7",
-    "destination": "/blog/category/7",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -3656,12 +3656,12 @@
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide__kedarnath-guide__page__1.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide__kedarnath-guide__page__1",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide__kedarnath-guide__page__1",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide__kedarnath-guide__page__1",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -3706,22 +3706,22 @@
   },
   {
     "source": "/travel-guide__uttarakhand-guide__page__2.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__page__2",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__page__2",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__page__2",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__page__16.html",
-    "destination": "/blog/category/16",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__page__16",
-    "destination": "/blog/category/16",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -3826,12 +3826,12 @@
   },
   {
     "source": "/travel-guide__kashmir-guide__page__2.html",
-    "destination": "/packages?filter=travel-guide__kashmir-guide__page__2",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__kashmir-guide__page__2",
-    "destination": "/packages?filter=travel-guide__kashmir-guide__page__2",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -3846,12 +3846,12 @@
   },
   {
     "source": "/travel-guide__page__5.html",
-    "destination": "/packages?filter=travel-guide__page__5",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__5",
-    "destination": "/packages?filter=travel-guide__page__5",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -3866,12 +3866,12 @@
   },
   {
     "source": "/blog/destinations__india__maharashtra.html",
-    "destination": "/blog/category/maharashtra",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__maharashtra",
-    "destination": "/blog/category/maharashtra",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -4181,12 +4181,12 @@
   },
   {
     "source": "/blog/destinations__india__rajasthan__udaipur.html",
-    "destination": "/blog/category/udaipur",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__rajasthan__udaipur",
-    "destination": "/blog/category/udaipur",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -4321,12 +4321,12 @@
   },
   {
     "source": "/blog/destinations__page__8.html",
-    "destination": "/blog/category/8",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__8",
-    "destination": "/blog/category/8",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -4346,12 +4346,12 @@
   },
   {
     "source": "/blog/destinations__vietnam.html",
-    "destination": "/blog/category/vietnam",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__vietnam",
-    "destination": "/blog/category/vietnam",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -4386,12 +4386,12 @@
   },
   {
     "source": "/blog/destinations__india__maharashtra__page__2.html",
-    "destination": "/blog/category/2",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__maharashtra__page__2",
-    "destination": "/blog/category/2",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -4641,12 +4641,12 @@
   },
   {
     "source": "/travel-guide__uttar-pradesh-guide__varanasi-guide.html",
-    "destination": "/packages?filter=travel-guide__uttar-pradesh-guide__varanasi-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttar-pradesh-guide__varanasi-guide",
-    "destination": "/packages?filter=travel-guide__uttar-pradesh-guide__varanasi-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -4686,12 +4686,12 @@
   },
   {
     "source": "/blog/destinations__india__kerala.html",
-    "destination": "/blog/category/kerala",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__kerala",
-    "destination": "/blog/category/kerala",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -4711,12 +4711,12 @@
   },
   {
     "source": "/travel-guide__uttar-pradesh-guide__page__3.html",
-    "destination": "/packages?filter=travel-guide__uttar-pradesh-guide__page__3",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttar-pradesh-guide__page__3",
-    "destination": "/packages?filter=travel-guide__uttar-pradesh-guide__page__3",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -4786,12 +4786,12 @@
   },
   {
     "source": "/pilgrimage-tour-package__hindu-pilgrimage-tour-package.html",
-    "destination": "/packages?filter=pilgrimage-tour-package__hindu-pilgrimage-tour-package",
+    "destination": "/packages/pilgrimage-tour-package",
     "permanent": true
   },
   {
     "source": "/pilgrimage-tour-package__hindu-pilgrimage-tour-package",
-    "destination": "/packages?filter=pilgrimage-tour-package__hindu-pilgrimage-tour-package",
+    "destination": "/packages/pilgrimage-tour-package",
     "permanent": true
   },
   {
@@ -4801,12 +4801,12 @@
   },
   {
     "source": "/blog/destinations__page__14.html",
-    "destination": "/blog/category/14",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__14",
-    "destination": "/blog/category/14",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -4861,12 +4861,12 @@
   },
   {
     "source": "/blog/destinations__india__uttarakhand__page__2.html",
-    "destination": "/blog/category/2",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__uttarakhand__page__2",
-    "destination": "/blog/category/2",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -4881,12 +4881,12 @@
   },
   {
     "source": "/blog/destinations__india__maharashtra__mumbai.html",
-    "destination": "/blog/category/mumbai",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__maharashtra__mumbai",
-    "destination": "/blog/category/mumbai",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -4901,22 +4901,22 @@
   },
   {
     "source": "/blog/destinations__india__telangana.html",
-    "destination": "/blog/category/telangana",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__telangana",
-    "destination": "/blog/category/telangana",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__united-states-of-america.html",
-    "destination": "/blog/category/united-states-of-america",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__united-states-of-america",
-    "destination": "/blog/category/united-states-of-america",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -4926,12 +4926,12 @@
   },
   {
     "source": "/blog/destinations__europe.html",
-    "destination": "/blog/category/europe",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__europe",
-    "destination": "/blog/category/europe",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -5031,12 +5031,12 @@
   },
   {
     "source": "/blog/destinations__india__uttarakhand__char-dham-yatra__page__3.html",
-    "destination": "/blog/category/3",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__uttarakhand__char-dham-yatra__page__3",
-    "destination": "/blog/category/3",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -5181,32 +5181,32 @@
   },
   {
     "source": "/blog/destinations__india__rajasthan__jaipur.html",
-    "destination": "/blog/category/jaipur",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__rajasthan__jaipur",
-    "destination": "/blog/category/jaipur",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__page__8.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__page__8",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__page__8",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__page__8",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__8.html",
-    "destination": "/packages?filter=travel-guide__page__8",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__8",
-    "destination": "/packages?filter=travel-guide__page__8",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -5311,12 +5311,12 @@
   },
   {
     "source": "/travel-guide__kailash-mansarovar-travel.html",
-    "destination": "/packages?filter=travel-guide__kailash-mansarovar-travel",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__kailash-mansarovar-travel",
-    "destination": "/packages?filter=travel-guide__kailash-mansarovar-travel",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -5546,12 +5546,12 @@
   },
   {
     "source": "/blog/destinations__india__page__6.html",
-    "destination": "/blog/category/6",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__page__6",
-    "destination": "/blog/category/6",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -5731,12 +5731,12 @@
   },
   {
     "source": "/pilgrimage-tour-package__page__2.html",
-    "destination": "/packages?filter=pilgrimage-tour-package__page__2",
+    "destination": "/packages/pilgrimage-tour-package",
     "permanent": true
   },
   {
     "source": "/pilgrimage-tour-package__page__2",
-    "destination": "/packages?filter=pilgrimage-tour-package__page__2",
+    "destination": "/packages/pilgrimage-tour-package",
     "permanent": true
   },
   {
@@ -5956,12 +5956,12 @@
   },
   {
     "source": "/blog/destinations__india__karnataka__hampi.html",
-    "destination": "/blog/category/hampi",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__karnataka__hampi",
-    "destination": "/blog/category/hampi",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -5971,12 +5971,12 @@
   },
   {
     "source": "/blog/destinations__page__16.html",
-    "destination": "/blog/category/16",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__16",
-    "destination": "/blog/category/16",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -6311,12 +6311,12 @@
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide__page__4.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide__page__4",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide__page__4",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide__page__4",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -6361,12 +6361,12 @@
   },
   {
     "source": "/travel-guide__page__30.html",
-    "destination": "/packages?filter=travel-guide__page__30",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__30",
-    "destination": "/packages?filter=travel-guide__page__30",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -6386,22 +6386,22 @@
   },
   {
     "source": "/blog/destinations__egypt.html",
-    "destination": "/blog/category/egypt",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__egypt",
-    "destination": "/blog/category/egypt",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/travel-guide__kerala-guide.html",
-    "destination": "/packages?filter=travel-guide__kerala-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__kerala-guide",
-    "destination": "/packages?filter=travel-guide__kerala-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -6471,12 +6471,12 @@
   },
   {
     "source": "/travel-guide__uttarakhand-guide__almora-guide.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__almora-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__almora-guide",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__almora-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -6661,12 +6661,12 @@
   },
   {
     "source": "/travel-guide__west-bengal-guide.html",
-    "destination": "/packages?filter=travel-guide__west-bengal-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__west-bengal-guide",
-    "destination": "/packages?filter=travel-guide__west-bengal-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -6706,12 +6706,12 @@
   },
   {
     "source": "/travel-guide__page__28.html",
-    "destination": "/packages?filter=travel-guide__page__28",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__28",
-    "destination": "/packages?filter=travel-guide__page__28",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -6866,22 +6866,22 @@
   },
   {
     "source": "/travel-guide__goa-guide__page__1.html",
-    "destination": "/packages?filter=travel-guide__goa-guide__page__1",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__goa-guide__page__1",
-    "destination": "/packages?filter=travel-guide__goa-guide__page__1",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide__kedarnath-guide__page__2.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide__kedarnath-guide__page__2",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide__kedarnath-guide__page__2",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide__kedarnath-guide__page__2",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -7146,12 +7146,12 @@
   },
   {
     "source": "/travel-guide__uttarakhand-guide__page__11.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__page__11",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__page__11",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__page__11",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -7336,12 +7336,12 @@
   },
   {
     "source": "/travel-guide.html",
-    "destination": "/packages?filter=travel-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide",
-    "destination": "/packages?filter=travel-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -7376,12 +7376,12 @@
   },
   {
     "source": "/blog/destinations__india__himachal-pradesh.html",
-    "destination": "/blog/category/himachal-pradesh",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__himachal-pradesh",
-    "destination": "/blog/category/himachal-pradesh",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -7571,12 +7571,12 @@
   },
   {
     "source": "/blog/destinations__india__page__12.html",
-    "destination": "/blog/category/12",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__page__12",
-    "destination": "/blog/category/12",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -7601,22 +7601,22 @@
   },
   {
     "source": "/blog/destinations__singapore.html",
-    "destination": "/blog/category/singapore",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__singapore",
-    "destination": "/blog/category/singapore",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__portugal.html",
-    "destination": "/blog/category/portugal",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__portugal",
-    "destination": "/blog/category/portugal",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -7766,12 +7766,12 @@
   },
   {
     "source": "/travel-guide__page__7.html",
-    "destination": "/packages?filter=travel-guide__page__7",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__7",
-    "destination": "/packages?filter=travel-guide__page__7",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -7786,12 +7786,12 @@
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide__page__5.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide__page__5",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide__page__5",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide__page__5",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -7836,12 +7836,12 @@
   },
   {
     "source": "/blog/destinations__india__jammu-kashmir__ladakh.html",
-    "destination": "/blog/category/ladakh",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__jammu-kashmir__ladakh",
-    "destination": "/blog/category/ladakh",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -7941,12 +7941,12 @@
   },
   {
     "source": "/travel-guide__assam-guide.html",
-    "destination": "/packages?filter=travel-guide__assam-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__assam-guide",
-    "destination": "/packages?filter=travel-guide__assam-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -8011,12 +8011,12 @@
   },
   {
     "source": "/blog/destinations__india__tamil-nadu.html",
-    "destination": "/blog/category/tamil-nadu",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__tamil-nadu",
-    "destination": "/blog/category/tamil-nadu",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -8041,12 +8041,12 @@
   },
   {
     "source": "/travel-guide__himachal-pradesh-guide__page__3.html",
-    "destination": "/packages?filter=travel-guide__himachal-pradesh-guide__page__3",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__himachal-pradesh-guide__page__3",
-    "destination": "/packages?filter=travel-guide__himachal-pradesh-guide__page__3",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -8156,12 +8156,12 @@
   },
   {
     "source": "/travel-guide__himachal-pradesh-guide__shimla-guide.html",
-    "destination": "/packages?filter=travel-guide__himachal-pradesh-guide__shimla-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__himachal-pradesh-guide__shimla-guide",
-    "destination": "/packages?filter=travel-guide__himachal-pradesh-guide__shimla-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -8201,12 +8201,12 @@
   },
   {
     "source": "/travel-guide__kashmir-guide__amarnath-guide.html",
-    "destination": "/packages?filter=travel-guide__kashmir-guide__amarnath-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__kashmir-guide__amarnath-guide",
-    "destination": "/packages?filter=travel-guide__kashmir-guide__amarnath-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -8226,12 +8226,12 @@
   },
   {
     "source": "/blog/destinations__india__rajasthan__page__2.html",
-    "destination": "/blog/category/2",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__rajasthan__page__2",
-    "destination": "/blog/category/2",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -8381,12 +8381,12 @@
   },
   {
     "source": "/travel-guide__page__21.html",
-    "destination": "/packages?filter=travel-guide__page__21",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__21",
-    "destination": "/packages?filter=travel-guide__page__21",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -8396,12 +8396,12 @@
   },
   {
     "source": "/blog/destinations__india__arunachal-pradesh.html",
-    "destination": "/blog/category/arunachal-pradesh",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__arunachal-pradesh",
-    "destination": "/blog/category/arunachal-pradesh",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -8611,12 +8611,12 @@
   },
   {
     "source": "/blog/destinations__oceania.html",
-    "destination": "/blog/category/oceania",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__oceania",
-    "destination": "/blog/category/oceania",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -8751,32 +8751,32 @@
   },
   {
     "source": "/blog/destinations__page__12.html",
-    "destination": "/blog/category/12",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__12",
-    "destination": "/blog/category/12",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__australia.html",
-    "destination": "/blog/category/australia",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__australia",
-    "destination": "/blog/category/australia",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__page__10.html",
-    "destination": "/blog/category/10",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__page__10",
-    "destination": "/blog/category/10",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -8831,12 +8831,12 @@
   },
   {
     "source": "/blog/destinations__india__page__18.html",
-    "destination": "/blog/category/18",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__page__18",
-    "destination": "/blog/category/18",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -8906,12 +8906,12 @@
   },
   {
     "source": "/blog/destinations__india__andaman-and-nicobar-islands.html",
-    "destination": "/blog/category/andaman-and-nicobar-islands",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__andaman-and-nicobar-islands",
-    "destination": "/blog/category/andaman-and-nicobar-islands",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -8926,12 +8926,12 @@
   },
   {
     "source": "/blog/destinations__india__maharashtra__pune.html",
-    "destination": "/blog/category/pune",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__maharashtra__pune",
-    "destination": "/blog/category/pune",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -9061,12 +9061,12 @@
   },
   {
     "source": "/blog/destinations__india__west-bengal.html",
-    "destination": "/blog/category/west-bengal",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__west-bengal",
-    "destination": "/blog/category/west-bengal",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -9126,12 +9126,12 @@
   },
   {
     "source": "/travel-guide__sri-lanka-guide.html",
-    "destination": "/packages?filter=travel-guide__sri-lanka-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__sri-lanka-guide",
-    "destination": "/packages?filter=travel-guide__sri-lanka-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -9186,12 +9186,12 @@
   },
   {
     "source": "/travel-guide__page__23.html",
-    "destination": "/packages?filter=travel-guide__page__23",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__23",
-    "destination": "/packages?filter=travel-guide__page__23",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -9301,12 +9301,12 @@
   },
   {
     "source": "/travel-guide__uttarakhand-guide__nainital-guide.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__nainital-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__nainital-guide",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__nainital-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -9336,12 +9336,12 @@
   },
   {
     "source": "/blog/destinations__page__5.html",
-    "destination": "/blog/category/5",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__5",
-    "destination": "/blog/category/5",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -9371,12 +9371,12 @@
   },
   {
     "source": "/blog/destinations__india__bihar__bodhgaya.html",
-    "destination": "/blog/category/bodhgaya",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__bihar__bodhgaya",
-    "destination": "/blog/category/bodhgaya",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -9411,12 +9411,12 @@
   },
   {
     "source": "/blog/destinations__india__page__20.html",
-    "destination": "/blog/category/20",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__page__20",
-    "destination": "/blog/category/20",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -9486,12 +9486,12 @@
   },
   {
     "source": "/blog/destinations__india__assam.html",
-    "destination": "/blog/category/assam",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__assam",
-    "destination": "/blog/category/assam",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -9521,22 +9521,22 @@
   },
   {
     "source": "/blog/destinations__sri-lanka.html",
-    "destination": "/blog/category/sri-lanka",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__sri-lanka",
-    "destination": "/blog/category/sri-lanka",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__page__3.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__page__3",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__page__3",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__page__3",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -9696,12 +9696,12 @@
   },
   {
     "source": "/blog/destinations__page__4.html",
-    "destination": "/blog/category/4",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__4",
-    "destination": "/blog/category/4",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -9821,12 +9821,12 @@
   },
   {
     "source": "/blog/destinations__india__jammu-kashmir__srinagar.html",
-    "destination": "/blog/category/srinagar",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__jammu-kashmir__srinagar",
-    "destination": "/blog/category/srinagar",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -9946,12 +9946,12 @@
   },
   {
     "source": "/travel-guide__uttar-pradesh-guide__page__2.html",
-    "destination": "/packages?filter=travel-guide__uttar-pradesh-guide__page__2",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttar-pradesh-guide__page__2",
-    "destination": "/packages?filter=travel-guide__uttar-pradesh-guide__page__2",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -9976,12 +9976,12 @@
   },
   {
     "source": "/blog/destinations__india__orissa.html",
-    "destination": "/blog/category/orissa",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__orissa",
-    "destination": "/blog/category/orissa",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -10026,12 +10026,12 @@
   },
   {
     "source": "/travel-guide__uttarakhand-guide.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -10081,12 +10081,12 @@
   },
   {
     "source": "/travel-guide__page__24.html",
-    "destination": "/packages?filter=travel-guide__page__24",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__24",
-    "destination": "/packages?filter=travel-guide__page__24",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -10136,12 +10136,12 @@
   },
   {
     "source": "/blog/destinations__india__himachal-pradesh__kasauli.html",
-    "destination": "/blog/category/kasauli",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__himachal-pradesh__kasauli",
-    "destination": "/blog/category/kasauli",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -10181,12 +10181,12 @@
   },
   {
     "source": "/blog/destinations__india__madhya-pradesh.html",
-    "destination": "/blog/category/madhya-pradesh",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__madhya-pradesh",
-    "destination": "/blog/category/madhya-pradesh",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -10231,12 +10231,12 @@
   },
   {
     "source": "/blog/destinations__india__kerala__munnar.html",
-    "destination": "/blog/category/munnar",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__kerala__munnar",
-    "destination": "/blog/category/munnar",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -10251,32 +10251,32 @@
   },
   {
     "source": "/blog/destinations__india__karnataka__bangalore.html",
-    "destination": "/blog/category/bangalore",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__karnataka__bangalore",
-    "destination": "/blog/category/bangalore",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/travel-guide__goa-guide.html",
-    "destination": "/packages?filter=travel-guide__goa-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__goa-guide",
-    "destination": "/packages?filter=travel-guide__goa-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__uttarakhand__char-dham-yatra.html",
-    "destination": "/blog/category/char-dham-yatra",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__uttarakhand__char-dham-yatra",
-    "destination": "/blog/category/char-dham-yatra",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -10301,12 +10301,12 @@
   },
   {
     "source": "/blog/destinations__page__2.html",
-    "destination": "/blog/category/2",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__2",
-    "destination": "/blog/category/2",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -10326,12 +10326,12 @@
   },
   {
     "source": "/blog/destinations__india__madhya-pradesh__khajuraho.html",
-    "destination": "/blog/category/khajuraho",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__madhya-pradesh__khajuraho",
-    "destination": "/blog/category/khajuraho",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -10376,12 +10376,12 @@
   },
   {
     "source": "/travel-guide__uttarakhand-guide__dehradun-guide.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__dehradun-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__dehradun-guide",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__dehradun-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -10516,12 +10516,12 @@
   },
   {
     "source": "/travel-guide__muktinath-guide.html",
-    "destination": "/packages?filter=travel-guide__muktinath-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__muktinath-guide",
-    "destination": "/packages?filter=travel-guide__muktinath-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -10631,12 +10631,12 @@
   },
   {
     "source": "/blog/destinations__india__maharashtra__ajanta-ellora-caves.html",
-    "destination": "/blog/category/ajanta-ellora-caves",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__maharashtra__ajanta-ellora-caves",
-    "destination": "/blog/category/ajanta-ellora-caves",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -10876,12 +10876,12 @@
   },
   {
     "source": "/blog/destinations__page__25.html",
-    "destination": "/blog/category/25",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__25",
-    "destination": "/blog/category/25",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -10896,12 +10896,12 @@
   },
   {
     "source": "/blog/destinations__india__page__13.html",
-    "destination": "/blog/category/13",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__page__13",
-    "destination": "/blog/category/13",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -10946,12 +10946,12 @@
   },
   {
     "source": "/blog/destinations__india__uttarakhand__page__4.html",
-    "destination": "/blog/category/4",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__uttarakhand__page__4",
-    "destination": "/blog/category/4",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -10976,12 +10976,12 @@
   },
   {
     "source": "/blog/destinations__page__10.html",
-    "destination": "/blog/category/10",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__10",
-    "destination": "/blog/category/10",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -11021,12 +11021,12 @@
   },
   {
     "source": "/travel-guide__sikkim-guide.html",
-    "destination": "/packages?filter=travel-guide__sikkim-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__sikkim-guide",
-    "destination": "/packages?filter=travel-guide__sikkim-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -11206,12 +11206,12 @@
   },
   {
     "source": "/travel-guide__uttar-pradesh-guide__agra-guide.html",
-    "destination": "/packages?filter=travel-guide__uttar-pradesh-guide__agra-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttar-pradesh-guide__agra-guide",
-    "destination": "/packages?filter=travel-guide__uttar-pradesh-guide__agra-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -11396,12 +11396,12 @@
   },
   {
     "source": "/blog/destinations__page__22.html",
-    "destination": "/blog/category/22",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__22",
-    "destination": "/blog/category/22",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -11451,12 +11451,12 @@
   },
   {
     "source": "/blog/destinations__india__rajasthan.html",
-    "destination": "/blog/category/rajasthan",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__rajasthan",
-    "destination": "/blog/category/rajasthan",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -11471,12 +11471,12 @@
   },
   {
     "source": "/travel-guide__page__6.html",
-    "destination": "/packages?filter=travel-guide__page__6",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__6",
-    "destination": "/packages?filter=travel-guide__page__6",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -11526,12 +11526,12 @@
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide__gangotri-guide.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide__gangotri-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide__gangotri-guide",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide__gangotri-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -11741,12 +11741,12 @@
   },
   {
     "source": "/blog/destinations__india__page__9.html",
-    "destination": "/blog/category/9",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__page__9",
-    "destination": "/blog/category/9",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -11771,12 +11771,12 @@
   },
   {
     "source": "/blog/destinations__india__page__8.html",
-    "destination": "/blog/category/8",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__page__8",
-    "destination": "/blog/category/8",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -11811,12 +11811,12 @@
   },
   {
     "source": "/blog/destinations__nepal.html",
-    "destination": "/blog/category/nepal",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__nepal",
-    "destination": "/blog/category/nepal",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -11826,12 +11826,12 @@
   },
   {
     "source": "/travel-guide__gujarat-guide__page__2.html",
-    "destination": "/packages?filter=travel-guide__gujarat-guide__page__2",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__gujarat-guide__page__2",
-    "destination": "/packages?filter=travel-guide__gujarat-guide__page__2",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -12021,12 +12021,12 @@
   },
   {
     "source": "/blog/destinations__india__page__14.html",
-    "destination": "/blog/category/14",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__page__14",
-    "destination": "/blog/category/14",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -12091,12 +12091,12 @@
   },
   {
     "source": "/travel-guide__uttarakhand-guide__page__7.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__page__7",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__page__7",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__page__7",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -12111,12 +12111,12 @@
   },
   {
     "source": "/travel-guide__page__29.html",
-    "destination": "/packages?filter=travel-guide__page__29",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__29",
-    "destination": "/packages?filter=travel-guide__page__29",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -12166,12 +12166,12 @@
   },
   {
     "source": "/blog/destinations__india.html",
-    "destination": "/blog/category/india",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india",
-    "destination": "/blog/category/india",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -12256,12 +12256,12 @@
   },
   {
     "source": "/blog/destinations__page__26.html",
-    "destination": "/blog/category/26",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__26",
-    "destination": "/blog/category/26",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -12296,12 +12296,12 @@
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide__page__1.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide__page__1",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide__page__1",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide__page__1",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -12406,12 +12406,12 @@
   },
   {
     "source": "/blog/destinations__india__uttar-pradesh__page__2.html",
-    "destination": "/blog/category/2",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__uttar-pradesh__page__2",
-    "destination": "/blog/category/2",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -12481,12 +12481,12 @@
   },
   {
     "source": "/blog/destinations__india__page__15.html",
-    "destination": "/blog/category/15",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__page__15",
-    "destination": "/blog/category/15",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -12591,12 +12591,12 @@
   },
   {
     "source": "/blog/destinations__india__jammu-kashmir__ladakh__kargil.html",
-    "destination": "/blog/category/kargil",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__jammu-kashmir__ladakh__kargil",
-    "destination": "/blog/category/kargil",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -12676,12 +12676,12 @@
   },
   {
     "source": "/blog/destinations__page__24.html",
-    "destination": "/blog/category/24",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__24",
-    "destination": "/blog/category/24",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -12696,22 +12696,22 @@
   },
   {
     "source": "/travel-guide__west-bengal-guide__darjeeling-guide.html",
-    "destination": "/packages?filter=travel-guide__west-bengal-guide__darjeeling-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__west-bengal-guide__darjeeling-guide",
-    "destination": "/packages?filter=travel-guide__west-bengal-guide__darjeeling-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__3.html",
-    "destination": "/packages?filter=travel-guide__page__3",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__3",
-    "destination": "/packages?filter=travel-guide__page__3",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -12856,12 +12856,12 @@
   },
   {
     "source": "/blog/destinations__india__page__11.html",
-    "destination": "/blog/category/11",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__page__11",
-    "destination": "/blog/category/11",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -12931,12 +12931,12 @@
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide__kedarnath-guide.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide__kedarnath-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide__kedarnath-guide",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide__kedarnath-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -13086,42 +13086,42 @@
   },
   {
     "source": "/travel-guide__himachal-pradesh-guide.html",
-    "destination": "/packages?filter=travel-guide__himachal-pradesh-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__himachal-pradesh-guide",
-    "destination": "/packages?filter=travel-guide__himachal-pradesh-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__auli-guide.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__auli-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__auli-guide",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__auli-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide__badrinath-guide.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide__badrinath-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide__badrinath-guide",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide__badrinath-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__page__1.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__page__1",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__page__1",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__page__1",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -13131,12 +13131,12 @@
   },
   {
     "source": "/blog/destinations__india__punjab.html",
-    "destination": "/blog/category/punjab",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__punjab",
-    "destination": "/blog/category/punjab",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -13181,12 +13181,12 @@
   },
   {
     "source": "/travel-guide__page__31.html",
-    "destination": "/packages?filter=travel-guide__page__31",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__31",
-    "destination": "/packages?filter=travel-guide__page__31",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -13401,12 +13401,12 @@
   },
   {
     "source": "/blog/destinations__india__page__17.html",
-    "destination": "/blog/category/17",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__page__17",
-    "destination": "/blog/category/17",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -13511,12 +13511,12 @@
   },
   {
     "source": "/blog/destinations__india__kerala__page__2.html",
-    "destination": "/blog/category/2",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__kerala__page__2",
-    "destination": "/blog/category/2",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -13666,22 +13666,22 @@
   },
   {
     "source": "/travel-guide__page__11.html",
-    "destination": "/packages?filter=travel-guide__page__11",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__11",
-    "destination": "/packages?filter=travel-guide__page__11",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__19.html",
-    "destination": "/blog/category/19",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__19",
-    "destination": "/blog/category/19",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -13806,12 +13806,12 @@
   },
   {
     "source": "/travel-guide__goa-guide__page__2.html",
-    "destination": "/packages?filter=travel-guide__goa-guide__page__2",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__goa-guide__page__2",
-    "destination": "/packages?filter=travel-guide__goa-guide__page__2",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -13906,12 +13906,12 @@
   },
   {
     "source": "/blog/destinations__india__page__19.html",
-    "destination": "/blog/category/19",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__page__19",
-    "destination": "/blog/category/19",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -13966,12 +13966,12 @@
   },
   {
     "source": "/blog/destinations__page__3.html",
-    "destination": "/blog/category/3",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__3",
-    "destination": "/blog/category/3",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -13996,12 +13996,12 @@
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide__yamunotri-guide.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide__yamunotri-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide__yamunotri-guide",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide__yamunotri-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -14051,12 +14051,12 @@
   },
   {
     "source": "/blog/destinations__india__tamil-nadu__ooty.html",
-    "destination": "/blog/category/ooty",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__tamil-nadu__ooty",
-    "destination": "/blog/category/ooty",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -14086,12 +14086,12 @@
   },
   {
     "source": "/blog/destinations__page__9.html",
-    "destination": "/blog/category/9",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__9",
-    "destination": "/blog/category/9",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -14136,12 +14136,12 @@
   },
   {
     "source": "/travel-guide__kashmir-guide.html",
-    "destination": "/packages?filter=travel-guide__kashmir-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__kashmir-guide",
-    "destination": "/packages?filter=travel-guide__kashmir-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -14186,12 +14186,12 @@
   },
   {
     "source": "/travel-guide__page__13.html",
-    "destination": "/packages?filter=travel-guide__page__13",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__13",
-    "destination": "/packages?filter=travel-guide__page__13",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -14271,12 +14271,12 @@
   },
   {
     "source": "/travel-guide__bhutan-guide.html",
-    "destination": "/packages?filter=travel-guide__bhutan-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__bhutan-guide",
-    "destination": "/packages?filter=travel-guide__bhutan-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -14326,22 +14326,22 @@
   },
   {
     "source": "/travel-guide__rajasthan-guide.html",
-    "destination": "/packages?filter=travel-guide__rajasthan-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__rajasthan-guide",
-    "destination": "/packages?filter=travel-guide__rajasthan-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__12.html",
-    "destination": "/packages?filter=travel-guide__page__12",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__12",
-    "destination": "/packages?filter=travel-guide__page__12",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -14406,12 +14406,12 @@
   },
   {
     "source": "/blog/destinations__india__sikkim.html",
-    "destination": "/blog/category/sikkim",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__sikkim",
-    "destination": "/blog/category/sikkim",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -14426,12 +14426,12 @@
   },
   {
     "source": "/blog/destinations__india__jammu-kashmir__page__2.html",
-    "destination": "/blog/category/2",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__jammu-kashmir__page__2",
-    "destination": "/blog/category/2",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -14561,22 +14561,22 @@
   },
   {
     "source": "/travel-guide__uttarakhand-guide__page__9.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__page__9",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__page__9",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__page__9",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__mussoorie-guide.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__mussoorie-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__mussoorie-guide",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__mussoorie-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -14591,12 +14591,12 @@
   },
   {
     "source": "/travel-guide__uttarakhand-guide__rishikesh-guide.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__rishikesh-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__rishikesh-guide",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__rishikesh-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -14631,12 +14631,12 @@
   },
   {
     "source": "/travel-guide__bihar-guide__gaya-guide.html",
-    "destination": "/packages?filter=travel-guide__bihar-guide__gaya-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__bihar-guide__gaya-guide",
-    "destination": "/packages?filter=travel-guide__bihar-guide__gaya-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -14766,12 +14766,12 @@
   },
   {
     "source": "/blog/destinations__page__17.html",
-    "destination": "/blog/category/17",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__17",
-    "destination": "/blog/category/17",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -14886,22 +14886,22 @@
   },
   {
     "source": "/blog/destinations__page__15.html",
-    "destination": "/blog/category/15",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__15",
-    "destination": "/blog/category/15",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__uttarakhand__page__5.html",
-    "destination": "/blog/category/5",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__uttarakhand__page__5",
-    "destination": "/blog/category/5",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -14916,12 +14916,12 @@
   },
   {
     "source": "/blog/destinations__malaysia.html",
-    "destination": "/blog/category/malaysia",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__malaysia",
-    "destination": "/blog/category/malaysia",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -14931,12 +14931,12 @@
   },
   {
     "source": "/blog/destinations__india__uttarakhand.html",
-    "destination": "/blog/category/uttarakhand",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__uttarakhand",
-    "destination": "/blog/category/uttarakhand",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -15191,12 +15191,12 @@
   },
   {
     "source": "/travel-guide__page__26.html",
-    "destination": "/packages?filter=travel-guide__page__26",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__26",
-    "destination": "/packages?filter=travel-guide__page__26",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -15291,12 +15291,12 @@
   },
   {
     "source": "/blog/destinations__india__page__5.html",
-    "destination": "/blog/category/5",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__page__5",
-    "destination": "/blog/category/5",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -15311,12 +15311,12 @@
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -15331,12 +15331,12 @@
   },
   {
     "source": "/travel-guide__uttarakhand-guide__page__4.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__page__4",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__page__4",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__page__4",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -15526,12 +15526,12 @@
   },
   {
     "source": "/blog/destinations__page__23.html",
-    "destination": "/blog/category/23",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__23",
-    "destination": "/blog/category/23",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -15646,12 +15646,12 @@
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide__page__3.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide__page__3",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__chardham-guide__page__3",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__chardham-guide__page__3",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -15851,22 +15851,22 @@
   },
   {
     "source": "/blog/destinations__india__uttarakhand__valley-of-flowers.html",
-    "destination": "/blog/category/valley-of-flowers",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__uttarakhand__valley-of-flowers",
-    "destination": "/blog/category/valley-of-flowers",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/international-tours.html",
-    "destination": "/packages?filter=international-tours",
+    "destination": "/destinations/international-tours",
     "permanent": true
   },
   {
     "source": "/international-tours",
-    "destination": "/packages?filter=international-tours",
+    "destination": "/destinations/international-tours",
     "permanent": true
   },
   {
@@ -15896,12 +15896,12 @@
   },
   {
     "source": "/travel-guide__uttar-pradesh-guide__allahabad-guide.html",
-    "destination": "/packages?filter=travel-guide__uttar-pradesh-guide__allahabad-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttar-pradesh-guide__allahabad-guide",
-    "destination": "/packages?filter=travel-guide__uttar-pradesh-guide__allahabad-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -15991,12 +15991,12 @@
   },
   {
     "source": "/blog/destinations__bali.html",
-    "destination": "/blog/category/bali",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__bali",
-    "destination": "/blog/category/bali",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -16021,12 +16021,12 @@
   },
   {
     "source": "/blog/destinations__page__27.html",
-    "destination": "/blog/category/27",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__27",
-    "destination": "/blog/category/27",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -16156,12 +16156,12 @@
   },
   {
     "source": "/travel-guide__page__22.html",
-    "destination": "/packages?filter=travel-guide__page__22",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__22",
-    "destination": "/packages?filter=travel-guide__page__22",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -16206,12 +16206,12 @@
   },
   {
     "source": "/blog/destinations__india__page__7.html",
-    "destination": "/blog/category/7",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__page__7",
-    "destination": "/blog/category/7",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -16236,12 +16236,12 @@
   },
   {
     "source": "/blog/destinations__india__delhi.html",
-    "destination": "/blog/category/delhi",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__delhi",
-    "destination": "/blog/category/delhi",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -16336,12 +16336,12 @@
   },
   {
     "source": "/blog/destinations__india__page__2.html",
-    "destination": "/blog/category/2",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__page__2",
-    "destination": "/blog/category/2",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -16381,12 +16381,12 @@
   },
   {
     "source": "/blog/destinations__india__uttarakhand__char-dham-yatra__badrinath.html",
-    "destination": "/blog/category/badrinath",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__uttarakhand__char-dham-yatra__badrinath",
-    "destination": "/blog/category/badrinath",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -16436,12 +16436,12 @@
   },
   {
     "source": "/travel-guide__gujarat-guide__page__1.html",
-    "destination": "/packages?filter=travel-guide__gujarat-guide__page__1",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__gujarat-guide__page__1",
-    "destination": "/packages?filter=travel-guide__gujarat-guide__page__1",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -16486,12 +16486,12 @@
   },
   {
     "source": "/blog/destinations__india__goa.html",
-    "destination": "/blog/category/goa",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__goa",
-    "destination": "/blog/category/goa",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -16516,12 +16516,12 @@
   },
   {
     "source": "/travel-guide__nepal-guide.html",
-    "destination": "/packages?filter=travel-guide__nepal-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__nepal-guide",
-    "destination": "/packages?filter=travel-guide__nepal-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -16576,12 +16576,12 @@
   },
   {
     "source": "/travel-guide__bihar-guide.html",
-    "destination": "/packages?filter=travel-guide__bihar-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__bihar-guide",
-    "destination": "/packages?filter=travel-guide__bihar-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -16591,12 +16591,12 @@
   },
   {
     "source": "/blog/destinations__page__20.html",
-    "destination": "/blog/category/20",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__20",
-    "destination": "/blog/category/20",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -16621,12 +16621,12 @@
   },
   {
     "source": "/travel-guide__page__2.html",
-    "destination": "/packages?filter=travel-guide__page__2",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__2",
-    "destination": "/packages?filter=travel-guide__page__2",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -16716,12 +16716,12 @@
   },
   {
     "source": "/travel-guide__uttarakhand-guide__page__5.html",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__page__5",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttarakhand-guide__page__5",
-    "destination": "/packages?filter=travel-guide__uttarakhand-guide__page__5",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -16821,12 +16821,12 @@
   },
   {
     "source": "/blog/destinations__india__gujarat.html",
-    "destination": "/blog/category/gujarat",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__gujarat",
-    "destination": "/blog/category/gujarat",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -16881,12 +16881,12 @@
   },
   {
     "source": "/travel-guide__uttar-pradesh-guide__page__1.html",
-    "destination": "/packages?filter=travel-guide__uttar-pradesh-guide__page__1",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttar-pradesh-guide__page__1",
-    "destination": "/packages?filter=travel-guide__uttar-pradesh-guide__page__1",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -16956,32 +16956,32 @@
   },
   {
     "source": "/travel-guide__page__10.html",
-    "destination": "/packages?filter=travel-guide__page__10",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__page__10",
-    "destination": "/packages?filter=travel-guide__page__10",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__uttar-pradesh__varanasi.html",
-    "destination": "/blog/category/varanasi",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__uttar-pradesh__varanasi",
-    "destination": "/blog/category/varanasi",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__chhattisgarh.html",
-    "destination": "/blog/category/chhattisgarh",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__chhattisgarh",
-    "destination": "/blog/category/chhattisgarh",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -17421,12 +17421,12 @@
   },
   {
     "source": "/blog/destinations__india__tamil-nadu__kodaikanal.html",
-    "destination": "/blog/category/kodaikanal",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__india__tamil-nadu__kodaikanal",
-    "destination": "/blog/category/kodaikanal",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -17441,12 +17441,12 @@
   },
   {
     "source": "/blog/destinations__china.html",
-    "destination": "/blog/category/china",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__china",
-    "destination": "/blog/category/china",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -17531,12 +17531,12 @@
   },
   {
     "source": "/travel-guide__uttar-pradesh-guide.html",
-    "destination": "/packages?filter=travel-guide__uttar-pradesh-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__uttar-pradesh-guide",
-    "destination": "/packages?filter=travel-guide__uttar-pradesh-guide",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -17566,12 +17566,12 @@
   },
   {
     "source": "/blog/destinations__page__13.html",
-    "destination": "/blog/category/13",
+    "destination": "/blog",
     "permanent": true
   },
   {
     "source": "/blog/destinations__page__13",
-    "destination": "/blog/category/13",
+    "destination": "/blog",
     "permanent": true
   },
   {
@@ -17616,12 +17616,12 @@
   },
   {
     "source": "/travel-guide__himachal-pradesh-guide__page__2.html",
-    "destination": "/packages?filter=travel-guide__himachal-pradesh-guide__page__2",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/travel-guide__himachal-pradesh-guide__page__2",
-    "destination": "/packages?filter=travel-guide__himachal-pradesh-guide__page__2",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -17957,6 +17957,16 @@
   {
     "source": "/india-tour-package__page__26",
     "destination": "/packages",
+    "permanent": true
+  },
+  {
+    "source": "/india-tours",
+    "destination": "/destinations/india-tours",
+    "permanent": true
+  },
+  {
+    "source": "/india-tours.html",
+    "destination": "/destinations/india-tours",
     "permanent": true
   }
 ]

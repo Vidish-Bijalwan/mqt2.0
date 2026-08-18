@@ -1,0 +1,14 @@
+[
+  "header", "nav", ".top-bar", ".topbar",
+  ".nit-head", ".nit-head h2", ".nit-middle-hr", ".nit-head-sub",
+  ".nit-grid",
+  ".nit-pcard", ".nit-pcard-img", ".nit-pcard-img-el", ".nit-pcard-cant",
+  ".nit-pcard-title", ".nit-pcard-title a", ".nit-pcard-dur", ".nit-pcard-dur svg",
+  ".nit-pcard-dest", ".nit-pcard-dest svg", ".nit-destinx",
+  ".nit-pcard-amen", ".nit-pcard-amen li", ".nit-amen-ic",
+  ".nit-pcard-price", ".nit-prOld", ".nit-badge", ".nit-old", ".nit-prCn", ".nit-prCn b", ".nit-prCap",
+  ".nit-prcEnq", ".nit-prcEnq a",
+  ".nit-inxBt", ".nit-cdxBt", ".nit-cdxBt img",
+  ".nit-themes", ".nit-themes li", ".nit-themes li button", ".nit-theme-ic",
+  "footer"
+]

@@ -3,24 +3,28 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { ChevronDown } from 'lucide-react';
+import ExpandableText from '@/components/ui/ExpandableText';
 
 interface Block {
   type: string;
   level?: number;
   text?: string;
+  content?: string;
   url?: string;
   alt?: string;
   caption?: string;
-  items?: string[];
+  items?: string[] | Array<{ q: string; a: string }>;
   ordered?: boolean;
   rows?: string[][];
 }
 
 interface BlockRendererProps {
   blocks: Block[];
+  /** Truncate long paragraphs with a See More toggle (used in the Overview tab). */
+  truncate?: boolean;
 }
 
-export default function BlockRenderer({ blocks }: BlockRendererProps) {
+export default function BlockRenderer({ blocks, truncate = false }: BlockRendererProps) {
   // Group "Day N" heading sequences into accordion items; render everything
   // else in document order.
   const renderedBlocks: React.ReactNode[] = [];
@@ -45,16 +49,17 @@ export default function BlockRenderer({ blocks }: BlockRendererProps) {
   for (let i = 0; i < blocks.length; i++) {
     const block = blocks[i];
 
-    if (block.type === 'heading' && block.text?.match(/^(Day\s*\d+|Day\s*-\s*\d+)/i)) {
+    const blockText = block.text || block.content || '';
+    if (block.type === 'heading' && blockText.match(/^(Day\s*\d+|Day\s*-\s*\d+)/i)) {
       flushAccordion();
-      currentAccordionTitle = block.text;
-    } else if (block.type === 'heading' && currentAccordion.length > 0 && !block.text?.match(/^(Day\s*\d+|Day\s*-\s*\d+)/i)) {
+      currentAccordionTitle = blockText;
+    } else if (block.type === 'heading' && currentAccordion.length > 0 && !blockText.match(/^(Day\s*\d+|Day\s*-\s*\d+)/i)) {
       flushAccordion();
-      renderedBlocks.push(<RenderSingleBlock key={`block-${i}`} block={block} />);
+      renderedBlocks.push(<RenderSingleBlock key={`block-${i}`} block={block} truncate={truncate} />);
     } else if (currentAccordionTitle) {
       currentAccordion.push(block);
     } else {
-      renderedBlocks.push(<RenderSingleBlock key={`block-${i}`} block={block} />);
+      renderedBlocks.push(<RenderSingleBlock key={`block-${i}`} block={block} truncate={truncate} />);
     }
   }
 
@@ -68,18 +73,45 @@ export default function BlockRenderer({ blocks }: BlockRendererProps) {
 }
 
 function headingTag(level?: number): { Tag: React.ElementType; className: string } {
-  if (level === 3) return { Tag: 'h3', className: 'text-xl font-bold text-gray-800 mt-6 mb-3' };
-  if (level && level >= 4) return { Tag: 'h4', className: 'text-lg font-semibold text-gray-800 mt-5 mb-2' };
+  // Normalize scraped levels so the hierarchy never jumps (h1→h2→h3 only):
+  // levels 1-2 render as h2, level 3 as h3, anything deeper clamps to h3.
+  if (level === 3 || (level && level >= 4)) {
+    return { Tag: 'h3', className: 'text-xl font-bold text-gray-800 mt-6 mb-3' };
+  }
   return { Tag: 'h2', className: 'text-2xl font-bold text-gray-900 mt-8 mb-4 pb-2 border-b border-gray-100' };
 }
 
-function RenderSingleBlock({ block }: { block: Block }) {
+function RenderSingleBlock({ block, truncate }: { block: Block; truncate?: boolean }) {
+  // Normalize: support both "text" (legacy) and "content" (enriched) fields
+  const txt = block.text || block.content || '';
   if (block.type === 'paragraph') {
-    return <p className="text-gray-700 leading-relaxed text-[15px]">{block.text}</p>;
+    if (truncate && txt && txt.length > 280) {
+      return <ExpandableText text={txt} className="text-gray-700 leading-relaxed text-[15px]" />;
+    }
+    return <p className="text-gray-700 leading-relaxed text-[15px]">{txt}</p>;
   }
   if (block.type === 'heading') {
     const { Tag, className } = headingTag(block.level);
-    return <Tag className={className}>{block.text}</Tag>;
+    return <Tag className={className}>{txt}</Tag>;
+  }
+  if (block.type === 'faq') {
+    const items = (block.items || []) as Array<{ q: string; a: string }>;
+    if (items.length === 0) return null;
+    return (
+      <div className="space-y-3 my-6">
+        {items.map((item, idx) => (
+          <details key={idx} className="group border border-gray-200 rounded-lg overflow-hidden">
+            <summary className="flex items-center justify-between px-4 py-3 cursor-pointer bg-gray-50 hover:bg-gray-100 font-semibold text-gray-800 text-[15px]">
+              {item.q}
+              <ChevronDown className="w-4 h-4 text-gray-500 group-open:rotate-180 transition-transform" />
+            </summary>
+            <div className="px-4 py-3 text-gray-700 text-[15px] leading-relaxed border-t border-gray-100">
+              {item.a}
+            </div>
+          </details>
+        ))}
+      </div>
+    );
   }
   if (block.type === 'image') {
     return (
@@ -100,7 +132,8 @@ function RenderSingleBlock({ block }: { block: Block }) {
     );
   }
   if (block.type === 'list') {
-    const items = (block.items || []).filter(Boolean);
+    // Drop scraped "See More"/"See Less" toggle artifacts.
+    const items = ((block.items || []) as string[]).map((s) => (s || '').trim()).filter(Boolean).filter((s) => !/^see (more|less)$/i.test(s));
     if (items.length === 0) return null;
     const ListTag = block.ordered ? 'ol' : 'ul';
     return (

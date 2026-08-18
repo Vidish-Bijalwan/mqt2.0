@@ -1,0 +1,20 @@
+[
+  ["Section header (h2)", ".txt1", ".nit-head h2"],
+  ["Section header bar", ".middle-hr", ".nit-middle-hr"],
+  ["Card grid", ".prc_row_grid", ".nit-grid"],
+  ["Card", ".prc_row", ".nit-pcard"],
+  ["Card image", ".prc_img img", ".nit-pcard-img-el"],
+  ["Card title link", ".prc_head a", ".nit-pcard-title a"],
+  ["Duration row", ".prc-dur", ".nit-pcard-dur"],
+  ["Route row", ".prc-dest", ".nit-pcard-dest"],
+  ["Amenity item", ".prc_listt li", ".nit-pcard-amen li"],
+  ["Price strip", ".prc_PRICE_area", ".nit-pcard-price"],
+  ["Discount badge", ".prOld i", ".nit-badge"],
+  ["Old price", ".prOld b", ".nit-old"],
+  ["Current price", ".prCn", ".nit-prCn"],
+  ["Caption", ".prc_details span", ".nit-prCap"],
+  ["CTA row", ".prc_enq", ".nit-prcEnq"],
+  ["CTA button", ".prc_enq a", ".nit-prcEnq a"],
+  ["Dest tile", ".cdxBt", ".nit-cdxBt"],
+  ["Theme tile", ".theme-touBox li a", ".nit-themes li button"]
+]

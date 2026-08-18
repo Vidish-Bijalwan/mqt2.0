@@ -628,31 +628,15 @@ export const destinations: Destination[] = [
     "name": "Best of Uttar Pradesh Tour Package",
     "image": "/images/packages/uttar-pradesh-tour.jpg"
   },
-  {
-    "slug": "travel-guide__page__9",
-    "name": "Category: Travel Guide",
-    "image": "/images/packages/chardham.jpg"
-  },
-  {
-    "slug": "franchisee",
-    "name": "Franchisee – Namaste India Trip",
-    "image": "/images/packages/chardham.jpg"
-  },
+  
+  
   {
     "slug": "kerala-cultural-tour",
     "name": "Kerala Cultural Tour Package",
     "image": "/images/packages/chardham.jpg"
   },
-  {
-    "slug": "saraswati-river-pushkaralu",
-    "name": "Saraswati Pushkaralu Yatra from Delhi 2025",
-    "image": "/images/packages/chardham.jpg"
-  },
-  {
-    "slug": "travel-guide__sri-lanka-guide",
-    "name": "Category: Sri Lanka",
-    "image": "/images/packages/travel-guide__sri-lanka-guide.webp"
-  },
+  
+  
   {
     "slug": "traditional-dress-of-madhya-pradesh",
     "name": "Traditional Dress of Madhya Pradesh",
@@ -663,16 +647,8 @@ export const destinations: Destination[] = [
     "name": "Muktinath Kathmandu Tour Package",
     "image": "/images/packages/muktinath-kathmandu-tour.jpg"
   },
-  {
-    "slug": "book-process__index.php__q_d20c0f1649",
-    "name": "Madurai Rameswaram Kanyakumari Tour",
-    "image": "/images/packages/chardham.jpg"
-  },
-  {
-    "slug": "our-private-tours",
-    "name": "Our Private Tours – Namaste India Trip",
-    "image": "/images/packages/chardham.jpg"
-  },
+  
+  
   {
     "slug": "maharashtra",
     "name": "Maharashtra",
@@ -683,16 +659,8 @@ export const destinations: Destination[] = [
     "name": "Buddhist Tourism of Uttar Pradesh",
     "image": "/images/packages/chardham.jpg"
   },
-  {
-    "slug": "travel-guide__page__2",
-    "name": "Category: Travel Guide",
-    "image": "/images/packages/chardham.jpg"
-  },
-  {
-    "slug": "travel-guide__uttar-pradesh-guide__page__2",
-    "name": "Category: Uttar Pradesh",
-    "image": "/images/packages/chardham.jpg"
-  },
+  
+  
   {
     "slug": "phuket-honeymoon-tour",
     "name": "Phuket Honeymoon Tour Package",
@@ -718,11 +686,7 @@ export const destinations: Destination[] = [
     "name": "Raj Ghat, Delhi",
     "image": "/images/packages/raj-ghat-delhi.jpg"
   },
-  {
-    "slug": "book-process__index.php__q_8bc93a0c7c",
-    "name": "Shillong Cherrapunji Kamakhya Darshan Trip",
-    "image": "/images/packages/chardham.jpg"
-  },
+  
   {
     "slug": "assam",
     "name": "Assam Tourism",
@@ -753,21 +717,9 @@ export const destinations: Destination[] = [
     "name": "3 Days Khajuraho Orchha Tour",
     "image": "/images/packages/chardham.jpg"
   },
-  {
-    "slug": "book-process__index.php__q_397948f8e4",
-    "name": "Agra Mathura Vrindavan Tour with Delhi",
-    "image": "/images/packages/chardham.jpg"
-  },
-  {
-    "slug": "travel-guide__madhya-pradesh-guide",
-    "name": "Category: Madhya Pradesh",
-    "image": "/images/packages/chardham.jpg"
-  },
-  {
-    "slug": "book-process__index.php__q_7efbe374b0",
-    "name": "Fascinating Kerala Tour Package",
-    "image": "/images/packages/chardham.jpg"
-  },
+  
+  
+  
   {
     "slug": "mathura",
     "name": "Mathura",
@@ -853,16 +805,8 @@ export const destinations: Destination[] = [
     "name": "Kainchi Dham Dunagiri Cave Patal Bhuvaneshwar Package",
     "image": "/images/packages/chardham.jpg"
   },
-  {
-    "slug": "travel-guide__page__27",
-    "name": "Category: Travel Guide",
-    "image": "/images/packages/chardham.jpg"
-  },
-  {
-    "slug": "book-process__index.php__q_87e1ead404",
-    "name": "Haridwar Rishikesh Mussoorie Dhanaulti Tour",
-    "image": "/images/packages/chardham.jpg"
-  },
+  
+  
   {
     "slug": "ladakh",
     "name": "Ladakh",

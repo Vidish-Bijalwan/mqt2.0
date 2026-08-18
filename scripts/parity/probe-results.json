@@ -1,0 +1,637 @@
+{
+  "algeria-tour-packages": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Algeria Tour Packages - Book Algeria Holiday Packages at Best Price"
+  },
+  "arunachal-pradesh-tour-packages": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Discover the natural beauty of India by going for the Arunachal Pradesh tour packages. Book at the best rates the Arunac"
+  },
+  "benin-tour-packages": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Benin Tour Packages - Book Benin Holiday Packages at Best Price"
+  },
+  "buddhism-india": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "History of Buddhism in India has a long history and to learn about the reach of the religion, you need to learn about it"
+  },
+  "bungee-jumping": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Bungee Jumping in India - Bungee Jump Travel Guide for Beginners"
+  },
+  "camping": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Camping in India - The Best Camping Travel Guide for Beginners"
+  },
+  "cape-verde-tour-packages": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Cape Verde Tour Packages - Book Cape Verde Vacations Packages"
+  },
+  "ethiopia-tour-packages": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Ethiopia Tour Packages - Book Ethiopia Holiday Packages at Best Price"
+  },
+  "fiji-tour-packages": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Fiji Tour Packages - Book Fiji Holidays Packages at Best Price"
+  },
+  "french-polynesia-tour-packages": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "French Polynesia Tour Packages - Book French Polynesia Vacations Packages"
+  },
+  "gambia-tour-packages": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Gambia Tour Packages - Book Gambia Holiday Packages at Best Price"
+  },
+  "gauteng-tour-packages": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Gauteng Tour Packages - Book Gauteng Holiday Packages at Best Price"
+  },
+  "ghana-tour-packages": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Ghana Tour Packages - Book Ghana Holiday Packages at Best Price"
+  },
+  "holidays-in-australia": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Australia Tour Packages - Book Australia Holiday Packages at Best Price"
+  },
+  "kenya-tour-packages": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Kenya Tour Packages - Book Kenya Holiday Packages at Best Price"
+  },
+  "kwazulu-natal-tour-packages": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Kwazulu Natal Tour Packages - Book Kwazulu Natal Holiday Packages"
+  },
+  "libya-tour-packages": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Libya Tour Packages - Book Libya Holiday Packages at Best Price"
+  },
+  "mpumalanga-tour-packages": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Mpumalanga Tour Packages - Book Mpumalanga Vacation Packages"
+  },
+  "mumbai-tour-packages": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Mumbai Tour Packages - Book Mumbai City Holiday Package at Best Price"
+  },
+  "northern-cape-tour-packages": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Northern Cape Tour Packages - Book Northern Cape Holiday Packages"
+  },
+  "papua-new-guinea-tour-packages": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Papua New Guinea Tours - Book Papua New Guinea Holiday Packages"
+  },
+  "pilgrimage-tour-package__hindu-pilgrimage-tour-package": {
+    "status": 404,
+    "kind": "404"
+  },
+  "pilgrimage-tour-package__page__1": {
+    "status": 404,
+    "kind": "404"
+  },
+  "pilgrimage-tour-package__page__2": {
+    "status": 404,
+    "kind": "404"
+  },
+  "raipur-tour-packages": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Raipur Tour Packages - Book Budget Raipur Travel Packages at Best Price"
+  },
+  "ranchi-tour-packages": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Ranchi Tour Packages - Book Ranchi City Holiday Package at Best Price"
+  },
+  "rwanda-tour-packages": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Rwanda Tour Packages - Book Rwanda Holiday Packages at Best Price"
+  },
+  "senegal-tour-packages": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Senegal Tour Packages - Book Senegal Holiday Packages at Best Price"
+  },
+  "senior-citizens-special": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Senior citizens special tour packages with comfortable travel, senior‑friendly itineraries, hotels, escorts &amp; medica"
+  },
+  "skiing": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Skiing in India - The Best Skiing Travel Guide for Beginners"
+  },
+  "tanzania-tour-packages": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Tanzania Tour Packages - Book Tanzania Holiday Packages at Best Price"
+  },
+  "tawang-tour-packages": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Tawang Tour Packages - Book Budget Tawang Holidays at Best Price"
+  },
+  "travel-guide": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Travel Guide"
+  },
+  "travel-guide__andhra-pradesh-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__assam-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__bhutan-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__bihar-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__bihar-guide__gaya-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__goa-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__goa-guide__page__1": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__goa-guide__page__2": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__gujarat-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__gujarat-guide__ahmedabad-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__gujarat-guide__page__1": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__gujarat-guide__page__2": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__gujarat-guide__page__3": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__gujarat-guide__somnath-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__himachal-pradesh-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__himachal-pradesh-guide__manali-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__himachal-pradesh-guide__page__1": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__himachal-pradesh-guide__page__2": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__himachal-pradesh-guide__page__3": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__himachal-pradesh-guide__shimla-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__kailash-mansarovar-travel": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__kashmir-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__kashmir-guide__amarnath-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__kashmir-guide__page__1": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__kashmir-guide__page__2": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__kerala-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__madhya-pradesh-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__muktinath-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__nepal-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__page__1": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__page__10": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__page__11": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__page__12": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__page__13": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__page__2": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__page__21": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__page__22": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__page__23": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__page__24": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__page__25": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__page__26": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__page__27": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__page__28": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__page__29": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__page__3": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__page__30": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__page__31": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__page__4": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__page__5": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__page__6": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__page__7": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__page__8": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__page__9": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__rajasthan-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__sikkim-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__sri-lanka-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttar-pradesh-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttar-pradesh-guide__agra-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttar-pradesh-guide__allahabad-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttar-pradesh-guide__page__1": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttar-pradesh-guide__page__2": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttar-pradesh-guide__page__3": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttar-pradesh-guide__varanasi-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__almora-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__auli-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__chardham-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__chardham-guide__badrinath-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__chardham-guide__badrinath-guide__page__1": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__chardham-guide__badrinath-guide__page__2": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__chardham-guide__gangotri-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__chardham-guide__kedarnath-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__chardham-guide__kedarnath-guide__page__1": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__chardham-guide__kedarnath-guide__page__2": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__chardham-guide__page__1": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__chardham-guide__page__2": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__chardham-guide__page__3": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__chardham-guide__page__4": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__chardham-guide__page__5": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__chardham-guide__yamunotri-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__dehradun-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__haridwar-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__mussoorie-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__nainital-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__page__1": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__page__10": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__page__11": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__page__2": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__page__3": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__page__4": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__page__5": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__page__6": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__page__7": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__page__8": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__page__9": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__uttarakhand-guide__rishikesh-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__west-bengal-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "travel-guide__west-bengal-guide__darjeeling-guide": {
+    "status": 404,
+    "kind": "404"
+  },
+  "tunisia-tour-packages": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Tunisia Tour Packages - Book Tunisia Holiday Packages at Best Price"
+  },
+  "western-cape-tour-packages": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Western Cape Tour Packages - Book Western Cape Holiday Packages"
+  },
+  "wildlife": {
+    "status": 200,
+    "kind": "listing",
+    "hasOverview": false,
+    "tourLinks": 125,
+    "metaDesc": "Wildlife in India - The Best Wildlife Travel Guide for Beginners"
+  }
+}

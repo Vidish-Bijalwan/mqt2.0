@@ -22,8 +22,7 @@ export default function RelatedPackages({ category, currentSlug }: { category: s
           View all in {category} <ArrowRight className="w-4 h-4 ml-1" />
         </Link>
       </div>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[10px]">
         {related.map(pkg => (
           <PackageCard key={pkg.slug} pkg={pkg} />
         ))}

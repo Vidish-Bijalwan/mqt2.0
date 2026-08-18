@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/data/siteConfig";
 import Navbar from "@/components/layout/Navbar";
@@ -7,7 +7,7 @@ import Footer from "@/components/layout/Footer";
 import FloatingButtons from "@/components/layout/FloatingButtons";
 import FloatingWhatsApp from "@/components/ui/FloatingWhatsApp";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({ subsets: ["latin"], weight: ["400", "500", "700"] });
 
 export const metadata: Metadata = {
   title: {
@@ -77,8 +77,17 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        {/* Lightweight event tracker (T28): pushes any [data-track] click to the
+            dataLayer (works with GTM/GA4 when installed; no-op otherwise).
+            Kept in <head> (with the JSON-LD) so React never treats it as a
+            client-rendered body script. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `document.addEventListener('click',function(e){var t=e.target&&e.target.closest?e.target.closest('[data-track]'):null;if(!t)return;var d={event:t.getAttribute('data-track'),href:t.getAttribute('href')||''};window.dataLayer=window.dataLayer||[];window.dataLayer.push(d);});`,
+          }}
+        />
       </head>
-      <body className={inter.className} suppressHydrationWarning>
+      <body className={roboto.className} suppressHydrationWarning>
         <div className="flex flex-col min-h-screen">
           <Navbar />
           <main className="flex-grow">{children}</main>

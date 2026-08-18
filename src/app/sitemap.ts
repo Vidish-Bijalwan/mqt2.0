@@ -24,11 +24,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { route: '/about-us', priority: 0.8, freq: 'monthly' as const },
     { route: '/contact-us', priority: 0.8, freq: 'monthly' as const },
     { route: '/special-tours', priority: 0.8, freq: 'weekly' as const },
-    { route: '/india-tours', priority: 0.8, freq: 'weekly' as const },
-    { route: '/international-tours', priority: 0.7, freq: 'weekly' as const },
+    // /india-tours and /international-tours 404/redirect — list the real destination pages
+    { route: '/destinations/india-tours', priority: 0.8, freq: 'weekly' as const },
+    { route: '/destinations/international-tours', priority: 0.7, freq: 'weekly' as const },
+    { route: '/customer-center', priority: 0.6, freq: 'monthly' as const },
+    { route: '/reviews', priority: 0.5, freq: 'monthly' as const },
+    { route: '/pay-online', priority: 0.6, freq: 'monthly' as const },
+    { route: '/my-booking', priority: 0.5, freq: 'monthly' as const },
+    { route: '/careers', priority: 0.4, freq: 'monthly' as const },
+    { route: '/group-tours', priority: 0.7, freq: 'weekly' as const },
     { route: '/experiences', priority: 0.85, freq: 'weekly' as const },
     { route: '/privacy-policy', priority: 0.3, freq: 'yearly' as const },
     { route: '/terms-and-conditions', priority: 0.3, freq: 'yearly' as const },
+    { route: '/site-map', priority: 0.3, freq: 'yearly' as const },
   ].map(({ route, priority, freq }) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
@@ -70,16 +78,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  // Blog posts (410 posts — organic traffic drivers)
-  const blogRoutes = Object.keys(fullBlogData).map((slug) => {
-    const cleanSlug = slug.startsWith('blog__') ? slug.replace('blog__', '') : slug;
-    return {
-      url: `${baseUrl}/blog/${cleanSlug}`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.7,
-    };
-  });
+  // Blog posts (real posts only — excludes junk archive keys like travel-theme__*)
+  const blogRoutes = Object.keys(fullBlogData)
+    .filter((slug) => !slug.includes('__'))
+    .map((slug) => {
+      const cleanSlug = slug.startsWith('blog__') ? slug.replace('blog__', '') : slug;
+      return {
+        url: `${baseUrl}/blog/${cleanSlug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+      };
+    });
 
   return [
     ...staticRoutes,

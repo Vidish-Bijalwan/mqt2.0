@@ -8,6 +8,10 @@ import PackageListCard from "@/components/ui/PackageListCard";
 import EmptyState from "@/components/ui/EmptyState";
 import FilterSidebar from "@/components/ui/FilterSidebar";
 import DestinationDescription from "@/components/ui/DestinationDescription";
+import DestinationAtAGlance from "@/components/ui/DestinationAtAGlance";
+import EnquiryForm from "@/components/forms/EnquiryForm";
+import Image from "next/image";
+import { getPriceInfo, parseINR } from "@/utils/price";
 
 const destinationsData = destinationsDataRaw as Record<string, any>;
 
@@ -96,6 +100,32 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
   // Deduplicate packages based on slug
   const uniquePackages = Array.from(new Map(matchedPackages.map((p) => [p.slug, p])).values());
 
+  // Destination facts derived from the real catalog (never fabricated).
+  const durNums = uniquePackages
+    .map((p) => p.duration?.match(/(\d+)\s*days?/i)?.[1])
+    .filter(Boolean)
+    .map(Number);
+  const durationRange =
+    durNums.length === 0
+      ? null
+      : Math.min(...durNums) === Math.max(...durNums)
+        ? `${Math.min(...durNums)} Day${Math.min(...durNums) > 1 ? "s" : ""}`
+        : `${Math.min(...durNums)}–${Math.max(...durNums)} Days`;
+  const priceNums = uniquePackages
+    .map((p) => (getPriceInfo(p.mrp, p.dealPrice).hasPrice ? parseINR(p.dealPrice || p.mrp) : 0))
+    .filter((n) => n > 0);
+  const priceFrom = priceNums.length ? "₹" + Math.min(...priceNums).toLocaleString("en-IN") : null;
+
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": siteConfig.domain },
+      { "@type": "ListItem", "position": 2, "name": "India Tours", "item": `${siteConfig.domain}/destinations/india-tours` },
+      { "@type": "ListItem", "position": 3, "name": titleName, "item": `${siteConfig.domain}/destinations/${slug}` },
+    ],
+  };
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "TouristDestination",
@@ -112,6 +142,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <div className="bg-gray-50 min-h-screen pb-16">
       
       {/* Breadcrumbs Top Bar */}
@@ -119,13 +150,43 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
         <div className="container mx-auto w-full max-w-7xl px-2 md:px-4 flex items-center">
           <Link href="/" className="font-semibold hover:text-legacy-orange">Home</Link>
           <ChevronRight className="w-3 h-3 mx-1" />
-          <Link href="/india-tours" className="font-semibold hover:text-legacy-orange">India</Link>
+          <Link href="/destinations/india-tours" className="font-semibold hover:text-legacy-orange">India</Link>
           <ChevronRight className="w-3 h-3 mx-1" />
           <span className="capitalize">{titleName} Tour Packages</span>
         </div>
       </div>
 
-      <div className="container mx-auto px-4 w-full max-w-7xl px-2 md:px-4">
+      {/* Hero banner (U25) — title over image, consistent with the packages listing */}
+      <div className="relative h-[200px] md:h-[260px] w-full overflow-hidden">
+        <Image
+          src={destData?.image || "/images/hero/hero-bg-1.jpg"}
+          alt={titleName}
+          fill
+          sizes="100vw"
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-legacy-nav-blue/70" />
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+          <h1 className="text-3xl md:text-5xl font-bold text-white capitalize drop-shadow-md">
+            {titleName} Tour Packages
+          </h1>
+          <p className="text-white/80 text-sm md:text-base mt-3 max-w-2xl">
+            {matchedPackages.length} curated packages · handpicked itineraries · best price guarantee
+          </p>
+        </div>
+      </div>
+
+      <div className="container mx-auto px-4 w-full max-w-7xl px-2 md:px-4 mt-8">
+        
+        {/* Destination at a Glance — reference-style fact strip (U26) */}
+        <div className="mb-6">
+          <DestinationAtAGlance
+            totalPackages={uniquePackages.length}
+            durationRange={durationRange}
+            priceFrom={priceFrom}
+          />
+        </div>
         
         {/* Render Destination Guide Content at the top */}
         <DestinationDescription title={titleName} content={destData?.content || []} />
@@ -134,8 +195,20 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
         <div className="flex flex-col lg:flex-row gap-6">
           
           {/* Left Sidebar (25% on lg screens) */}
-          <div className="w-full lg:w-1/4 shrink-0">
+          <div className="w-full lg:w-1/4 shrink-0 space-y-6">
              <FilterSidebar />
+
+             {/* Quick Enquiry (U25) — matches the packages listing sidebar */}
+             <div className="bg-[#fff9e6] border border-yellow-200 rounded overflow-hidden shadow-sm">
+               <div className="bg-legacy-nav-blue text-white px-4 py-3 text-sm font-bold text-center relative">
+                 Get a Best Deal Quick Enquiry
+                 <span className="absolute left-1/2 -translate-x-1/2 -bottom-2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-legacy-nav-blue" />
+               </div>
+               <div className="p-4">
+                 <p className="text-[11px] text-gray-600 mb-3">Tell us your travel plans and we&apos;ll design the best package for you!</p>
+                 <EnquiryForm pkgName={`${titleName} Tour Packages`} />
+               </div>
+             </div>
           </div>
           
           {/* Right Package List (75% on lg screens) */}

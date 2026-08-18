@@ -1,0 +1,14 @@
+[
+  ".header_top", ".header_mid", ".header_bot", "#header", ".header_mid_inner", ".logo_wrap", ".logo img",
+  ".topbar", ".top-bar", "header", ".navbar", ".main-menu", ".menu",
+  ".busFm h2", ".apiBx", ".inBx label", ".inBx input", ".inBx button",
+  ".top-head-box", ".txt1", ".middle-hr",
+  ".prc_row_grid", ".prc_row", ".prc_img", ".prc_img img", ".prc_cant", ".prc_head", ".prc_head a",
+  ".prc-dur", ".prc-dur i", ".prc-dest", ".destinx", ".prc-dest i",
+  ".prc_listt", ".prc_listt li",
+  ".prc_PRICE_area", ".prc_details", ".prOld", ".prOld i", ".prOld b", ".prCn", ".prCn b", ".actP8",
+  ".prc_details span", ".prc_enq", ".prc_enq a",
+  ".inxBt", ".cdxBt", ".cdxBt a img",
+  ".theme-touBox", ".theme-touBox li", ".theme-touBox li a", ".theme-touBox li a img",
+  "footer", ".footer", ".site-footer", ".footer_copyright", ".addres-footer"
+]

@@ -5,12 +5,15 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Package } from '@/data/allPackages';
 import { getPackageImage } from '@/utils/imageMapper';
+import { getPriceInfo } from '@/utils/price';
 
 export default function PackageListCard({ pkg }: { pkg: Package }) {
   const [imgSrc, setImgSrc] = useState(getPackageImage(pkg));
 
-  const displayPrice = pkg.price && pkg.price !== "" ? pkg.price : "On Request";
-  const hasPrice = displayPrice !== "On Request";
+  // Shared pricing model: pkg.mrp = list price, pkg.dealPrice = the deal.
+  const { hasPrice, display, crossed } = getPriceInfo(pkg.mrp, pkg.dealPrice);
+  const displayPrice = hasPrice ? display : "On Request";
+  const crossedOut = crossed;
 
   // Parse start/end from route
   const routeParts = pkg.route ? pkg.route.split(/[→➝–]/).map(s => s.trim()).filter(Boolean) : [];
@@ -109,11 +112,16 @@ export default function PackageListCard({ pkg }: { pkg: Package }) {
         {/* Price Display */}
         <div className="mb-3">
           <p className="text-[11px] text-gray-500 mb-1 font-semibold uppercase tracking-wider">Starting from</p>
-          <div className="flex items-baseline justify-center gap-1">
+          <div className="flex flex-col items-center">
             {hasPrice ? (
                <>
-                 <span className="text-[13px] font-bold text-gray-800">INR</span>
-                 <span className="text-[20px] font-extrabold text-gray-900 leading-none">{displayPrice}</span>
+                 <div className="flex items-baseline justify-center gap-1">
+                   <span className="text-[13px] font-bold text-gray-800">INR</span>
+                   <span className="text-[20px] font-extrabold text-gray-900 leading-none">{displayPrice}</span>
+                 </div>
+                 {crossedOut && (
+                   <span className="text-[11px] text-gray-400 line-through mt-0.5">INR {crossedOut}</span>
+                 )}
                </>
             ) : (
                <span className="text-[16px] font-extrabold text-legacy-orange leading-none">{displayPrice}</span>
@@ -123,10 +131,13 @@ export default function PackageListCard({ pkg }: { pkg: Package }) {
 
         {/* CTA Buttons */}
         <div className="w-full space-y-1.5">
-          <button className="w-full py-1.5 px-2 bg-white hover:bg-gray-100 border border-gray-300 text-gray-700 text-[11px] font-bold rounded flex items-center justify-center gap-1 transition-colors shadow-sm whitespace-nowrap">
+          <Link
+            href={`/packages/${pkg.slug}#enquiry-form`}
+            className="block w-full py-1.5 px-2 bg-white hover:bg-gray-100 border border-gray-300 text-gray-700 text-[11px] font-bold rounded flex items-center justify-center gap-1 transition-colors shadow-sm whitespace-nowrap"
+          >
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
             Send Query
-          </button>
+          </Link>
           <Link
             href={`/packages/${pkg.slug}`}
             className="block w-full py-1.5 px-2 bg-legacy-orange hover:bg-orange-600 text-white text-[11px] font-bold rounded text-center transition-colors shadow-sm whitespace-nowrap"

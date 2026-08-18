@@ -12,7 +12,7 @@ export const themeConfigs: ThemeConfig[] = [
   { name: "Family", href: "/special-tours/family", keywords: ["family", "kids", "leisure"] },
   { name: "Honeymoon", href: "/special-tours/honeymoon", keywords: ["honeymoon", "romantic", "couple"] },
   { name: "Cultural", href: "/special-tours/cultural", keywords: ["culture", "heritage", "temple", "historical", "fort"] },
-  { name: "Pilgrimage", href: "/india-tours/pilgrimage", keywords: ["pilgrimage", "darshan", "yatra", "dham", "temple", "spiritual"] },
+  { name: "Pilgrimage", href: "/packages?category=Pilgrimage", keywords: ["pilgrimage", "darshan", "yatra", "dham", "temple", "spiritual"] },
   { name: "Beaches", href: "/special-tours/beaches", keywords: ["beach", "goa", "andaman", "island", "sea"] },
   { name: "Adventure", href: "/special-tours/adventure", keywords: ["adventure", "trek", "safari", "rafting", "camping"] },
   { name: "Winter", href: "/special-tours/winter", keywords: ["winter", "snow", "ski", "kashmir", "auli"] },

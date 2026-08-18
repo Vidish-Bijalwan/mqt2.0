@@ -9,6 +9,14 @@ export default function EnquiryForm({ pkgName = "" }: { pkgName?: string }) {
     e.preventDefault();
     setStatus("loading");
     
+    // Track enquiry submission (analytics)
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag("event", "enquiry_submit", {
+        event_category: "engagement",
+        event_label: pkgName || "general",
+      });
+    }
+    
     // Simulate API call
     setTimeout(() => {
       setStatus("success");

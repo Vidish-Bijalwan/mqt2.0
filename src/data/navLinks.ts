@@ -1,7 +1,7 @@
 export const navLinks = [
   {
     title: "India Tours",
-    href: "/india-tours",
+    href: "/destinations/india-tours",
     megaMenu: true, // Flag to render as mega menu
     submenus: [
       {
@@ -38,7 +38,7 @@ export const navLinks = [
         links: [
           { name: "Kerala", href: "/destinations/kerala" },
           { name: "Tamil Nadu", href: "/destinations/tamil-nadu" },
-          { name: "Andaman & Nicobar", href: "/destinations/andaman-and-nicobar" },
+          { name: "Andaman & Nicobar", href: "/destinations/andaman" },
           { name: "Karnataka", href: "/destinations/karnataka" },
         ],
       },
@@ -66,7 +66,7 @@ export const navLinks = [
   },
   {
     title: "International Tours",
-    href: "/international-tours",
+    href: "/destinations/international-tours",
     megaMenu: true,
     submenus: [
       {
@@ -99,8 +99,7 @@ export const navLinks = [
         title: "Europe",
         links: [
           { name: "Switzerland", href: "/destinations/switzerland" },
-          { name: "France", href: "/destinations/france" },
-          { name: "Italy", href: "/destinations/italy" },
+          { name: "France", href: "/packages?filter=france" },
         ],
       },
       {
@@ -114,14 +113,14 @@ export const navLinks = [
   },
   {
     title: "Pilgrimage",
-    href: "/india-tours/pilgrimage",
+    href: "/packages?category=Pilgrimage",
     links: [
-      { name: "Chardham Yatra", href: "/india-tours/chardham" },
-      { name: "Kailash Mansarovar", href: "/international-tours/kailash-mansarovar" },
-      { name: "Amarnath Yatra", href: "/india-tours/amarnath" },
-      { name: "Vaishno Devi", href: "/india-tours/vaishno-devi" },
+      { name: "Chardham Yatra", href: "/packages?filter=chardham" },
+      { name: "Kailash Mansarovar", href: "/packages?filter=kailash-mansarovar" },
+      { name: "Amarnath Yatra", href: "/packages?filter=amarnath" },
+      { name: "Vaishno Devi", href: "/packages?filter=vaishno-devi" },
       { name: "12 Jyotirlinga", href: "/packages/12-jyotirlinga-tour-package" },
-      { name: "Do Dham Yatra", href: "/india-tours/do-dham" },
+      { name: "Do Dham Yatra", href: "/packages?filter=do-dham" },
     ]
   },
   {
@@ -130,11 +129,11 @@ export const navLinks = [
   },
   {
     title: "Helicopter Tours",
-    href: "/special-tours/helicopter",
+    href: "/packages?category=Helicopter",
   },
   {
     title: "Buddhist Tours",
-    href: "/special-tours/buddhist",
+    href: "/packages?filter=buddhist",
   },
   {
     title: "Honeymoon Tours",

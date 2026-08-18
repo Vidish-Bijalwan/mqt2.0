@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { MapPin, BedDouble, Utensils, CarFront, Navigation, Star } from "lucide-react";
+import { Sun, MapPin } from "lucide-react";
+import { getPriceInfo } from "@/utils/price";
 
 export interface PackageCardProps {
   slug: string;
@@ -9,13 +10,21 @@ export interface PackageCardProps {
   image2?: string;
   duration: string;
   route: string;
-  price: string;
-  oldPrice?: string;
+  mrp: string;
+  dealPrice?: string;
   discount?: string;
   highlights: string[];
   destination?: string; // Ported from InternationalPackageCard
   rating?: number; // Ported from InternationalPackageCard
 }
+
+/* Amenity icons — copied from reference site (64px PNGs, rendered at 24px) */
+const AMENITIES = [
+  { label: "Hotel Stay", icon: "/images/nit/bed.png" },
+  { label: "Meals", icon: "/images/nit/food.png" },
+  { label: "Transfers", icon: "/images/nit/car.png" },
+  { label: "Sightseeing", icon: "/images/nit/sightseeing.png" },
+];
 
 export default function PackageCard({ pkg }: { pkg: PackageCardProps }) {
   // Extract number of days from duration string (e.g. "5 Nights / 6 Days" -> "6 Days")
@@ -25,187 +34,85 @@ export default function PackageCard({ pkg }: { pkg: PackageCardProps }) {
   const nights = nightsMatch ? nightsMatch[1] + " Nights" : "";
   const durationPill = days + (nights ? ` / ${nights}` : "");
 
-  /* ─── Pricing logic ───
-     In the scraped data the fields are swapped:
-       • pkg.price   = the higher MRP / original price
-       • pkg.oldPrice = the actual deal / current price
-  */
-  const parseINR = (s: string) => {
-    const cleaned = s.replace(/[^\d]/g, '');
-    return cleaned ? parseInt(cleaned, 10) : 0;
-  };
-
-  const mrpValue = pkg.price ? parseINR(pkg.price) : 0;
-  const dealValue = pkg.oldPrice ? parseINR(pkg.oldPrice) : 0;
-
-  // The actual displayed price is oldPrice (the deal); the crossed-out price is price (the MRP)
-  const displayPrice = dealValue > 0 ? dealValue.toLocaleString('en-IN') : (mrpValue > 0 ? mrpValue.toLocaleString('en-IN') : '');
-  const crossedOutPrice = dealValue > 0 && mrpValue > dealValue ? mrpValue.toLocaleString('en-IN') : '';
-  const discountAmount = dealValue > 0 && mrpValue > dealValue ? (mrpValue - dealValue).toLocaleString('en-IN') : '';
-  
-  // Flag state: if the scraper pulled a known fallback (like INR 2), we treat it as no price
-  const isFallbackPrice = dealValue === 2 || mrpValue === 2 || dealValue === 24750;
-  const showPrice = displayPrice && !isFallbackPrice;
+  /* ─── Pricing (shared model): pkg.mrp = list price, pkg.dealPrice = the deal ─── */
+  const { display: displayPrice, crossed: crossedOutPrice, save: discountAmount, hasPrice: showPrice } = getPriceInfo(pkg.mrp, pkg.dealPrice);
 
   return (
-    <div className="bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0,0.15)] transition-shadow duration-300 overflow-hidden flex flex-col relative w-full h-full group/card">
-      
-      {/* ── Image Area ── */}
-      <div className="relative h-[220px] w-full overflow-hidden shrink-0 group block bg-gray-200">
-        <Link href={`/packages/${pkg.slug}`} className="block w-full h-full relative" tabIndex={-1}>
-          
-          {/* Diagonal Two-Photo Collage */}
-          {pkg.image2 ? (
-            <>
-              <Image
-                src={pkg.image2}
-                alt={`${pkg.title} - image 2`}
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                className="object-cover"
-              />
-              <div 
-                className="absolute inset-0 w-full h-full"
-                style={{ clipPath: "polygon(0 0, 70% 0, 35% 100%, 0 100%)" }}
-              >
-                <Image
-                  src={pkg.image}
-                  alt={pkg.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover"
-                />
-              </div>
-              {/* White divider line between the two images */}
-              <div 
-                className="absolute inset-0 w-[4px] bg-white h-[150%] origin-bottom-left"
-                style={{ transform: "rotate(24.5deg) translate(-28%, -15%)" }} 
-              />
-            </>
-          ) : (
-            <Image
-              src={pkg.image}
-              alt={pkg.title}
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-          )}
+    <div className="nit-pcard">
+      {/* Whole-card link: covers the card so clicking anywhere opens the tour.
+          The image/title/CTA links sit above it (z-index) and stay clickable. */}
+      <Link href={`/packages/${pkg.slug}`} className="nit-pcard-stretch" tabIndex={-1} aria-hidden="true" />
 
-          {/* Dark gradient overlay at the bottom third */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90" />
+      {/* ── Image (5px inset, rounded, scale-on-hover like reference) ── */}
+      <Link href={`/packages/${pkg.slug}`} className="nit-pcard-img" tabIndex={-1}>
+        <Image
+          src={pkg.image}
+          alt={pkg.title}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1360px) 50vw, 33vw"
+          className="nit-pcard-img-el"
+          style={{ objectFit: "cover", filter: "saturate(1.15) contrast(1.08)" }}
+        />
+      </Link>
 
-          {/* Corner Ribbon Badge (Brand Orange) */}
-          <div className="absolute top-0 left-0">
-             <div className="w-10 h-10 bg-brand-orange rounded-br-full flex items-start justify-start pt-1.5 pl-1.5 shadow-md">
-               <span className="text-white text-[10px] font-bold tracking-tight">MQT</span>
-             </div>
-          </div>
+      {/* ── Content: title, duration, route, amenities ── */}
+      <div className="nit-pcard-cant">
+        <h3 className="nit-pcard-title">
+          <Link href={`/packages/${pkg.slug}`}>{pkg.title}</Link>
+        </h3>
 
-          {/* Overlay text: Title and Duration pill */}
-          <div className="absolute bottom-0 left-0 w-full p-4 flex flex-col justify-end">
-             <h3 className="text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-1">{pkg.title}</h3>
-             <div className="inline-flex">
-                <span className="bg-brand-orange text-white text-[11px] font-bold px-3 py-1 rounded-sm shadow-sm">
-                   {durationPill}
-                </span>
-             </div>
-          </div>
+        {pkg.duration && (
+          <p className="nit-pcard-dur">
+            <Sun aria-hidden="true" />
+            {durationPill}
+          </p>
+        )}
 
-        </Link>
+        <div className="nit-pcard-dest">
+          <MapPin aria-hidden="true" strokeWidth={2} />
+          <span className="nit-destinx">
+            {pkg.route ? pkg.route : <em style={{ color: "#999", fontStyle: "italic" }}>Route details on request</em>}
+          </span>
+        </div>
+
+        <ul className="nit-pcard-amen">
+          {AMENITIES.map((a) => (
+            <li key={a.label}>
+              <i className="nit-amen-ic" style={{ backgroundImage: `url(${a.icon})` }} aria-hidden="true"></i>
+              {a.label}
+            </li>
+          ))}
+        </ul>
       </div>
 
-      {/* ── Content Area ── */}
-      <div className="flex-grow flex flex-col pt-4 pb-0 px-0">
-        <div className="px-4">
-          <div className="flex justify-between items-start gap-2 mb-1.5">
-            <Link href={`/packages/${pkg.slug}`}>
-              <h4 className="text-[15px] font-bold text-legacy-nav-blue hover:text-legacy-orange transition-colors line-clamp-2 leading-snug">
-                {pkg.title}
-              </h4>
-            </Link>
-            {pkg.rating && (
-              <div className="flex items-center gap-0.5 mt-0.5 shrink-0 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">
-                <Star className="w-3 h-3 fill-amber-400 text-amber-400" />
-                <span className="text-[11px] font-bold text-gray-700">{pkg.rating}</span>
-              </div>
-            )}
-          </div>
-          
-          <div className="flex items-center text-[12px] text-gray-600 mb-3">
-            <span className="w-1.5 h-1.5 rounded-full border border-legacy-orange flex items-center justify-center mr-2">
-               <span className="w-1 h-1 bg-legacy-orange rounded-full"></span>
-            </span>
-            Multi-day tours available
-          </div>
-
-          {/* Route line with Map Pin */}
-          <div className="flex items-start text-[12px] text-gray-700 mb-4">
-            <MapPin strokeWidth={2} className="w-4 h-4 mr-1.5 text-brand-orange shrink-0 mt-[1px]" />
-            <span className="line-clamp-2 leading-relaxed">
-               {pkg.route ? pkg.route : <span className="italic text-gray-500">Route details on request</span>}
-            </span>
-          </div>
-
-          {/* Amenity Icons Row (Exactly 4 icons) */}
-          <div className="flex justify-between items-center pt-2 pb-4">
-            <div className="flex flex-col items-center justify-center text-gray-400 group-hover/card:text-brand-orange transition-colors duration-300">
-              <BedDouble strokeWidth={1.5} className="w-6 h-6 mb-1" />
-              <span className="text-[10px] text-gray-500 font-medium">Hotel Stay</span>
-            </div>
-            <div className="flex flex-col items-center justify-center text-gray-400 group-hover/card:text-brand-orange transition-colors duration-300">
-              <Utensils strokeWidth={1.5} className="w-6 h-6 mb-1" />
-              <span className="text-[10px] text-gray-500 font-medium">Meals</span>
-            </div>
-            <div className="flex flex-col items-center justify-center text-gray-400 group-hover/card:text-brand-orange transition-colors duration-300">
-              <CarFront strokeWidth={1.5} className="w-6 h-6 mb-1" />
-              <span className="text-[10px] text-gray-500 font-medium">Transfers</span>
-            </div>
-            <div className="flex flex-col items-center justify-center text-gray-400 group-hover/card:text-brand-orange transition-colors duration-300">
-              <Navigation strokeWidth={1.5} className="w-6 h-6 mb-1" />
-              <span className="text-[10px] text-gray-500 font-medium">Sightseeing</span>
-            </div>
-          </div>
+      {/* ── Price strip (#ebf1ff) ── */}
+      <div className="nit-pcard-price">
+        <div className="nit-prOld">
+          {showPrice && crossedOutPrice ? (
+            <>
+              <span className="nit-badge">INR {discountAmount} off</span>
+              <del className="nit-old">INR {crossedOutPrice}</del>
+            </>
+          ) : (
+            <span style={{ visibility: "hidden" }}>·</span>
+          )}
         </div>
 
-        {/* ── Price Block ── */}
-        <div className="bg-[#f8f9fa] px-4 py-3 text-center border-t border-gray-100 mt-auto flex flex-col items-center">
-           <div className="h-5 flex items-center justify-center mb-1">
-             {showPrice && crossedOutPrice ? (
-               <div className="flex items-center gap-2">
-                 <span className="bg-[#4CAF50] text-white text-[10px] font-bold px-2 py-0.5 rounded-sm shadow-sm">
-                   INR {discountAmount} off
-                 </span>
-                 <span className="text-[12px] text-gray-400 line-through font-medium">INR {crossedOutPrice}</span>
-               </div>
-             ) : (
-                <div className="h-5"></div>
-             )}
-           </div>
-           
-           <div className="text-2xl font-bold text-gray-800 leading-none mb-1">
-             {showPrice ? (
-                <span>INR {displayPrice}</span>
-             ) : (
-                <span className="text-xl text-brand-orange font-bold">Pricing on request</span>
-             )}
-           </div>
-           
-           <div className="text-[10px] text-gray-500 font-medium uppercase tracking-wide">Starting price per person</div>
+        <div className="nit-prCn">
+          {showPrice ? (
+            <>INR <b>{displayPrice}</b></>
+          ) : (
+            <b style={{ fontSize: 20, color: "#fb4d00" }}>Pricing on request</b>
+          )}
         </div>
 
-        {/* ── CTA Buttons ── */}
-        <div className="flex w-full border-t border-gray-100">
-          <Link 
-            href={`/packages/${pkg.slug}#enquiry`}
-            className="w-1/2 flex items-center justify-center text-gray-600 text-[13px] font-bold bg-white hover:bg-gray-50 hover:text-gray-900 py-3 transition-colors border-r border-gray-100"
-          >
+        <span className="nit-prCap">Starting price per person</span>
+
+        <div className="nit-prcEnq">
+          <Link href={`/packages/${pkg.slug}#enquiry-form`} title="Get a Best Deal Quick Enquiry">
             Quick enquiry
           </Link>
-          <Link 
-            href={`/packages/${pkg.slug}`}
-            className="w-1/2 flex items-center justify-center text-white text-[13px] font-bold bg-brand-orange hover:bg-[#e0501a] py-3 transition-colors"
-          >
+          <Link href={`/packages/${pkg.slug}`} title={pkg.title}>
             View Tour
           </Link>
         </div>
