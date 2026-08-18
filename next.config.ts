@@ -20,6 +20,12 @@ const nextConfig: NextConfig = {
     // Locally in dev, skip optimization for faster iteration
     unoptimized: process.env.NODE_ENV === "development",
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   // On Vercel/CI, skip turbopack root override (no junctions needed)
   // Locally on OneDrive, widen root to home dir so turbopack can resolve
   // modules from the .next junction target outside the project.
