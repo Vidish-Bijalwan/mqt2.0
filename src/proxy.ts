@@ -1,10 +1,13 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
-import redirectsData from './data/redirects.json';
+import redirectsCompact from './data/redirectsCompact.json';
 
-// Create a Map for O(1) lookups
+// Compact redirects: {source: destination} — all permanent (308).
+// .html/.htm suffix and /blog/category/* prefix redirects are handled
+// by pattern rules below, so they don't need individual entries.
+// Total data: 93KB (under Vercel Edge's 256KB limit).
 const redirectMap = new Map(
-  redirectsData.map((r: any) => [r.source.toLowerCase(), r])
+  Object.entries(redirectsCompact).map(([src, dest]) => [src.toLowerCase(), dest as string])
 );
 
 export function proxy(request: NextRequest) {
@@ -26,12 +29,12 @@ export function proxy(request: NextRequest) {
     const url = request.nextUrl.clone();
 
     // Check if the destination is a full URL or a relative path
-    if (match.destination.startsWith('http')) {
-      return NextResponse.redirect(match.destination, match.permanent ? 308 : 307);
+    if (match.startsWith('http')) {
+      return NextResponse.redirect(match, 308);
     }
 
     // For relative paths, handle query parameters in the destination if they exist
-    const [destPath, destQuery] = match.destination.split('?');
+    const [destPath, destQuery] = match.split('?');
     url.pathname = destPath;
 
     if (destQuery) {
@@ -41,13 +44,15 @@ export function proxy(request: NextRequest) {
       });
     }
 
-    return NextResponse.redirect(url, match.permanent ? 308 : 307);
+    return NextResponse.redirect(url, 308);
   }
 
-  // 2. Legacy static-site URLs (foo.html / foo.htm) → same path without the
-  //    extension. The map above still wins for explicitly-listed .html sources.
-  if (lower.endsWith('.html') || lower.endsWith('.htm')) {
-    const stripped = lower.replace(/\.html?$/, '');
+  // 2. Legacy static-site URLs (foo.html / foo.htm / foo.html/ / foo.htm/)
+  //    → same path without the extension (and trailing slash if present).
+  //    Handles ~2,000 redirects without any data.
+  if (lower.endsWith('.html') || lower.endsWith('.htm') ||
+      lower.endsWith('.html/') || lower.endsWith('.htm/')) {
+    const stripped = lower.replace(/\.html?\/?$/, '');
     if (stripped && stripped !== lower) {
       const url = request.nextUrl.clone();
       url.pathname = stripped;

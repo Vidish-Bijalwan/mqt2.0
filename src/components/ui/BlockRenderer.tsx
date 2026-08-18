@@ -36,11 +36,13 @@ export default function BlockRenderer({ blocks, truncate = false }: BlockRendere
     if (currentAccordion.length > 0) {
       renderedBlocks.push(
         <DayAccordionItem
-          key={`accordion-${accordionIndex++}`}
+          key={`accordion-${accordionIndex}`}
           title={currentAccordionTitle}
           blocks={currentAccordion}
+          index={accordionIndex}
         />
       );
+      accordionIndex++;
       currentAccordion = [];
       currentAccordionTitle = "";
     }
@@ -184,8 +186,8 @@ function RenderSingleBlock({ block, truncate }: { block: Block; truncate?: boole
   return null;
 }
 
-function DayAccordionItem({ title, blocks }: { title: string, blocks: Block[] }) {
-  const [isOpen, setIsOpen] = useState(true);
+function DayAccordionItem({ title, blocks, index }: { title: string, blocks: Block[], index: number }) {
+  const [isOpen, setIsOpen] = useState(index === 0);
 
   return (
     <div className="border border-gray-200 rounded-lg overflow-hidden mb-4 bg-white shadow-sm transition-all duration-200">

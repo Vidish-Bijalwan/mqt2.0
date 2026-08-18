@@ -7,11 +7,30 @@
 import { spawn } from "node:child_process";
 import { setTimeout as sleep } from "node:timers/promises";
 import path from "node:path";
-import "./health-check.mjs"; // exits with repair instructions if the junction setup has drifted
-import "./ensure-build-link.mjs";
-import { ogRepairHint } from "./health-check.mjs";
+import fs from "node:fs";
 
 const args = process.argv.slice(2); // e.g. ["build"] or ["start","-p","53144"]
+
+// Only run OneDrive health checks on OneDrive machines (skip on Vercel/CI)
+const isOneDrive = process.cwd().toLowerCase().includes("onedrive");
+if (isOneDrive) {
+  try {
+    await import("./health-check.mjs");
+    await import("./ensure-build-link.mjs");
+  } catch (e) {
+    console.warn(`[run-next] health check skipped: ${e.message}`);
+  }
+}
+
+// Dynamically import ogRepairHint only when on OneDrive
+let ogRepairHint = () => "Check .next junction setup.";
+if (isOneDrive) {
+  try {
+    const mod = await import("./health-check.mjs");
+    ogRepairHint = mod.ogRepairHint;
+  } catch {}
+}
+
 const env = {
   ...process.env,
   NODE_PATH: path.join(process.cwd(), "node_modules"),
@@ -19,7 +38,7 @@ const env = {
 
 const child = spawn(
   process.execPath,
-  ["node_modules/next/dist/bin/next", ...args],
+  ["--max-old-space-size=4096", "node_modules/next/dist/bin/next.js", ...args],
   { stdio: "inherit", env, shell: false },
 );
 child.on("exit", (code) => process.exit(code ?? 1));

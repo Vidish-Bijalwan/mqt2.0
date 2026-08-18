@@ -11,7 +11,7 @@ export default function PackageListCard({ pkg }: { pkg: Package }) {
   const [imgSrc, setImgSrc] = useState(getPackageImage(pkg));
 
   // Shared pricing model: pkg.mrp = list price, pkg.dealPrice = the deal.
-  const { hasPrice, display, crossed } = getPriceInfo(pkg.mrp, pkg.dealPrice);
+  const { hasPrice, display, crossed } = getPriceInfo(pkg.mrp, pkg.dealPrice, pkg.slug);
   const displayPrice = hasPrice ? display : "On Request";
   const crossedOut = crossed;
 

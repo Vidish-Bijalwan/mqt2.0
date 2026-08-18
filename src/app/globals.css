@@ -507,7 +507,7 @@
   }
 
   /* Reference mobile behavior: section headers shrink to 18px,
-     page gutters tighten to 10px */
+     page gutters tighten to 10px, nav compact, headings smaller */
   @media only screen and (max-width: 767px) {
     .nit-page {
       padding: 0 10px;
@@ -515,6 +515,34 @@
     .nit-head h2 {
       font-size: 18px;
       line-height: 24px;
+    }
+    /* Mobile nav: hide top utility bar, reduce main header height */
+    .lg\:hidden {
+      display: flex !important;
+    }
+    /* Card title: slightly smaller on mobile */
+    .nit-pcard-title a {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    /* Price: slightly smaller on mobile */
+    .nit-prCn {
+      font-size: 20px;
+      line-height: 22px;
+    }
+    /* Destination info: truncate more aggressively */
+    .nit-destinx {
+      font-size: 12px;
+      max-height: 12px;
+    }
+    /* Amenity icons: smaller on mobile */
+    .nit-amen-ic {
+      width: 20px;
+      height: 20px;
+      background-size: 20px;
+    }
+    .nit-pcard-amen li {
+      font-size: 9px;
     }
   }
 

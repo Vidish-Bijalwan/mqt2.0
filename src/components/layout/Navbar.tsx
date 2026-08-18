@@ -40,12 +40,12 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* 2. Main Header — 80px tall like reference header_mid */}
-      <div className="container mx-auto px-4 h-20 flex justify-between items-center w-[95%] max-w-[1600px]">
+      {/* 2. Main Header — 80px desktop, 56px mobile (reference is ~50px) */}
+      <div className="container mx-auto px-4 h-14 md:h-20 flex justify-between items-center w-[95%] max-w-[1600px]">
         {/* Logo Area — emblem + wordmark + tagline (reference-style lockup) */}
         <div className="flex items-center gap-4">
           <Link href="/" className="flex items-center gap-3 group">
-             <div className="w-11 h-11 md:w-12 md:h-12 rounded-full overflow-hidden border-2 border-legacy-orange/40 shadow-sm group-hover:border-legacy-orange transition-colors shrink-0">
+             <div className="w-9 h-9 md:w-12 md:h-12 rounded-full overflow-hidden border-2 border-legacy-orange/40 shadow-sm group-hover:border-legacy-orange transition-colors shrink-0">
               <Image
                 src="/images/mqt-logo-256.webp"
                 alt="My Quick Trippers"

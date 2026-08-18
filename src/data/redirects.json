@@ -81,12 +81,12 @@
   },
   {
     "source": "/one-day-delhi-sightseeing-tour-packages.html",
-    "destination": "/packages/one-day-delhi-sightseeing-tour-packages",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/one-day-delhi-sightseeing-tour-packages",
-    "destination": "/packages/one-day-delhi-sightseeing-tour-packages",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -146,12 +146,12 @@
   },
   {
     "source": "/food-of-madhya-pradesh.html",
-    "destination": "/packages?filter=food-of-madhya-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/food-of-madhya-pradesh",
-    "destination": "/packages?filter=food-of-madhya-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -261,12 +261,12 @@
   },
   {
     "source": "/singapore-cruise-tour.html",
-    "destination": "/packages?filter=singapore-cruise-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/singapore-cruise-tour",
-    "destination": "/packages?filter=singapore-cruise-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -346,12 +346,12 @@
   },
   {
     "source": "/south-india-honeymoon-tour.html",
-    "destination": "/packages?filter=south-india-honeymoon-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/south-india-honeymoon-tour",
-    "destination": "/packages?filter=south-india-honeymoon-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -381,12 +381,12 @@
   },
   {
     "source": "/glimpses-of-ladakh-tour.html",
-    "destination": "/packages?filter=glimpses-of-ladakh-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/glimpses-of-ladakh-tour",
-    "destination": "/packages?filter=glimpses-of-ladakh-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -401,12 +401,12 @@
   },
   {
     "source": "/food-of-andhra-pradesh.html",
-    "destination": "/packages?filter=food-of-andhra-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/food-of-andhra-pradesh",
-    "destination": "/packages?filter=food-of-andhra-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -471,12 +471,12 @@
   },
   {
     "source": "/food-of-rishikesh.html",
-    "destination": "/packages?filter=food-of-rishikesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/food-of-rishikesh",
-    "destination": "/packages?filter=food-of-rishikesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -496,12 +496,12 @@
   },
   {
     "source": "/muktinath-temple.html",
-    "destination": "/packages?filter=muktinath-temple",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/muktinath-temple",
-    "destination": "/packages?filter=muktinath-temple",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -526,12 +526,12 @@
   },
   {
     "source": "/switzerland-honeymoon-tour.html",
-    "destination": "/packages?filter=switzerland-honeymoon-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/switzerland-honeymoon-tour",
-    "destination": "/packages?filter=switzerland-honeymoon-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -651,12 +651,12 @@
   },
   {
     "source": "/3-days-kumbh-mela-package.html",
-    "destination": "/packages?filter=3-days-kumbh-mela-package",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/3-days-kumbh-mela-package",
-    "destination": "/packages?filter=3-days-kumbh-mela-package",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -756,12 +756,12 @@
   },
   {
     "source": "/ooty-coonoor-tour.html",
-    "destination": "/packages?filter=ooty-coonoor-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/ooty-coonoor-tour",
-    "destination": "/packages?filter=ooty-coonoor-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -791,12 +791,12 @@
   },
   {
     "source": "/thrilling-manali-tour.html",
-    "destination": "/packages?filter=thrilling-manali-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/thrilling-manali-tour",
-    "destination": "/packages?filter=thrilling-manali-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -861,12 +861,12 @@
   },
   {
     "source": "/3-nights-4-days-lakshadweep-tour-package.html",
-    "destination": "/packages?filter=3-nights-4-days-lakshadweep-tour-package",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/3-nights-4-days-lakshadweep-tour-package",
-    "destination": "/packages?filter=3-nights-4-days-lakshadweep-tour-package",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -881,12 +881,12 @@
   },
   {
     "source": "/food-of-himachal-pradesh.html",
-    "destination": "/packages?filter=food-of-himachal-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/food-of-himachal-pradesh",
-    "destination": "/packages?filter=food-of-himachal-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -906,12 +906,12 @@
   },
   {
     "source": "/culture-of-madhya-pradesh.html",
-    "destination": "/packages?filter=culture-of-madhya-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-madhya-pradesh",
-    "destination": "/packages?filter=culture-of-madhya-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -936,12 +936,12 @@
   },
   {
     "source": "/hong-kong-macau-singapore-tour.html",
-    "destination": "/packages?filter=hong-kong-macau-singapore-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/hong-kong-macau-singapore-tour",
-    "destination": "/packages?filter=hong-kong-macau-singapore-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -956,22 +956,22 @@
   },
   {
     "source": "/yamunotri-yatra-from-delhi.html",
-    "destination": "/packages?filter=yamunotri-yatra-from-delhi",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/yamunotri-yatra-from-delhi",
-    "destination": "/packages?filter=yamunotri-yatra-from-delhi",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/tourist-places-in-yamunotri.html",
-    "destination": "/packages?filter=tourist-places-in-yamunotri",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/tourist-places-in-yamunotri",
-    "destination": "/packages?filter=tourist-places-in-yamunotri",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -1036,22 +1036,22 @@
   },
   {
     "source": "/singapore-thailand-malaysia-hong-kong-tour.html",
-    "destination": "/packages?filter=singapore-thailand-malaysia-hong-kong-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/singapore-thailand-malaysia-hong-kong-tour",
-    "destination": "/packages?filter=singapore-thailand-malaysia-hong-kong-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/fruits-of-himachal-pradesh.html",
-    "destination": "/packages?filter=fruits-of-himachal-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/fruits-of-himachal-pradesh",
-    "destination": "/packages?filter=fruits-of-himachal-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -1086,12 +1086,12 @@
   },
   {
     "source": "/phuket-honeymoon-tour.html",
-    "destination": "/packages?filter=phuket-honeymoon-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/phuket-honeymoon-tour",
-    "destination": "/packages?filter=phuket-honeymoon-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -1131,22 +1131,22 @@
   },
   {
     "source": "/food-of-auli.html",
-    "destination": "/packages?filter=food-of-auli",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/food-of-auli",
-    "destination": "/packages?filter=food-of-auli",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/krabi-tour.html",
-    "destination": "/packages?filter=krabi-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/krabi-tour",
-    "destination": "/packages?filter=krabi-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -1346,12 +1346,12 @@
   },
   {
     "source": "/rishikesh-bungee-jumping-tour.html",
-    "destination": "/packages?filter=rishikesh-bungee-jumping-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/rishikesh-bungee-jumping-tour",
-    "destination": "/packages?filter=rishikesh-bungee-jumping-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -1446,12 +1446,12 @@
   },
   {
     "source": "/kathmandu-muktinath-janakpur-tour.html",
-    "destination": "/packages?filter=kathmandu-muktinath-janakpur-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/kathmandu-muktinath-janakpur-tour",
-    "destination": "/packages?filter=kathmandu-muktinath-janakpur-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -1486,12 +1486,12 @@
   },
   {
     "source": "/culture-of-gaya.html",
-    "destination": "/packages?filter=culture-of-gaya",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-gaya",
-    "destination": "/packages?filter=culture-of-gaya",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -1516,12 +1516,12 @@
   },
   {
     "source": "/gangotri-yatra-from-delhi.html",
-    "destination": "/packages?filter=gangotri-yatra-from-delhi",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/gangotri-yatra-from-delhi",
-    "destination": "/packages?filter=gangotri-yatra-from-delhi",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -1541,12 +1541,12 @@
   },
   {
     "source": "/buddhist-uttar-pradesh.html",
-    "destination": "/packages?filter=buddhist-uttar-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/buddhist-uttar-pradesh",
-    "destination": "/packages?filter=buddhist-uttar-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -1586,12 +1586,12 @@
   },
   {
     "source": "/interesting-facts-about-chardham.html",
-    "destination": "/packages?filter=interesting-facts-about-chardham",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/interesting-facts-about-chardham",
-    "destination": "/packages?filter=interesting-facts-about-chardham",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -1696,12 +1696,12 @@
   },
   {
     "source": "/best-of-europe-tour.html",
-    "destination": "/packages?filter=best-of-europe-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/best-of-europe-tour",
-    "destination": "/packages?filter=best-of-europe-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -1726,22 +1726,22 @@
   },
   {
     "source": "/hotels-in-badrinath.html",
-    "destination": "/packages?filter=hotels-in-badrinath",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/hotels-in-badrinath",
-    "destination": "/packages?filter=hotels-in-badrinath",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/japan-tour-package-from-delhi.html",
-    "destination": "/packages?filter=japan-tour-package-from-delhi",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/japan-tour-package-from-delhi",
-    "destination": "/packages?filter=japan-tour-package-from-delhi",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -1886,12 +1886,12 @@
   },
   {
     "source": "/gujarat-cultural-tour.html",
-    "destination": "/packages?filter=gujarat-cultural-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/gujarat-cultural-tour",
-    "destination": "/packages?filter=gujarat-cultural-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -1991,12 +1991,12 @@
   },
   {
     "source": "/adi-kailash-yatra.html",
-    "destination": "/packages?filter=adi-kailash-yatra",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/adi-kailash-yatra",
-    "destination": "/packages?filter=adi-kailash-yatra",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -2066,12 +2066,12 @@
   },
   {
     "source": "/special-badri-kedar-helicopter-tour.html",
-    "destination": "/packages/special-badri-kedar-helicopter-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/special-badri-kedar-helicopter-tour",
-    "destination": "/packages/special-badri-kedar-helicopter-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -2086,12 +2086,12 @@
   },
   {
     "source": "/culture-of-agra.html",
-    "destination": "/packages?filter=culture-of-agra",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-agra",
-    "destination": "/packages?filter=culture-of-agra",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -2116,12 +2116,12 @@
   },
   {
     "source": "/tamilnadu-beaches-tour.html",
-    "destination": "/packages?filter=tamilnadu-beaches-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/tamilnadu-beaches-tour",
-    "destination": "/packages?filter=tamilnadu-beaches-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -2171,12 +2171,12 @@
   },
   {
     "source": "/ahmedabad-gir-weekend-tour.html",
-    "destination": "/packages?filter=ahmedabad-gir-weekend-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/ahmedabad-gir-weekend-tour",
-    "destination": "/packages?filter=ahmedabad-gir-weekend-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -2316,12 +2316,12 @@
   },
   {
     "source": "/tokyo-mount-fuji-tour.html",
-    "destination": "/packages?filter=tokyo-mount-fuji-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/tokyo-mount-fuji-tour",
-    "destination": "/packages?filter=tokyo-mount-fuji-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -2381,12 +2381,12 @@
   },
   {
     "source": "/3-days-assam-tour-packages.html",
-    "destination": "/packages?filter=3-days-assam-tour-packages",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/3-days-assam-tour-packages",
-    "destination": "/packages?filter=3-days-assam-tour-packages",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -2401,22 +2401,22 @@
   },
   {
     "source": "/culture-of-bhutan.html",
-    "destination": "/packages?filter=culture-of-bhutan",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-bhutan",
-    "destination": "/packages?filter=culture-of-bhutan",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/mizoram-tribal-tour.html",
-    "destination": "/packages?filter=mizoram-tribal-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/mizoram-tribal-tour",
-    "destination": "/packages?filter=mizoram-tribal-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -2476,12 +2476,12 @@
   },
   {
     "source": "/adi-kailash-and-om-parvat-yatra-by-helicopter.html",
-    "destination": "/packages?filter=adi-kailash-and-om-parvat-yatra-by-helicopter",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/adi-kailash-and-om-parvat-yatra-by-helicopter",
-    "destination": "/packages?filter=adi-kailash-and-om-parvat-yatra-by-helicopter",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -2506,12 +2506,12 @@
   },
   {
     "source": "/shimla-manali-honeymoon-package.html",
-    "destination": "/packages?filter=shimla-manali-honeymoon-package",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/shimla-manali-honeymoon-package",
-    "destination": "/packages?filter=shimla-manali-honeymoon-package",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -2546,12 +2546,12 @@
   },
   {
     "source": "/best-of-vietnam-tour.html",
-    "destination": "/packages?filter=best-of-vietnam-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/best-of-vietnam-tour",
-    "destination": "/packages?filter=best-of-vietnam-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -2661,12 +2661,12 @@
   },
   {
     "source": "/orchha-sightseeing-tour.html",
-    "destination": "/packages?filter=orchha-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/orchha-sightseeing-tour",
-    "destination": "/packages?filter=orchha-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -2696,12 +2696,12 @@
   },
   {
     "source": "/varanasi-ayodhya-allahabad-tour.html",
-    "destination": "/packages?filter=varanasi-ayodhya-allahabad-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/varanasi-ayodhya-allahabad-tour",
-    "destination": "/packages?filter=varanasi-ayodhya-allahabad-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -2721,12 +2721,12 @@
   },
   {
     "source": "/best-of-maldives-tour.html",
-    "destination": "/packages?filter=best-of-maldives-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/best-of-maldives-tour",
-    "destination": "/packages?filter=best-of-maldives-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -2741,12 +2741,12 @@
   },
   {
     "source": "/muktinath-yatra-from-hyderabad.html",
-    "destination": "/packages?filter=muktinath-yatra-from-hyderabad",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/muktinath-yatra-from-hyderabad",
-    "destination": "/packages?filter=muktinath-yatra-from-hyderabad",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -2806,22 +2806,22 @@
   },
   {
     "source": "/japan-china-korea-tour.html",
-    "destination": "/packages?filter=japan-china-korea-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/japan-china-korea-tour",
-    "destination": "/packages?filter=japan-china-korea-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/madurai-sightseeing-tour.html",
-    "destination": "/packages?filter=madurai-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/madurai-sightseeing-tour",
-    "destination": "/packages?filter=madurai-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -3111,12 +3111,12 @@
   },
   {
     "source": "/temples-in-ahmedabad.html",
-    "destination": "/packages?filter=temples-in-ahmedabad",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/temples-in-ahmedabad",
-    "destination": "/packages?filter=temples-in-ahmedabad",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -3131,12 +3131,12 @@
   },
   {
     "source": "/buddhist-tourism-in-madhya-pradesh.html",
-    "destination": "/packages?filter=buddhist-tourism-in-madhya-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/buddhist-tourism-in-madhya-pradesh",
-    "destination": "/packages?filter=buddhist-tourism-in-madhya-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -3336,22 +3336,22 @@
   },
   {
     "source": "/cordelia-cruise-chennai-to-chennai.html",
-    "destination": "/packages?filter=cordelia-cruise-chennai-to-chennai",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/cordelia-cruise-chennai-to-chennai",
-    "destination": "/packages?filter=cordelia-cruise-chennai-to-chennai",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/badrinath-weather.html",
-    "destination": "/packages?filter=badrinath-weather",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/badrinath-weather",
-    "destination": "/packages?filter=badrinath-weather",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -3401,22 +3401,22 @@
   },
   {
     "source": "/hong-kong-macau-tour.html",
-    "destination": "/packages?filter=hong-kong-macau-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/hong-kong-macau-tour",
-    "destination": "/packages?filter=hong-kong-macau-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-gujarat.html",
-    "destination": "/packages?filter=culture-of-gujarat",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-gujarat",
-    "destination": "/packages?filter=culture-of-gujarat",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -3451,12 +3451,12 @@
   },
   {
     "source": "/food-of-haridwar.html",
-    "destination": "/packages?filter=food-of-haridwar",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/food-of-haridwar",
-    "destination": "/packages?filter=food-of-haridwar",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -3481,32 +3481,32 @@
   },
   {
     "source": "/culture-of-uttarakhand.html",
-    "destination": "/packages?filter=culture-of-uttarakhand",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-uttarakhand",
-    "destination": "/packages?filter=culture-of-uttarakhand",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/krabi-phuket-phi-phi-island-tour.html",
-    "destination": "/packages?filter=krabi-phuket-phi-phi-island-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/krabi-phuket-phi-phi-island-tour",
-    "destination": "/packages?filter=krabi-phuket-phi-phi-island-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/things-to-do-in-goa.html",
-    "destination": "/packages?filter=things-to-do-in-goa",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/things-to-do-in-goa",
-    "destination": "/packages?filter=things-to-do-in-goa",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -3666,12 +3666,12 @@
   },
   {
     "source": "/shillong-cherrapunji-kamakhya-temple-tour.html",
-    "destination": "/packages/shillong-cherrapunji-kamakhya-temple-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/shillong-cherrapunji-kamakhya-temple-tour",
-    "destination": "/packages/shillong-cherrapunji-kamakhya-temple-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -3736,12 +3736,12 @@
   },
   {
     "source": "/culture-of-nainital.html",
-    "destination": "/packages?filter=culture-of-nainital",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-nainital",
-    "destination": "/packages?filter=culture-of-nainital",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -3766,12 +3766,12 @@
   },
   {
     "source": "/traditional-dresses-of-uttarakhand.html",
-    "destination": "/packages?filter=traditional-dresses-of-uttarakhand",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/traditional-dresses-of-uttarakhand",
-    "destination": "/packages?filter=traditional-dresses-of-uttarakhand",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -3836,12 +3836,12 @@
   },
   {
     "source": "/phuket-sightseeing-tour.html",
-    "destination": "/packages?filter=phuket-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/phuket-sightseeing-tour",
-    "destination": "/packages?filter=phuket-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -3856,12 +3856,12 @@
   },
   {
     "source": "/saraswati-river-pushkaralu-yatra.html",
-    "destination": "/packages/saraswati-river-pushkaralu-yatra",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/saraswati-river-pushkaralu-yatra",
-    "destination": "/packages/saraswati-river-pushkaralu-yatra",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -3886,22 +3886,22 @@
   },
   {
     "source": "/munnar-alleppey-tour-package.html",
-    "destination": "/packages?filter=munnar-alleppey-tour-package",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/munnar-alleppey-tour-package",
-    "destination": "/packages?filter=munnar-alleppey-tour-package",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/amritsar-wagah-border-tour.html",
-    "destination": "/packages?filter=amritsar-wagah-border-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/amritsar-wagah-border-tour",
-    "destination": "/packages?filter=amritsar-wagah-border-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -3941,12 +3941,12 @@
   },
   {
     "source": "/muktinath-yatra-from-kakarvitta.html",
-    "destination": "/packages?filter=muktinath-yatra-from-kakarvitta",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/muktinath-yatra-from-kakarvitta",
-    "destination": "/packages?filter=muktinath-yatra-from-kakarvitta",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -3971,12 +3971,12 @@
   },
   {
     "source": "/maldives-honeymoon-tour.html",
-    "destination": "/packages?filter=maldives-honeymoon-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/maldives-honeymoon-tour",
-    "destination": "/packages?filter=maldives-honeymoon-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -4056,12 +4056,12 @@
   },
   {
     "source": "/culture-of-sikkim.html",
-    "destination": "/packages?filter=culture-of-sikkim",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-sikkim",
-    "destination": "/packages?filter=culture-of-sikkim",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -4091,12 +4091,12 @@
   },
   {
     "source": "/vietnam-cambodia-tour.html",
-    "destination": "/packages?filter=vietnam-cambodia-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/vietnam-cambodia-tour",
-    "destination": "/packages?filter=vietnam-cambodia-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -4121,12 +4121,12 @@
   },
   {
     "source": "/bangkok-koh-samui-tour.html",
-    "destination": "/packages?filter=bangkok-koh-samui-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/bangkok-koh-samui-tour",
-    "destination": "/packages?filter=bangkok-koh-samui-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -4166,12 +4166,12 @@
   },
   {
     "source": "/traditional-dress-of-shimla.html",
-    "destination": "/packages?filter=traditional-dress-of-shimla",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/traditional-dress-of-shimla",
-    "destination": "/packages?filter=traditional-dress-of-shimla",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -4191,12 +4191,12 @@
   },
   {
     "source": "/chennai-temple-tour.html",
-    "destination": "/packages?filter=chennai-temple-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/chennai-temple-tour",
-    "destination": "/packages?filter=chennai-temple-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -4211,32 +4211,32 @@
   },
   {
     "source": "/tourist-places-in-allahabad.html",
-    "destination": "/packages?filter=tourist-places-in-allahabad",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/tourist-places-in-allahabad",
-    "destination": "/packages?filter=tourist-places-in-allahabad",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/assam-meghalaya-arunachal-pradesh-packages.html",
-    "destination": "/packages/assam-meghalaya-arunachal-pradesh-packages",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/assam-meghalaya-arunachal-pradesh-packages",
-    "destination": "/packages/assam-meghalaya-arunachal-pradesh-packages",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-himachal-pradesh.html",
-    "destination": "/packages?filter=culture-of-himachal-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-himachal-pradesh",
-    "destination": "/packages?filter=culture-of-himachal-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -4251,12 +4251,12 @@
   },
   {
     "source": "/kedarnath-faqs.html",
-    "destination": "/packages?filter=kedarnath-faqs",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/kedarnath-faqs",
-    "destination": "/packages?filter=kedarnath-faqs",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -4301,12 +4301,12 @@
   },
   {
     "source": "/food-of-kashmir.html",
-    "destination": "/packages?filter=food-of-kashmir",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/food-of-kashmir",
-    "destination": "/packages?filter=food-of-kashmir",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -4356,12 +4356,12 @@
   },
   {
     "source": "/badrinath-tour-from-delhi.html",
-    "destination": "/packages?filter=badrinath-tour-from-delhi",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/badrinath-tour-from-delhi",
-    "destination": "/packages?filter=badrinath-tour-from-delhi",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -4406,12 +4406,12 @@
   },
   {
     "source": "/2-days-kainchi-dham-tour.html",
-    "destination": "/packages/2-days-kainchi-dham-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/2-days-kainchi-dham-tour",
-    "destination": "/packages/2-days-kainchi-dham-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -4471,12 +4471,12 @@
   },
   {
     "source": "/sri-lanka-group-tour-packages.html",
-    "destination": "/packages/sri-lanka-group-tour-packages",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/sri-lanka-group-tour-packages",
-    "destination": "/packages/sri-lanka-group-tour-packages",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -4581,12 +4581,12 @@
   },
   {
     "source": "/ayodhya-ram-mandir-package-from-delhi.html",
-    "destination": "/packages?filter=ayodhya-ram-mandir-package-from-delhi",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/ayodhya-ram-mandir-package-from-delhi",
-    "destination": "/packages?filter=ayodhya-ram-mandir-package-from-delhi",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -4671,12 +4671,12 @@
   },
   {
     "source": "/manimahesh-yatra-by-helicopter.html",
-    "destination": "/packages?filter=manimahesh-yatra-by-helicopter",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/manimahesh-yatra-by-helicopter",
-    "destination": "/packages?filter=manimahesh-yatra-by-helicopter",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -4821,12 +4821,12 @@
   },
   {
     "source": "/culture-of-andhra-pradesh.html",
-    "destination": "/packages?filter=culture-of-andhra-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-andhra-pradesh",
-    "destination": "/packages?filter=culture-of-andhra-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -4871,12 +4871,12 @@
   },
   {
     "source": "/nepal-at-glance-tour.html",
-    "destination": "/packages?filter=nepal-at-glance-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/nepal-at-glance-tour",
-    "destination": "/packages?filter=nepal-at-glance-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -4966,12 +4966,12 @@
   },
   {
     "source": "/food-of-uttarakhand.html",
-    "destination": "/packages?filter=food-of-uttarakhand",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/food-of-uttarakhand",
-    "destination": "/packages?filter=food-of-uttarakhand",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -5086,12 +5086,12 @@
   },
   {
     "source": "/northeast-india-special-tour-package.html",
-    "destination": "/packages/northeast-india-special-tour-package",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/northeast-india-special-tour-package",
-    "destination": "/packages/northeast-india-special-tour-package",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -5216,12 +5216,12 @@
   },
   {
     "source": "/muktinath-yatra-by-helicopter.html",
-    "destination": "/packages?filter=muktinath-yatra-by-helicopter",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/muktinath-yatra-by-helicopter",
-    "destination": "/packages?filter=muktinath-yatra-by-helicopter",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -5241,12 +5241,12 @@
   },
   {
     "source": "/south-india-temple-tour-packages-from-delhi.html",
-    "destination": "/packages?filter=south-india-temple-tour-packages-from-delhi",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/south-india-temple-tour-packages-from-delhi",
-    "destination": "/packages?filter=south-india-temple-tour-packages-from-delhi",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -5291,12 +5291,12 @@
   },
   {
     "source": "/buddhist-leh-ladakh-tour.html",
-    "destination": "/packages?filter=buddhist-leh-ladakh-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/buddhist-leh-ladakh-tour",
-    "destination": "/packages?filter=buddhist-leh-ladakh-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -5356,12 +5356,12 @@
   },
   {
     "source": "/best-vietnamese-food.html",
-    "destination": "/packages?filter=best-vietnamese-food",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/best-vietnamese-food",
-    "destination": "/packages?filter=best-vietnamese-food",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -5416,12 +5416,12 @@
   },
   {
     "source": "/helicopter-ride-at-kumbh-mela.html",
-    "destination": "/packages?filter=helicopter-ride-at-kumbh-mela",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/helicopter-ride-at-kumbh-mela",
-    "destination": "/packages?filter=helicopter-ride-at-kumbh-mela",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -5466,12 +5466,12 @@
   },
   {
     "source": "/hotels-in-yamunotri.html",
-    "destination": "/packages?filter=hotels-in-yamunotri",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/hotels-in-yamunotri",
-    "destination": "/packages?filter=hotels-in-yamunotri",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -5556,12 +5556,12 @@
   },
   {
     "source": "/thailand-malaysia-singapore-tour.html",
-    "destination": "/packages?filter=thailand-malaysia-singapore-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/thailand-malaysia-singapore-tour",
-    "destination": "/packages?filter=thailand-malaysia-singapore-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -5686,12 +5686,12 @@
   },
   {
     "source": "/bhubaneswar-puri-konark-tour.html",
-    "destination": "/packages/bhubaneswar-puri-konark-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/bhubaneswar-puri-konark-tour",
-    "destination": "/packages/bhubaneswar-puri-konark-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -5711,12 +5711,12 @@
   },
   {
     "source": "/china-japan-tour.html",
-    "destination": "/packages?filter=china-japan-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/china-japan-tour",
-    "destination": "/packages?filter=china-japan-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -5816,12 +5816,12 @@
   },
   {
     "source": "/badri-kedar-yatra-by-helicopter.html",
-    "destination": "/packages/badri-kedar-yatra-by-helicopter",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/badri-kedar-yatra-by-helicopter",
-    "destination": "/packages/badri-kedar-yatra-by-helicopter",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -5851,12 +5851,12 @@
   },
   {
     "source": "/dwarka-somnath-tour-from-mumbai.html",
-    "destination": "/packages?filter=dwarka-somnath-tour-from-mumbai",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/dwarka-somnath-tour-from-mumbai",
-    "destination": "/packages?filter=dwarka-somnath-tour-from-mumbai",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -5876,12 +5876,12 @@
   },
   {
     "source": "/gangotri-weather.html",
-    "destination": "/packages?filter=gangotri-weather",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/gangotri-weather",
-    "destination": "/packages?filter=gangotri-weather",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -5946,12 +5946,12 @@
   },
   {
     "source": "/saraswati-river-pushkaralu.html",
-    "destination": "/packages/saraswati-river-pushkaralu",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/saraswati-river-pushkaralu",
-    "destination": "/packages/saraswati-river-pushkaralu",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -5996,22 +5996,22 @@
   },
   {
     "source": "/badrinath-yatra-from-haridwar.html",
-    "destination": "/packages?filter=badrinath-yatra-from-haridwar",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/badrinath-yatra-from-haridwar",
-    "destination": "/packages?filter=badrinath-yatra-from-haridwar",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/ganga-pushkaralu-tour.html",
-    "destination": "/packages?filter=ganga-pushkaralu-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/ganga-pushkaralu-tour",
-    "destination": "/packages?filter=ganga-pushkaralu-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -6036,12 +6036,12 @@
   },
   {
     "source": "/nepal-tibet-tour.html",
-    "destination": "/packages?filter=nepal-tibet-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/nepal-tibet-tour",
-    "destination": "/packages?filter=nepal-tibet-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -6076,12 +6076,12 @@
   },
   {
     "source": "/taj-coral-reef-resort-maldives-tour.html",
-    "destination": "/packages?filter=taj-coral-reef-resort-maldives-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/taj-coral-reef-resort-maldives-tour",
-    "destination": "/packages?filter=taj-coral-reef-resort-maldives-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -6096,12 +6096,12 @@
   },
   {
     "source": "/bangkok-pattaya-tour.html",
-    "destination": "/packages?filter=bangkok-pattaya-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/bangkok-pattaya-tour",
-    "destination": "/packages?filter=bangkok-pattaya-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -6116,12 +6116,12 @@
   },
   {
     "source": "/amarnath-yatra-registration.html",
-    "destination": "/packages?filter=amarnath-yatra-registration",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/amarnath-yatra-registration",
-    "destination": "/packages?filter=amarnath-yatra-registration",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -6156,12 +6156,12 @@
   },
   {
     "source": "/gangotri-yatra-by-helicopter.html",
-    "destination": "/packages/gangotri-yatra-by-helicopter",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/gangotri-yatra-by-helicopter",
-    "destination": "/packages/gangotri-yatra-by-helicopter",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -6176,12 +6176,12 @@
   },
   {
     "source": "/kerala-cultural-tour.html",
-    "destination": "/packages?filter=kerala-cultural-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/kerala-cultural-tour",
-    "destination": "/packages?filter=kerala-cultural-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -6196,12 +6196,12 @@
   },
   {
     "source": "/pashupatinath-muktinath-chitwan-tour.html",
-    "destination": "/packages?filter=pashupatinath-muktinath-chitwan-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/pashupatinath-muktinath-chitwan-tour",
-    "destination": "/packages?filter=pashupatinath-muktinath-chitwan-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -6291,22 +6291,22 @@
   },
   {
     "source": "/south-india-temple-tour-packages-from-mumbai.html",
-    "destination": "/packages?filter=south-india-temple-tour-packages-from-mumbai",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/south-india-temple-tour-packages-from-mumbai",
-    "destination": "/packages?filter=south-india-temple-tour-packages-from-mumbai",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/traditional-dress-of-sikkim.html",
-    "destination": "/packages?filter=traditional-dress-of-sikkim",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/traditional-dress-of-sikkim",
-    "destination": "/packages?filter=traditional-dress-of-sikkim",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -6351,12 +6351,12 @@
   },
   {
     "source": "/traditional-dress-of-bhutan.html",
-    "destination": "/packages?filter=traditional-dress-of-bhutan",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/traditional-dress-of-bhutan",
-    "destination": "/packages?filter=traditional-dress-of-bhutan",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -6411,52 +6411,52 @@
   },
   {
     "source": "/majestic-dubai-tour.html",
-    "destination": "/packages?filter=majestic-dubai-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/majestic-dubai-tour",
-    "destination": "/packages?filter=majestic-dubai-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/koh-phangan-adventure-tour.html",
-    "destination": "/packages?filter=koh-phangan-adventure-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/koh-phangan-adventure-tour",
-    "destination": "/packages?filter=koh-phangan-adventure-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/tamil-nadu-cultural-tour.html",
-    "destination": "/packages?filter=tamil-nadu-cultural-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/tamil-nadu-cultural-tour",
-    "destination": "/packages?filter=tamil-nadu-cultural-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/kedarnath-badrinath-special-helicopter-tour.html",
-    "destination": "/packages?filter=kedarnath-badrinath-special-helicopter-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/kedarnath-badrinath-special-helicopter-tour",
-    "destination": "/packages?filter=kedarnath-badrinath-special-helicopter-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/magical-switzerland-tour.html",
-    "destination": "/packages?filter=magical-switzerland-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/magical-switzerland-tour",
-    "destination": "/packages?filter=magical-switzerland-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -6481,22 +6481,22 @@
   },
   {
     "source": "/food-of-uttar-pradesh.html",
-    "destination": "/packages?filter=food-of-uttar-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/food-of-uttar-pradesh",
-    "destination": "/packages?filter=food-of-uttar-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/special-kashmir-tour.html",
-    "destination": "/packages?filter=special-kashmir-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/special-kashmir-tour",
-    "destination": "/packages?filter=special-kashmir-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -6541,12 +6541,12 @@
   },
   {
     "source": "/vaishno-devi-yatra-by-helicopter.html",
-    "destination": "/packages?filter=vaishno-devi-yatra-by-helicopter",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/vaishno-devi-yatra-by-helicopter",
-    "destination": "/packages?filter=vaishno-devi-yatra-by-helicopter",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -6606,12 +6606,12 @@
   },
   {
     "source": "/char-dham-yatra-for-nri-tour-package.html",
-    "destination": "/packages?filter=char-dham-yatra-for-nri-tour-package",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/char-dham-yatra-for-nri-tour-package",
-    "destination": "/packages?filter=char-dham-yatra-for-nri-tour-package",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -6646,12 +6646,12 @@
   },
   {
     "source": "/dwarka-somnath-tour-from-hyderabad.html",
-    "destination": "/packages?filter=dwarka-somnath-tour-from-hyderabad",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/dwarka-somnath-tour-from-hyderabad",
-    "destination": "/packages?filter=dwarka-somnath-tour-from-hyderabad",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -6756,12 +6756,12 @@
   },
   {
     "source": "/culture-of-darjeeling.html",
-    "destination": "/packages?filter=culture-of-darjeeling",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-darjeeling",
-    "destination": "/packages?filter=culture-of-darjeeling",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -6771,12 +6771,12 @@
   },
   {
     "source": "/muktinath-yatra-from-gorakhpur.html",
-    "destination": "/packages?filter=muktinath-yatra-from-gorakhpur",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/muktinath-yatra-from-gorakhpur",
-    "destination": "/packages?filter=muktinath-yatra-from-gorakhpur",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -6816,12 +6816,12 @@
   },
   {
     "source": "/nepal-bhutan-tibet-tour.html",
-    "destination": "/packages?filter=nepal-bhutan-tibet-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/nepal-bhutan-tibet-tour",
-    "destination": "/packages?filter=nepal-bhutan-tibet-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -6856,12 +6856,12 @@
   },
   {
     "source": "/hong-kong-macau-shenzhen-tour.html",
-    "destination": "/packages?filter=hong-kong-macau-shenzhen-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/hong-kong-macau-shenzhen-tour",
-    "destination": "/packages?filter=hong-kong-macau-shenzhen-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -6906,12 +6906,12 @@
   },
   {
     "source": "/fruits-of-kerala.html",
-    "destination": "/packages?filter=fruits-of-kerala",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/fruits-of-kerala",
-    "destination": "/packages?filter=fruits-of-kerala",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -6956,12 +6956,12 @@
   },
   {
     "source": "/chiang-mai-sightseeing-tour.html",
-    "destination": "/packages?filter=chiang-mai-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/chiang-mai-sightseeing-tour",
-    "destination": "/packages?filter=chiang-mai-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -7006,22 +7006,22 @@
   },
   {
     "source": "/interesting-facts-about-somnath.html",
-    "destination": "/packages?filter=interesting-facts-about-somnath",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/interesting-facts-about-somnath",
-    "destination": "/packages?filter=interesting-facts-about-somnath",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/nainital-tour-package-from-delhi.html",
-    "destination": "/packages/nainital-tour-package-from-delhi",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/nainital-tour-package-from-delhi",
-    "destination": "/packages/nainital-tour-package-from-delhi",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -7031,12 +7031,12 @@
   },
   {
     "source": "/gangotri-opening-closing-dates.html",
-    "destination": "/packages?filter=gangotri-opening-closing-dates",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/gangotri-opening-closing-dates",
-    "destination": "/packages?filter=gangotri-opening-closing-dates",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -7076,12 +7076,12 @@
   },
   {
     "source": "/agra-sightseeing-tour.html",
-    "destination": "/packages/agra-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/agra-sightseeing-tour",
-    "destination": "/packages/agra-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -7156,22 +7156,22 @@
   },
   {
     "source": "/kedarnath-puja-rates.html",
-    "destination": "/packages?filter=kedarnath-puja-rates",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/kedarnath-puja-rates",
-    "destination": "/packages?filter=kedarnath-puja-rates",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/yamunotri-yatra-from-haridwar.html",
-    "destination": "/packages?filter=yamunotri-yatra-from-haridwar",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/yamunotri-yatra-from-haridwar",
-    "destination": "/packages?filter=yamunotri-yatra-from-haridwar",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -7316,12 +7316,12 @@
   },
   {
     "source": "/adventure-sports-in-uttarakhand.html",
-    "destination": "/packages?filter=adventure-sports-in-uttarakhand",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/adventure-sports-in-uttarakhand",
-    "destination": "/packages?filter=adventure-sports-in-uttarakhand",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -7456,12 +7456,12 @@
   },
   {
     "source": "/bangkok-sightseeing-tour.html",
-    "destination": "/packages?filter=bangkok-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/bangkok-sightseeing-tour",
-    "destination": "/packages?filter=bangkok-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -7511,12 +7511,12 @@
   },
   {
     "source": "/bali-thailand-tour.html",
-    "destination": "/packages?filter=bali-thailand-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/bali-thailand-tour",
-    "destination": "/packages?filter=bali-thailand-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -7856,12 +7856,12 @@
   },
   {
     "source": "/food-of-gaya.html",
-    "destination": "/packages?filter=food-of-gaya",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/food-of-gaya",
-    "destination": "/packages?filter=food-of-gaya",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -7906,12 +7906,12 @@
   },
   {
     "source": "/food-of-dehradun.html",
-    "destination": "/packages?filter=food-of-dehradun",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/food-of-dehradun",
-    "destination": "/packages?filter=food-of-dehradun",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -7931,12 +7931,12 @@
   },
   {
     "source": "/badrinath-faqs.html",
-    "destination": "/packages?filter=badrinath-faqs",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/badrinath-faqs",
-    "destination": "/packages?filter=badrinath-faqs",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -7961,12 +7961,12 @@
   },
   {
     "source": "/traditional-dress-of-uttar-pradesh.html",
-    "destination": "/packages?filter=traditional-dress-of-uttar-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/traditional-dress-of-uttar-pradesh",
-    "destination": "/packages?filter=traditional-dress-of-uttar-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -8031,12 +8031,12 @@
   },
   {
     "source": "/kedarnath-temple.html",
-    "destination": "/packages?filter=kedarnath-temple",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/kedarnath-temple",
-    "destination": "/packages?filter=kedarnath-temple",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -8066,12 +8066,12 @@
   },
   {
     "source": "/switzerland-austria-tour.html",
-    "destination": "/packages?filter=switzerland-austria-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/switzerland-austria-tour",
-    "destination": "/packages?filter=switzerland-austria-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -8106,12 +8106,12 @@
   },
   {
     "source": "/prayagraj-kumbh-mela-package-with-ayodhya-varanasi.html",
-    "destination": "/packages?filter=prayagraj-kumbh-mela-package-with-ayodhya-varanasi",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/prayagraj-kumbh-mela-package-with-ayodhya-varanasi",
-    "destination": "/packages?filter=prayagraj-kumbh-mela-package-with-ayodhya-varanasi",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -8146,12 +8146,12 @@
   },
   {
     "source": "/krabi-sightseeing-tour.html",
-    "destination": "/packages?filter=krabi-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/krabi-sightseeing-tour",
-    "destination": "/packages?filter=krabi-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -8171,12 +8171,12 @@
   },
   {
     "source": "/ooty-sightseeing-tour.html",
-    "destination": "/packages?filter=ooty-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/ooty-sightseeing-tour",
-    "destination": "/packages?filter=ooty-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -8281,12 +8281,12 @@
   },
   {
     "source": "/best-of-switzerland-tour.html",
-    "destination": "/packages?filter=best-of-switzerland-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/best-of-switzerland-tour",
-    "destination": "/packages?filter=best-of-switzerland-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -8361,22 +8361,22 @@
   },
   {
     "source": "/food-of-goa.html",
-    "destination": "/packages?filter=food-of-goa",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/food-of-goa",
-    "destination": "/packages?filter=food-of-goa",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/traditional-dresses-of-gujarat.html",
-    "destination": "/packages?filter=traditional-dresses-of-gujarat",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/traditional-dresses-of-gujarat",
-    "destination": "/packages?filter=traditional-dresses-of-gujarat",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -8406,12 +8406,12 @@
   },
   {
     "source": "/culture-of-mussoorie.html",
-    "destination": "/packages?filter=culture-of-mussoorie",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-mussoorie",
-    "destination": "/packages?filter=culture-of-mussoorie",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -8436,12 +8436,12 @@
   },
   {
     "source": "/medical-tourism-in-goa.html",
-    "destination": "/packages?filter=medical-tourism-in-goa",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/medical-tourism-in-goa",
-    "destination": "/packages?filter=medical-tourism-in-goa",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -8461,12 +8461,12 @@
   },
   {
     "source": "/guwahati-kamakhya-shillong-tour.html",
-    "destination": "/packages?filter=guwahati-kamakhya-shillong-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/guwahati-kamakhya-shillong-tour",
-    "destination": "/packages?filter=guwahati-kamakhya-shillong-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -8511,22 +8511,22 @@
   },
   {
     "source": "/buddhist-sikkim-tour.html",
-    "destination": "/packages?filter=buddhist-sikkim-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/buddhist-sikkim-tour",
-    "destination": "/packages?filter=buddhist-sikkim-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/best-of-mizoram-tour.html",
-    "destination": "/packages?filter=best-of-mizoram-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/best-of-mizoram-tour",
-    "destination": "/packages?filter=best-of-mizoram-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -8656,12 +8656,12 @@
   },
   {
     "source": "/places-to-visit-in-badrinath.html",
-    "destination": "/packages?filter=places-to-visit-in-badrinath",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/places-to-visit-in-badrinath",
-    "destination": "/packages?filter=places-to-visit-in-badrinath",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -8701,12 +8701,12 @@
   },
   {
     "source": "/manimahesh-yatra-package.html",
-    "destination": "/packages?filter=manimahesh-yatra-package",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/manimahesh-yatra-package",
-    "destination": "/packages?filter=manimahesh-yatra-package",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -8731,22 +8731,22 @@
   },
   {
     "source": "/bhubaneswar-puri-konark-tour-2-days.html",
-    "destination": "/packages/bhubaneswar-puri-konark-tour-2-days",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/bhubaneswar-puri-konark-tour-2-days",
-    "destination": "/packages/bhubaneswar-puri-konark-tour-2-days",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/cordelia-cruise-mumbai-to-goa.html",
-    "destination": "/packages?filter=cordelia-cruise-mumbai-to-goa",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/cordelia-cruise-mumbai-to-goa",
-    "destination": "/packages?filter=cordelia-cruise-mumbai-to-goa",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -8796,12 +8796,12 @@
   },
   {
     "source": "/statue-of-unity-package.html",
-    "destination": "/packages?filter=statue-of-unity-package",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/statue-of-unity-package",
-    "destination": "/packages?filter=statue-of-unity-package",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -9001,22 +9001,22 @@
   },
   {
     "source": "/ladakh-kashmir-tour.html",
-    "destination": "/packages?filter=ladakh-kashmir-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/ladakh-kashmir-tour",
-    "destination": "/packages?filter=ladakh-kashmir-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-gangotri.html",
-    "destination": "/packages?filter=culture-of-gangotri",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-gangotri",
-    "destination": "/packages?filter=culture-of-gangotri",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -9036,12 +9036,12 @@
   },
   {
     "source": "/kolkata-gangasagar-tour.html",
-    "destination": "/packages?filter=kolkata-gangasagar-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/kolkata-gangasagar-tour",
-    "destination": "/packages?filter=kolkata-gangasagar-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -9146,12 +9146,12 @@
   },
   {
     "source": "/badrinath-kedarnath-tour.html",
-    "destination": "/packages/badrinath-kedarnath-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/badrinath-kedarnath-tour",
-    "destination": "/packages/badrinath-kedarnath-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -9196,12 +9196,12 @@
   },
   {
     "source": "/sri-lanka-heritage-tour.html",
-    "destination": "/packages?filter=sri-lanka-heritage-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/sri-lanka-heritage-tour",
-    "destination": "/packages?filter=sri-lanka-heritage-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -9226,12 +9226,12 @@
   },
   {
     "source": "/mahavatar-baba-cave-tour-with-kanchi-dham.html",
-    "destination": "/packages?filter=mahavatar-baba-cave-tour-with-kanchi-dham",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/mahavatar-baba-cave-tour-with-kanchi-dham",
-    "destination": "/packages?filter=mahavatar-baba-cave-tour-with-kanchi-dham",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -9311,12 +9311,12 @@
   },
   {
     "source": "/culture-of-assam.html",
-    "destination": "/packages?filter=culture-of-assam",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-assam",
-    "destination": "/packages?filter=culture-of-assam",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -9431,12 +9431,12 @@
   },
   {
     "source": "/chiang-mai-bangkok-tour.html",
-    "destination": "/packages?filter=chiang-mai-bangkok-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/chiang-mai-bangkok-tour",
-    "destination": "/packages?filter=chiang-mai-bangkok-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -9501,12 +9501,12 @@
   },
   {
     "source": "/bali-family-tour.html",
-    "destination": "/packages?filter=bali-family-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/bali-family-tour",
-    "destination": "/packages?filter=bali-family-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -9561,12 +9561,12 @@
   },
   {
     "source": "/best-of-nepal-tour.html",
-    "destination": "/packages?filter=best-of-nepal-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/best-of-nepal-tour",
-    "destination": "/packages?filter=best-of-nepal-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -9636,12 +9636,12 @@
   },
   {
     "source": "/nava-dwaraka-tour.html",
-    "destination": "/packages?filter=nava-dwaraka-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/nava-dwaraka-tour",
-    "destination": "/packages?filter=nava-dwaraka-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -9706,12 +9706,12 @@
   },
   {
     "source": "/fun-filled-mauritius-tour.html",
-    "destination": "/packages?filter=fun-filled-mauritius-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/fun-filled-mauritius-tour",
-    "destination": "/packages?filter=fun-filled-mauritius-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -9786,12 +9786,12 @@
   },
   {
     "source": "/culture-of-kashmir.html",
-    "destination": "/packages?filter=culture-of-kashmir",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-kashmir",
-    "destination": "/packages?filter=culture-of-kashmir",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -9956,12 +9956,12 @@
   },
   {
     "source": "/singapore-bintan-tour.html",
-    "destination": "/packages?filter=singapore-bintan-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/singapore-bintan-tour",
-    "destination": "/packages?filter=singapore-bintan-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -9986,12 +9986,12 @@
   },
   {
     "source": "/south-india-wildlife-tour.html",
-    "destination": "/packages?filter=south-india-wildlife-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/south-india-wildlife-tour",
-    "destination": "/packages?filter=south-india-wildlife-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -10001,12 +10001,12 @@
   },
   {
     "source": "/singapore-malaysia-bali-tour.html",
-    "destination": "/packages?filter=singapore-malaysia-bali-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/singapore-malaysia-bali-tour",
-    "destination": "/packages?filter=singapore-malaysia-bali-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -10091,12 +10091,12 @@
   },
   {
     "source": "/royal-rajasthan-tour.html",
-    "destination": "/packages?filter=royal-rajasthan-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/royal-rajasthan-tour",
-    "destination": "/packages?filter=royal-rajasthan-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -10191,22 +10191,22 @@
   },
   {
     "source": "/kedarnath-yatra-by-helicopter.html",
-    "destination": "/packages/kedarnath-yatra-by-helicopter",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/kedarnath-yatra-by-helicopter",
-    "destination": "/packages/kedarnath-yatra-by-helicopter",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/paris-switzerland-tour.html",
-    "destination": "/packages?filter=paris-switzerland-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/paris-switzerland-tour",
-    "destination": "/packages?filter=paris-switzerland-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -10221,12 +10221,12 @@
   },
   {
     "source": "/culture-of-shimla.html",
-    "destination": "/packages?filter=culture-of-shimla",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-shimla",
-    "destination": "/packages?filter=culture-of-shimla",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -10366,12 +10366,12 @@
   },
   {
     "source": "/culture-of-kedarnath.html",
-    "destination": "/packages?filter=culture-of-kedarnath",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-kedarnath",
-    "destination": "/packages?filter=culture-of-kedarnath",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -10416,12 +10416,12 @@
   },
   {
     "source": "/india-nepal-wildlife-tour.html",
-    "destination": "/packages?filter=india-nepal-wildlife-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/india-nepal-wildlife-tour",
-    "destination": "/packages?filter=india-nepal-wildlife-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -10481,12 +10481,12 @@
   },
   {
     "source": "/culture-of-manali.html",
-    "destination": "/packages?filter=culture-of-manali",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-manali",
-    "destination": "/packages?filter=culture-of-manali",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -10566,12 +10566,12 @@
   },
   {
     "source": "/phuket-pattaya-bangkok-tour.html",
-    "destination": "/packages?filter=phuket-pattaya-bangkok-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/phuket-pattaya-bangkok-tour",
-    "destination": "/packages?filter=phuket-pattaya-bangkok-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -10771,12 +10771,12 @@
   },
   {
     "source": "/kedarnath-opening-closing-dates.html",
-    "destination": "/packages?filter=kedarnath-opening-closing-dates",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/kedarnath-opening-closing-dates",
-    "destination": "/packages?filter=kedarnath-opening-closing-dates",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -10816,12 +10816,12 @@
   },
   {
     "source": "/mahavatar-babaji-cave-tour-package.html",
-    "destination": "/packages/mahavatar-babaji-cave-tour-package",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/mahavatar-babaji-cave-tour-package",
-    "destination": "/packages/mahavatar-babaji-cave-tour-package",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -10846,12 +10846,12 @@
   },
   {
     "source": "/dubai-honeymoon-tour.html",
-    "destination": "/packages?filter=dubai-honeymoon-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/dubai-honeymoon-tour",
-    "destination": "/packages?filter=dubai-honeymoon-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -10911,12 +10911,12 @@
   },
   {
     "source": "/culture-of-uttar-pradesh.html",
-    "destination": "/packages?filter=culture-of-uttar-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-uttar-pradesh",
-    "destination": "/packages?filter=culture-of-uttar-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -10931,12 +10931,12 @@
   },
   {
     "source": "/index.html",
-    "destination": "/packages?filter=index",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/index",
-    "destination": "/packages?filter=index",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -11011,12 +11011,12 @@
   },
   {
     "source": "/maldives-family-tour.html",
-    "destination": "/packages?filter=maldives-family-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/maldives-family-tour",
-    "destination": "/packages?filter=maldives-family-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -11076,12 +11076,12 @@
   },
   {
     "source": "/nainital-weekend-tour.html",
-    "destination": "/packages?filter=nainital-weekend-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/nainital-weekend-tour",
-    "destination": "/packages?filter=nainital-weekend-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -11111,12 +11111,12 @@
   },
   {
     "source": "/kolkata-to-gangasagar-one-day-tour-package.html",
-    "destination": "/packages/kolkata-to-gangasagar-one-day-tour-package",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/kolkata-to-gangasagar-one-day-tour-package",
-    "destination": "/packages/kolkata-to-gangasagar-one-day-tour-package",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -11131,12 +11131,12 @@
   },
   {
     "source": "/yamunotri-opening-closing-dates.html",
-    "destination": "/packages?filter=yamunotri-opening-closing-dates",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/yamunotri-opening-closing-dates",
-    "destination": "/packages?filter=yamunotri-opening-closing-dates",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -11371,12 +11371,12 @@
   },
   {
     "source": "/kedarnath-yatra-from-delhi.html",
-    "destination": "/packages?filter=kedarnath-yatra-from-delhi",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/kedarnath-yatra-from-delhi",
-    "destination": "/packages?filter=kedarnath-yatra-from-delhi",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -11421,12 +11421,12 @@
   },
   {
     "source": "/singapore-phuket-tour.html",
-    "destination": "/packages?filter=singapore-phuket-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/singapore-phuket-tour",
-    "destination": "/packages?filter=singapore-phuket-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -11481,12 +11481,12 @@
   },
   {
     "source": "/kartik-swami-travel-packages.html",
-    "destination": "/packages?filter=kartik-swami-travel-packages",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/kartik-swami-travel-packages",
-    "destination": "/packages?filter=kartik-swami-travel-packages",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -11561,12 +11561,12 @@
   },
   {
     "source": "/amarnath-weather.html",
-    "destination": "/packages?filter=amarnath-weather",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/amarnath-weather",
-    "destination": "/packages?filter=amarnath-weather",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -11711,12 +11711,12 @@
   },
   {
     "source": "/badrinath-history.html",
-    "destination": "/packages?filter=badrinath-history",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/badrinath-history",
-    "destination": "/packages?filter=badrinath-history",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -11731,12 +11731,12 @@
   },
   {
     "source": "/vietnam-visa-information.html",
-    "destination": "/packages?filter=vietnam-visa-information",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/vietnam-visa-information",
-    "destination": "/packages?filter=vietnam-visa-information",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -11751,22 +11751,22 @@
   },
   {
     "source": "/traditional-dress-of-himachal-pradesh.html",
-    "destination": "/packages?filter=traditional-dress-of-himachal-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/traditional-dress-of-himachal-pradesh",
-    "destination": "/packages?filter=traditional-dress-of-himachal-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/tokyo-hiroshima-tour.html",
-    "destination": "/packages?filter=tokyo-hiroshima-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/tokyo-hiroshima-tour",
-    "destination": "/packages?filter=tokyo-hiroshima-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -11781,12 +11781,12 @@
   },
   {
     "source": "/food-of-manali.html",
-    "destination": "/packages?filter=food-of-manali",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/food-of-manali",
-    "destination": "/packages?filter=food-of-manali",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -11801,12 +11801,12 @@
   },
   {
     "source": "/tokyo-kyoto-tour.html",
-    "destination": "/packages?filter=tokyo-kyoto-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/tokyo-kyoto-tour",
-    "destination": "/packages?filter=tokyo-kyoto-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -11846,12 +11846,12 @@
   },
   {
     "source": "/cordelia-cruises-kochi-to-mumbai.html",
-    "destination": "/packages?filter=cordelia-cruises-kochi-to-mumbai",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/cordelia-cruises-kochi-to-mumbai",
-    "destination": "/packages?filter=cordelia-cruises-kochi-to-mumbai",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -11861,22 +11861,22 @@
   },
   {
     "source": "/malaysia-honeymoon-tour.html",
-    "destination": "/packages?filter=malaysia-honeymoon-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/malaysia-honeymoon-tour",
-    "destination": "/packages?filter=malaysia-honeymoon-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/amarnath-yatra-faqs.html",
-    "destination": "/packages?filter=amarnath-yatra-faqs",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/amarnath-yatra-faqs",
-    "destination": "/packages?filter=amarnath-yatra-faqs",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -11901,12 +11901,12 @@
   },
   {
     "source": "/mizoram-cultural-tour.html",
-    "destination": "/packages/mizoram-cultural-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/mizoram-cultural-tour",
-    "destination": "/packages/mizoram-cultural-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -11916,22 +11916,22 @@
   },
   {
     "source": "/unforgettable-kashmir-tour.html",
-    "destination": "/packages?filter=unforgettable-kashmir-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/unforgettable-kashmir-tour",
-    "destination": "/packages?filter=unforgettable-kashmir-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/one-day-delhi-to-mathura-vrindavan-tour.html",
-    "destination": "/packages/one-day-delhi-to-mathura-vrindavan-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/one-day-delhi-to-mathura-vrindavan-tour",
-    "destination": "/packages/one-day-delhi-to-mathura-vrindavan-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -11961,12 +11961,12 @@
   },
   {
     "source": "/koh-samui-sightseeing-tour.html",
-    "destination": "/packages?filter=koh-samui-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/koh-samui-sightseeing-tour",
-    "destination": "/packages?filter=koh-samui-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -11986,12 +11986,12 @@
   },
   {
     "source": "/fruits-of-sikkim.html",
-    "destination": "/packages?filter=fruits-of-sikkim",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/fruits-of-sikkim",
-    "destination": "/packages?filter=fruits-of-sikkim",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -12056,12 +12056,12 @@
   },
   {
     "source": "/south-india-temple-tour.html",
-    "destination": "/packages?filter=south-india-temple-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/south-india-temple-tour",
-    "destination": "/packages?filter=south-india-temple-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -12101,12 +12101,12 @@
   },
   {
     "source": "/traditional-dress-of-manali.html",
-    "destination": "/packages?filter=traditional-dress-of-manali",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/traditional-dress-of-manali",
-    "destination": "/packages?filter=traditional-dress-of-manali",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -12201,12 +12201,12 @@
   },
   {
     "source": "/culture-of-varanasi.html",
-    "destination": "/packages?filter=culture-of-varanasi",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-varanasi",
-    "destination": "/packages?filter=culture-of-varanasi",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -12311,12 +12311,12 @@
   },
   {
     "source": "/colombo-nuwara-eliya-beruwala-tour.html",
-    "destination": "/packages?filter=colombo-nuwara-eliya-beruwala-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/colombo-nuwara-eliya-beruwala-tour",
-    "destination": "/packages?filter=colombo-nuwara-eliya-beruwala-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -12336,12 +12336,12 @@
   },
   {
     "source": "/ooty-honeymoon-tour.html",
-    "destination": "/packages?filter=ooty-honeymoon-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/ooty-honeymoon-tour",
-    "destination": "/packages?filter=ooty-honeymoon-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -12376,22 +12376,22 @@
   },
   {
     "source": "/koh-samui-honeymoon-tour.html",
-    "destination": "/packages?filter=koh-samui-honeymoon-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/koh-samui-honeymoon-tour",
-    "destination": "/packages?filter=koh-samui-honeymoon-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/tourist-places-in-ahmedabad.html",
-    "destination": "/packages?filter=tourist-places-in-ahmedabad",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/tourist-places-in-ahmedabad",
-    "destination": "/packages?filter=tourist-places-in-ahmedabad",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -12511,12 +12511,12 @@
   },
   {
     "source": "/gujarat-irctc-tour.html",
-    "destination": "/packages?filter=gujarat-irctc-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/gujarat-irctc-tour",
-    "destination": "/packages?filter=gujarat-irctc-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -12566,12 +12566,12 @@
   },
   {
     "source": "/culture-of-haridwar.html",
-    "destination": "/packages?filter=culture-of-haridwar",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-haridwar",
-    "destination": "/packages?filter=culture-of-haridwar",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -12611,12 +12611,12 @@
   },
   {
     "source": "/mussoorie-weekend-tour.html",
-    "destination": "/packages?filter=mussoorie-weekend-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/mussoorie-weekend-tour",
-    "destination": "/packages?filter=mussoorie-weekend-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -12661,12 +12661,12 @@
   },
   {
     "source": "/culture-of-almora.html",
-    "destination": "/packages?filter=culture-of-almora",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-almora",
-    "destination": "/packages?filter=culture-of-almora",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -12791,22 +12791,22 @@
   },
   {
     "source": "/machail-mata-yatra.html",
-    "destination": "/packages?filter=machail-mata-yatra",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/machail-mata-yatra",
-    "destination": "/packages?filter=machail-mata-yatra",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/ahmedabad-dwarka-weekend-tour.html",
-    "destination": "/packages?filter=ahmedabad-dwarka-weekend-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/ahmedabad-dwarka-weekend-tour",
-    "destination": "/packages?filter=ahmedabad-dwarka-weekend-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -12836,12 +12836,12 @@
   },
   {
     "source": "/pattaya-honeymoon-tour.html",
-    "destination": "/packages?filter=pattaya-honeymoon-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/pattaya-honeymoon-tour",
-    "destination": "/packages?filter=pattaya-honeymoon-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -12891,12 +12891,12 @@
   },
   {
     "source": "/varanasi-temple-tour.html",
-    "destination": "/packages?filter=varanasi-temple-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/varanasi-temple-tour",
-    "destination": "/packages?filter=varanasi-temple-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -13036,12 +13036,12 @@
   },
   {
     "source": "/places-to-visit-in-goa.html",
-    "destination": "/packages?filter=places-to-visit-in-goa",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/places-to-visit-in-goa",
-    "destination": "/packages?filter=places-to-visit-in-goa",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -13331,12 +13331,12 @@
   },
   {
     "source": "/koh-phangan-sightseeing-tour.html",
-    "destination": "/packages?filter=koh-phangan-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/koh-phangan-sightseeing-tour",
-    "destination": "/packages?filter=koh-phangan-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -13351,32 +13351,32 @@
   },
   {
     "source": "/golden-triangle-tour-4-days.html",
-    "destination": "/packages/golden-triangle-tour-4-days",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/golden-triangle-tour-4-days",
-    "destination": "/packages/golden-triangle-tour-4-days",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/traditional-dress-of-madhya-pradesh.html",
-    "destination": "/packages?filter=traditional-dress-of-madhya-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/traditional-dress-of-madhya-pradesh",
-    "destination": "/packages?filter=traditional-dress-of-madhya-pradesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/rameshwaram-local-sightseeing-tour.html",
-    "destination": "/packages?filter=rameshwaram-local-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/rameshwaram-local-sightseeing-tour",
-    "destination": "/packages?filter=rameshwaram-local-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -13421,22 +13421,22 @@
   },
   {
     "source": "/muktinath-weather.html",
-    "destination": "/packages?filter=muktinath-weather",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/muktinath-weather",
-    "destination": "/packages?filter=muktinath-weather",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-rishikesh.html",
-    "destination": "/packages?filter=culture-of-rishikesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-rishikesh",
-    "destination": "/packages?filter=culture-of-rishikesh",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -13471,12 +13471,12 @@
   },
   {
     "source": "/south-india-hill-stations-tour.html",
-    "destination": "/packages?filter=south-india-hill-stations-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/south-india-hill-stations-tour",
-    "destination": "/packages?filter=south-india-hill-stations-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -13501,12 +13501,12 @@
   },
   {
     "source": "/chennai-trichy-tour.html",
-    "destination": "/packages?filter=chennai-trichy-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/chennai-trichy-tour",
-    "destination": "/packages?filter=chennai-trichy-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -13521,12 +13521,12 @@
   },
   {
     "source": "/muktinath-pashupatinath-tour.html",
-    "destination": "/packages?filter=muktinath-pashupatinath-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/muktinath-pashupatinath-tour",
-    "destination": "/packages?filter=muktinath-pashupatinath-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -13561,12 +13561,12 @@
   },
   {
     "source": "/ayodhya-ram-mandir-tour.html",
-    "destination": "/packages?filter=ayodhya-ram-mandir-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/ayodhya-ram-mandir-tour",
-    "destination": "/packages?filter=ayodhya-ram-mandir-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -13581,12 +13581,12 @@
   },
   {
     "source": "/dharamshala-paragliding-tour.html",
-    "destination": "/packages?filter=dharamshala-paragliding-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/dharamshala-paragliding-tour",
-    "destination": "/packages?filter=dharamshala-paragliding-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -13656,12 +13656,12 @@
   },
   {
     "source": "/chardham-opening-closing-dates.html",
-    "destination": "/packages?filter=chardham-opening-closing-dates",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/chardham-opening-closing-dates",
-    "destination": "/packages?filter=chardham-opening-closing-dates",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -13686,12 +13686,12 @@
   },
   {
     "source": "/fruits-of-uttarakhand.html",
-    "destination": "/packages?filter=fruits-of-uttarakhand",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/fruits-of-uttarakhand",
-    "destination": "/packages?filter=fruits-of-uttarakhand",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -13711,12 +13711,12 @@
   },
   {
     "source": "/traditional-dress-of-rajasthan.html",
-    "destination": "/packages?filter=traditional-dress-of-rajasthan",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/traditional-dress-of-rajasthan",
-    "destination": "/packages?filter=traditional-dress-of-rajasthan",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -13731,12 +13731,12 @@
   },
   {
     "source": "/same-day-agra-mathura-vrindavan-tour.html",
-    "destination": "/packages/same-day-agra-mathura-vrindavan-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/same-day-agra-mathura-vrindavan-tour",
-    "destination": "/packages/same-day-agra-mathura-vrindavan-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -13786,12 +13786,12 @@
   },
   {
     "source": "/munnar-thekkady-alleppey-cochin-tour.html",
-    "destination": "/packages?filter=munnar-thekkady-alleppey-cochin-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/munnar-thekkady-alleppey-cochin-tour",
-    "destination": "/packages?filter=munnar-thekkady-alleppey-cochin-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -13896,12 +13896,12 @@
   },
   {
     "source": "/kailash-mansarovar-yatra-by-helicopter.html",
-    "destination": "/packages?filter=kailash-mansarovar-yatra-by-helicopter",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/kailash-mansarovar-yatra-by-helicopter",
-    "destination": "/packages?filter=kailash-mansarovar-yatra-by-helicopter",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -14061,12 +14061,12 @@
   },
   {
     "source": "/japan-honeymoon-tour.html",
-    "destination": "/packages?filter=japan-honeymoon-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/japan-honeymoon-tour",
-    "destination": "/packages?filter=japan-honeymoon-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -14116,12 +14116,12 @@
   },
   {
     "source": "/badrinath-puja-rates.html",
-    "destination": "/packages?filter=badrinath-puja-rates",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/badrinath-puja-rates",
-    "destination": "/packages?filter=badrinath-puja-rates",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -14166,12 +14166,12 @@
   },
   {
     "source": "/amarnath-route-map.html",
-    "destination": "/packages?filter=amarnath-route-map",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/amarnath-route-map",
-    "destination": "/packages?filter=amarnath-route-map",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -14236,12 +14236,12 @@
   },
   {
     "source": "/culture-of-rajasthan.html",
-    "destination": "/packages?filter=culture-of-rajasthan",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-rajasthan",
-    "destination": "/packages?filter=culture-of-rajasthan",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -14311,12 +14311,12 @@
   },
   {
     "source": "/chennai-pondicherry-tour.html",
-    "destination": "/packages?filter=chennai-pondicherry-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/chennai-pondicherry-tour",
-    "destination": "/packages?filter=chennai-pondicherry-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -14386,22 +14386,22 @@
   },
   {
     "source": "/culture-of-dehradun.html",
-    "destination": "/packages?filter=culture-of-dehradun",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-dehradun",
-    "destination": "/packages?filter=culture-of-dehradun",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/gangotri-temple.html",
-    "destination": "/packages?filter=gangotri-temple",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/gangotri-temple",
-    "destination": "/packages?filter=gangotri-temple",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -14601,12 +14601,12 @@
   },
   {
     "source": "/manali-honeymoon-tour.html",
-    "destination": "/packages?filter=manali-honeymoon-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/manali-honeymoon-tour",
-    "destination": "/packages?filter=manali-honeymoon-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -14621,12 +14621,12 @@
   },
   {
     "source": "/south-china-tour.html",
-    "destination": "/packages?filter=south-china-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/south-china-tour",
-    "destination": "/packages?filter=south-china-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -14661,12 +14661,12 @@
   },
   {
     "source": "/kailash-mansarovar-yatra-package-from-lucknow.html",
-    "destination": "/packages?filter=kailash-mansarovar-yatra-package-from-lucknow",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/kailash-mansarovar-yatra-package-from-lucknow",
-    "destination": "/packages?filter=kailash-mansarovar-yatra-package-from-lucknow",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -14681,12 +14681,12 @@
   },
   {
     "source": "/food-of-shimla.html",
-    "destination": "/packages?filter=food-of-shimla",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/food-of-shimla",
-    "destination": "/packages?filter=food-of-shimla",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -14726,12 +14726,12 @@
   },
   {
     "source": "/japan-korea-taiwan-tour.html",
-    "destination": "/packages?filter=japan-korea-taiwan-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/japan-korea-taiwan-tour",
-    "destination": "/packages?filter=japan-korea-taiwan-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -14786,22 +14786,22 @@
   },
   {
     "source": "/muktinath-yatra-from-bangalore.html",
-    "destination": "/packages?filter=muktinath-yatra-from-bangalore",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/muktinath-yatra-from-bangalore",
-    "destination": "/packages?filter=muktinath-yatra-from-bangalore",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/badrinath-yatra-by-helicopter.html",
-    "destination": "/packages/badrinath-yatra-by-helicopter",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/badrinath-yatra-by-helicopter",
-    "destination": "/packages/badrinath-yatra-by-helicopter",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -14856,12 +14856,12 @@
   },
   {
     "source": "/bangkok-ayutthaya-tour.html",
-    "destination": "/packages?filter=bangkok-ayutthaya-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/bangkok-ayutthaya-tour",
-    "destination": "/packages?filter=bangkok-ayutthaya-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -14941,12 +14941,12 @@
   },
   {
     "source": "/tourist-places-in-gangotri.html",
-    "destination": "/packages?filter=tourist-places-in-gangotri",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/tourist-places-in-gangotri",
-    "destination": "/packages?filter=tourist-places-in-gangotri",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -14981,22 +14981,22 @@
   },
   {
     "source": "/places-to-visit-in-kedarnath.html",
-    "destination": "/packages?filter=places-to-visit-in-kedarnath",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/places-to-visit-in-kedarnath",
-    "destination": "/packages?filter=places-to-visit-in-kedarnath",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/badrinath-temple.html",
-    "destination": "/packages?filter=badrinath-temple",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/badrinath-temple",
-    "destination": "/packages?filter=badrinath-temple",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -15051,22 +15051,22 @@
   },
   {
     "source": "/gangotri-history.html",
-    "destination": "/packages?filter=gangotri-history",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/gangotri-history",
-    "destination": "/packages?filter=gangotri-history",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/gangotri-yatra-from-haridwar.html",
-    "destination": "/packages?filter=gangotri-yatra-from-haridwar",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/gangotri-yatra-from-haridwar",
-    "destination": "/packages?filter=gangotri-yatra-from-haridwar",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -15081,12 +15081,12 @@
   },
   {
     "source": "/culture-of-badrinath.html",
-    "destination": "/packages?filter=culture-of-badrinath",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-badrinath",
-    "destination": "/packages?filter=culture-of-badrinath",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -15106,12 +15106,12 @@
   },
   {
     "source": "/dubai-adventure-tour.html",
-    "destination": "/packages?filter=dubai-adventure-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/dubai-adventure-tour",
-    "destination": "/packages?filter=dubai-adventure-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -15131,12 +15131,12 @@
   },
   {
     "source": "/dwarka-somnath-tour-from-delhi.html",
-    "destination": "/packages?filter=dwarka-somnath-tour-from-delhi",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/dwarka-somnath-tour-from-delhi",
-    "destination": "/packages?filter=dwarka-somnath-tour-from-delhi",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -15201,12 +15201,12 @@
   },
   {
     "source": "/culture-of-vietnam.html",
-    "destination": "/packages?filter=culture-of-vietnam",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-vietnam",
-    "destination": "/packages?filter=culture-of-vietnam",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -15221,12 +15221,12 @@
   },
   {
     "source": "/food-of-nainital.html",
-    "destination": "/packages?filter=food-of-nainital",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/food-of-nainital",
-    "destination": "/packages?filter=food-of-nainital",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -15301,12 +15301,12 @@
   },
   {
     "source": "/yamunotri-weather.html",
-    "destination": "/packages?filter=yamunotri-weather",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/yamunotri-weather",
-    "destination": "/packages?filter=yamunotri-weather",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -15436,12 +15436,12 @@
   },
   {
     "source": "/best-of-chiang-mai-tour.html",
-    "destination": "/packages?filter=best-of-chiang-mai-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/best-of-chiang-mai-tour",
-    "destination": "/packages?filter=best-of-chiang-mai-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -15466,12 +15466,12 @@
   },
   {
     "source": "/kurumba-resort-maldives-tour.html",
-    "destination": "/packages?filter=kurumba-resort-maldives-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/kurumba-resort-maldives-tour",
-    "destination": "/packages?filter=kurumba-resort-maldives-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -15511,12 +15511,12 @@
   },
   {
     "source": "/badrinath-opening-closing-dates.html",
-    "destination": "/packages?filter=badrinath-opening-closing-dates",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/badrinath-opening-closing-dates",
-    "destination": "/packages?filter=badrinath-opening-closing-dates",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -15571,12 +15571,12 @@
   },
   {
     "source": "/bali-sightseeing-tour.html",
-    "destination": "/packages?filter=bali-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/bali-sightseeing-tour",
-    "destination": "/packages?filter=bali-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -15611,12 +15611,12 @@
   },
   {
     "source": "/culture-of-goa.html",
-    "destination": "/packages?filter=culture-of-goa",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-goa",
-    "destination": "/packages?filter=culture-of-goa",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -15681,12 +15681,12 @@
   },
   {
     "source": "/culture-of-sri-lanka.html",
-    "destination": "/packages?filter=culture-of-sri-lanka",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-sri-lanka",
-    "destination": "/packages?filter=culture-of-sri-lanka",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -15711,12 +15711,12 @@
   },
   {
     "source": "/vietnam-honeymoon-tour.html",
-    "destination": "/packages?filter=vietnam-honeymoon-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/vietnam-honeymoon-tour",
-    "destination": "/packages?filter=vietnam-honeymoon-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -15791,12 +15791,12 @@
   },
   {
     "source": "/fruits-of-kashmir.html",
-    "destination": "/packages?filter=fruits-of-kashmir",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/fruits-of-kashmir",
-    "destination": "/packages?filter=fruits-of-kashmir",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -16011,12 +16011,12 @@
   },
   {
     "source": "/dubai-abu-dhabi-tour.html",
-    "destination": "/packages?filter=dubai-abu-dhabi-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/dubai-abu-dhabi-tour",
-    "destination": "/packages?filter=dubai-abu-dhabi-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -16036,12 +16036,12 @@
   },
   {
     "source": "/jaipur-tour-packages-from-delhi.html",
-    "destination": "/packages/jaipur-tour-packages-from-delhi",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/jaipur-tour-packages-from-delhi",
-    "destination": "/packages/jaipur-tour-packages-from-delhi",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -16086,12 +16086,12 @@
   },
   {
     "source": "/navagraha-yatra.html",
-    "destination": "/packages?filter=navagraha-yatra",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/navagraha-yatra",
-    "destination": "/packages?filter=navagraha-yatra",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -16106,12 +16106,12 @@
   },
   {
     "source": "/food-of-agra.html",
-    "destination": "/packages?filter=food-of-agra",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/food-of-agra",
-    "destination": "/packages?filter=food-of-agra",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -16216,12 +16216,12 @@
   },
   {
     "source": "/beaches-in-goa.html",
-    "destination": "/packages?filter=beaches-in-goa",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/beaches-in-goa",
-    "destination": "/packages?filter=beaches-in-goa",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -16256,12 +16256,12 @@
   },
   {
     "source": "/chiang-rai-sightseeing-tour.html",
-    "destination": "/packages?filter=chiang-rai-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/chiang-rai-sightseeing-tour",
-    "destination": "/packages?filter=chiang-rai-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -16291,12 +16291,12 @@
   },
   {
     "source": "/singapore-bali-cruise-tour.html",
-    "destination": "/packages?filter=singapore-bali-cruise-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/singapore-bali-cruise-tour",
-    "destination": "/packages?filter=singapore-bali-cruise-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -16361,12 +16361,12 @@
   },
   {
     "source": "/narmada-pushkaralu-tour-package.html",
-    "destination": "/packages?filter=narmada-pushkaralu-tour-package",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/narmada-pushkaralu-tour-package",
-    "destination": "/packages?filter=narmada-pushkaralu-tour-package",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -16406,22 +16406,22 @@
   },
   {
     "source": "/fantastic-koh-samui-tour.html",
-    "destination": "/packages?filter=fantastic-koh-samui-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/fantastic-koh-samui-tour",
-    "destination": "/packages?filter=fantastic-koh-samui-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-ahmedabad.html",
-    "destination": "/packages?filter=culture-of-ahmedabad",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-ahmedabad",
-    "destination": "/packages?filter=culture-of-ahmedabad",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -16456,12 +16456,12 @@
   },
   {
     "source": "/indian-splendour-tour.html",
-    "destination": "/packages?filter=indian-splendour-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/indian-splendour-tour",
-    "destination": "/packages?filter=indian-splendour-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -16496,12 +16496,12 @@
   },
   {
     "source": "/cambodia-thailand-tour.html",
-    "destination": "/packages?filter=cambodia-thailand-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/cambodia-thailand-tour",
-    "destination": "/packages?filter=cambodia-thailand-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -16556,22 +16556,22 @@
   },
   {
     "source": "/kedarnath-yatra-from-haridwar.html",
-    "destination": "/packages?filter=kedarnath-yatra-from-haridwar",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/kedarnath-yatra-from-haridwar",
-    "destination": "/packages?filter=kedarnath-yatra-from-haridwar",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/yamunotri-temple.html",
-    "destination": "/packages?filter=yamunotri-temple",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/yamunotri-temple",
-    "destination": "/packages?filter=yamunotri-temple",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -16641,12 +16641,12 @@
   },
   {
     "source": "/delightful-dubai-festival-tour.html",
-    "destination": "/packages?filter=delightful-dubai-festival-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/delightful-dubai-festival-tour",
-    "destination": "/packages?filter=delightful-dubai-festival-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -16671,12 +16671,12 @@
   },
   {
     "source": "/ahmedabad-diu-weekend-tour.html",
-    "destination": "/packages?filter=ahmedabad-diu-weekend-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/ahmedabad-diu-weekend-tour",
-    "destination": "/packages?filter=ahmedabad-diu-weekend-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -16736,12 +16736,12 @@
   },
   {
     "source": "/muktinath-yatra-from-chennai.html",
-    "destination": "/packages?filter=muktinath-yatra-from-chennai",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/muktinath-yatra-from-chennai",
-    "destination": "/packages?filter=muktinath-yatra-from-chennai",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -16791,12 +16791,12 @@
   },
   {
     "source": "/pattaya-sightseeing-tour.html",
-    "destination": "/packages?filter=pattaya-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/pattaya-sightseeing-tour",
-    "destination": "/packages?filter=pattaya-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -16986,12 +16986,12 @@
   },
   {
     "source": "/colombo-sigiriya-kandy-tour.html",
-    "destination": "/packages?filter=colombo-sigiriya-kandy-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/colombo-sigiriya-kandy-tour",
-    "destination": "/packages?filter=colombo-sigiriya-kandy-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -17061,12 +17061,12 @@
   },
   {
     "source": "/assam-meghalaya-tour-packages.html",
-    "destination": "/packages?filter=assam-meghalaya-tour-packages",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/assam-meghalaya-tour-packages",
-    "destination": "/packages?filter=assam-meghalaya-tour-packages",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -17201,12 +17201,12 @@
   },
   {
     "source": "/food-of-assam.html",
-    "destination": "/packages?filter=food-of-assam",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/food-of-assam",
-    "destination": "/packages?filter=food-of-assam",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -17276,12 +17276,12 @@
   },
   {
     "source": "/culture-of-nepal.html",
-    "destination": "/packages?filter=culture-of-nepal",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/culture-of-nepal",
-    "destination": "/packages?filter=culture-of-nepal",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -17306,12 +17306,12 @@
   },
   {
     "source": "/thanjavur-sightseeing-tour.html",
-    "destination": "/packages?filter=thanjavur-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/thanjavur-sightseeing-tour",
-    "destination": "/packages?filter=thanjavur-sightseeing-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -17351,12 +17351,12 @@
   },
   {
     "source": "/kailash-mansarovar-yatra-aerial-darshan.html",
-    "destination": "/packages/kailash-mansarovar-yatra-aerial-darshan",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/kailash-mansarovar-yatra-aerial-darshan",
-    "destination": "/packages/kailash-mansarovar-yatra-aerial-darshan",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -17471,12 +17471,12 @@
   },
   {
     "source": "/kedarnath-history.html",
-    "destination": "/packages?filter=kedarnath-history",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/kedarnath-history",
-    "destination": "/packages?filter=kedarnath-history",
+    "destination": "/packages",
     "permanent": true
   },
   {
@@ -17606,12 +17606,12 @@
   },
   {
     "source": "/sikkim-tour.html",
-    "destination": "/packages?filter=sikkim-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {
     "source": "/sikkim-tour",
-    "destination": "/packages?filter=sikkim-tour",
+    "destination": "/packages",
     "permanent": true
   },
   {

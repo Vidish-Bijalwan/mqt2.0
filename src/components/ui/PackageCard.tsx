@@ -35,7 +35,7 @@ export default function PackageCard({ pkg }: { pkg: PackageCardProps }) {
   const durationPill = days + (nights ? ` / ${nights}` : "");
 
   /* ─── Pricing (shared model): pkg.mrp = list price, pkg.dealPrice = the deal ─── */
-  const { display: displayPrice, crossed: crossedOutPrice, save: discountAmount, hasPrice: showPrice } = getPriceInfo(pkg.mrp, pkg.dealPrice);
+  const { display: displayPrice, crossed: crossedOutPrice, save: discountAmount, hasPrice: showPrice } = getPriceInfo(pkg.mrp, pkg.dealPrice, pkg.slug);
 
   return (
     <div className="nit-pcard">
@@ -100,9 +100,12 @@ export default function PackageCard({ pkg }: { pkg: PackageCardProps }) {
 
         <div className="nit-prCn">
           {showPrice ? (
-            <>INR <b>{displayPrice}</b></>
+            <>
+              <span style={{ fontSize: 12, fontWeight: 400, color: '#666', display: 'block', lineHeight: '16px' }}>Starting from</span>
+              INR <b>{displayPrice}</b>
+            </>
           ) : (
-            <b style={{ fontSize: 20, color: "#fb4d00" }}>Pricing on request</b>
+            <b style={{ fontSize: 18, color: "#fb4d00" }}>Contact for Price</b>
           )}
         </div>
 

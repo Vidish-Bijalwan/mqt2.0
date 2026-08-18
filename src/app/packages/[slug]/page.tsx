@@ -171,8 +171,32 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
       : null;
   const hasRealBlocks = !!blocks;
 
+  // Extract FAQ pairs from V3 blocks early (used by both sections and JSON-LD)
+  // Two formats:
+  // 1. Structured faq block: { type: 'faq', items: [{ q, a }] }
+  // 2. Legacy heading+paragraph: "Q1. ..." + "Ans. ..."
+  const faqPairs: { q: string; a: string }[] = [];
+  if (blocks) {
+    for (let i = 0; i < blocks.length; i++) {
+      const blk = blocks[i];
+      if (blk.type === 'faq' && Array.isArray(blk.items)) {
+        for (const item of blk.items) {
+          if (item.q && item.a) faqPairs.push({ q: item.q, a: item.a });
+        }
+      } else if (blk.type === 'heading' && /^Q\d+\./i.test(blk.text || '')) {
+        const answer = blocks[i + 1];
+        if (answer?.type === 'paragraph' && /^Ans\./i.test(answer.text || '')) {
+          faqPairs.push({
+            q: (blk.text || '').replace(/\s*See More\s*$/i, '').trim(),
+            a: (answer.text || '').replace(/^Ans\.\s*/i, '').trim(),
+          });
+        }
+      }
+    }
+  }
+
   // Shared pricing model (D16/D17): pkg.mrp = list price, pkg.dealPrice = the deal.
-  const priceInfo = getPriceInfo(pkg.mrp, pkg.dealPrice);
+  const priceInfo = getPriceInfo(pkg.mrp, pkg.dealPrice, pkg.slug);
   const displayPrice = priceInfo.display;
   const crossedOutPrice = priceInfo.crossed;
   const saveAmount = priceInfo.save;
@@ -394,7 +418,7 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
         </div>
       ),
     }] : []),
-    ...(details.faqs && details.faqs.length > 0 ? [{
+    ...((details.faqs && details.faqs.length > 0) || faqPairs.length > 0 ? [{
       id: "faqs",
       label: "FAQs",
       content: (
@@ -406,7 +430,7 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
             <h2 className="text-2xl font-bold text-gray-800">Frequently Asked Questions</h2>
           </div>
           <div className="space-y-4">
-            {details.faqs.map((faq: any, i: number) => (
+            {(details.faqs && details.faqs.length > 0 ? details.faqs : faqPairs).map((faq: any, i: number) => (
               <div key={i} className="border border-gray-100 rounded-lg p-4 bg-gray-50/50">
                 <h3 className="font-bold text-gray-800 mb-2 flex items-start gap-2">
                   <HelpCircle size={18} className="text-legacy-orange shrink-0 mt-1" />
@@ -447,13 +471,15 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
         "Leisure",
         "Family"
       ],
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "INR",
-        "price": pkg.mrp ? pkg.mrp.replace(/[^0-9]/g, '') || "15000" : "15000",
-        "availability": "https://schema.org/InStock",
-        "url": `${siteConfig.domain}/packages/${slug}`
-      }
+      ...(showPrice ? {
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "INR",
+          "price": String(priceInfo.deal || priceInfo.mrp),
+          "availability": "https://schema.org/InStock",
+          "url": `${siteConfig.domain}/packages/${slug}`
+        }
+      } : {})
     },
     {
       "@type": "BreadcrumbList",
@@ -480,29 +506,6 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
     }
   ]
   };
-
-  // Extract FAQ Q/A pairs from V3 blocks — two formats:
-  // 1. Structured faq block: { type: 'faq', items: [{ q, a }] }
-  // 2. Legacy heading+paragraph: "Q1. ..." + "Ans. ..."
-  const faqPairs: { q: string; a: string }[] = [];
-  if (blocks) {
-    for (let i = 0; i < blocks.length; i++) {
-      const blk = blocks[i];
-      if (blk.type === 'faq' && Array.isArray(blk.items)) {
-        for (const item of blk.items) {
-          if (item.q && item.a) faqPairs.push({ q: item.q, a: item.a });
-        }
-      } else if (blk.type === 'heading' && /^Q\d+\./i.test(blk.text || '')) {
-        const answer = blocks[i + 1];
-        if (answer?.type === 'paragraph' && /^Ans\./i.test(answer.text || '')) {
-          faqPairs.push({
-            q: (blk.text || '').replace(/\s*See More\s*$/i, '').trim(),
-            a: (answer.text || '').replace(/^Ans\.\s*/i, '').trim(),
-          });
-        }
-      }
-    }
-  }
 
   if (!detailsV2?.seo?.json_ld) {
     if (details.faqs && details.faqs.length > 0) {
@@ -543,7 +546,7 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
         <div className="container mx-auto w-[95%] max-w-[1600px] flex items-center gap-2">
           <Link href="/" className="hover:text-legacy-orange">Home</Link>
           {" » "}
-          <Link href="/destinations/india-tours" className="hover:text-legacy-orange">{pkg.category}</Link>
+          <Link href={`/packages?category=${encodeURIComponent(pkg.category || 'all')}`} className="hover:text-legacy-orange">{pkg.category}</Link>
           {" » "}
           <span className="text-gray-300 truncate">{pkg.title}</span>
         </div>
@@ -552,6 +555,7 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
       <div className="bg-white border-b border-gray-200">
         <div className="container mx-auto px-4 w-[95%] max-w-[1600px] py-4 md:py-6">
            <h1 className="text-2xl md:text-3xl font-bold text-gray-800">{pkg.title}</h1>
+           <p className="text-sm text-gray-500 mt-1">{pkg.duration || ''} {pkg.route ? '· ' + pkg.route.split(/[\u2192\u2013\u2014,>]/)[0].trim() : ''}</p>
            {/* Duplicate breadcrumbs removed per UX audit */}
         </div>
       </div>
@@ -570,14 +574,16 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
                 <Image src={img} alt={`${pkg.title} — Photo ${idx + 1}`} fill sizes="(max-width: 768px) 50vw, 25vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
               </div>
             ))}
-            {/* 5th tile — last gallery image with the View-All overlay */}
-            <div className="relative h-[130px] md:h-[222px] group overflow-hidden">
+            {/* 5th tile — View All Photos overlay */}
+            <div className="relative h-[130px] md:h-[222px] group overflow-hidden bg-gray-900/60">
               {galleryImages[4] ? (
-                <Image src={galleryImages[4]} alt={`${pkg.title} — Photo 4`} fill sizes="25vw" className="object-cover" />
+                <Image src={galleryImages[4]} alt={`${pkg.title} — Photo 4`} fill sizes="25vw" className="object-cover opacity-60 group-hover:opacity-40 transition-opacity" />
               ) : (
-                <Image src={galleryImages[0]} alt={pkg.title} fill sizes="25vw" className="object-cover opacity-70" />
+                <Image src={galleryImages[0]} alt={pkg.title} fill sizes="25vw" className="object-cover opacity-40" />
               )}
-              <GalleryLightbox images={galleryImages} title={pkg.title} captions={galleryCaptions} />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <GalleryLightbox images={galleryImages} title={pkg.title} captions={galleryCaptions} />
+              </div>
             </div>
           </div>
         )}
@@ -633,7 +639,7 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
                         <div>
                            <p className="text-sm text-gray-500 font-medium uppercase tracking-wide">Starting from</p>
                            <div className="text-3xl font-bold text-gray-900 mt-1">
-                              {showPrice ? <>INR {displayPrice}</> : "Contact Us"}
+                              {showPrice ? <>INR {displayPrice}</> : "Contact for Price"}
                            </div>
                            {crossedOutPrice && (
                               <div className="flex items-center gap-2 mt-1.5">
@@ -706,7 +712,7 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
                               <span className="transition group-open:rotate-180">▼</span>
                            </summary>
                            <div className="space-y-2 text-sm text-gray-600 mt-3 pl-1">
-                              <div className="flex justify-between font-bold text-gray-900 border-t border-gray-100 pt-2"><span>Total per adult</span> <span>{showPrice ? `INR ${displayPrice}` : "Contact Us"}</span></div>
+                              <div className="flex justify-between font-bold text-gray-900 border-t border-gray-100 pt-2"><span>Total per adult</span> <span>{showPrice ? `INR ${displayPrice}` : "Contact for Price"}</span></div>
                               <p className="text-xs text-gray-400">Full price breakup (hotels, meals, transport, taxes) is shared on request.</p>
                            </div>
                         </details>

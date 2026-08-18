@@ -16,8 +16,13 @@ const isOneDrive = process.cwd().toLowerCase().includes("onedrive");
 const nextConfig: NextConfig = {
   // Redirects moved to src/proxy.ts to bypass Vercel's 1,024 limit
   images: {
+    // On Vercel, always use optimized images (default behavior)
+    // Locally in dev, skip optimization for faster iteration
     unoptimized: process.env.NODE_ENV === "development",
   },
+  // On Vercel/CI, skip turbopack root override (no junctions needed)
+  // Locally on OneDrive, widen root to home dir so turbopack can resolve
+  // modules from the .next junction target outside the project.
   ...(isOneDrive
     ? {
         turbopack: {

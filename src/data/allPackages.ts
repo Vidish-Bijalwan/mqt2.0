@@ -64,21 +64,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Delhi  - Mathura → Mathura- Agra- Delhi",
     "description": "Explore the charm of Delhi, Mathura, and Agra in just 2 days with our amazing tour package. Start your trip in Delhi, the capital of India, where you can enjoy both history and modern life. Visit the iconic landmarks like India Gate, Qutub Minar and Lotus Temple, which shows the city's culture and architectural beauty.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "2-days-kainchi-dham-tour",
-    "title": "2 Days Kainchi Dham Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-2-days-kainchi-dham-tour.webp",
-    "duration": "1 Nights / 2 Days",
-    "route": "Arrive Delhi- Kainchi Dham → Kainchi Dham - Delhi",
-    "description": "This 2 days Kainchi Dham tour package is perfect for those looking for both spirituality and natural beauty.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -90,8 +77,8 @@ export const allPackages: Package[] = [
     "route": "Sightseeing at Western Group of Temples → Visit to Eastern Group of Temples and Departure",
     "description": "See temples that are dedicated to ancient gods, carvings that drew inspiration from life itself, and exquisite architecture that baffles even today’s great minds! To enjoy a seamless tour here, book our Khajuraho tour package that will take care of all the travel logistics for you so that you can enjoy your trip peacefully, as it’s supposed to be.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹21,750",
+    "dealPrice": "₹900",
     "discount": ""
   },
   {
@@ -104,21 +91,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Odisha is a beautiful state, known as the soul of India, located near the Bay of Bengal on the eastern coast.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "3-days-assam-tour-packages",
-    "title": "Assam Tour Packages for 3 Days",
-    "category": "North East India",
-    "image": "/images/packages/hi-3-days-assam-tour-packages.webp",
-    "duration": "2 Nights / 3 Days",
-    "route": "",
-    "description": "Embark on a 3 day tour to Assam and let the surreal breezes of Northeast India embrace you. Capture the beauty of Guwahati with our carefully curated package including safe travels, cozy hotel stay, delicious meals and guided tours. Guwahati is the largest city in Assam located on the banks of Brahmaputra river.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹22,500",
+    "dealPrice": "₹2,250",
     "discount": ""
   },
   {
@@ -130,8 +104,8 @@ export const allPackages: Package[] = [
     "route": "Deoghar- A heaven for Heart and Soul → Sacred Darshan of Baba Baidyanath and Deoghar Sightseeing → Deoghar",
     "description": "The sacred soil of Deoghar, Jharkhand has held dearly the sacred sanctuary of Baba Baidyanath Dham.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -143,8 +117,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Delhi → Delhi - Agra sightseeing tour - Mathura → Mathura and Vrindavan sightseeing- Delhi",
     "description": "Enjoy your 3-day trip to explore famous places in India. Start your journey in Delhi, a city with modern buildings and historic sites.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -162,21 +136,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "3-days-kumbh-mela-package",
-    "title": "Kumbh Mela Tour 2 Nights/3 Days",
-    "category": "India Tours",
-    "image": "/images/packages/hi-3-days-kumbh-mela-package.webp",
-    "duration": "2 Nights / 3 Days",
-    "route": "Welcome to Prayagraj → Holy dip and Kumbh Mela exploration → Prayagraj",
-    "description": "Experience the world’s largest religious gathering at Kumbh Mela with us! The 3 day tour package to Kumbh Mela is designed to offer a profound spiritual journey starting from the divine Bhoomi of Prayagraj. Be prepared to witness the energetic and awe-inspiring Mela while enjoying the comfortable camp accommodation for a truly enriching experience.",
-    "highlights": [
-      "Lucknow Sightseeing Tour"
-    ],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "3-days-madurai-rameshwaram-tour",
     "title": "3 Days Madurai Rameshwaram Tour",
     "category": "India Tours",
@@ -185,8 +144,8 @@ export const allPackages: Package[] = [
     "route": "Madurai - Rameshwaram → In Rameswaram → Rameswaram - Madurai *Departure*",
     "description": "With our 3 Days Madurai Rameshwaram Tour Package you can explore the real charm of South India in just 3 days. It is a perfect choice for those who have limited time but still want to see everything - famous temples, local culture and calm beaches in a short trip.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹21,750",
+    "dealPrice": "₹1,650",
     "discount": ""
   },
   {
@@ -212,8 +171,8 @@ export const allPackages: Package[] = [
     "route": "Srisailam - Hyderabad ( → Hyderabad Sightseeing Departure",
     "description": "If you’re not sure how to plan for the 3 Days Srisailam Mallikarjuna Jyotirlinga Darshan , this package helps with everything you need for a smooth journey.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹22,800",
+    "dealPrice": "₹3,450",
     "discount": ""
   },
   {
@@ -227,8 +186,8 @@ export const allPackages: Package[] = [
     "highlights": [
       "Pick your hotel category."
     ],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹22,500",
+    "dealPrice": "₹2,250",
     "discount": ""
   },
   {
@@ -240,21 +199,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Indore to Ujjain → Ujjain to Omkareshwar Day → Omkareshwar temple - Indore",
     "description": "Feel spiritually nurtured by undertaking a spiritual pilgrimage with our Indore- Ujjain - Omkareshwar Tour Package that will help you visit the holiest sites of Lord Shiva,",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "3-nights-4-days-lakshadweep-tour-package",
-    "title": "3 Nights 4 Days Lakshadweep Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/3-nights-4-days-lakshadweep-tour-package.jpg",
-    "duration": "3 Nights / 4 Days",
-    "route": "",
-    "description": "Lakshadweep is a beautiful group of islands in the Arabian Sea and a perfect spot for beach lovers. It is also called India’s smallest Union Territory, with 36 islands.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹21,750",
+    "dealPrice": "₹3,600",
     "discount": ""
   },
   {
@@ -266,8 +212,8 @@ export const allPackages: Package[] = [
     "route": "Pantnagar - Kainchi Dham → Kainchi Dham - Nainital - Dwarahat → Dwarahat to Mahavatar Babaji Cave → Dwarahat - Pantnagar",
     "description": "Have you ever wanted to visit a secret cave filled with peaceful surroundings, natural beauty and amazing stories?",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹22,500",
+    "dealPrice": "₹3,750",
     "discount": ""
   },
   {
@@ -283,8 +229,8 @@ export const allPackages: Package[] = [
       "Assistance with pick-up and drop-off",
       "All day breakfast at the hotel."
     ],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹25,500",
+    "dealPrice": "₹2,250",
     "discount": ""
   },
   {
@@ -298,8 +244,8 @@ export const allPackages: Package[] = [
     "highlights": [
       "Lucknow Sightseeing Tour"
     ],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -331,19 +277,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "adi-kailash-and-om-parvat-yatra-by-helicopter",
-    "title": "Adi Kailash Helicopter Tour Package with Om Parvat",
-    "category": "International",
-    "image": "/images/packages/hi-adi-kailash-and-om-parvat-yatra-by-helicopter.webp",
-    "duration": "3 Nights / 4 Days",
-    "route": "Pithoragarh to Gunji → Gunji - Nabhidhang- Kalapani → Gunji- Jolingkong - Parvati Sarovar → Gunji - Pithoragarh",
-    "description": "Set out on this 3 Nights/4 days spiritual pilgrimage to the religious sites of Adi Kailash and Om Parvat. You'll have the most amazing experience of your life on this adventurous helicopter yatra to Adi Kailash since you'll be able to effortlessly and comfortably see the sacred locations.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "adi-kailash-om-parvat-mt-kailash-yatra-by-helicopter",
     "title": "Adi Kailash Om Parvat Mt Kailash Yatra by Helicopter",
     "category": "International",
@@ -352,8 +285,8 @@ export const allPackages: Package[] = [
     "route": "Pithoragarh to Gunji → Gunji - Adi Kailash - Gunji → Gunji to Pithoragarh",
     "description": "Experience the majestic charm of the Mount Kailash Adi Kailash and Om Parvat tour by Helicopter, where you can see snow covered peaks, unique landscapes, and explore the holy “Om’’ symbol on Om Parvat.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -371,32 +304,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "adi-kailash-yatra",
-    "title": "Adi Kailash And Om Parvat Yatra Package",
-    "category": "International",
-    "image": "/images/packages/hi-adi-kailash-yatra.webp",
-    "duration": "7 Nights / 8 Days",
-    "route": "Haldwani / Kathgodam - Dharchula → Acclimatisation day at Dharchula → Dharchula - Gunji → Gunji - Kalapani - Navidhang - Kuti → Kuti - Jollingkong → Jollingkong - Adi Kailash - Kuti",
-    "description": "The Adi Kailash Om Parvat Yatra Package takes you on a transformative journey to sacred Adi Kailash and Om Parvat. All our packages have been curated by our experts who promise the best spiritual experiences. We're your trusted partner for a smooth pilgrimage and hassle-free tours. When you choose us, you can be assured that we will take care of all the aspects of the tour.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "adventure-sports-in-uttarakhand",
-    "title": "Adventure Activities in Uttarakhand",
-    "category": "North India",
-    "image": "/images/packages/hi-adventure-sports-in-uttarakhand.webp",
-    "duration": "",
-    "route": "",
-    "description": "Uttarakhand consists of a diverse range of topographical features that not only captures the imagination of the dreamers but it also helps in allowing you to have an adrenaline-pumping adventure on the hills. From climbing up the hills to walking through the green forest cover and sleeping under the glimmering stars while camping on the Bugyals are just a few options you can explore here. The region is blessed with a varied landscape that ranges from jagged mountain peaks, icy hills and glaciers",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "adventure-tour-packages",
     "title": "Adventure Tour Packages",
     "category": "Adventure",
@@ -406,8 +313,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Himachal is the land of Gods and a beautiful paradise for touring and for adventure activities in India. It is not that India lacks in attractions. From the sandy stretches of Rajasthan to lush green rainforests of the Northeast and the cold Himalayan ranges to the warm backwaters of Kerala, there is everything one could wish for. Passionate adventure seekers have plenty to explore in India. Adventure tour packages India are specially designed to give one the much sought-after thrill.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -433,8 +340,8 @@ export const allPackages: Package[] = [
     "route": "Trip to Kailashahar → Sightseeing and Departure",
     "description": "Set out on an adventurous 4 day journey to the Tripura capital, Agartala! While on this trip,",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹18,000",
+    "dealPrice": "₹1,650",
     "discount": ""
   },
   {
@@ -446,21 +353,8 @@ export const allPackages: Package[] = [
     "route": "Full Day Agra Sightseeing From Delhi",
     "description": "Be at the top of your itinerary with a fully inclusive sightseeing tour of the highlights of Agra in a day. An apt way to start your day would be a visit to the popular Taj Mahal, and then both the mystical Mehtab Bagh and the historic Agra Fort for the rest of the time.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "agra-sightseeing-tour",
-    "title": "Agra Sightseeing Tour Package",
-    "category": "North India",
-    "image": "/images/packages/hi-agra-sightseeing-tour.webp",
-    "duration": "1 Day",
-    "route": "Full Day Agra Sightseeing Tour",
-    "description": "Be at the top of your itinerary with a fully inclusive sightseeing tour of the highlights of Agra in a day.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -485,45 +379,6 @@ export const allPackages: Package[] = [
     "duration": "",
     "route": "",
     "description": "Established on the banks of River Yamuna in Uttar Pradesh, Agra is believed to be one of the most happening holiday destinations in India. Seeking to plan a dream vacation? Pack your bags and move towards Agra, the land of Taj Mahal. The city is believed to be the seat of the great Mughal rulers who ruled over the city for ages. It’s not only Agra that is synonymous with Taj even though India is also synonymous with this wonderful architecture.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "ahmedabad-diu-weekend-tour",
-    "title": "Ahmedabad Diu Weekend Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-ahmedabad-diu-weekend-tour.webp",
-    "duration": "2 Nights / 3 Days",
-    "route": "Ahmedabad – Diu → Diu → Diu – Ahmedabad",
-    "description": "Being one of the most happening and rapidly emerging tourism hub in Gujarat, Ahmedabad and Diu top the list of tourist attractions in India which allures millions of tourists flocking from different nooks and corners of the world. After looking at this popularity we have tailored Ahmedabad Diu Weekend Tour Package. On this 2 nights and 3 days long tour you get the opportunity to visit all the wonders of these two beautiful destinations. Browse this well-tailored tour package and attain some real",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "ahmedabad-dwarka-weekend-tour",
-    "title": "Ahmedabad Dwarka Weekend Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-ahmedabad-dwarka-weekend-tour.webp",
-    "duration": "2 Nights / 3 Days",
-    "route": "Ahmedabad – Jamnagar – Dwarka → Dwarka – Bet Dwarka – Dwarka → Dwarka – Ahmedabad",
-    "description": "Dwarka, land of Lord Krishna is one of the most acclaimed spiritual cities in India and is home to Dwarkadhish Temple (One of the Char Dham Pilgrimages in India). Dwarkadhish Temple also called Jagat Mandir is one of the prime destinations of Krishna worshippers and attracts millions of tourists from all across the globe. Our 2 Days and 3 Nights long Ahmedabad Dwarka Weekend Tour Package takes you through various temples and the picturesque sightseeing destinations adorning the city. We also off",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "ahmedabad-gir-weekend-tour",
-    "title": "Ahmedabad Gir National Park Weekend Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-ahmedabad-gir-weekend-tour.webp",
-    "duration": "2 Nights / 3 Days",
-    "route": "Ahmedabad – Sasan Gir → Sasan Gir → Sasan Gir – Ahmedabad",
-    "description": "Gir National Park is reckoned as one of the most happening wildlife sanctuaries in India where one can spot a huge number of wild lions. This huge national park was established as a forest reserve to conserve the endangered Asiatic Lions. It was established on 18th of September in the year 1965 and is now serving as a habitat to exotic species of wild animals and birds which you can witness properly by enjoying the Jeep Safari Ride. Browse our 2 Nights and 3 Days long Ahmedabad Gir Weekend Tour",
     "highlights": [],
     "mrp": "",
     "dealPrice": "",
@@ -579,8 +434,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Aizawl, the capital city of Mizoram in northeastern India, is a captivating destination offering a blend of cultural richness, natural beauty, and vibrant traditions. Tour packages to Aizawl encapsulate a diverse array of experiences, catering to both adventure seekers and those craving a serene getaway.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -592,8 +447,8 @@ export const allPackages: Package[] = [
     "route": "Aurangabad → Aurangabad Sightseeing Tour → Aurangabad Departure",
     "description": "Want to see India’s glorious past? Then head straight to Ajanta & Ellora Caves, which will give you a taste of history and art in one bite!",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹18,750",
+    "dealPrice": "₹2,400",
     "discount": ""
   },
   {
@@ -621,8 +476,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Ajmer, a city in the heart of Rajasthan, India, holds profound cultural and historical significance, making it a compelling destination for travellers seeking a blend of spirituality, heritage, and natural beauty. Ajmer tour packages offer an enchanting exploration of this city’s multifaceted charm, catering to various interests and preferences.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -648,8 +503,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Alappuzha, fondly known as the “Venice of the East,” offers a captivating experience through its tour packages that showcase the rich tapestry of Kerala’s backwaters, lush greenery, cultural heritage, and serene landscapes. These tour packages are crafted to immerse travellers in the essence of this picturesque destination.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -747,21 +602,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "amarnath-route-map",
-    "title": "How to Reach Amarnath with Route Map",
-    "category": "Pilgrimage",
-    "image": "/images/packages/amarnath-route-map.jpg",
-    "duration": "",
-    "route": "",
-    "description": "Reaching the Amarnath Dham is not about distance alone. The terrain, altitude, weather, and your own physical condition matter far more than most people expect. On paper, routes look simple. On the mountain, everything feels different.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -772,32 +614,6 @@ export const allPackages: Package[] = [
     "duration": "2 Nights / 3 Days",
     "route": "Arrival Srinagar - Pahalgam → Pahalgam - Panjtarni - Amarnath Holy Cave → Pahalgam - Srinagar",
     "description": "Amarnath Yatra, an annual pilgrimage organized by the state government of Jammu and Kashmir is counted amongst some of the most challenging pilgrimages in India.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "amarnath-weather",
-    "title": "Amarnath Weather – Best Time to Visit Amarnath",
-    "category": "Pilgrimage",
-    "image": "/images/packages/amarnath-weather.webp",
-    "duration": "",
-    "route": "",
-    "description": "Talk to any pilgrim just back from the holy cave and the first thing they mention is the Amarnath weather . Not the darshan. Not the ice lingam. The weather. Because at 3,888 m (12,800 ft) in the Kashmir Himalayas, conditions change several times in a single day.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "amarnath-yatra-faqs",
-    "title": "Amarnath Yatra Frequently Asked Questions (FAQs)",
-    "category": "Pilgrimage",
-    "image": "/images/packages/hi-amarnath-yatra-faqs.webp",
-    "duration": "",
-    "route": "",
-    "description": "It is quite obvious to have some queries related to your next planned journey. This is the time to buckle up Yourself for the pious Amarnath Yatra 2024. We have compiled up some of the most common and valid questions running in the mind of a pilgrim.",
     "highlights": [],
     "mrp": "",
     "dealPrice": "",
@@ -817,19 +633,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "amarnath-yatra-registration",
-    "title": "How to Register for Amarnath Yatra 2026",
-    "category": "Pilgrimage",
-    "image": "/images/packages/amarnath-yatra-registration.webp",
-    "duration": "",
-    "route": "",
-    "description": "The Amarnath Yatra is a sacred journey to the holy Amarnath Cave . It is located in Jammu & Kashmir. Being located at high altitudes, this journey requires proper registration, though. In this article, we’ll talk about the complete Amarnath Yatra Registration 2026 process , fees , eligibility criteria , and documents required. We’ll also touch upon helicopter booking for this special pilgrimage. Read on to know more!. [NOTE: This is a registration guide page, not a tour package. Itinerary does not apply. See related Amarnath Yatra packages.]",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "amarnath-yatra-with-kashmir-tour",
     "title": "Amarnath Yatra by Helicopter with Kashmir Tour",
     "category": "North India",
@@ -838,8 +641,8 @@ export const allPackages: Package[] = [
     "route": "Arrival Srinagar → Srinagar Sonamarg - Baltal → Baltal - Holy Cave - Baltal → Sonamarg - Srinagar → Srinagar - Gulmarg - Srinagar → Srinagar - Katra",
     "description": "One of the most astonishing pilgrimages of Hindus, Amarnath Yatra is an annual pilgrimage covered by thousands of devotees",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹82,500",
+    "dealPrice": "₹11,250",
     "discount": ""
   },
   {
@@ -864,8 +667,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Amarnath ranks among one of the toughest pilgrimages in the world but every pilgrim that successfully makes it to the cave experiences a newfound sense of achievement and bliss. With our Amarnath Tour Packages, you will be able to experience a smooth pilgrimage journey to get the divine Darshan of Baba Barfani. This holy cave shrine has the ice stalagmite depiction of Shivling. Each year, the holy Yatra opens for a limited duration of just 42 days where pilgrims make their way through the challe",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹68,250",
+    "dealPrice": "₹30,750",
     "discount": ""
   },
   {
@@ -923,19 +726,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "amritsar-wagah-border-tour",
-    "title": "Amritsar Wagah Border Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-amritsar-wagah-border-tour.webp",
-    "duration": "2 Nights / 3 Days",
-    "route": "Amritsar Arrival → Sightseeing → Amritsar – Delhi",
-    "description": "The Golden Temple which is more popularly known as the ‘Harmandir Sahib’ or ‘Darbar Sahib’ is a prominent landmark of Amritsar. It is one the most visited places in India. This temple was constructed in the ‘16th century’ by ‘Guru Arjan Dev’ who was the Guru of the Sikhs.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "andaman-a-short-visit",
     "title": "Andaman – A Short Eventful Visit to Remember",
     "category": "South India",
@@ -985,8 +775,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "One of the most exciting union territories of India, Andaman and Nicobar Islands is a mesmerizing archipelago established in the Bay of Bengal. My Quick Trippers offers you the widest range of Andaman holiday packages at very affordable rates. We have designed Andaman and Nicobar Tour Packages in such a way that it becomes suitable for travelers of every taste. Thousands of tourists from different corners of the world visit Andaman and Nicobar to experience mindfulness in the lap of nature. Whet",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹82,380",
+    "dealPrice": "₹30,750",
     "discount": ""
   },
   {
@@ -1084,32 +874,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "assam-meghalaya-arunachal-pradesh-packages",
-    "title": "Assam Meghalaya Arunachal Pradesh Tour",
-    "category": "North East India",
-    "image": "/images/packages/hi-assam-meghalaya-arunachal-pradesh-packages.webp",
-    "duration": "11 Days / 10 Nights",
-    "route": "Guwahati",
-    "description": "Enjoy a magical tour of Northeast India, focusing on Assam, Meghalaya, and Arunachal Pradesh! These states are popular for their natural beauty and charm.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "assam-meghalaya-tour-packages",
-    "title": "Assam Meghalaya Tour Packages at Best Prices",
-    "category": "North East India",
-    "image": "/images/packages/hi-assam-meghalaya-tour-packages.webp",
-    "duration": "5 Nights / 6 Days",
-    "route": "",
-    "description": "Experience the beauty of Northeast India with our 5 nights/6 days tour package to Assam and Meghalaya.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "assam-tour-packages",
     "title": "Assam Tour Packages",
     "category": "North East India",
@@ -1145,8 +909,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Delhi - Srinagar → Auli Skiing Adventure → Auli/ Joshimath Drive. Shivpuri Camping → Shiv Puri -Rafting - Delhi",
     "description": "Enjoy a 5 Day spiritual and adventure trip to the captivating mountains of Uttarakhand- Dev Bhoomi.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹24,000",
+    "dealPrice": "₹1,650",
     "discount": ""
   },
   {
@@ -1172,8 +936,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -1198,36 +962,6 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "A city as old as time itself. A city that has stayed in place and watched as the world has turned and the tides have changed. A city that has stood the test of time for thousands of years. In the words of Mark Twain, “Older than history, older than tradition, older even than legend, And looks twice as old as all of them put together.” Varanasi, the city that is more than just the spiritual capital of India. The city which can be aptly described as a melting pot where both life and death come tog",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "ayodhya-ram-mandir-package-from-delhi",
-    "title": "Ayodhya Ram Mandir Tour from Delhi",
-    "category": "North India",
-    "image": "/images/packages/hi-ayodhya-ram-mandir-package-from-delhi.webp",
-    "duration": "2 Nights / 3 Days",
-    "route": "Delhi – Ayodhya → Ram Mandir Visit and Ayodhya Sightseeing → Ayodhya – Delhi",
-    "description": "Ayodhya, one of the most ancient and holy cities of Hinduism is believed to be the sacred land of Lord Rama, the 7th incarnation of Lord Vishnu who is considered as one of the supreme gods of Hindus and this is why Ayodhya is known for its religious vibes and once you step into Ayodhya, you get to feel an impressive aura. Popularly called as Ram Janmabhoomi, Ayodhya is home to a bevy of places that allure tourists from all across the globe and Ram Mandir is the key attraction of this beautiful c",
-    "highlights": [
-      "Lucknow Sightseeing Tour"
-    ],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "ayodhya-ram-mandir-tour",
-    "title": "Ayodhya Ram Mandir Tour from Delhi",
-    "category": "Uttar Pradesh",
-    "image": "/images/packages/hi-ayodhya-ram-mandir-tour.webp",
-    "duration": "2 Nights / 3 Days",
-    "route": "Delhi – Ayodhya → Ram Mandir Visit and Ayodhya Sightseeing → Ayodhya – Delhi",
-    "description": "Ayodhya, one of the most ancient and holy cities of Hinduism is believed to be the sacred land of Lord Rama, the 7th incarnation of Lord Vishnu who is considered as one of the supreme gods of Hindus and this is why Ayodhya is known for its religious vibes and once you step into Ayodhya, you get to feel an impressive aura. Popularly called as Ram Janmabhoomi, Ayodhya is home to a bevy of places that allure tourists from all across the globe and Ram Mandir is the key attraction of this beautiful c",
-    "highlights": [
-      "Lucknow Sightseeing Tour"
-    ],
     "mrp": "",
     "dealPrice": "",
     "discount": ""
@@ -1260,58 +994,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "badri-kedar-yatra-by-helicopter",
-    "title": "Helicopter Package for Badri Kedar Yatra",
-    "category": "Helicopter",
-    "image": "/images/packages/badri-kedar-yatra-by-helicopter.jpg",
-    "duration": "2 Nights / 3 Days",
-    "route": "Arrival in Dehradun → Dehradun - Kedarnath - Badrinath → Badrinath - Dehradun Departure",
-    "description": "The pilgrimage to Badri Kedar is one of the holiest trips any devotee could take.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "badrinath-faqs",
-    "title": "Badrinath FAQs – Travel Related Queries and Solutions",
-    "category": "Pilgrimage",
-    "image": "/images/packages/hi-badrinath-faqs.webp",
-    "duration": "",
-    "route": "",
-    "description": "Thinking about a trip to Badrinath Temple ? Before you begin the journey, it’s natural to have a few questions in mind—about travel routes, timings, weather, and basic arrangements.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "badrinath-history",
-    "title": "History of Badrinath – Lord Vishnu’s Abode on Earth",
-    "category": "Pilgrimage",
-    "image": "/images/packages/hi-badrinath-history.webp",
-    "duration": "",
-    "route": "",
-    "description": "Badrinath Dham historical significance can be dated back to the 7th or 8th century during the time of Adi Shankaracharya who is said to be the creator and the person behind the establishment of Badrinath Dham . After re-establishing the temple shrine he also set up his own people there to make the temple in a working condition where the priests of the temple are Nambudiris. He did so in an attempt to revive the apparently dying Hindu beliefs and traditions.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "badrinath-kedarnath-tour",
-    "title": "Badrinath Kedarnath Do Dham Yatra from Delhi",
-    "category": "Pilgrimage",
-    "image": "/images/packages/hi-badrinath-kedarnath-tour.webp",
-    "duration": "7 Nights / 8 Days",
-    "route": "Delhi – Haridwar → Haridwar – Guptkashi → Guptkashi – Sonprayag – Kedarnath → Kedarnath – Sonprayag – Rudraprayag → Rudraprayag – Badrinath Dham → Badrinath – Rudraprayag",
-    "description": "Welcome to the abodes of the Gods on your Badrinath Kedarnath Do Dham Yatra! Perched high in the serene Himalayas, the sacred temples are dedicated to the almighty Gods.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "badrinath-kedarnath-yatra-from-delhi",
     "title": "Badrinath Kedarnath Do Dham Yatra from Delhi",
     "category": "North India",
@@ -1320,8 +1002,8 @@ export const allPackages: Package[] = [
     "route": "Delhi – Haridwar → Haridwar – Guptkashi → Guptkashi – Sonprayag – Kedarnath → Kedarnath – Sonprayag – Rudraprayag → Rudraprayag – Badrinath Dham → Badrinath – Rudraprayag",
     "description": "Welcome to the abodes of the Gods on your Badrinath Kedarnath Do Dham Yatra! Perched high in the serene Himalayas, the sacred temples are dedicated to the almighty Gods.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -1335,60 +1017,8 @@ export const allPackages: Package[] = [
     "highlights": [
       "Planners keep extra free hours just in case rain stops cars."
     ],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "badrinath-opening-closing-dates",
-    "title": "Badrinath Opening and Closing Dates 2026",
-    "category": "Pilgrimage",
-    "image": "/images/packages/hi-badrinath-opening-closing-dates.webp",
-    "duration": "",
-    "route": "",
-    "description": "One of the four religious Char Dham sites in Uttarakhand is the Badrinath Temple , dedicated to Lord Vishnu. It is located in the Chamoli district of Uttarakhand. It is one of the 108 Divyadesams (holy sites) of Vishnu followers. The snow and the cold winters of the region ensure that the temple is not available throughout the year. It remains open for six months and closes in winter. Nestled between Nar and Narayan ranges, the beauty of Badrinath Dham is a sight of pure bliss.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "badrinath-puja-rates",
-    "title": "Badrinath Puja Rates – Online Pooja Booking",
-    "category": "Pilgrimage",
-    "image": "/images/packages/hi-badrinath-puja-rates.webp",
-    "duration": "",
-    "route": "",
-    "description": "Badrinath visit does not mean just going to the temple of Badri Vishal and taking blessings from the lord. Being a highly pious place of worship with unmatched, pure spiritual energy encapsulating the place, many devotees make it a point to perform various puja services during their visit to Badrinath Dham for Char Dham Yatra .",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "badrinath-temple",
-    "title": "Badrinath Temple – The Holiest Shrine of Lord Vishnu",
-    "category": "Pilgrimage",
-    "image": "/images/packages/hi-badrinath-temple.webp",
-    "duration": "",
-    "route": "",
-    "description": "Referred to as Lord Vishnu’s abode on Earth, Badrinath Dham is a crucial part of not only the Char Dham Yatra of Uttarakhand but also that of the all-India Chardham Yatra . Along with this, Badrinath or Badri Vishal is also one of the most significant Divya Desams out of the other 108 that are located all over India. The temple is incredibly vibrant looking and attracts the largest number of devotees from all over the world. Surrounded by stunning sites of the snow-clad Himalayan mountain peaks",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "badrinath-tour-from-delhi",
-    "title": "Badrinath Yatra Package from Delhi 2026",
-    "category": "North India",
-    "image": "/images/packages/hi-badrinath-tour-from-delhi.webp",
-    "duration": "4 Nights / 5 Days",
-    "route": "Delhi → Haridwar → Haridwar → Joshimath via Panch Prayag → Joshimath → Badrinath → Badrinath → Rudraprayag → Rudraprayag → Rishikesh → Delhi",
-    "description": "Badrinath is one of the four sacred Char Dhams and among the 108 Divya Desams dedicated to Lord Vishnu. Situated at 3,300 metres on the banks of the Alaknanda, flanked by the Nar and Narayan mountain ranges with the Neelkanth peak rising behind it, Badrinath is not just a temple - it is the northernmost point of India's most important pilgrimage circuit. This 5-day Badrinath Yatra package from Delhi covers the complete road route: Haridwar, all five Panch Prayag confluences, Joshimath, Badrinath",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹28,875",
+    "dealPrice": "₹23,100",
     "discount": ""
   },
   {
@@ -1403,45 +1033,6 @@ export const allPackages: Package[] = [
     "highlights": [],
     "mrp": "₹3,125",
     "dealPrice": "₹2,500",
-    "discount": ""
-  },
-  {
-    "slug": "badrinath-weather",
-    "title": "Badrinath Weather Guide",
-    "category": "Pilgrimage",
-    "image": "/images/packages/hi-badrinath-weather.webp",
-    "duration": "",
-    "route": "",
-    "description": "There is one detail most Badrinath pilgrims notice before they do anything else: the Badrinath weather changes its mind on the highway. The Rishikesh–Haridwar–Devprayag–Joshimath corridor is where most yatras start, get delayed, or face weather-related disruptions.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "badrinath-yatra-by-helicopter",
-    "title": "Badrinath Yatra Package by Helicopter",
-    "category": "Pilgrimage",
-    "image": "/images/packages/hi-badrinath-yatra-by-helicopter.webp",
-    "duration": "1 Day",
-    "route": "Dehradun  – Badrinath – Dehradun",
-    "description": "Badrinath is one of the most auspicious destinations. However, being situated in rather challenging Himalayan terrain, this holy abode is not very easy to reach via the road route. Therefore, we bring to you our all-inclusive Badrinath Yatra by Helicopter Tour Package.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "badrinath-yatra-from-haridwar",
-    "title": "Badrinath Yatra Package from Haridwar",
-    "category": "Pilgrimage",
-    "image": "/images/packages/hi-badrinath-yatra-from-haridwar.webp",
-    "duration": "3 Nights / 4 Days",
-    "route": "Haridwar - Pipalkoti → Pipalkoti - Badrinath → Badrinath - Rudraprayag → Rudraprayag - Haridwar",
-    "description": "Badrinath is a sacred site dedicated to Lord Vishnu. It's not only a part of the Chhota Dham circuit but also of the Bada Dham circuit. If you wish to bask in the spirituality of the place and also enjoy the stunning natural beauty all around, embark on this 4 Days / 3 Nights Tour of Sri Badrinath Ji . With our Badrinath Yatra Package from Haridwar, you get meals, accommodation, and full transport support. So why wait, book now and set out on a pilgrimage of a lifetime!",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
     "discount": ""
   },
   {
@@ -1479,8 +1070,8 @@ export const allPackages: Package[] = [
     "route": "Deoghar → Baba Baidyanath Temple and Sightseeing",
     "description": "Located in Deoghar, it is not only a revered pilgrimage of Lord Shiva, but is also an important Shaktipeeth, making it a powerful pilgrimage site. Every year, the Dham draws millions of devotees, especially in the peak season of the Shravan months, when hordes of Kanwar pilgrims arrive.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹9,150",
+    "dealPrice": "₹750",
     "discount": ""
   },
   {
@@ -1499,19 +1090,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "bali-family-tour",
-    "title": "Bali Family Tour Package",
-    "category": "International",
-    "image": "/images/packages/hi-bali-family-tour.webp",
-    "duration": "4 Nights / 5 Days",
-    "route": "Arrival in Bali → Bali – Ubud Art and Handicraft → Bali Safari and Marine Park → Water Sports at Tanjung Benoa + Uluwatu Sunset Tour → Bali",
-    "description": "Bali is a perfect destination for a family holiday. If you are planning to spend a playful family time exploring the beautiful beaches, experiencing stunning views, and doing adventure activities, then this Bali Family Tour Package can be the perfect pick for your family.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "bali-honeymoon-package",
     "title": "Bali Honeymoon Tour Package",
     "category": "International",
@@ -1522,8 +1100,8 @@ export const allPackages: Package[] = [
     "highlights": [
       "Bali Sightseeing Tour"
     ],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹1,620",
+    "dealPrice": "₹923",
     "discount": ""
   },
   {
@@ -1542,19 +1120,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "bali-sightseeing-tour",
-    "title": "Bali Sightseeing Tour Package",
-    "category": "International",
-    "image": "/images/packages/hi-bali-sightseeing-tour.webp",
-    "duration": "2 Nights / 3 Days",
-    "route": "Arrival in Bali and Sightseeing Places → Kintamani Village Tour & Tanah Lot Temple → Bali",
-    "description": "Planning a Quick Trip to Bali? But confused about “what places to see,” “what are the key attractions to cover,” that too in 3-4 days? Well, relax! At My Quick Trippers, our Bali Sightseeing Tour Package give you the most fulfilling experiences to explore the island.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "bali-singapore-package",
     "title": "Singapore Bali Tour Package",
     "category": "International",
@@ -1564,21 +1129,6 @@ export const allPackages: Package[] = [
     "description": "For 7 days and 6 nights forget the fast paced life through Singapore with Bali tour package which will not only be rejuvenating but will also be an entirely new experience. You will be taken through the rich wilderness and exotic locations of Bali and some of the most breathtaking views in Singapore. Experience life through a new perspective and welcome yourself to the places where the water is as blue as the sky and your dreams run free.",
     "highlights": [
       "Wearing revealing clothing to temples is not permitted."
-    ],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "bali-thailand-tour",
-    "title": "Thailand Bali Tour Package",
-    "category": "International",
-    "image": "/images/packages/hi-bali-thailand-tour.webp",
-    "duration": "8 Nights / 9 Days",
-    "route": "Arrival in Bali → Bali → Optional → Arrival in Bangkok and then transfer to Pattaya → Coral Island → Visiting the famous Nong Nooch Tropical Garden",
-    "description": "If you are also in love with nature, island and want to indulge in some thrilling water activities then browse our Bali Thailand Tour Package and make your dream come true. Our well-crafted package offers you a wide opportunity to get enthralled and to live your life amidst nature and also to explore the huge shopping malls and also the local markets where you can enjoy lip-smacking Thai Cuisine along with shopping out handicrafts and other items.",
-    "highlights": [
-      "Bali Sightseeing Tour"
     ],
     "mrp": "",
     "dealPrice": "",
@@ -1627,66 +1177,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "bangkok-ayutthaya-tour",
-    "title": "Bangkok Ayutthaya Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-bangkok-ayutthaya-tour.webp",
-    "duration": "3 Nights / 4 Days",
-    "route": "Arrival in Bangkok → Bangkok Sightseeing → Bangkok – Ayutthaya – Bangkok → Bangkok",
-    "description": "Those who are looking for a short yet exciting international trip can check out our beautifully crafted Ayutthaya tour package from Bangkok. On this 3 nights and 4 days long trip, you are going to enjoy every moment as the cities you are covering are studded with a plethora of magnificent attractions and are popular for other activities too like if you are fond of capturing beautiful clicks of nightlife then Bangkok is not going to let you down as this capital city of Thailand is reckoned for it",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "bangkok-koh-samui-tour",
-    "title": "Koh Samui with Bangkok Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-bangkok-koh-samui-tour.webp",
-    "duration": "4 Nights / 5 Days",
-    "route": "Arrival in Bangkok – Koh Samui → Koh Samui → Ko Samui – Bangkok → Bangkok → Bangkok Departure",
-    "description": "My Quick Trippers brings you the option to explore the vibrantly tranquil second largest Island of Ko Samui along with the shopping destination of the world through the Bangkok Koh Samui Tour Package. The 5 days and 4 nights of tour package ensure that you have a memorable as well as a cherishing time. Come in touch with the quirky and whimsical lifestyle of the traditional Thai population with us and have a memorable time. There are innumerable tourist attractions in Thailand which makes it an",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "bangkok-pattaya-tour",
-    "title": "Bangkok Pattaya Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-bangkok-pattaya-tour.webp",
-    "duration": "5 Nights / 6 Days",
-    "route": "Bangkok Airport → Pattaya – Koh Larn Coral Island → Pattaya – Nong Nooch Village → Bangkok – Temple Tour in the city → Bangkok – Exploring the Safari World → Bangkok",
-    "description": "Browse our meticulously designed 5 Nights and 6 Days long Bangkok Pattaya Tour Package and get ready to feel lost in the pictorial landscapes of Thailand. The package offers you the opportunity to explore all the tourist destinations located in and around Pattaya and Bangkok including Nong Nooch Village in Pattaya, Koh Larn Coral Island, and many more. Spending some quality time with your loved ones amidst the serene and tranquil ambiance of the surroundings, exploring the white glimmering beach",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "bangkok-sightseeing-tour",
-    "title": "Bangkok Sightseeing Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-bangkok-sightseeing-tour.webp",
-    "duration": "3 Nights / 4 Days",
-    "route": "Bangkok → Sightseeing Tour → Group Tour → Airport",
-    "description": "Browse our best designed 3 nights and 4 days long Bangkok Sightseeing Tour Package and get the chance to explore the major landmarks of the country and to learn about the incomparable culture of Thailand. Explore the majestic Buddhist Temple of Wat-Pho, Colourful and scented flower markets, and many more in the list. Explore the Wat Arun Temple at Dawn by enjoying the ferry ride and also get to know about the historical significance of the place. Show your shopping skills at the local wet market",
-    "highlights": [
-      "Koh Phangan Sightseeing Tour",
-      "Phuket Sightseeing Tour",
-      "Chiang Rai Sightseeing Tour",
-      "Krabi Sightseeing Tour",
-      "Pattaya Sightseeing Tour"
-    ],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -1726,8 +1218,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -1739,21 +1231,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "India is blessed and endowed with numerous magnificent landscape features. From the Hills of the north to the beaches of the South, the subcontinent offers travelers numerous choices for sightseeing. Browse and select from our massive range of beach town tour packages in India where you will be made to travel to some of the most splendidly stunning beach towns and relax under the sun by the turquoise waves. From the beaches of Tamil Nadu and Kerala to a Goa beach tour and the Beaches of Maharash",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "beaches-in-goa",
-    "title": "Beaches in Goa – Top Most Famous Beaches in Goa",
-    "category": "West India",
-    "image": "/images/packages/goa.jpg",
-    "duration": "",
-    "route": "",
-    "description": "Goa may be the smallest state in the Indian subcontinent but it is blessed with a very bountiful coastline which is home to some immaculate and scenic beaches in India. The entire state is divided among the lively and happening North Goa and the peaceful, serene South Goa. But one thing is common between both sides, no dearth of awesome, fun, relaxing, and sandy beaches.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
     "discount": ""
   },
   {
@@ -1766,8 +1245,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -1798,32 +1277,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "best-of-chiang-mai-tour",
-    "title": "Best of Chiang Mai Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-best-of-chiang-mai-tour.webp",
-    "duration": "4 Nights / 5 Days",
-    "route": "Arrival in Chiang Mai → Sightseeing Tour in Chiang Mai and the Nearby Village → Chiang Mae – Chiang Saen – Wiang Pa Pao → Chiang Mai – Elephant at Work – Orchard Farm → Chiang Mai",
-    "description": "A beautiful city in Thailand popular for its rich cultural and religious significances, Chiang Mai is adorned with various Buddhist temples built around the 14th century including Wat Phra Singh and Wat Chedi Luang which was constructed in the 15h century. But this is not the end of the beauty of this city and the city boasts various other attractions like the majestic mountains and the lush green valleys all around the city. Browse our beautifully tailored Best of Chiang Mai Tour Package and go",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "best-of-europe-tour",
-    "title": "Best of Europe Tour",
-    "category": "India Tours",
-    "image": "/images/packages/best-of-europe-tour.jpg",
-    "duration": "11 Nights / 12 Days",
-    "route": "Arrival in Paris → Sightseeing Tour of Paris → Paris – Amsterdam → Amsterdam – Cologne – Germany → Germany – Switzerland → Excursion in Switzerland",
-    "description": "A trip to Europe will take you through some of the most incredible places in the world which consists of world-famous historical structures, amazing views and memorable experiences. Europe is famous for its unique and breath-taking vistas that allows you to have a new perspective while travelling. This 12 days and 11 nights of Europe holiday vacation package takes you across Paris and Amsterdam to Austria, Venice, Rome, Milan and many more. Go on a European adventure of a lifetime with your fami",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "best-of-gujarat-tour-package",
     "title": "Best of Gujarat Tour Package",
     "category": "West India",
@@ -1832,8 +1285,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Gujarat, the westernmost state of India is worldwide for its white sandy deserts, holy destinations, historical and cultural places, and glimmering beaches. Browsing our Best of Gujarat Tour Package offers you an opportunity to explore various other tourist destinations dotted in the state. As you are on a family tour and the taste of each family member is different so we have compiled all such destinations that could match with the taste of each member of your group.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹38,438",
+    "dealPrice": "₹30,750",
     "discount": ""
   },
   {
@@ -1845,47 +1298,8 @@ export const allPackages: Package[] = [
     "route": "Cochin Arrival - Guruvayur",
     "description": "This well-curated Kerala tour package mainly covers Munnar, Guruvayur, Alleppey and Thekkady in 7days and 6 nights.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "best-of-maldives-tour",
-    "title": "Best of Maldives Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/maldives.jpg",
-    "duration": "4 Nights / 5 Days",
-    "route": "Arrival in the Maldives → Maldives → the Maldives",
-    "description": "Looking for an everlasting memorable trip in Asia then what else could be better than covering the destinations of Maldives. The country which is studded with glimmering beaches, the gorgeous Indian Ocean and also the peaceful aura spread all around the country. Check out our Best of Maldives Tour Package and plan your next holiday in the Maldives and collect the beautiful pearls from the seas. Try some thrilling water activities and visit the gorgeous nearby attractions and live your life to th",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "best-of-mizoram-tour",
-    "title": "Best of Mizoram Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/best-of-mizoram-tour.jpg",
-    "duration": "5 Nights / 6 Days",
-    "route": "Arrival in Guwahati → Guwahati – Aizawl → Aizawl – Hmuifang Mountains – Aizawl → Aizawl – Mc Donald Hill → Aizawl – Kolkata/Delhi",
-    "description": "Mizoram, a beautiful hill station is studded with innumerable tourist attractions which one can explore during a week-long journey. Mizoram is considered to be the remotest Indian state and the journey to this state commences from Guwahati. Our 5 Nights / 6 Days long itinerary has been designed in such a way that it covers all the rolling hills and the lush Green Valleys bestowing Aizawl and other destination that come under the package. From Aizawl, you will proceed towards the Mc Donald hill w",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "best-of-nepal-tour",
-    "title": "Best of Nepal Tour Package",
-    "category": "International",
-    "image": "/images/packages/best-of-nepal-tour.jpg",
-    "duration": "5 Nights / 6 Days",
-    "route": "Kathmandu → Sightseeing at Patan → Chitwan → Pokhara Visit → Exploring Nagarkot → End of the Journey",
-    "description": "Want to get rejuvenated and to escape away from the hectic life of your city? If yes, then plan a tour to Nepal with “Best of Nepal” tour package and buckle up yourself for a hassle free holiday. Explore the wonders of Kathmandu and at Chitwan enjoy some enrapturing elephant and safari rides along with the pictorial landscapes at Nagarkot and Pokhara. Be assured to get some really admiring adventurous activities on this short period of journey.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹37,500",
+    "dealPrice": "₹3,150",
     "discount": ""
   },
   {
@@ -1912,34 +1326,8 @@ export const allPackages: Package[] = [
     "highlights": [
       "Monument entrance fees, camera charges etc."
     ],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "best-of-switzerland-tour",
-    "title": "Best of Switzerland Tour",
-    "category": "India Tours",
-    "image": "/images/packages/best-of-switzerland-tour.jpg",
-    "duration": "6 Nights / 7 Days",
-    "route": "Zurich – Interlaken → Sightseeing of Interlaken → Interlaken – Lucerne → Sightseeing of Lucerne → Lucerne – Zurich → Sightseeing of Zurich",
-    "description": "Explore the magical charm of Switzerland by booking the best of Switzerland tour package. Explore the beauty of this heaven on earth and create a lifetime worth of memories with your family and loved ones. From Zurich to Lucerne you will be witnessing some of the most spellbinding sights and views which will be etched into your memories forever. For 7 days and 6 nights you will be completely immersed in the scenic and breathtaking vistas. Book the package now for a complete holiday experience.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "best-of-vietnam-tour",
-    "title": "Best of Vietnam Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/best-of-vietnam-tour.jpg",
-    "duration": "8 Nights / 9 Days",
-    "route": "Arrival in Hanoi → Hanoi City Tour → Hanoi – Halong Bay → Halong – Hanoi – Danang – Hoi An → Tra Que Village – Hoi An Tour → Hoi An – Danang – Ho Chi Minh City",
-    "description": "Discover the incredible charm, authentic food, rich culture, and the irresistible tourist destinations adorning this beautiful country. Each corner of the country is teeming with several wonders and a trip to Vietnam cherishes your mood and soul. No matter which region of the country you are covering, your senses are always going to be overloaded with beautiful moments. There are several wonders established in the country amongst which many of them are them are enlisted as UNESCO World Heritage",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -1951,21 +1339,8 @@ export const allPackages: Package[] = [
     "route": "Haldwani / Kathgodam → Dharchula → Gunji → Kalapani → Navidhang → Kuti → Jollingkong → Adi Kailash",
     "description": "Haldwani / Kathgodam → Dharchula → Gunji → Kalapani → Navidhang → Kuti → Jollingkong → Adi Kailash",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "best-vietnamese-food",
-    "title": "Foods in Vietnam That You Must Try",
-    "category": "India Tours",
-    "image": "/images/packages/best-vietnamese-food.webp",
-    "duration": "",
-    "route": "",
-    "description": "From humble street food to intricate imperial buffets, Vietnam offers some of the best culinary experiences. Vietnamese food is packed with fresh vegetables, diverse spices, and wonderful flavors. Many factors, such as immigration, trade, and climate, have influenced Vietnamese cuisine. One of the best examples of a Vietnamese dish that exudes the perfect mix of native cuisine with historical and cultural influences is the bánh mì or bánh mỳ. Another popular dish, Pho, is considered a staple in",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -2051,8 +1426,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Bhubaneswar → Bhubaneswar - Konark - Puri → Puri to Bhubaneswar",
     "description": "The Bhubaneswar Konark Puri Tour Package is planned to give you everything a traveler needs in one package. Your trip starts in Bhubaneswar, a city famous for its temples but there is much more to explore.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -2064,34 +1439,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Bhubaneswar → Bhubaneswar- Dhauli - Pipli - Konark - Puri → Puri - Raghurajpur - Chilika  - Gopalpur → In Gopalpur → Gopalpur - Bhubaneswar Departure",
     "description": "The Bhubaneswar Konark Puri Gopalpur Package takes you to Odisha’s best beaches, famous temples, monuments, and also lets you enjoy the local culture. Many people choose this tour, especially families, friends, and students. Everyone enjoys it.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "bhubaneswar-puri-konark-tour-2-days",
-    "title": "2 Days Bhubaneswar Puri Konark Tour",
-    "category": "India Tours",
-    "image": "/images/packages/hi-bhubaneswar-puri-konark-tour-2-days.webp",
-    "duration": "1 Nights / 2 Days",
-    "route": "Arrival in Bhubaneswar - Konark – Puri → Puri – Pipli – Dhauli – Bhubaneswar",
-    "description": "The Bhubaneswar Puri Konark tour package takes you to three famous places, all located in Odisha.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "bhubaneswar-puri-konark-tour",
-    "title": "2 Days Bhubaneswar Puri Konark Tour",
-    "category": "India Tours",
-    "image": "/images/packages/hi-bhubaneswar-puri-konark-tour.webp",
-    "duration": "1 Nights / 2 Days",
-    "route": "Arrival in Bhubaneswar - Konark – Puri → Puri – Pipli – Dhauli – Bhubaneswar",
-    "description": "The Bhubaneswar Puri Konark tour package takes you to three famous places, all located in Odisha.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -2104,8 +1453,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -2118,8 +1467,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Bhutan, a country of Buddhist Culture is quite an expensive country as a travel destination but the story doesn’t end here only because the scenic beauty and the surprising elements of the country attracts tourist. Bhutanese are very well-educated, updated with the world news, and always fun-loving. Give yourself a chance to visit this Buddhist country and learn about the cultures. Walking along the fascinating Himalayan landscapes can give you a mesmerizing sight of the snow-capped mountains an",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹4,50,000",
+    "dealPrice": "₹34,499",
     "discount": ""
   },
   {
@@ -2236,19 +1585,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "buddhist-leh-ladakh-tour",
-    "title": "Buddhist Leh Ladakh Tour",
-    "category": "North India",
-    "image": "/images/packages/buddhist-leh-ladakh-tour.jpg",
-    "duration": "6 Nights / 7 Days",
-    "route": "Arrival in Delhi → Delhi - Leh → A day out to excavate the Buddhist Monasteries → Leh - Alchi → Alchi - Lamayuru - Alchi → Alchi - Leh - Delhi",
-    "description": "Leh is situated in Jammu & Kashmir, a beautiful district that has provided the roof to several Buddhist monks from all over the world. It was the erstwhile capital of Jammu & Kashmir and it has always been a place of tourist attraction.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "buddhist-pilgrim",
     "title": "Buddhist Pilgrimage Tours To Sanctify Your Soul",
     "category": "India Tours",
@@ -2278,19 +1614,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "buddhist-sikkim-tour",
-    "title": "Buddhist Sikkim Tour",
-    "category": "North East India",
-    "image": "/images/packages/sikkim.jpg",
-    "duration": "6 Nights / 7 Days",
-    "route": "Arrival in Delhi → Delhi Sightseeing → Delhi - Bagdogra - Darjeeling → Sightseeing at Darjeeling → Darjeeling - Kalimpong → Kalimpong - Gangtok",
-    "description": "The Buddhist Sikkim Tour takes you to the beautiful hill stations of Darjeeling and Gangtok. Many great Buddhist monasteries are located on these exotic hill stations and have homed several Buddhist monks who had come from Tibet during the Chinese invasion.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "buddhist-tour-with-golden-triangle",
     "title": "Buddhist Tour with Golden Triangle",
     "category": "North India",
@@ -2301,32 +1624,6 @@ export const allPackages: Package[] = [
     "highlights": [
       "Buddhist Circuit Train Tour"
     ],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "buddhist-tourism-in-madhya-pradesh",
-    "title": "Buddhist Tourism in Madhya Pradesh",
-    "category": "India Tours",
-    "image": "/images/packages/madhya-pradesh-wildlife-tour.jpg",
-    "duration": "",
-    "route": "",
-    "description": "Madhya Pradesh, a state occupying the central part of India is often adoringly referred to as ‘Hindustan ka dil’ as it lies in the heart of the country. It is the largest of all states in the country rimmed by the states of Chhattisgarh, Maharashtra, Uttar Pradesh, and Rajasthan in the different directions. The state of Madhya Pradesh covers a huge area of about 308, 144 sq km. Bhopal is the capital city and Indore is the largest city in the state. There are plenty of awesome surprises in store",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "buddhist-uttar-pradesh",
-    "title": "Buddhist Tourism of Uttar Pradesh",
-    "category": "India Tours",
-    "image": "/images/packages/spiritual-uttar-pradesh.jpg",
-    "duration": "",
-    "route": "",
-    "description": "Known to be the playground of Gods, Uttar Pradesh boasts of a unique heritage and divine culture . There are many wonderful places here which have been drawing tourists and spiritual seekers for a long time. Though mostly known for Hindu temples and mysticism Uttar Pradesh has a deep connection to Buddhism. Sarnath and Kushinagar have an abiding link to the life of Gautama Buddha. Buddhist and seekers of religion have visited Uttar Pradesh since the ancient ages to visit Varanasi along with Sarn",
-    "highlights": [],
     "mrp": "",
     "dealPrice": "",
     "discount": ""
@@ -2354,8 +1651,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Experience the city of a rich history and cultural heritage, on your trip to Burhanpur, and the details will leave you awe-struck. Burhanpur is a historic town, where the charm of royalty and the essence of authenticity are preserved very beautifully. The Shahi Qila in the town, which is also known as the fort of Burhanpur is a really good example of extravagant Mughal architecture.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹37,500",
+    "dealPrice": "₹30,000",
     "discount": ""
   },
   {
@@ -2372,23 +1669,6 @@ export const allPackages: Package[] = [
       "Mumbai Sightseeing Tour",
       "Jaipur Sightseeing Tour",
       "Chennai Sightseeing Tour"
-    ],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "cambodia-thailand-tour",
-    "title": "Cambodia Thailand Tour Package",
-    "category": "International",
-    "image": "/images/packages/cambodia-thailand-tour.jpg",
-    "duration": "6 Nights / 7 Days",
-    "route": "Arrival in Siem Reap → Siem Reap → Siem Reap City Tour – Bangkok – Pattaya → Pattaya Coral Island Tour → Pattaya – Bangkok City Temple Tour → Bangkok",
-    "description": "Southeast Asian nations are a treasure trove for travelers and nature lovers alike. With low lying lush green plains, fun experiences and an overall vibe of relaxation makes these locations some of the most loved vacation spots in the world. My Quick Trippers offers you with an opportunity to have an extremely memorable and fun time in Southeast with the Cambodia and Thailand tour package of 7 days and 6 nights. The entire land is dotted with ornate palaces, impressive structures and a serene co",
-    "highlights": [
-      "Koh Phangan Sightseeing Tour",
-      "Phuket Sightseeing Tour",
-      "Chiang Rai Sightseeing Tour"
     ],
     "mrp": "",
     "dealPrice": "",
@@ -2502,34 +1782,8 @@ export const allPackages: Package[] = [
     "route": "Dehradun – Gangotri – Yamunotri → Yamunotri – Kedarnath – Badrinath – Dehradun",
     "description": "One of the most acclaimed pilgrimages in India, Char Dham Yatra is renowned as the wish-granting Yatra. Yamunotri, Gangotri, Kedarnath, and Badrinath collectively form this revered circuit.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "char-dham-yatra-for-nri-tour-package",
-    "title": "Char Dham Yatra for NRI Tour Package",
-    "category": "Pilgrimage",
-    "image": "/images/packages/places-to-visit-in-char-dham-yatra.webp",
-    "duration": "12 Nights / 13 Days",
-    "route": "",
-    "description": "With our Char Dham Yatra for NRI tour package , you can seek divine blessings and fulfill your spiritual desires. Whether you live in Canada, the USA, Dubai, Singapore, Malaysia, Australia or any other part of the world we can arrange the Char Dham tour allowing you to experience the presence of God at its closest.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "chardham-opening-closing-dates",
-    "title": "Opening and Closing Dates for Chardham Yatra 2026",
-    "category": "Pilgrimage",
-    "image": "/images/packages/hi-chardham-opening-closing-dates.webp",
-    "duration": "",
-    "route": "",
-    "description": "The Char Dham Yatra is one of the most sacred pilgrimages in Hinduism. The Char Dham Opening Dates for the season determine when the holy journey to Yamunotri , Gangotri , Kedarnath , and Badrinath begins. This yatra usually starts in April/May and continues for around six months each year. Yamunotri and Gangotri opened on 19 April (Akshaya Tritiya), which is considered a highly auspicious day.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹3,30,000",
     "discount": ""
   },
   {
@@ -2541,8 +1795,8 @@ export const allPackages: Package[] = [
     "route": "Hyderabad to Delhi → Delhi to Haridwar → Haridwar to Barkot via Dehradun → Barkot — Yamunotri — Barkot → Barkot to Uttarkashi → Uttarkashi — Gangotri — Uttarkashi",
     "description": "The Chardhams are some of the holiest sites in Hinduism. Set out on a memorable pilgrimage with our well-crafted Chardham Yatra package from Hyderabad . You'll visit Kedarnath , Badrinath , Gangotri , and Yamunotri . In this tour plan, you get meals, hotels, and transport . Enjoy a relaxing scenic road trip with experienced hill drivers and guided tours .",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹4,50,000",
+    "dealPrice": "₹30,000",
     "discount": ""
   },
   {
@@ -2568,8 +1822,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Dehradun → Dehradun - Yamunotri → Yamunotri - Gangotri → Gangotri - Kedarnath → Kedarnath - Badrinath → Badrinath - Dehradun",
     "description": "Chardham Yatra by Helicopter is the quickest and easiest method to visit the four holy Himalayan sacred sites, Yamunotri, Gangotri, Kedarnath, and Badrinath, in a brief period of time. This aerial pilgrimage has been planned to serve the elderly, families, and pilgrims with time constraints, thus avoiding roads and long walks.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,60,750",
+    "dealPrice": "₹7,500",
     "discount": ""
   },
   {
@@ -2581,8 +1835,8 @@ export const allPackages: Package[] = [
     "route": "Delhi - Rishikesh → Rishikesh - Barkot → Barkot - Yamunotri - Barkot → Barkot - Uttarkashi → Uttarkashi - Gangotri - Uttarkashi → Uttarkashi - Srinagar",
     "description": "The Chardhams of Uttarakhand are a must-visit for every devout Hindu. The pilgrimage to the holy Chardhams – Yamunotri , Gangotri , Kedarnath , and Badrinath – is believed to grant Moksha, liberation from the cycle of birth and death! Choose our Chardham Yatra Package from Delhi to make your pious journey easier and more comfortable.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹82,500",
+    "dealPrice": "₹37,500",
     "discount": ""
   },
   {
@@ -2594,8 +1848,8 @@ export const allPackages: Package[] = [
     "route": "Haridwar - Barkot → Barkot - Uttarkashi → Uttarkashi - Gangotri  - Uttarkashi → Uttarkashi - Guptkashi → Guptkashi - Gauri Kund  - Trek to Kedarnath → Trek from Kedarnath to Gauri Kund - Guptkashi",
     "description": "Chardham are holy sites dedicated to the Gods. The Chardham of Uttarakhand include Yamunotri , Gangotri , Kedarnath , and Badrinath . Since they are located at high altitudes, devotees have to brave harsh weather conditions. To make your pilgrimage easier and smoother, we bring to you expert-created Chardham Yatra Package from Haridwar !",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,60,000",
+    "dealPrice": "₹750",
     "discount": ""
   },
   {
@@ -2607,8 +1861,8 @@ export const allPackages: Package[] = [
     "route": "Arrive in Delhi → Delhi to Rishikesh → Rishikesh to Barkot → To Yamunotri & Back → Barkot to Uttarkashi → To Gangotri & back",
     "description": "Embark on a soulful journey to the Chardham sites with our Chardham Yatra Package from Ahmedabad. The Chardham Yatra comprises a tour of four of the religious destinations in Uttarakhand , including Gangotri , Yamunotri , Kedarnath , and Badrinath . Gangotri is the sacred abode of Goddess Ganga, and Yamunotri is a sacred site where you can seek the Goddess Yamunotri. Kedarnath houses Lord Kedar's Temple, and Badrinath is Lord Badri's sacred abode.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹65,625",
+    "dealPrice": "₹52,500",
     "discount": ""
   },
   {
@@ -2620,8 +1874,8 @@ export const allPackages: Package[] = [
     "route": "Bangalore - Delhi → Delhi to Rishikesh → Rishikesh to Barkot → Barkot - Yamunotri - Barkot → Barkot - Uttarkashi → Uttarkashi - Gangotri - Uttarkashi",
     "description": "Chardham journey takes you to four holy destinations of Kedarnath, Badrinath, Gangotri, and Yamunotri. My Quick Trippers offers you all inclusive Chardham Yatra package from Bangalore to make your journey easier. This tour includes your meals, hotels, and a dedicated transport vehicle with a professional driver . Attend the divine Aarti ceremonies , seek the blessings of God, and enjoy spirituality — all in utter comfort. Book now or give us a call to know more!",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,75,000",
+    "dealPrice": "₹4,500",
     "discount": ""
   },
   {
@@ -2646,8 +1900,8 @@ export const allPackages: Package[] = [
     "route": "Kolkata to Delhi → Delhi to Haridwar → Haridwar to Barkot → Barkot — Yamunotri Darshan — Barkot → Barkot to Uttarkashi → Uttarkashi — Gangotri Darshan — Uttarkashi",
     "description": "Planning a Chardham Yatra from Kolkata in 2026 means coordinating four high-altitude shrines, mandatory government registration, a 16 km mountain trek at Kedarnath, and hotel bookings across seven different towns — all before you even board your train to Delhi. Most pilgrims from West Bengal arrive at Haridwar underprepared: missing biometric registration slips, unaware of the Sonprayag vehicle ban, or carrying only cotton clothes for 3,583m altitude nights.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹97,500",
+    "dealPrice": "₹750",
     "discount": ""
   },
   {
@@ -2662,8 +1916,8 @@ export const allPackages: Package[] = [
       "Safe and comfortable transfers",
       "Experienced drivers trained for Himalayan routes"
     ],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹78,750",
+    "dealPrice": "₹63,000",
     "discount": ""
   },
   {
@@ -2677,8 +1931,8 @@ export const allPackages: Package[] = [
     "highlights": [
       "During the trek, stay hydrated and consume light meals."
     ],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹76,688",
+    "dealPrice": "₹61,350",
     "discount": ""
   },
   {
@@ -2718,8 +1972,8 @@ export const allPackages: Package[] = [
     "highlights": [
       "Do not carry alcohol or drugs during the pilgrimage."
     ],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹82,500",
+    "dealPrice": "₹37,500",
     "discount": ""
   },
   {
@@ -2796,26 +2050,8 @@ export const allPackages: Package[] = [
     "route": "Arrive at Chennai - Mahabalipuram - Pondicherry",
     "description": "Explore beautiful heritage of South India with our Chennai Mahabalipuram Thanjavur Trichy Madurai Tour. Journey starts from Chennai, a city full of history, temples and beautiful beaches.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "chennai-pondicherry-tour",
-    "title": "Chennai Pondicherry Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-chennai-pondicherry-tour.webp",
-    "duration": "3 Nights / 4 Days",
-    "route": "Arrive in Chennai → Chennai – Pondicherry → Sightseeing Tour of Pondicherry → Pondicherry – Chennai Departure",
-    "description": "Get a chance to visit two of the most popular South Indian destinations with our handcrafted Chennai Pondicherry tour package. Our packages are crafted by experts who have years of experience in the industry and ensure all your needs are met. You can enjoy many interesting activities with our packages, stay in top-rated hotels, and enjoy traditional cuisines. Our packages cater to the preferences of all travelers.",
-    "highlights": [
-      "Thanjavur Sightseeing Tour",
-      "Rameshwaram Sightseeing Tour",
-      "Madurai Sightseeing Tour",
-      "Ooty Sightseeing Tour"
-    ],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹60,000",
+    "dealPrice": "₹4,650",
     "discount": ""
   },
   {
@@ -2831,25 +2067,8 @@ export const allPackages: Package[] = [
       "Rameshwaram Sightseeing Tour",
       "Madurai Sightseeing Tour"
     ],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "chennai-temple-tour",
-    "title": "Chennai Temple Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-chennai-temple-tour.webp",
-    "duration": "2 Nights / 3 Days",
-    "route": "Arrive in Chennai → Chennai – Kanchipuram – Mahabalipuram → Mahabalipuram – Chennai Departure",
-    "description": "Embark on a sacred excursion to the most famous Hindu Temples in Chennai with our Chennai Temple Tour Package. Every temple has its unique festivals, history, and traditions, attracting pilgrims from all around the world. With our vast expertise and experience, we offer carefully designed, authentic, and unique temple tour packages.",
-    "highlights": [
-      "Thanjavur Sightseeing Tour",
-      "Rameshwaram Sightseeing Tour",
-      "Madurai Sightseeing Tour"
-    ],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹18,750",
+    "dealPrice": "₹15,000",
     "discount": ""
   },
   {
@@ -2862,23 +2081,6 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "chennai-trichy-tour",
-    "title": "Chennai Trichy Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-chennai-trichy-tour.webp",
-    "duration": "6 Nights / 7 Days",
-    "route": "Arrival in Chennai → Chennai – Mahabalipuram → Mahabalipuram Sightseeing → Mahabalipuram – Pondicherry → Pondicherry – Thanjavur → Thanjavur – Trichy",
-    "description": "The Chennai Trichy Tour Package is ideal for travellers who want to explore both the hidden and the popular attractions of these places. The places included in our package offer affordable accommodation, fun activities, and sightseeing within your budget. We handle everything on your behalf so that you can enjoy the trip to the fullest without worrying about any amenities.",
-    "highlights": [
-      "Thanjavur Sightseeing Tour",
-      "Rameshwaram Sightseeing Tour",
-      "Madurai Sightseeing Tour"
-    ],
     "mrp": "",
     "dealPrice": "",
     "discount": ""
@@ -2898,70 +2100,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "chiang-mai-bangkok-tour",
-    "title": "Chiang Mai Bangkok Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-chiang-mai-bangkok-tour.webp",
-    "duration": "5 Nights / 6 Days",
-    "route": "Arrival in Chiang Mai → Chiang Mai → Chiang Mai – Bangkok → Bangkok Sightseeing → Bangkok Departure",
-    "description": "Asia’ ultimate travel destination, Thailand boasts several tourist places and is pretty famous for its undamaged cultural integrity. Browse our meticulously designed Chiang Mai Bangkok Tour Package and get the chance to explore its major highlights along with some other less known places in the city. Explore the surreal beauty of Marine Park and also the safari ride to make it a breakneck journey.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "chiang-mai-sightseeing-tour",
-    "title": "Chiang Mai Sightseeing Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-chiang-mai-sightseeing-tour.webp",
-    "duration": "2 Nights / 3 Days",
-    "route": "Arrival in Bangkok and Sightseeing Tour of Chiang Mai → Full Day Sightseeing → Half Day Sightseeing Tour and Departure",
-    "description": "Chiang Mai, one of the most beautiful destinations in Thailand boasts a plethora of tourist attractions and increases the rate of Thailand tourism to a great extent. After considering this point we have designed this 2 Nights and 3 Days long Chiang Mai Sightseeing Tour Package. Grab this most customized tour package and get the opportunity to travel across the amazing places located in the different regions of the city. You will get the chance to witness the lifestyle of tribal community living",
-    "highlights": [
-      "Koh Phangan Sightseeing Tour",
-      "Phuket Sightseeing Tour",
-      "Chiang Rai Sightseeing Tour",
-      "Krabi Sightseeing Tour",
-      "Pattaya Sightseeing Tour"
-    ],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "chiang-rai-sightseeing-tour",
-    "title": "Chiang Rai Sightseeing Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-chiang-rai-sightseeing-tour.webp",
-    "duration": "2 Nights / 3 Days",
-    "route": "Arrival in Chiang Rai → Chiang Saen City → Sightseeing and Departure",
-    "description": "Also called as Unspoilt Paradise Chiang Rai is a small yet gorgeous city of Thailand which boasts several astounding attractions. This astounding province of Thailand is adorned with panoramic landscapes and is also complemented with various cultural and historical places. Browse our Chiang Rai Sightseeing Tour Package and explore these incredible tourist spots in Thailand and that also with complete ease and comfort.",
-    "highlights": [
-      "Koh Phangan Sightseeing Tour",
-      "Phuket Sightseeing Tour",
-      "Krabi Sightseeing Tour",
-      "Pattaya Sightseeing Tour",
-      "Koh Samui Sightseeing Tour"
-    ],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "china-japan-tour",
-    "title": "China Japan Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-china-japan-tour.webp",
-    "duration": "11 Nights / 12 Days",
-    "route": "Arrival in Shanghai → Shanghai City → Shanghai – Xian → Xian City → Xian – Beijing → Beijing",
-    "description": "Looking for a tour where you can get to know about the rich culture, history, and heritage of the two most developed countries in the world China and Japan. Also, get to know about their technological progress and also the amazing lifestyle of both these countries. You will also be provided with a chance to walk along the Great Wall of China and get astonished with the charming beauty of Mt. Fuji located in Japan and also explore various other alluring destinations of these countries.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "china-tour-packages",
     "title": "China Tour Packages",
     "category": "India Tours",
@@ -2971,8 +2109,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "China is an ancient country and one of those nations where one of the great human civilizations was born and nurtured, with a history spanning over 5000 years it is a tempting place for tourists on Tour Packages. Not only history the vast and varied geography of China is a huge attraction in itself, extending from the deserts in the west and to the ocean in the east, snowcapped mountains and green carpeted hilly region, this place provides unforgettable time on Tour Packages.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹4,50,000",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -2998,8 +2136,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -3026,8 +2164,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -3065,8 +2203,8 @@ export const allPackages: Package[] = [
     "route": "Cochin Arrival and Sightseeing → Cochin - Munnar → Munnar Sightseeing → Munnar - Thekkady → Thekkady - Alleppey → Alleppey - Cochin",
     "description": "Cochin Munnar Thekkady Alleppey Tour Package is perfect for travelers who want to see Kerala's nature, wildlife, and culture - all in one tour.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹37,500",
+    "dealPrice": "₹3,150",
     "discount": ""
   },
   {
@@ -3079,34 +2217,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "colombo-nuwara-eliya-beruwala-tour",
-    "title": "Colombo Nuwara Eliya and Beruwala Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-colombo-nuwara-eliya-beruwala-tour.webp",
-    "duration": "4 Nights / 5 Days",
-    "route": "Arrival in Colombo → Colombo – Kandy → Kandy – Nuwara Eliya → Nuwara Eliya – Beruwala – Kalutara → Beruwala – Kalutara – Departure",
-    "description": "The land of Sri Lanka is known for being one of the most exotic holiday destinations in the world. With untouched pristine beaches, age-old structures and a unique traditional way of life is what makes your Colombo with Kandy, Nuwara Eliya and Beruwala tour package a huge success. Explore this island country for 5 days and 4 nights and take away with you a lifetime worth of memories.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "colombo-sigiriya-kandy-tour",
-    "title": "Colombo Sigiriya Kandy Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-colombo-sigiriya-kandy-tour.webp",
-    "duration": "4 Nights / 5 Days",
-    "route": "Arrival in Colombo → Colombo – Sigiriya → Sigiriya – Kandy → Kandy – Beruwala → Bentota – Airport",
-    "description": "Sri Lanka is popular for being a paradise on earth. Home to a wide variety of biodiversity, lush greenery, expansive coastline, sandy relaxing beaches and numerous other locations of religious significance Sri Lanka is treasure trove for travellers. The Colombo with Sigiriya and Kandy tour package which lasts for 5 days and 4 nights makes sure that you get the best of this island nation and take away with you a lifetime worth of memories.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -3147,8 +2259,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Located in Karnataka, India, Coorg is known as the “Scotland of India”. It has the charm of a long-lost world and tourists are pleased to discover historical and sacred places that can be admired, as well as spectacular views and recreational sites. Coorg is also a popular honeymoon destination. Why choose this peaceful town? There are a lot of reasons and the most important one is the fact that it offers you a break from your fast-paced life. You are going to spend some time in a place where th",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹52,500",
+    "dealPrice": "₹27,000",
     "discount": ""
   },
   {
@@ -3161,8 +2273,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "This 4-day Corbett Nainital Tour Package from Delhi is full of adventures and calm atmosphere you’ll remember forever. The journey begins in Nainital, where you’ll explore Naini Lake, shaped like a human eye and people enjoy its magical sunset views.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹22,500",
+    "dealPrice": "₹3,150",
     "discount": ""
   },
   {
@@ -3179,36 +2291,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "cordelia-cruise-chennai-to-chennai",
-    "title": "Cordelia Cruise Chennai to Chennai",
-    "category": "India Tours",
-    "image": "/images/packages/museums-in-chennai.jpg",
-    "duration": "2 Nights / 3 Days",
-    "route": "Board the Cruise from Chennai → A Day in the Water → Back to Chennai",
-    "description": "A luxury cruise holiday with never-ending views of the ocean and soaking in the beauty of blue water and a beautiful sky, while you sail in the Bay of Bengal. You embark on this ultimate experience with the Cordelia cruise in Chennai and spend two days on this ultra-luxurious and comfortable cruise which gives you a royal feel.",
-    "highlights": [
-      "Thanjavur Sightseeing Tour",
-      "Rameshwaram Sightseeing Tour",
-      "Madurai Sightseeing Tour"
-    ],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "cordelia-cruise-mumbai-to-goa",
-    "title": "Cordelia Cruise Mumbai to Goa",
-    "category": "West India",
-    "image": "/images/packages/cordelia-cruise-mumbai-to-goa.jpg",
-    "duration": "2 Nights / 3 Days",
-    "route": "Welcome Onboard → A Day amid the sea → Reach Goa and Party",
-    "description": "Embark on a fun-filled sea journey to Goa from Mumbai with Cordelia Cruise. It is one cruise holiday that you will never forget. Enjoy the mesmerizing views through this holiday on a cruise when you sail on the magical blue ocean water of the Arabian Sea, and all you see is a beautiful combination of the water and sky and the never-ending beauty of nature all around you.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "cordelia-cruise-packages",
     "title": "Cordelia Cruise Packages",
     "category": "India Tours",
@@ -3217,21 +2299,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "A holiday in Cordelia Cruise is a part of every traveller’s bucket list. Cordelia cruise packages are perfect for those who live for luxury and leisure when on vacation. It is a perfect blend of a beautiful sea journey, with ultimate comfort and limitless entertainment with amazing activities that the guests would enjoy thoroughly. Not to forget the fact that these packages with Cordelia cruises are budget-friendly and yet provide you with a lifetime experience of exploring the different shores",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "cordelia-cruises-kochi-to-mumbai",
-    "title": "Cordelia Cruises Kochi to Mumbai",
-    "category": "India Tours",
-    "image": "/images/packages/mumbai-travel-guide.jpg",
-    "duration": "2 Nights / 3 Days",
-    "route": "Board from Kochi → The Sailing Day → Reach Mumbai",
-    "description": "Life is so hectic nowadays that we all look for some good breaks or vacations to recharge our souls now and then, and what could be better than a cruise holiday? An experience far from the hustle and bustle of the city, in a place where you could see only water and sky all around you, and that’s so damn peaceful.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -3243,8 +2312,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Anyone can go off on a vacation to any destination in India or elsewhere in the world. It is only the select few, the crème de la crème that can truly experience the most luxurious of holidays. It is luxury cruises that are the last word in travel, conjuring up visions of a glorious past, of rich and elegant people, of gracious lifestyles and life on a ship that befits royalty. Our Cruise Holidays Packages are truly worth exploring.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹1,12,500",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -3270,411 +2339,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-agra",
-    "title": "Culture of Agra – People, Handicrafts, Attires in Agra",
-    "category": "North India",
-    "image": "/images/packages/delhi-agra-jaipur-tour-complete-guide.webp",
-    "duration": "",
-    "route": "",
-    "description": "One of the most astonishing historic cities in India, Agra is a city known for its rich history, heritage, art, craft, and most importantly for its admiring culture. The history and mentions of the city date back to the time of Mahabharata, the holy epic. The city was under the control of several dynasties for decades and the Mughal dynasty is believed to have contributed the most towards the heritage of the city.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-ahmedabad",
-    "title": "Culture of Ahmedabad – People, Handicrafts & Sculpture",
-    "category": "India Tours",
-    "image": "/images/packages/ahmedabad-dwarka-weekend-tour.jpg",
-    "duration": "",
-    "route": "",
-    "description": "Ahmedabad, a city well known for its diversified culture, rich history , and tradition, and this altogether make a perfect travel destination. Ahmedabad is believed to be the center of Gujarati cultural activities and is very much famous for its diversified traditions. Natives of Ahmedabad are very friendly and are very enthusiastic to celebrate each and every festival in a super exciting manner especially Navratri, a nine-day long celebration.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-almora",
-    "title": "Culture of Almora – Fairs, Festivals, Music and Dance",
-    "category": "India Tours",
-    "image": "/images/packages/almora.jpg",
-    "duration": "",
-    "route": "",
-    "description": "Gracing the Kumaon region of Devbhoomi Uttarakhand and known as the cultural and heritage hub of Uttarakhand, Almora is a must-visit. Located at a bit higher elevation it offers incredibly stunning views of the Himalayan mountain ranges like Panchachuli, Nanda Devi, and Trishul. Along with supporting human life, it is also a thriving ground for various flora and fauna that cannot be found elsewhere other than these parts.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-andhra-pradesh",
-    "title": "Culture of Andhra Pradesh",
-    "category": "India Tours",
-    "image": "/images/packages/andhra-pradesh.jpg",
-    "duration": "",
-    "route": "",
-    "description": "The culture of Andhra Pradesh is vibrant and super lively dating back to the Vedic Ages. Dotted by ancient and new temples, the traditions and belief systems of the people here remain well preserved. Andhra is one of the most popular South Indian states in India which is also lovingly referred to as the rice bowl of India and attracts tourists from not just within India but across borders as well.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-assam",
-    "title": "Culture of Assam – Folk Music, Arts and Crafts",
-    "category": "North East India",
-    "image": "/images/packages/assam-tour-packages.webp",
-    "duration": "",
-    "route": "",
-    "description": "Assam is all about natural beauty, scenic vistas, and rolling hills covered in tea plantations, and of course lots of adventure waiting to unfold right around the corner! From national parks and wildlife sanctuaries to immaculate gardens and picturesque sights, everything about Assam is a pure natural beauty. However, it is more than that. Someone had rightly said that if you wish to know more about a place get to know about the people who live there. It will not only make you educated about tha",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-badrinath",
-    "title": "Culture of Badrinath – People, Religion and Language",
-    "category": "Pilgrimage",
-    "image": "/images/packages/culture-of-badrinath.webp",
-    "duration": "",
-    "route": "",
-    "description": "Badrinath is a holy Hindu town famous for being home to Badri Vishal. The ancient temple with a dynamic history sits majestically on the banks of the holy river Alaknanda and amidst the stunning natural beauty of the Garhwal Himalayas. The temple of Badrinath sits against the backdrop of the twin mountain peaks of Nar and Narayan and springs to life when the temple opens its gates for Darshan. Situated within the district of Chamoli which is also known as the jewel of Garhwal, the culture of Bad",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-bhutan",
-    "title": "Culture of Bhutan – The Bhutanese Culture",
-    "category": "International",
-    "image": "/images/packages/tourist-places-to-visit-in-bhutan.jpg",
-    "duration": "",
-    "route": "",
-    "description": "Bhutan is an extremely popular Buddhist Himalayan kingdom which is perched amidst some of the most pristine natural beauty in the world. Monasteries surrounded by blissful and bountiful greenery, Rocky Mountains, and welcoming people this place is truly one of a kind. The culture here is a beautiful and colorful amalgamation of various traditions and beliefs that has mingled together in one over centuries.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-darjeeling",
-    "title": "Culture of Darjeeling",
-    "category": "East India",
-    "image": "/images/packages/darjeeling-heritage-tour.jpg",
-    "duration": "",
-    "route": "",
-    "description": "We have already established the fact that India is a diverse country with language, culture, traditions, and heritage changing every step of the way. The same is the case with Darjeeling . The cultural and heritage roots of the people in Darjeeling goes deep into Hinduism and Vajrayana Buddhism. The colorful culture of this quaint hill station can be seen through their incredible festivals and fairs . Darjeeling is home to people from Nepal, Sikkim, Bhutan, Tibet, and even Europe. Did you know t",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-dehradun",
-    "title": "Culture of Dehradun",
-    "category": "India Tours",
-    "image": "/images/packages/chardham-yatra-package-from-dehradun.webp",
-    "duration": "",
-    "route": "",
-    "description": "Dehradun is a quiet place under the bosom of the Himalayas and the charm that the city has is quite different as the visitors can never leave the city without taking much from it. This beautiful city in the state of Uttarakhand in India is a wonderful collage of traditions, music, food, and artistry. Due to its heritage reflecting the history and natural landscape of the place, the cultural fabric of Dehradun comprises a perfect mix of Garhwali and Kumaoni heritage with a modern touch. From live",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-gangotri",
-    "title": "Culture of Gangotri – People, Fairs and Festivals",
-    "category": "Pilgrimage",
-    "image": "/images/packages/gangotri-history.webp",
-    "duration": "",
-    "route": "",
-    "description": "Gangotri is a scenic little town, settled on the hills of Garhwal in Devbhoomi Uttarakhand . It boasts a lush green cover, the holy river of Bhagirathi, and the iconic Char Dham temple of Gangotri. Due to its religious and spiritual relevance, Gangotri has garnered a reputation for being one of the top destinations for goddess worship. Being a part of the Char Dham temples along with Kedarnath , Badrinath , and Yamunotri , Gangotri remains swarming with devotees each time the temple opens its do",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-gaya",
-    "title": "Culture of Gaya",
-    "category": "India Tours",
-    "image": "/images/packages/kashi-gaya-prayagraj-ayodhya-naimisharanya-package.webp",
-    "duration": "",
-    "route": "",
-    "description": "Gaya is a beautiful amalgamation of spirituality, artistic expression, and culinary delights. Gaya is the historical cradle of Hinduism and Buddhism. The confluence of these two religions has beautifully shaped the cultural, aesthetic, and spiritual landscape with unparalleled richness. The city’s rich heritage and artistic sense keep captivating tourists to preserve and celebrate its unique cultural identity. Every aspect of Gaya elegantly weaves together, crafting a beautiful picture of the cu",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-goa",
-    "title": "Culture of Goa – People, Handicrafts & Traditional Food",
-    "category": "West India",
-    "image": "/images/packages/goa.jpg",
-    "duration": "",
-    "route": "",
-    "description": "Many people may know Goa for its Portuguese heritage; however, it is just the tip of the iceberg. Having colonized Goa for over 400 years their impressions remain embedded in Goa’s buildings, food choices, and language up to some extent. However, before the colonization, Goa was the land of self-governing bodies, religious practices, and beliefs that were not met with confrontation and an attempt to eradicate them along with unity and a feeling of brotherhood and peace among everyone. There were",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-gujarat",
-    "title": "Handicrafts Culture in Gujarat – Arts and Crafts",
-    "category": "West India",
-    "image": "/images/packages/tourist-places-to-visit-in-gujarat.webp",
-    "duration": "",
-    "route": "",
-    "description": "Arts, craft and local handicrafts form one of the most integral parts of the culture of Gujarat. Visitors can also experience the local life of the residents here through their very brightly and well-made diverse range of handicrafts. For the tribes residing here, who create these works of art every day with hand these fine showcase of artistry is a source of their livelihood. Through the embroidery, patterns, color usage, and stitching patterns, people can get a deeper look and glimpse into the",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-haridwar",
-    "title": "Culture of Haridwar",
-    "category": "India Tours",
-    "image": "/images/packages/yamuna-pushkaralu-yatra-with-kurukshetra-haridwar.jpg",
-    "duration": "",
-    "route": "",
-    "description": "Located in the Northern State of Uttarakhand, Haridwar is one of the seventh holiest places for Hindu devotees in India. Thousands of tourists come to Haridwar every year to experience its rich culture and Heritage. In terms of culture, Haridwar is deeply rooted in Hindu traditions. The tourism of Haridwar revolves around the sacred river Ganges and temples. Hindus believe that taking a holy dip into the river Ganga will free them from the karmic backlog of life and purify their soul.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-himachal-pradesh",
-    "title": "Culture of Himachal Pradesh",
-    "category": "North India",
-    "image": "/images/packages/himachal-pradesh.jpg",
-    "duration": "",
-    "route": "",
-    "description": "The northernmost hill state of India, Himachal Pradesh is a wholesome oasis for travelers from across the globe. Consisting of lush green forest cover, rolling green meadows, clear environment, and a very unique culture distinct from the rest of the subcontinent. The local Himachali people consists of people from varied ethnicities, backgrounds, and different tribes. Everyone on this wonderful hill station have their own traditional beliefs, culture, and lifestyle that are well preserved through",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-kashmir",
-    "title": "Culture of Kashmir – Traditional Clothes, and Folk Dance",
-    "category": "North India",
-    "image": "/images/packages/kashmir.webp",
-    "duration": "",
-    "route": "",
-    "description": "Much like Kashmir’s ethereal landscape, its culture is rich and unmatched. The culture is a reflection of its history that is shared by the many rulers, religions, and schools of thought that spent time in Kashmir and contributed to the distinctive identity it holds today. Having been a seat of ancient learning, Kashmir is known as Rishivar- or the abode of rishis (sages) and derives its name from Maharishi Kashyap.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-kedarnath",
-    "title": "Culture of Kedarnath – Language, Food & Art",
-    "category": "Pilgrimage",
-    "image": "/images/packages/culture-of-kedarnath.webp",
-    "duration": "",
-    "route": "",
-    "description": "Kedarnath is one of the most important places of Shiva worship in the world. Located in Rudraprayag district by the holy Mandakini River, the temple’s history is awe-inspiring. Having survived ice ages and flash floods, the temple still stands tall as one of the Char Dham temples of Uttarakhand . Over the years, the popularity of Kedarnath has grown. Due to its lush and scenic surroundings, the temple is not just visited by devotees and pilgrims but also by nature enthusiasts.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-madhya-pradesh",
-    "title": "Culture of Madhya Pradesh",
-    "category": "India Tours",
-    "image": "/images/packages/places-to-visit-in-madhya-pradesh.webp",
-    "duration": "",
-    "route": "",
-    "description": "Madhya Pradesh is the Heart of India. This is not only because of its location on the landmass but because of its incredible diversity, rich heritage, and thriving culture that continues to thrill travellers from all over the world. From the moment you set foot into the state, you will be greeted with indigenous tribes and customs that have been practiced in these parts since ancient times.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-manali",
-    "title": "Culture of Manali – Music, Dance, Arts and Crafts",
-    "category": "North India",
-    "image": "/images/packages/manali-tour-packages.webp",
-    "duration": "",
-    "route": "",
-    "description": "Nestled away in the Himalayan hills of Himachal Pradesh Manali has a culture that is rooted in its ancient past. People have been living in Manali much before the British decided to make it their summer capital. It remained cut off from civilization and commercialization for a really long time which helped shape the cultural and traditional foundation of the people’s beliefs.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-mussoorie",
-    "title": "Culture of Mussoorie – People, Music, Art and Craft",
-    "category": "India Tours",
-    "image": "/images/packages/haridwar-rishikesh-mussoorie-dhanaulti-tour.webp",
-    "duration": "",
-    "route": "",
-    "description": "Mussoorie or lovingly named ‘the queen of hills’ is an iconic holiday destination on the Garhwal hills of Devbhoomi Uttarakhand. This ancient Himalayan town is more than just scenic beauty; it is a place that has gained popularity because of the people, residents, and locals who have made Mussoorie their home for generations. The people of Mussoorie are grounded, humble, Soft Spoken, helpful and welcoming. Their way of life is simple and honest. The culture here is a beautiful combination of Gar",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-nainital",
-    "title": "Culture of Nainital",
-    "category": "India Tours",
-    "image": "/images/packages/corbett-nainital-tour-package-from-delhi.webp",
-    "duration": "",
-    "route": "",
-    "description": "The culture of Nainital is colourful and varied. The cultural heritage of Nainital is stirred by the traditions of its indigenous groups, the Kumaoni and Garhwali, and remnants of colonial follies by the British. The beautiful mountain ranges and tranquil lakes of Nainital act as a muse to poets, artists, and writers, safeguarding and promoting its cultural heritage.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-nepal",
-    "title": "Culture and Traditions of Nepal",
-    "category": "International",
-    "image": "/images/packages/nepal-tour-packages.webp",
-    "duration": "",
-    "route": "",
-    "description": "The culture, traditions, and set of beliefs that is followed by the people of Nepal is very different and unique from anywhere in the world. They have their own ritual which differs and is mainly centered around giving respect to each other, celebrating milestones and brotherhood among all. The Nepali people are highly expressive and successfully express their motions through the mediums of musical performances, dance forms, and theatrical displays. Nepal is undoubtedly one of the most vibrant c",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-rajasthan",
-    "title": "Culture of Rajasthan – People, Folk Dance and Music",
-    "category": "West India",
-    "image": "/images/packages/rajasthan-tour-packages.webp",
-    "duration": "",
-    "route": "",
-    "description": "Also referred to as ‘Rajputana’ or the land of Rajputs this royal state gives an in-depth insight into the rich and colorful heritage and tradition of the Indian culture. Lovingly called ‘the cultural capital of India’ Rajasthan is the best place for you to go if you are looking to indulge in the unique and one of a kind culture. Every aspect of life here is very deeply rooted to the rich historical past which is extremely vibrant and happening in every aspect. This land of the royals and mahara",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-rishikesh",
-    "title": "Culture of Rishikesh",
-    "category": "India Tours",
-    "image": "/images/packages/chardham-yatra-package-from-rishikesh.webp",
-    "duration": "",
-    "route": "",
-    "description": "Rishikesh has many faces. First of all, Rishikesh is a big cosy blanket for yoga enthusiasts. They stretch, bend, and breathe deeply amidst the backdrop of the Himalayan Mountains. Then, there is a spiritual side of Rishikesh. Devotees come to Rishikesh to find peace and connect with the almighty. Prayers are being sung in the temples and around the Ghats.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-shimla",
-    "title": "Culture of Shimla – People, Music and Dance",
-    "category": "North India",
-    "image": "/images/packages/shimla-tour-packages.webp",
-    "duration": "",
-    "route": "",
-    "description": "Do you know what’s nice? Watching the sunrise in all its glory while illuminating the trees and hills, having a steaming cup of chai or coffee by the window, going on soulful and rejuvenating walks amidst the crisp cool air. The Shimla experience has it all. The green vistas of a sea of mountains, accompanied with mind-boggling views and welcoming local folks, what more do you want from a place? Not to mention the awesome locally prepared food , snack, pickles, and the cherry on top? Its culture",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-sikkim",
-    "title": "Culture And Traditions Of Sikkim",
-    "category": "North East India",
-    "image": "/images/packages/sikkim.jpg",
-    "duration": "",
-    "route": "",
-    "description": "The smallest Indian state of Sikkim is also one of the most fascinating places to visit in India for several reasons. From its food, lifestyle, and occupation to the people, architecture, and religion, everything about this place emotes peace, serenity, and a feeling of immense gratitude. The inhabitants of Sikkim are generally referred to as the ‘Sikkimese’ people but the region is also inhabited and shared in harmony with 3 different tribes namely Lepchas, Bhutias, and the Nepalese. Every comm",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-sri-lanka",
-    "title": "Culture of Sri Lanka",
-    "category": "International",
-    "image": "/images/packages/culture-of-sri-lanka.jpg",
-    "duration": "",
-    "route": "",
-    "description": "Sri Lanka is not only an island but a living tapestry bound with the tint of ancient traditions, a warm hospitality, and a diverse cultural heritage. It is a place where hospitality is not a mere concept, but rather a lifestyle where you are invited to have a cup of Ceylon tea before you ask for it! The air is filled with the sound of Buddhist chants in pompous temples, with beautiful decorations retelling the stories of the centuries passed. Apart from this, family is the most prized aspect, th",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-uttar-pradesh",
-    "title": "Culture of Uttar Pradesh",
-    "category": "India Tours",
-    "image": "/images/packages/uttar-pradesh-darshan-tour.webp",
-    "duration": "",
-    "route": "",
-    "description": "India is a country anywhere else in the world. With a history dating back to centuries ago every aspect of this place is unique and filled with wonderment. The roots of Indian culture and heritage can be traced to Uttar Pradesh. The state has seen a varied and dynamic past of various conquerors from different parts of the world which have resulted in the creation of a beautiful blend of different beliefs and traditions. This can be seen from the visible remains of art, architecture, literature,",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-uttarakhand",
-    "title": "Culture of Uttarakhand",
-    "category": "North India",
-    "image": "/images/packages/culture-of-uttarakhand.webp",
-    "duration": "",
-    "route": "",
-    "description": "Devbhoomi Uttarakhand was separated out of Uttar Pradesh in the year 2000, but it has been the center for religion and spirituality ever since the Vedic ages. The history, culture, beliefs, and traditions of this hill state and crown of India are widely admired and celebrated. Everything here is unique and one of a kind in its own way from its landscape and wildlife to its people. are you excited to explore the essence of this remarkable region, consider choosing one of the many Uttarakhand Tour",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-varanasi",
-    "title": "How the rich culture of Varanasi makes it an amazing holiday site?",
-    "category": "Uttar Pradesh",
-    "image": "/images/packages/varanasi-sarnath-tour.webp",
-    "duration": "",
-    "route": "",
-    "description": "One of the oldest inhabited cities in the world, Varanasi or Benaras or Kashi is all about finding an immense calmness in the chaos. This spiritual city is a perfect blend of art, crafts, culture, language, food , and religion. Temples, Ghats, Heritage sites, and monuments adorn the city that itself breathes in a culture even older than the native of the city.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "culture-of-vietnam",
-    "title": "Experience Vietnam: A Journey Through Its Culture",
-    "category": "India Tours",
-    "image": "/images/packages/culture-of-vietnam.webp",
-    "duration": "",
-    "route": "",
-    "description": "Vietnam is known for its rich culture and tradition. Vietnamese culture is influenced by the cultures of China, France, and neighbouring Cambodia. Although located in Asia’s south-eastern part, Vietnam has been under the rule of China, and hence its culture has lots of similarities to that of China. Whether you’re indulging in world-renowned cuisine, exploring historic districts, or participating in colorful festivals, you should understand the culture of Vietnam to enrich your visit and navigat",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -3739,8 +2405,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Dalhousie is one of the most popular hill stations in the district of Chamba located in Himachal Pradesh. Dalhousie is present in the outskirts of the Dhauladhar ranges in Himachal Pradesh. The hill station is named after Lord Dalhousie – the founder of the place. Surrounding Dalhousie there are 5 hills and they are- Tehra, Bakrota, Balun, Kathlog and Petreyn. It covers an area of about 13 sq km. Dalhousie ranges between the altitude of 1,525m – 2,378m above the level of the sea. The Dalhousie T",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
     "discount": ""
   },
   {
@@ -3923,19 +2589,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "delightful-dubai-festival-tour",
-    "title": "Dubai Festival Tour Package",
-    "category": "International",
-    "image": "/images/packages/delightful-dubai-festival-tour.jpg",
-    "duration": "5 Nights / 6 Days",
-    "route": "Dubai Arrival and Dhow Cruise → Half Day City Tour and Desert Safari → Burj Khalifa + Dubai Aquarium + Underwater Zoo → At Leisure → Dubai Excursion to Abu Dhabi + Ferrari World → Dubai Departure",
-    "description": "If you wish to experience the sights and sounds of a true carnival, come to Dubai during the happening Dubai festival. This amazing festival makes this multi-cultural city of manmade wonders go abuzz with a unique cornucopia of experiences, pleasures, activities and revelry. This 5N/6D tour of Dubai takes you on a tour of the festive Dubai and you get to pick some really heady experiences related to luxuries, pleasures and shopping…",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "desert-beach-tour-of-gujarat",
     "title": "Gujarat Desert Beach Tour Package",
     "category": "West India",
@@ -3958,21 +2611,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Dharamshala is a beautiful one-of-a-kind hill station in Himachal Pradesh where impeccable natural beauty meets unmatched spirituality. Home of the Dalai Lama, the entire region is dotted with big and small monasteries and places of worship that have helped in making this place extremely peaceful, scenic, and with a level of positivity that cannot be experienced anywhere in the world. There are several places for a curious travel bug to explore. This place is the epitome of a spiritual travel de",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "dharamshala-paragliding-tour",
-    "title": "Dharamshala Paragliding Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/dharamshala-paragliding-tour.jpg",
-    "duration": "3 Nights / 4 Days",
-    "route": "Delhi – Dharamshala → Dharamshala Sightseeing → Paragliding → Dharamshala – Delhi",
-    "description": "While paragliding in Dharamshala’s scenic vistas, take in the unparalleled beauty of the Dhauladhar and Shivalik Himalayan ranges. View an aerial photograph of this sacred Tibetan site.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
     "discount": ""
   },
   {
@@ -4024,8 +2664,8 @@ export const allPackages: Package[] = [
     "route": "Dehradun  – Kedarnath – Badrinath",
     "description": "Badrinath and Kedarnath are highly sacred temples in Hinduism. If you're thinking of visiting these temples in a comfortable way, without the physical stresses, then book the Do Dham Yatra by Helicopter 2026 . In this tour plan, our team will take care of your meals, ground transfers, VIP Darshan, helipad assistance, and more. Get in touch to know more about our custom plans!",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹2,10,000",
+    "dealPrice": "₹7,500",
     "discount": ""
   },
   {
@@ -4039,47 +2679,8 @@ export const allPackages: Package[] = [
     "highlights": [
       "Train / flight tickets to and from Delhi"
     ],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "dubai-abu-dhabi-tour",
-    "title": "Dubai Abu Dhabi Tour Package",
-    "category": "International",
-    "image": "/images/packages/hi-dubai-abu-dhabi-tour.webp",
-    "duration": "6 Nights / 7 Days",
-    "route": "Arrival in Dubai → Half Day City in Dubai and Visiting Burj Khalifa → Abu Dhabi City and Ferrari Theme Park → Visiting Aquaventure Water Park and the Lost Chambers → Have Fun at the Dubai Aquarium and Underwater Zoo → Dubai",
-    "description": "Are you looking for a destination where you can spend some quality time with your family and friends? If yes then browse grab our Dubai Abu Dhabi Tour Package which lets you attain lifelong experiences, to witness the modernity, rich culture, and heritage of the country. Visit some of the most beautiful places and witness the glory of the architectural grandeur for what Dubai is mostly famous for. The package also includes your visit to Abu Dhabi, the capital city of UAE which is pretty popular",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "dubai-adventure-tour",
-    "title": "Dubai Adventure Tour Package",
-    "category": "International",
-    "image": "/images/packages/hi-dubai-adventure-tour.webp",
-    "duration": "5 Nights / 6 Days",
-    "route": "Arrive Dubai → Half City Tour of Dubai → Desert Safari Tour → Dhow Cruise Ride → At Leisure → Departure",
-    "description": "Dubai, the dreamy land of brash, 7 stars attracts luxury-loving tourists from far and wide. The year-round sun over Dubai makes it an uncomfortably warm place. To beat the scorching heat, tourists prefer to stay indoors and splurge as much as wealth they can on the indoor luxuries at a seven star hotels. These days adventure lovers too are drawn to Dubai. The best season to enjoy adventure activities in Dubai is between months October and April when the climate of the place remains relatively co",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "dubai-honeymoon-tour",
-    "title": "Dubai Honeymoon Tour Package",
-    "category": "International",
-    "image": "/images/packages/hi-dubai-honeymoon-tour.webp",
-    "duration": "5 Nights / 6 Days",
-    "route": "Arrival in Dubai → City of Dubai → Lincoln Limo Ride and Dubai Desert Safari → Burj Khalifa with Dhow Cruise Dinner → Abu Dhabi City → Dubai",
-    "description": "Browse our meticulously tailored Dubai Honeymoon Tour Package and get a wide opportunity to explore the breathtaking views of the city in UAE. Dubai is adorned beautifully with blue sea and golden dunes together spreading a rejoicing and refreshing ambiance all around the city. Grab this beautiful deal and attain an intriguing experience by exploring the wonders of this country like the Burj Khalifa, The Dubai Creek, and the Desert. Do not get confused that this is going to be a sightseeing trip",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹1,80,000",
+    "dealPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -4105,8 +2706,8 @@ export const allPackages: Package[] = [
     "route": "Ahmedabad – Dwarka → Dwarka Local Sightseeing → Dwarka – Porbandar – Somnath → Somnath – Diu → Diu – Sasan Gir – Junagarh → Junagarh – Virpur – Gondal – Ahmedabad",
     "description": "Tourism in Gujarat doesn’t require any set of introduction and the state has been emerging out as one of the most frequented tourist destinations in India. After looking at Gujarat Tourism rate we have designed Dwarka Somnath Gir Diu Tour Package which fulfills all your travel woes. On this 5 nights and 6 days long tour you get the chance to explore all the iconic attractions of this westernmost state in India. Grab the deal and attain some really revitalizing and rejuvenating travel experiences",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -4118,47 +2719,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Ahmedabad → Ahmedabad - Rajkot → Rajkot - Dwarka → Dwarka Sightseeing → Dwarka - Porbandar - Somnath → Somnath - Ahmedabad",
     "description": "Are you planning a Dwarka Somnath tour from Ahmedabad ? Let's visit two of these best places in Gujarat . Dwarka is known as the city where Lord Krishna lived, and it has the beautiful Dwarkadhish Temple, which is around 600 years old and also a part of the Char Dham pilgrimage .",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "dwarka-somnath-tour-from-delhi",
-    "title": "Dwarka Somnath Tour Package from Delhi",
-    "category": "North India",
-    "image": "/images/packages/hi-dwarka-somnath-tour-from-delhi.webp",
-    "duration": "5 Nights / 6 Days",
-    "route": "In Delhi → Ahmedabad → Jamnagar – Dwarka → Dwarka – Somnath → Somnath – Ahmedabad",
-    "description": "Dwarka and Somnath are holy cities located in the state of Gujarat. They are dedicated to different Gods in Hinduism and therefore hold immense religious significance. Our Dwarka Somnath Tour Package from Delhi is a 6 Days / 5 Nights trip that takes you to these beautiful cities in Gujarat. You will visit holy temples, old historic sites and enjoy the lovely blue sea that makes these cities special! Book now to enjoy a smooth and comfortable trip here.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "dwarka-somnath-tour-from-hyderabad",
-    "title": "Dwarka Somnath Tour Package from Hyderabad",
-    "category": "India Tours",
-    "image": "/images/packages/hi-dwarka-somnath-tour-from-hyderabad.webp",
-    "duration": "6 Nights / 7 Days",
-    "route": "In Hyderabad → Arrival in Ahmedabad → Sasan Gir to Somnath → Somnath to Porbandar to Dwarka → Dwarka → Dwarka to Ahmedabad",
-    "description": "Gujarat is one of India's most culturally and spiritually significant states. Home to two of the four Char Dhams — Dwarka and Somnath (one of the 12 Jyotirlingas) — it draws pilgrims from across the country every year. Our Dwarka Somnath Tour Package from Hyderabad covers these two sacred cities along with Gir National Park and Porbandar. You'll attend Aartis at ancient temples, take a ferry to Bet Dwarka Island, and explore the birthplace of Mahatma Gandhi along the way.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "dwarka-somnath-tour-from-mumbai",
-    "title": "Dwarka Somnath Tour Package from Mumbai",
-    "category": "India Tours",
-    "image": "/images/packages/hi-dwarka-somnath-tour-from-mumbai.webp",
-    "duration": "5 Nights / 6 Days",
-    "route": "Travel from Mumbai to Ahmedabad → Ahmedabad to Dwarka → Covering the Destinations in Dwarka → Dwarka to Somnath → Somnath to Ahmedabad → Ahmedabad",
-    "description": "Get ready for a trip full of memories! Our Dwarka Somnath Tour Package from Mumbai is the right choice for those who want to explore Gujarat's temples, colourful festivals, and culture. On this trip, you will see Dwarka, the land of Lord Krishna, and in Somnath, you get to explore the famous Somnath Temple near the Arabian Sea with its beautiful sea view. Call us now to learn more about this journey!",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹45,938",
+    "dealPrice": "₹36,750",
     "discount": ""
   },
   {
@@ -4170,8 +2732,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Ahmedabad → Ahmedabad - Rajkot → Rajkot - Dwarka → Dwarka Sightseeing → Dwarka - Porbandar - Somnath → Somnath - Ahmedabad",
     "description": "Are you planning a Dwarka Somnath tour from Ahmedabad ? Let's visit two of these best places in Gujarat . Dwarka is known as the city where Lord Krishna lived, and it has the beautiful Dwarkadhish Temple, which is around 600 years old and also a part of the Char Dham pilgrimage .",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹45,938",
+    "dealPrice": "₹36,750",
     "discount": ""
   },
   {
@@ -4295,8 +2857,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹32,999",
+    "dealPrice": "₹12,750",
     "discount": ""
   },
   {
@@ -4321,8 +2883,8 @@ export const allPackages: Package[] = [
     "route": "Arrive at Cochin",
     "description": "Kerala is an enchanting destination dotted with breathtaking landscapes, backwaters, historical locations, religious sites, and waterfalls that invite tourists for amazing trips and experiences.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹37,500",
+    "dealPrice": "₹3,150",
     "discount": ""
   },
   {
@@ -4428,21 +2990,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Family tour packages in India offer a wonderful opportunity for families to explore the diverse and culturally rich country together. These packages are specifically designed to cater to the needs and preferences of families, providing a hassle-free and enjoyable vacation experience. With a wide range of destinations and activities to choose from, India offers something for every member of the family.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "fantastic-koh-samui-tour",
-    "title": "Fantastic Koh Samui Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-fantastic-koh-samui-tour.webp",
-    "duration": "4 Nights / 5 Days",
-    "route": "India and arrival in Koh Samui → Koh Samui – A Lovely Leisure Day → Koh Phangan – An Unforgettable Full Moon Party → Koh Samui → Departure to India",
-    "description": "Browse our beautifully tailored Koh Samui Tour Package with Fantastic Full Moon Party and embark on a wonderful vacation with us. This 4 nights and 5 days long tour package has been designed to explore the wonders of the second largest island in Thailand which is studded with thick mountainous forests, coconut groves, and palm-fringed beaches. Reckoned as a true vacationer’s paradise, Koh Samui boasts a cluster of attractions and activities where one can indulge in to make it a lifelong vacation",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹46,350",
+    "dealPrice": "₹13,050",
     "discount": ""
   },
   {
@@ -4493,8 +3042,8 @@ export const allPackages: Package[] = [
     "route": "Cochin and Sightseeing",
     "description": "Kerala is an amalgam of the very best of nature. The coconut palm trees, the houses made of red tiles, and the beautiful lakes and beaches will remain forever in every visitor’s heart.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹37,500",
+    "dealPrice": "₹3,150",
     "discount": ""
   },
   {
@@ -4538,227 +3087,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "food-of-agra",
-    "title": "Food of Agra – Most Famous Delicious Dishes in Agra",
-    "category": "North India",
-    "image": "/images/packages/delhi-agra-jaipur-tour-complete-guide.webp",
-    "duration": "",
-    "route": "",
-    "description": "Agra, the city popularly called as the land of love is bestowed with the magnificent Taj Mahal, the ultimate epitome of love. This gorgeous historical site is enlisted amongst seven astonishing wonders of the world. The site attracts mammoth crowd of travel enthusiasts coming from different nooks and corners of the world. The city is dotted with multiple historical monuments but this fact doesn’t only make it a place to explore.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "food-of-andhra-pradesh",
-    "title": "Food of Andhra Pradesh",
-    "category": "India Tours",
-    "image": "/images/packages/andhra-pradesh.jpg",
-    "duration": "",
-    "route": "",
-    "description": "Ever since the known history of India, it has been the top trader for a variety of spices. Lovingly referred to as the ‘land of spices, Indian spices are world-renowned for their delicious taste and spicy touch it adds to every meal. There have been numerous attacks by invaders in India because of which several spices were also welcomed and included in everyday life.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "food-of-assam",
-    "title": "Traditional Dishes and Food of Assam",
-    "category": "North East India",
-    "image": "/images/packages/assam-tour-packages.webp",
-    "duration": "",
-    "route": "",
-    "description": "Assam is the northeastern state of India. It is known for its tea and silk. Assamese cuisine is characterized by scarce use of spice, cooking over fire, and use of fresh or dried exotic fruits and vegetables due to which the dishes are filled with strong flavour. Assamese food includes very unique ingredients like “banana peel’ ash extract” and “mangosteen”. Their way of cooking includes hills as well as plains. There is plenty of fermented food and fresh produce.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "food-of-auli",
-    "title": "Food of Auli",
-    "category": "India Tours",
-    "image": "/images/packages/auli-skiing-tour.jpg",
-    "duration": "",
-    "route": "",
-    "description": "Apart from the scenic views and snowy adventures, one must visit Auli for its delicious cuisine. Auli is very popular for authentic Garhwali cuisines. With the bountiful produce of the mountains, Garhwali cuisine showcases a combination of simple yet flavourful dishes that reflect the survival techniques and resilience of the Garhwali people to beat the cold. In Auli , you must try the local delicacies like Kachmauli, Bal Mithai, Kafuli, Bhaang Ki Chutney, Chainsoo, and Jhangore Ki Kheer, etc. T",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "food-of-dehradun",
-    "title": "Food of Dehradun",
-    "category": "India Tours",
-    "image": "/images/packages/chardham-yatra-package-from-dehradun.webp",
-    "duration": "",
-    "route": "",
-    "description": "Dehradun’s landscape offers a delightful expedition for your curious taste buds. You will love Dehradun’s flavourful food culture. The city’s food culture combines traditional Garhwali dishes and lip-smacking street food. Once you taste the eclectic street food of Dehradun , you will crave more.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "food-of-gaya",
-    "title": "Food of Gaya",
-    "category": "India Tours",
-    "image": "/images/packages/kashi-gaya-prayagraj-ayodhya-naimisharanya-package.webp",
-    "duration": "",
-    "route": "",
-    "description": "Gaya’s food culture is a delightful blend of traditions and cultures that flourished for decades. This place holds immense significance for Hindus and Buddhists. So, it is evident that many outside influences have shaped its diverse and flavourful cuisines. From ancient recipes passed down through generations to many new adaptations, Gaya’s culinary scene keeps evolving to fit the palate requirements of tourists.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "food-of-goa",
-    "title": "Food of Goa – Best Goan Dishes You Must Try",
-    "category": "West India",
-    "image": "/images/packages/goa.jpg",
-    "duration": "",
-    "route": "",
-    "description": "The Indian beach paradise of Goa , on the western coast of the Indian subcontinent, is a haven for every type of beach lover. Since Goans utilize their immediate surroundings for sustenance, it is understandable that being located right next to the Arabian Sea, Goans utilize all the fish sources in the sea for everyday meals. Dominated with locally grown spices, flavors, and herbs, Goan cuisines are extremely palatable and unique in their taste. The food in this beach town is not just about seaf",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "food-of-haridwar",
-    "title": "Food of Haridwar",
-    "category": "India Tours",
-    "image": "/images/packages/yamuna-pushkaralu-yatra-with-kurukshetra-haridwar.jpg",
-    "duration": "",
-    "route": "",
-    "description": "Haridwar is not only renowned for its spiritual significance but also extends its allure beyond the realms of divinity to the nourishment of the palate. The wholesome cuisine of Haridwar seamlessly syncs with the city’s cultural traditions. Food in Haridwar is a feast for both the soul and taste buds.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "food-of-himachal-pradesh",
-    "title": "Food of Himachal Pradesh",
-    "category": "North India",
-    "image": "/images/packages/himachal-pradesh.jpg",
-    "duration": "",
-    "route": "",
-    "description": "Himachal Pradesh, the land of snow-covered mountains, inhabiting thousands of tribes, flora, and fauna is a one of a kind destination. The hospitality of the locals combined with the rich calming ambiance is something that one doesn’t get to experience on a daily basis. Apart from its obvious surreal natural beauty and unending adventures in every corner, something that truly sticks to your memory is the food. Not just any food, the delicious, flavor-packed, traditionally prepared locally availa",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "food-of-kashmir",
-    "title": "Most Famous Food of Kashmir",
-    "category": "North India",
-    "image": "/images/packages/kashmir.webp",
-    "duration": "",
-    "route": "",
-    "description": "Kashmiri food is a reflection of the many influences that have gripped the land over centuries, it provides unique flavors and preparations that stand out in the diverse palate of Indian cuisines. Although mostly loved for the variety of scrumptious, rich meat delicacies Kashmiri cuisine offers, there are many more elements of food that make the wholesome, nutritious, and locally produced diet.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "food-of-madhya-pradesh",
-    "title": "Foods in Madhya Pradesh",
-    "category": "India Tours",
-    "image": "/images/packages/places-to-visit-in-madhya-pradesh.webp",
-    "duration": "",
-    "route": "",
-    "description": "90s kids would know best that Madhya Pradesh has been popularized as the “heart of Incredible India” with the tourism board’s television ads featuring colourful visuals and catchy tunes. From religious sites to dense forests – these advertisements deftly covered most of this state’s charm. But what they forgot to mention was its rich relationship with food. From daily dishes to quick street food, desserts, and puddings to even homemade liquor – each region of Madhya Pradesh is known for its diff",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "food-of-manali",
-    "title": "Food of Manali – Tasty Food in Manali Not to be Missed",
-    "category": "North India",
-    "image": "/images/packages/manali-tour-packages.webp",
-    "duration": "",
-    "route": "",
-    "description": "When it comes to Manali we only think about the scenic vistas, lush greenery, the colorful culture, and a sense of peace that washes us over. However, if you are not having the local food in Manali then you are definitely missing out. The locally prepared food using local, organic produce and good quality herbs and spices have flavor-packed punches that cannot be replicated in a theme restaurant anywhere else.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "food-of-nainital",
-    "title": "Food of Nainital",
-    "category": "India Tours",
-    "image": "/images/packages/corbett-nainital-tour-package-from-delhi.webp",
-    "duration": "",
-    "route": "",
-    "description": "Tourists from all across India love to visit Nainital not only for tourism but also for its authentic regional dishes, North Indian dishes, bakeries, and unique local flavours. Food of Nainital is a feast for the taste buds. If you visit Nainital in Uttarakhand someday remember to taste these local delicacies. These dishes are not just meals, but also tales about the lively and tasty culture of this region.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "food-of-rishikesh",
-    "title": "Food of Rishikesh",
-    "category": "India Tours",
-    "image": "/images/packages/chardham-yatra-package-from-rishikesh.webp",
-    "duration": "",
-    "route": "",
-    "description": "Rishikesh culinary experience holds a special place, shaped by its religious and spiritual essence. As a revered destination, Rishikesh boasts delightful vegetarian options that sync with the divine ambiance of the place. Tourists and devotees are drawn to the unique cuisine of Rishikesh and find a sense of bliss in the Sattvic nature of food. While being a yoga capital, yoga practices are the central focus. The food in Rishikesh ensures tourists feel happy and maintain their health.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "food-of-shimla",
-    "title": "Delicious and Traditional Food of Shimla",
-    "category": "North India",
-    "image": "/images/packages/shimla-tour-packages.webp",
-    "duration": "",
-    "route": "",
-    "description": "The hill station of Shimla is famous for its scenic, picturesque views and mind-boggling serenity. It goes without saying that when it comes to a soulful holiday with family and loved ones, Shimla is the first one to come to anyone’s mind. Gracing the lower Himalayas region, it is home to not only people from varied ethnic backgrounds but also to a variety of species of flora, fauns, and insects that cannot be found or thrive anywhere else in the world. Being close to several big cities and metr",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "food-of-uttar-pradesh",
-    "title": "Must Have Food and Cuisines of Uttar Pradesh",
-    "category": "India Tours",
-    "image": "/images/packages/uttar-pradesh-darshan-tour.webp",
-    "duration": "",
-    "route": "",
-    "description": "The northern state of Uttar Pradesh is a unique and incredibly diverse state of India. Home to some of the most iconic heritage and religious spots it has been attracting explorers and devotees of various religions from all over the world ever since centuries. This has managed to create a melting pot of different cultures, traditions, and beliefs among the residents of UP. It has also helped in establishing a remarkable food culture. When someone mentions this place then one thing that comes to",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "food-of-uttarakhand",
-    "title": "Top 7 Most Famous Food of Uttarakhand",
-    "category": "North India",
-    "image": "/images/packages/food-of-uttarakhand.webp",
-    "duration": "",
-    "route": "",
-    "description": "Just the way Uttarakhand culture and land is distinct from the rest of India, in the same manner, its food stands out. People traditionally utilize the naturally available sources to create delicious local food which is loved and admired by people from all over. Although the claws of tourism and commercialization have reached some parts of this state still it manages to keep the real taste of Devbhoomi alive. The food here is packed with organic nutrients and minerals and taste extremely delicio",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "footsteps-of-buddha-1",
     "title": "Footsteps of Buddha Tour Package",
     "category": "India Tours",
@@ -4795,84 +3123,6 @@ export const allPackages: Package[] = [
     "duration": "",
     "route": "",
     "description": "French Polynesia Tour Packages - Book French Polynesia Vacations Packages",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "fruits-of-himachal-pradesh",
-    "title": "Fruits of Himachal Pradesh – Where to Get Them?",
-    "category": "North India",
-    "image": "/images/packages/fruits-of-himachal-pradesh.jpg",
-    "duration": "",
-    "route": "",
-    "description": "Himachal Pradesh is a magical land blessed with bountiful natural beauty, charming little village hamlets, and snowcapped peaks. All these over the years have worked together to create the perfect ambiance for adventure enthusiasts, spirituality seekers, and peace lovers alike. There is literally everything for every type of explorer here making it a wholesome experience. When it comes to biodiversity, flora, fauna, fruits, and vegetable selection Himachal Pradesh is a haven.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "fruits-of-kashmir",
-    "title": "Famous Fruits of Kashmir",
-    "category": "North India",
-    "image": "/images/packages/kashmir.webp",
-    "duration": "",
-    "route": "",
-    "description": "Kashmir – the place where unreal natural beauty unfolds itself from the moment you set foot here. The Kashmiri folks are welcoming and warm towards the visitors and travelers which works towards making your whole travel experience a memorable one. Everything about this place exudes unparalleled serenity and a pure pristine environment.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "fruits-of-kerala",
-    "title": "Fruits of Kerala – Exotic Fruits and Where to Find Them",
-    "category": "South India",
-    "image": "/images/packages/kerala.png",
-    "duration": "",
-    "route": "",
-    "description": "Kerala – god’s own land makes for the pristine and richly refreshing environment. The tall coconut trees lining the roads, peaceful backwater boat rides delicious south Indian dishes, and welcoming down to earth folks, this place on every travel enthusiast’s bucket list. The fruits and vegetation here are grown organically.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "fruits-of-sikkim",
-    "title": "Famous Fruits of Sikkim",
-    "category": "North East India",
-    "image": "/images/packages/sikkim.jpg",
-    "duration": "",
-    "route": "",
-    "description": "Sikkim is famous for being one of the most scenic and charming little hamlet perfect for a getaway with family and loved ones. With beautiful green hills stretching to as far as your eyes can see and with numerous sightseeing options, it has also emerged as one of the most sought after holiday destinations for people on their honeymoon, individuals looking to get away from the crowd and spend their holiday away from the chaos of the city life and also for people who wish to know more about the c",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "fruits-of-uttarakhand",
-    "title": "Fruits of Uttarakhand",
-    "category": "North India",
-    "image": "/images/packages/fruits-of-uttarakhand.webp",
-    "duration": "",
-    "route": "",
-    "description": "The terrain and climate conditions of Uttarakhand makes it perfect for growth of several fruits which cannot be only found at this place but are also exported and consumed all over the world. The variety of fruits found here all year long makes it one of the most widely acclaimed fruit baskets of the world. Every delicious fruit here is grown organically and promises a wholesome taste. People have been travelling through this charming hill town ever since ages back for its pristine natural beaut",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "fun-filled-mauritius-tour",
-    "title": "Fun Filled Mauritius Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/fun-filled-mauritius-tour.jpg",
-    "duration": "5 Nights / 6 Days",
-    "route": "Arrival in Mauritius → Complete day excursion to the Ile Aux Cerf Island → A Complete Leisure Day → North Island Tour → South Island Tour in Mauritius → Mauritius",
-    "description": "Are you also planning for a tour where you can spend some quality time with your partner and children? If yes, then why not to plan a trip where you can feel the warmth of the environment and can spend time with your dear ones amidst the lush greenery, along the glimmering beaches, in the lap of mountains, and also at the Volcanic eruption areas.",
     "highlights": [],
     "mrp": "",
     "dealPrice": "",
@@ -4935,19 +3185,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "ganga-pushkaralu-tour",
-    "title": "Ganga Pushkaralu Tour Packages from Delhi",
-    "category": "India Tours",
-    "image": "/images/packages/yamuna-pushkaralu-yatra-with-kurukshetra-haridwar.jpg",
-    "duration": "4 Nights / 5 Days",
-    "route": "Arriva Delhi - Haridwar → Haridwar - Uttarkashi → Uttarkashi - Gangotri - Uttarkashi → Uttarkashi - Rishikesh - Haridwar → Haridwar - Delhi",
-    "description": "The Ganga Pushkaralu or the Ganga Pushkaran is a holy festival that takes place every year on the banks of the Ganga River. It occurs once every 12 years and is truly a phenomenon to behold. The last event took place in 2011 and the next event is set to take place from 22nd April to 5th may 2023. Devotees from all over the country make it a point to take a holy dip in one of the holiest rivers in India to get blessings from the goddess herself.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "ganges-northern-india",
     "title": "Northern India Tour with Ganga Darshan",
     "category": "India Tours",
@@ -4963,45 +3200,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "gangotri-history",
-    "title": "History of Gangotri – Sacred Origin of the Holy River Ganges",
-    "category": "Pilgrimage",
-    "image": "/images/packages/gangotri-history.webp",
-    "duration": "",
-    "route": "",
-    "description": "Built during the 18th century by the Gorkha commander Amar Singh Thapa, and perched magnificently on an elevation of 3,100 metres above sea level, the main temple of Gangotri Dham sits stunningly by the banks of the holy river of Bhagirathi. This Himalayan shrine has been closely interrelated with the Hindu faith and the ancient traditions and spiritual activities over centuries. The history of Gangotri says that it is not only a place of worship but a reminder of the spiritual heritage of India",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "gangotri-opening-closing-dates",
-    "title": "Gangotri Yatra Opening Dates for 2026",
-    "category": "Pilgrimage",
-    "image": "/images/packages/kedarnath-opening-closing-dates.webp",
-    "duration": "",
-    "route": "",
-    "description": "Gangotri Yatra is one of the four sacred shrines of the Char Dham Yatra in Hinduism. The Gangotri Temple is usually opened on the auspicious day of Akshaya Tritiya . In 2026, Gangotri Dham, which remains closed during the winter season, was reopened in April 2026 for devotees.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "gangotri-temple",
-    "title": "Gangotri Temple – Where the Heavens Meet with the Earth",
-    "category": "Pilgrimage",
-    "image": "/images/packages/gangotri-temple.webp",
-    "duration": "",
-    "route": "",
-    "description": "Located on an elevation of 3,100 metres above sea level and amongst some of the most pristine environments of the Himalayas, as the name suggests, this Dham is dedicated to Goddess Ganga, which is also one of the most rarely occurring temples in India . People from far and wide visit this glistening white temple, which remains nestled away amongst the lush greenery of the thick green cover, clear blue skies, and a pollution-free environment. after visiting which you will not only feel extremely",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "gangotri-tour-packages",
     "title": "Gangotri Tour Packages",
     "category": "Pilgrimage",
@@ -5010,58 +3208,6 @@ export const allPackages: Package[] = [
     "duration": "5 Days / 4 Nights",
     "route": "Delhi → Haridwar → Uttarkashi → Gangotri",
     "description": "The glistening white temple dedicated to goddess Ganga graces the bank of the gushing Bhagirathi River in Devbhoomi Uttarakhand. Being a crucial part of the holy Char Dham Yatra annual pilgrimage of India it is located in one of the most scenic and beautifully soothing regions of India. Gangotri tour packages play a vital role in witnessing the incredible spiritual aura of the pilgrimage to the utmost level. Reaching this humble temple when it opens for Darshan after remaining buried under snow",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "gangotri-weather",
-    "title": "Gangotri Weather – Latest Temperature and Trip Essentials",
-    "category": "Pilgrimage",
-    "image": "/images/packages/gangotri-travel-tips.webp",
-    "duration": "",
-    "route": "",
-    "description": "Gangotri is one of the holy Char Dham pilgrimage destinations of Uttarakhand and it is situated at 3,415 metres above sea level in the Uttarkashi district. Gangotri weather is mostly cold as a result of its high Himalayan elevation, and there is a sudden change in seasons. This is critical in understanding the weather conditions in Gangotri before making an excellent decision to have a safe, comfortable and spiritually fulfilling journey.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "gangotri-yatra-by-helicopter",
-    "title": "Gangotri Yatra By Helicopter Tour Package",
-    "category": "Pilgrimage",
-    "image": "/images/packages/gangotri-yatra-by-helicopter.jpg",
-    "duration": "1 Day",
-    "route": "Dehradun – Gangotri",
-    "description": "As the name suggests Gangotri dham is dedicated to goddess Ganga who had made her way to earth after heavy penance performed by King Bhagirath.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "gangotri-yatra-from-delhi",
-    "title": "Gangotri Yatra Package from Delhi",
-    "category": "North India",
-    "image": "/images/packages/gangotri-yatra-from-delhi.jpg",
-    "duration": "4 Nights / 5 Days",
-    "route": "Delhi - Haridwar → Haridwar - Uttarkashi → Gangotri Darshan → Uttarkashi - Rishikesh → Rishikesh - Delhi",
-    "description": "The Gangotri Yatra from Delhi is a sacred pilgrimage to the holy Gangotri Temple , located in the Uttarkashi district of Uttarakhand and dedicated to Goddess Ganga. It is one of the most important shrines of the Chhota Char Dham Yatra, attracting devotees from across India.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "gangotri-yatra-from-haridwar",
-    "title": "Gangotri Yatra from Haridwar",
-    "category": "Pilgrimage",
-    "image": "/images/packages/gangotri-history.webp",
-    "duration": "2 Nights / 3 Days",
-    "route": "Haridwar – Uttarkashi → Uttarkashi – Gangotri – Uttarkashi → Uttarkashi – Haridwar",
-    "description": "Gangotri Temple is an ancient holy temple situated in the origin area of the river Ganga, nestled at a great altitude of 3100 meters above sea level. The principal deity of the shrine is a beautiful seated idol of Goddess Ganga in the inner sanctum. The temple is one of the primordial architectural sites in the Himalaya and is constructed using white granite and is adorned with elaborate sculpture works. Want to go on a spiritual trip to Gangotri Dham temple in 2026? Contact us to book your pref",
     "highlights": [],
     "mrp": "",
     "dealPrice": "",
@@ -5176,19 +3322,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "glimpses-of-ladakh-tour",
-    "title": "Glimpses of Ladakh Tour",
-    "category": "North India",
-    "image": "/images/packages/ladakh.jpg",
-    "duration": "4 Nights / 5 Days",
-    "route": "Arrival in Leh → Excursion to Sham valley → Excursion to Pangong Tso → Excursion to Khardung La → Leh Departure",
-    "description": "Ladakh or the ‘country of mountain passes’ is a high altitude cold desert that is overlooked by the snowcapped peaks. The jagged terrain, spectacular view points and ancient monasteries makes Ladakh one of a kind. This treeless land of glacial lakes and stunning rivers, Ladakh has captured the hearts of every traveller. The glimpses of the Ladakh tour package will take you on a memorable holiday experience. From going on hikes and treks to visiting the top tourist attractions in Ladakh this plac",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "goa-tour-package-5-days",
     "title": "Goa Tour Package for 5 Days",
     "category": "West India",
@@ -5198,8 +3331,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Browse our well-thought-out 5-day Goa tour package that aims to provide travel enthusiasts with an ideal mix of comfort, leisure, and experiential journeys.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹37,500",
+    "dealPrice": "₹3,150",
     "discount": ""
   },
   {
@@ -5251,8 +3384,8 @@ export const allPackages: Package[] = [
     "route": "Haldwani / Kathgodam → Dharchula → Gunji → Kalapani → Navidhang → Kuti → Jollingkong → Adi Kailash",
     "description": "Haldwani / Kathgodam → Dharchula → Gunji → Kalapani → Navidhang → Kuti → Jollingkong → Adi Kailash",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -5269,19 +3402,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "golden-triangle-tour-4-days",
-    "title": "4 Days Golden Triangle Tour from Delhi",
-    "category": "North India",
-    "image": "/images/packages/hi-golden-triangle-tour-4-days.webp",
-    "duration": "3 Nights / 4 Days",
-    "route": "Arrive Delhi Sightseeing Tour → Delhi - Mathura – Agra → Agra Sightseeing tour - Jaipur → Jaipur Sightseeing – Delhi",
-    "description": "The 4 days Golden Triangle Tour is a popular and exciting trip which covers Delhi, Agra and Jaipur in a short period.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "golden-triangle-tour-5-days",
     "title": "5 Days Delhi Agra Jaipur Tour",
     "category": "North India",
@@ -5290,8 +3410,8 @@ export const allPackages: Package[] = [
     "route": "Delhi → Delhi to Agra → Agra to Jaipur → A whole day trip in Jaipur City → Jaipur Departure",
     "description": "Our Indian culture is filled with varieties of history, which sounds interesting.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -5317,8 +3437,8 @@ export const allPackages: Package[] = [
     "route": "Delhi → Sightseeing in Delhi → Delhi to Agra → Jaipur to Agra → Jaipur sightseeing → Jaipur - Delhi",
     "description": "The Golden Triangle trip takes you on an exciting journey to the three famous cities in India such as Delhi, Agra, and Jaipur.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹36,900",
+    "dealPrice": "₹5,250",
     "discount": ""
   },
   {
@@ -5330,8 +3450,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Ahmedabad → Ahmedabad – Jamnagar → Jamnagar – Dwarka → Dwarka – Somnath → Somnath – Gir National Park → Gir National Park – Ahmedabad Departure",
     "description": "Gujarat is every tourist’s dream destination. This colourful and vibrant destination tucked in the westernmost edge of the subcontinent is rich in history, heritage, culture, mythology and an immaculate biodiversity. From being the erstwhile kingdom of Lord Krishna to being the only home of Asiatic Lions in the world, Gujarat is definitely a one-of-a-kind holiday destination. Check out the Grand Gujarat Tour Package for a wholesome well-rounded trip. Explore Gujarat like never before with this s",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹42,188",
+    "dealPrice": "₹33,750",
     "discount": ""
   },
   {
@@ -5348,19 +3468,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "gujarat-cultural-tour",
-    "title": "Gujarat Culture Tour Package",
-    "category": "West India",
-    "image": "/images/packages/hi-gujarat-cultural-tour.webp",
-    "duration": "14 Nights / 15 Days",
-    "route": "Arrival in Mumbai → Mumbai – Ahmedabad – Chhota Udaipur → Chhota Udaipur → Chhota Udaipur – Vadodara → Vadodara – Bhavnagar → Bhavnagar – Palitana – Bhavnagar",
-    "description": "Gujarat, the westernmost state of India is a city rich in cultural heritage, natural scenic beauty, and vivid traditions. Plan a tour to this beautiful state with our well designed Gujarat Cultural tour package. On this 14 Nights and 15 Days long Gujarat tour package, get the opportunity to visit all the iconic attractions of the western region of India.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "gujarat-dekho",
     "title": "Gujarat Dekho – A Short Trip to Gujarat",
     "category": "West India",
@@ -5369,8 +3476,8 @@ export const allPackages: Package[] = [
     "route": "Ahmedabad/Jamnagar → Jamnagar to Dwarka → Dwarka to Porbandar to Somnath → Somnath to Rajkot",
     "description": "Gujarat is a mysterious and enthralling land which is home to lots of devotional temples and centers of spiritual learning like Dakor, Dwarka, Ambaji, Shankheshwar, Palitana, Mahudi, Somnath, Gandhinagar, Modhera, Kabirvadi, Pavagadh, Sun Temple. Akshardham, Jain Temple Ashapura Mataji Madh, Junagadh Buddhist Cave Groups, Swaminarayan Temple, Tulsi Shyam, Lojpur, Bahucharaji, Ahmedabad, Kutch etc. these places commands a lot of domestic and international tourist attraction and offer a wealth of",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹34,688",
+    "dealPrice": "₹27,750",
     "discount": ""
   },
   {
@@ -5382,8 +3489,8 @@ export const allPackages: Package[] = [
     "route": "Ahmedabad → Ahmedabad – Jamnagar → Jamnagar – Dwarka → Dwarka – Somnath → Somnath – Gir → Gir – Diu",
     "description": "Gujarat may not feature as prominently on the tourist circuit as do Rajasthan and Kashmir but it is a land of hidden surprises as you will discover with My Quick Trippers’s Gujarat tour with Diu thrown in as the icing on the cake. Pack your bags and head west to the Land of Krishna and the home of the last of the Asiatic Lions. A typical itinerary of the Tour of Gujarat would go as follows:",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹45,938",
+    "dealPrice": "₹36,750",
     "discount": ""
   },
   {
@@ -5408,21 +3515,8 @@ export const allPackages: Package[] = [
     "route": "Baroda, Champaner, Jambughoda, Chhota Udaipur → Chhota Udaipur, Ahmedabad → Ahmedabad, Lothal, Palitana → Palitana, Somnath, Gir → Gir, Junagadh, Gondal → Gondal, Dasada",
     "description": "Gujarat may not have a Taj Mahal or a fort-like Chittorgarh but it does have cross-cultural influences so clearly depicted in its architecture. From the North and West of Gujarat to South, Gujarat has been visited by people from all over the world, people who have left their mark on this state and left behind a rich legacy in the form of architectural splendors. Even the great modern architect Le Corbusier was fascinated by Gujarat and one can see his creations in Ahmedabad. Join NamasteIndiaTri",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "gujarat-irctc-tour",
-    "title": "Gujarat IRCTC Tour Package",
-    "category": "West India",
-    "image": "/images/packages/hi-gujarat-irctc-tour.webp",
-    "duration": "11 Nights / 12 Days",
-    "route": "Arrival in Ahmedabad → Ahmedabad – Modhera – Dasada → Dasada – Bhuj → Bhuj – Banni Village – Bhuj → Bhuj – Rajkot → Rajkot – Sasan Gir",
-    "description": "Gujarat is an oasis for travelers and seekers of all ages willing to explore this Pandora box of surprises. It is truly a treat for travelers due to the presence of several interesting sites and places to visit ranging from the birthplace of civilization to the rich selection of colorful and age-old heritage. Along with these come the food, dressing, and beliefs which work together in creating a very thriving environment for everyone. IRCTC recognizes the importance of tourism in Gujarat and has",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹57,188",
+    "dealPrice": "₹45,750",
     "discount": ""
   },
   {
@@ -5448,8 +3542,8 @@ export const allPackages: Package[] = [
     "route": "Ahmedabad → Nal Sarovar → Velavadar → Velavadar Park → Gir National Park → Jamnagar",
     "description": "Gujarat, the westernmost part of India, has unique attractions. On the one hand you have a long coastline that is home to the largest Marine Park in the country, the wild and desolate Rann of Kutch harbouring the wild ass, princely cities of Jamnagar and Junagadh, dense forests of Dangs and the sanctuary at Velavadar where blackbucks can be spotted across the grasslands. Gujarat is also home to the last of the Asiatic Lions to be found in the jungles of the Gir. Visit Gujarat and you are in a di",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹72,750",
+    "dealPrice": "₹63,750",
     "discount": ""
   },
   {
@@ -5487,8 +3581,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Ahmedabad → Drive to Dwarka via Jamnagar → Sightseeing in Dwarka → Somnath via Porbandar → Drive to Diu and Sightseeing → Jungle Adventure in Gir",
     "description": "Gujarat, the westernmost state of India is worldwide for its white sandy deserts, holy destinations, historical and cultural places, and glimmering beaches. Browsing our Best of Gujarat Tour Package offers you an opportunity to explore various other tourist destinations dotted in the state. As you are on a family tour and the taste of each family member is different so we have compiled all such destinations that could match with the taste of each member of your group.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹38,438",
+    "dealPrice": "₹30,750",
     "discount": ""
   },
   {
@@ -5501,8 +3595,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
     "discount": ""
   },
   {
@@ -5527,21 +3621,8 @@ export const allPackages: Package[] = [
     "route": ": Arrival and Welcome in Thrissur → Exploring Athirapally Falls and Departure",
     "description": "The Guruvayur - Thrissur - Athirapally Tour Package takes the best out of a two-day plan of spiritual exploration and natural adventure.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "guwahati-kamakhya-shillong-tour",
-    "title": "Guwahati, Kamakhya Temple & Shillong Tour",
-    "category": "India Tours",
-    "image": "/images/packages/hi-guwahati-kamakhya-shillong-tour.webp",
-    "duration": "",
-    "route": "",
-    "description": "Go on this 4-day Guwahati–Shillong–Cherrapunji–Mawlynnong tour, which is designed by our expert travel team! With our well-crafted itinerary, you get to visit all the prime attractions in the places that we’ll be visiting.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹21,750",
+    "dealPrice": "₹4,650",
     "discount": ""
   },
   {
@@ -5568,8 +3649,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹37,500",
+    "dealPrice": "₹30,000",
     "discount": ""
   },
   {
@@ -5608,8 +3689,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -5621,8 +3702,8 @@ export const allPackages: Package[] = [
     "route": "HANOI ARRIVAL → HANOI - HALONG BAY → FLY TO DANANG - HOI AN → Full-Day Ba Na Hills Excursion → Fly To Ho Chi Minh - Cu Chi Tunnel → Mekong Delta",
     "description": "Book our Hanoi Danang Ho Chi Minh City Tour package and you're guaranteed to see the best of Vietnam. Your journey will begin from the cultural capital of Hanoi itself! Marvel at the ancient temples, colonial architecture, and beautiful lakesides that are its star attractions. Also, enjoy the luxe cruise across the Halong Bay which is beautifully surrounded by majestic emerald waters.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹55,950",
+    "dealPrice": "₹4,200",
     "discount": ""
   },
   {
@@ -5634,8 +3715,8 @@ export const allPackages: Package[] = [
     "route": "Hanoi - Halong Bay Day cruise - Hanoi  - SIC → Da Nang - Bana Hills - Golden Bridge - Da Nang  - SIC → Da Nang departure  - No guide",
     "description": "The 5 day Hanoi - Halong - Da Nang - Hoi An tour will take you through Vietnam's most vibrant cities and have you witness the age-old heritage in one single trip! Your tour will begin from the bustling city of Hanoi itself! This is the cultural heartland of the country, and you'll see everything here from ancient temples to serene lakes to lively markets. This city is a living example where history meets modern charm. Take it all in before you start cruising for Halong Bay, which is all surround",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹57,900",
+    "dealPrice": "₹4,800",
     "discount": ""
   },
   {
@@ -5647,8 +3728,8 @@ export const allPackages: Package[] = [
     "route": "Hanoi - Halong Bay - Return to Hanoi → Hanoi - Fly to Saigon - Half Day City Tour → Saigon - My Tho - Saigon → Saigon Departure",
     "description": "Explore the beauty and culture of Vietnam with this Hanoi Halong Saigon My Tho Tour Package . The journey starts from Hanoi, one of the favorite spot of every visitor. The main highlight here is Hoan Kiem Lake. The night view is completely amazing here, with colorful lights and a peaceful atmosphere.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹42,600",
+    "dealPrice": "₹3,900",
     "discount": ""
   },
   {
@@ -5660,8 +3741,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Travelling to Vietnam feels like turning the pages of an enchanting fairytale storybook. Our Hanoi-Ninh Binh-Halong-Da Nang-Hoi An Tour is an escape to some of the most serene corners of Vietnam. Your journey will start from the heart of Hanoi, where you tread the ancient halls of the Temple of literature and feel the delightful rush of trains passing just a foot away at the Train Street. Isn't it enchanting? The trail does not stop here. After the train view, you will visit the peaceful country",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹54,600",
+    "dealPrice": "₹5,400",
     "discount": ""
   },
   {
@@ -5699,8 +3780,8 @@ export const allPackages: Package[] = [
     "route": "Delhi - Dehradun → Dehradun - Mussoorie → Mussoorie - Dhanaulti - Rishikesh - Haridwar → Haridwar - Delhi",
     "description": "Experiencing the Haridwar Rishikesh Mussoorie Dhanaulti tour and see what makes this journey unique.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹22,500",
+    "dealPrice": "₹3,150",
     "discount": ""
   },
   {
@@ -5712,8 +3793,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Delhi - Rishikesh – Delhi",
     "description": "Then book our one day Haridwar Rishikesh Sightseeing Tour Package . This same-day trip packs all the must-visit locations in these two holy cities. Whether it’s watching the ever-so-pleasant Ganga Aarti at Har ki Pauri, enjoying the famous Jhulas of Rishikesh, or a refreshing stroll along the riversides, this trip checks all the boxes for a nice little pilgrimage tour.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹18,000",
+    "dealPrice": "₹6,000",
     "discount": ""
   },
   {
@@ -5725,8 +3806,8 @@ export const allPackages: Package[] = [
     "route": "Haridwar from Delhi → Haridwar – Dehradun - Mussoorie → Mussoorie - Dehradun - Rishikesh → Rishikesh – Haridwar - Delhi",
     "description": "Get ready for a spiritually uplifting journey to nurture your mind with the healing touch of divine in Haridwar and Rishikesh with scenic views of majestic Himalayan peaks and Shivalik ranges.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹21,000",
+    "dealPrice": "₹2,250",
     "discount": ""
   },
   {
@@ -5779,8 +3860,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -5804,19 +3885,6 @@ export const allPackages: Package[] = [
     "duration": "",
     "route": "",
     "description": "Have you been searching for the most reliable Helicopter packages in India to carry you afloat the azure skies to the hidden gems in the majestic Himalayan ranges? Well, look no further! Our customized Helicopter packages present as diverse choices for your travel as the manifold hues of your moods.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "helicopter-ride-at-kumbh-mela",
-    "title": "Mahakumbh 2025: Helicopter Ride at Kumbh Mela",
-    "category": "Helicopter",
-    "image": "/images/packages/helicopter-ride-at-kumbh-mela.png",
-    "duration": "",
-    "route": "",
-    "description": "Hosted at Prayagraj this year, the Maha Kumbh Mela is one of the biggest spiritual gatherings in the whole world! The festival marks the physical beings’ pursuit of the divine and liberation from the cycle of birth and death. A helicopter ride to Maha Kumbh is a unique way to experience the heavenly congregation. You get to take in the beautiful aerial views of the magnificent festival, all from the comfort of your joyful helicopter ride! The Maha Kumbh Helicopter Yatra is also a great option fo",
     "highlights": [],
     "mrp": "",
     "dealPrice": "",
@@ -5963,8 +4031,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "India is the birthplace of Hinduism with a majority of Hindu population (almost 80%) residing the country presently. Ever since the beginning of time, this colorful subcontinent has always been referred to as one of the holiest lands to ever exist on the face of the earth. With numerous mythological accounts and legends depicting that once this place was walked upon by gods and goddesses themselves, it is no doubt that India has a plethora of holy shrines and temples dedicated to any and every g",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹2,82,000",
+    "dealPrice": "₹13,050",
     "discount": ""
   },
   {
@@ -6002,8 +4070,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Maldives is a charming little island nation that spans across the equator. This collection of 1192 islands in the Indian Ocean is a magical paradise. The clear, azure blue skies stretching as far as the eyes can see, the clear waters and stunning villas for accommodation, Maldives is a place like no other. Let go of your worries and leave it all behind by exploring the island nation that is packed with some of the most interesting adventures and experiences waiting to happen. The perfect destina",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹4,50,000",
+    "dealPrice": "₹3,00,000",
     "discount": ""
   },
   {
@@ -6073,45 +4141,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "hong-kong-macau-shenzhen-tour",
-    "title": "Hong Kong Macau Shenzhen Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-hong-kong-macau-shenzhen-tour.webp",
-    "duration": "6 Nights / 7 Days",
-    "route": "Mumbai – Hong Kong → Hong Kong → Hong Kong – Macau → Macao – Shenzhen → Shenzhen",
-    "description": "Reckoned as the Pearls of the Orient, the cities of Hong Kong Macau Shenzhen are embodied with the cultural, contemporary, and also the traditional values of the modern world. Browse our meticulously designed Hong Kong Macau Shenzhen Tour Package. Add some beautiful and amazing travel memories by exploring the wonders of these graceful cities. Planning this tour with us helps you attain a unique travel experience that offers you the opportunity to witness the sightseeing charm of Hong Kong Macau",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "hong-kong-macau-singapore-tour",
-    "title": "Hong Kong Macau Singapore Package",
-    "category": "International",
-    "image": "/images/packages/hi-hong-kong-macau-singapore-tour.webp",
-    "duration": "6 Nights / 7 Days",
-    "route": "Mumbai – Singapore → Singapore → Singapore – Hong Kong → Hong Kong → Hong Kong – Macau → Macau – Hong Kong – Departure",
-    "description": "Do you have any vacation plan in your mind and you are confused about the place where to go. If yes, then plan an international trip with our Hong Kong Macau Singapore Tour Package. Whenever you think about some of the best international tours then most probably Thailand, Hong Kong, and Macau must strike your mind first then visit these Dreamlands this vacation and explore Hong Kong, the destination of vital Indian Heritage and is also the place whose population is mostly covered by Indians. Als",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "hong-kong-macau-tour",
-    "title": "Hong Kong Macau Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-hong-kong-macau-tour.webp",
-    "duration": "3 Nights / 4 Days",
-    "route": "Mumbai – Hong Kong → Hong Kong → Hong Kong – Macau → Macau – Hong Kong and then Departure",
-    "description": "A single tour to witness the mesmerizing and incredible charm of two beautiful countries of the world Hong Kong and Macau. Hong Kong Macau Tour Package plays a vital role in exploring the incredible wonders of these destinations. Hong Kong is the destination where you can make your kids discover the wonders of Disneyland and is also the city where you can find a huge number of skyscrapers enthralling and making you feel amazed. Next comes the wonderful city of Macau which is reckoned for its pop",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "hongkong-tour-packages",
     "title": "Hong Kong Tour Packages",
     "category": "India Tours",
@@ -6121,8 +4150,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Hong Kong, a special administrative region of China located on the south coast of Pearl River is filled with fascinations either natural or manmade. Walking along the streets of Wan Chai or Kowloon takes us back to the history of the city along with several natural admirations. All kinds of admiration including the best parks, island escapes, and mesmerizing scenic beauty are all available here.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹4,50,000",
+    "dealPrice": "₹2,55,000",
     "discount": ""
   },
   {
@@ -6135,21 +4164,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "hotels-in-badrinath",
-    "title": "List of Best Hotels in Badrinath",
-    "category": "Pilgrimage",
-    "image": "/images/packages/badrinath-faqs.webp",
-    "duration": "",
-    "route": "",
-    "description": "Badrinath is one of the most popular Hindu pilgrimage sites since it is a part of the Chota Char Dham Yatra in Devbhoomi along with Kedarnath , Yamunotri and Gangotri . Sitting at an elevation of 3,300 metres above sea level by the banks of the holy river Alaknanda this holy hamlet witness a massive throng of pilgrims and Yatris who visit this place each year, religiously to offer their prayers to the almighty. This holy Yatra was commenced by Adi Shankaracharya during the 8th century who aimed",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -6173,19 +4189,6 @@ export const allPackages: Package[] = [
     "duration": "",
     "route": "",
     "description": "Kedarnath which is the second one Dham in Uttarakhand or you also can say in India where the number of visitors comes from across the world. Because of its fame the numbers of hotels are running for the visitors with the all facility. There are more than a few hotels in Kedarnath to decide from in Kedarnath . If you are searching for inexpensive hotels, are on budget hotels in Kedarnath or want to expend your holiday in a fashion way with some luxury deluxe Kedarnath hotels, and then there have",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "hotels-in-yamunotri",
-    "title": "Book 10 Hotels in Yamunotri",
-    "category": "Pilgrimage",
-    "image": "/images/packages/yamunotri-weather.webp",
-    "duration": "",
-    "route": "",
-    "description": "Yamunotri is one of the Chota Char Dham in Uttarakhand , the first leg of the pilgrimage that devotees undertake in their quest for salvation. Finding accommodation in Yamunotri is easy because it is easily accessible compared to tougher places like Kedarnath and Janki Chatti is where most hotels are located. There are plenty of guest houses as well as a few 1 star, 2 star and 3 star hotels for those who want better rooms. Take a look.",
     "highlights": [],
     "mrp": "",
     "dealPrice": "",
@@ -6258,8 +4261,8 @@ export const allPackages: Package[] = [
     "route": "Cochin- Munnar",
     "description": "If you think you’ve explored everything, then visit Kerala’s beautiful lagoons, traditional dances, calm backwaters, and welcoming people.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹30,000",
+    "dealPrice": "₹7,650",
     "discount": ""
   },
   {
@@ -6289,19 +4292,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "index",
-    "title": "Best Travel Company in Delhi – My Quick Trippers Pvt. Ltd.",
-    "category": "India Tours",
-    "image": "/images/packages/india-tour-packages.jpg",
-    "duration": "",
-    "route": "Haldwani / Kathgodam → Dharchula → Gunji → Kalapani → Navidhang → Kuti → Jollingkong → Adi Kailash",
-    "description": "Haldwani / Kathgodam → Dharchula → Gunji → Kalapani → Navidhang → Kuti → Jollingkong → Adi Kailash",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "india-chardham-yatra",
     "title": "All India Chardham Yatra Tour Package",
     "category": "Pilgrimage",
@@ -6310,8 +4300,8 @@ export const allPackages: Package[] = [
     "route": "Delhi – Haridwar → Haridwar – Joshimath → Joshimath – Badrinath → Badrinath – Devprayag / Srinagar → Devprayag / Srinagar – Rishikesh – Delhi → Delhi – Bhubaneshwar – Puri",
     "description": "One of the most vital and extremely important pilgrimage circuits among Hindu Vaishnavites,",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹97,500",
+    "dealPrice": "₹11,250",
     "discount": ""
   },
   {
@@ -6341,19 +4331,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "india-nepal-wildlife-tour",
-    "title": "India Nepal Wildlife Tour Package",
-    "category": "International",
-    "image": "/images/packages/india-nepal-wildlife-tour.jpg",
-    "duration": "11 Nights / 12 Days",
-    "route": "Delhi → Delhi – Corbett → Exploring Corbett → Corbett – Suklaphanta → Suklaphanta → Suklaphanta – Bardia",
-    "description": "Let’s explore some of the most famous and happening wildlife sanctuaries in India and in Nepal like Chitwan National Park, Royal Bardia National Park, Corbett National Park, etc. but wildlife sanctuaries are not the only destinations included in the itinerary. You will also be exploring some of the most acclaimed tourist destinations of both countries.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "india-wildlife-tour-packages",
     "title": "India Wildlife Tour Packages",
     "category": "Wildlife",
@@ -6363,21 +4340,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "East or West, North or South, India does not lack wildlife sanctuaries and wildlife parks where you can indulge your wish to be at one with nature. India is vast; so you can pick a specific region and go off on a wonderful tour into the reserves to get a firsthand view and experience of the flora and fauna. India Wildlife Tour Packages come with an enticing repertoire of wildlife tours that will make you go into the hearts of forests and explore the exotic wildlife. Kashmir is better known for i",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "indian-splendour-tour",
-    "title": "Indian Splendour Journey of Maharaja Express",
-    "category": "India Tours",
-    "image": "/images/packages/indian-splendour-tour.jpg",
-    "duration": "6 Nights / 7 Days",
-    "route": "Arrival in Agra → Agra Excursion - Ranthambore Tiger Reserve - Jaipur → Jaipur - Bikaner → Bikaner - Jodhpur → Jodhpur - Udaipur → Udaipur - Mumbai",
-    "description": "The Maharaja express is the leading luxury train journey provider in the world. It has consistently been awarded as the top luxury trains service provider for years. This world renowned service was started off by a private travel company along with the Indian railways and aims at achieving new heights in Rail Yatras. This Indian splendour journey of Maharaja express will take you along some of the most well-known tourist destinations in India. Along with the immaculate train journey you will be",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹35,624",
+    "dealPrice": "₹28,499",
     "discount": ""
   },
   {
@@ -6408,8 +4372,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Indore - Maheshwar - Omkareshwar - Ujjain → Ujjain - Indore -",
     "description": "If you’re looking for a spiritual visit that is abundantly laced with temple visits, trip to serene Ghats, and spending time close to the holy rivers, then this trip is for you!",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹11,250",
+    "dealPrice": "₹750",
     "discount": ""
   },
   {
@@ -6422,34 +4386,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "interesting-facts-about-chardham",
-    "title": "Top 10 Interesting Facts about Chardham",
-    "category": "Pilgrimage",
-    "image": "/images/packages/interesting-facts-about-kaziranga-national-park.jpg",
-    "duration": "",
-    "route": "",
-    "description": "The divine Char dham Yatra is well known for its religious values that take the pilgrims across the holy shrines of Kedarnath, Badrinath, Gangotri, and Yamunotri. Each of these abodes of gods holds a lot of importance in the hearts of Hindus. People from across the globe make it a point to have this spiritual journey which opens up for a limited duration of 6 months. Completing this circuit is believed to grant moksha or salvation.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "interesting-facts-about-somnath",
-    "title": "Top 10 Interesting Facts About Somnath Temple",
-    "category": "India Tours",
-    "image": "/images/packages/hi-interesting-facts-about-somnath.webp",
-    "duration": "",
-    "route": "",
-    "description": "Somnath is not only the holiest shiva temple in India but is an architectural marvel. Built using fine carvings, finely detailed engravings and beautiful designs complete with images, paintings and sculptures of various gods and goddesses, this temple is more than a spiritual place. It is a complete experience for the mind, body and soul. Located right next to the crashing waves of the Arabian Sea and just next to the Somnath beach, this temple is filled with awe-inspiring experiences that will",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹22,313",
+    "dealPrice": "₹17,850",
     "discount": ""
   },
   {
@@ -6527,20 +4465,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "jaipur-tour-packages-from-delhi",
-    "title": "2 Days Delhi Jaipur Tour Package",
-    "category": "North India",
-    "image": "/images/packages/hi-jaipur-tour-packages-from-delhi.webp",
-    "image2": "/images/packages/d4789093e018.jpg",
-    "duration": "1 Nights / 2 Days",
-    "route": "",
-    "description": "Delve on a fascinating expedition in the bewitching states of Jaipur and Delhi.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "jaipur-tour-packages",
     "title": "Jaipur Tour Packages",
     "category": "India Tours",
@@ -6550,8 +4474,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Jaipur was founded by Sawai Raja Jai Singh and is the capital of Rajasthan. Jaipur city has evolved into a great travel attraction in India and is one of the top three cities for being acclaimed Golden Triangle Tour along with Agra, the city of Taj, and Delhi, the capital of India. While traveling Jaipur tours you can visit the historical forts, flaunting palaces, full-of-life temples, brindle bazaars, and bouncy streets that have earned a special place in the hearts of the people. The uniquenes",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹52,499",
+    "dealPrice": "₹22,499",
     "discount": ""
   },
   {
@@ -6648,58 +4572,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "japan-china-korea-tour",
-    "title": "Japan China Korea Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-japan-china-korea-tour.webp",
-    "duration": "13 Nights / 14 Days",
-    "route": "Arrival in Tokyo → Sightseeing in Tokyo → Tokyo – Hiroshima → Hiroshima – Osaka → Osaka – Nara – Kyoto – Osaka → Osaka – Seoul",
-    "description": "The Fareast Asian part of the world is one of the most magnificent and unique destinations for every traveller. It is one of the most amazing places if you are looking forward to having a wholesome vacation experience. From Mount Fuji to the Great Wall of China, this Japan, China and Korea tour package will ensure that you have an experience of a lifetime. Go on this amazing and mesmerising tour which will help you to have a one of a kind holiday with your family.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "japan-honeymoon-tour",
-    "title": "Japan Honeymoon Tour Package",
-    "category": "Honeymoon",
-    "image": "/images/packages/hi-japan-honeymoon-tour.webp",
-    "duration": "6 Nights / 7 Days",
-    "route": "Arrival in Tokyo → Sightseeing Tour of Tokyo → Tokyo – Mt. Fuji – Kyoto → Cultural Tour of Kyoto → Kyoto – Nara – Kyoto → Kyoto Departure",
-    "description": "What better way of saying good bye to the hectic marriage processions than becoming tension free by visiting some of the most interesting and unique places of tourist attractions in Tokyo, Japan and Kyoto. A honeymoon in Japan will be one of the most memorable experiences of your life. For 7 days and 6 nights you will be able to soak in some of the most vibrant culture and the serenity it has. Go through the diverse range of fun-filled places to visit and create a lifetime worth of memories.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "japan-korea-taiwan-tour",
-    "title": "Japan Korea Taiwan Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-japan-korea-taiwan-tour.webp",
-    "duration": "9 Nights / 10 Days",
-    "route": "Arrival in Taipei → Taipei – Sun Moon Lake – Taichung → Taichung – Taipei → Taipei – Seoul → Seoul – Osaka → Seoul – Nara – Kyoto – Osaka",
-    "description": "Explore the wonderful, unique and exotic destinations of Japan Korea and Taiwan, an ideal choice for a family vacation. From exploring the culture of these places to tasting the traditional food and cuisines here to further exploring its skyscrapers this place is undoubtedly any traveller’s dream come true. The experience here will be unparalleled to anywhere else and you will feel like exploring more. Book this Japan, Korea and Taiwan tour package at the best available prices and have the holid",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "japan-tour-package-from-delhi",
-    "title": "Japan Tour Package from Delhi",
-    "category": "North India",
-    "image": "/images/packages/hi-japan-tour-package-from-delhi.webp",
-    "duration": "8 Nights / 9 Days",
-    "route": "",
-    "description": "The vibrant city of Japan is famous all over the world for its unique culture, one of a kind styles and a very interesting history, Japan is on every traveller’s bucket list. Although Japan is ranked among one of the most modern and high-tech places in the world the beliefs and thoughts of the people are very traditional and deeply rooted in their faith. From shopping centres, marketplaces and malls to temples, cruising experiences and peaceful strolls this place has so much to offer and all the",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "japan-tour-packages",
     "title": "Japan Tour Packages",
     "category": "India Tours",
@@ -6709,8 +4581,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Japan an Asian country which is also known as “Land of Rising Sun” and whose etiquettes, manners, values and culture are inspiring other countries and now are getting adopted by many countries. The country is a perfect blend where country’s ancient tradition is nicely transfused with the modern life which gives a natural essence to the Japan’s lives. Hakone, the most visited city of Japan and is the most selected place by International tourists also is renowned for “Mount Fuji” the tallest peak",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -6751,8 +4623,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "The Grand city of Jodhpur reverberates tales of the distant past in the barrenness of the desert. Jodhpur located in Rajasthan is popularly known as “The Sun City”. It is called so because it remains bright and sunny almost throughout the year. This city was founded by Rao Jodha (a chief) in 1459, and thus got its name Jodhpur. Previously this city was known as Marwar. It is the second largest city in Rajasthan. Jodhpur was partitioned into two divisions, namely the old city and the new city. A",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹52,499",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -6765,8 +4637,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Travel straight to the heart of Assam with this 5-day Jorhat Majuli Kaziranga Tour Package ! In this trip, you’ll get to be up close with Assam‘s culture.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹27,750",
+    "dealPrice": "₹4,950",
     "discount": ""
   },
   {
@@ -6805,34 +4677,8 @@ export const allPackages: Package[] = [
     "route": "Lucknow to Nepalgunj → Mansarovar Darshan - Return to Lucknow",
     "description": "Are you one of the Shiva Bhakts who desire to witness Mount Kailash and Mansarovar once in your lifetime?",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "kailash-mansarovar-yatra-aerial-darshan",
-    "title": "Mount Kailash Mansarovar Yatra Aerial Darshan",
-    "category": "International",
-    "image": "/images/packages/kailash-mansarovar-yatra-registration.webp",
-    "duration": "2 Nights / 3 Days",
-    "route": "Arrival Lucknow - Nepalgunj → Aerial Darshan of Kailash → Departure to Lucknow",
-    "description": "Mount Kailash Aerial Yatra package is specially curated for 2 Nights and 3 days for the pilgrims",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "kailash-mansarovar-yatra-by-helicopter",
-    "title": "Kailash Mansarovar Yatra By Helicopter",
-    "category": "International",
-    "image": "/images/packages/kailash-mansarovar-yatra-by-helicopter.jpg",
-    "duration": "9 Nights / 10 Days",
-    "route": "Kathmandu → Kathmandu - Nepalgunj → Taklakot - Rest for the Whole Day → Drive to Mansarovar Lake → 1st Day of Parikrama → 2nd Day of Parikrama",
-    "description": "Kailash Mansarovar Yatra by Helicopter fulfills your desire of visiting the holy lake Mansarovar and Mt. Kailash in a faster and easier way. This package is ideal for elders and those who are pressed for time, allowing them to experience Mount Kailash’s sacredness. This package includes a helicopter journey to Hilsa and experiencing the Kailash Mansarovar Region’s sacredness.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -6849,19 +4695,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "kailash-mansarovar-yatra-package-from-lucknow",
-    "title": "Kailash Mansarovar Yatra from Lucknow",
-    "category": "International",
-    "image": "/images/packages/kailash-mansarovar-yatra-package-from-lucknow.jpg",
-    "duration": "8 Nights / 9 Days",
-    "route": "Lucknow to Nepalgunj → Nepalgunj - Simikot - Hilsa - Purang → Stay at Purang → Purang to Mansarovar Lake → Mansarovar Lake to Darchen → First Day Parikrama of Mount Kailash",
-    "description": "Kailash Mansarovar Yatra Package from Lucknow takes you on a journey of spiritual awakening and liberation. Complete Kailash Parikrama with Charan Sparsh and experience the sacred vibes of Lake Mansarovar. Our packages have been designed in a way that we take care of all the inclusions, such as all ground transportation, accommodation, meals, and an experienced guide.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "kailash-mansarovar-yatra",
     "title": "Kailash Mansarovar Yatra Packages 2026",
     "category": "International",
@@ -6870,8 +4703,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Kailash Mansarovar Yatra is one of the most spiritually fulfilling pilgrimages for Hindu devotees in India. The sacred Mount Kailash and Lake Mansarovar in the Tibet Autonomous Region of China hold immense spiritual significance for Hindu, Buddhist, Jain, and Bon pilgrims alike. Our Kailash Mansarovar Yatra packages are curated with care — covering every major route and budget — to make this sacred journey accessible and comfortable.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,52,500",
+    "dealPrice": "₹7,500",
     "discount": ""
   },
   {
@@ -6896,8 +4729,8 @@ export const allPackages: Package[] = [
     "route": "Delhi to Kainchi Dham → Kainchi Dham- Mahavatar Babaji Cave → Dwarahat- Patal Bhuvaneshwar → Patal Bhuvaneshwar- Delhi",
     "description": "The Kainchi Dham Mahavatar Cave Patal Bhuvaneshwar Package will take you to three of the most sacred Indian destinations.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -7005,8 +4838,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "If you have never been to Karnataka, a beautiful state nestled in the Southwestern region of India then check out the well-crafted Karnataka tour Packages offered by My Quick Trippers and enjoy your vacation to the utmost level. Karnataka Tourism experience ranges from magnificent heritage sites, lush hill stations, vibrant cultural festivals, to thrilling wildlife adventures which makes it one of the most sought-after travel destinations in India. It is also famous for its cultural offerings, i",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹90,750",
+    "dealPrice": "₹23,250",
     "discount": ""
   },
   {
@@ -7036,19 +4869,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "kartik-swami-travel-packages",
-    "title": "Kartik Swami Temple Tour",
-    "category": "India Tours",
-    "image": "/images/packages/kartik-swami-travel-packages.jpg",
-    "duration": "2 Nights / 3 Days",
-    "route": "Haridwar/Rishikesh to Rudraprayag → Rudraprayag to Malkhi -  Kartik Swami Temple → Rudraprayag to Haridwar/Rishikesh",
-    "description": "Kartik Swami, nestled in the Garhwal Himalayas of Uttarakhand, offers breathtaking vistas and spiritual solace to visitors. Tour packages to Kartik Swami typically include trekking through scenic trails, exploring ancient temples, and immersing in the serene ambiance of the Himalayan foothills. These packages often cater to both adventure enthusiasts and pilgrims seeking a tranquil retreat amidst nature. With options ranging from guided hikes to accommodation in nearby villages, Kartik Swami tou",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "kasauli-tour-packages",
     "title": "Kasauli Tour Packages",
     "category": "India Tours",
@@ -7058,8 +4878,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Himachal Pradesh or the crowning gem of India is filled with explored and unexplored hamlets. From the dry treeless jagged landscape to the thriving rich green-covered rolling hills there is no dearth of places for one to indulge in. Kasauli is one such gorgeous cantonment town on the scenic hills of Solan district. Although established by the British Raj in 1842 it has become a hub of tourism in India. Being well connected and home to several ideal sightseeing options a fun-filled memorable tim",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
     "discount": ""
   },
   {
@@ -7071,8 +4891,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Kashi",
     "description": "Kashi Gaya Prayagraj Ayodhya Naimisharanya tour takes you to places where India’s spiritual heritage and traditions are still alive.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹52,800",
+    "dealPrice": "₹5,100",
     "discount": ""
   },
   {
@@ -7112,21 +4932,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Kasol is a quaint hamlet resting on the lap of the Himalayas by the holy Parvati River and blessed with a serene environment. Famous for its hippie culture the spirituality here is evident owing to the presence of Manikaran Gurudwara. Colorful markets, the constant sound of the gushing river, hot water springs, and over overlooking lush mountains are every traveler’s dream come true. Zig-zagging your way through the hiking and trekking trails and getting really in touch with nature is something",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "kathmandu-muktinath-janakpur-tour",
-    "title": "Kathmandu, Muktinath And Janakpur Dham Tour",
-    "category": "India Tours",
-    "image": "/images/packages/hi-kathmandu-muktinath-janakpur-tour.webp",
-    "duration": "5 Nights / 6 Days",
-    "route": "Arrival in Kathmandu → Kathmandu – Pokhara → Pokhara – Jomsom – Muktinath – Jomsom → Jomsom – Pokhara – Kathmandu → Kathmandu – Janakpur – Kathmandu → Kathmandu Departure",
-    "description": "Explore the gems of Nepal by availing the best deal on Kathmandu, Muktinath and Janakpur travel package which comprises of the perfect blend of spiritual and local experiences. Visit some of the most untouched jewels of Nepal through these 6 days and 5 nights of wholesome tour package you will be able to have the time of your lives here. Well known for its religious significance people from all over the world visit Muktinath and Janakpur to offer their prayers to the deities there like Lord Vish",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
     "discount": ""
   },
   {
@@ -7171,84 +4978,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "kedarnath-badrinath-special-helicopter-tour",
-    "title": "Badri Kedar Yatra Special Helicopter Yatra",
-    "category": "Pilgrimage",
-    "image": "/images/packages/badrinath-kedarnath-tour.jpg",
-    "duration": "3 Nights / 4 Days",
-    "route": "Arrival in Dehradun → Visit Kedarnath → Visit Badrinath → Return to Dehradun",
-    "description": "The Badrinath Kedarnath Yatra holds a special place in the hearts of Hindu pilgrims. Both the temples have immense spiritual significance and it’s no wonder many devotees take the Do Dham Yatra from Dehradun every year.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "kedarnath-faqs",
-    "title": "Kedarnath Frequently Asked Questions",
-    "category": "Pilgrimage",
-    "image": "/images/packages/delhi-to-kedarnath.webp",
-    "duration": "",
-    "route": "",
-    "description": "Planning a trip to Kedarnath Temple ? Whether it’s your first time or you’ve been before, it’s normal to have a lot of questions—about registration, the best route, weather conditions, or where to stay.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "kedarnath-history",
-    "title": "History of Kedarnath – Home of Lord Shiva Constructed by Pandavas",
-    "category": "Pilgrimage",
-    "image": "/images/packages/kedarnath-history.jpg",
-    "duration": "",
-    "route": "",
-    "description": "Kedarnath is considered one of the most sacred sites in Hinduism — and one of the twelve Jyotirlingas of Lord Shiva . The temple has centuries of legends, mythology, and historical significance woven into its story. Throughout a long and eventful history — surviving glacier encasement, floods, and the passage of time — the shrine has endured as a nerve centre of India’s religious and cultural identity.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "kedarnath-opening-closing-dates",
-    "title": "Kedarnath Dham Opening Date 2026",
-    "category": "Pilgrimage",
-    "image": "/images/packages/kedarnath-opening-closing-dates.webp",
-    "duration": "",
-    "route": "",
-    "description": "The opening date of Kedarnath Temple depends on the auspicious day of Akshaya Tritiya and is announced on Maha Shivaratri . It is decided by priests at Omkareshwar Temple after Panchang calculation. For 2026, the announcement was made on 15 February 2026, and the temple was reopened on 22 April 2026 at 8:00 AM after the winter closure.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "kedarnath-puja-rates",
-    "title": "Kedarnath Puja Rates",
-    "category": "Pilgrimage",
-    "image": "/images/packages/kedarnath-faqs.webp",
-    "duration": "",
-    "route": "",
-    "description": "Lakhs of devotees make their way through the treacherous and challenging terrain of the Garhwal Himalayas to offer their prayers in Kedarnath . Darshan of Baba Kedar at the temple is free of cost. There are many people who come to Kedarnath with the intention of performing some puja rituals. This special puja is done with the help of the head priest at the temple.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "kedarnath-temple",
-    "title": "Kedarnath Temple – The Holiest Hindu Shrines of Lord Shiva",
-    "category": "Pilgrimage",
-    "image": "/images/packages/kedarnath-temple.jpg",
-    "duration": "",
-    "route": "",
-    "description": "Considered to be one of the ancient and the holiest abodes of Lord Shiva, the temple of Kedarnath is not only a vital pillar for the Char Dham Yatra of Uttarakhand , but it is also a crucial part of the Panch Kedar Yatra in Uttarakhand. There are several legends related to the creation of this temple. One of the most popular is how it was visited by the Pandava brothers and established this temple in an attempt to ask for forgiveness from Lord Shiva for committing the crime of killing their kin.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "kedarnath-tour-packages",
     "title": "Kedarnath Yatra Tour Packages",
     "category": "Pilgrimage",
@@ -7260,51 +4989,6 @@ export const allPackages: Package[] = [
     "highlights": [],
     "mrp": "₹3,125",
     "dealPrice": "₹2,500",
-    "discount": ""
-  },
-  {
-    "slug": "kedarnath-yatra-by-helicopter",
-    "title": "Kedarnath Yatra by Helicopter 2026",
-    "category": "Pilgrimage",
-    "image": "/images/packages/kedarnath-yatra-by-helicopter.jpg",
-    "duration": "1 Day",
-    "route": "Dehradun - Kedarnath",
-    "description": "Kedarnath, one of the most revered shrines of Lord Shiva, is nestled in the great Himalayas at 3,583 metres above sea level. The gorgeous shrine is surrounded by snow-capped mountains and magnificent glaciers that add to its charm and spiritual glory. Kedarnath Dham is among the 12 Jyotirlingas and here the deity is worshipped in an unusual pyramidal-shaped lingam.",
-    "highlights": [
-      "Smooth transfers to and from every helipad",
-      "Special care for senior citizens throughout the journey"
-    ],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "kedarnath-yatra-from-delhi",
-    "title": "Kedarnath Yatra Package from Delhi",
-    "category": "North India",
-    "image": "/images/packages/kedarnath-yatra-from-delhi.jpg",
-    "duration": "4 Nights / 5 Days",
-    "route": "Delhi to Haridwar → Haridwar to Guptkashi → Guptkashi - Kedarnath - Guptkashi → Guptkashi to Haridwar via Rishikesh → Haridwar to Delhi",
-    "description": "Kedarnath Yatra is considered to be one of the most famous pilgrimage circuits in Uttarakhand. Known for its divine power and astonishing beauty, Kedarnath is a dream destination for nature lovers and spiritual enthusiasts. Kedarnath is a Panch Kedar of Lord Shiva and one among the twelve Jyotirlingas. Every year, millions of devotees embark on the Kedarnath Yatra Package from Delhi to seek Lord Shiva's blessings.",
-    "highlights": [
-      "Online: registrationandtouristcare.uk.gov.in",
-      "App: 'Tourist Care Uttarakhand' on Google Play / App Store"
-    ],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "kedarnath-yatra-from-haridwar",
-    "title": "Kedarnath Yatra Package from Haridwar",
-    "category": "Pilgrimage",
-    "image": "/images/packages/kedarnath-yatra-from-haridwar.jpg",
-    "duration": "2 Nights / 3 Days",
-    "route": "Haridwar – Guptkashi → Guptkashi – Kedarnath – Guptkashi → Guptkashi – Haridwar",
-    "description": "Discover Kedarnath's rich cultural heritage and spiritual vibes with our well-crafted Kedarnath Yatra Package from Haridwar that has been curated by our experts. Kedarnath is dotted with many natural attractions and spiritual sites.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
     "discount": ""
   },
   {
@@ -7359,21 +5043,8 @@ export const allPackages: Package[] = [
       "View Periyar and the Cardamom Hills",
       "Full coverage of Kumarakom and Mararikulam"
     ],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "kerala-cultural-tour",
-    "title": "Kerala Cultural Tour Package",
-    "category": "South India",
-    "image": "/images/packages/hi-kerala-cultural-tour.webp",
-    "duration": "9 Nights / 10 Days",
-    "route": "Cochin → Transfer from Cochin to Alleppey → Alleppey – Aranmula → Aranmula → Aranmula – Thekkady → Thekkady",
-    "description": "Plan a Kerala tour and witness the diversity spread in architecture, scenery, culture, and the traditions. Kerala is a beautiful south Indian state blessed with lush tropical hills and pristine lakes. We have designed various tour packages and after considering the parameter of cultural beauty of Kerala we have brought the most customized Kerala Cultural Tour Package. This 9 Nights and 10 Days long tour package will make you feel lost amidst the nature’s beauty and rich Heritages.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹55,313",
+    "dealPrice": "₹44,250",
     "discount": ""
   },
   {
@@ -7398,8 +5069,8 @@ export const allPackages: Package[] = [
     "route": "Kottayam → to Day 4 : Treatment for Rejuvenation → Kottayam to Vagamon → Vagamon to Thekkady → At Vagamon → Vagamon to Ernakulum",
     "description": "India is well-known for its age-old culture and tradition as well as the practice of spa and ayurvedic health treatments and therapies. The Ayurvedic system of treatment has originated in India several thousand years back. With the Ayurvedic, spa and yoga tours you can explore the finest centres for spa and ayurvedic therapies in India that will help rejuvenate the mind and body. These exclusive tours can also serve as gifts for your family members or friends for pampering themselves. Enjoy the",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹45,938",
+    "dealPrice": "₹36,750",
     "discount": ""
   },
   {
@@ -7412,8 +5083,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Kerala is a magnificent masterpiece of nature, enriched with the cultures and traditions of the local folks.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹60,000",
+    "dealPrice": "₹6,150",
     "discount": ""
   },
   {
@@ -7565,8 +5236,8 @@ export const allPackages: Package[] = [
     "route": "Kochi – Munnar → Munnar Excursions → Munnar – Thekkady → Thekkady – Alleppey → Alleppey – Kovalam → Kovalam – Kanyakumari – Kovalam",
     "description": "Explore the gems of Southern India with our Kerala with Kanyakumari tour package . With this package, you get to experience the perfect combination of nature, serenity, and comfort. We prioritize personalized customer experiences and are dedicated to offering the perfect travel experience.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹45,938",
+    "dealPrice": "₹36,750",
     "discount": ""
   },
   {
@@ -7592,8 +5263,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Khajjiar represents the best of Himalayan biodiversity. Dotted with forests of Deodar and vast expansive meadows, this hill station in Himachal Pradesh is every nature lover’s dream come true. Lined with thick forest cover, rolling green pastures, and refreshing air it is one of the top destinations for family getaways and extended weekend staycation. Over some time, Khajjiar has become the epitome of what real-time natural beauty should look like. It is one place where peace, serenity, and natu",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
     "discount": ""
   },
   {
@@ -7618,8 +5289,8 @@ export const allPackages: Package[] = [
     "route": "Jhansi - Orchha → Khajuraho Trip: Western Group of Temples → Khajuraho Trip: Eastern Group of Temples and Departure",
     "description": "Whether it’s the majestic forts, intricate architecture, or the royal palaces, this trip has everything in it to give you a glimpse into the cultural and historical past. Moreover, the regal aura, tranquil surroundings, and the fun Light and Sound Show make it a worthwhile tour that must be undertaken at least once in your lifetime! To enjoy a smooth trip here, book our Khajuraho Orchha tour package.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -7632,8 +5303,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Hop on this journey to Khajuraho, which is one of the most known and visited historical sites, famous for its rich art and culture and captivating monuments and temples with stunning ancient carvings. The temples at Khajuraho are a perfect example of how ancient art meets spirituality and creates magic. Khajuraho is listed as a UNESCO World Heritage Site. You can start this journey of art and religion by visiting the popular Kandariya Mahadev Temple where you find exquisite carvings of gods and",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹37,500",
+    "dealPrice": "₹30,000",
     "discount": ""
   },
   {
@@ -7645,8 +5316,8 @@ export const allPackages: Package[] = [
     "route": "Khatu Shyam Salasar Helicopter tour Itinerary or tour Plan",
     "description": "Book our Khatu Shyam Ji & Salasar helicopter Yatra package to explore two of Rajasthan’s most sacred destinations in a hassle-free way.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹1,35,000",
+    "dealPrice": "₹1,27,500",
     "discount": ""
   },
   {
@@ -7673,72 +5344,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "The most discussed and popular hill station in India will be known to you if you are planning for a holiday tour with Kodaikanal Tour Packages. A quiet hill station in the lap of spotless Palani Hills near Madurai situated in Tamilnadu. With its forests, rocks, charming lake and refreshing air, Kodaikanal is the most attractive place that you can enjoy with Kodaikanal honeymoon packages. When you are tired of the daily routine and want a break from the heat of the plains Kodaikanal Holiday packa",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "koh-phangan-adventure-tour",
-    "title": "Koh Phangan Adventure Tour Package",
-    "category": "Adventure",
-    "image": "/images/packages/hi-koh-phangan-adventure-tour.webp",
-    "duration": "7 Nights / 8 Days",
-    "route": "Arrival in Bangkok → Bangkok City Sightseeing → Arrival in Koh Tao → Koh Tao → Arrival in Koh Phangan → Adventure Day",
-    "description": "Haven’t you planned or covered any adventurous trip from a long time? If yes, and you are confused of which place to select this time to make it a Wow trip, then check out this well-curated Koh Phangan Adventure Tour Package which is inclusive of several striking water sport activities including snorkeling, zip-lining, and sightseeing around the destination named Koh Tao and Koh Phangan established in the eastern coast of Thailand.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "koh-phangan-sightseeing-tour",
-    "title": "Koh Phangan Sightseeing Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-koh-phangan-sightseeing-tour.webp",
-    "duration": "2 Nights / 3 Days",
-    "route": "Arrival in Koh Phangan → Koh Phangan Excursion → Waterfall Hopping and Departure",
-    "description": "If you are a party lover then Koh Phangan is one of those destinations that must be added in your bucket list as it is believed to be a Mecca for party lovers. On every full moon day of the month, the city looks amazing and amicable when it gets adorned with the colorful lights. On this day, the island turns into a hugely crowded pub or a crazy hub of partygoers who go wild all night. However, this is not the only attraction of Koh Phangan as the city has much more to offer its travelers and the",
-    "highlights": [
-      "Phuket Sightseeing Tour",
-      "Chiang Rai Sightseeing Tour",
-      "Krabi Sightseeing Tour",
-      "Pattaya Sightseeing Tour",
-      "Koh Samui Sightseeing Tour"
-    ],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "koh-samui-honeymoon-tour",
-    "title": "Koh Samui Honeymoon Tour Package",
-    "category": "Honeymoon",
-    "image": "/images/packages/hi-koh-samui-honeymoon-tour.webp",
-    "duration": "3 Nights / 4 Days",
-    "route": "Arrival in Koh Samui → Island Tour in Koh Samui → Leisure Day in Koh Samui → Koh Samui",
-    "description": "Browse our most customized 3 Nights and 4 Days long Koh Samui Honeymoon Tour Package and give a fascinating and perfect start to your married life in the island city of Thailand. Due to its panoramic landscapes and cheap travel rates, Thailand is a dream destination of every newly-wed couple and tops the list of preferred honeymoon destinations in the world. Koh Samui is the most frequented destination in the country as it is adorned with panoramic landscapes including palm-fringed beaches, exot",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "koh-samui-sightseeing-tour",
-    "title": "Koh Samui Sightseeing Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-koh-samui-sightseeing-tour.webp",
-    "duration": "3 Nights / 4 Days",
-    "route": "Koh Samui → Leisure Time at Koh Samui → Departure",
-    "description": "Tucked beautifully in the Gulf of Thailand, Koh Samui is reckoned as a true nature paradise where one can meet their inner soul. This gorgeous city is studded with breathtaking landscapes adorned with palm-fringed coastlines, spectacular beaches, pristine lakes, thick dense forests, and top-notch Vilas and hotels. Browse our 3 Nights and 4 Days long Koh Samui Sightseeing Tour Package and explore the wonders of this gorgeous island city and create innumerable lifelong memories of Thailand.",
-    "highlights": [
-      "Koh Phangan Sightseeing Tour",
-      "Phuket Sightseeing Tour",
-      "Chiang Rai Sightseeing Tour",
-      "Krabi Sightseeing Tour",
-      "Pattaya Sightseeing Tour"
-    ],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -7749,33 +5356,6 @@ export const allPackages: Package[] = [
     "duration": "",
     "route": "",
     "description": "A city as old as time itself. A city that has stayed in place and watched as the world has turned and the tides have changed. A city that has stood the test of time for thousands of years. In the words of Mark Twain, “Older than history, older than tradition, older even than legend, And looks twice as old as all of them put together.” Varanasi, the city that is more than just the spiritual capital of India. The city which can be aptly described as a melting pot where both life and death come tog",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "kolkata-gangasagar-tour",
-    "title": "Kolkata Gangasagar Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-kolkata-gangasagar-tour.webp",
-    "duration": "2 Nights / 3 Days",
-    "route": "Arrival in Kolkata → Kolkata - Gangasagar → Gangasagar - Kolkata Departure",
-    "description": "Situated in Kolkata, Gangasagar is an important place of Hindu pilgrimage, especially during the holy time of Makar Sankranti. This pilgrimage spot marks the point of confluence of the holy Ganga River with Bay of Bengal. Along with taking a holy dip here, pilgrims also make it a point to offer prayers in the Kapila Temple nearby. The pilgrimage as well as the temple is dedicated to Kapil Muni, an incarnation of lord Vishnu. Experience the divinity with our luxury Kolkata Gangasagar Tour Package",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "kolkata-to-gangasagar-one-day-tour-package",
-    "title": "Same Day Gangasagar Tour from Kolkata",
-    "category": "India Tours",
-    "image": "/images/packages/hi-kolkata-to-gangasagar-one-day-tour-package.webp",
-    "image2": "/images/packages/809a9fb8e8e3.jpg",
-    "duration": "1 Day",
-    "route": "",
-    "description": "Experience the charm of the Gangasagar Mela, where many pilgrims visit this sacred site to take a holy dip.",
     "highlights": [],
     "mrp": "",
     "dealPrice": "",
@@ -7819,8 +5399,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -7865,51 +5445,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "krabi-phuket-phi-phi-island-tour",
-    "title": "Krabi Phuket Phi Phi Island Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-krabi-phuket-phi-phi-island-tour.webp",
-    "duration": "6 Nights / 7 Days",
-    "route": "Arrival in Krabi → Island Excursion → Self-Exploration at Krabi → Phuket → Phi Phi Island → Half Day Sightseeing in Phuket",
-    "description": "Browse our well-crafted Krabi Phuket Phi Phi Island Tour Package and explore almost 80 islands located in Krabi. This gorgeous city is adorned with gorgeous diving sites, national parks, and you can indulge in various water sport activities including kayaking, snorkeling, parasailing, and you can also witness various birds including native as well as migratory birds. Grab this most customized deal and make your trip one of the most memorable and feel lost in the surreal beauties of Thailand.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "krabi-sightseeing-tour",
-    "title": "Krabi Sightseeing Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-krabi-sightseeing-tour.webp",
-    "duration": "2 Nights / 3 Days",
-    "route": "the Krabi Island → Visit James Bond Island → Krabi",
-    "description": "Located near the Andaman Coast, Krabi is a beautiful resort town and also the capital of Krabi Province located in South Thailand. The entire region is adorned with mangrove forests which makes this island look blue and green all around. Browse our meticulously crafted 2 Nights and 3 Days long Krabi Sightseeing Tour Package and explore the thick dense mangrove forests, witness the wildlife, and enjoy exploring the gorgeous waterfalls. Get yourself indulged in various adventure sports activities",
-    "highlights": [
-      "Koh Phangan Sightseeing Tour",
-      "Phuket Sightseeing Tour",
-      "Chiang Rai Sightseeing Tour",
-      "Pattaya Sightseeing Tour",
-      "Koh Samui Sightseeing Tour"
-    ],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "krabi-tour",
-    "title": "Krabi Bangkok Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-krabi-tour.webp",
-    "duration": "4 Nights / 5 Days",
-    "route": "Arrival in Krabi → Krabi → Krabi – Bangkok → Bangkok → Bangkok Departure",
-    "description": "My Quick Trippers presents you with a fun opportunity to explore the beautiful Thai town of Krabi with the carefully curated and hassle-free Krabi Bangkok Tour Package. Discover the hidden gems of Thailand and be a part of an unforgettable experience with numerous whimsical tourist attractions and a coastline which spells relaxation. This place is quickly becoming a tourist hub for people from all over the world seeking peace and looking to quench their wanderlust.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "kullu-tour-packages",
     "title": "Kullu Tour Packages",
     "category": "India Tours",
@@ -7919,8 +5454,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Himachal Pradesh is the crowning jewel of India which is home to not just some of the most stunning hill escape destinations in the world. Kullu is one such hamlet that is embedded deep inside the green hills and is surrounded by the blissful Himalayan ranges. Mainly famous for its vibrant culture and warm winter clothing this is one of the best places for you to experience sheer, unadulterated bliss. The hill station is placed on the banks of Beas River which supports the thriving biodiversity",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
     "discount": ""
   },
   {
@@ -7933,8 +5468,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -7953,19 +5488,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "kurumba-resort-maldives-tour",
-    "title": "Kurumba Resort Maldives Tour",
-    "category": "India Tours",
-    "image": "/images/packages/kurumba-resort-maldives-tour.jpg",
-    "duration": "3 Nights / 4 Days",
-    "route": "Arrival in the Maldives → Maldives → the Maldives",
-    "description": "What comes in your mind when somebody says resort? You must be thinking of sea, sand, and sun but Kurumba Resort Maldives has much more to offer you and to leave you mesmerized. On this 3 Nights / 4 Says long tour package you will feel like you are living a life in a dreamy wonderland where you enjoy cocktail holding in your hands and witnessing the beautiful view of the beach. This beautiful resort allures almost all kinds of travelers, no matter of what age do they belong to? It is one of the",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "kushinagar-tour-packages",
     "title": "Kushinagar Tour Packages",
     "category": "India Tours",
@@ -7975,8 +5497,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
     "discount": ""
   },
   {
@@ -8021,19 +5543,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "ladakh-kashmir-tour",
-    "title": "Magical Ladakh with Kashmir Package",
-    "category": "North India",
-    "image": "/images/packages/ladakh-kashmir-tour.jpg",
-    "duration": "9 Nights / 10 Days",
-    "route": "Arrival in Srinagar → Pahalgam excursion → Excursion to Gulmarg → Srinagar - Sonmarg - Kargil → Kargil - Lamayuru - Leh → Full day sightseeing in Leh",
-    "description": "The Magical Ladakh Tour with Kashmir will take you on a journey to the best of both worlds. From the high altitude cold deserts of Ladakh to the lush green valleys of Kashmir, this 10 days and 9 nights tour package will take you on a holiday of a lifetime. If you can’t make up your mind about where to go then this is just the package you need. The package includes excursions to high altitude regions of the rain shadow Himalayan regions, as well as exploring the rolling green hills and unmatched",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "ladakh-tour-packages",
     "title": "Leh Ladakh Tour Packages",
     "category": "North India",
@@ -8043,8 +5552,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Ever since it was established as a Buddhist kingdom, the history of Ladakh can be traced back to as early as the formation of the Himalayas. With the jagged terrain, tall sandy rocky structures and inhabited by ancient locals from all across the Himalayas and even Tibet, Ladakh is not just a place it’s an experience. Ladakh tour packages are perfect for the adventurous couple looking to explore new avenues, a group of friends going on an adventure or even solo travellers looking for some peace o",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹42,750",
+    "dealPrice": "₹30,750",
     "discount": ""
   },
   {
@@ -8070,8 +5579,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Lakshadweep, a stunning archipelago in the Arabian Sea, is renowned for its breathtaking landscapes, crystal-clear waters, and vibrant marine life. Tour packages to Lakshadweep offer a gateway to this tropical paradise, allowing travellers to experience its unparalleled beauty and tranquillity.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -8123,8 +5632,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Loyalty and referral should be rewarded, we get that. So if you traveled with My Quick Trippers, or are happy to recommend My Quick Trippers to friends, or are simply referred by your friend, find the rewards below – sweet tour coupons are calling!",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹18,000",
+    "dealPrice": "₹4,500",
     "discount": ""
   },
   {
@@ -8150,8 +5659,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Lucknow is a cultural and heritage hub of India. It is a place which displays the beautiful and colorfully vibrant mosaic of the bygone era coexisting perfectly with modern developments. The narrow lanes, delicious fragrant delicacies, humble folks, and a range of heritage buildings. Going on guided city tours, shopping for your perfect Chikankaari clothes, and enjoying the general environment of culture in every corner of the city will leave a lasting impression in your heart. This magnificent",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
     "discount": ""
   },
   {
@@ -8204,21 +5713,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "machail-mata-yatra",
-    "title": "Machail Mata Yatra Package",
-    "category": "India Tours",
-    "image": "/images/packages/machail-mata-yatra.jpg",
-    "duration": "2 Nights / 3 Days",
-    "route": "Arrival in Jammu - Kishtwar → Kishtwar - Gulabgarh - Mata Machail Darshan - Kishtwar → Kishtwar - Jammu Departure",
-    "description": "Dedicated to goddess Durga and situated in the scenic Indian union territory of Jammu and Kashmir, Mata Machail is one of the most pious places of goddess worship. With no recorded history of the shrine’s formation, the Mata Machail shrine is a swayambhu making it even more sacred. The temple is surrounded by beautiful hills, glaciers and various small tributaries of Chenab River. Devotees flock to this shrine on a regular basis seeking blessings of Mata Machail while also enjoying the unblemish",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹4,50,000",
+    "dealPrice": "₹2,85,000",
     "discount": ""
   },
   {
@@ -8289,23 +5785,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "madurai-sightseeing-tour",
-    "title": "Madurai Sightseeing Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-madurai-sightseeing-tour.webp",
-    "duration": "1 Nights / 2 Days",
-    "route": "Arrival in Madurai → Madurai Departure",
-    "description": "Known as the temple town of India and filled with heritage shrines this magnificent location is situated on the southern end of the state of Tamil Nadu. The sacred destination is situated on the banks of the holy river of Vaigai and has always been the part of a kingdom of Pandyas during the ancient ages. The age of the city can be dated back to 2500 years ago and has been constructed and developed in the shape of a lotus hence gaining its name as lotus city. This 2 days and 1 night of Madurai p",
-    "highlights": [
-      "Thanjavur Sightseeing Tour",
-      "Rameshwaram Sightseeing Tour",
-      "Ooty Sightseeing Tour"
-    ],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "madurai-tour-packages",
     "title": "Madurai Tour Packages",
     "category": "India Tours",
@@ -8328,21 +5807,8 @@ export const allPackages: Package[] = [
     "route": "Delhi → Sightseeing in Delhi → Delhi to Agra → Jaipur to Agra → Jaipur sightseeing → Jaipur - Delhi",
     "description": "The Golden Triangle trip takes you on an exciting journey to the three famous cities in India such as Delhi, Agra, and Jaipur.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "magical-switzerland-tour",
-    "title": "Magical Switzerland Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/magical-switzerland-tour.jpg",
-    "duration": "5 Nights / 6 Days",
-    "route": "Arrival in Zurich – Lucerne → Lucerne – Mt. Titlis – Lucerne → Lucerne – Interlaken → Interlaken – Mt. Jungfraujoch – Interlaken → Interlaken – Zurich → Zurich Departure",
-    "description": "The alluring beauty of Switzerland can be experienced in the best possible manner via a Magical tour of Switzerland. For 6 days and 5 nights you will be immersed in the scenic and ethereal beauty here which will allow you to go through some of the most stunning and surreal beauty here. Designed to take you to some of the best tourist attractions and unique destinations for a wholesome experience you will be able to have some of the most epic travel time here. An ideal choice of Switzerland packa",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹36,900",
+    "dealPrice": "₹5,250",
     "discount": ""
   },
   {
@@ -8354,8 +5820,8 @@ export const allPackages: Package[] = [
     "route": "Mumbai - Bhimashankar - Ahmednagar → Ahmednagar - Shani Shinganapur - Parli Vaijnath - Parbhani → Parbhani - Aundha Nagnath - Aurangabad → Aurangabad - Grishneshwar - Ellora - Shirdi → Shirdi - Nasik - Trimbakeshwar - Mumbai",
     "description": "Thinking how to visit all five holy temples in a single journey? This 5 Jyotirlinga tour package of Maharashtra makes it simple and convenient.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹25,500",
+    "dealPrice": "₹3,750",
     "discount": ""
   },
   {
@@ -8367,8 +5833,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Mumbai  Trimbakeshwar  Panchavati - Shirdi → Shirdi  Grishneshwar - Ellora  Shani Shingnapur  Ahmednagar → Ahmednagar  Bhimashankar  Mumbai",
     "description": "This 3 Jyotirlinga Tour of Maharashtra is designed for pilgrims who want to visit three of Lord Shiva's most revered sacred shrines in a single, well-organised journey. You will be visiting Trimbakeshwar (Nashik), Grishneshwar (Aurangabad), and Bhimashankar (Sahyadri hills) — three of the twelve Jyotirlingas of India, all located within Maharashtra. Each shrine offers its own distinct spiritual significance, architecture, and setting.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹40,500",
+    "dealPrice": "₹900",
     "discount": ""
   },
   {
@@ -8399,19 +5865,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "mahavatar-baba-cave-tour-with-kanchi-dham",
-    "title": "Mahavatar Baba Cave Tour with Kanchi Dham",
-    "category": "India Tours",
-    "image": "/images/packages/mahavatar-baba-cave-tour-with-kanchi-dham.jpg",
-    "duration": "3 Nights / 4 Days",
-    "route": "Delhi- Kainchi Dham → Kainchi Dham → Explore Mahavatar Babaji Caves → Dwarahat to Delhi",
-    "description": "Kainchi Dham is situated in the Kumaon region of Uttarakhand. Established by Maharaj Neem Karoli Baba in 1962, it houses the Neem Karoli ashram which holds immense spiritual prominence for the devotees.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "mahavatar-babaji-cave-tour-from-chennai",
     "title": "Mahavatar Babaji Cave Tour from Chennai",
     "category": "India Tours",
@@ -8420,35 +5873,8 @@ export const allPackages: Package[] = [
     "route": "Delhi- Babaji Cave → Babaji Cave Darshan → Babaji Cave to New Delhi",
     "description": "Take a spiritual journey from Chennai to the sacred Mahavatar Babaji Cave ,",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "mahavatar-babaji-cave-tour-package",
-    "title": "Mahavatar Babaji Cave Tour Package, Dunagiri",
-    "category": "India Tours",
-    "image": "/images/packages/mahavatar-babaji-cave-dwarahat.jpg",
-    "image2": "/images/packages/d00ad95c71fd.webp",
-    "duration": "2 Nights / 3 Days",
-    "route": "",
-    "description": "Learn about the historical prominence of Mahavatar Babaji's Cave with our 2-night 3-day package from Delhi.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "majestic-dubai-tour",
-    "title": "Majestic Dubai Tour Package",
-    "category": "International",
-    "image": "/images/packages/majestic-dubai-tour.jpg",
-    "duration": "5 Nights / 6 Days",
-    "route": "Arrive Dubai & Proceed to Abu Dhabi → Tour of Abu Dhabi + Ferrari World → Abu Dhabi – Dubai – Dhow Cruise → Dubai City Tour + Desert Safari → Snow Park Ski Board Tour → Depart Dubai",
-    "description": "The city of Dubai boasts of an unmatched majesty portrayed through its plethora of futuristic architectural marvels that ooze a fascinating urban appeal. The majestic allure of an appealing Dubai tour is incomplete if you haven’t visited Abu Dhabi also in the course of touring Dubai. Abu Dhabi too falls no short of positivity, energy and hospitality towards tourists from different corners of the globe. Both the cities of UAE offer a vast assortment of experiences, sights and sounds to tourists t",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹15,000",
+    "dealPrice": "₹1,650",
     "discount": ""
   },
   {
@@ -8459,19 +5885,6 @@ export const allPackages: Package[] = [
     "duration": "7 Nights / 8 Days",
     "route": "Delhi – Corbett → In Corbett → Corbett – Ranikhet → Ranikhet – Kausani → Kausani – Baijnath → Kausani – Nainital",
     "description": "The Kumaon hills are referred to as majestic because of the kingly, ostensible affluence of nature’s beauty available in the region. Tourists generally flock in this land to take the pleasure of the floral opulence and the untouched beauty of fauna in the region.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "malaysia-honeymoon-tour",
-    "title": "Malaysia Honeymoon Tour Package",
-    "category": "International",
-    "image": "/images/packages/hi-malaysia-honeymoon-tour.webp",
-    "duration": "5 Nights / 6 Days",
-    "route": "Arrival in Langkawi → Langkawi City → Langkawi – Kuala Lumpur → Kuala Lumpur City → Kuala Lumpur → Departure",
-    "description": "Craving for an International Holiday and budget is your concern then browse our affordable Malaysia Honeymoon Tour Package. This beautifully crafted package has been designed in such a way that it lets you explore the bustling and the effervescent melting pot of religions as wells as races. Malaysia is reckoned for its surreal scenic beauties and is adorned with stunning beaches, tropical rainforests, and a plethora of other iconic attractions.",
     "highlights": [],
     "mrp": "",
     "dealPrice": "",
@@ -8505,32 +5918,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "maldives-family-tour",
-    "title": "Maldives Family Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-maldives-family-tour.webp",
-    "duration": "3 Nights / 4 Days",
-    "route": "Arrival in Male → Male → Male Excursion",
-    "description": "Browse our meticulously tailored Maldives Family Tour Package and fly to the Maldives, a beautiful Island country which is adorned beautifully with stunning blue seas and the unraveled beauties of the panoramic landscapes. Escape yourself away from the crowded cities and spend some charming, soul-soothing, and peaceful moments on this magical land.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "maldives-honeymoon-tour",
-    "title": "Maldives Honeymoon Package",
-    "category": "Honeymoon",
-    "image": "/images/packages/hi-maldives-honeymoon-tour.webp",
-    "duration": "4 Nights / 5 Days",
-    "route": "Arrival in the Maldives → Spend Your Leisure Day in the Maldives → Spending the Leisure Day in the Maldives → Completely Leisure Day in the country → the Maldives",
-    "description": "Also known as Paradise on Earth, Maldives is a magical country which offers various things to all kinds of travelers visiting there. Its white sandy beaches, salubrious weather, friendly people, and many others in the list holds the magnetic appeal and attracts a huge crowd towards the country. It is a perfect place for newlyweds to make their honeymoon best. Its crystal clear beaches, roaring ocean, white sand beaches, and other romantic landscapes enlists it the top honeymoon destinations in t",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "manali-honeymoon-packages",
     "title": "Manali Honeymoon Packages",
     "category": "North India",
@@ -8540,21 +5927,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "The Indian Himalayas are a goldmine for exquisite scenic beauty. No matter which road you take or where you head to, the wonderful Himalayan ranges will never fail to fascinate. Manali is one such Himalayan hamlet. Situated on the banks of the ancient Beas River, Manali is a favourite among travel lovers. Blessed with a mystic charm and adorned with fun sightseeing locations, it has rightfully been called the queen of hills. The peaceful environment, surrounded by historical wonders and adventur",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "manali-honeymoon-tour",
-    "title": "Manali Honeymoon Packages",
-    "category": "North India",
-    "image": "/images/packages/hi-manali-honeymoon-tour.webp",
-    "duration": "4 Nights / 5 Days",
-    "route": "Delhi - Manali → Manali Full Day Sightseeing → Manali - Solang Excursion → Manali - Kullu / Manikaran - Manali → Manali Departure",
-    "description": "Manali is a favourite among travellers and honeymoon-goers. Mystic Mountain, sound of the flowing river and magical greenery play a part in turning an ordinary honeymoon into an unforgettable one. The Manali honeymoon package brings to you the best of both worlds. From visiting important temples in Manali to indulging in adventure experiences. A honeymoon in Manali will be hard to forget.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹71,250",
+    "dealPrice": "₹11,250",
     "discount": ""
   },
   {
@@ -8620,34 +5994,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "manimahesh-yatra-by-helicopter",
-    "title": "Manimahesh Yatra by Helicopter",
-    "category": "Helicopter",
-    "image": "/images/packages/manimahesh-yatra-by-helicopter.jpg",
-    "duration": "2 Nights / 3 Days",
-    "route": "Delhi - Chamba → Chamba - Manimahesh - Chamba → Chamba - Dalhousie Local Sightseeing - Departure",
-    "description": "Manimahesh yatra is a pilgrimage dedicated to Lord Shiva that takes place on the foothills of the majestic holy Manimahesh Kailash Parvat. Considered a challenging trek, the Manimahesh Yatra by helicopter aims at making this holy journey as comfortable as possible. This will be a 3 days and 2 nights of holiday packed with spiritual experiences and soul-stirring moments. Visit Manimahesh for an experience that will leave you spellbound. Check out what we offer now!",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "manimahesh-yatra-package",
-    "title": "Manimahesh Yatra Package",
-    "category": "India Tours",
-    "image": "/images/packages/manimahesh-yatra-package.jpg",
-    "duration": "3 Nights / 4 Days",
-    "route": "Delhi - Bharmour → Bharmour - Hadsar - Manimahesh Lake → Manimahesh Lake - Hadsar - Bharmour → Bharmour - Delhi Departure",
-    "description": "Manimahesh Yatra is a sacred pilgrimage that takes place on the foothills of the sacred Manimahesh Kailash Parvat in the Chamba district of Himachal Pradesh. The site is dedicated to Lord Shiva as it is considered one of his abodes. This will be a 4 days and 3 nights of soulful pilgrimage that attracts not just devout pilgrims but adventure enthusiasts as well. Known for its sweeping views, majestic landscape, and challenging terrain, the trek is worth it and an experience of a lifetime. Go ahea",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -8659,8 +6007,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Delhi - Travel to Mathura - Explore Gokul Temple → Mathura to Vrindavan → Barsana – Nandgaon – Govardhan Parikrama – Delhi",
     "description": "Are you a Lord Krishna devotee? Then this 3 day trip in the state of Uttar Pradesh is for you! Book our Mathura Gokul Barsana and Vrindavan Tour Package and visit the lands of Lord Krishna in comfort and luxury.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹16,710",
+    "dealPrice": "₹2,790",
     "discount": ""
   },
   {
@@ -8672,8 +6020,8 @@ export const allPackages: Package[] = [
     "route": "Delhi – Mathura – Gokul",
     "description": "Welcome to the Mathura-Gokul-Vrindavan tour! This divine trip will take you to the birthplace of Lord Krishna and so many more places that are deeply linked to him.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹15,300",
+    "dealPrice": "₹4,860",
     "discount": ""
   },
   {
@@ -8728,8 +6076,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
     "discount": ""
   },
   {
@@ -8740,19 +6088,6 @@ export const allPackages: Package[] = [
     "duration": "",
     "route": "",
     "description": "My Quick Trippers is a reputed travel company known for tailor-made tours to China, Indochina, and South Asia. With numerous awards, global media recommendations, and thousands of happy customers, we’re proud of the trust we’ve earned over the years.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "medical-tourism-in-goa",
-    "title": "Medical Tourism in Goa – Health & Wellness Tourism",
-    "category": "West India",
-    "image": "/images/packages/goa.jpg",
-    "duration": "",
-    "route": "",
-    "description": "Medical facilities in certain countries are extremely expensive and many people do not end up getting the treatment they need and that could have been done for a lot less money in India. India produces some of the finest and skilled doctors in the world. Over time India is evolving into one of the most preferred destinations for medical tourism from people living overseas.",
     "highlights": [],
     "mrp": "",
     "dealPrice": "",
@@ -8773,19 +6108,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "mizoram-cultural-tour",
-    "title": "Mizoram Cultural Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-mizoram-cultural-tour.webp",
-    "duration": "7 Nights / 8 Days",
-    "route": "Delhi – Aizawl → Aizawl Sightseeing Tour → Aizawl to Vantawng → Vantawng Sightseeing → Vantawng to Aizawl → Aizawl to Champhai",
-    "description": "Want to explore the unexplainable glory and unique charm of the alluring and inviting northeastern state in India. Mizoram is one of the most beautiful and exotic hill stations in India. Surrounded by Burma in the east, and Bangladesh and Tripura in the west, Mizoram is one of the most ideal or a perfect destination to escape yourself away from the bustling and hectic city life and to indulge yourself in the mesmerizing surreal beauties, exquisite attractions, and also the vibrant cultures. Duri",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "mizoram-tour-packages",
     "title": "Mizoram Tour Packages",
     "category": "India Tours",
@@ -8794,19 +6116,6 @@ export const allPackages: Package[] = [
     "duration": "",
     "route": "",
     "description": "",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "mizoram-tribal-tour",
-    "title": "Mizoram Tribal Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-mizoram-tribal-tour.webp",
-    "duration": "6 Nights / 7 Days",
-    "route": "Arrival in Aizawl → In Aizawl → Aizawl – Lunglei → Lunglei → Lunglei – Aizawl → Aizawl – Tamdil Lake – Aizawl",
-    "description": "Mizoram, one of the most beautiful and less explored states which attract a huge number of travelers especially those who want to explore unspoiled destinations in the country. This 7 days and 6 nights long Mizoram Tribal tour package let you live and enjoy the rural lifestyle, cultures, traditions not only those which were followed in the past but also which are still acquired in the present. During this trip, you will be visiting some really popular tourist destinations in the state like Aizaw",
     "highlights": [],
     "mrp": "",
     "dealPrice": "",
@@ -8822,8 +6131,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹46,350",
+    "dealPrice": "₹20,999",
     "discount": ""
   },
   {
@@ -8868,32 +6177,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "muktinath-pashupatinath-tour",
-    "title": "Muktinath Pashupatinath Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-muktinath-pashupatinath-tour.webp",
-    "duration": "8 Nights / 9 Days",
-    "route": "Arrival in Kathmandu → Kathmandu – Manakamana Temple – Pokhara → Pokhara – Jomsom – Muktinath – Jomsom → Jomsom – Pokhara → Pokhara – Chitwan National Park → Chitwan National Park – Devghat – Valmiki Ashram",
-    "description": "Visit the pilgrimage hub spot of Nepal to Muktinath, Pashupatinath and Valmiki ashram through this incredible package. Explore the beauty and spirituality this place has to offer now. These places are popular for their religious significance, importance in Hinduism. This is a once in a lifetime opportunity which should not be missed out on. This package is curated with care to offer you a hassle free expedition of some of the most pious and sacred destinations in Nepal.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "muktinath-temple",
-    "title": "Muktinath Temple: Religious Symbiosis of Hinduism and Buddhism",
-    "category": "India Tours",
-    "image": "/images/packages/hi-muktinath-temple.webp",
-    "duration": "",
-    "route": "",
-    "description": "The name of this temple itself intonates the religious tone and also sounds like an emotional ring to its Hindu devout. Seated at an elevation of 3710 meters above the sea level and at the foothills of the Thorong La Pass, Muktinath holds great religious significance in both Hinduism and Buddhism. It is believed to be one of the oldest temples dedicated to Lord Vishnu and it also represents the most ancient Vaishnava tradition in Nepal. The temple is however small but is a highly venerated sacre",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "muktinath-tour-packages",
     "title": "Muktinath Yatra Tour Packages",
     "category": "India Tours",
@@ -8902,97 +6185,6 @@ export const allPackages: Package[] = [
     "duration": "4 Days / 3 Nights",
     "route": "Starting & Ending → Kathmandu | Kathmandu",
     "description": "Muktinath Tour Package takes you to one of the holiest and one of the most sacred homes of the lord of Justice or Muktinath, an incarnation of Lord Vishnu. It is said that people who make the Char Dham Yatra and miss out on visiting Muktinath Dham then their Chardham remains incomplete. Our Muktinath Travel packages not only consist of Muktinath Darshan but also guarantees a complete exploration and sightseeing of Nepal. This will allow you to have a complete and wholesome pilgrimage via helicop",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "muktinath-weather",
-    "title": "Muktinath Weather – Best Time to Visit",
-    "category": "India Tours",
-    "image": "/images/packages/hi-muktinath-weather.webp",
-    "duration": "",
-    "route": "",
-    "description": "The climate of Nepal varies according to Topography and its altitude which ranges from Tropical to the Arctic.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "muktinath-yatra-by-helicopter",
-    "title": "Muktinath Yatra By Helicopter",
-    "category": "Helicopter",
-    "image": "/images/packages/hi-muktinath-yatra-by-helicopter.webp",
-    "duration": "3 Nights / 4 Days",
-    "route": "Arrival in Kathmandu → Kathmandu – Muktinath → Kathmandu Sightseeing → Kathmandu Departure",
-    "description": "Muktinath Darshan is considered to be one of the most important pilgrimages which one can take in Nepal. Dedicated to a manifestation of lord Vishnu people from far and wide make it a point to this holy shrine in Mustang Valley. You can now visit this holy Dham site by booking your Muktinath tour by helicopter. Available at the best available rates taking a helicopter for Muktinath will allow you to have a safe, quick and comfortable journey which in reality is moderately difficult. This package",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "muktinath-yatra-from-bangalore",
-    "title": "Muktinath Yatra from Bangalore",
-    "category": "South India",
-    "image": "/images/packages/hi-muktinath-yatra-from-bangalore.webp",
-    "duration": "6 Nights / 7 Days",
-    "route": "Arrival in Bengaluru → Fly towards Kathmandu → Kathmandu and move towards Pokhara → Fly or drive towards Jomsom → Fly or drive back to Pokhara → Drive back to Kathmandu",
-    "description": "Muktinath also popular among tourists as “God of Salvation” is one of the most acclaimed pilgrimage sites established in Nepal. Nestled at a huge elevation of almost 3900 meters above the sea level, Muktinath Temple is also renowned as the world’s highest elevated temple which is dedicated to Lord Vishnu.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "muktinath-yatra-from-chennai",
-    "title": "Muktinath Yatra Packages from Chennai",
-    "category": "India Tours",
-    "image": "/images/packages/hi-muktinath-yatra-from-chennai.webp",
-    "duration": "7 Nights / 8 Days",
-    "route": "Arrival in Chennai → Arrival in Kathmandu → Kathmandu Sightseeing and then drive towards Pokhara → Fly from Pokhara to Jomsom and go for Muktinath Darshan → Jomsom – Pokhara Sightseeing → Pokhara – Chitwan",
-    "description": "The perfect religious symbiosis of Buddhism as well as Hinduism, Muktinath Temple is the highest elevated temple in the world (nestled at an altitude of 3710 meters above the sea level). Dedicated to Lord Vishnu, Muktinath Temple is reckoned as one of the most popular Vaishnava sites and also among 51 sacred Shakti Peeths. However, the temple is not so big and is average in height and it is adorned with a golden statue of Lord Vishnu and the idol is tall like average human height.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "muktinath-yatra-from-gorakhpur",
-    "title": "Muktinath Yatra from Gorakhpur",
-    "category": "India Tours",
-    "image": "/images/packages/hi-muktinath-yatra-from-gorakhpur.webp",
-    "duration": "5 Nights / 6 Days",
-    "route": "Arrival in Gorakhpur and transfer towards Pokhara → Fly for Jomsom and then drive towards Muktinath → Fly from Jomsom – Pokhara → Drive from Pokhara to Kathmandu → Kathmandu Sightseeing → Drive Towards Gorakhpur",
-    "description": "Muktinath, one of the most popular pilgrimage sites in the world is flocked by thousands of devotees every year. Where is indeed a religion or a religious site, there is history so likewise other pilgrimages, Muktinath also holds myriads of legends associated with its origin.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "muktinath-yatra-from-hyderabad",
-    "title": "Muktinath Yatra from Hyderabad",
-    "category": "India Tours",
-    "image": "/images/packages/hi-muktinath-yatra-from-hyderabad.webp",
-    "duration": "6 Nights / 7 Days",
-    "route": "Arrival in Hyderabad → Fly for Kathmandu → Drive towards Pokhara → Fly towards Jomsom or cover the distance by driving → Back to Pokhara and Sightseeing → Drive back to Kathmandu Temple and visit Manakamana Temple",
-    "description": "“Mukti” and “Nath” are the two words that comprise Muktinath and these words mean “Salvation or Nirvana” and “God” respectively so Muktinath means God of Salvation. Amongst other popular religious destinations in the South Asian continent, Muktinath holds a special and important place in Hinduism as well as Buddhism.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "muktinath-yatra-from-kakarvitta",
-    "title": "Muktinath Yatra from Kakarvitta",
-    "category": "India Tours",
-    "image": "/images/packages/hi-muktinath-yatra-from-kakarvitta.webp",
-    "duration": "3 Nights / 4 Days",
-    "route": "Kakarvitta Border – Pokhara → Pokhara – Jomsom – Muktinath → Jomsom – Pokhara → Pokhara Departure",
-    "description": "Dedicated to the manifestation of ‘god of salvation’ for Lord Vishnu this holy temple in Nepal is known for its religious significance and pious relevance. The temple itself looks humble and taking a bath under its 108 Muktidharas will allow you to attain moksha or salvation.",
     "highlights": [],
     "mrp": "",
     "dealPrice": "",
@@ -9071,32 +6263,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "munnar-alleppey-tour-package",
-    "title": "Munnar Alleppey Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-munnar-alleppey-tour-package.webp",
-    "duration": "3 Nights / 4 Days",
-    "route": "",
-    "description": "The Munnar Alleppey Tour Package offers a perfect blend of hill station charm and serene backwaters over four days.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "munnar-thekkady-alleppey-cochin-tour",
-    "title": "Munnar Thekkady Alleppey House Boat Cochin Tour",
-    "category": "India Tours",
-    "image": "/images/packages/hi-munnar-thekkady-alleppey-cochin-tour.webp",
-    "duration": "4 Nights / 5 Days",
-    "route": "Cochin - Munnar → Munnar Sightseeing → Munnar - Periyar → Periyar - Houseboat → Houseboat – Cochin – End of the Tour",
-    "description": "This 5-day Kerala tour begins in Cochin, known as the \"Venice of the East,\" before heading to the scenic hill station of Munnar.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "munnar-tour-packages",
     "title": "Munnar Tour Packages",
     "category": "India Tours",
@@ -9120,23 +6286,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "If you are the one seeking for a memorable Mussoorie trip then check out the widest range of meticulously crafted Mussoorie Tour Packages and select the one that matches your travel preference. Whether it will be a summer or winter holiday, Mussoorie always tops the list of preferred vacation destinations. Mussoorie, “the queen of hill stations” is adorned with the snowcapped peaks of the Himalayas studded with the green lofty mountains, gorgeous valleys, and the township. If you have never been",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "mussoorie-weekend-tour",
-    "title": "Mussoorie Weekend Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-mussoorie-weekend-tour.webp",
-    "duration": "3 Nights / 4 Days",
-    "route": "Arrival in Mussoorie → Mussoorie Sightseeing → Mussoorie – Dhanaulti – Mussoorie → Mussoorie – Rishikesh – Delhi",
-    "description": "Also known as ‘the queen of hills’, Mussoorie is one of the most loved and preferred holiday destinations for people seeking a weekend of peace. Established by the British in the year 1823, this hill station has continued to offer its visitors a wonderful time surrounded in nature and beauty. A Mussoorie Weekend Tour Package of 4 days and 3 nights will give you the much needed break from the busy life.",
-    "highlights": [
-      "Haridwar Sightseeing Tour"
-    ],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹41,850",
+    "dealPrice": "₹16,350",
     "discount": ""
   },
   {
@@ -9161,8 +6312,8 @@ export const allPackages: Package[] = [
     "route": "Haldwani / Kathgodam → Dharchula → Gunji → Kalapani → Navidhang → Kuti → Jollingkong → Adi Kailash",
     "description": "Haldwani / Kathgodam → Dharchula → Gunji → Kalapani → Navidhang → Kuti → Jollingkong → Adi Kailash",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -9188,8 +6339,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -9228,22 +6379,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "nainital-tour-package-from-delhi",
-    "title": "Nainital Tour Package from Delhi",
-    "category": "North India",
-    "image": "/images/packages/hi-nainital-tour-package-from-delhi.webp",
-    "image2": "/images/packages/3716ff737e1f.jpg",
-    "duration": "2 Nights / 3 Days",
-    "route": "Delhi → Ghaziabad → Moradabad → Rampur → Haldwani → Kathgodam → Nainital",
-    "description": "Excited for your Nainital tour package from Delhi? Experience the charm of this beautiful hill station on our amazing 3-day trip.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
     "discount": ""
   },
   {
@@ -9258,21 +6395,6 @@ export const allPackages: Package[] = [
     "highlights": [],
     "mrp": "₹7,500",
     "dealPrice": "₹6,000",
-    "discount": ""
-  },
-  {
-    "slug": "nainital-weekend-tour",
-    "title": "Nainital Weekend Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-nainital-weekend-tour.webp",
-    "duration": "2 Nights / 3 Days",
-    "route": "Delhi to Nainital & Sightseeing → Visit to the Famous Tals or Lakes of Nainital → Nainital to Delhi",
-    "description": "Nainital is a fabulous gem, a paradise for lovers of hill resorts and an enchanting experience for nature lovers. It is the place of legends, located in the lake district of Kumaon and said to be one of the Shaktipeeth of India.",
-    "highlights": [
-      "Haridwar Sightseeing Tour"
-    ],
-    "mrp": "",
-    "dealPrice": "",
     "discount": ""
   },
   {
@@ -9302,21 +6424,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "narmada-pushkaralu-tour-package",
-    "title": "Narmada Pushkaram Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/narmada-pushkaralu-tour-package.jpg",
-    "duration": "2 Nights / 3 Days",
-    "route": "",
-    "description": "Our handcrafted Narmada Pushkaralu Package gives you a chance to seek the blessings of Goddess Narmada and engage in various rituals that are bound to cleanse your soul. Narmada Pushkaralu is one of the most divine festivals wherein Narmada River is worshipped by the pilgrims. The river is believed to be sanctified by Lord Shiva’s divine presence.",
-    "highlights": [
-      "Monument entrance fees, camera charges etc."
-    ],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "nashik",
     "title": "Nashik",
     "category": "India Tours",
@@ -9324,71 +6431,6 @@ export const allPackages: Package[] = [
     "duration": "",
     "route": "",
     "description": "A city as old as time itself. A city that has stayed in place and watched as the world has turned and the tides have changed. A city that has stood the test of time for thousands of years. In the words of Mark Twain, “Older than history, older than tradition, older even than legend, And looks twice as old as all of them put together.” Varanasi, the city that is more than just the spiritual capital of India. The city which can be aptly described as a melting pot where both life and death come tog",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "nava-dwaraka-tour",
-    "title": "Nava Dwaraka Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/nava-dwaraka-tour.jpg",
-    "duration": "6 Nights / 7 Days",
-    "route": "Ahmedabad – Dwarka → Dwarka – Porbandar – Sudama Temple – Somnath → Somnath – Bhalka Tirth – Mool Dwarka – Rajkot → Rajkot – Ahmedabad → Ahmedabad – Dakor  – Shamlaji – Udaipur → Udaipur – Nathdwara – Kankroli – Ahmedabad",
-    "description": "Dwaraka is an ancient holy and extremely pious city in the westernmost state of Gujarat. It is graced by the holy presence of Lord Krishna. Along with being one of the holy pillars for the Char Dham Yatra pilgrimage in India, it is dotted with numerous big and small temples dedicated to various gods and goddesses.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "navagraha-yatra",
-    "title": "Navagraha Temple Tour Package",
-    "category": "North India",
-    "image": "/images/packages/navagraha-yatra.jpg",
-    "duration": "2 Nights / 3 Days",
-    "route": "Arrival in Kumbakonam → Kumbakonam – Mayiladuthurai → Mayiladuthurai – Thiruvenkadu",
-    "description": "Our Navagraha temple tour package of 3 days and 2 nights ensures that you have an experience which is not only spiritual but also extremely rejuvenating for your soul. Our package is designed in a manner which will ensure that your darshan is done comfortably and without causing any hassles. As the name suggests, this tour will make you witness the temples dedicated to the nine (Nava) celestial bodies. South India is known for its pure and unadulterated vibe of immense spirituality and holiness",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "nepal-at-glance-tour",
-    "title": "Nepal at Glance Tour Package",
-    "category": "International",
-    "image": "/images/packages/hi-nepal-at-glance-tour.webp",
-    "duration": "3 Nights / 4 Days",
-    "route": "Kathmandu → Kathmandu – Nagarkot → Kathmandu Airport",
-    "description": "Nepal, one of the most happening tourist destinations in the world welcomes a great number of tourists for a religious as well as a cultural trip. Kathmandu, the capital city of Nepal has numerous things to offer its guests ranging from its indifferent religious beliefs to the beautiful and diverse landscapes. From the traditional city of Bhaktapur (captivates with the olden charm) and Patan which houses numerous splendid architectures where all leave you speechless. If you are visiting Nepal fo",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "nepal-bhutan-tibet-tour",
-    "title": "Nepal Bhutan Tibet Tour Package",
-    "category": "International",
-    "image": "/images/packages/hi-nepal-bhutan-tibet-tour.webp",
-    "duration": "15 Nights / 16 Days",
-    "route": "Kathmandu → Exploring Kathmandu → Kathmandu – Lhasa → Lhasa Sightseeing → Lhasa – Gyantse → Gyantse – Shigatse",
-    "description": "Nepal Bhutan Tour Package has been designed to explore three Himalayan countries Bhutan, Tibet, and Nepal, where you can pay visits at UNESCO, declared world heritage sites, some incredible places, and can also come to learn the culture, history, and of Buddhism and Hinduism. In Tibet, you can visit many unique and wonderful palaces, Mt. Everest the highest mountain peak in the world, and also to various monasteries. Bhutan, the country which doesn’t require any introduction and is world-wide fa",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "nepal-tibet-tour",
-    "title": "Nepal Tibet Tour Package",
-    "category": "International",
-    "image": "/images/packages/hi-nepal-tibet-tour.webp",
-    "duration": "19 Nights / 20 Days",
-    "route": "Delhi → Delhi Excursion → Delhi – Agra – Delhi → Delhi – Kathmandu → Kathmandu → Kathmandu – Gorkha",
-    "description": "Nepal Tibet tour package is designed in such a way that you can explore the beautiful landscapes and the diverse climatic conditions of both the countries. You can also explore some of the ancient narrow lanes of the capital city of Nepal. Visiting some oldest temples, forts, and Stupas will be a complimentary benefit of this package. You are also going to explore some of the most happening wildlife sanctuaries of these two countries.",
     "highlights": [],
     "mrp": "",
     "dealPrice": "",
@@ -9560,20 +6602,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "northeast-india-special-tour-package",
-    "title": "Special Package for Northeast India",
-    "category": "India Tours",
-    "image": "/images/packages/hill-stations-in-northeast-india.jpg",
-    "image2": "/images/packages/97a4354c2546.webp",
-    "duration": "4 Nights / 5 Days",
-    "route": "",
-    "description": "Northeast India holds a timeless charm! It never fails to impress tourists with its countryside allure and quaint natural beauty.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "northern-cape-tour-packages",
     "title": "Northern Cape Tour Packages",
     "category": "India Tours",
@@ -9636,69 +6664,8 @@ export const allPackages: Package[] = [
     "route": "Indore → Indore – Omkareshwar – Ujjain → Bhasma Aarti and Return to Indore",
     "description": "Experience spiritual fulfilment as you embark on a sacred aerial journey to Omkareshwar and Ujjain's sacred sites.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "one-day-delhi-sightseeing-tour-packages",
-    "title": "Delhi Sightseeing Tour Package",
-    "category": "North India",
-    "image": "/images/packages/delhi.jpg",
-    "image2": "/images/packages/018c8bf3c609.jpg",
-    "duration": "1 Day",
-    "route": "",
-    "description": "Start a day filled with unending excitement and the opportunity to visit the city's highlights with our Delhi Local Sightseeing Tour.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "one-day-delhi-to-mathura-vrindavan-tour",
-    "title": "One Day Delhi to Mathura & Vrindavan Tour",
-    "category": "North India",
-    "image": "/images/packages/hi-one-day-delhi-to-mathura-vrindavan-tour.webp",
-    "duration": "1 Day",
-    "route": "Delhi to Mathura & Vrindavan - One Day Tour Itinerary",
-    "description": "If Vrindavan and Mathura are visited together, there can be nothing more exciting than the absolute holiday destination for Lord Krishna devotees and intriguing tourists who are keen to be a part of both the exciting and amazing cultural heritage of the place.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "ooty-coonoor-tour",
-    "title": "Ooty Coonoor Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-ooty-coonoor-tour.webp",
-    "duration": "3 Nights / 4 Days",
-    "route": "Coimbatore – Ooty → Sightseeing in Ooty → Ooty – Coonoor – Ooty → Ooty – Coimbatore Departure",
-    "description": "The south Indian holiday destinations of Ooty and Coonoor are two of the most favorite holiday destinations for the people of India. Covered in lush green hills and a tranquil environment you will feel all your worries and tensions just melt away. If you are looking for the perfect place to go with your family during your summer vacation time then this package is the best choice for you. Here is the perfectly curated Ooty Coonoor Tour Package that lasts from 4 days and 3 nights.",
-    "highlights": [
-      "Thanjavur Sightseeing Tour",
-      "Rameshwaram Sightseeing Tour",
-      "Madurai Sightseeing Tour"
-    ],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "ooty-honeymoon-tour",
-    "title": "Ooty Honeymoon Tour Package",
-    "category": "Honeymoon",
-    "image": "/images/packages/hi-ooty-honeymoon-tour.webp",
-    "duration": "2 Nights / 3 Days",
-    "route": "Arrival in Ooty → Sightseeing and Excursion Tour of Ooty → Ooty Departure",
-    "description": "Looking forward to the blissful marriage days ahead? Kick start your happy days by going on a soulful honeymoon tour in Ooty. What better place than the lap of nature to create some lifelong memories with your better half? Through the Ooty honeymoon tour package of 3 Days and 2 Nights you will be taken across some of the most awe-inspiring and picturesque sceneries in this queen of the south. The place is replete with glorious tourist spots from panoramic lush green surrounding to cascading wate",
-    "highlights": [
-      "Thanjavur Sightseeing Tour",
-      "Rameshwaram Sightseeing Tour",
-      "Madurai Sightseeing Tour"
-    ],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹1,35,000",
+    "dealPrice": "₹1,27,500",
     "discount": ""
   },
   {
@@ -9719,23 +6686,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "ooty-sightseeing-tour",
-    "title": "Ooty Sightseeing Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-ooty-sightseeing-tour.webp",
-    "duration": "",
-    "route": "Arrival in Ooty",
-    "description": "A blissful day in Ooty awaits. If you are thinking of paying this wonderful hill town a visit then here is a complete full day package which will allow you to have the best and one of the most memorable experiences in south India. A great way to beat the heat and leave all the city hustle behind. This tour package is curated in a way that will take you to some of the most popular tourist destinations in Ooty which will definitely catch you by surprise and leave a lasting impression in your heart",
-    "highlights": [
-      "Thanjavur Sightseeing Tour",
-      "Rameshwaram Sightseeing Tour",
-      "Madurai Sightseeing Tour"
-    ],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "ooty-tour-packages",
     "title": "Ooty Tour Packages",
     "category": "India Tours",
@@ -9745,27 +6695,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "orchha-sightseeing-tour",
-    "title": "Orchha Sightseeing Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-orchha-sightseeing-tour.webp",
-    "duration": "2 Nights / 3 Days",
-    "route": "Bundelkhand Arrival → At Orchha → Leaving Orchha",
-    "description": "Orchha, with its wonderful Bundela-era legends, continues to be the major historical site that has preserved the culture and legends of the Bundela dynasty’s rulers. Rudra Pratap Singh, a chieftain, founded Orchha on a plot of land along the Betwa River. Because it is a wonderful place to visit with friends and family, this amazing town will captivate you throughout your adventure. Orchha has many historical sites to visit and is well connected to almost all of Madhya Pradesh’s major towns. The",
-    "highlights": [
-      "Ahmedabad Sightseeing Tour",
-      "Pachmarhi Sightseeing Tour",
-      "Mumbai Sightseeing Tour",
-      "Jaipur Sightseeing Tour",
-      "Kolkata Sightseeing Tour"
-    ],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -9876,8 +6807,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
     "discount": ""
   },
   {
@@ -9916,8 +6847,8 @@ export const allPackages: Package[] = [
     "route": "Ahmedabad – Dwarka → Dwarka Sightseeing → Dwarka – Porbandar – Somnath → Somnath – Rajkot → Rajkot – Lothal – Dakor – Ahmedabad → Ahmedabad – Matru Gaya – Ambaji",
     "description": "The Panch Dwarka religious tour is one of the most sacred pilgrimages you can cover in India. This tour essentially consists of visiting the five sacred temples of Lord Krishna - Dwarkadhish Temple, Bet Dwarka, Ranchhodraiji Temple, Nathdwara Shrinathji Temple, and Kankroli Dwarkadhish Temple . Book our Pancha Dwaraka Tour Package and visit these shrines hassle-free. Give us a call now!",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹34,500",
+    "dealPrice": "₹27,000",
     "discount": ""
   },
   {
@@ -9942,8 +6873,8 @@ export const allPackages: Package[] = [
     "route": "Tirupati - Srikalahasti - Kanchipuram",
     "description": "Explore South India’s famous temples with the Pancha Bootha Sthalam Navagraha Tour Package.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹45,000",
+    "dealPrice": "₹4,650",
     "discount": ""
   },
   {
@@ -9961,19 +6892,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "paris-switzerland-tour",
-    "title": "Switzerland Paris Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-paris-switzerland-tour.webp",
-    "duration": "8 Nights / 9 Days",
-    "route": "Arrival in Paris → Sightseeing Tour of Paris → Disneyland Paris → Paris – Interlaken → Interlaken – Mt. Jungfraujoch – Interlaken → Interlaken – Lucerne",
-    "description": "This is the ultimate vacation holiday package if you are looking to get away from the general tourist places. A tour of Paris and Switzerland will allow you to have one of the most Soul rejuvenating experiences with your family. From the rolling green hills to visiting the Eiffel tower in Paris everywhere you go, you will be able to have a look at some of the most spectacular and stunning panoramic sights. Book online your Switzerland and Paris tour for a complete holiday.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "parliament-house-delhi",
     "title": "Parliament House, Delhi",
     "category": "North India",
@@ -9982,51 +6900,6 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "In the center of the very busy city stands a symbol of the rich architectural heritage and democratic character of India—the beautiful Parliament House. Conceived by the creative architect Bimal Patel, this latest landmark in the Parliamentary complex integrates beautifully with the old-world romanticism of Central Vista.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "pashupatinath-muktinath-chitwan-tour",
-    "title": "Pashupatinath Muktinath Chitwan Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-pashupatinath-muktinath-chitwan-tour.webp",
-    "duration": "8 Nights / 9 Days",
-    "route": "Arrival in Kathmandu → Kathmandu Sightseeing → Kathmandu – Pokhara → Pokhara – Jomsom – Muktinath – Jomsom → Jomsom – Pokhara → Pokhara – Chitwan",
-    "description": "Nepal is popular all over the world for its religious values. Temples like Pashupatinath and Muktinath are visited by throngs of devotees from across the globe. This comprehensive tour package will take you not only to these prominent destinations of worship but it will also make you experience the thriving wildlife of Nepal in Chitwan. The perfect blend of adventure and spirituality is what this package for Pashupatinath, Muktinath and Chitwan has to offer. Book your travel package now and get",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "pattaya-honeymoon-tour",
-    "title": "Pattaya Honeymoon Tour Package",
-    "category": "Honeymoon",
-    "image": "/images/packages/hi-pattaya-honeymoon-tour.webp",
-    "duration": "3 Nights / 4 Days",
-    "route": "Arrival in Bangkok → Pattaya Sightseeing → Romantic Date → Departure",
-    "description": "An incredible beach destination, Pattaya is a popular honeymoon spot which is one of the most preferred destinations for the newly wed couples. This 3 nights and 4 days long Pattaya Honeymoon Tour Package is designed beautifully and offers you the best possible opportunities to explore the impeccable and incomparable destinations in the country. You will also be arranged and served with a candle light dinner to make your newly-wed life more special and romantic.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "pattaya-sightseeing-tour",
-    "title": "Pattaya Sightseeing Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-pattaya-sightseeing-tour.webp",
-    "duration": "3 Nights / 4 Days",
-    "route": "Arrival in Bangkok → Pattaya – Visit Coral Island and Enjoy Alcazar Show → Pattaya – Bangkok → Departure",
-    "description": "Pattaya, one of the most beautiful and peaceful getaway destinations in Thailand. This beautiful city is studded with mesmerizing attractions including glimmering beaches, gorgeous temples, greenery, majestic monasteries, and many more.",
-    "highlights": [
-      "Koh Phangan Sightseeing Tour",
-      "Phuket Sightseeing Tour",
-      "Chiang Rai Sightseeing Tour",
-      "Krabi Sightseeing Tour",
-      "Koh Samui Sightseeing Tour"
-    ],
     "mrp": "",
     "dealPrice": "",
     "discount": ""
@@ -10092,51 +6965,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "phuket-honeymoon-tour",
-    "title": "Phuket Honeymoon Tour Package",
-    "category": "Honeymoon",
-    "image": "/images/packages/hi-phuket-honeymoon-tour.webp",
-    "duration": "4 Nights / 5 Days",
-    "route": "Arrival in Phuket → Full Day Excursion to Phi Phi Islands → Local Sightseeing in Phuket and Phang Nga Bay → Explore Phuket at Leisure → Departure",
-    "description": "Browse our 4 nights and 5 days long Phuket Honeymoon Tour Package and travel through some of the most amazing attractions of the country which make your journey most memorable. Phuket is one of the most happening beach destinations in the globe and is adorned with glittering seas, white sandy beaches, lively towns, hovering palm trees, and the unique ambiance. This beautiful city in Thailand is also known for offering its guests with vivid travel preference and that under their budget. If you ar",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "phuket-pattaya-bangkok-tour",
-    "title": "Phuket with Pattaya and Bangkok Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-phuket-pattaya-bangkok-tour.webp",
-    "duration": "7 Nights / 8 Days",
-    "route": "Arrival in Phuket → Phuket – Phi Phi Islands → Phuket Sightseeing Tour → Phuket – Bangkok – Pattaya → Coral Island Tour in Pattaya → Bangkok City and Temple Tour",
-    "description": "My Quick Trippers Phuket with Pattaya and Bangkok tour package takes you across some of the most enchanting natural beauty, thrilling adventure activities and a varied avenue for entertainment. These South Eastern gems are every holiday goers and traveler’s ideal vacation spot. The white sandy beaches, fascinating landscapes, quirky sightseeing locations, fun water sports and delectable local cuisines make these places a paradise for peace seekers and adventure lovers. These places are not only",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "phuket-sightseeing-tour",
-    "title": "Phuket Sightseeing Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-phuket-sightseeing-tour.webp",
-    "duration": "2 Nights / 3 Days",
-    "route": "Arrival in Phuket → Phuket City → Half day Phuket City Tour and Departure",
-    "description": "Phuket One of the most scintillating places to visit in Thailand boasts several fascinating places which one can explore with us by browsing our Phuket Sightseeing Tour Package. Explore the famous James Bond Island and explore some of the most irresistible destinations in the country including underwater grottos, caves, and islands. We have designed this package so meticulously that it has numerous things to offer its all kinds of travelers irrespective of their travel preference. Take out some",
-    "highlights": [
-      "Koh Phangan Sightseeing Tour",
-      "Chiang Rai Sightseeing Tour",
-      "Krabi Sightseeing Tour",
-      "Pattaya Sightseeing Tour",
-      "Koh Samui Sightseeing Tour"
-    ],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "phuket-tour-packages",
     "title": "Phuket Tour Packages",
     "category": "India Tours",
@@ -10146,8 +6974,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -10172,45 +7000,6 @@ export const allPackages: Package[] = [
     "duration": "",
     "route": "",
     "description": "Pilgrimages in India make up a vital part of the spirituality and religious beliefs of the people of this colorful sub-continent.The ancient land of India has been walked on by the gods themselves along with prominent spiritual teachers, priests, sages, and philosophers in search of inner quests. Ever since the beginning of time these walks and trails across the Indian landmass have gained a lot of importance among the people who go on this quest for truth or the meaning of life from various par",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "places-to-visit-in-badrinath",
-    "title": "Explore the Top Tourist Attractions in Badrinath",
-    "category": "Pilgrimage",
-    "image": "/images/packages/places-to-visit-in-badrinath.webp",
-    "duration": "",
-    "route": "",
-    "description": "Badrinath is an ideal destination for those looking to have a deep spiritual experience. Situated amidst the Himalayas in Uttarakhand, Badrinath is a must-visit destination for both adventure enthusiasts and spiritual seekers. It is dotted with sacred temples and natural attractions and attracts tourists from both India and different parts of the world.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "places-to-visit-in-goa",
-    "title": "Top 10 Most Famous Tourist Places to Visit in Goa",
-    "category": "West India",
-    "image": "/images/packages/goa-tour-package-5-days.webp",
-    "duration": "",
-    "route": "",
-    "description": "When it comes to checking out awesome places in India, Goa is one of the top-ranking destinations. With sandy beaches , gothic churches, ancient temples, trekking trails through the jungle, and forest reserves, Goa is a mosaic of cultures , traditions, and natural beauty that surpasses time and imagination. Ever since this tiny Indian state caught the attention of traders, it has always been one of the most sought-after travel destinations for domestic as well as international tourists. From exp",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "places-to-visit-in-kedarnath",
-    "title": "Best Places to Visit in Kedarnath",
-    "category": "Pilgrimage",
-    "image": "/images/packages/places-to-visit-in-kedarnath.webp",
-    "duration": "",
-    "route": "",
-    "description": "Your Char Dham yatra pilgrimage won’t be complete without visiting Kedarnath . Kedarnath is one of the holiest sites in India, situated in the Garhwal Himalayas. It forms a part of the Chardham yatra and is dedicated to Lord Shiva. There are many popular tourist attractions of Kedarnath where you can experience serenity and peace.",
     "highlights": [],
     "mrp": "",
     "dealPrice": "",
@@ -10266,8 +7055,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -10307,23 +7096,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "prayagraj-kumbh-mela-package-with-ayodhya-varanasi",
-    "title": "Prayagraj Kumbh Package with Ayodhya and Varanasi",
-    "category": "North India",
-    "image": "/images/packages/hi-prayagraj-kumbh-mela-package-with-ayodhya-varanasi.webp",
-    "duration": "5 Nights / 6 Days",
-    "route": "Arrival → Kumbh Mela Activities → Spiritual Activities and Temple Darsha → Prayagraj to Ayodhya → Prayagraj to Varanasi → Varanasi",
-    "description": "Explore the charm of Kumbh Mela, a religious festival in India. This celebration will take place in Prayagraj in 2025. Millions of pilgrims visit here to bathe in holy rivers, hoping to purify their souls and receive blessings.",
-    "highlights": [
-      "Lucknow Sightseeing Tour"
-    ],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -10637,19 +7411,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "rameshwaram-local-sightseeing-tour",
-    "title": "Rameshwaram Local Sightseeing Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-rameshwaram-local-sightseeing-tour.webp",
-    "duration": "4 Nights / 5 Days",
-    "route": "Arrival and Half Day Sightseeing in Madurai → Madurai – Rameshwaram → Rameshwaram – Kanyakumari → Kanyakumari Sightseeing → Kanyakumari – Trivandrum Departure",
-    "description": "Explore the local attractions of Rameshwaram with our Rameshwaram sightseeing tour package that includes everything required for a memorable trip.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "rameshwaram-madurai-tour",
     "title": "Madurai Rameswaram Kanyakumari Tour",
     "category": "India Tours",
@@ -10658,8 +7419,8 @@ export const allPackages: Package[] = [
     "route": "Madurai - Rameshwaram → In Rameswaram - Full day Sightseeing Tour → Rameswaram - Kanyakumari → Kanyakumari - Kovalam - Thiruvananthapuram → Thiruvananthapuram",
     "description": "The Madurai Rameshwaram Kanyakumari tour package shows you temples, beaches, beautiful landscapes and rich South Indian culture. Journey begins in Madurai famous for its Meenakshi Amman Temple. An interesting fact about this temple is that it has around 33,000 carvings and statues covering every corner..",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹30,000",
+    "dealPrice": "₹4,650",
     "discount": ""
   },
   {
@@ -10764,23 +7525,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Hop on an exciting journey to a city known for its natural beauty and cultural relevance across India, and is visited by thousands of tourists every month to experience the beautiful blend of history, spirituality, and natural beauty. Your trip will start with the Rewa Fort which represents the rich cultural past of the city. Then you will experience the serene aura of the Venkateswara temple, which is a well-known spiritual site across the country.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "rishikesh-bungee-jumping-tour",
-    "title": "Rishikesh Bungee Jumping Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-rishikesh-bungee-jumping-tour.webp",
-    "duration": "1 Nights / 2 Days",
-    "route": "Rishikesh → Shivpuri Rafting",
-    "description": "Rishikesh is the city of Ashrams and Yoga but there is another activity that has put it firmly on the adventure tourism map and that is bungee jumping. It requires courage to take the 83-meter jump with only rubber cords securely keeping your ankles tied together. It can make your heart leap into your mouth and feel the rush of excitement like no other activity. The most popular spot for bungee jumping is the Bungee platform over the Ganga designed by David Allardice, operated by experts who hel",
-    "highlights": [
-      "Haridwar Sightseeing Tour"
-    ],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹37,500",
+    "dealPrice": "₹30,000",
     "discount": ""
   },
   {
@@ -10792,8 +7538,8 @@ export const allPackages: Package[] = [
     "route": "From Delhi to Haridwar-Rishikesh → Haridwar-Rishikesh to Delhi",
     "description": "Set out on this spiritually charged trip to Haridwar and Rishikesh from Delhi.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -10876,19 +7622,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "royal-rajasthan-tour",
-    "title": "Royal Rajasthan Tour",
-    "category": "West India",
-    "image": "/images/packages/royal-rajasthan-tour.jpg",
-    "duration": "9 Nights / 10 Days",
-    "route": "Jaipur Sightseeing Tour → Jaipur - Bikaner → Bikaner - Jaisalmer → Jaisalmer Sightseeing → Jaisalmer - Jodhpur → Jodhpur - Udaipur",
-    "description": "Holiday like the royals of India by choosing the Royal Rajasthan tour packages. Explore the palaces, marvel at the forts and have a deep culturally immersive experience. Check out the opulent structures, magnificent sights and engineering greatness that was achieved during the era of the kings and rulers. The enchanting vistas pair perfectly with stunning lakes to create a magical regal charm. Rajasthan is a place rich in historical significance, folk tales, exhilarating heritage and the delicio",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "rwanda-tour-packages",
     "title": "Rwanda Tour Packages",
     "category": "India Tours",
@@ -10897,19 +7630,6 @@ export const allPackages: Package[] = [
     "duration": "",
     "route": "",
     "description": "Rwanda Tour Packages - Book Rwanda Holiday Packages at Best Price",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "same-day-agra-mathura-vrindavan-tour",
-    "title": "Same Day Agra Mathura & Vrindavan Tour",
-    "category": "North India",
-    "image": "/images/packages/hi-same-day-agra-mathura-vrindavan-tour.webp",
-    "duration": "1 Day",
-    "route": "Delhi Agra Mathura Vrindavan Same Day",
-    "description": "If Vrindavan and Mathura are visited together, there can be nothing more exciting than the absolute holiday destination for Lord Krishna devotees and intriguing tourists who are keen to be a part of both the exciting and amazing cultural heritage of the place.",
     "highlights": [],
     "mrp": "",
     "dealPrice": "",
@@ -10953,8 +7673,8 @@ export const allPackages: Package[] = [
     "route": "Haridwar/ Dehradun – Rishikesh - Pipalkoti → Pipalkoti -Mana Village - Saraswati Pushkaralu- Badrinath → Badrinath - Srinagar → Srinagar – Devprayag - Haridwar -",
     "description": "Saraswati Pushkaralu is a Hindu festival dedicated to the River Saraswati.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -10966,32 +7686,6 @@ export const allPackages: Package[] = [
     "duration": "5 Days / 4 Nights",
     "route": "Delhi → Haridwar → Pipalkoti → Mana Village → Saraswati Pushkaralu → Badrinath → Srinagar → Devprayag",
     "description": "Saraswati Pushkaram is a holy festival of the River Saraswati that takes place once every 12 years. Devotees celebrate this because they believe taking a bath in the river cleanses their soul and gives them moksha (salvation). According to Purana, during Pushkaralu, Guru Brihaspati (Jupiter) increases the river’s holiness and importance. Many devotees visit here to perform puja and rituals for blessings.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "saraswati-river-pushkaralu-yatra",
-    "title": "Saraswati Pushkaralu Yatra from Delhi",
-    "category": "India Tours",
-    "image": "/images/packages/saraswati-pushkaram-pushkaralu.jpg",
-    "duration": "4 Nights / 5 Days",
-    "route": "Arrive Delhi – Haridwar → Haridwar – Rishikesh - Pipalkoti → Pipalkoti -Mana Village - Saraswati Pushkaralu- Badrinath → Badrinath - Srinagar → Srinagar – Devprayag - Haridwar - Delhi",
-    "description": "The Saraswati Pushkaralu is a highly sacred festival, celebrated every 12 years!",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "saraswati-river-pushkaralu",
-    "title": "Saraswati Pushkaralu Yatra from Delhi 2025",
-    "category": "India Tours",
-    "image": "/images/packages/saraswati-pushkaram-pushkaralu.jpg",
-    "duration": "4 Nights / 5 Days",
-    "route": "Arrival in Delhi - Haridwar → Haridwar – Rishikesh - Pipalkoti → Pipalkoti -Mana Village - Saraswati Pushkaralu- Badrinath → Badrinath - Srinagar → Srinagar – Devprayag- Haridwar - Delhi",
-    "description": "Saraswati Pushkaram is an Indian festival celebrated near the Saraswati River.",
     "highlights": [],
     "mrp": "",
     "dealPrice": "",
@@ -11129,32 +7823,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "shillong-cherrapunji-kamakhya-temple-tour",
-    "title": "Shillong Cherrapunji Kamakhya Darshan Trip",
-    "category": "India Tours",
-    "image": "/images/packages/hi-shillong-cherrapunji-kamakhya-temple-tour.webp",
-    "duration": "5 Nights / 6 Days",
-    "route": "Guwahati and Shillong → Visit to Cherrapunji → Shillong to Mawlynnong to Dawki → Shillong to Guwahati Trip → Full-Day Guwahati City Tour → Guwahati",
-    "description": "Visit the Kamakhya temple that is dedicated to none other than the Goddess of desires herself!",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "shimla-manali-honeymoon-package",
-    "title": "Shimla Manali Honeymoon Package",
-    "category": "North India",
-    "image": "/images/packages/hi-shimla-manali-honeymoon-package.webp",
-    "duration": "5 Nights / 6 Days",
-    "route": "",
-    "description": "The hilly wonders of Shimla and Manali are two of the most preferred honeymoon destinations in India. Blessed with serene natural beauty and romantic vistas, these two places are perfect to create memories. Start off your happily married life on a blissful note. Go on adventures and have a soulful experience with your better half. A honeymoon that you will never forget awaits. Here is the special Shimla Manali honeymoon package of 6 days and 5 nights.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "shimla-manali-tour",
     "title": "Shimla Manali Tour Package",
     "category": "North India",
@@ -11230,8 +7898,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -11283,8 +7951,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Hop on this journey to the hidden gem of Madhya Pradesh, which is known for its lush green landscapes, heritage buildings, and overall natural beauty, Shivpuri. The trip starts with a serene visit to the Madhav National Park, where you will enjoy the calmness of dense forest, beautiful blue water lakes, and also, very diverse wildlife. This is going to be an out-of-the-world experience for nature enthusiasts, and also for adventure freaks. Shivpuri is also known for its historical architecture,",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹37,500",
+    "dealPrice": "₹30,000",
     "discount": ""
   },
   {
@@ -11323,21 +7991,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Sikkim, nestled in the lap of the Himalayas, is a small yet captivating state in northeastern India. Sikkim tour packages offer a unique opportunity to explore this hidden gem, known for its breathtaking landscapes, vibrant Buddhist culture, and adventure activities.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "sikkim-tour",
-    "title": "Best of Sikkim Tour Package",
-    "category": "North East India",
-    "image": "/images/packages/hi-sikkim-tour.webp",
-    "duration": "6 Nights / 7 Days",
-    "route": "Arrival in Bagdogra – Gangtok → Gangtok – Tsomgo Lake Excursion – Gangtok → Gangtok – Lachen → Lachen – Gurudongmar Lake – Lachen → Lachen – Lachung → Lachung – Yumthang Valley – Gangtok",
-    "description": "Sikkim is one of the gems of the Himalayas. This stunning hill station is tucked away in the northeastern part of India. It is blessed with Lush Green Hills, Rolling Meadows, thick forests, and impeccable views on all sides. Known for its unique culture, delicious foods, and humble locals, Sikkim is a must-visit hill station in India. This 7 days and 6 nights Sikkim tour package will take you on one of the most incredible adventures in North East India.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹40,500",
+    "dealPrice": "₹20,999",
     "discount": ""
   },
   {
@@ -11348,84 +8003,6 @@ export const allPackages: Package[] = [
     "duration": "",
     "route": "",
     "description": "Valleys, lakes and scenic beauty are a few adjectives which perfectly describes this home of the 3rd highest mountain in the world, Kanchenjunga. Gracing and beautifying the northeastern region of the Indian sub-continent this smallest state of India is replete with numerous incredible places of attractions especially if you are someone who loves being close to nature, understand the culture and rich heritage and spend some time in peace and drenched in the natural serenity. Every step of the wa",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "singapore-bali-cruise-tour",
-    "title": "Singapore Bali Cruise Tour Package",
-    "category": "International",
-    "image": "/images/packages/hi-singapore-bali-cruise-tour.webp",
-    "duration": "8 Nights / 9 Days",
-    "route": "Arrival in Bali → Marine and Sunset South Bali → Kintamani Volcano and Ubud Village → Bali and proceeding to Singapore → Half Day City of Singapore – Cruise → Genting Dream Cruise – High Seas",
-    "description": "Browse our meticulously crafted Singapore Bali Cruise Tour Package and get a perfect opportunity to explore the glimmering beaches, ancient temples, and also get to know about its rich culture, heritage, and history. Also, indulge yourself in scuba diving for what Bali is mostly famous for and can also opt for surfing. Grab the deal and cover all the sightseeing destinations and the wonders in Singapore and also go for Cruise.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "singapore-bintan-tour",
-    "title": "Singapore Bintan Tour Package",
-    "category": "International",
-    "image": "/images/packages/hi-singapore-bintan-tour.webp",
-    "duration": "5 Nights / 6 Days",
-    "route": "Arrival in Singapore → Sentosa Island Tour – Singapore City → Singapore – Universal Studios → Singapore – Bintan Island → Bintan Island",
-    "description": "Our 5 Singapore with Bintan Island Tor is tailored in such a beautiful and customized way that you are not going to leave behind any of the scenic splendors of this beautiful country located in South-East Asia.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "singapore-cruise-tour",
-    "title": "Singapore Cruise Tour Package",
-    "category": "International",
-    "image": "/images/packages/hi-singapore-cruise-tour.webp",
-    "duration": "6 Nights / 7 Days",
-    "route": "Arrival in Singapore → Singapore – Universal Studios → Cruise → Cruise – Singapore → Singapore – Sentosa Island Tour → Singapore",
-    "description": "Singapore, the major attraction of South East Asia tops the list of most visited and heavily crowded tourist destinations in the continent. The city has almost everything which to offer its tourists including fun, alluring lifestyle, food, adventure, beaches, culture, trends, and shopping.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "singapore-malaysia-bali-tour",
-    "title": "Singapore Malaysia Bali Tour Package",
-    "category": "International",
-    "image": "/images/packages/hi-singapore-malaysia-bali-tour.webp",
-    "duration": "10 Nights / 11 Days",
-    "route": "Arrival in Bali → Bali Excursion → Bali Beach → Water Sport Activities → Singapore → Sentosa Sunset",
-    "description": "Want some change this holiday and looking for an international journey then browse our Singapore Malaysia Bali Tour Package and get a beautiful chance to explore the iconic attractions of these three destinations. Singapore, a dream destination of everyone is home to several wonders, and then next comes Malaysia which doesn’t require any introduction and at last you will be visiting Bali, a true paradise for nature lovers and newly-wed couples.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "singapore-phuket-tour",
-    "title": "Singapore Phuket Tour Package",
-    "category": "International",
-    "image": "/images/packages/hi-singapore-phuket-tour.webp",
-    "duration": "6 Nights / 7 Days",
-    "route": "Arrival in Singapore → Singapore → Sentosa Island Tour in Singapore → Singapore – Phuket → Phi Phi Island Tour in Phuket → Complete City Tour in Phuket",
-    "description": "Are you in a mood to plan a tropical summer vacation in Asia? If yes, then we are back with the best vacation ideas for you. Plan a Singapore with Phuket tour this year and be ready to explore all the scenic splendors of Singapore city and the pure blissful aura and the splendid island views in Phuket. Enjoy the beautiful memories spending along the picturesque islands and the panoramic views of the majestic Maya Bay.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "singapore-thailand-malaysia-hong-kong-tour",
-    "title": "Singapore Thailand Malaysia Hong Kong Tour Package",
-    "category": "International",
-    "image": "/images/packages/hi-singapore-thailand-malaysia-hong-kong-tour.webp",
-    "duration": "12 Nights / 13 Days",
-    "route": "Arrival in Bangkok and transfer to Pattaya → In Pattaya → Pattaya – Bangkok → In Bangkok → Bangkok – Singapore → Singapore",
-    "description": "Winter season is approaching and so the vacation time and you must be thinking of the destinations to spend your winter holidays and what else could be better than a trip to South East Asia! On this Singapore Thailand Malaysia Hong Kong Tour Package you are surely going to get some amazing and charming moments like visiting the graceful tourist sites of Singapore, Buddhist sites and the glimmering islands in Thailand, and also by gazing at the magnificent sites in Hong Kong especially Disneyland",
     "highlights": [],
     "mrp": "",
     "dealPrice": "",
@@ -11495,8 +8072,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Sonmarg is that mesmerizing destination that will remind you of the landscapes in the Bollywood movies. It is popularly known as the Golden Meadows. Sonmarg is located in the Sind valley and you will experience beautiful views with flowers and mountains all around. It is a perfect holiday destination for those who enjoy some good treks and are adventure lovers, as Sonmarg is the base camp for a lot of interesting treks in Kashmir, most of these locations lead to breathtaking Himalayan lakes, whi",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
     "discount": ""
   },
   {
@@ -11542,19 +8119,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "south-china-tour",
-    "title": "South China Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/south-china-tour.jpg",
-    "duration": "8 Nights / 9 Days",
-    "route": "Arrival in Guangzhou → Guangzhou → Guangzhou – Guilin → Guilin – Yangshuo → Guilin – Shenzhen → Shenzhen",
-    "description": "Book our beautifully tailored South China Tour Package and witness the evolving trading condition and also the incredible cultures and customs followed by Chinese people. Southern China is one of the most fascinating regions of the country boasting a number of incomparable destinations welcoming thousands of tourists every year. Some of its cities also offer a perfect setting where you can show your photography skill and can add some beautiful pictures to your frames.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "south-europe-tour-packages",
     "title": "South Europe Tour Packages",
     "category": "India Tours",
@@ -11569,32 +8133,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "south-india-hill-stations-tour",
-    "title": "South India Hill Stations Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/south-india-hill-stations-tour.jpg",
-    "duration": "5 Nights / 6 Days",
-    "route": "Arrival in Bangalore → Bangalore – Mysore → Mysore Sightseeing → Mysore – Ooty → Ooty – Coonoor – Ooty → Ooty – Coimbatore Departure",
-    "description": "The southern end of the subcontinent is known for its panoramic vistas and breathtaking views. The hill towns are dotted with tall green trees cover, incredible viewpoints and neatly adorned tea estates. This 6 days and 5 nights of the South India hill station tour package will ensure that you have a mesmerizing time among the pristine and untouched natural beauty.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "south-india-honeymoon-tour",
-    "title": "South India Honeymoon Package",
-    "category": "Honeymoon",
-    "image": "/images/packages/south-india-honeymoon-tour.jpg",
-    "duration": "8 Nights / 9 Days",
-    "route": "Madurai Arrival – Kodaikanal → Kodaikanal → Kodaikanal – Thekkady → Thekkady → Thekkady – Munnar → Munnar",
-    "description": "The South India Honeymoon Package offers an enchanting journey through some of the most scenic hill stations and wildlife destinations in Southern India.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "south-india-temple-tour-from-ahmedabad",
     "title": "South India Temple Tour Packages from Ahmedabad",
     "category": "India Tours",
@@ -11603,8 +8141,8 @@ export const allPackages: Package[] = [
     "route": "Ahmedabad → Chennai - Tirupati - Chennai → Chennai - Kanchipuram - Mamallapuram → Mamallapuram - Tiruvannamalai - Pondicherry → Exploring Puducherry → Puducherry - Chidambaram - Thanjavur",
     "description": "States in South India are renowned for having a rich religious and cultural heritage. The states are unique in the nation due to their historic temples, picturesque, lush landscapes, and tea and coffee plantations. If you are planning to go for temple Darshan in South India , this package is going to suit you the best. It includes comfortable stay inns, safe transfers, meals and guided tours. The detailed itinerary from Ahmedabad to South India pilgrimage is mentioned below.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -11616,8 +8154,8 @@ export const allPackages: Package[] = [
     "route": "Bangalore to Chennai → Chennai to Tirupati and back → Chennai - Kanchipuram - Mamallapuram → Mamallapuram - Tiruvannamalai - Puducherry → Exploring Puducherry → Puducherry - Chidambaram - Thanjavur",
     "description": "South India is deeply rooted to its spiritual and cultural heritage. Architectural marvels in the Dravidian style can be found in the southern Indian states of Kerala, Tamil Nadu, Andhra Pradesh, Karnataka, and Telangana. The states of South India are known for their luscious tea and coffee plantations. The Hindu Pilgrimage Tours South India 12-day tour package is structured to allow you to see all of the major and sacred locations in South Indian cities.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -11629,47 +8167,8 @@ export const allPackages: Package[] = [
     "route": "Hyderabad → Chennai - Tirupati - Chennai → Chennai - Kanchipuram - Mamallapuram → Mamallapuram - Tiruvannamalai - Puducherry → Puducherry → Puducherry - Chidambaram - Thanjavur",
     "description": "Embark on the religious journey to the spiritual and cultural heritage of South Indian pilgrims . This tour package to South Indian temple visit is designed specially for the people of Hyderabad and the devotees who wish to seek the blessings or experience the religious and architectural marvel of South Indian temples .",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "south-india-temple-tour-packages-from-delhi",
-    "title": "South India Temple Tour Packages from Delhi",
-    "category": "North India",
-    "image": "/images/packages/delhi.jpg",
-    "duration": "11 Nights / 12 Days",
-    "route": "",
-    "description": "India is a country of diverse religions and faiths. There are historical and religious tales to be found all around our nation, every temple has a specific history and significance. The pilgrimage sites around the country are always seen crowded with thousands of devotees and South Indian temples are one of the most revered pilgrimage sites in India. Therefore, we have created a 12 day tour package from Delhi to South India temples which includes accommodation with basic necessary amenities, mea",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "south-india-temple-tour-packages-from-mumbai",
-    "title": "South India Temple Tour Packages from Mumbai",
-    "category": "India Tours",
-    "image": "/images/packages/mumbai-travel-guide.jpg",
-    "duration": "9 Nights / 10 Days",
-    "route": "",
-    "description": "South India is well-known for its historic temples and rich cultural legacy. The country as a whole is aware of its colorful festivals and varied traditions. There are numerous historic temples spread throughout the southern states of India, such as Tamil Nadu, Chennai, Karnataka, Andhra Pradesh, and Telangana. In addition to its religious importance, South India is well-known for its verdant coffee plantations. If you are planning to visit the temples in South India , we have curated a 10 day t",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "south-india-temple-tour",
-    "title": "12 Days South India Temple Tour from Chennai",
-    "category": "India Tours",
-    "image": "/images/packages/south-india-temple-tour-from-ahmedabad.jpg",
-    "duration": "11 Nights / 12 Days",
-    "route": "Arrival in Chennai → Chennai – Tirupati – Chennai → Chennai – Kanchipuram – Mamallapuram → Mamallapuram – Tiruvannamalai – Pondicherry → Pondicherry Sightseeing → Pondicherry – Chidambaram – Thanjavur",
-    "description": "When you think about South India, magnificent temples with towering gopurams and a deep sense of spirituality washes you over. The southern end of India is dotted all over with magnificent temples, depicting elaborate and finely engraved sculptures and carvings dedicated to numerous gods and goddesses.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -11680,32 +8179,6 @@ export const allPackages: Package[] = [
     "duration": "",
     "route": "",
     "description": "If India is crowned by majestic Himalayan peaks in the North, the holy waves of Mother Ocean embrace her southern shores. Read More",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "south-india-wildlife-tour",
-    "title": "16 Days South India Wildlife Tour Package",
-    "category": "Wildlife",
-    "image": "/images/packages/south-india-wildlife-tour.jpg",
-    "duration": "15 Nights / 16 Days",
-    "route": "Arrival in Delhi → Delhi Full Day Sightseeing → Delhi – Bangalore → Bangalore – Nagarhole National Park → Nagarhole National Park full day safari and sightseeing → Nagarhole National Park – BR Hills",
-    "description": "The wildlife collection of Southern India is intense. The biodiversity is so rich that almost every part of it is reserved in the form of a wildlife sanctuary or a national park. South India boasts of 80 different national parks, 440 sanctuaries, and 23 tiger reserves.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "special-badri-kedar-helicopter-tour",
-    "title": "Special Do Dham Yatra Helicopter Package",
-    "category": "Helicopter",
-    "image": "/images/packages/badri-kedar-yatra-by-helicopter.jpg",
-    "duration": "2 Nights / 3 Days",
-    "route": "Dehradun – Devprayag – Rudraprayag – Guptkashi/Sitapur → Kedarnath - Badrinath → Sitapur/Phata – Rishikesh – Dehradun",
-    "description": "Embark on our special Do Dham Helicopter Tour, covering holy locations like Devprayag and Rudraprayag, in addition to Badrinath Kedarnath Yatra from Dehradun.",
     "highlights": [],
     "mrp": "",
     "dealPrice": "",
@@ -11725,19 +8198,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "special-kashmir-tour",
-    "title": "Special Kashmir Tour Package",
-    "category": "North India",
-    "image": "/images/packages/special-kashmir-tour.jpg",
-    "duration": "3 Nights / 4 Days",
-    "route": "Arrival in Srinagar — Check in to Houseboat → Srinagar - Ganderbal - Mughal Gardens - Srinagar → Srinagar to Gulmarg & Back → Srinagar Departure",
-    "description": "Kashmir, known as \"paradise on earth\", is full of snow-capped Himalayan peaks, lush valleys, pristine lakes, and vibrant culture. Therefore, the My Quick Trippers, this 4-day, 3-night special Kashmir tour package , blends serenity on houseboats in Srinagar with the spiritual dips at Ganderbal's holy Pushkarani, along with iconic Mughal Gardens and thrilling Gulmarg gondola rides amid flower meadows, which is perfect for families, friends, and couples seeking sightseeing, adventure, and relaxati",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "special-package-for-bhuj",
     "title": "Special Package For Bhuj",
     "category": "India Tours",
@@ -11746,8 +8206,8 @@ export const allPackages: Package[] = [
     "route": "Bhuj Airport/Railway Station → Southern Part of Kutch → Western Part of Kutch → Northern Kutch → Departure",
     "description": "Remember the movie Lagaan? It was shot in the beautiful town of Bhuj in Gujarat. The place has so much to offer for its tourists. It is famous for its handicrafts like ‘Bandhni’ work, shoes and leather work. It is also a favorite food destination to taste the Gujarati Delectables.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹34,688",
+    "dealPrice": "₹27,750",
     "discount": ""
   },
   {
@@ -11779,35 +8239,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "sri-lanka-group-tour-packages",
-    "title": "Sri Lanka Group Tour Packages",
-    "category": "International",
-    "image": "/images/packages/hi-sri-lanka-group-tour-packages.webp",
-    "image2": "/images/packages/66d8ca99c89b.jpg",
-    "duration": "7 Nights / 8 Days",
-    "route": "",
-    "description": "It is a wonderful destination for travelers and is famous worldwide for its rich culture, amazing wildlife, top beaches, and everything is surrounded by green landscapes. Sri Lanka is known as the ‘Land of Ancient Civilizations'. To fully experience this amazing place, visitors can see the kingdom of Ravana, where Sita was trapped, and the locations where battles took place.",
-    "highlights": [
-      "Check into the hotel. Enjoy dinner and stay overnight."
-    ],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "sri-lanka-heritage-tour",
-    "title": "Sri Lanka Heritage Tour Package",
-    "category": "International",
-    "image": "/images/packages/hi-sri-lanka-heritage-tour.webp",
-    "duration": "9 Nights / 10 Days",
-    "route": "Arrival in Colombo → Sigiriya – Jeep Safari Ride at Minneriya National Park → Hiriwadunna – Polonnaruwa → Kandy → Kandy Sightseeing → Kandy – Nuwara Eliya",
-    "description": "Browse our meticulously tailored 9 Nights and 10 Days long Sri Lanka Heritage Tour Package and get the chance to explore the wonders of this drop-shaped island. We have designed this package in such a way that it is worthy for tourists of every kind of taste whether it be a wildlife enthusiast, nature lover, or an architecture buff. Also, get to know about the rich history, culture, heritage, and indulge yourself in trekking expeditions of Sri Lanka.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "sri-lanka-honeymoon-tour",
     "title": "Sri Lanka Honeymoon Tour Package",
     "category": "International",
@@ -11829,8 +8260,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Sri Lanka - Chilaw - Anuradhapura → Anuradhapura - Trincomalee → Trincomalee - Kandy → Kandy - Nuwara Eliya → Nuwara Eliya - Kataragama → Kataragama - Colombo",
     "description": "Sri Lanka is known all over the world for its natural beauty. It's a nature's precious gem, famous for its magnificent wildlife biodiversity and picturesque coastline!",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹67,500",
+    "dealPrice": "₹3,287",
     "discount": ""
   },
   {
@@ -11842,8 +8273,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Planning a dream holiday in Sri Lanka in 2025 but worried about getting a visa, ETA process, required documents, fees, visa on arrival, and extensions? If so, then you are at the very right place, as you are going to get every single information about essential documents. People traveling to Sri Lanka require an Electronic Travel Authorization (ETA) that enables a 30-day stay with two entries. It is an electronic identity that can be obtained online by visiting the official website of the Sri La",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹3,37,500",
+    "dealPrice": "₹1,800",
     "discount": ""
   },
   {
@@ -11883,8 +8314,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹50,625",
+    "dealPrice": "₹40,500",
     "discount": ""
   },
   {
@@ -11896,8 +8327,8 @@ export const allPackages: Package[] = [
     "route": ": Arrival in Hyderabad – Sightseeing → Temple Visit – Srisailam Sightseeing – Hyderabad",
     "description": "Want to go on a tour that is a reflection of culture, nature, and spirituality?",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹13,350",
+    "dealPrice": "₹2,400",
     "discount": ""
   },
   {
@@ -11909,8 +8340,8 @@ export const allPackages: Package[] = [
     "route": "Hyderabad - Srisailam → Srisailam - Hyderabad → Hyderabad Sightseeing → Hyderabad Sightseeing - Departure",
     "description": "The 4 Days Srisailam Mallikarjuna tour package from Hyderabad takes travellers to a destination where every spot feels special and worth exploring.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹23,850",
+    "dealPrice": "₹2,880",
     "discount": ""
   },
   {
@@ -11922,21 +8353,8 @@ export const allPackages: Package[] = [
     "route": ": Arrival in Hyderabad – Sightseeing → Temple Visit – Srisailam Sightseeing – Hyderabad",
     "description": "Want to go on a tour that is a reflection of culture, nature, and spirituality?",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "statue-of-unity-package",
-    "title": "Gujarat Statue of Unity Package",
-    "category": "India Tours",
-    "image": "/images/packages/statue-of-unity-package.jpg",
-    "duration": "2 Nights / 3 Days",
-    "route": "Arrival in Ahmedabad - Kevadia → Kevadia Sightseeing with Statue of Unity Visit → Kevadia - Ahmedabad / Surat / Vadodara Departure",
-    "description": "Gujarat is home to the tallest statue in the world i.e. the statue of unity. People from far and wide go for the Statue of Unity Package to witness this engineering marvel. Dedicated to Sardar Vallabhbhai Patel, the iron man of India, the statue is 790 feet high. The statue overlooks the Sardar Sarovar Dam. The package implores at offering a rich cultural and heritage experience.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹13,350",
+    "dealPrice": "₹2,400",
     "discount": ""
   },
   {
@@ -11949,8 +8367,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "From North to South and Northeast region India is endowed with majestic hilly areas which attract numerous people looking to get away from the scorching sun of the plains and beat the heat. We bring you a wonderful collection of tour packages that will not only rejuvenate your soul but will also bring you much-needed peace of mind. We take you to some of the most splendid and charming hill stations of Uttarakhand through some of our most sought-after summer special tour packages. From the pictur",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹52,499",
+    "dealPrice": "₹20,999",
     "discount": ""
   },
   {
@@ -11962,32 +8380,6 @@ export const allPackages: Package[] = [
     "duration": "3 Days / 2 Nights",
     "route": "Ahmedabad → Jamnagar → Dwarka → Bet Dwarka",
     "description": "Surat, located in the western Indian state of Gujarat, is a vibrant city known for its rich history, thriving economy, and cultural diversity. Often referred to as the \"Silk City\" for its flourishing textile industry and the \"Diamond City\" due to its significant diamond cutting and polishing centers,",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "switzerland-austria-tour",
-    "title": "Scintillating Switzerland and Austria Tour",
-    "category": "India Tours",
-    "image": "/images/packages/hi-switzerland-austria-tour.webp",
-    "duration": "12 Nights / 13 Days",
-    "route": "India – Zurich – Engelberg → Excursion to Mt. Titlis → Excursion to Mt. Jungfrau → Excursion to Bern and Mt. Rigi → Excursion to Geneva and Montreux → Excursion to Lugano",
-    "description": "Exploring the charmingly whimsical landscape of this part of Europe is like a magical experience. With pristine lakes, lush green nature and a calming atmosphere a visit to these places in Europe will definitely rejuvenate your mind, body and soul. From the picturesque vistas to breathtaking beauty of nature this holiday package of Switzerland with Austria will be a one of kind experiences which you and your family will remember for a lifetime. Book yours now and take a trip to one of the most i",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "switzerland-honeymoon-tour",
-    "title": "Special Honeymoon in Switzerland Tour Package",
-    "category": "Honeymoon",
-    "image": "/images/packages/hi-switzerland-honeymoon-tour.webp",
-    "duration": "6 Nights / 7 Days",
-    "route": "Arrival in Milan – Varese → Varese – Zurich – Engelberg → Engelberg – Mt. Titlis – Engelberg → Engelberg – Jungfraujoch – Interlaken → Interlaken – Bern – Broc – Villars → Villars – Vevey – Geneva",
-    "description": "Switzerland is famous all over the world for its incredibly stunning and picturesque surroundings, snow-capped mountain peaks, blue clear water bodies and overall a romantic environment. Book your special honeymoon in Switzerland tour packages and kick start your wedding at a positive and relaxed note. Taking a stroll down the breath-taking pathways and spending some time gazing at the surreal landscape here will be something that you will not be able to experience anywhere else in the world. Av",
     "highlights": [],
     "mrp": "",
     "dealPrice": "",
@@ -12008,19 +8400,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "taj-coral-reef-resort-maldives-tour",
-    "title": "Taj Coral Reef Resort Maldives Tour",
-    "category": "India Tours",
-    "image": "/images/packages/taj-coral-reef-resort-maldives-tour.jpg",
-    "duration": "4 Nights / 5 Days",
-    "route": "Arrival in the Maldives → Maldives Excursion → Maldives → the Maldives",
-    "description": "Are you looking for a perfect holiday destination this summer? If yes, then go and grab our 4 nights / 5 days long Coral Reef Maldives Package which provides you the best deal and that also without making a hole in your pocket. Our Maldives tour package has been tailored for every kind of travelers and we have designed in such a way that it has many things to offer its varied travelers whether they are on a family tour, solo tour, or a friend’s tour.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "taj-mahal",
     "title": "Taj Mahal – The Symbol of Love in Agra",
     "category": "India Tours",
@@ -12028,19 +8407,6 @@ export const allPackages: Package[] = [
     "duration": "",
     "route": "",
     "description": "\"Only let this one tear-drop, this Taj Mahal, glisten spotlessly bright on the cheek of Time, forever and ever.\" - Rabindranath Tagore.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "tamil-nadu-cultural-tour",
-    "title": "Tamil Nadu Cultural Tour Package",
-    "category": "South India",
-    "image": "/images/packages/hi-tamil-nadu-cultural-tour.webp",
-    "duration": "21 Nights / 22 Days",
-    "route": "Arrival in Chennai → Chennai – Mahabalipuram – Kanchipuram → Kanchipuram – Vellore – Tiruvannamalai → Tiruvannamalai – Gingee – Pondicherry → Pondicherry → Kumbakonam – Tanjore - Trichy",
-    "description": "Discover South India's cultural essence with our Tamil Nadu Cultural Tour Package. Being one of the most reputable travel operators, we offer the best packages according to your unique needs. Whether you're traveling for the first time or you have visited Tamil Nadu before, you're bound to have an unforgettable experience with us.",
     "highlights": [],
     "mrp": "",
     "dealPrice": "",
@@ -12055,8 +8421,8 @@ export const allPackages: Package[] = [
     "route": "Arrive Chennai - Mahabalipuram - Pondicherry",
     "description": "As you begin the Tamil Nadu and Pondicherry Tour you’ll feel the magic of South India - simple, with welcoming people and full of hidden beauty.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹60,000",
+    "dealPrice": "₹4,650",
     "discount": ""
   },
   {
@@ -12087,19 +8453,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "tamilnadu-beaches-tour",
-    "title": "Tamil Nadu Beach Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/tamilnadu-beaches-tour.webp",
-    "duration": "10 Nights / 11 Days",
-    "route": "Arrival in Chennai → Chennai Full Day Sightseeing → Chennai – Mahabalipuram → Mahabalipuram Full Day Sightseeing → Mahabalipuram – Thanjavur → Thanjavur – Swamimalai",
-    "description": "Revel in the tranquility and beauty of South India's beaches with our Tamil Nadu Beach Tour Package. You can expect top-notch amenities and 24*7 assistance with our packages.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "tamilnadu-pilgrimage-tour",
     "title": "Tamil Nadu Pilgrimage Package",
     "category": "India Tours",
@@ -12108,8 +8461,8 @@ export const allPackages: Package[] = [
     "route": "Arrival Chennai - Mahabalipuram - Pondicherry → Pondicherry- Chidambaram- Kumbakonam → Kumbakonam-Tanjore -Trichy → Trichy - Rameswaram → Rameshwaram - Madurai - Kodaikanal → Kodaikanal Sightseeing",
     "description": "This Tamil Nadu pilgrimage tour Package will surprise you with its mix of heritage, seaside beauty, and rich culture. From Chennai, the trip takes you first to Mahabalipuram, famous for the Pancha Rathas, where each temple is made from a single big stone.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹60,000",
+    "dealPrice": "₹6,150",
     "discount": ""
   },
   {
@@ -12121,8 +8474,8 @@ export const allPackages: Package[] = [
     "route": "Chennai Arrival → Chennai - Mahabalipuram → Mahabalipuram - Tanjore → Tanjore - Trichy - Madurai → Madurai - Rameshwaram → Rameshwaram - Kanyakumari",
     "description": "Tamilnadu, inarguably one of those wonderful states where you can witness the vivid cultures and traditions.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹60,000",
+    "dealPrice": "₹6,750",
     "discount": ""
   },
   {
@@ -12148,19 +8501,6 @@ export const allPackages: Package[] = [
     "duration": "",
     "route": "",
     "description": "Tawang Tour Packages - Book Budget Tawang Holidays at Best Price",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "temples-in-ahmedabad",
-    "title": "Famous Temples in Ahmedabad",
-    "category": "India Tours",
-    "image": "/images/packages/ahmedabad-sightseeing-tour.jpg",
-    "duration": "",
-    "route": "",
-    "description": "Reckoned as the largest city in Gujarat, Ahmedabad boasts a number of stunning monuments, huge ancient temples, and many more tourist places. This beautiful city has been emerged out as an educational hub, commercial hub, and a textile city which was once under the harsh control of various dynasties including Britishers, Marathas, Mughals, and the Delhi Sultanate. It is a culture as well as heritage-rich city which holds a great historical significance. On your trip to this heritage rich city, y",
     "highlights": [],
     "mrp": "",
     "dealPrice": "",
@@ -12193,19 +8533,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "thailand-malaysia-singapore-tour",
-    "title": "Thailand and Malaysia with Singapore Tour Package",
-    "category": "International",
-    "image": "/images/packages/hi-thailand-malaysia-singapore-tour.webp",
-    "duration": "9 Nights / 10 Days",
-    "route": "Singapore → Singapore Half-Day Sightseeing Tour → Singapore – Sentosa Island – Singapore → Singapore – Kuala Lumpur → Kuala Lumpur Sightseeing Tour → Kuala Lumpur – Bangkok",
-    "description": "Malaysia, Thailand and Singapore are some of the most well-known South Eastern travel destinations where travelers from far and wide visit to experience the rich natural beauty and be a part of a number of funs filled activities. With My Quick Trippers Thailand and Malaysia with Singapore value package, you will be able to experience the best of these places for 10 days and 9 nights. From the shimmering blue seas and the calming beaches to the delectable local cuisines and pleasant local populat",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "thailand-tour-packages",
     "title": "Thailand Tour Packages",
     "category": "International",
@@ -12220,19 +8547,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "thanjavur-sightseeing-tour",
-    "title": "Thanjavur Local Sightseeing Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-thanjavur-sightseeing-tour.webp",
-    "duration": "3 Nights / 4 Days",
-    "route": "Arrival in Madurai – Tiruchirappalli → Trichy – Tanjore → Tanjore – Kumbakonam → Kumbakonam – Madurai Departure",
-    "description": "Experience the local culture and explore Thanjavur from a different perspective with our Thanjavur Local Sightseeing Tour Package. With this package, we will take you to off-the-beaten-path locations and hidden gems that you may not be able to discover on your own.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "thanjavur-tour-packages",
     "title": "Thanjavur Tour Packages",
     "category": "India Tours",
@@ -12242,34 +8556,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "things-to-do-in-goa",
-    "title": "Top 10 Things to Do in Goa – Best Activities & Attractions",
-    "category": "West India",
-    "image": "/images/packages/goa-tour-package-5-days.webp",
-    "duration": "",
-    "route": "",
-    "description": "This is a no-brainer. When it comes to the list of things that you can do in Goa, it could go on and on. From going on jungle hikes and having some relaxing beachy and mud therapy to going for water-based adventure sports or just spending your days lazing by the beach, enjoying the thumping nightlife, and having some fun in the sun. The plethora of things that one can do in Goa covers all age groups making sure that everyone making their way to Goa has the time of their lives. If there is one pl",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "thrilling-manali-tour",
-    "title": "Thrilling Manali Tour Package",
-    "category": "North India",
-    "image": "/images/packages/thrilling-manali-tour.jpg",
-    "duration": "4 Nights / 5 Days",
-    "route": "Delhi – Manali → Manali Sightseeing → Manali – Solang Valley – Rohtang Pass – Manali → Manali – Kullu Naggar → Kullu Naggar Departure",
-    "description": "Manali is a hill station located in the pristine Himalayan state of Himachal Pradesh. Surrounded by immaculate greenery, thick lush forests, and rolling green valleys, Manali has attracted the attention of travelers, tourists, philosophers, and peace seekers in general for ages now and continues to be one of the most visited hill stations in India.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -12322,8 +8610,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -12335,8 +8623,8 @@ export const allPackages: Package[] = [
     "route": "Tirupati Darshan-- Vellore --Tiruvannamalai → Tiruvannamalai - - Thanjavur  - -Tiruchirappalli → Tiruchirappalli - Madurai- → Madurai - Rameshwaram → Rameswaram - Kanyakumari - → Kanyakumari - Kovalam - Thiruvananthapuram",
     "description": "Experience the best that Andhra Pradesh and Tamil Nadu have to offer with our handcrafted packages, including visits to Tirupati, Thanjavur, Rameshwaram, Kanyakumari, and Madurai . These packages are an amalgamation of the best experiences, spiritual tours, adventure activities, and lip-smacking meals. Our guide will accompany you throughout the tour, ensuring you get to have the best experience of your life. With amenities like top-notch accommodation, tasty meals, and guided sightseeing, you'r",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹42,600",
+    "dealPrice": "₹3,900",
     "discount": ""
   },
   {
@@ -12348,8 +8636,8 @@ export const allPackages: Package[] = [
     "route": "Tirupati - Vellore -Tiruvannamalai → Tiruvannamalai - Thanjavur  -Tiruchirappalli → Tiruchirappalli - Madurai → Madurai - Rameshwaram → In Rameswaram → Rameswaram - Kanyakumari",
     "description": "On the Tirupati Thanjavur Rameshwaram Kanyakumari Madurai Tour, each city welcomes you with its own charm, rich history and cultural heritage. The journey begins from Tirupati. Don't miss its popular Venkateswara Temple. According to The Times of India around 50,000 people visit this temple every day.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹42,600",
+    "dealPrice": "₹3,900",
     "discount": ""
   },
   {
@@ -12380,45 +8668,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "tokyo-hiroshima-tour",
-    "title": "Tokyo Hiroshima Tour",
-    "category": "India Tours",
-    "image": "/images/packages/hi-tokyo-hiroshima-tour.webp",
-    "duration": "6 Nights / 7 Days",
-    "route": "Arrival in Tokyo → Sightseeing of Tokyo → Tokyo – Mount Fuji – Kyoto → Kyoto – Nara – Kyoto → Kyoto – Osaka → Osaka – Hiroshima – Tokyo",
-    "description": "Looking to go on an international vacation with a twist? Here is a comprehensive tour package for Tokyo and Hiroshima that will take you through some of the most unique travel destinations in the world. From exploring the interesting places of tourist attractions to going and exploring some of the most landmark destinations, Japan and especially Tokyo is a delight for every type of traveller. Get to know their culture, traditions and beliefs and experience the thrill of being in one of the best",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "tokyo-kyoto-tour",
-    "title": "Tokyo Kyoto Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-tokyo-kyoto-tour.webp",
-    "duration": "5 Nights / 6 Days",
-    "route": "Arrival in Tokyo → Sightseeing of Tokyo → Tokyo City Sightseeing and Shopping → Tokyo – Mount Fuji – Tokyo → Tokyo – Kyoto → Kyoto Departure",
-    "description": "Tokyo is one of the most unique destinations for every traveler and allows you to have one of the most unique vacation experiences here. Through this comprehensive package, you will be able to also explore the capital city of Japan, Kyoto. These Japanese cities are filled with fun and interesting experiences and tourist destinations which cannot be experienced anywhere else. A visit here will ensure that you have a memorable time with your family and loved ones. The places covered in this packag",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "tokyo-mount-fuji-tour",
-    "title": "Tokyo Mount Fuji Tour",
-    "category": "India Tours",
-    "image": "/images/packages/hi-tokyo-mount-fuji-tour.webp",
-    "duration": "3 Nights / 4 Days",
-    "route": "Arrival in Tokyo → Sightseeing in Tokyo → Tokyo – Mount Fuji – Tokyo → Tokyo Departure",
-    "description": "Japan is quickly becoming a hub for fun, quirky and unique tourist activities. With the variety of places to visit in and around Japan, you will never get bored. Rated among the favorite places to explore in Japan by travelers from all over the globe, the Tokyo and Mt. Fuji tour package will ensure that you have the time of your life. We ensure that you have a peaceful and a stress-free holiday in one of the most incredible travel destinations of the world.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "tokyo-tour-packages",
     "title": "Tokyo Tour Packages",
     "category": "India Tours",
@@ -12427,188 +8676,6 @@ export const allPackages: Package[] = [
     "duration": "",
     "route": "",
     "description": "",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "tourist-places-in-ahmedabad",
-    "title": "Tourist Attractions in Ahmedabad",
-    "category": "India Tours",
-    "image": "/images/packages/ahmedabad-dwarka-weekend-tour.jpg",
-    "duration": "",
-    "route": "",
-    "description": "A crowded metropolis, a textile hub, world-wide known educational hub, and a city with a rich and glorious past. Ahmedabad is one of the most happening and highly frequented cities in Gujarat as the city boasts a number of things to offer its guests with vivid interests. This beautiful city is adorned with a plethora of tourist destinations which one can explore on their Ahmedabad tour. Scroll down the page to check the list of some best and mind-blowing places to visit in Ahmedabad.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "tourist-places-in-allahabad",
-    "title": "Tourist Places to Visit in Allahabad",
-    "category": "India Tours",
-    "image": "/images/packages/allahabad-tour-packages.webp",
-    "duration": "",
-    "route": "",
-    "description": "Officially named as Prayagraj and formerly known as Illahabad, this place is replete with prominent historical places and Destinations. The city itself has found its mention in various holy and sacred Hindu texts like Agni Puran and Manusmriti as the place where Brahmaji had attended a sacrificial ritual. Along with this Lord Ram of Ramayan is also said to have spent some time in an ashram here making it all the more sacred. The entire state is dotted with numerous ancient temples and has seen a",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "tourist-places-in-gangotri",
-    "title": "Tourist Places to Visit in Gangotri",
-    "category": "Pilgrimage",
-    "image": "/images/packages/tourist-places-in-gangotri.webp",
-    "duration": "",
-    "route": "",
-    "description": "Situated in the scenic district of Uttarkashi, Gangotri is a pilgrim town that is situated on the banks of the holy Bhagirathi River. Set against the backdrop of the great Himalayan region, complete with clear blue skies, lush green cover, tall trees, and an imminent spiritual vibe. Named after Gangotri Dham , the holy town is home to some incredible viewpoints, and the presence of roads makes connectivity possible for tourists from all over. The place is all about celebrating nature in its raw",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "tourist-places-in-yamunotri",
-    "title": "Places to Visit around Yamunotri",
-    "category": "Pilgrimage",
-    "image": "/images/packages/yamunotri-weather.webp",
-    "duration": "",
-    "route": "",
-    "description": "Yamunotri Temple is located near the foot of Kalind Parbat, perched atop a flank of Bandarpoonch Parbat in the Uttarkashi district of Uttarakhand in the western Garhwal Himalayas. Being the commencing point for the holy Chota Char Dham Yatra , it is frequented by numerous devotees in the summertime, looking to offer prayers at the revered shrine dedicated to the Goddess Yamuna , the divine representation of the holy river. Here is a list of tourist attractions to visit around Yamunotri, apart fr",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "traditional-dress-of-bhutan",
-    "title": "Traditional Dress of Bhutan",
-    "category": "International",
-    "image": "/images/packages/tourist-places-to-visit-in-bhutan.jpg",
-    "duration": "",
-    "route": "",
-    "description": "Bhutan is all about being connected with roots, heritage, legacy, and having a very deep connection with their age-old culture. The Bhutanese folks represent their well-preserved culture through the way they dress up, the food they eat, and also the language they speak. One of the most visible signs is their dress code and mild behaviour which stands out from the rest of the world.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "traditional-dress-of-himachal-pradesh",
-    "title": "Traditional Dress of Himachal Pradesh",
-    "category": "North India",
-    "image": "/images/packages/himachal-pradesh.jpg",
-    "duration": "",
-    "route": "",
-    "description": "The natural and scenic beauty of Himachal Pradesh remains unmatched to anywhere else in India. Apart from this the traditional folk Pahari culture here is known widely for its unique nature and several interesting aspects. Every Pahari folk here from the tribes to the sub-tribes and the majorly occurring inhabitants have a very different way of life on the hills when compared to life in the cities and metros. From their lifestyle, languages, and occupation to food, festival, and even their cloth",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "traditional-dress-of-madhya-pradesh",
-    "title": "Traditional Dress of Madhya Pradesh",
-    "category": "India Tours",
-    "image": "/images/packages/places-to-visit-in-madhya-pradesh.webp",
-    "duration": "",
-    "route": "",
-    "description": "The beauty of the Indian subcontinent is in its rich cultural diversity. With every turn you take here, the language, food, music etc. changes, and so do the people. And the biggest way of defining a people is through the clothes they wear, and this is no exception in the traditional dress of Madhya Pradesh as well. The “heart of India” has so much diversity within itself – people belonging to at least four different religions call Madhya Pradesh their home, and with a population of 46 tribes, t",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "traditional-dress-of-manali",
-    "title": "Traditional Dress of Manali – Costumes and Jewellery",
-    "category": "North India",
-    "image": "/images/packages/manali-tour-packages.webp",
-    "duration": "",
-    "route": "",
-    "description": "Nestled away amidst the scenic and divine hills of the Himalayas, Manali is a beautiful, quaint hill town that is home to not just a variety of flora and fauna but also too many different ethnicities. It is a wonderful mosaic of vibrant tribes, communities, and groups following different traditions, customs, and beliefs. Being the center of attention since the ancient ages, Manali has attracted lots of attention throughout and has now quickly turned into one of the most beloved prides of the nor",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "traditional-dress-of-rajasthan",
-    "title": "Traditional Dress of Rajasthan",
-    "category": "West India",
-    "image": "/images/packages/traditional-dress-of-rajasthan.jpg",
-    "duration": "",
-    "route": "",
-    "description": "We all know Rajasthan for its unmatched opulence which is displayed through its marvelous palaces and forts. This place offers everything to make you feel like one of the royalties. Apart from the obvious display of rich heritage and well-preserved age-old culture the clothing style and attire of the Rajasthani folks are appreciated all over the world. Marked by bright bold colors and light fabric the men and women traditional clothing here is very quirky to look at while simultaneously being fu",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "traditional-dress-of-shimla",
-    "title": "Traditional Dress of Shimla",
-    "category": "North India",
-    "image": "/images/packages/shimla-tour-packages.webp",
-    "duration": "",
-    "route": "",
-    "description": "Shimla has to be one of the most beloved hill stations in north India. Located in the heart of Himachal Pradesh it is bound on all sides by rolling hills of green, underlined by the snowcapped peaks and enveloped in an air of deep spirituality and solitude at the same time. Ever since the British decided to make Shimla their summer capital, it also invited the native rulers who wanted to get away and have some respite against the hot and scorching summer season of the plains.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "traditional-dress-of-sikkim",
-    "title": "Traditional Dress of Sikkim",
-    "category": "North East India",
-    "image": "/images/packages/traditional-dress-of-sikkim.jpg",
-    "duration": "",
-    "route": "",
-    "description": "Sikkim is a multi-ethnic and multi-cultural state of India which is filled with colorful magnificence all against the crowning, snowcapped jewel of the Himalayan ranges. The people here are famous for their diversity and a unique set of traditions and beliefs that is very different from the rest of the Indian plains and subcontinent.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "traditional-dress-of-uttar-pradesh",
-    "title": "Traditional Dresses of Uttar Pradesh",
-    "category": "India Tours",
-    "image": "/images/packages/uttar-pradesh-tour-packages.webp",
-    "duration": "",
-    "route": "",
-    "description": "Everything about the colorful state of Uttar Pradesh is unique and mesmerizing. From the delicious food varieties to the age-old heritage this place offers you a plethora of options to explore. The people here are very deeply rooted and attached to their centuries-old background which makes them very interesting. A traveler can experience one of a kind traditions and beliefs through their art, handicrafts, cuisines, and culture. Another way of immersing yourself completely into the real UP vibe",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "traditional-dresses-of-gujarat",
-    "title": "Traditional Dresses of Gujarat",
-    "category": "West India",
-    "image": "/images/packages/traditional-dresses-of-gujarat.jpg",
-    "duration": "",
-    "route": "",
-    "description": "Gujarat is the state where every aspect represents the rich traditions and incredible heritage which dates back to ages and centuries back. From being the kingdom of Lord Krishna to being home to the salt desert of the Great Rann of Kutch it is a place where the authenticity of Gujarati culture is kept alive. Just like its food , architecture, and way of life the dressing sense of the people of Gujarat are very distinctive from the rest of India. It represents the age-old culture and the modern",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "traditional-dresses-of-uttarakhand",
-    "title": "Traditional Dresses of Uttarakhand",
-    "category": "North India",
-    "image": "/images/packages/traditional-dresses-of-uttarakhand.jpg",
-    "duration": "",
-    "route": "",
-    "description": "Devbhoomi Uttarakhand adorns the northern region of India and is home to some of the most eclectic collection of traditions and culture. The rich heritage here has been well preserved and kept alive with the constant efforts made by the Pahari people of Uttarakhand comprising of Kumaonis and Garhwalis. Being a popular place of residence for people of various ethnicities of the surrounding region many people of different tribes have come together to co-exist in peace here. From their festivals ,",
     "highlights": [],
     "mrp": "",
     "dealPrice": "",
@@ -12663,8 +8730,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Trivandrum, also known as Thiruvananthapuram, is the capital city of Kerala, India. It is a vibrant and culturally rich city that offers a wide range of experiences for visitors. Trivandrum tour packages provide an opportunity to explore the city’s historical sites, religious landmarks, beautiful beaches, and diverse cuisine.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -12691,8 +8758,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "Udaipur, popularly known as the “City of Lakes” is located in Rajasthan, North West of India. Previously being the capital of Mewar, Udaipur was founded by Rana Udai Singh. This place finds a very important place in Indian history due to the bravery of the Rajput chiefs and rulers of Udaipur in preserving the independence, religion, and culture against the Mughals. Based on its glorious past and its colorful culture Udaipur has grown up to be a special tourist destination that attracts tourists",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹52,499",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -12704,8 +8771,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Indore – Sightseeing in Ujjain → Ujjain to Omkareshwar → Omkareshwar – Maheshwar – Mandu → Mandu Sightseeing + Indore",
     "description": "Want to go on a trip that is filled with cultural exploration, beautiful architecture, and spirituality through and through? Then book our Indore Ujjain Omkareshwar Maheshwar Mandu Tour Package and travel to these beautiful places in utter luxury and comfort.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹24,600",
+    "dealPrice": "₹4,350",
     "discount": ""
   },
   {
@@ -12717,8 +8784,8 @@ export const allPackages: Package[] = [
     "route": "Arrival in Indore → Indore - Ujjain Sightseeing → Ujjain - Omkareshwar → Omkareshwar - Indore",
     "description": "What’s one place that spoils you with beautiful Ghats, ancient temples, and cultural monuments?",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹22,725",
+    "dealPrice": "₹4,350",
     "discount": ""
   },
   {
@@ -12890,19 +8957,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "unforgettable-kashmir-tour",
-    "title": "5 Days Unforgettable Kashmir Tour",
-    "category": "North India",
-    "image": "/images/packages/unforgettable-kashmir-tour.jpg",
-    "duration": "4 Nights / 5 Days",
-    "route": "Arrival in Srinagar → Srinagar – Pahalgam → Pahalgam – Gulmarg – Srinagar → Srinagar – Sonamarg – Srinagar → Srinagar Departure",
-    "description": "Unbelievable natural beauty, scenic vistas, and the serene lake against the backdrop of the snow-clad mountain ranges. Sounds like a dream? We can make this dream come true with our 5 days and 4 nights of amazing Kashmir tour.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "uttar-pradesh-darshan-tour",
     "title": "Uttar Pradesh Darshan Tour",
     "category": "India Tours",
@@ -12911,8 +8965,8 @@ export const allPackages: Package[] = [
     "route": "Arrive at Varanasi → Varanasi - Vindhyachal – Prayagraj → Prayagraj - Ayodhya → Ayodhya - Lucknow → Lucknow - Naimisharanya  - Lucknow",
     "description": "Experience the best that Uttar Pradesh has to offer with our tour package",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹33,750",
+    "dealPrice": "₹3,600",
     "discount": ""
   },
   {
@@ -13046,23 +9100,8 @@ export const allPackages: Package[] = [
     "route": "Arrive Delhi On to Jammu → Jammu to Katra → Katra to Mata Vaishno Devi and Back to Katra → Jammu to Delhi",
     "description": "One of the most revered pilgrimage sites in India, the Vaishno Devi Temple nestles in the serene Trikuta Hills of Jammu and Kashmir. Dedicated to Goddess Vaishno Devi—an incarnation of Durga—this sacred shrine draws millions of devotees yearly seeking divine blessings. The pilgrimage journey blends devotion, natural beauty, and spiritual fulfilment.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "vaishno-devi-yatra-by-helicopter",
-    "title": "Shri Mata Vaishno Devi Helicopter Tour Package",
-    "category": "Pilgrimage",
-    "image": "/images/packages/hi-vaishno-devi-yatra-by-helicopter.webp",
-    "duration": "",
-    "route": "Jammu - Sanji Chatti - Vaishno Devi",
-    "description": "Settled on Trikuta Hills at an altitude of 5200ft Mata Vaishno Devi Temple is the most visited pilgrimage of Hindus. The shrine is situated in a holy cave on the Shivalik Mountain Range where pilgrims can do the philosophy of Mata Vaishno throughout the year.",
-    "highlights": [
-      "Monument entrance fees"
-    ],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹9,000",
+    "dealPrice": "₹2,250",
     "discount": ""
   },
   {
@@ -13087,23 +9126,8 @@ export const allPackages: Package[] = [
     "route": "Arrival Varanasi → Varanasi - Vindhyachal - Prayagraj → Prayagraj - Ayodhya → Ayodhya - Lucknow → Lucknow - Naimisharanya - Lucknow",
     "description": "Ready to explore a state full of rich history and colorful culture? The Varanasi Prayagraj Ayodhya Naimisharanya Tour lets you experience it all.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "varanasi-ayodhya-allahabad-tour",
-    "title": "Kashi Prayagraj And Ayodhya Tour",
-    "category": "Uttar Pradesh",
-    "image": "/images/packages/hi-varanasi-ayodhya-allahabad-tour.webp",
-    "duration": "3 Nights / 4 Days",
-    "route": "Arrival in Varanasi → Varanasi – Sarnath – Varanasi → Varanasi – Prayagraj – Ayodhya → Prayagraj – Departure",
-    "description": "The holy cities of Kashi Prayagraj and Ayodhya are known for their unparalleled spirituality. On this trip you'll be participating in rituals, visiting ancient temples and experiencing the national heritage - all in one pilgrimage. This trip will take you closer to the cultural treasure of the country than ever before! Book the Kashi Prayagraj Ayodhya tour package now and go on a holy trip of your lifetime!",
-    "highlights": [
-      "Varanasi Sightseeing Tour"
-    ],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹39,825",
+    "dealPrice": "₹3,900",
     "discount": ""
   },
   {
@@ -13128,8 +9152,8 @@ export const allPackages: Package[] = [
     "route": "Arrive in Varanasi → Varanasi - Bodhgaya → Bodhgaya – Gaya  – Varanasi → Varanasi - Prayagraj – Varanasi",
     "description": "Have you ever thought why so many tourists travel to Varanasi and Bodhgaya every year?",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹34,575",
+    "dealPrice": "₹3,450",
     "discount": ""
   },
   {
@@ -13154,8 +9178,8 @@ export const allPackages: Package[] = [
     "route": "Arrive in Varanasi → Varanasi - Vindhyachal - Prayagraj → Prayagraj - Ayodhya → Ayodhya - Varanasi Departure",
     "description": "Explore India’s 4 famous cities where you will see hidden gems, rituals, and hear local stories that make every place special.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹25,575",
+    "dealPrice": "₹2,550",
     "discount": ""
   },
   {
@@ -13167,8 +9191,8 @@ export const allPackages: Package[] = [
     "route": "Arrive at Varanasi → Varanasi – Bodhgaya → Bodhgaya – Gaya  – Varanasi → Varanasi – Sarnath Sightseeing → Varanasi - Vidhyanchal - Prayagraj → Prayagraj - Ayodhya",
     "description": "Our Varanasi tour package with Prayagraj, Gaya, Bodhgaya, and Ayodhya takes you on a sacred journey to Uttar Pradesh and Bihar's famous attractions.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹47,175",
+    "dealPrice": "₹4,800",
     "discount": ""
   },
   {
@@ -13180,23 +9204,8 @@ export const allPackages: Package[] = [
     "route": "Varanasi – The city of Liberation → Varanasi – Sarnath Sightseeing",
     "description": "Witness the world where time stops to behold the divine in its most beautiful forms.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "varanasi-temple-tour",
-    "title": "Varanasi Temple Tour Package",
-    "category": "Uttar Pradesh",
-    "image": "/images/packages/hi-varanasi-temple-tour.webp",
-    "duration": "1 Nights / 2 Days",
-    "route": "Arrival in Varanasi → Varanasi – Sarnath – Varanasi",
-    "description": "Varanasi is one of the holiest cities in the world. It's popular for its omnipresent spiritual aura. Once you step on this divine land, you sense peace and an undeniable feeling of devotion. If you want to explore this holy city on a deeper level, then book our Varanasi Temple Tour Package! With this expert-crafted Varanasi temple tour itinerary, you get to see all the famous temples in Varanasi - ranging from Kashi Vishwanath Temple Darshan to the lesser-known Kaal Bhairav Temple! Book now or c",
-    "highlights": [
-      "Lucknow Sightseeing Tour"
-    ],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹14,700",
+    "dealPrice": "₹2,400",
     "discount": ""
   },
   {
@@ -13208,8 +9217,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "One of the seven holiest cities in India, Varanasi is hailed as the spiritual capital of India. It welcomes millions of tourists from all around the globe. Devotees come to this holy place to take a dip in the holy River Ganges and to perform sacred rituals along the riverbank. The city is famous for still preserving the ancient way of living! To see it in its full glory, book our Varanasi Tour Packages now!",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹57,750",
+    "dealPrice": "₹2,250",
     "discount": ""
   },
   {
@@ -13235,8 +9244,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -13247,32 +9256,6 @@ export const allPackages: Package[] = [
     "duration": "3 Nights / 4 Days",
     "route": "Arrival in Hanoi → Hanoi City Tour → Halong Bay Trip → Departure",
     "description": "Are you looking for a holiday trip in South East Asia with your group of friends or family? If yes, then check out the Vietnam Adventure Tour Package that lets you enjoy the incredible charm of Vietnam and offer you a perfect opportunity to get indulged in thrilling and adventurous activities. Besides collecting adventurous and thrilling moments on the trip in Vietnam, you will also be getting some exciting moments by witnessing the incredible beauty of rugged limestone caves, glimmering and gor",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "vietnam-cambodia-tour",
-    "title": "Vietnam Cambodia Tour Package",
-    "category": "India Tours",
-    "image": "/images/packages/hi-vietnam-cambodia-tour.webp",
-    "duration": "7 Nights / 8 Days",
-    "route": "Arrival in Ho Chi Minh City → Ho Chi Minh City Tour → Ho Chi Minh City – Island Tour and Boat Ride → Siem Reap → Siem Reap Tour → Phnom Penh",
-    "description": "Are you looking for a vacation in South East Asia? If yes, then plan a trip to Vietnam and Cambodia with our meticulously crafted Vietnam Cambodia Tour Package that lets you explore some of the most serene, tranquil, and the mystical land of these 2 beautiful countries. On this 7 nights and 8 days long Vietnam you are going to collect some most amazing moments and travel experiences by exploring the wonders and the architectural grandeur of the destination countries.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "vietnam-honeymoon-tour",
-    "title": "Vietnam Honeymoon Tour Package",
-    "category": "Honeymoon",
-    "image": "/images/packages/hi-vietnam-honeymoon-tour.webp",
-    "duration": "5 Nights / 6 Days",
-    "route": "Arrival in Hanoi → Arrival in Sapa and Sightseeing → Local Sightseeing in Sapa → Arrival in Hanoi and Fansipan National Park en-route → Halong Bay → Arrival in Hanoi and then Departure",
-    "description": "Vietnam, one of the most popular travel destinations in the world is pretty rich in cultural heritage and breathtaking and panoramic landscapes. This beautiful destination is teeming with a plethora of key attractions that are pretty captivating and inviting to the tourists and the best part of this holiday destination is that it is a symbiosis of both rustic as well as modern destinations. Check out this well-curated Vietnam Honeymoon tour package and give a perfect and the most romantic start",
     "highlights": [],
     "mrp": "",
     "dealPrice": "",
@@ -13307,19 +9290,6 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "vietnam-visa-information",
-    "title": "Vietnam Visa Information",
-    "category": "India Tours",
-    "image": "/images/packages/hi-vietnam-visa-information.webp",
-    "duration": "",
-    "route": "",
-    "description": "Whether you’re visiting Vietnam for business, a holiday, or an urgent trip, you’ll have to apply for a visa to visit the country. Indian passport holders can only visit Vietnam if they have a valid visa. A Vietnamese visa can be obtained either on arrival or from the Vietnamese Embassy. In 2025, various improvements have been made to the e-visa system to support smoother applications. Indian citizens can apply for a visa on arrival, an e-visa, or a visa sticker through a local Vietnamese consula",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
     "slug": "vietnam",
     "title": "Vietnam",
     "category": "India Tours",
@@ -13342,8 +9312,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,874",
+    "dealPrice": "₹25,499",
     "discount": ""
   },
   {
@@ -13381,8 +9351,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "The ancient temple of Triyuginarayan is a very popular pilgrimage hub located amidst the gently rolling hills and lush greenery. This humble-looking temple offers spiritual and religious value for its devotees since this is where Lord Shiva had entered into holy eternal matrimony with goddess Parvati. Due to its proximity to the holy Char Dham Temple of Kedarnath , a visit to this temple is often clubbed together with the wedding at Triyuginarayan temple. Triyuginarayan has always been a focal a",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹7,50,000",
+    "dealPrice": "₹1,50,000",
     "discount": ""
   },
   {
@@ -13532,8 +9502,8 @@ export const allPackages: Package[] = [
     "route": "",
     "description": "",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹35,999",
+    "dealPrice": "₹11,250",
     "discount": ""
   },
   {
@@ -13590,8 +9560,8 @@ export const allPackages: Package[] = [
     "route": "Arrive Delhi – Haridwar → Haridwar – Dehradun – Barkot / Janki Chatti → Barkot - Yamunotri Snan – Barkot → Barkot – Delhi",
     "description": "It is designed for pilgrims who want to seek the blessing of the goddess Yamuna on the auspicious event of Pushkaralu which takes place only once every 12 years. It is marked by the special astrological event when Jupiter enters Cancer. This holy tour will take you to the revered Yamunotri Temple from Delhi via Haridwar, Dehradun, Mussoorie, Barkot, and Janki Chatti.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹31,950",
+    "dealPrice": "₹4,125",
     "discount": ""
   },
   {
@@ -13603,8 +9573,8 @@ export const allPackages: Package[] = [
     "route": "Dehradun and Local Sightseeing → Dakpatthar Visit and Yamuna Pushkaralu Rituals → Haridwar / Dehradun",
     "description": "Get a once-in-a-lifetime opportunity to attend Yamuna Pushkaralu, one of the most revered Hindu festivals that is celebrated once every twelve years when Jupiter enters Gemini. This year it will be held from June 2, 2026, to June 13, 2026. It is believed that if you take a dip in the Yamuna River during this period, your soul gets purified and you get to seek divine blessings.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹21,750",
+    "dealPrice": "₹1,965",
     "discount": ""
   },
   {
@@ -13629,8 +9599,8 @@ export const allPackages: Package[] = [
     "route": "Arrive Varanasi Sightseeing → Varanasi – Prayagraj → Prayagraj - Ayodhya → Ayodhya / Varanasi Departure",
     "description": "The Yamuna Pushkaralu Spiritual Tour offers you a trip of divine purification during the auspicious Yamuna Pushkaram.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹26,100",
+    "dealPrice": "₹3,405",
     "discount": ""
   },
   {
@@ -13642,8 +9612,8 @@ export const allPackages: Package[] = [
     "route": "Arrive Dehradun – Haridwar → Haridwar – Dehradun – Barkot /Jankichatti → Barkot - Yamunotri Shan – Barkot → Barkot - Dehradun",
     "description": "This holy tour will take you to the sacred Yamunotri. You also get to visit other holy towns, such as Haridwar and Barkot. We will also be making stops at Dehradun and Mussoorie. The Yamuna Pushkaram is a holy sacred event that takes place only once every 12 years. Visiting Yamunotri and taking a ritualistic bath during this period is highly auspicious.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹26,250",
+    "dealPrice": "₹3,465",
     "discount": ""
   },
   {
@@ -13655,34 +9625,8 @@ export const allPackages: Package[] = [
     "route": "Arrive Delhi - Kurukshetra → In Yamuna Snan - Haridwar → Haridwar - Delhi",
     "description": "Attend the Yamuna Pushkaralu festival and get ready to experience the divine power of the River Yamuna.",
     "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "yamunotri-opening-closing-dates",
-    "title": "Yamunotri Yatra Opening Dates for 2026",
-    "category": "Pilgrimage",
-    "image": "/images/packages/kedarnath-opening-closing-dates.webp",
-    "duration": "",
-    "route": "",
-    "description": "The Temple opens on the religious day of ‘Akshaya Tritiya’ , which generally falls in the last week of April or the first week of May. In 2026, the doors of Yamunotri Temple, which remain closed during the winter season, were reopened on 19 April 2026 for devotees. [NOTE: This is a seasonal information page (temple opening/closing dates), not a tour package. Itinerary does not apply.]",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "yamunotri-temple",
-    "title": "Yamunotri Temple – About Goddess Yamuna the Sister of Yamraj",
-    "category": "Pilgrimage",
-    "image": "/images/packages/yamunotri-temple.webp",
-    "duration": "",
-    "route": "",
-    "description": "As the name suggests, this ancient and sacred temple is dedicated to Goddess Yamuna, and the temple here marks the emergence point of the holy river Yamuna from its source. Since the rest of the way heading to the glacier is extremely narrow and normal people won’t be able to reach it, the temple marks the starting point of this holy river. Surrounded by the lush moss-covered green rolling hills and cascading waterfalls, which create a dramatic effect in the whole area, Yamunotri Dham is known f",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
+    "mrp": "₹21,750",
+    "dealPrice": "₹2,760",
     "discount": ""
   },
   {
@@ -13697,45 +9641,6 @@ export const allPackages: Package[] = [
     "highlights": [],
     "mrp": "₹20,000",
     "dealPrice": "₹16,000",
-    "discount": ""
-  },
-  {
-    "slug": "yamunotri-weather",
-    "title": "Yamunotri Weather Guide & Best Time to Visit",
-    "category": "Pilgrimage",
-    "image": "/images/packages/yamunotri-weather.webp",
-    "duration": "",
-    "route": "",
-    "description": "Yamunotri — the sacred source of the Yamuna River — is one of the four Char Dham pilgrimage sites in Uttarakhand , situated in the Garhwal Himalayas at an elevation of approximately 3,293 metres. Weather here is not just a comfort consideration — at this altitude, it directly determines whether the road is open, whether the trek is safe, and whether the temple is accessible at all. Knowing the seasonal conditions is essential for planning a safe and spiritually fulfilling trip.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "yamunotri-yatra-from-delhi",
-    "title": "Yamunotri Yatra Package from Delhi",
-    "category": "North India",
-    "image": "/images/packages/yamunotri-weather.webp",
-    "duration": "4 Nights / 5 Days",
-    "route": "Delhi – Haridwar → Haridwar – Barkot → Barkot – Yamunotri – Barkot → Barkot – Haridwar → Haridwar – Delhi",
-    "description": "Yamunotri being one of the most important pilgrimages in the Char Dham circuit and the originating point of River Yamuna is one of the most prime pilgrimages of Hindu. Every year the pilgrimage is visited by millions of devotees flocking from different places of the world holding an immense faith in their heart for River Yamuna.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
-    "discount": ""
-  },
-  {
-    "slug": "yamunotri-yatra-from-haridwar",
-    "title": "Yamunotri Yatra Package from Haridwar",
-    "category": "Pilgrimage",
-    "image": "/images/packages/yamunotri-weather.webp",
-    "duration": "2 Nights / 3 Days",
-    "route": "Haridwar – Barkot → Barkot – Yamunotri – Barkot → Barkot – Haridwar",
-    "description": "Yamunotri is the first step of the four pilgrimages of the sacred Char Dham Yatra and is located at an altitude of 3293 m above sea level.",
-    "highlights": [],
-    "mrp": "",
-    "dealPrice": "",
     "discount": ""
   },
   {

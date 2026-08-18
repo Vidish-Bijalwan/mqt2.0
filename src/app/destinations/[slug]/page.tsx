@@ -112,7 +112,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
         ? `${Math.min(...durNums)} Day${Math.min(...durNums) > 1 ? "s" : ""}`
         : `${Math.min(...durNums)}–${Math.max(...durNums)} Days`;
   const priceNums = uniquePackages
-    .map((p) => (getPriceInfo(p.mrp, p.dealPrice).hasPrice ? parseINR(p.dealPrice || p.mrp) : 0))
+    .map((p) => (getPriceInfo(p.mrp, p.dealPrice, p.slug).hasPrice ? parseINR(p.dealPrice || p.mrp) : 0))
     .filter((n) => n > 0);
   const priceFrom = priceNums.length ? "₹" + Math.min(...priceNums).toLocaleString("en-IN") : null;
 

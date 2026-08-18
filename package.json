@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "node scripts/dev-prewarm.mjs",
-    "build": "node scripts/run-next.mjs build",
+    "build": "next build",
     "start": "node scripts/run-next.mjs start",
     "reinstall": "node scripts/reinstall.mjs",
     "lint": "eslint",
