@@ -60,6 +60,7 @@ function PosterLightbox({
 }) {
   const [lb, dispatch] = useReducer(lbReducer, { scale: 1, x: 0, y: 0 });
   const imgRef = useRef<HTMLDivElement>(null);
+  const [isDragging, setIsDragging] = useState(false);
   const dragRef = useRef<{ startX: number; startY: number; lbX: number; lbY: number } | null>(null);
   const lastPinchDist = useRef<number | null>(null);
 
@@ -88,6 +89,7 @@ function PosterLightbox({
   const onMouseDown = useCallback((e: React.MouseEvent) => {
     e.preventDefault();
     dragRef.current = { startX: e.clientX, startY: e.clientY, lbX: lb.x, lbY: lb.y };
+    setIsDragging(true);
   }, [lb]);
 
   const onMouseMove = useCallback((e: React.MouseEvent) => {
@@ -98,7 +100,7 @@ function PosterLightbox({
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lb]);
 
-  const onMouseUp = useCallback(() => { dragRef.current = null; }, []);
+  const onMouseUp = useCallback(() => { dragRef.current = null; setIsDragging(false); }, []);
 
   /* touch pinch zoom */
   const onTouchStart = useCallback((e: React.TouchEvent) => {
@@ -200,7 +202,7 @@ function PosterLightbox({
           className="poster-lb-img"
           style={{
             transform: `scale(${lb.scale}) translate(${lb.x / lb.scale}px, ${lb.y / lb.scale}px)`,
-            cursor: isDraggable ? (dragRef.current ? "grabbing" : "grab") : "default",
+            cursor: isDraggable ? (isDragging ? "grabbing" : "grab") : "default",
           }}
           draggable={false}
         />
