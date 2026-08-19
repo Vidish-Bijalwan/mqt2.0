@@ -1104,3 +1104,51 @@
     max-width: 100% !important;
   }
 }
+
+/* Dark Mode Support */
+.dark {
+  --color-mqt-bg: #0f172a;
+  --color-mqt-text: #e2e8f0;
+  --color-mqt-border: #334155;
+}
+
+.dark body {
+  background-color: var(--color-mqt-bg);
+  color: var(--color-mqt-text);
+}
+
+.dark .bg-white {
+  background-color: #1e293b;
+}
+
+.dark .bg-gray-50 {
+  background-color: #0f172a;
+}
+
+.dark .text-gray-900 {
+  color: #f1f5f9;
+}
+
+.dark .text-gray-700 {
+  color: #cbd5e1;
+}
+
+.dark .text-gray-600 {
+  color: #94a3b8;
+}
+
+.dark .text-gray-500 {
+  color: #64748b;
+}
+
+.dark .border-gray-100 {
+  border-color: #334155;
+}
+
+.dark .border-gray-200 {
+  border-color: #475569;
+}
+
+.dark .shadow-sm {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}

@@ -121,6 +121,12 @@ export default function RootLayout({
             __html: `document.addEventListener('click',function(e){var t=e.target&&e.target.closest?e.target.closest('[data-track]'):null;if(!t)return;var d={event:t.getAttribute('data-track'),href:t.getAttribute('href')||''};window.dataLayer=window.dataLayer||[];window.dataLayer.push(d);});`,
           }}
         />
+        {/* Service Worker Registration */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `if ('serviceWorker' in navigator) { window.addEventListener('load', () => { navigator.serviceWorker.register('/sw.js').catch(() => {}); }); }`,
+          }}
+        />
       </head>
       <body className={roboto.className} suppressHydrationWarning>
         <a href="#main-content" className="skip-link">
