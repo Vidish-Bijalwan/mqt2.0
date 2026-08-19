@@ -9,6 +9,7 @@ import FilterBar, { type FilterState } from '@/components/ui/FilterBar';
 import DestinationReviewCard from '@/components/ui/DestinationReviewCard';
 import TourReviewCard from '@/components/ui/TourReviewCard';
 import WriteReviewModal from '@/components/ui/WriteReviewModal';
+import MobileFilterSheet from '@/components/ui/MobileFilterSheet';
 import {
   reviews,
   destinationSummaries,
@@ -27,6 +28,7 @@ export default function ReviewsPage() {
     category: '',
     sortBy: 'recent',
   });
+  const [showMobileFilters, setShowMobileFilters] = useState(false);
 
   const filteredReviews = useMemo(() => {
     let result = [...reviews];
@@ -180,8 +182,27 @@ export default function ReviewsPage() {
 
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-8">
-            {/* Filter Bar */}
-            <FilterBar onFilterChange={setFilters} activeFilters={filters} />
+            {/* Mobile Filter Button */}
+            <button
+              onClick={() => setShowMobileFilters(true)}
+              aria-label="Open filters"
+              className="lg:hidden w-full flex items-center justify-center gap-2 py-3 border border-gray-200 rounded-xl text-gray-700 hover:bg-gray-50 transition-colors"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+              </svg>
+              Filters
+              {Object.values(filters).filter(v => v !== '' && v !== false).length > 0 && (
+                <span className="bg-legacy-orange text-white text-xs font-bold px-2 py-0.5 rounded-full">
+                  {Object.values(filters).filter(v => v !== '' && v !== false).length}
+                </span>
+              )}
+            </button>
+
+            {/* Desktop Filter Bar */}
+            <div className="hidden lg:block">
+              <FilterBar onFilterChange={setFilters} activeFilters={filters} />
+            </div>
 
             {/* Featured Reviews */}
             {!filters.destination && !filters.rating && !filters.search && (
@@ -272,6 +293,14 @@ export default function ReviewsPage() {
         <PenLine className="w-4 h-4" />
         Write Review
       </button>
+
+      {/* Mobile Filter Sheet */}
+      <MobileFilterSheet
+        isOpen={showMobileFilters}
+        onClose={() => setShowMobileFilters(false)}
+        filters={filters}
+        onApply={setFilters}
+      />
 
       {/* Write Review Modal */}
       <WriteReviewModal isOpen={showWriteModal} onClose={() => setShowWriteModal(false)} />
