@@ -122,7 +122,7 @@ export default function Navbar() {
                         <button
                           type="button"
                           aria-label={`Open ${item.title} menu`}
-                          className="px-2.5 xl:px-3 h-10 whitespace-nowrap flex items-center cursor-pointer hover:text-legacy-orange focus-visible:text-legacy-orange focus-visible:outline-none transition-colors duration-300 relative overflow-hidden"
+                          className="px-2.5 xl:px-3 h-10 whitespace-nowrap flex items-center cursor-pointer hover:text-legacy-orange focus-visible:text-legacy-orange focus-visible:outline-none transition-colors duration-300 relative"
                         >
                            {item.title} 
                            <span aria-hidden="true" className="ml-1.5 text-[11px] md:text-[10px] md:text-[9px] opacity-70 group-hover:opacity-100 group-focus-within:opacity-100 group-hover:rotate-180 group-focus-within:rotate-180 transition-transform duration-300">▼</span>
