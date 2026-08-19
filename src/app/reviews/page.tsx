@@ -1,7 +1,8 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { Star, PenLine, Map, TrendingUp } from 'lucide-react';
+import Link from 'next/link';
+import { Star, PenLine, Map, TrendingUp, ChevronRight } from 'lucide-react';
 import ReviewCard from '@/components/ui/ReviewCard';
 import RatingBreakdown from '@/components/ui/RatingBreakdown';
 import FilterBar, { type FilterState } from '@/components/ui/FilterBar';
@@ -100,6 +101,14 @@ export default function ReviewsPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      {/* Breadcrumb */}
+      <div className="bg-legacy-nav-blue text-white text-xs py-2 px-4">
+        <div className="container mx-auto w-[95%] max-w-[1600px] flex items-center">
+          <Link href="/" className="hover:text-legacy-orange transition-colors">Home</Link>
+          <ChevronRight className="w-3 h-3 mx-1 opacity-70" />
+          <span className="text-legacy-orange">Customer Reviews</span>
+        </div>
+      </div>
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 text-center">

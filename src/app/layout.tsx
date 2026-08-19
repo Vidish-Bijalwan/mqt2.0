@@ -7,6 +7,7 @@ import Footer from "@/components/layout/Footer";
 import FloatingButtons from "@/components/layout/FloatingButtons";
 import FloatingWhatsApp from "@/components/ui/FloatingWhatsApp";
 import ScrollToTop from "@/components/ui/ScrollToTop";
+import ErrorBoundary from "@/components/ui/ErrorBoundary";
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["400", "500", "700"], display: "swap" });
 
@@ -107,6 +108,9 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="prefetch" href="/packages" />
+        <link rel="prefetch" href="/blog" />
+        <link rel="prefetch" href="/contact-us" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         {/* Lightweight event tracker (T28): pushes any [data-track] click to the
             dataLayer (works with GTM/GA4 when installed; no-op otherwise).
@@ -124,7 +128,7 @@ export default function RootLayout({
         </a>
         <div className="flex flex-col min-h-screen">
           <Navbar />
-          <main id="main-content" className="flex-grow">{children}</main>
+          <main id="main-content" className="flex-grow"><ErrorBoundary>{children}</ErrorBoundary></main>
           <Footer />
           <FloatingButtons />
           <FloatingWhatsApp />

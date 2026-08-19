@@ -11,7 +11,7 @@ export default function FloatingWhatsApp() {
         target="_blank"
         rel="noopener noreferrer"
         data-track="floating_whatsapp"
-        className="fixed bottom-6 left-6 z-50 flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group"
+        className="floating-contact-whatsapp fixed bottom-20 left-4 sm:bottom-6 sm:left-6 z-40 flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-full shadow-lg hover:shadow-xl transition-colors duration-300 group"
         style={{ boxShadow: '0 4px 15px rgba(37, 211, 102, 0.4)' }}
       >
         <svg width="22" height="22" viewBox="0 0 24 24" fill="white">

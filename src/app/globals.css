@@ -1049,3 +1049,28 @@
     padding-bottom: 5.5rem;
   }
 }
+
+/* Print styles */
+@media print {
+  nav, footer, .floating-contact-buttons, .floating-contact-whatsapp,
+  .sticky-mobile-cta, .scroll-to-top, button, [role="navigation"] {
+    display: none !important;
+  }
+  body {
+    font-size: 12pt;
+    color: #000;
+    background: #fff;
+  }
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 10pt;
+    color: #666;
+  }
+  img {
+    max-width: 100% !important;
+  }
+}
