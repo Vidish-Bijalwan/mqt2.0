@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { siteConfig } from "@/data/siteConfig";
 import { navLinks } from "@/data/navLinks";
 import { Menu, X, Phone, Mail, MessageCircle, ChevronDown, ChevronRight } from "lucide-react";
@@ -11,16 +11,32 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [expandedMobile, setExpandedMobile] = useState<string | null>(null);
   const [expandedMobileRegion, setExpandedMobileRegion] = useState<string | null>(null);
+  const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
+  const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Lock body scroll while the mobile menu is open (U26)
+  // Lock body scroll while the mobile menu is open
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
   }, [isOpen]);
 
+  const handleMenuEnter = (title: string) => {
+    if (hoverTimeoutRef.current) {
+      clearTimeout(hoverTimeoutRef.current);
+      hoverTimeoutRef.current = null;
+    }
+    setHoveredMenu(title);
+  };
+
+  const handleMenuLeave = () => {
+    hoverTimeoutRef.current = setTimeout(() => {
+      setHoveredMenu(null);
+    }, 150); // Small delay to allow mouse to move to dropdown
+  };
+
   return (
     <nav className="bg-white w-full relative z-[1000]">
-      {/* 1. Top Bar - Gradient Premium */}
+      {/* 1. Top Bar */}
       <div className="bg-gradient-to-r from-legacy-orange to-[#f58120] text-white text-[13px] hidden lg:block shadow-sm">
         <div className="container mx-auto px-4 py-2 flex justify-between items-center w-[95%] max-w-[1600px] font-medium tracking-wide">
           <div className="flex items-center space-x-6">
@@ -40,20 +56,12 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* 2. Main Header — 80px desktop, 56px mobile (reference is ~50px) */}
+      {/* 2. Main Header */}
       <div className="container mx-auto px-4 h-14 md:h-20 flex justify-between items-center w-[95%] max-w-[1600px]">
-        {/* Logo Area — emblem + wordmark + tagline (reference-style lockup) */}
         <div className="flex items-center gap-4">
           <Link href="/" className="flex items-center gap-3 group">
              <div className="w-9 h-9 md:w-12 md:h-12 rounded-full overflow-hidden border-2 border-legacy-orange/40 shadow-sm group-hover:border-legacy-orange transition-colors shrink-0">
-              <Image
-                src="/images/mqt-logo-256.webp"
-                alt="My Quick Trippers"
-                width={48}
-                height={48}
-                className="w-full h-full object-cover"
-                priority
-              />
+              <Image src="/images/mqt-logo-256.webp" alt="My Quick Trippers" width={48} height={48} className="w-full h-full object-cover" priority />
              </div>
              <div className="flex flex-col leading-tight">
                <span className="text-lg md:text-[22px] font-extrabold text-gray-900 tracking-tight whitespace-nowrap">
@@ -64,8 +72,6 @@ export default function Navbar() {
                </span>
              </div>
           </Link>
-
-          {/* Awards Badges Removed as per request */}
         </div>
         
         {/* Social Icons */}
@@ -84,29 +90,22 @@ export default function Navbar() {
            </a>
            <a href={siteConfig.social.whatsapp} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="w-10 h-10 rounded-full bg-[#25D366] flex items-center justify-center text-white hover:scale-110 shadow-sm hover:shadow-md transition-all duration-200"><MessageCircle className="w-4 h-4"/></a>
            <a href={siteConfig.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-10 h-10 rounded-full bg-[#007bb5] flex items-center justify-center text-white hover:scale-110 shadow-sm hover:shadow-md transition-all duration-200">
-              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-1.236 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
            </a>
         </div>
 
         {/* Mobile menu button */}
         <div className="lg:hidden flex items-center">
-          <button
-            type="button"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
-            aria-expanded={isOpen}
-            aria-controls="mobile-navigation"
-            className="min-h-11 min-w-11 inline-flex items-center justify-center rounded-md text-legacy-nav-blue focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-legacy-orange focus-visible:ring-offset-2"
-          >
+          <button type="button" onClick={() => setIsOpen(!isOpen)} aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"} aria-expanded={isOpen} aria-controls="mobile-navigation" className="min-h-11 min-w-11 inline-flex items-center justify-center rounded-md text-legacy-nav-blue focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-legacy-orange focus-visible:ring-offset-2">
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
       </div>
 
-      {/* 3. Navigation Bar (Dark Blue) — 40px like reference header_bot */}
+      {/* 3. Navigation Bar (Dark Blue) */}
       <div className="bg-legacy-nav-blue text-white w-full hidden lg:block">
-         <div className="container mx-auto w-[95%] max-w-[1600px] flex relative overflow-hidden">
-            {/* Home Icon — orange cell 40px tall like reference */}
+         <div className="container mx-auto w-[95%] max-w-[1600px] flex relative overflow-visible">
+            {/* Home Icon */}
             <Link href="/" className="bg-legacy-orange w-14 h-10 flex items-center justify-center hover:bg-legacy-orange-hover transition-colors nav-divider shrink-0">
                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                  <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
@@ -116,55 +115,54 @@ export default function Navbar() {
             {/* Nav Links */}
             <div className="flex flex-1 min-w-0 flex-nowrap text-[12px] xl:text-[13px] font-bold">
                {navLinks.map((item, idx) => (
-                  <div key={idx} className="relative group nav-divider">
+                  <div 
+                    key={idx} 
+                    className="relative nav-divider"
+                    onMouseEnter={() => (item.submenus || item.links) && handleMenuEnter(item.title)}
+                    onMouseLeave={() => (item.submenus || item.links) && handleMenuLeave()}
+                  >
                      {/* Nav item trigger */}
                       {item.submenus || item.links ? (
                         <button
                           type="button"
                           aria-label={`Open ${item.title} menu`}
-                          className="px-2.5 xl:px-3 h-10 whitespace-nowrap flex items-center cursor-pointer hover:text-legacy-orange focus-visible:text-legacy-orange focus-visible:outline-none transition-colors duration-300 relative"
+                          className={`px-2.5 xl:px-3 h-10 whitespace-nowrap flex items-center cursor-pointer focus-visible:outline-none transition-colors duration-300 relative ${hoveredMenu === item.title ? 'text-legacy-orange' : 'hover:text-legacy-orange'}`}
                         >
                            {item.title} 
-                           <span aria-hidden="true" className="ml-1.5 text-[10px] opacity-70 group-hover:opacity-100 group-focus-within:opacity-100 group-hover:rotate-180 group-focus-within:rotate-180 transition-transform duration-300">▼</span>
-                           <span aria-hidden="true" className="absolute bottom-0 left-0 w-full h-[2px] bg-legacy-orange transform scale-x-0 group-hover:scale-x-100 group-focus-within:scale-x-100 transition-transform duration-300 origin-left"></span>
+                           <span aria-hidden="true" className={`ml-1.5 text-[10px] transition-transform duration-300 ${hoveredMenu === item.title ? 'rotate-180 opacity-100' : 'opacity-70'}`}>▼</span>
+                           <span aria-hidden="true" className={`absolute bottom-0 left-0 w-full h-[2px] bg-legacy-orange transition-transform duration-300 origin-left ${hoveredMenu === item.title ? 'scale-x-100' : 'scale-x-0'}`}></span>
                         </button>
                       ) : (
                        <Link href={item.href || "#"} className="px-2.5 xl:px-3 h-10 whitespace-nowrap flex items-center cursor-pointer hover:text-legacy-orange focus-visible:text-legacy-orange focus-visible:outline-none transition-colors duration-300 relative overflow-hidden">
                           {item.title}
-                          <span className="absolute bottom-0 left-0 w-full h-[2px] bg-legacy-orange transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+                          <span className="absolute bottom-0 left-0 w-full h-[2px] bg-legacy-orange transform scale-x-0 hover:scale-x-100 transition-transform duration-300 origin-left"></span>
                        </Link>
                      )}
                      
                      {/* ===== MEGA MENU DROPDOWN ===== */}
-                     {item.megaMenu && item.submenus && (
-                        <div className="absolute top-full left-0 right-0 bg-white shadow-2xl border-t-[3px] border-legacy-orange opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-opacity duration-200 z-50 text-gray-700">
-                           <div className={`grid gap-0 divide-x divide-gray-100 p-0`} 
-                                style={{ gridTemplateColumns: `repeat(${item.submenus.length}, minmax(130px, 1fr))` }}>
+                     {item.megaMenu && item.submenus && hoveredMenu === item.title && (
+                        <div 
+                          className="absolute top-full left-0 right-0 bg-white shadow-2xl border-t-[3px] border-legacy-orange z-50 text-gray-700"
+                          onMouseEnter={() => handleMenuEnter(item.title)}
+                          onMouseLeave={handleMenuLeave}
+                        >
+                           <div className="grid gap-0 divide-x divide-gray-100 p-0" style={{ gridTemplateColumns: `repeat(${item.submenus.length}, minmax(130px, 1fr))` }}>
                               {item.submenus.map((region, ridx) => (
                                  <div key={ridx} className="px-5 py-4">
-                                    {/* Region Header */}
                                     <h4 className="text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tracking-wide">
                                        {region.title}
                                     </h4>
-                                    {/* State Links */}
                                     <ul className="space-y-0">
                                        {region.links.map((link, lidx) => (
                                           <li key={lidx}>
-                                             <Link 
-                                                href={link.href} 
-                                                className="flex items-center py-[6px] text-[13px] text-gray-700 hover:text-legacy-orange transition-colors group/link"
-                                             >
-                                                <span className="text-legacy-orange mr-2 text-[10px] opacity-70 group-hover/link:opacity-100">★</span>
+                                             <Link href={link.href} className="flex items-center py-[6px] text-[13px] text-gray-700 hover:text-legacy-orange transition-colors">
+                                                <span className="text-legacy-orange mr-2 text-[10px] opacity-70 hover:opacity-100">★</span>
                                                 {link.name}
                                              </Link>
                                           </li>
                                        ))}
                                     </ul>
-                                    {/* View More Button */}
-                                    <Link 
-                                       href={item.href || "#"}
-                                       className="mt-3 inline-block text-[11px] font-bold text-legacy-orange border border-legacy-orange px-3 py-1 rounded-sm hover:bg-legacy-orange hover:text-white transition-colors uppercase tracking-wider"
-                                    >
+                                    <Link href={item.href || "#"} className="mt-3 inline-block text-[11px] font-bold text-legacy-orange border border-legacy-orange px-3 py-1 rounded-sm hover:bg-legacy-orange hover:text-white transition-colors uppercase tracking-wider">
                                        View More »
                                     </Link>
                                  </div>
@@ -173,21 +171,29 @@ export default function Navbar() {
                         </div>
                      )}
 
-                     {/* ===== SIMPLE DROPDOWN (for Pilgrimage, etc.) ===== */}
-                     {!item.megaMenu && item.links && (
-                         <div className="absolute top-full left-0 w-64 bg-white shadow-lg border-t-2 border-legacy-orange opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-opacity duration-200 z-50 text-gray-700 text-[13px]">
+                     {/* ===== SIMPLE DROPDOWN ===== */}
+                     {!item.megaMenu && item.links && hoveredMenu === item.title && (
+                         <div 
+                           className="absolute top-full left-0 w-64 bg-white shadow-lg border-t-2 border-legacy-orange z-50 text-gray-700 text-[13px]"
+                           onMouseEnter={() => handleMenuEnter(item.title)}
+                           onMouseLeave={handleMenuLeave}
+                         >
                            {item.links.map((link, lidx) => (
                               <Link key={lidx} href={link.href} className="block px-4 py-2.5 hover:bg-gray-50 hover:text-legacy-orange border-b border-gray-100 last:border-0 transition-colors">
                                  <span className="text-legacy-orange mr-2 text-[10px]">★</span>
                                  {link.name}
                               </Link>
                            ))}
-                        </div>
+                         </div>
                      )}
 
-                     {/* ===== NON-MEGA SUBMENUS (fallback) ===== */}
-                     {!item.megaMenu && item.submenus && (
-                        <div className="absolute top-full left-0 w-64 bg-white shadow-lg border-t-2 border-legacy-orange opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 text-gray-700 text-[13px]">
+                     {/* ===== NON-MEGA SUBMENUS ===== */}
+                     {!item.megaMenu && item.submenus && hoveredMenu === item.title && (
+                        <div 
+                          className="absolute top-full left-0 w-64 bg-white shadow-lg border-t-2 border-legacy-orange z-50 text-gray-700 text-[13px]"
+                          onMouseEnter={() => handleMenuEnter(item.title)}
+                          onMouseLeave={handleMenuLeave}
+                        >
                            {item.submenus.map((sub, sidx) => (
                               <div key={sidx}>
                                  <div className="px-4 py-2 bg-gray-50 font-bold border-b border-gray-100 text-legacy-orange">{sub.title}</div>
