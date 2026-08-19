@@ -20,9 +20,6 @@ const nextConfig: NextConfig = {
     // Locally in dev, skip optimization for faster iteration
     unoptimized: process.env.NODE_ENV === "development",
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   typescript: {
     ignoreBuildErrors: true,
   },
