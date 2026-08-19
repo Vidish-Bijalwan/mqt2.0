@@ -1765,5 +1765,689 @@
     "originalPrice": "Rs 2000",
     "originalMrp": "₹2,500",
     "restored": true
+  },
+  "10-days-assam-meghalaya-arunachal-pradesh-tour-packages": {
+    "mrp": "₹45,000",
+    "dealPrice": "₹36,000"
+  },
+  "3-days-nepal-tour-package": {
+    "mrp": "₹9,000",
+    "dealPrice": "₹7,000"
+  },
+  "7-days-nepal-tour-packages": {
+    "mrp": "₹48,000",
+    "dealPrice": "₹38,500"
+  },
+  "ahmedabad-tour-packages": {
+    "mrp": "₹9,000",
+    "dealPrice": "₹7,000"
+  },
+  "ajanta-ellora-caves-tour": {
+    "mrp": "₹18,000",
+    "dealPrice": "₹14,500"
+  },
+  "allahabad-varanasi-puri-tour": {
+    "mrp": "₹25,000",
+    "dealPrice": "₹20,000"
+  },
+  "amarnath-yatra-with-vaishno-devi": {
+    "mrp": "₹50,000",
+    "dealPrice": "₹40,000"
+  },
+  "andaman-a-short-visit": {
+    "mrp": "₹12,000",
+    "dealPrice": "₹9,500"
+  },
+  "andaman-cheap-tour-packages": {
+    "mrp": "₹24,000",
+    "dealPrice": "₹19,000"
+  },
+  "auli-skiing-tour": {
+    "mrp": "₹14,000",
+    "dealPrice": "₹11,000"
+  },
+  "bali-combo-tour": {
+    "mrp": "₹32,000",
+    "dealPrice": "₹25,500"
+  },
+  "bali-malaysia-package": {
+    "mrp": "₹48,000",
+    "dealPrice": "₹38,500"
+  },
+  "best-of-north-east": {
+    "mrp": "₹27,000",
+    "dealPrice": "₹21,500"
+  },
+  "bhopal-sightseeing-tour": {
+    "mrp": "₹5,000",
+    "dealPrice": "₹4,000"
+  },
+  "buddhist-pilgrim": {
+    "mrp": "₹32,000",
+    "dealPrice": "₹25,500"
+  },
+  "buddhist-tour-with-golden-triangle": {
+    "mrp": "₹59,000",
+    "dealPrice": "₹47,000"
+  },
+  "chardham-yatra-package-from-rishikesh": {
+    "mrp": "₹45,000",
+    "dealPrice": "₹36,000"
+  },
+  "charming-madhya-pradesh": {
+    "mrp": "₹48,000",
+    "dealPrice": "₹38,500"
+  },
+  "cheap-thailand-tour": {
+    "mrp": "₹32,000",
+    "dealPrice": "₹25,500"
+  },
+  "corbett-nainital-weekend": {
+    "mrp": "₹14,000",
+    "dealPrice": "₹11,000"
+  },
+  "dalhousie-khajjiar-tour": {
+    "mrp": "₹9,000",
+    "dealPrice": "₹7,000"
+  },
+  "darjeeling-gangtok-tour": {
+    "mrp": "₹16,000",
+    "dealPrice": "₹13,000"
+  },
+  "darjeeling-honeymoon-package": {
+    "mrp": "₹20,000",
+    "dealPrice": "₹16,000"
+  },
+  "delhi-agra-tour-package": {
+    "mrp": "₹8,000",
+    "dealPrice": "₹6,500"
+  },
+  "discover-majestic-rajasthan": {
+    "mrp": "₹23,000",
+    "dealPrice": "₹18,500"
+  },
+  "exotic-himachal-pardesh": {
+    "mrp": "₹28,000",
+    "dealPrice": "₹22,500"
+  },
+  "explore-enchanting-tamilnadu": {
+    "mrp": "₹24,000",
+    "dealPrice": "₹19,000"
+  },
+  "fascinating-eastern-himalaya": {
+    "mrp": "₹32,000",
+    "dealPrice": "₹25,500"
+  },
+  "footsteps-of-buddha-1": {
+    "mrp": "₹64,000",
+    "dealPrice": "₹51,000"
+  },
+  "gandhinagar-tour-packages": {
+    "mrp": "₹23,000",
+    "dealPrice": "₹18,500"
+  },
+  "gangotri-tour-packages": {
+    "mrp": "₹20,000",
+    "dealPrice": "₹16,000"
+  },
+  "gangtok-darjeeling-lachung-lachen": {
+    "mrp": "₹36,000",
+    "dealPrice": "₹29,000"
+  },
+  "glimpses-of-assam": {
+    "mrp": "₹16,000",
+    "dealPrice": "₹13,000"
+  },
+  "golden-triangle-sea-side": {
+    "mrp": "₹40,000",
+    "dealPrice": "₹32,000"
+  },
+  "haridwar-sightseeing-tour": {
+    "mrp": "₹5,000",
+    "dealPrice": "₹4,000"
+  },
+  "heritage-of-uttrakhand": {
+    "mrp": "₹18,000",
+    "dealPrice": "₹14,500"
+  },
+  "hills-of-kumaon-tour": {
+    "mrp": "₹24,000",
+    "dealPrice": "₹19,000"
+  },
+  "himachal-pradesh-honeymoon-packages": {
+    "mrp": "₹36,000",
+    "dealPrice": "₹29,000"
+  },
+  "himalayan-sojourn-ayurveda": {
+    "mrp": "₹50,000",
+    "dealPrice": "₹40,000"
+  },
+  "honeymoon-in-goa": {
+    "mrp": "₹12,000",
+    "dealPrice": "₹9,500"
+  },
+  "honeymoon-tour-package": {
+    "mrp": "₹9,000",
+    "dealPrice": "₹7,000"
+  },
+  "incredible-himachal-tour": {
+    "mrp": "₹36,000",
+    "dealPrice": "₹29,000"
+  },
+  "india-nepal-buddhist-tour": {
+    "mrp": "₹77,000",
+    "dealPrice": "₹61,500"
+  },
+  "indore-sightseeing-tour": {
+    "mrp": "₹9,000",
+    "dealPrice": "₹7,000"
+  },
+  "kailash-mansarovar-yatra-form-nepalganj": {
+    "mrp": "₹72,000",
+    "dealPrice": "₹57,500"
+  },
+  "kailash-yatra-form-kathmandu": {
+    "mrp": "₹50,000",
+    "dealPrice": "₹40,000"
+  },
+  "kainchi-dham-tour-package": {
+    "mrp": "₹9,000",
+    "dealPrice": "₹7,000"
+  },
+  "kanha-pench-wildlife-tour": {
+    "mrp": "₹18,000",
+    "dealPrice": "₹14,500"
+  },
+  "karnataka-tour-package": {
+    "mrp": "₹16,000",
+    "dealPrice": "₹13,000"
+  },
+  "kerala-temples-tour-package": {
+    "mrp": "₹24,000",
+    "dealPrice": "₹19,000"
+  },
+  "kerala-tour-packages-from-chennai": {
+    "mrp": "₹12,000",
+    "dealPrice": "₹9,500"
+  },
+  "kerala-tour-packages-from-hyderabad": {
+    "mrp": "₹12,000",
+    "dealPrice": "₹9,500"
+  },
+  "kerala-tour-packages-from-nagpur": {
+    "mrp": "₹12,000",
+    "dealPrice": "₹9,500"
+  },
+  "kerala-tour-packages-from-surat": {
+    "mrp": "₹12,000",
+    "dealPrice": "₹9,500"
+  },
+  "kovalam-ayurveda-tour": {
+    "mrp": "₹32,000",
+    "dealPrice": "₹25,500"
+  },
+  "lucknow-sightseeing-tour": {
+    "mrp": "₹9,000",
+    "dealPrice": "₹7,000"
+  },
+  "madhya-pradesh-wildlife-tour": {
+    "mrp": "₹41,000",
+    "dealPrice": "₹33,000"
+  },
+  "majestic-kumaon-tour": {
+    "mrp": "₹56,000",
+    "dealPrice": "₹45,000"
+  },
+  "manali-weekend-tour": {
+    "mrp": "₹16,000",
+    "dealPrice": "₹13,000"
+  },
+  "mathura-vrindavan-tour": {
+    "mrp": "₹4,000",
+    "dealPrice": "₹3,000"
+  },
+  "muktinath-tour-packages": {
+    "mrp": "₹14,000",
+    "dealPrice": "₹11,000"
+  },
+  "mumbai-sightseeing-tour": {
+    "mrp": "₹9,000",
+    "dealPrice": "₹7,000"
+  },
+  "munnar-tour-packages": {
+    "mrp": "₹14,000",
+    "dealPrice": "₹11,000"
+  },
+  "myriad-india-highlights": {
+    "mrp": "₹77,000",
+    "dealPrice": "₹61,500"
+  },
+  "north-east-india-wildlife-tour": {
+    "mrp": "₹32,000",
+    "dealPrice": "₹25,500"
+  },
+  "north-to-south-india-tour": {
+    "mrp": "₹99,000",
+    "dealPrice": "₹79,000"
+  },
+  "ooty-kodaikanal-tour": {
+    "mrp": "₹14,000",
+    "dealPrice": "₹11,000"
+  },
+  "orissa-beaches-tour": {
+    "mrp": "₹32,000",
+    "dealPrice": "₹25,500"
+  },
+  "orissa-tribal-tours": {
+    "mrp": "₹41,000",
+    "dealPrice": "₹33,000"
+  },
+  "pachmarhi-tour-package": {
+    "mrp": "₹9,000",
+    "dealPrice": "₹7,000"
+  },
+  "porbandar-tour-packages": {
+    "mrp": "₹23,000",
+    "dealPrice": "₹18,500"
+  },
+  "rajasthan-group-tour": {
+    "mrp": "₹28,000",
+    "dealPrice": "₹22,500"
+  },
+  "rajasthan-honeymoon-tour-package": {
+    "mrp": "₹20,000",
+    "dealPrice": "₹16,000"
+  },
+  "rajkot-tour-packages": {
+    "mrp": "₹20,000",
+    "dealPrice": "₹16,000"
+  },
+  "ranthambore-weekend": {
+    "mrp": "₹8,000",
+    "dealPrice": "₹6,500"
+  },
+  "rishikesh-river-rafting-tour": {
+    "mrp": "₹9,000",
+    "dealPrice": "₹7,000"
+  },
+  "romantic-andman": {
+    "mrp": "₹20,000",
+    "dealPrice": "₹16,000"
+  },
+  "sangam-darshan": {
+    "mrp": "₹14,000",
+    "dealPrice": "₹11,000"
+  },
+  "saraswati-pushkaram-tour-packages": {
+    "mrp": "₹18,000",
+    "dealPrice": "₹14,500"
+  },
+  "satopanth-swargarohini-yatra": {
+    "mrp": "₹32,000",
+    "dealPrice": "₹25,500"
+  },
+  "shimla-volvo-package": {
+    "mrp": "₹12,000",
+    "dealPrice": "₹9,500"
+  },
+  "shirdi-tour-packages": {
+    "mrp": "₹9,000",
+    "dealPrice": "₹7,000"
+  },
+  "special-group-tour-package-for-karnataka": {
+    "mrp": "₹41,000",
+    "dealPrice": "₹33,000"
+  },
+  "special-package-for-karnataka": {
+    "mrp": "₹18,000",
+    "dealPrice": "₹14,500"
+  },
+  "sri-lanka-honeymoon-tour": {
+    "mrp": "₹48,000",
+    "dealPrice": "₹38,500"
+  },
+  "surat-tour-packages": {
+    "mrp": "₹9,000",
+    "dealPrice": "₹7,000"
+  },
+  "tiger-trail-tours-india": {
+    "mrp": "₹59,000",
+    "dealPrice": "₹47,000"
+  },
+  "ujjain-tour-packages-from-bangalore": {
+    "mrp": "₹5,000",
+    "dealPrice": "₹4,000"
+  },
+  "ujjain-tour-packages-from-delhi": {
+    "mrp": "₹5,000",
+    "dealPrice": "₹4,000"
+  },
+  "ujjain-tour-packages-from-kolkata": {
+    "mrp": "₹5,000",
+    "dealPrice": "₹4,000"
+  },
+  "uttarakhand-delights-tour": {
+    "mrp": "₹28,000",
+    "dealPrice": "₹22,500"
+  },
+  "valley-of-flowers-tour": {
+    "mrp": "₹18,000",
+    "dealPrice": "₹14,500"
+  },
+  "varanasi-bodhgaya-chitrakoot-trip": {
+    "mrp": "₹24,000",
+    "dealPrice": "₹19,000"
+  },
+  "varanasi-city-tour": {
+    "mrp": "₹4,000",
+    "dealPrice": "₹3,000"
+  },
+  "wonders-of-kumaon-tour": {
+    "mrp": "₹32,000",
+    "dealPrice": "₹25,500"
+  },
+  "5-days-nepal-tour-package": {
+    "mrp": "₹32,000",
+    "dealPrice": "₹25,500"
+  },
+  "ahmedabad-sightseeing-tour": {
+    "mrp": "₹9,000",
+    "dealPrice": "₹7,000"
+  },
+  "allahabad-varanasi-tour": {
+    "mrp": "₹7,000",
+    "dealPrice": "₹5,500"
+  },
+  "amarnath-tour": {
+    "mrp": "₹10,000",
+    "dealPrice": "₹8,000"
+  },
+  "amritsar-tour-packages": {
+    "mrp": "₹9,000",
+    "dealPrice": "₹7,000"
+  },
+  "andaman-beach-tour": {
+    "mrp": "₹12,000",
+    "dealPrice": "₹9,500"
+  },
+  "ashtavinayak-yatra": {
+    "mrp": "₹5,000",
+    "dealPrice": "₹4,000"
+  },
+  "bali-singapore-package": {
+    "mrp": "₹48,000",
+    "dealPrice": "₹38,500"
+  },
+  "bangalore-sightseeing-tour": {
+    "mrp": "₹8,000",
+    "dealPrice": "₹6,500"
+  },
+  "buddhist-circuit-train-tour": {
+    "mrp": "₹45,000",
+    "dealPrice": "₹36,000"
+  },
+  "calcutta-sightseeing-tour": {
+    "mrp": "₹9,000",
+    "dealPrice": "₹7,000"
+  },
+  "chandigarh-sightseeing-tour": {
+    "mrp": "₹9,000",
+    "dealPrice": "₹7,000"
+  },
+  "chardham-yatra-package-from-dehradun": {
+    "mrp": "₹45,000",
+    "dealPrice": "₹36,000"
+  },
+  "chardham-yatra-package-from-pune": {
+    "mrp": "₹50,000",
+    "dealPrice": "₹40,000"
+  },
+  "cheap-dubai-tour": {
+    "mrp": "₹32,000",
+    "dealPrice": "₹25,500"
+  },
+  "colorful-rajasthan": {
+    "mrp": "₹48,000",
+    "dealPrice": "₹38,500"
+  },
+  "darjeeling-heritage-tour": {
+    "mrp": "₹8,000",
+    "dealPrice": "₹6,500"
+  },
+  "darjeeling-kalimpong-gangtok": {
+    "mrp": "₹20,000",
+    "dealPrice": "₹16,000"
+  },
+  "desert-beach-tour-of-gujarat": {
+    "mrp": "₹16,000",
+    "dealPrice": "₹13,000"
+  },
+  "dharamshala-weekend-tour": {
+    "mrp": "₹14,000",
+    "dealPrice": "₹11,000"
+  },
+  "enchanting-himachal": {
+    "mrp": "₹24,000",
+    "dealPrice": "₹19,000"
+  },
+  "enchanting-orissa-tour": {
+    "mrp": "₹20,000",
+    "dealPrice": "₹16,000"
+  },
+  "exotic-orissa-trip": {
+    "mrp": "₹28,000",
+    "dealPrice": "₹22,500"
+  },
+  "explore-gujarat": {
+    "mrp": "₹52,000",
+    "dealPrice": "₹41,500"
+  },
+  "fascinating-himachal": {
+    "mrp": "₹40,000",
+    "dealPrice": "₹32,000"
+  },
+  "fascinating-sri-lanka": {
+    "mrp": "₹24,000",
+    "dealPrice": "₹19,000"
+  },
+  "forts-palaces-tour-rajasthan": {
+    "mrp": "₹68,000",
+    "dealPrice": "₹54,500"
+  },
+  "ganges-northern-india": {
+    "mrp": "₹45,000",
+    "dealPrice": "₹36,000"
+  },
+  "gaya-tour-packages": {
+    "mrp": "₹18,000",
+    "dealPrice": "₹14,500"
+  },
+  "goa-weekend-trip": {
+    "mrp": "₹12,000",
+    "dealPrice": "₹9,500"
+  },
+  "heritage-tour-of-madhya-pradesh": {
+    "mrp": "₹32,000",
+    "dealPrice": "₹25,500"
+  },
+  "himachal-lovers-paradise": {
+    "mrp": "₹36,000",
+    "dealPrice": "₹29,000"
+  },
+  "himachal-pradesh-with-delhi-darshan": {
+    "mrp": "₹32,000",
+    "dealPrice": "₹25,500"
+  },
+  "himanchal-with-vaishno-devi-darshan": {
+    "mrp": "₹35,000",
+    "dealPrice": "₹28,000"
+  },
+  "honeymoon-in-kashmir": {
+    "mrp": "₹20,000",
+    "dealPrice": "₹16,000"
+  },
+  "hyderabad-sightseeing-tour": {
+    "mrp": "₹14,000",
+    "dealPrice": "₹11,000"
+  },
+  "incredible-rajasthan": {
+    "mrp": "₹56,000",
+    "dealPrice": "₹45,000"
+  },
+  "jaipur-sightseeing-tour": {
+    "mrp": "₹9,000",
+    "dealPrice": "₹7,000"
+  },
+  "jamnagar-tour-packages": {
+    "mrp": "₹23,000",
+    "dealPrice": "₹18,500"
+  },
+  "junagadh-tour-packages": {
+    "mrp": "₹23,000",
+    "dealPrice": "₹18,500"
+  },
+  "kerala-honeymoon-package": {
+    "mrp": "₹20,000",
+    "dealPrice": "₹16,000"
+  },
+  "kerala-tour-packages-from-ahmedabad": {
+    "mrp": "₹12,000",
+    "dealPrice": "₹9,500"
+  },
+  "kerala-tour-packages-from-delhi": {
+    "mrp": "₹12,000",
+    "dealPrice": "₹9,500"
+  },
+  "kerala-tour-packages-from-mumbai": {
+    "mrp": "₹12,000",
+    "dealPrice": "₹9,500"
+  },
+  "khajuraho-dance-festival-tour": {
+    "mrp": "₹18,000",
+    "dealPrice": "₹14,500"
+  },
+  "kutch-tour-packages": {
+    "mrp": "₹59,000",
+    "dealPrice": "₹47,000"
+  },
+  "madhya-pradesh-tour": {
+    "mrp": "₹32,000",
+    "dealPrice": "₹25,500"
+  },
+  "maharashtra-tour-packages": {
+    "mrp": "₹8,000",
+    "dealPrice": "₹6,500"
+  },
+  "malaysia-singapore-combo-tour": {
+    "mrp": "₹48,000",
+    "dealPrice": "₹38,500"
+  },
+  "manali-volvo-package": {
+    "mrp": "₹20,000",
+    "dealPrice": "₹16,000"
+  },
+  "muktinath-kathmandu-tour": {
+    "mrp": "₹27,000",
+    "dealPrice": "₹21,500"
+  },
+  "panch-kedar-yatra-trek-package": {
+    "mrp": "₹68,000",
+    "dealPrice": "₹54,500"
+  },
+  "port-blair-package": {
+    "mrp": "₹32,000",
+    "dealPrice": "₹25,500"
+  },
+  "prayagraj-kumbh-mela-tour-packages": {
+    "mrp": "₹8,000",
+    "dealPrice": "₹6,500"
+  },
+  "rajasthan-cultural-tour": {
+    "mrp": "₹56,000",
+    "dealPrice": "₹45,000"
+  },
+  "rajasthan-heritage-tour": {
+    "mrp": "₹32,000",
+    "dealPrice": "₹25,500"
+  },
+  "rajasthan-safari-tour": {
+    "mrp": "₹36,000",
+    "dealPrice": "₹29,000"
+  },
+  "rajasthan-wildlife-tour": {
+    "mrp": "₹24,000",
+    "dealPrice": "₹19,000"
+  },
+  "romance-in-rajasthan": {
+    "mrp": "₹20,000",
+    "dealPrice": "₹16,000"
+  },
+  "romantic-kerala": {
+    "mrp": "₹20,000",
+    "dealPrice": "₹16,000"
+  },
+  "satopanth-swargarohini-trek": {
+    "mrp": "₹36,000",
+    "dealPrice": "₹29,000"
+  },
+  "scenic-himachal": {
+    "mrp": "₹32,000",
+    "dealPrice": "₹25,500"
+  },
+  "scuba-diving-andaman": {
+    "mrp": "₹12,000",
+    "dealPrice": "₹9,500"
+  },
+  "shimla-manali-tour": {
+    "mrp": "₹20,000",
+    "dealPrice": "₹16,000"
+  },
+  "shimla-tour": {
+    "mrp": "₹8,000",
+    "dealPrice": "₹6,500"
+  },
+  "shining-rajasthan": {
+    "mrp": "₹36,000",
+    "dealPrice": "₹29,000"
+  },
+  "spiritual-uttar-pradesh": {
+    "mrp": "₹27,000",
+    "dealPrice": "₹21,500"
+  },
+  "tirupati-tour": {
+    "mrp": "₹9,000",
+    "dealPrice": "₹7,000"
+  },
+  "trip-to-heart-of-india": {
+    "mrp": "₹18,000",
+    "dealPrice": "₹14,500"
+  },
+  "ujjain-tour-packages-from-chennai": {
+    "mrp": "₹5,000",
+    "dealPrice": "₹4,000"
+  },
+  "ujjain-tour-packages-from-pune": {
+    "mrp": "₹5,000",
+    "dealPrice": "₹4,000"
+  },
+  "ujjain-tour-packages-from-surat": {
+    "mrp": "₹5,000",
+    "dealPrice": "₹4,000"
+  },
+  "uttar-pradesh-tour": {
+    "mrp": "₹54,000",
+    "dealPrice": "₹43,000"
+  },
+  "uttarakhand-bird-watching-tour": {
+    "mrp": "₹16,000",
+    "dealPrice": "₹13,000"
+  },
+  "vadodara-tour-packages": {
+    "mrp": "₹23,000",
+    "dealPrice": "₹18,500"
+  },
+  "vietnam-adventure-tour": {
+    "mrp": "₹17,000",
+    "dealPrice": "₹13,500"
   }
 }
