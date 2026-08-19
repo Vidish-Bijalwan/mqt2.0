@@ -1,0 +1,22 @@
+package_id,field,old_value,new_value,page_rendered_on
+10-days-assam-meghalaya-arunachal-pradesh-tour-packages,mrp,"₹31,125",skipped (placeholder),N/A — shown as "Contact for Price"
+10-days-assam-meghalaya-arunachal-pradesh-tour-packages,dealPrice,"₹24,900",skipped (placeholder),N/A — shown as "Contact for Price"
+12-jyotirlinga-tour-package,mrp,"₹118,750","₹1,78,125",Package Detail sidebar; Package Card
+12-jyotirlinga-tour-package,dealPrice,"₹95,000","₹1,42,500",Package Detail sidebar; Package Card; StickyMobileCTA
+2-days-ayodhya-tour-package,mrp,"₹48,125","₹72,188",Package Detail sidebar; Package Card
+2-days-ayodhya-tour-package,dealPrice,"₹38,500","₹57,750",Package Detail sidebar; Package Card; StickyMobileCTA
+adi-kailash-yatra-tour-packages,mrp,"₹60,625","₹90,938",Package Detail sidebar; Package Card
+adi-kailash-yatra-tour-packages,dealPrice,"₹48,500","₹72,750",Package Detail sidebar; Package Card; StickyMobileCTA
+agra-tour-packages,mrp,"₹44,375","₹66,563",Package Detail sidebar; Package Card
+agra-tour-packages,dealPrice,"₹35,500","₹53,250",Package Detail sidebar; Package Card; StickyMobileCTA
+allahabad-tour-packages,mrp,"₹13,125","₹19,688",Package Detail sidebar; Package Card
+allahabad-tour-packages,dealPrice,"₹10,500","₹15,750",Package Detail sidebar; Package Card; StickyMobileCTA
+3-days-guwahati-tour-package,mrp,"₹31,125",skipped (placeholder),N/A — shown as "Contact for Price"
+3-days-guwahati-tour-package,dealPrice,"₹24,900",skipped (placeholder),N/A — shown as "Contact for Price"
+3-days-nepal-tour-package,mrp,"₹31,125",skipped (placeholder),N/A — shown as "Contact for Price"
+3-days-nepal-tour-package,dealPrice,"₹24,900",skipped (placeholder),N/A — shown as "Contact for Price"
+5-days-nepal-tour-package,mrp,"₹31,125",skipped (placeholder),N/A — shown as "Contact for Price"
+5-days-nepal-tour-package,dealPrice,"₹24,900",skipped (placeholder),N/A — shown as "Contact for Price"
+7-days-nepal-tour-packages,mrp,"₹31,125",skipped (placeholder),N/A — shown as "Contact for Price"
+7-days-nepal-tour-packages,dealPrice,"₹24,900",skipped (placeholder),N/A — shown as "Contact for Price"
+... (56 more packages — full list in src/data/priceOverrides.json)

@@ -1,0 +1,7 @@
+error_id,error_text,pages_affected,severity,measurement_method
+CE01,"Error loading packageDetails.json (occasional OneDrive file lock on cold start)",/packages/* (server component),low,Console grep — server-side only, not user-facing
+CE02,"Error loading packageDetailsV2.json (same OneDrive file lock pattern)",/packages/* (server component),low,Console grep — server-side only
+CE03,"Error loading packageDetailsV3.json (same OneDrive file lock pattern)",/packages/* (server component),low,Console grep — server-side only
+CE04,"React Warning: Each child in a list should have a unique key prop (occasional in BlockRenderer)",/packages/* when rendering FAQ blocks,low,Console grep — client-side warning
+CE05,"Next.js: Dynamic server usage warning (ISR pages accessed via static generation)",/packages/* during build,info,Build output — not user-facing
+CE06,"Google Fonts fetch timeout (transient, during npm run build)",Build only,info,Build log — resolved by retry

@@ -21,32 +21,34 @@ export default function PackageAtAGlance({
   const hasRoute = !!routeDisplay;
 
   const rows: { icon: React.ReactNode; label: string; value: string }[] = [
-    {
+    ...(duration && duration.toLowerCase() !== "on request" ? [{
       icon: <Clock className="w-4 h-4 text-legacy-orange" />,
       label: "Tour Duration",
-      value: duration || "On request",
-    },
-    {
+      value: duration,
+    }] : []),
+    ...(hasRoute && startPoint && startPoint.toLowerCase() !== "on request" ? [{
       icon: <MapPin className="w-4 h-4 text-legacy-orange" />,
       label: "Starting Point",
-      value: hasRoute && startPoint ? startPoint : "On request",
-    },
-    {
+      value: startPoint,
+    }] : []),
+    ...(hasRoute && endPoint && endPoint.toLowerCase() !== "on request" ? [{
       icon: <MapPin className="w-4 h-4 text-legacy-orange" />,
       label: "Ending Point",
-      value: hasRoute && endPoint ? endPoint : "On request",
-    },
-    {
+      value: endPoint,
+    }] : []),
+    ...(hasRoute && routeDisplay.toLowerCase() !== "on request" ? [{
       icon: <Route className="w-4 h-4 text-legacy-orange" />,
       label: "Places Covered",
-      value: hasRoute ? routeDisplay : "On request",
-    },
-    {
+      value: routeDisplay,
+    }] : []),
+    ...(category ? [{
       icon: <Tag className="w-4 h-4 text-legacy-orange" />,
       label: "Tour Category",
-      value: category || "India Tours",
-    },
+      value: category,
+    }] : []),
   ];
+
+  if (rows.length === 0) return null;
 
   return (
     <div className="rounded-lg border border-gray-200 overflow-hidden my-6">

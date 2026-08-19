@@ -231,6 +231,12 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
   const endPoint = uniqueRoutePlaces[uniqueRoutePlaces.length - 1] || 'Delhi';
   const routeDisplay = uniqueRoutePlaces.join(' → ');
 
+  const hasDuration = !!pkg.duration && pkg.duration.toLowerCase() !== "on request";
+  const hasRouteInfo = !!routeDisplay && routeDisplay.toLowerCase() !== "on request";
+  const hasStartPoint = !!startPoint && startPoint.toLowerCase() !== "on request";
+  const hasEndPoint = !!endPoint && endPoint.toLowerCase() !== "on request";
+  const hasQuickInfo = hasDuration || hasRouteInfo;
+
   // Tabbed sections — Overview / Itinerary / Highlights / FAQs (only the ones
   // with real content, matching the reference site's tab navigation).
   const sections = [
@@ -546,8 +552,12 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
         <div className="container mx-auto w-[95%] max-w-[1600px] flex items-center gap-2">
           <Link href="/" className="hover:text-legacy-orange">Home</Link>
           {" » "}
-          <Link href={`/packages?category=${encodeURIComponent(pkg.category || 'all')}`} className="hover:text-legacy-orange">{pkg.category}</Link>
-          {" » "}
+          {pkg.category && (
+            <>
+              <Link href={`/packages?category=${encodeURIComponent(pkg.category)}`} className="hover:text-legacy-orange">{pkg.category}</Link>
+              {" » "}
+            </>
+          )}
           <span className="text-gray-300 truncate">{pkg.title}</span>
         </div>
       </div>
@@ -589,7 +599,7 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
         )}
 
         {/* Trust Indicators (Social Proof alternative) */}
-        <TrustIndicators />
+        <TrustIndicators category={pkg.category} />
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           
@@ -654,38 +664,39 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
                      </div>
 
                      {/* Quick Information */}
-                     <div className="mt-6 pt-6 border-t border-gray-100">
-                        <p className="text-xs font-bold text-gray-800 uppercase tracking-wide mb-3">Quick Information</p>
-                        <div className="space-y-2.5 text-sm">
-                           {pkg.duration && (
-                              <div className="flex justify-between items-center gap-4">
-                                 <span className="text-gray-500 flex items-center shrink-0"><Clock className="w-4 h-4 mr-2" /> Duration</span>
-                                 <span className="font-semibold text-gray-800 text-right">{pkg.duration}</span>
-                              </div>
-                           )}
-                           {routeDisplay ? (
-                              <>
-                                 <div className="flex justify-between items-center gap-4">
-                                    <span className="text-gray-500 flex items-center shrink-0"><MapPin className="w-4 h-4 mr-2" /> Starting Point</span>
-                                    <span className="font-semibold text-gray-800 text-right capitalize">{startPoint}</span>
-                                 </div>
-                                 <div className="flex justify-between items-center gap-4">
-                                    <span className="text-gray-500 flex items-center shrink-0"><MapPin className="w-4 h-4 mr-2" /> Ending Point</span>
-                                    <span className="font-semibold text-gray-800 text-right capitalize">{endPoint}</span>
-                                 </div>
-                                 <div className="flex justify-between items-center gap-4">
-                                    <span className="text-gray-500 flex items-center shrink-0"><MapPin className="w-4 h-4 mr-2" /> Places Covered</span>
-                                    <span className="font-semibold text-gray-800 text-right capitalize">{routeDisplay}</span>
-                                 </div>
-                              </>
-                           ) : (
-                              <div className="flex justify-between items-center gap-4">
-                                 <span className="text-gray-500 flex items-center shrink-0"><MapPin className="w-4 h-4 mr-2" /> Route</span>
-                                 <span className="font-semibold text-gray-800 text-right italic">On request</span>
-                              </div>
-                           )}
-                        </div>
-                     </div>
+                     {hasQuickInfo && (
+                       <div className="mt-6 pt-6 border-t border-gray-100">
+                          <p className="text-xs font-bold text-gray-800 uppercase tracking-wide mb-3">Quick Information</p>
+                          <div className="space-y-2.5 text-sm">
+                             {hasDuration && (
+                                <div className="flex justify-between items-center gap-4">
+                                   <span className="text-gray-500 flex items-center shrink-0"><Clock className="w-4 h-4 mr-2" /> Duration</span>
+                                   <span className="font-semibold text-gray-800 text-right">{pkg.duration}</span>
+                                </div>
+                             )}
+                             {hasRouteInfo && (
+                                <>
+                                   {hasStartPoint && (
+                                     <div className="flex justify-between items-center gap-4">
+                                        <span className="text-gray-500 flex items-center shrink-0"><MapPin className="w-4 h-4 mr-2" /> Starting Point</span>
+                                        <span className="font-semibold text-gray-800 text-right capitalize">{startPoint}</span>
+                                     </div>
+                                   )}
+                                   {hasEndPoint && (
+                                     <div className="flex justify-between items-center gap-4">
+                                        <span className="text-gray-500 flex items-center shrink-0"><MapPin className="w-4 h-4 mr-2" /> Ending Point</span>
+                                        <span className="font-semibold text-gray-800 text-right capitalize">{endPoint}</span>
+                                     </div>
+                                   )}
+                                   <div className="flex justify-between items-center gap-4">
+                                      <span className="text-gray-500 flex items-center shrink-0"><MapPin className="w-4 h-4 mr-2" /> Places Covered</span>
+                                      <span className="font-semibold text-gray-800 text-right capitalize">{routeDisplay}</span>
+                                   </div>
+                                </>
+                             )}
+                          </div>
+                       </div>
+                     )}
 
                      {/* What's Included — real data from the package blocks, never fabricated */}
                      {inclusions.length > 0 && (

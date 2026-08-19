@@ -1,0 +1,9 @@
+field_name,component,page_types,field_type,sample_raw_value,package_count,measurement_method
+mrp,PackageCard.tsx,Homepage; Package Listing; Package Detail sidebar,Original/strikethrough price,"₹31,125",72 (of which 8 are placeholder ₹31,125),Read from allPackages.ts via regex
+dealPrice,PackageCard.tsx,Homepage; Package Listing; Package Detail sidebar,Base/discounted price (displayed to customer),"₹24,900",72 (of which 8 are placeholder ₹24,900),Read from allPackages.ts via regex
+displayPrice (computed),PackageCard.tsx + page.tsx,Homepage; Package Listing; Package Detail sidebar; StickyMobileCTA,Formatted deal price shown to customer,"24,900",72 displayed; 942 show 'Pricing on request',Computed by getPriceInfo() in src/utils/price.ts
+crossedOutPrice (computed),PackageCard.tsx + page.tsx,Homepage; Package Listing; Package Detail sidebar,Formatted MRP strikethrough,"31,125",72 displayed (only when mrp > dealPrice),Computed by getPriceInfo() in src/utils/price.ts
+saveAmount (computed),PackageCard.tsx + page.tsx,Homepage; Package Listing; Package Detail sidebar,Discount badge amount,"6,225",72 displayed,Computed by getPriceInfo() in src/utils/price.ts
+jsonLd.price,page.tsx (server),Package Detail pages,SEO structured data price,"15000" (fallback) or actual mrp value,1014 (all packages),Read from generatedMetadata JSON-LD
+NOT rendered: form price,EnquiryForm.tsx,Package Detail page (#enquiry-form anchor),Inquiry form pre-fill,N/A — form has no price field,N/A,Verified via component inspection
+NOT rendered: admin price,src/data/*,Backend only,Admin/internal,Raw scraped values in allPackages.ts,N/A,Data file only — not rendered to customer
