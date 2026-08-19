@@ -34,7 +34,7 @@ export default function Navbar() {
             <Link href="/pay-online" className="bg-white/10 hover:bg-white/20 px-4 py-1.5 rounded-full backdrop-blur-sm transition-colors text-xs font-bold uppercase tracking-wider flex items-center shadow-sm">Pay Online</Link>
             <Link href="/my-booking" className="bg-gray-900 hover:bg-black text-white px-4 py-1.5 rounded-full transition-colors text-xs font-bold uppercase tracking-wider shadow-md">My Booking</Link>
             <button type="button" aria-label="Language selector unavailable" className="ml-2 px-3 py-1.5 flex items-center bg-white text-gray-800 rounded-full text-xs font-bold cursor-default shadow-sm">
-              <span className="mr-1.5 text-sm">🇬🇧</span> English <span className="text-[11px] md:text-[10px] md:text-[9px] ml-1.5 text-gray-400">▼</span>
+              <span className="mr-1.5 text-sm">🇬🇧</span> English <span className="text-[10px] ml-1.5 text-gray-400">▼</span>
             </button>
           </div>
         </div>
@@ -59,7 +59,7 @@ export default function Navbar() {
                <span className="text-lg md:text-[22px] font-extrabold text-gray-900 tracking-tight whitespace-nowrap">
                  My Quick <span className="text-legacy-orange">Trippers</span>
                </span>
-               <span className="text-[11px] md:text-[10px] md:text-[9px] md:text-[11px] md:text-[10px] text-gray-500 font-semibold uppercase tracking-[0.14em] whitespace-nowrap">
+               <span className="text-[10px] md:text-[10px] text-gray-500 font-semibold uppercase tracking-[0.14em] whitespace-nowrap">
                  Your Journey, Our Expertise
                </span>
              </div>
@@ -125,7 +125,7 @@ export default function Navbar() {
                           className="px-2.5 xl:px-3 h-10 whitespace-nowrap flex items-center cursor-pointer hover:text-legacy-orange focus-visible:text-legacy-orange focus-visible:outline-none transition-colors duration-300 relative"
                         >
                            {item.title} 
-                           <span aria-hidden="true" className="ml-1.5 text-[11px] md:text-[10px] md:text-[9px] opacity-70 group-hover:opacity-100 group-focus-within:opacity-100 group-hover:rotate-180 group-focus-within:rotate-180 transition-transform duration-300">▼</span>
+                           <span aria-hidden="true" className="ml-1.5 text-[10px] opacity-70 group-hover:opacity-100 group-focus-within:opacity-100 group-hover:rotate-180 group-focus-within:rotate-180 transition-transform duration-300">▼</span>
                            <span aria-hidden="true" className="absolute bottom-0 left-0 w-full h-[2px] bg-legacy-orange transform scale-x-0 group-hover:scale-x-100 group-focus-within:scale-x-100 transition-transform duration-300 origin-left"></span>
                         </button>
                       ) : (
@@ -154,7 +154,7 @@ export default function Navbar() {
                                                 href={link.href} 
                                                 className="flex items-center py-[6px] text-[13px] text-gray-700 hover:text-legacy-orange transition-colors group/link"
                                              >
-                                                <span className="text-legacy-orange mr-2 text-[11px] md:text-[10px] md:text-[8px] opacity-70 group-hover/link:opacity-100">★</span>
+                                                <span className="text-legacy-orange mr-2 text-[10px] opacity-70 group-hover/link:opacity-100">★</span>
                                                 {link.name}
                                              </Link>
                                           </li>
@@ -178,7 +178,7 @@ export default function Navbar() {
                          <div className="absolute top-full left-0 w-64 bg-white shadow-lg border-t-2 border-legacy-orange opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-opacity duration-200 z-50 text-gray-700 text-[13px]">
                            {item.links.map((link, lidx) => (
                               <Link key={lidx} href={link.href} className="block px-4 py-2.5 hover:bg-gray-50 hover:text-legacy-orange border-b border-gray-100 last:border-0 transition-colors">
-                                 <span className="text-legacy-orange mr-2 text-[11px] md:text-[10px] md:text-[8px]">★</span>
+                                 <span className="text-legacy-orange mr-2 text-[10px]">★</span>
                                  {link.name}
                               </Link>
                            ))}
@@ -237,7 +237,7 @@ export default function Navbar() {
                             <div className="pl-6 space-y-1 pb-2">
                               {region.links.map((link, lidx) => (
                                 <Link key={lidx} href={link.href} className="block text-sm text-gray-300 py-1.5 hover:text-white" onClick={() => setIsOpen(false)}>
-                                  <span className="text-legacy-orange mr-2 text-[11px] md:text-[10px] md:text-[8px]">★</span>
+                                  <span className="text-legacy-orange mr-2 text-[10px]">★</span>
                                   {link.name}
                                 </Link>
                               ))}
@@ -247,7 +247,7 @@ export default function Navbar() {
                       ))}
                       {item.links && item.links.map((link, lidx) => (
                         <Link key={lidx} href={link.href} className="block px-4 text-sm text-gray-300 py-2 hover:text-white" onClick={() => setIsOpen(false)}>
-                          <span className="text-legacy-orange mr-2 text-[11px] md:text-[10px] md:text-[8px]">★</span>
+                          <span className="text-legacy-orange mr-2 text-[10px]">★</span>
                           {link.name}
                         </Link>
                       ))}

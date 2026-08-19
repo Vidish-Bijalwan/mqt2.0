@@ -1,0 +1,142 @@
+[
+  {
+    "slug": "2-days-delhi-agra-mathura-vrindavan-tour",
+    "category": "North India",
+    "refStatus": 200,
+    "hasPrice": true,
+    "priceText": "INR 5000"
+  },
+  {
+    "slug": "amarnath-yatra-faqs",
+    "category": "Pilgrimage",
+    "refStatus": 404,
+    "hasPrice": false,
+    "priceText": ""
+  },
+  {
+    "slug": "badulla",
+    "category": "India Tours",
+    "refStatus": 200,
+    "hasPrice": false,
+    "priceText": ""
+  },
+  {
+    "slug": "bhutan",
+    "category": "International",
+    "refStatus": 200,
+    "hasPrice": false,
+    "priceText": ""
+  },
+  {
+    "slug": "chennai-pondicherry-tour",
+    "category": "India Tours",
+    "refStatus": 404,
+    "hasPrice": false,
+    "priceText": ""
+  },
+  {
+    "slug": "culture-of-himachal-pradesh",
+    "category": "North India",
+    "refStatus": 404,
+    "hasPrice": false,
+    "priceText": ""
+  },
+  {
+    "slug": "dwarka-somnath-tour-from-mumbai",
+    "category": "India Tours",
+    "refStatus": 404,
+    "hasPrice": false,
+    "priceText": ""
+  },
+  {
+    "slug": "french-polynesia-tour-packages",
+    "category": "India Tours",
+    "refStatus": 200,
+    "hasPrice": false,
+    "priceText": ""
+  },
+  {
+    "slug": "gujarati-cuisine",
+    "category": "West India",
+    "refStatus": 200,
+    "hasPrice": false,
+    "priceText": ""
+  },
+  {
+    "slug": "hongkong-tour-packages",
+    "category": "India Tours",
+    "refStatus": 200,
+    "hasPrice": true,
+    "priceText": "₹2,00,000"
+  },
+  {
+    "slug": "jorhat-majuli-kaziranga-tour-package",
+    "category": "India Tours",
+    "refStatus": 200,
+    "hasPrice": true,
+    "priceText": "₹14500"
+  },
+  {
+    "slug": "kerala-tour-packages-from-surat",
+    "category": "South India",
+    "refStatus": 200,
+    "hasPrice": false,
+    "priceText": ""
+  },
+  {
+    "slug": "machail-mata-yatra",
+    "category": "India Tours",
+    "refStatus": 404,
+    "hasPrice": false,
+    "priceText": ""
+  },
+  {
+    "slug": "muktinath-yatra-by-helicopter",
+    "category": "Helicopter",
+    "refStatus": 404,
+    "hasPrice": false,
+    "priceText": ""
+  },
+  {
+    "slug": "nuwara-eliya",
+    "category": "India Tours",
+    "refStatus": 200,
+    "hasPrice": false,
+    "priceText": ""
+  },
+  {
+    "slug": "port-blair-package",
+    "category": "India Tours",
+    "refStatus": 200,
+    "hasPrice": false,
+    "priceText": ""
+  },
+  {
+    "slug": "saraswati-river-pushkaralu-yatra",
+    "category": "India Tours",
+    "refStatus": 404,
+    "hasPrice": false,
+    "priceText": ""
+  },
+  {
+    "slug": "south-india-temple-tour-packages-from-delhi",
+    "category": "North India",
+    "refStatus": 404,
+    "hasPrice": false,
+    "priceText": ""
+  },
+  {
+    "slug": "tiger-trail-tours-india",
+    "category": "India Tours",
+    "refStatus": 200,
+    "hasPrice": false,
+    "priceText": ""
+  },
+  {
+    "slug": "vaishno-devi-yatra-by-helicopter",
+    "category": "Pilgrimage",
+    "refStatus": 404,
+    "hasPrice": false,
+    "priceText": ""
+  }
+]

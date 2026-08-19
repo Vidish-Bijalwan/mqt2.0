@@ -1,0 +1,7 @@
+Total packages: 1116
+Empty duration: 681 (61.0%)
+Empty route: 703 (63.0%)
+With price: 72 (6.5%)
+No price: 1044 (incl 0 fallback flags)
+Dedupe groups (>1 pkg same price): 8
+Dedupe groups with similar titles: 1

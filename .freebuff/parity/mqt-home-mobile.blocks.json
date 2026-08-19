@@ -1,0 +1,4543 @@
+{
+ "scrollY": 0,
+ "innerWidth": 390,
+ "innerHeight": 844,
+ "blocks": [
+  {
+   "tag": "section",
+   "cls": "w-full bg-brand-navy relative",
+   "y": 80,
+   "h": 332,
+   "w": 390,
+   "text": "Discover the Magic of IndiaExplore authentic experiences with our expe"
+  },
+  {
+   "tag": "h1",
+   "cls": "text-3xl md:text-5xl font-extrabold text-white mb-3 drop-shadow-lg",
+   "y": 120,
+   "h": 36,
+   "w": 390,
+   "text": "Discover the Magic of India"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "ChoptaClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "DehradunClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "AgraClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "ShimlaClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "MussoorieClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "NainitalClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "DarjeelingClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "ManaliClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "RishikeshClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "GuwahatiClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "NashikClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "AmritsarClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "AlleppeyClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "MaldivesClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "SikkimClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "ManipurClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "DharamshalaClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "KonarkClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "OrchhaClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "RanchiClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "TehriClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "HarshilClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "BarotClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "AssamClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "YelagiriClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "Nubra ValleyClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "DhanushkodiClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "MumbaiClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "AndamanClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "CoimbatoreClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "Jim CorbettClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "BiharClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "BishnupurClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "ChoptaClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "DehradunClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "AgraClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "ShimlaClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "MussoorieClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "NainitalClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "DarjeelingClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "ManaliClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "RishikeshClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "GuwahatiClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "NashikClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "AmritsarClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "AlleppeyClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "MaldivesClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "SikkimClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "ManipurClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "DharamshalaClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "KonarkClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "OrchhaClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "RanchiClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "TehriClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "HarshilClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "BarotClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "AssamClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "YelagiriClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "Nubra ValleyClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "DhanushkodiClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "MumbaiClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "AndamanClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "CoimbatoreClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "Jim CorbettClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "BiharClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 226,
+   "h": 156,
+   "w": 216,
+   "text": "BishnupurClick to view"
+  },
+  {
+   "tag": "section",
+   "cls": "bg-white",
+   "y": 412,
+   "h": 15275,
+   "w": 390,
+   "text": "Top Trending Tour PackagesAssam Meghalaya Arunachal Pradesh TourRoute "
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 412,
+   "h": 39,
+   "w": 307,
+   "text": "Top Trending Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 484,
+   "h": 475,
+   "w": 360,
+   "text": "Assam Meghalaya Arunachal Pradesh TourRoute details on requestHotel St"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 729,
+   "h": 103,
+   "w": 358,
+   "text": "Assam Meghalaya Arunachal Pradesh TourRoute details on requestHotel St"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 729,
+   "h": 20,
+   "w": 348,
+   "text": "Assam Meghalaya Arunachal Pradesh Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 754,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 832,
+   "h": 126,
+   "w": 358,
+   "text": "INR 6,225 offINR 31,125INR 24,900Starting price per personQuick enquir"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 969,
+   "h": 502,
+   "w": 360,
+   "text": "12 Jyotirlinga Tour Package24 Days / 23 NightsRoute details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 1214,
+   "h": 130,
+   "w": 358,
+   "text": "12 Jyotirlinga Tour Package24 Days / 23 NightsRoute details on request"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 1214,
+   "h": 20,
+   "w": 348,
+   "text": "12 Jyotirlinga Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 1266,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 1344,
+   "h": 126,
+   "w": 358,
+   "text": "INR 23,750 offINR 1,18,750INR 95,000Starting price per personQuick enq"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 1481,
+   "h": 502,
+   "w": 360,
+   "text": "2 Days Ayodhya Sightseeing Tour2 Days / 1 NightsRoute details on reque"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 1725,
+   "h": 130,
+   "w": 358,
+   "text": "2 Days Ayodhya Sightseeing Tour2 Days / 1 NightsRoute details on reque"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 1725,
+   "h": 20,
+   "w": 348,
+   "text": "2 Days Ayodhya Sightseeing Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 1777,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 1855,
+   "h": 126,
+   "w": 358,
+   "text": "INR 9,625 offINR 48,125INR 38,500Starting price per personQuick enquir"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 1992,
+   "h": 503,
+   "w": 360,
+   "text": "2 Days Agra Mathura Vrindavan Tour from Delhi2 Days / 1 NightsArrival "
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 2237,
+   "h": 130,
+   "w": 358,
+   "text": "2 Days Agra Mathura Vrindavan Tour from Delhi2 Days / 1 NightsArrival "
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 2237,
+   "h": 20,
+   "w": 348,
+   "text": "2 Days Agra Mathura Vrindavan Tour from Delhi"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 2289,
+   "h": 19,
+   "w": 348,
+   "text": "Arrival in Delhi - Mathura → Mathura- Agra- Delhi"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 2367,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 2505,
+   "h": 503,
+   "w": 360,
+   "text": "2 Days Kainchi Dham Tour Package2 Days / 1 NightsArrive Delhi- Kainchi"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 2750,
+   "h": 130,
+   "w": 358,
+   "text": "2 Days Kainchi Dham Tour Package2 Days / 1 NightsArrive Delhi- Kainchi"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 2750,
+   "h": 20,
+   "w": 348,
+   "text": "2 Days Kainchi Dham Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 2802,
+   "h": 19,
+   "w": 348,
+   "text": "Arrive Delhi- Kainchi Dham → Kainchi Dham - Delhi"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 2880,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 3018,
+   "h": 503,
+   "w": 360,
+   "text": "Khajuraho 2 Day Sightseeing Tour2 Days / 1 NightsSightseeing at Wester"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 3263,
+   "h": 130,
+   "w": 358,
+   "text": "Khajuraho 2 Day Sightseeing Tour2 Days / 1 NightsSightseeing at Wester"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 3263,
+   "h": 20,
+   "w": 348,
+   "text": "Khajuraho 2 Day Sightseeing Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 3315,
+   "h": 19,
+   "w": 348,
+   "text": "Sightseeing at Western Group of Temples → Visit to Eastern Group of Te"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 3393,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 3531,
+   "h": 503,
+   "w": 360,
+   "text": "2 Nights 3 Days Orissa Tour Package3 Days / 2 NightsRoute details on r"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 3775,
+   "h": 130,
+   "w": 358,
+   "text": "2 Nights 3 Days Orissa Tour Package3 Days / 2 NightsRoute details on r"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 3775,
+   "h": 20,
+   "w": 348,
+   "text": "2 Nights 3 Days Orissa Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 3827,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 3905,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 4043,
+   "h": 503,
+   "w": 360,
+   "text": "Assam Tour Packages for 3 Days3 Days / 2 NightsRoute details on reques"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 4288,
+   "h": 130,
+   "w": 358,
+   "text": "Assam Tour Packages for 3 Days3 Days / 2 NightsRoute details on reques"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 4288,
+   "h": 20,
+   "w": 348,
+   "text": "Assam Tour Packages for 3 Days"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 4340,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 4418,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 4556,
+   "h": 503,
+   "w": 360,
+   "text": "3 Day Baidyanath Dham Tour Package3 Days / 2 NightsDeoghar- A heaven f"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 4801,
+   "h": 130,
+   "w": 358,
+   "text": "3 Day Baidyanath Dham Tour Package3 Days / 2 NightsDeoghar- A heaven f"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 4801,
+   "h": 20,
+   "w": 348,
+   "text": "3 Day Baidyanath Dham Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 4853,
+   "h": 19,
+   "w": 348,
+   "text": "Deoghar- A heaven for Heart and Soul → Sacred Darshan of Baba Baidyana"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 4931,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 5069,
+   "h": 503,
+   "w": 360,
+   "text": "3 Days Agra Mathura Vrindavan Tour from Delhi3 Days / 2 NightsArrival "
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 5314,
+   "h": 130,
+   "w": 358,
+   "text": "3 Days Agra Mathura Vrindavan Tour from Delhi3 Days / 2 NightsArrival "
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 5314,
+   "h": 20,
+   "w": 348,
+   "text": "3 Days Agra Mathura Vrindavan Tour from Delhi"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 5366,
+   "h": 19,
+   "w": 348,
+   "text": "Arrival in Delhi → Delhi - Agra sightseeing tour - Mathura → Mathura a"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 5444,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 5582,
+   "h": 475,
+   "w": 360,
+   "text": "Guwahati Temple Tour with MeghalayaRoute details on requestHotel StayM"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 5826,
+   "h": 103,
+   "w": 358,
+   "text": "Guwahati Temple Tour with MeghalayaRoute details on requestHotel StayM"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 5826,
+   "h": 20,
+   "w": 348,
+   "text": "Guwahati Temple Tour with Meghalaya"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 5851,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 5929,
+   "h": 126,
+   "w": 358,
+   "text": "INR 6,225 offINR 31,125INR 24,900Starting price per personQuick enquir"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 6066,
+   "h": 503,
+   "w": 360,
+   "text": "Kumbh Mela Tour 2 Nights/3 Days3 Days / 2 NightsWelcome to Prayagraj →"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 6311,
+   "h": 130,
+   "w": 358,
+   "text": "Kumbh Mela Tour 2 Nights/3 Days3 Days / 2 NightsWelcome to Prayagraj →"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 6311,
+   "h": 20,
+   "w": 348,
+   "text": "Kumbh Mela Tour 2 Nights/3 Days"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 6363,
+   "h": 19,
+   "w": 348,
+   "text": "Welcome to Prayagraj → Holy dip and Kumbh Mela exploration → Prayagraj"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 6441,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 6579,
+   "h": 503,
+   "w": 360,
+   "text": "3 Days Madurai Rameshwaram Tour3 Days / 2 NightsMadurai - Rameshwaram "
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 6824,
+   "h": 130,
+   "w": 358,
+   "text": "3 Days Madurai Rameshwaram Tour3 Days / 2 NightsMadurai - Rameshwaram "
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 6824,
+   "h": 20,
+   "w": 348,
+   "text": "3 Days Madurai Rameshwaram Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 6876,
+   "h": 19,
+   "w": 348,
+   "text": "Madurai - Rameshwaram → In Rameswaram → Rameswaram - Madurai *Departur"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 6954,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 7092,
+   "h": 502,
+   "w": 360,
+   "text": "3 Days Shortest Nepal Tour Package3 Days / 2 NightsRoute details on re"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 7337,
+   "h": 130,
+   "w": 358,
+   "text": "3 Days Shortest Nepal Tour Package3 Days / 2 NightsRoute details on re"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 7337,
+   "h": 20,
+   "w": 348,
+   "text": "3 Days Shortest Nepal Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 7389,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 7467,
+   "h": 126,
+   "w": 358,
+   "text": "INR 6,225 offINR 31,125INR 24,900Starting price per personQuick enquir"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 7604,
+   "h": 503,
+   "w": 360,
+   "text": "3 Days Srisailam Mallikarjuna Jyotirlinga Darshan2 Days / 1 NightsSris"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 7848,
+   "h": 130,
+   "w": 358,
+   "text": "3 Days Srisailam Mallikarjuna Jyotirlinga Darshan2 Days / 1 NightsSris"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 7848,
+   "h": 20,
+   "w": 348,
+   "text": "3 Days Srisailam Mallikarjuna Jyotirlinga Darshan"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 7900,
+   "h": 19,
+   "w": 348,
+   "text": "Srisailam - Hyderabad ( → Hyderabad Sightseeing Departure"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 7978,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 8116,
+   "h": 503,
+   "w": 360,
+   "text": "Tripura Sundari Pilgrimage Tour3 Days / 2 NightsArrival and Agartala S"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 8361,
+   "h": 130,
+   "w": 358,
+   "text": "Tripura Sundari Pilgrimage Tour3 Days / 2 NightsArrival and Agartala S"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 8361,
+   "h": 20,
+   "w": 348,
+   "text": "Tripura Sundari Pilgrimage Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 8413,
+   "h": 19,
+   "w": 348,
+   "text": "Arrival and Agartala Sightseeing → Sightseeing and Departure"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 8491,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 8629,
+   "h": 503,
+   "w": 360,
+   "text": "3 Days Indore Ujjain Omkareshwar Tour3 Days / 2 NightsArrival in Indor"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 8874,
+   "h": 130,
+   "w": 358,
+   "text": "3 Days Indore Ujjain Omkareshwar Tour3 Days / 2 NightsArrival in Indor"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 8874,
+   "h": 20,
+   "w": 348,
+   "text": "3 Days Indore Ujjain Omkareshwar Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 8926,
+   "h": 19,
+   "w": 348,
+   "text": "Arrival in Indore to Ujjain → Ujjain to Omkareshwar Day → Omkareshwar "
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 9004,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 9142,
+   "h": 503,
+   "w": 360,
+   "text": "3 Nights 4 Days Lakshadweep Tour Package4 Days / 3 NightsRoute details"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 9387,
+   "h": 130,
+   "w": 358,
+   "text": "3 Nights 4 Days Lakshadweep Tour Package4 Days / 3 NightsRoute details"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 9387,
+   "h": 20,
+   "w": 348,
+   "text": "3 Nights 4 Days Lakshadweep Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 9439,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 9517,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 9655,
+   "h": 503,
+   "w": 360,
+   "text": "4 Days Mahavatar Baba Ji Cave Tour4 Days / 3 NightsPantnagar - Kainchi"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 9900,
+   "h": 130,
+   "w": 358,
+   "text": "4 Days Mahavatar Baba Ji Cave Tour4 Days / 3 NightsPantnagar - Kainchi"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 9900,
+   "h": 20,
+   "w": 348,
+   "text": "4 Days Mahavatar Baba Ji Cave Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 9952,
+   "h": 19,
+   "w": 348,
+   "text": "Pantnagar - Kainchi Dham → Kainchi Dham - Nainital - Dwarahat → Dwarah"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 10030,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 10168,
+   "h": 503,
+   "w": 360,
+   "text": "3 Nights 4 Days Odisha Tour Itinerary4 Days / 3 NightsRoute details on"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 10412,
+   "h": 130,
+   "w": 358,
+   "text": "3 Nights 4 Days Odisha Tour Itinerary4 Days / 3 NightsRoute details on"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 10412,
+   "h": 20,
+   "w": 348,
+   "text": "3 Nights 4 Days Odisha Tour Itinerary"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 10464,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 10542,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 10680,
+   "h": 503,
+   "w": 360,
+   "text": "5 Days Kumbh Mela Tour Packages5 Days / 4 NightsArrival in Prayagraj →"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 10925,
+   "h": 130,
+   "w": 358,
+   "text": "5 Days Kumbh Mela Tour Packages5 Days / 4 NightsArrival in Prayagraj →"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 10925,
+   "h": 20,
+   "w": 348,
+   "text": "5 Days Kumbh Mela Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 10977,
+   "h": 19,
+   "w": 348,
+   "text": "Arrival in Prayagraj → Kumbh Mela Activities → Spiritual Activities an"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 11055,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 11193,
+   "h": 502,
+   "w": 360,
+   "text": "5 Days Nepal Tour Package5 Days / 4 NightsRoute details on requestHote"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 11438,
+   "h": 130,
+   "w": 358,
+   "text": "5 Days Nepal Tour Package5 Days / 4 NightsRoute details on requestHote"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 11438,
+   "h": 20,
+   "w": 348,
+   "text": "5 Days Nepal Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 11490,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 11568,
+   "h": 126,
+   "w": 358,
+   "text": "INR 6,225 offINR 31,125INR 24,900Starting price per personQuick enquir"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 11705,
+   "h": 502,
+   "w": 360,
+   "text": "Nepal Tour Package for 7 Days7 Days / 6 NightsRoute details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 11950,
+   "h": 130,
+   "w": 358,
+   "text": "Nepal Tour Package for 7 Days7 Days / 6 NightsRoute details on request"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 11950,
+   "h": 20,
+   "w": 348,
+   "text": "Nepal Tour Package for 7 Days"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 12002,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 12080,
+   "h": 126,
+   "w": 358,
+   "text": "INR 6,225 offINR 31,125INR 24,900Starting price per personQuick enquir"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 12217,
+   "h": 503,
+   "w": 360,
+   "text": "Adi Kailash Helicopter Tour Package with Om Parvat4 Days / 3 NightsPit"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 12461,
+   "h": 130,
+   "w": 358,
+   "text": "Adi Kailash Helicopter Tour Package with Om Parvat4 Days / 3 NightsPit"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 12461,
+   "h": 20,
+   "w": 348,
+   "text": "Adi Kailash Helicopter Tour Package with Om Parvat"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 12513,
+   "h": 19,
+   "w": 348,
+   "text": "Pithoragarh to Gunji → Gunji - Nabhidhang- Kalapani → Gunji- Jolingkon"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 12591,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 12729,
+   "h": 503,
+   "w": 360,
+   "text": "Adi Kailash Om Parvat Mt Kailash Yatra by Helicopter4 Days / 3 NightsP"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 12974,
+   "h": 130,
+   "w": 358,
+   "text": "Adi Kailash Om Parvat Mt Kailash Yatra by Helicopter4 Days / 3 NightsP"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 12974,
+   "h": 20,
+   "w": 348,
+   "text": "Adi Kailash Om Parvat Mt Kailash Yatra by Helicopter"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 13026,
+   "h": 19,
+   "w": 348,
+   "text": "Pithoragarh to Gunji → Gunji - Adi Kailash - Gunji → Gunji to Pithorag"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 13104,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 13242,
+   "h": 475,
+   "w": 360,
+   "text": "Adi Kailash Yatra Tour Packages 2026Route details on requestHotel Stay"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 13487,
+   "h": 103,
+   "w": 358,
+   "text": "Adi Kailash Yatra Tour Packages 2026Route details on requestHotel Stay"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 13487,
+   "h": 20,
+   "w": 348,
+   "text": "Adi Kailash Yatra Tour Packages 2026"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 13512,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 13590,
+   "h": 126,
+   "w": 358,
+   "text": "INR 12,125 offINR 60,625INR 48,500Starting price per personQuick enqui"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 13727,
+   "h": 503,
+   "w": 360,
+   "text": "Adi Kailash And Om Parvat Yatra Package8 Days / 7 NightsHaldwani / Kat"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 13972,
+   "h": 130,
+   "w": 358,
+   "text": "Adi Kailash And Om Parvat Yatra Package8 Days / 7 NightsHaldwani / Kat"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 13972,
+   "h": 20,
+   "w": 348,
+   "text": "Adi Kailash And Om Parvat Yatra Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 14024,
+   "h": 19,
+   "w": 348,
+   "text": "Haldwani / Kathgodam - Dharchula → Acclimatisation day at Dharchula → "
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 14102,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 14240,
+   "h": 476,
+   "w": 360,
+   "text": "Adventure Activities in UttarakhandRoute details on requestHotel StayM"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 14484,
+   "h": 103,
+   "w": 358,
+   "text": "Adventure Activities in UttarakhandRoute details on requestHotel StayM"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 14484,
+   "h": 20,
+   "w": 348,
+   "text": "Adventure Activities in Uttarakhand"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 14509,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 14587,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 14725,
+   "h": 476,
+   "w": 360,
+   "text": "Adventure Tour PackagesRoute details on requestHotel StayMealsTransfer"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 14970,
+   "h": 103,
+   "w": 358,
+   "text": "Adventure Tour PackagesRoute details on requestHotel StayMealsTransfer"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 14970,
+   "h": 20,
+   "w": 348,
+   "text": "Adventure Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 14995,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 15073,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 15211,
+   "h": 476,
+   "w": 360,
+   "text": "Africa Tour PackagesRoute details on requestHotel StayMealsTransfersSi"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 15456,
+   "h": 103,
+   "w": 358,
+   "text": "Africa Tour PackagesRoute details on requestHotel StayMealsTransfersSi"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 15456,
+   "h": 20,
+   "w": 348,
+   "text": "Africa Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 15481,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 15559,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "section",
+   "cls": "bg-white",
+   "y": 15687,
+   "h": 1657,
+   "w": 390,
+   "text": "Top Holiday Destinations In India"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 15712,
+   "h": 39,
+   "w": 354,
+   "text": "Top Holiday Destinations In India"
+  },
+  {
+   "tag": "section",
+   "cls": "bg-white",
+   "y": 17344,
+   "h": 5107,
+   "w": 390,
+   "text": "Pilgrimage Tour PackagesSacred journeys to India's most revered spirit"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 17369,
+   "h": 39,
+   "w": 283,
+   "text": "Pilgrimage Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 17495,
+   "h": 476,
+   "w": 360,
+   "text": "How to Reach Amarnath with Route MapRoute details on requestHotel Stay"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 17740,
+   "h": 103,
+   "w": 358,
+   "text": "How to Reach Amarnath with Route MapRoute details on requestHotel Stay"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 17740,
+   "h": 20,
+   "w": 348,
+   "text": "How to Reach Amarnath with Route Map"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 17765,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 17843,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 17981,
+   "h": 503,
+   "w": 360,
+   "text": "Amarnath Yatra by Helicopter from Pahalgam3 Days / 2 NightsArrival Sri"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 18226,
+   "h": 130,
+   "w": 358,
+   "text": "Amarnath Yatra by Helicopter from Pahalgam3 Days / 2 NightsArrival Sri"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 18226,
+   "h": 20,
+   "w": 348,
+   "text": "Amarnath Yatra by Helicopter from Pahalgam"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 18278,
+   "h": 19,
+   "w": 348,
+   "text": "Arrival Srinagar - Pahalgam → Pahalgam - Panjtarni - Amarnath Holy Cav"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 18356,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 18494,
+   "h": 476,
+   "w": 360,
+   "text": "Amarnath Weather – Best Time to Visit AmarnathRoute details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 18739,
+   "h": 103,
+   "w": 358,
+   "text": "Amarnath Weather – Best Time to Visit AmarnathRoute details on request"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 18739,
+   "h": 20,
+   "w": 348,
+   "text": "Amarnath Weather – Best Time to Visit Amarnath"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 18764,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 18842,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 18980,
+   "h": 503,
+   "w": 360,
+   "text": "Amarnath Yatra Package by Helicopter3 Days / 2 NightsSrinagar - Sonmar"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 19224,
+   "h": 130,
+   "w": 358,
+   "text": "Amarnath Yatra Package by Helicopter3 Days / 2 NightsSrinagar - Sonmar"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 19224,
+   "h": 20,
+   "w": 348,
+   "text": "Amarnath Yatra Package by Helicopter"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 19276,
+   "h": 19,
+   "w": 348,
+   "text": "Srinagar - Sonmarg → Srinagar Departure"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 19354,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 19492,
+   "h": 476,
+   "w": 360,
+   "text": "How to Register for Amarnath Yatra 2026Route details on requestHotel S"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 19737,
+   "h": 103,
+   "w": 358,
+   "text": "How to Register for Amarnath Yatra 2026Route details on requestHotel S"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 19737,
+   "h": 20,
+   "w": 348,
+   "text": "How to Register for Amarnath Yatra 2026"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 19762,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 19840,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 19978,
+   "h": 503,
+   "w": 360,
+   "text": "Amarnath Yatra with Vaishno Devi Yatra11 Days / 10 NightsArrival in De"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 20223,
+   "h": 130,
+   "w": 358,
+   "text": "Amarnath Yatra with Vaishno Devi Yatra11 Days / 10 NightsArrival in De"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 20223,
+   "h": 20,
+   "w": 348,
+   "text": "Amarnath Yatra with Vaishno Devi Yatra"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 20275,
+   "h": 19,
+   "w": 348,
+   "text": "Arrival in Delhi – Amritsar → Amritsar → Amritsar – Jammu – Katra → Ka"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 20353,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 20491,
+   "h": 476,
+   "w": 360,
+   "text": "Amarnath Travel GuideRoute details on requestHotel StayMealsTransfersS"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 20736,
+   "h": 103,
+   "w": 358,
+   "text": "Amarnath Travel GuideRoute details on requestHotel StayMealsTransfersS"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 20736,
+   "h": 20,
+   "w": 348,
+   "text": "Amarnath Travel Guide"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 20761,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 20839,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 20977,
+   "h": 476,
+   "w": 360,
+   "text": "Badrinath FAQs – Travel Related Queries and SolutionsRoute details on "
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 21221,
+   "h": 103,
+   "w": 358,
+   "text": "Badrinath FAQs – Travel Related Queries and SolutionsRoute details on "
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 21221,
+   "h": 20,
+   "w": 348,
+   "text": "Badrinath FAQs – Travel Related Queries and Solutions"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 21246,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 21324,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 21462,
+   "h": 476,
+   "w": 360,
+   "text": "History of Badrinath – Lord Vishnu’s Abode on EarthRoute details on re"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 21707,
+   "h": 103,
+   "w": 358,
+   "text": "History of Badrinath – Lord Vishnu’s Abode on EarthRoute details on re"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 21707,
+   "h": 20,
+   "w": 348,
+   "text": "History of Badrinath – Lord Vishnu’s Abode on Earth"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 21732,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 21810,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 21948,
+   "h": 503,
+   "w": 360,
+   "text": "Badrinath Kedarnath Do Dham Yatra from Delhi8 Days / 7 NightsDelhi – H"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 22193,
+   "h": 130,
+   "w": 358,
+   "text": "Badrinath Kedarnath Do Dham Yatra from Delhi8 Days / 7 NightsDelhi – H"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 22193,
+   "h": 20,
+   "w": 348,
+   "text": "Badrinath Kedarnath Do Dham Yatra from Delhi"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 22245,
+   "h": 19,
+   "w": 348,
+   "text": "Delhi – Haridwar → Haridwar – Guptkashi → Guptkashi – Sonprayag – Keda"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 22323,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "section",
+   "cls": "bg-white",
+   "y": 22451,
+   "h": 5106,
+   "w": 390,
+   "text": "North India Tour PackagesFrom the Himalayas to the Ganges plains — dis"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 22476,
+   "h": 39,
+   "w": 286,
+   "text": "North India Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 22602,
+   "h": 503,
+   "w": 360,
+   "text": "2 Days Agra Mathura Vrindavan Tour from Delhi2 Days / 1 NightsArrival "
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 22847,
+   "h": 130,
+   "w": 358,
+   "text": "2 Days Agra Mathura Vrindavan Tour from Delhi2 Days / 1 NightsArrival "
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 22847,
+   "h": 20,
+   "w": 348,
+   "text": "2 Days Agra Mathura Vrindavan Tour from Delhi"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 22899,
+   "h": 19,
+   "w": 348,
+   "text": "Arrival in Delhi - Mathura → Mathura- Agra- Delhi"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 22977,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 23115,
+   "h": 503,
+   "w": 360,
+   "text": "3 Days Agra Mathura Vrindavan Tour from Delhi3 Days / 2 NightsArrival "
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 23359,
+   "h": 130,
+   "w": 358,
+   "text": "3 Days Agra Mathura Vrindavan Tour from Delhi3 Days / 2 NightsArrival "
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 23359,
+   "h": 20,
+   "w": 348,
+   "text": "3 Days Agra Mathura Vrindavan Tour from Delhi"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 23411,
+   "h": 19,
+   "w": 348,
+   "text": "Arrival in Delhi → Delhi - Agra sightseeing tour - Mathura → Mathura a"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 23489,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 23627,
+   "h": 476,
+   "w": 360,
+   "text": "Adventure Activities in UttarakhandRoute details on requestHotel StayM"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 23872,
+   "h": 103,
+   "w": 358,
+   "text": "Adventure Activities in UttarakhandRoute details on requestHotel StayM"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 23872,
+   "h": 20,
+   "w": 348,
+   "text": "Adventure Activities in Uttarakhand"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 23897,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 23975,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 24113,
+   "h": 476,
+   "w": 360,
+   "text": "Same Day Agra Tour from DelhiFull Day Agra Sightseeing From DelhiHotel"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 24358,
+   "h": 103,
+   "w": 358,
+   "text": "Same Day Agra Tour from DelhiFull Day Agra Sightseeing From DelhiHotel"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 24358,
+   "h": 20,
+   "w": 348,
+   "text": "Same Day Agra Tour from Delhi"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 24383,
+   "h": 19,
+   "w": 348,
+   "text": "Full Day Agra Sightseeing From Delhi"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 24461,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 24599,
+   "h": 476,
+   "w": 360,
+   "text": "Agra Sightseeing Tour PackageFull Day Agra Sightseeing TourHotel StayM"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 24844,
+   "h": 103,
+   "w": 358,
+   "text": "Agra Sightseeing Tour PackageFull Day Agra Sightseeing TourHotel StayM"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 24844,
+   "h": 20,
+   "w": 348,
+   "text": "Agra Sightseeing Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 24869,
+   "h": 19,
+   "w": 348,
+   "text": "Full Day Agra Sightseeing Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 24947,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 25085,
+   "h": 475,
+   "w": 360,
+   "text": "Agra Tour PackagesRoute details on requestHotel StayMealsTransfersSigh"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 25330,
+   "h": 103,
+   "w": 358,
+   "text": "Agra Tour PackagesRoute details on requestHotel StayMealsTransfersSigh"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 25330,
+   "h": 20,
+   "w": 348,
+   "text": "Agra Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 25355,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 25433,
+   "h": 126,
+   "w": 358,
+   "text": "INR 8,875 offINR 44,375INR 35,500Starting price per personQuick enquir"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 25570,
+   "h": 476,
+   "w": 360,
+   "text": "Agra TourismRoute details on requestHotel StayMealsTransfersSightseein"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 25814,
+   "h": 103,
+   "w": 358,
+   "text": "Agra TourismRoute details on requestHotel StayMealsTransfersSightseein"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 25814,
+   "h": 20,
+   "w": 348,
+   "text": "Agra Tourism"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 25839,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 25917,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 26055,
+   "h": 476,
+   "w": 360,
+   "text": "Akbar's Tomb, AgraRoute details on requestHotel StayMealsTransfersSigh"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 26300,
+   "h": 103,
+   "w": 358,
+   "text": "Akbar's Tomb, AgraRoute details on requestHotel StayMealsTransfersSigh"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 26300,
+   "h": 20,
+   "w": 348,
+   "text": "Akbar's Tomb, Agra"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 26325,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 26403,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 26541,
+   "h": 503,
+   "w": 360,
+   "text": "Amarnath Yatra by Helicopter with Kashmir Tour9 Days / 8 NightsArrival"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 26786,
+   "h": 130,
+   "w": 358,
+   "text": "Amarnath Yatra by Helicopter with Kashmir Tour9 Days / 8 NightsArrival"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 26786,
+   "h": 20,
+   "w": 348,
+   "text": "Amarnath Yatra by Helicopter with Kashmir Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 26838,
+   "h": 19,
+   "w": 348,
+   "text": "Arrival Srinagar → Srinagar Sonamarg - Baltal → Baltal - Holy Cave - B"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 26916,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 27054,
+   "h": 503,
+   "w": 360,
+   "text": "Ayodhya Ram Mandir Tour from Delhi3 Days / 2 NightsDelhi – Ayodhya → R"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 27299,
+   "h": 130,
+   "w": 358,
+   "text": "Ayodhya Ram Mandir Tour from Delhi3 Days / 2 NightsDelhi – Ayodhya → R"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 27299,
+   "h": 20,
+   "w": 348,
+   "text": "Ayodhya Ram Mandir Tour from Delhi"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 27351,
+   "h": 19,
+   "w": 348,
+   "text": "Delhi – Ayodhya → Ram Mandir Visit and Ayodhya Sightseeing → Ayodhya –"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 27429,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "section",
+   "cls": "bg-white",
+   "y": 27557,
+   "h": 2241,
+   "w": 390,
+   "text": "Book International Tour Packages From IndiaHandpicked journeys to the "
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 27582,
+   "h": 67,
+   "w": 360,
+   "text": "Book International Tour Packages From India"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 27758,
+   "h": 503,
+   "w": 360,
+   "text": "Bali Sightseeing Tour Package3 Days / 2 NightsArrival in Bali and Sigh"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 28002,
+   "h": 130,
+   "w": 358,
+   "text": "Bali Sightseeing Tour Package3 Days / 2 NightsArrival in Bali and Sigh"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 28002,
+   "h": 20,
+   "w": 348,
+   "text": "Bali Sightseeing Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 28054,
+   "h": 19,
+   "w": 348,
+   "text": "Arrival in Bali and Sightseeing Places → Kintamani Village Tour & Tana"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 28132,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 28270,
+   "h": 503,
+   "w": 360,
+   "text": "Dubai Honeymoon Tour Package6 Days / 5 NightsArrival in Dubai → City o"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 28515,
+   "h": 130,
+   "w": 358,
+   "text": "Dubai Honeymoon Tour Package6 Days / 5 NightsArrival in Dubai → City o"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 28515,
+   "h": 20,
+   "w": 348,
+   "text": "Dubai Honeymoon Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 28567,
+   "h": 19,
+   "w": 348,
+   "text": "Arrival in Dubai → City of Dubai → Lincoln Limo Ride and Dubai Desert "
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 28645,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 28783,
+   "h": 502,
+   "w": 360,
+   "text": "Nepal Tour Package for 7 Days7 Days / 6 NightsRoute details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 29028,
+   "h": 130,
+   "w": 358,
+   "text": "Nepal Tour Package for 7 Days7 Days / 6 NightsRoute details on request"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 29028,
+   "h": 20,
+   "w": 348,
+   "text": "Nepal Tour Package for 7 Days"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 29080,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 29158,
+   "h": 126,
+   "w": 358,
+   "text": "INR 6,225 offINR 31,125INR 24,900Starting price per personQuick enquir"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 29295,
+   "h": 503,
+   "w": 360,
+   "text": "Sri Lanka Group Tour Packages8 Days / 7 NightsRoute details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 29540,
+   "h": 130,
+   "w": 358,
+   "text": "Sri Lanka Group Tour Packages8 Days / 7 NightsRoute details on request"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 29540,
+   "h": 20,
+   "w": 348,
+   "text": "Sri Lanka Group Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 29592,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 29670,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "section",
+   "cls": "bg-white",
+   "y": 29798,
+   "h": 5238,
+   "w": 390,
+   "text": "International Tour PackagesExplore the world with curated internationa"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 29823,
+   "h": 39,
+   "w": 303,
+   "text": "International Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 29949,
+   "h": 502,
+   "w": 360,
+   "text": "3 Days Shortest Nepal Tour Package3 Days / 2 NightsRoute details on re"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 30193,
+   "h": 130,
+   "w": 358,
+   "text": "3 Days Shortest Nepal Tour Package3 Days / 2 NightsRoute details on re"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 30193,
+   "h": 20,
+   "w": 348,
+   "text": "3 Days Shortest Nepal Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 30245,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 30323,
+   "h": 126,
+   "w": 358,
+   "text": "INR 6,225 offINR 31,125INR 24,900Starting price per personQuick enquir"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 30460,
+   "h": 502,
+   "w": 360,
+   "text": "5 Days Nepal Tour Package5 Days / 4 NightsRoute details on requestHote"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 30705,
+   "h": 130,
+   "w": 358,
+   "text": "5 Days Nepal Tour Package5 Days / 4 NightsRoute details on requestHote"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 30705,
+   "h": 20,
+   "w": 348,
+   "text": "5 Days Nepal Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 30757,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 30835,
+   "h": 126,
+   "w": 358,
+   "text": "INR 6,225 offINR 31,125INR 24,900Starting price per personQuick enquir"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 30972,
+   "h": 502,
+   "w": 360,
+   "text": "Nepal Tour Package for 7 Days7 Days / 6 NightsRoute details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 31217,
+   "h": 130,
+   "w": 358,
+   "text": "Nepal Tour Package for 7 Days7 Days / 6 NightsRoute details on request"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 31217,
+   "h": 20,
+   "w": 348,
+   "text": "Nepal Tour Package for 7 Days"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 31269,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 31347,
+   "h": 126,
+   "w": 358,
+   "text": "INR 6,225 offINR 31,125INR 24,900Starting price per personQuick enquir"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 31484,
+   "h": 503,
+   "w": 360,
+   "text": "Adi Kailash Helicopter Tour Package with Om Parvat4 Days / 3 NightsPit"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 31729,
+   "h": 130,
+   "w": 358,
+   "text": "Adi Kailash Helicopter Tour Package with Om Parvat4 Days / 3 NightsPit"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 31729,
+   "h": 20,
+   "w": 348,
+   "text": "Adi Kailash Helicopter Tour Package with Om Parvat"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 31781,
+   "h": 19,
+   "w": 348,
+   "text": "Pithoragarh to Gunji → Gunji - Nabhidhang- Kalapani → Gunji- Jolingkon"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 31859,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 31997,
+   "h": 503,
+   "w": 360,
+   "text": "Adi Kailash Om Parvat Mt Kailash Yatra by Helicopter4 Days / 3 NightsP"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 32242,
+   "h": 130,
+   "w": 358,
+   "text": "Adi Kailash Om Parvat Mt Kailash Yatra by Helicopter4 Days / 3 NightsP"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 32242,
+   "h": 20,
+   "w": 348,
+   "text": "Adi Kailash Om Parvat Mt Kailash Yatra by Helicopter"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 32294,
+   "h": 19,
+   "w": 348,
+   "text": "Pithoragarh to Gunji → Gunji - Adi Kailash - Gunji → Gunji to Pithorag"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 32372,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 32510,
+   "h": 475,
+   "w": 360,
+   "text": "Adi Kailash Yatra Tour Packages 2026Route details on requestHotel Stay"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 32754,
+   "h": 103,
+   "w": 358,
+   "text": "Adi Kailash Yatra Tour Packages 2026Route details on requestHotel Stay"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 32754,
+   "h": 20,
+   "w": 348,
+   "text": "Adi Kailash Yatra Tour Packages 2026"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 32779,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 32857,
+   "h": 126,
+   "w": 358,
+   "text": "INR 12,125 offINR 60,625INR 48,500Starting price per personQuick enqui"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 32994,
+   "h": 503,
+   "w": 360,
+   "text": "Adi Kailash And Om Parvat Yatra Package8 Days / 7 NightsHaldwani / Kat"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 33239,
+   "h": 130,
+   "w": 358,
+   "text": "Adi Kailash And Om Parvat Yatra Package8 Days / 7 NightsHaldwani / Kat"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 33239,
+   "h": 20,
+   "w": 348,
+   "text": "Adi Kailash And Om Parvat Yatra Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 33291,
+   "h": 19,
+   "w": 348,
+   "text": "Haldwani / Kathgodam - Dharchula → Acclimatisation day at Dharchula → "
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 33369,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 33507,
+   "h": 503,
+   "w": 360,
+   "text": "Bali Combo Tour Package5 Days / 4 NightsArrival in Bali → Bali City Si"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 33752,
+   "h": 130,
+   "w": 358,
+   "text": "Bali Combo Tour Package5 Days / 4 NightsArrival in Bali → Bali City Si"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 33752,
+   "h": 20,
+   "w": 348,
+   "text": "Bali Combo Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 33804,
+   "h": 19,
+   "w": 348,
+   "text": "Arrival in Bali → Bali City Sightseeing and Evening Cruise → Tegenunga"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 33882,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 34020,
+   "h": 503,
+   "w": 360,
+   "text": "Bali Family Tour Package5 Days / 4 NightsArrival in Bali → Bali – Ubud"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 34265,
+   "h": 130,
+   "w": 358,
+   "text": "Bali Family Tour Package5 Days / 4 NightsArrival in Bali → Bali – Ubud"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 34265,
+   "h": 20,
+   "w": 348,
+   "text": "Bali Family Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 34317,
+   "h": 19,
+   "w": 348,
+   "text": "Arrival in Bali → Bali – Ubud Art and Handicraft → Bali Safari and Mar"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 34395,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 34533,
+   "h": 503,
+   "w": 360,
+   "text": "Bali Honeymoon Tour Package4 Days / 3 NightsRoute details on requestHo"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 34777,
+   "h": 130,
+   "w": 358,
+   "text": "Bali Honeymoon Tour Package4 Days / 3 NightsRoute details on requestHo"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 34777,
+   "h": 20,
+   "w": 348,
+   "text": "Bali Honeymoon Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 34829,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 34907,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "section",
+   "cls": "bg-white",
+   "y": 35035,
+   "h": 5134,
+   "w": 390,
+   "text": "South India Tour PackagesTemples, backwaters, beaches and beyond — exp"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 35060,
+   "h": 39,
+   "w": 288,
+   "text": "South India Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 35186,
+   "h": 503,
+   "w": 360,
+   "text": "Andaman – A Short Eventful Visit to Remember4 Days / 3 NightsPort Blai"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 35431,
+   "h": 130,
+   "w": 358,
+   "text": "Andaman – A Short Eventful Visit to Remember4 Days / 3 NightsPort Blai"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 35431,
+   "h": 20,
+   "w": 348,
+   "text": "Andaman – A Short Eventful Visit to Remember"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 35483,
+   "h": 19,
+   "w": 348,
+   "text": "Port Blair → Port Blair – Havelock – Port Blair → North Bay and Ross I"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 35561,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 35699,
+   "h": 503,
+   "w": 360,
+   "text": "Andaman Beach Tour Package4 Days / 3 NightsPort Blair and Sightseeing "
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 35944,
+   "h": 130,
+   "w": 358,
+   "text": "Andaman Beach Tour Package4 Days / 3 NightsPort Blair and Sightseeing "
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 35944,
+   "h": 20,
+   "w": 348,
+   "text": "Andaman Beach Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 35996,
+   "h": 19,
+   "w": 348,
+   "text": "Port Blair and Sightseeing → Port Blair – Havelock → At Neil Island → "
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 36074,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 36212,
+   "h": 503,
+   "w": 360,
+   "text": "Andaman Cheap Tour Packages7 Days / 6 NightsRoute details on requestHo"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 36457,
+   "h": 130,
+   "w": 358,
+   "text": "Andaman Cheap Tour Packages7 Days / 6 NightsRoute details on requestHo"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 36457,
+   "h": 20,
+   "w": 348,
+   "text": "Andaman Cheap Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 36509,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 36587,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 36725,
+   "h": 476,
+   "w": 360,
+   "text": "Andaman Nicobar Tour PackagesRoute details on requestHotel StayMealsTr"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 36969,
+   "h": 103,
+   "w": 358,
+   "text": "Andaman Nicobar Tour PackagesRoute details on requestHotel StayMealsTr"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 36969,
+   "h": 20,
+   "w": 348,
+   "text": "Andaman Nicobar Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 36994,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 37072,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 37210,
+   "h": 476,
+   "w": 360,
+   "text": "Andaman TourismRoute details on requestHotel StayMealsTransfersSightse"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 37455,
+   "h": 103,
+   "w": 358,
+   "text": "Andaman TourismRoute details on requestHotel StayMealsTransfersSightse"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 37455,
+   "h": 20,
+   "w": 348,
+   "text": "Andaman Tourism"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 37480,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 37558,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 37696,
+   "h": 503,
+   "w": 360,
+   "text": "Bangalore Sightseeing Tour Package3 Days / 2 NightsArrive Bangalore & "
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 37941,
+   "h": 130,
+   "w": 358,
+   "text": "Bangalore Sightseeing Tour Package3 Days / 2 NightsArrive Bangalore & "
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 37941,
+   "h": 20,
+   "w": 348,
+   "text": "Bangalore Sightseeing Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 37993,
+   "h": 19,
+   "w": 348,
+   "text": "Arrive Bangalore & Sightseeing → Rest of the Sightseeing → Bangalore E"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 38071,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 38209,
+   "h": 476,
+   "w": 360,
+   "text": "Bangalore Tour PackagesRoute details on requestHotel StayMealsTransfer"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 38454,
+   "h": 103,
+   "w": 358,
+   "text": "Bangalore Tour PackagesRoute details on requestHotel StayMealsTransfer"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 38454,
+   "h": 20,
+   "w": 348,
+   "text": "Bangalore Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 38479,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 38557,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 38695,
+   "h": 476,
+   "w": 360,
+   "text": "Best of Kerala Tour PackageCochin Arrival - GuruvayurHotel StayMealsTr"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 38939,
+   "h": 103,
+   "w": 358,
+   "text": "Best of Kerala Tour PackageCochin Arrival - GuruvayurHotel StayMealsTr"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 38939,
+   "h": 20,
+   "w": 348,
+   "text": "Best of Kerala Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 38964,
+   "h": 19,
+   "w": 348,
+   "text": "Cochin Arrival - Guruvayur"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 39042,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 39180,
+   "h": 503,
+   "w": 360,
+   "text": "Chardham Yatra Package from Bangalore14 Days / 13 NightsBangalore - De"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 39425,
+   "h": 130,
+   "w": 358,
+   "text": "Chardham Yatra Package from Bangalore14 Days / 13 NightsBangalore - De"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 39425,
+   "h": 20,
+   "w": 348,
+   "text": "Chardham Yatra Package from Bangalore"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 39477,
+   "h": 19,
+   "w": 348,
+   "text": "Bangalore - Delhi → Delhi to Rishikesh → Rishikesh to Barkot → Barkot "
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 39555,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 39693,
+   "h": 476,
+   "w": 360,
+   "text": "Enchanting Kerala Tour PackageArrive at CochinHotel StayMealsTransfers"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 39938,
+   "h": 103,
+   "w": 358,
+   "text": "Enchanting Kerala Tour PackageArrive at CochinHotel StayMealsTransfers"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 39938,
+   "h": 20,
+   "w": 348,
+   "text": "Enchanting Kerala Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 39963,
+   "h": 19,
+   "w": 348,
+   "text": "Arrive at Cochin"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 40041,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "section",
+   "cls": "bg-white",
+   "y": 40169,
+   "h": 5192,
+   "w": 390,
+   "text": "West India Tour PackagesFrom Rajasthan forts to Gujarat's cultural her"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 40194,
+   "h": 39,
+   "w": 278,
+   "text": "West India Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 40298,
+   "h": 503,
+   "w": 360,
+   "text": "Best of Gujarat Tour Package7 Days / 6 NightsRoute details on requestH"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 40543,
+   "h": 130,
+   "w": 358,
+   "text": "Best of Gujarat Tour Package7 Days / 6 NightsRoute details on requestH"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 40543,
+   "h": 20,
+   "w": 348,
+   "text": "Best of Gujarat Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 40595,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 40673,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 40811,
+   "h": 503,
+   "w": 360,
+   "text": "Cordelia Cruise Mumbai to Goa3 Days / 2 NightsWelcome Onboard → A Day "
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 41056,
+   "h": 130,
+   "w": 358,
+   "text": "Cordelia Cruise Mumbai to Goa3 Days / 2 NightsWelcome Onboard → A Day "
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 41056,
+   "h": 20,
+   "w": 348,
+   "text": "Cordelia Cruise Mumbai to Goa"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 41108,
+   "h": 19,
+   "w": 348,
+   "text": "Welcome Onboard → A Day amid the sea → Reach Goa and Party"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 41186,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 41324,
+   "h": 503,
+   "w": 360,
+   "text": "Gujarat Desert Beach Tour Package5 Days / 4 NightsAhmedabad – Wankaner"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 41568,
+   "h": 130,
+   "w": 358,
+   "text": "Gujarat Desert Beach Tour Package5 Days / 4 NightsAhmedabad – Wankaner"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 41568,
+   "h": 20,
+   "w": 348,
+   "text": "Gujarat Desert Beach Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 41620,
+   "h": 19,
+   "w": 348,
+   "text": "Ahmedabad – Wankaner → Wankaner – Mandvi → Mandvi – Bhuj → Bhuj – Rann"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 41698,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 41836,
+   "h": 503,
+   "w": 360,
+   "text": "Majestic Rajasthan Tour Package6 Days / 5 NightsJaipur Arrival → Jaipu"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 42081,
+   "h": 130,
+   "w": 358,
+   "text": "Majestic Rajasthan Tour Package6 Days / 5 NightsJaipur Arrival → Jaipu"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 42081,
+   "h": 20,
+   "w": 348,
+   "text": "Majestic Rajasthan Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 42133,
+   "h": 19,
+   "w": 348,
+   "text": "Jaipur Arrival → Jaipur City Tour → Jaipur – Jodhpur → Jodhpur – Udaip"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 42211,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 42349,
+   "h": 503,
+   "w": 360,
+   "text": "Explore Gujarat Tour Package14 Days / 13 NightsAhmedabad → Ahmadabad –"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 42594,
+   "h": 130,
+   "w": 358,
+   "text": "Explore Gujarat Tour Package14 Days / 13 NightsAhmedabad → Ahmadabad –"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 42594,
+   "h": 20,
+   "w": 348,
+   "text": "Explore Gujarat Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 42646,
+   "h": 19,
+   "w": 348,
+   "text": "Ahmedabad → Ahmadabad – Gandhinagar → Ahmedabad – Bhuj → Bhuj → Trip t"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 42724,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 42862,
+   "h": 503,
+   "w": 360,
+   "text": "Rajasthan Forts Palaces Tour Package18 Days / 17 NightsDelhi Arrival →"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 43107,
+   "h": 130,
+   "w": 358,
+   "text": "Rajasthan Forts Palaces Tour Package18 Days / 17 NightsDelhi Arrival →"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 43107,
+   "h": 20,
+   "w": 348,
+   "text": "Rajasthan Forts Palaces Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 43159,
+   "h": 19,
+   "w": 348,
+   "text": "Delhi Arrival → Delhi → Delhi to Samode → Samode Excursions → Mandawa "
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 43237,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 43375,
+   "h": 503,
+   "w": 360,
+   "text": "Goa Tour Package for 5 Days5 Days / 4 NightsRoute details on requestHo"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 43619,
+   "h": 130,
+   "w": 358,
+   "text": "Goa Tour Package for 5 Days5 Days / 4 NightsRoute details on requestHo"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 43619,
+   "h": 20,
+   "w": 348,
+   "text": "Goa Tour Package for 5 Days"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 43671,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 43749,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 43887,
+   "h": 475,
+   "w": 360,
+   "text": "Goa Tour PackagesRoute details on requestHotel StayMealsTransfersSight"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 44132,
+   "h": 103,
+   "w": 358,
+   "text": "Goa Tour PackagesRoute details on requestHotel StayMealsTransfersSight"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 44132,
+   "h": 20,
+   "w": 348,
+   "text": "Goa Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 44157,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 44235,
+   "h": 126,
+   "w": 358,
+   "text": "INR 2,475 offINR 12,375INR 9,900Starting price per personQuick enquiry"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 44372,
+   "h": 503,
+   "w": 360,
+   "text": "Goa Weekend Tour Package4 Days / 3 NightsPune – Goa → Arrival in Goa –"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 44617,
+   "h": 130,
+   "w": 358,
+   "text": "Goa Weekend Tour Package4 Days / 3 NightsPune – Goa → Arrival in Goa –"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 44617,
+   "h": 20,
+   "w": 348,
+   "text": "Goa Weekend Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 44669,
+   "h": 19,
+   "w": 348,
+   "text": "Pune – Goa → Arrival in Goa – Sightseeing of North Goa → South Goa Sig"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 44747,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 44885,
+   "h": 476,
+   "w": 360,
+   "text": "Goa TourismRoute details on requestHotel StayMealsTransfersSightseeing"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 45130,
+   "h": 103,
+   "w": 358,
+   "text": "Goa TourismRoute details on requestHotel StayMealsTransfersSightseeing"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 45130,
+   "h": 20,
+   "w": 348,
+   "text": "Goa Tourism"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 45155,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 45233,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "section",
+   "cls": "bg-white",
+   "y": 45361,
+   "h": 4113,
+   "w": 390,
+   "text": "Helicopter Tour PackagesPremium aerial pilgrimage and scenic experienc"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 45386,
+   "h": 39,
+   "w": 277,
+   "text": "Helicopter Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 45490,
+   "h": 503,
+   "w": 360,
+   "text": "Helicopter Package for Badri Kedar Yatra3 Days / 2 NightsArrival in De"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 45734,
+   "h": 130,
+   "w": 358,
+   "text": "Helicopter Package for Badri Kedar Yatra3 Days / 2 NightsArrival in De"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 45734,
+   "h": 20,
+   "w": 348,
+   "text": "Helicopter Package for Badri Kedar Yatra"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 45786,
+   "h": 19,
+   "w": 348,
+   "text": "Arrival in Dehradun → Dehradun - Kedarnath - Badrinath → Badrinath - D"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 45864,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 46002,
+   "h": 476,
+   "w": 360,
+   "text": "Do Dham Yatra by Helicopter 2026Dehradun – Kedarnath – BadrinathHotel "
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 46247,
+   "h": 103,
+   "w": 358,
+   "text": "Do Dham Yatra by Helicopter 2026Dehradun – Kedarnath – BadrinathHotel "
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 46247,
+   "h": 20,
+   "w": 348,
+   "text": "Do Dham Yatra by Helicopter 2026"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 46272,
+   "h": 19,
+   "w": 348,
+   "text": "Dehradun – Kedarnath – Badrinath"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 46350,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 46488,
+   "h": 476,
+   "w": 360,
+   "text": "Helicopter Packages in IndiaRoute details on requestHotel StayMealsTra"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 46733,
+   "h": 103,
+   "w": 358,
+   "text": "Helicopter Packages in IndiaRoute details on requestHotel StayMealsTra"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 46733,
+   "h": 20,
+   "w": 348,
+   "text": "Helicopter Packages in India"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 46758,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 46836,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 46974,
+   "h": 476,
+   "w": 360,
+   "text": "Mahakumbh 2025: Helicopter Ride at Kumbh MelaRoute details on requestH"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 47219,
+   "h": 103,
+   "w": 358,
+   "text": "Mahakumbh 2025: Helicopter Ride at Kumbh MelaRoute details on requestH"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 47219,
+   "h": 20,
+   "w": 348,
+   "text": "Mahakumbh 2025: Helicopter Ride at Kumbh Mela"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 47244,
+   "h": 19,
+   "w": 348,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 47322,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 47460,
+   "h": 476,
+   "w": 360,
+   "text": "Khatu Shyam Ji & Salasar Balaji Helicopter TourKhatu Shyam Salasar Hel"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 47704,
+   "h": 103,
+   "w": 358,
+   "text": "Khatu Shyam Ji & Salasar Balaji Helicopter TourKhatu Shyam Salasar Hel"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 47704,
+   "h": 20,
+   "w": 348,
+   "text": "Khatu Shyam Ji & Salasar Balaji Helicopter Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 47729,
+   "h": 19,
+   "w": 348,
+   "text": "Khatu Shyam Salasar Helicopter tour Itinerary or tour Plan"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 47807,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 47945,
+   "h": 503,
+   "w": 360,
+   "text": "Manimahesh Yatra by Helicopter3 Days / 2 NightsDelhi - Chamba → Chamba"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 48190,
+   "h": 130,
+   "w": 358,
+   "text": "Manimahesh Yatra by Helicopter3 Days / 2 NightsDelhi - Chamba → Chamba"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 48190,
+   "h": 20,
+   "w": 348,
+   "text": "Manimahesh Yatra by Helicopter"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 48242,
+   "h": 19,
+   "w": 348,
+   "text": "Delhi - Chamba → Chamba - Manimahesh - Chamba → Chamba - Dalhousie Loc"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 48320,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 48458,
+   "h": 503,
+   "w": 360,
+   "text": "Muktinath Yatra By Helicopter4 Days / 3 NightsArrival in Kathmandu → K"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 48703,
+   "h": 130,
+   "w": 358,
+   "text": "Muktinath Yatra By Helicopter4 Days / 3 NightsArrival in Kathmandu → K"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 48703,
+   "h": 20,
+   "w": 348,
+   "text": "Muktinath Yatra By Helicopter"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 48755,
+   "h": 19,
+   "w": 348,
+   "text": "Arrival in Kathmandu → Kathmandu – Muktinath → Kathmandu Sightseeing →"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 48833,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 48971,
+   "h": 503,
+   "w": 360,
+   "text": "Omkareshwar Mahakaleshwar Helicopter Tour3 Days / 2 NightsIndore → Ind"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 49216,
+   "h": 130,
+   "w": 358,
+   "text": "Omkareshwar Mahakaleshwar Helicopter Tour3 Days / 2 NightsIndore → Ind"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 49216,
+   "h": 20,
+   "w": 348,
+   "text": "Omkareshwar Mahakaleshwar Helicopter Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 49268,
+   "h": 19,
+   "w": 348,
+   "text": "Indore → Indore – Omkareshwar – Ujjain → Bhasma Aarti and Return to In"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 49346,
+   "h": 127,
+   "w": 358,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "section",
+   "cls": "bg-white",
+   "y": 49474,
+   "h": 535,
+   "w": 390,
+   "text": "Choose Your Style Of Themes HolidayAre you looking forward to visiting"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 49499,
+   "h": 67,
+   "w": 360,
+   "text": "Choose Your Style Of Themes Holiday"
+  },
+  {
+   "tag": "section",
+   "cls": "bg-white",
+   "y": 50009,
+   "h": 1501,
+   "w": 390,
+   "text": "Experience The Best Of IndiaDiscover unforgettable journeys, thrilling"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 50034,
+   "h": 39,
+   "w": 311,
+   "text": "Experience The Best Of India"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl sm:text-2xl font-bold leading-tight text-white drop-shadow-md transition-transform",
+   "y": 50366,
+   "h": 25,
+   "w": 140,
+   "text": "Heritage Walks"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl sm:text-2xl font-bold leading-tight text-white drop-shadow-md transition-transform",
+   "y": 50341,
+   "h": 50,
+   "w": 140,
+   "text": "Pilgrimage Tours"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl sm:text-2xl font-bold leading-tight text-white drop-shadow-md transition-transform",
+   "y": 50662,
+   "h": 25,
+   "w": 140,
+   "text": "Beach Holidays"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl sm:text-2xl font-bold leading-tight text-white drop-shadow-md transition-transform",
+   "y": 50662,
+   "h": 25,
+   "w": 140,
+   "text": "Temple Tours"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl sm:text-2xl font-bold leading-tight text-white drop-shadow-md transition-transform",
+   "y": 50958,
+   "h": 25,
+   "w": 140,
+   "text": "Festival Tours"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl sm:text-2xl font-bold leading-tight text-white drop-shadow-md transition-transform",
+   "y": 50908,
+   "h": 75,
+   "w": 140,
+   "text": "Custom Holiday Packages"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl sm:text-2xl font-bold leading-tight text-white drop-shadow-md transition-transform",
+   "y": 51229,
+   "h": 50,
+   "w": 140,
+   "text": "Senior Citizen Tours"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl sm:text-2xl font-bold leading-tight text-white drop-shadow-md transition-transform",
+   "y": 51229,
+   "h": 50,
+   "w": 140,
+   "text": "Photography Tours"
+  },
+  {
+   "tag": "section",
+   "cls": "py-10 bg-white",
+   "y": 51510,
+   "h": 136,
+   "w": 390,
+   "text": "View All 1116+ Packages"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-3",
+   "y": 51694,
+   "h": 23,
+   "w": 339,
+   "text": "Regional Associates Offices"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-1",
+   "y": 51846,
+   "h": 23,
+   "w": 339,
+   "text": "Customer Support"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[13px] text-gray-200 mb-1",
+   "y": 51981,
+   "h": 20,
+   "w": 93,
+   "text": "Connect with us"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-1",
+   "y": 52102,
+   "h": 23,
+   "w": 281,
+   "text": "Our Mobile App"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 52269,
+   "h": 23,
+   "w": 157,
+   "text": "India Tours"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 52269,
+   "h": 23,
+   "w": 157,
+   "text": "International Tours"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 52547,
+   "h": 23,
+   "w": 157,
+   "text": "Special Tours"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 52547,
+   "h": 23,
+   "w": 157,
+   "text": "Customer Center"
+  }
+ ]
+}

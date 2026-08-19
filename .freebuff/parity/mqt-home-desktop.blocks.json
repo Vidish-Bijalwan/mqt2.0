@@ -1,0 +1,3271 @@
+{
+ "scrollY": 0,
+ "innerWidth": 1440,
+ "innerHeight": 900,
+ "blocks": [
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 172,
+   "h": 29,
+   "w": 187,
+   "text": "North India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 172,
+   "h": 29,
+   "w": 187,
+   "text": "East India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 172,
+   "h": 29,
+   "w": 187,
+   "text": "West India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 172,
+   "h": 29,
+   "w": 187,
+   "text": "South India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 172,
+   "h": 29,
+   "w": 187,
+   "text": "Central India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 172,
+   "h": 29,
+   "w": 188,
+   "text": "North East India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 172,
+   "h": 29,
+   "w": 233,
+   "text": "South East Asia"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 172,
+   "h": 29,
+   "w": 233,
+   "text": "Middle East"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 172,
+   "h": 29,
+   "w": 233,
+   "text": "East Asia"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 172,
+   "h": 29,
+   "w": 233,
+   "text": "Europe"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 172,
+   "h": 29,
+   "w": 234,
+   "text": "South Asia"
+  },
+  {
+   "tag": "section",
+   "cls": "w-full bg-brand-navy relative",
+   "y": 153,
+   "h": 431,
+   "w": 1440,
+   "text": "Discover the Magic of IndiaExplore authentic experiences with our expe"
+  },
+  {
+   "tag": "h1",
+   "cls": "text-3xl md:text-5xl font-extrabold text-white mb-3 drop-shadow-lg",
+   "y": 193,
+   "h": 48,
+   "w": 1440,
+   "text": "Discover the Magic of India"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "ChoptaClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "DehradunClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "AgraClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "ShimlaClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "MussoorieClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "NainitalClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "DarjeelingClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "ManaliClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "RishikeshClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "GuwahatiClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "NashikClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "AmritsarClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "AlleppeyClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "MaldivesClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "SikkimClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "ManipurClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "DharamshalaClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "KonarkClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "OrchhaClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "RanchiClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "TehriClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "HarshilClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "BarotClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "AssamClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "YelagiriClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "Nubra ValleyClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "DhanushkodiClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "MumbaiClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "AndamanClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "CoimbatoreClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "Jim CorbettClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "BiharClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "BishnupurClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "ChoptaClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "DehradunClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "AgraClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "ShimlaClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "MussoorieClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "NainitalClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "DarjeelingClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "ManaliClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "RishikeshClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "GuwahatiClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "NashikClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "AmritsarClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "AlleppeyClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "MaldivesClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "SikkimClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "ManipurClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "DharamshalaClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "KonarkClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "OrchhaClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "RanchiClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "TehriClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "HarshilClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "BarotClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "AssamClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "YelagiriClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "Nubra ValleyClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "DhanushkodiClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "MumbaiClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "AndamanClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "CoimbatoreClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "Jim CorbettClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "BiharClick to view"
+  },
+  {
+   "tag": "div",
+   "cls": "pm-card__overlay",
+   "y": 319,
+   "h": 231,
+   "w": 336,
+   "text": "BishnupurClick to view"
+  },
+  {
+   "tag": "section",
+   "cls": "py-12 bg-white border-t border-gray-200",
+   "y": 584,
+   "h": 3452,
+   "w": 1440,
+   "text": "Top Trending Tour PackagesMQTAssam Meghalaya Arunachal Pradesh TourAss"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-700",
+   "y": 633,
+   "h": 32,
+   "w": 334,
+   "text": "Top Trending Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 709,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAssam Meghalaya Arunachal Pradesh TourAssam Meghalaya Arunachal Pra"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 852,
+   "h": 45,
+   "w": 243,
+   "text": "Assam Meghalaya Arunachal Pradesh Tour"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 939,
+   "h": 41,
+   "w": 251,
+   "text": "Assam Meghalaya Arunachal Pradesh Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 709,
+   "h": 540,
+   "w": 275,
+   "text": "MQT12 Jyotirlinga Tour Package24 Days / 23 Nights12 Jyotirlinga Tour P"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 858,
+   "h": 23,
+   "w": 243,
+   "text": "12 Jyotirlinga Tour Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 939,
+   "h": 21,
+   "w": 199,
+   "text": "12 Jyotirlinga Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 709,
+   "h": 540,
+   "w": 275,
+   "text": "MQT2 Days Ayodhya Sightseeing Tour2 Days / 1 Nights2 Days Ayodhya Sigh"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 835,
+   "h": 45,
+   "w": 243,
+   "text": "2 Days Ayodhya Sightseeing Tour"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 939,
+   "h": 21,
+   "w": 243,
+   "text": "2 Days Ayodhya Sightseeing Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 709,
+   "h": 540,
+   "w": 275,
+   "text": "MQT2 Days Agra Mathura Vrindavan Tour from Delhi2 Days / 1 Nights2 Day"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 835,
+   "h": 45,
+   "w": 243,
+   "text": "2 Days Agra Mathura Vrindavan Tour from Delhi"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 939,
+   "h": 41,
+   "w": 251,
+   "text": "2 Days Agra Mathura Vrindavan Tour from Delhi"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 709,
+   "h": 540,
+   "w": 275,
+   "text": "MQT2 Days Kainchi Dham Tour Package2 Days / 1 Nights2 Days Kainchi Dha"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 835,
+   "h": 45,
+   "w": 243,
+   "text": "2 Days Kainchi Dham Tour Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 939,
+   "h": 41,
+   "w": 251,
+   "text": "2 Days Kainchi Dham Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 1256,
+   "h": 540,
+   "w": 275,
+   "text": "MQTKhajuraho 2 Day Sightseeing Tour2 Days / 1 NightsKhajuraho 2 Day Si"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 1383,
+   "h": 45,
+   "w": 243,
+   "text": "Khajuraho 2 Day Sightseeing Tour"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 1486,
+   "h": 21,
+   "w": 246,
+   "text": "Khajuraho 2 Day Sightseeing Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 1256,
+   "h": 540,
+   "w": 275,
+   "text": "MQT2 Nights 3 Days Orissa Tour Package3 Days / 2 Nights2 Nights 3 Days"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 1383,
+   "h": 45,
+   "w": 243,
+   "text": "2 Nights 3 Days Orissa Tour Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 1486,
+   "h": 41,
+   "w": 251,
+   "text": "2 Nights 3 Days Orissa Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 1256,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAssam Tour Packages for 3 Days3 Days / 2 NightsAssam Tour Packages "
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 1383,
+   "h": 45,
+   "w": 243,
+   "text": "Assam Tour Packages for 3 Days"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 1486,
+   "h": 21,
+   "w": 238,
+   "text": "Assam Tour Packages for 3 Days"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 1256,
+   "h": 540,
+   "w": 275,
+   "text": "MQT3 Day Baidyanath Dham Tour Package3 Days / 2 Nights3 Day Baidyanath"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 1383,
+   "h": 45,
+   "w": 243,
+   "text": "3 Day Baidyanath Dham Tour Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 1486,
+   "h": 41,
+   "w": 251,
+   "text": "3 Day Baidyanath Dham Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 1256,
+   "h": 540,
+   "w": 275,
+   "text": "MQT3 Days Agra Mathura Vrindavan Tour from Delhi3 Days / 2 Nights3 Day"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 1383,
+   "h": 45,
+   "w": 243,
+   "text": "3 Days Agra Mathura Vrindavan Tour from Delhi"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 1486,
+   "h": 41,
+   "w": 251,
+   "text": "3 Days Agra Mathura Vrindavan Tour from Delhi"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 1804,
+   "h": 540,
+   "w": 275,
+   "text": "MQTGuwahati Temple Tour with MeghalayaGuwahati Temple Tour with Meghal"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 1947,
+   "h": 45,
+   "w": 243,
+   "text": "Guwahati Temple Tour with Meghalaya"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 2034,
+   "h": 41,
+   "w": 251,
+   "text": "Guwahati Temple Tour with Meghalaya"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 1804,
+   "h": 540,
+   "w": 275,
+   "text": "MQTKumbh Mela Tour 2 Nights/3 Days3 Days / 2 NightsKumbh Mela Tour 2 N"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 1931,
+   "h": 45,
+   "w": 243,
+   "text": "Kumbh Mela Tour 2 Nights/3 Days"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 2034,
+   "h": 21,
+   "w": 247,
+   "text": "Kumbh Mela Tour 2 Nights/3 Days"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 1804,
+   "h": 540,
+   "w": 275,
+   "text": "MQT3 Days Madurai Rameshwaram Tour3 Days / 2 Nights3 Days Madurai Rame"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 1931,
+   "h": 45,
+   "w": 243,
+   "text": "3 Days Madurai Rameshwaram Tour"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 2034,
+   "h": 41,
+   "w": 251,
+   "text": "3 Days Madurai Rameshwaram Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 1804,
+   "h": 540,
+   "w": 275,
+   "text": "MQT3 Days Shortest Nepal Tour Package3 Days / 2 Nights3 Days Shortest "
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 1931,
+   "h": 45,
+   "w": 243,
+   "text": "3 Days Shortest Nepal Tour Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 2034,
+   "h": 41,
+   "w": 251,
+   "text": "3 Days Shortest Nepal Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 1804,
+   "h": 540,
+   "w": 275,
+   "text": "MQT3 Days Srisailam Mallikarjuna Jyotirlinga Darshan2 Days / 1 Nights3"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 1931,
+   "h": 45,
+   "w": 243,
+   "text": "3 Days Srisailam Mallikarjuna Jyotirlinga Darshan"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 2034,
+   "h": 41,
+   "w": 251,
+   "text": "3 Days Srisailam Mallikarjuna Jyotirlinga Darshan"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 2352,
+   "h": 540,
+   "w": 275,
+   "text": "MQTTripura Sundari Pilgrimage Tour3 Days / 2 NightsTripura Sundari Pil"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 2478,
+   "h": 45,
+   "w": 243,
+   "text": "Tripura Sundari Pilgrimage Tour"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 2582,
+   "h": 21,
+   "w": 230,
+   "text": "Tripura Sundari Pilgrimage Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 2352,
+   "h": 540,
+   "w": 275,
+   "text": "MQT3 Days Indore Ujjain Omkareshwar Tour3 Days / 2 Nights3 Days Indore"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 2478,
+   "h": 45,
+   "w": 243,
+   "text": "3 Days Indore Ujjain Omkareshwar Tour"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 2582,
+   "h": 41,
+   "w": 251,
+   "text": "3 Days Indore Ujjain Omkareshwar Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 2352,
+   "h": 540,
+   "w": 275,
+   "text": "MQT3 Nights 4 Days Lakshadweep Tour Package4 Days / 3 Nights3 Nights 4"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 2478,
+   "h": 45,
+   "w": 243,
+   "text": "3 Nights 4 Days Lakshadweep Tour Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 2582,
+   "h": 41,
+   "w": 251,
+   "text": "3 Nights 4 Days Lakshadweep Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 2352,
+   "h": 540,
+   "w": 275,
+   "text": "MQT4 Days Mahavatar Baba Ji Cave Tour4 Days / 3 Nights4 Days Mahavatar"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 2478,
+   "h": 45,
+   "w": 243,
+   "text": "4 Days Mahavatar Baba Ji Cave Tour"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 2582,
+   "h": 41,
+   "w": 251,
+   "text": "4 Days Mahavatar Baba Ji Cave Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 2352,
+   "h": 540,
+   "w": 275,
+   "text": "MQT3 Nights 4 Days Odisha Tour Itinerary4 Days / 3 Nights3 Nights 4 Da"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 2478,
+   "h": 45,
+   "w": 243,
+   "text": "3 Nights 4 Days Odisha Tour Itinerary"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 2582,
+   "h": 41,
+   "w": 251,
+   "text": "3 Nights 4 Days Odisha Tour Itinerary"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 2900,
+   "h": 540,
+   "w": 275,
+   "text": "MQT5 Days Kumbh Mela Tour Packages5 Days / 4 Nights5 Days Kumbh Mela T"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 3026,
+   "h": 45,
+   "w": 243,
+   "text": "5 Days Kumbh Mela Tour Packages"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 3130,
+   "h": 41,
+   "w": 251,
+   "text": "5 Days Kumbh Mela Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 2900,
+   "h": 540,
+   "w": 275,
+   "text": "MQT5 Days Nepal Tour Package5 Days / 4 Nights5 Days Nepal Tour Package"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 3049,
+   "h": 23,
+   "w": 243,
+   "text": "5 Days Nepal Tour Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 3130,
+   "h": 21,
+   "w": 198,
+   "text": "5 Days Nepal Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 2900,
+   "h": 540,
+   "w": 275,
+   "text": "MQTNepal Tour Package for 7 Days7 Days / 6 NightsNepal Tour Package fo"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 3026,
+   "h": 45,
+   "w": 243,
+   "text": "Nepal Tour Package for 7 Days"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 3130,
+   "h": 21,
+   "w": 222,
+   "text": "Nepal Tour Package for 7 Days"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 2900,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAdi Kailash Helicopter Tour Package with Om Parvat4 Days / 3 Nights"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 3026,
+   "h": 45,
+   "w": 243,
+   "text": "Adi Kailash Helicopter Tour Package with Om Parvat"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 3130,
+   "h": 41,
+   "w": 251,
+   "text": "Adi Kailash Helicopter Tour Package with Om Parvat"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 2900,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAdi Kailash Om Parvat Mt Kailash Yatra by Helicopter4 Days / 3 Nigh"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 3026,
+   "h": 45,
+   "w": 243,
+   "text": "Adi Kailash Om Parvat Mt Kailash Yatra by Helicopter"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 3130,
+   "h": 41,
+   "w": 251,
+   "text": "Adi Kailash Om Parvat Mt Kailash Yatra by Helicopter"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 3447,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAdi Kailash Yatra Tour Packages 2026Adi Kailash Yatra Tour Packages"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 3590,
+   "h": 45,
+   "w": 243,
+   "text": "Adi Kailash Yatra Tour Packages 2026"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 3677,
+   "h": 41,
+   "w": 251,
+   "text": "Adi Kailash Yatra Tour Packages 2026"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 3447,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAdi Kailash And Om Parvat Yatra Package8 Days / 7 NightsAdi Kailash"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 3574,
+   "h": 45,
+   "w": 243,
+   "text": "Adi Kailash And Om Parvat Yatra Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 3677,
+   "h": 41,
+   "w": 251,
+   "text": "Adi Kailash And Om Parvat Yatra Package"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 3447,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAdventure Activities in UttarakhandAdventure Activities in Uttarakh"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 3590,
+   "h": 45,
+   "w": 243,
+   "text": "Adventure Activities in Uttarakhand"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 3677,
+   "h": 41,
+   "w": 251,
+   "text": "Adventure Activities in Uttarakhand"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 3447,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAdventure Tour PackagesAdventure Tour PackagesRoute details on requ"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 3613,
+   "h": 23,
+   "w": 243,
+   "text": "Adventure Tour Packages"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 3677,
+   "h": 21,
+   "w": 187,
+   "text": "Adventure Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 3447,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAfrica Tour PackagesAfrica Tour PackagesRoute details on requestHot"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 3613,
+   "h": 23,
+   "w": 243,
+   "text": "Africa Tour Packages"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 3677,
+   "h": 21,
+   "w": 155,
+   "text": "Africa Tour Packages"
+  },
+  {
+   "tag": "section",
+   "cls": "py-12 bg-gray-50 border-t border-gray-200",
+   "y": 4035,
+   "h": 629,
+   "w": 1440,
+   "text": "Top Holiday Destinations In IndiaUttarakhandLand of the GodsUttar Prad"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-700",
+   "y": 4084,
+   "h": 32,
+   "w": 1408,
+   "text": "Top Holiday Destinations In India"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-white leading-tight",
+   "y": 4332,
+   "h": 20,
+   "w": 178,
+   "text": "Uttarakhand"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-white leading-tight",
+   "y": 4332,
+   "h": 20,
+   "w": 178,
+   "text": "Uttar Pradesh"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-white leading-tight",
+   "y": 4332,
+   "h": 20,
+   "w": 178,
+   "text": "Rajasthan"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-white leading-tight",
+   "y": 4316,
+   "h": 20,
+   "w": 178,
+   "text": "Gujarat"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-white leading-tight",
+   "y": 4332,
+   "h": 20,
+   "w": 178,
+   "text": "Kashmir"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-white leading-tight",
+   "y": 4332,
+   "h": 20,
+   "w": 178,
+   "text": "Kerala"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-white leading-tight",
+   "y": 4332,
+   "h": 20,
+   "w": 178,
+   "text": "Tamil Nadu"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-white leading-tight",
+   "y": 4560,
+   "h": 20,
+   "w": 178,
+   "text": "Karnataka"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-white leading-tight",
+   "y": 4560,
+   "h": 20,
+   "w": 178,
+   "text": "Odisha"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-white leading-tight",
+   "y": 4560,
+   "h": 20,
+   "w": 178,
+   "text": "Madhya Pradesh"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-white leading-tight",
+   "y": 4560,
+   "h": 20,
+   "w": 178,
+   "text": "Sikkim"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-white leading-tight",
+   "y": 4560,
+   "h": 20,
+   "w": 178,
+   "text": "Himachal Pradesh"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-white leading-tight",
+   "y": 4560,
+   "h": 20,
+   "w": 178,
+   "text": "Maharashtra"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-white leading-tight",
+   "y": 4560,
+   "h": 20,
+   "w": 178,
+   "text": "Andaman"
+  },
+  {
+   "tag": "section",
+   "cls": "py-12 bg-white border-t border-gray-200",
+   "y": 4664,
+   "h": 1289,
+   "w": 1440,
+   "text": "Pilgrimage Tour PackagesSacred journeys to India's most revered spirit"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-700",
+   "y": 4713,
+   "h": 32,
+   "w": 403,
+   "text": "Pilgrimage Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 4817,
+   "h": 540,
+   "w": 275,
+   "text": "MQTHow to Reach Amarnath with Route MapHow to Reach Amarnath with Rout"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 4960,
+   "h": 45,
+   "w": 243,
+   "text": "How to Reach Amarnath with Route Map"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 5047,
+   "h": 41,
+   "w": 251,
+   "text": "How to Reach Amarnath with Route Map"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 4817,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAmarnath Yatra by Helicopter from Pahalgam3 Days / 2 NightsAmarnath"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 4944,
+   "h": 45,
+   "w": 243,
+   "text": "Amarnath Yatra by Helicopter from Pahalgam"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 5047,
+   "h": 41,
+   "w": 251,
+   "text": "Amarnath Yatra by Helicopter from Pahalgam"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 4817,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAmarnath Weather – Best Time to Visit AmarnathAmarnath Weather – Be"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 4960,
+   "h": 45,
+   "w": 243,
+   "text": "Amarnath Weather – Best Time to Visit Amarnath"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 5047,
+   "h": 41,
+   "w": 251,
+   "text": "Amarnath Weather – Best Time to Visit Amarnath"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 4817,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAmarnath Yatra Package by Helicopter3 Days / 2 NightsAmarnath Yatra"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 4944,
+   "h": 45,
+   "w": 243,
+   "text": "Amarnath Yatra Package by Helicopter"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 5047,
+   "h": 41,
+   "w": 251,
+   "text": "Amarnath Yatra Package by Helicopter"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 4817,
+   "h": 540,
+   "w": 275,
+   "text": "MQTHow to Register for Amarnath Yatra 2026How to Register for Amarnath"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 4960,
+   "h": 45,
+   "w": 243,
+   "text": "How to Register for Amarnath Yatra 2026"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 5047,
+   "h": 41,
+   "w": 251,
+   "text": "How to Register for Amarnath Yatra 2026"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 5365,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAmarnath Yatra with Vaishno Devi Yatra11 Days / 10 NightsAmarnath Y"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 5491,
+   "h": 45,
+   "w": 243,
+   "text": "Amarnath Yatra with Vaishno Devi Yatra"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 5595,
+   "h": 41,
+   "w": 251,
+   "text": "Amarnath Yatra with Vaishno Devi Yatra"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 5365,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAmarnath Travel GuideAmarnath Travel GuideRoute details on requestH"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 5530,
+   "h": 23,
+   "w": 243,
+   "text": "Amarnath Travel Guide"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 5595,
+   "h": 21,
+   "w": 166,
+   "text": "Amarnath Travel Guide"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 5365,
+   "h": 540,
+   "w": 275,
+   "text": "MQTBadrinath FAQs – Travel Related Queries and SolutionsBadrinath FAQs"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 5508,
+   "h": 45,
+   "w": 243,
+   "text": "Badrinath FAQs – Travel Related Queries and Solutions"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 5595,
+   "h": 41,
+   "w": 251,
+   "text": "Badrinath FAQs – Travel Related Queries and Solutions"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 5365,
+   "h": 540,
+   "w": 275,
+   "text": "MQTHistory of Badrinath – Lord Vishnu’s Abode on EarthHistory of Badri"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 5508,
+   "h": 45,
+   "w": 243,
+   "text": "History of Badrinath – Lord Vishnu’s Abode on Earth"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 5595,
+   "h": 41,
+   "w": 251,
+   "text": "History of Badrinath – Lord Vishnu’s Abode on Earth"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 5365,
+   "h": 540,
+   "w": 275,
+   "text": "MQTBadrinath Kedarnath Do Dham Yatra from Delhi8 Days / 7 NightsBadrin"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 5491,
+   "h": 45,
+   "w": 243,
+   "text": "Badrinath Kedarnath Do Dham Yatra from Delhi"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 5595,
+   "h": 41,
+   "w": 251,
+   "text": "Badrinath Kedarnath Do Dham Yatra from Delhi"
+  },
+  {
+   "tag": "section",
+   "cls": "py-12 bg-gray-50 border-t border-gray-200",
+   "y": 5953,
+   "h": 1289,
+   "w": 1440,
+   "text": "North India Tour PackagesFrom the Himalayas to the Ganges plains — dis"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-700",
+   "y": 6002,
+   "h": 32,
+   "w": 425,
+   "text": "North India Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 6106,
+   "h": 540,
+   "w": 275,
+   "text": "MQT2 Days Agra Mathura Vrindavan Tour from Delhi2 Days / 1 Nights2 Day"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 6232,
+   "h": 45,
+   "w": 243,
+   "text": "2 Days Agra Mathura Vrindavan Tour from Delhi"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 6336,
+   "h": 41,
+   "w": 251,
+   "text": "2 Days Agra Mathura Vrindavan Tour from Delhi"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 6106,
+   "h": 540,
+   "w": 275,
+   "text": "MQT3 Days Agra Mathura Vrindavan Tour from Delhi3 Days / 2 Nights3 Day"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 6232,
+   "h": 45,
+   "w": 243,
+   "text": "3 Days Agra Mathura Vrindavan Tour from Delhi"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 6336,
+   "h": 41,
+   "w": 251,
+   "text": "3 Days Agra Mathura Vrindavan Tour from Delhi"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 6106,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAdventure Activities in UttarakhandAdventure Activities in Uttarakh"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 6249,
+   "h": 45,
+   "w": 243,
+   "text": "Adventure Activities in Uttarakhand"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 6336,
+   "h": 41,
+   "w": 251,
+   "text": "Adventure Activities in Uttarakhand"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 6106,
+   "h": 540,
+   "w": 275,
+   "text": "MQTSame Day Agra Tour from DelhiSame Day Agra Tour from DelhiFull Day "
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 6249,
+   "h": 45,
+   "w": 243,
+   "text": "Same Day Agra Tour from Delhi"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 6336,
+   "h": 21,
+   "w": 226,
+   "text": "Same Day Agra Tour from Delhi"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 6106,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAgra Sightseeing Tour PackageAgra Sightseeing Tour PackageFull Day "
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 6249,
+   "h": 45,
+   "w": 243,
+   "text": "Agra Sightseeing Tour Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 6336,
+   "h": 21,
+   "w": 227,
+   "text": "Agra Sightseeing Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 6653,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAgra Tour PackagesAgra Tour PackagesRoute details on requestHotel S"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 6819,
+   "h": 23,
+   "w": 243,
+   "text": "Agra Tour Packages"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 6883,
+   "h": 21,
+   "w": 146,
+   "text": "Agra Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 6653,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAgra TourismAgra TourismRoute details on requestHotel StayMealsTran"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 6819,
+   "h": 23,
+   "w": 243,
+   "text": "Agra Tourism"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 6883,
+   "h": 21,
+   "w": 97,
+   "text": "Agra Tourism"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 6653,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAkbar's Tomb, AgraAkbar's Tomb, AgraRoute details on requestHotel S"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 6819,
+   "h": 23,
+   "w": 243,
+   "text": "Akbar's Tomb, Agra"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 6883,
+   "h": 21,
+   "w": 144,
+   "text": "Akbar's Tomb, Agra"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 6653,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAmarnath Yatra by Helicopter with Kashmir Tour9 Days / 8 NightsAmar"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 6780,
+   "h": 45,
+   "w": 243,
+   "text": "Amarnath Yatra by Helicopter with Kashmir Tour"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 6883,
+   "h": 41,
+   "w": 251,
+   "text": "Amarnath Yatra by Helicopter with Kashmir Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 6653,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAyodhya Ram Mandir Tour from Delhi3 Days / 2 NightsAyodhya Ram Mand"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 6780,
+   "h": 45,
+   "w": 243,
+   "text": "Ayodhya Ram Mandir Tour from Delhi"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 6883,
+   "h": 41,
+   "w": 251,
+   "text": "Ayodhya Ram Mandir Tour from Delhi"
+  },
+  {
+   "tag": "section",
+   "cls": "py-16 lg:py-20 bg-gradient-to-b from-white via-gray-50 to-gray-50 border-t border-gray-200",
+   "y": 7241,
+   "h": 892,
+   "w": 1440,
+   "text": "Worldwide EscapesBook International Tour Packages From IndiaHandpicked"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-3xl lg:text-4xl font-extrabold tracking-tight text-gray-900",
+   "y": 7346,
+   "h": 80,
+   "w": 672,
+   "text": "Book International Tour Packages From India"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 7530,
+   "h": 523,
+   "w": 346,
+   "text": "MQTBali Sightseeing Tour Package3 Days / 2 NightsBali Sightseeing Tour"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 7679,
+   "h": 23,
+   "w": 314,
+   "text": "Bali Sightseeing Tour Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 7760,
+   "h": 21,
+   "w": 219,
+   "text": "Bali Sightseeing Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 7530,
+   "h": 523,
+   "w": 346,
+   "text": "MQTDubai Honeymoon Tour Package6 Days / 5 NightsDubai Honeymoon Tour P"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 7679,
+   "h": 23,
+   "w": 314,
+   "text": "Dubai Honeymoon Tour Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 7760,
+   "h": 21,
+   "w": 237,
+   "text": "Dubai Honeymoon Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 7530,
+   "h": 523,
+   "w": 346,
+   "text": "MQTNepal Tour Package for 7 Days7 Days / 6 NightsNepal Tour Package fo"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 7679,
+   "h": 23,
+   "w": 314,
+   "text": "Nepal Tour Package for 7 Days"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 7760,
+   "h": 21,
+   "w": 222,
+   "text": "Nepal Tour Package for 7 Days"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 7530,
+   "h": 523,
+   "w": 346,
+   "text": "MQTSri Lanka Group Tour Packages8 Days / 7 NightsSri Lanka Group Tour "
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 7679,
+   "h": 23,
+   "w": 314,
+   "text": "Sri Lanka Group Tour Packages"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 7760,
+   "h": 21,
+   "w": 226,
+   "text": "Sri Lanka Group Tour Packages"
+  },
+  {
+   "tag": "section",
+   "cls": "py-12 bg-white border-t border-gray-200",
+   "y": 8133,
+   "h": 1289,
+   "w": 1440,
+   "text": "International Tour PackagesExplore the world with curated internationa"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-700",
+   "y": 8182,
+   "h": 32,
+   "w": 386,
+   "text": "International Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 8286,
+   "h": 540,
+   "w": 275,
+   "text": "MQT3 Days Shortest Nepal Tour Package3 Days / 2 Nights3 Days Shortest "
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 8413,
+   "h": 45,
+   "w": 243,
+   "text": "3 Days Shortest Nepal Tour Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 8516,
+   "h": 41,
+   "w": 251,
+   "text": "3 Days Shortest Nepal Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 8286,
+   "h": 540,
+   "w": 275,
+   "text": "MQT5 Days Nepal Tour Package5 Days / 4 Nights5 Days Nepal Tour Package"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 8435,
+   "h": 23,
+   "w": 243,
+   "text": "5 Days Nepal Tour Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 8516,
+   "h": 21,
+   "w": 198,
+   "text": "5 Days Nepal Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 8286,
+   "h": 540,
+   "w": 275,
+   "text": "MQTNepal Tour Package for 7 Days7 Days / 6 NightsNepal Tour Package fo"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 8413,
+   "h": 45,
+   "w": 243,
+   "text": "Nepal Tour Package for 7 Days"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 8516,
+   "h": 21,
+   "w": 222,
+   "text": "Nepal Tour Package for 7 Days"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 8286,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAdi Kailash Helicopter Tour Package with Om Parvat4 Days / 3 Nights"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 8413,
+   "h": 45,
+   "w": 243,
+   "text": "Adi Kailash Helicopter Tour Package with Om Parvat"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 8516,
+   "h": 41,
+   "w": 251,
+   "text": "Adi Kailash Helicopter Tour Package with Om Parvat"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 8286,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAdi Kailash Om Parvat Mt Kailash Yatra by Helicopter4 Days / 3 Nigh"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 8413,
+   "h": 45,
+   "w": 243,
+   "text": "Adi Kailash Om Parvat Mt Kailash Yatra by Helicopter"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 8516,
+   "h": 41,
+   "w": 251,
+   "text": "Adi Kailash Om Parvat Mt Kailash Yatra by Helicopter"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 8834,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAdi Kailash Yatra Tour Packages 2026Adi Kailash Yatra Tour Packages"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 8977,
+   "h": 45,
+   "w": 243,
+   "text": "Adi Kailash Yatra Tour Packages 2026"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 9064,
+   "h": 41,
+   "w": 251,
+   "text": "Adi Kailash Yatra Tour Packages 2026"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 8834,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAdi Kailash And Om Parvat Yatra Package8 Days / 7 NightsAdi Kailash"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 8960,
+   "h": 45,
+   "w": 243,
+   "text": "Adi Kailash And Om Parvat Yatra Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 9064,
+   "h": 41,
+   "w": 251,
+   "text": "Adi Kailash And Om Parvat Yatra Package"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 8834,
+   "h": 540,
+   "w": 275,
+   "text": "MQTBali Combo Tour Package5 Days / 4 NightsBali Combo Tour Package5 Da"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 8983,
+   "h": 23,
+   "w": 243,
+   "text": "Bali Combo Tour Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 9064,
+   "h": 21,
+   "w": 185,
+   "text": "Bali Combo Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 8834,
+   "h": 540,
+   "w": 275,
+   "text": "MQTBali Family Tour Package5 Days / 4 NightsBali Family Tour Package5 "
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 8983,
+   "h": 23,
+   "w": 243,
+   "text": "Bali Family Tour Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 9064,
+   "h": 21,
+   "w": 180,
+   "text": "Bali Family Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 8834,
+   "h": 540,
+   "w": 275,
+   "text": "MQTBali Honeymoon Tour Package4 Days / 3 NightsBali Honeymoon Tour Pac"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 8960,
+   "h": 45,
+   "w": 243,
+   "text": "Bali Honeymoon Tour Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 9064,
+   "h": 21,
+   "w": 221,
+   "text": "Bali Honeymoon Tour Package"
+  },
+  {
+   "tag": "section",
+   "cls": "py-12 bg-gray-50 border-t border-gray-200",
+   "y": 9422,
+   "h": 1289,
+   "w": 1440,
+   "text": "South India Tour PackagesTemples, backwaters, beaches and beyond — exp"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-700",
+   "y": 9471,
+   "h": 32,
+   "w": 436,
+   "text": "South India Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 9575,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAndaman – A Short Eventful Visit to Remember4 Days / 3 NightsAndama"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 9701,
+   "h": 45,
+   "w": 243,
+   "text": "Andaman – A Short Eventful Visit to Remember"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 9805,
+   "h": 41,
+   "w": 251,
+   "text": "Andaman – A Short Eventful Visit to Remember"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 9575,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAndaman Beach Tour Package4 Days / 3 NightsAndaman Beach Tour Packa"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 9701,
+   "h": 45,
+   "w": 243,
+   "text": "Andaman Beach Tour Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 9805,
+   "h": 21,
+   "w": 221,
+   "text": "Andaman Beach Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 9575,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAndaman Cheap Tour Packages7 Days / 6 NightsAndaman Cheap Tour Pack"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 9701,
+   "h": 45,
+   "w": 243,
+   "text": "Andaman Cheap Tour Packages"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 9805,
+   "h": 21,
+   "w": 231,
+   "text": "Andaman Cheap Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 9575,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAndaman Nicobar Tour PackagesAndaman Nicobar Tour PackagesRoute det"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 9718,
+   "h": 45,
+   "w": 243,
+   "text": "Andaman Nicobar Tour Packages"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 9805,
+   "h": 21,
+   "w": 242,
+   "text": "Andaman Nicobar Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 9575,
+   "h": 540,
+   "w": 275,
+   "text": "MQTAndaman TourismAndaman TourismRoute details on requestHotel StayMea"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 9740,
+   "h": 23,
+   "w": 243,
+   "text": "Andaman Tourism"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 9805,
+   "h": 21,
+   "w": 132,
+   "text": "Andaman Tourism"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 10122,
+   "h": 540,
+   "w": 275,
+   "text": "MQTBangalore Sightseeing Tour Package3 Days / 2 NightsBangalore Sights"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 10249,
+   "h": 45,
+   "w": 243,
+   "text": "Bangalore Sightseeing Tour Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 10352,
+   "h": 41,
+   "w": 251,
+   "text": "Bangalore Sightseeing Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 10122,
+   "h": 540,
+   "w": 275,
+   "text": "MQTBangalore Tour PackagesBangalore Tour PackagesRoute details on requ"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 10288,
+   "h": 23,
+   "w": 243,
+   "text": "Bangalore Tour Packages"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 10352,
+   "h": 21,
+   "w": 184,
+   "text": "Bangalore Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 10122,
+   "h": 540,
+   "w": 275,
+   "text": "MQTBest of Kerala Tour PackageBest of Kerala Tour PackageCochin Arriva"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 10265,
+   "h": 45,
+   "w": 243,
+   "text": "Best of Kerala Tour Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 10352,
+   "h": 21,
+   "w": 203,
+   "text": "Best of Kerala Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 10122,
+   "h": 540,
+   "w": 275,
+   "text": "MQTChardham Yatra Package from Bangalore14 Days / 13 NightsChardham Ya"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 10249,
+   "h": 45,
+   "w": 243,
+   "text": "Chardham Yatra Package from Bangalore"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 10352,
+   "h": 41,
+   "w": 251,
+   "text": "Chardham Yatra Package from Bangalore"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 10122,
+   "h": 540,
+   "w": 275,
+   "text": "MQTEnchanting Kerala Tour PackageEnchanting Kerala Tour PackageArrive "
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 10265,
+   "h": 45,
+   "w": 243,
+   "text": "Enchanting Kerala Tour Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 10352,
+   "h": 21,
+   "w": 234,
+   "text": "Enchanting Kerala Tour Package"
+  },
+  {
+   "tag": "section",
+   "cls": "py-12 bg-white border-t border-gray-200",
+   "y": 10710,
+   "h": 1289,
+   "w": 1440,
+   "text": "West India Tour PackagesFrom Rajasthan forts to Gujarat's cultural her"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-700",
+   "y": 10759,
+   "h": 32,
+   "w": 328,
+   "text": "West India Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 10863,
+   "h": 540,
+   "w": 275,
+   "text": "MQTBest of Gujarat Tour Package7 Days / 6 NightsBest of Gujarat Tour P"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 10990,
+   "h": 45,
+   "w": 243,
+   "text": "Best of Gujarat Tour Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 11093,
+   "h": 21,
+   "w": 210,
+   "text": "Best of Gujarat Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 10863,
+   "h": 540,
+   "w": 275,
+   "text": "MQTCordelia Cruise Mumbai to Goa3 Days / 2 NightsCordelia Cruise Mumba"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 10990,
+   "h": 45,
+   "w": 243,
+   "text": "Cordelia Cruise Mumbai to Goa"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 11093,
+   "h": 21,
+   "w": 225,
+   "text": "Cordelia Cruise Mumbai to Goa"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 10863,
+   "h": 540,
+   "w": 275,
+   "text": "MQTGujarat Desert Beach Tour Package5 Days / 4 NightsGujarat Desert Be"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 10990,
+   "h": 45,
+   "w": 243,
+   "text": "Gujarat Desert Beach Tour Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 11093,
+   "h": 41,
+   "w": 251,
+   "text": "Gujarat Desert Beach Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 10863,
+   "h": 540,
+   "w": 275,
+   "text": "MQTMajestic Rajasthan Tour Package6 Days / 5 NightsMajestic Rajasthan "
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 10990,
+   "h": 45,
+   "w": 243,
+   "text": "Majestic Rajasthan Tour Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 11093,
+   "h": 21,
+   "w": 240,
+   "text": "Majestic Rajasthan Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 10863,
+   "h": 540,
+   "w": 275,
+   "text": "MQTExplore Gujarat Tour Package14 Days / 13 NightsExplore Gujarat Tour"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 10990,
+   "h": 45,
+   "w": 243,
+   "text": "Explore Gujarat Tour Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 11093,
+   "h": 21,
+   "w": 214,
+   "text": "Explore Gujarat Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 11411,
+   "h": 540,
+   "w": 275,
+   "text": "MQTRajasthan Forts Palaces Tour Package18 Days / 17 NightsRajasthan Fo"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 11537,
+   "h": 45,
+   "w": 243,
+   "text": "Rajasthan Forts Palaces Tour Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 11641,
+   "h": 41,
+   "w": 251,
+   "text": "Rajasthan Forts Palaces Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 11411,
+   "h": 540,
+   "w": 275,
+   "text": "MQTGoa Tour Package for 5 Days5 Days / 4 NightsGoa Tour Package for 5 "
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 11537,
+   "h": 45,
+   "w": 243,
+   "text": "Goa Tour Package for 5 Days"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 11641,
+   "h": 21,
+   "w": 209,
+   "text": "Goa Tour Package for 5 Days"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 11411,
+   "h": 540,
+   "w": 275,
+   "text": "MQTGoa Tour PackagesGoa Tour PackagesRoute details on requestHotel Sta"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 11576,
+   "h": 23,
+   "w": 243,
+   "text": "Goa Tour Packages"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 11641,
+   "h": 21,
+   "w": 140,
+   "text": "Goa Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 11411,
+   "h": 540,
+   "w": 275,
+   "text": "MQTGoa Weekend Tour Package4 Days / 3 NightsGoa Weekend Tour Package4 "
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 11537,
+   "h": 45,
+   "w": 243,
+   "text": "Goa Weekend Tour Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 11641,
+   "h": 21,
+   "w": 204,
+   "text": "Goa Weekend Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 11411,
+   "h": 540,
+   "w": 275,
+   "text": "MQTGoa TourismGoa TourismRoute details on requestHotel StayMealsTransf"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 11576,
+   "h": 23,
+   "w": 243,
+   "text": "Goa Tourism"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 11641,
+   "h": 21,
+   "w": 92,
+   "text": "Goa Tourism"
+  },
+  {
+   "tag": "section",
+   "cls": "py-12 bg-gray-50 border-t border-gray-200",
+   "y": 11999,
+   "h": 1289,
+   "w": 1440,
+   "text": "Helicopter Tour PackagesPremium aerial pilgrimage and scenic experienc"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-700",
+   "y": 12048,
+   "h": 32,
+   "w": 333,
+   "text": "Helicopter Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 12152,
+   "h": 540,
+   "w": 275,
+   "text": "MQTHelicopter Package for Badri Kedar Yatra3 Days / 2 NightsHelicopter"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 12278,
+   "h": 45,
+   "w": 243,
+   "text": "Helicopter Package for Badri Kedar Yatra"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 12382,
+   "h": 41,
+   "w": 251,
+   "text": "Helicopter Package for Badri Kedar Yatra"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 12152,
+   "h": 540,
+   "w": 275,
+   "text": "MQTDo Dham Yatra by Helicopter 2026Do Dham Yatra by Helicopter 2026Deh"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 12295,
+   "h": 45,
+   "w": 243,
+   "text": "Do Dham Yatra by Helicopter 2026"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 12382,
+   "h": 21,
+   "w": 250,
+   "text": "Do Dham Yatra by Helicopter 2026"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 12152,
+   "h": 540,
+   "w": 275,
+   "text": "MQTHelicopter Packages in IndiaHelicopter Packages in IndiaRoute detai"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 12295,
+   "h": 45,
+   "w": 243,
+   "text": "Helicopter Packages in India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 12382,
+   "h": 21,
+   "w": 205,
+   "text": "Helicopter Packages in India"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 12152,
+   "h": 540,
+   "w": 275,
+   "text": "MQTMahakumbh 2025: Helicopter Ride at Kumbh MelaMahakumbh 2025: Helico"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 12295,
+   "h": 45,
+   "w": 243,
+   "text": "Mahakumbh 2025: Helicopter Ride at Kumbh Mela"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 12382,
+   "h": 41,
+   "w": 251,
+   "text": "Mahakumbh 2025: Helicopter Ride at Kumbh Mela"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 12152,
+   "h": 540,
+   "w": 275,
+   "text": "MQTKhatu Shyam Ji & Salasar Balaji Helicopter TourKhatu Shyam Ji & Sal"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 12295,
+   "h": 45,
+   "w": 243,
+   "text": "Khatu Shyam Ji & Salasar Balaji Helicopter Tour"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 12382,
+   "h": 41,
+   "w": 251,
+   "text": "Khatu Shyam Ji & Salasar Balaji Helicopter Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 12699,
+   "h": 540,
+   "w": 275,
+   "text": "MQTManimahesh Yatra by Helicopter3 Days / 2 NightsManimahesh Yatra by "
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 12826,
+   "h": 45,
+   "w": 243,
+   "text": "Manimahesh Yatra by Helicopter"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 12929,
+   "h": 21,
+   "w": 235,
+   "text": "Manimahesh Yatra by Helicopter"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 12699,
+   "h": 540,
+   "w": 275,
+   "text": "MQTMuktinath Yatra By Helicopter4 Days / 3 NightsMuktinath Yatra By He"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 12826,
+   "h": 45,
+   "w": 243,
+   "text": "Muktinath Yatra By Helicopter"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 12929,
+   "h": 21,
+   "w": 216,
+   "text": "Muktinath Yatra By Helicopter"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-[4px] shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(0,0,0",
+   "y": 12699,
+   "h": 540,
+   "w": 275,
+   "text": "MQTOmkareshwar Mahakaleshwar Helicopter Tour3 Days / 2 NightsOmkareshw"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white text-lg font-bold leading-tight drop-shadow-md mb-2 line-clamp-2 max-h-[3rem] o",
+   "y": 12826,
+   "h": 45,
+   "w": 243,
+   "text": "Omkareshwar Mahakaleshwar Helicopter Tour"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] font-semibold text-[#1a0dab] hover:underline cursor-pointer line-clamp-2 leadi",
+   "y": 12929,
+   "h": 41,
+   "w": 251,
+   "text": "Omkareshwar Mahakaleshwar Helicopter Tour"
+  },
+  {
+   "tag": "section",
+   "cls": "py-12 bg-white border-t border-gray-200",
+   "y": 13287,
+   "h": 298,
+   "w": 1440,
+   "text": "Choose Your Style Of Themes HolidayAre you looking forward to visiting"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-700",
+   "y": 13336,
+   "h": 32,
+   "w": 1408,
+   "text": "Choose Your Style Of Themes Holiday"
+  },
+  {
+   "tag": "section",
+   "cls": "py-16 lg:py-20 bg-gradient-to-b from-white via-gray-50 to-gray-50 border-t border-gray-200",
+   "y": 13585,
+   "h": 1153,
+   "w": 1440,
+   "text": "ExperiencesExperience The Best Of IndiaDiscover unforgettable journeys"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-3xl lg:text-4xl font-extrabold tracking-tight text-gray-900",
+   "y": 13690,
+   "h": 40,
+   "w": 672,
+   "text": "Experience The Best Of India"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl sm:text-2xl font-bold leading-tight text-white drop-shadow-md transition-transform",
+   "y": 14052,
+   "h": 30,
+   "w": 297,
+   "text": "Heritage Walks"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl sm:text-2xl font-bold leading-tight text-white drop-shadow-md transition-transform",
+   "y": 14052,
+   "h": 30,
+   "w": 297,
+   "text": "Pilgrimage Tours"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl sm:text-2xl font-bold leading-tight text-white drop-shadow-md transition-transform",
+   "y": 14052,
+   "h": 30,
+   "w": 297,
+   "text": "Beach Holidays"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl sm:text-2xl font-bold leading-tight text-white drop-shadow-md transition-transform",
+   "y": 14052,
+   "h": 30,
+   "w": 297,
+   "text": "Temple Tours"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl sm:text-2xl font-bold leading-tight text-white drop-shadow-md transition-transform",
+   "y": 14392,
+   "h": 30,
+   "w": 297,
+   "text": "Festival Tours"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl sm:text-2xl font-bold leading-tight text-white drop-shadow-md transition-transform",
+   "y": 14362,
+   "h": 60,
+   "w": 297,
+   "text": "Custom Holiday Packages"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl sm:text-2xl font-bold leading-tight text-white drop-shadow-md transition-transform",
+   "y": 14392,
+   "h": 30,
+   "w": 297,
+   "text": "Senior Citizen Tours"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl sm:text-2xl font-bold leading-tight text-white drop-shadow-md transition-transform",
+   "y": 14392,
+   "h": 30,
+   "w": 297,
+   "text": "Photography Tours"
+  },
+  {
+   "tag": "section",
+   "cls": "py-10 bg-white border-t border-gray-200",
+   "y": 14738,
+   "h": 137,
+   "w": 1440,
+   "text": "View All 1116+ Packages"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-3",
+   "y": 14923,
+   "h": 23,
+   "w": 424,
+   "text": "Regional Associates Offices"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-1",
+   "y": 14923,
+   "h": 23,
+   "w": 284,
+   "text": "Customer Support"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[13px] text-gray-200 mb-1",
+   "y": 15058,
+   "h": 20,
+   "w": 100,
+   "text": "Connect with us"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-1",
+   "y": 14923,
+   "h": 23,
+   "w": 300,
+   "text": "Our Mobile App"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 15220,
+   "h": 23,
+   "w": 248,
+   "text": "India Tours"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 15220,
+   "h": 23,
+   "w": 248,
+   "text": "International Tours"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 15220,
+   "h": 23,
+   "w": 248,
+   "text": "Special Tours"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 15220,
+   "h": 23,
+   "w": 248,
+   "text": "Customer Center"
+  }
+ ]
+}

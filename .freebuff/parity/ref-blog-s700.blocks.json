@@ -1,0 +1,271 @@
+{
+ "scrollY": 700,
+ "innerWidth": 1440,
+ "innerHeight": 900,
+ "blocks": [
+  {
+   "tag": "section",
+   "cls": "blog-lists blog-home",
+   "y": 0,
+   "h": 3898,
+   "w": 1440,
+   "text": "Destinations Patal Bhuvaneshwar Cave Temple Adi Kailash Places to Visi"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 374,
+   "h": 34,
+   "w": 598,
+   "text": "Patal Bhuvaneshwar Cave Temple"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 341,
+   "h": 67,
+   "w": 598,
+   "text": "Places to Visit During Adi Kailash Yatra: Complete Guide"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 374,
+   "h": 34,
+   "w": 598,
+   "text": "Gaurikund: The Divine Lake of Maa Parvati"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 374,
+   "h": 34,
+   "w": 598,
+   "text": "Adi Kailash Yatra Packing List"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 374,
+   "h": 34,
+   "w": 598,
+   "text": "Adi Kailash Yatra Cost 2026"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 341,
+   "h": 67,
+   "w": 598,
+   "text": "Nabhidhang: Experience the Divine View of Om Parvat"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 341,
+   "h": 67,
+   "w": 598,
+   "text": "Nabi Village: A Himalayan Paradise in Uttarakhand"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 341,
+   "h": 67,
+   "w": 598,
+   "text": "Adi Kailash Yatra FAQs — Every Question Pilgrims Actually Ask, Answere"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 374,
+   "h": 34,
+   "w": 598,
+   "text": "Adi Kailash Weather Guide"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 374,
+   "h": 34,
+   "w": 598,
+   "text": "Adi Kailash Yatra Travel Tips 2026"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 374,
+   "h": 34,
+   "w": 598,
+   "text": "Patal Bhuvaneshwar Cave Temple"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 341,
+   "h": 67,
+   "w": 598,
+   "text": "Places to Visit During Adi Kailash Yatra: Complete Guide"
+  },
+  {
+   "tag": "h1",
+   "cls": "pagTit",
+   "y": 460,
+   "h": 37,
+   "w": 750,
+   "text": "Namaste India Trip Blog"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 513,
+   "h": 50,
+   "w": 469,
+   "text": "Places to Visit During Adi Kailash Yatra: Complete Guide"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 848,
+   "h": 25,
+   "w": 469,
+   "text": "Gaurikund: The Divine Lake of Maa Parvati"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 1183,
+   "h": 25,
+   "w": 469,
+   "text": "Adi Kailash Yatra Packing List"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 1493,
+   "h": 25,
+   "w": 469,
+   "text": "Adi Kailash Yatra Cost 2026"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 1802,
+   "h": 50,
+   "w": 469,
+   "text": "Nabhidhang: Experience the Divine View of Om Parvat"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 2163,
+   "h": 50,
+   "w": 469,
+   "text": "Nabi Village: A Himalayan Paradise in Uttarakhand"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 2498,
+   "h": 50,
+   "w": 469,
+   "text": "Adi Kailash Yatra FAQs — Every Question Pilgrims Actually Ask, Answere"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 2833,
+   "h": 25,
+   "w": 469,
+   "text": "Adi Kailash Weather Guide"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 3168,
+   "h": 25,
+   "w": 469,
+   "text": "Adi Kailash Yatra Travel Tips 2026"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 3477,
+   "h": 25,
+   "w": 469,
+   "text": "Patal Bhuvaneshwar Cave Temple"
+  },
+  {
+   "tag": "h2",
+   "cls": "screen-reader-text",
+   "y": 3756,
+   "h": 1,
+   "w": 1,
+   "text": "Posts pagination"
+  },
+  {
+   "tag": "section",
+   "cls": "widget widget_search",
+   "y": 30,
+   "h": 44,
+   "w": 360,
+   "text": ""
+  },
+  {
+   "tag": "section",
+   "cls": "widget widget_text",
+   "y": 104,
+   "h": 506,
+   "w": 360,
+   "text": "Plan Your TripOur expert will get in touch with you shortly Name* Emai"
+  },
+  {
+   "tag": "h5",
+   "cls": "",
+   "y": 115,
+   "h": 40,
+   "w": 348,
+   "text": "Plan Your TripOur expert will get in touch with you shortly"
+  },
+  {
+   "tag": "section",
+   "cls": "widget widget_media_image",
+   "y": 640,
+   "h": 177,
+   "w": 360,
+   "text": ""
+  },
+  {
+   "tag": "section",
+   "cls": "widget widget_recent_entries",
+   "y": 847,
+   "h": 285,
+   "w": 360,
+   "text": "Recent Posts Places to Visit During Adi Kailash Yatra: Complete Guide "
+  },
+  {
+   "tag": "h2",
+   "cls": "widget-title",
+   "y": 863,
+   "h": 28,
+   "w": 338,
+   "text": "Recent Posts"
+  },
+  {
+   "tag": "section",
+   "cls": "widget widget_categories",
+   "y": 1162,
+   "h": 2484,
+   "w": 360,
+   "text": "Categories Adi Kailash Agra Amarnath Buddhism Destinations Australia B"
+  },
+  {
+   "tag": "h2",
+   "cls": "widget-title",
+   "y": 1178,
+   "h": 28,
+   "w": 338,
+   "text": "Categories"
+  }
+ ]
+}

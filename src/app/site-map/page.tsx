@@ -121,7 +121,7 @@ export default function SiteMapPage() {
                       href={link.href}
                       className="flex items-center px-4 py-2 text-[13px] border-b border-gray-100 last:border-0 text-gray-600 hover:text-brand-orange hover:bg-orange-50 transition-colors"
                     >
-                      <span className="text-brand-orange mr-2 text-[8px]">★</span>
+                      <span className="text-brand-orange mr-2 text-[10px]">★</span>
                       {link.name}
                     </Link>
                   </li>
@@ -140,7 +140,7 @@ export default function SiteMapPage() {
                     href={`/destinations/${slug}`}
                     className="flex items-center px-4 py-2 text-[13px] border-b border-gray-100 last:border-0 text-gray-600 hover:text-brand-orange hover:bg-orange-50 transition-colors capitalize"
                   >
-                    <span className="text-brand-orange mr-2 text-[8px]">★</span>
+                    <span className="text-brand-orange mr-2 text-[10px]">★</span>
                     {slug.replace(/-/g, " ")}
                   </Link>
                 </li>
@@ -163,7 +163,7 @@ export default function SiteMapPage() {
                     href={`/experiences/${exp.slug}`}
                     className="flex items-center px-4 py-2 text-[13px] border-b border-gray-100 last:border-0 text-gray-600 hover:text-brand-orange hover:bg-orange-50 transition-colors"
                   >
-                    <span className="text-brand-orange mr-2 text-[8px]">★</span>
+                    <span className="text-brand-orange mr-2 text-[10px]">★</span>
                     {exp.name}
                   </Link>
                 </li>
@@ -182,7 +182,7 @@ export default function SiteMapPage() {
                     className="flex items-center justify-between px-4 py-2 text-[13px] border-b border-gray-100 last:border-0 text-gray-600 hover:text-brand-orange hover:bg-orange-50 transition-colors"
                   >
                     <span className="flex items-center">
-                      <span className="text-brand-orange mr-2 text-[8px]">★</span>
+                      <span className="text-brand-orange mr-2 text-[10px]">★</span>
                       {cat}
                     </span>
                     <span className="text-gray-400 text-xs">({count})</span>
@@ -208,7 +208,7 @@ export default function SiteMapPage() {
                 href={`/packages/${pkg.slug}`}
                 className="flex items-center py-2 text-[13px] text-gray-600 hover:text-brand-orange transition-colors"
               >
-                <span className="text-brand-orange mr-2 text-[8px]">★</span>
+                <span className="text-brand-orange mr-2 text-[10px]">★</span>
                 <span className="line-clamp-1">{pkg.title}</span>
               </Link>
             ))}
@@ -227,7 +227,7 @@ export default function SiteMapPage() {
                       href={link.href}
                       className="flex items-center px-4 py-2 text-[13px] border-b border-gray-100 last:border-0 text-gray-600 hover:text-brand-orange hover:bg-orange-50 transition-colors"
                     >
-                      <span className="text-brand-orange mr-2 text-[8px]">★</span>
+                      <span className="text-brand-orange mr-2 text-[10px]">★</span>
                       {link.name}
                     </Link>
                   </li>

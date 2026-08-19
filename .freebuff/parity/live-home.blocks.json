@@ -1,0 +1,407 @@
+{
+ "scrollY": 0,
+ "innerWidth": 1440,
+ "innerHeight": 900,
+ "blocks": [
+  {
+   "tag": "h3",
+   "cls": "font-bold text-base mb-1",
+   "y": 767,
+   "h": 24,
+   "w": 582,
+   "text": "We use cookies 🍪"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-white text-2xl font-display font-bold leading-tight drop-shadow-md",
+   "y": 282,
+   "h": 30,
+   "w": 430,
+   "text": "India's Most Restricted Frontiers"
+  },
+  {
+   "tag": "section",
+   "cls": "relative overflow-hidden bg-gray-900 hero-mobile flex flex-col",
+   "y": 83,
+   "h": 900,
+   "w": 1440,
+   "text": "Your India Trip, Planned by Locals Who've Been ThereCustom itineraries"
+  },
+  {
+   "tag": "h1",
+   "cls": "font-display font-bold text-white leading-[1.12] mb-3 sm:mb-5 text-[1.65rem] sm:text-4xl m",
+   "y": 343,
+   "h": 156,
+   "w": 768,
+   "text": "Your India Trip, Planned by Locals Who've Been There"
+  },
+  {
+   "tag": "section",
+   "cls": "bg-transparent relative z-20 -mt-8 sm:-mt-12 pb-8",
+   "y": 935,
+   "h": 142,
+   "w": 1440,
+   "text": "500+Happy Travellers28States Covered2019Trusted Since"
+  },
+  {
+   "tag": "section",
+   "cls": "relative w-full overflow-hidden section",
+   "y": 1077,
+   "h": 1930,
+   "w": 1440,
+   "text": "Plan by MoodFind Your JourneyHow do you want to travel?Curated journey"
+  },
+  {
+   "tag": "h2",
+   "cls": "section-heading",
+   "y": 1208,
+   "h": 40,
+   "w": 514,
+   "text": "How do you want to travel?"
+  },
+  {
+   "tag": "h3",
+   "cls": "font-display text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-2 sm:mb-3 leading-ti",
+   "y": 1593,
+   "h": 48,
+   "w": 1056,
+   "text": "Mountain Adventure"
+  },
+  {
+   "tag": "h3",
+   "cls": "font-display text-xl sm:text-2xl font-bold text-white leading-tight mb-1.5 drop-shadow-sm",
+   "y": 2134,
+   "h": 32,
+   "w": 315,
+   "text": "Beach & Leisure"
+  },
+  {
+   "tag": "h3",
+   "cls": "font-display text-xl sm:text-2xl font-bold text-white leading-tight mb-1.5 drop-shadow-sm",
+   "y": 2134,
+   "h": 32,
+   "w": 315,
+   "text": "Honeymoon & Romantic"
+  },
+  {
+   "tag": "h3",
+   "cls": "font-display text-xl sm:text-2xl font-bold text-white leading-tight mb-1.5 drop-shadow-sm",
+   "y": 2134,
+   "h": 32,
+   "w": 315,
+   "text": "Family Holidays"
+  },
+  {
+   "tag": "h3",
+   "cls": "font-display text-xl sm:text-2xl font-bold text-white leading-tight mb-1.5 drop-shadow-sm",
+   "y": 2853,
+   "h": 32,
+   "w": 508,
+   "text": "Spiritual Journey"
+  },
+  {
+   "tag": "h3",
+   "cls": "font-display text-xl sm:text-2xl font-bold text-white leading-tight mb-1.5 drop-shadow-sm",
+   "y": 2853,
+   "h": 32,
+   "w": 508,
+   "text": "Wildlife & Nature"
+  },
+  {
+   "tag": "section",
+   "cls": "relative w-full overflow-hidden bg-[#FCFAFA] section-y",
+   "y": 3007,
+   "h": 1358,
+   "w": 1440,
+   "text": "Handpicked for youTop DestinationsBest for: Honeymoon & LandscapesKash"
+  },
+  {
+   "tag": "h2",
+   "cls": "section-heading text-4xl md:text-5xl",
+   "y": 3138,
+   "h": 48,
+   "w": 359,
+   "text": "Top Destinations"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white font-display font-bold text-2xl sm:text-3xl md:text-4xl leading-tight drop-shad",
+   "y": 3639,
+   "h": 40,
+   "w": 137,
+   "text": "Kashmir"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white font-display font-bold text-2xl sm:text-3xl md:text-4xl leading-tight drop-shad",
+   "y": 3639,
+   "h": 40,
+   "w": 103,
+   "text": "Kerala"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white font-display font-bold text-2xl sm:text-3xl md:text-4xl leading-tight drop-shad",
+   "y": 3639,
+   "h": 40,
+   "w": 118,
+   "text": "Ladakh"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white font-display font-bold text-2xl sm:text-3xl md:text-4xl leading-tight drop-shad",
+   "y": 4168,
+   "h": 40,
+   "w": 157,
+   "text": "Rajasthan"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white font-display font-bold text-2xl sm:text-3xl md:text-4xl leading-tight drop-shad",
+   "y": 4168,
+   "h": 40,
+   "w": 153,
+   "text": "Andaman"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white font-display font-bold text-2xl sm:text-3xl md:text-4xl leading-tight drop-shad",
+   "y": 4168,
+   "h": 40,
+   "w": 198,
+   "text": "Uttarakhand"
+  },
+  {
+   "tag": "section",
+   "cls": "relative w-full overflow-hidden bg-[#FDFCF8] section-y",
+   "y": 4365,
+   "h": 1174,
+   "w": 1440,
+   "text": "Handpicked for youMost Booked PackagesExpertly crafted itineraries lov"
+  },
+  {
+   "tag": "h2",
+   "cls": "section-heading text-4xl md:text-5xl",
+   "y": 4493,
+   "h": 48,
+   "w": 477,
+   "text": "Most Booked Packages"
+  },
+  {
+   "tag": "h3",
+   "cls": "font-display font-bold text-xl sm:text-2xl text-slate-900 mb-3 leading-tight line-clamp-2 ",
+   "y": 4950,
+   "h": 32,
+   "w": 240,
+   "text": "Char Dham Yatra"
+  },
+  {
+   "tag": "h3",
+   "cls": "font-display font-bold text-xl sm:text-2xl text-slate-900 mb-3 leading-tight line-clamp-2 ",
+   "y": 4950,
+   "h": 64,
+   "w": 240,
+   "text": "Kashmir Honeymoon Special"
+  },
+  {
+   "tag": "h3",
+   "cls": "font-display font-bold text-xl sm:text-2xl text-slate-900 mb-3 leading-tight line-clamp-2 ",
+   "y": 4950,
+   "h": 64,
+   "w": 240,
+   "text": "Ladakh Motorbike Expedition"
+  },
+  {
+   "tag": "h3",
+   "cls": "font-display font-bold text-xl sm:text-2xl text-slate-900 mb-3 leading-tight line-clamp-2 ",
+   "y": 4950,
+   "h": 64,
+   "w": 240,
+   "text": "Royal Rajasthan Family Escape"
+  },
+  {
+   "tag": "h4",
+   "cls": "font-display font-bold text-slate-900 text-lg md:text-xl",
+   "y": 5365,
+   "h": 28,
+   "w": 413,
+   "text": "Can't find what you need?"
+  },
+  {
+   "tag": "section",
+   "cls": "relative w-full overflow-hidden section pb-24",
+   "y": 5540,
+   "h": 907,
+   "w": 1440,
+   "text": "The MQT DifferenceWhy Travellers Trust UsThree things we do differentl"
+  },
+  {
+   "tag": "h2",
+   "cls": "section-heading text-4xl md:text-5xl",
+   "y": 5670,
+   "h": 48,
+   "w": 503,
+   "text": "Why Travellers Trust Us"
+  },
+  {
+   "tag": "h3",
+   "cls": "font-display text-xl md:text-2xl font-bold text-slate-900 mb-3 leading-tight",
+   "y": 6027,
+   "h": 64,
+   "w": 265,
+   "text": "Local Experts Across India"
+  },
+  {
+   "tag": "h3",
+   "cls": "font-display text-xl md:text-2xl font-bold text-slate-900 mb-3 leading-tight",
+   "y": 6027,
+   "h": 32,
+   "w": 265,
+   "text": "100% Customised"
+  },
+  {
+   "tag": "h3",
+   "cls": "font-display text-xl md:text-2xl font-bold text-slate-900 mb-3 leading-tight",
+   "y": 6027,
+   "h": 32,
+   "w": 265,
+   "text": "Rated 4.9/5 by Travellers"
+  },
+  {
+   "tag": "section",
+   "cls": "section-y relative overflow-hidden w-full",
+   "y": 6446,
+   "h": 793,
+   "w": 1440,
+   "text": "What Our Travellers Say4.9·500+ Verified Travellers·Google & TripAdvis"
+  },
+  {
+   "tag": "h2",
+   "cls": "section-heading text-4xl md:text-5xl",
+   "y": 6542,
+   "h": 48,
+   "w": 512,
+   "text": "What Our Travellers Say"
+  },
+  {
+   "tag": "div",
+   "cls": "lg:col-span-3 card-pad flex flex-col justify-center",
+   "y": 6702,
+   "h": 306,
+   "w": 488,
+   "text": "TripAdvisor\"Our honeymoon in Kashmir was absolutely magical. The house"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-2xl card-pad shadow-[0_4px_24px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_32p",
+   "y": 6702,
+   "h": 209,
+   "w": 395,
+   "text": "Kedarnath\"The Kedarnath trip was beyond our expectations.\"RRahul Sharm"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white rounded-2xl card-pad shadow-[0_4px_24px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_32p",
+   "y": 6935,
+   "h": 209,
+   "w": 395,
+   "text": "Manali\"We were a family of 6 (including my 68-year-old mother-in-law a"
+  },
+  {
+   "tag": "section",
+   "cls": "relative w-full overflow-hidden bg-[#FBF7EF] section-y",
+   "y": 7239,
+   "h": 904,
+   "w": 1440,
+   "text": "IncredibleIndiaCustomTripsLatest Guides from the RoadTravel Inspiratio"
+  },
+  {
+   "tag": "h2",
+   "cls": "section-heading text-4xl md:text-5xl font-serif",
+   "y": 7371,
+   "h": 48,
+   "w": 698,
+   "text": "Travel Inspiration & Journals"
+  },
+  {
+   "tag": "h3",
+   "cls": "font-display font-bold text-lg md:text-xl text-slate-900 leading-tight line-clamp-2 group-",
+   "y": 7726,
+   "h": 56,
+   "w": 238,
+   "text": "Why Uttarakhand is the Ultimate Hot Destination This Summer 2026"
+  },
+  {
+   "tag": "h3",
+   "cls": "font-display font-bold text-lg md:text-xl text-slate-900 leading-tight line-clamp-2 group-",
+   "y": 7726,
+   "h": 56,
+   "w": 238,
+   "text": "Revealed: 5 Hidden Gems from Uttarakhand's New Tourism Master Plan"
+  },
+  {
+   "tag": "h3",
+   "cls": "font-display font-bold text-lg md:text-xl text-slate-900 leading-tight line-clamp-2 group-",
+   "y": 7726,
+   "h": 56,
+   "w": 238,
+   "text": "Best Time to Visit Kedarnath in 2025 — Complete Guide"
+  },
+  {
+   "tag": "h3",
+   "cls": "font-display font-bold text-lg md:text-xl text-slate-900 leading-tight line-clamp-2 group-",
+   "y": 7726,
+   "h": 56,
+   "w": 238,
+   "text": "Ladakh Travel Guide for First-Time Visitors — Everything You Need to K"
+  },
+  {
+   "tag": "section",
+   "cls": "relative section-emphasis text-center overflow-hidden reveal-section w-full",
+   "y": 8143,
+   "h": 471,
+   "w": 1440,
+   "text": "YOU'RE ONE MESSAGE AWAYYour Dream India TripStarts with a WhatsAppNo f"
+  },
+  {
+   "tag": "h2",
+   "cls": "font-display font-bold text-white leading-[1.1] mb-4 text-[clamp(1.75rem,5vw,2.75rem)]",
+   "y": 8274,
+   "h": 97,
+   "w": 624,
+   "text": "Your Dream India TripStarts with a WhatsApp"
+  },
+  {
+   "tag": "h4",
+   "cls": "font-body font-semibold text-xs text-dark-foreground mb-3 tracking-wide uppercase",
+   "y": 8655,
+   "h": 16,
+   "w": 227,
+   "text": "Destinations"
+  },
+  {
+   "tag": "h4",
+   "cls": "font-body font-semibold text-xs text-dark-foreground mb-3 tracking-wide uppercase",
+   "y": 8655,
+   "h": 16,
+   "w": 227,
+   "text": "Tour Types"
+  },
+  {
+   "tag": "h4",
+   "cls": "font-body font-semibold text-xs text-dark-foreground mb-3 tracking-wide uppercase",
+   "y": 8655,
+   "h": 16,
+   "w": 227,
+   "text": "Services"
+  },
+  {
+   "tag": "h4",
+   "cls": "font-body font-semibold text-xs text-dark-foreground mb-3 tracking-wide uppercase",
+   "y": 8655,
+   "h": 16,
+   "w": 227,
+   "text": "Company"
+  }
+ ]
+}

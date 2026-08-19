@@ -1,0 +1,62 @@
+⚠️  dwarka-somnath-gir-diu-tour: download failed (HTTP 429 after 4 retries)
+⚠️  dwarka-somnath-tour-from-ahmedabad: download failed (HTTP 429 after 4 retries)
+✅ galle: 1920x1440 -> hi-galle.webp (CC BY-SA 3.0 cc-by-sa-3.0 / Bernard Gagnon)
+✅ gangtok-darjeeling-lachung-lachen: 1920x1280 -> hi-gangtok-darjeeling-lachung-lachen.webp (CC BY-SA 3.0 cc-by-sa-3.0 / Kailas98)
+✅ gangtok-tour-packages: 1920x1280 -> hi-gangtok-tour-packages.webp (CC BY-SA 3.0 cc-by-sa-3.0 / Kailas98)
+⚠️  gaya-tour-packages: download failed (HTTP 429 after 4 retries)
+⚠️  gaya: download failed (HTTP 429 after 4 retries)
+✅ gujarat-cultural-tour: 1240x814 -> hi-gujarat-cultural-tour.webp (CC BY-SA 4.0 cc-by-sa-4.0 / Hritiksharma)
+✅ gujarat-dekho: 1240x814 -> hi-gujarat-dekho.webp (CC BY-SA 4.0 cc-by-sa-4.0 / Hritiksharma)
+✅ gujarat-diu-tour: 1240x814 -> hi-gujarat-diu-tour.webp (CC BY-SA 4.0 cc-by-sa-4.0 / Hritiksharma)
+✅ gujarat-fairs-festivals: 1240x814 -> hi-gujarat-fairs-festivals.webp (CC BY-SA 4.0 cc-by-sa-4.0 / Hritiksharma)
+⚠️  gujarat-historic-architecture-tour: download failed (HTTP 429 after 4 retries)
+⚠️  gujarat-irctc-tour: download failed (HTTP 429 after 4 retries)
+⚠️  gujarat-tour-packages: download failed (HTTP 429 after 4 retries)
+⚠️  gujarat-wildlife-tour: download failed (HTTP 429 after 4 retries)
+⚠️  gujarat: download failed (HTTP 429 after 4 retries)
+⚠️  gujarati-cuisine: download failed (HTTP 429 after 4 retries)
+⚠️  gujrat-somnath-tour: download failed (HTTP 429 after 4 retries)
+✅ gulmarg-tour-packages: 1920x1440 -> hi-gulmarg-tour-packages.webp (CC BY-SA 3.0 cc-by-sa-3.0 / Vinayaraj)
+✅ haridwar-rishikesh-mussoorie-dhanaulti-tour: 1920x1440 -> hi-haridwar-rishikesh-mussoorie-dhanaulti-tour.webp (CC BY-SA 3.0 cc-by-sa-3.0 / Mandya patil)
+✅ haridwar-rishikesh-sightseeing-tour: 1920x1440 -> hi-haridwar-rishikesh-sightseeing-tour.webp (CC BY-SA 3.0 cc-by-sa-3.0 / Mandya patil)
+✅ himachal-lovers-paradise: 1920x1080 -> hi-himachal-lovers-paradise.webp (CC BY 3.0 cc-by-3.0 / Yann Forget)
+✅ himachal-pradesh-honeymoon-packages: 1920x1080 -> hi-himachal-pradesh-honeymoon-packages.webp (CC BY 3.0 cc-by-3.0 / Yann Forget)
+⚠️  interesting-facts-about-somnath: download failed (HTTP 429 after 4 retries)
+⚠️  jharkhand-tour-packages: download failed (HTTP 429 after 4 retries)
+✅ kegalle: 1920x1440 -> hi-kegalle.webp (CC BY-SA 3.0 cc-by-sa-3.0 / Bernard Gagnon)
+⚠️  rajgir: download failed (HTTP 429 after 4 retries)
+⚠️  rameshwaram-local-sightseeing-tour: download failed (HTTP 429 after 4 retries)
+⚠️  rameshwaram-madurai-tour: download failed (HTTP 429 after 4 retries)
+⚠️  ranchi-tour-packages: download failed (HTTP 429 after 4 retries)
+⚠️  somnath-tour-packages: download failed (HTTP 429 after 4 retries)
+⚠️  somnath: download failed (HTTP 429 after 4 retries)
+⚠️  tirupati-rameshwaram-kanyakumari-madurai-tour: download failed (HTTP 429 after 4 retries)
+⚠️  vaishali: download failed (HTTP 429 after 4 retries)
+⚠️  varanasi-prayagraj-bodhgaya-ayodhya-tour: download failed (HTTP 429 after 4 retries)
+
+── high-res pass result ──
+replaced: 282
+misses (23):
+  dwarka-somnath-gir-diu-tour (query: Somnath temple) — HTTP 429 after 4 retries
+  dwarka-somnath-tour-from-ahmedabad (query: Somnath temple) — HTTP 429 after 4 retries
+  gaya-tour-packages (query: Mahabodhi Temple Bodhgaya) — HTTP 429 after 4 retries
+  gaya (query: Mahabodhi Temple Bodhgaya) — HTTP 429 after 4 retries
+  gujarat-historic-architecture-tour (query: Somnath temple) — HTTP 429 after 4 retries
+  gujarat-irctc-tour (query: Somnath temple) — HTTP 429 after 4 retries
+  gujarat-tour-packages (query: Somnath temple) — HTTP 429 after 4 retries
+  gujarat-wildlife-tour (query: Somnath temple) — HTTP 429 after 4 retries
+  gujarat (query: Somnath temple) — HTTP 429 after 4 retries
+  gujarati-cuisine (query: Somnath temple) — HTTP 429 after 4 retries
+  gujrat-somnath-tour (query: Somnath temple) — HTTP 429 after 4 retries
+  interesting-facts-about-somnath (query: Somnath temple) — HTTP 429 after 4 retries
+  jharkhand-tour-packages (query: Jharkhand waterfalls) — HTTP 429 after 4 retries
+  rajasthan-cultural-tour (query: Amber Fort Jaipur) — search failed: HTTP 429 after 4 retries
+  rajgir (query: Mahabodhi Temple Bodhgaya) — HTTP 429 after 4 retries
+  rameshwaram-local-sightseeing-tour (query: Meenakshi temple Madurai) — HTTP 429 after 4 retries
+  rameshwaram-madurai-tour (query: Meenakshi temple Madurai) — HTTP 429 after 4 retries
+  ranchi-tour-packages (query: Jharkhand waterfalls) — HTTP 429 after 4 retries
+  somnath-tour-packages (query: Somnath temple) — HTTP 429 after 4 retries
+  somnath (query: Somnath temple) — HTTP 429 after 4 retries
+  tirupati-rameshwaram-kanyakumari-madurai-tour (query: Meenakshi temple Madurai) — HTTP 429 after 4 retries
+  vaishali (query: Mahabodhi Temple Bodhgaya) — HTTP 429 after 4 retries
+  varanasi-prayagraj-bodhgaya-ayodhya-tour (query: Mahabodhi Temple Bodhgaya) — HTTP 429 after 4 retries

@@ -2,6 +2,7 @@
 
 import { siteConfig } from "@/data/siteConfig";
 import { MessageCircle } from "lucide-react";
+import { useEffect } from "react";
 
 interface StickyMobileCTAProps {
   price: string; // already formatted display price (e.g. "95,000")
@@ -9,8 +10,13 @@ interface StickyMobileCTAProps {
 }
 
 export default function StickyMobileCTA({ price, showPrice }: StickyMobileCTAProps) {
+  useEffect(() => {
+    document.body.classList.add("has-sticky-mobile-cta");
+    return () => document.body.classList.remove("has-sticky-mobile-cta");
+  }, []);
+
   return (
-    <div className="lg:hidden fixed bottom-0 inset-x-0 z-[1200] bg-white border-t border-gray-200 shadow-[0_-4px_20px_rgba(0,0,0,0.12)] px-4 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
+    <div className="sticky-mobile-cta lg:hidden fixed bottom-0 inset-x-0 z-[1200] bg-white border-t border-gray-200 shadow-[0_-4px_20px_rgba(0,0,0,0.12)] px-3 sm:px-4 py-2.5 pb-[calc(0.625rem+env(safe-area-inset-bottom))]">
       <div className="flex items-center gap-3">
         <div className="min-w-0 flex-1">
           <p className="text-[10px] text-gray-500 font-semibold uppercase tracking-wide">Starting from</p>
@@ -41,7 +47,7 @@ export default function StickyMobileCTA({ price, showPrice }: StickyMobileCTAPro
         <a
           href="#enquiry-form"
           data-track="cta_send_query"
-          className="shrink-0 flex-1 max-w-[160px] bg-legacy-orange hover:bg-orange-600 text-white font-bold text-sm py-3 rounded-md text-center transition-colors"
+          className="shrink-0 flex-1 max-w-[140px] bg-legacy-orange hover:bg-orange-600 text-white font-bold text-sm py-3 rounded-md text-center transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-legacy-orange focus-visible:ring-offset-2"
         >
           Send Query
         </a>

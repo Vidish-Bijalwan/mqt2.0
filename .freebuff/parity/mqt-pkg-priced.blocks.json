@@ -1,0 +1,1087 @@
+{
+ "scrollY": 400,
+ "innerWidth": 1440,
+ "innerHeight": 900,
+ "blocks": [
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 187,
+   "text": "North India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 187,
+   "text": "East India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 187,
+   "text": "West India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 187,
+   "text": "South India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 187,
+   "text": "Central India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 188,
+   "text": "North East India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 233,
+   "text": "South East Asia"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 233,
+   "text": "Middle East"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 233,
+   "text": "East Asia"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 233,
+   "text": "Europe"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 234,
+   "text": "South Asia"
+  },
+  {
+   "tag": "h1",
+   "cls": "text-2xl md:text-3xl font-bold text-gray-800",
+   "y": 208,
+   "h": 36,
+   "w": 1336,
+   "text": "12 Jyotirlinga Tour Package"
+  },
+  {
+   "tag": "h4",
+   "cls": "font-bold text-gray-800 text-sm",
+   "y": 866,
+   "h": 20,
+   "w": 97,
+   "text": "Govt. Approved"
+  },
+  {
+   "tag": "h4",
+   "cls": "font-bold text-gray-800 text-sm",
+   "y": 866,
+   "h": 20,
+   "w": 80,
+   "text": "ISO Certified"
+  },
+  {
+   "tag": "h4",
+   "cls": "font-bold text-gray-800 text-sm",
+   "y": 866,
+   "h": 20,
+   "w": 96,
+   "text": "5000+ Pilgrims"
+  },
+  {
+   "tag": "h4",
+   "cls": "font-bold text-gray-800 text-sm",
+   "y": 866,
+   "h": 20,
+   "w": 63,
+   "text": "15+ Years"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-xl md:text-2xl font-bold text-gray-800",
+   "y": 992,
+   "h": 32,
+   "w": 229,
+   "text": "Tour Overview"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-900 mt-8 mb-4 pb-2 border-b border-gray-100",
+   "y": 1309,
+   "h": 41,
+   "w": 814,
+   "text": "Tour Overview"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-900 mt-8 mb-4 pb-2 border-b border-gray-100",
+   "y": 1633,
+   "h": 41,
+   "w": 814,
+   "text": "Why Visit the 12 Jyotirlingas?"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-900 mt-8 mb-4 pb-2 border-b border-gray-100",
+   "y": 2050,
+   "h": 41,
+   "w": 814,
+   "text": "Significance of 12 Jyotirlingas"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-900 mt-8 mb-4 pb-2 border-b border-gray-100",
+   "y": 2876,
+   "h": 41,
+   "w": 814,
+   "text": "12 Jyotirlinga Tour Package by Train and Flight"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-900 mt-8 mb-4 pb-2 border-b border-gray-100",
+   "y": 3225,
+   "h": 41,
+   "w": 814,
+   "text": "Best Time for the 12 Jyotirlinga Tour"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-900 mt-8 mb-4 pb-2 border-b border-gray-100",
+   "y": 3456,
+   "h": 41,
+   "w": 814,
+   "text": "Travel Tips for Devotees"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-900 mt-8 mb-4 pb-2 border-b border-gray-100",
+   "y": 4067,
+   "h": 41,
+   "w": 814,
+   "text": "Distance and Location of 12 Jyotirlingas"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-900 mt-8 mb-4 pb-2 border-b border-gray-100",
+   "y": 4915,
+   "h": 41,
+   "w": 814,
+   "text": "12 Jyotirlinga Route Map"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-900 mt-8 mb-4 pb-2 border-b border-gray-100",
+   "y": 5251,
+   "h": 41,
+   "w": 814,
+   "text": "Book the Best 12 Jyotirlinga Yatra Package!"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-900 mt-8 mb-4 pb-2 border-b border-gray-100",
+   "y": 5438,
+   "h": 41,
+   "w": 814,
+   "text": "Tour Gallery"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-900 mt-8 mb-4 pb-2 border-b border-gray-100",
+   "y": 6158,
+   "h": 41,
+   "w": 814,
+   "text": "Tour Highlights"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-900 mt-8 mb-4 pb-2 border-b border-gray-100",
+   "y": 6563,
+   "h": 41,
+   "w": 814,
+   "text": "Tour Itinerary See More"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 6643,
+   "h": 28,
+   "w": 388,
+   "text": "Day 1: : Arrival in Mumbai and Journey to Rajkot"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 6871,
+   "h": 28,
+   "w": 436,
+   "text": "Day 2: Trip to Dwarkadhish and Nageshwar Jyotirlinga"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-lg font-semibold text-gray-800 mt-5 mb-2",
+   "y": 7283,
+   "h": 28,
+   "w": 814,
+   "text": "Places You’ll See"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 8104,
+   "h": 28,
+   "w": 300,
+   "text": "Day 3 – Somnath Jyotirlinga Darshan"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-lg font-semibold text-gray-800 mt-5 mb-2",
+   "y": 8475,
+   "h": 28,
+   "w": 814,
+   "text": "Places You’ll See"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 8923,
+   "h": 28,
+   "w": 489,
+   "text": "Day 4 – Somnath to Ujjain transfer (Overnight Train Journey)"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 9175,
+   "h": 28,
+   "w": 465,
+   "text": "Day 5 – Arrival in Ujjain and Visit to Omkareshwar Temple"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-lg font-semibold text-gray-800 mt-5 mb-2",
+   "y": 9433,
+   "h": 28,
+   "w": 814,
+   "text": "Places You’ll See"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 9881,
+   "h": 28,
+   "w": 505,
+   "text": "Day 6 – Ujjain (Mahakaleshwar Darshan) and Train to Haridwar"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-lg font-semibold text-gray-800 mt-5 mb-2",
+   "y": 10228,
+   "h": 28,
+   "w": 814,
+   "text": "Places You’ll See"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 11422,
+   "h": 28,
+   "w": 423,
+   "text": "Day 7 – Arrival in Haridwar (Ganga Aarti Experience)"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-lg font-semibold text-gray-800 mt-5 mb-2",
+   "y": 11680,
+   "h": 28,
+   "w": 814,
+   "text": "Places You’ll See"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 12500,
+   "h": 28,
+   "w": 538,
+   "text": "Day 8 – Transfer to Guptkashi and Visit to Ardhanarishvara Temple"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-lg font-semibold text-gray-800 mt-5 mb-2",
+   "y": 12766,
+   "h": 28,
+   "w": 814,
+   "text": "Places You’ll See"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 13214,
+   "h": 28,
+   "w": 274,
+   "text": "Day 9 – Trek to Kedarnath Temple"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-lg font-semibold text-gray-800 mt-5 mb-2",
+   "y": 13537,
+   "h": 28,
+   "w": 814,
+   "text": "Places You’ll See"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 13984,
+   "h": 28,
+   "w": 529,
+   "text": "Day 10 – Morning Aarti at Kedarnath and Transfer to Rudraprayag"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 14213,
+   "h": 28,
+   "w": 296,
+   "text": "Day 11 – Overnight Train to Varanasi"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 14465,
+   "h": 28,
+   "w": 335,
+   "text": "Day 12 – Evening Ganga Aarti at Varanasi"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-lg font-semibold text-gray-800 mt-5 mb-2",
+   "y": 14731,
+   "h": 28,
+   "w": 814,
+   "text": "Places You’ll See"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 15179,
+   "h": 28,
+   "w": 510,
+   "text": "Day 13 – Kashi Vishwanath Jyotirlinga and Transfer to Deoghar"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-lg font-semibold text-gray-800 mt-5 mb-2",
+   "y": 15445,
+   "h": 28,
+   "w": 814,
+   "text": "Places You’ll See"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 16265,
+   "h": 28,
+   "w": 473,
+   "text": "Day 14 – Baba Baidyanath Jyotirlinga and Train to Chennai"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-lg font-semibold text-gray-800 mt-5 mb-2",
+   "y": 16556,
+   "h": 28,
+   "w": 814,
+   "text": "Places You’ll See"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 17003,
+   "h": 28,
+   "w": 434,
+   "text": "Day 15 – Arrival in Chennai and Train to Rameswaram"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 17264,
+   "h": 28,
+   "w": 375,
+   "text": "Day 16 – Arrival at Rameswaram (Leisure Day)"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 17541,
+   "h": 28,
+   "w": 429,
+   "text": "Day 17 – Rameswaram Darshan and Drive to Madurai"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-lg font-semibold text-gray-800 mt-5 mb-2",
+   "y": 17831,
+   "h": 28,
+   "w": 814,
+   "text": "Places You’ll See"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 18652,
+   "h": 28,
+   "w": 183,
+   "text": "Day 18 – Train to Pune"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 18880,
+   "h": 28,
+   "w": 307,
+   "text": "Day 19 – Arrival at Pune (Leisure Day)"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 19108,
+   "h": 28,
+   "w": 417,
+   "text": "Day 20 – Visit to Bhimashankar and Trimbakeshwar"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-lg font-semibold text-gray-800 mt-5 mb-2",
+   "y": 19398,
+   "h": 28,
+   "w": 814,
+   "text": "Places You’ll See"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 20219,
+   "h": 28,
+   "w": 584,
+   "text": "Day 21 – Trimbakeshwar Darshan, Nashik Sightseeing, and Trip to Shirdi"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-lg font-semibold text-gray-800 mt-5 mb-2",
+   "y": 20452,
+   "h": 28,
+   "w": 814,
+   "text": "Places You’ll See"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 22019,
+   "h": 28,
+   "w": 270,
+   "text": "Day 22 – Shirdi Sai Baba Darshan"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-lg font-semibold text-gray-800 mt-5 mb-2",
+   "y": 22260,
+   "h": 28,
+   "w": 814,
+   "text": "Places You’ll See"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 23454,
+   "h": 28,
+   "w": 266,
+   "text": "Day 23 – Transfer to Aurangabad"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-lg font-semibold text-gray-800 mt-5 mb-2",
+   "y": 23631,
+   "h": 28,
+   "w": 814,
+   "text": "Places You’ll See"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 24078,
+   "h": 28,
+   "w": 335,
+   "text": "Day 24 – Ajanta-Ellora Caves Sightseeing"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-900 mt-8 mb-4 pb-2 border-b border-gray-100",
+   "y": 24647,
+   "h": 41,
+   "w": 814,
+   "text": "Inclusion / Exclusion"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 24712,
+   "h": 28,
+   "w": 814,
+   "text": "INCLUSIONS"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 25124,
+   "h": 28,
+   "w": 814,
+   "text": "EXCLUSIONS"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-900 mt-8 mb-4 pb-2 border-b border-gray-100",
+   "y": 25557,
+   "h": 41,
+   "w": 814,
+   "text": "Tour Hotels"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-900 mt-8 mb-4 pb-2 border-b border-gray-100",
+   "y": 27038,
+   "h": 41,
+   "w": 814,
+   "text": "Useful Information See More"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 27317,
+   "h": 28,
+   "w": 814,
+   "text": "Meet & Greet on Arrival (How to Meet on Airport/Railway station)"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 27430,
+   "h": 28,
+   "w": 814,
+   "text": "Pick up point/ Reporting Point"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 27773,
+   "h": 28,
+   "w": 814,
+   "text": "Cancellation Charges/ Refund Policy"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 28023,
+   "h": 28,
+   "w": 814,
+   "text": "Child Policy"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 28176,
+   "h": 28,
+   "w": 814,
+   "text": "Booking your tour is simple and can be done online or offline. Just fo"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 28746,
+   "h": 28,
+   "w": 814,
+   "text": "Hotel Category and Policy"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-lg font-semibold text-gray-800 mt-5 mb-2",
+   "y": 29122,
+   "h": 28,
+   "w": 814,
+   "text": "Important Notes:"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 29482,
+   "h": 28,
+   "w": 814,
+   "text": "How to Make Payment"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 29886,
+   "h": 28,
+   "w": 814,
+   "text": "After making the payment"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 30108,
+   "h": 28,
+   "w": 814,
+   "text": "Vouchers and Balance Payment"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 30285,
+   "h": 28,
+   "w": 814,
+   "text": "Why choose us"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 31209,
+   "h": 28,
+   "w": 814,
+   "text": "Upgrades Available"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 31467,
+   "h": 28,
+   "w": 814,
+   "text": "Travel Insurance"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 31556,
+   "h": 28,
+   "w": 814,
+   "text": "Travel Visa"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 31668,
+   "h": 28,
+   "w": 814,
+   "text": "Things to Carry"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-900 mt-8 mb-4 pb-2 border-b border-gray-100",
+   "y": 32073,
+   "h": 41,
+   "w": 814,
+   "text": "FAQs - Frequently Asked Questions See More"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 32138,
+   "h": 28,
+   "w": 814,
+   "text": "Q1. What are the 12 Jyotirlingas?"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 32299,
+   "h": 28,
+   "w": 814,
+   "text": "Q2. Why are the Jyotirlingas considered special?"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 32436,
+   "h": 28,
+   "w": 814,
+   "text": "Q3. How many days are needed to cover all 12 Jyotirlingas?"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 32549,
+   "h": 28,
+   "w": 814,
+   "text": "Q4. What is the cost of a 12 Jyotirlinga tour package?"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 32686,
+   "h": 28,
+   "w": 814,
+   "text": "Q5. Which Jyotirlinga is the hardest to visit?"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 32823,
+   "h": 28,
+   "w": 814,
+   "text": "Q6. Can senior citizens do the 12 Jyotirlinga Yatra?"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 32936,
+   "h": 28,
+   "w": 814,
+   "text": "Q7. Is there a government package for the 12 Jyotirlinga Yatra?"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 33049,
+   "h": 28,
+   "w": 814,
+   "text": "Q8. What is the best time to do the Jyotirlinga Yatra?"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 33161,
+   "h": 28,
+   "w": 814,
+   "text": "Q9. What is the spiritual benefit of visiting all 12 Jyotirlingas?"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 33299,
+   "h": 28,
+   "w": 814,
+   "text": "Q10. Which Jyotirlinga is closest to Varanasi?"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 33387,
+   "h": 28,
+   "w": 814,
+   "text": "Q11. Which Jyotirlinga is near Dwarka?"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 33500,
+   "h": 28,
+   "w": 814,
+   "text": "Q12. What is special about Mahakaleshwar Jyotirlinga?"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 33612,
+   "h": 28,
+   "w": 814,
+   "text": "Q13. Which Jyotirlinga is located in the Himalayas?"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 33725,
+   "h": 28,
+   "w": 814,
+   "text": "Q14. What should I pack for the Jyotirlinga Yatra?"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-gray-800 mt-6 mb-3",
+   "y": 33862,
+   "h": 28,
+   "w": 814,
+   "text": "Q15. Which Jyotirlinga is also one of the Char Dhams?"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-900 mt-8 mb-4 pb-2 border-b border-gray-100",
+   "y": 41067,
+   "h": 41,
+   "w": 814,
+   "text": "What people say about this experience"
+  },
+  {
+   "tag": "h3",
+   "cls": "font-bold text-gray-800 mb-2 flex items-center gap-2",
+   "y": 1701,
+   "h": 24,
+   "w": 374,
+   "text": "Need help? Get more information"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-900",
+   "y": 44015,
+   "h": 32,
+   "w": 309,
+   "text": "Similar Tours You Might Like"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 44095,
+   "h": 480,
+   "w": 327,
+   "text": "2 Days Kainchi Dham Tour Package2 Days / 1 NightsArrive Delhi- Kainchi"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 44317,
+   "h": 130,
+   "w": 325,
+   "text": "2 Days Kainchi Dham Tour Package2 Days / 1 NightsArrive Delhi- Kainchi"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 44317,
+   "h": 20,
+   "w": 315,
+   "text": "2 Days Kainchi Dham Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 44369,
+   "h": 19,
+   "w": 315,
+   "text": "Arrive Delhi- Kainchi Dham → Kainchi Dham - Delhi"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 44447,
+   "h": 127,
+   "w": 325,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 44095,
+   "h": 480,
+   "w": 327,
+   "text": "Khajuraho 2 Day Sightseeing Tour2 Days / 1 NightsSightseeing at Wester"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 44317,
+   "h": 130,
+   "w": 325,
+   "text": "Khajuraho 2 Day Sightseeing Tour2 Days / 1 NightsSightseeing at Wester"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 44317,
+   "h": 20,
+   "w": 315,
+   "text": "Khajuraho 2 Day Sightseeing Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 44369,
+   "h": 19,
+   "w": 315,
+   "text": "Sightseeing at Western Group of Temples → Visit to Eastern Group of Te"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 44447,
+   "h": 127,
+   "w": 325,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 44095,
+   "h": 480,
+   "w": 327,
+   "text": "3 Day Baidyanath Dham Tour Package3 Days / 2 NightsDeoghar- A heaven f"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 44317,
+   "h": 130,
+   "w": 325,
+   "text": "3 Day Baidyanath Dham Tour Package3 Days / 2 NightsDeoghar- A heaven f"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 44317,
+   "h": 20,
+   "w": 315,
+   "text": "3 Day Baidyanath Dham Tour Package"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 44369,
+   "h": 19,
+   "w": 315,
+   "text": "Deoghar- A heaven for Heart and Soul → Sacred Darshan of Baba Baidyana"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 44447,
+   "h": 127,
+   "w": 325,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 44095,
+   "h": 480,
+   "w": 327,
+   "text": "Guwahati Temple Tour with MeghalayaRoute details on requestHotel StayM"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 44317,
+   "h": 103,
+   "w": 325,
+   "text": "Guwahati Temple Tour with MeghalayaRoute details on requestHotel StayM"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 44317,
+   "h": 20,
+   "w": 315,
+   "text": "Guwahati Temple Tour with Meghalaya"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 44342,
+   "h": 19,
+   "w": 315,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 44420,
+   "h": 154,
+   "w": 325,
+   "text": "INR 6,225 offINR 31,125INR 24,900Starting price per personQuick enquir"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-3",
+   "y": 44719,
+   "h": 23,
+   "w": 424,
+   "text": "Regional Associates Offices"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-1",
+   "y": 44719,
+   "h": 23,
+   "w": 265,
+   "text": "Customer Support"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[13px] text-gray-200 mb-1",
+   "y": 44854,
+   "h": 20,
+   "w": 93,
+   "text": "Connect with us"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-1",
+   "y": 44719,
+   "h": 23,
+   "w": 281,
+   "text": "Our Mobile App"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 45016,
+   "h": 23,
+   "w": 248,
+   "text": "India Tours"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 45016,
+   "h": 23,
+   "w": 248,
+   "text": "International Tours"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 45016,
+   "h": 23,
+   "w": 248,
+   "text": "Special Tours"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 45016,
+   "h": 23,
+   "w": 248,
+   "text": "Customer Center"
+  }
+ ]
+}

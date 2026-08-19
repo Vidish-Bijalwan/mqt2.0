@@ -83,7 +83,7 @@ export const reviews: Review[] = [
   {
     id: 'rev-001',
     name: 'Rahul Sharma',
-    avatar: '/avatars/rahul.jpg',
+    avatar: '/avatars/rahul.svg',
     rating: 5,
     title: 'An unforgettable Kashmir experience!',
     content: 'Everything was perfectly coordinated from airport pickup to the final drop. The houseboats on Dal Lake were breathtaking, and our guide Ali made the trip extra special with his local knowledge. The Mughal Gardens were beautiful even in early spring. Highly recommend this package for families!',
@@ -115,7 +115,7 @@ export const reviews: Review[] = [
   {
     id: 'rev-002',
     name: 'Priya Patel',
-    avatar: '/avatars/priya.jpg',
+    avatar: '/avatars/priya.svg',
     rating: 5,
     title: 'Perfect honeymoon in Bali!',
     content: 'My husband and I had the most magical honeymoon in Bali thanks to My Quick Trippers. The private villa in Ubud was stunning, the rice terrace tour was peaceful, and the sunset dinner in Seminyak was unforgettable. The team even arranged a surprise flower bath for us!',
@@ -141,7 +141,7 @@ export const reviews: Review[] = [
   {
     id: 'rev-003',
     name: 'Amit Kumar',
-    avatar: '/avatars/amit.jpg',
+    avatar: '/avatars/amit.svg',
     rating: 4,
     title: 'Great Kerala backwaters experience',
     content: 'The houseboat experience in Alleppey was the highlight. Waking up to the backwaters was surreal. The only minor issue was a slight delay in pickup on day 2, but the team resolved it quickly. Food on the houseboat was delicious and authentic Kerala cuisine.',
@@ -167,7 +167,7 @@ export const reviews: Review[] = [
   {
     id: 'rev-004',
     name: 'Sarah Johnson',
-    avatar: '/avatars/sarah.jpg',
+    avatar: '/avatars/sarah.svg',
     rating: 5,
     title: 'Amazing Rajasthan heritage tour',
     content: 'Visited Jaipur, Jodhpur, and Udaipur in 8 days. Each city had its own charm. The desert safari in Jaisalmer was the highlight - sleeping under the stars in a luxury camp was magical. Our guide was incredibly knowledgeable about the history.',
@@ -199,7 +199,7 @@ export const reviews: Review[] = [
   {
     id: 'rev-005',
     name: 'Vikram Singh',
-    avatar: '/avatars/vikram.jpg',
+    avatar: '/avatars/vikram.svg',
     rating: 3,
     title: 'Good trip but hotel could be better',
     content: 'The itinerary was well-planned and the guide was excellent. However, one of the hotels in Manali was below expectations. The room was small and the Wi-Fi didn\'t work. The other hotels were fine. Overall decent value but hotel consistency needs improvement.',
@@ -231,7 +231,7 @@ export const reviews: Review[] = [
   {
     id: 'rev-006',
     name: 'Deepa Nair',
-    avatar: '/avatars/deepa.jpg',
+    avatar: '/avatars/deepa.svg',
     rating: 5,
     title: 'Spiritual journey to Varanasi',
     content: 'The Varanasi spiritual tour was deeply moving. Watching the Ganga Aarti at Dashashwamedh Ghat at sunset was a life-changing experience. The early morning boat ride to see the city wake up was magical. Our guide Panditji shared fascinating stories about the temples.',
@@ -257,7 +257,7 @@ export const reviews: Review[] = [
   {
     id: 'rev-007',
     name: 'Rajesh Gupta',
-    avatar: '/avatars/rajesh.jpg',
+    avatar: '/avatars/rajesh.svg',
     rating: 4,
     title: 'Dubai was incredible!',
     content: 'The Dubai package exceeded our expectations. The desert safari, Burj Khalifa visit, and dhow cruise were all perfectly organized. The only reason for 4 stars is the shopping time was limited. Would have loved more time at the gold souk.',
@@ -283,7 +283,7 @@ export const reviews: Review[] = [
   {
     id: 'rev-008',
     name: 'Meera Reddy',
-    avatar: '/avatars/meera.jpg',
+    avatar: '/avatars/meera.svg',
     rating: 2,
     title: 'Disappointed with the package',
     content: 'The hotels were not as advertised. The "5-star" hotel in Bangkok was clearly a 3-star property. The tour operator in Thailand was different from what was promised. Food was average. I expected much better for the price paid.',
@@ -315,7 +315,7 @@ export const reviews: Review[] = [
   {
     id: 'rev-009',
     name: 'Arjun Menon',
-    avatar: '/avatars/arjun.jpg',
+    avatar: '/avatars/arjun.svg',
     rating: 5,
     title: 'Best Ladakh trip ever!',
     content: 'The Ladakh road trip was adrenaline-pumping and breathtaking. Crossing Khardung La pass was surreal. The stays in Nubra Valley and Pangong Lake were unforgettable. The team handled all permits and logistics seamlessly. A must-do trip!',
@@ -341,7 +341,7 @@ export const reviews: Review[] = [
   {
     id: 'rev-010',
     name: 'Kavitha Krishnan',
-    avatar: '/avatars/kavitha.jpg',
+    avatar: '/avatars/kavitha.svg',
     rating: 5,
     title: 'Goa was pure bliss',
     content: 'Perfect beach getaway! The resort in South Goa was pristine, far from the tourist crowds. The spice plantation tour and old churches were insightful. Water sports were thrilling. The seafood dinner by the beach was the perfect ending.',
@@ -367,7 +367,7 @@ export const reviews: Review[] = [
   {
     id: 'rev-011',
     name: 'Sanjay Verma',
-    avatar: '/avatars/sanjay.jpg',
+    avatar: '/avatars/sanjay.svg',
     rating: 4,
     title: 'Helicopter Kedarnath was worth it',
     content: 'The helicopter ride to Kedarnath saved us days of trekking. The darshan was peaceful in the early morning. The only issue was the weather caused a 2-hour delay, but that\'s nature. The team kept us informed throughout.',
@@ -393,7 +393,7 @@ export const reviews: Review[] = [
   {
     id: 'rev-012',
     name: 'Neha Kapoor',
-    avatar: '/avatars/neha.jpg',
+    avatar: '/avatars/neha.svg',
     rating: 5,
     title: 'Singapore family adventure',
     content: 'Took my kids to Singapore and it was magical! Universal Studios, Gardens by the Bay, and the Night Safari were highlights. The hotel was centrally located and the MRT pass made getting around easy. Kids loved it!',
@@ -419,7 +419,7 @@ export const reviews: Review[] = [
   {
     id: 'rev-013',
     name: 'Manoj Tiwari',
-    avatar: '/avatars/manoj.jpg',
+    avatar: '/avatars/manoj.svg',
     rating: 4,
     title: 'Nepal was peaceful and beautiful',
     content: 'The Pokhara and Kathmandu tour was serene. The Pokhara lake boat ride at sunrise was mesmerizing. Pashupatinath temple visit was spiritually uplifting. The only downside was the road from Kathmandu to Pokhara was bumpy.',
@@ -445,7 +445,7 @@ export const reviews: Review[] = [
   {
     id: 'rev-014',
     name: 'Anjali Desai',
-    avatar: '/avatars/anjali.jpg',
+    avatar: '/avatars/anjali.svg',
     rating: 5,
     title: 'Andaman was paradise!',
     content: 'Havelock Island was absolutely stunning! The snorkeling at Elephant Beach, the Radhanagar Beach sunset, and the sea kayaking were unforgettable. The resort was beachfront and luxurious. Perfect honeymoon destination!',
@@ -471,7 +471,7 @@ export const reviews: Review[] = [
   {
     id: 'rev-015',
     name: 'Prakash Joshi',
-    avatar: '/avatars/prakash.jpg',
+    avatar: '/avatars/prakash.svg',
     rating: 3,
     title: 'Buddhist tour was educational',
     content: 'The Buddhist circuit tour covering Bodh Gaya, Sarnath, and Kushinagar was informative. The guides were knowledgeable. However, some hotels were basic and the transport vehicles were old. Could improve the comfort level.',
@@ -497,26 +497,26 @@ export const reviews: Review[] = [
 ];
 
 export const destinationSummaries: DestinationReviewSummary[] = [
-  { destination: 'Kashmir', image: '/destinations/kashmir.jpg', rating: 4.9, reviewCount: 342 },
-  { destination: 'Himachal Pradesh', image: '/destinations/himachal.jpg', rating: 4.7, reviewCount: 287 },
-  { destination: 'Kerala', image: '/destinations/kerala.jpg', rating: 4.8, reviewCount: 256 },
-  { destination: 'Goa', image: '/destinations/goa.jpg', rating: 4.6, reviewCount: 198 },
-  { destination: 'Rajasthan', image: '/destinations/rajasthan.jpg', rating: 4.8, reviewCount: 312 },
-  { destination: 'Uttarakhand', image: '/destinations/uttarakhand.jpg', rating: 4.7, reviewCount: 189 },
-  { destination: 'Dubai', image: '/destinations/dubai.jpg', rating: 4.9, reviewCount: 156 },
-  { destination: 'Bali', image: '/destinations/bali.jpg', rating: 4.8, reviewCount: 134 },
-  { destination: 'Thailand', image: '/destinations/thailand.jpg', rating: 4.5, reviewCount: 178 },
-  { destination: 'Singapore', image: '/destinations/singapore.jpg', rating: 4.7, reviewCount: 112 },
-  { destination: 'Nepal', image: '/destinations/nepal.jpg', rating: 4.6, reviewCount: 98 },
+  { destination: 'Kashmir', image: '/destinations/kashmir.svg', rating: 4.9, reviewCount: 342 },
+  { destination: 'Himachal Pradesh', image: '/destinations/himachal-pradesh.svg', rating: 4.7, reviewCount: 287 },
+  { destination: 'Kerala', image: '/destinations/kerala.svg', rating: 4.8, reviewCount: 256 },
+  { destination: 'Goa', image: '/destinations/goa.svg', rating: 4.6, reviewCount: 198 },
+  { destination: 'Rajasthan', image: '/destinations/rajasthan.svg', rating: 4.8, reviewCount: 312 },
+  { destination: 'Uttarakhand', image: '/destinations/uttarakhand.svg', rating: 4.7, reviewCount: 189 },
+  { destination: 'Dubai', image: '/destinations/dubai.svg', rating: 4.9, reviewCount: 156 },
+  { destination: 'Bali', image: '/destinations/bali.svg', rating: 4.8, reviewCount: 134 },
+  { destination: 'Thailand', image: '/destinations/thailand.svg', rating: 4.5, reviewCount: 178 },
+  { destination: 'Singapore', image: '/destinations/singapore.svg', rating: 4.7, reviewCount: 112 },
+  { destination: 'Nepal', image: '/destinations/nepal.svg', rating: 4.6, reviewCount: 98 },
 ];
 
 export const popularTourReviews = [
-  { tour: 'Kashmir Tour Package', slug: 'kashmir-tour-package', image: '/tours/kashmir.jpg', rating: 4.9, reviewCount: 486, verifiedCount: 412 },
-  { tour: 'Kerala Backwaters Tour', slug: 'kerala-backwaters-tour', image: '/tours/kerala.jpg', rating: 4.8, reviewCount: 324, verifiedCount: 287 },
-  { tour: 'Rajasthan Heritage Tour', slug: 'rajasthan-heritage-tour', image: '/tours/rajasthan.jpg', rating: 4.8, reviewCount: 298, verifiedCount: 256 },
-  { tour: 'Bali Honeymoon Package', slug: 'bali-honeymoon-package', image: '/tours/bali.jpg', rating: 4.9, reviewCount: 267, verifiedCount: 234 },
-  { tour: 'Ladakh Road Trip', slug: 'ladakh-road-trip', image: '/tours/ladakh.jpg', rating: 4.9, reviewCount: 234, verifiedCount: 198 },
-  { tour: 'Andaman Island Tour', slug: 'andaman-island-tour', image: '/tours/andaman.jpg', rating: 4.8, reviewCount: 189, verifiedCount: 167 },
+  { tour: 'Kashmir Tour Package', slug: 'kashmir-tour-package', image: '/tours/kashmir.svg', rating: 4.9, reviewCount: 486, verifiedCount: 412 },
+  { tour: 'Kerala Backwaters Tour', slug: 'kerala-backwaters-tour', image: '/tours/kerala.svg', rating: 4.8, reviewCount: 324, verifiedCount: 287 },
+  { tour: 'Rajasthan Heritage Tour', slug: 'rajasthan-heritage-tour', image: '/tours/rajasthan.svg', rating: 4.8, reviewCount: 298, verifiedCount: 256 },
+  { tour: 'Bali Honeymoon Package', slug: 'bali-honeymoon-package', image: '/tours/bali.svg', rating: 4.9, reviewCount: 267, verifiedCount: 234 },
+  { tour: 'Ladakh Road Trip', slug: 'ladakh-road-trip', image: '/tours/ladakh.svg', rating: 4.9, reviewCount: 234, verifiedCount: 198 },
+  { tour: 'Andaman Island Tour', slug: 'andaman-island-tour', image: '/tours/andaman.svg', rating: 4.8, reviewCount: 189, verifiedCount: 167 },
 ];
 
 export const ratingDistribution = {

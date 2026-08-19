@@ -1,0 +1,263 @@
+{
+ "scrollY": 0,
+ "innerWidth": 1440,
+ "innerHeight": 900,
+ "blocks": [
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 187,
+   "text": "North India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 187,
+   "text": "East India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 187,
+   "text": "West India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 187,
+   "text": "South India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 187,
+   "text": "Central India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 188,
+   "text": "North East India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 233,
+   "text": "South East Asia"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 233,
+   "text": "Middle East"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 233,
+   "text": "East Asia"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 233,
+   "text": "Europe"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 234,
+   "text": "South Asia"
+  },
+  {
+   "tag": "h1",
+   "cls": "text-3xl md:text-5xl font-bold text-white capitalize drop-shadow-md",
+   "y": 252,
+   "h": 48,
+   "w": 320,
+   "text": "Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "bg-white p-6 rounded-lg shadow-card border border-gray-100",
+   "y": 1099,
+   "h": 773,
+   "w": 254,
+   "text": "Request a Free QuoteFill out the form below and we will contact you as"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-2xl font-bold text-mqt-navy mb-4",
+   "y": 1124,
+   "h": 64,
+   "w": 204,
+   "text": "Request a Free Quote"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-[14px] md:text-[15px] font-bold text-gray-900 hover:text-legacy-nav-blue transition-c",
+   "y": 517,
+   "h": 21,
+   "w": 602,
+   "text": "Assam Meghalaya Arunachal Pradesh Tour"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-[14px] md:text-[15px] font-bold text-gray-900 hover:text-legacy-nav-blue transition-c",
+   "y": 765,
+   "h": 21,
+   "w": 602,
+   "text": "12 Jyotirlinga Tour Package"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-[14px] md:text-[15px] font-bold text-gray-900 hover:text-legacy-nav-blue transition-c",
+   "y": 1013,
+   "h": 21,
+   "w": 602,
+   "text": "2 Days Ayodhya Sightseeing Tour"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-[14px] md:text-[15px] font-bold text-gray-900 hover:text-legacy-nav-blue transition-c",
+   "y": 1261,
+   "h": 21,
+   "w": 602,
+   "text": "2 Days Agra Mathura Vrindavan Tour from Delhi"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-[14px] md:text-[15px] font-bold text-gray-900 hover:text-legacy-nav-blue transition-c",
+   "y": 1509,
+   "h": 21,
+   "w": 602,
+   "text": "2 Days Kainchi Dham Tour Package"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-[14px] md:text-[15px] font-bold text-gray-900 hover:text-legacy-nav-blue transition-c",
+   "y": 1757,
+   "h": 21,
+   "w": 602,
+   "text": "Khajuraho 2 Day Sightseeing Tour"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-[14px] md:text-[15px] font-bold text-gray-900 hover:text-legacy-nav-blue transition-c",
+   "y": 2005,
+   "h": 21,
+   "w": 602,
+   "text": "2 Nights 3 Days Orissa Tour Package"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-[14px] md:text-[15px] font-bold text-gray-900 hover:text-legacy-nav-blue transition-c",
+   "y": 2253,
+   "h": 21,
+   "w": 602,
+   "text": "Assam Tour Packages for 3 Days"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-[14px] md:text-[15px] font-bold text-gray-900 hover:text-legacy-nav-blue transition-c",
+   "y": 2501,
+   "h": 21,
+   "w": 602,
+   "text": "3 Day Baidyanath Dham Tour Package"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-[14px] md:text-[15px] font-bold text-gray-900 hover:text-legacy-nav-blue transition-c",
+   "y": 2749,
+   "h": 21,
+   "w": 602,
+   "text": "3 Days Agra Mathura Vrindavan Tour from Delhi"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-3",
+   "y": 3430,
+   "h": 23,
+   "w": 424,
+   "text": "Regional Associates Offices"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-1",
+   "y": 3430,
+   "h": 23,
+   "w": 265,
+   "text": "Customer Support"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[13px] text-gray-200 mb-1",
+   "y": 3565,
+   "h": 20,
+   "w": 93,
+   "text": "Connect with us"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-1",
+   "y": 3430,
+   "h": 23,
+   "w": 281,
+   "text": "Our Mobile App"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 3726,
+   "h": 23,
+   "w": 248,
+   "text": "India Tours"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 3726,
+   "h": 23,
+   "w": 248,
+   "text": "International Tours"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 3726,
+   "h": 23,
+   "w": 248,
+   "text": "Special Tours"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 3726,
+   "h": 23,
+   "w": 248,
+   "text": "Customer Center"
+  }
+ ]
+}

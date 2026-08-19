@@ -1,0 +1,375 @@
+{
+ "scrollY": 935,
+ "innerWidth": 390,
+ "innerHeight": 844,
+ "blocks": [
+  {
+   "tag": "h2",
+   "cls": "txt1",
+   "y": 935,
+   "h": 35,
+   "w": 228,
+   "text": "Top Trending Tour Packages"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 1245,
+   "h": 20,
+   "w": 358,
+   "text": "Char Dham Yatra By Helicopter"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 1764,
+   "h": 20,
+   "w": 358,
+   "text": "Chardham Yatra Packages"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 2283,
+   "h": 20,
+   "w": 358,
+   "text": "Amarnath Yatra Packages"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 2802,
+   "h": 20,
+   "w": 358,
+   "text": "Adi Kailash And Om Parvat Yatra Package"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 3321,
+   "h": 20,
+   "w": 358,
+   "text": "Golden Triangle Tour Package"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 3840,
+   "h": 20,
+   "w": 358,
+   "text": "Bhubaneswar Puri Konark Tour Package"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 4358,
+   "h": 20,
+   "w": 358,
+   "text": "Kamakhya Devi Temple Tour Packages"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 4877,
+   "h": 20,
+   "w": 358,
+   "text": "Varanasi Ayodhya Bodhgaya Chitrakoot Tour Package"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 5396,
+   "h": 20,
+   "w": 358,
+   "text": "Pancha Dwaraka Tour Package From Ahmedabad"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 5915,
+   "h": 20,
+   "w": 358,
+   "text": "Tamil Nadu Temple Tour From Chennai"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 6434,
+   "h": 20,
+   "w": 358,
+   "text": "Vietnam Tour Packages"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 6953,
+   "h": 20,
+   "w": 358,
+   "text": "Explore Sri Lanka Ramayana Tour Package"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 7472,
+   "h": 20,
+   "w": 358,
+   "text": "Bali Tour Packages"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 7991,
+   "h": 20,
+   "w": 358,
+   "text": "Dubai Tour Packages"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 8510,
+   "h": 20,
+   "w": 358,
+   "text": "Egypt Tour Packages"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 9029,
+   "h": 20,
+   "w": 358,
+   "text": "Andaman Tour Packages"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 9548,
+   "h": 20,
+   "w": 358,
+   "text": "Ladakh Adventure Tour Packages"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 10067,
+   "h": 20,
+   "w": 358,
+   "text": "Sikkim & Darjeeling Holiday Packages"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 10586,
+   "h": 20,
+   "w": 358,
+   "text": "Royal Rajasthan Tour Packages"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 11105,
+   "h": 20,
+   "w": 358,
+   "text": "Shirdi – Bhimashankar Pilgrimage Tour Packages"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 11624,
+   "h": 20,
+   "w": 358,
+   "text": "Jyotirlinga Darshan Yatra Packages"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 12143,
+   "h": 20,
+   "w": 358,
+   "text": "Khajuraho – Orchha Temple Tour Packages"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 12662,
+   "h": 20,
+   "w": 358,
+   "text": "Rameshwaram Madurai Kanyakumari Tour"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 13181,
+   "h": 20,
+   "w": 358,
+   "text": "Muktinath Yatra Packages (Nepal)"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 13700,
+   "h": 20,
+   "w": 358,
+   "text": "Kailash Mansarovar Yatra Packages"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 14219,
+   "h": 20,
+   "w": 358,
+   "text": "Maldives Honeymoon & Leisure Packages"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 14738,
+   "h": 20,
+   "w": 358,
+   "text": "Singapore Family Tour Packages"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 15256,
+   "h": 20,
+   "w": 358,
+   "text": "Thailand Holiday Tour Packages"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 15775,
+   "h": 20,
+   "w": 358,
+   "text": "Japan Experience Tour Packages"
+  },
+  {
+   "tag": "h3",
+   "cls": "prc_head",
+   "y": 16294,
+   "h": 20,
+   "w": 358,
+   "text": "Mauritius Luxury Tour Packages"
+  },
+  {
+   "tag": "h2",
+   "cls": "txt1",
+   "y": 16576,
+   "h": 35,
+   "w": 263,
+   "text": "Top Holiday Destinations in India"
+  },
+  {
+   "tag": "h2",
+   "cls": "txt1",
+   "y": 18242,
+   "h": 35,
+   "w": 187,
+   "text": "Chota Char Dham Yatra"
+  },
+  {
+   "tag": "h2",
+   "cls": "txt1",
+   "y": 20110,
+   "h": 35,
+   "w": 261,
+   "text": "Our Popular India Tour Packages"
+  },
+  {
+   "tag": "h2",
+   "cls": "txt1",
+   "y": 23677,
+   "h": 35,
+   "w": 359,
+   "text": "Book International Tour Packages From India"
+  },
+  {
+   "tag": "h2",
+   "cls": "txt1",
+   "y": 25434,
+   "h": 35,
+   "w": 302,
+   "text": "Choose Your Style Of Themes Holiday"
+  },
+  {
+   "tag": "h2",
+   "cls": "txt1",
+   "y": 25851,
+   "h": 35,
+   "w": 229,
+   "text": "Experience the Best of India"
+  },
+  {
+   "tag": "h1",
+   "cls": "txt1",
+   "y": 27258,
+   "h": 59,
+   "w": 380,
+   "text": "Best Travel Company in Delhi – Namaste India Trip Pvt. Ltd."
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 27395,
+   "h": 35,
+   "w": 139,
+   "text": "Upcoming Events"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 27534,
+   "h": 24,
+   "w": 248,
+   "text": "WTM London"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 27529,
+   "h": 24,
+   "w": 248,
+   "text": "Fitur Madrid"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 27534,
+   "h": 24,
+   "w": 248,
+   "text": "ITB Berlin"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 27554,
+   "h": 24,
+   "w": 248,
+   "text": "ITCM China"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 27554,
+   "h": 24,
+   "w": 248,
+   "text": "MATTA Fair Malaysia"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 27554,
+   "h": 24,
+   "w": 248,
+   "text": "QTM 2026 – Qatar Travel Mart"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 27554,
+   "h": 24,
+   "w": 248,
+   "text": "ITB Asia"
+  }
+ ]
+}

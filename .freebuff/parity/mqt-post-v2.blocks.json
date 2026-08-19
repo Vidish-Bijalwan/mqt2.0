@@ -1,0 +1,215 @@
+{
+ "scrollY": 0,
+ "innerWidth": 1440,
+ "innerHeight": 900,
+ "blocks": [
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 187,
+   "text": "North India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 187,
+   "text": "East India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 187,
+   "text": "West India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 187,
+   "text": "South India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 187,
+   "text": "Central India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 188,
+   "text": "North East India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 233,
+   "text": "South East Asia"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 233,
+   "text": "Middle East"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 233,
+   "text": "East Asia"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 233,
+   "text": "Europe"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 234,
+   "text": "South Asia"
+  },
+  {
+   "tag": "h1",
+   "cls": "text-3xl font-bold text-gray-800 mb-4",
+   "y": 257,
+   "h": 72,
+   "w": 702,
+   "text": "Adi Kailash Yatra 2026: Route, Cost, Permit & Travel Guide"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-legacy-nav-blue mb-4",
+   "y": 9946,
+   "h": 28,
+   "w": 702,
+   "text": "Related Posts"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-xl font-bold text-legacy-nav-blue mb-4",
+   "y": 10172,
+   "h": 28,
+   "w": 702,
+   "text": "Ready to explore this destination?"
+  },
+  {
+   "tag": "h3",
+   "cls": "font-bold text-gray-800 text-lg mb-4 flex items-center",
+   "y": 249,
+   "h": 28,
+   "w": 270,
+   "text": "Search"
+  },
+  {
+   "tag": "h3",
+   "cls": "font-bold text-gray-800 text-lg mb-5 flex items-center",
+   "y": 417,
+   "h": 28,
+   "w": 270,
+   "text": "Recent Posts"
+  },
+  {
+   "tag": "h3",
+   "cls": "font-bold text-gray-800 text-lg mb-5 flex items-center",
+   "y": 901,
+   "h": 28,
+   "w": 270,
+   "text": "Categories"
+  },
+  {
+   "tag": "h3",
+   "cls": "font-bold text-lg mb-2",
+   "y": 1380,
+   "h": 28,
+   "w": 272,
+   "text": "Need help planning your trip?"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-3",
+   "y": 10409,
+   "h": 23,
+   "w": 424,
+   "text": "Regional Associates Offices"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-1",
+   "y": 10409,
+   "h": 23,
+   "w": 265,
+   "text": "Customer Support"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[13px] text-gray-200 mb-1",
+   "y": 10544,
+   "h": 20,
+   "w": 93,
+   "text": "Connect with us"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-1",
+   "y": 10409,
+   "h": 23,
+   "w": 281,
+   "text": "Our Mobile App"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 10706,
+   "h": 23,
+   "w": 248,
+   "text": "India Tours"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 10706,
+   "h": 23,
+   "w": 248,
+   "text": "International Tours"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 10706,
+   "h": 23,
+   "w": 248,
+   "text": "Special Tours"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 10706,
+   "h": 23,
+   "w": 248,
+   "text": "Customer Center"
+  }
+ ]
+}

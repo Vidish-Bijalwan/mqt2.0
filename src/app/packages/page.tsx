@@ -110,7 +110,7 @@ export default async function PackagesPage({
                         selectedCategory === cat ? "text-legacy-orange font-bold bg-orange-50" : "text-gray-600"
                       }`}
                     >
-                      <span className="text-legacy-orange mr-1.5 text-[9px]">›</span>
+                      <span className="text-legacy-orange mr-1.5 text-[10px]">›</span>
                       {cat} <span className="text-gray-400 text-xs">({count})</span>
                     </Link>
                   );

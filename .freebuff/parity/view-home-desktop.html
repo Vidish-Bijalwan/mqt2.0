@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Parity view — homepage desktop</title>
+<style>
+  body { margin:0; background:#222; font:12px/1.4 system-ui, sans-serif; color:#ccc; }
+  .bar { position:sticky; top:0; background:#333; padding:8px 12px; z-index:10; display:flex; gap:12px; align-items:center; }
+  .bar h1 { font-size:14px; margin:0 12px 0 0; color:#fff; }
+  .pair { display:flex; flex-wrap:wrap; gap:0; }
+  .col { flex:1 1 50%; min-width:480px; }
+  .col h2 { margin:0; padding:6px 10px; background:#444; font-size:12px; position:sticky; top:34px; z-index:5;}
+  .col img { display:block; width:100%; height:auto; }
+  .tag { position:absolute; background:rgba(0,0,0,.75); color:#0f0; font:11px monospace; padding:1px 4px; }
+  .row { display:flex; }
+</style>
+</head>
+<body>
+<div class="bar">
+  <h1>Parity — homepage @1440x900</h1>
+  <label>Scale <input id="scale" type="range" min="20" max="100" value="50" style="vertical-align:middle"></label>
+  <span id="scaleVal">50%</span>
+  <button id="scrollTop">top</button>
+</div>
+<div class="pair">
+  <div class="col">
+    <h2>REF — namasteindiatrip.com</h2>
+    <img id="ref" src="ref-home-desktop.png" alt="reference">
+  </div>
+  <div class="col">
+    <h2>MQT — localhost:53143</h2>
+    <img id="mqt" src="mqt-home-desktop.png" alt="mqt">
+  </div>
+</div>
+<script>
+  const scale = document.getElementById('scale');
+  const imgs = [document.getElementById('ref'), document.getElementById('mqt')];
+  scale.addEventListener('input', () => {
+    document.getElementById('scaleVal').textContent = scale.value + '%';
+    imgs.forEach(i => i.style.width = scale.value + '%');
+  });
+  document.getElementById('scrollTop').addEventListener('click', () => window.scrollTo({top:0}));
+</script>
+</body>
+</html>

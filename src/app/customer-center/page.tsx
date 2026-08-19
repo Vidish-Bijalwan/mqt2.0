@@ -109,7 +109,7 @@ export default function CustomerCenterPage() {
             {QUICK_LINKS.map((link) => (
               <li key={link.href}>
                 <Link href={link.href} className="flex items-center text-gray-600 hover:text-legacy-orange transition-colors py-1">
-                  <span className="text-legacy-orange mr-2 text-[8px]">★</span>
+                  <span className="text-legacy-orange mr-2 text-[10px]">★</span>
                   {link.name}
                 </Link>
               </li>

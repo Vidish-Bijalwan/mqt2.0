@@ -1,0 +1,343 @@
+{
+ "scrollY": 0,
+ "innerWidth": 390,
+ "innerHeight": 844,
+ "blocks": [
+  {
+   "tag": "section",
+   "cls": "relative w-full min-h-[420px] md:min-h-[460px] flex items-center justify-center overflow-h",
+   "y": 112,
+   "h": 462,
+   "w": 390,
+   "text": "MQT Travel BlogDiscover guides, tips, and inspiration across our 410 a"
+  },
+  {
+   "tag": "h1",
+   "cls": "text-4xl md:text-5xl font-extrabold text-white mb-4 drop-shadow-lg",
+   "y": 160,
+   "h": 40,
+   "w": 358,
+   "text": "MQT Travel Blog"
+  },
+  {
+   "tag": "section",
+   "cls": "bg-slate-100 py-12 border-b border-gray-200",
+   "y": 574,
+   "h": 1379,
+   "w": 390,
+   "text": "Featured ArticlesFood & CuisineFood Archives My Quick Trippers• 1 min "
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-800",
+   "y": 622,
+   "h": 32,
+   "w": 185,
+   "text": "Featured Articles"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white font-bold text-lg leading-tight line-clamp-2 drop-shadow-md",
+   "y": 877,
+   "h": 23,
+   "w": 345,
+   "text": "Food Archives"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white font-bold text-lg leading-tight line-clamp-2 drop-shadow-md",
+   "y": 1268,
+   "h": 45,
+   "w": 345,
+   "text": "Five Alternative Accessories for Your Camping Trip"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-white font-bold text-lg leading-tight line-clamp-2 drop-shadow-md",
+   "y": 1682,
+   "h": 45,
+   "w": 345,
+   "text": "Visiting And Enjoying Singapore - Things to Do in Singapore"
+  },
+  {
+   "tag": "section",
+   "cls": "py-10",
+   "y": 2016,
+   "h": 11652,
+   "w": 390,
+   "text": "Showing 1–24 of 410 articlesFood & CuisineMQT•1 min readFood ArchivesT"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-legacy-orange transit",
+   "y": 2339,
+   "h": 22,
+   "w": 329,
+   "text": "Food Archives"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-legacy-orange transit",
+   "y": 2757,
+   "h": 44,
+   "w": 329,
+   "text": "Five Alternative Accessories for Your Camping Trip"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-legacy-orange transit",
+   "y": 3198,
+   "h": 44,
+   "w": 329,
+   "text": "Visiting And Enjoying Singapore - Things to Do in Singapore"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-legacy-orange transit",
+   "y": 3638,
+   "h": 44,
+   "w": 329,
+   "text": "Top 10 Glaciers in Uttarakhand You Must Explore"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-legacy-orange transit",
+   "y": 4078,
+   "h": 22,
+   "w": 329,
+   "text": "7 Most Amazing Waterfalls to Visit in Kerala"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-legacy-orange transit",
+   "y": 4496,
+   "h": 22,
+   "w": 329,
+   "text": "Top 9 Most Popular Hill Stations of India"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-legacy-orange transit",
+   "y": 4915,
+   "h": 44,
+   "w": 329,
+   "text": "India’s Top Maharaja Palace Hotels | Luxury Heritage Stays"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-legacy-orange transit",
+   "y": 5355,
+   "h": 44,
+   "w": 329,
+   "text": "Top 10 Adventure Adventure Destinations in India"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-legacy-orange transit",
+   "y": 5795,
+   "h": 44,
+   "w": 329,
+   "text": "History of Adi Kailash: Ancient Legends to Modern Yatra"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-legacy-orange transit",
+   "y": 6235,
+   "h": 22,
+   "w": 329,
+   "text": "Agra Archives"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-legacy-orange transit",
+   "y": 6654,
+   "h": 44,
+   "w": 329,
+   "text": "Planning Your Kailash Mansarovar Yatra: A Step-by-Step Guide"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-legacy-orange transit",
+   "y": 7094,
+   "h": 44,
+   "w": 329,
+   "text": "16 Unexplored Places in India That You Must Visit"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-legacy-orange transit",
+   "y": 7534,
+   "h": 44,
+   "w": 329,
+   "text": "How to Design Your Dubai Trip | Travel Tips & Experiences"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-legacy-orange transit",
+   "y": 7974,
+   "h": 44,
+   "w": 329,
+   "text": "20 Best Summer Destinations in Uttarakhand to Visit in 2026"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-legacy-orange transit",
+   "y": 8415,
+   "h": 44,
+   "w": 329,
+   "text": "Sri Amarnath Dham - Significance, History & Route Map"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-legacy-orange transit",
+   "y": 8855,
+   "h": 44,
+   "w": 329,
+   "text": "20 Must-Visit Shiva Temples in India – Complete Travel Guide"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-legacy-orange transit",
+   "y": 9295,
+   "h": 44,
+   "w": 329,
+   "text": "Top Most Famous Tourist Places to Visit in Leh Ladakh"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-legacy-orange transit",
+   "y": 9735,
+   "h": 22,
+   "w": 329,
+   "text": "7 Most Beautiful Pink Lakes in the World"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-legacy-orange transit",
+   "y": 10154,
+   "h": 44,
+   "w": 329,
+   "text": "Why Carnival Valor Cruises Are Perfect for Your Vacation"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-legacy-orange transit",
+   "y": 10594,
+   "h": 44,
+   "w": 329,
+   "text": "20 Sacred Hindu Temples in India You Should Visit Once"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-legacy-orange transit",
+   "y": 11034,
+   "h": 44,
+   "w": 329,
+   "text": "Tirupati Balaji Temple | Darshan, Timings & Guide"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-legacy-orange transit",
+   "y": 11474,
+   "h": 44,
+   "w": 329,
+   "text": "Kamakhya Temple Assam – History, Significance & Travel Guide"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-legacy-orange transit",
+   "y": 11915,
+   "h": 44,
+   "w": 329,
+   "text": "Best Tourist Places in Chennai for Sightseeing"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-base font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-legacy-orange transit",
+   "y": 12355,
+   "h": 44,
+   "w": 329,
+   "text": "Best Places to Visit in Narkanda | Top Tourist Attractions"
+  },
+  {
+   "tag": "h3",
+   "cls": "font-bold text-gray-800 text-lg mb-5 flex items-center",
+   "y": 12721,
+   "h": 28,
+   "w": 321,
+   "text": "Recent Posts"
+  },
+  {
+   "tag": "h3",
+   "cls": "font-bold text-gray-800 text-lg mb-5 flex items-center",
+   "y": 13205,
+   "h": 28,
+   "w": 321,
+   "text": "Categories"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-3",
+   "y": 13716,
+   "h": 23,
+   "w": 339,
+   "text": "Regional Associates Offices"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-1",
+   "y": 13869,
+   "h": 23,
+   "w": 339,
+   "text": "Customer Support"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[13px] text-gray-200 mb-1",
+   "y": 14004,
+   "h": 20,
+   "w": 93,
+   "text": "Connect with us"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-1",
+   "y": 14124,
+   "h": 23,
+   "w": 281,
+   "text": "Our Mobile App"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 14449,
+   "h": 23,
+   "w": 157,
+   "text": "India Tours"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 14449,
+   "h": 23,
+   "w": 157,
+   "text": "International Tours"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 14727,
+   "h": 23,
+   "w": 157,
+   "text": "Special Tours"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 14727,
+   "h": 23,
+   "w": 157,
+   "text": "Customer Center"
+  }
+ ]
+}

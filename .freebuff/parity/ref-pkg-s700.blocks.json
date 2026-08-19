@@ -1,0 +1,423 @@
+{
+ "scrollY": 700,
+ "innerWidth": 1440,
+ "innerHeight": 900,
+ "blocks": [
+  {
+   "tag": "div",
+   "cls": "tourbrd",
+   "y": 145,
+   "h": 80,
+   "w": 1326,
+   "text": "Badrinath Kedarnath Do Dham Yatra from DelhiHome » India » Uttarakhand"
+  },
+  {
+   "tag": "h1",
+   "cls": "",
+   "y": 145,
+   "h": 40,
+   "w": 1326,
+   "text": "Badrinath Kedarnath Do Dham Yatra from Delhi"
+  },
+  {
+   "tag": "h2",
+   "cls": "tour-itine",
+   "y": 576,
+   "h": 35,
+   "w": 849,
+   "text": "Tour Overview"
+  },
+  {
+   "tag": "h2",
+   "cls": "tour-itine",
+   "y": 717,
+   "h": 35,
+   "w": 849,
+   "text": "Tour Highlights"
+  },
+  {
+   "tag": "div",
+   "cls": "tourNmListPar",
+   "y": 884,
+   "h": 878,
+   "w": 871,
+   "text": "Tour ItinerarySee More Day 1: Delhi – Haridwar Your Do Dham Yatra will"
+  },
+  {
+   "tag": "h2",
+   "cls": "tour-itine",
+   "y": 895,
+   "h": 35,
+   "w": 849,
+   "text": "Tour ItinerarySee More"
+  },
+  {
+   "tag": "h3",
+   "cls": "click_quess active",
+   "y": 940,
+   "h": 44,
+   "w": 849,
+   "text": "Day 1: Delhi – Haridwar"
+  },
+  {
+   "tag": "h4",
+   "cls": "",
+   "y": 1141,
+   "h": 22,
+   "w": 839,
+   "text": "Places You’ll See"
+  },
+  {
+   "tag": "h3",
+   "cls": "click_quess",
+   "y": 1383,
+   "h": 44,
+   "w": 849,
+   "text": "Day 2: Haridwar – Guptkashi"
+  },
+  {
+   "tag": "h3",
+   "cls": "click_quess",
+   "y": 1437,
+   "h": 44,
+   "w": 849,
+   "text": "Day 3: Guptkashi – Sonprayag – Kedarnath"
+  },
+  {
+   "tag": "h3",
+   "cls": "click_quess",
+   "y": 1491,
+   "h": 44,
+   "w": 849,
+   "text": "Day 4: Kedarnath – Sonprayag – Rudraprayag"
+  },
+  {
+   "tag": "h3",
+   "cls": "click_quess",
+   "y": 1545,
+   "h": 44,
+   "w": 849,
+   "text": "Day 5: Rudraprayag – Badrinath Dham"
+  },
+  {
+   "tag": "h3",
+   "cls": "click_quess",
+   "y": 1599,
+   "h": 44,
+   "w": 849,
+   "text": "Day 6: Badrinath – Rudraprayag"
+  },
+  {
+   "tag": "h3",
+   "cls": "click_quess",
+   "y": 1653,
+   "h": 44,
+   "w": 849,
+   "text": "Day 7: Rudraprayag – Rishikesh"
+  },
+  {
+   "tag": "h3",
+   "cls": "click_quess",
+   "y": 1707,
+   "h": 44,
+   "w": 849,
+   "text": "Day 8: Rishikesh – Delhi Departure"
+  },
+  {
+   "tag": "h2",
+   "cls": "tour-itine",
+   "y": 1793,
+   "h": 35,
+   "w": 849,
+   "text": "Inclusion / Exclusion"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 1838,
+   "h": 24,
+   "w": 406,
+   "text": "INCLUSIONS"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 1838,
+   "h": 24,
+   "w": 406,
+   "text": "EXCLUSIONS"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 2108,
+   "h": 24,
+   "w": 849,
+   "text": "Plan Your Perfect Holiday with Namaste India Trip!"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 2594,
+   "h": 39,
+   "w": 849,
+   "text": "Travel with ease, book with confidence."
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 2718,
+   "h": 24,
+   "w": 263,
+   "text": "Hassle-Free Booking"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 2718,
+   "h": 24,
+   "w": 263,
+   "text": "Lifelong Memories"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 2718,
+   "h": 24,
+   "w": 263,
+   "text": "Your Trusted Travel Companion"
+  },
+  {
+   "tag": "h2",
+   "cls": "tour-itine",
+   "y": 2914,
+   "h": 35,
+   "w": 849,
+   "text": "FAQs- Frequently Asked QuestionsSee More"
+  },
+  {
+   "tag": "h3",
+   "cls": "click_quess",
+   "y": 2959,
+   "h": 44,
+   "w": 849,
+   "text": "Q1. Is there any Badrinath Kedarnath Yatra Package from Delhi?"
+  },
+  {
+   "tag": "h3",
+   "cls": "click_quess",
+   "y": 3013,
+   "h": 44,
+   "w": 849,
+   "text": "Q2. What is the Badrinath Kedarnath Yatra package price?"
+  },
+  {
+   "tag": "h3",
+   "cls": "click_quess",
+   "y": 3067,
+   "h": 44,
+   "w": 849,
+   "text": "Q3. Can we book the Badrinath Kedarnath tour package by car?"
+  },
+  {
+   "tag": "h3",
+   "cls": "click_quess",
+   "y": 3121,
+   "h": 44,
+   "w": 849,
+   "text": "Q4. What is the price of Haridwar to Badrinath and Kedarnath taxi pack"
+  },
+  {
+   "tag": "h3",
+   "cls": "click_quess",
+   "y": 3175,
+   "h": 44,
+   "w": 849,
+   "text": "Q5. How to plan Kedarnath Badrinath Yatra?"
+  },
+  {
+   "tag": "h3",
+   "cls": "click_quess",
+   "y": 3229,
+   "h": 44,
+   "w": 849,
+   "text": "Q6. What is the best time to visit Kedarnath and Badrinath?"
+  },
+  {
+   "tag": "h3",
+   "cls": "click_quess",
+   "y": 3283,
+   "h": 44,
+   "w": 849,
+   "text": "Q7. How can I go to Badrinath and Kedarnath?"
+  },
+  {
+   "tag": "h3",
+   "cls": "click_quess",
+   "y": 3337,
+   "h": 44,
+   "w": 849,
+   "text": "Q8. Which places are included in Badrinath and Kedarnath?"
+  },
+  {
+   "tag": "h3",
+   "cls": "click_quess",
+   "y": 3391,
+   "h": 44,
+   "w": 849,
+   "text": "Q9. Where should I go first Badrinath or Kedarnath?"
+  },
+  {
+   "tag": "h3",
+   "cls": "click_quess",
+   "y": 3445,
+   "h": 44,
+   "w": 849,
+   "text": "Q10. What is the cost of the Do Dham Yatra Package by helicopter and b"
+  },
+  {
+   "tag": "h3",
+   "cls": "click_quess",
+   "y": 3499,
+   "h": 44,
+   "w": 849,
+   "text": "Q11. How long does it take from Kedarnath to Badrinath?"
+  },
+  {
+   "tag": "h3",
+   "cls": "click_quess",
+   "y": 3553,
+   "h": 44,
+   "w": 849,
+   "text": "Q12. Which is higher Kedarnath or Badrinath?"
+  },
+  {
+   "tag": "h3",
+   "cls": "click_quess",
+   "y": 3607,
+   "h": 44,
+   "w": 849,
+   "text": "Q13. Is flight/train to Delhi included in INR 29,500?"
+  },
+  {
+   "tag": "h3",
+   "cls": "click_quess",
+   "y": 3661,
+   "h": 44,
+   "w": 849,
+   "text": "Q14. Is registration separate for Kedarnath and Badrinath?"
+  },
+  {
+   "tag": "h3",
+   "cls": "click_quess",
+   "y": 3715,
+   "h": 44,
+   "w": 849,
+   "text": "Q15. What is the Kedarnath daily pilgrim limit?"
+  },
+  {
+   "tag": "h3",
+   "cls": "click_quess",
+   "y": 3769,
+   "h": 44,
+   "w": 849,
+   "text": "Q16. Can senior citizens (70+) do this Yatra?"
+  },
+  {
+   "tag": "h2",
+   "cls": "tour-itine",
+   "y": 3855,
+   "h": 35,
+   "w": 849,
+   "text": "Related Packages"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 4143,
+   "h": 28,
+   "w": 871,
+   "text": "What people say about this experience"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 4493,
+   "h": 24,
+   "w": 216,
+   "text": "Mr. Madhav and family"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 4844,
+   "h": 24,
+   "w": 241,
+   "text": "Mr Ramesh Rao and group"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 5194,
+   "h": 24,
+   "w": 248,
+   "text": "Mr.Padmanaban and family"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 5544,
+   "h": 24,
+   "w": 421,
+   "text": "Mr. Suresh Kumar & Mrs. Sukanya Bardi & Family"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 5895,
+   "h": 24,
+   "w": 244,
+   "text": "Mr KV Srinivas and Familiy"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 6245,
+   "h": 24,
+   "w": 235,
+   "text": "Mr. Raja Babu Kasaraneni"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 6595,
+   "h": 24,
+   "w": 208,
+   "text": "Mrs. Shanti and group"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 6946,
+   "h": 24,
+   "w": 264,
+   "text": "Mr. Chakradhar Swami family"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 313,
+   "h": 28,
+   "w": 398,
+   "text": "Quick Information"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 595,
+   "h": 28,
+   "w": 398,
+   "text": "Need help? Get more information"
+  }
+ ]
+}

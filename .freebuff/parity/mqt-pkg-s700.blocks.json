@@ -1,0 +1,439 @@
+{
+ "scrollY": 700,
+ "innerWidth": 1440,
+ "innerHeight": 900,
+ "blocks": [
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 187,
+   "text": "North India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 187,
+   "text": "East India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 187,
+   "text": "West India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 187,
+   "text": "South India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 187,
+   "text": "Central India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 188,
+   "text": "North East India"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 233,
+   "text": "South East Asia"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 233,
+   "text": "Middle East"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 233,
+   "text": "East Asia"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 233,
+   "text": "Europe"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tr",
+   "y": 171,
+   "h": 29,
+   "w": 234,
+   "text": "South Asia"
+  },
+  {
+   "tag": "h1",
+   "cls": "text-2xl md:text-3xl font-bold text-gray-800",
+   "y": 208,
+   "h": 36,
+   "w": 1336,
+   "text": "Badrinath Kedarnath Do Dham Yatra from Delhi"
+  },
+  {
+   "tag": "h4",
+   "cls": "font-bold text-gray-800 text-sm",
+   "y": 864,
+   "h": 20,
+   "w": 97,
+   "text": "Govt. Approved"
+  },
+  {
+   "tag": "h4",
+   "cls": "font-bold text-gray-800 text-sm",
+   "y": 864,
+   "h": 20,
+   "w": 80,
+   "text": "ISO Certified"
+  },
+  {
+   "tag": "h4",
+   "cls": "font-bold text-gray-800 text-sm",
+   "y": 864,
+   "h": 20,
+   "w": 96,
+   "text": "5000+ Pilgrims"
+  },
+  {
+   "tag": "h4",
+   "cls": "font-bold text-gray-800 text-sm",
+   "y": 864,
+   "h": 20,
+   "w": 63,
+   "text": "15+ Years"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-900 mt-8 mb-4 pb-2 border-b border-gray-100",
+   "y": 1187,
+   "h": 41,
+   "w": 814,
+   "text": "Day-by-Day Itinerary"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 1267,
+   "h": 28,
+   "w": 189,
+   "text": "Day 1: Delhi – Haridwar"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 1553,
+   "h": 28,
+   "w": 230,
+   "text": "Day 2: Haridwar – Guptkashi"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 1838,
+   "h": 28,
+   "w": 346,
+   "text": "Day 3: Guptkashi – Sonprayag – Kedarnath"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 2196,
+   "h": 28,
+   "w": 367,
+   "text": "Day 4: Kedarnath – Sonprayag – Rudraprayag"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 2530,
+   "h": 28,
+   "w": 307,
+   "text": "Day 5: Rudraprayag – Badrinath Dham"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 2889,
+   "h": 28,
+   "w": 256,
+   "text": "Day 6: Badrinath – Rudraprayag"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 3150,
+   "h": 28,
+   "w": 256,
+   "text": "Day 7: Rudraprayag – Rishikesh"
+  },
+  {
+   "tag": "h3",
+   "cls": "text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors",
+   "y": 3386,
+   "h": 28,
+   "w": 280,
+   "text": "Day 8: Rishikesh – Delhi Departure"
+  },
+  {
+   "tag": "h2",
+   "cls": "text-2xl font-bold text-gray-900",
+   "y": 3721,
+   "h": 32,
+   "w": 309,
+   "text": "Similar Tours You Might Like"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 3801,
+   "h": 480,
+   "w": 327,
+   "text": "How to Reach Amarnath with Route MapRoute details on requestHotel Stay"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 4023,
+   "h": 103,
+   "w": 325,
+   "text": "How to Reach Amarnath with Route MapRoute details on requestHotel Stay"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 4023,
+   "h": 20,
+   "w": 315,
+   "text": "How to Reach Amarnath with Route Map"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 4048,
+   "h": 19,
+   "w": 315,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 4126,
+   "h": 154,
+   "w": 325,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 3801,
+   "h": 480,
+   "w": 327,
+   "text": "Amarnath Yatra by Helicopter from Pahalgam3 Days / 2 NightsArrival Sri"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 4023,
+   "h": 130,
+   "w": 325,
+   "text": "Amarnath Yatra by Helicopter from Pahalgam3 Days / 2 NightsArrival Sri"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 4023,
+   "h": 20,
+   "w": 315,
+   "text": "Amarnath Yatra by Helicopter from Pahalgam"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 4075,
+   "h": 19,
+   "w": 315,
+   "text": "Arrival Srinagar - Pahalgam → Pahalgam - Panjtarni - Amarnath Holy Cav"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 4153,
+   "h": 127,
+   "w": 325,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 3801,
+   "h": 480,
+   "w": 327,
+   "text": "Amarnath Weather – Best Time to Visit AmarnathRoute details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 4023,
+   "h": 103,
+   "w": 325,
+   "text": "Amarnath Weather – Best Time to Visit AmarnathRoute details on request"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 4023,
+   "h": 20,
+   "w": 315,
+   "text": "Amarnath Weather – Best Time to Visit Amarnath"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 4048,
+   "h": 19,
+   "w": 315,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 4126,
+   "h": 154,
+   "w": 325,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 3801,
+   "h": 480,
+   "w": 327,
+   "text": "Amarnath Yatra Frequently Asked Questions (FAQs)Route details on reque"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 4023,
+   "h": 103,
+   "w": 325,
+   "text": "Amarnath Yatra Frequently Asked Questions (FAQs)Route details on reque"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 4023,
+   "h": 20,
+   "w": 315,
+   "text": "Amarnath Yatra Frequently Asked Questions (FAQs)"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 4048,
+   "h": 19,
+   "w": 315,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 4126,
+   "h": 154,
+   "w": 325,
+   "text": "·Pricing on requestStarting price per personQuick enquiryView Tour"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-3",
+   "y": 4425,
+   "h": 23,
+   "w": 424,
+   "text": "Regional Associates Offices"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-1",
+   "y": 4425,
+   "h": 23,
+   "w": 265,
+   "text": "Customer Support"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[13px] text-gray-200 mb-1",
+   "y": 4560,
+   "h": 20,
+   "w": 93,
+   "text": "Connect with us"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-1",
+   "y": 4425,
+   "h": 23,
+   "w": 281,
+   "text": "Our Mobile App"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 4722,
+   "h": 23,
+   "w": 248,
+   "text": "India Tours"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 4722,
+   "h": 23,
+   "w": 248,
+   "text": "International Tours"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 4722,
+   "h": 23,
+   "w": 248,
+   "text": "Special Tours"
+  },
+  {
+   "tag": "h4",
+   "cls": "text-[15px] text-gray-200 mb-4",
+   "y": 4722,
+   "h": 23,
+   "w": 248,
+   "text": "Customer Center"
+  }
+ ]
+}
