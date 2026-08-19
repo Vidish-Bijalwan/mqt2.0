@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
 import { siteConfig } from "@/data/siteConfig";
 import { navLinks } from "@/data/navLinks";
 import { Menu, X, Phone, Mail, MessageCircle, ChevronDown, ChevronRight } from "lucide-react";
@@ -13,26 +13,39 @@ export default function Navbar() {
   const [expandedMobileRegion, setExpandedMobileRegion] = useState<string | null>(null);
   const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
   const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const navBarRef = useRef<HTMLDivElement>(null);
+  const [megaMenuStyle, setMegaMenuStyle] = useState<{ top: number; left: number; width: number }>({ top: 0, left: 0, width: 0 });
 
-  // Lock body scroll while the mobile menu is open
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
   }, [isOpen]);
 
-  const handleMenuEnter = (title: string) => {
+  const calculateMegaMenuPosition = useCallback(() => {
+    if (navBarRef.current) {
+      const rect = navBarRef.current.getBoundingClientRect();
+      setMegaMenuStyle({
+        top: rect.bottom,
+        left: 0,
+        width: window.innerWidth,
+      });
+    }
+  }, []);
+
+  const handleMenuEnter = useCallback((title: string) => {
     if (hoverTimeoutRef.current) {
       clearTimeout(hoverTimeoutRef.current);
       hoverTimeoutRef.current = null;
     }
+    calculateMegaMenuPosition();
     setHoveredMenu(title);
-  };
+  }, [calculateMegaMenuPosition]);
 
-  const handleMenuLeave = () => {
+  const handleMenuLeave = useCallback(() => {
     hoverTimeoutRef.current = setTimeout(() => {
       setHoveredMenu(null);
-    }, 150); // Small delay to allow mouse to move to dropdown
-  };
+    }, 150);
+  }, []);
 
   return (
     <nav className="bg-white w-full relative z-[1000]">
@@ -49,7 +62,7 @@ export default function Navbar() {
             <Link href="/reviews" className="hover:text-white/80 transition-colors text-xs font-semibold uppercase tracking-wider">Write A Review</Link>
             <Link href="/pay-online" className="bg-white/10 hover:bg-white/20 px-4 py-1.5 rounded-full backdrop-blur-sm transition-colors text-xs font-bold uppercase tracking-wider flex items-center shadow-sm">Pay Online</Link>
             <Link href="/my-booking" className="bg-gray-900 hover:bg-black text-white px-4 py-1.5 rounded-full transition-colors text-xs font-bold uppercase tracking-wider shadow-md">My Booking</Link>
-            <button type="button" aria-label="Language selector unavailable" className="ml-2 px-3 py-1.5 flex items-center bg-white text-gray-800 rounded-full text-xs font-bold cursor-default shadow-sm">
+            <button type="button" aria-label="Language selector" className="ml-2 px-3 py-1.5 flex items-center bg-white text-gray-800 rounded-full text-xs font-bold cursor-default shadow-sm">
               <span className="mr-1.5 text-sm">🇬🇧</span> English <span className="text-[10px] ml-1.5 text-gray-400">▼</span>
             </button>
           </div>
@@ -60,164 +73,212 @@ export default function Navbar() {
       <div className="container mx-auto px-4 h-14 md:h-20 flex justify-between items-center w-[95%] max-w-[1600px]">
         <div className="flex items-center gap-4">
           <Link href="/" className="flex items-center gap-3 group">
-             <div className="w-9 h-9 md:w-12 md:h-12 rounded-full overflow-hidden border-2 border-legacy-orange/40 shadow-sm group-hover:border-legacy-orange transition-colors shrink-0">
+            <div className="w-9 h-9 md:w-12 md:h-12 rounded-full overflow-hidden border-2 border-legacy-orange/40 shadow-sm group-hover:border-legacy-orange transition-colors shrink-0">
               <Image src="/images/mqt-logo-256.webp" alt="My Quick Trippers" width={48} height={48} className="w-full h-full object-cover" priority />
-             </div>
-             <div className="flex flex-col leading-tight">
-               <span className="text-lg md:text-[22px] font-extrabold text-gray-900 tracking-tight whitespace-nowrap">
-                 My Quick <span className="text-legacy-orange">Trippers</span>
-               </span>
-               <span className="text-[10px] md:text-[10px] text-gray-500 font-semibold uppercase tracking-[0.14em] whitespace-nowrap">
-                 Your Journey, Our Expertise
-               </span>
-             </div>
+            </div>
+            <div className="flex flex-col leading-tight">
+              <span className="text-lg md:text-[22px] font-extrabold text-gray-900 tracking-tight whitespace-nowrap">
+                My Quick <span className="text-legacy-orange">Trippers</span>
+              </span>
+              <span className="text-[10px] text-gray-500 font-semibold uppercase tracking-[0.14em] whitespace-nowrap">
+                Your Journey, Our Expertise
+              </span>
+            </div>
           </Link>
         </div>
         
         {/* Social Icons */}
         <div className="hidden lg:flex space-x-2.5">
-           <a href={siteConfig.social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-10 h-10 rounded-full bg-[#3b5998] flex items-center justify-center text-white hover:scale-110 shadow-sm hover:shadow-md transition-all duration-200">
-              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-           </a>
-           <a href={siteConfig.social.twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter / X" className="w-10 h-10 rounded-full bg-[#1da1f2] flex items-center justify-center text-white hover:scale-110 shadow-sm hover:shadow-md transition-all duration-200">
-              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
-           </a>
-           <a href={siteConfig.social.youtube} target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="w-10 h-10 rounded-full bg-[#cd201f] flex items-center justify-center text-white hover:scale-110 shadow-sm hover:shadow-md transition-all duration-200">
-              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-           </a>
-           <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] flex items-center justify-center text-white hover:scale-110 shadow-sm hover:shadow-md transition-all duration-200">
-              <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-           </a>
-           <a href={siteConfig.social.whatsapp} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="w-10 h-10 rounded-full bg-[#25D366] flex items-center justify-center text-white hover:scale-110 shadow-sm hover:shadow-md transition-all duration-200"><MessageCircle className="w-4 h-4"/></a>
-           <a href={siteConfig.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-10 h-10 rounded-full bg-[#007bb5] flex items-center justify-center text-white hover:scale-110 shadow-sm hover:shadow-md transition-all duration-200">
-              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-1.236 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-           </a>
+          <a href={siteConfig.social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-10 h-10 rounded-full bg-[#3b5998] flex items-center justify-center text-white hover:scale-110 shadow-sm hover:shadow-md transition-all duration-200">
+            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href={siteConfig.social.twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter / X" className="w-10 h-10 rounded-full bg-[#1da1f2] flex items-center justify-center text-white hover:scale-110 shadow-sm hover:shadow-md transition-all duration-200">
+            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+          </a>
+          <a href={siteConfig.social.youtube} target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="w-10 h-10 rounded-full bg-[#cd201f] flex items-center justify-center text-white hover:scale-110 shadow-sm hover:shadow-md transition-all duration-200">
+            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] flex items-center justify-center text-white hover:scale-110 shadow-sm hover:shadow-md transition-all duration-200">
+            <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href={siteConfig.social.whatsapp} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="w-10 h-10 rounded-full bg-[#25D366] flex items-center justify-center text-white hover:scale-110 shadow-sm hover:shadow-md transition-all duration-200">
+            <MessageCircle className="w-4 h-4"/>
+          </a>
+          <a href={siteConfig.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-10 h-10 rounded-full bg-[#007bb5] flex items-center justify-center text-white hover:scale-110 shadow-sm hover:shadow-md transition-all duration-200">
+            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-1.236 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
         </div>
 
         {/* Mobile menu button */}
         <div className="lg:hidden flex items-center">
-          <button type="button" onClick={() => setIsOpen(!isOpen)} aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"} aria-expanded={isOpen} aria-controls="mobile-navigation" className="min-h-11 min-w-11 inline-flex items-center justify-center rounded-md text-legacy-nav-blue focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-legacy-orange focus-visible:ring-offset-2">
+          <button type="button" onClick={() => setIsOpen(!isOpen)} aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"} aria-expanded={isOpen} className="min-h-11 min-w-11 inline-flex items-center justify-center rounded-md text-legacy-nav-blue">
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
       </div>
 
-      {/* 3. Navigation Bar (Dark Blue) */}
-      <div className="bg-legacy-nav-blue text-white w-full hidden lg:block">
-         <div className="container mx-auto w-[95%] max-w-[1600px] flex relative overflow-visible">
-            {/* Home Icon */}
-            <Link href="/" className="bg-legacy-orange w-14 h-10 flex items-center justify-center hover:bg-legacy-orange-hover transition-colors nav-divider shrink-0">
-               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                 <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
-               </svg>
-            </Link>
+      {/* 3. Navigation Bar */}
+      <div ref={navBarRef} className="bg-legacy-nav-blue text-white w-full hidden lg:block relative">
+        <div className="container mx-auto w-[95%] max-w-[1600px] flex relative">
+          {/* Home Icon */}
+          <Link href="/" className="bg-legacy-orange w-14 h-10 flex items-center justify-center hover:bg-legacy-orange-hover transition-colors shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+            </svg>
+          </Link>
 
-            {/* Nav Links */}
-            <div className="flex flex-1 min-w-0 flex-nowrap text-[12px] xl:text-[13px] font-bold">
-               {navLinks.map((item, idx) => (
-                  <div 
-                    key={idx} 
-                    className="relative nav-divider"
-                    onMouseEnter={() => (item.submenus || item.links) && handleMenuEnter(item.title)}
-                    onMouseLeave={() => (item.submenus || item.links) && handleMenuLeave()}
+          {/* Nav Links */}
+          <div className="flex flex-1 min-w-0 flex-nowrap text-[12px] xl:text-[13px] font-bold">
+            {navLinks.map((item, idx) => (
+              <div 
+                key={idx} 
+                className="relative"
+                onMouseEnter={() => (item.submenus || item.links) && handleMenuEnter(item.title)}
+                onMouseLeave={() => (item.submenus || item.links) && handleMenuLeave()}
+              >
+                {/* Nav item trigger */}
+                {item.submenus || item.links ? (
+                  <button
+                    type="button"
+                    aria-label={`Open ${item.title} menu`}
+                    className={`px-2.5 xl:px-3 h-10 whitespace-nowrap flex items-center cursor-pointer transition-colors duration-200 ${hoveredMenu === item.title ? 'text-legacy-orange' : 'hover:text-legacy-orange'}`}
                   >
-                     {/* Nav item trigger */}
-                      {item.submenus || item.links ? (
-                        <button
-                          type="button"
-                          aria-label={`Open ${item.title} menu`}
-                          className={`px-2.5 xl:px-3 h-10 whitespace-nowrap flex items-center cursor-pointer focus-visible:outline-none transition-colors duration-300 relative ${hoveredMenu === item.title ? 'text-legacy-orange' : 'hover:text-legacy-orange'}`}
-                        >
-                           {item.title} 
-                           <span aria-hidden="true" className={`ml-1.5 text-[10px] transition-transform duration-300 ${hoveredMenu === item.title ? 'rotate-180 opacity-100' : 'opacity-70'}`}>▼</span>
-                           <span aria-hidden="true" className={`absolute bottom-0 left-0 w-full h-[2px] bg-legacy-orange transition-transform duration-300 origin-left ${hoveredMenu === item.title ? 'scale-x-100' : 'scale-x-0'}`}></span>
-                        </button>
-                      ) : (
-                       <Link href={item.href || "#"} className="px-2.5 xl:px-3 h-10 whitespace-nowrap flex items-center cursor-pointer hover:text-legacy-orange focus-visible:text-legacy-orange focus-visible:outline-none transition-colors duration-300 relative overflow-hidden">
-                          {item.title}
-                          <span className="absolute bottom-0 left-0 w-full h-[2px] bg-legacy-orange transform scale-x-0 hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-                       </Link>
-                     )}
-                     
-                     {/* ===== MEGA MENU DROPDOWN ===== */}
-                     {item.megaMenu && item.submenus && hoveredMenu === item.title && (
-                        <div 
-                          className="absolute top-full left-0 right-0 bg-white !bg-white shadow-2xl border-t-[3px] border-legacy-orange z-[9999] text-gray-700 min-h-[400px]"
-                          onMouseEnter={() => handleMenuEnter(item.title)}
-                          onMouseLeave={handleMenuLeave}
-                          style={{ backgroundColor: 'white !important' }}
-                        >
-                           <div className="grid gap-0 divide-x divide-gray-100 p-0" style={{ gridTemplateColumns: `repeat(${item.submenus.length}, minmax(130px, 1fr))` }}>
-                              {item.submenus.map((region, ridx) => (
-                                 <div key={ridx} className="px-5 py-4">
-                                    <h4 className="text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tracking-wide">
-                                       {region.title}
-                                    </h4>
-                                    <ul className="space-y-0">
-                                       {region.links.map((link, lidx) => (
-                                          <li key={lidx}>
-                                             <Link href={link.href} className="flex items-center py-[6px] text-[13px] text-gray-700 hover:text-legacy-orange transition-colors">
-                                                <span className="text-legacy-orange mr-2 text-[10px] opacity-70 hover:opacity-100">★</span>
-                                                {link.name}
-                                             </Link>
-                                          </li>
-                                       ))}
-                                    </ul>
-                                    <Link href={item.href || "#"} className="mt-3 inline-block text-[11px] font-bold text-legacy-orange border border-legacy-orange px-3 py-1 rounded-sm hover:bg-legacy-orange hover:text-white transition-colors uppercase tracking-wider">
-                                       View More »
-                                    </Link>
-                                 </div>
-                              ))}
-                           </div>
-                        </div>
-                     )}
-
-                     {/* ===== SIMPLE DROPDOWN ===== */}
-                     {!item.megaMenu && item.links && hoveredMenu === item.title && (
-                         <div 
-                           className="absolute top-full left-0 w-64 shadow-lg border-t-2 border-legacy-orange z-[9999] text-gray-700 text-[13px]"
-                           onMouseEnter={() => handleMenuEnter(item.title)}
-                           onMouseLeave={handleMenuLeave}
-                           style={{ backgroundColor: 'white' }}
-                         >
-                           {item.links.map((link, lidx) => (
-                              <Link key={lidx} href={link.href} className="block px-4 py-2.5 hover:bg-gray-50 hover:text-legacy-orange border-b border-gray-100 last:border-0 transition-colors">
-                                 <span className="text-legacy-orange mr-2 text-[10px]">★</span>
-                                 {link.name}
-                              </Link>
-                           ))}
-                         </div>
-                     )}
-
-                     {/* ===== NON-MEGA SUBMENUS ===== */}
-                     {!item.megaMenu && item.submenus && hoveredMenu === item.title && (
-                        <div 
-                          className="absolute top-full left-0 w-64 shadow-lg border-t-2 border-legacy-orange z-[9999] text-gray-700 text-[13px]"
-                          onMouseEnter={() => handleMenuEnter(item.title)}
-                          onMouseLeave={handleMenuLeave}
-                          style={{ backgroundColor: 'white' }}
-                        >
-                           {item.submenus.map((sub, sidx) => (
-                              <div key={sidx}>
-                                 <div className="px-4 py-2 bg-gray-50 font-bold border-b border-gray-100 text-legacy-orange">{sub.title}</div>
-                                 {sub.links.map((link, lidx) => (
-                                    <Link key={lidx} href={link.href} className="block px-4 py-2 hover:bg-gray-50 hover:text-legacy-orange border-b border-gray-100 last:border-0">
-                                       {link.name}
-                                    </Link>
-                                 ))}
-                              </div>
-                           ))}
-                        </div>
-                     )}
-                  </div>
-               ))}
-            </div>
-         </div>
+                    {item.title} 
+                    <ChevronDown className={`ml-1 w-3 h-3 transition-transform duration-200 ${hoveredMenu === item.title ? 'rotate-180' : ''}`} />
+                  </button>
+                ) : (
+                  <Link href={item.href || "#"} className="px-2.5 xl:px-3 h-10 whitespace-nowrap flex items-center cursor-pointer hover:text-legacy-orange transition-colors duration-200">
+                    {item.title}
+                  </Link>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
+
+      {/* ===== MEGA MENU DROPDOWN (rendered outside nav items, uses fixed positioning) ===== */}
+      {hoveredMenu && navLinks.find(n => n.title === hoveredMenu && n.megaMenu && n.submenus) && (() => {
+        const activeItem = navLinks.find(n => n.title === hoveredMenu)!;
+        return (
+          <div
+            className="hidden lg:block"
+            style={{
+              position: 'fixed',
+              top: megaMenuStyle.top,
+              left: 0,
+              width: '100vw',
+              zIndex: 9999,
+              backgroundColor: 'white',
+              boxShadow: '0 8px 30px rgba(0,0,0,0.15)',
+              borderTop: '3px solid var(--color-legacy-orange, #f97316)',
+            }}
+            onMouseEnter={() => handleMenuEnter(hoveredMenu)}
+            onMouseLeave={handleMenuLeave}
+          >
+            <div className="container mx-auto w-[95%] max-w-[1600px]">
+              <div className="grid" style={{ gridTemplateColumns: `repeat(${activeItem.submenus!.length}, minmax(160px, 1fr))` }}>
+                {activeItem.submenus!.map((region, ridx) => (
+                  <div key={ridx} className="px-5 py-5 border-r border-gray-100 last:border-r-0">
+                    <h4 className="text-legacy-orange font-bold text-[13px] mb-3 pb-2 border-b border-orange-100 uppercase tracking-wide">
+                      {region.title}
+                    </h4>
+                    <ul className="space-y-0">
+                      {region.links.map((link, lidx) => (
+                        <li key={lidx}>
+                          <Link href={link.href} className="flex items-center py-[7px] text-[13px] text-gray-700 hover:text-legacy-orange hover:bg-gray-50 transition-colors rounded px-1">
+                            <span className="text-legacy-orange mr-2 text-[10px]">★</span>
+                            {link.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                    <Link href={activeItem.href || "#"} className="mt-3 inline-block text-[11px] font-bold text-legacy-orange border border-legacy-orange px-3 py-1.5 rounded-sm hover:bg-legacy-orange hover:text-white transition-colors uppercase tracking-wider">
+                      View More »
+                    </Link>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        );
+      })()}
+
+      {/* ===== SIMPLE DROPDOWN (rendered outside nav items, fixed positioning) ===== */}
+      {hoveredMenu && navLinks.find(n => n.title === hoveredMenu && !n.megaMenu && n.links) && (() => {
+        const activeItem = navLinks.find(n => n.title === hoveredMenu)!;
+        return (
+          <div
+            className="hidden lg:block"
+            style={{
+              position: 'fixed',
+              top: megaMenuStyle.top,
+              left: 0,
+              width: '100vw',
+              zIndex: 9999,
+              backgroundColor: 'white',
+              boxShadow: '0 4px 20px rgba(0,0,0,0.12)',
+              borderTop: '2px solid var(--color-legacy-orange, #f97316)',
+            }}
+            onMouseEnter={() => handleMenuEnter(hoveredMenu)}
+            onMouseLeave={handleMenuLeave}
+          >
+            <div className="container mx-auto w-[95%] max-w-[1600px] py-4">
+              <div className="flex flex-wrap gap-x-6 gap-y-1">
+                {activeItem.links!.map((link, lidx) => (
+                  <Link key={lidx} href={link.href} className="flex items-center py-2 px-3 text-[13px] text-gray-700 hover:bg-gray-50 hover:text-legacy-orange rounded transition-colors">
+                    <span className="text-legacy-orange mr-2 text-[10px]">★</span>
+                    {link.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        );
+      })()}
+
+      {/* ===== NON-MEGA SUBMENUS (rendered outside nav items, fixed positioning) ===== */}
+      {hoveredMenu && navLinks.find(n => n.title === hoveredMenu && !n.megaMenu && n.submenus) && (() => {
+        const activeItem = navLinks.find(n => n.title === hoveredMenu)!;
+        return (
+          <div
+            className="hidden lg:block"
+            style={{
+              position: 'fixed',
+              top: megaMenuStyle.top,
+              left: 0,
+              width: '100vw',
+              zIndex: 9999,
+              backgroundColor: 'white',
+              boxShadow: '0 4px 20px rgba(0,0,0,0.12)',
+              borderTop: '2px solid var(--color-legacy-orange, #f97316)',
+            }}
+            onMouseEnter={() => handleMenuEnter(hoveredMenu)}
+            onMouseLeave={handleMenuLeave}
+          >
+            <div className="container mx-auto w-[95%] max-w-[1600px] py-4">
+              <div className="flex flex-wrap gap-x-8 gap-y-2">
+                {activeItem.submenus!.map((sub, sidx) => (
+                  <div key={sidx}>
+                    <div className="font-bold text-legacy-orange text-[13px] mb-2 uppercase tracking-wide">{sub.title}</div>
+                    <div className="flex flex-wrap gap-x-6 gap-y-1">
+                      {sub.links.map((link, lidx) => (
+                        <Link key={lidx} href={link.href} className="flex items-center py-1.5 text-[13px] text-gray-700 hover:text-legacy-orange transition-colors">
+                          {link.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        );
+      })()}
 
       {/* ===== MOBILE NAV ===== */}
       {isOpen && (
-          <div id="mobile-navigation" className="lg:hidden bg-legacy-nav-blue text-white px-4 pt-2 pb-4 shadow-lg absolute w-full left-0 z-50 max-h-[80vh] overflow-y-auto overscroll-contain">
+        <div className="lg:hidden bg-legacy-nav-blue text-white px-4 pt-2 pb-4 shadow-lg absolute w-full left-0 z-50 max-h-[80vh] overflow-y-auto">
           <Link href="/" className="block py-3 border-b border-gray-700" onClick={() => setIsOpen(false)}>Home</Link>
           {navLinks.map((item, idx) => (
             <div key={idx} className="border-b border-gray-700">
@@ -271,10 +332,10 @@ export default function Navbar() {
             </div>
           ))}
           
-          <div className="mt-4 pt-4 border-t border-gray-700 flex flex-col space-y-4">
-             <a href={`tel:${siteConfig.phoneRaw}`} className="flex items-center text-brand-green font-bold">
-               <Phone className="w-5 h-5 mr-2" /> Call: {siteConfig.phone}
-             </a>
+          <div className="mt-4 pt-4 border-t border-gray-700">
+            <a href={`tel:${siteConfig.phoneRaw}`} className="flex items-center text-brand-green font-bold">
+              <Phone className="w-5 h-5 mr-2" /> Call: {siteConfig.phone}
+            </a>
           </div>
         </div>
       )}
