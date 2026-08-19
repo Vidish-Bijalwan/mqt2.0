@@ -79,6 +79,7 @@ export async function GET(
           // eslint-disable-next-line @next/next/no-img-element
           <img
             src={imgSrc}
+            alt="Package cover photo"
             width={1200}
             height={630}
             style={{ objectFit: "cover", opacity: 0.4 }}

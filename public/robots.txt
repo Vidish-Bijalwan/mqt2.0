@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /my-booking/
+Disallow: /pay-online/
+
+Sitemap: https://www.myquicktrippers.com/sitemap.xml

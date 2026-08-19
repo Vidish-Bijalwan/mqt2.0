@@ -6,6 +6,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import FloatingButtons from "@/components/layout/FloatingButtons";
 import FloatingWhatsApp from "@/components/ui/FloatingWhatsApp";
+import ScrollToTop from "@/components/ui/ScrollToTop";
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["400", "500", "700"] });
 
@@ -88,12 +89,16 @@ export default function RootLayout({
         />
       </head>
       <body className={roboto.className} suppressHydrationWarning>
+        <a href="#main-content" className="skip-link">
+          Skip to main content
+        </a>
         <div className="flex flex-col min-h-screen">
           <Navbar />
-          <main className="flex-grow">{children}</main>
+          <main id="main-content" className="flex-grow">{children}</main>
           <Footer />
           <FloatingButtons />
           <FloatingWhatsApp />
+          <ScrollToTop />
         </div>
       </body>
     </html>

@@ -27,7 +27,7 @@ try {
   const dataPath = path.join(process.cwd(), 'src/data/packageDetails.json');
   packageDetails = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
 } catch (e) {
-  console.log("Error loading packageDetails.json", e);
+  // silently continue without V1 details
 }
 
 // Load V2 Package Details (Agent 3 output)
@@ -36,7 +36,7 @@ try {
   const dataPathV2 = path.join(process.cwd(), 'src/data/packageDetailsV2.json');
   packageDetailsV2 = JSON.parse(fs.readFileSync(dataPathV2, 'utf-8'));
 } catch (e) {
-  console.log("Error loading packageDetailsV2.json", e);
+  // silently continue without V2 details
 }
 
 // Load V3 Package Details (clean, structured blocks regenerated from the
@@ -46,7 +46,7 @@ try {
   const dataPathV3 = path.join(process.cwd(), 'src/data/packageDetailsV3.json');
   packageDetailsV3 = JSON.parse(fs.readFileSync(dataPathV3, 'utf-8'));
 } catch (e) {
-  console.log("Error loading packageDetailsV3.json", e);
+  // silently continue without V3 details
 }
 
 function detailsV2For(slug: string) {

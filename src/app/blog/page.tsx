@@ -113,7 +113,7 @@ function BlogIndexContent() {
               className="w-full pl-12 pr-12 py-4 rounded-full bg-white text-gray-800 text-base border-2 border-legacy-orange/40 focus:border-legacy-orange focus:outline-none shadow-lg placeholder-gray-400"
             />
             {searchQuery && (
-              <button onClick={() => handleSearch('')} className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600">
+              <button onClick={() => handleSearch('')} aria-label="Clear search" className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600">
                 <X className="w-5 h-5" />
               </button>
             )}
@@ -194,7 +194,7 @@ function BlogIndexContent() {
               </button>
             ))}
             {activeCategory !== 'All Articles' && (
-              <button onClick={() => handleCategoryChange('All Articles')} className="flex-shrink-0 px-3 py-2 text-sm text-red-500 hover:bg-red-50 rounded-full font-medium flex items-center">
+              <button onClick={() => handleCategoryChange('All Articles')} aria-label="Clear category filter" className="flex-shrink-0 px-3 py-2 text-sm text-red-500 hover:bg-red-50 rounded-full font-medium flex items-center">
                 <X className="w-3 h-3 mr-1" /> Clear
               </button>
             )}
@@ -274,7 +274,7 @@ function BlogIndexContent() {
               <Search className="w-12 h-12 text-gray-300 mx-auto mb-4" />
               <h3 className="text-xl font-bold text-gray-700 mb-2">No articles found</h3>
               <p className="text-gray-500 mb-6">Try adjusting your search or filter criteria.</p>
-              <button onClick={() => { setSearchQuery(''); setActiveCategory('All Articles'); }} className="bg-legacy-orange text-white px-6 py-2.5 rounded-full font-semibold hover:bg-orange-600 transition-colors">
+              <button onClick={() => { setSearchQuery(''); setActiveCategory('All Articles'); }} aria-label="View all articles" className="bg-legacy-orange text-white px-6 py-2.5 rounded-full font-semibold hover:bg-orange-600 transition-colors">
                 View All Articles
               </button>
             </div>
@@ -291,6 +291,7 @@ function BlogIndexContent() {
                 <button
                   onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
                   disabled={currentPage === 1}
+                  aria-label="Previous page"
                   className={`px-4 py-2.5 rounded-lg text-sm font-medium min-h-[40px] transition-colors ${
                     currentPage === 1
                       ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
@@ -330,6 +331,7 @@ function BlogIndexContent() {
                 <button
                   onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
                   disabled={currentPage === totalPages}
+                  aria-label="Next page"
                   className={`px-4 py-2.5 rounded-lg text-sm font-medium min-h-[40px] transition-colors ${
                     currentPage === totalPages
                       ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
