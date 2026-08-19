@@ -40,13 +40,18 @@ export default function EnquiryForm({ pkgName = "" }: { pkgName?: string }) {
 
   if (status === "success") {
     return (
-      <div className="bg-green-50 border border-green-200 text-green-700 p-6 rounded-lg text-center">
-        <h3 className="text-xl font-bold mb-2">Your quote request is ready.</h3>
-        <p>WhatsApp has opened with your details prefilled. Send the message there to reach our travel team.</p>
+      <div className="bg-green-50 border border-green-200 text-green-700 p-8 rounded-lg text-center animate-in fade-in zoom-in duration-300">
+        <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <h3 className="text-xl font-bold mb-2">Quote Request Sent!</h3>
+        <p className="text-green-600 mb-4">WhatsApp has opened with your details. Send the message to our travel team.</p>
         <button 
           onClick={() => setStatus("idle")}
           aria-label="Send another enquiry"
-          className="mt-4 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition-colors"
+          className="px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium"
         >
           Send Another Enquiry
         </button>
