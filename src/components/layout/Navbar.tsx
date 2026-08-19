@@ -142,9 +142,10 @@ export default function Navbar() {
                      {/* ===== MEGA MENU DROPDOWN ===== */}
                      {item.megaMenu && item.submenus && hoveredMenu === item.title && (
                         <div 
-                          className="absolute top-full left-0 right-0 bg-white shadow-2xl border-t-[3px] border-legacy-orange z-50 text-gray-700"
+                          className="absolute top-full left-0 right-0 bg-white !bg-white shadow-2xl border-t-[3px] border-legacy-orange z-[9999] text-gray-700 min-h-[400px]"
                           onMouseEnter={() => handleMenuEnter(item.title)}
                           onMouseLeave={handleMenuLeave}
+                          style={{ backgroundColor: 'white !important' }}
                         >
                            <div className="grid gap-0 divide-x divide-gray-100 p-0" style={{ gridTemplateColumns: `repeat(${item.submenus.length}, minmax(130px, 1fr))` }}>
                               {item.submenus.map((region, ridx) => (
@@ -174,9 +175,10 @@ export default function Navbar() {
                      {/* ===== SIMPLE DROPDOWN ===== */}
                      {!item.megaMenu && item.links && hoveredMenu === item.title && (
                          <div 
-                           className="absolute top-full left-0 w-64 bg-white shadow-lg border-t-2 border-legacy-orange z-50 text-gray-700 text-[13px]"
+                           className="absolute top-full left-0 w-64 shadow-lg border-t-2 border-legacy-orange z-[9999] text-gray-700 text-[13px]"
                            onMouseEnter={() => handleMenuEnter(item.title)}
                            onMouseLeave={handleMenuLeave}
+                           style={{ backgroundColor: 'white' }}
                          >
                            {item.links.map((link, lidx) => (
                               <Link key={lidx} href={link.href} className="block px-4 py-2.5 hover:bg-gray-50 hover:text-legacy-orange border-b border-gray-100 last:border-0 transition-colors">
@@ -190,9 +192,10 @@ export default function Navbar() {
                      {/* ===== NON-MEGA SUBMENUS ===== */}
                      {!item.megaMenu && item.submenus && hoveredMenu === item.title && (
                         <div 
-                          className="absolute top-full left-0 w-64 bg-white shadow-lg border-t-2 border-legacy-orange z-50 text-gray-700 text-[13px]"
+                          className="absolute top-full left-0 w-64 shadow-lg border-t-2 border-legacy-orange z-[9999] text-gray-700 text-[13px]"
                           onMouseEnter={() => handleMenuEnter(item.title)}
                           onMouseLeave={handleMenuLeave}
+                          style={{ backgroundColor: 'white' }}
                         >
                            {item.submenus.map((sub, sidx) => (
                               <div key={sidx}>
