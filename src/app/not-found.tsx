@@ -29,6 +29,7 @@ export default function NotFound() {
           </Link>
           <button
             onClick={() => window.history.back()}
+            aria-label="Go back to previous page"
             className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />

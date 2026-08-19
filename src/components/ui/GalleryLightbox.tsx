@@ -132,7 +132,7 @@ export default function GalleryLightbox({ images, title, captions = [] }: Galler
                     i === index ? "ring-2 ring-legacy-orange opacity-100" : "opacity-50 hover:opacity-80"
                   }`}
                 >
-                  <Image src={img} alt="" fill sizes="64px" className="object-cover" />
+                  <Image src={img} alt="Gallery thumbnail" fill sizes="64px" className="object-cover" />
                 </button>
               ))}
             </div>

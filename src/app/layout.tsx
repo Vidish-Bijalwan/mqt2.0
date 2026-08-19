@@ -17,7 +17,11 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   icons: {
-    icon: "/logo/mqt-india-logo.png",
+    icon: "/favicon.svg",
+    apple: "/images/mqt-logo-256.webp",
+  },
+  alternates: {
+    canonical: siteConfig.domain,
   },
   openGraph: {
     type: "website",
@@ -25,6 +29,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: `${siteConfig.name} - ${siteConfig.tagline}`,
     description: siteConfig.description,
+    url: siteConfig.domain,
   },
   twitter: {
     card: "summary_large_image",

@@ -86,7 +86,7 @@ function BlogIndexContent() {
             '/images/blog/stepwells-in-gujarat.jpg',
           ].map((src, i) => (
             <div key={i} className="relative w-full h-full">
-              <Image src={src} alt="" fill className="object-cover" sizes="25vw" />
+              <Image src={src} alt="Travel blog hero image" fill className="object-cover" sizes="25vw" />
             </div>
           ))}
         </div>
@@ -125,6 +125,7 @@ function BlogIndexContent() {
               <button
                 key={cat}
                 onClick={() => handleCategoryChange(cat)}
+                aria-label={`Filter by ${cat}`}
                 className={`px-4 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${
                   activeCategory === cat
                     ? 'bg-legacy-orange text-white shadow-md scale-105'

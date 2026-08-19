@@ -83,8 +83,23 @@ export default function ReviewsPage() {
 
   const featuredReviews = reviews.filter((r) => r.isFeatured);
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'My Quick Trippers',
+    url: 'https://www.myquicktrippers.com',
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: ratingDistribution.overall,
+      reviewCount: ratingDistribution.totalReviews,
+      bestRating: 5,
+      worstRating: 1,
+    },
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 text-center">

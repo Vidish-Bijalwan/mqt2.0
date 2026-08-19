@@ -17,11 +17,9 @@ export default function DestinationReviewCard({
 }: DestinationReviewCardProps) {
   return (
     <div className="group relative bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer">
-      {/* Image — gradient with destination initial */}
-      <div className="relative h-40 bg-gradient-to-br from-blue-500 to-indigo-600">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-5xl font-bold text-white/20">{destination.charAt(0)}</span>
-        </div>
+      {/* Image */}
+      <div className="relative h-40 bg-gradient-to-br from-blue-500 to-indigo-600 overflow-hidden">
+        <img src={image} alt={destination} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
         <div className="absolute bottom-3 left-3 right-3">
           <h3 className="text-white font-semibold text-lg">{destination}</h3>

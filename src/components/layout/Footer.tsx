@@ -48,27 +48,18 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Mobile App */}
+          {/* Contact Info */}
           <div className="flex flex-col items-end">
              <div>
-                <h4 className="text-[15px] text-gray-200 mb-1">Our Mobile App</h4>
-                <p className="text-gray-400 text-[11px] mb-3">Enjoy exclusive discounts and deals on holiday packages.</p>
+                <h4 className="text-[15px] text-gray-200 mb-1">Get in Touch</h4>
+                <p className="text-gray-400 text-[11px] mb-3">Call or WhatsApp us for instant support.</p>
                 <div className="flex space-x-2">
-                   {/* Placeholders for App Store buttons */}
-                   <div className="bg-black border border-gray-600 rounded-md px-3 py-1 flex items-center cursor-pointer hover:bg-gray-800">
-                      <div className="text-white text-xl mr-2">🍏</div>
-                      <div className="leading-none">
-                         <div className="text-[9px] text-gray-300">Download on the</div>
-                         <div className="text-sm font-semibold">App Store</div>
-                      </div>
-                   </div>
-                   <div className="bg-black border border-gray-600 rounded-md px-3 py-1 flex items-center cursor-pointer hover:bg-gray-800">
-                      <div className="text-white text-xl mr-2">▶</div>
-                      <div className="leading-none">
-                         <div className="text-[9px] text-gray-300">GET IT ON</div>
-                         <div className="text-sm font-semibold">Google Play</div>
-                      </div>
-                   </div>
+                   <a href="tel:8171158569" className="bg-legacy-orange hover:bg-orange-600 text-white rounded-md px-4 py-2 text-sm font-semibold transition-colors">
+                      📞 Call Now
+                   </a>
+                   <a href="https://wa.me/918171158569" target="_blank" rel="noopener noreferrer" className="bg-green-600 hover:bg-green-700 text-white rounded-md px-4 py-2 text-sm font-semibold transition-colors">
+                      💬 WhatsApp
+                   </a>
                 </div>
              </div>
           </div>

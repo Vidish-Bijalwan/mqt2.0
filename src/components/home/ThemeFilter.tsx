@@ -52,6 +52,7 @@ export default function ThemeFilter() {
                 type="button"
                 onClick={() => handleThemeClick(theme.name)}
                 aria-pressed={isActive}
+                aria-label={`Filter by ${theme.name}`}
                 className={isActive ? "nit-theme-active" : undefined}
               >
                 {Icon ? <Icon className="nit-theme-ic" strokeWidth={1.5} /> : null}

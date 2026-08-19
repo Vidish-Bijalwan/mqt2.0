@@ -21,11 +21,9 @@ export default function TourReviewCard({
 }: TourReviewCardProps) {
   return (
     <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300">
-      {/* Image — gradient with tour initial */}
-      <div className="relative h-48 bg-gradient-to-br from-orange-500 to-red-600">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-6xl font-bold text-white/20">{tour.charAt(0)}</span>
-        </div>
+      {/* Image */}
+      <div className="relative h-48 bg-gradient-to-br from-orange-500 to-red-600 overflow-hidden">
+        <img src={image} alt={tour} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
         <div className="absolute bottom-3 left-3 right-3">
           <h3 className="text-white font-semibold">{tour}</h3>

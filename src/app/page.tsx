@@ -133,7 +133,7 @@ export default function Home() {
            <div className="inline-flex items-center gap-2.5 rounded-full bg-white/[0.07] border border-white/15 backdrop-blur px-4 py-1.5 mb-4">
              <Image
                src="/images/mqt-logo-256.webp"
-               alt=""
+               alt="My Quick Trippers logo"
                width={22}
                height={22}
                className="w-[22px] h-[22px] rounded-full object-cover border border-white/30"

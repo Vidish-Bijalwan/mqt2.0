@@ -21,8 +21,24 @@ const QUICK_LINKS = [
 ];
 
 export default function CustomerCenterPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'CustomerService',
+    name: 'My Quick Trippers Customer Center',
+    url: 'https://www.myquicktrippers.com/customer-center',
+    telephone: '+91-8171158569',
+    email: 'info@myquicktrippers.com',
+    hoursAvailable: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      opens: '10:00',
+      closes: '19:00',
+    },
+  };
+
   return (
     <div className="bg-gray-50 min-h-screen pb-16">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {/* Breadcrumb */}
       <div className="bg-legacy-nav-blue text-white text-xs py-2 px-4">
         <div className="container mx-auto w-[95%] max-w-[1600px] flex items-center">
