@@ -116,7 +116,7 @@ export default function Navbar() {
             {/* Nav Links */}
             <div className="flex flex-1 min-w-0 flex-nowrap text-[12px] xl:text-[13px] font-bold">
                {navLinks.map((item, idx) => (
-                  <div key={idx} className={`${item.megaMenu ? 'static' : 'relative'} group nav-divider`}>
+                  <div key={idx} className="relative group nav-divider">
                      {/* Nav item trigger */}
                       {item.submenus || item.links ? (
                         <button
