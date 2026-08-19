@@ -38,12 +38,12 @@ export default function Footer() {
               <h4 className="text-[13px] text-gray-200 mb-1">Connect with us</h4>
               <p className="text-gray-400 text-[11px] mb-2">We regularly post about trending packages<br/>and travel knowledge.</p>
               <div className="flex space-x-2">
-                 <a href={siteConfig.social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-6 h-6 rounded-full bg-legacy-social-fb flex items-center justify-center text-white text-xs hover:opacity-80">f</a>
-                 <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-6 h-6 rounded-full bg-gray-500 flex items-center justify-center text-white hover:opacity-80"><span className="text-[9px] font-bold">IG</span></a>
-                 <a href={siteConfig.social.twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter / X" className="w-6 h-6 rounded-full bg-black flex items-center justify-center text-white text-[9px] hover:opacity-80">X</a>
-                 <a href={siteConfig.social.youtube} target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="w-6 h-6 rounded-full bg-legacy-social-yt flex items-center justify-center text-white hover:opacity-80"><span className="text-[9px] font-bold">YT</span></a>
-                 <a href={siteConfig.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-6 h-6 rounded-full bg-legacy-social-in flex items-center justify-center text-white hover:opacity-80"><span className="text-[9px] font-bold">in</span></a>
-                 <a href={siteConfig.social.whatsapp} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="w-6 h-6 rounded-full bg-legacy-social-wa flex items-center justify-center text-white hover:opacity-80"><MessageCircle className="w-3 h-3"/></a>
+                 <a href={siteConfig.social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-10 h-10 rounded-full bg-legacy-social-fb flex items-center justify-center text-white text-xs hover:opacity-80">f</a>
+                 <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-10 h-10 rounded-full bg-gray-500 flex items-center justify-center text-white hover:opacity-80"><span className="text-[11px] md:text-[10px] md:text-[9px] font-bold">IG</span></a>
+                 <a href={siteConfig.social.twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter / X" className="w-10 h-10 rounded-full bg-black flex items-center justify-center text-white text-[11px] md:text-[10px] md:text-[9px] hover:opacity-80">X</a>
+                 <a href={siteConfig.social.youtube} target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="w-10 h-10 rounded-full bg-legacy-social-yt flex items-center justify-center text-white hover:opacity-80"><span className="text-[11px] md:text-[10px] md:text-[9px] font-bold">YT</span></a>
+                 <a href={siteConfig.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-10 h-10 rounded-full bg-legacy-social-in flex items-center justify-center text-white hover:opacity-80"><span className="text-[11px] md:text-[10px] md:text-[9px] font-bold">in</span></a>
+                 <a href={siteConfig.social.whatsapp} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="w-10 h-10 rounded-full bg-legacy-social-wa flex items-center justify-center text-white hover:opacity-80"><MessageCircle className="w-3 h-3"/></a>
               </div>
             </div>
           </div>
@@ -131,10 +131,10 @@ export default function Footer() {
           <div className="mt-4 md:mt-0 text-right">
              <div className="text-gray-200 mb-1 text-[13px]">Payments on website are secure</div>
              <div className="flex space-x-1">
-                <div className="bg-white px-2 py-1 text-[10px] text-black font-bold rounded">MasterCard</div>
-                <div className="bg-white px-2 py-1 text-[10px] text-blue-800 font-bold rounded italic">VISA</div>
-                <div className="bg-white px-2 py-1 text-[10px] text-blue-500 font-bold rounded">PayPal</div>
-                <div className="bg-white px-2 py-1 text-[10px] text-blue-400 font-bold rounded">AMEX</div>
+                <div className="bg-white px-2 py-1 text-[11px] md:text-[10px] text-black font-bold rounded">MasterCard</div>
+                <div className="bg-white px-2 py-1 text-[11px] md:text-[10px] text-blue-800 font-bold rounded italic">VISA</div>
+                <div className="bg-white px-2 py-1 text-[11px] md:text-[10px] text-blue-500 font-bold rounded">PayPal</div>
+                <div className="bg-white px-2 py-1 text-[11px] md:text-[10px] text-blue-400 font-bold rounded">AMEX</div>
              </div>
           </div>
         </div>
