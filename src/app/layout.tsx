@@ -8,7 +8,7 @@ import FloatingButtons from "@/components/layout/FloatingButtons";
 import FloatingWhatsApp from "@/components/ui/FloatingWhatsApp";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 
-const roboto = Roboto({ subsets: ["latin"], weight: ["400", "500", "700"] });
+const roboto = Roboto({ subsets: ["latin"], weight: ["400", "500", "700"], display: "swap" });
 
 export const metadata: Metadata = {
   title: {
@@ -18,6 +18,29 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   icons: {
     icon: "/logo/mqt-india-logo.png",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    siteName: siteConfig.name,
+    title: `${siteConfig.name} - ${siteConfig.tagline}`,
+    description: siteConfig.description,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteConfig.name} - ${siteConfig.tagline}`,
+    description: siteConfig.description,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
@@ -77,6 +100,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         {/* Lightweight event tracker (T28): pushes any [data-track] click to the
             dataLayer (works with GTM/GA4 when installed; no-op otherwise).

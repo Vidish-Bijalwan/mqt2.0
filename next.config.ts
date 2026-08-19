@@ -19,9 +19,39 @@ const nextConfig: NextConfig = {
     // On Vercel, always use optimized images (default behavior)
     // Locally in dev, skip optimization for faster iteration
     unoptimized: process.env.NODE_ENV === "development",
+    formats: ["image/avif", "image/webp"],
+    minimumCacheTTL: 60 * 60 * 24 * 30, // 30 days
   },
   typescript: {
     ignoreBuildErrors: true,
+  },
+  // HTTP headers for caching & security
+  async headers() {
+    return [
+      {
+        // Cache static assets aggressively
+        source: "/images/:path*",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+        ],
+      },
+      {
+        source: "/logo/:path*",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+        ],
+      },
+      {
+        // Security headers on all pages
+        source: "/(.*)",
+        headers: [
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "X-Frame-Options", value: "DENY" },
+          { key: "X-XSS-Protection", value: "1; mode=block" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+        ],
+      },
+    ];
   },
   // On Vercel/CI, skip turbopack root override (no junctions needed)
   // Locally on OneDrive, widen root to home dir so turbopack can resolve
