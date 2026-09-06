@@ -8,6 +8,7 @@ import FloatingButtons from "@/components/layout/FloatingButtons";
 import FloatingWhatsApp from "@/components/ui/FloatingWhatsApp";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 import ErrorBoundary from "@/components/ui/ErrorBoundary";
+import ClientRuntime from "@/components/layout/ClientRuntime";
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["400", "500", "700"], display: "swap" });
 
@@ -112,23 +113,9 @@ export default function RootLayout({
         <link rel="prefetch" href="/blog" />
         <link rel="prefetch" href="/contact-us" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-        {/* Lightweight event tracker (T28): pushes any [data-track] click to the
-            dataLayer (works with GTM/GA4 when installed; no-op otherwise).
-            Kept in <head> (with the JSON-LD) so React never treats it as a
-            client-rendered body script. */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `document.addEventListener('click',function(e){var t=e.target&&e.target.closest?e.target.closest('[data-track]'):null;if(!t)return;var d={event:t.getAttribute('data-track'),href:t.getAttribute('href')||''};window.dataLayer=window.dataLayer||[];window.dataLayer.push(d);});`,
-          }}
-        />
-        {/* Service Worker Registration */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `if ('serviceWorker' in navigator) { window.addEventListener('load', () => { navigator.serviceWorker.register('/sw.js').catch(() => {}); }); }`,
-          }}
-        />
       </head>
       <body className={roboto.className} suppressHydrationWarning>
+        <ClientRuntime />
         <a href="#main-content" className="skip-link">
           Skip to main content
         </a>
