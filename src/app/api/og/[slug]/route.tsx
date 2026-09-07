@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import sharp from "sharp";
 import { allPackages } from "@/data/allPackages";
+import { isPublicPackage } from "@/utils/packageCatalog";
 import { siteConfig } from "@/data/siteConfig";
 
 export const runtime = "nodejs";
@@ -37,7 +38,6 @@ export async function GET(
   { params }: { params: Promise<{ slug: string }> }
 ) {
   const { slug } = await params;
-
   // Fast path: serve pre-generated OG image if it exists
   const preGenerated = path.join(process.cwd(), `public/images/og/${slug}.webp`);
   if (fs.existsSync(preGenerated)) {
@@ -51,6 +51,9 @@ export async function GET(
   }
 
   const pkg = allPackages.find((p) => p.slug === slug);
+  if (pkg && !isPublicPackage(pkg)) {
+    return new Response(null, { status: 404 });
+  }
   const title = pkg ? pkg.title : slug.replace(/-/g, " ");
 
   const origin = new URL(req.url).origin;

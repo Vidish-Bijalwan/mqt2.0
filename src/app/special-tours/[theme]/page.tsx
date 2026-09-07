@@ -1,4 +1,4 @@
-import { allPackages } from "@/data/allPackages";
+import { getPublicPackages } from "@/utils/packageCatalog";
 import { notFound } from "next/navigation";
 import PackageListCard from "@/components/ui/PackageListCard";
 import Link from "next/link";
@@ -37,7 +37,7 @@ export default async function ThemePage({ params }: { params: Promise<{ theme: s
   const keywords = THEME_KEYWORDS[theme];
 
   // Filter packages based on keywords in title, category, or description
-  const matchedPackages = allPackages.filter(pkg => {
+  const matchedPackages = getPublicPackages().filter(pkg => {
     const searchString = `${pkg.title} ${pkg.category} ${pkg.description}`.toLowerCase();
     return keywords.some(keyword => searchString.includes(keyword));
   });

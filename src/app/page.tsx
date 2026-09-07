@@ -1,4 +1,5 @@
-import { allPackages } from "@/data/allPackages";
+import { type Package } from "@/data/allPackages";
+import { getPublicPackages } from "@/utils/packageCatalog";
 import { siteConfig } from "@/data/siteConfig";
 import PackageCard from "@/components/ui/PackageCard";
 import SectionHeader from "@/components/ui/SectionHeader";
@@ -17,13 +18,13 @@ import path from "path";
    This prevents broken/empty cards from appearing. */
 
 function getValidPackages() {
-  return allPackages.filter((p) => {
+  return getPublicPackages().filter((p) => {
     // Must have a non-empty image path
     if (!p.image || p.image.trim() === '') return false;
 
     // Check image exists on disk
     const filename = path.basename(p.image);
-    const diskPath = path.join(process.cwd(), 'public', 'images', 'packages', filename);
+    const diskPath = path.join(process.cwd(), 'public', p.image.replace(/^\//, ''));
     try {
       return fs.existsSync(diskPath);
     } catch {
@@ -31,8 +32,8 @@ function getValidPackages() {
     }
   });
 }
-
 const validPackages = getValidPackages();
+const publicPackageCount = getPublicPackages().length;
 
 /* ─── Category sections for homepage ─── */
 const TRENDING_PACKAGES = validPackages.slice(0, 30);
@@ -70,7 +71,7 @@ const INTL_CURATED = [
 ];
 const INTL_CARDS = INTL_CURATED
   .map((c) => {
-    const pkg = allPackages.find((p) => p.slug === c.slug);
+    const pkg = getPublicPackages().find((p) => p.slug === c.slug);
     if (!pkg) return null;
     return { ...pkg, destination: c.destination, rating: c.rating };
   })
@@ -105,7 +106,7 @@ function PackageSection({
 }: {
   title: string;
   subtitle?: string;
-  packages: typeof allPackages;
+  packages: Package[];
   marginTop?: boolean;
 }) {
   if (packages.length === 0) return null;
@@ -129,8 +130,8 @@ export default function Home() {
       
       {/* 1. Hero Banner with Poster Marquee */}
       <section className="w-full bg-brand-navy relative">
-         <div className="pt-10 pb-2 text-center px-4">
-           <div className="inline-flex items-center gap-2.5 rounded-full bg-white/[0.07] border border-white/15 backdrop-blur px-4 py-1.5 mb-4">
+         <div className="pt-7 sm:pt-10 pb-1 sm:pb-2 text-center px-4">
+           <div className="inline-flex max-w-full items-center gap-2 rounded-full bg-white/[0.07] border border-white/15 backdrop-blur px-3 sm:px-4 py-1.5 mb-3 sm:mb-4">
              <Image
                src="/images/mqt-logo-256.webp"
                alt="My Quick Trippers logo"
@@ -138,12 +139,12 @@ export default function Home() {
                height={22}
                className="w-[22px] h-[22px] rounded-full object-cover border border-white/30"
              />
-             <span className="text-[11px] md:text-xs font-bold text-orange-300 uppercase tracking-[0.18em]">
+             <span className="text-[9px] sm:text-[11px] md:text-xs font-bold text-orange-300 uppercase tracking-[0.12em] sm:tracking-[0.18em]">
                My Quick Trippers · Govt. Approved Travel Agency
              </span>
            </div>
-           <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-3 drop-shadow-lg">Discover the Magic of India</h1>
-           <p className="text-base md:text-lg text-gray-300 font-medium drop-shadow-md">Explore authentic experiences with our expert guides</p>
+           <h1 className="text-[2rem] leading-[1.08] sm:text-3xl md:text-5xl font-extrabold text-white mb-2 sm:mb-3 drop-shadow-lg">Discover the Magic of India</h1>
+           <p className="text-sm sm:text-base md:text-lg text-gray-300 font-medium drop-shadow-md">Explore authentic experiences with our expert guides</p>
          </div>
          <PosterMarquee />
       </section>
@@ -304,7 +305,7 @@ export default function Home() {
       <section className="py-10 bg-white">
         <div className="text-center">
           <Link href="/packages" className="inline-block bg-brand-orange hover:bg-brand-orange-dark text-white font-bold px-10 py-4 rounded-sm transition-colors text-base">
-            View All {allPackages.length}+ Packages
+            View All {publicPackageCount}+ Packages
           </Link>
         </div>
       </section>

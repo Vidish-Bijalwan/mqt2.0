@@ -7,7 +7,6 @@ interface WriteReviewModalProps {
   isOpen: boolean;
   onClose: () => void;
 }
-
 export default function WriteReviewModal({ isOpen, onClose }: WriteReviewModalProps) {
   const [step, setStep] = useState(1);
   const [bookingId, setBookingId] = useState('');

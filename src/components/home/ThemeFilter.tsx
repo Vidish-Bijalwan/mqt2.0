@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { allPackages } from "@/data/allPackages";
+import { getPublicPackages } from "@/utils/packageCatalog";
 import { themeConfigs, filterPackagesByTheme } from "@/data/themeConfig";
 import PackageCard from "@/components/ui/PackageCard";
 import Link from "next/link";
@@ -27,7 +27,7 @@ export default function ThemeFilter() {
 
   const { filtered, totalMatching } = useMemo(() => {
     if (!selectedTheme) return { filtered: [], totalMatching: 0 };
-    const all = filterPackagesByTheme(allPackages, selectedTheme);
+    const all = filterPackagesByTheme(getPublicPackages(), selectedTheme);
     return { filtered: all.slice(0, 5), totalMatching: all.length };
   }, [selectedTheme]);
 

@@ -16,40 +16,30 @@ export default function StickyMobileCTA({ price, showPrice }: StickyMobileCTAPro
   }, []);
 
   return (
-    <div className="sticky-mobile-cta lg:hidden fixed bottom-0 inset-x-0 z-[1200] bg-white border-t border-gray-200 shadow-[0_-4px_20px_rgba(0,0,0,0.12)] px-3 sm:px-4 py-2.5 pb-[calc(0.625rem+env(safe-area-inset-bottom))]">
-      <div className="flex items-center gap-3">
+    <div className="sticky-mobile-cta fixed inset-x-0 bottom-0 z-[1200] border-t border-[#d8e5e1] bg-white/95 px-3 py-2.5 pb-[calc(0.625rem+env(safe-area-inset-bottom))] shadow-[0_-8px_30px_rgba(11,48,44,0.14)] backdrop-blur-xl lg:hidden">
+      <div className="flex items-center gap-2.5">
         <div className="min-w-0 flex-1">
-          <p className="text-[10px] text-gray-500 font-semibold uppercase tracking-wide">Starting from</p>
-          <p className="text-lg font-extrabold text-gray-900 leading-tight truncate">
-            {showPrice ? <>INR {price}</> : "Pricing on request"}
+          <p className="text-[9px] font-extrabold uppercase tracking-[0.16em] text-[#798985]">{showPrice ? "Starting from" : "Built for you"}</p>
+          <p className="truncate text-base font-black leading-tight text-[#153a34]">
+            {showPrice ? <>INR {price}</> : "Tailored quote"}
           </p>
         </div>
-        <a
-          href={`tel:${siteConfig.phoneRaw}`}
-          data-track="cta_call"
-          aria-label="Call us"
-          className="shrink-0 w-11 h-11 rounded-full bg-brand-green text-white flex items-center justify-center"
-        >
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
-          </svg>
-        </a>
         <a
           href={siteConfig.social.whatsapp}
           target="_blank"
           rel="noopener noreferrer"
           data-track="cta_whatsapp"
           aria-label="Chat on WhatsApp"
-          className="shrink-0 w-11 h-11 rounded-full bg-[#25D366] text-white flex items-center justify-center"
+          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#1f9d62] text-white"
         >
           <MessageCircle className="w-5 h-5" />
         </a>
         <a
           href="#enquiry-form"
           data-track="cta_send_query"
-          className="shrink-0 flex-1 max-w-[140px] bg-legacy-orange hover:bg-orange-600 text-white font-bold text-sm py-3 rounded-md text-center transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-legacy-orange focus-visible:ring-offset-2"
+          className="flex min-h-11 shrink-0 items-center justify-center rounded-xl bg-[#ef7a2f] px-4 text-center text-sm font-extrabold text-white transition-colors hover:bg-[#d96520] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ef7a2f] focus-visible:ring-offset-2"
         >
-          Send Query
+          Personalise trip
         </a>
       </div>
     </div>

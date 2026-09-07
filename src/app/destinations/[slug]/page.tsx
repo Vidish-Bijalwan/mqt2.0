@@ -1,4 +1,4 @@
-import { allPackages } from "@/data/allPackages";
+import { getPublicPackages } from "@/utils/packageCatalog";
 import { destinations } from "@/data/contentData";
 import destinationsDataRaw from "@/data/destinationsData.json";
 import { notFound } from "next/navigation";
@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const dest = destinations.find(d => d.slug.toLowerCase() === slug);
   const destData = destinationsData[slug];
   
-  const title = dest ? `${dest.name} Tour Packages | My Quick Trippers` : `${slug.replace(/-/g, ' ').toUpperCase()} | My Quick Trippers`;
+  const title = dest ? `${dest.name} Tour Packages` : `${slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())} Travel Guide`;
   const description = destData?.content?.filter((c: any) => c.type === 'p').map((c: any) => c.text).join(' ').substring(0, 160) || `Explore the best ${title} with My Quick Trippers.`;
 
   return { 
@@ -55,7 +55,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description,
       url: `${siteConfig.domain}/destinations/${slug}`,
       type: 'website',
-      images: [{ url: `${siteConfig.domain}/images/hero/hero-bg-1.jpg`, width: 1200, height: 630, alt: title }],
+      images: [{ url: `${siteConfig.domain}/images/hero/hero-bg-1.svg`, width: 1200, height: 630, alt: title }],
     },
   };
 }
@@ -69,7 +69,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
   const titleName = dest ? dest.name : (destData?.title || slug.replace(/-/g, ' '));
   
   // Find matching packages
-  const matchedPackages = allPackages.filter(p => {
+  const matchedPackages = getPublicPackages().filter(p => {
     const term = slug.toLowerCase();
     
     // Direct matches
@@ -159,7 +159,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
       {/* Hero banner (U25) — title over image, consistent with the packages listing */}
       <div className="relative h-[200px] md:h-[260px] w-full overflow-hidden">
         <Image
-          src={destData?.image || "/images/hero/hero-bg-1.jpg"}
+          src={destData?.image || "/images/hero/hero-bg-1.svg"}
           alt={titleName}
           fill
           sizes="100vw"

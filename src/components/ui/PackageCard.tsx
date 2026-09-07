@@ -17,7 +17,6 @@ export interface PackageCardProps {
   destination?: string; // Ported from InternationalPackageCard
   rating?: number; // Ported from InternationalPackageCard
 }
-
 /* Amenity icons — copied from reference site (64px PNGs, rendered at 24px) */
 const AMENITIES = [
   { label: "Hotel Stay", icon: "/images/nit/bed.png" },

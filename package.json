@@ -9,6 +9,7 @@
     "reinstall": "node scripts/reinstall.mjs",
     "lint": "eslint",
     "check:content": "node scripts/parity/check-content.mjs",
+    "audit:packages": "node scripts/parity/audit-package-integrity.mjs",
     "fix:images": "node scripts/parity/fix-package-images.mjs",
     "report:contentless": "node scripts/parity/contentless-report.mjs"
   },

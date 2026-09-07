@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { siteConfig } from "@/data/siteConfig";
 
-export default function EnquiryForm({ pkgName = "" }: { pkgName?: string }) {
+export default function EnquiryForm({ pkgName = "", embedded = false }: { pkgName?: string; embedded?: boolean }) {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -46,7 +46,7 @@ export default function EnquiryForm({ pkgName = "" }: { pkgName?: string }) {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <h3 className="text-xl font-bold mb-2">Quote Request Sent!</h3>
+        <h3 className="text-xl font-bold mb-2">Your WhatsApp message is ready</h3>
         <p className="text-green-600 mb-4">WhatsApp has opened with your details. Send the message to our travel team.</p>
         <button 
           onClick={() => setStatus("idle")}
@@ -60,56 +60,55 @@ export default function EnquiryForm({ pkgName = "" }: { pkgName?: string }) {
   }
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow-card border border-gray-100">
-      <h3 className="text-2xl font-bold text-mqt-navy mb-4">Request a Free Quote</h3>
-      <p className="text-gray-600 mb-6 text-sm">
-        Fill out the form below and we will contact you as soon as possible.
+    <div className={embedded ? "bg-white p-4 sm:p-6" : "rounded-lg border border-gray-100 bg-white p-6 shadow-card"}>
+      <h3 className="mb-3 text-2xl font-extrabold text-[#123b35]">Start with a free trip consultation</h3>
+      <p className="mb-6 max-w-2xl text-sm leading-6 text-[#687a75]">
+        Add the essentials now. You can discuss hotels, transport, meals, and special requirements directly with the travel team.
       </p>
       
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label htmlFor="enquiry-name" className="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
-          <input id="enquiry-name" name="name" required autoComplete="name" type="text" className="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-mqt-orange outline-none" placeholder="Enter your name…" />
+            <input id="enquiry-name" name="name" required autoComplete="name" type="text" className="min-h-12 w-full rounded-xl border border-[#cad9d5] bg-[#fbfdfc] px-4 outline-none transition focus:border-[#28796b] focus:ring-2 focus:ring-[#28796b]/20" placeholder="Enter your name" />
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <label htmlFor="enquiry-email" className="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
-            <input id="enquiry-email" name="email" required autoComplete="email" spellCheck={false} type="email" className="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-mqt-orange outline-none" placeholder="name@example.com" />
+            <input id="enquiry-email" name="email" required autoComplete="email" spellCheck={false} type="email" className="min-h-12 w-full rounded-xl border border-[#cad9d5] bg-[#fbfdfc] px-4 outline-none transition focus:border-[#28796b] focus:ring-2 focus:ring-[#28796b]/20" placeholder="name@example.com" />
           </div>
           <div>
             <label htmlFor="enquiry-phone" className="block text-sm font-medium text-gray-700 mb-1">Phone Number *</label>
-            <input id="enquiry-phone" name="phone" required autoComplete="tel" inputMode="tel" type="tel" className="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-mqt-orange outline-none" placeholder="98765 43210" />
+            <input id="enquiry-phone" name="phone" required autoComplete="tel" inputMode="tel" type="tel" className="min-h-12 w-full rounded-xl border border-[#cad9d5] bg-[#fbfdfc] px-4 outline-none transition focus:border-[#28796b] focus:ring-2 focus:ring-[#28796b]/20" placeholder="98765 43210" />
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <label htmlFor="enquiry-travel-date" className="block text-sm font-medium text-gray-700 mb-1">Travel Date</label>
-            <input id="enquiry-travel-date" name="travelDate" type="date" className="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-mqt-orange outline-none" />
+            <input id="enquiry-travel-date" name="travelDate" type="date" className="min-h-12 w-full rounded-xl border border-[#cad9d5] bg-[#fbfdfc] px-4 outline-none transition focus:border-[#28796b] focus:ring-2 focus:ring-[#28796b]/20" />
           </div>
           <div>
             <label htmlFor="enquiry-travellers" className="block text-sm font-medium text-gray-700 mb-1">No. of Travellers</label>
-            <input id="enquiry-travellers" name="travellers" type="number" min="1" inputMode="numeric" className="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-mqt-orange outline-none" placeholder="E.g. 2" />
+            <input id="enquiry-travellers" name="travellers" type="number" min="1" inputMode="numeric" className="min-h-12 w-full rounded-xl border border-[#cad9d5] bg-[#fbfdfc] px-4 outline-none transition focus:border-[#28796b] focus:ring-2 focus:ring-[#28796b]/20" placeholder="E.g. 2" />
           </div>
         </div>
 
         <div>
           <label htmlFor="enquiry-message" className="block text-sm font-medium text-gray-700 mb-1">Message (Optional)</label>
-          <textarea id="enquiry-message" name="message" rows={2} className="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-mqt-orange outline-none" placeholder="Share any special requirements…"></textarea>
+          <textarea id="enquiry-message" name="message" rows={3} className="w-full rounded-xl border border-[#cad9d5] bg-[#fbfdfc] p-4 outline-none transition focus:border-[#28796b] focus:ring-2 focus:ring-[#28796b]/20" placeholder="Share hotel preferences, accessibility needs, or anything else"></textarea>
         </div>
         
         <button 
           type="submit" 
           disabled={status === "loading"}
           aria-label="Submit enquiry form"
-          className="w-full py-3 bg-mqt-orange hover:bg-mqt-orange-hover text-white font-bold rounded-md transition-colors disabled:bg-gray-400"
+          className="min-h-12 w-full rounded-xl bg-[#ef7a2f] px-5 py-3 font-extrabold text-white transition-colors hover:bg-[#d96520] disabled:bg-gray-400"
         >
-          {status === "loading" ? "Submitting..." : "Get Free Quote"}
+          {status === "loading" ? "Preparing your message..." : "Continue on WhatsApp"}
         </button>
-        <p className="text-xs text-center text-gray-500 mt-4 flex justify-center items-center gap-4">
-          <span className="flex items-center"><span className="text-yellow-500 mr-1">⚡</span> We respond within 2 hours</span>
-          <span className="flex items-center"><span className="text-green-500 mr-1">🔒</span> 100% Secure & Private</span>
+        <p className="mt-4 text-center text-xs leading-5 text-[#71817d]">
+          No payment required. Your details are used only to discuss this trip.
         </p>
       </form>
     </div>

@@ -1,11 +1,11 @@
-import { allPackages } from "@/data/allPackages";
+import { getPublicPackages } from "@/utils/packageCatalog";
 import PackageCard from "@/components/ui/PackageCard";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export default function RelatedPackages({ category, currentSlug }: { category: string, currentSlug: string }) {
   // Find related packages in the same category, excluding the current one
-  const related = allPackages
+  const related = getPublicPackages()
     .filter(pkg => pkg.category === category && pkg.slug !== currentSlug)
     .slice(0, 4); // Get up to 4 related packages
 

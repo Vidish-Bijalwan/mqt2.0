@@ -7,14 +7,20 @@
 // reference-style Inclusions / Exclusions / Highlights sections that the
 // Namaste India package pages show.
 
+export interface FaqItem {
+  q: string;
+  a: string;
+}
+
 export interface Block {
   type: string;
   level?: number;
   text?: string;
+  content?: string;
   url?: string;
   alt?: string;
   caption?: string;
-  items?: string[];
+  items?: Array<string | FaqItem>;
   ordered?: boolean;
   rows?: string[][];
 }
@@ -56,7 +62,10 @@ function listItemsAfter(blocks: Block[], startIdx: number, isSameSection: (t: st
       if (isSameSection(b.text || "")) continue;
       break;
     }
-    if (b.type === "list") items.push(...cleanItems(b.items || []));
+    if (b.type === "list") {
+      const stringItems = (b.items || []).filter((item): item is string => typeof item === "string");
+      items.push(...cleanItems(stringItems));
+    }
   }
   return items;
 }

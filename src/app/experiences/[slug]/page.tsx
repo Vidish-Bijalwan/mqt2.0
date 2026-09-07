@@ -3,7 +3,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ChevronRight, CalendarDays, Users, CheckCircle2, ArrowRight, Phone, MessageCircle } from "lucide-react";
 import { siteConfig } from "@/data/siteConfig";
-import { allPackages } from "@/data/allPackages";
+import { getPublicPackages } from "@/utils/packageCatalog";
 import { experiences, getExperienceBySlug, experienceGroups } from "@/data/experiencesData";
 import { experiencesWithCounts, matchPackages } from "@/utils/experienceCounts";
 import PackageListWithMore from "@/components/experiences/PackageListWithMore";
@@ -19,7 +19,7 @@ interface Params {
 function packagesForExperience(slug: string) {
   const exp = getExperienceBySlug(slug);
   if (!exp) return [];
-  const matched = matchPackages(allPackages, exp);
+  const matched = matchPackages(getPublicPackages(), exp);
   // Title-exact matches first
   matched.sort((a, b) => {
     const aExact = a.title.toLowerCase().includes(exp.name.toLowerCase()) ? 1 : 0;

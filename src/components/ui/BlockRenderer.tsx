@@ -4,24 +4,20 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { ChevronDown } from 'lucide-react';
 import ExpandableText from '@/components/ui/ExpandableText';
-
-interface Block {
-  type: string;
-  level?: number;
-  text?: string;
-  content?: string;
-  url?: string;
-  alt?: string;
-  caption?: string;
-  items?: string[] | Array<{ q: string; a: string }>;
-  ordered?: boolean;
-  rows?: string[][];
-}
+import type { Block, FaqItem } from '@/utils/blocks';
 
 interface BlockRendererProps {
   blocks: Block[];
   /** Truncate long paragraphs with a See More toggle (used in the Overview tab). */
   truncate?: boolean;
+}
+
+function cleanBlockText(value: string) {
+  return String(value || '')
+    .replace(/Places You[’']ll See/gi, '')
+    .replace(/\bSee More\b|\bSee Less\b/gi, '')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 export default function BlockRenderer({ blocks, truncate = false }: BlockRendererProps) {
@@ -85,7 +81,7 @@ function headingTag(level?: number): { Tag: React.ElementType; className: string
 
 function RenderSingleBlock({ block, truncate }: { block: Block; truncate?: boolean }) {
   // Normalize: support both "text" (legacy) and "content" (enriched) fields
-  const txt = block.text || block.content || '';
+  const txt = cleanBlockText(block.text || block.content || '');
   if (block.type === 'paragraph') {
     if (truncate && txt && txt.length > 280) {
       return <ExpandableText text={txt} className="text-gray-700 leading-relaxed text-[15px]" />;
@@ -97,7 +93,7 @@ function RenderSingleBlock({ block, truncate }: { block: Block; truncate?: boole
     return <Tag className={className}>{txt}</Tag>;
   }
   if (block.type === 'faq') {
-    const items = (block.items || []) as Array<{ q: string; a: string }>;
+    const items = (block.items || []).filter((item): item is FaqItem => typeof item !== 'string');
     if (items.length === 0) return null;
     return (
       <div className="space-y-3 my-6">
@@ -135,7 +131,11 @@ function RenderSingleBlock({ block, truncate }: { block: Block; truncate?: boole
   }
   if (block.type === 'list') {
     // Drop scraped "See More"/"See Less" toggle artifacts.
-    const items = ((block.items || []) as string[]).map((s) => (s || '').trim()).filter(Boolean).filter((s) => !/^see (more|less)$/i.test(s));
+    const items = (block.items || [])
+      .filter((item): item is string => typeof item === 'string')
+      .map((s) => (s || '').trim())
+      .filter(Boolean)
+      .filter((s) => !/^see (more|less)$/i.test(s));
     if (items.length === 0) return null;
     const ListTag = block.ordered ? 'ol' : 'ul';
     return (
@@ -188,29 +188,32 @@ function RenderSingleBlock({ block, truncate }: { block: Block; truncate?: boole
 
 function DayAccordionItem({ title, blocks, index }: { title: string, blocks: Block[], index: number }) {
   const [isOpen, setIsOpen] = useState(index === 0);
+  const contentId = `block-itinerary-day-${index}`;
+  const cleanTitle = cleanBlockText(title).replace(/^day\s*\d+\s*[:.-]?\s*/i, '').trim() || title;
 
   return (
-    <div className="border border-gray-200 rounded-lg overflow-hidden mb-4 bg-white shadow-sm transition-all duration-200">
+    <div className={`relative mb-4 overflow-hidden rounded-2xl border bg-white transition ${isOpen ? 'border-[#9fc6bb] shadow-[0_12px_30px_rgba(11,48,44,0.08)]' : 'border-[#dfe9e6] hover:border-[#b7d2ca]'}`}>
       <button
+        type="button"
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
-        className="w-full flex items-center justify-between p-4 md:p-5 text-left focus:outline-none focus:ring-2 focus:ring-inset focus:ring-legacy-orange hover:bg-gray-50 group"
+        aria-controls={contentId}
+        className="group flex min-h-[78px] w-full items-center justify-between p-4 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#28796b] md:p-5"
       >
-        <div className="flex items-center space-x-4">
-          <div className="flex-shrink-0 w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center text-legacy-orange font-bold text-sm">
-            {title.match(/\d+/) ? title.match(/\d+/)?.[0] : '*'}
+        <div className="flex min-w-0 items-center space-x-3 md:space-x-4">
+          <div className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full border-4 border-white text-sm font-black shadow-sm ${isOpen ? 'bg-[#0b5147] text-white' : 'bg-[#eaf3f0] text-[#18594d]'}`}>
+            {index + 1}
           </div>
-          <h3 className="text-lg font-bold text-gray-800 group-hover:text-legacy-orange transition-colors">
-            {title}
-          </h3>
+          <div className="min-w-0">
+            <span className="mb-0.5 block text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#b65d25]">Day {index + 1}</span>
+            <h3 className="text-base font-extrabold leading-snug text-[#193b35] md:text-lg">{cleanTitle}</h3>
+          </div>
         </div>
-        <div className={`p-1 rounded-full transition-transform duration-300 ${isOpen ? 'bg-orange-100 rotate-180 text-legacy-orange' : 'bg-gray-100 text-gray-500'}`}>
-          <ChevronDown size={20} />
-        </div>
+        <ChevronDown className={`ml-3 h-5 w-5 shrink-0 text-[#52716a] transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
       </button>
 
-      <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[10000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-        <div className="p-5 md:p-6 border-t border-gray-100 bg-gray-50/50">
+      <div id={contentId} hidden={!isOpen}>
+        <div className="border-t border-[#e0ebe8] bg-[#f6faf9] p-5 sm:pl-20 md:p-6 md:pl-20">
           <div className="space-y-4">
             {blocks.map((b, i) => (
               <RenderSingleBlock key={`acc-block-${i}`} block={b} />

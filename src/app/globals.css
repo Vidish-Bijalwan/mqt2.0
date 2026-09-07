@@ -1,31 +1,35 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand Colors — matched to reference site (namasteindiatrip.com) values */
-  --color-brand-orange: #fb4d00;
-  --color-brand-orange-light: #FFF7ED;
-  --color-brand-orange-dark: #d94000;
-  /* AA-compliant orange for small text on light backgrounds (4.5:1+ on white) */
-  --color-brand-orange-text: #C2410C;
+  /* MQT palette: forest, river, parchment, and a restrained mineral-gold accent. */
+  --color-brand-orange: #B5843D;
+  --color-brand-orange-light: #F8F2E6;
+  --color-brand-orange-dark: #755522;
+  --color-brand-orange-text: #755522;
+  --color-brand-forest: #16453D;
+  --color-brand-forest-deep: #0B302C;
+  --color-brand-river: #216E89;
+  --color-brand-sage: #B7CEC0;
+  --color-brand-paper: #F7F5ED;
 
   /* Reference site palette (measured from namasteindiatrip.com) */
-  --color-brand-indigo: #1a0dab;   /* card title links + button hover */
-  --color-price-area: #ebf1ff;     /* package card price strip bg */
+  --color-brand-indigo: #16453D;   /* card title links + button hover */
+  --color-price-area: #F1F5F0;     /* package card price strip bg */
   --color-badge-green: #4CAF50;    /* discount badge */
-  --color-old-price: #fb4d00;      /* strikethrough old price + dur/dest icons */
+  --color-old-price: #B5843D;      /* strikethrough old price + dur/dest icons */
   --color-body-gray: #75706b;      /* secondary text */
   --color-card-border: #d4d4d4;
   --color-btn-border: #607D8B;     /* Quick enquiry button border */
-  --color-nit-teal: #004e47;       /* footer band */
+  --color-nit-teal: #0B302C;       /* footer band */
   
-  --color-brand-green: #16A34A;
-  --color-brand-green-light: #F0FDF4;
-  --color-brand-green-dark: #15803D;
+  --color-brand-green: #198754;
+  --color-brand-green-light: #EFF7F1;
+  --color-brand-green-dark: #126A42;
   
-  --color-brand-navy: #061b30;
-  --color-brand-navy-light: #122b43;
+  --color-brand-navy: #0B302C;
+  --color-brand-navy-light: #16453D;
   
-  --color-brand-blue: #0EA5E9;
+  --color-brand-blue: #216E89;
   
   /* Legacy Color Aliases (Mapped to new brand colors) */
   --color-legacy-orange: var(--color-brand-orange);
@@ -52,9 +56,9 @@
   --color-mqt-navy: var(--color-brand-navy);
   --color-mqt-navy-soft: var(--color-brand-navy-light);
   --color-mqt-green: var(--color-brand-green);
-  --color-mqt-bg: #ffffff;
-  --color-mqt-text: #333333;
-  --color-mqt-border: #eaeaea;
+  --color-mqt-bg: #fbfaf6;
+  --color-mqt-text: #24332F;
+  --color-mqt-border: #E2E8E1;
 
   --font-sans: "Roboto", "Helvetica Neue", "Arial", sans-serif;
 
@@ -65,8 +69,8 @@
   --radius-card: 20px;
   --shadow-card-soft: 0 1px 3px rgba(15, 23, 42, 0.06);
   --shadow-card-lift: 0 20px 50px -12px rgba(15, 23, 42, 0.25);
-  --shadow-cta-orange: 0 8px 20px -6px rgba(249, 115, 22, 0.6);
-  --shadow-cta-orange-hover: 0 12px 24px -6px rgba(234, 88, 12, 0.55);
+  --shadow-cta-orange: 0 8px 20px -6px rgba(181, 132, 61, 0.38);
+  --shadow-cta-orange-hover: 0 12px 24px -6px rgba(117, 85, 34, 0.38);
 }
 
 @layer base {
@@ -79,6 +83,7 @@
   body {
     background-color: var(--color-mqt-bg);
     color: var(--color-mqt-text);
+    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -555,13 +560,30 @@
       line-height: 24px;
     }
     /* Mobile nav: hide top utility bar, reduce main header height */
-    .lg\:hidden {
-      display: flex !important;
+    .nit-pcard {
+      border-radius: 10px;
+    }
+    .nit-pcard-img {
+      margin: 7px 7px 5px;
+      height: clamp(180px, 52vw, 230px);
+      aspect-ratio: auto;
+    }
+    .nit-pcard-cant {
+      padding: 2px 10px 0;
+    }
+    .nit-pcard-title {
+      height: auto;
+      min-height: 36px;
+      margin-bottom: 7px;
     }
     /* Card title: slightly smaller on mobile */
     .nit-pcard-title a {
       font-size: 14px;
       line-height: 18px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      white-space: normal;
     }
     /* Price: slightly smaller on mobile */
     .nit-prCn {
@@ -581,6 +603,56 @@
     }
     .nit-pcard-amen li {
       font-size: 9px;
+    }
+    .nit-pcard-price {
+      flex: none;
+      padding: 10px 10px 8px;
+    }
+    .nit-prcEnq {
+      gap: 8px;
+      margin: 10px 0 4px;
+    }
+    .nit-prcEnq a {
+      min-height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+    }
+    .nit-head {
+      margin-bottom: 16px;
+    }
+    .nit-head h2 {
+      max-width: 100%;
+      margin-bottom: 6px;
+      padding-bottom: 7px;
+    }
+    .nit-head-sub {
+      font-size: 13px;
+      line-height: 19px;
+      margin: 8px auto 0;
+    }
+    .nit-inxBt {
+      margin: 0 -3px 16px;
+      gap: 2px;
+    }
+    .nit-cdxBt {
+      flex-basis: calc(50% - 8px) !important;
+      margin: 4px;
+      aspect-ratio: 1 / 1.08;
+      border-radius: 9px;
+    }
+    .poster-marquee-wrapper {
+      margin-top: 14px;
+      padding: 10px 0 52px;
+    }
+    .poster-marquee-track {
+      gap: 12px;
+    }
+    .poster-card {
+      width: 190px;
+      height: 96px;
+      border-radius: 10px;
     }
   }
 
@@ -605,6 +677,28 @@
   .btn-shine:focus-visible::after {
     left: 150%;
   }
+}
+
+@media only screen and (max-width: 380px) {
+  .nit-page { padding-inline: 8px; }
+  .nit-pcard-amen li { font-size: 8px; }
+  .nit-amen-ic { width: 18px; height: 18px; background-size: 18px; }
+}
+
+@media (max-width: 767px) {
+  .floating-contact-buttons,
+  .floating-contact-whatsapp,
+  button[aria-label="Scroll to top"] {
+    display: none !important;
+  }
+  .package-list-card { border-radius: 10px; }
+  .package-list-card .package-list-image { height: 190px; }
+  .package-list-card .package-list-details { padding: 14px; border: 0; }
+  .package-list-card .package-route-row { align-items: flex-start; }
+  .package-list-card .package-route-label { min-width: 0; width: 43%; line-height: 17px; }
+  .package-list-card .package-list-amenities { justify-content: space-between; gap: 8px; }
+  .package-list-card .package-list-price { padding: 14px; border-top: 1px solid #e5e7eb; }
+  .package-list-card .package-list-actions a { min-height: 42px; font-size: 12px; }
 }
 
 /* ── Fade-in animation used by ThemeFilter results ── */

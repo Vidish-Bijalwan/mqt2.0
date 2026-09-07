@@ -1,6 +1,5 @@
-import { allPackages } from "@/data/allPackages";
 import PackageListCard from "@/components/ui/PackageListCard";
-import { Package } from "@/data/allPackages";
+import { getPublicPackages, packageDurationGroup } from "@/utils/packageCatalog";
 import Link from "next/link";
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
@@ -8,7 +7,7 @@ import EnquiryForm from "@/components/forms/EnquiryForm";
 
 export const metadata = {
   title: "All India Tour Packages | My Quick Trippers",
-  description: "Browse 1000+ curated India and international tour packages by My Quick Trippers. Best deals on Pilgrimage, North India, South India, International tours.",
+  description: "Browse curated India and international tour packages by My Quick Trippers. Explore journeys of three days or more by destination, theme, and duration.",
 };
 
 const CATEGORIES = [
@@ -29,26 +28,31 @@ const CATEGORIES = [
 export default async function PackagesPage({
   searchParams,
 }: {
-  searchParams: Promise<{ category?: string; page?: string; filter?: string }>;
+  searchParams: Promise<{ category?: string; page?: string; filter?: string; q?: string; duration?: string }>;
 }) {
   const resolvedSearchParams = await searchParams;
   const selectedCategory = resolvedSearchParams.category || "All";
-  const selectedFilter = (resolvedSearchParams.filter || "").toLowerCase().replace(/-/g, " ");
+  const selectedDuration = resolvedSearchParams.duration || "All";
+  const selectedFilter = (resolvedSearchParams.q || resolvedSearchParams.filter || "").toLowerCase().replace(/-/g, " ").trim();
   const currentPage = parseInt(resolvedSearchParams.page || "1", 10);
   const PER_PAGE = 10;
+  const publicPackages = getPublicPackages();
 
   const categoryFiltered = selectedCategory === "All"
-    ? allPackages
-    : allPackages.filter((p) => p.category === selectedCategory);
+    ? publicPackages
+    : publicPackages.filter((p) => p.category === selectedCategory);
 
   // ?filter=<keyword> — keyword search over title/category/slug/description.
   // The legacy redirects (redirects.json) and /international-tours land here.
-  const filtered = selectedFilter
+  const textFiltered = selectedFilter
     ? categoryFiltered.filter((p) => {
         const haystack = `${p.title} ${p.category} ${p.slug} ${p.description}`.toLowerCase();
         return haystack.includes(selectedFilter);
       })
     : categoryFiltered;
+  const filtered = selectedDuration === "All"
+    ? textFiltered
+    : textFiltered.filter((pkg) => packageDurationGroup(pkg) === selectedDuration);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / PER_PAGE));
   const safePage = Math.min(currentPage, totalPages);
@@ -58,7 +62,8 @@ export default async function PackagesPage({
   const queryFor = (page: number) => {
     const params = new URLSearchParams();
     if (selectedCategory !== "All") params.set("category", selectedCategory);
-    if (selectedFilter) params.set("filter", resolvedSearchParams.filter || "");
+    if (selectedDuration !== "All") params.set("duration", selectedDuration);
+    if (selectedFilter) params.set("q", selectedFilter);
     if (page > 1) params.set("page", String(page));
     const qs = params.toString();
     return qs ? `/packages?${qs}` : "/packages";
@@ -69,7 +74,7 @@ export default async function PackagesPage({
       {/* Hero Banner — title over image like reference listing pages */}
       <div className="relative h-[220px] md:h-[280px] w-full overflow-hidden">
         <Image
-          src="/images/hero/hero-bg-1.jpg"
+          src="/images/hero/hero-bg-1.svg"
           alt="Tour Packages"
           fill
           sizes="100vw"
@@ -93,21 +98,28 @@ export default async function PackagesPage({
         <div className="flex flex-col lg:flex-row gap-8">
           
           {/* Sidebar */}
-          <div className="lg:w-72 shrink-0 space-y-6">
+          <div className="order-2 space-y-6 lg:order-1 lg:w-72 lg:shrink-0">
             {/* Category Filters */}
-            <div className="bg-white rounded border border-gray-200 shadow-sm overflow-hidden sticky top-24">
+            <div className="overflow-hidden rounded-xl border border-brand-sage/50 bg-white shadow-sm lg:sticky lg:top-24">
               <div className="bg-legacy-nav-blue text-white px-4 py-3 text-sm font-bold">
                 Filter by Category
               </div>
-              <div className="py-2">
+              <div className="flex overflow-x-auto py-2 lg:block lg:overflow-visible">
                 {CATEGORIES.map((cat) => {
-                  const count = cat === "All" ? allPackages.length : allPackages.filter(p => p.category === cat).length;
+                  const count = cat === "All" ? publicPackages.length : publicPackages.filter(p => p.category === cat).length;
                   return (
                     <Link
                       key={cat}
-                      href={`/packages?category=${encodeURIComponent(cat)}`}
-                      className={`block px-4 py-2 text-sm border-b border-gray-100 last:border-0 hover:text-legacy-orange hover:bg-gray-50 transition-colors ${
-                        selectedCategory === cat ? "text-legacy-orange font-bold bg-orange-50" : "text-gray-600"
+                      href={(() => {
+                        const params = new URLSearchParams();
+                        if (cat !== "All") params.set("category", cat);
+                        if (selectedDuration !== "All") params.set("duration", selectedDuration);
+                        if (selectedFilter) params.set("q", selectedFilter);
+                        const query = params.toString();
+                        return query ? `/packages?${query}` : "/packages";
+                      })()}
+                      className={`block shrink-0 whitespace-nowrap border-b border-r border-gray-100 px-4 py-2 text-sm transition-colors last:border-r-0 lg:border-r-0 lg:last:border-b-0 hover:bg-brand-paper hover:text-brand-forest ${
+                        selectedCategory === cat ? "bg-brand-paper font-bold text-brand-forest" : "text-gray-600"
                       }`}
                     >
                       <span className="text-legacy-orange mr-1.5 text-[10px]">›</span>
@@ -119,7 +131,7 @@ export default async function PackagesPage({
             </div>
 
             {/* Quick Enquiry */}
-            <div className="bg-[#fff9e6] border border-yellow-200 rounded overflow-hidden shadow-sm">
+            <div className="overflow-hidden rounded-xl border border-brand-sage/50 bg-brand-paper shadow-sm">
               <div className="bg-legacy-nav-blue text-white px-4 py-3 text-sm font-bold text-center relative">
                 Get a Best Deal Quick Enquiry
                 <span className="absolute left-1/2 -translate-x-1/2 -bottom-2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-legacy-nav-blue" />
@@ -134,7 +146,31 @@ export default async function PackagesPage({
           </div>
 
           {/* Package List */}
-          <div className="flex-1 min-w-0">
+          <div className="order-1 min-w-0 flex-1 lg:order-2">
+            <form action="/packages" className="mb-5 rounded-xl border border-brand-sage/50 bg-brand-paper p-3 md:p-4 shadow-sm">
+              <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-[minmax(0,1fr)_170px_120px] gap-3">
+                <label className="sr-only" htmlFor="package-search">Search packages</label>
+                <input
+                  id="package-search"
+                  name="q"
+                  defaultValue={selectedFilter}
+                  placeholder="Search a destination, theme, or tour"
+                  className="min-h-11 w-full rounded-lg border border-brand-sage bg-white px-3 text-sm text-gray-800 outline-none transition focus:border-brand-river focus:ring-2 focus:ring-brand-river/20"
+                />
+                <label className="sr-only" htmlFor="package-duration">Trip duration</label>
+                <select id="package-duration" name="duration" defaultValue={selectedDuration} className="min-h-11 rounded-lg border border-brand-sage bg-white px-3 text-sm text-gray-800 outline-none transition focus:border-brand-river focus:ring-2 focus:ring-brand-river/20">
+                  <option value="All">Any duration</option>
+                  <option value="3-5">3 to 5 days</option>
+                  <option value="6-9">6 to 9 days</option>
+                  <option value="10+">10+ days</option>
+                  <option value="custom">Custom duration</option>
+                </select>
+                {selectedCategory !== "All" && <input type="hidden" name="category" value={selectedCategory} />}
+                <button type="submit" className="min-h-11 rounded-lg bg-brand-forest px-4 text-sm font-bold text-white transition hover:bg-brand-forest-deep focus:outline-none focus:ring-2 focus:ring-brand-river focus:ring-offset-2">
+                  Apply filters
+                </button>
+              </div>
+            </form>
             <div className="flex items-center justify-between mb-4">
               <p className="text-sm text-gray-500">
                 Showing <b className="text-gray-800">{paged.length}</b> of <b className="text-gray-800">{filtered.length}</b> packages

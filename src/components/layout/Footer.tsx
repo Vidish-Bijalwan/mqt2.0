@@ -49,12 +49,12 @@ export default function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div className="flex flex-col items-end">
+          <div className="flex flex-col items-start md:items-end">
              <div>
                 <h4 className="text-[15px] text-gray-200 mb-1">Get in Touch</h4>
                 <p className="text-gray-400 text-[11px] mb-3">Call or WhatsApp us for instant support.</p>
-                <div className="flex space-x-2">
-                   <a href="tel:8171158569" className="bg-legacy-orange hover:bg-orange-600 text-white rounded-md px-4 py-2 text-sm font-semibold transition-colors">
+                <div className="flex flex-wrap gap-2">
+                   <a href="tel:8171158569" className="rounded-md bg-brand-forest px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-forest-deep">
                       📞 Call Now
                    </a>
                    <a href="https://wa.me/918171158569" target="_blank" rel="noopener noreferrer" className="bg-green-600 hover:bg-green-700 text-white rounded-md px-4 py-2 text-sm font-semibold transition-colors">

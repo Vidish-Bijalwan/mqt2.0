@@ -33,7 +33,7 @@ export default function SpecialToursPage() {
 
       {/* Hero */}
       <div className="relative h-[250px] w-full mb-12">
-        <Image src="/images/hero/hero-bg-2.jpg" alt="Special Tours" fill sizes="100vw" className="object-cover" priority />
+        <Image src="/images/hero/hero-bg-2.svg" alt="Special Tours" fill sizes="100vw" className="object-cover" priority />
         <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center text-center px-4">
           <h1 className="text-3xl md:text-5xl font-bold text-white capitalize mb-4">Choose Your Travel Style</h1>
           <p className="text-white text-lg max-w-2xl">Find the perfect itinerary customized to your preferred theme and make your dream vacation a reality.</p>

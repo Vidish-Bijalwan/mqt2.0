@@ -1,4 +1,4 @@
-import { allPackages } from "@/data/allPackages";
+import { getPublicPackages } from "@/utils/packageCatalog";
 import { experiences, type Experience } from "@/data/experiencesData";
 
 /* ═══════════════════════════════════════════════════════════════════════
@@ -35,6 +35,6 @@ export function matchPackages<T extends { title: string; category: string; descr
 export function experiencesWithCounts(): ExperienceWithCount[] {
   return experiences.map((exp) => ({
     ...exp,
-    packageCount: matchPackages(allPackages, exp).length,
+    packageCount: matchPackages(getPublicPackages(), exp).length,
   }));
 }

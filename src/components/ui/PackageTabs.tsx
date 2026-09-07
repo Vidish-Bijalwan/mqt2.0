@@ -7,24 +7,25 @@ export interface PackageTabSection {
   label: string;
   content: ReactNode;
 }
-
 export default function PackageTabs({ sections }: { sections: PackageTabSection[] }) {
   // Persist the active tab in the URL hash (U22) so sections can be
   // shared/bookmarked, e.g. /packages/<slug>#itinerary.
   const validIds = sections.map((s) => s.id);
-  const [activeId, setActiveId] = useState<string>(() => {
-    if (typeof window !== "undefined") {
-      const fromHash = window.location.hash.replace("#", "");
-      if (validIds.includes(fromHash)) return fromHash;
-    }
-    return sections[0]?.id;
-  });
+  // Keep the first render identical on the server and client. The hash is
+  // applied after hydration so a deep link cannot cause a tab mismatch.
+  const [activeId, setActiveId] = useState<string>(sections[0]?.id || "");
   const active = sections.find((s) => s.id === activeId) || sections[0];
 
   useEffect(() => {
-    const onHashChange = () => {
+    const syncTabFromHash = () => {
       const fromHash = window.location.hash.replace("#", "");
       if (validIds.includes(fromHash)) setActiveId(fromHash);
+    };
+
+    syncTabFromHash();
+
+    const onHashChange = () => {
+      syncTabFromHash();
     };
     window.addEventListener("hashchange", onHashChange);
     return () => window.removeEventListener("hashchange", onHashChange);
@@ -43,19 +44,19 @@ export default function PackageTabs({ sections }: { sections: PackageTabSection[
 
   return (
     <div>
-      {/* Tab bar — sticky below the header, reference-style */}
-      <div className="sticky top-0 z-30 bg-white/95 backdrop-blur border border-gray-200 rounded-lg shadow-sm overflow-hidden mb-4">
-        <div className="flex overflow-x-auto" role="tablist" aria-label="Package sections">
+      <div className="sticky top-2 z-30 mb-5 rounded-2xl border border-[#d7e5e1] bg-white/92 p-1.5 shadow-[0_10px_30px_rgba(11,48,44,0.09)] backdrop-blur-xl">
+        <div className="flex gap-1 overflow-x-auto" role="tablist" aria-label="Package sections">
           {sections.map((s) => (
             <button
               key={s.id}
               role="tab"
               aria-selected={s.id === active.id}
+              aria-controls={`package-panel-${s.id}`}
               onClick={() => selectTab(s.id)}
-              className={`px-4 md:px-6 py-3 text-[13px] md:text-sm font-bold whitespace-nowrap transition-colors border-b-2 -mb-px ${
+              className={`min-h-11 whitespace-nowrap rounded-xl px-4 text-[13px] font-extrabold transition-colors md:px-5 md:text-sm ${
                 s.id === active.id
-                  ? "text-legacy-orange border-legacy-orange bg-orange-50/50"
-                  : "text-gray-600 border-transparent hover:text-legacy-orange hover:bg-gray-50"
+                  ? "bg-[#0b5147] text-white shadow-sm"
+                  : "text-[#61746f] hover:bg-[#eef5f3] hover:text-[#164b42]"
               }`}
             >
               {s.label}
@@ -64,7 +65,7 @@ export default function PackageTabs({ sections }: { sections: PackageTabSection[
         </div>
       </div>
 
-      <div>{active.content}</div>
+      <div id={`package-panel-${active.id}`} role="tabpanel" aria-label={active.label}>{active.content}</div>
     </div>
   );
 }

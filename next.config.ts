@@ -14,6 +14,8 @@ import type { NextConfig } from "next";
 const isOneDrive = process.cwd().toLowerCase().includes("onedrive");
 
 const nextConfig: NextConfig = {
+  // Keep the local preview visually identical to production for design reviews.
+  devIndicators: false,
   // Redirects moved to src/proxy.ts to bypass Vercel's 1,024 limit
   images: {
     // On Vercel, always use optimized images (default behavior)

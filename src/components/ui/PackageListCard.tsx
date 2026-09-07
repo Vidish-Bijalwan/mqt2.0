@@ -21,10 +21,10 @@ export default function PackageListCard({ pkg }: { pkg: Package }) {
   const endCity = routeParts.length > 1 ? routeParts[routeParts.length - 1] : startCity;
 
   return (
-    <div className="bg-white border border-gray-200 overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col md:flex-row relative">
+    <div className="package-list-card bg-white border border-gray-200 overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col md:flex-row relative">
       
       {/* ========== LEFT: IMAGE SECTION (fixed 260px on desktop) ========== */}
-      <div className="relative w-full md:w-[260px] h-[200px] md:h-auto md:min-h-[230px] shrink-0 overflow-hidden bg-gray-100">
+      <div className="package-list-image relative w-full md:w-[260px] h-[200px] md:h-auto md:min-h-[230px] shrink-0 overflow-hidden bg-gray-100">
         <Link href={`/packages/${pkg.slug}`} className="block w-full h-full relative">
           <Image
             src={imgSrc}
@@ -32,7 +32,7 @@ export default function PackageListCard({ pkg }: { pkg: Package }) {
             fill
             sizes="(max-width: 768px) 100vw, 260px"
             className="object-cover group-hover:scale-105 transition-transform duration-500"
-            onError={() => setImgSrc('/images/hero/hero-bg-2.jpg')} // Dynamic fallback
+            onError={() => setImgSrc('/images/hero/hero-bg-2.svg')} // Dynamic fallback
           />
           
           {/* Proper MQT Badge overlay */}
@@ -61,7 +61,7 @@ export default function PackageListCard({ pkg }: { pkg: Package }) {
       </div>
 
       {/* ========== MIDDLE: DETAILS SECTION ========== */}
-      <div className="flex-1 min-w-0 p-3 md:p-4 flex flex-col justify-between border-x-0 md:border-x border-gray-100">
+      <div className="package-list-details flex-1 min-w-0 p-3 md:p-4 flex flex-col justify-between border-x-0 md:border-x border-gray-100">
         {/* Title */}
         <div className="mb-2">
           <Link href={`/packages/${pkg.slug}`}>
@@ -73,12 +73,12 @@ export default function PackageListCard({ pkg }: { pkg: Package }) {
 
         {/* Route Info Table */}
         <div className="text-[12px] text-gray-600 space-y-1.5 mb-4">
-          <div className="flex">
-            <span className="text-gray-800 font-semibold min-w-[130px] shrink-0">Starting & Ending ➝</span>
+          <div className="package-route-row flex">
+            <span className="package-route-label text-gray-800 font-semibold min-w-[130px] shrink-0">Starting & Ending ➝</span>
             <span className="truncate">{startCity} | {endCity}</span>
           </div>
-          <div className="flex">
-            <span className="text-gray-800 font-semibold min-w-[130px] shrink-0">Destinations ➝</span>
+          <div className="package-route-row flex">
+            <span className="package-route-label text-gray-800 font-semibold min-w-[130px] shrink-0">Destinations ➝</span>
             <span className="line-clamp-1">{pkg.route || "Multiple destinations"}</span>
           </div>
         </div>
@@ -86,7 +86,7 @@ export default function PackageListCard({ pkg }: { pkg: Package }) {
         {/* Amenities Row */}
         <div className="mt-auto">
           <p className="text-[11px] font-bold text-gray-800 uppercase tracking-wide mb-3">Customized Holidays</p>
-          <div className="flex items-center gap-6 text-gray-500">
+          <div className="package-list-amenities flex items-center gap-6 text-gray-500">
             <div className="flex flex-col items-center group-hover:text-legacy-nav-blue transition-colors">
                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 21V7a2 2 0 012-2h14a2 2 0 012 2v14"/><path d="M3 11h18"/><path d="M7 11V7"/><path d="M11 11V7"/><path d="M15 11V7"/><path d="M7 15h.01"/><path d="M11 15h.01"/><path d="M15 15h.01"/><path d="M7 19h.01"/><path d="M11 19h.01"/><path d="M15 19h.01"/></svg>
                <span className="text-[10px] mt-1">Hotel</span>
@@ -108,7 +108,7 @@ export default function PackageListCard({ pkg }: { pkg: Package }) {
       </div>
 
       {/* ========== RIGHT: PRICING BOX (fixed 190px on desktop) ========== */}
-      <div className="w-full md:w-[190px] bg-gray-50/80 p-3 flex flex-col items-center justify-center text-center shrink-0">
+      <div className="package-list-price w-full shrink-0 bg-brand-paper/70 p-3 text-center md:w-[190px]">
         {/* Price Display */}
         <div className="mb-3">
           <p className="text-[11px] text-gray-500 mb-1 font-semibold uppercase tracking-wider">Starting from</p>
@@ -130,7 +130,7 @@ export default function PackageListCard({ pkg }: { pkg: Package }) {
         </div>
 
         {/* CTA Buttons */}
-        <div className="w-full space-y-1.5">
+        <div className="package-list-actions w-full space-y-1.5">
           <Link
             href={`/packages/${pkg.slug}#enquiry-form`}
             className="block w-full py-1.5 px-2 bg-white hover:bg-gray-100 border border-gray-300 text-gray-700 text-[11px] font-bold rounded flex items-center justify-center gap-1 transition-colors shadow-sm whitespace-nowrap"
@@ -140,7 +140,7 @@ export default function PackageListCard({ pkg }: { pkg: Package }) {
           </Link>
           <Link
             href={`/packages/${pkg.slug}`}
-            className="block w-full py-1.5 px-2 bg-legacy-orange hover:bg-orange-600 text-white text-[11px] font-bold rounded text-center transition-colors shadow-sm whitespace-nowrap"
+            className="block w-full whitespace-nowrap rounded bg-brand-forest px-2 py-1.5 text-center text-[11px] font-bold text-white shadow-sm transition-colors hover:bg-brand-forest-deep"
           >
             View Details
           </Link>

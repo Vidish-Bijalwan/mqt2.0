@@ -4,7 +4,7 @@ import { siteConfig } from "@/data/siteConfig";
 import { navLinks } from "@/data/navLinks";
 import { footerLinks } from "@/data/footerLinks";
 import { themeConfigs } from "@/data/themeConfig";
-import { allPackages } from "@/data/allPackages";
+import { getPublicPackages } from "@/utils/packageCatalog";
 import destinationsDataRaw from "@/data/destinationsData.json";
 import { experiences } from "@/data/experiencesData";
 
@@ -22,16 +22,17 @@ interface LinkGroup {
 }
 
 export default function SiteMapPage() {
+  const publicPackages = getPublicPackages();
   // Package categories with counts (computed server-side)
   const categoryCounts = new Map<string, number>();
-  for (const pkg of allPackages) {
+  for (const pkg of publicPackages) {
     const cat = pkg.category || "Other";
     categoryCounts.set(cat, (categoryCounts.get(cat) || 0) + 1);
   }
   const categories = Array.from(categoryCounts.entries()).sort((a, b) => b[1] - a[1]);
 
   // Top featured packages for quick access (first 12)
-  const featuredPackages = allPackages.slice(0, 12);
+  const featuredPackages = publicPackages.slice(0, 12);
 
   const mainLinks: LinkGroup[] = [
     {
@@ -198,7 +199,7 @@ export default function SiteMapPage() {
           <div className="bg-brand-navy text-white px-4 py-3 text-sm font-bold flex items-center justify-between">
             Featured Tour Packages
             <Link href="/packages" className="text-[11px] font-semibold text-brand-orange hover:underline">
-              Browse all {allPackages.length} packages »
+            Browse all {publicPackages.length} packages »
             </Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-1 p-4">

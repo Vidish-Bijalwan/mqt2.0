@@ -45,7 +45,7 @@ export default function Navbar() {
   return (
     <nav className="bg-white w-full relative z-[1000]">
       {/* ── 1. Top Bar ── */}
-      <div className="bg-gradient-to-r from-[#e65100] via-[#f57c00] to-[#ff9800] text-white text-[13px] hidden lg:block">
+      <div className="hidden bg-gradient-to-r from-brand-forest-deep via-brand-forest to-brand-river text-[13px] text-white lg:block">
         <div className="container mx-auto px-4 py-2.5 flex justify-between items-center w-[95%] max-w-[1600px] font-medium tracking-wide">
           <div className="flex items-center space-x-6">
             <a href={`mailto:${siteConfig.email}`} className="flex items-center hover:text-white/80 transition-colors">
@@ -69,16 +69,16 @@ export default function Navbar() {
       </div>
 
       {/* ── 2. Main Header ── */}
-      <div className="container mx-auto px-4 h-[70px] md:h-[85px] flex justify-between items-center w-[95%] max-w-[1600px]">
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-11 h-11 md:w-14 md:h-14 rounded-full overflow-hidden border-3 border-[#f97316] shadow-md group-hover:shadow-lg group-hover:border-[#ea580c] transition-all shrink-0">
+      <div className="container mx-auto px-3 sm:px-4 h-[64px] md:h-[85px] flex justify-between items-center w-full lg:w-[95%] max-w-[1600px]">
+        <Link href="/" className="flex min-w-0 items-center gap-2 sm:gap-3 group">
+          <div className="w-11 h-11 md:w-14 md:h-14 rounded-full overflow-hidden border-3 border-brand-green shadow-md group-hover:shadow-lg group-hover:border-brand-forest transition-all shrink-0">
             <Image src="/images/mqt-logo-256.webp" alt="My Quick Trippers" width={56} height={56} className="w-full h-full object-cover" priority />
           </div>
           <div className="flex flex-col leading-tight">
-            <span className="text-xl md:text-[26px] font-black text-gray-900 tracking-tight whitespace-nowrap">
-              My Quick <span className="text-[#f97316]">Trippers</span>
+            <span className="text-[17px] sm:text-xl md:text-[26px] font-black text-gray-900 tracking-tight whitespace-nowrap">
+              My Quick <span className="text-brand-green">Trippers</span>
             </span>
-            <span className="text-[10px] md:text-[11px] text-gray-500 font-semibold uppercase tracking-[0.16em] whitespace-nowrap">
+            <span className="hidden sm:block text-[10px] md:text-[11px] text-gray-500 font-semibold uppercase tracking-[0.16em] whitespace-nowrap">
               Your Journey, Our Expertise
             </span>
           </div>
@@ -104,7 +104,10 @@ export default function Navbar() {
         </div>
 
         {/* Mobile menu button */}
-        <div className="lg:hidden flex items-center">
+        <div className="lg:hidden flex items-center gap-1">
+          <a href={`tel:${siteConfig.phoneRaw}`} aria-label="Call customer care" className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full bg-brand-forest text-white shadow-sm">
+            <Phone className="h-5 w-5" />
+          </a>
           <button type="button" onClick={() => setIsOpen(!isOpen)} aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"} aria-expanded={isOpen} className="min-h-12 min-w-12 inline-flex items-center justify-center rounded-md text-[#1a2744]">
             {isOpen ? <X className="h-7 w-7" /> : <Menu className="h-7 w-7" />}
           </button>
@@ -112,10 +115,10 @@ export default function Navbar() {
       </div>
 
       {/* ── 3. Main Navigation Bar (FAT & BOLD) ── */}
-      <div ref={navBarRef} className="bg-[#1a2744] text-white w-full hidden lg:block relative">
+      <div ref={navBarRef} className="relative hidden w-full bg-brand-forest text-white lg:block">
         <div className="container mx-auto w-[95%] max-w-[1600px] flex relative">
           {/* Home Icon */}
-          <Link href="/" className="bg-[#f97316] w-[60px] h-[48px] flex items-center justify-center hover:bg-[#ea580c] transition-colors shrink-0">
+          <Link href="/" className="flex h-[48px] w-[60px] shrink-0 items-center justify-center bg-brand-river transition-colors hover:bg-brand-forest-deep">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
               <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
             </svg>
@@ -136,15 +139,15 @@ export default function Navbar() {
                     aria-label={`Open ${item.title} menu`}
                     className={`px-3 xl:px-4 h-[48px] whitespace-nowrap flex items-center cursor-pointer transition-all duration-150 ${
                       hoveredMenu === item.title 
-                        ? 'text-[#f97316] bg-white/10' 
-                        : 'hover:text-[#f97316] hover:bg-white/5'
+                        ? 'text-brand-sage bg-white/10'
+                        : 'hover:text-brand-sage hover:bg-white/5'
                     }`}
                   >
                     {item.title} 
                     <ChevronDown className={`ml-1.5 w-3.5 h-3.5 transition-transform duration-200 ${hoveredMenu === item.title ? 'rotate-180' : ''}`} />
                   </button>
                 ) : (
-                  <Link href={item.href || "#"} className="px-3 xl:px-4 h-[48px] whitespace-nowrap flex items-center hover:text-[#f97316] hover:bg-white/5 transition-all duration-150">
+                  <Link href={item.href || "#"} className="px-3 xl:px-4 h-[48px] whitespace-nowrap flex items-center hover:text-brand-sage hover:bg-white/5 transition-all duration-150">
                     {item.title}
                   </Link>
                 )}
@@ -166,27 +169,26 @@ export default function Navbar() {
             onMouseEnter={() => handleMenuEnter(hoveredMenu)}
             onMouseLeave={handleMenuLeave}
           >
-            {/* Orange accent bar */}
-            <div className="h-[4px] bg-gradient-to-r from-[#f97316] via-[#fb923c] to-[#f97316]" />
+            <div className="h-[4px] bg-gradient-to-r from-brand-forest via-brand-river to-brand-forest" />
             <div className="bg-white shadow-[0_12px_40px_rgba(0,0,0,0.18)] border-b border-gray-200">
               <div className="container mx-auto w-[95%] max-w-[1600px]">
                 <div className="grid" style={{ gridTemplateColumns: `repeat(${activeItem.submenus!.length}, minmax(170px, 1fr))` }}>
                   {activeItem.submenus!.map((region, ridx) => (
                     <div key={ridx} className="px-6 py-6 border-r border-gray-100 last:border-r-0">
-                      <h4 className="text-[#f97316] font-extrabold text-[14px] mb-4 pb-3 border-b-2 border-orange-100 uppercase tracking-wider">
+                      <h4 className="mb-4 border-b-2 border-brand-sage/50 pb-3 text-[14px] font-extrabold uppercase tracking-wider text-brand-forest">
                         {region.title}
                       </h4>
                       <ul className="space-y-1">
                         {region.links.map((link, lidx) => (
                           <li key={lidx}>
-                            <Link href={link.href} className="flex items-center py-[8px] text-[14px] text-gray-700 hover:text-[#f97316] hover:bg-orange-50/60 transition-colors rounded-md px-2 -mx-2">
-                              <span className="text-[#f97316] mr-2.5 text-[11px]">★</span>
+                            <Link href={link.href} className="-mx-2 flex rounded-md px-2 py-[8px] text-[14px] text-gray-700 transition-colors hover:bg-brand-paper hover:text-brand-forest">
+                              <span className="mr-2.5 text-[11px] text-brand-river">★</span>
                               {link.name}
                             </Link>
                           </li>
                         ))}
                       </ul>
-                      <Link href={activeItem.href || "#"} className="mt-4 inline-block text-[11px] font-bold text-[#f97316] border-2 border-[#f97316] px-4 py-2 rounded hover:bg-[#f97316] hover:text-white transition-all uppercase tracking-wider">
+                      <Link href={activeItem.href || "#"} className="mt-4 inline-block rounded border-2 border-brand-forest px-4 py-2 text-[11px] font-bold uppercase tracking-wider text-brand-forest transition-all hover:bg-brand-forest hover:text-white">
                         View More →
                       </Link>
                     </div>
@@ -210,13 +212,13 @@ export default function Navbar() {
             onMouseEnter={() => handleMenuEnter(hoveredMenu)}
             onMouseLeave={handleMenuLeave}
           >
-            <div className="h-[3px] bg-[#f97316]" />
+            <div className="h-[3px] bg-brand-river" />
             <div className="bg-white shadow-[0_8px_30px_rgba(0,0,0,0.15)]">
               <div className="container mx-auto w-[95%] max-w-[1600px] py-5">
                 <div className="flex flex-wrap gap-x-2 gap-y-2">
                   {activeItem.links!.map((link, lidx) => (
-                    <Link key={lidx} href={link.href} className="flex items-center py-2.5 px-4 text-[14px] font-medium text-gray-700 hover:bg-orange-50 hover:text-[#f97316] rounded-lg transition-all border border-transparent hover:border-orange-100">
-                      <span className="text-[#f97316] mr-2.5 text-[11px]">★</span>
+                    <Link key={lidx} href={link.href} className="flex items-center rounded-lg border border-transparent px-4 py-2.5 text-[14px] font-medium text-gray-700 transition-all hover:border-brand-sage hover:bg-brand-paper hover:text-brand-forest">
+                      <span className="mr-2.5 text-[11px] text-brand-river">★</span>
                       {link.name}
                     </Link>
                   ))}
@@ -239,17 +241,17 @@ export default function Navbar() {
             onMouseEnter={() => handleMenuEnter(hoveredMenu)}
             onMouseLeave={handleMenuLeave}
           >
-            <div className="h-[3px] bg-[#f97316]" />
+            <div className="h-[3px] bg-brand-river" />
             <div className="bg-white shadow-[0_8px_30px_rgba(0,0,0,0.15)]">
               <div className="container mx-auto w-[95%] max-w-[1600px] py-6">
                 <div className="flex flex-wrap gap-x-10 gap-y-4">
                   {activeItem.submenus!.map((sub, sidx) => (
                     <div key={sidx}>
-                      <div className="font-extrabold text-[#f97316] text-[14px] mb-3 uppercase tracking-wider">{sub.title}</div>
+                      <div className="mb-3 text-[14px] font-extrabold uppercase tracking-wider text-brand-forest">{sub.title}</div>
                       <div className="flex flex-wrap gap-x-6 gap-y-1">
                         {sub.links.map((link, lidx) => (
-                          <Link key={lidx} href={link.href} className="flex items-center py-2 text-[14px] text-gray-700 hover:text-[#f97316] transition-colors">
-                            <span className="text-[#f97316] mr-2 text-[10px]">★</span>
+                          <Link key={lidx} href={link.href} className="flex items-center py-2 text-[14px] text-gray-700 transition-colors hover:text-brand-forest">
+                            <span className="mr-2 text-[10px] text-brand-river">★</span>
                             {link.name}
                           </Link>
                         ))}
@@ -267,14 +269,14 @@ export default function Navbar() {
            MOBILE NAV
          ══════════════════════════════════════════════════════════════════ */}
       {isOpen && (
-        <div className="lg:hidden bg-[#1a2744] text-white px-4 pt-3 pb-5 shadow-xl absolute w-full left-0 z-50 max-h-[80vh] overflow-y-auto">
+        <div className="lg:hidden flex flex-col bg-[#1a2744] text-white px-4 pt-2 pb-5 shadow-xl absolute w-full left-0 z-50 max-h-[calc(100dvh-64px)] overflow-y-auto">
           <Link href="/" className="block py-3.5 border-b border-white/10 font-medium text-[15px]" onClick={() => setIsOpen(false)}>Home</Link>
           {navLinks.map((item, idx) => (
             <div key={idx} className="border-b border-white/10">
               {item.submenus || item.links ? (
                 <>
                   <button 
-                    className="flex items-center justify-between w-full py-3.5 text-left font-medium text-[15px]"
+                    className="flex min-h-12 items-center justify-between w-full py-3 text-left font-medium text-[15px]"
                     onClick={() => setExpandedMobile(expandedMobile === item.title ? null : item.title)}
                   >
                     {item.title}
@@ -286,7 +288,7 @@ export default function Navbar() {
                       {item.submenus && item.submenus.map((region) => (
                         <div key={region.title} className="mb-1">
                           <button 
-                            className="flex items-center justify-between w-full px-4 py-2.5 text-[#f97316] font-bold text-[14px]"
+                            className="flex min-h-11 w-full items-center justify-between px-4 py-2.5 text-[14px] font-bold text-brand-sage"
                             onClick={() => setExpandedMobileRegion(expandedMobileRegion === region.title ? null : region.title)}
                           >
                             {region.title}
@@ -296,7 +298,7 @@ export default function Navbar() {
                             <div className="pl-6 space-y-1 pb-2">
                               {region.links.map((link, lidx) => (
                                 <Link key={lidx} href={link.href} className="block text-[14px] text-gray-300 py-2 hover:text-white" onClick={() => setIsOpen(false)}>
-                                  <span className="text-[#f97316] mr-2 text-[10px]">★</span>
+                                  <span className="mr-2 text-[10px] text-brand-sage">★</span>
                                   {link.name}
                                 </Link>
                               ))}
@@ -306,7 +308,7 @@ export default function Navbar() {
                       ))}
                       {item.links && item.links.map((link, lidx) => (
                         <Link key={lidx} href={link.href} className="block px-4 text-[14px] text-gray-300 py-2.5 hover:text-white" onClick={() => setIsOpen(false)}>
-                          <span className="text-[#f97316] mr-2 text-[10px]">★</span>
+                          <span className="mr-2 text-[10px] text-brand-sage">★</span>
                           {link.name}
                         </Link>
                       ))}

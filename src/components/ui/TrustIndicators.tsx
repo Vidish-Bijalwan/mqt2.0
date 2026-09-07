@@ -4,7 +4,6 @@ import { ShieldCheck, Clock, Users, Award } from "lucide-react";
 interface TrustIndicatorsProps {
   category?: string;
 }
-
 // Trust indicators (T27) — each claim links to the page that backs it up
 // (/about-us for company credentials, /reviews for traveller proof).
 export default function TrustIndicators({ category }: TrustIndicatorsProps) {

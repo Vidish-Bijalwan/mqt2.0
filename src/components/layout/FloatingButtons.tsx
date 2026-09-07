@@ -2,10 +2,14 @@
 
 import { MessageCircle, Phone } from "lucide-react";
 import { siteConfig } from "@/data/siteConfig";
+import { usePathname } from "next/navigation";
 
 export default function FloatingButtons() {
+  const pathname = usePathname();
+  if (/^\/packages\/[^/]+/.test(pathname)) return null;
+
   return (
-    <div className="floating-contact-buttons fixed bottom-6 right-6 flex flex-col space-y-4 z-50">
+    <div className="floating-contact-buttons hidden sm:flex fixed bottom-6 right-6 flex-col space-y-4 z-50">
       <a 
         href={siteConfig.social.whatsapp}
         target="_blank"

@@ -226,6 +226,15 @@ export default function PosterMarquee() {
   const trackRef = useRef<HTMLDivElement>(null);
   const [isPaused, setIsPaused] = useState(false);
   const [selectedPoster, setSelectedPoster] = useState<PosterItem | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const media = window.matchMedia("(max-width: 639px)");
+    const update = () => setIsMobile(media.matches);
+    update();
+    media.addEventListener("change", update);
+    return () => media.removeEventListener("change", update);
+  }, []);
 
   useEffect(() => {
     const h = () => setIsPaused(document.hidden);
@@ -239,8 +248,10 @@ export default function PosterMarquee() {
     return () => { document.body.style.overflow = ""; };
   }, [selectedPoster]);
 
-  // double items for seamless loop
-  const items: PosterItem[] = [...posterItems, ...posterItems];
+  // Mobile only needs a short curated loop. Rendering every poster twice makes
+  // the first paint compete with the rest of the homepage for image bandwidth.
+  const loopItems = isMobile ? posterItems.slice(0, 12) : posterItems;
+  const items: PosterItem[] = [...loopItems, ...loopItems];
 
   return (
     <>
@@ -272,7 +283,7 @@ export default function PosterMarquee() {
                   alt={`${item.name} destination poster`}
                   fill
                   className="pm-card__img"
-                  loading="lazy"
+                  loading={i < 4 ? "eager" : "lazy"}
                   sizes="(max-width: 768px) 220px, 320px"
                 />
                 <div className="pm-card__overlay">

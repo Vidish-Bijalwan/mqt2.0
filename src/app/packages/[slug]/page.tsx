@@ -1,8 +1,9 @@
 import { allPackages } from "@/data/allPackages";
+import { getPublicPackages, isPublicPackage } from "@/utils/packageCatalog";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { CheckCircle2, Clock, MapPin, Phone, MessageCircleQuestion, HelpCircle, BookOpen, BadgePercent, XCircle } from "lucide-react";
+import { ArrowRight, BadgePercent, Check, CheckCircle2, Clock, MapPin, MessageCircle, Phone, X } from "lucide-react";
 import EnquiryForm from "@/components/forms/EnquiryForm";
 import GalleryLightbox from "@/components/ui/GalleryLightbox";
 import PackageTabs from "@/components/ui/PackageTabs";
@@ -10,44 +11,56 @@ import StickyMobileCTA from "@/components/ui/StickyMobileCTA";
 import { getPriceInfo } from "@/utils/price";
 import { cleanScrapedTitle, replaceReferenceBrand } from "@/utils/branding";
 import ItineraryAccordion from "@/components/ui/ItineraryAccordion";
-import PackageOverview from "@/components/ui/PackageOverview";
-import TrustIndicators from "@/components/ui/TrustIndicators";
 import RelatedPackages from "@/components/ui/RelatedPackages";
 import BlockRenderer from "@/components/ui/BlockRenderer";
-import PackageAtAGlance from "@/components/ui/PackageAtAGlance";
 import ExpandableText from "@/components/ui/ExpandableText";
-import { extractInclusions, extractExclusions, extractHighlights, stripLeadingJunk } from "@/utils/blocks";
+import { extractInclusions, extractExclusions, extractHighlights } from "@/utils/blocks";
+import type { Block, FaqItem } from "@/utils/blocks";
 import { siteConfig } from "@/data/siteConfig";
 import fs from 'fs';
 import path from 'path';
 
-// Load the newly generated rich package details payload (Legacy)
-let packageDetails: Record<string, any> = {};
-try {
-  const dataPath = path.join(process.cwd(), 'src/data/packageDetails.json');
-  packageDetails = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
-} catch (e) {
-  // silently continue without V1 details
+interface LegacyPackageDetails {
+  overview: string;
+  highlights: string[];
+  itinerary: Array<{ title: string; description: string }>;
+  faqs: FaqItem[];
 }
 
-// Load V2 Package Details (Agent 3 output)
-let packageDetailsV2: Record<string, any> = {};
-try {
-  const dataPathV2 = path.join(process.cwd(), 'src/data/packageDetailsV2.json');
-  packageDetailsV2 = JSON.parse(fs.readFileSync(dataPathV2, 'utf-8'));
-} catch (e) {
-  // silently continue without V2 details
+interface JsonLdNode {
+  "@type": string | string[];
+  [key: string]: unknown;
 }
 
-// Load V3 Package Details (clean, structured blocks regenerated from the
-// scraped folder — junk chrome removed, lists/headings/images structured)
-let packageDetailsV3: Record<string, any> = {};
-try {
-  const dataPathV3 = path.join(process.cwd(), 'src/data/packageDetailsV3.json');
-  packageDetailsV3 = JSON.parse(fs.readFileSync(dataPathV3, 'utf-8'));
-} catch (e) {
-  // silently continue without V3 details
+interface JsonLdDocument {
+  "@context"?: string;
+  "@graph": JsonLdNode[];
+  [key: string]: unknown;
 }
+
+interface RichPackageDetails {
+  blocks?: Block[];
+  seo?: {
+    page_title?: string;
+    title?: string;
+    meta_description?: string;
+    og_tags?: Record<string, string>;
+    json_ld?: JsonLdDocument;
+  };
+}
+
+function loadDetailFile<T>(filename: string): Record<string, T> {
+  try {
+    const dataPath = path.join(process.cwd(), `src/data/${filename}`);
+    return JSON.parse(fs.readFileSync(dataPath, 'utf-8')) as Record<string, T>;
+  } catch {
+    return {};
+  }
+}
+
+const packageDetails = loadDetailFile<LegacyPackageDetails>('packageDetails.json');
+const packageDetailsV2 = loadDetailFile<RichPackageDetails>('packageDetailsV2.json');
+const packageDetailsV3 = loadDetailFile<RichPackageDetails>('packageDetailsV3.json');
 
 function detailsV2For(slug: string) {
   return packageDetailsV2[slug] || packageDetailsV2[`${slug}.html`] || packageDetailsV2[`${slug}.htm`];
@@ -57,12 +70,81 @@ function detailsV3For(slug: string) {
   return packageDetailsV3[slug];
 }
 
-function getFallbackImage(slug: string, category: string) {
-  return `/images/packages/${slug}.jpg`;
+const blockText = (block: Block) => String(block.text || block.content || '').trim();
+
+function cleanDisplayText(value: string) {
+  return String(value || '')
+    .replace(/\bSee More\b|\bSee Less\b/gi, '')
+    .replace(/Places You[’']ll See/gi, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function cleanOverviewText(value: string) {
+  const beforeRepeatedCopy = String(value || '').split(/\bSee Less\b/i)[0];
+  const beforeHighlights = beforeRepeatedCopy.split(/\bTour Highlights\b/i)[0];
+  return cleanDisplayText(beforeHighlights);
+}
+
+function resolveLocalPackageImage(candidate?: string): string | null {
+  if (!candidate) return null;
+
+  let publicPath = candidate.trim();
+  if (/^https?:\/\//i.test(publicPath)) {
+    try {
+      const filename = decodeURIComponent(new URL(publicPath).pathname.split('/').pop() || '');
+      publicPath = filename ? `/images/packages/${filename}` : '';
+    } catch {
+      return null;
+    }
+  }
+
+  if (!publicPath.startsWith('/images/') || /\.(svg|gif)$/i.test(publicPath)) return null;
+
+  const publicRoot = path.resolve(process.cwd(), 'public');
+  const absolutePath = path.resolve(publicRoot, publicPath.replace(/^\/+/, ''));
+  if (!absolutePath.startsWith(publicRoot)) return null;
+
+  try {
+    const imageFile = fs.statSync(absolutePath);
+    return imageFile.isFile() && imageFile.size >= 8_000 ? publicPath : null;
+  } catch {
+    return null;
+  }
+}
+
+function sanitizeItineraryBlocks(items: Block[]): Block[] {
+  const result: Block[] = [];
+  let skipAuxiliary = false;
+
+  for (const block of items) {
+    const text = block.type === 'list'
+      ? (block.items || []).filter((item): item is string => typeof item === 'string').join(' ')
+      : `${blockText(block)} ${block.alt || ''}`;
+    const isDayHeading = block.type === 'heading' && /^day\s*[-:]?\s*\d/i.test(blockText(block));
+
+    if (isDayHeading) {
+      skipAuxiliary = false;
+      result.push(block);
+      continue;
+    }
+    if (block.type === 'heading' && /places you[’']ll see/i.test(blockText(block))) {
+      skipAuxiliary = true;
+      continue;
+    }
+    if (/best price|coupon code|response time|response rate|discuss on whatsapp|no hidden charges|people are considering|price guarantee/i.test(text)) {
+      skipAuxiliary = true;
+      continue;
+    }
+    if (!skipAuxiliary && block.type !== 'image') result.push(block);
+  }
+
+
+  return result;
 }
 
 export function generateStaticParams() {
-  return allPackages.map((pkg) => ({ slug: pkg.slug }));
+  return getPublicPackages().map((pkg) => ({ slug: pkg.slug }));
 }
 
 // ISR: revalidate daily so newly scraped/edited package content (V3 blocks,
@@ -76,8 +158,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const slug = resolvedParams.slug;
   const pkgV3 = detailsV3For(slug);
   const pkgV2 = detailsV2For(slug);
-  const pkg = packageDetails[slug] || allPackages.find(p => p.slug === slug);
-  
+  const pkg = allPackages.find((candidate) => candidate.slug === slug);
+  const legacyDetails = packageDetails[slug];
+  if (pkg && !isPublicPackage(pkg)) return {};
+
   const seoSource = pkgV3?.seo || pkgV2?.seo;
   if (seoSource) {
     // Scraped SEO preserved, but sanitized: the reference site's brand name
@@ -85,7 +169,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     // into MQT titles/descriptions, and canonicals/OG URLs must point at MQT.
     const scrapedTitle = seoSource.page_title || seoSource.title;
     const og = seoSource.og_tags || {};
-    const cleanTitle = (t: string | undefined | null) => (t ? cleanScrapedTitle(t) : pkg?.title || slug.replace(/-/g, ' '));
+    const cleanTitle = (t: string | undefined | null) => pkg?.title || (t ? cleanScrapedTitle(t) : slug.replace(/-/g, ' '));
     return {
       title: cleanTitle(scrapedTitle),
       description: seoSource.meta_description ? replaceReferenceBrand(seoSource.meta_description) : undefined,
@@ -104,7 +188,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   // No brand suffix here — the layout title template ("%s | My Quick Trippers") appends it.
   const title = pkg ? pkg.title : slug.replace(/-/g, ' ').toUpperCase();
-  const description = pkg?.overview?.substring(0, 160) || `Book the best ${title} with My Quick Trippers.`;
+  const description = legacyDetails?.overview?.substring(0, 160) || pkg?.description || `Book the best ${title} with My Quick Trippers.`;
 
   return { 
     title,
@@ -128,7 +212,7 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
   const slug = resolvedParams.slug;
   const pkg = allPackages.find((p) => p.slug === slug);
   
-  if (!pkg) {
+  if (!pkg || !isPublicPackage(pkg)) {
     notFound();
   }
 
@@ -136,26 +220,26 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
   // arrays (junk dropped by clean-package-blocks) must fall through.
   const detailsV3 = detailsV3For(pkg.slug);
   const detailsV2 = detailsV2For(pkg.slug);
-  const details = packageDetails[pkg.slug] || { overview: '', highlights: [], itinerary: [], faqs: [] };
+  const details: LegacyPackageDetails = packageDetails[pkg.slug] || { overview: '', highlights: [], itinerary: [], faqs: [] };
   // Only arrays with MEANINGFUL content count as blocks — stray contact-chrome
   // lists ("Live Chat / WhatsApp / Quick Enquiry"), "Coming Soon" stubs and
   // empty lists are scraped residue and must fall through (V3 preferred, then
   // V2, then legacy/description), landing on the honest empty state.
-  const hasRealContent = (arr: any[] | undefined): boolean =>
+  const hasRealContent = (arr: Block[] | undefined): boolean =>
     Array.isArray(arr) &&
     arr.some((b) => {
       if (b.type === 'table') return (b.rows || []).length > 0;
       if (b.type === 'image') return true;
       if (b.type === 'paragraph') {
-        const t = (b.text || '').trim();
+        const t = blockText(b);
         return t.length > 60 && !/^(coming soon|under construction)/i.test(t);
       }
       if (b.type === 'heading') {
-        const t = (b.text || '').trim();
+        const t = blockText(b);
         return t.length > 3 && !/live chat|whatsapp|quick enquiry|email us|coming soon/i.test(t);
       }
       if (b.type === 'list') {
-        const items = (b.items || []).filter(Boolean);
+        const items = (b.items || []).filter((item): item is string => typeof item === 'string' && Boolean(item));
         return (
           items.length > 0 &&
           !items.every((i: string) => /live chat|whatsapp|enquiry|email|phone|^\+\d/i.test(i))
@@ -169,7 +253,17 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
     : hasRealContent(detailsV2?.blocks)
       ? detailsV2.blocks
       : null;
-  const hasRealBlocks = !!blocks;
+
+  const hasItinerarySection = (items: Block[] | null | undefined) =>
+    Boolean(items?.some((block) =>
+      block.type === 'heading' &&
+      /(day-?by-?day itinerary|day-?wise itinerary|tour itinerary|^day\s*[-:]?\s*\d)/i.test(blockText(block)),
+    ));
+  const itinerarySourceBlocks = hasItinerarySection(blocks)
+    ? blocks
+    : hasItinerarySection(detailsV2?.blocks)
+      ? detailsV2?.blocks || null
+      : blocks;
 
   // Extract FAQ pairs from V3 blocks early (used by both sections and JSON-LD)
   // Two formats:
@@ -181,14 +275,14 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
       const blk = blocks[i];
       if (blk.type === 'faq' && Array.isArray(blk.items)) {
         for (const item of blk.items) {
-          if (item.q && item.a) faqPairs.push({ q: item.q, a: item.a });
+          if (typeof item !== 'string' && item.q && item.a) faqPairs.push({ q: item.q, a: item.a });
         }
-      } else if (blk.type === 'heading' && /^Q\d+\./i.test(blk.text || '')) {
+      } else if (blk.type === 'heading' && /^Q\d+\./i.test(blockText(blk))) {
         const answer = blocks[i + 1];
-        if (answer?.type === 'paragraph' && /^Ans\./i.test(answer.text || '')) {
+        if (answer?.type === 'paragraph' && /^Ans\./i.test(blockText(answer))) {
           faqPairs.push({
-            q: (blk.text || '').replace(/\s*See More\s*$/i, '').trim(),
-            a: (answer.text || '').replace(/^Ans\.\s*/i, '').trim(),
+            q: blockText(blk).replace(/\s*See More\s*$/i, '').trim(),
+            a: blockText(answer).replace(/^Ans\.\s*/i, '').trim(),
           });
         }
       }
@@ -202,23 +296,46 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
   const saveAmount = priceInfo.save;
   const showPrice = priceInfo.hasPrice;
 
-  // Split blocks at the itinerary heading so Overview and Itinerary are separate
-  // tabs. Itinerary starts at the "Day-by-Day Itinerary" wrapper OR the first
-  // "Day N" heading (42 packages lack the wrapper). Everything before it is the
-  // overview — never the scraped homepage junk (data pass removed it, and
-  // stripLeadingJunk below is defense-in-depth).
-  const itineraryHeadingIdx = blocks
-    ? blocks.findIndex((b: any) => b.type === 'heading' && /(day-?by-?day itinerary|day-?wise|^day\s*\d)/i.test(b.text || ''))
+  // Section boundaries must support both V2 `text` and V3 `content` headings.
+  // Without the end boundary, FAQs and related-tour copy leak into the itinerary.
+  const itineraryWrapperIdx = itinerarySourceBlocks
+    ? itinerarySourceBlocks.findIndex((b) => b.type === 'heading' && /(day-?by-?day itinerary|day-?wise itinerary|tour itinerary)/i.test(blockText(b)))
     : -1;
-  const hasItineraryBlocks = itineraryHeadingIdx >= 0;
-  const overviewBlocks = blocks && hasItineraryBlocks ? blocks.slice(0, itineraryHeadingIdx) : blocks;
-  const itineraryBlocks = blocks && hasItineraryBlocks ? blocks.slice(itineraryHeadingIdx) : [];
+  const firstDayIdx = itinerarySourceBlocks
+    ? itinerarySourceBlocks.findIndex((b) => b.type === 'heading' && /^day\s*[-:]?\s*\d/i.test(blockText(b)))
+    : -1;
+  const itineraryStartIdx = firstDayIdx >= 0 ? firstDayIdx : itineraryWrapperIdx >= 0 ? itineraryWrapperIdx + 1 : -1;
+  const itineraryEndIdx = itinerarySourceBlocks && itineraryStartIdx >= 0
+    ? itinerarySourceBlocks.findIndex((b, index) =>
+        index > itineraryStartIdx &&
+        b.type === 'heading' &&
+        /(frequently asked|faqs?|related tour|inclusions?|exclusions?|highlights?)/i.test(blockText(b)),
+      )
+    : -1;
+  const itineraryBlocks = itinerarySourceBlocks && itineraryStartIdx >= 0
+    ? itinerarySourceBlocks.slice(itineraryStartIdx, itineraryEndIdx > itineraryStartIdx ? itineraryEndIdx : itinerarySourceBlocks.length)
+    : [];
+  const safeItineraryBlocks = sanitizeItineraryBlocks(itineraryBlocks);
 
   // Reference-style Inclusions / Exclusions / Highlights extracted from blocks.
-  const inclusions = blocks ? extractInclusions(blocks) : [];
-  const exclusions = blocks ? extractExclusions(blocks) : [];
-  const highlights =
-    details.highlights.length > 0 ? details.highlights : blocks ? extractHighlights(blocks) : [];
+  const cleanList = (items: string[]) => Array.from(new Set(
+    (items || []).map(cleanDisplayText).filter((item) => item.length > 2 && !/^see (more|less)$/i.test(item)),
+  ));
+  const inclusions = cleanList(blocks ? extractInclusions(blocks) : []);
+  const exclusions = cleanList(blocks ? extractExclusions(blocks) : []);
+  const highlights = cleanList(
+    details.highlights.length > 0 ? details.highlights : blocks ? extractHighlights(blocks) : [],
+  ).slice(0, 8);
+
+  const overviewBoundary = (blocks || []).findIndex((block) =>
+    block.type === 'heading' && /(day-?by-?day itinerary|day-?wise itinerary|tour itinerary|^day\s*[-:]?\s*\d)/i.test(blockText(block)),
+  );
+  const overviewParagraphs = (blocks || [])
+    .slice(0, overviewBoundary >= 0 ? overviewBoundary : blocks?.length)
+    .filter((b) => b.type === 'paragraph')
+    .map((b) => cleanDisplayText(blockText(b)))
+    .filter((text: string) => text.length > 80 && !/related tour packages/i.test(text));
+  const overviewText = cleanOverviewText(details.overview || overviewParagraphs.join(' ') || pkg.description);
 
   // Route start/end points — split on arrows (→), en/em dashes (– —) and commas,
   // then collapse consecutive repeats (each day ends where the next begins).
@@ -227,252 +344,212 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
     .map(s => s.trim())
     .filter(Boolean);
   const uniqueRoutePlaces = routePlaces.filter((place, i) => place !== routePlaces[i - 1]);
-  const startPoint = uniqueRoutePlaces[0] || 'Delhi';
-  const endPoint = uniqueRoutePlaces[uniqueRoutePlaces.length - 1] || 'Delhi';
+  const startPoint = uniqueRoutePlaces[0] || '';
+  const endPoint = uniqueRoutePlaces[uniqueRoutePlaces.length - 1] || '';
   const routeDisplay = uniqueRoutePlaces.join(' → ');
+  const journeyStops = uniqueRoutePlaces.slice(0, 6);
 
   const hasDuration = !!pkg.duration && pkg.duration.toLowerCase() !== "on request";
   const hasRouteInfo = !!routeDisplay && routeDisplay.toLowerCase() !== "on request";
   const hasStartPoint = !!startPoint && startPoint.toLowerCase() !== "on request";
   const hasEndPoint = !!endPoint && endPoint.toLowerCase() !== "on request";
   const hasQuickInfo = hasDuration || hasRouteInfo;
+  const legacyItinerary = details.itinerary.filter((day) => day.description.trim().length >= 20);
+  const hasLegacyItinerary = legacyItinerary.length > 0;
+  const allFaqs = details.faqs && details.faqs.length > 0 ? details.faqs : faqPairs;
 
-  // Tabbed sections — Overview / Itinerary / Highlights / FAQs (only the ones
-  // with real content, matching the reference site's tab navigation).
+  // Keep the buying journey concise: experience, plan, inclusions, then FAQs.
   const sections = [
     {
       id: "overview",
-      label: "Tour Overview",
+      label: "The experience",
       content: (
-        <div className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
-          <div className="flex items-center gap-3 px-6 md:px-8 py-4 border-b border-orange-100 bg-gradient-to-r from-orange-50/80 to-transparent">
-            <div className="w-10 h-10 rounded-full bg-legacy-orange text-white flex items-center justify-center shrink-0">
-              <BookOpen className="w-5 h-5" />
-            </div>
-            <div>
-              <h2 className="text-xl md:text-2xl font-bold text-gray-800">Tour Overview</h2>
-              <p className="text-xs text-gray-500 mt-0.5">Everything you need to know about this trip</p>
-            </div>
-          </div>
-          <div className="p-6 md:p-8">
-            {/* Concise intro — the reference opens with a short paragraph */}
-            {hasRealBlocks && pkg.description ? (
+        <section className="overflow-hidden rounded-[24px] border border-[#dce8e5] bg-white shadow-[0_18px_55px_rgba(11,48,44,0.08)]">
+          <div className="p-6 sm:p-8 lg:p-10">
+            <p className="mb-3 text-[11px] font-extrabold uppercase tracking-[0.24em] text-brand-orange-text">The experience</p>
+            <h2 className="max-w-2xl text-2xl font-extrabold leading-tight text-[#102b28] sm:text-3xl">
+              More than a route. A journey designed around how you want to feel.
+            </h2>
+            {overviewText ? (
               <ExpandableText
-                text={pkg.description}
-                className="text-gray-700 leading-relaxed text-[15px]"
+                text={overviewText}
+                limit={680}
+                className="mt-5 max-w-3xl text-[15px] leading-7 text-[#536763] sm:text-base"
               />
-            ) : null}
-            {/* At a Glance fact strip (the reference's "Tour Gallery" table) */}
-            <PackageAtAGlance
-              duration={pkg.duration}
-              routeDisplay={routeDisplay}
-              startPoint={startPoint}
-              endPoint={endPoint}
-              category={pkg.category}
-            />
-            {hasRealBlocks ? (
-              overviewBlocks.length > 0 ? (
-                <div className="mt-6">
-                  <BlockRenderer blocks={stripLeadingJunk(overviewBlocks)} truncate />
-                </div>
-              ) : (
-                <p className="text-sm text-gray-500 italic mt-6">
-                  This tour has a detailed day-by-day plan — see the{" "}
-                  <span className="font-semibold text-gray-700">Itinerary</span> tab.
-                </p>
-              )
-            ) : details.overview || pkg.description ? (
-              <PackageOverview content={details.overview || pkg.description} packageTitle={pkg.title} />
             ) : (
-              /* No overview content in the scrape — honest, useful empty state. */
-              <div className="mt-6 rounded-lg border border-dashed border-gray-300 bg-gray-50/60 p-6 text-center">
-                <p className="text-[15px] text-gray-600 leading-relaxed">
-                  Detailed tour information for this package is shared on request.
-                  Contact our travel experts for the complete itinerary, pricing, and inclusions.
-                </p>
-                <div className="mt-5 flex flex-wrap justify-center gap-3">
-                  <a
-                    href={`tel:${siteConfig.phoneRaw}`}
-                    className="inline-flex items-center gap-2 bg-gray-900 text-white text-sm font-bold px-5 py-2.5 rounded-md hover:bg-gray-800 transition-colors"
-                  >
-                    <Phone className="w-4 h-4" /> Call {siteConfig.phone}
-                  </a>
-                  <a
-                    href={siteConfig.social.whatsapp}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-[#25D366] text-white text-sm font-bold px-5 py-2.5 rounded-md hover:bg-[#1fb457] transition-colors"
-                  >
-                    Chat on WhatsApp
-                  </a>
-                  <a
-                    href="#enquiry-form"
-                    className="inline-flex items-center gap-2 bg-legacy-orange text-white text-sm font-bold px-5 py-2.5 rounded-md hover:bg-orange-700 transition-colors"
-                  >
-                    Send Query
-                  </a>
+              <p className="mt-5 max-w-2xl text-[15px] leading-7 text-[#536763]">
+                This trip is tailored after a short conversation about your dates, group, pace, and preferences.
+              </p>
+            )}
+
+            {highlights.length > 0 && (
+              <div className="mt-9 border-t border-[#e4ecea] pt-8">
+                <div className="mb-5 flex flex-wrap items-end justify-between gap-2">
+                  <div>
+                    <p className="text-[11px] font-extrabold uppercase tracking-[0.2em] text-[#6f817d]">Worth the journey</p>
+                    <h3 className="mt-1 text-xl font-extrabold text-[#102b28]">Moments you can look forward to</h3>
+                  </div>
+                  <span className="text-xs font-semibold text-[#6f817d]">Curated from this itinerary</span>
                 </div>
+                <ul className="grid gap-3 sm:grid-cols-2">
+                  {highlights.map((highlight: string) => (
+                    <li key={highlight} className="flex gap-3 rounded-2xl bg-[#f2f7f6] p-4 text-sm leading-6 text-[#314944]">
+                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#ef7a2f]" />
+                      <span>{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             )}
           </div>
-        </div>
+        </section>
       ),
     },
-    ...(itineraryBlocks.length > 0 ? [{
+    ...(hasLegacyItinerary || safeItineraryBlocks.length > 0 ? [{
       id: "itinerary",
-      label: "Itinerary",
+      label: "Day by day",
       content: (
-        <div className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
-          <div className="flex items-center gap-3 px-6 md:px-8 py-4 border-b border-orange-100 bg-gradient-to-r from-orange-50/80 to-transparent">
-            <div className="w-10 h-10 rounded-full bg-legacy-orange text-white flex items-center justify-center shrink-0">
-              <MapPin className="w-5 h-5" />
-            </div>
-            <div>
-              <h2 className="text-xl md:text-2xl font-bold text-gray-800">Tour Itinerary</h2>
-              <p className="text-xs text-gray-500 mt-0.5">Day-by-day plan of your journey</p>
-            </div>
+        <section className="rounded-[24px] border border-[#dce8e5] bg-white p-6 shadow-[0_18px_55px_rgba(11,48,44,0.08)] sm:p-8 lg:p-10">
+          <div className="mb-8 max-w-2xl">
+            <p className="text-[11px] font-extrabold uppercase tracking-[0.24em] text-brand-orange-text">Day by day</p>
+            <h2 className="mt-2 text-2xl font-extrabold text-[#102b28] sm:text-3xl">See how the journey unfolds</h2>
+            <p className="mt-3 text-sm leading-6 text-[#657772]">Open each day for the plan, travel flow, and experiences included along the way.</p>
           </div>
-          <div className="p-6 md:p-8">
-            <BlockRenderer blocks={itineraryBlocks} />
-          </div>
-        </div>
-      ),
-    }] : []),
-    ...(!blocks && details.itinerary.length > 0 ? [{
-      id: "itinerary",
-      label: "Itinerary",
-      content: (
-        <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm border border-gray-100">
-          <div className="flex items-center mb-6 pb-4 border-b border-gray-100">
-            <div className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center mr-4">
-              <MapPin className="text-legacy-orange w-5 h-5" />
-            </div>
-            <h2 className="text-2xl font-bold text-gray-800">Tour Itinerary</h2>
-          </div>
-          <ItineraryAccordion itinerary={details.itinerary} />
-        </div>
+          {hasLegacyItinerary ? <ItineraryAccordion itinerary={legacyItinerary} /> : <BlockRenderer blocks={safeItineraryBlocks} />}
+        </section>
       ),
     }] : []),
     ...(inclusions.length > 0 || exclusions.length > 0 ? [{
       id: "includes",
-      label: "Includes",
+      label: "What’s included",
       content: (
-        <div className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
-          <div className="flex items-center gap-3 px-6 md:px-8 py-4 border-b border-orange-100 bg-gradient-to-r from-orange-50/80 to-transparent">
-            <div className="w-10 h-10 rounded-full bg-legacy-orange text-white flex items-center justify-center shrink-0">
-              <CheckCircle2 className="w-5 h-5" />
-            </div>
-            <div>
-              <h2 className="text-xl md:text-2xl font-bold text-gray-800">Inclusions & Exclusions</h2>
-              <p className="text-xs text-gray-500 mt-0.5">What&apos;s covered and what&apos;s not</p>
-            </div>
+        <section className="rounded-[24px] border border-[#dce8e5] bg-white p-6 shadow-[0_18px_55px_rgba(11,48,44,0.08)] sm:p-8 lg:p-10">
+          <div className="mb-8 max-w-2xl">
+            <p className="text-[11px] font-extrabold uppercase tracking-[0.24em] text-brand-orange-text">Clear before you book</p>
+            <h2 className="mt-2 text-2xl font-extrabold text-[#102b28] sm:text-3xl">What the package covers</h2>
           </div>
-          <div className="p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className={`grid gap-5 ${inclusions.length > 0 && exclusions.length > 0 ? 'md:grid-cols-2' : ''}`}>
             {inclusions.length > 0 && (
-              <div>
-                <h3 className="text-sm font-bold text-gray-800 uppercase tracking-wide mb-3 flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-green-500" /> Inclusions
-                </h3>
-                <ul className="space-y-2.5">
+              <div className="rounded-2xl bg-[#eef7f3] p-5 sm:p-6">
+                <h3 className="mb-4 text-base font-extrabold text-[#124b3e]">Included in your plan</h3>
+                <ul className="space-y-3">
                   {inclusions.map((item: string, i: number) => (
-                    <li key={i} className="flex items-start text-[14px] text-gray-600">
-                      <CheckCircle2 className="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5" />
-                      {item}
+                    <li key={i} className="flex items-start gap-3 text-sm leading-6 text-[#355e54]">
+                      <Check className="mt-1 h-4 w-4 shrink-0 text-[#16815f]" /> <span>{item}</span>
                     </li>
                   ))}
                 </ul>
               </div>
             )}
             {exclusions.length > 0 && (
-              <div>
-                <h3 className="text-sm font-bold text-gray-800 uppercase tracking-wide mb-3 flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-gray-300" /> Exclusions
-                </h3>
-                <ul className="space-y-2.5">
+              <div className="rounded-2xl bg-[#fff6ef] p-5 sm:p-6">
+                <h3 className="mb-4 text-base font-extrabold text-[#7b431f]">Not included</h3>
+                <ul className="space-y-3">
                   {exclusions.map((item: string, i: number) => (
-                    <li key={i} className="flex items-start text-[14px] text-gray-600">
-                      <XCircle className="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0.5" />
-                      {item}
+                    <li key={i} className="flex items-start gap-3 text-sm leading-6 text-[#765943]">
+                      <X className="mt-1 h-4 w-4 shrink-0 text-[#cc6b2c]" /> <span>{item}</span>
                     </li>
                   ))}
                 </ul>
               </div>
             )}
           </div>
-        </div>
+        </section>
       ),
     }] : []),
-    ...(highlights.length > 0 ? [{
-      id: "highlights",
-      label: "Highlights",
-      content: (
-        <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm border border-gray-100">
-          <div className="flex items-center mb-6 pb-4 border-b border-gray-100">
-            <div className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center mr-4">
-              <CheckCircle2 className="text-legacy-orange w-5 h-5" />
-            </div>
-            <h2 className="text-2xl font-bold text-gray-800">Tour Highlights</h2>
-          </div>
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {highlights.map((highlight: string, idx: number) => (
-              <li key={idx} className="flex items-start text-[15px] text-gray-600">
-                <CheckCircle2 className="w-5 h-5 mr-3 text-green-500 shrink-0 mt-0.5" />
-                <span>{highlight}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ),
-    }] : []),
-    ...((details.faqs && details.faqs.length > 0) || faqPairs.length > 0 ? [{
+    ...(allFaqs.length > 0 ? [{
       id: "faqs",
       label: "FAQs",
       content: (
-        <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm border border-gray-100">
-          <div className="flex items-center mb-6 pb-4 border-b border-gray-100">
-            <div className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center mr-4">
-              <MessageCircleQuestion className="text-legacy-orange" size={20} />
-            </div>
-            <h2 className="text-2xl font-bold text-gray-800">Frequently Asked Questions</h2>
+        <section className="rounded-[24px] border border-[#dce8e5] bg-white p-6 shadow-[0_18px_55px_rgba(11,48,44,0.08)] sm:p-8 lg:p-10">
+          <div className="mb-7">
+            <p className="text-[11px] font-extrabold uppercase tracking-[0.24em] text-brand-orange-text">Good to know</p>
+            <h2 className="mt-2 text-2xl font-extrabold text-[#102b28] sm:text-3xl">Frequently asked questions</h2>
           </div>
-          <div className="space-y-4">
-            {(details.faqs && details.faqs.length > 0 ? details.faqs : faqPairs).map((faq: any, i: number) => (
-              <div key={i} className="border border-gray-100 rounded-lg p-4 bg-gray-50/50">
-                <h3 className="font-bold text-gray-800 mb-2 flex items-start gap-2">
-                  <HelpCircle size={18} className="text-legacy-orange shrink-0 mt-1" />
-                  {faq.q}
-                </h3>
-                <p className="text-gray-600 pl-7 text-sm leading-relaxed">{faq.a}</p>
-              </div>
+          <div className="divide-y divide-[#e1ebe8] border-y border-[#e1ebe8]">
+            {allFaqs.map((faq, i) => (
+              <details key={i} className="group py-1">
+                <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 py-4 text-left text-[15px] font-bold text-[#1b3833] marker:content-none">
+                  <span>{faq.q}</span>
+                  <span className="text-xl font-light text-[#ef7a2f] transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <p className="max-w-3xl pb-5 pr-8 text-sm leading-7 text-[#60736e]">{faq.a}</p>
+              </details>
             ))}
           </div>
-        </div>
+        </section>
       ),
     }] : []),
   ].filter((s) => s.content !== null);
 
-  // Real gallery images: the package cover plus in-content images from the
-  // cleaned blocks (deduped), so the photo grid shows actual photos instead
-  // of gray placeholder boxes.
-  const galleryImages: string[] = [
+  // Keep additional gallery images conservative. Hash-named scrape assets cannot
+  // be semantically verified, so only descriptive filenames matching the trip
+  // subject are allowed beyond the catalog's primary image.
+  const galleryStopWords = new Set([
+    'tour', 'tours', 'package', 'packages', 'trip', 'travel', 'yatra', 'holiday',
+    'days', 'day', 'nights', 'night', 'from', 'with', 'india', 'indian', 'the', 'and',
+  ]);
+  const gallerySubjectTokens = new Set(
+    `${pkg.slug} ${pkg.title} ${pkg.route}`
+      .toLowerCase()
+      .split(/[^a-z0-9]+/)
+      .filter((token) => token.length > 2 && !galleryStopWords.has(token)),
+  );
+  const relatedAdditionalImages = [
+    pkg.image2,
+    ...(blocks || []).filter((block) => block.type === 'image').map((block) => block.url),
+  ]
+    .filter((candidate): candidate is string => Boolean(candidate))
+    .filter((candidate) => {
+      const localUrl = resolveLocalPackageImage(candidate);
+      if (!localUrl) return false;
+      const stem = path.basename(localUrl).replace(/\.(avif|jpe?g|png|webp)$/i, '').replace(/^hi-/, '');
+      if (/^[0-9a-f]{8,}$/i.test(stem)) return false;
+      const candidateTokens = stem.split(/[^a-z0-9]+/).filter((token) => token.length > 2 && !galleryStopWords.has(token));
+      return candidateTokens.some((token) => gallerySubjectTokens.has(token));
+    });
+
+  const galleryCandidates = [
     pkg.image,
-    ...(blocks || [])
-      .filter((b: any) => b.type === 'image' && b.url)
-      .map((b: any) => b.url),
-  ].filter((url: string, idx: number, arr: string[]) => url && arr.indexOf(url) === idx).slice(0, 5);
+    ...relatedAdditionalImages,
+  ];
+  const galleryImages = Array.from(new Set(
+    galleryCandidates
+      .map((url) => resolveLocalPackageImage(url))
+      .filter((url): url is string => Boolean(url)),
+  )).slice(0, 4);
+
+  if (galleryImages.length === 0) {
+    const categoryFallbacks: Record<string, string> = {
+      Helicopter: '/images/packages/badri-kedar-yatra-by-helicopter.jpg',
+      Pilgrimage: '/images/packages/kedarnath-temple.jpg',
+      International: '/images/packages/best-of-europe-tour.jpg',
+      Honeymoon: '/images/packages/bali-honeymoon-package.jpg',
+      Wildlife: '/images/packages/wildlife.jpg',
+      'South India': '/images/packages/best-of-kerala-tour.webp',
+      'West India': '/images/packages/discover-majestic-rajasthan.jpg',
+    };
+    const fallback = resolveLocalPackageImage(categoryFallbacks[pkg.category] || '/images/packages/india-tour-packages.jpg');
+    if (fallback) galleryImages.push(fallback);
+  }
 
   // Aligned captions for the lightbox (from block image captions)
-  const blockCaptions = new Map<string, string>((blocks || []).filter((b: any) => b.type === 'image' && b.caption).map((b: any) => [b.url, b.caption]));
+  const blockCaptions = new Map<string, string>();
+  for (const block of blocks || []) {
+    if (block.type !== 'image' || !block.caption) continue;
+    const imageUrl = resolveLocalPackageImage(block.url);
+    if (imageUrl) blockCaptions.set(imageUrl, cleanDisplayText(block.caption));
+  }
   const galleryCaptions: string[] = galleryImages.map((url: string) => blockCaptions.get(url) || '');
 
-  let jsonLd = detailsV2?.seo?.json_ld ? detailsV2.seo.json_ld : {
+  const jsonLd: JsonLdDocument = detailsV2?.seo?.json_ld || {
     "@context": "https://schema.org",
     "@graph": [
     {
       "@type": ["TouristTrip", "Product"],
       "name": pkg.title,
       "description": details.overview || pkg.description || `Enjoy a wonderful trip: ${pkg.title}`,
-      "image": `${siteConfig.domain}${getFallbackImage(slug, pkg.category)}`,
+      ...(galleryImages[0] ? { "image": `${siteConfig.domain}${galleryImages[0]}` } : {}),
       "touristType": [
         "Leisure",
         "Family"
@@ -517,7 +594,7 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
     if (details.faqs && details.faqs.length > 0) {
       jsonLd["@graph"].push({
         "@type": "FAQPage",
-        "mainEntity": details.faqs.map((faq: any) => ({
+        "mainEntity": details.faqs.map((faq) => ({
           "@type": "Question",
           "name": faq.q,
           "acceptedAnswer": {
@@ -545,231 +622,141 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {/* Sticky mobile CTA (U21) — price + call + WhatsApp + Send Query always visible */}
       <StickyMobileCTA price={displayPrice} showPrice={showPrice} />
-      <div className="bg-gray-50 min-h-screen pb-24 lg:pb-16 font-sans">
-      
-      {/* Breadcrumb Area */}
-      <div className="bg-legacy-nav-blue text-white text-xs py-2 px-4 shadow-sm relative z-10">
-        <div className="container mx-auto w-[95%] max-w-[1600px] flex items-center gap-2">
-          <Link href="/" className="hover:text-legacy-orange">Home</Link>
-          {" » "}
-          {pkg.category && (
-            <>
-              <Link href={`/packages?category=${encodeURIComponent(pkg.category)}`} className="hover:text-legacy-orange">{pkg.category}</Link>
-              {" » "}
-            </>
-          )}
-          <span className="text-gray-300 truncate">{pkg.title}</span>
-        </div>
-      </div>
+      <div className="min-h-screen bg-[#f3f7f6] pb-24 font-sans lg:pb-16">
+        <nav aria-label="Breadcrumb" className="border-b border-[#dfe9e6] bg-white px-4 py-3 text-xs text-[#63746f]">
+          <div className="mx-auto flex w-full max-w-[1320px] items-center gap-2 overflow-hidden">
+            <Link href="/" className="shrink-0 font-semibold hover:text-[#0b4c43]">Home</Link>
+            <span aria-hidden="true">/</span>
+            <Link href={`/packages?category=${encodeURIComponent(pkg.category)}`} className="shrink-0 font-semibold hover:text-[#0b4c43]">{pkg.category}</Link>
+            <span aria-hidden="true">/</span>
+            <span className="truncate text-[#8a9995]">{pkg.title}</span>
+          </div>
+        </nav>
 
-      <div className="bg-white border-b border-gray-200">
-        <div className="container mx-auto px-4 w-[95%] max-w-[1600px] py-4 md:py-6">
-           <h1 className="text-2xl md:text-3xl font-bold text-gray-800">{pkg.title}</h1>
-           <p className="text-sm text-gray-500 mt-1">{pkg.duration || ''} {pkg.route ? '· ' + pkg.route.split(/[\u2192\u2013\u2014,>]/)[0].trim() : ''}</p>
-           {/* Duplicate breadcrumbs removed per UX audit */}
-        </div>
-      </div>
+        <header className="mx-auto w-full max-w-[1320px] px-4 pb-10 pt-5 sm:pt-7 lg:px-6">
+          <div className="relative min-h-[500px] overflow-hidden rounded-[28px] bg-[#0b302c] shadow-[0_24px_70px_rgba(7,38,34,0.24)] sm:min-h-[560px]">
+            {galleryImages[0] && (
+              <Image
+                src={galleryImages[0]}
+                alt={`${pkg.title} tour experience`}
+                fill
+                preload
+                sizes="(max-width: 768px) 100vw, 1320px"
+                className="object-cover"
+              />
+            )}
+            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(4,28,25,0.94)_0%,rgba(4,28,25,0.76)_43%,rgba(4,28,25,0.2)_76%),linear-gradient(0deg,rgba(4,28,25,0.72)_0%,transparent_55%)]" />
 
-      <div className="container mx-auto px-4 w-[95%] max-w-[1600px] mt-6">
-        
-        {/* Photo Gallery Grid — real images from package cover + content */}
-        {galleryImages.length > 0 && (
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-8 rounded-lg overflow-hidden shadow-sm">
-            <div className="col-span-2 row-span-2 relative h-[260px] md:h-[450px] group">
-              <Image src={galleryImages[0]} alt={pkg.title} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition-transform duration-700 group-hover:scale-105" priority />
-              <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors" />
+            <div className="absolute right-4 top-4 z-20 sm:right-6 sm:top-6">
+              <GalleryLightbox images={galleryImages} title={pkg.title} captions={galleryCaptions} />
             </div>
-            {galleryImages.slice(1, 4).map((img, idx) => (
-              <div key={idx} className={`relative h-[130px] md:h-[222px] group ${idx >= 2 ? 'hidden md:block' : ''}`}>
-                <Image src={img} alt={`${pkg.title} — Photo ${idx + 1}`} fill sizes="(max-width: 768px) 50vw, 25vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
+
+            <div className="relative z-10 flex min-h-[500px] max-w-3xl flex-col justify-end p-6 text-white sm:min-h-[560px] sm:p-10 lg:p-14">
+              <Link href={`/packages?category=${encodeURIComponent(pkg.category)}`} className="mb-5 w-fit rounded-full border border-white/30 bg-white/10 px-4 py-2 text-[11px] font-extrabold uppercase tracking-[0.22em] backdrop-blur-md hover:bg-white/20">
+                {pkg.category}
+              </Link>
+              <h1 className="max-w-3xl text-3xl font-black leading-[1.08] tracking-[-0.035em] sm:text-5xl lg:text-6xl">{pkg.title}</h1>
+              <p className="mt-5 max-w-2xl text-sm leading-7 text-white/82 sm:text-base">{cleanDisplayText(pkg.description)}</p>
+              <div className="mt-7 flex flex-wrap gap-3">
+                {hasDuration && (
+                  <span className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/25 bg-black/20 px-4 text-sm font-semibold backdrop-blur-sm">
+                    <Clock className="h-4 w-4 text-[#f3a25b]" /> {pkg.duration}
+                  </span>
+                )}
+                {hasStartPoint && (
+                  <span className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/25 bg-black/20 px-4 text-sm font-semibold backdrop-blur-sm">
+                    <MapPin className="h-4 w-4 text-[#f3a25b]" /> Starts in {startPoint}
+                  </span>
+                )}
               </div>
-            ))}
-            {/* 5th tile — View All Photos overlay */}
-            <div className="relative h-[130px] md:h-[222px] group overflow-hidden bg-gray-900/60">
-              {galleryImages[4] ? (
-                <Image src={galleryImages[4]} alt={`${pkg.title} — Photo 4`} fill sizes="25vw" className="object-cover opacity-60 group-hover:opacity-40 transition-opacity" />
-              ) : (
-                <Image src={galleryImages[0]} alt={pkg.title} fill sizes="25vw" className="object-cover opacity-40" />
-              )}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <GalleryLightbox images={galleryImages} title={pkg.title} captions={galleryCaptions} />
-              </div>
+              <a href="#enquiry-form" className="mt-8 inline-flex min-h-12 w-fit items-center gap-2 rounded-full bg-[#ef7a2f] px-6 text-sm font-extrabold text-white shadow-lg transition hover:bg-[#d96520] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white">
+                Personalise this trip <ArrowRight className="h-4 w-4" />
+              </a>
             </div>
           </div>
-        )}
 
-        {/* Trust Indicators (Social Proof alternative) */}
-        <TrustIndicators category={pkg.category} />
+          {journeyStops.length > 0 && (
+            <div className="relative z-20 mx-3 -mt-6 rounded-[22px] border border-[#dce8e5] bg-white px-5 py-5 shadow-[0_16px_45px_rgba(11,48,44,0.12)] sm:mx-8 sm:px-7">
+              <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-7">
+                <div className="shrink-0">
+                  <p className="text-[10px] font-extrabold uppercase tracking-[0.22em] text-brand-orange-text">Your journey</p>
+                  <p className="mt-1 text-sm font-bold text-[#153a34]">Route at a glance</p>
+                </div>
+                <ol className="flex min-w-0 flex-1 items-center gap-2 overflow-x-auto pb-1 text-sm text-[#445d57]">
+                  {journeyStops.map((stop, index) => (
+                    <li key={`${stop}-${index}`} className="flex shrink-0 items-center gap-2">
+                      <span className="rounded-full bg-[#eef5f3] px-3 py-2 font-semibold">{stop}</span>
+                      {index < journeyStops.length - 1 && <ArrowRight aria-hidden="true" className="h-4 w-4 shrink-0 text-[#e57a37]" />}
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            </div>
+          )}
+        </header>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          
-          {/* Main Left Content — tabbed sections like the reference */}
-          <div className="lg:col-span-2 space-y-8">
+        <main className="mx-auto grid w-full max-w-[1320px] grid-cols-1 gap-7 px-4 lg:grid-cols-[minmax(0,1fr)_350px] lg:px-6">
+          <div className="min-w-0 space-y-8">
             <PackageTabs sections={sections} />
 
-            {/* Enquiry form — always visible so #enquiry-form anchors keep working */}
-            <div id="enquiry-form" className="bg-legacy-nav-blue text-white rounded-lg shadow-lg overflow-hidden scroll-mt-24">
-               <div className="p-6 md:p-8 text-center border-b border-white/10">
-                  <h2 className="text-xl md:text-2xl font-bold mb-2">Plan Your Perfect Holiday!</h2>
-                  <p className="text-blue-100 text-sm">Fill out the form below and get an affordable itinerary within hours.</p>
-               </div>
-               <div className="p-6 bg-white text-gray-800">
-                  <EnquiryForm pkgName={pkg.title} />
-               </div>
-            </div>
-
-            {/* Value Props */}
-            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-               <div>
-                  <div className="w-16 h-16 mx-auto bg-blue-50 text-blue-500 rounded-full flex items-center justify-center mb-4 text-2xl">🛡️</div>
-                  <h4 className="font-bold text-gray-800 mb-2">Hassle-Free Booking</h4>
-                  <p className="text-sm text-gray-500">Enjoy low deposits, flexible cancellation options, and personalized support.</p>
-               </div>
-               <div>
-                  <div className="w-16 h-16 mx-auto bg-green-50 text-green-500 rounded-full flex items-center justify-center mb-4 text-2xl">✨</div>
-                  <h4 className="font-bold text-gray-800 mb-2">Lifelong Memories</h4>
-                  <p className="text-sm text-gray-500">Curated trips offering the perfect balance of exploration and relaxation.</p>
-               </div>
-               <div>
-                  <div className="w-16 h-16 mx-auto bg-orange-50 text-orange-500 rounded-full flex items-center justify-center mb-4 text-2xl">🤝</div>
-                  <h4 className="font-bold text-gray-800 mb-2">Trusted Companion</h4>
-                  <p className="text-sm text-gray-500">Join millions of travelers who have trusted us to help them discover the world.</p>
-               </div>
-            </div>
+            <section id="enquiry-form" className="scroll-mt-24 overflow-hidden rounded-[24px] bg-[#0b302c] shadow-[0_22px_60px_rgba(7,38,34,0.2)]">
+              <div className="px-6 pb-5 pt-8 text-white sm:px-9 sm:pt-10">
+                <p className="text-[11px] font-extrabold uppercase tracking-[0.24em] text-[#f0a164]">Make it yours</p>
+                <h2 className="mt-2 text-2xl font-extrabold sm:text-3xl">Tell us how you want to travel</h2>
+                <p className="mt-3 max-w-2xl text-sm leading-6 text-white/70">Share your dates, group size, and preferences. Your message opens directly in WhatsApp for a real conversation with the travel team.</p>
+              </div>
+              <div className="bg-white p-2 sm:p-4"><EnquiryForm pkgName={pkg.title} embedded /></div>
+            </section>
           </div>
 
-          {/* Sticky Right Sidebar */}
-          <div className="lg:col-span-1">
-            <div className="sticky top-24 space-y-6">
-               
-               {/* Price Card */}
-               <div className="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden">
-                  <div className="p-6">
-                     <div className="flex justify-between items-start mb-2">
-                        <div>
-                           <p className="text-sm text-gray-500 font-medium uppercase tracking-wide">Starting from</p>
-                           <div className="text-3xl font-bold text-gray-900 mt-1">
-                              {showPrice ? <>INR {displayPrice}</> : "Contact for Price"}
-                           </div>
-                           {crossedOutPrice && (
-                              <div className="flex items-center gap-2 mt-1.5">
-                                 <span className="text-sm text-gray-400 line-through">INR {crossedOutPrice}</span>
-                                 <span className="bg-legacy-orange text-white text-[11px] font-bold px-2 py-0.5 rounded-sm inline-flex items-center gap-1">
-                                    <BadgePercent className="w-3 h-3" /> SAVE INR {saveAmount}
-                                 </span>
-                              </div>
-                           )}
-                           <p className="text-xs text-gray-400 mt-1.5">Starting Price Per Adult</p>
-                        </div>
-                     </div>
-
-                     {/* Quick Information */}
-                     {hasQuickInfo && (
-                       <div className="mt-6 pt-6 border-t border-gray-100">
-                          <p className="text-xs font-bold text-gray-800 uppercase tracking-wide mb-3">Quick Information</p>
-                          <div className="space-y-2.5 text-sm">
-                             {hasDuration && (
-                                <div className="flex justify-between items-center gap-4">
-                                   <span className="text-gray-500 flex items-center shrink-0"><Clock className="w-4 h-4 mr-2" /> Duration</span>
-                                   <span className="font-semibold text-gray-800 text-right">{pkg.duration}</span>
-                                </div>
-                             )}
-                             {hasRouteInfo && (
-                                <>
-                                   {hasStartPoint && (
-                                     <div className="flex justify-between items-center gap-4">
-                                        <span className="text-gray-500 flex items-center shrink-0"><MapPin className="w-4 h-4 mr-2" /> Starting Point</span>
-                                        <span className="font-semibold text-gray-800 text-right capitalize">{startPoint}</span>
-                                     </div>
-                                   )}
-                                   {hasEndPoint && (
-                                     <div className="flex justify-between items-center gap-4">
-                                        <span className="text-gray-500 flex items-center shrink-0"><MapPin className="w-4 h-4 mr-2" /> Ending Point</span>
-                                        <span className="font-semibold text-gray-800 text-right capitalize">{endPoint}</span>
-                                     </div>
-                                   )}
-                                   <div className="flex justify-between items-center gap-4">
-                                      <span className="text-gray-500 flex items-center shrink-0"><MapPin className="w-4 h-4 mr-2" /> Places Covered</span>
-                                      <span className="font-semibold text-gray-800 text-right capitalize">{routeDisplay}</span>
-                                   </div>
-                                </>
-                             )}
-                          </div>
-                       </div>
-                     )}
-
-                     {/* What's Included — real data from the package blocks, never fabricated */}
-                     {inclusions.length > 0 && (
-                        <div className="mt-6 pt-6 border-t border-gray-100">
-                           <p className="text-xs font-bold text-gray-800 uppercase tracking-wide mb-3">What&apos;s Included</p>
-                           <div className="space-y-2 text-sm text-gray-600">
-                              {inclusions.slice(0, 6).map((inc: string, i: number) => (
-                                 <div key={i} className="flex items-center gap-2">
-                                    <CheckCircle2 className="w-4 h-4 text-green-500 shrink-0" /> {inc}
-                                 </div>
-                              ))}
-                              {inclusions.length > 6 && (
-                                 <div className="text-xs text-gray-400">+ {inclusions.length - 6} more in the Includes tab</div>
-                              )}
-                           </div>
-                        </div>
-                     )}
-
-                     {/* Price Breakdown */}
-                     <div className="mt-6 pt-6 border-t border-gray-100">
-                        <details className="group">
-                           <summary className="text-xs font-bold text-legacy-orange uppercase tracking-wide mb-2 cursor-pointer list-none flex justify-between items-center">
-                              <span>View Price Details</span>
-                              <span className="transition group-open:rotate-180">▼</span>
-                           </summary>
-                           <div className="space-y-2 text-sm text-gray-600 mt-3 pl-1">
-                              <div className="flex justify-between font-bold text-gray-900 border-t border-gray-100 pt-2"><span>Total per adult</span> <span>{showPrice ? `INR ${displayPrice}` : "Contact for Price"}</span></div>
-                              <p className="text-xs text-gray-400">Full price breakup (hotels, meals, transport, taxes) is shared on request.</p>
-                           </div>
-                        </details>
-                     </div>
-
-                     <div className="mt-8 space-y-3">
-                        <a href="#enquiry-form" className="w-full block text-center bg-[#2e9e4f] hover:bg-[#278a45] text-white font-bold py-3 rounded-md transition-colors shadow-md">
-                           Send Query
-                        </a>
-                     </div>
+          <aside className="lg:col-span-1">
+            <div className="sticky top-5 overflow-hidden rounded-[24px] border border-[#d8e5e1] bg-white shadow-[0_18px_55px_rgba(11,48,44,0.1)]">
+              <div className="bg-[#0b302c] p-6 text-white">
+                <p className="text-[10px] font-extrabold uppercase tracking-[0.22em] text-[#f0a164]">Plan this journey</p>
+                <div className="mt-3 text-3xl font-black tracking-tight">{showPrice ? <>INR {displayPrice}</> : 'Tailored pricing'}</div>
+                <p className="mt-1 text-xs leading-5 text-white/65">{showPrice ? 'Starting price per adult' : 'Based on your dates, group size, and preferences'}</p>
+                {crossedOutPrice && (
+                  <div className="mt-3 flex flex-wrap items-center gap-2">
+                    <span className="text-sm text-white/45 line-through">INR {crossedOutPrice}</span>
+                    <span className="inline-flex items-center gap-1 rounded-full bg-[#ef7a2f] px-2.5 py-1 text-[10px] font-extrabold"><BadgePercent className="h-3 w-3" /> Save INR {saveAmount}</span>
                   </div>
-               </div>
+                )}
+              </div>
 
-               {/* Need Help Card */}
-               <div className="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden">
-                  <div className="p-6">
-                     <h3 className="font-bold text-gray-800 mb-2 flex items-center gap-2">
-                        <Phone className="w-5 h-5 text-legacy-orange" /> Need help? Get more information
-                     </h3>
-                     <p className="text-sm text-gray-500 mb-4">
-                        Kindly feel free to ask our travel experts for details on pricing, itineraries and more.
-                     </p>
-                     <div className="flex flex-col gap-2">
-                        <a href={`tel:${siteConfig.phoneRaw}`} className="w-full block text-center bg-gray-900 text-white font-bold py-2.5 rounded-md hover:bg-gray-800 transition-colors">
-                           Call {siteConfig.phone}
-                        </a>
-                        <a
-                          href={siteConfig.social.whatsapp}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="w-full block text-center bg-[#25D366] text-white font-bold py-2.5 rounded-md hover:bg-[#1fb457] transition-colors"
-                        >
-                          Chat on WhatsApp
-                        </a>
-                     </div>
-                  </div>
-               </div>
+              <div className="p-6">
+                {hasQuickInfo && (
+                  <dl className="space-y-4 border-b border-[#e4ecea] pb-6 text-sm">
+                    {hasDuration && <div className="flex justify-between gap-5"><dt className="text-[#71817d]">Duration</dt><dd className="text-right font-bold text-[#173a34]">{pkg.duration}</dd></div>}
+                    {hasStartPoint && <div className="flex justify-between gap-5"><dt className="text-[#71817d]">Starts</dt><dd className="text-right font-bold capitalize text-[#173a34]">{startPoint}</dd></div>}
+                    {hasEndPoint && <div className="flex justify-between gap-5"><dt className="text-[#71817d]">Ends</dt><dd className="text-right font-bold capitalize text-[#173a34]">{endPoint}</dd></div>}
+                  </dl>
+                )}
 
+                <div className="mt-6 space-y-3">
+                  <a href="#enquiry-form" className="flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#ef7a2f] px-4 text-sm font-extrabold text-white transition hover:bg-[#d96520]">
+                    Get a tailored quote <ArrowRight className="h-4 w-4" />
+                  </a>
+                  <a href={siteConfig.social.whatsapp} target="_blank" rel="noopener noreferrer" className="flex min-h-12 w-full items-center justify-center gap-2 rounded-xl border border-[#b9d7ce] bg-[#eef7f3] px-4 text-sm font-extrabold text-[#126348] transition hover:bg-[#e2f1eb]">
+                    <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
+                  </a>
+                  <a href={`tel:${siteConfig.phoneRaw}`} className="flex min-h-11 w-full items-center justify-center gap-2 text-sm font-bold text-[#304b45] hover:text-[#0b4c43]">
+                    <Phone className="h-4 w-4" /> {siteConfig.phone}
+                  </a>
+                </div>
+
+                <div className="mt-6 space-y-3 border-t border-[#e4ecea] pt-5 text-xs leading-5 text-[#687a75]">
+                  <p className="flex gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#16815f]" /> No payment is required to ask for a quote.</p>
+                  <p className="flex gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#16815f]" /> Dates, pace, and stays can be discussed with the travel team.</p>
+                </div>
+              </div>
             </div>
-          </div>
+          </aside>
+        </main>
 
+        <div className="mx-auto w-full max-w-[1320px] px-4 lg:px-6">
+          <RelatedPackages category={pkg.category || 'Trending'} currentSlug={pkg.slug} />
         </div>
-        
-        <RelatedPackages category={pkg.category || 'Trending'} currentSlug={pkg.slug} />
       </div>
-    </div>
     </>
   );
 }

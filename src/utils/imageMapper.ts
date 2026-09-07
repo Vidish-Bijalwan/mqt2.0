@@ -21,7 +21,7 @@ const DESTINATION_FALLBACKS: Record<string, string> = {
 };
 
 // Generic ultimate fallback if everything else fails (no helicopter!)
-const ULTIMATE_FALLBACK = "/images/hero/hero-bg-2.jpg"; 
+const ULTIMATE_FALLBACK = "/images/hero/hero-bg-2.svg";
 
 /**
  * Smart image mapping system to resolve the best possible image for a package.

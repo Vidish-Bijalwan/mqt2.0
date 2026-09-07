@@ -11,6 +11,9 @@
 
 import priceOverrides from "@/data/priceOverrides.json";
 
+/** Prices below this amount are handled personally rather than advertised. */
+export const MINIMUM_PUBLIC_PRICE = 10_000;
+
 export function parseINR(s?: string): number {
   const cleaned = (s || "").replace(/[^\d]/g, "");
   return cleaned ? parseInt(cleaned, 10) : 0;
@@ -40,9 +43,8 @@ export function getPriceInfo(mrp?: string, dealPrice?: string, slug?: string): P
 
   // Scraper fallback flags — treat as "no price" so we never show fake deals.
   const isFallback = dealValue === 2 || mrpValue === 2 || dealValue === 24750;
-  const hasPrice = (mrpValue > 0 || dealValue > 0) && !isFallback;
-
   const deal = dealValue > 0 ? dealValue : mrpValue;
+  const hasPrice = deal >= MINIMUM_PUBLIC_PRICE && !isFallback;
   const display = hasPrice ? deal.toLocaleString("en-IN") : "";
   const crossed = dealValue > 0 && mrpValue > dealValue ? mrpValue.toLocaleString("en-IN") : "";
   const save = dealValue > 0 && mrpValue > dealValue ? (mrpValue - dealValue).toLocaleString("en-IN") : "";

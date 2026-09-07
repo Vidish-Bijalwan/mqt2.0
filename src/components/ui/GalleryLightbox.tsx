@@ -9,7 +9,6 @@ interface GalleryLightboxProps {
   title: string;
   captions?: string[];
 }
-
 export default function GalleryLightbox({ images, title, captions = [] }: GalleryLightboxProps) {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
@@ -17,13 +16,18 @@ export default function GalleryLightbox({ images, title, captions = [] }: Galler
   // Close on Escape (U23 polish)
   useEffect(() => {
     if (!open) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
     const handler = (e: KeyboardEvent) => {
       if (e.key === "Escape") setOpen(false);
       if (e.key === "ArrowRight") setIndex((i) => (i + 1) % images.length);
       if (e.key === "ArrowLeft") setIndex((i) => (i - 1 + images.length) % images.length);
     };
     window.addEventListener("keydown", handler);
-    return () => window.removeEventListener("keydown", handler);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", handler);
+    };
   }, [open, images.length]);
 
   const prev = (e: React.MouseEvent) => {
@@ -43,18 +47,16 @@ export default function GalleryLightbox({ images, title, captions = [] }: Galler
           setIndex(0);
           setOpen(true);
         }}
-        aria-label="View All Images"
-        className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-black/45 text-white transition-colors hover:bg-black/55 cursor-pointer"
+        aria-label={images.length > 1 ? `View all ${images.length} photos` : "View tour photo"}
+        className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/30 bg-black/35 px-4 text-sm font-bold text-white shadow-lg backdrop-blur-md transition hover:bg-black/55 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
       >
-        <Images className="w-7 h-7 mb-1 drop-shadow" />
-        <span className="font-bold text-sm bg-white/20 px-4 py-1.5 rounded-full backdrop-blur-sm">
-          View All Images
-        </span>
+        <Images className="h-4 w-4" />
+        <span>{images.length > 1 ? `${images.length} photos` : "View photo"}</span>
       </button>
 
       {open && (
         <div
-          className="fixed inset-0 z-[2000] bg-black/95 flex flex-col"
+          className="fixed inset-0 z-[2000] flex flex-col bg-[#06100f]/96"
           role="dialog"
           aria-modal="true"
           aria-label={`${title} photos`}
@@ -78,7 +80,7 @@ export default function GalleryLightbox({ images, title, captions = [] }: Galler
             <div className="relative w-full h-full max-w-5xl mx-auto flex items-center justify-center">
               <Image
                 src={images[index]}
-                alt={`${title} — Photo ${index + 1}`}
+                alt={`${title} - photo ${index + 1}`}
                 fill
                 sizes="(max-width: 768px) 100vw, 80vw"
                 className="object-contain"
@@ -129,7 +131,7 @@ export default function GalleryLightbox({ images, title, captions = [] }: Galler
                   onClick={() => setIndex(i)}
                   aria-label={`Go to photo ${i + 1}`}
                   className={`relative w-14 h-10 md:w-16 md:h-11 rounded overflow-hidden shrink-0 transition-all ${
-                    i === index ? "ring-2 ring-legacy-orange opacity-100" : "opacity-50 hover:opacity-80"
+                    i === index ? "ring-2 ring-[#ef7a2f] opacity-100" : "opacity-50 hover:opacity-80"
                   }`}
                 >
                   <Image src={img} alt="Gallery thumbnail" fill sizes="64px" className="object-cover" />
