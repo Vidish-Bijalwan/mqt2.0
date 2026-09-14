@@ -6,6 +6,7 @@ import { useEffect, useState, useRef, useCallback } from "react";
 import { siteConfig } from "@/data/siteConfig";
 import { navLinks } from "@/data/navLinks";
 import { Menu, X, Phone, Mail, MessageCircle, ChevronDown, ChevronRight } from "lucide-react";
+import LanguageSelector from "@/components/layout/LanguageSelector";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -69,9 +70,7 @@ export default function Navbar() {
             <Link href="/reviews" className="hover:text-white/80 transition-colors text-xs font-bold uppercase tracking-wider">Write A Review</Link>
             <Link href="/pay-online" className="bg-white/15 hover:bg-white/25 px-4 py-1.5 rounded-full backdrop-blur-sm transition-colors text-xs font-bold uppercase tracking-wider">Pay Online</Link>
             <Link href="/my-booking" className="bg-gray-900 hover:bg-black text-white px-4 py-1.5 rounded-full transition-colors text-xs font-bold uppercase tracking-wider">My Booking</Link>
-            <button type="button" aria-label="Language selector" className="ml-2 px-3 py-1.5 flex items-center bg-white text-gray-800 rounded-full text-xs font-bold">
-              <span className="mr-1.5 text-sm">🇬🇧</span> English
-            </button>
+            <LanguageSelector />
           </div>
         </div>
       </div>
@@ -335,6 +334,9 @@ export default function Navbar() {
             <a href={`tel:${siteConfig.phoneRaw}`} className="flex items-center text-[#4ade80] font-bold text-[15px]">
               <Phone className="w-5 h-5 mr-2" /> Call: {siteConfig.phone}
             </a>
+            <div className="mt-4">
+              <LanguageSelector mobile />
+            </div>
           </div>
         </div>
       )}
