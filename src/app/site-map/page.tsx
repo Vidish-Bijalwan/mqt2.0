@@ -11,7 +11,7 @@ import { experiences } from "@/data/experiencesData";
 const destinationsData = destinationsDataRaw as Record<string, unknown>;
 
 export const metadata: Metadata = {
-  title: `Site Map | ${siteConfig.name}`,
+  title: "Site Map",
   description: `Complete site map of ${siteConfig.name} — browse all tour packages, destinations, experiences, special tours, blog posts and support pages.`,
 };
 

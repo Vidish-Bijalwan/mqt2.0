@@ -28,8 +28,6 @@ const NM_TARGET = path.join(
 );
 const NEXT_TARGET = path.join(os.homedir(), "AppData", "Local", NEXT_TARGET_DIR);
 
-const OG_SLUG = "10-days-assam-meghalaya-arunachal-pradesh-tour-packages";
-
 function isJunction(p) {
   try {
     return fs.lstatSync(p).isSymbolicLink();
@@ -66,13 +64,6 @@ export function repairInstructions() {
 
 NEVER run 'npm prune', 'npm ci', or 'rm -rf node_modules' from the project —
 they replace the junction with a real directory.`;
-}
-
-export function ogRepairHint() {
-  return `The OG image route (/api/og/*) is failing. Most likely 'next build' wiped the
-build-dir 'next' link that lets Node resolve next/og from the out-of-project
-build dir. Fix: node scripts/ensure-build-link.mjs
-(the dev/start wrappers run it automatically on the next start).`;
 }
 
 export function runHealthCheck() {

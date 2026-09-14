@@ -35,6 +35,12 @@ export function getPublicPackages(): Package[] {
   return allPackages.filter(isPublicPackage);
 }
 
+/** Legacy imports contain a few Indian tours under the International label. */
+export function isInternationalPackage(pkg: Package): boolean {
+  if (pkg.category !== "International") return false;
+  return !/\badi kailash\b|chennai mahabalipuram/i.test(`${pkg.title} ${pkg.slug}`);
+}
+
 export function packageDurationGroup(pkg: Pick<Package, "duration" | "title">): "3-5" | "6-9" | "10+" | "custom" {
   const days = getTourDays(pkg.duration, pkg.title);
   if (days === null) return "custom";

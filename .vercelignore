@@ -1,16 +1,46 @@
-# Heavy image directories that aren't needed for the build
-public/images/packages/hi-*
+# Pre-generated social cards are no longer served; package covers are used.
+public/images/og/
 
-# Scripts and tooling not needed for production
-scripts/
+# Keep only the full-size posters referenced by the live carousel.
+public/images/posters/full/*
+!public/images/posters/full/chopta.webp
+!public/images/posters/full/dehradun.webp
+!public/images/posters/full/agra.webp
+!public/images/posters/full/shimla.webp
+!public/images/posters/full/mussoorie.webp
+!public/images/posters/full/nainital.webp
+!public/images/posters/full/darjeeling.webp
+!public/images/posters/full/manali.webp
+!public/images/posters/full/rishikesh.webp
+!public/images/posters/full/guwahati.webp
+!public/images/posters/full/nashik.webp
+!public/images/posters/full/amritsar.webp
+!public/images/posters/full/alleppey.webp
+!public/images/posters/full/maldives.webp
+!public/images/posters/full/sikkim.webp
+!public/images/posters/full/manipur.webp
+!public/images/posters/full/dharamshala.webp
+!public/images/posters/full/konark.webp
+!public/images/posters/full/orchha.webp
+!public/images/posters/full/ranchi.webp
+!public/images/posters/full/tehri.webp
+!public/images/posters/full/harshil.webp
+!public/images/posters/full/barot.webp
+!public/images/posters/full/assam.webp
+!public/images/posters/full/yelagiri.webp
+!public/images/posters/full/nubra.webp
+!public/images/posters/full/dhanushkodi.webp
+!public/images/posters/full/mumbai.webp
+!public/images/posters/full/andaman.webp
+!public/images/posters/full/coimbatore.webp
+!public/images/posters/full/corbett.webp
+!public/images/posters/full/bihar.webp
+!public/images/posters/full/bishnupur.webp
+
+# Local QA output and maintenance utilities are not runtime dependencies.
+artifacts/
+docs/
 .freebuff/
 tmp/
+scripts/parity/
 *.log
-
-# OS / editor files
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# Dev cache
-.node/

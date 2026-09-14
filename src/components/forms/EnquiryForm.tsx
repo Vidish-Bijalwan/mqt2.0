@@ -2,25 +2,26 @@
 
 import { useState } from "react";
 import { siteConfig } from "@/data/siteConfig";
+import { buildEnquiryWhatsappUrl } from "@/utils/enquiry";
 
 export default function EnquiryForm({ pkgName = "", embedded = false }: { pkgName?: string; embedded?: boolean }) {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [preparedUrl, setPreparedUrl] = useState("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("loading");
 
     const form = new FormData(e.currentTarget);
-    const message = [
-      "Hello My Quick Trippers, I would like a quote.",
-      pkgName ? `Package: ${pkgName}` : "",
-      `Name: ${form.get("name")}`,
-      `Email: ${form.get("email")}`,
-      `Phone: ${form.get("phone")}`,
-      form.get("travelDate") ? `Travel date: ${form.get("travelDate")}` : "",
-      form.get("travellers") ? `Travellers: ${form.get("travellers")}` : "",
-      form.get("message") ? `Message: ${form.get("message")}` : "",
-    ].filter(Boolean).join("\n");
+    const whatsappUrl = buildEnquiryWhatsappUrl(siteConfig.social.whatsapp, {
+      packageName: pkgName,
+      name: String(form.get("name") || ""),
+      email: String(form.get("email") || ""),
+      phone: String(form.get("phone") || ""),
+      travelDate: String(form.get("travelDate") || ""),
+      travellers: String(form.get("travellers") || ""),
+      message: String(form.get("message") || ""),
+    });
     
     // Track enquiry submission (analytics)
     const analytics = window as Window & { gtag?: (event: string, action: string, params: Record<string, string>) => void };
@@ -34,7 +35,8 @@ export default function EnquiryForm({ pkgName = "", embedded = false }: { pkgNam
     // There is no lead-capture API configured in this static site. Open the
     // prefilled business WhatsApp thread instead of falsely claiming a lead
     // was submitted and then discarded.
-    window.open(`${siteConfig.social.whatsapp}?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
+    setPreparedUrl(whatsappUrl);
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
     setStatus("success");
   };
 
@@ -46,64 +48,74 @@ export default function EnquiryForm({ pkgName = "", embedded = false }: { pkgNam
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <h3 className="text-xl font-bold mb-2">Your WhatsApp message is ready</h3>
-        <p className="text-green-600 mb-4">WhatsApp has opened with your details. Send the message to our travel team.</p>
-        <button 
-          onClick={() => setStatus("idle")}
-          aria-label="Send another enquiry"
-          className="px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium"
-        >
-          Send Another Enquiry
-        </button>
+        <h3 className="mb-2 text-xl font-bold">Your WhatsApp message is ready</h3>
+        <p className="mb-5 text-green-700">Send the prepared message to our travel team. If WhatsApp did not open automatically, use the button below.</p>
+        <div className="flex flex-col justify-center gap-3 sm:flex-row">
+          <a
+            href={preparedUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex min-h-11 items-center justify-center rounded-lg bg-green-600 px-6 py-2 font-bold text-white transition-colors hover:bg-green-700"
+          >
+            Open WhatsApp
+          </a>
+          <button
+            onClick={() => setStatus("idle")}
+            aria-label="Send another enquiry"
+            className="min-h-11 rounded-lg border border-green-300 bg-white px-6 py-2 font-bold text-green-800 transition-colors hover:bg-green-100"
+          >
+            Edit details
+          </button>
+        </div>
       </div>
     );
   }
 
   return (
-    <div className={embedded ? "bg-white p-4 sm:p-6" : "rounded-lg border border-gray-100 bg-white p-6 shadow-card"}>
-      <h3 className="mb-3 text-2xl font-extrabold text-[#123b35]">Start with a free trip consultation</h3>
-      <p className="mb-6 max-w-2xl text-sm leading-6 text-[#687a75]">
+    <div className={embedded ? "bg-white p-4 sm:p-6 lg:p-7" : "rounded-lg border border-gray-100 bg-white p-6 shadow-card"}>
+      <h3 className="font-display mb-3 text-[26px] font-bold leading-tight text-[#123b35] sm:text-3xl">Start with a free trip consultation</h3>
+      <p className="mb-7 max-w-2xl text-[15px] leading-6 text-[#687a75]">
         Add the essentials now. You can discuss hotels, transport, meals, and special requirements directly with the travel team.
       </p>
       
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label htmlFor="enquiry-name" className="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
-            <input id="enquiry-name" name="name" required autoComplete="name" type="text" className="min-h-12 w-full rounded-xl border border-[#cad9d5] bg-[#fbfdfc] px-4 outline-none transition focus:border-[#28796b] focus:ring-2 focus:ring-[#28796b]/20" placeholder="Enter your name" />
+          <label htmlFor="enquiry-name" className="mb-1.5 block text-sm font-bold text-[#2d4741]">Full Name *</label>
+            <input id="enquiry-name" name="name" required autoComplete="name" enterKeyHint="next" type="text" className="min-h-13 w-full rounded-xl border border-[#cad9d5] bg-[#fbfdfc] px-4 text-base outline-none transition focus:border-[#28796b] focus:ring-2 focus:ring-[#28796b]/20" placeholder="Enter your name" />
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label htmlFor="enquiry-email" className="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
-            <input id="enquiry-email" name="email" required autoComplete="email" spellCheck={false} type="email" className="min-h-12 w-full rounded-xl border border-[#cad9d5] bg-[#fbfdfc] px-4 outline-none transition focus:border-[#28796b] focus:ring-2 focus:ring-[#28796b]/20" placeholder="name@example.com" />
+            <label htmlFor="enquiry-email" className="mb-1.5 block text-sm font-bold text-[#2d4741]">Email Address *</label>
+            <input id="enquiry-email" name="email" required autoComplete="email" enterKeyHint="next" spellCheck={false} type="email" className="min-h-13 w-full rounded-xl border border-[#cad9d5] bg-[#fbfdfc] px-4 text-base outline-none transition focus:border-[#28796b] focus:ring-2 focus:ring-[#28796b]/20" placeholder="name@example.com" />
           </div>
           <div>
-            <label htmlFor="enquiry-phone" className="block text-sm font-medium text-gray-700 mb-1">Phone Number *</label>
-            <input id="enquiry-phone" name="phone" required autoComplete="tel" inputMode="tel" type="tel" className="min-h-12 w-full rounded-xl border border-[#cad9d5] bg-[#fbfdfc] px-4 outline-none transition focus:border-[#28796b] focus:ring-2 focus:ring-[#28796b]/20" placeholder="98765 43210" />
+            <label htmlFor="enquiry-phone" className="mb-1.5 block text-sm font-bold text-[#2d4741]">Phone Number *</label>
+            <input id="enquiry-phone" name="phone" required autoComplete="tel" enterKeyHint="next" inputMode="tel" type="tel" className="min-h-13 w-full rounded-xl border border-[#cad9d5] bg-[#fbfdfc] px-4 text-base outline-none transition focus:border-[#28796b] focus:ring-2 focus:ring-[#28796b]/20" placeholder="98765 43210" />
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label htmlFor="enquiry-travel-date" className="block text-sm font-medium text-gray-700 mb-1">Travel Date</label>
-            <input id="enquiry-travel-date" name="travelDate" type="date" className="min-h-12 w-full rounded-xl border border-[#cad9d5] bg-[#fbfdfc] px-4 outline-none transition focus:border-[#28796b] focus:ring-2 focus:ring-[#28796b]/20" />
+            <label htmlFor="enquiry-travel-date" className="mb-1.5 block text-sm font-bold text-[#2d4741]">Travel Date</label>
+            <input id="enquiry-travel-date" name="travelDate" type="date" className="min-h-13 w-full rounded-xl border border-[#cad9d5] bg-[#fbfdfc] px-4 text-base outline-none transition focus:border-[#28796b] focus:ring-2 focus:ring-[#28796b]/20" />
           </div>
           <div>
-            <label htmlFor="enquiry-travellers" className="block text-sm font-medium text-gray-700 mb-1">No. of Travellers</label>
-            <input id="enquiry-travellers" name="travellers" type="number" min="1" inputMode="numeric" className="min-h-12 w-full rounded-xl border border-[#cad9d5] bg-[#fbfdfc] px-4 outline-none transition focus:border-[#28796b] focus:ring-2 focus:ring-[#28796b]/20" placeholder="E.g. 2" />
+            <label htmlFor="enquiry-travellers" className="mb-1.5 block text-sm font-bold text-[#2d4741]">No. of Travellers</label>
+            <input id="enquiry-travellers" name="travellers" type="number" min="1" inputMode="numeric" className="min-h-13 w-full rounded-xl border border-[#cad9d5] bg-[#fbfdfc] px-4 text-base outline-none transition focus:border-[#28796b] focus:ring-2 focus:ring-[#28796b]/20" placeholder="E.g. 2" />
           </div>
         </div>
 
         <div>
-          <label htmlFor="enquiry-message" className="block text-sm font-medium text-gray-700 mb-1">Message (Optional)</label>
-          <textarea id="enquiry-message" name="message" rows={3} className="w-full rounded-xl border border-[#cad9d5] bg-[#fbfdfc] p-4 outline-none transition focus:border-[#28796b] focus:ring-2 focus:ring-[#28796b]/20" placeholder="Share hotel preferences, accessibility needs, or anything else"></textarea>
+          <label htmlFor="enquiry-message" className="mb-1.5 block text-sm font-bold text-[#2d4741]">Message (Optional)</label>
+          <textarea id="enquiry-message" name="message" rows={4} className="w-full rounded-xl border border-[#cad9d5] bg-[#fbfdfc] p-4 text-base leading-6 outline-none transition focus:border-[#28796b] focus:ring-2 focus:ring-[#28796b]/20" placeholder="Share hotel preferences, accessibility needs, or anything else"></textarea>
         </div>
         
         <button 
           type="submit" 
           disabled={status === "loading"}
           aria-label="Submit enquiry form"
-          className="min-h-12 w-full rounded-xl bg-[#ef7a2f] px-5 py-3 font-extrabold text-white transition-colors hover:bg-[#d96520] disabled:bg-gray-400"
+          className="min-h-13 w-full rounded-xl bg-[#e96822] px-5 py-3 text-base font-extrabold text-white shadow-[0_10px_24px_rgba(233,104,34,0.24)] transition hover:-translate-y-0.5 hover:bg-[#ce5515] hover:shadow-[0_14px_28px_rgba(206,85,21,0.3)] disabled:bg-gray-400"
         >
           {status === "loading" ? "Preparing your message..." : "Continue on WhatsApp"}
         </button>

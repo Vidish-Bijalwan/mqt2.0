@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Bricolage_Grotesque, Manrope } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/data/siteConfig";
 import Navbar from "@/components/layout/Navbar";
@@ -10,7 +10,8 @@ import ScrollToTop from "@/components/ui/ScrollToTop";
 import ErrorBoundary from "@/components/ui/ErrorBoundary";
 import ClientRuntime from "@/components/layout/ClientRuntime";
 
-const roboto = Roboto({ subsets: ["latin"], weight: ["400", "500", "700"], display: "swap" });
+const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope", display: "swap" });
+const bricolage = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-bricolage", display: "swap" });
 
 export const metadata: Metadata = {
   title: {
@@ -107,19 +108,17 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="prefetch" href="/packages" />
         <link rel="prefetch" href="/blog" />
         <link rel="prefetch" href="/contact-us" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
-      <body className={roboto.className} suppressHydrationWarning>
+      <body className={`${manrope.variable} ${bricolage.variable}`} suppressHydrationWarning>
         <ClientRuntime />
         <a href="#main-content" className="skip-link">
           Skip to main content
         </a>
-        <div className="flex flex-col min-h-screen">
+        <div className="site-shell flex min-h-screen flex-col">
           <Navbar />
           <main id="main-content" className="flex-grow"><ErrorBoundary>{children}</ErrorBoundary></main>
           <Footer />

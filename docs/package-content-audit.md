@@ -1,6 +1,6 @@
 # Package Content Integrity Audit
 
-Generated: 2026-09-06T15:10:31.778Z
+Generated: 2026-09-14T10:51:36.693Z
 
 ## Scope
 
@@ -13,9 +13,9 @@ Generated: 2026-09-06T15:10:31.778Z
 
 - Primary files present: **652/652**
 - Missing primary files: **0**
-- Primary images below 600px width: **99**
+- Primary images below 600px width: **120**
 - High-confidence filename destination conflicts: **0**
-- Records needing visual/semantic review: **301**
+- Records needing visual/semantic review: **309**
 
 ## Itinerary Results
 
@@ -99,7 +99,10 @@ Generated: 2026-09-06T15:10:31.778Z
 | Package | Finding |
 |---|---|
 | `12-jyotirlinga-tour-package` | /images/blog/12-jyotirlingas-in-india.jpg; 300x169 |
+| `3-days-ujjain-omkareshwar-tour` | /images/packages/3-days-ujjain-omkareshwar-tour.webp; 500x300 |
+| `4-days-mahavatar-babaji-cave-tour` | /images/packages/4-days-mahavatar-babaji-cave-tour.webp; 500x300 |
 | `agartala-tripura-sundari-tour` | /images/packages/agartala-tripura-sundari-tour.webp; 520x350 |
+| `agra` | /images/packages/agra.jpg; 350x250 |
 | `aizawl-tour-packages` | /images/packages/aizawl-tour-packages.jpg; 350x250 |
 | `algeria-tour-packages` | /images/packages/africa-tour-packages.jpg; 300x180 |
 | `beach-vacation` | /images/packages/beach-vacation.jpg; 350x250 |
@@ -110,13 +113,19 @@ Generated: 2026-09-06T15:10:31.778Z
 | `camping` | /images/packages/india-tour-packages.jpg; 320x450 |
 | `cancellation-refund` | /images/packages/india-tour-packages.jpg; 320x450 |
 | `cape-verde-tour-packages` | /images/packages/africa-tour-packages.jpg; 300x180 |
-| `central-india-tour-packages` | /images/packages/india-tour-packages.jpg; 320x450 |
+| `central-india-tour-packages` | /images/packages/central-india-tour-packages.jpg; 300x180 |
 | `chandni-chowk-delhi` | /images/packages/chandni-chowk-delhi.jpg; 500x300 |
 | `chini-ka-rauza` | /images/packages/chini-ka-rauza.jpg; 500x300 |
 | `city-palace-jaipur` | /images/packages/city-palace-jaipur.jpg; 500x300 |
 | `coimbatore-tour-packages` | /images/packages/tamil-nadu-tour-packages.jpg; 520x350 |
+| `corbett-nainital-tour-package-from-delhi` | /images/packages/corbett-nainital-tour-package-from-delhi.webp; 520x350 |
 | `cruise-holidays-packages` | /images/packages/cruise-holidays-packages.jpg; 350x250 |
-| `cultural-tour-packages` | /images/packages/india-tour-packages.jpg; 320x450 |
+| `cultural-tour-packages` | /images/packages/cultural-tour-packages.jpg; 350x250 |
+| `delhi-weekend-getaways` | /images/packages/delhi-weekend-getaways.jpeg; 223x200 |
+| `east-africa-tour-packages` | /images/packages/east-africa-tour-packages.jpg; 300x180 |
+| `east-asia-tour-packages` | /images/packages/east-asia-tour-packages.jpg; 300x180 |
+| `east-europe-tour-packages` | /images/packages/east-europe-tour-packages.jpg; 300x180 |
+| `east-india-tour-packages` | /images/packages/east-india-tour-packages.jpg; 300x180 |
 | `ethiopia-tour-packages` | /images/packages/africa-tour-packages.jpg; 300x180 |
 | `faq` | /images/packages/india-tour-packages.jpg; 320x450 |
 | `fascinating-kerala` | /images/packages/fascinating-kerala.webp; 520x350 |
@@ -135,19 +144,10 @@ Generated: 2026-09-06T15:10:31.778Z
 | `how-to-book` | /images/packages/india-tour-packages.jpg; 320x450 |
 | `humayuns-tomb` | /images/packages/humayuns-tomb.jpg; 500x300 |
 | `increasable-kerala` | /images/packages/increasable-kerala.webp; 520x350 |
+| `india-gate-delhi` | /images/packages/india-gate-delhi.jpg; 500x300 |
+| `india-wildlife-tour-packages` | /images/packages/india-wildlife-tour-packages.jpg; 350x250 |
 | `jama-masjid-delhi` | /images/packages/jama-masjid-delhi.jpg; 500x300 |
 | `jorhat-majuli-kaziranga-tour-package` | /images/packages/jorhat-majuli-kaziranga-tour-package.webp; 500x300 |
-| `kailash-mansarovar-yatra` | /images/packages/kailash-mansarovar-yatra.jpg; 440x420 |
-| `kenya-tour-packages` | /images/packages/africa-tour-packages.jpg; 300x180 |
-| `kwazulu-natal-tour-packages` | /images/packages/africa-tour-packages.jpg; 300x180 |
-| `lakshman-jhula-rishikesh` | /images/packages/rishikesh-tour-packages.jpg; 520x350 |
-| `libya-tour-packages` | /images/packages/africa-tour-packages.jpg; 300x180 |
-| `loyalty-referral-programs` | /images/packages/india-tour-packages.jpg; 320x450 |
-| `media-awards` | /images/packages/india-tour-packages.jpg; 320x450 |
-| `morocco-tour-packages` | /images/packages/africa-tour-packages.jpg; 300x180 |
-| `mpumalanga-tour-packages` | /images/packages/africa-tour-packages.jpg; 300x180 |
-| `naimisharanya-tour-packages` | /images/packages/varanasi-allahabad-ayodhya-naimisharanya-tour.webp; 500x300 |
-| `north-africa-tour-packages` | /images/packages/north-india-tour-packages.jpg; 350x250 |
 
 ## Interpretation
 

@@ -1,0 +1,26 @@
+{
+  "environment": "One cold local production Chrome navigation; no network or CPU throttling. Not field Core Web Vitals or a before/after benchmark.",
+  "status": 200,
+  "home": {
+    "title": "India Holidays & Tailor-Made Tours | My Quick Trippers",
+    "overflow": false,
+    "metrics": {
+      "lcp": 652,
+      "cls": 0.00042232786627198113
+    },
+    "images": [
+      {
+        "loaded": true,
+        "url": "http://localhost:3001/_next/image?url=%2Fimages%2Fmqt-logo-256.webp&w=48&q=75"
+      },
+      {
+        "loaded": true,
+        "url": "http://localhost:3001/_next/image?url=%2Fimages%2Fpackages%2Fhi-adventure-sports-in-uttarakhand.webp&w=640&q=75"
+      }
+    ],
+    "resourceTransferBytes": 388662
+  },
+  "reviewOpen": true,
+  "reviewClosed": true,
+  "errors": []
+}

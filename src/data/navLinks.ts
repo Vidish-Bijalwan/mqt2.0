@@ -92,7 +92,7 @@ export const navLinks = [
         links: [
           { name: "Japan", href: "/destinations/japan" },
           { name: "China", href: "/destinations/china" },
-          { name: "Hong Kong", href: "/destinations/hong-kong" },
+          { name: "Hong Kong", href: "/packages?filter=hong-kong" },
         ],
       },
       {

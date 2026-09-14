@@ -36,10 +36,10 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Params) {
   const { slug } = await params;
   const exp = getExperienceBySlug(slug);
-  if (!exp) return { title: "Experience | My Quick Trippers" };
+  if (!exp) return { title: "Travel Experience" };
 
   return {
-    title: `${exp.name} in India | Packages & Tours | My Quick Trippers`,
+    title: `${exp.name} in India | Packages & Tours`,
     description: exp.description,
     alternates: { canonical: `${siteConfig.domain}/experiences/${exp.slug}` },
     openGraph: {

@@ -3,7 +3,7 @@ import LegalPage, { LegalSection } from "@/components/ui/LegalPage";
 import { siteConfig } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
-  title: `Privacy Policy | ${siteConfig.name}`,
+  title: "Privacy Policy",
   description:
     "Read My Quick Trippers (MQT India) privacy policy. Learn how we collect, use, disclose, and safeguard your personal information when you book travel with us.",
 };

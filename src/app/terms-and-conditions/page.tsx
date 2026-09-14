@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import LegalPage, { LegalSection } from "@/components/ui/LegalPage";
-import { siteConfig } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
-  title: `Terms & Conditions | ${siteConfig.name}`,
+  title: "Terms & Conditions",
   description:
     "Read My Quick Trippers (MQT India) booking terms and conditions — booking confirmation, pricing, cancellation & refund policy, force majeure, traveller responsibilities and more.",
 };

@@ -3,7 +3,7 @@ import { siteConfig } from "@/data/siteConfig";
 import { Phone, Mail, MessageCircle, ChevronRight } from "lucide-react";
 
 export const metadata = {
-  title: "Customer Center | My Quick Trippers",
+  title: "Customer Center",
   description:
     "Need help with booking, payments, or your trip? Contact My Quick Trippers customer support by phone, email, or WhatsApp.",
 };

@@ -4,9 +4,11 @@ import React, { useMemo } from 'react';
 import Link from 'next/link';
 import destinationsDataRaw from '@/data/destinationsData.json';
 import packageDetailsRaw from '@/data/packageDetails.json';
+import { getPublicPackages } from '@/utils/packageCatalog';
 
-const destinationsData = destinationsDataRaw as Record<string, any>;
-const packageDetails = packageDetailsRaw as Record<string, any>;
+const destinationsData = destinationsDataRaw as Record<string, unknown>;
+const packageDetails = packageDetailsRaw as Record<string, unknown>;
+const publicPackageSlugs = new Set(getPublicPackages().map((pkg) => pkg.slug));
 
 // Cache the keyword map so we don't build it on every render
 let keywordMap: { keyword: string; url: string; regex: RegExp; priority: number }[] | null = null;
@@ -26,7 +28,7 @@ function buildKeywordMap() {
   });
 
   // Add packages (higher priority for full package names to avoid partial matching)
-  Object.keys(packageDetails).forEach((slug) => {
+  Object.keys(packageDetails).filter((slug) => publicPackageSlugs.has(slug)).forEach((slug) => {
     const name = slug.replace(/-/g, ' ').replace(/ tour packages?/gi, '').replace(/ package/gi, '').trim();
     if (name.length > 4) {
       // If it contains "tour", link to package
@@ -64,7 +66,7 @@ export default function AutoLinker({ text, className = '', maxLinks = 4 }: AutoL
     let result: (string | React.ReactNode)[] = [text];
     let linksAdded = 0;
 
-    for (const { keyword, url, regex } of map) {
+    for (const { url, regex } of map) {
       if (linksAdded >= maxLinks) break;
 
       const newResult: (string | React.ReactNode)[] = [];

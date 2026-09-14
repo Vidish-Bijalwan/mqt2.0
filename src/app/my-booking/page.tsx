@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'My Booking - My Quick Trippers',
+  title: 'My Booking',
   description: 'Manage your My Quick Trippers tour package booking.',
 };
 

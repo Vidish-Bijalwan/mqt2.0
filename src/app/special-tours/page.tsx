@@ -15,7 +15,7 @@ const THEMES = [
 ];
 
 export const metadata = {
-  title: "Special Tour Themes | My Quick Trippers",
+  title: "Special Tour Themes",
   description: "Browse our handpicked tour themes. From family vacations to romantic honeymoons, find the perfect travel style for you.",
 };
 

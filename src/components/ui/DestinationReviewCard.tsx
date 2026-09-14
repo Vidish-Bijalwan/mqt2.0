@@ -1,6 +1,8 @@
 'use client';
 
 import { Star, ArrowRight } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 interface DestinationReviewCardProps {
   destination: string;
@@ -16,10 +18,13 @@ export default function DestinationReviewCard({
   reviewCount,
 }: DestinationReviewCardProps) {
   return (
-    <div className="group relative bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer">
+    <Link
+      href={`/packages?filter=${encodeURIComponent(destination.toLowerCase())}`}
+      className="group relative block overflow-hidden rounded-xl border border-gray-100 bg-white shadow-sm transition-all duration-300 hover:shadow-lg"
+    >
       {/* Image */}
       <div className="relative h-40 bg-gradient-to-br from-blue-500 to-indigo-600 overflow-hidden">
-        <img src={image} alt={destination} className="w-full h-full object-cover" />
+        <Image src={image} alt={destination} fill sizes="(max-width: 768px) 50vw, 25vw" className="object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
         <div className="absolute bottom-3 left-3 right-3">
           <h3 className="text-white font-semibold text-lg">{destination}</h3>
@@ -35,11 +40,11 @@ export default function DestinationReviewCard({
           </div>
           <span className="text-sm text-gray-500">{reviewCount} reviews</span>
         </div>
-        <button className="flex items-center gap-1 text-blue-600 hover:text-blue-700 text-sm font-medium group-hover:gap-2 transition-all">
-          View {destination} reviews
+        <span className="flex items-center gap-1 text-blue-600 hover:text-blue-700 text-sm font-medium group-hover:gap-2 transition-all">
+          Explore {destination} tours
           <ArrowRight className="w-4 h-4" />
-        </button>
+        </span>
       </div>
-    </div>
+    </Link>
   );
 }

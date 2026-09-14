@@ -1,6 +1,8 @@
 'use client';
 
 import { Star, BadgeCheck } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 interface TourReviewCardProps {
   tour: string;
@@ -23,7 +25,7 @@ export default function TourReviewCard({
     <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300">
       {/* Image */}
       <div className="relative h-48 bg-gradient-to-br from-orange-500 to-red-600 overflow-hidden">
-        <img src={image} alt={tour} className="w-full h-full object-cover" />
+        <Image src={image} alt={tour} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
         <div className="absolute bottom-3 left-3 right-3">
           <h3 className="text-white font-semibold">{tour}</h3>
@@ -46,15 +48,12 @@ export default function TourReviewCard({
         </div>
 
         <div className="flex gap-2">
-          <a
+          <Link
             href={`/packages/${slug}`}
             className="flex-1 text-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
           >
             View Tour
-          </a>
-          <button className="flex-1 text-center px-4 py-2 border border-gray-200 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors text-sm font-medium">
-            View Reviews
-          </button>
+          </Link>
         </div>
       </div>
     </div>

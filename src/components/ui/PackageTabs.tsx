@@ -44,8 +44,8 @@ export default function PackageTabs({ sections }: { sections: PackageTabSection[
 
   return (
     <div>
-      <div className="sticky top-2 z-30 mb-5 rounded-2xl border border-[#d7e5e1] bg-white/92 p-1.5 shadow-[0_10px_30px_rgba(11,48,44,0.09)] backdrop-blur-xl">
-        <div className="flex gap-1 overflow-x-auto" role="tablist" aria-label="Package sections">
+      <div className="mb-5 rounded-2xl border border-[#d7e5e1] bg-white p-1.5 shadow-[0_10px_30px_rgba(11,48,44,0.09)]">
+        <div className="flex snap-x gap-1 overflow-x-auto" role="tablist" aria-label="Package sections">
           {sections.map((s) => (
             <button
               key={s.id}
@@ -53,9 +53,9 @@ export default function PackageTabs({ sections }: { sections: PackageTabSection[
               aria-selected={s.id === active.id}
               aria-controls={`package-panel-${s.id}`}
               onClick={() => selectTab(s.id)}
-              className={`min-h-11 whitespace-nowrap rounded-xl px-4 text-[13px] font-extrabold transition-colors md:px-5 md:text-sm ${
+              className={`min-h-11 flex-1 snap-start whitespace-nowrap rounded-xl px-4 text-[13px] font-extrabold transition-colors md:px-5 md:text-sm ${
                 s.id === active.id
-                  ? "bg-[#0b5147] text-white shadow-sm"
+                  ? "bg-[#0b5147] text-white shadow-[0_6px_16px_rgba(11,81,71,0.2)]"
                   : "text-[#61746f] hover:bg-[#eef5f3] hover:text-[#164b42]"
               }`}
             >

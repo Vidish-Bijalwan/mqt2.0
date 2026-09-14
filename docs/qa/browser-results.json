@@ -1,0 +1,156 @@
+{
+  "results": [
+    {
+      "route": "/",
+      "width": 320,
+      "status": 200,
+      "title": "India Holidays & Tailor-Made Tours | My Quick Trippers",
+      "h1": 1,
+      "overflow": false,
+      "images": 18,
+      "broken": [],
+      "cards": 9
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "status": 200,
+      "title": "India Holidays & Tailor-Made Tours | My Quick Trippers",
+      "h1": 1,
+      "overflow": false,
+      "images": 18,
+      "broken": [],
+      "cards": 9
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "status": 200,
+      "title": "India Holidays & Tailor-Made Tours | My Quick Trippers",
+      "h1": 1,
+      "overflow": false,
+      "images": 18,
+      "broken": [],
+      "cards": 9
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "status": 200,
+      "title": "India Holidays & Tailor-Made Tours | My Quick Trippers",
+      "h1": 1,
+      "overflow": false,
+      "images": 18,
+      "broken": [],
+      "cards": 9
+    },
+    {
+      "feature": "Mobile menu",
+      "open": true
+    },
+    {
+      "feature": "Menu Escape",
+      "closed": true
+    },
+    {
+      "route": "/packages?q=kerala&duration=6-9",
+      "status": 200,
+      "overflow": false,
+      "title": "Explore India & International Tour Packages | My Quick Trippers",
+      "h1": 1,
+      "canonical": "https://www.myquicktrippers.com/packages",
+      "robots": "noindex, follow",
+      "cards": 8
+    },
+    {
+      "route": "/packages?page=-1",
+      "status": 200,
+      "overflow": false,
+      "title": "Explore India & International Tour Packages | My Quick Trippers",
+      "h1": 1,
+      "canonical": "https://www.myquicktrippers.com/packages",
+      "robots": "index, follow",
+      "cards": 12
+    },
+    {
+      "route": "/packages?q=zzzznoresults",
+      "status": 200,
+      "overflow": false,
+      "title": "Explore India & International Tour Packages | My Quick Trippers",
+      "h1": 1,
+      "canonical": "https://www.myquicktrippers.com/packages",
+      "robots": "noindex, follow",
+      "cards": 0
+    },
+    {
+      "route": "/packages?q=kerala&q=bali",
+      "status": 200,
+      "overflow": false,
+      "title": "Explore India & International Tour Packages | My Quick Trippers",
+      "h1": 1,
+      "canonical": "https://www.myquicktrippers.com/packages",
+      "robots": "noindex, follow",
+      "cards": 12
+    },
+    {
+      "route": "/packages?sort=price-low",
+      "status": 200,
+      "overflow": false,
+      "title": "Explore India & International Tour Packages | My Quick Trippers",
+      "h1": 1,
+      "canonical": "https://www.myquicktrippers.com/packages",
+      "robots": "noindex, follow",
+      "cards": 12
+    },
+    {
+      "route": "/packages/10-days-assam-meghalaya-arunachal-pradesh-tour-packages",
+      "status": 200,
+      "overflow": false,
+      "title": "Assam Meghalaya Arunachal Pradesh Tour | My Quick Trippers",
+      "h1": 1,
+      "canonical": "https://www.myquicktrippers.com/packages/10-days-assam-meghalaya-arunachal-pradesh-tour-packages",
+      "robots": "index, follow",
+      "cards": 4
+    },
+    {
+      "feature": "Gallery opens",
+      "open": true
+    },
+    {
+      "feature": "Gallery Escape",
+      "closed": true
+    },
+    {
+      "feature": "WhatsApp draft, intercepted without sending",
+      "prepared": true,
+      "honestStatus": true,
+      "fallback": true
+    },
+    {
+      "route": "/packages/2-days-ayodhya-tour-package",
+      "status": 404,
+      "overflow": false,
+      "title": "My Quick Trippers - Your Journey, Our Expertise",
+      "h1": 1,
+      "robots": "index, follow",
+      "cards": 0
+    },
+    {
+      "route": "/robots.txt",
+      "status": 200,
+      "overflow": false,
+      "title": "",
+      "h1": 0,
+      "cards": 0
+    },
+    {
+      "route": "/sitemap.xml",
+      "status": 200,
+      "overflow": true,
+      "title": "",
+      "h1": 0,
+      "cards": 0
+    }
+  ],
+  "errors": []
+}

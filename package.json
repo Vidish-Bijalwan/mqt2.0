@@ -4,13 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "node scripts/dev-prewarm.mjs",
-    "build": "next build",
+    "build": "node scripts/run-next.mjs build",
     "start": "node scripts/run-next.mjs start",
     "reinstall": "node scripts/reinstall.mjs",
     "lint": "eslint",
     "check:content": "node scripts/parity/check-content.mjs",
     "audit:packages": "node scripts/parity/audit-package-integrity.mjs",
+    "audit:images": "node scripts/parity/ensure-unique-package-images.mjs",
     "fix:images": "node scripts/parity/fix-package-images.mjs",
+    "generate:blog-index": "node scripts/generate-blog-index.mjs",
     "report:contentless": "node scripts/parity/contentless-report.mjs"
   },
   "dependencies": {
@@ -22,10 +24,10 @@
     "clsx": "^2.1.1",
     "framer-motion": "^12.42.2",
     "lucide-react": "^1.24.0",
-    "next": "16.2.10",
+    "next": "16.3.5",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "sharp": "^0.34.5",
+    "sharp": "^0.35.4",
     "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {
@@ -34,7 +36,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.2.10",
+    "eslint-config-next": "16.3.5",
     "puppeteer": "^25.7.0",
     "tailwindcss": "^4",
     "typescript": "^5"

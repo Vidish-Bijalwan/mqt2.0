@@ -148,7 +148,7 @@ function BlogIndexContent() {
               <div className="w-12 h-1 bg-legacy-orange ml-4 rounded-full"></div>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-              {featuredBlogs.map((blog, i) => (
+              {featuredBlogs.map((blog) => (
                 <Link key={blog.slug} href={`/blog/${blog.slug}`} className="bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-legacy-orange/50 transition-all duration-300 group overflow-hidden flex flex-col">
                   <div className="relative h-56 overflow-hidden">
                     <Image src={blog.image} alt={blog.title} fill className="object-cover group-hover:scale-110 transition-transform duration-700" sizes="(max-width: 768px) 100vw, 33vw" />

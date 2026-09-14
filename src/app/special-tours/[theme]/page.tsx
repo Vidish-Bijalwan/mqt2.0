@@ -18,10 +18,10 @@ export async function generateMetadata({ params }: { params: Promise<{ theme: st
   const resolvedParams = await params;
   const theme = resolvedParams?.theme?.toLowerCase();
   
-  if (!THEME_KEYWORDS[theme]) return { title: "Special Tours | My Quick Trippers" };
+  if (!THEME_KEYWORDS[theme]) return { title: "Special Tours" };
   
   return { 
-    title: `${theme.charAt(0).toUpperCase() + theme.slice(1)} Tour Packages | My Quick Trippers`,
+    title: `${theme.charAt(0).toUpperCase() + theme.slice(1)} Tour Packages`,
     description: `Explore our handpicked ${theme} tour packages. Find the perfect itinerary for your next trip.`
   };
 }

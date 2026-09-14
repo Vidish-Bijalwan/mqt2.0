@@ -1,12 +1,12 @@
-import { execSync } from "node:child_process";
+import fs from "node:fs";
 
 const BASE = process.argv[2] || "http://localhost:53143";
 
 // ---- Extract hrefs from navLinks.ts / footerLinks.ts ----
-const navSrc = execSync("cat src/data/navLinks.ts", { encoding: "utf8" });
-const footSrc = execSync("cat src/data/footerLinks.ts", { encoding: "utf8" });
-const navbarSrc = execSync("cat src/components/layout/Navbar.tsx", { encoding: "utf8" });
-const footerSrc = execSync("cat src/components/layout/Footer.tsx", { encoding: "utf8" });
+const navSrc = fs.readFileSync("src/data/navLinks.ts", "utf8");
+const footSrc = fs.readFileSync("src/data/footerLinks.ts", "utf8");
+const navbarSrc = fs.readFileSync("src/components/layout/Navbar.tsx", "utf8");
+const footerSrc = fs.readFileSync("src/components/layout/Footer.tsx", "utf8");
 
 const byHref = new Map();
 const collect = (src, where) => {

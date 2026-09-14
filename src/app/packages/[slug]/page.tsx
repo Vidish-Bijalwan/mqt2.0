@@ -1,5 +1,5 @@
 import { allPackages } from "@/data/allPackages";
-import { getPublicPackages, isPublicPackage } from "@/utils/packageCatalog";
+import { getPublicPackages, getTourDays, isPublicPackage } from "@/utils/packageCatalog";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,8 +17,10 @@ import ExpandableText from "@/components/ui/ExpandableText";
 import { extractInclusions, extractExclusions, extractHighlights } from "@/utils/blocks";
 import type { Block, FaqItem } from "@/utils/blocks";
 import { siteConfig } from "@/data/siteConfig";
+import { packageExperienceOverrides } from "@/data/packageExperienceOverrides";
 import fs from 'fs';
 import path from 'path';
+import type { CSSProperties } from "react";
 
 interface LegacyPackageDetails {
   overview: string;
@@ -61,6 +63,25 @@ function loadDetailFile<T>(filename: string): Record<string, T> {
 const packageDetails = loadDetailFile<LegacyPackageDetails>('packageDetails.json');
 const packageDetailsV2 = loadDetailFile<RichPackageDetails>('packageDetailsV2.json');
 const packageDetailsV3 = loadDetailFile<RichPackageDetails>('packageDetailsV3.json');
+const localPackageImageUrls = (() => {
+  try {
+    const rootImages = fs
+      .readdirSync(path.join(process.cwd(), 'public/images/packages'))
+      .filter((filename) => /\.(avif|jpe?g|png|webp)$/i.test(filename))
+      .map((filename) => `/images/packages/${filename}`);
+    const curatedImages = fs
+      .readdirSync(path.join(process.cwd(), 'public/images/packages/curated'))
+      .filter((filename) => /\.(avif|jpe?g|png|webp)$/i.test(filename))
+      .map((filename) => `/images/packages/curated/${filename}`);
+    return [...rootImages, ...curatedImages];
+  } catch {
+    return [] as string[];
+  }
+})();
+const knownLocalImageUrls = new Set([
+  ...localPackageImageUrls,
+  ...allPackages.flatMap((pkg) => [pkg.image, pkg.image2]).filter((url): url is string => Boolean(url)),
+]);
 
 function detailsV2For(slug: string) {
   return packageDetailsV2[slug] || packageDetailsV2[`${slug}.html`] || packageDetailsV2[`${slug}.htm`];
@@ -73,7 +94,8 @@ function detailsV3For(slug: string) {
 const blockText = (block: Block) => String(block.text || block.content || '').trim();
 
 function cleanDisplayText(value: string) {
-  return String(value || '')
+  return replaceReferenceBrand(String(value || ''))
+    .replace(/\*\*/g, '')
     .replace(/\bSee More\b|\bSee Less\b/gi, '')
     .replace(/Places You[’']ll See/gi, '')
     .replace(/\s+/g, ' ')
@@ -100,17 +122,7 @@ function resolveLocalPackageImage(candidate?: string): string | null {
   }
 
   if (!publicPath.startsWith('/images/') || /\.(svg|gif)$/i.test(publicPath)) return null;
-
-  const publicRoot = path.resolve(process.cwd(), 'public');
-  const absolutePath = path.resolve(publicRoot, publicPath.replace(/^\/+/, ''));
-  if (!absolutePath.startsWith(publicRoot)) return null;
-
-  try {
-    const imageFile = fs.statSync(absolutePath);
-    return imageFile.isFile() && imageFile.size >= 8_000 ? publicPath : null;
-  } catch {
-    return null;
-  }
+  return knownLocalImageUrls.has(publicPath) ? publicPath : null;
 }
 
 function sanitizeItineraryBlocks(items: Block[]): Block[] {
@@ -143,8 +155,30 @@ function sanitizeItineraryBlocks(items: Block[]): Block[] {
   return result;
 }
 
+function buildSuggestedItinerary(title: string, duration: string, routePlaces: string[]) {
+  const dayCount = Math.max(3, getTourDays(duration, title) || routePlaces.length || 3);
+  const subject = title.replace(/\s*(tour|package|holiday|yatra).*/i, "").trim() || "your destination";
+  const stops = routePlaces.length > 0 ? routePlaces : [subject];
+
+  return Array.from({ length: dayCount }, (_, index) => {
+    const day = index + 1;
+    const stopIndex = Math.min(stops.length - 1, Math.floor((index / Math.max(1, dayCount - 1)) * stops.length));
+    const stop = stops[stopIndex];
+    if (day === 1) {
+      return { title: `Arrival and welcome in ${stop}`, description: `Arrive in ${stop}, meet the local support team and settle in. The exact pickup, hotel check-in and first-day sightseeing are adjusted to your arrival time.` };
+    }
+    if (day === dayCount) {
+      return { title: `Departure from ${stop}`, description: `After breakfast, complete any time-permitting local visit before the planned transfer. Departure timing is coordinated with your onward train, flight or road journey.` };
+    }
+    return { title: `Explore ${stop}`, description: `Spend the day discovering the key sights and experiences around ${stop}. Travel time, meal breaks and the sightseeing order are tailored to season, opening hours and your preferred pace.` };
+  });
+}
+
 export function generateStaticParams() {
-  return getPublicPackages().map((pkg) => ({ slug: pkg.slug }));
+  // Popular catalogue pages are linked from the home page and warm quickly.
+  // Long-tail packages render on demand and are then cached by ISR, avoiding
+  // hundreds of duplicated page artifacts in every deployment.
+  return getPublicPackages().slice(0, 24).map((pkg) => ({ slug: pkg.slug }));
 }
 
 // ISR: revalidate daily so newly scraped/edited package content (V3 blocks,
@@ -161,6 +195,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const pkg = allPackages.find((candidate) => candidate.slug === slug);
   const legacyDetails = packageDetails[slug];
   if (pkg && !isPublicPackage(pkg)) return {};
+  const socialImage = pkg?.image
+    ? new URL(pkg.image, siteConfig.domain).toString()
+    : `${siteConfig.domain}/logo/mqt-logo.png`;
 
   const seoSource = pkgV3?.seo || pkgV2?.seo;
   if (seoSource) {
@@ -181,7 +218,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         description: og['og:description'] ? replaceReferenceBrand(og['og:description']) : undefined,
         url: `${siteConfig.domain}/packages/${slug}`,
         type: 'article',
-        images: [{ url: `${siteConfig.domain}/api/og/${slug}`, width: 1200, height: 630 }],
+        images: [{ url: socialImage, alt: cleanTitle(og['og:title'] || scrapedTitle) }],
       },
     };
   }
@@ -201,8 +238,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description,
       url: `${siteConfig.domain}/packages/${slug}`,
       type: 'article',
-      // Dynamically generated OG image — package photo + title (via /api/og/[slug])
-      images: [{ url: `${siteConfig.domain}/api/og/${slug}`, width: 1200, height: 630, alt: title }],
+      images: [{ url: socialImage, alt: title }],
     },
   };
 }
@@ -215,6 +251,8 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
   if (!pkg || !isPublicPackage(pkg)) {
     notFound();
   }
+
+  const experienceOverride = packageExperienceOverrides[pkg.slug];
 
   // Get rich details — V3 (clean) preferred, then V2, then legacy. Empty block
   // arrays (junk dropped by clean-package-blocks) must fall through.
@@ -295,6 +333,9 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
   const crossedOutPrice = priceInfo.crossed;
   const saveAmount = priceInfo.save;
   const showPrice = priceInfo.hasPrice;
+  const packageWhatsappUrl = `${siteConfig.social.whatsapp}?text=${encodeURIComponent(
+    `Hello My Quick Trippers, I am interested in the ${pkg.title}. Please share the available dates and a tailored quote.`,
+  )}`;
 
   // Section boundaries must support both V2 `text` and V3 `content` headings.
   // Without the end boundary, FAQs and related-tour copy leak into the itinerary.
@@ -324,7 +365,13 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
   const inclusions = cleanList(blocks ? extractInclusions(blocks) : []);
   const exclusions = cleanList(blocks ? extractExclusions(blocks) : []);
   const highlights = cleanList(
-    details.highlights.length > 0 ? details.highlights : blocks ? extractHighlights(blocks) : [],
+    experienceOverride?.highlights?.length
+      ? experienceOverride.highlights
+      : details.highlights.length > 0
+        ? details.highlights
+        : blocks
+          ? extractHighlights(blocks)
+          : [],
   ).slice(0, 8);
 
   const overviewBoundary = (blocks || []).findIndex((block) =>
@@ -335,19 +382,23 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
     .filter((b) => b.type === 'paragraph')
     .map((b) => cleanDisplayText(blockText(b)))
     .filter((text: string) => text.length > 80 && !/related tour packages/i.test(text));
-  const overviewText = cleanOverviewText(details.overview || overviewParagraphs.join(' ') || pkg.description);
+  const overviewText = cleanOverviewText(
+    experienceOverride?.overview || details.overview || overviewParagraphs.join(' ') || pkg.description,
+  );
 
   // Route start/end points — split on arrows (→), en/em dashes (– —) and commas,
   // then collapse consecutive repeats (each day ends where the next begins).
-  const routePlaces = (pkg.route || '')
-    .split(/[\u2192\u2013\u2014,>]/)
-    .map(s => s.trim())
-    .filter(Boolean);
+  const routePlaces = experienceOverride?.route?.length
+    ? experienceOverride.route
+    : (pkg.route || '')
+        .split(/[\u2192\u2013\u2014,>]/)
+        .map(s => s.trim())
+        .filter(Boolean);
   const uniqueRoutePlaces = routePlaces.filter((place, i) => place !== routePlaces[i - 1]);
   const startPoint = uniqueRoutePlaces[0] || '';
   const endPoint = uniqueRoutePlaces[uniqueRoutePlaces.length - 1] || '';
   const routeDisplay = uniqueRoutePlaces.join(' → ');
-  const journeyStops = uniqueRoutePlaces.slice(0, 6);
+  const journeyStops = uniqueRoutePlaces.slice(0, 10);
 
   const hasDuration = !!pkg.duration && pkg.duration.toLowerCase() !== "on request";
   const hasRouteInfo = !!routeDisplay && routeDisplay.toLowerCase() !== "on request";
@@ -356,6 +407,10 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
   const hasQuickInfo = hasDuration || hasRouteInfo;
   const legacyItinerary = details.itinerary.filter((day) => day.description.trim().length >= 20);
   const hasLegacyItinerary = legacyItinerary.length > 0;
+  const hasScrapedItinerary = safeItineraryBlocks.length > 0;
+  const suggestedItinerary = !hasLegacyItinerary && !hasScrapedItinerary
+    ? buildSuggestedItinerary(pkg.title, pkg.duration, uniqueRoutePlaces)
+    : [];
   const allFaqs = details.faqs && details.faqs.length > 0 ? details.faqs : faqPairs;
 
   // Keep the buying journey concise: experience, plan, inclusions, then FAQs.
@@ -367,7 +422,7 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
         <section className="overflow-hidden rounded-[24px] border border-[#dce8e5] bg-white shadow-[0_18px_55px_rgba(11,48,44,0.08)]">
           <div className="p-6 sm:p-8 lg:p-10">
             <p className="mb-3 text-[11px] font-extrabold uppercase tracking-[0.24em] text-brand-orange-text">The experience</p>
-            <h2 className="max-w-2xl text-2xl font-extrabold leading-tight text-[#102b28] sm:text-3xl">
+            <h2 className="font-display max-w-2xl text-[28px] font-bold leading-tight text-[#102b28] sm:text-4xl">
               More than a route. A journey designed around how you want to feel.
             </h2>
             {overviewText ? (
@@ -387,7 +442,7 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
                 <div className="mb-5 flex flex-wrap items-end justify-between gap-2">
                   <div>
                     <p className="text-[11px] font-extrabold uppercase tracking-[0.2em] text-[#6f817d]">Worth the journey</p>
-                    <h3 className="mt-1 text-xl font-extrabold text-[#102b28]">Moments you can look forward to</h3>
+                    <h3 className="font-display mt-1 text-2xl font-bold text-[#102b28]">Moments you can look forward to</h3>
                   </div>
                   <span className="text-xs font-semibold text-[#6f817d]">Curated from this itinerary</span>
                 </div>
@@ -405,17 +460,17 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
         </section>
       ),
     },
-    ...(hasLegacyItinerary || safeItineraryBlocks.length > 0 ? [{
+    ...(hasLegacyItinerary || hasScrapedItinerary || suggestedItinerary.length > 0 ? [{
       id: "itinerary",
       label: "Day by day",
       content: (
         <section className="rounded-[24px] border border-[#dce8e5] bg-white p-6 shadow-[0_18px_55px_rgba(11,48,44,0.08)] sm:p-8 lg:p-10">
           <div className="mb-8 max-w-2xl">
-            <p className="text-[11px] font-extrabold uppercase tracking-[0.24em] text-brand-orange-text">Day by day</p>
-            <h2 className="mt-2 text-2xl font-extrabold text-[#102b28] sm:text-3xl">See how the journey unfolds</h2>
-            <p className="mt-3 text-sm leading-6 text-[#657772]">Open each day for the plan, travel flow, and experiences included along the way.</p>
+            <p className="text-[11px] font-extrabold uppercase tracking-[0.24em] text-brand-orange-text">{suggestedItinerary.length > 0 ? "Suggested itinerary" : "Day by day"}</p>
+            <h2 className="font-display mt-2 text-[28px] font-bold text-[#102b28] sm:text-4xl">See how the journey unfolds</h2>
+            <p className="mt-3 text-sm leading-6 text-[#657772]">{suggestedItinerary.length > 0 ? "This starting plan keeps every day visible and will be tailored to your dates, transport and preferred pace before booking." : "Open each day for the plan, travel flow, and experiences included along the way."}</p>
           </div>
-          {hasLegacyItinerary ? <ItineraryAccordion itinerary={legacyItinerary} /> : <BlockRenderer blocks={safeItineraryBlocks} />}
+          {hasLegacyItinerary ? <ItineraryAccordion itinerary={legacyItinerary} /> : hasScrapedItinerary ? <BlockRenderer blocks={safeItineraryBlocks} /> : <ItineraryAccordion itinerary={suggestedItinerary} />}
         </section>
       ),
     }] : []),
@@ -426,7 +481,7 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
         <section className="rounded-[24px] border border-[#dce8e5] bg-white p-6 shadow-[0_18px_55px_rgba(11,48,44,0.08)] sm:p-8 lg:p-10">
           <div className="mb-8 max-w-2xl">
             <p className="text-[11px] font-extrabold uppercase tracking-[0.24em] text-brand-orange-text">Clear before you book</p>
-            <h2 className="mt-2 text-2xl font-extrabold text-[#102b28] sm:text-3xl">What the package covers</h2>
+            <h2 className="font-display mt-2 text-[28px] font-bold text-[#102b28] sm:text-4xl">What the package covers</h2>
           </div>
           <div className={`grid gap-5 ${inclusions.length > 0 && exclusions.length > 0 ? 'md:grid-cols-2' : ''}`}>
             {inclusions.length > 0 && (
@@ -464,7 +519,7 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
         <section className="rounded-[24px] border border-[#dce8e5] bg-white p-6 shadow-[0_18px_55px_rgba(11,48,44,0.08)] sm:p-8 lg:p-10">
           <div className="mb-7">
             <p className="text-[11px] font-extrabold uppercase tracking-[0.24em] text-brand-orange-text">Good to know</p>
-            <h2 className="mt-2 text-2xl font-extrabold text-[#102b28] sm:text-3xl">Frequently asked questions</h2>
+            <h2 className="font-display mt-2 text-[28px] font-bold text-[#102b28] sm:text-4xl">Frequently asked questions</h2>
           </div>
           <div className="divide-y divide-[#e1ebe8] border-y border-[#e1ebe8]">
             {allFaqs.map((faq, i) => (
@@ -488,6 +543,7 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
   const galleryStopWords = new Set([
     'tour', 'tours', 'package', 'packages', 'trip', 'travel', 'yatra', 'holiday',
     'days', 'day', 'nights', 'night', 'from', 'with', 'india', 'indian', 'the', 'and',
+    'best', 'top', 'famous', 'amazing', 'north', 'south', 'east', 'west',
   ]);
   const gallerySubjectTokens = new Set(
     `${pkg.slug} ${pkg.title} ${pkg.route}`
@@ -495,29 +551,60 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
       .split(/[^a-z0-9]+/)
       .filter((token) => token.length > 2 && !galleryStopWords.has(token)),
   );
+  const relatedPackageImages = allPackages
+    .filter((candidate) => candidate.slug !== pkg.slug && candidate.category === pkg.category)
+    .map((candidate) => {
+      const candidateSubject = `${candidate.slug} ${candidate.title} ${candidate.route}`.toLowerCase();
+      const score = Array.from(gallerySubjectTokens).filter((token) =>
+        new RegExp(`(^|[^a-z0-9])${token}([^a-z0-9]|$)`, 'i').test(candidateSubject),
+      ).length;
+      return { candidate, score };
+    })
+    .filter(({ candidate, score }) => score > 0 && Boolean(resolveLocalPackageImage(candidate.image)))
+    .sort((a, b) => b.score - a.score)
+    .map(({ candidate }) => candidate.image);
+
+  const libraryMatchedImages = localPackageImageUrls
+    .map((url) => {
+      const stem = path.basename(url).replace(/\.(avif|jpe?g|png|webp)$/i, '').replace(/^hi-/, '');
+      if (/^[0-9a-f]{8,}$/i.test(stem)) return { url, score: 0 };
+      const fileTokens = new Set(stem.split(/[^a-z0-9]+/).filter(Boolean));
+      const score = Array.from(gallerySubjectTokens).filter((token) => fileTokens.has(token)).length;
+      return { url, score };
+    })
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score)
+    .map(({ url }) => url);
+
   const relatedAdditionalImages = [
     pkg.image2,
     ...(blocks || []).filter((block) => block.type === 'image').map((block) => block.url),
+    ...relatedPackageImages,
+    ...libraryMatchedImages,
   ]
     .filter((candidate): candidate is string => Boolean(candidate))
     .filter((candidate) => {
       const localUrl = resolveLocalPackageImage(candidate);
       if (!localUrl) return false;
+      const filename = path.basename(localUrl).toLowerCase();
+      const isEditorialAsset = localUrl.includes('/curated/');
+      const isHighResolutionAsset = filename.startsWith('hi-');
+      if (!isEditorialAsset && !isHighResolutionAsset) return false;
+
       const stem = path.basename(localUrl).replace(/\.(avif|jpe?g|png|webp)$/i, '').replace(/^hi-/, '');
       if (/^[0-9a-f]{8,}$/i.test(stem)) return false;
       const candidateTokens = stem.split(/[^a-z0-9]+/).filter((token) => token.length > 2 && !galleryStopWords.has(token));
       return candidateTokens.some((token) => gallerySubjectTokens.has(token));
     });
 
-  const galleryCandidates = [
-    pkg.image,
-    ...relatedAdditionalImages,
-  ];
+  const galleryCandidates = experienceOverride?.gallery?.length
+    ? experienceOverride.gallery.map((item) => item.src)
+    : [pkg.image, ...relatedAdditionalImages];
   const galleryImages = Array.from(new Set(
     galleryCandidates
       .map((url) => resolveLocalPackageImage(url))
       .filter((url): url is string => Boolean(url)),
-  )).slice(0, 4);
+  )).slice(0, 8);
 
   if (galleryImages.length === 0) {
     const categoryFallbacks: Record<string, string> = {
@@ -535,14 +622,28 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
 
   // Aligned captions for the lightbox (from block image captions)
   const blockCaptions = new Map<string, string>();
+  for (const item of experienceOverride?.gallery || []) {
+    blockCaptions.set(item.src, item.caption);
+  }
   for (const block of blocks || []) {
     if (block.type !== 'image' || !block.caption) continue;
     const imageUrl = resolveLocalPackageImage(block.url);
     if (imageUrl) blockCaptions.set(imageUrl, cleanDisplayText(block.caption));
   }
-  const galleryCaptions: string[] = galleryImages.map((url: string) => blockCaptions.get(url) || '');
+  const galleryCaptions: string[] = galleryImages.map((url: string) => {
+    const exactCaption = blockCaptions.get(url);
+    if (exactCaption) return exactCaption;
+    const subject = path.basename(url)
+      .replace(/\.(avif|jpe?g|png|webp)$/i, '')
+      .replace(/^hi-/, '')
+      .replace(/[-_]+/g, ' ')
+      .replace(/\b\w/g, (letter) => letter.toUpperCase());
+    return `${subject} — part of the ${pkg.title} journey`;
+  });
 
-  const jsonLd: JsonLdDocument = detailsV2?.seo?.json_ld || {
+  // Always publish first-party structured data. The scraped JSON-LD contains
+  // reference-domain URLs, so reusing it would create incorrect backlinks.
+  const jsonLd: JsonLdDocument = {
     "@context": "https://schema.org",
     "@graph": [
     {
@@ -590,11 +691,10 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
   ]
   };
 
-  if (!detailsV2?.seo?.json_ld) {
-    if (details.faqs && details.faqs.length > 0) {
-      jsonLd["@graph"].push({
+  if (allFaqs.length > 0) {
+    jsonLd["@graph"].push({
         "@type": "FAQPage",
-        "mainEntity": details.faqs.map((faq) => ({
+        "mainEntity": allFaqs.map((faq) => ({
           "@type": "Question",
           "name": faq.q,
           "acceptedAnswer": {
@@ -603,26 +703,17 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
           }
         }))
       });
-    }
-    // FAQPage schema from V3 blocks (S14)
-    if (faqPairs.length > 0) {
-      jsonLd["@graph"].push({
-        "@type": "FAQPage",
-        "mainEntity": faqPairs.map((f) => ({
-          "@type": "Question",
-          "name": f.q,
-          "acceptedAnswer": { "@type": "Answer", "text": f.a },
-        })),
-      });
-    }
   }
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {/* Sticky mobile CTA (U21) — price + call + WhatsApp + Send Query always visible */}
-      <StickyMobileCTA price={displayPrice} showPrice={showPrice} />
-      <div className="min-h-screen bg-[#f3f7f6] pb-24 font-sans lg:pb-16">
+      <StickyMobileCTA price={displayPrice} showPrice={showPrice} packageName={pkg.title} />
+      <div
+        className="package-page-shell min-h-screen pb-24 font-sans lg:pb-16"
+        style={{ "--package-backdrop": galleryImages[0] ? `url(${galleryImages[0]})` : "none" } as CSSProperties}
+      >
         <nav aria-label="Breadcrumb" className="border-b border-[#dfe9e6] bg-white px-4 py-3 text-xs text-[#63746f]">
           <div className="mx-auto flex w-full max-w-[1320px] items-center gap-2 overflow-hidden">
             <Link href="/" className="shrink-0 font-semibold hover:text-[#0b4c43]">Home</Link>
@@ -634,7 +725,7 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
         </nav>
 
         <header className="mx-auto w-full max-w-[1320px] px-4 pb-10 pt-5 sm:pt-7 lg:px-6">
-          <div className="relative min-h-[500px] overflow-hidden rounded-[28px] bg-[#0b302c] shadow-[0_24px_70px_rgba(7,38,34,0.24)] sm:min-h-[560px]">
+          <div className="relative min-h-[510px] overflow-hidden rounded-[28px] bg-[#0b302c] shadow-[0_24px_70px_rgba(7,38,34,0.24)] sm:min-h-[560px]">
             {galleryImages[0] && (
               <Image
                 src={galleryImages[0]}
@@ -645,7 +736,7 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
                 className="object-cover"
               />
             )}
-            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(4,28,25,0.94)_0%,rgba(4,28,25,0.76)_43%,rgba(4,28,25,0.2)_76%),linear-gradient(0deg,rgba(4,28,25,0.72)_0%,transparent_55%)]" />
+            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(4,28,25,0.95)_0%,rgba(4,28,25,0.79)_43%,rgba(4,28,25,0.2)_78%),linear-gradient(0deg,rgba(4,28,25,0.82)_0%,transparent_62%)]" />
 
             <div className="absolute right-4 top-4 z-20 sm:right-6 sm:top-6">
               <GalleryLightbox images={galleryImages} title={pkg.title} captions={galleryCaptions} />
@@ -655,8 +746,8 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
               <Link href={`/packages?category=${encodeURIComponent(pkg.category)}`} className="mb-5 w-fit rounded-full border border-white/30 bg-white/10 px-4 py-2 text-[11px] font-extrabold uppercase tracking-[0.22em] backdrop-blur-md hover:bg-white/20">
                 {pkg.category}
               </Link>
-              <h1 className="max-w-3xl text-3xl font-black leading-[1.08] tracking-[-0.035em] sm:text-5xl lg:text-6xl">{pkg.title}</h1>
-              <p className="mt-5 max-w-2xl text-sm leading-7 text-white/82 sm:text-base">{cleanDisplayText(pkg.description)}</p>
+              <h1 className="font-display max-w-3xl text-[34px] font-bold leading-[1.02] tracking-[-0.035em] sm:text-5xl lg:text-6xl">{pkg.title}</h1>
+              <p className="mt-5 max-w-2xl text-[15px] leading-7 text-white/82 sm:text-base">{cleanDisplayText(experienceOverride?.heroSummary || pkg.description)}</p>
               <div className="mt-7 flex flex-wrap gap-3">
                 {hasDuration && (
                   <span className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/25 bg-black/20 px-4 text-sm font-semibold backdrop-blur-sm">
@@ -669,8 +760,8 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
                   </span>
                 )}
               </div>
-              <a href="#enquiry-form" className="mt-8 inline-flex min-h-12 w-fit items-center gap-2 rounded-full bg-[#ef7a2f] px-6 text-sm font-extrabold text-white shadow-lg transition hover:bg-[#d96520] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white">
-                Personalise this trip <ArrowRight className="h-4 w-4" />
+              <a href="#enquiry-form" className="mt-8 inline-flex min-h-13 w-fit items-center gap-2 rounded-full bg-[#e96822] px-6 text-sm font-extrabold text-white shadow-[0_12px_28px_rgba(0,0,0,0.2)] transition hover:-translate-y-0.5 hover:bg-[#ce5515] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white">
+                Build my version of this trip <ArrowRight className="h-4 w-4" />
               </a>
             </div>
           </div>
@@ -702,14 +793,14 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
             <section id="enquiry-form" className="scroll-mt-24 overflow-hidden rounded-[24px] bg-[#0b302c] shadow-[0_22px_60px_rgba(7,38,34,0.2)]">
               <div className="px-6 pb-5 pt-8 text-white sm:px-9 sm:pt-10">
                 <p className="text-[11px] font-extrabold uppercase tracking-[0.24em] text-[#f0a164]">Make it yours</p>
-                <h2 className="mt-2 text-2xl font-extrabold sm:text-3xl">Tell us how you want to travel</h2>
+                <h2 className="font-display mt-2 text-[28px] font-bold leading-tight sm:text-4xl">Tell us how you want to travel</h2>
                 <p className="mt-3 max-w-2xl text-sm leading-6 text-white/70">Share your dates, group size, and preferences. Your message opens directly in WhatsApp for a real conversation with the travel team.</p>
               </div>
               <div className="bg-white p-2 sm:p-4"><EnquiryForm pkgName={pkg.title} embedded /></div>
             </section>
           </div>
 
-          <aside className="lg:col-span-1">
+          <aside className="hidden lg:col-span-1 lg:block">
             <div className="sticky top-5 overflow-hidden rounded-[24px] border border-[#d8e5e1] bg-white shadow-[0_18px_55px_rgba(11,48,44,0.1)]">
               <div className="bg-[#0b302c] p-6 text-white">
                 <p className="text-[10px] font-extrabold uppercase tracking-[0.22em] text-[#f0a164]">Plan this journey</p>
@@ -736,7 +827,7 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
                   <a href="#enquiry-form" className="flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#ef7a2f] px-4 text-sm font-extrabold text-white transition hover:bg-[#d96520]">
                     Get a tailored quote <ArrowRight className="h-4 w-4" />
                   </a>
-                  <a href={siteConfig.social.whatsapp} target="_blank" rel="noopener noreferrer" className="flex min-h-12 w-full items-center justify-center gap-2 rounded-xl border border-[#b9d7ce] bg-[#eef7f3] px-4 text-sm font-extrabold text-[#126348] transition hover:bg-[#e2f1eb]">
+                  <a href={packageWhatsappUrl} target="_blank" rel="noopener noreferrer" className="flex min-h-12 w-full items-center justify-center gap-2 rounded-xl border border-[#b9d7ce] bg-[#eef7f3] px-4 text-sm font-extrabold text-[#126348] transition hover:bg-[#e2f1eb]">
                     <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
                   </a>
                   <a href={`tel:${siteConfig.phoneRaw}`} className="flex min-h-11 w-full items-center justify-center gap-2 text-sm font-bold text-[#304b45] hover:text-[#0b4c43]">

@@ -29,9 +29,10 @@ const NEXT_PATH = path.join(projectRoot, ".next");
 const forceBuild = process.argv.includes("--force");
 
 function run(cmd, args, env) {
-  const res = spawnSync(cmd, args, {
+  const executable = process.platform === "win32" && cmd === "npm" ? "npm.cmd" : cmd;
+  const res = spawnSync(executable, args, {
     stdio: "inherit",
-    shell: process.platform === "win32",
+    shell: false,
     env: env ? { ...process.env, ...env } : process.env,
   });
   if (res.status !== 0) {

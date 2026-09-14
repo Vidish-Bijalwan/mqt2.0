@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { X, ChevronDown, Check } from 'lucide-react';
+import { X, ChevronDown } from 'lucide-react';
 import { destinations, categories, travelerTypes } from '@/data/reviews';
 
 interface FilterValues {
@@ -28,10 +28,6 @@ export default function MobileFilterSheet({
   onApply,
 }: MobileFilterSheetProps) {
   const [localFilters, setLocalFilters] = useState(filters);
-
-  useEffect(() => {
-    setLocalFilters(filters);
-  }, [filters]);
 
   useEffect(() => {
     if (isOpen) {

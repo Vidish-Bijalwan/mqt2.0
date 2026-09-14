@@ -22,6 +22,7 @@ const nextConfig: NextConfig = {
     // Locally in dev, skip optimization for faster iteration
     unoptimized: process.env.NODE_ENV === "development",
     formats: ["image/avif", "image/webp"],
+    qualities: [60, 65, 68, 75],
     minimumCacheTTL: 60 * 60 * 24 * 30, // 30 days
   },
   typescript: {

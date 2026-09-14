@@ -7,7 +7,7 @@ import { experiences } from "@/data/experiencesData";
 import ExperienceExplorer from "@/components/home/ExperienceExplorer";
 
 export const metadata = {
-  title: "Experiences in India | Adventure, Spiritual, Luxury & More | My Quick Trippers",
+  title: "Experiences in India | Adventure, Spiritual, Luxury & More",
   description:
     "Discover unforgettable journeys across India — adventure sports, spiritual escapes, luxury travel, wellness retreats, wildlife safaris, cruises, festivals and more. Explore all experience categories.",
   alternates: {

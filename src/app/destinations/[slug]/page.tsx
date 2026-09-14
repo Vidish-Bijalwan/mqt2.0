@@ -12,8 +12,28 @@ import DestinationAtAGlance from "@/components/ui/DestinationAtAGlance";
 import EnquiryForm from "@/components/forms/EnquiryForm";
 import Image from "next/image";
 import { getPriceInfo, parseINR } from "@/utils/price";
+import type { ContentDocument } from "@/types/content";
 
-const destinationsData = destinationsDataRaw as Record<string, any>;
+interface LegacyDestinationDocument {
+  title: string;
+  image?: string;
+  content?: string[];
+}
+
+const destinationsData = destinationsDataRaw as unknown as Record<string, LegacyDestinationDocument>;
+
+function getDestinationData(slug: string): ContentDocument | undefined {
+  const data = destinationsData[slug];
+  if (!data) return undefined;
+
+  return {
+    ...data,
+    content: data.content?.map((html) => ({
+      type: "p",
+      text: html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim(),
+    })),
+  };
+}
 
 const destinationKeywords: Record<string, string[]> = {
   "uttarakhand": ["haridwar", "rishikesh", "nainital", "mussoorie", "corbett", "auli", "kedarnath", "badrinath", "gangotri", "yamunotri", "dehradun", "joshimath", "almora", "ranikhet"],
@@ -39,10 +59,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const resolvedParams = await params;
   const slug = resolvedParams.slug.toLowerCase();
   const dest = destinations.find(d => d.slug.toLowerCase() === slug);
-  const destData = destinationsData[slug];
+  const destData = getDestinationData(slug);
   
   const title = dest ? `${dest.name} Tour Packages` : `${slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())} Travel Guide`;
-  const description = destData?.content?.filter((c: any) => c.type === 'p').map((c: any) => c.text).join(' ').substring(0, 160) || `Explore the best ${title} with My Quick Trippers.`;
+  const description = destData?.content?.filter((block) => block.type === 'p').map((block) => block.text || '').join(' ').substring(0, 160) || `Explore the best ${title} with My Quick Trippers.`;
 
   return { 
     title,
@@ -65,7 +85,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
   const slug = resolvedParams.slug.toLowerCase();
   
   const dest = destinations.find(d => d.slug.toLowerCase() === slug);
-  const destData = destinationsData[slug];
+  const destData = getDestinationData(slug);
   const titleName = dest ? dest.name : (destData?.title || slug.replace(/-/g, ' '));
   
   // Find matching packages
@@ -130,7 +150,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
     "@context": "https://schema.org",
     "@type": "TouristDestination",
     "name": titleName,
-    "description": destData?.content?.filter((c: any) => c.type === 'p').map((c: any) => c.text).join(' ').substring(0, 200) || `Explore ${titleName}`,
+    "description": destData?.content?.filter((block) => block.type === 'p').map((block) => block.text || '').join(' ').substring(0, 200) || `Explore ${titleName}`,
     "url": `${siteConfig.domain}/destinations/${slug}`,
     "touristType": [
       "Leisure",

@@ -17,6 +17,12 @@ export interface PackageCardProps {
   destination?: string; // Ported from InternationalPackageCard
   rating?: number; // Ported from InternationalPackageCard
 }
+
+interface PackageCardComponentProps {
+  pkg: PackageCardProps;
+  href?: string;
+  variantCount?: number;
+}
 /* Amenity icons — copied from reference site (64px PNGs, rendered at 24px) */
 const AMENITIES = [
   { label: "Hotel Stay", icon: "/images/nit/bed.png" },
@@ -25,7 +31,8 @@ const AMENITIES = [
   { label: "Sightseeing", icon: "/images/nit/sightseeing.png" },
 ];
 
-export default function PackageCard({ pkg }: { pkg: PackageCardProps }) {
+export default function PackageCard({ pkg, href, variantCount }: PackageCardComponentProps) {
+  const cardHref = href || `/packages/${pkg.slug}`;
   // Extract number of days from duration string (e.g. "5 Nights / 6 Days" -> "6 Days")
   const durationMatch = pkg.duration.match(/(\d+)\s*Days/i);
   const days = durationMatch ? durationMatch[1] + " Days" : pkg.duration.split('/')[0] || pkg.duration;
@@ -40,24 +47,30 @@ export default function PackageCard({ pkg }: { pkg: PackageCardProps }) {
     <div className="nit-pcard">
       {/* Whole-card link: covers the card so clicking anywhere opens the tour.
           The image/title/CTA links sit above it (z-index) and stay clickable. */}
-      <Link href={`/packages/${pkg.slug}`} className="nit-pcard-stretch" tabIndex={-1} aria-hidden="true" />
+      <Link href={cardHref} className="nit-pcard-stretch" tabIndex={-1} aria-hidden="true" />
 
       {/* ── Image (5px inset, rounded, scale-on-hover like reference) ── */}
-      <Link href={`/packages/${pkg.slug}`} className="nit-pcard-img" tabIndex={-1}>
+      <Link href={cardHref} className="nit-pcard-img" tabIndex={-1}>
         <Image
           src={pkg.image}
           alt={pkg.title}
           fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1360px) 50vw, 33vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1360px) 33vw, 20vw"
+          quality={68}
+          loading="lazy"
+          decoding="async"
           className="nit-pcard-img-el"
-          style={{ objectFit: "cover", filter: "saturate(1.15) contrast(1.08)" }}
+          style={{ objectFit: "cover" }}
         />
+        {variantCount && variantCount > 1 ? (
+          <span className="nit-pcard-variants">{variantCount} trip options</span>
+        ) : null}
       </Link>
 
       {/* ── Content: title, duration, route, amenities ── */}
       <div className="nit-pcard-cant">
         <h3 className="nit-pcard-title">
-          <Link href={`/packages/${pkg.slug}`}>{pkg.title}</Link>
+          <Link href={cardHref}>{pkg.title}</Link>
         </h3>
 
         {pkg.duration && (
@@ -111,11 +124,11 @@ export default function PackageCard({ pkg }: { pkg: PackageCardProps }) {
         <span className="nit-prCap">Starting price per person</span>
 
         <div className="nit-prcEnq">
-          <Link href={`/packages/${pkg.slug}#enquiry-form`} title="Get a Best Deal Quick Enquiry">
+          <Link href={variantCount && variantCount > 1 ? cardHref : `${cardHref}#enquiry-form`} title="Get a Best Deal Quick Enquiry">
             Quick enquiry
           </Link>
-          <Link href={`/packages/${pkg.slug}`} title={pkg.title}>
-            View Tour
+          <Link href={cardHref} title={pkg.title}>
+            {variantCount && variantCount > 1 ? "View options" : "View Tour"}
           </Link>
         </div>
       </div>

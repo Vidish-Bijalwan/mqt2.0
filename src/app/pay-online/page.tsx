@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Pay Online - My Quick Trippers',
+  title: 'Pay Online',
   description: 'Secure online payment portal for My Quick Trippers tour packages.',
 };
 

@@ -42,6 +42,14 @@ export default function Navbar() {
     }, 120);
   }, []);
 
+  const handleMenuStayOpen = useCallback(() => {
+    if (hoverTimeoutRef.current) {
+      clearTimeout(hoverTimeoutRef.current);
+      hoverTimeoutRef.current = null;
+    }
+    calculateTop();
+  }, [calculateTop]);
+
   return (
     <nav className="bg-white w-full relative z-[1000]">
       {/* ── 1. Top Bar ── */}
@@ -166,7 +174,7 @@ export default function Navbar() {
           <div
             className="hidden lg:block"
             style={{ position: 'fixed', top: megaMenuTop, left: 0, width: '100vw', zIndex: 9999 }}
-            onMouseEnter={() => handleMenuEnter(hoveredMenu)}
+            onMouseEnter={handleMenuStayOpen}
             onMouseLeave={handleMenuLeave}
           >
             <div className="h-[4px] bg-gradient-to-r from-brand-forest via-brand-river to-brand-forest" />
@@ -209,7 +217,7 @@ export default function Navbar() {
           <div
             className="hidden lg:block"
             style={{ position: 'fixed', top: megaMenuTop, left: 0, width: '100vw', zIndex: 9999 }}
-            onMouseEnter={() => handleMenuEnter(hoveredMenu)}
+            onMouseEnter={handleMenuStayOpen}
             onMouseLeave={handleMenuLeave}
           >
             <div className="h-[3px] bg-brand-river" />
@@ -238,7 +246,7 @@ export default function Navbar() {
           <div
             className="hidden lg:block"
             style={{ position: 'fixed', top: megaMenuTop, left: 0, width: '100vw', zIndex: 9999 }}
-            onMouseEnter={() => handleMenuEnter(hoveredMenu)}
+            onMouseEnter={handleMenuStayOpen}
             onMouseLeave={handleMenuLeave}
           >
             <div className="h-[3px] bg-brand-river" />

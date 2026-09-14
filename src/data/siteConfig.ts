@@ -32,9 +32,8 @@ export const siteConfig = {
     whatsapp: "https://wa.me/918171158569",
   },
   offices: {
-    head: "New Delhi, India",
-    branches: ["Delhi", "Hyderabad", "Pune", "Kashmir", "Bengaluru", "Dehradun"],
-    overseas: ["USA", "Sri Lanka", "Nepal"],
+    head: "Delhi, India",
+    branches: ["Delhi", "Bangalore", "Chennai", "Dehradun", "Kolkata"],
   },
   stats: {
     yearsExperience: 10,

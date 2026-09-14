@@ -5,10 +5,26 @@ import nextTs from "eslint-config-next/typescript";
 const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
+  {
+    files: ["scripts/**/*.{js,mjs,ts}"],
+    rules: {
+      "@typescript-eslint/no-require-imports": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+    },
+  },
+  {
+    files: ["scripts/transform-scraped-packages.ts"],
+    rules: {
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-require-imports": "off",
+    },
+  },
   // Override default ignores of eslint-config-next.
   globalIgnores([
     // Default ignores of eslint-config-next:
     ".next/**",
+    ".next-production/**",
+    "artifacts/**",
     "out/**",
     "build/**",
     "next-env.d.ts",

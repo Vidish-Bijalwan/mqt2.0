@@ -1,7 +1,6 @@
 "use client";
 
-import React from 'react';
-import Link from 'next/link';
+import { siteConfig } from '@/data/siteConfig';
 
 interface EmptyStateProps {
   titleName?: string;
@@ -21,7 +20,7 @@ export default function EmptyState({ titleName = 'these' }: EmptyStateProps) {
             No packages match your filters
           </h2>
           <p className="text-gray-600 mb-6">
-            We couldn't find any {titleName} itineraries matching your exact criteria. 
+            We couldn&apos;t find any {titleName} itineraries matching your exact criteria. 
             Try adjusting your budget or duration, or contact us for a custom itinerary.
           </p>
         </div>
@@ -48,29 +47,11 @@ export default function EmptyState({ titleName = 'these' }: EmptyStateProps) {
             Or speak to our travel experts directly:
           </p>
           <a 
-            href="tel:+91-8171158569" 
+            href={`tel:${siteConfig.phoneRaw}`}
             className="text-xl font-bold text-legacy-orange hover:text-orange-700 block"
           >
-            📱 +91-8171158569
+            📱 {siteConfig.phone}
           </a>
-          <p className="text-xs text-gray-500 mt-2">
-             We respond within 2 hours
-          </p>
-        </div>
-        
-        <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm text-gray-500">
-          <span className="flex items-center">
-            <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-            Govt. Approved
-          </span>
-          <span className="flex items-center">
-            <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-            ISO Certified
-          </span>
-          <span className="flex items-center">
-            <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-            5000+ Happy Travelers
-          </span>
         </div>
       </div>
     </div>

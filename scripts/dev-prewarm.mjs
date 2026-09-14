@@ -6,7 +6,6 @@ import { setTimeout as sleep } from "node:timers/promises";
 import path from "node:path";
 import "./health-check.mjs"; // exits with repair instructions if the junction setup has drifted
 import "./ensure-build-link.mjs";
-import { ogRepairHint } from "./health-check.mjs";
 
 const args = process.argv.slice(2);
 
@@ -68,7 +67,6 @@ async function warmRoutes(p) {
     "/destinations/india-tours",
     "/packages/3-days-nepal-tour-package",
     "/blog/adi-kailash-yatra",
-    "/api/og/10-days-assam-meghalaya-arunachal-pradesh-tour-packages",
   ];
   await sleep(500); // let the HTTP server accept connections
   for (const r of routes) {
@@ -79,16 +77,10 @@ async function warmRoutes(p) {
           signal: AbortSignal.timeout(120000),
         });
         console.log(`prewarm ${res.status} ${Date.now() - t0}ms ${r}`);
-        if (r.startsWith("/api/og") && res.status !== 200) {
-          console.error("\n❌ " + ogRepairHint() + "\n");
-        }
         break;
       } catch (e) {
         if (attempt === 3) {
           console.log(`prewarm failed ${r}: ${e.message}`);
-          if (r.startsWith("/api/og")) {
-            console.error("\n❌ " + ogRepairHint() + "\n");
-          }
         } else {
           console.log(`prewarm retry ${r} (${attempt}): ${e.message}`);
           await sleep(1500);

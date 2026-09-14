@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { X, Star, Upload, CheckCircle, ArrowLeft, ArrowRight, Camera } from 'lucide-react';
+import { X, Star, CheckCircle, ArrowLeft, ArrowRight, Camera } from 'lucide-react';
 
 interface WriteReviewModalProps {
   isOpen: boolean;
@@ -24,9 +24,6 @@ export default function WriteReviewModal({ isOpen, onClose }: WriteReviewModalPr
   const [content, setContent] = useState('');
   const [liked, setLiked] = useState('');
   const [improved, setImproved] = useState('');
-  const [travelerType, setTravelerType] = useState('');
-  const [travelers, setTravelers] = useState('');
-  const [travelMonth, setTravelMonth] = useState('');
 
   if (!isOpen) return null;
 

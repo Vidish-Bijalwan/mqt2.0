@@ -1,6 +1,5 @@
 import { type Package } from "@/data/allPackages";
-import { getPublicPackages } from "@/utils/packageCatalog";
-import { siteConfig } from "@/data/siteConfig";
+import { getPublicPackages, isInternationalPackage } from "@/utils/packageCatalog";
 import PackageCard from "@/components/ui/PackageCard";
 import SectionHeader from "@/components/ui/SectionHeader";
 import Image from "next/image";
@@ -9,89 +8,58 @@ import PosterMarquee from "@/components/ui/PosterMarquee";
 import ThemeFilter from "@/components/home/ThemeFilter";
 import ExperienceExplorer from "@/components/home/ExperienceExplorer";
 import { experiencesWithCounts } from "@/utils/experienceCounts";
-import fs from "fs";
-import path from "path";
+import HeroJourney from "@/components/home/HeroJourney";
+import { groupPackagesByDestination } from "@/utils/packageGroups";
 
 /* ─── Smart package filtering ───
    Only show packages on the homepage that have:
-   1. A valid image that actually exists on disk
+   1. A valid image path from the verified package catalog
    This prevents broken/empty cards from appearing. */
 
 function getValidPackages() {
-  return getPublicPackages().filter((p) => {
-    // Must have a non-empty image path
-    if (!p.image || p.image.trim() === '') return false;
-
-    // Check image exists on disk
-    const filename = path.basename(p.image);
-    const diskPath = path.join(process.cwd(), 'public', p.image.replace(/^\//, ''));
-    try {
-      return fs.existsSync(diskPath);
-    } catch {
-      return false;
-    }
+  const usedImages = new Set<string>();
+  return getPublicPackages().filter((pkg) => {
+    if (!pkg.image?.trim() || usedImages.has(pkg.image)) return false;
+    usedImages.add(pkg.image);
+    return true;
   });
 }
 const validPackages = getValidPackages();
 const publicPackageCount = getPublicPackages().length;
 
 /* ─── Category sections for homepage ─── */
-const TRENDING_PACKAGES = validPackages.slice(0, 30);
+const TRENDING_DESTINATIONS = ["Kashmir", "Kerala", "Rajasthan", "Goa", "Andaman", "Char Dham", "Manali", "Bali", "Nepal", "Dubai"];
+const allDestinationGroups = groupPackagesByDestination(validPackages);
+const TRENDING_PACKAGES = TRENDING_DESTINATIONS.flatMap(
+  (destination) => allDestinationGroups.find((group) => group.label === destination)?.packages || [],
+);
 
-const PILGRIMAGE_PACKAGES = validPackages
-  .filter(p => p.category === "Pilgrimage")
-  .slice(0, 10);
+const PILGRIMAGE_PACKAGES = validPackages.filter(p => p.category === "Pilgrimage");
 
-const NORTH_INDIA_PACKAGES = validPackages
-  .filter(p => p.category === "North India")
-  .slice(0, 10);
+const NORTH_INDIA_PACKAGES = validPackages.filter(p => p.category === "North India");
 
-const SOUTH_INDIA_PACKAGES = validPackages
-  .filter(p => p.category === "South India")
-  .slice(0, 10);
+const SOUTH_INDIA_PACKAGES = validPackages.filter(p => p.category === "South India");
 
-const INTERNATIONAL_PACKAGES = validPackages
-  .filter(p => p.category === "International")
-  .slice(0, 10);
+const INTERNATIONAL_PACKAGES = validPackages.filter(isInternationalPackage);
 
-const WEST_INDIA_PACKAGES = validPackages
-  .filter(p => p.category === "West India")
-  .slice(0, 10);
+const WEST_INDIA_PACKAGES = validPackages.filter(p => p.category === "West India");
 
-const HELICOPTER_PACKAGES = validPackages
-  .filter(p => p.category === "Helicopter")
-  .slice(0, 10);
-
-/* Curated international flagships — packages with real durations, prices and on-disk images. */
-const INTL_CURATED = [
-  { slug: "bali-sightseeing-tour", destination: "Bali, Indonesia", rating: 4.8 },
-  { slug: "dubai-honeymoon-tour", destination: "Dubai, UAE", rating: 4.9 },
-  { slug: "7-days-nepal-tour-packages", destination: "Nepal", rating: 4.7 },
-  { slug: "sri-lanka-group-tour-packages", destination: "Sri Lanka", rating: 4.8 },
-];
-const INTL_CARDS = INTL_CURATED
-  .map((c) => {
-    const pkg = getPublicPackages().find((p) => p.slug === c.slug);
-    if (!pkg) return null;
-    return { ...pkg, destination: c.destination, rating: c.rating };
-  })
-  .filter(Boolean)
-  .slice(0, 4);
+const HELICOPTER_PACKAGES = validPackages.filter(p => p.category === "Helicopter");
 
 const DESTINATIONS = [
-  { name: "Uttarakhand", sub: "Land of the Gods", href: "/destinations/uttarakhand", img: "/images/blog/glaciers-in-uttarakhand.jpg" },
-  { name: "Uttar Pradesh", sub: "Heritage of India", href: "/destinations/uttar-pradesh", img: "/images/blog/agra.jpg" },
-  { name: "Rajasthan", sub: "The Royal State", href: "/destinations/rajasthan", img: "/images/blog/5-star-hotels-in-jaipur.jpg" },
-  { name: "Gujarat", sub: "Vibrant Culture, Timeless Charm", href: "/destinations/gujarat", img: "/images/blog/stepwells-in-gujarat.jpg" },
-  { name: "Kashmir", sub: "Paradise on Earth", href: "/destinations/kashmir", img: "/images/blog/kashmir-places-to-visit.jpg" },
-  { name: "Kerala", sub: "God's Own Country", href: "/destinations/kerala", img: "/images/blog/waterfalls-in-kerala.webp" },
-  { name: "Tamil Nadu", sub: "Cultural Heart of South India", href: "/destinations/tamil-nadu", img: "/images/blog/places-to-visit-in-chennai.jpg" },
-  { name: "Karnataka", sub: "Silicon Valley of India", href: "/destinations/karnataka", img: "/images/blog/tourist-places-in-bangalore.jpg" },
-  { name: "Odisha", sub: "India's Best-Kept Secret", href: "/destinations/orissa", img: "/images/blog/konark-sun-temple.jpeg" },
-  { name: "Madhya Pradesh", sub: "The Heart of Incredible India", href: "/destinations/madhya-pradesh", img: "/images/packages/places-to-visit-in-madhya-pradesh.webp" },
-  { name: "Sikkim", sub: "Nature's Paradise", href: "/destinations/sikkim", img: "/images/blog/festivals-in-sikkim.jpg" },
-  { name: "Himachal Pradesh", sub: "Abode of the Himalayas", href: "/destinations/himachal-pradesh", img: "/images/blog/adventure-sports-in-manali-shimla.webp" },
-  { name: "Maharashtra", sub: "Gateway to the West", href: "/destinations/maharashtra", img: "/images/blog/hotels-in-matheran.webp" },
+  { name: "Uttarakhand", sub: "Land of the Gods", href: "/destinations/uttarakhand", img: "/images/packages/hi-uttarakhand.webp" },
+  { name: "Uttar Pradesh", sub: "Heritage of India", href: "/destinations/uttar-pradesh", img: "/images/packages/taj-mahal.jpg" },
+  { name: "Rajasthan", sub: "The Royal State", href: "/destinations/rajasthan", img: "/images/packages/rajasthan.jpg" },
+  { name: "Gujarat", sub: "Vibrant culture", href: "/destinations/gujarat", img: "/images/packages/gujarat.jpg" },
+  { name: "Kashmir", sub: "Paradise on Earth", href: "/destinations/kashmir", img: "/images/packages/kashmir.jpg" },
+  { name: "Kerala", sub: "God's Own Country", href: "/destinations/kerala", img: "/images/packages/kerala.jpg" },
+  { name: "Tamil Nadu", sub: "Temple country", href: "/destinations/tamil-nadu", img: "/images/packages/south-india.jpg" },
+  { name: "Karnataka", sub: "Heritage and nature", href: "/destinations/karnataka", img: "/images/packages/karnataka.jpg" },
+  { name: "Odisha", sub: "Coast and culture", href: "/destinations/orissa", img: "/images/packages/odisha.jpg" },
+  { name: "Madhya Pradesh", sub: "The heart of India", href: "/destinations/madhya-pradesh", img: "/images/packages/madhya-pradesh.jpg" },
+  { name: "Sikkim", sub: "Nature's paradise", href: "/destinations/sikkim", img: "/images/packages/sikkim.jpg" },
+  { name: "Himachal Pradesh", sub: "Himalayan escapes", href: "/destinations/himachal-pradesh", img: "/images/packages/himachal-pradesh.jpg" },
+  { name: "Maharashtra", sub: "Coast, caves and cities", href: "/destinations/maharashtra", img: "/images/packages/maharashtra.jpg" },
   { name: "Andaman", sub: "Islands of Adventure", href: "/destinations/andaman", img: "/images/packages/andaman.webp" },
 ];
 
@@ -103,20 +71,28 @@ function PackageSection({
   subtitle,
   packages,
   marginTop,
+  maxGroups = 5,
 }: {
   title: string;
   subtitle?: string;
   packages: Package[];
   marginTop?: boolean;
+  maxGroups?: number;
 }) {
   if (packages.length === 0) return null;
+  const groups = groupPackagesByDestination(packages).slice(0, maxGroups);
   return (
-    <section className="bg-white">
+    <section className="home-deferred-section bg-[#fbfaf6]/96">
       <div className="nit-page">
         <SectionHeader title={title} subtitle={subtitle} marginTop={marginTop} />
         <div className="nit-grid">
-          {packages.map((pkg) => (
-            <PackageCard key={pkg.slug} pkg={pkg} />
+          {groups.map((group) => (
+            <PackageCard
+              key={group.key}
+              pkg={{ ...group.representative, title: group.label }}
+              href={group.packages.length > 1 ? `/packages?destination=${encodeURIComponent(group.label)}` : undefined}
+              variantCount={group.packages.length}
+            />
           ))}
         </div>
       </div>
@@ -126,37 +102,51 @@ function PackageSection({
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-white">
+    <div className="flex min-h-screen flex-col bg-transparent">
       
-      {/* 1. Hero Banner with Poster Marquee */}
+      {/* 1. Inspired travel hero followed by the lightweight poster rail */}
       <section className="w-full bg-brand-navy relative">
-         <div className="pt-7 sm:pt-10 pb-1 sm:pb-2 text-center px-4">
-           <div className="inline-flex max-w-full items-center gap-2 rounded-full bg-white/[0.07] border border-white/15 backdrop-blur px-3 sm:px-4 py-1.5 mb-3 sm:mb-4">
-             <Image
-               src="/images/mqt-logo-256.webp"
-               alt="My Quick Trippers logo"
-               width={22}
-               height={22}
-               className="w-[22px] h-[22px] rounded-full object-cover border border-white/30"
-             />
-             <span className="text-[9px] sm:text-[11px] md:text-xs font-bold text-orange-300 uppercase tracking-[0.12em] sm:tracking-[0.18em]">
-               My Quick Trippers · Govt. Approved Travel Agency
-             </span>
+         <div className="home-inspired-hero">
+           <div className="home-inspired-hero__copy">
+             <div className="home-inspired-hero__eyebrow">
+               <Image src="/images/mqt-logo-256.webp" alt="" width={30} height={30} className="rounded-full" />
+               <span>Real places · Local experiences · Thoughtful journeys</span>
+             </div>
+             <h1>Explore India with MQT</h1>
+             <p>Travel deeper with handpicked routes, trusted local experts and journeys made around you.</p>
            </div>
-           <h1 className="text-[2rem] leading-[1.08] sm:text-3xl md:text-5xl font-extrabold text-white mb-2 sm:mb-3 drop-shadow-lg">Discover the Magic of India</h1>
-           <p className="text-sm sm:text-base md:text-lg text-gray-300 font-medium drop-shadow-md">Explore authentic experiences with our expert guides</p>
+           <div className="home-inspired-hero__visual"><HeroJourney /></div>
+           <form action="/packages" method="get" className="home-inspired-search">
+             <label className="sr-only" htmlFor="home-destination">Where do you want to go?</label>
+             <input id="home-destination" name="q" placeholder="Where do you want to go?" />
+             <label className="sr-only" htmlFor="home-travelers">Travelers</label>
+             <select id="home-travelers" name="travelers" defaultValue="2">
+               <option value="1">1 traveler</option>
+               <option value="2">2 travelers</option>
+               <option value="3">3 travelers</option>
+               <option value="4">4+ travelers</option>
+             </select>
+             <button type="submit">Search packages</button>
+           </form>
          </div>
-         <PosterMarquee />
+         <div className="border-t border-white/10 bg-brand-navy py-5 sm:py-7">
+           <div className="mb-4 text-center px-4">
+             <p className="text-[10px] sm:text-xs font-bold text-orange-300 uppercase tracking-[0.16em]">Featured destinations</p>
+             <p className="mt-1 text-sm sm:text-base text-gray-300">Find your next unforgettable journey</p>
+           </div>
+           <PosterMarquee />
+         </div>
       </section>
 
       {/* 2. Top Trending Tour Packages — 30 packages, 5-col grid */}
       <PackageSection
         title="Top Trending Tour Packages"
         packages={TRENDING_PACKAGES}
+        maxGroups={10}
       />
 
       {/* 3. Top Holiday Destinations In India — image tiles, 7-up */}
-      <section className="bg-white">
+      <section className="home-deferred-section bg-[#fbfaf6]/96">
         <div className="nit-page">
           <SectionHeader title="Top Holiday Destinations In India" marginTop />
           <div className="nit-inxBt">
@@ -167,8 +157,12 @@ export default function Home() {
                   alt={dest.name}
                   fill
                   sizes="(max-width: 700px) 46vw, 13vw"
+                  quality={65}
+                  loading="lazy"
+                  decoding="async"
                   className="object-cover"
                 />
+                <span className="nit-cdxBt-copy"><strong>{dest.name}</strong><small>{dest.sub}</small></span>
               </Link>
             ))}
           </div>
@@ -191,33 +185,10 @@ export default function Home() {
         marginTop
       />
 
-      {/* 6. Book International Tour Packages From India */}
-      {INTL_CARDS.length > 0 && (
-        <section className="bg-white">
-          <div className="nit-page">
-            <SectionHeader
-              title="Book International Tour Packages From India"
-              marginTop
-              subtitle={
-                <>
-                  Handpicked journeys to the world&apos;s most-loved destinations — curated itineraries, expert
-                  guides and seamless planning from India.
-                </>
-              }
-            />
-            <div className="nit-grid">
-              {INTL_CARDS.map((pkg: any) => (
-                <PackageCard key={pkg.slug} pkg={pkg} />
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* 7. International Tours grid — 10 packages */}
+      {/* 6. International destinations grouped into trip options */}
       <PackageSection
-        title="International Tour Packages"
-        subtitle="Explore the world with curated international tour packages"
+        title="International Journeys"
+        subtitle="Choose a destination, then compare every available itinerary in one place"
         packages={INTERNATIONAL_PACKAGES}
         marginTop
       />
@@ -249,7 +220,7 @@ export default function Home() {
       )}
 
       {/* 11. Choose Your Style Of Themes Holiday */}
-      <section className="bg-white">
+        <section className="home-deferred-section bg-[#fbfaf6]/96">
         <div className="nit-page">
           <SectionHeader
             title="Choose Your Style Of Themes Holiday"
@@ -268,7 +239,7 @@ export default function Home() {
       </section>
 
       {/* 12. Experience The Best Of India — interactive discovery */}
-      <section className="bg-white">
+        <section className="home-deferred-section bg-[#fbfaf6]/96">
         <div className="nit-page">
           <SectionHeader
             title="Experience The Best Of India"
@@ -302,7 +273,7 @@ export default function Home() {
       </section>
 
       {/* View All CTA */}
-      <section className="py-10 bg-white">
+        <section className="home-deferred-section bg-[#fbfaf6]/96 py-10">
         <div className="text-center">
           <Link href="/packages" className="inline-block bg-brand-orange hover:bg-brand-orange-dark text-white font-bold px-10 py-4 rounded-sm transition-colors text-base">
             View All {publicPackageCount}+ Packages

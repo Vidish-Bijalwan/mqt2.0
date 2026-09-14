@@ -1,33 +1,23 @@
 import type { Metadata } from 'next';
 import { Mail, Phone, MapPin, Clock, MessageCircle } from 'lucide-react';
 import EnquiryForm from '@/components/forms/EnquiryForm';
+import { siteConfig } from '@/data/siteConfig';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | My Quick Trippers',
+  title: 'Contact Us',
   description: 'Get in touch with My Quick Trippers for tour packages, bookings, and travel queries. Call us at +91-8171158569 or visit our Delhi office.',
 };
 
 const offices = [
   {
     title: 'Head Office',
-    address: 'New Delhi, India',
-    phone: '+91-8171158569',
-    email: 'info@myquicktrippers.com',
+    address: siteConfig.offices.head,
     hours: 'Mon - Sat: 10:00 AM - 7:00 PM',
   },
   {
-    title: 'Branch Offices',
-    address: 'Delhi | Ujjain | Hyderabad | Pune | Kashmir | Bengaluru | Dehradun',
-    phone: '+91-8171158569',
-    email: 'info@myquicktrippers.com',
+    title: 'Office Locations',
+    address: siteConfig.offices.branches.join(' | '),
     hours: 'Mon - Sat: 10:00 AM - 6:00 PM',
-  },
-  {
-    title: 'Overseas Offices',
-    address: 'USA | Sri Lanka | Nepal',
-    phone: '+1-XXX-XXX-XXXX',
-    email: 'info@myquicktrippers.com',
-    hours: 'Mon - Fri: 9:00 AM - 5:00 PM (Local Time)',
   },
 ];
 
@@ -63,7 +53,7 @@ export default function ContactUsPage() {
             {/* Quick Contact Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <a
-                href="tel:8171158569"
+                href={`tel:${siteConfig.phoneRaw}`}
                 className="flex items-center gap-4 bg-white rounded-xl shadow-sm border border-gray-100 p-5 hover:shadow-md transition-shadow"
               >
                 <div className="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center shrink-0">
@@ -71,12 +61,12 @@ export default function ContactUsPage() {
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900">Call Us</p>
-                  <p className="text-sm text-gray-600">+91-8171158569</p>
+                  <p className="text-sm text-gray-600">{siteConfig.phone}</p>
                 </div>
               </a>
 
               <a
-                href="mailto:info@myquicktrippers.com"
+                href={`mailto:${siteConfig.email}`}
                 className="flex items-center gap-4 bg-white rounded-xl shadow-sm border border-gray-100 p-5 hover:shadow-md transition-shadow"
               >
                 <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
@@ -84,12 +74,12 @@ export default function ContactUsPage() {
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900">Email Us</p>
-                  <p className="text-sm text-gray-600">info@myquicktrippers.com</p>
+                  <p className="text-sm text-gray-600">{siteConfig.email}</p>
                 </div>
               </a>
 
               <a
-                href="https://wa.me/918171158569"
+                href={siteConfig.social.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 bg-white rounded-xl shadow-sm border border-gray-100 p-5 hover:shadow-md transition-shadow"

@@ -1,0 +1,199 @@
+[
+  {
+    "route": "/",
+    "status": 200,
+    "title": "India Holidays & Tailor-Made Tours | My Quick Trippers",
+    "h1": 1,
+    "overflow": false,
+    "canonical": "https://www.myquicktrippers.com/",
+    "errors": []
+  },
+  {
+    "route": "/about-us",
+    "status": 200,
+    "title": "About My Quick Trippers | My Quick Trippers",
+    "h1": 1,
+    "overflow": false,
+    "canonical": "https://www.myquicktrippers.com/about-us",
+    "errors": []
+  },
+  {
+    "route": "/contact-us",
+    "status": 200,
+    "title": "Contact Us | My Quick Trippers",
+    "h1": 1,
+    "overflow": false,
+    "canonical": "https://www.myquicktrippers.com/contact-us",
+    "errors": []
+  },
+  {
+    "route": "/customer-center",
+    "status": 200,
+    "title": "Customer Center | My Quick Trippers",
+    "h1": 1,
+    "overflow": false,
+    "canonical": "https://www.myquicktrippers.com/customer-center",
+    "errors": []
+  },
+  {
+    "route": "/my-booking",
+    "status": 200,
+    "title": "Booking Support | My Quick Trippers",
+    "h1": 1,
+    "overflow": false,
+    "canonical": "https://www.myquicktrippers.com/my-booking",
+    "errors": []
+  },
+  {
+    "route": "/pay-online",
+    "status": 200,
+    "title": "Payment Information | My Quick Trippers",
+    "h1": 1,
+    "overflow": false,
+    "canonical": "https://www.myquicktrippers.com/pay-online",
+    "errors": []
+  },
+  {
+    "route": "/careers",
+    "status": 200,
+    "title": "Careers | My Quick Trippers",
+    "h1": 1,
+    "overflow": false,
+    "canonical": "https://www.myquicktrippers.com/careers",
+    "errors": []
+  },
+  {
+    "route": "/group-tours",
+    "status": 200,
+    "title": "Group Travel Enquiries | My Quick Trippers",
+    "h1": 1,
+    "overflow": false,
+    "canonical": "https://www.myquicktrippers.com/group-tours",
+    "errors": []
+  },
+  {
+    "route": "/reviews",
+    "status": 200,
+    "title": "Traveller Feedback | My Quick Trippers",
+    "h1": 1,
+    "overflow": false,
+    "canonical": "https://www.myquicktrippers.com/reviews",
+    "errors": []
+  },
+  {
+    "route": "/privacy-policy",
+    "status": 200,
+    "title": "Privacy Policy | My Quick Trippers",
+    "h1": 1,
+    "overflow": false,
+    "canonical": "https://www.myquicktrippers.com/privacy-policy",
+    "errors": []
+  },
+  {
+    "route": "/terms-and-conditions",
+    "status": 200,
+    "title": "Terms & Conditions | My Quick Trippers",
+    "h1": 1,
+    "overflow": false,
+    "canonical": "https://www.myquicktrippers.com/terms-and-conditions",
+    "errors": []
+  },
+  {
+    "route": "/special-tours",
+    "status": 200,
+    "title": "Special Tour Themes | My Quick Trippers",
+    "h1": 1,
+    "overflow": false,
+    "canonical": "https://www.myquicktrippers.com/special-tours",
+    "errors": []
+  },
+  {
+    "route": "/special-tours/family",
+    "status": 200,
+    "title": "Family Tour Packages | My Quick Trippers",
+    "h1": 1,
+    "overflow": false,
+    "canonical": "https://www.myquicktrippers.com/special-tours/family",
+    "errors": []
+  },
+  {
+    "route": "/experiences",
+    "status": 200,
+    "title": "Travel Experiences in India | My Quick Trippers",
+    "h1": 1,
+    "overflow": false,
+    "canonical": "https://www.myquicktrippers.com/experiences",
+    "errors": []
+  },
+  {
+    "route": "/experiences/camping",
+    "status": 200,
+    "title": "Camping in India | Packages & Tours | My Quick Trippers",
+    "h1": 1,
+    "overflow": false,
+    "canonical": "https://www.myquicktrippers.com/experiences/camping",
+    "errors": []
+  },
+  {
+    "route": "/destinations/uttarakhand",
+    "status": 200,
+    "title": "Uttarakhand Travel Guide | My Quick Trippers",
+    "h1": 1,
+    "overflow": false,
+    "canonical": "https://www.myquicktrippers.com/destinations/uttarakhand",
+    "errors": []
+  },
+  {
+    "route": "/destinations/india-tours",
+    "status": 200,
+    "title": "India Tours Travel Guide | My Quick Trippers",
+    "h1": 1,
+    "overflow": false,
+    "canonical": "https://www.myquicktrippers.com/destinations/india-tours",
+    "errors": []
+  },
+  {
+    "route": "/destinations/international-tours",
+    "status": 200,
+    "title": "International Tours Travel Guide | My Quick Trippers",
+    "h1": 1,
+    "overflow": false,
+    "canonical": "https://www.myquicktrippers.com/destinations/international-tours",
+    "errors": []
+  },
+  {
+    "route": "/blog",
+    "status": 200,
+    "title": "Travel Journal | My Quick Trippers",
+    "h1": 1,
+    "overflow": false,
+    "canonical": "https://www.myquicktrippers.com/blog",
+    "errors": []
+  },
+  {
+    "route": "/blog/glaciers-in-uttarakhand",
+    "status": 200,
+    "title": "Top 10 Glaciers in Uttarakhand You Must Explore | My Quick Trippers",
+    "h1": 1,
+    "overflow": false,
+    "canonical": "https://www.myquicktrippers.com/blog/glaciers-in-uttarakhand",
+    "errors": []
+  },
+  {
+    "route": "/site-map",
+    "status": 200,
+    "title": "Site Map | My Quick Trippers",
+    "h1": 1,
+    "overflow": false,
+    "canonical": "https://www.myquicktrippers.com/site-map",
+    "errors": []
+  },
+  {
+    "route": "/api/og/2-days-ayodhya-tour-package",
+    "status": 404,
+    "title": "localhost",
+    "h1": 1,
+    "overflow": false,
+    "errors": []
+  }
+]

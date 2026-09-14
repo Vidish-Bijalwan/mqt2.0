@@ -6,11 +6,12 @@ import { Calendar, Phone } from "lucide-react";
 import BlogSidebar from "@/components/blog/BlogSidebar";
 import { siteConfig } from "@/data/siteConfig";
 import { notFound } from "next/navigation";
+import type { ContentBlock, ContentDocumentMap } from "@/types/content";
 
 // Prefer the cleaned content (junk nav/form blocks removed); fall back to the
 // original scrape for any post missing from the cleaned set.
-const fullBlogData = fullBlogDataRaw as Record<string, any>;
-const fullBlogDataClean = fullBlogDataCleanRaw as Record<string, any>;
+const fullBlogData = fullBlogDataRaw as ContentDocumentMap;
+const fullBlogDataClean = fullBlogDataCleanRaw as ContentDocumentMap;
 
 function blogFor(slug: string) {
   const clean = fullBlogDataClean[slug] || fullBlogDataClean[`blog__${slug}`];
@@ -20,12 +21,12 @@ function blogFor(slug: string) {
 import { getBlogImage } from "@/data/blogImageMap";
 import AutoLinker from "@/components/ui/AutoLinker";
 
-// Pre-render all real blog posts as static HTML; revalidate daily so new
-// posts appear without a full rebuild. Junk archive keys (travel-theme__*,
-// blog__*) are excluded from the static set and render on demand.
+// Pre-render a small set of entry articles. Long-tail posts render on demand
+// and are cached by ISR, keeping deployments compact without changing URLs.
 export function generateStaticParams() {
   return Object.keys(fullBlogData)
     .filter((k) => !k.includes('__'))
+    .slice(0, 12)
     .map((slug) => ({ slug }));
 }
 
@@ -38,13 +39,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const slug = resolvedParams.slug.toLowerCase();
   
   const blog = blogFor(slug);
-  if (!blog) return { title: `Blog | My Quick Trippers` };
+  if (!blog) return { title: { absolute: "Travel Blog | My Quick Trippers" } };
 
   const image = getBlogImage(slug);
-  const contentText = blog.content?.filter((c: any) => c.type === 'p').map((c: any) => c.text).join(' ').substring(0, 160) || '';
+  const contentText = blog.content?.filter((block) => block.type === 'p').map((block) => block.text || '').join(' ').substring(0, 160) || '';
 
   return {
-    title: `${blog.title} | My Quick Trippers`,
+    title: { absolute: `${blog.title} | My Quick Trippers` },
     description: contentText,
     alternates: {
       canonical: `${siteConfig.domain}/blog/${slug}`,
@@ -64,17 +65,17 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     }
   };
 }
-function RenderContent({ content }: { content: any[] }) {
+function RenderContent({ content }: { content: ContentBlock[] }) {
   if (!content || !Array.isArray(content)) return null;
   return (
     <div className="prose max-w-none text-gray-700 leading-relaxed text-lg">
       {content.map((block, idx) => {
-        if (block.type === 'p') return <p key={idx} className="mb-4"><AutoLinker text={block.text} /></p>;
+        if (block.type === 'p') return <p key={idx} className="mb-4"><AutoLinker text={block.text || ''} /></p>;
         if (block.type === 'h2') return <h2 key={idx} className="text-2xl font-bold text-gray-900 mt-8 mb-4">{block.text}</h2>;
         if (block.type === 'h3') return <h3 key={idx} className="text-xl font-bold text-gray-900 mt-6 mb-3">{block.text}</h3>;
         if (block.type === 'ul') return (
           <ul key={idx} className="list-disc pl-6 mb-6">
-            {block.items.map((item: string, i: number) => (
+            {(block.items || []).map((item, i) => (
               <li key={i} className="mb-2">{item}</li>
             ))}
           </ul>
@@ -95,7 +96,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   }
 
   // Determine reading time
-  const contentText = blog.content?.filter((c: any) => c.type === 'p').map((c: any) => c.text).join(' ') || '';
+  const contentText = blog.content?.filter((block) => block.type === 'p').map((block) => block.text || '').join(' ') || '';
   const wordCount = contentText.split(/\s+/).filter(Boolean).length;
   const readingTime = Math.max(1, Math.ceil(wordCount / 200));
   const image = getBlogImage(slug);
@@ -181,7 +182,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <div className="relative w-full h-[400px] mb-8 rounded overflow-hidden bg-gray-200">
            <Image src={getBlogImage(slug)} alt={blog.title} fill sizes="(max-width: 768px) 100vw, 800px" className="object-cover" priority />
         </div>
-        <RenderContent content={blog.content} />
+        <RenderContent content={blog.content || []} />
 
         {/* Related posts (U24) — cross-links readers to more content instead of dead-ending */}
         {related.length > 0 && (

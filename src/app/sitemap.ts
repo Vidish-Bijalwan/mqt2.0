@@ -6,9 +6,9 @@ import packageDetailsRaw from '@/data/packageDetails.json';
 import destinationsDataRaw from '@/data/destinationsData.json';
 import fullBlogDataRaw from '@/data/fullBlogData.json';
 
-const packageDetails = packageDetailsRaw as Record<string, any>;
-const destinationsData = destinationsDataRaw as Record<string, any>;
-const fullBlogData = fullBlogDataRaw as Record<string, any>;
+const packageDetails = packageDetailsRaw as Record<string, unknown>;
+const destinationsData = destinationsDataRaw as Record<string, unknown>;
+const fullBlogData = fullBlogDataRaw as Record<string, unknown>;
 const publicPackages = getPublicPackages();
 const publicPackageSlugs = new Set(publicPackages.map((pkg) => pkg.slug));
 const richPackageSlugs = new Set(Object.keys(packageDetails).filter((slug) => publicPackageSlugs.has(slug)));
@@ -35,7 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { route: '/terms-and-conditions', priority: 0.3, freq: 'yearly' as const },
     { route: '/site-map', priority: 0.3, freq: 'yearly' as const },
   ].map(({ route, priority, freq }) => ({ url: `${baseUrl}${route}`, lastModified: new Date(), changeFrequency: freq, priority }));
-  const richPackageRoutes = Object.keys(packageDetails).map((slug) => ({ url: `${baseUrl}/packages/${slug}`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.9 }));
+  const richPackageRoutes = [...richPackageSlugs].map((slug) => ({ url: `${baseUrl}/packages/${slug}`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.9 }));
   const basicPackageRoutes = publicPackages.filter((pkg) => !richPackageSlugs.has(pkg.slug)).map((pkg) => ({ url: `${baseUrl}/packages/${pkg.slug}`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.6 }));
   const destinationRoutes = Object.keys(destinationsData).map((slug) => ({ url: `${baseUrl}/destinations/${slug}`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.85 }));
   const experienceRoutes = experiences.map((exp) => ({ url: `${baseUrl}/experiences/${exp.slug}`, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 }));

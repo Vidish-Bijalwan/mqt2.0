@@ -97,7 +97,6 @@ function PosterLightbox({
     const dx = e.clientX - dragRef.current.startX;
     const dy = e.clientY - dragRef.current.startY;
     dispatch({ type: "pan", dx: dx - (lb.x - dragRef.current.lbX), dy: dy - (lb.y - dragRef.current.lbY) });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lb]);
 
   const onMouseUp = useCallback(() => { dragRef.current = null; setIsDragging(false); }, []);
@@ -196,6 +195,8 @@ function PosterLightbox({
         onTouchEnd={onTouchEnd}
         style={{ cursor: isDraggable ? "grab" : "default" }}
       >
+        {/* Native img is intentional: this zoom/pan canvas needs direct transform control. */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={fullSrc}
           alt={`${poster.name} full tour poster`}
@@ -226,14 +227,16 @@ export default function PosterMarquee() {
   const trackRef = useRef<HTMLDivElement>(null);
   const [isPaused, setIsPaused] = useState(false);
   const [selectedPoster, setSelectedPoster] = useState<PosterItem | null>(null);
-  const [isMobile, setIsMobile] = useState(false);
+  const [isInView, setIsInView] = useState(true);
 
   useEffect(() => {
-    const media = window.matchMedia("(max-width: 639px)");
-    const update = () => setIsMobile(media.matches);
-    update();
-    media.addEventListener("change", update);
-    return () => media.removeEventListener("change", update);
+    const track = trackRef.current;
+    if (!track) return;
+    const observer = new IntersectionObserver(([entry]) => setIsInView(entry.isIntersecting), {
+      rootMargin: "160px",
+    });
+    observer.observe(track);
+    return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
@@ -248,9 +251,9 @@ export default function PosterMarquee() {
     return () => { document.body.style.overflow = ""; };
   }, [selectedPoster]);
 
-  // Mobile only needs a short curated loop. Rendering every poster twice makes
-  // the first paint compete with the rest of the homepage for image bandwidth.
-  const loopItems = isMobile ? posterItems.slice(0, 12) : posterItems;
+  // A compact curated loop prevents the rail from competing with tour imagery.
+  // CSS removes the duplicated half on touch devices, where native swiping is smoother.
+  const loopItems = posterItems.slice(0, 12);
   const items: PosterItem[] = [...loopItems, ...loopItems];
 
   return (
@@ -265,14 +268,14 @@ export default function PosterMarquee() {
             ref={trackRef}
             className="pm-track"
             style={{
-              animationPlayState: isPaused ? "paused" : "running",
+              animationPlayState: isPaused || !isInView ? "paused" : "running",
               animationDuration: `${LOOP_DURATION_S}s`,
             }}
           >
             {items.map((item, i) => (
               <button
                 key={`${item.name}-${i}`}
-                className="pm-card"
+                className={`pm-card${i >= loopItems.length ? " pm-card--duplicate" : ""}${i >= 8 && i < loopItems.length ? " pm-card--mobile-extra" : ""}`}
                 onClick={() => setSelectedPoster(item)}
                 onMouseEnter={() => setIsPaused(true)}
                 onMouseLeave={() => setIsPaused(false)}
@@ -283,7 +286,9 @@ export default function PosterMarquee() {
                   alt={`${item.name} destination poster`}
                   fill
                   className="pm-card__img"
-                  loading={i < 4 ? "eager" : "lazy"}
+                  loading="lazy"
+                  decoding="async"
+                  quality={60}
                   sizes="(max-width: 768px) 220px, 320px"
                 />
                 <div className="pm-card__overlay">

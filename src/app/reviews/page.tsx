@@ -151,13 +151,13 @@ export default function ReviewsPage() {
               <PenLine className="w-5 h-5" />
               Write a Review
             </button>
-            <a
+            <Link
               href="/packages"
               className="flex items-center gap-2 px-8 py-3 border border-white/30 hover:bg-white/10 text-white rounded-xl font-semibold transition-colors"
             >
               <Map className="w-5 h-5" />
               Explore Tours
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -295,12 +295,14 @@ export default function ReviewsPage() {
       </button>
 
       {/* Mobile Filter Sheet */}
-      <MobileFilterSheet
-        isOpen={showMobileFilters}
-        onClose={() => setShowMobileFilters(false)}
-        filters={filters}
-        onApply={setFilters}
-      />
+      {showMobileFilters && (
+        <MobileFilterSheet
+          isOpen
+          onClose={() => setShowMobileFilters(false)}
+          filters={filters}
+          onApply={setFilters}
+        />
+      )}
 
       {/* Write Review Modal */}
       <WriteReviewModal isOpen={showWriteModal} onClose={() => setShowWriteModal(false)} />

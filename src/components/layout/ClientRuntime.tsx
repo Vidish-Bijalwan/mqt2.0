@@ -31,22 +31,14 @@ export default function ClientRuntime() {
   }, []);
 
   useEffect(() => {
-    if (!("serviceWorker" in navigator)) return;
-
-    const registerServiceWorker = () => {
-      navigator.serviceWorker.register("/sw.js").catch(() => {});
-    };
-
-    if (document.readyState === "complete") {
-      registerServiceWorker();
-      return;
-    }
-
-    window.addEventListener("load", registerServiceWorker, { once: true });
-
-    return () => {
-      window.removeEventListener("load", registerServiceWorker);
-    };
+    // The previous network-first worker intercepted every image and could serve
+    // stale pages. Native browser and CDN caching are faster for this media-heavy site.
+    navigator.serviceWorker?.getRegistrations().then((registrations) => {
+      registrations.forEach((registration) => void registration.unregister());
+    }).catch(() => {});
+    window.caches?.keys().then((keys) => {
+      keys.filter((key) => key.startsWith("mqt-")).forEach((key) => void window.caches.delete(key));
+    }).catch(() => {});
   }, []);
 
   return null;

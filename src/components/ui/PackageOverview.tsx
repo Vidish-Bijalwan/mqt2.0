@@ -8,7 +8,7 @@ interface Temple {
   distance: string;
 }
 
-export default function PackageOverview({ content, packageTitle }: { content: string, packageTitle?: string }) {
+export default function PackageOverview({ content }: { content: string }) {
   if (!content) return null;
 
   // 1. Robust Parser for Jyotirlingas

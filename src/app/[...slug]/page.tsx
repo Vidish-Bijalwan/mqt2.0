@@ -1,18 +1,17 @@
-import { allPackages, Package } from "@/data/allPackages";
 import { destinations } from "@/data/contentData";
 import { notFound } from "next/navigation";
-import PackageCard from "@/components/ui/PackageCard";
 import Image from "next/image";
 import Link from "next/link";
-import { Calendar, ChevronRight, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
 import { siteConfig } from "@/data/siteConfig";
+import type { ContentBlock, ContentDocumentMap } from "@/types/content";
 
 // Read huge JSON files on the server side
 import fullBlogDataRaw from "@/data/fullBlogData.json";
 import staticPagesDataRaw from "@/data/staticPagesData.json";
 
-const fullBlogData = fullBlogDataRaw as Record<string, any>;
-const staticPagesData = staticPagesDataRaw as Record<string, any>;
+const fullBlogData = fullBlogDataRaw as ContentDocumentMap;
+const staticPagesData = staticPagesDataRaw as ContentDocumentMap;
 
 export function generateStaticParams() {
   return [];
@@ -22,25 +21,25 @@ export const dynamicParams = true;
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string[] }> }) {
   const resolvedParams = await params;
-  if (!resolvedParams?.slug?.length) return { title: "My Quick Trippers" };
+  if (!resolvedParams?.slug?.length) return { title: "Travel" };
   const lastSlug = resolvedParams.slug[resolvedParams.slug.length - 1].toLowerCase();
   
   // 1. Is it a Blog Post?
   const blog = fullBlogData[lastSlug] || fullBlogData[`blog__${lastSlug}`];
-  if (blog) return { title: `${blog.title} | My Quick Trippers` };
+  if (blog) return { title: blog.title };
   
   // 2. Is it a Static Page?
   const staticPage = staticPagesData[lastSlug];
-  if (staticPage) return { title: `${staticPage.title} | My Quick Trippers` };
+  if (staticPage) return { title: staticPage.title };
   
   // 3. Destination
   const dest = destinations.find(d => d.slug.toLowerCase() === lastSlug);
-  if (dest) return { title: `${dest.name} Tour Packages | My Quick Trippers` };
+  if (dest) return { title: `${dest.name} Tour Packages` };
   
-  return { title: `${lastSlug.replace(/-/g, ' ').toUpperCase()} | My Quick Trippers` };
+  return { title: lastSlug.replace(/-/g, ' ').toUpperCase() };
 }
 
-function RenderContent({ content }: { content: any[] }) {
+function RenderContent({ content }: { content: ContentBlock[] }) {
   if (!content || !Array.isArray(content)) return null;
   return (
     <div className="prose max-w-none text-gray-700 leading-relaxed text-lg">
@@ -48,7 +47,7 @@ function RenderContent({ content }: { content: any[] }) {
         if (block.type === 'p') return <p key={idx} className="mb-4">{block.text}</p>;
         if (block.type === 'ul') return (
           <ul key={idx} className="list-disc pl-6 mb-6">
-            {block.items.map((item: string, i: number) => (
+            {(block.items || []).map((item, i) => (
               <li key={i} className="mb-2">{item}</li>
             ))}
           </ul>
@@ -87,7 +86,7 @@ export default async function CatchAllPage({ params }: { params: Promise<{ slug:
            </div>
 
            <div className="container mx-auto max-w-4xl bg-white p-8 md:p-12 rounded shadow-sm border border-gray-200">
-              <RenderContent content={staticPage.content} />
+              <RenderContent content={staticPage.content || []} />
               
               {/* Optional fallback for empty pages */}
               {(!staticPage.content || staticPage.content.length === 0) && (
