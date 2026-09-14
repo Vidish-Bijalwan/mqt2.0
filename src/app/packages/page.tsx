@@ -108,9 +108,16 @@ export default async function PackagesPage({
         <div className="flex flex-col lg:flex-row gap-8">
           
           {/* Sidebar */}
-          <aside className="order-2 min-w-0 space-y-6 lg:order-1 lg:w-72 lg:shrink-0 lg:self-start">
+          <aside
+            className="isolate order-2 min-w-0 space-y-6 overflow-hidden lg:order-1 lg:w-72 lg:shrink-0 lg:self-start"
+            style={{ position: "static" }}
+          >
             {/* Category Filters */}
-            <div className="overflow-hidden rounded-xl border border-brand-sage/50 bg-white shadow-sm">
+            <div
+              data-package-category-panel
+              className="overflow-hidden rounded-xl border border-brand-sage/50 bg-white shadow-sm"
+              style={{ position: "static", top: "auto" }}
+            >
               <div className="bg-legacy-nav-blue text-white px-4 py-3 text-sm font-bold">
                 Filter by Category
               </div>
@@ -144,7 +151,7 @@ export default async function PackagesPage({
             </div>
 
             {/* Quick Enquiry */}
-            <div className="overflow-hidden rounded-xl border border-brand-sage/50 bg-brand-paper shadow-sm">
+            <div data-package-enquiry-panel className="overflow-hidden rounded-xl border border-brand-sage/50 bg-brand-paper shadow-sm">
               <div className="bg-legacy-nav-blue text-white px-4 py-3 text-sm font-bold text-center relative">
                 Get a Best Deal Quick Enquiry
                 <span className="absolute left-1/2 -translate-x-1/2 -bottom-2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-legacy-nav-blue" />

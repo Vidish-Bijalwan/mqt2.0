@@ -3,6 +3,7 @@ import fs from "fs";
 
 const url = process.argv[2];
 const vw = parseInt(process.argv[3] || "1440", 10);
+const scrollY = parseInt(process.argv[4] || "0", 10);
 
 const candidates =
   process.platform === "win32"
@@ -45,7 +46,16 @@ try {
   console.log("goto err:", e.message.slice(0, 120));
 }
 await new Promise((r) => setTimeout(r, 3000));
+if (scrollY > 0) {
+  await page.evaluate((y) => window.scrollTo(0, y), scrollY);
+  await new Promise((r) => setTimeout(r, 250));
+}
 const info = await page.evaluate(() => {
+  const categoryPanel = document.querySelector("[data-package-category-panel]");
+  const enquiryPanel = document.querySelector("[data-package-enquiry-panel]");
+  const categoryRect = categoryPanel?.getBoundingClientRect();
+  const enquiryRect = enquiryPanel?.getBoundingClientRect();
+
   return {
     title: document.title,
     bodyText: (document.body.innerText || "").slice(0, 400).replace(/\n+/g, " | "),
@@ -56,6 +66,14 @@ const info = await page.evaluate(() => {
       .map((image) => image.currentSrc || image.src)
       .slice(0, 10),
     horizontalOverflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
+    packageSidebar: categoryPanel && enquiryPanel && categoryRect && enquiryRect
+      ? {
+          categoryPosition: getComputedStyle(categoryPanel).position,
+          categoryBottom: Math.round(categoryRect.bottom),
+          enquiryTop: Math.round(enquiryRect.top),
+          overlaps: categoryRect.bottom > enquiryRect.top,
+        }
+      : null,
     overlayText: (document.body.innerText.match(/Runtime [A-Za-z]+|Unexpected end of JSON input|Call Stack/g) || []).slice(0, 6),
   };
 });
