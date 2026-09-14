@@ -108,9 +108,9 @@ export default async function PackagesPage({
         <div className="flex flex-col lg:flex-row gap-8">
           
           {/* Sidebar */}
-          <div className="order-2 space-y-6 lg:order-1 lg:w-72 lg:shrink-0">
+          <aside className="order-2 min-w-0 space-y-6 lg:order-1 lg:w-72 lg:shrink-0 lg:self-start">
             {/* Category Filters */}
-            <div className="overflow-hidden rounded-xl border border-brand-sage/50 bg-white shadow-sm lg:sticky lg:top-24">
+            <div className="overflow-hidden rounded-xl border border-brand-sage/50 bg-white shadow-sm">
               <div className="bg-legacy-nav-blue text-white px-4 py-3 text-sm font-bold">
                 Filter by Category
               </div>
@@ -156,7 +156,7 @@ export default async function PackagesPage({
                 <EnquiryForm pkgName={selectedFilter ? `Filter: ${selectedFilter}` : pageTitle} />
               </div>
             </div>
-          </div>
+          </aside>
 
           {/* Package List */}
           <div className="order-1 min-w-0 flex-1 lg:order-2">
