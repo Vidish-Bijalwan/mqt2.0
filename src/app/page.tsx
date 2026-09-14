@@ -8,7 +8,6 @@ import PosterMarquee from "@/components/ui/PosterMarquee";
 import ThemeFilter from "@/components/home/ThemeFilter";
 import ExperienceExplorer from "@/components/home/ExperienceExplorer";
 import { experiencesWithCounts } from "@/utils/experienceCounts";
-import HeroJourney from "@/components/home/HeroJourney";
 import { groupPackagesByDestination } from "@/utils/packageGroups";
 
 /* ─── Smart package filtering ───
@@ -104,19 +103,25 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-transparent">
       
-      {/* 1. Inspired travel hero followed by the lightweight poster rail */}
+      {/* 1. Brand-led travel hero followed by the lightweight poster rail */}
       <section className="w-full bg-brand-navy relative">
-         <div className="home-inspired-hero">
-           <div className="home-inspired-hero__copy">
-             <div className="home-inspired-hero__eyebrow">
-               <Image src="/images/mqt-logo-256.webp" alt="" width={30} height={30} className="rounded-full" />
-               <span>Real places · Local experiences · Thoughtful journeys</span>
-             </div>
-             <h1>Explore India with MQT</h1>
-             <p>Travel deeper with handpicked routes, trusted local experts and journeys made around you.</p>
+         <div className="home-brand-hero">
+           <h1 className="sr-only">Explore India with My Quick Trippers</h1>
+           <div className="home-brand-hero__media">
+             <picture>
+               <source media="(max-width: 767px)" srcSet="/images/home/mqt-india-hero-mobile.webp" />
+               <img
+                 src="/images/home/mqt-india-hero.webp"
+                 alt="Explore India with My Quick Trippers: mountains, heritage, wildlife, beaches and adventure journeys"
+                 width="2056"
+                 height="765"
+                 loading="eager"
+                 decoding="async"
+                 fetchPriority="high"
+               />
+             </picture>
            </div>
-           <div className="home-inspired-hero__visual"><HeroJourney /></div>
-           <form action="/packages" method="get" className="home-inspired-search">
+           <form action="/packages" method="get" className="home-hero-search">
              <label className="sr-only" htmlFor="home-destination">Where do you want to go?</label>
              <input id="home-destination" name="q" placeholder="Where do you want to go?" />
              <label className="sr-only" htmlFor="home-travelers">Travelers</label>
