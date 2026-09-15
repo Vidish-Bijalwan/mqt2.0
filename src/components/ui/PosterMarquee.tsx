@@ -10,9 +10,10 @@ import React, {
 import Image from "next/image";
 import Link from "next/link";
 import { posterItems, type PosterItem } from "@/data/posterData";
+import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
 
 /* ───────────────────────── constants ───────────────────────── */
-const LOOP_DURATION_S = 90; // slow ambient scroll
+const LOOP_DURATION_S = 46;
 
 /* ─────────────── lightbox zoom / pan state ─────────────── */
 interface LBState {
@@ -61,6 +62,7 @@ function PosterLightbox({
   const [lb, dispatch] = useReducer(lbReducer, { scale: 1, x: 0, y: 0 });
   const imgRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
+  const [isFullImageLoaded, setIsFullImageLoaded] = useState(false);
   const dragRef = useRef<{ startX: number; startY: number; lbX: number; lbY: number } | null>(null);
   const lastPinchDist = useRef<number | null>(null);
 
@@ -195,12 +197,16 @@ function PosterLightbox({
         onTouchEnd={onTouchEnd}
         style={{ cursor: isDraggable ? "grab" : "default" }}
       >
+        {!isFullImageLoaded ? <div className="poster-lb-skeleton" aria-hidden="true" /> : null}
         {/* Native img is intentional: this zoom/pan canvas needs direct transform control. */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={fullSrc}
           alt={`${poster.name} full tour poster`}
-          className="poster-lb-img"
+          className={`poster-lb-img${isFullImageLoaded ? " poster-lb-img--loaded" : ""}`}
+          loading="eager"
+          decoding="async"
+          onLoad={() => setIsFullImageLoaded(true)}
           style={{
             transform: `scale(${lb.scale}) translate(${lb.x / lb.scale}px, ${lb.y / lb.scale}px)`,
             cursor: isDraggable ? (isDragging ? "grabbing" : "grab") : "default",
@@ -225,7 +231,8 @@ function PosterLightbox({
 /* ─────────────── Main Marquee component ─────────────── */
 export default function PosterMarquee() {
   const trackRef = useRef<HTMLDivElement>(null);
-  const [isPaused, setIsPaused] = useState(false);
+  const [isInteractionPaused, setIsInteractionPaused] = useState(false);
+  const [isDocumentHidden, setIsDocumentHidden] = useState(false);
   const [selectedPoster, setSelectedPoster] = useState<PosterItem | null>(null);
   const [isInView, setIsInView] = useState(true);
 
@@ -240,7 +247,8 @@ export default function PosterMarquee() {
   }, []);
 
   useEffect(() => {
-    const h = () => setIsPaused(document.hidden);
+    const h = () => setIsDocumentHidden(document.hidden);
+    h();
     document.addEventListener("visibilitychange", h);
     return () => document.removeEventListener("visibilitychange", h);
   }, []);
@@ -251,10 +259,10 @@ export default function PosterMarquee() {
     return () => { document.body.style.overflow = ""; };
   }, [selectedPoster]);
 
-  // A compact curated loop prevents the rail from competing with tour imagery.
-  // CSS removes the duplicated half on touch devices, where native swiping is smoother.
+  // Two identical groups make the CSS loop mathematically exact. The group padding
+  // carries the inter-group gap, so the reset never reveals a half-gap jump.
   const loopItems = posterItems.slice(0, 12);
-  const items: PosterItem[] = [...loopItems, ...loopItems];
+  const isAnimationPaused = isInteractionPaused || isDocumentHidden || !isInView;
 
   return (
     <>
@@ -268,34 +276,47 @@ export default function PosterMarquee() {
             ref={trackRef}
             className="pm-track"
             style={{
-              animationPlayState: isPaused || !isInView ? "paused" : "running",
+              animationPlayState: isAnimationPaused ? "paused" : "running",
               animationDuration: `${LOOP_DURATION_S}s`,
             }}
           >
-            {items.map((item, i) => (
-              <button
-                key={`${item.name}-${i}`}
-                className={`pm-card${i >= loopItems.length ? " pm-card--duplicate" : ""}${i >= 8 && i < loopItems.length ? " pm-card--mobile-extra" : ""}`}
-                onClick={() => setSelectedPoster(item)}
-                onMouseEnter={() => setIsPaused(true)}
-                onMouseLeave={() => setIsPaused(false)}
-                aria-label={`View ${item.name} tour poster`}
+            {[0, 1].map((groupIndex) => (
+              <div
+                key={groupIndex}
+                className={`pm-track__group${groupIndex === 1 ? " pm-track__group--duplicate" : ""}`}
+                aria-hidden={groupIndex === 1}
               >
-                <Image
-                  src={item.imageUrl}
-                  alt={`${item.name} destination poster`}
-                  fill
-                  className="pm-card__img"
-                  loading="lazy"
-                  decoding="async"
-                  quality={60}
-                  sizes="(max-width: 768px) 220px, 320px"
-                />
-                <div className="pm-card__overlay">
-                  <span className="pm-card__label">{item.name}</span>
-                  <span className="pm-card__cta">Click to view</span>
-                </div>
-              </button>
+                {loopItems.map((item, itemIndex) => (
+                  <button
+                    key={`${item.name}-${groupIndex}`}
+                    className={`pm-card${itemIndex >= 8 ? " pm-card--mobile-extra" : ""}`}
+                    onClick={() => setSelectedPoster(item)}
+                    onMouseEnter={() => setIsInteractionPaused(true)}
+                    onMouseLeave={() => setIsInteractionPaused(false)}
+                    onFocus={() => setIsInteractionPaused(true)}
+                    onBlur={() => setIsInteractionPaused(false)}
+                    aria-label={`View ${item.name} tour poster`}
+                    tabIndex={groupIndex === 1 ? -1 : undefined}
+                  >
+                    <Image
+                      src={item.imageUrl}
+                      alt={`${item.name} destination poster`}
+                      fill
+                      className="pm-card__img"
+                      loading={groupIndex === 0 ? "eager" : "lazy"}
+                      fetchPriority={groupIndex === 0 && itemIndex >= 4 ? "low" : undefined}
+                      decoding="async"
+                      quality={60}
+                      sizes="(max-width: 768px) 220px, 320px"
+                      placeholder={IMAGE_SKELETON}
+                    />
+                    <div className="pm-card__overlay">
+                      <span className="pm-card__label">{item.name}</span>
+                      <span className="pm-card__cta">Click to view</span>
+                    </div>
+                  </button>
+                ))}
+              </div>
             ))}
           </div>
         </div>

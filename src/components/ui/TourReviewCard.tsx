@@ -3,6 +3,7 @@
 import { Star, BadgeCheck } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { IMAGE_SKELETON } from '@/utils/imagePlaceholder';
 
 interface TourReviewCardProps {
   tour: string;
@@ -25,7 +26,7 @@ export default function TourReviewCard({
     <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300">
       {/* Image */}
       <div className="relative h-48 bg-gradient-to-br from-orange-500 to-red-600 overflow-hidden">
-        <Image src={image} alt={tour} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
+        <Image src={image} alt={tour} fill sizes="(max-width: 768px) 100vw, 33vw" loading="lazy" decoding="async" placeholder={IMAGE_SKELETON} className="object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
         <div className="absolute bottom-3 left-3 right-3">
           <h3 className="text-white font-semibold">{tour}</h3>

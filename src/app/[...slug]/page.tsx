@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Phone } from "lucide-react";
 import { siteConfig } from "@/data/siteConfig";
 import type { ContentBlock, ContentDocumentMap } from "@/types/content";
+import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
 
 // Read huge JSON files on the server side
 import fullBlogDataRaw from "@/data/fullBlogData.json";
@@ -79,7 +80,7 @@ export default async function CatchAllPage({ params }: { params: Promise<{ slug:
            </div>
            
            <div className="relative h-[250px] w-full mb-8">
-             <Image src="/images/packages/kerala.png" alt={staticPage.title} fill sizes="100vw" className="object-cover" priority />
+             <Image src="/images/packages/kerala.png" alt={staticPage.title} fill sizes="100vw" className="object-cover" priority placeholder={IMAGE_SKELETON} />
              <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center text-center px-4">
                 <h1 className="text-3xl md:text-5xl font-bold text-white capitalize">{staticPage.title}</h1>
              </div>

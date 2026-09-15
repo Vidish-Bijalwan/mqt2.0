@@ -6,7 +6,7 @@ import type { NextConfig } from "next";
 // partial-syncs files, which caused 20-30s dev compiles and corrupted
 // packages like sharp):
 //   - `.next`        is a Windows junction -> AppData\Local\mqt-next-cache
-//   - `node_modules` is a Windows junction -> AppData\Local\mqt-node-modules
+//   - `node_modules` is a Windows junction -> AppData\Local\mqt-node-modules-next16
 // Turbopack's module resolver refuses symlinks/junctions that point outside
 // its root, so on OneDrive machines widen the root to the home directory —
 // the common ancestor of the project and both junction targets. CI and

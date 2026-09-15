@@ -8,6 +8,7 @@ import { experiences, getExperienceBySlug, experienceGroups } from "@/data/exper
 import { experiencesWithCounts, matchPackages } from "@/utils/experienceCounts";
 import PackageListWithMore from "@/components/experiences/PackageListWithMore";
 import EnquiryForm from "@/components/forms/EnquiryForm";
+import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
 
 interface Params {
   params: Promise<{ slug: string }>;
@@ -110,7 +111,7 @@ export default async function ExperiencePage({ params }: Params) {
 
         {/* Hero banner */}
         <div className="relative h-[280px] md:h-[340px] w-full">
-          <Image src={exp.image} alt={exp.name} fill sizes="100vw" className="object-cover" priority />
+          <Image src={exp.image} alt={exp.name} fill sizes="100vw" className="object-cover" priority placeholder={IMAGE_SKELETON} />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" aria-hidden="true" />
           <div className="absolute inset-0 flex flex-col justify-end p-4 md:p-10">
             <div className="container mx-auto w-full max-w-[1600px]">
@@ -279,6 +280,9 @@ export default async function ExperiencePage({ params }: Params) {
                       alt={r.name}
                       fill
                       sizes="(max-width: 768px) 50vw, 25vw"
+                      loading="lazy"
+                      decoding="async"
+                      placeholder={IMAGE_SKELETON}
                       className="object-cover transition-transform duration-700 group-hover:scale-[1.06]"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" aria-hidden="true" />

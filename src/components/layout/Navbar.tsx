@@ -132,7 +132,7 @@ export default function Navbar() {
           </Link>
 
           {/* Nav Links — FAT items */}
-          <div className="flex flex-1 min-w-0 flex-nowrap text-[13px] xl:text-[14px] font-bold">
+          <div className="flex flex-1 min-w-0 flex-nowrap text-[11px] min-[1180px]:text-[12px] xl:text-[13px] font-bold">
             {navLinks.map((item, idx) => (
               <div 
                 key={idx} 
@@ -144,7 +144,7 @@ export default function Navbar() {
                   <button
                     type="button"
                     aria-label={`Open ${item.title} menu`}
-                    className={`px-3 xl:px-4 h-[48px] whitespace-nowrap flex items-center cursor-pointer transition-all duration-150 ${
+                    className={`px-1.5 min-[1180px]:px-2 xl:px-3 h-[48px] whitespace-nowrap flex items-center cursor-pointer transition-all duration-150 ${
                       hoveredMenu === item.title 
                         ? 'text-brand-sage bg-white/10'
                         : 'hover:text-brand-sage hover:bg-white/5'
@@ -154,7 +154,7 @@ export default function Navbar() {
                     <ChevronDown className={`ml-1.5 w-3.5 h-3.5 transition-transform duration-200 ${hoveredMenu === item.title ? 'rotate-180' : ''}`} />
                   </button>
                 ) : (
-                  <Link href={item.href || "#"} className="px-3 xl:px-4 h-[48px] whitespace-nowrap flex items-center hover:text-brand-sage hover:bg-white/5 transition-all duration-150">
+                  <Link href={item.href || "#"} className="px-1.5 min-[1180px]:px-2 xl:px-3 h-[48px] whitespace-nowrap flex items-center hover:text-brand-sage hover:bg-white/5 transition-all duration-150">
                     {item.title}
                   </Link>
                 )}

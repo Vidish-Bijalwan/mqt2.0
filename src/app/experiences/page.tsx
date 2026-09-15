@@ -5,6 +5,7 @@ import { siteConfig } from "@/data/siteConfig";
 import { experiencesWithCounts } from "@/utils/experienceCounts";
 import { experiences } from "@/data/experiencesData";
 import ExperienceExplorer from "@/components/home/ExperienceExplorer";
+import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
 
 export const metadata = {
   title: "Experiences in India | Adventure, Spiritual, Luxury & More",
@@ -65,6 +66,7 @@ export default function ExperiencesPage() {
             sizes="100vw"
             className="object-cover"
             priority
+            placeholder={IMAGE_SKELETON}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" aria-hidden="true" />
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">

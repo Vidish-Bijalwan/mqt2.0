@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Star, ThumbsUp, Share2, MoreVertical, BadgeCheck, Flag, ChevronDown, ChevronUp } from 'lucide-react';
 import type { Review } from '@/data/reviews';
+import { IMAGE_SKELETON } from '@/utils/imagePlaceholder';
 
 interface ReviewCardProps {
   review: Review;
@@ -26,7 +27,7 @@ export default function ReviewCard({ review, showDestination = true }: ReviewCar
         <div className="flex items-center gap-3">
           {/* Avatar */}
           <div className="relative w-12 h-12 rounded-full overflow-hidden bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg shrink-0">
-            <Image src={review.avatar} alt={review.name} fill sizes="48px" className="object-cover" />
+            <Image src={review.avatar} alt={review.name} fill sizes="48px" loading="lazy" decoding="async" placeholder={IMAGE_SKELETON} className="object-cover" />
           </div>
           <div>
             <div className="flex items-center gap-2">

@@ -327,7 +327,7 @@
     line-height: 16px;
     margin-bottom: 5px;
     height: 20px;
-    overflow: hidden; /* reference clips long titles to one line */
+    overflow: hidden;
   }
   .nit-pcard-title a {
     font-size: 16px;
@@ -336,6 +336,8 @@
     color: var(--color-brand-indigo);
     display: block;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .nit-pcard-dur {
     font-size: 13px;
@@ -891,9 +893,9 @@
 .premium-footer-contact { position: relative; display: grid; grid-template-columns: 1fr 1fr 1.2fr; border-top: 1px solid rgba(255,255,255,.12); border-bottom: 1px solid rgba(255,255,255,.12); }
 .premium-footer-contact > * { min-height: 86px; display: grid; grid-template-columns: auto 1fr; align-content: center; column-gap: 12px; padding: 15px 28px; border-right: 1px solid rgba(255,255,255,.12); }
 .premium-footer-contact > *:last-child { border-right: 0; }
-.premium-footer-contact svg { grid-row: 1 / 3; width: 18px; color: #f2bd62; }
+.premium-footer-contact svg { grid-row: 1 / 3; width: 18px; color: #f2bd62; flex-shrink: 0; }
 .premium-footer-contact span { color: rgba(255,255,255,.45); font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
-.premium-footer-contact a, .premium-footer-contact strong { color: white; font-size: 12px; font-weight: 700; }
+.premium-footer-contact a, .premium-footer-contact strong { color: white; font-size: 12px; font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .premium-footer-bottom { position: relative; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 24px; padding: 24px 0 34px; color: rgba(255,255,255,.42); font-size: 9px; }
 .premium-footer-bottom div { display: flex; gap: 18px; }
 .premium-footer-bottom p:last-child { text-align: right; }
@@ -1002,10 +1004,17 @@
 /* ── Scrolling track ── */
 .pm-track {
   display: flex;
-  gap: 14px;
   width: max-content;
   animation: marquee-scroll linear infinite;
-  /* Pause on hover is handled via JS */
+  will-change: transform;
+}
+
+/* Each group owns its trailing gap. Two same-width groups let -50% land on
+   the first pixel of the duplicate, avoiding the tiny skip caused by flex gaps. */
+.pm-track__group {
+  display: flex;
+  gap: 14px;
+  padding-right: 14px;
 }
 
 /* ── Individual card ── */
@@ -1097,9 +1106,6 @@
 @media (min-width: 640px) {
   .pm-card { width: 260px; height: 185px; }
 }
-@media (min-width: 768px) {
-  .pm-track { will-change: transform; }
-}
 @media (min-width: 1024px) {
   .pm-card { width: 300px; height: 210px; }
   .pm-wrapper { padding: 28px 0 32px; }
@@ -1108,7 +1114,9 @@
   .pm-card { width: 340px; height: 235px; }
 }
 
-@media (max-width: 767px) {
+/* Touch-first devices get a native, swipeable rail. Keep the marquee alive on
+   narrow desktop windows; a width breakpoint alone made it look frozen there. */
+@media (hover: none) and (pointer: coarse) {
   html { scroll-behavior: auto; }
   .pm-wrapper { padding: 10px 0 16px; }
   .pm-mask {
@@ -1121,17 +1129,17 @@
   }
   .pm-mask::-webkit-scrollbar { display: none; }
   .pm-track {
-    gap: 10px;
     padding: 0 14px;
     animation: none !important;
     will-change: auto;
   }
+  .pm-track__group { gap: 10px; padding-right: 10px; }
+  .pm-track__group--duplicate { display: none; }
   .pm-card {
     width: min(76vw, 260px);
     height: 170px;
     scroll-snap-align: start;
   }
-  .pm-card--duplicate,
   .pm-card--mobile-extra { display: none; }
   .pm-card__overlay {
     opacity: 1;
@@ -1148,6 +1156,24 @@
     box-shadow: 0 8px 25px rgba(17, 58, 51, 0.08);
   }
   .nit-pcard-img:hover img { transform: none; }
+}
+
+/* The same no-motion fallback remains available for users who request it,
+   regardless of input device. */
+@media (prefers-reduced-motion: reduce) {
+  .pm-mask {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  .pm-mask::-webkit-scrollbar { display: none; }
+  .pm-track { padding: 0 14px; animation: none !important; will-change: auto; }
+  .pm-track__group { padding-right: 10px; gap: 10px; }
+  .pm-track__group--duplicate { display: none; }
+  .pm-card { scroll-snap-align: start; }
 }
 
 /* ═══════════════════════════════════════════════════════════════
@@ -1249,15 +1275,34 @@
   user-select: none;
 }
 
+.poster-lb-skeleton {
+  position: absolute;
+  inset: 12%;
+  border-radius: 12px;
+  background: linear-gradient(100deg, #172a27 20%, #29413c 40%, #172a27 60%);
+  background-size: 220% 100%;
+  animation: image-skeleton-shimmer 1.25s ease-in-out infinite;
+}
+
 .poster-lb-img {
   max-height: 100%;
   max-width: 100%;
   object-fit: contain;
   display: block;
   transform-origin: center center;
-  transition: transform 120ms ease-out;
+  opacity: 0;
+  transition: transform 120ms ease-out, opacity 220ms ease;
   pointer-events: none;
   border-radius: 4px;
+}
+
+.poster-lb-img--loaded {
+  opacity: 1;
+}
+
+@keyframes image-skeleton-shimmer {
+  from { background-position: 180% 0; }
+  to { background-position: -40% 0; }
 }
 
 /* ── Bottom bar ── */
@@ -1455,7 +1500,8 @@
    The image is deliberately softened and veiled so content remains primary. */
 .site-shell {
   background:
-    linear-gradient(rgba(247, 245, 237, 0.9), rgba(239, 246, 243, 0.94)),
+    /* Semi-transparent overlay so the heritage wallpaper is subtly visible */
+    linear-gradient(rgba(247, 245, 237, 0.82), rgba(239, 246, 243, 0.88)),
     url("/images/blog/royal-palaces-in-india.jpg") top center / 1280px auto repeat-y;
 }
 

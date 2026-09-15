@@ -3,6 +3,7 @@
 import { Star, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { IMAGE_SKELETON } from '@/utils/imagePlaceholder';
 
 interface DestinationReviewCardProps {
   destination: string;
@@ -24,7 +25,7 @@ export default function DestinationReviewCard({
     >
       {/* Image */}
       <div className="relative h-40 bg-gradient-to-br from-blue-500 to-indigo-600 overflow-hidden">
-        <Image src={image} alt={destination} fill sizes="(max-width: 768px) 50vw, 25vw" className="object-cover" />
+        <Image src={image} alt={destination} fill sizes="(max-width: 768px) 50vw, 25vw" loading="lazy" decoding="async" placeholder={IMAGE_SKELETON} className="object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
         <div className="absolute bottom-3 left-3 right-3">
           <h3 className="text-white font-semibold text-lg">{destination}</h3>

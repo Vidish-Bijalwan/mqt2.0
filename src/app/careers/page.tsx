@@ -3,6 +3,7 @@ import Image from "next/image";
 import { BriefcaseBusiness, Check, IndianRupee, MapPin, MessageCircle, PhoneCall } from "lucide-react";
 import SocialFollowLinks from "@/components/ui/SocialFollowLinks";
 import { siteConfig } from "@/data/siteConfig";
+import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
 
 export const metadata: Metadata = {
   title: "Careers",
@@ -23,7 +24,7 @@ export default function CareersPage() {
   return (
     <div className="heritage-surface min-h-screen">
       <section className="relative isolate overflow-hidden bg-[#092f2a] text-white">
-        <Image src="/images/blog/places-to-eat-in-dehradun.jpg" alt="Green Dehradun valley, location of the listed My Quick Trippers role" fill preload sizes="100vw" className="z-0 object-cover opacity-55" />
+        <Image src="/images/blog/places-to-eat-in-dehradun.jpg" alt="Green Dehradun valley, location of the listed My Quick Trippers role" fill preload sizes="100vw" placeholder={IMAGE_SKELETON} className="z-0 object-cover opacity-55" />
         <div className="absolute inset-0 z-10 bg-[linear-gradient(90deg,rgba(5,35,31,.96),rgba(5,35,31,.72),rgba(5,35,31,.34))]" />
         <div className="relative z-20 mx-auto max-w-7xl px-4 py-20 sm:py-28 lg:px-8">
           <p className="text-xs font-black uppercase tracking-[0.24em] text-orange-300">Careers at MQT</p>

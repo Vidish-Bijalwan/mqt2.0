@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Sun, MapPin } from "lucide-react";
 import { getPriceInfo } from "@/utils/price";
+import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
 
 export interface PackageCardProps {
   slug: string;
@@ -59,6 +60,7 @@ export default function PackageCard({ pkg, href, variantCount }: PackageCardComp
           quality={68}
           loading="lazy"
           decoding="async"
+          placeholder={IMAGE_SKELETON}
           className="nit-pcard-img-el"
           style={{ objectFit: "cover" }}
         />

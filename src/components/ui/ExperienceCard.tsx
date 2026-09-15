@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Compass } from "lucide-react";
+import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
 
 /* ─────────────────────────────────────────────────────────────────────────
    ExperienceCard — premium clickable category card for the discovery section.
@@ -32,6 +33,9 @@ export default function ExperienceCard({ slug, name, tagline, image, packageCoun
         alt={name}
         fill
         sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, (max-width: 1280px) 25vw, 20vw"
+        loading="lazy"
+        decoding="async"
+        placeholder={IMAGE_SKELETON}
         className="object-cover transition-transform duration-700 ease-out motion-safe:group-hover:scale-[1.08]"
       />
 

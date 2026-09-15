@@ -3,6 +3,7 @@ import { getPriceInfo } from "@/utils/price";
 import { ArrowUpRight, CalendarDays, MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
 
 interface DestinationPackageOptionsProps {
   destination: string;
@@ -27,6 +28,7 @@ export default function DestinationPackageOptions({
           sizes="(max-width: 768px) 100vw, 70vw"
           className="object-cover"
           priority
+          placeholder={IMAGE_SKELETON}
         />
         <div>
           <p>Explore {destination}</p>

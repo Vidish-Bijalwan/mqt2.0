@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { ChevronDown } from 'lucide-react';
 import ExpandableText from '@/components/ui/ExpandableText';
 import type { Block, FaqItem } from '@/utils/blocks';
+import { IMAGE_SKELETON } from '@/utils/imagePlaceholder';
 
 interface BlockRendererProps {
   blocks: Block[];
@@ -120,6 +121,9 @@ function RenderSingleBlock({ block, truncate }: { block: Block; truncate?: boole
             alt={block.alt || 'Package Image'}
             fill
             sizes="(max-width: 1024px) 100vw, 66vw"
+            loading="lazy"
+            decoding="async"
+            placeholder={IMAGE_SKELETON}
             className="object-cover"
           />
         </div>

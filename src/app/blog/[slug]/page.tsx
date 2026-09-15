@@ -20,6 +20,7 @@ function blogFor(slug: string) {
 
 import { getBlogImage } from "@/data/blogImageMap";
 import AutoLinker from "@/components/ui/AutoLinker";
+import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
 
 // Pre-render a small set of entry articles. Long-tail posts render on demand
 // and are cached by ISR, keeping deployments compact without changing URLs.
@@ -180,7 +181,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <span>{readingTime} min read</span>
         </div>
         <div className="relative w-full h-[400px] mb-8 rounded overflow-hidden bg-gray-200">
-           <Image src={getBlogImage(slug)} alt={blog.title} fill sizes="(max-width: 768px) 100vw, 800px" className="object-cover" priority />
+           <Image src={getBlogImage(slug)} alt={blog.title} fill sizes="(max-width: 768px) 100vw, 800px" className="object-cover" priority placeholder={IMAGE_SKELETON} />
         </div>
         <RenderContent content={blog.content || []} />
 

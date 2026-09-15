@@ -5,14 +5,33 @@
 // When dealPrice is missing we fall back to mrp; if neither is present the
 // package is "Pricing on request".
 //
-// Part B: priceOverrides.json contains 1.5x adjusted prices for packages
-// that had real scraped prices. The override is applied here so the original
-// allPackages.ts data stays untouched.
+// priceOverrides.json normalizes questionable scraped prices without mutating
+// the raw catalogue. International packages use their original verified base
+// price with the requested 2.5× multiplier here, the single pricing path used
+// by cards, listings, package pages, and their structured data.
 
 import priceOverrides from "@/data/priceOverrides.json";
+import { allPackages } from "@/data/allPackages";
+import { isInternationalPackage } from "@/utils/packageCatalog";
 
 /** Prices below this amount are handled personally rather than advertised. */
 export const MINIMUM_PUBLIC_PRICE = 10_000;
+
+type PriceOverride = {
+  mrp: string;
+  dealPrice: string;
+  originalMrp?: string;
+  originalDealPrice?: string;
+  estimated?: boolean;
+};
+
+const internationalPackageSlugs = new Set(
+  allPackages.filter(isInternationalPackage).map((pkg) => pkg.slug),
+);
+
+function scaleInternationalPrice(value: number) {
+  return Math.round(value * 2.5);
+}
 
 export function parseINR(s?: string): number {
   const cleaned = (s || "").replace(/[^\d]/g, "");
@@ -33,16 +52,28 @@ export interface PriceInfo {
 }
 
 export function getPriceInfo(mrp?: string, dealPrice?: string, slug?: string): PriceInfo {
-  // Check for 1.5x adjusted prices first (Part B override)
-  const override = slug ? (priceOverrides as Record<string, { mrp: string; dealPrice: string }>)[slug] : undefined;
-  const effectiveMrp = override?.mrp || mrp;
-  const effectiveDeal = override?.dealPrice || dealPrice;
+  const override = slug ? (priceOverrides as Record<string, PriceOverride>)[slug] : undefined;
+  const isInternational = Boolean(slug && internationalPackageSlugs.has(slug));
 
-  const mrpValue = parseINR(effectiveMrp);
-  const dealValue = parseINR(effectiveDeal);
+  // Overrides are pre-adjusted for domestic tours. For international tours,
+  // start from each entry's original base so the multiplier is exactly 2.5×,
+  // never 2.5× on top of a previous 1.5× adjustment.
+  const originalMrp = parseINR(override?.originalMrp || mrp);
+  const originalDeal = parseINR(override?.originalDealPrice || dealPrice);
+  const hasUsableOriginal = originalDeal >= MINIMUM_PUBLIC_PRICE / 2.5 && originalMrp >= originalDeal;
+  const estimatedBaseMrp = parseINR(override?.mrp || mrp) / 1.5;
+  const estimatedBaseDeal = parseINR(override?.dealPrice || dealPrice) / 1.5;
+  const unscaledMrp = isInternational
+    ? hasUsableOriginal ? originalMrp : estimatedBaseMrp
+    : parseINR(override?.mrp || mrp);
+  const unscaledDeal = isInternational
+    ? hasUsableOriginal ? originalDeal : estimatedBaseDeal
+    : parseINR(override?.dealPrice || dealPrice);
+  const mrpValue = isInternational ? scaleInternationalPrice(unscaledMrp) : unscaledMrp;
+  const dealValue = isInternational ? scaleInternationalPrice(unscaledDeal) : unscaledDeal;
 
   // Scraper fallback flags — treat as "no price" so we never show fake deals.
-  const isFallback = dealValue === 2 || mrpValue === 2 || dealValue === 24750;
+  const isFallback = unscaledDeal === 2 || unscaledMrp === 2 || unscaledDeal === 24750;
   const deal = dealValue > 0 ? dealValue : mrpValue;
   const hasPrice = deal >= MINIMUM_PUBLIC_PRICE && !isFallback;
   const display = hasPrice ? deal.toLocaleString("en-IN") : "";

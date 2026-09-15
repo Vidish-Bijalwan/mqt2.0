@@ -7,6 +7,7 @@ import { ChevronRight, Calendar, BookOpen, Clock, Search, X, Filter } from "luci
 import { useState, useMemo, Suspense } from "react";
 import { ALL_BLOGS, CATEGORIES, categoryCounts } from "@/data/blogIndex";
 import BlogSidebar from "@/components/blog/BlogSidebar";
+import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
 
 const ITEMS_PER_PAGE = 24;
 
@@ -86,7 +87,7 @@ function BlogIndexContent() {
             '/images/blog/stepwells-in-gujarat.jpg',
           ].map((src, i) => (
             <div key={i} className="relative w-full h-full">
-              <Image src={src} alt="Travel blog hero image" fill className="object-cover" sizes="25vw" />
+              <Image src={src} alt="Travel blog hero image" fill className="object-cover" sizes="25vw" placeholder={IMAGE_SKELETON} />
             </div>
           ))}
         </div>
@@ -151,7 +152,7 @@ function BlogIndexContent() {
               {featuredBlogs.map((blog) => (
                 <Link key={blog.slug} href={`/blog/${blog.slug}`} className="bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-legacy-orange/50 transition-all duration-300 group overflow-hidden flex flex-col">
                   <div className="relative h-56 overflow-hidden">
-                    <Image src={blog.image} alt={blog.title} fill className="object-cover group-hover:scale-110 transition-transform duration-700" sizes="(max-width: 768px) 100vw, 33vw" />
+                    <Image src={blog.image} alt={blog.title} fill className="object-cover group-hover:scale-110 transition-transform duration-700" sizes="(max-width: 768px) 100vw, 33vw" loading="lazy" decoding="async" placeholder={IMAGE_SKELETON} />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     <span className="absolute top-3 left-3 bg-legacy-orange text-white text-xs font-bold px-3 py-1 rounded-full shadow">{blog.category}</span>
                     <div className="absolute bottom-3 left-3 right-3">
@@ -233,6 +234,9 @@ function BlogIndexContent() {
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-700"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      loading="lazy"
+                      decoding="async"
+                      placeholder={IMAGE_SKELETON}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                     {/* Category badge */}

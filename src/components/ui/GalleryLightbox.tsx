@@ -4,6 +4,7 @@ import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { createPortal } from "react-dom";
 import Image from "next/image";
 import { X, Images, ChevronLeft, ChevronRight } from "lucide-react";
+import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
 
 interface GalleryLightboxProps {
   images: string[];
@@ -108,6 +109,7 @@ export default function GalleryLightbox({ images, title, captions = [] }: Galler
             fill
             priority
             sizes="100vw"
+            placeholder={IMAGE_SKELETON}
             className="object-contain"
           />
         </div>
@@ -159,7 +161,7 @@ export default function GalleryLightbox({ images, title, captions = [] }: Galler
                     : "opacity-45 hover:opacity-80"
                 }`}
               >
-                <Image src={img} alt="" fill sizes="80px" className="object-cover" />
+                <Image src={img} alt="" fill sizes="80px" loading="lazy" decoding="async" placeholder={IMAGE_SKELETON} className="object-cover" />
               </button>
             ))}
           </div>

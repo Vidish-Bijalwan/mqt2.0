@@ -1,19 +1,19 @@
 {
   "summary": {
-    "generatedAt": "2026-09-13T09:42:08.077Z",
+    "generatedAt": "2026-09-15T12:55:11.294Z",
     "baseUrl": "http://localhost:3000",
     "sitemapUrls": 1121,
-    "discoveredInternalUrls": 1259,
-    "checkedUrls": 1259,
+    "discoveredInternalUrls": 1227,
+    "checkedUrls": 1227,
     "packageUrls": 652,
-    "successfulUrls": 1259,
+    "successfulUrls": 1227,
     "brokenUrls": 0,
     "redirectedUrls": 0,
     "legacyReferenceLeaks": 0,
     "packagesMissingItineraryControl": 0,
     "packagesMissingPublishedPrice": 0,
     "packagesWithBadCanonical": 0,
-    "externalHrefCount": 652
+    "externalHrefCount": 650
   },
   "broken": [],
   "redirects": [],
@@ -22,8 +22,6 @@
   "missingPrice": [],
   "badCanonical": [],
   "externalHrefs": [
-    "https://fonts.googleapis.com",
-    "https://fonts.gstatic.com",
     "https://wa.me/918171158569",
     "https://wa.me/918171158569?text=Hello%20My%20Quick%20Trippers%2C%20I%20am%20interested%20in%20the%2012%20Jyotirlinga%20Tour%20Package.%20Please%20share%20the%20available%20dates%20and%20a%20tailored%20quote.",
     "https://wa.me/918171158569?text=Hello%20My%20Quick%20Trippers%2C%20I%20am%20interested%20in%20the%202%20Nights%203%20Days%20Orissa%20Tour%20Package.%20Please%20share%20the%20available%20dates%20and%20a%20tailored%20quote.",
@@ -677,144 +675,144 @@
   ],
   "slowest": [
     {
-      "url": "http://localhost:3000/destinations/india-tours",
+      "url": "http://localhost:3000/",
       "status": 200,
-      "finalUrl": "http://localhost:3000/destinations/india-tours",
+      "finalUrl": "http://localhost:3000/",
       "type": "text/html; charset=utf-8",
-      "ms": 808
-    },
-    {
-      "url": "http://localhost:3000/reviews",
-      "status": 200,
-      "finalUrl": "http://localhost:3000/reviews",
-      "type": "text/html; charset=utf-8",
-      "ms": 726
-    },
-    {
-      "url": "http://localhost:3000/about-us",
-      "status": 200,
-      "finalUrl": "http://localhost:3000/about-us",
-      "type": "text/html; charset=utf-8",
-      "ms": 626
-    },
-    {
-      "url": "http://localhost:3000/packages?category=North%20India",
-      "status": 200,
-      "finalUrl": "http://localhost:3000/packages?category=North%20India",
-      "type": "text/html; charset=utf-8",
-      "ms": 587
-    },
-    {
-      "url": "http://localhost:3000/packages?category=South%20India",
-      "status": 200,
-      "finalUrl": "http://localhost:3000/packages?category=South%20India",
-      "type": "text/html; charset=utf-8",
-      "ms": 585
-    },
-    {
-      "url": "http://localhost:3000/packages?category=India%20Tours",
-      "status": 200,
-      "finalUrl": "http://localhost:3000/packages?category=India%20Tours",
-      "type": "text/html; charset=utf-8",
-      "ms": 584
-    },
-    {
-      "url": "http://localhost:3000/experiences",
-      "status": 200,
-      "finalUrl": "http://localhost:3000/experiences",
-      "type": "text/html; charset=utf-8",
-      "ms": 581
-    },
-    {
-      "url": "http://localhost:3000/careers",
-      "status": 200,
-      "finalUrl": "http://localhost:3000/careers",
-      "type": "text/html; charset=utf-8",
-      "ms": 580
-    },
-    {
-      "url": "http://localhost:3000/blog",
-      "status": 200,
-      "finalUrl": "http://localhost:3000/blog",
-      "type": "text/html; charset=utf-8",
-      "ms": 575
+      "ms": 497
     },
     {
       "url": "http://localhost:3000/contact-us",
       "status": 200,
       "finalUrl": "http://localhost:3000/contact-us",
       "type": "text/html; charset=utf-8",
-      "ms": 575
-    },
-    {
-      "url": "http://localhost:3000/customer-center",
-      "status": 200,
-      "finalUrl": "http://localhost:3000/customer-center",
-      "type": "text/html; charset=utf-8",
-      "ms": 575
-    },
-    {
-      "url": "http://localhost:3000/privacy-policy",
-      "status": 200,
-      "finalUrl": "http://localhost:3000/privacy-policy",
-      "type": "text/html; charset=utf-8",
-      "ms": 573
-    },
-    {
-      "url": "http://localhost:3000/my-booking",
-      "status": 200,
-      "finalUrl": "http://localhost:3000/my-booking",
-      "type": "text/html; charset=utf-8",
-      "ms": 572
-    },
-    {
-      "url": "http://localhost:3000/packages?filter=france",
-      "status": 200,
-      "finalUrl": "http://localhost:3000/packages?filter=france",
-      "type": "text/html; charset=utf-8",
-      "ms": 570
-    },
-    {
-      "url": "http://localhost:3000/packages?category=West%20India",
-      "status": 200,
-      "finalUrl": "http://localhost:3000/packages?category=West%20India",
-      "type": "text/html; charset=utf-8",
-      "ms": 568
+      "ms": 487
     },
     {
       "url": "http://localhost:3000/special-tours",
       "status": 200,
       "finalUrl": "http://localhost:3000/special-tours",
       "type": "text/html; charset=utf-8",
-      "ms": 567
+      "ms": 476
     },
     {
-      "url": "http://localhost:3000/pay-online",
+      "url": "http://localhost:3000/about-us",
       "status": 200,
-      "finalUrl": "http://localhost:3000/pay-online",
+      "finalUrl": "http://localhost:3000/about-us",
       "type": "text/html; charset=utf-8",
-      "ms": 567
+      "ms": 440
     },
     {
-      "url": "http://localhost:3000/group-tours",
+      "url": "http://localhost:3000/packages/varanasi-prayagraj-bodhgaya-ayodhya-tour",
       "status": 200,
-      "finalUrl": "http://localhost:3000/group-tours",
+      "finalUrl": "http://localhost:3000/packages/varanasi-prayagraj-bodhgaya-ayodhya-tour",
       "type": "text/html; charset=utf-8",
-      "ms": 565
+      "ms": 392
     },
     {
-      "url": "http://localhost:3000/packages?category=East%20India",
+      "url": "http://localhost:3000/packages/varanasi-prayagraj-ayodhya-vindhyachal-tour",
       "status": 200,
-      "finalUrl": "http://localhost:3000/packages?category=East%20India",
+      "finalUrl": "http://localhost:3000/packages/varanasi-prayagraj-ayodhya-vindhyachal-tour",
       "type": "text/html; charset=utf-8",
-      "ms": 548
+      "ms": 388
     },
     {
-      "url": "http://localhost:3000/packages?category=Uttar%20Pradesh",
+      "url": "http://localhost:3000/blog",
       "status": 200,
-      "finalUrl": "http://localhost:3000/packages?category=Uttar%20Pradesh",
+      "finalUrl": "http://localhost:3000/blog",
       "type": "text/html; charset=utf-8",
-      "ms": 547
+      "ms": 386
+    },
+    {
+      "url": "http://localhost:3000/packages/yamuna-pushkaralu-tour-from-delhi",
+      "status": 200,
+      "finalUrl": "http://localhost:3000/packages/yamuna-pushkaralu-tour-from-delhi",
+      "type": "text/html; charset=utf-8",
+      "ms": 385
+    },
+    {
+      "url": "http://localhost:3000/packages/varanasi-bodhgaya-prayagraj-package",
+      "status": 200,
+      "finalUrl": "http://localhost:3000/packages/varanasi-bodhgaya-prayagraj-package",
+      "type": "text/html; charset=utf-8",
+      "ms": 369
+    },
+    {
+      "url": "http://localhost:3000/packages/agartala-tripura-sundari-tour",
+      "status": 200,
+      "finalUrl": "http://localhost:3000/packages/agartala-tripura-sundari-tour",
+      "type": "text/html; charset=utf-8",
+      "ms": 367
+    },
+    {
+      "url": "http://localhost:3000/packages/amarnath-yatra-with-kashmir-tour",
+      "status": 200,
+      "finalUrl": "http://localhost:3000/packages/amarnath-yatra-with-kashmir-tour",
+      "type": "text/html; charset=utf-8",
+      "ms": 366
+    },
+    {
+      "url": "http://localhost:3000/packages/varanasi-allahabad-ayodhya-naimisharanya-tour",
+      "status": 200,
+      "finalUrl": "http://localhost:3000/packages/varanasi-allahabad-ayodhya-naimisharanya-tour",
+      "type": "text/html; charset=utf-8",
+      "ms": 366
+    },
+    {
+      "url": "http://localhost:3000/packages/gaya-tour-packages",
+      "status": 200,
+      "finalUrl": "http://localhost:3000/packages/gaya-tour-packages",
+      "type": "text/html; charset=utf-8",
+      "ms": 364
+    },
+    {
+      "url": "http://localhost:3000/packages/4-days-odisha-tour-packages",
+      "status": 200,
+      "finalUrl": "http://localhost:3000/packages/4-days-odisha-tour-packages",
+      "type": "text/html; charset=utf-8",
+      "ms": 363
+    },
+    {
+      "url": "http://localhost:3000/packages/gaya",
+      "status": 200,
+      "finalUrl": "http://localhost:3000/packages/gaya",
+      "type": "text/html; charset=utf-8",
+      "ms": 362
+    },
+    {
+      "url": "http://localhost:3000/destinations/india-tours",
+      "status": 200,
+      "finalUrl": "http://localhost:3000/destinations/india-tours",
+      "type": "text/html; charset=utf-8",
+      "ms": 357
+    },
+    {
+      "url": "http://localhost:3000/packages/ajanta-ellora-caves-tour-from-aurangabad",
+      "status": 200,
+      "finalUrl": "http://localhost:3000/packages/ajanta-ellora-caves-tour-from-aurangabad",
+      "type": "text/html; charset=utf-8",
+      "ms": 350
+    },
+    {
+      "url": "http://localhost:3000/packages/tamilnadu-tour",
+      "status": 200,
+      "finalUrl": "http://localhost:3000/packages/tamilnadu-tour",
+      "type": "text/html; charset=utf-8",
+      "ms": 349
+    },
+    {
+      "url": "http://localhost:3000/packages/bhubaneswar-konark-puri-gopalpur-package",
+      "status": 200,
+      "finalUrl": "http://localhost:3000/packages/bhubaneswar-konark-puri-gopalpur-package",
+      "type": "text/html; charset=utf-8",
+      "ms": 348
+    },
+    {
+      "url": "http://localhost:3000/packages/yamuna-pushkaralu-yatra-from-dehradun",
+      "status": 200,
+      "finalUrl": "http://localhost:3000/packages/yamuna-pushkaralu-yatra-from-dehradun",
+      "type": "text/html; charset=utf-8",
+      "ms": 346
     }
   ]
 }

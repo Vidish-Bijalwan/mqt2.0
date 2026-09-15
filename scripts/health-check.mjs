@@ -17,7 +17,9 @@ import path from "node:path";
 const projectRoot = process.cwd();
 const isOneDrive = projectRoot.toLowerCase().includes("onedrive");
 
-const NM_TARGET_DIR = "mqt-node-modules";
+// Keep the active external install separate from the locked/corrupt legacy
+// target. The project links to this name through the verified health check.
+const NM_TARGET_DIR = "mqt-node-modules-next16";
 const NEXT_TARGET_DIR = "mqt-next-cache";
 const NM_TARGET = path.join(
   os.homedir(),

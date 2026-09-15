@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { Package } from '@/data/allPackages';
 import { getPackageImage } from '@/utils/imageMapper';
 import { getPriceInfo } from '@/utils/price';
+import { IMAGE_SKELETON } from '@/utils/imagePlaceholder';
 
 export default function PackageListCard({ pkg }: { pkg: Package }) {
   const [imgSrc, setImgSrc] = useState(getPackageImage(pkg));
@@ -31,6 +32,9 @@ export default function PackageListCard({ pkg }: { pkg: Package }) {
             alt={pkg.title}
             fill
             sizes="(max-width: 768px) 100vw, 260px"
+            loading="lazy"
+            decoding="async"
+            placeholder={IMAGE_SKELETON}
             className="object-cover group-hover:scale-105 transition-transform duration-500"
             onError={() => setImgSrc('/images/hero/hero-bg-2.svg')} // Dynamic fallback
           />

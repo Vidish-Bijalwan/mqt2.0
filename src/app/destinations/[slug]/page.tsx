@@ -13,6 +13,7 @@ import EnquiryForm from "@/components/forms/EnquiryForm";
 import Image from "next/image";
 import { getPriceInfo, parseINR } from "@/utils/price";
 import type { ContentDocument } from "@/types/content";
+import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
 
 interface LegacyDestinationDocument {
   title: string;
@@ -185,6 +186,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
           sizes="100vw"
           className="object-cover"
           priority
+          placeholder={IMAGE_SKELETON}
         />
         <div className="absolute inset-0 bg-legacy-nav-blue/70" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">

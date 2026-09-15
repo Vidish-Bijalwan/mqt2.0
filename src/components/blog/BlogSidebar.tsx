@@ -7,6 +7,7 @@ import { Clock, Search, Phone, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { ALL_BLOGS, CATEGORIES, categoryCounts } from "@/data/blogIndex";
 import { siteConfig } from "@/data/siteConfig";
+import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
 
 interface BlogSidebarProps {
   /** Active category (listing) — highlights the row */
@@ -87,6 +88,9 @@ export default function BlogSidebar({
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="80px"
+                    loading="lazy"
+                    decoding="async"
+                    placeholder={IMAGE_SKELETON}
                   />
                 </div>
                 <div className="min-w-0">

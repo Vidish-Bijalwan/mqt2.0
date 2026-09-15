@@ -1,6 +1,6 @@
 # Package Content Integrity Audit
 
-Generated: 2026-09-14T10:51:36.693Z
+Generated: 2026-09-15T07:44:32.368Z
 
 ## Scope
 
@@ -13,9 +13,9 @@ Generated: 2026-09-14T10:51:36.693Z
 
 - Primary files present: **652/652**
 - Missing primary files: **0**
-- Primary images below 600px width: **120**
+- Primary images below 600px width: **116**
 - High-confidence filename destination conflicts: **0**
-- Records needing visual/semantic review: **309**
+- Records needing visual/semantic review: **306**
 
 ## Itinerary Results
 
@@ -98,11 +98,7 @@ Generated: 2026-09-14T10:51:36.693Z
 
 | Package | Finding |
 |---|---|
-| `12-jyotirlinga-tour-package` | /images/blog/12-jyotirlingas-in-india.jpg; 300x169 |
-| `3-days-ujjain-omkareshwar-tour` | /images/packages/3-days-ujjain-omkareshwar-tour.webp; 500x300 |
-| `4-days-mahavatar-babaji-cave-tour` | /images/packages/4-days-mahavatar-babaji-cave-tour.webp; 500x300 |
 | `agartala-tripura-sundari-tour` | /images/packages/agartala-tripura-sundari-tour.webp; 520x350 |
-| `agra` | /images/packages/agra.jpg; 350x250 |
 | `aizawl-tour-packages` | /images/packages/aizawl-tour-packages.jpg; 350x250 |
 | `algeria-tour-packages` | /images/packages/africa-tour-packages.jpg; 300x180 |
 | `beach-vacation` | /images/packages/beach-vacation.jpg; 350x250 |
@@ -148,6 +144,10 @@ Generated: 2026-09-14T10:51:36.693Z
 | `india-wildlife-tour-packages` | /images/packages/india-wildlife-tour-packages.jpg; 350x250 |
 | `jama-masjid-delhi` | /images/packages/jama-masjid-delhi.jpg; 500x300 |
 | `jorhat-majuli-kaziranga-tour-package` | /images/packages/jorhat-majuli-kaziranga-tour-package.webp; 500x300 |
+| `kailash-mansarovar-yatra` | /images/packages/kailash-mansarovar-yatra.jpg; 440x420 |
+| `kenya-tour-packages` | /images/packages/africa-tour-packages.jpg; 300x180 |
+| `kushinagar-tour-packages` | /images/packages/kushinagar-tour-packages.jpg; 350x250 |
+| `kwazulu-natal-tour-packages` | /images/packages/africa-tour-packages.jpg; 300x180 |
 
 ## Interpretation
 

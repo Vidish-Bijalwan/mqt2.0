@@ -21,7 +21,7 @@ import path from "node:path";
 
 const projectRoot = process.cwd();
 const isOneDrive = projectRoot.toLowerCase().includes("onedrive");
-const TARGET = path.join(os.homedir(), "AppData", "Local", "mqt-node-modules");
+const TARGET = path.join(os.homedir(), "AppData", "Local", "mqt-node-modules-next16");
 const NM_TARGET = path.join(TARGET, "node_modules");
 const NM_PATH = path.join(projectRoot, "node_modules");
 const NEXT_TARGET = path.join(os.homedir(), "AppData", "Local", "mqt-next-cache");

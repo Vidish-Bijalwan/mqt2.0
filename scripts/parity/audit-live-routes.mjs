@@ -4,7 +4,10 @@ import path from 'node:path';
 
 const BASE = (process.argv[2] || 'http://localhost:3000').replace(/\/$/, '');
 const PUBLIC_DOMAIN = 'https://www.myquicktrippers.com';
-const CONCURRENCY = 16;
+// Local development servers compile and render routes on demand. Keep the
+// default gentle enough to avoid turning an audit into artificial timeouts;
+// CI can opt into more parallelism with AUDIT_CONCURRENCY.
+const CONCURRENCY = Math.max(1, Number.parseInt(process.env.AUDIT_CONCURRENCY || "6", 10) || 6);
 const TIMEOUT = 30_000;
 
 function decodeHtml(value) {

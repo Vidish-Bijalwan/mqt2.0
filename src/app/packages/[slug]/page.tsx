@@ -21,6 +21,7 @@ import { packageExperienceOverrides } from "@/data/packageExperienceOverrides";
 import fs from 'fs';
 import path from 'path';
 import type { CSSProperties } from "react";
+import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
 
 interface LegacyPackageDetails {
   overview: string;
@@ -155,8 +156,39 @@ function sanitizeItineraryBlocks(items: Block[]): Block[] {
   return result;
 }
 
-function buildSuggestedItinerary(title: string, duration: string, routePlaces: string[]) {
-  const dayCount = Math.max(3, getTourDays(duration, title) || routePlaces.length || 3);
+function isDayHeading(block: Block) {
+  return block.type === 'heading' && /^day\s*[-:]?\s*\d/i.test(blockText(block));
+}
+
+function hasRenderableScrapedItinerary(items: Block[]) {
+  let withinDay = false;
+  let dayHasContent = false;
+
+  for (const block of items) {
+    if (isDayHeading(block)) {
+      if (withinDay && dayHasContent) return true;
+      withinDay = true;
+      dayHasContent = false;
+      continue;
+    }
+
+    if (!withinDay || block.type === 'heading') continue;
+    if (block.type === 'list' && (block.items || []).some((item) => typeof item === 'string' && item.trim())) {
+      dayHasContent = true;
+    } else if (block.type === 'faq' && (block.items || []).length > 0) {
+      dayHasContent = true;
+    } else if (block.type === 'table' && (block.rows || []).length > 0) {
+      dayHasContent = true;
+    } else if (block.type === 'paragraph' && blockText(block).length > 0) {
+      dayHasContent = true;
+    }
+  }
+
+  return withinDay && dayHasContent;
+}
+
+function buildSuggestedItinerary(title: string, duration: string, routePlaces: string[], sourceDayTitles: string[] = []) {
+  const dayCount = Math.max(3, getTourDays(duration, title) || routePlaces.length || 3, sourceDayTitles.length);
   const subject = title.replace(/\s*(tour|package|holiday|yatra).*/i, "").trim() || "your destination";
   const stops = routePlaces.length > 0 ? routePlaces : [subject];
 
@@ -164,13 +196,26 @@ function buildSuggestedItinerary(title: string, duration: string, routePlaces: s
     const day = index + 1;
     const stopIndex = Math.min(stops.length - 1, Math.floor((index / Math.max(1, dayCount - 1)) * stops.length));
     const stop = stops[stopIndex];
+    const sourceTitle = sourceDayTitles[index]
+      ?.replace(/^day\s*[-:]?\s*\d+\s*[:.\-]?\s*/i, '')
+      .trim();
+    const dayTitle = sourceTitle || (day === 1
+      ? `Arrival and welcome in ${stop}`
+      : day === dayCount
+        ? `Departure from ${stop}`
+        : `Explore ${stop}`);
+    const previousStop = stops[Math.max(0, Math.min(stops.length - 1, stopIndex - 1))];
+
     if (day === 1) {
-      return { title: `Arrival and welcome in ${stop}`, description: `Arrive in ${stop}, meet the local support team and settle in. The exact pickup, hotel check-in and first-day sightseeing are adjusted to your arrival time.` };
+      return { title: dayTitle, description: `Arrive in ${stop} and settle into the journey at an unhurried pace. The first travel window is coordinated around your confirmed arrival, then the day stays intentionally light: time to check in, get your bearings, and talk through the route ahead with the travel team. Keep the evening open for rest so the next morning begins comfortably.` };
     }
     if (day === dayCount) {
-      return { title: `Departure from ${stop}`, description: `After breakfast, complete any time-permitting local visit before the planned transfer. Departure timing is coordinated with your onward train, flight or road journey.` };
+      return { title: dayTitle, description: `Begin with breakfast and a calm final check-out. Your onward transfer is planned around your confirmed departure, with any short stop kept strictly time-permitting. It is a considered finish to the ${subject} journey—enough room to travel smoothly without rushing the last morning or promising experiences that depend on road, weather, or access conditions.` };
     }
-    return { title: `Explore ${stop}`, description: `Spend the day discovering the key sights and experiences around ${stop}. Travel time, meal breaks and the sightseeing order are tailored to season, opening hours and your preferred pace.` };
+    if (previousStop !== stop) {
+      return { title: dayTitle, description: `After breakfast, continue from ${previousStop} towards ${stop}, treating the journey itself as part of the day rather than a gap between sights. The route is paced with sensible pauses for comfort, meals, and changing conditions. Once you arrive, settle in and use the later part of the day for the local atmosphere or a gentle orientation, with the exact sequence confirmed for your dates.` };
+    }
+    return { title: dayTitle, description: `This is a fuller day around ${stop}. Start at a comfortable morning pace, leaving room for the experiences that make this stop worthwhile as well as breaks for meals and rest. The travel team shapes the order around seasonal access, local timing, and how active you want the day to feel—so it reads as a real holiday, not a race through a checklist.` };
   });
 }
 
@@ -407,9 +452,22 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
   const hasQuickInfo = hasDuration || hasRouteInfo;
   const legacyItinerary = details.itinerary.filter((day) => day.description.trim().length >= 20);
   const hasLegacyItinerary = legacyItinerary.length > 0;
-  const hasScrapedItinerary = safeItineraryBlocks.length > 0;
+  // A heading-only scrape is not a usable itinerary. It previously entered
+  // BlockRenderer and produced its empty-state message despite valid route/day
+  // titles being available. Require content inside at least one day first.
+  const hasScrapedItinerary = hasRenderableScrapedItinerary(safeItineraryBlocks);
+  const sourceDayTitles = safeItineraryBlocks
+    .filter(isDayHeading)
+    .map(blockText)
+    .filter(Boolean);
+  const fallbackDayTitles = sourceDayTitles.length > 0
+    ? sourceDayTitles
+    : details.itinerary.map((day) => day.title).filter(Boolean);
+  const editorialItinerary = packageExperienceOverrides[pkg.slug]?.itinerary || [];
   const suggestedItinerary = !hasLegacyItinerary && !hasScrapedItinerary
-    ? buildSuggestedItinerary(pkg.title, pkg.duration, uniqueRoutePlaces)
+    ? editorialItinerary.length > 0
+      ? editorialItinerary
+      : buildSuggestedItinerary(pkg.title, pkg.duration, uniqueRoutePlaces, fallbackDayTitles)
     : [];
   const allFaqs = details.faqs && details.faqs.length > 0 ? details.faqs : faqPairs;
 
@@ -466,9 +524,9 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
       content: (
         <section className="rounded-[24px] border border-[#dce8e5] bg-white p-6 shadow-[0_18px_55px_rgba(11,48,44,0.08)] sm:p-8 lg:p-10">
           <div className="mb-8 max-w-2xl">
-            <p className="text-[11px] font-extrabold uppercase tracking-[0.24em] text-brand-orange-text">{suggestedItinerary.length > 0 ? "Suggested itinerary" : "Day by day"}</p>
+            <p className="text-[11px] font-extrabold uppercase tracking-[0.24em] text-brand-orange-text">{suggestedItinerary.length > 0 && editorialItinerary.length === 0 ? "Suggested itinerary" : "Day by day"}</p>
             <h2 className="font-display mt-2 text-[28px] font-bold text-[#102b28] sm:text-4xl">See how the journey unfolds</h2>
-            <p className="mt-3 text-sm leading-6 text-[#657772]">{suggestedItinerary.length > 0 ? "This starting plan keeps every day visible and will be tailored to your dates, transport and preferred pace before booking." : "Open each day for the plan, travel flow, and experiences included along the way."}</p>
+            <p className="mt-3 text-sm leading-6 text-[#657772]">{suggestedItinerary.length > 0 && editorialItinerary.length === 0 ? "This starting plan keeps every day visible and will be tailored to your dates, transport and preferred pace before booking." : "Open each day for the plan, travel flow, and experiences included along the way."}</p>
           </div>
           {hasLegacyItinerary ? <ItineraryAccordion itinerary={legacyItinerary} /> : hasScrapedItinerary ? <BlockRenderer blocks={safeItineraryBlocks} /> : <ItineraryAccordion itinerary={suggestedItinerary} />}
         </section>
@@ -733,6 +791,7 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
                 fill
                 preload
                 sizes="(max-width: 768px) 100vw, 1320px"
+                placeholder={IMAGE_SKELETON}
                 className="object-cover"
               />
             )}

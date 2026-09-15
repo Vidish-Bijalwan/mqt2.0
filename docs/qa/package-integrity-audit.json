@@ -1,15 +1,15 @@
 {
   "summary": {
-    "generatedAt": "2026-09-14T10:51:36.693Z",
+    "generatedAt": "2026-09-15T07:44:32.368Z",
     "catalogPackages": 709,
     "publicPackages": 652,
     "archivedShortPackages": 48,
     "excludedNonPackageRecords": 9,
     "primaryImagesPresent": 652,
     "primaryImagesMissing": 0,
-    "primaryImagesLowResolution": 120,
+    "primaryImagesLowResolution": 116,
     "primaryImageDestinationMismatch": 0,
-    "imageRecordsNeedingReview": 309,
+    "imageRecordsNeedingReview": 306,
     "itinerariesPresent": 89,
     "itinerariesMissing": 563,
     "itineraryNarrativesWithoutDayStructure": 3,
@@ -60,14 +60,12 @@
       "duration": "23 Nights / 24 Days",
       "expectedDays": 24,
       "primaryImage": {
-        "url": "/images/blog/12-jyotirlingas-in-india.jpg",
-        "status": "review",
-        "bytes": 14330,
-        "width": 300,
-        "height": 169,
-        "issues": [
-          "low-resolution"
-        ]
+        "url": "/images/packages/hi-12-jyotirlinga-tour-package.webp",
+        "status": "ok",
+        "bytes": 140250,
+        "width": 1400,
+        "height": 1812,
+        "issues": []
       },
       "secondaryImage": {
         "url": "/images/packages/79206b25d58f.webp",
@@ -298,14 +296,12 @@
       "duration": "2 Nights / 3 Days",
       "expectedDays": 3,
       "primaryImage": {
-        "url": "/images/packages/3-days-ujjain-omkareshwar-tour.webp",
-        "status": "review",
-        "bytes": 40418,
-        "width": 500,
-        "height": 300,
-        "issues": [
-          "low-resolution"
-        ]
+        "url": "/images/packages/hi-3-days-ujjain-omkareshwar-tour.webp",
+        "status": "ok",
+        "bytes": 428664,
+        "width": 1400,
+        "height": 2341,
+        "issues": []
       },
       "secondaryImage": null,
       "sourceBlockCount": 0,
@@ -324,14 +320,12 @@
       "duration": "3 Nights / 4 Days",
       "expectedDays": 4,
       "primaryImage": {
-        "url": "/images/packages/4-days-mahavatar-babaji-cave-tour.webp",
-        "status": "review",
-        "bytes": 173706,
-        "width": 500,
-        "height": 300,
-        "issues": [
-          "low-resolution"
-        ]
+        "url": "/images/packages/hi-4-days-mahavatar-babaji-cave-tour.webp",
+        "status": "ok",
+        "bytes": 75232,
+        "width": 1280,
+        "height": 720,
+        "issues": []
       },
       "secondaryImage": null,
       "sourceBlockCount": 0,
@@ -643,14 +637,12 @@
       "duration": "",
       "expectedDays": null,
       "primaryImage": {
-        "url": "/images/packages/agra.jpg",
-        "status": "review",
-        "bytes": 13089,
-        "width": 350,
-        "height": 250,
-        "issues": [
-          "low-resolution"
-        ]
+        "url": "/images/packages/hi-agra.webp",
+        "status": "ok",
+        "bytes": 211672,
+        "width": 1400,
+        "height": 1154,
+        "issues": []
       },
       "secondaryImage": null,
       "sourceBlockCount": 0,

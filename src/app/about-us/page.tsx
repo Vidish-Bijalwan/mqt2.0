@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Compass, Headphones, MapPin, Route, ShieldCheck, Sparkles } from "lucide-react";
 import SocialFollowLinks from "@/components/ui/SocialFollowLinks";
 import { siteConfig } from "@/data/siteConfig";
+import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -21,7 +22,7 @@ export default function AboutUsPage() {
   return (
     <div className="heritage-surface min-h-screen">
       <section className="relative isolate overflow-hidden bg-[#0a332d] text-white">
-        <Image src="/images/blog/royal-palaces-in-india.jpg" alt="Historic Indian palace representing the living heritage behind journeys across India" fill preload sizes="100vw" className="z-0 object-cover object-center opacity-85" />
+        <Image src="/images/blog/royal-palaces-in-india.jpg" alt="Historic Indian palace representing the living heritage behind journeys across India" fill preload sizes="100vw" placeholder={IMAGE_SKELETON} className="z-0 object-cover object-center opacity-85" />
         <div className="absolute inset-0 z-10 bg-[linear-gradient(90deg,rgba(5,35,31,.94),rgba(5,35,31,.68)_55%,rgba(5,35,31,.2))]" />
         <div className="relative z-20 mx-auto max-w-7xl px-4 py-20 sm:py-28 lg:px-8">
           <p className="text-xs font-black uppercase tracking-[0.24em] text-orange-300">Our story</p>

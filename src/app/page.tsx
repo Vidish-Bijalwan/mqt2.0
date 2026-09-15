@@ -9,6 +9,7 @@ import ThemeFilter from "@/components/home/ThemeFilter";
 import ExperienceExplorer from "@/components/home/ExperienceExplorer";
 import { experiencesWithCounts } from "@/utils/experienceCounts";
 import { groupPackagesByDestination } from "@/utils/packageGroups";
+import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
 
 /* ─── Smart package filtering ───
    Only show packages on the homepage that have:
@@ -165,6 +166,7 @@ export default function Home() {
                   quality={65}
                   loading="lazy"
                   decoding="async"
+                  placeholder={IMAGE_SKELETON}
                   className="object-cover"
                 />
                 <span className="nit-cdxBt-copy"><strong>{dest.name}</strong><small>{dest.sub}</small></span>
