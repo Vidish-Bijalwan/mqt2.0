@@ -5,7 +5,7 @@ import SectionHeader from "@/components/ui/SectionHeader";
 import Image from "next/image";
 import Link from "next/link";
 import PosterMarquee from "@/components/ui/PosterMarquee";
-import ThemeFilter from "@/components/home/ThemeFilter";
+import DeferredThemeFilter from "@/components/home/DeferredThemeFilter";
 import ExperienceExplorer from "@/components/home/ExperienceExplorer";
 import { experiencesWithCounts } from "@/utils/experienceCounts";
 import { groupPackagesByDestination } from "@/utils/packageGroups";
@@ -240,7 +240,7 @@ export default function Home() {
             }
           />
           <div className="max-md:-mx-[5px]">
-            <ThemeFilter />
+            <DeferredThemeFilter />
           </div>
         </div>
       </section>

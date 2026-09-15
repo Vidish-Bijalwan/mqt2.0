@@ -14,28 +14,19 @@ export default function Navbar() {
   const [expandedMobileRegion, setExpandedMobileRegion] = useState<string | null>(null);
   const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
   const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const navBarRef = useRef<HTMLDivElement>(null);
-  const [megaMenuTop, setMegaMenuTop] = useState(0);
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
   }, [isOpen]);
 
-  const calculateTop = useCallback(() => {
-    if (navBarRef.current) {
-      setMegaMenuTop(navBarRef.current.getBoundingClientRect().bottom);
-    }
-  }, []);
-
   const handleMenuEnter = useCallback((title: string) => {
     if (hoverTimeoutRef.current) {
       clearTimeout(hoverTimeoutRef.current);
       hoverTimeoutRef.current = null;
     }
-    calculateTop();
     setHoveredMenu(title);
-  }, [calculateTop]);
+  }, []);
 
   const handleMenuLeave = useCallback(() => {
     hoverTimeoutRef.current = setTimeout(() => {
@@ -48,8 +39,7 @@ export default function Navbar() {
       clearTimeout(hoverTimeoutRef.current);
       hoverTimeoutRef.current = null;
     }
-    calculateTop();
-  }, [calculateTop]);
+  }, []);
 
   return (
     <nav className="bg-white w-full relative z-[1000]">
@@ -122,7 +112,7 @@ export default function Navbar() {
       </div>
 
       {/* ── 3. Main Navigation Bar (FAT & BOLD) ── */}
-      <div ref={navBarRef} className="relative hidden w-full bg-brand-forest text-white lg:block">
+      <div className="relative hidden w-full bg-brand-forest text-white lg:block">
         <div className="container mx-auto w-[95%] max-w-[1600px] flex relative">
           {/* Home Icon */}
           <Link href="/" className="flex h-[48px] w-[60px] shrink-0 items-center justify-center bg-brand-river transition-colors hover:bg-brand-forest-deep">
@@ -165,14 +155,13 @@ export default function Navbar() {
       </div>
 
       {/* ══════════════════════════════════════════════════════════════════
-           MEGA MENU — fixed, full-width, fat with lots of padding
+           MEGA MENU — anchored to the navigation, full-width and scroll-safe
          ══════════════════════════════════════════════════════════════════ */}
       {hoveredMenu && navLinks.find(n => n.title === hoveredMenu && n.megaMenu && n.submenus) && (() => {
         const activeItem = navLinks.find(n => n.title === hoveredMenu)!;
         return (
           <div
-            className="hidden lg:block"
-            style={{ position: 'fixed', top: megaMenuTop, left: 0, width: '100vw', zIndex: 9999 }}
+            className="absolute left-0 top-full z-[9999] hidden w-full lg:block"
             onMouseEnter={handleMenuStayOpen}
             onMouseLeave={handleMenuLeave}
           >
@@ -208,14 +197,13 @@ export default function Navbar() {
       })()}
 
       {/* ══════════════════════════════════════════════════════════════════
-           SIMPLE DROPDOWN — fixed, full-width, fat
+           SIMPLE DROPDOWN — anchored to the navigation, full-width and scroll-safe
          ══════════════════════════════════════════════════════════════════ */}
       {hoveredMenu && navLinks.find(n => n.title === hoveredMenu && !n.megaMenu && n.links) && (() => {
         const activeItem = navLinks.find(n => n.title === hoveredMenu)!;
         return (
           <div
-            className="hidden lg:block"
-            style={{ position: 'fixed', top: megaMenuTop, left: 0, width: '100vw', zIndex: 9999 }}
+            className="absolute left-0 top-full z-[9999] hidden w-full lg:block"
             onMouseEnter={handleMenuStayOpen}
             onMouseLeave={handleMenuLeave}
           >
@@ -237,14 +225,13 @@ export default function Navbar() {
       })()}
 
       {/* ══════════════════════════════════════════════════════════════════
-           NON-MEGA SUBMENUS — fixed, full-width, fat
+           NON-MEGA SUBMENUS — anchored to the navigation, full-width and scroll-safe
          ══════════════════════════════════════════════════════════════════ */}
       {hoveredMenu && navLinks.find(n => n.title === hoveredMenu && !n.megaMenu && n.submenus) && (() => {
         const activeItem = navLinks.find(n => n.title === hoveredMenu)!;
         return (
           <div
-            className="hidden lg:block"
-            style={{ position: 'fixed', top: megaMenuTop, left: 0, width: '100vw', zIndex: 9999 }}
+            className="absolute left-0 top-full z-[9999] hidden w-full lg:block"
             onMouseEnter={handleMenuStayOpen}
             onMouseLeave={handleMenuLeave}
           >

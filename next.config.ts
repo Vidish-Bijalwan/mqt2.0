@@ -21,7 +21,10 @@ const nextConfig: NextConfig = {
     // On Vercel, always use optimized images (default behavior)
     // Locally in dev, skip optimization for faster iteration
     unoptimized: process.env.NODE_ENV === "development",
-    formats: ["image/avif", "image/webp"],
+    // Most source photos are already WebP. Avoid expensive first-request AVIF
+    // encoding, which was making freshly visited catalogue images feel late.
+    // WebP remains broadly supported and is cached for 30 days below.
+    formats: ["image/webp"],
     qualities: [60, 65, 68, 75],
     minimumCacheTTL: 60 * 60 * 24 * 30, // 30 days
   },
