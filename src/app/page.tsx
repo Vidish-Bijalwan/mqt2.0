@@ -1,3 +1,4 @@
+import { preload } from "react-dom";
 import { type Package } from "@/data/allPackages";
 import { getPublicPackages, isInternationalPackage } from "@/utils/packageCatalog";
 import PackageCard from "@/components/ui/PackageCard";
@@ -101,6 +102,9 @@ function PackageSection({
 }
 
 export default function Home() {
+  preload('/images/home/mqt-india-hero-mobile.webp', { as: 'image', media: '(max-width: 767px)', fetchPriority: 'high' });
+  preload('/images/home/mqt-india-hero.webp', { as: 'image', media: '(min-width: 768px)', fetchPriority: 'high' });
+
   return (
     <div className="flex min-h-screen flex-col bg-transparent">
       
