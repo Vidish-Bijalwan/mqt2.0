@@ -69,7 +69,7 @@ export default function Navbar() {
       <div className="container mx-auto px-3 sm:px-4 h-[64px] md:h-[85px] flex justify-between items-center w-full lg:w-[95%] max-w-[1600px]">
         <Link href="/" className="flex min-w-0 items-center gap-2 sm:gap-3 group">
           <div className="w-11 h-11 md:w-14 md:h-14 rounded-full overflow-hidden border-3 border-brand-green shadow-md group-hover:shadow-lg group-hover:border-brand-forest transition-all shrink-0">
-            <Image src="/images/mqt-logo-256.webp" alt="My Quick Trippers" width={56} height={56} className="w-full h-full object-cover" priority />
+            <Image src="/images/mqt-logo-256.webp" alt="" role="presentation" width={56} height={56} className="w-full h-full object-cover" priority />
           </div>
           <div className="flex flex-col leading-tight">
             <span className="text-[17px] sm:text-xl md:text-[26px] font-black text-gray-900 tracking-tight whitespace-nowrap">

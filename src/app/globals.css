@@ -493,7 +493,7 @@
   .nit-prcEnq a:first-child {
     background: #fff;
     border-color: var(--color-btn-border);
-    color: #000;
+    color: #1a1a1a;
   }
   .nit-prcEnq a:last-child {
     background: var(--color-brand-orange);

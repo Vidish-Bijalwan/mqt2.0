@@ -35,6 +35,16 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
+        // Preload LCP hero image on homepage — reduces LCP from 4.9s
+        source: '/',
+        headers: [
+          {
+            key: 'Link',
+            value: '</images/home/mqt-india-hero.webp>; rel=preload; as=image; fetchpriority=high',
+          },
+        ],
+      },
+      {
         // Cache static assets aggressively
         source: "/images/:path*",
         headers: [
