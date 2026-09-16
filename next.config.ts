@@ -25,7 +25,7 @@ const nextConfig: NextConfig = {
     // encoding, which was making freshly visited catalogue images feel late.
     // WebP remains broadly supported and is cached for 30 days below.
     formats: ["image/webp"],
-    qualities: [60, 65, 68, 75],
+    qualities: [55, 60, 65, 68, 75],
     minimumCacheTTL: 60 * 60 * 24 * 30, // 30 days
   },
   typescript: {
@@ -34,16 +34,6 @@ const nextConfig: NextConfig = {
   // HTTP headers for caching & security
   async headers() {
     return [
-      {
-        // Preload LCP hero image on homepage — reduces LCP from 4.9s
-        source: '/',
-        headers: [
-          {
-            key: 'Link',
-            value: '</images/home/mqt-india-hero.webp>; rel=preload; as=image; fetchpriority=high',
-          },
-        ],
-      },
       {
         // Cache static assets aggressively
         source: "/images/:path*",
