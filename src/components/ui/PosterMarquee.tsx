@@ -306,8 +306,8 @@ export default function PosterMarquee() {
                       loading={groupIndex === 0 ? "eager" : "lazy"}
                       fetchPriority={groupIndex === 0 && itemIndex >= 4 ? "low" : undefined}
                       decoding="async"
-                      quality={60}
-                      sizes="(max-width: 768px) 220px, 320px"
+                      quality={55}
+                      sizes="(max-width: 768px) 220px, 260px"
                       placeholder={IMAGE_SKELETON}
                     />
                     <div className="pm-card__overlay">

@@ -24,12 +24,12 @@ interface PackageCardComponentProps {
   href?: string;
   variantCount?: number;
 }
-/* Amenity icons — copied from reference site (64px PNGs, rendered at 24px) */
+/* Amenity icons — WebP converted (18 KiB PNG → 2 KiB WebP each, 89% smaller) */
 const AMENITIES = [
-  { label: "Hotel Stay", icon: "/images/nit/bed.png" },
-  { label: "Meals", icon: "/images/nit/food.png" },
-  { label: "Transfers", icon: "/images/nit/car.png" },
-  { label: "Sightseeing", icon: "/images/nit/sightseeing.png" },
+  { label: "Hotel Stay", icon: "/images/nit/bed.webp" },
+  { label: "Meals", icon: "/images/nit/food.webp" },
+  { label: "Transfers", icon: "/images/nit/car.webp" },
+  { label: "Sightseeing", icon: "/images/nit/sightseeing.webp" },
 ];
 
 export default function PackageCard({ pkg, href, variantCount }: PackageCardComponentProps) {
@@ -56,7 +56,7 @@ export default function PackageCard({ pkg, href, variantCount }: PackageCardComp
           src={pkg.image}
           alt={pkg.title}
           fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1360px) 33vw, 20vw"
+          sizes="(max-width: 640px) 380px, (max-width: 1360px) 33vw, 20vw"
           quality={68}
           loading="lazy"
           decoding="async"

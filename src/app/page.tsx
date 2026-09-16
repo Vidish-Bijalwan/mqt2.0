@@ -110,7 +110,14 @@ export default function Home() {
            <h1 className="sr-only">Explore India with My Quick Trippers</h1>
            <div className="home-brand-hero__media">
              <picture>
-               <source media="(max-width: 767px)" srcSet="/images/home/mqt-india-hero-mobile.webp" />
+               <source
+                  media="(max-width: 767px)"
+                  srcSet={
+                    "/_next/image?url=%2Fimages%2Fhome%2Fmqt-india-hero-mobile.webp&w=480&q=75 480w, " +
+                    "/_next/image?url=%2Fimages%2Fhome%2Fmqt-india-hero-mobile.webp&w=640&q=75 640w"
+                  }
+                  sizes="100vw"
+                />
                <img
                  src="/images/home/mqt-india-hero.webp"
                  alt="Explore India with My Quick Trippers: mountains, heritage, wildlife, beaches and adventure journeys"

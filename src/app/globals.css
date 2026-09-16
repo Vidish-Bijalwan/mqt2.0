@@ -496,8 +496,8 @@
     color: #1a1a1a;
   }
   .nit-prcEnq a:last-child {
-    background: var(--color-brand-orange);
-    border-color: var(--color-brand-orange);
+    background: #16453D;
+    border-color: #16453D;
     color: #fff;
   }
   .nit-prcEnq a:hover {
