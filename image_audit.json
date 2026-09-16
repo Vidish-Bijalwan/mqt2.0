@@ -1,0 +1,16 @@
+{
+  "heroImages": {
+    "total": 2,
+    "broken": []
+  },
+  "destinationImages": {
+    "total": 14,
+    "broken": []
+  },
+  "packageImages": {
+    "total": 709,
+    "brokenPrimary": [],
+    "brokenSecondary": [],
+    "lowRes": []
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "changed": 4,
+  "changes": [
+    {
+      "slug": "12-jyotirlinga-tour-package",
+      "oldImage": "/images/blog/12-jyotirlingas-in-india.jpg",
+      "oldWidth": 300,
+      "image": "/images/packages/hi-12-jyotirlinga-tour-package.webp",
+      "width": 1400
+    },
+    {
+      "slug": "3-days-ujjain-omkareshwar-tour",
+      "oldImage": "/images/packages/3-days-ujjain-omkareshwar-tour.webp",
+      "oldWidth": 500,
+      "image": "/images/packages/hi-3-days-ujjain-omkareshwar-tour.webp",
+      "width": 1400
+    },
+    {
+      "slug": "4-days-mahavatar-babaji-cave-tour",
+      "oldImage": "/images/packages/4-days-mahavatar-babaji-cave-tour.webp",
+      "oldWidth": 500,
+      "image": "/images/packages/hi-4-days-mahavatar-babaji-cave-tour.webp",
+      "width": 1280
+    },
+    {
+      "slug": "agra",
+      "oldImage": "/images/packages/agra.jpg",
+      "oldWidth": 350,
+      "image": "/images/packages/hi-agra.webp",
+      "width": 1400
+    }
+  ]
+}

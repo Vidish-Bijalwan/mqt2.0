@@ -1,0 +1,183 @@
+{
+ "scrollY": 650,
+ "innerWidth": 1280,
+ "innerHeight": 900,
+ "blocks": [
+  {
+   "tag": "div",
+   "cls": "packages-catalog-hero",
+   "y": 185,
+   "h": 268,
+   "w": 1280,
+   "text": "Curated by destinationHelicopter Tour PackagesChoose a place first, th"
+  },
+  {
+   "tag": "div",
+   "cls": "packages-catalog-hero__inner",
+   "y": 237,
+   "h": 164,
+   "w": 683,
+   "text": "Curated by destinationHelicopter Tour PackagesChoose a place first, th"
+  },
+  {
+   "tag": "h1",
+   "cls": "",
+   "y": 264,
+   "h": 63,
+   "w": 683,
+   "text": "Helicopter Tour Packages"
+  },
+  {
+   "tag": "div",
+   "cls": "rounded-lg border border-gray-100 bg-white p-6 shadow-card",
+   "y": 1120,
+   "h": 967,
+   "w": 254,
+   "text": "Start with a free trip consultationAdd the essentials now. You can dis"
+  },
+  {
+   "tag": "h3",
+   "cls": "font-display mb-3 text-[26px] font-bold leading-tight text-[#123b35] sm:text-3xl",
+   "y": 1145,
+   "h": 113,
+   "w": 204,
+   "text": "Start with a free trip consultation"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-grid packages-group-grid",
+   "y": 619,
+   "h": 449,
+   "w": 928,
+   "text": "Helicopter in IndiaRoute details on requestHotel StayMealsTransfersSig"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 619,
+   "h": 449,
+   "w": 225,
+   "text": "Helicopter in IndiaRoute details on requestHotel StayMealsTransfersSig"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 772,
+   "h": 103,
+   "w": 223,
+   "text": "Helicopter in IndiaRoute details on requestHotel StayMealsTransfersSig"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 772,
+   "h": 20,
+   "w": 213,
+   "text": "Helicopter in India"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 797,
+   "h": 19,
+   "w": 213,
+   "text": "Route details on request"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 875,
+   "h": 191,
+   "w": 223,
+   "text": "INR 22,500 offINR 1,12,500Starting fromINR 90,000Starting price per pe"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard",
+   "y": 619,
+   "h": 449,
+   "w": 225,
+   "text": "Ujjain & Omkareshwar3 Days / 2 NightsIndore → Indore – Omkareshwar – U"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-cant",
+   "y": 772,
+   "h": 130,
+   "w": 223,
+   "text": "Ujjain & Omkareshwar3 Days / 2 NightsIndore → Indore – Omkareshwar – U"
+  },
+  {
+   "tag": "h3",
+   "cls": "nit-pcard-title",
+   "y": 772,
+   "h": 20,
+   "w": 213,
+   "text": "Ujjain & Omkareshwar"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-dest",
+   "y": 824,
+   "h": 19,
+   "w": 213,
+   "text": "Indore → Indore – Omkareshwar – Ujjain → Bhasma Aarti and Return to In"
+  },
+  {
+   "tag": "div",
+   "cls": "nit-pcard-price",
+   "y": 902,
+   "h": 164,
+   "w": 223,
+   "text": "INR 11,000 offINR 2,02,500Starting fromINR 1,91,500Starting price per "
+  },
+  {
+   "tag": "section",
+   "cls": "premium-footer-cta",
+   "y": 2167,
+   "h": 306,
+   "w": 1178,
+   "text": "Plan with a travel expertLet's shape a journey worth remembering.Tell "
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "y": 2271,
+   "h": 110,
+   "w": 700,
+   "text": "Let's shape a journey worth remembering."
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 2525,
+   "h": 17,
+   "w": 172,
+   "text": "India Tours"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 2525,
+   "h": 17,
+   "w": 172,
+   "text": "International Tours"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 2525,
+   "h": 17,
+   "w": 172,
+   "text": "Special Tours"
+  },
+  {
+   "tag": "h3",
+   "cls": "",
+   "y": 2525,
+   "h": 17,
+   "w": 172,
+   "text": "Customer Center"
+  }
+ ]
+}
