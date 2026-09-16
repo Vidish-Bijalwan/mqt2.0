@@ -19,8 +19,6 @@ export default function robots(): MetadataRoute.Robots {
           '/*?tag=*',
           // API routes — not indexable
           '/api/',
-          // Internal Next.js paths
-          '/_next/',
           // Backup / draft files
           '*.backup',
         ],
