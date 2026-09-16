@@ -20,8 +20,12 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   icons: {
-    icon: "/favicon.svg",
-    apple: "/images/mqt-logo-256.webp",
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' }
+    ],
+    apple: '/apple-touch-icon.png',
   },
   alternates: {
     canonical: siteConfig.domain,
@@ -30,13 +34,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     siteName: siteConfig.name,
-    title: `${siteConfig.name} - ${siteConfig.tagline}`,
+    title: `${siteConfig.name} | Curated Travel Experiences`,
     description: siteConfig.description,
     url: siteConfig.domain,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} - ${siteConfig.tagline}`,
+    title: `${siteConfig.name} | Curated Travel Experiences`,
     description: siteConfig.description,
   },
   robots: {

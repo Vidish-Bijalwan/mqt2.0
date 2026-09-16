@@ -285,6 +285,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       type: 'article',
       images: [{ url: socialImage, alt: title }],
     },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [socialImage],
+    }
   };
 }
 
@@ -789,7 +795,7 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
                 src={galleryImages[0]}
                 alt={`${pkg.title} tour experience`}
                 fill
-                preload
+                priority
                 sizes="(max-width: 768px) 100vw, 1320px"
                 placeholder={IMAGE_SKELETON}
                 className="object-cover"

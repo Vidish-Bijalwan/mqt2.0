@@ -12,6 +12,9 @@ const DESTINATION_RULES = [
   ["Nepal", /nepal|kathmandu|pokhara/i],
   ["Bali", /\bbali\b/i],
   ["Andaman", /andaman|port blair|havelock|baratang/i],
+  // Amarnath MUST come before Kashmir — Amarnath packages mention Srinagar/Kashmir in their route
+  ["Amarnath", /amarnath/i],
+  ["Vaishno Devi", /vaishno devi|vaishnodevi/i],
   ["Kashmir", /kashmir|srinagar|gulmarg|pahalgam|sonmarg/i],
   ["Goa", /\bgoa\b|panaji/i],
   ["Kerala", /kerala|munnar|alleppey|alappuzha|kochi|cochin|kovalam/i],
@@ -84,7 +87,15 @@ export function groupPackagesByDestination(packages: Package[]): PackageGroup[] 
   const usedImages = new Set<string>();
 
   return sorted.map((group) => {
-    const representative = group.packages.find((pkg) => pkg.image && !usedImages.has(pkg.image)) || group.representative;
+    // Prefer a package whose slug contains the group key — gives more relevant imagery.
+    // e.g. for "Kashmir" group, prefer slug="kashmir-tour-packages" over "amarnath-yatra-with-kashmir-tour"
+    const groupKeyWords = group.key.split("-").filter((w) => w.length > 3);
+    const preferred = group.packages.find(
+      (pkg) => pkg.image && !usedImages.has(pkg.image) && groupKeyWords.some((w) => pkg.slug.includes(w))
+    );
+    const representative = preferred ||
+      group.packages.find((pkg) => pkg.image && !usedImages.has(pkg.image)) ||
+      group.representative;
     if (representative.image) usedImages.add(representative.image);
     return { ...group, representative };
   });

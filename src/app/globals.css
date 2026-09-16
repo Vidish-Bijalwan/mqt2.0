@@ -12,7 +12,7 @@
   --color-brand-sage: #B7CEC0;
   --color-brand-paper: #F7F5ED;
 
-  /* Reference site palette (measured from namasteindiatrip.com) */
+  /* Reference site palette (measured from reference site) */
   --color-brand-indigo: #16453D;   /* card title links + button hover */
   --color-price-area: #F1F5F0;     /* package card price strip bg */
   --color-badge-green: #4CAF50;    /* discount badge */
@@ -158,7 +158,7 @@
   }
 
   /* ═══════════════════════════════════════════════════════════
-     Reference-site (namasteindiatrip.com) section header
+     Reference-site (reference site) section header
      .top-head-box  = centered h2 + 80px orange underline bar
      ═══════════════════════════════════════════════════════════ */
   .nit-head {

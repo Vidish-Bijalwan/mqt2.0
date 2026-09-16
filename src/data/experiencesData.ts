@@ -272,7 +272,7 @@ export const experiences: Experience[] = [
     slug: "wedding-tours",
     name: "Wedding Tours",
     group: "Family",
-    image: "/images/packages/experience-an-authentic-indian-wedding.webp",
+    image: "/images/packages/experience-an-authentic-indian-wedding-v2.webp",
     tagline: "Dream weddings & celebrations",
     keywords: ["wedding", "honeymoon", "destination wedding", "celebrations"],
     description:

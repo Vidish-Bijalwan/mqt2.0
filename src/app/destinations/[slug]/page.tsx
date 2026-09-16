@@ -56,6 +56,8 @@ const destinationKeywords: Record<string, string[]> = {
 
 import { siteConfig } from "@/data/siteConfig";
 
+export const revalidate = 86400;
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
   const slug = resolvedParams.slug.toLowerCase();
@@ -64,6 +66,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   
   const title = dest ? `${dest.name} Tour Packages` : `${slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())} Travel Guide`;
   const description = destData?.content?.filter((block) => block.type === 'p').map((block) => block.text || '').join(' ').substring(0, 160) || `Explore the best ${title} with My Quick Trippers.`;
+  const socialImage = dest?.image ? `${siteConfig.domain}${dest.image}` : `${siteConfig.domain}/images/hero/hero-bg-1.svg`;
 
   return { 
     title,
@@ -76,8 +79,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description,
       url: `${siteConfig.domain}/destinations/${slug}`,
       type: 'website',
-      images: [{ url: `${siteConfig.domain}/images/hero/hero-bg-1.svg`, width: 1200, height: 630, alt: title }],
+      images: [{ url: socialImage, width: 1200, height: 630, alt: title }],
     },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [socialImage],
+    }
   };
 }
 
