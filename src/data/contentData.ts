@@ -811,5 +811,15 @@ export const destinations: Destination[] = [
     "slug": "ladakh",
     "name": "Ladakh",
     "image": "/images/packages/chardham.jpg"
+  },
+  {
+    "slug": "varanasi",
+    "name": "Varanasi",
+    "image": "/images/packages/varanasi.jpg"
+  },
+  {
+    "slug": "kedarnath",
+    "name": "Kedarnath",
+    "image": "/images/packages/kedarnath-highres.jpg"
   }
 ];

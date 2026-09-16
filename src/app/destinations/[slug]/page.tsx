@@ -64,7 +64,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const dest = destinations.find(d => d.slug.toLowerCase() === slug);
   const destData = getDestinationData(slug);
   
-  const title = dest ? `${dest.name} Tour Packages` : `${slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())} Travel Guide`;
+  const seoTitles: Record<string, string> = {
+    "ladakh": "Ladakh Travel Guide: Route, Itinerary & Best Time",
+    "varanasi": "Varanasi Travel Guide: Ghats, Ganga Aarti & Best Time",
+    "kedarnath": "Kedarnath Yatra Guide: Trek, Weather & Best Packages",
+  };
+  
+  const title = seoTitles[slug] || (dest ? `${dest.name} Tour Packages & Travel Guide` : `${slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())} Travel Guide`);
   const description = destData?.content?.filter((block) => block.type === 'p').map((block) => block.text || '').join(' ').substring(0, 160) || `Explore the best ${title} with My Quick Trippers.`;
   const socialImage = dest?.image ? `${siteConfig.domain}${dest.image}` : `${siteConfig.domain}/images/hero/hero-bg-1.svg`;
 

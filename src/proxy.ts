@@ -22,6 +22,67 @@ export function proxy(request: NextRequest) {
     }
   }
 
+  const url = request.nextUrl.clone();
+  let hasChanges = false;
+  
+  // 2. Host canonicalization (force www)
+  // siteConfig.domain is "https://www.myquicktrippers.com"
+  const expectedHost = "www.myquicktrippers.com";
+  
+  if (
+    process.env.NODE_ENV === 'production' && 
+    request.nextUrl.hostname !== 'localhost' && 
+    !request.nextUrl.hostname.endsWith('.vercel.app')
+  ) {
+    if (request.nextUrl.host !== expectedHost) {
+      url.host = expectedHost;
+      url.port = ''; 
+      hasChanges = true;
+    }
+  }
+
+  // 3. Strip /undefined/ and /null/ from routes
+  if (url.pathname.includes('/undefined/') || url.pathname.includes('/null/')) {
+    url.pathname = url.pathname.replace(/\/(?:undefined|null)\//g, '/');
+    hasChanges = true;
+  }
+
+  // 4. Category fragmentation fix
+  const categoryMap: Record<string, string> = {
+    'pilgrimage': 'Pilgrimage',
+    'adventure': 'Adventure',
+    'honeymoon': 'Honeymoon',
+    'wildlife': 'Wildlife',
+    'helicopter': 'Helicopter',
+    'international': 'International',
+  };
+
+  const packageMatch = url.pathname.match(/^\/packages\/([^\/]+)$/i);
+  if (packageMatch) {
+    const slug = packageMatch[1].toLowerCase();
+    if (categoryMap[slug]) {
+      url.pathname = '/packages';
+      url.searchParams.set('category', categoryMap[slug]);
+      hasChanges = true;
+    }
+  }
+  
+  // 5. High-Value 404 Reclamation (Search Console)
+  const exactRedirects: Record<string, string> = {
+    '/blog/ladakh-travel-guide-beginners': '/blog/tourist-destinations-in-ladakh',
+    '/blog/valley-of-flowers-trek-complete-guide': '/blog/valley-of-flowers',
+    '/packages/exclusive/nelang-valley-day-trip': '/packages/uttarakhand-tour' // Fallback to nearest state cluster
+  };
+  
+  if (exactRedirects[lower]) {
+    url.pathname = exactRedirects[lower];
+    hasChanges = true;
+  }
+
+  if (hasChanges) {
+    return NextResponse.redirect(url, 301);
+  }
+
   return NextResponse.next();
 }
 
