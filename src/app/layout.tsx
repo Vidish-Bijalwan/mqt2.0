@@ -9,11 +9,22 @@ import FloatingWhatsApp from "@/components/ui/FloatingWhatsApp";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 import ErrorBoundary from "@/components/ui/ErrorBoundary";
 import ClientRuntime from "@/components/layout/ClientRuntime";
+import "../lib/env";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope", display: "swap" });
-const bricolage = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-bricolage", display: "swap" });
+const manrope = Manrope({ 
+  subsets: ["latin"], 
+  variable: "--font-manrope", 
+  display: "swap",
+  preload: true
+});
+const bricolage = Bricolage_Grotesque({ 
+  subsets: ["latin"], 
+  variable: "--font-bricolage", 
+  display: "swap",
+  preload: true
+});
 
 export const metadata: Metadata = {
   title: {
@@ -107,6 +118,59 @@ export default function RootLayout({
         "publisher": {
           "@id": `${siteConfig.domain}/#organization`
         }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What types of tour packages does My Quick Trippers offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "My Quick Trippers offers a wide range of tour packages including India tour packages, Himachal Tour Packages, Dubai Tour Packages, Chardham Yatra, Nainital holiday packages, Buddhist Tours India, Helicopter Tours India, Shimla honeymoon packages, and Dehradun adventure tours. We also offer international tour packages to destinations like Bali, Nepal, and more."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I book a tour package with My Quick Trippers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can book tour packages through our website by browsing our packages, selecting your preferred destination and dates, and filling out the enquiry form. Our team will contact you to finalize the booking. You can also contact us directly via phone or WhatsApp for assistance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is included in My Quick Trippers tour packages?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our tour packages typically include accommodation, transportation, sightseeing, meals as specified in the itinerary, and the services of experienced tour guides. Specific inclusions vary by package, so please check the detailed itinerary for each tour."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does My Quick Trippers offer customized tour packages?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, My Quick Trippers offers customized tour packages tailored to your preferences, budget, and travel dates. Contact us with your requirements and our team will create a personalized itinerary for you."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What payment options are available for booking tours?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We accept various payment methods including online payments through our secure payment gateway, bank transfers, and other convenient options. Payment terms and advance booking requirements vary by package."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the cancellation policy for My Quick Trippers packages?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cancellation policies vary depending on the package and timing of cancellation. Specific terms are outlined in our terms and conditions. We recommend reviewing the cancellation policy at the time of booking or contacting our team for clarification."
+            }
+          }
+        ]
       }
     ]
   };

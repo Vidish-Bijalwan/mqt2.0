@@ -1,15 +1,12 @@
-"use client";
-
-import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Package } from '@/data/allPackages';
-import { getPackageImage } from '@/utils/imageMapper';
 import { getPriceInfo } from '@/utils/price';
 import { IMAGE_SKELETON } from '@/utils/imagePlaceholder';
+import { getApprovedPackageImage } from '@/data/packageLocationMedia';
 
 export default function PackageListCard({ pkg }: { pkg: Package }) {
-  const [imgSrc, setImgSrc] = useState(getPackageImage(pkg));
+  const imageSrc = getApprovedPackageImage(pkg);
 
   // Shared pricing model: pkg.mrp = list price, pkg.dealPrice = the deal.
   const { hasPrice, display, crossed } = getPriceInfo(pkg.mrp, pkg.dealPrice, pkg.slug);
@@ -28,7 +25,7 @@ export default function PackageListCard({ pkg }: { pkg: Package }) {
       <div className="package-list-image relative w-full md:w-[260px] h-[200px] md:h-auto md:min-h-[230px] shrink-0 overflow-hidden bg-gray-100">
         <Link href={`/packages/${pkg.slug}`} className="block w-full h-full relative">
           <Image
-            src={imgSrc}
+            src={imageSrc}
             alt={pkg.title}
             fill
             sizes="(max-width: 768px) 100vw, 260px"
@@ -36,7 +33,6 @@ export default function PackageListCard({ pkg }: { pkg: Package }) {
             decoding="async"
             placeholder={IMAGE_SKELETON}
             className="object-cover group-hover:scale-105 transition-transform duration-500"
-            onError={() => setImgSrc('/images/hero/hero-bg-2.svg')} // Dynamic fallback
           />
           
           {/* Proper MQT Badge overlay */}

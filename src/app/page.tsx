@@ -11,6 +11,55 @@ import ExperienceExplorer from "@/components/home/ExperienceExplorer";
 import { experiencesWithCounts } from "@/utils/experienceCounts";
 import { groupPackagesByDestination } from "@/utils/packageGroups";
 import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
+import { siteConfig } from "@/data/siteConfig";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: `${siteConfig.name} - India Tour Packages, Himachal, Dubai, Chardham Yatra & More`,
+  description: siteConfig.description,
+  keywords: [
+    "My Quick Trippers tours",
+    "India tour packages",
+    "Himachal Tour Packages",
+    "Dubai Tour Packages",
+    "Chardham Yatra",
+    "Nainital holiday",
+    "Buddhist Tours India",
+    "Helicopter Tours India",
+    "Shimla honeymoon",
+    "Dehradun adventure",
+    "Kashmir tour packages",
+    "Kerala tour packages",
+    "Rajasthan tour packages",
+    "Goa tour packages",
+    "Andaman tour packages",
+    "Manali tour packages",
+    "Bali tour packages",
+    "Nepal tour packages",
+    "Pilgrimage tours India",
+    "North India tour packages",
+    "South India tour packages",
+    "International tour packages",
+    "Holiday packages India",
+    "Travel agency India",
+    "Best tour packages India"
+  ],
+  openGraph: {
+    title: `${siteConfig.name} - India Tour Packages, Himachal, Dubai, Chardham Yatra & More`,
+    description: siteConfig.description,
+    url: siteConfig.domain,
+    siteName: siteConfig.name,
+    type: "website",
+    images: [
+      {
+        url: `${siteConfig.domain}/images/home/mqt-india-hero.webp`,
+        width: 1200,
+        height: 630,
+        alt: `${siteConfig.name} - India Tour Packages & Travel Experiences`,
+      },
+    ],
+  },
+};
 
 /* ─── Smart package filtering ───
    Only show packages on the homepage that have:
@@ -111,13 +160,13 @@ export default function Home() {
       {/* 1. Brand-led travel hero followed by the lightweight poster rail */}
       <section className="w-full bg-brand-navy relative">
          <div className="home-brand-hero">
-           <h1 className="sr-only">Explore India with My Quick Trippers</h1>
+           <h1 className="sr-only">My Quick Trippers - India Tour Packages, Himachal Tour Packages, Dubai Tour Packages, Chardham Yatra, Nainital Holiday, Buddhist Tours India, Helicopter Tours India, Shimla Honeymoon, Dehradun Adventure</h1>
            <div className="home-brand-hero__media">
              <picture>
                <source media="(max-width: 767px)" srcSet="/images/home/mqt-india-hero-mobile.webp" />
                <img
                  src="/images/home/mqt-india-hero.webp"
-                 alt="Explore India with My Quick Trippers: mountains, heritage, wildlife, beaches and adventure journeys"
+                 alt="My Quick Trippers India Tour Packages - Explore Himachal Tour Packages, Dubai Tour Packages, Chardham Yatra, Nainital Holiday, Buddhist Tours India, Helicopter Tours India, Shimla Honeymoon, Dehradun Adventure with mountains, heritage, wildlife, beaches and adventure journeys"
                  width="2056"
                  height="765"
                  loading="eager"
@@ -148,14 +197,15 @@ export default function Home() {
          </div>
       </section>
 
-      {/* 2. Top Trending Tour Packages — 30 packages, 5-col grid */}
+
+      {/* 3. Top Trending Tour Packages — 30 packages, 5-col grid */}
       <PackageSection
         title="Top Trending Tour Packages"
         packages={TRENDING_PACKAGES}
         maxGroups={10}
       />
 
-      {/* 3. Top Holiday Destinations In India — image tiles, 7-up */}
+      {/* 4. Top Holiday Destinations In India — image tiles, 7-up */}
       <section className="home-deferred-section bg-[#fbfaf6]/96">
         <div className="nit-page">
           <SectionHeader title="Top Holiday Destinations In India" marginTop />
@@ -180,7 +230,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. Pilgrimage Tours — 10 packages */}
+      {/* 5. Pilgrimage Tours — 10 packages */}
       <PackageSection
         title="Pilgrimage Tour Packages"
         subtitle="Sacred journeys to India's most revered spiritual destinations"
@@ -188,7 +238,7 @@ export default function Home() {
         marginTop
       />
 
-      {/* 5. North India Tours — 10 packages */}
+      {/* 6. North India Tours — 10 packages */}
       <PackageSection
         title="North India Tour Packages"
         subtitle="From the Himalayas to the Ganges plains — discover North India"
@@ -196,7 +246,7 @@ export default function Home() {
         marginTop
       />
 
-      {/* 6. International destinations grouped into trip options */}
+      {/* 7. International destinations grouped into trip options */}
       <PackageSection
         title="International Journeys"
         subtitle="Choose a destination, then compare every available itinerary in one place"

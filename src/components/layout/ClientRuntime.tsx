@@ -35,10 +35,14 @@ export default function ClientRuntime() {
     // stale pages. Native browser and CDN caching are faster for this media-heavy site.
     navigator.serviceWorker?.getRegistrations().then((registrations) => {
       registrations.forEach((registration) => void registration.unregister());
-    }).catch(() => {});
+    }).catch((error) => {
+      console.warn('Failed to unregister service worker:', error);
+    });
     window.caches?.keys().then((keys) => {
       keys.filter((key) => key.startsWith("mqt-")).forEach((key) => void window.caches.delete(key));
-    }).catch(() => {});
+    }).catch((error) => {
+      console.warn('Failed to clear caches:', error);
+    });
   }, []);
 
   return null;

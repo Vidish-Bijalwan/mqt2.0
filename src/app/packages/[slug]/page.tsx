@@ -18,6 +18,7 @@ import { extractInclusions, extractExclusions, extractHighlights } from "@/utils
 import type { Block, FaqItem } from "@/utils/blocks";
 import { siteConfig } from "@/data/siteConfig";
 import { packageExperienceOverrides } from "@/data/packageExperienceOverrides";
+import { getPackageLocationMedia, packageLocationMedia, PACKAGE_MEDIA_PLACEHOLDER } from "@/data/packageLocationMedia";
 import fs from 'fs';
 import path from 'path';
 import type { CSSProperties } from "react";
@@ -54,8 +55,22 @@ interface RichPackageDetails {
 
 function loadDetailFile<T>(filename: string): Record<string, T> {
   try {
-    const dataPath = path.join(process.cwd(), `src/data/${filename}`);
-    return JSON.parse(fs.readFileSync(dataPath, 'utf-8')) as Record<string, T>;
+    // Whitelist allowed filenames to prevent path traversal
+    const allowedFiles = ['packageDetails.json', 'packageDetailsV2.json', 'packageDetailsV3.json'];
+    if (!allowedFiles.includes(filename)) {
+      return {};
+    }
+    
+    const dataPath = path.join(process.cwd(), 'src/data', filename);
+    const normalizedPath = path.normalize(dataPath);
+    
+    // Ensure path stays within src/data directory
+    const srcDataPath = path.normalize(path.join(process.cwd(), 'src/data'));
+    if (!normalizedPath.startsWith(srcDataPath)) {
+      return {};
+    }
+    
+    return JSON.parse(fs.readFileSync(normalizedPath, 'utf-8')) as Record<string, T>;
   } catch {
     return {};
   }
@@ -64,24 +79,8 @@ function loadDetailFile<T>(filename: string): Record<string, T> {
 const packageDetails = loadDetailFile<LegacyPackageDetails>('packageDetails.json');
 const packageDetailsV2 = loadDetailFile<RichPackageDetails>('packageDetailsV2.json');
 const packageDetailsV3 = loadDetailFile<RichPackageDetails>('packageDetailsV3.json');
-const localPackageImageUrls = (() => {
-  try {
-    const rootImages = fs
-      .readdirSync(path.join(process.cwd(), 'public/images/packages'))
-      .filter((filename) => /\.(avif|jpe?g|png|webp)$/i.test(filename))
-      .map((filename) => `/images/packages/${filename}`);
-    const curatedImages = fs
-      .readdirSync(path.join(process.cwd(), 'public/images/packages/curated'))
-      .filter((filename) => /\.(avif|jpe?g|png|webp)$/i.test(filename))
-      .map((filename) => `/images/packages/curated/${filename}`);
-    return [...rootImages, ...curatedImages];
-  } catch {
-    return [] as string[];
-  }
-})();
 const knownLocalImageUrls = new Set([
-  ...localPackageImageUrls,
-  ...allPackages.flatMap((pkg) => [pkg.image, pkg.image2]).filter((url): url is string => Boolean(url)),
+  ...Object.values(packageLocationMedia).flatMap((media) => [media.primary, ...media.gallery.map((item) => item.src)]),
 ]);
 
 function detailsV2For(slug: string) {
@@ -112,16 +111,9 @@ function cleanOverviewText(value: string) {
 function resolveLocalPackageImage(candidate?: string): string | null {
   if (!candidate) return null;
 
-  let publicPath = candidate.trim();
-  if (/^https?:\/\//i.test(publicPath)) {
-    try {
-      const filename = decodeURIComponent(new URL(publicPath).pathname.split('/').pop() || '');
-      publicPath = filename ? `/images/packages/${filename}` : '';
-    } catch {
-      return null;
-    }
-  }
+  if (candidate === PACKAGE_MEDIA_PLACEHOLDER) return candidate;
 
+  const publicPath = candidate.trim();
   if (!publicPath.startsWith('/images/') || /\.(svg|gif)$/i.test(publicPath)) return null;
   return knownLocalImageUrls.has(publicPath) ? publicPath : null;
 }
@@ -240,8 +232,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const pkg = allPackages.find((candidate) => candidate.slug === slug);
   const legacyDetails = packageDetails[slug];
   if (pkg && !isPublicPackage(pkg)) return {};
-  const socialImage = pkg?.image
-    ? new URL(pkg.image, siteConfig.domain).toString()
+  const socialImage = pkg
+    ? new URL(getPackageLocationMedia(pkg)?.primary || PACKAGE_MEDIA_PLACEHOLDER, siteConfig.domain).toString()
     : `${siteConfig.domain}/logo/mqt-logo.png`;
 
   const seoSource = pkgV3?.seo || pkgV2?.seo;
@@ -601,91 +593,26 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
     }] : []),
   ].filter((s) => s.content !== null);
 
-  // Keep additional gallery images conservative. Hash-named scrape assets cannot
-  // be semantically verified, so only descriptive filenames matching the trip
-  // subject are allowed beyond the catalog's primary image.
-  const galleryStopWords = new Set([
-    'tour', 'tours', 'package', 'packages', 'trip', 'travel', 'yatra', 'holiday',
-    'days', 'day', 'nights', 'night', 'from', 'with', 'india', 'indian', 'the', 'and',
-    'best', 'top', 'famous', 'amazing', 'north', 'south', 'east', 'west',
-  ]);
-  const gallerySubjectTokens = new Set(
-    `${pkg.slug} ${pkg.title} ${pkg.route}`
-      .toLowerCase()
-      .split(/[^a-z0-9]+/)
-      .filter((token) => token.length > 2 && !galleryStopWords.has(token)),
-  );
-  const relatedPackageImages = allPackages
-    .filter((candidate) => candidate.slug !== pkg.slug && candidate.category === pkg.category)
-    .map((candidate) => {
-      const candidateSubject = `${candidate.slug} ${candidate.title} ${candidate.route}`.toLowerCase();
-      const score = Array.from(gallerySubjectTokens).filter((token) =>
-        new RegExp(`(^|[^a-z0-9])${token}([^a-z0-9]|$)`, 'i').test(candidateSubject),
-      ).length;
-      return { candidate, score };
-    })
-    .filter(({ candidate, score }) => score > 0 && Boolean(resolveLocalPackageImage(candidate.image)))
-    .sort((a, b) => b.score - a.score)
-    .map(({ candidate }) => candidate.image);
-
-  const libraryMatchedImages = localPackageImageUrls
-    .map((url) => {
-      const stem = path.basename(url).replace(/\.(avif|jpe?g|png|webp)$/i, '').replace(/^hi-/, '');
-      if (/^[0-9a-f]{8,}$/i.test(stem)) return { url, score: 0 };
-      const fileTokens = new Set(stem.split(/[^a-z0-9]+/).filter(Boolean));
-      const score = Array.from(gallerySubjectTokens).filter((token) => fileTokens.has(token)).length;
-      return { url, score };
-    })
-    .filter(({ score }) => score > 0)
-    .sort((a, b) => b.score - a.score)
-    .map(({ url }) => url);
-
-  const relatedAdditionalImages = [
-    pkg.image2,
-    ...(blocks || []).filter((block) => block.type === 'image').map((block) => block.url),
-    ...relatedPackageImages,
-    ...libraryMatchedImages,
-  ]
-    .filter((candidate): candidate is string => Boolean(candidate))
-    .filter((candidate) => {
-      const localUrl = resolveLocalPackageImage(candidate);
-      if (!localUrl) return false;
-      const filename = path.basename(localUrl).toLowerCase();
-      const isEditorialAsset = localUrl.includes('/curated/');
-      const isHighResolutionAsset = filename.startsWith('hi-');
-      if (!isEditorialAsset && !isHighResolutionAsset) return false;
-
-      const stem = path.basename(localUrl).replace(/\.(avif|jpe?g|png|webp)$/i, '').replace(/^hi-/, '');
-      if (/^[0-9a-f]{8,}$/i.test(stem)) return false;
-      const candidateTokens = stem.split(/[^a-z0-9]+/).filter((token) => token.length > 2 && !galleryStopWords.has(token));
-      return candidateTokens.some((token) => gallerySubjectTokens.has(token));
-    });
-
-  const galleryCandidates = experienceOverride?.gallery?.length
-    ? experienceOverride.gallery.map((item) => item.src)
-    : [pkg.image, ...relatedAdditionalImages];
+  const locationMedia = getPackageLocationMedia(pkg);
+  // Location-inventory media is the only approved source for package heroes
+  // and galleries. Scraped package images remain available as historical
+  // records but cannot leak into the customer-facing journey.
+  const galleryCandidates = locationMedia
+    ? locationMedia.gallery.map((item) => item.src)
+    : [PACKAGE_MEDIA_PLACEHOLDER];
   const galleryImages = Array.from(new Set(
     galleryCandidates
       .map((url) => resolveLocalPackageImage(url))
       .filter((url): url is string => Boolean(url)),
   )).slice(0, 8);
 
-  if (galleryImages.length === 0) {
-    const categoryFallbacks: Record<string, string> = {
-      Helicopter: '/images/packages/badri-kedar-yatra-by-helicopter.jpg',
-      Pilgrimage: '/images/packages/kedarnath-temple.jpg',
-      International: '/images/packages/best-of-europe-tour.jpg',
-      Honeymoon: '/images/packages/bali-honeymoon-package.jpg',
-      Wildlife: '/images/packages/wildlife.jpg',
-      'South India': '/images/packages/best-of-kerala-tour.webp',
-      'West India': '/images/packages/discover-majestic-rajasthan.jpg',
-    };
-    const fallback = resolveLocalPackageImage(categoryFallbacks[pkg.category] || '/images/packages/india-tour-packages.jpg');
-    if (fallback) galleryImages.push(fallback);
-  }
+  if (galleryImages.length === 0) galleryImages.push(PACKAGE_MEDIA_PLACEHOLDER);
 
   // Aligned captions for the lightbox (from block image captions)
   const blockCaptions = new Map<string, string>();
+  for (const item of locationMedia?.gallery || []) {
+    blockCaptions.set(item.src, item.caption);
+  }
   for (const item of experienceOverride?.gallery || []) {
     blockCaptions.set(item.src, item.caption);
   }

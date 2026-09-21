@@ -113,11 +113,17 @@ function RenderSingleBlock({ block, truncate }: { block: Block; truncate?: boole
     );
   }
   if (block.type === 'image') {
+    // Itinerary images come from a scraped source. Only render a verified,
+    // location-library asset; otherwise use a neutral brand visual instead of
+    // silently showing an unrelated or third-party-branded photograph.
+    const imageSrc = block.url?.startsWith('/images/location-library/')
+      ? block.url
+      : '/images/hero/hero-bg-2.svg';
     return (
       <figure className="my-6">
         <div className="relative w-full aspect-[16/9] md:aspect-[21/9] rounded-xl overflow-hidden shadow-sm bg-gray-100">
           <Image
-            src={block.url || '/images/packages/kashmir.webp'}
+            src={imageSrc}
             alt={block.alt || 'Package Image'}
             fill
             sizes="(max-width: 1024px) 100vw, 66vw"

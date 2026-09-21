@@ -4,11 +4,11 @@ import Image from "next/image";
 import { startTransition, useEffect, useRef, useState } from "react";
 
 const JOURNEYS = [
-  { src: "/images/packages/kedarnath.jpg", label: "Kedarnath", detail: "Himalayan pilgrimages" },
-  { src: "/images/packages/india-wildlife-tour-packages.jpg", label: "Wild India", detail: "Forest and wildlife journeys" },
-  { src: "/images/packages/andaman.jpg", label: "Andaman", detail: "Island escapes" },
-  { src: "/images/packages/agra.jpg", label: "Agra", detail: "Heritage routes" },
-  { src: "/images/packages/rajasthan.jpg", label: "Rajasthan", detail: "Palaces and desert stories" },
+  { src: "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-01-lg.webp", label: "Kedarnath", detail: "Himalayan pilgrimages" },
+  { src: "/images/location-library/kaziranga-national-park-assam-india/kaziranga-national-park-assam-india-01-lg.webp", label: "Wild India", detail: "Forest and wildlife journeys" },
+  { src: "/images/location-library/havelock-island-andaman-and-nicobar-islands-india/havelock-island-andaman-and-nicobar-islands-india-01-lg.webp", label: "Andaman", detail: "Island escapes" },
+  { src: "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-01-lg.webp", label: "Agra", detail: "Heritage routes" },
+  { src: "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp", label: "Rajasthan", detail: "Palaces and desert stories" },
 ];
 
 export default function HeroJourney() {

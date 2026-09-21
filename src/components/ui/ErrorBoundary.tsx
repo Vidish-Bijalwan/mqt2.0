@@ -24,7 +24,13 @@ export default class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBo
   }
 
   componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
-    console.error('ErrorBoundary caught:', error, errorInfo);
+    // Log detailed error for debugging (only in development)
+    if (process.env.NODE_ENV === 'development') {
+      console.error('ErrorBoundary caught:', error, errorInfo);
+    } else {
+      // In production, log minimal information to avoid exposing sensitive details
+      console.error('ErrorBoundary caught an error:', error.message);
+    }
   }
 
   render() {
@@ -40,7 +46,7 @@ export default class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBo
             Something went wrong
           </h3>
           <p className="text-sm text-red-600 mb-4">
-            {this.state.error?.message || 'An unexpected error occurred'}
+            An unexpected error occurred. Please try again or contact support if the problem persists.
           </p>
           <button
             onClick={() => this.setState({ hasError: false, error: null })}

@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Sun, MapPin } from "lucide-react";
 import { getPriceInfo } from "@/utils/price";
 import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
-import { getApprovedPackageImage } from "@/data/packageLocationMedia";
 
 export interface PackageCardProps {
   slug: string;
@@ -35,7 +34,6 @@ const AMENITIES = [
 
 export default function PackageCard({ pkg, href, variantCount }: PackageCardComponentProps) {
   const cardHref = href || `/packages/${pkg.slug}`;
-  const imageSrc = getApprovedPackageImage(pkg);
   // Extract number of days from duration string (e.g. "5 Nights / 6 Days" -> "6 Days")
   const durationMatch = pkg.duration.match(/(\d+)\s*Days/i);
   const days = durationMatch ? durationMatch[1] + " Days" : pkg.duration.split('/')[0] || pkg.duration;
@@ -55,7 +53,7 @@ export default function PackageCard({ pkg, href, variantCount }: PackageCardComp
       {/* ── Image (5px inset, rounded, scale-on-hover like reference) ── */}
       <Link href={cardHref} className="nit-pcard-img" tabIndex={-1}>
         <Image
-          src={imageSrc}
+          src={pkg.image}
           alt={pkg.title}
           fill
           sizes="(max-width: 640px) 380px, (max-width: 1360px) 33vw, 20vw"

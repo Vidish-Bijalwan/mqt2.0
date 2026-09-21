@@ -18,19 +18,18 @@ const nextConfig: NextConfig = {
   devIndicators: false,
   // Redirects moved to src/proxy.ts to bypass Vercel's 1,024 limit
   images: {
-    // On Vercel, always use optimized images (default behavior)
-    // Locally in dev, skip optimization for faster iteration
+    // Serve the owned images from /public directly. This avoids Vercel's
+    // on-demand image transformation allowance and prevents a quota error
+    // from turning otherwise valid blog and package images into broken media.
     unoptimized: true,
-    // Most source photos are already WebP. Avoid expensive first-request AVIF
-    // encoding, which was making freshly visited catalogue images feel late.
-    // WebP remains broadly supported and is cached for 30 days below.
-    formats: ["image/webp"],
+    // Use modern image formats for better performance
+    formats: ["image/avif", "image/webp"],
     qualities: [55, 60, 65, 68, 75],
     minimumCacheTTL: 60 * 60 * 24 * 30, // 30 days
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+
   // HTTP headers for caching & security
   async headers() {
     return [
@@ -55,6 +54,11 @@ const nextConfig: NextConfig = {
           { key: "X-Frame-Options", value: "DENY" },
           { key: "X-XSS-Protection", value: "1; mode=block" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          { key: "Permissions-Policy", value: "geolocation=(), microphone=(), camera=()" },
+          { 
+            key: "Content-Security-Policy", 
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://translate.google.com; frame-src https://translate.google.com;" 
+          },
         ],
       },
     ];

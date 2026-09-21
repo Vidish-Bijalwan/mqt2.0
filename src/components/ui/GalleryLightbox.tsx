@@ -161,7 +161,7 @@ export default function GalleryLightbox({ images, title, captions = [] }: Galler
                     : "opacity-45 hover:opacity-80"
                 }`}
               >
-                <Image src={img} alt="" fill sizes="80px" loading="lazy" decoding="async" placeholder={IMAGE_SKELETON} className="object-cover" />
+                <Image src={img} alt={`Photo ${imageIndex + 1} of ${title}`} fill sizes="80px" loading="lazy" decoding="async" placeholder={IMAGE_SKELETON} className="object-cover" />
               </button>
             ))}
           </div>

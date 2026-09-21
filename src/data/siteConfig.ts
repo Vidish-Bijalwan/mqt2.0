@@ -4,9 +4,9 @@
 export const siteConfig = {
   name: "My Quick Trippers",
   shortName: "MQT India",
-  tagline: "Your Journey, Our Expertise",
+  tagline: "India Tour Packages, Himachal, Dubai, Chardham Yatra & More",
   description:
-    "My Quick Trippers (MQT India) offers curated India & international tour packages with expert guidance, best prices, and 24/7 support. Book your dream holiday today!",
+    "Best India tour packages: Himachal, Dubai, Chardham Yatra, Nainital, Buddhist Tours, Helicopter Tours, Shimla honeymoon, Dehradun adventure. Expert guidance, best prices, 24/7 support.",
   domain: "https://www.myquicktrippers.com",
   email: "info@myquicktrippers.com",
   phone: "+91-8171158569",
