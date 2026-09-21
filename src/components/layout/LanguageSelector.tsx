@@ -10,6 +10,7 @@ const LANGUAGES = [
   { code: "hi", label: "Hindi" },
   { code: "bn", label: "Bengali" },
   { code: "gu", label: "Gujarati" },
+  { code: "ja", label: "Japanese" },
 ] as const;
 
 type LanguageCode = (typeof LANGUAGES)[number]["code"];
