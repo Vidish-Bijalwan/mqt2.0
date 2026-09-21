@@ -9,6 +9,8 @@ import FloatingWhatsApp from "@/components/ui/FloatingWhatsApp";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 import ErrorBoundary from "@/components/ui/ErrorBoundary";
 import ClientRuntime from "@/components/layout/ClientRuntime";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope", display: "swap" });
 const bricolage = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-bricolage", display: "swap" });
@@ -129,6 +131,8 @@ export default function RootLayout({
           <FloatingButtons />
           <FloatingWhatsApp />
           <ScrollToTop />
+          <Analytics />
+          <SpeedInsights />
         </div>
       </body>
     </html>
