@@ -4,14 +4,16 @@ import { getPublicPackages } from '@/utils/packageCatalog';
 import { experiences } from '@/data/experiencesData';
 import packageDetailsRaw from '@/data/packageDetails.json';
 import destinationsDataRaw from '@/data/destinationsData.json';
-import fullBlogDataRaw from '@/data/fullBlogData.json';
+import { ALL_BLOGS } from '@/data/blogIndex';
 
 const packageDetails = packageDetailsRaw as Record<string, unknown>;
 const destinationsData = destinationsDataRaw as Record<string, unknown>;
-const fullBlogData = fullBlogDataRaw as Record<string, unknown>;
 const publicPackages = getPublicPackages();
 const publicPackageSlugs = new Set(publicPackages.map((pkg) => pkg.slug));
 const richPackageSlugs = new Set(Object.keys(packageDetails).filter((slug) => publicPackageSlugs.has(slug)));
+// Do not regenerate every URL's lastmod on request. A stable timestamp tells
+// crawlers which URLs genuinely changed in this release.
+const SITE_CONTENT_UPDATED_AT = new Date('2026-09-21T00:00:00.000Z');
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.domain;
@@ -34,14 +36,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { route: '/privacy-policy', priority: 0.3, freq: 'yearly' as const },
     { route: '/terms-and-conditions', priority: 0.3, freq: 'yearly' as const },
     { route: '/site-map', priority: 0.3, freq: 'yearly' as const },
-  ].map(({ route, priority, freq }) => ({ url: `${baseUrl}${route}`, lastModified: new Date(), changeFrequency: freq, priority }));
-  const richPackageRoutes = [...richPackageSlugs].map((slug) => ({ url: `${baseUrl}/packages/${slug}`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.9 }));
-  const basicPackageRoutes = publicPackages.filter((pkg) => !richPackageSlugs.has(pkg.slug)).map((pkg) => ({ url: `${baseUrl}/packages/${pkg.slug}`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.6 }));
-  const destinationRoutes = Object.keys(destinationsData).map((slug) => ({ url: `${baseUrl}/destinations/${slug}`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.85 }));
-  const experienceRoutes = experiences.map((exp) => ({ url: `${baseUrl}/experiences/${exp.slug}`, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 }));
-  const blogRoutes = Object.keys(fullBlogData).filter((slug) => !slug.includes('__')).map((slug) => {
-    const cleanSlug = slug.startsWith('blog__') ? slug.replace('blog__', '') : slug;
-    return { url: `${baseUrl}/blog/${cleanSlug}`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 };
-  });
+    // Campaign pages
+    { route: '/campaigns/himachal-tour-packages', priority: 0.9, freq: 'weekly' as const },
+    { route: '/campaigns/chardham-yatra', priority: 0.9, freq: 'weekly' as const },
+    { route: '/campaigns/dubai-tour-packages', priority: 0.9, freq: 'weekly' as const },
+    { route: '/campaigns/nainital-holiday', priority: 0.9, freq: 'weekly' as const },
+    { route: '/campaigns/buddhist-tours-india', priority: 0.9, freq: 'weekly' as const },
+    { route: '/campaigns/helicopter-tours-india', priority: 0.9, freq: 'weekly' as const },
+    { route: '/campaigns/shimla-honeymoon', priority: 0.9, freq: 'weekly' as const },
+    { route: '/campaigns/dehradun-adventure', priority: 0.9, freq: 'weekly' as const },
+  ].map(({ route, priority, freq }) => ({ url: `${baseUrl}${route}`, lastModified: SITE_CONTENT_UPDATED_AT, changeFrequency: freq, priority }));
+  const richPackageRoutes = [...richPackageSlugs].map((slug) => ({ url: `${baseUrl}/packages/${slug}`, lastModified: SITE_CONTENT_UPDATED_AT, changeFrequency: 'monthly' as const, priority: 0.9 }));
+  const basicPackageRoutes = publicPackages.filter((pkg) => !richPackageSlugs.has(pkg.slug)).map((pkg) => ({ url: `${baseUrl}/packages/${pkg.slug}`, lastModified: SITE_CONTENT_UPDATED_AT, changeFrequency: 'monthly' as const, priority: 0.6 }));
+  const destinationRoutes = Object.keys(destinationsData).map((slug) => ({ url: `${baseUrl}/destinations/${slug}`, lastModified: SITE_CONTENT_UPDATED_AT, changeFrequency: 'monthly' as const, priority: 0.85 }));
+  const experienceRoutes = experiences.map((exp) => ({ url: `${baseUrl}/experiences/${exp.slug}`, lastModified: SITE_CONTENT_UPDATED_AT, changeFrequency: 'weekly' as const, priority: 0.8 }));
+  const blogRoutes = ALL_BLOGS.map((blog) => ({
+    url: `${baseUrl}/blog/${blog.slug}`,
+    lastModified: SITE_CONTENT_UPDATED_AT,
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
   return [...staticRoutes, ...destinationRoutes, ...experienceRoutes, ...richPackageRoutes, ...basicPackageRoutes, ...blogRoutes];
 }

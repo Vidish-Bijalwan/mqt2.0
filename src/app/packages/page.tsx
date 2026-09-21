@@ -7,10 +7,28 @@ import { ChevronRight } from "lucide-react";
 import EnquiryForm from "@/components/forms/EnquiryForm";
 import { Fragment } from "react";
 import DestinationPackageOptions from "@/components/ui/DestinationPackageOptions";
+import { siteConfig } from "@/data/siteConfig";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Tour Packages in India & Abroad",
-  description: "Browse curated India and international tour packages by My Quick Trippers. Explore journeys of three days or more by destination, theme, and duration.",
+export const metadata: Metadata = {
+  title: `${siteConfig.name} - India Tour Packages, Himachal, Dubai, Chardham Yatra & More`,
+  description: `${siteConfig.description} Browse our curated India tour packages including Himachal Tour Packages, Dubai Tour Packages, Chardham Yatra, Nainital holiday, Buddhist Tours India, Helicopter Tours India, Shimla honeymoon, Dehradun adventure and international destinations.`,
+  keywords: [
+    "My Quick Trippers tours",
+    "India tour packages",
+    "Himachal Tour Packages",
+    "Dubai Tour Packages",
+    "Chardham Yatra",
+    "Nainital holiday",
+    "Buddhist Tours India",
+    "Helicopter Tours India",
+    "Shimla honeymoon",
+    "Dehradun adventure",
+    "Tour packages India",
+    "International tour packages",
+    "Best travel packages",
+    "Holiday packages India"
+  ],
 };
 
 const CATEGORIES = [
@@ -28,18 +46,35 @@ const CATEGORIES = [
   "Wildlife",
 ];
 
+const DURATIONS = ["All", "3-5", "6-9", "10+", "custom"];
+
+function validateSearchParams(params: { category?: string; page?: string; filter?: string; q?: string; destination?: string; duration?: string; travelers?: string }) {
+  const category = params.category && CATEGORIES.includes(params.category) ? params.category : "All";
+  const duration = params.duration && DURATIONS.includes(params.duration) ? params.duration : "All";
+  const destination = (params.destination || "")
+    .replace(/[^\w\s-]/g, '')
+    .replace(/-/g, " ")
+    .trim()
+    .substring(0, 100);
+  const filter = (params.q || params.filter || "")
+    .replace(/[^\w\s-]/g, '')
+    .toLowerCase()
+    .replace(/-/g, " ")
+    .trim()
+    .substring(0, 100);
+  const travelers = Math.min(Math.max(parseInt(params.travelers || "2", 10) || 2, 1), 10);
+  const page = Math.max(1, Math.min(parseInt(params.page || "1", 10) || 1, 1000));
+
+  return { category, duration, destination, filter, travelers, page };
+}
+
 export default async function PackagesPage({
   searchParams,
 }: {
   searchParams: Promise<{ category?: string; page?: string; filter?: string; q?: string; destination?: string; duration?: string; travelers?: string }>;
 }) {
   const resolvedSearchParams = await searchParams;
-  const selectedCategory = resolvedSearchParams.category || "All";
-  const selectedDuration = resolvedSearchParams.duration || "All";
-  const selectedDestination = (resolvedSearchParams.destination || "").replace(/-/g, " ").trim();
-  const selectedFilter = (selectedDestination || resolvedSearchParams.q || resolvedSearchParams.filter || "").toLowerCase().replace(/-/g, " ").trim();
-  const selectedTravelers = resolvedSearchParams.travelers || "2";
-  const currentPage = parseInt(resolvedSearchParams.page || "1", 10);
+  const { category: selectedCategory, duration: selectedDuration, destination: selectedDestination, filter: selectedFilter, travelers: selectedTravelers, page: currentPage } = validateSearchParams(resolvedSearchParams);
   const PER_PAGE = 10;
   const publicPackages = getPublicPackages();
 
@@ -47,18 +82,36 @@ export default async function PackagesPage({
     ? publicPackages
     : publicPackages.filter((p) => selectedCategory === "International" ? isInternationalPackage(p) : p.category === selectedCategory);
 
+  // A destination card passes `?destination=…`. Apply that selection before
+  // grouping or searching so clicking a destination never falls back to an
+  // empty/misleading catalogue view.
+  const destinationGroup = selectedDestination
+    ? groupPackagesByDestination(categoryFiltered).find(
+        (group) => group.label.toLowerCase() === selectedDestination.toLowerCase(),
+      )
+    : undefined;
+  const destinationTerms = selectedDestination
+    .toLowerCase()
+    .split(/\s*(?:&|,|\band\b)\s*/)
+    .map((term) => term.trim())
+    .filter((term) => term.length > 2);
+  const destinationFallback = categoryFiltered.filter((pkg) => {
+    const searchable = `${pkg.title} ${pkg.slug} ${pkg.route}`.toLowerCase();
+    return destinationTerms.some((term) => searchable.includes(term));
+  });
+  const destinationFiltered = selectedDestination
+    ? destinationGroup?.packages?.length ? destinationGroup.packages : destinationFallback
+    : categoryFiltered;
+
   // Search only product facts. Marketing descriptions often mention unrelated
   // places and made destination searches return irrelevant packages.
   // The legacy redirects (redirects.json) and /international-tours land here.
   const textFiltered = selectedFilter
-    ? categoryFiltered.filter((p) => {
-        if (selectedDestination) {
-          return getPackageDestination(p).toLowerCase() === selectedFilter;
-        }
+    ? destinationFiltered.filter((p) => {
         const haystack = `${p.title} ${p.category} ${p.slug} ${p.route} ${getPackageDestination(p)}`.toLowerCase();
         return haystack.includes(selectedFilter);
       })
-    : categoryFiltered;
+    : destinationFiltered;
   const filtered = selectedDuration === "All"
     ? textFiltered
     : textFiltered.filter((pkg) => packageDurationGroup(pkg) === selectedDuration);
@@ -83,7 +136,7 @@ export default async function PackagesPage({
     if (selectedDuration !== "All") params.set("duration", selectedDuration);
     if (selectedDestination) params.set("destination", selectedDestination);
     else if (selectedFilter) params.set("q", selectedFilter);
-    if (selectedTravelers) params.set("travelers", selectedTravelers);
+    if (selectedTravelers) params.set("travelers", String(selectedTravelers));
     if (page > 1) params.set("page", String(page));
     const qs = params.toString();
     return qs ? `/packages?${qs}` : "/packages";

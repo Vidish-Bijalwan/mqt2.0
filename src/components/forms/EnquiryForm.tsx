@@ -4,7 +4,10 @@ import { useState } from "react";
 import { siteConfig } from "@/data/siteConfig";
 import { buildEnquiryWhatsappUrl } from "@/utils/enquiry";
 
-export default function EnquiryForm({ pkgName = "", embedded = false }: { pkgName?: string; embedded?: boolean }) {
+export default function EnquiryForm({ pkgName = "", destination, embedded = false }: { pkgName?: string; destination?: string; embedded?: boolean }) {
+  // `destination` is retained for campaign pages authored before `pkgName`
+  // became the shared form API.
+  const enquiryName = pkgName || destination || "";
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [preparedUrl, setPreparedUrl] = useState("");
 
@@ -14,7 +17,7 @@ export default function EnquiryForm({ pkgName = "", embedded = false }: { pkgNam
 
     const form = new FormData(e.currentTarget);
     const whatsappUrl = buildEnquiryWhatsappUrl(siteConfig.social.whatsapp, {
-      packageName: pkgName,
+      packageName: enquiryName,
       name: String(form.get("name") || ""),
       email: String(form.get("email") || ""),
       phone: String(form.get("phone") || ""),
@@ -28,7 +31,7 @@ export default function EnquiryForm({ pkgName = "", embedded = false }: { pkgNam
     if (analytics.gtag) {
       analytics.gtag("event", "enquiry_submit", {
         event_category: "engagement",
-        event_label: pkgName || "general",
+        event_label: enquiryName || "general",
       });
     }
     

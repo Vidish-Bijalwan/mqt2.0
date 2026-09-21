@@ -1,21 +1,15 @@
-import fullBlogDataRaw from "@/data/fullBlogData.json";
-import fullBlogDataCleanRaw from "@/data/fullBlogDataClean.json";
 import Image from "next/image";
 import Link from "next/link";
 import { Calendar, Phone } from "lucide-react";
 import BlogSidebar from "@/components/blog/BlogSidebar";
 import { siteConfig } from "@/data/siteConfig";
 import { notFound } from "next/navigation";
-import type { ContentBlock, ContentDocumentMap } from "@/types/content";
-
-// Prefer the cleaned content (junk nav/form blocks removed); fall back to the
-// original scrape for any post missing from the cleaned set.
-const fullBlogData = fullBlogDataRaw as ContentDocumentMap;
-const fullBlogDataClean = fullBlogDataCleanRaw as ContentDocumentMap;
+import type { ContentBlock } from "@/types/content";
+import { ALL_BLOGS } from "@/data/blogIndex";
+import { getEditorialBlocks } from "@/data/blogEditorial";
 
 function blogFor(slug: string) {
-  const clean = fullBlogDataClean[slug] || fullBlogDataClean[`blog__${slug}`];
-  return clean || fullBlogData[slug] || fullBlogData[`blog__${slug}`];
+  return ALL_BLOGS.find((blog) => blog.slug === slug);
 }
 
 import { getBlogImage } from "@/data/blogImageMap";
@@ -25,10 +19,7 @@ import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
 // Pre-render a small set of entry articles. Long-tail posts render on demand
 // and are cached by ISR, keeping deployments compact without changing URLs.
 export function generateStaticParams() {
-  return Object.keys(fullBlogData)
-    .filter((k) => !k.includes('__'))
-    .slice(0, 12)
-    .map((slug) => ({ slug }));
+  return ALL_BLOGS.slice(0, 24).map((blog) => ({ slug: blog.slug }));
 }
 
 export const dynamicParams = true;
@@ -43,7 +34,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!blog) return { title: { absolute: "Travel Blog | My Quick Trippers" } };
 
   const image = getBlogImage(slug);
-  const contentText = blog.content?.filter((block) => block.type === 'p').map((block) => block.text || '').join(' ').substring(0, 160) || '';
+  const contentText = blog.snippet;
 
   return {
     title: { absolute: `${blog.title} | My Quick Trippers` },
@@ -97,25 +88,25 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   }
 
   // Determine reading time
-  const contentText = blog.content?.filter((block) => block.type === 'p').map((block) => block.text || '').join(' ') || '';
+  const editorialBlocks = getEditorialBlocks(blog);
+  const contentText = editorialBlocks.filter((block) => block.type === 'p').map((block) => block.text || '').join(' ');
   const wordCount = contentText.split(/\s+/).filter(Boolean).length;
   const readingTime = Math.max(1, Math.ceil(wordCount / 200));
   const image = getBlogImage(slug);
 
-  // Related posts — rank other posts by shared words in title + headings (U24)
+  // Related posts are ranked by the same category/tag taxonomy used by search.
   const currentWords = new Set(
-    `${blog.title} ${(blog.headings?.h2 || []).join(' ')}`.toLowerCase().replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter((w: string) => w.length > 3)
+    `${blog.title} ${blog.category} ${blog.tags.join(' ')}`.toLowerCase().replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter((w: string) => w.length > 3)
   );
-  const related = Object.keys(fullBlogData)
-    .filter((k) => !k.includes('__') && k !== slug && k !== `blog__${slug}`)
-    .map((k) => {
-      const b = fullBlogData[k];
+  const related = ALL_BLOGS
+    .filter((candidate) => candidate.slug !== slug)
+    .map((candidate) => {
       const words = new Set(
-        `${b.title || ''} ${(b.headings?.h2 || []).join(' ')}`.toLowerCase().replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter((w: string) => w.length > 3)
+        `${candidate.title} ${candidate.category} ${candidate.tags.join(' ')}`.toLowerCase().replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter((w: string) => w.length > 3)
       );
       let score = 0;
       words.forEach((w) => { if (currentWords.has(w)) score++; });
-      return { slug: k.replace(/^blog__/, ''), title: b.title || k, score };
+      return { slug: candidate.slug, title: candidate.title, score };
     })
     .filter((r) => r.score > 0)
     .sort((a, b) => b.score - a.score)
@@ -141,8 +132,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     "headline": blog.title,
     "image": `${siteConfig.domain}${image}`,
     "author": {
-      "@type": "Person",
-      "name": "Rajesh Kumar, MQT India"
+      "@type": "Organization",
+      "name": siteConfig.name
     },
     "publisher": {
       "@type": "Organization",
@@ -152,7 +143,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         "url": `${siteConfig.domain}/logo/mqt-india-logo.png`
       }
     },
-    "datePublished": new Date().toISOString().split('T')[0], // Using current date as fallback
+    "datePublished": "2026-09-21",
+    "dateModified": "2026-09-21",
     "description": contentText.substring(0, 200)
   };
 
@@ -183,7 +175,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <div className="relative w-full h-[400px] mb-8 rounded overflow-hidden bg-gray-200">
            <Image src={getBlogImage(slug)} alt={blog.title} fill sizes="(max-width: 768px) 100vw, 800px" className="object-cover" priority placeholder={IMAGE_SKELETON} />
         </div>
-        <RenderContent content={blog.content || []} />
+        <RenderContent content={editorialBlocks} />
 
         {/* Related posts (U24) — cross-links readers to more content instead of dead-ending */}
         {related.length > 0 && (

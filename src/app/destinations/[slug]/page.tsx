@@ -1,272 +1,69 @@
-import { getPublicPackages } from "@/utils/packageCatalog";
+import { getPublicPackages, getTourDays } from "@/utils/packageCatalog";
 import { destinations } from "@/data/contentData";
 import destinationsDataRaw from "@/data/destinationsData.json";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ChevronRight } from "lucide-react";
+import Image from "next/image";
+import { ArrowDownUp, ArrowRight, CalendarDays, ChevronRight, Compass, SlidersHorizontal, Sparkles } from "lucide-react";
 import PackageListCard from "@/components/ui/PackageListCard";
 import EmptyState from "@/components/ui/EmptyState";
-import FilterSidebar from "@/components/ui/FilterSidebar";
-import DestinationDescription from "@/components/ui/DestinationDescription";
-import DestinationAtAGlance from "@/components/ui/DestinationAtAGlance";
-import EnquiryForm from "@/components/forms/EnquiryForm";
-import Image from "next/image";
 import { getPriceInfo, parseINR } from "@/utils/price";
 import type { ContentDocument } from "@/types/content";
 import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
+import { siteConfig } from "@/data/siteConfig";
+import StateSilhouetteHero from "@/components/destination/StateSilhouetteHero";
+import { destinationExplorerProfiles } from "@/data/destinationExplorer";
 
-interface LegacyDestinationDocument {
-  title: string;
-  image?: string;
-  content?: string[];
-}
+interface LegacyDestinationDocument { title: string; image?: string; content?: string[]; }
 
-const destinationsData = destinationsDataRaw as unknown as Record<string, LegacyDestinationDocument>;
-
-function getDestinationData(slug: string): ContentDocument | undefined {
-  const data = destinationsData[slug];
-  if (!data) return undefined;
-
-  return {
-    ...data,
-    content: data.content?.map((html) => ({
-      type: "p",
-      text: html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim(),
-    })),
-  };
-}
-
-const destinationKeywords: Record<string, string[]> = {
-  "uttarakhand": ["haridwar", "rishikesh", "nainital", "mussoorie", "corbett", "auli", "kedarnath", "badrinath", "gangotri", "yamunotri", "dehradun", "joshimath", "almora", "ranikhet"],
+const destinationData = destinationsDataRaw as unknown as Record<string, LegacyDestinationDocument>;
+const keywords: Record<string, string[]> = {
+  uttarakhand: ["haridwar", "rishikesh", "nainital", "mussoorie", "corbett", "auli", "kedarnath", "badrinath", "gangotri", "yamunotri", "dehradun", "joshimath", "almora", "ranikhet"],
   "himachal-pradesh": ["shimla", "manali", "dharamshala", "dalhousie", "kullu", "spiti", "kinnaur", "rohtang", "kasauli"],
   "uttar-pradesh": ["agra", "varanasi", "mathura", "vrindavan", "ayodhya", "prayagraj", "lucknow", "sarnath"],
-  "kashmir": ["srinagar", "gulmarg", "pahalgam", 'sonmarg', 'kashmir', "amarnath", "katra", "vaishno devi", "jammu"],
-  "goa": ["goa", "panjim", "calangute", "baga"],
-  "gujarat": ["ahmedabad", "somnath", "dwarka", "gir", "kutch", "statue of unity", "rajkot"],
-  "rajasthan": ["jaipur", "udaipur", "jodhpur", "jaisalmer", "pushkar", "bikaner", "mount abu", "ranthambore"],
-  "maharashtra": ["mumbai", "pune", "lonavala", "mahabaleshwar", "shirdi", "aurangabad", "ajanta", "ellora"],
-  "kerala": ["munnar", "thekkady", "alleppey", "kovalam", "kumarakom", "wayanad", "cochin", "trivandrum"],
-  "tamil-nadu": ["chennai", "ooty", "kodaikanal", "madurai", "rameshwaram", "kanyakumari", "mahabalipuram"],
-  "karnataka": ["bangalore", "mysore", "coorg", "hampi", "bandipur", "gokarna"],
-  "madhya-pradesh": ["khajuraho", "kanha", "bandhavgarh", "gwalior", "ujjain", "bhopal", "indore"],
-  "darjeeling": ["darjeeling", "kalimpong", "kurseong"],
-  "sikkim": ["gangtok", "pelling", "lachung", "nathula"],
-  "assam": ["guwahati", "kaziranga", "majuli", "shillong", "cherrapunji", "meghalaya"],
+  kashmir: ["srinagar", "gulmarg", "pahalgam", "sonmarg", "kashmir", "amarnath", "katra", "vaishno devi", "jammu"], goa: ["goa", "panjim", "calangute", "baga"],
+  gujarat: ["ahmedabad", "somnath", "dwarka", "gir", "kutch", "statue of unity", "rajkot"], rajasthan: ["jaipur", "udaipur", "jodhpur", "jaisalmer", "pushkar", "bikaner", "mount abu", "ranthambore"],
+  maharashtra: ["mumbai", "pune", "lonavala", "mahabaleshwar", "shirdi", "aurangabad", "ajanta", "ellora"], kerala: ["munnar", "thekkady", "alleppey", "kovalam", "kumarakom", "wayanad", "cochin", "trivandrum"],
+  "tamil-nadu": ["chennai", "ooty", "kodaikanal", "madurai", "rameshwaram", "kanyakumari", "mahabalipuram"], karnataka: ["bangalore", "mysore", "coorg", "hampi", "bandipur", "gokarna"],
+  "madhya-pradesh": ["khajuraho", "kanha", "bandhavgarh", "gwalior", "ujjain", "bhopal", "indore"], darjeeling: ["darjeeling", "kalimpong", "kurseong"], sikkim: ["gangtok", "pelling", "lachung", "nathula"], assam: ["guwahati", "kaziranga", "majuli"], ladakh: ["ladakh", "leh", "nubra", "pangong", "kargil", "sham valley"],
 };
-
-import { siteConfig } from "@/data/siteConfig";
+const heroImages: Record<string, string> = { uttarakhand: "/images/packages/hi-uttarakhand.webp", "himachal-pradesh": "/images/packages/hi-himachal-pradesh.webp", rajasthan: "/images/packages/hi-rajasthan.webp", kerala: "/images/packages/hi-kerala.webp", goa: "/images/packages/hi-goa.webp", ladakh: "/images/packages/ladakh-highres.jpg" };
+function legacy(slug: string): ContentDocument | undefined { const item = destinationData[slug]; return item ? { ...item, content: item.content?.map((html) => ({ type: "p", text: html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim() })) } : undefined; }
+function matches(pkg: { slug: string; title: string; category: string; route: string }, term: string) {
+  const escaped = term.trim().replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/\\ /g, "[\\s-]");
+  return new RegExp(`(^|[^a-z])${escaped}($|[^a-z])`, "i").test(`${pkg.slug} ${pkg.title} ${pkg.category} ${pkg.route}`.replace(/-/g, " "));
+}
+function makeUrl(slug: string, values: Record<string, string | undefined>) { const search = new URLSearchParams(); Object.entries(values).forEach(([key, value]) => { if (value) search.set(key, value); }); const result = search.toString(); return `/destinations/${slug}${result ? `?${result}` : ""}`; }
+function titleCase(value: string) { return value.replace(/\b\w/g, (letter) => letter.toUpperCase()); }
 
 export const revalidate = 86400;
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) { const { slug: raw } = await params; const slug = raw.toLowerCase(); const destination = destinations.find((item) => item.slug.toLowerCase() === slug); const data = legacy(slug); const title = destination ? `${destination.name} Tour Packages & Travel Guide` : `${titleCase(slug.replace(/-/g, " "))} Travel Guide`; const description = data?.content?.filter((block) => block.type === "p").map((block) => block.text || "").join(" ").substring(0, 160) || `Explore the best ${title} with My Quick Trippers.`; const image = `${siteConfig.domain}${heroImages[slug] || destination?.image || "/images/hero/hero-bg-1.svg"}`; return { title, description, alternates: { canonical: `${siteConfig.domain}/destinations/${slug}` }, openGraph: { title, description, url: `${siteConfig.domain}/destinations/${slug}`, type: "website", images: [{ url: image, width: 1200, height: 630, alt: title }] }, twitter: { card: "summary_large_image", title, description, images: [image] } }; }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
-  const resolvedParams = await params;
-  const slug = resolvedParams.slug.toLowerCase();
-  const dest = destinations.find(d => d.slug.toLowerCase() === slug);
-  const destData = getDestinationData(slug);
-  
-  const seoTitles: Record<string, string> = {
-    "ladakh": "Ladakh Travel Guide: Route, Itinerary & Best Time",
-    "varanasi": "Varanasi Travel Guide: Ghats, Ganga Aarti & Best Time",
-    "kedarnath": "Kedarnath Yatra Guide: Trek, Weather & Best Packages",
-  };
-  
-  const title = seoTitles[slug] || (dest ? `${dest.name} Tour Packages & Travel Guide` : `${slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())} Travel Guide`);
-  const description = destData?.content?.filter((block) => block.type === 'p').map((block) => block.text || '').join(' ').substring(0, 160) || `Explore the best ${title} with My Quick Trippers.`;
-  const socialImage = dest?.image ? `${siteConfig.domain}${dest.image}` : `${siteConfig.domain}/images/hero/hero-bg-1.svg`;
-
-  return { 
-    title,
-    description,
-    alternates: {
-      canonical: `${siteConfig.domain}/destinations/${slug}`,
-    },
-    openGraph: {
-      title,
-      description,
-      url: `${siteConfig.domain}/destinations/${slug}`,
-      type: 'website',
-      images: [{ url: socialImage, width: 1200, height: 630, alt: title }],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title,
-      description,
-      images: [socialImage],
-    }
-  };
+export default async function DestinationPage({ params, searchParams }: { params: Promise<{ slug: string }>; searchParams: Promise<Record<string, string | string[] | undefined>> }) {
+  const { slug: raw } = await params; const slug = raw.toLowerCase(); const search = await searchParams;
+  const selectedDestination = typeof search.destination === "string" ? search.destination.toLowerCase() : ""; const selectedExperience = typeof search.experience === "string" ? search.experience.toLowerCase() : ""; const selectedDuration = typeof search.duration === "string" ? search.duration : ""; const selectedBudget = typeof search.budget === "string" ? search.budget : "";
+  const profile = destinationExplorerProfiles[slug]; const destination = destinations.find((item) => item.slug.toLowerCase() === slug); const data = legacy(slug); const titleName = destination?.name || data?.title || titleCase(slug.replace(/-/g, " ")); const heroImage = heroImages[slug] || data?.image || destination?.image || "/images/hero/hero-bg-1.svg"; const terms = [slug, ...(keywords[slug] || [])];
+  const catalogue = Array.from(new Map(getPublicPackages().filter((pkg) => terms.some((term) => matches(pkg, term))).map((pkg) => [pkg.slug, pkg])).values());
+  if (!destination && !data && !catalogue.length) notFound();
+  const filtered = catalogue.filter((pkg) => { if (selectedDestination && !matches(pkg, selectedDestination)) return false; if (selectedExperience && !matches(pkg, selectedExperience)) return false; const days = getTourDays(pkg.duration, pkg.title); if (selectedDuration === "3-5" && (!days || days < 3 || days > 5)) return false; if (selectedDuration === "6-9" && (!days || days < 6 || days > 9)) return false; if (selectedDuration === "10+" && (!days || days < 10)) return false; const price = parseINR(pkg.dealPrice || pkg.mrp); if (selectedBudget === "25000-50000" && (price < 25000 || price > 50000)) return false; return true; });
+  const prices = catalogue.map((pkg) => getPriceInfo(pkg.mrp, pkg.dealPrice, pkg.slug)).filter((price) => price.hasPrice).map((price) => parseINR(price.display)).filter(Boolean); const filteredPrices = filtered.map((pkg) => getPriceInfo(pkg.mrp, pkg.dealPrice, pkg.slug)).filter((price) => price.hasPrice).map((price) => parseINR(price.display)).filter(Boolean); const tripDays = catalogue.map((pkg) => getTourDays(pkg.duration, pkg.title)).filter((day): day is number => Boolean(day)); const description = profile?.description || data?.content?.find((block) => block.type === "p")?.text || `Explore journeys through ${titleName}.`;
+  const currentFilters = { destination: selectedDestination || undefined, experience: selectedExperience || undefined, duration: selectedDuration || undefined, budget: selectedBudget || undefined };
+  const mapMarkers = (profile?.mapMarkers || []).map((marker) => ({ ...marker, href: makeUrl(slug, { ...currentFilters, destination: marker.slug }), packageCount: catalogue.filter((pkg) => matches(pkg, marker.name)).length }));
+  const experienceLinks = [{ label: "All", href: makeUrl(slug, { ...currentFilters, experience: undefined }), active: !selectedExperience }, ...(profile?.themes || []).slice(0, 6).map((theme) => ({ label: theme, href: makeUrl(slug, { ...currentFilters, experience: theme.toLowerCase() }), active: selectedExperience === theme.toLowerCase() }))];
+  const activeFilters = [selectedDestination && { label: titleCase(selectedDestination), href: makeUrl(slug, { ...currentFilters, destination: undefined }) }, selectedExperience && { label: titleCase(selectedExperience), href: makeUrl(slug, { ...currentFilters, experience: undefined }) }, selectedDuration && { label: `${selectedDuration} days`, href: makeUrl(slug, { ...currentFilters, duration: undefined }) }, selectedBudget && { label: "₹25k–50k", href: makeUrl(slug, { ...currentFilters, budget: undefined }) }].filter(Boolean) as Array<{ label: string; href: string }>;
+  const breadcrumb = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: siteConfig.domain }, { "@type": "ListItem", position: 2, name: "India Tours", item: `${siteConfig.domain}/packages` }, { "@type": "ListItem", position: 3, name: titleName, item: `${siteConfig.domain}/destinations/${slug}` }] };
+  return <main className="min-h-screen bg-[#f5f4ee] pb-16 text-[#102f2b]">
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "TouristDestination", name: titleName, description, url: `${siteConfig.domain}/destinations/${slug}` }) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+    {profile?.mapMarkers && (
+      <StateSilhouetteHero title={titleName} profile={profile} packageCount={filtered.length} startingPrice={filteredPrices.length ? Math.min(...filteredPrices) : undefined} markers={mapMarkers} experienceLinks={experienceLinks} activeFilters={activeFilters} />
+    )}
+    {!profile?.mapMarkers && <>
+    <div className="border-b border-[#d9e3dc] bg-white/85"><div className="mx-auto flex max-w-7xl items-center gap-1 px-4 py-3 text-xs text-[#5e746d] sm:px-6"><Link href="/" className="hover:text-[#16453d]">Home</Link><ChevronRight className="h-3 w-3"/><Link href="/packages" className="hover:text-[#16453d]">India</Link><ChevronRight className="h-3 w-3"/><span className="truncate font-semibold text-[#16453d]">{titleName}</span></div></div>
+    <section className="mx-auto max-w-7xl px-4 pb-10 pt-5 sm:px-6 lg:pt-8"><div className="overflow-hidden rounded-[28px] bg-[#0b302c] shadow-[0_24px_70px_rgba(9,42,36,.18)]"><div className="grid lg:grid-cols-[minmax(0,1.72fr)_minmax(330px,.86fr)]"><div className="relative min-h-[440px] overflow-hidden sm:min-h-[520px]"><Image src={heroImage} alt="" fill priority sizes="(max-width: 1024px) 100vw, 68vw" placeholder={IMAGE_SKELETON} className="object-cover opacity-45"/><div className="absolute inset-0 bg-[linear-gradient(110deg,rgba(5,37,33,.94),rgba(7,57,50,.63),rgba(8,43,39,.8))]"/><div className="absolute inset-0 opacity-30" style={{ backgroundImage: "radial-gradient(circle at 15% 20%, #b7cec0 0 1px, transparent 1px), radial-gradient(circle at 80% 68%, #b7cec0 0 1px, transparent 1px)", backgroundSize: "38px 38px, 52px 52px" }}/><div className="relative flex h-full min-h-[440px] flex-col justify-between p-6 sm:p-9"><div><p className="text-xs font-black uppercase tracking-[.24em] text-[#efaa54]">Destination explorer</p><h1 className="font-display mt-3 max-w-xl text-4xl font-bold tracking-[-.04em] text-white sm:text-6xl">{titleName}</h1><p className="mt-4 max-w-lg text-sm leading-6 text-white/78 sm:text-base">{profile?.tagline || description}</p></div><div className="relative mt-10 min-h-[205px] rounded-2xl border border-white/20 bg-[#0a4039]/45 p-4 backdrop-blur-sm sm:min-h-[245px] sm:p-6" aria-label="Destination discovery overview"><i className="absolute left-[19%] top-[27%] h-3 w-3 rounded-full bg-[#efaa54] ring-4 ring-[#efaa54]/20"/><i className="absolute left-[52%] top-[52%] h-3 w-3 rounded-full bg-[#efaa54] ring-4 ring-[#efaa54]/20"/><i className="absolute left-[71%] top-[22%] h-3 w-3 rounded-full bg-[#efaa54] ring-4 ring-[#efaa54]/20"/><i className="absolute bottom-[18%] left-[39%] h-3 w-3 rounded-full bg-[#efaa54] ring-4 ring-[#efaa54]/20"/><div className="absolute left-[8%] top-[14%] text-xs font-bold text-white">Discover by place</div><div className="absolute left-[55%] top-[37%] text-xs font-bold text-white">Choose a journey</div><div className="absolute bottom-[9%] right-[8%] text-right text-[11px] leading-4 text-white/70">Live package results<br/>follow your selection</div><div className="absolute inset-5 rounded-[42%_58%_51%_49%/46%_42%_58%_54%] border border-[#b7cec0]/45"/><div className="absolute inset-10 rounded-[52%_48%_45%_55%/58%_53%_47%_42%] border border-[#b7cec0]/30"/><p className="absolute bottom-4 left-4 max-w-[280px] text-[11px] leading-4 text-white/64">A tourism discovery canvas. Official administrative map geometry is intentionally not shown until it has been validated from an authoritative source.</p></div></div></div><aside className="flex flex-col justify-between bg-[#fbf8f0] p-6 sm:p-9"><div><p className="text-xs font-black uppercase tracking-[.2em] text-[#b57830]">{profile?.eyebrow || "Travel guide"}</p><h2 className="font-display mt-3 text-3xl font-bold tracking-[-.04em] text-[#143a35]">A place with more than one way in.</h2><p className="mt-4 text-sm leading-6 text-[#587069]">{description}</p><div className="mt-7 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-[#d8e3dd] bg-[#d8e3dd]"><Stat label="Packages" value={String(catalogue.length)}/><Stat label="Destinations" value={String(profile?.places.length || Math.min(terms.length - 1, 12))}/><Stat label="Trip length" value={tripDays.length ? `${Math.min(...tripDays)}–${Math.max(...tripDays)}d` : "Flexible"}/><Stat label="From" value={prices.length ? `₹${Math.min(...prices).toLocaleString("en-IN")}` : "On request"}/></div><p className="mt-4 flex items-center gap-2 text-xs font-semibold text-[#52736a]"><CalendarDays className="h-4 w-4 text-[#b57830]"/>Best time: {profile?.bestTime || "Talk to a specialist"}</p></div><div className="mt-8 grid gap-3"><a href="#packages" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-[#16453d] px-5 text-sm font-bold text-white transition hover:bg-[#0b302c]">Explore packages <ArrowRight className="h-4 w-4"/></a><a href="#places" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-[#16453d] px-5 text-sm font-bold text-[#16453d] transition hover:bg-[#edf5ef]">View destinations <Compass className="h-4 w-4"/></a></div></aside></div></div><nav aria-label="Trip styles" className="mt-5 flex gap-2 overflow-x-auto pb-1"><Link href={makeUrl(slug, {})} className={`shrink-0 rounded-full border px-4 py-2 text-sm font-bold ${!selectedExperience ? "border-[#16453d] bg-[#16453d] text-white" : "border-[#cddbd4] bg-white text-[#34544c]"}`}>All journeys</Link>{(profile?.themes || ["Family", "Adventure", "Culture"]).map((theme) => <Link key={theme} href={makeUrl(slug, { experience: theme.toLowerCase() })} className={`shrink-0 rounded-full border px-4 py-2 text-sm font-bold transition ${selectedExperience === theme.toLowerCase() ? "border-[#16453d] bg-[#16453d] text-white" : "border-[#cddbd4] bg-white text-[#34544c] hover:border-[#16453d]"}`}>{theme}</Link>)}</nav></section>
+    </>}
+    {profile && !profile.mapMarkers && <section id="places" className="border-y border-[#dce5df] bg-white py-11"><div className="mx-auto max-w-7xl px-4 sm:px-6"><div className="flex items-end justify-between gap-4"><div><p className="text-xs font-black uppercase tracking-[.22em] text-[#b57830]">Choose your chapter</p><h2 className="font-display mt-2 text-3xl font-bold tracking-[-.04em] text-[#143a35]">Explore {titleName}</h2></div><a href="#packages" className="hidden text-sm font-bold text-[#16453d] sm:block">See matching journeys →</a></div><div className="mt-6 grid snap-x snap-mandatory grid-flow-col auto-cols-[78%] gap-4 overflow-x-auto pb-3 sm:auto-cols-[42%] lg:grid-flow-row lg:grid-cols-5 lg:overflow-visible">{profile.places.map((place) => { const count = catalogue.filter((pkg) => matches(pkg, place.name)).length; return <Link key={place.name} href={makeUrl(slug, { destination: place.name.toLowerCase() })} className={`group relative aspect-[.82] snap-start overflow-hidden rounded-2xl bg-[#16453d] ${selectedDestination === place.name.toLowerCase() ? "ring-4 ring-[#b57830]" : ""}`}><Image src={place.image} alt={place.name} fill sizes="(max-width:640px) 78vw, (max-width:1024px) 42vw, 20vw" placeholder={IMAGE_SKELETON} className="object-cover transition duration-500 group-hover:scale-105"/><div className="absolute inset-0 bg-gradient-to-t from-[#061f1c]/95 via-[#061f1c]/12 to-transparent"/><div className="absolute inset-x-0 bottom-0 p-4 text-white"><p className="text-[10px] font-black uppercase tracking-[.17em] text-[#f0ad58]">{place.themes.join(" · ")}</p><h3 className="font-display mt-1 text-2xl font-bold">{place.name}</h3><p className="mt-1 text-xs text-white/75">{count ? `${count} journey${count === 1 ? "" : "s"} to explore` : "Tailored routes available"}</p></div></Link>; })}</div></div></section>}
+    <section id="packages" className="mx-auto max-w-7xl scroll-mt-20 px-4 py-12 sm:px-6"><div className="flex flex-col gap-5 border-b border-[#d6e1db] pb-6 lg:flex-row lg:items-end lg:justify-between"><div><p className="text-xs font-black uppercase tracking-[.22em] text-[#b57830]">Curated journeys</p><h2 className="font-display mt-2 text-3xl font-bold tracking-[-.04em] text-[#143a35]">{filtered.length} {selectedDestination ? `${titleCase(selectedDestination)} ` : ""}{selectedExperience ? `${titleCase(selectedExperience)} ` : ""}packages</h2><p className="mt-2 text-sm text-[#61766f]">Showing live catalogue results for this selection.</p></div><div className="flex flex-wrap gap-2"><FilterLink slug={slug} label="3–5 days" selected={selectedDuration === "3-5"} values={{ duration: "3-5", destination: selectedDestination, experience: selectedExperience, budget: selectedBudget }}/><FilterLink slug={slug} label="6–9 days" selected={selectedDuration === "6-9"} values={{ duration: "6-9", destination: selectedDestination, experience: selectedExperience, budget: selectedBudget }}/><FilterLink slug={slug} label="₹25k–50k" selected={selectedBudget === "25000-50000"} values={{ budget: "25000-50000", destination: selectedDestination, experience: selectedExperience, duration: selectedDuration }}/><Link href={makeUrl(slug, {})} className="inline-flex min-h-10 items-center gap-2 rounded-lg border border-[#cbdad3] bg-white px-3 text-xs font-bold text-[#34544c]"><SlidersHorizontal className="h-4 w-4"/>Clear</Link></div></div><div className="mt-7 flex items-center justify-between text-sm text-[#61766f]"><span className="inline-flex items-center gap-2"><Sparkles className="h-4 w-4 text-[#b57830]"/>Packages matched to your selection</span><span className="inline-flex items-center gap-2"><ArrowDownUp className="h-4 w-4"/>Recommended first</span></div><div className="mt-5 space-y-4">{filtered.length ? filtered.map((pkg) => <PackageListCard key={pkg.slug} pkg={pkg}/>) : <EmptyState titleName={titleName}/>}</div></section>
+  </main>;
 }
-
-export default async function DestinationPage({ params }: { params: Promise<{ slug: string }> }) {
-  const resolvedParams = await params;
-  const slug = resolvedParams.slug.toLowerCase();
-  
-  const dest = destinations.find(d => d.slug.toLowerCase() === slug);
-  const destData = getDestinationData(slug);
-  const titleName = dest ? dest.name : (destData?.title || slug.replace(/-/g, ' '));
-  
-  // Find matching packages
-  const matchedPackages = getPublicPackages().filter(p => {
-    const term = slug.toLowerCase();
-    
-    // Direct matches
-    if (p.slug.toLowerCase().includes(term)) return true;
-    if (p.category.toLowerCase().includes(term)) return true;
-    if (p.route && p.route.toLowerCase().includes(term)) return true;
-    
-    // Keyword matches (cities inside the state)
-    const keywords = destinationKeywords[term] || [];
-    for (const kw of keywords) {
-      if (p.slug.toLowerCase().includes(kw)) return true;
-      if (p.category.toLowerCase().includes(kw)) return true;
-      if (p.route && p.route.toLowerCase().includes(kw)) return true;
-    }
-    
-    // special mapping for generic paths
-    if (term === 'india-tours' || term === 'india-tour-packages') return p.category.includes('India Tours') || p.category.includes('North India') || p.category.includes('South India');
-    if (term === 'international-tours' || term === 'international') return p.category === 'International';
-    if (term === 'pilgrimage-tours' || term === 'pilgrimage') return p.category === 'Pilgrimage';
-    
-    return false;
-  });
-
-  if (!dest && !destData && matchedPackages.length === 0) {
-    notFound();
-  }
-
-  // Deduplicate packages based on slug
-  const uniquePackages = Array.from(new Map(matchedPackages.map((p) => [p.slug, p])).values());
-
-  // Destination facts derived from the real catalog (never fabricated).
-  const durNums = uniquePackages
-    .map((p) => p.duration?.match(/(\d+)\s*days?/i)?.[1])
-    .filter(Boolean)
-    .map(Number);
-  const durationRange =
-    durNums.length === 0
-      ? null
-      : Math.min(...durNums) === Math.max(...durNums)
-        ? `${Math.min(...durNums)} Day${Math.min(...durNums) > 1 ? "s" : ""}`
-        : `${Math.min(...durNums)}–${Math.max(...durNums)} Days`;
-  const priceNums = uniquePackages
-    .map((p) => (getPriceInfo(p.mrp, p.dealPrice, p.slug).hasPrice ? parseINR(p.dealPrice || p.mrp) : 0))
-    .filter((n) => n > 0);
-  const priceFrom = priceNums.length ? "₹" + Math.min(...priceNums).toLocaleString("en-IN") : null;
-
-  const breadcrumbLd = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": siteConfig.domain },
-      { "@type": "ListItem", "position": 2, "name": "India Tours", "item": `${siteConfig.domain}/destinations/india-tours` },
-      { "@type": "ListItem", "position": 3, "name": titleName, "item": `${siteConfig.domain}/destinations/${slug}` },
-    ],
-  };
-
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "TouristDestination",
-    "name": titleName,
-    "description": destData?.content?.filter((block) => block.type === 'p').map((block) => block.text || '').join(' ').substring(0, 200) || `Explore ${titleName}`,
-    "url": `${siteConfig.domain}/destinations/${slug}`,
-    "touristType": [
-      "Leisure",
-      "Adventure",
-      "Family"
-    ]
-  };
-
-  return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
-      <div className="bg-gray-50 min-h-screen pb-16">
-      
-      {/* Breadcrumbs Top Bar */}
-      <div className="bg-white border-b border-gray-200 text-gray-600 text-[13px] py-2 px-4 shadow-sm mb-6">
-        <div className="container mx-auto w-full max-w-7xl px-2 md:px-4 flex items-center">
-          <Link href="/" className="font-semibold hover:text-legacy-orange">Home</Link>
-          <ChevronRight className="w-3 h-3 mx-1" />
-          <Link href="/destinations/india-tours" className="font-semibold hover:text-legacy-orange">India</Link>
-          <ChevronRight className="w-3 h-3 mx-1" />
-          <span className="capitalize">{titleName} Tour Packages</span>
-        </div>
-      </div>
-
-      {/* Hero banner (U25) — title over image, consistent with the packages listing */}
-      <div className="relative h-[200px] md:h-[260px] w-full overflow-hidden">
-        <Image
-          src={destData?.image || "/images/hero/hero-bg-1.svg"}
-          alt={titleName}
-          fill
-          sizes="100vw"
-          className="object-cover"
-          priority
-          placeholder={IMAGE_SKELETON}
-        />
-        <div className="absolute inset-0 bg-legacy-nav-blue/70" />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-3xl md:text-5xl font-bold text-white capitalize drop-shadow-md">
-            {titleName} Tour Packages
-          </h1>
-          <p className="text-white/80 text-sm md:text-base mt-3 max-w-2xl">
-            {matchedPackages.length} curated packages · handpicked itineraries · best price guarantee
-          </p>
-        </div>
-      </div>
-
-      <div className="container mx-auto px-4 w-full max-w-7xl px-2 md:px-4 mt-8">
-        
-        {/* Destination at a Glance — reference-style fact strip (U26) */}
-        <div className="mb-6">
-          <DestinationAtAGlance
-            totalPackages={uniquePackages.length}
-            durationRange={durationRange}
-            priceFrom={priceFrom}
-          />
-        </div>
-        
-        {/* Render Destination Guide Content at the top */}
-        <DestinationDescription title={titleName} content={destData?.content || []} />
-        
-        {/* Main 2-Column Layout */}
-        <div className="flex flex-col lg:flex-row gap-6">
-          
-          {/* Left Sidebar (25% on lg screens) */}
-          <div className="w-full lg:w-1/4 shrink-0 space-y-6">
-             <FilterSidebar />
-
-             {/* Quick Enquiry (U25) — matches the packages listing sidebar */}
-             <div className="bg-[#fff9e6] border border-yellow-200 rounded overflow-hidden shadow-sm">
-               <div className="bg-legacy-nav-blue text-white px-4 py-3 text-sm font-bold text-center relative">
-                 Get a Best Deal Quick Enquiry
-                 <span className="absolute left-1/2 -translate-x-1/2 -bottom-2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-legacy-nav-blue" />
-               </div>
-               <div className="p-4">
-                 <p className="text-[11px] text-gray-600 mb-3">Tell us your travel plans and we&apos;ll design the best package for you!</p>
-                 <EnquiryForm pkgName={`${titleName} Tour Packages`} />
-               </div>
-             </div>
-          </div>
-          
-          {/* Right Package List (75% on lg screens) */}
-          <div className="w-full lg:w-3/4 flex-1">
-            
-            {uniquePackages.length > 0 ? (
-              <div className="flex flex-col space-y-4">
-                {uniquePackages.map((pkg, idx) => (
-                  <PackageListCard key={`${pkg.slug}-${idx}`} pkg={pkg} />
-                ))}
-              </div>
-            ) : (
-              <EmptyState titleName={titleName} />
-            )}
-            
-          </div>
-          
-        </div>
-        
-        </div>
-      </div>
-    </>
-  );
-}
+function Stat({ label, value }: { label: string; value: string }) { return <div className="bg-white p-3"><p className="font-display text-xl font-bold text-[#123c35]">{value}</p><p className="mt-1 text-[10px] font-bold uppercase tracking-[.1em] text-[#70817b]">{label}</p></div>; }
+function FilterLink({ slug, label, selected, values }: { slug: string; label: string; selected: boolean; values: Record<string, string> }) { const reset = { destination: values.destination, experience: values.experience, budget: values.budget }; return <Link href={makeUrl(slug, selected ? reset : values)} className={`inline-flex min-h-10 items-center rounded-lg border px-3 text-xs font-bold transition ${selected ? "border-[#16453d] bg-[#16453d] text-white" : "border-[#cbdad3] bg-white text-[#34544c] hover:border-[#16453d]"}`}>{label}</Link>; }

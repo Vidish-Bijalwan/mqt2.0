@@ -2,20 +2,47 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useSearchParams } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { ChevronRight, Calendar, BookOpen, Clock, Search, X, Filter } from "lucide-react";
-import { useState, useMemo, Suspense } from "react";
+import { useEffect, useMemo, useState, Suspense } from "react";
 import { ALL_BLOGS, CATEGORIES, categoryCounts } from "@/data/blogIndex";
 import BlogSidebar from "@/components/blog/BlogSidebar";
 import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
 
 const ITEMS_PER_PAGE = 24;
 
+function validateBlogSearchParams(cat: string | null, q: string | null) {
+  const validCategories = ['All Articles', ...CATEGORIES];
+  const category = validCategories.includes(cat || 'All Articles') ? (cat ?? 'All Articles') : 'All Articles';
+  const query = (q || "")
+    .replace(/[^\w\s-]/g, '')
+    .trim()
+    .substring(0, 100);
+  return { category, query };
+}
+
 function BlogIndexContent() {
   const searchParams = useSearchParams();
-  const [activeCategory, setActiveCategory] = useState(searchParams.get('cat') || 'All Articles');
-  const [searchQuery, setSearchQuery] = useState(searchParams.get('q') || '');
+  const router = useRouter();
+  const pathname = usePathname();
+  const { category: validCategory, query: validQuery } = validateBlogSearchParams(searchParams.get('cat'), searchParams.get('q'));
+  const [activeCategory, setActiveCategory] = useState(validCategory);
+  const [searchQuery, setSearchQuery] = useState(validQuery);
   const [currentPage, setCurrentPage] = useState(1);
+
+  useEffect(() => {
+    setActiveCategory(validCategory);
+    setSearchQuery(validQuery);
+    setCurrentPage(1);
+  }, [validCategory, validQuery]);
+
+  const updateUrl = (category: string, query: string) => {
+    const next = new URLSearchParams();
+    if (category !== 'All Articles') next.set('cat', category);
+    if (query) next.set('q', query);
+    const queryString = next.toString();
+    router.replace(queryString ? `${pathname}?${queryString}` : pathname, { scroll: false });
+  };
 
   const filteredBlogs = useMemo(() => {
     let result = ALL_BLOGS;
@@ -23,8 +50,14 @@ function BlogIndexContent() {
       result = result.filter(b => b.category === activeCategory);
     }
     if (searchQuery.trim()) {
-      const q = searchQuery.toLowerCase();
-      result = result.filter(b => b.title.toLowerCase().includes(q) || b.snippet.toLowerCase().includes(q));
+      const terms = searchQuery
+        .toLowerCase()
+        .split(/\s+/)
+        .filter((term) => term.length > 1 && !['blog', 'article', 'travel'].includes(term));
+      result = result.filter((blog) => {
+        const searchable = [blog.title, blog.category, blog.snippet, ...blog.tags].join(' ').toLowerCase();
+        return (terms.length ? terms : [searchQuery.toLowerCase()]).every((term) => searchable.includes(term));
+      });
     }
     return result;
   }, [activeCategory, searchQuery]);
@@ -37,11 +70,14 @@ function BlogIndexContent() {
   const handleCategoryChange = (cat: string) => {
     setActiveCategory(cat);
     setCurrentPage(1);
+    updateUrl(cat, searchQuery);
   };
 
   const handleSearch = (q: string) => {
-    setSearchQuery(q);
+    const validated = q.replace(/[^\w\s-]/g, '').trim().substring(0, 100);
+    setSearchQuery(validated);
     setCurrentPage(1);
+    updateUrl(activeCategory, validated);
   };
 
   // Generate page numbers with ellipsis
@@ -111,6 +147,7 @@ function BlogIndexContent() {
               placeholder={`Search ${ALL_BLOGS.length}+ travel articles...`}
               value={searchQuery}
               onChange={(e) => handleSearch(e.target.value)}
+              maxLength={100}
               className="w-full pl-12 pr-12 py-4 rounded-full bg-white text-gray-800 text-base border-2 border-legacy-orange/40 focus:border-legacy-orange focus:outline-none shadow-lg placeholder-gray-400"
             />
             {searchQuery && (
@@ -210,7 +247,7 @@ function BlogIndexContent() {
           {/* Results header */}
           <div className="flex justify-between items-center mb-6">
             <p className="text-sm text-gray-500">
-              Showing <span className="font-semibold text-gray-800">{startIndex + 1}–{Math.min(startIndex + ITEMS_PER_PAGE, filteredBlogs.length)}</span> of <span className="font-semibold text-gray-800">{filteredBlogs.length}</span> articles
+              Showing <span className="font-semibold text-gray-800">{filteredBlogs.length ? `${startIndex + 1}–${Math.min(startIndex + ITEMS_PER_PAGE, filteredBlogs.length)}` : '0'}</span> of <span className="font-semibold text-gray-800">{filteredBlogs.length}</span> articles
               {activeCategory !== 'All Articles' && <span> in <span className="text-legacy-orange font-semibold">{activeCategory}</span></span>}
               {searchQuery && <span> matching &quot;<span className="text-legacy-orange font-semibold">{searchQuery}</span>&quot;</span>}
             </p>
