@@ -6,6 +6,25 @@ import type { NextRequest } from 'next/server';
 // rules that can't be expressed as static redirect entries.
 
 export function proxy(request: NextRequest) {
+  const country = request.headers.get('x-vercel-ip-country');
+  const hasBeenRedirected = request.cookies.has('auto_translated');
+
+  if (country === 'JP' && !hasBeenRedirected) {
+    const url = request.nextUrl.clone();
+    const translateUrl = new URL('https://translate.google.com/translate');
+    translateUrl.searchParams.set('sl', 'en');
+    translateUrl.searchParams.set('tl', 'ja');
+    translateUrl.searchParams.set('u', url.toString());
+
+    const response = NextResponse.redirect(translateUrl);
+    response.cookies.set('auto_translated', 'true', {
+      maxAge: 60 * 60 * 24 * 30, // 30 days
+      path: '/',
+      sameSite: 'lax',
+    });
+    return response;
+  }
+
   const { pathname } = request.nextUrl;
   const lower = pathname.toLowerCase();
 
