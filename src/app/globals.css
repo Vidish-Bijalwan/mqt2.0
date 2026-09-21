@@ -127,6 +127,12 @@
 }
 
 @layer utilities {
+  @media (max-width: 639px) {
+    [aria-label="Destination discovery overview"] > p {
+      display: none;
+    }
+  }
+
   .nit-ribbon {
     position: absolute;
     top: 0;
@@ -250,6 +256,30 @@
   }
   .nit-pcard-img:hover img {
     transform: scale(1.04);
+  }
+  /* ── Package card watermark: bean shape, top-left, translucent ── */
+  .nit-pcard-watermark {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px 5px 8px;
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    /* Bean / organic shape — asymmetric border-radius */
+    border-radius: 50% 30% 55% 20% / 35% 55% 30% 50%;
+    pointer-events: none;
+  }
+  .nit-pcard-watermark-img {
+    display: block;
+    width: 64px;
+    height: auto;
+    object-fit: contain;
+    opacity: 0.82;
   }
   .home-brand-hero {
     position: relative;
