@@ -248,13 +248,13 @@
     aspect-ratio: 262 / 176;
     background: #e5e7eb;
   }
-  .nit-pcard-img img {
+  .nit-pcard-img .nit-pcard-img-el {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
   }
-  .nit-pcard-img:hover img {
+  .nit-pcard-img:hover .nit-pcard-img-el {
     transform: scale(1.04);
   }
   /* ── Package card watermark: bean shape, top-left, translucent ── */
