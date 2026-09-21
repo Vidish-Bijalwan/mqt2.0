@@ -67,10 +67,10 @@ export default function PackageCard({ pkg, href, variantCount }: PackageCardComp
         {/* ── Company watermark (top-left, bean shape, translucent) ── */}
         <span className="nit-pcard-watermark" aria-hidden="true">
           <Image
-            src="/logo/mqt-india-logo.png"
+            src="/logo/mqt-watermark.png"
             alt="My Quick Trippers"
-            width={72}
-            height={30}
+            width={120}
+            height={42}
             className="nit-pcard-watermark-img"
             loading="lazy"
             unoptimized

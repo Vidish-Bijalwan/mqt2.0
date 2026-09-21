@@ -276,7 +276,7 @@
   }
   .nit-pcard-watermark-img {
     display: block;
-    width: 64px;
+    width: 100px;
     height: auto;
     object-fit: contain;
     opacity: 0.82;
