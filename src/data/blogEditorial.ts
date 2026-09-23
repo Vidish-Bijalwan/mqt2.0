@@ -16,7 +16,12 @@ export interface EditorialBlogSeed {
 }
 
 const ARCHIVE_PATTERN = /\barchives?\b|^travel-theme__/i;
-const OFF_BRAND_PATTERN = /(?:carnival\s+valor|repositioning\s+cruise|liveaboard|travel\s+alarm\s+clock|private\s+jet\s+myth|new\s+york\s+city|pink\s+lakes?\s+(?:from|in)\s+the\s+world|best\s+exercises?\s+for\s+(?:a\s+)?long\s+road)/i;
+// These were imported from legacy feeds rather than written as MQT travel
+// editorial. Keeping them in the public catalogue tells search engines that
+// the site is about nightlife, insurance or generic travel news—not the
+// journeys we actually sell.
+const OFF_BRAND_PATTERN = /(?:carnival\s+valor|repositioning\s+cruise|liveaboard|travel\s+alarm\s+clock|private\s+jet\s+myth|new\s+york\s+city|pink\s+lakes?\s+(?:from|in)\s+the\s+world|best\s+exercises?\s+for\s+(?:a\s+)?long\s+road|night\s*clubs?|nightlife|travel\s+insurance|5-star\s+hotels?|camping\s+trip\s+accessories|casino|party\s+places?)/i;
+const MINIMUM_INDEXABLE_WORDS = 800;
 
 const CATEGORY_RULES: Array<{ category: BlogCategory; pattern: RegExp; tags: string[] }> = [
   { category: "Food & Cuisine", pattern: /\b(?:foods?|cuisine|restaurants?|cafes?|coffee|tea|street\s+foods?|dish(?:es)?|culinary|eat(?:ing)?)\b/i, tags: ["food", "cuisine", "restaurants", "local food", "travel dining"] },
@@ -76,7 +81,11 @@ function hash(value: string) {
 }
 
 export function isPublishedBlog(seed: EditorialBlogSeed) {
-  return !ARCHIVE_PATTERN.test(`${seed.slug} ${seed.title}`) && !OFF_BRAND_PATTERN.test(`${seed.slug} ${seed.title}`);
+  const source = `${seed.slug} ${seed.title}`;
+  const wordCount = "wordCount" in seed && typeof seed.wordCount === "number" ? seed.wordCount : undefined;
+  return !ARCHIVE_PATTERN.test(source)
+    && !OFF_BRAND_PATTERN.test(source)
+    && (wordCount === undefined || wordCount >= MINIMUM_INDEXABLE_WORDS);
 }
 
 export function getBlogCategory(seed: EditorialBlogSeed): BlogCategory {

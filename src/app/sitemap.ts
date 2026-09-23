@@ -10,7 +10,11 @@ const packageDetails = packageDetailsRaw as Record<string, unknown>;
 const destinationsData = destinationsDataRaw as Record<string, unknown>;
 const publicPackages = getPublicPackages();
 const publicPackageSlugs = new Set(publicPackages.map((pkg) => pkg.slug));
-const richPackageSlugs = new Set(Object.keys(packageDetails).filter((slug) => publicPackageSlugs.has(slug)));
+// Only the package pages with verified, editor-maintained detail records
+// belong in the sitemap. Sending every scraped catalogue record created a
+// sudden 1,000+ URL crawl queue and diluted Googlebot's attention away from
+// pages that customers can actually use to plan a trip.
+const curatedPackageSlugs = new Set(Object.keys(packageDetails).filter((slug) => publicPackageSlugs.has(slug)));
 // Do not regenerate every URL's lastmod on request. A stable timestamp tells
 // crawlers which URLs genuinely changed in this release.
 const SITE_CONTENT_UPDATED_AT = new Date('2026-09-21T00:00:00.000Z');
@@ -46,8 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { route: '/campaigns/shimla-honeymoon', priority: 0.9, freq: 'weekly' as const },
     { route: '/campaigns/dehradun-adventure', priority: 0.9, freq: 'weekly' as const },
   ].map(({ route, priority, freq }) => ({ url: `${baseUrl}${route}`, lastModified: SITE_CONTENT_UPDATED_AT, changeFrequency: freq, priority }));
-  const richPackageRoutes = [...richPackageSlugs].map((slug) => ({ url: `${baseUrl}/packages/${slug}`, lastModified: SITE_CONTENT_UPDATED_AT, changeFrequency: 'monthly' as const, priority: 0.9 }));
-  const basicPackageRoutes = publicPackages.filter((pkg) => !richPackageSlugs.has(pkg.slug)).map((pkg) => ({ url: `${baseUrl}/packages/${pkg.slug}`, lastModified: SITE_CONTENT_UPDATED_AT, changeFrequency: 'monthly' as const, priority: 0.6 }));
+  const curatedPackageRoutes = [...curatedPackageSlugs].map((slug) => ({ url: `${baseUrl}/packages/${slug}`, lastModified: SITE_CONTENT_UPDATED_AT, changeFrequency: 'monthly' as const, priority: 0.9 }));
   const destinationRoutes = Object.keys(destinationsData).map((slug) => ({ url: `${baseUrl}/destinations/${slug}`, lastModified: SITE_CONTENT_UPDATED_AT, changeFrequency: 'monthly' as const, priority: 0.85 }));
   const experienceRoutes = experiences.map((exp) => ({ url: `${baseUrl}/experiences/${exp.slug}`, lastModified: SITE_CONTENT_UPDATED_AT, changeFrequency: 'weekly' as const, priority: 0.8 }));
   const blogRoutes = ALL_BLOGS.map((blog) => ({
@@ -56,5 +59,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));
-  return [...staticRoutes, ...destinationRoutes, ...experienceRoutes, ...richPackageRoutes, ...basicPackageRoutes, ...blogRoutes];
+  return [...staticRoutes, ...destinationRoutes, ...experienceRoutes, ...curatedPackageRoutes, ...blogRoutes];
 }

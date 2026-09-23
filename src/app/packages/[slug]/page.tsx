@@ -231,6 +231,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const pkgV2 = detailsV2For(slug);
   const pkg = allPackages.find((candidate) => candidate.slug === slug);
   const legacyDetails = packageDetails[slug];
+  // Detail records in packageDetails.json have been manually reviewed. The
+  // remaining catalogue entries stay available to visitors, but are not
+  // candidates for organic search until their copy is reviewed.
+  const shouldIndex = Boolean(legacyDetails);
   if (pkg && !isPublicPackage(pkg)) return {};
   const socialImage = pkg
     ? new URL(getPackageLocationMedia(pkg)?.primary || PACKAGE_MEDIA_PLACEHOLDER, siteConfig.domain).toString()
@@ -249,6 +253,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: seoSource.meta_description ? replaceReferenceBrand(seoSource.meta_description) : undefined,
       alternates: {
         canonical: `${siteConfig.domain}/packages/${slug}`,
+      },
+      robots: {
+        index: shouldIndex,
+        follow: true,
       },
       openGraph: {
         title: cleanTitle(og['og:title'] || scrapedTitle),
@@ -269,6 +277,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     description,
     alternates: {
       canonical: `${siteConfig.domain}/packages/${slug}`,
+    },
+    robots: {
+      index: shouldIndex,
+      follow: true,
     },
     openGraph: {
       title,
