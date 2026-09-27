@@ -5,6 +5,7 @@ import { BLOG_POST_SEEDS_BATCH_2 } from "@/data/blogPosts/seeds/batch-2";
 import { BLOG_POST_SEEDS_BATCH_3 } from "@/data/blogPosts/seeds/batch-3";
 import { BLOG_POST_SEEDS_BATCH_4 } from "@/data/blogPosts/seeds/batch-4";
 import { BLOG_POST_SEEDS_BATCH_5 } from "@/data/blogPosts/seeds/batch-5";
+import { BLOG_POST_SEEDS_BATCH_6 } from "@/data/blogPosts/seeds/batch-6";
 import type { BlogPostSeed } from "@/data/blogPosts/types";
 
 export interface BlogIndexEntry {
@@ -38,6 +39,7 @@ const FACTORY_SEEDS: BlogPostSeed[] = [
   ...BLOG_POST_SEEDS_BATCH_3,
   ...BLOG_POST_SEEDS_BATCH_4,
   ...BLOG_POST_SEEDS_BATCH_5,
+  ...BLOG_POST_SEEDS_BATCH_6,
 ];
 
 function isLiveSeed(seed: BlogPostSeed) {
