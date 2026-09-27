@@ -5,11 +5,25 @@ import BlogSidebar from "@/components/blog/BlogSidebar";
 import { siteConfig } from "@/data/siteConfig";
 import { notFound } from "next/navigation";
 import type { ContentBlock } from "@/types/content";
-import { ALL_BLOGS } from "@/data/blogIndex";
+import { ALL_BLOGS, GONE_BLOG_SLUGS } from "@/data/blogIndex";
 import { getEditorialBlocks } from "@/data/blogEditorial";
 
 function blogFor(slug: string) {
   return ALL_BLOGS.find((blog) => blog.slug === slug);
+}
+
+export type BlogSlugStatus = "live" | "gone" | "missing";
+// Middleware-adjacent 410 decision logic (the proxy in src/proxy.ts serves
+// the real HTTP 410 for "gone"; this page 404s "missing"):
+// - "live":    passes the editorial gate (in ALL_BLOGS) → render.
+// - "gone":    exists in the legacy scrape but failed the editorial gate —
+//             a confirmed-dead, de-listed post → HTTP 410 Gone.
+// - "missing": never existed → normal 404.
+export function getBlogSlugStatus(rawSlug: string): BlogSlugStatus {
+  const slug = rawSlug.toLowerCase();
+  if (ALL_BLOGS.some((blog) => blog.slug === slug)) return "live";
+  if (GONE_BLOG_SLUGS.has(slug)) return "gone";
+  return "missing";
 }
 
 import { getBlogImage } from "@/data/blogImageMap";
@@ -30,7 +44,16 @@ export const revalidate = 86400; // 24h ISR
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
   const slug = resolvedParams.slug.toLowerCase();
-  
+
+  // Gated-out slugs get no canonical and no indexable metadata.
+  // ("gone" slugs are served as HTTP 410 by the proxy; "missing" as 404.)
+  if (getBlogSlugStatus(slug) !== "live") {
+    return {
+      title: { absolute: "Travel Blog | My Quick Trippers" },
+      robots: { index: false, follow: false },
+    };
+  }
+
   const blog = blogFor(slug);
   if (!blog) return { title: { absolute: "Travel Blog | My Quick Trippers" } };
 
@@ -82,7 +105,15 @@ function RenderContent({ content }: { content: ContentBlock[] }) {
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
   const slug = resolvedParams.slug.toLowerCase();
-  
+
+  const status = getBlogSlugStatus(slug);
+  if (status !== "live") {
+    // "gone" slugs are intercepted upstream by the proxy with a real
+    // HTTP 410; "missing" slugs were never real. Either way this render
+    // path must not serve content — fall back to the 404 page.
+    notFound();
+  }
+
   const blog = blogFor(slug);
   if (!blog) {
     notFound();

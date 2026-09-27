@@ -44,6 +44,9 @@ export const metadata: Metadata = {
     "Travel agency India",
     "Best tour packages India"
   ],
+  alternates: {
+    canonical: siteConfig.domain,
+  },
   openGraph: {
     title: `${siteConfig.name} - India Tour Packages, Himachal, Dubai, Chardham Yatra & More`,
     description: siteConfig.description,
@@ -160,7 +163,7 @@ export default function Home() {
       {/* 1. Brand-led travel hero followed by the lightweight poster rail */}
       <section className="w-full bg-brand-navy relative">
          <div className="home-brand-hero">
-           <h1 className="sr-only">My Quick Trippers - India Tour Packages, Himachal Tour Packages, Dubai Tour Packages, Chardham Yatra, Nainital Holiday, Buddhist Tours India, Helicopter Tours India, Shimla Honeymoon, Dehradun Adventure</h1>
+           <h1 className="sr-only">India Tour Packages & Holiday Deals | My Quick Trippers</h1>
            <div className="home-brand-hero__media">
              <picture>
                <source media="(max-width: 767px)" srcSet="/images/home/mqt-india-hero-mobile.webp" />

@@ -25,6 +25,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.domain}/blog`,
   },
+  openGraph: {
+    url: `${siteConfig.domain}/blog`,
+  },
 };
 
 export default function BlogLayout({ children }: Readonly<{ children: React.ReactNode }>) {

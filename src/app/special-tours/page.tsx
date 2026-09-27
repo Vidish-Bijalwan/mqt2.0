@@ -19,6 +19,9 @@ const THEMES = [
 export const metadata = {
   title: "Special Tour Themes",
   description: "Browse our handpicked tour themes. From family vacations to romantic honeymoons, find the perfect travel style for you.",
+  alternates: {
+    canonical: `${siteConfig.domain}/special-tours`,
+  },
 };
 
 export default function SpecialToursPage() {

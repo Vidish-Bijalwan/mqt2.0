@@ -94,7 +94,10 @@ export default function PosterMarquee() {
                       alt={`${item.name} destination poster`}
                       fill
                       className="pm-card__img"
-                      loading={groupIndex === 0 ? "eager" : "lazy"}
+                      /* All marquee posters are below the fold — keep every
+                         one lazy so they never compete with the LCP hero for
+                         bandwidth. */
+                      loading="lazy"
                       fetchPriority={groupIndex === 0 && itemIndex >= 4 ? "low" : undefined}
                       decoding="async"
                       quality={55}

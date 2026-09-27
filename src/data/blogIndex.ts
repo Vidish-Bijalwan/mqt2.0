@@ -29,3 +29,16 @@ export const ALL_BLOGS: BlogIndexEntry[] = (blogIndexRaw as Omit<BlogIndexEntry,
 export const CATEGORIES = ['All Articles', ...Array.from(new Set(ALL_BLOGS.map(b => b.category))).sort()];
 export const categoryCounts: Record<string, number> = { 'All Articles': ALL_BLOGS.length };
 ALL_BLOGS.forEach(b => { categoryCounts[b.category] = (categoryCounts[b.category] || 0) + 1; });
+
+// Slugs present in the legacy scrape that FAIL the editorial gate
+// (archive/off-brand/under-length). These are confirmed-dead catalogue
+// entries, not never-existing URLs:
+// - src/app/blog/[slug]/page.tsx treats them as "gone" (HTTP 410 via the
+//   proxy, so search engines de-list them fast) rather than 404.
+// - src/app/[...slug]/page.tsx gates them out so legacy prefixed paths
+//   can't resurrect them with canonicals pointing at a 410.
+export const GONE_BLOG_SLUGS: ReadonlySet<string> = new Set(
+  (blogIndexRaw as { slug: string }[])
+    .map((blog) => blog.slug)
+    .filter((slug) => !ALL_BLOGS.some((blog) => blog.slug === slug))
+);

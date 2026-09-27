@@ -1,4 +1,3 @@
-import { destinations } from "@/data/contentData";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,6 +5,7 @@ import { Phone } from "lucide-react";
 import { siteConfig } from "@/data/siteConfig";
 import type { ContentBlock, ContentDocumentMap } from "@/types/content";
 import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
+import { ALL_BLOGS } from "@/data/blogIndex";
 
 // Read huge JSON files on the server side
 import fullBlogDataRaw from "@/data/fullBlogData.json";
@@ -13,6 +13,18 @@ import staticPagesDataRaw from "@/data/staticPagesData.json";
 
 const fullBlogData = fullBlogDataRaw as ContentDocumentMap;
 const staticPagesData = staticPagesDataRaw as ContentDocumentMap;
+
+// Editorial gate, identical to the canonical /blog/[slug] route: a legacy
+// blog record only renders here when its slug also survives in ALL_BLOGS
+// (blogIndex filtered by isPublishedBlog). Records that fail the gate are
+// confirmed-dead (HTTP 410 at /blog/<slug>) and must not be resurrected
+// under a legacy prefix — least of all with a canonical pointing at a 410.
+function gatedBlog(lastSlug: string) {
+  const record = fullBlogData[lastSlug] || fullBlogData[`blog__${lastSlug}`];
+  if (!record) return undefined;
+  if (!ALL_BLOGS.some((blog) => blog.slug === lastSlug)) return undefined;
+  return record;
+}
 
 export function generateStaticParams() {
   return [];
@@ -25,23 +37,19 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!resolvedParams?.slug?.length) return { title: "Travel" };
   const lastSlug = resolvedParams.slug[resolvedParams.slug.length - 1].toLowerCase();
   
-  // 1. Is it a Blog Post?
-  const blog = fullBlogData[lastSlug] || fullBlogData[`blog__${lastSlug}`];
-  // Canonical points at the real /blog/<slug> URL: this catch-all only
-  // serves legacy prefixed paths for the same content.
+  // 1. Is it a Blog Post that passes the editorial gate?
+  // Canonical is emitted ONLY when the canonical target /blog/<slug>
+  // actually exists (resolves + passes the gate) — never at a 404/410.
+  const blog = gatedBlog(lastSlug);
   if (blog) return { title: blog.title, alternates: { canonical: `${siteConfig.domain}/blog/${lastSlug}` } };
   
   // 2. Is it a Static Page?
   const staticPage = staticPagesData[lastSlug];
   if (staticPage) return { title: staticPage.title };
   
-  // 3. Destination
-  const dest = destinations.find(d => d.slug.toLowerCase() === lastSlug);
-  if (dest) return { title: `${dest.name} Tour Packages` };
-  
-  // 4. Unknown variants are served by generateStaticParams: [] / dynamicParams
-  //    for legacy URLs — keep them out of the index.
-  return { title: lastSlug.replace(/-/g, ' ').toUpperCase(), robots: { index: false } };
+  // 3. Anything else 404s in the page below — keep it out of the index
+  //    with no metadata and no canonical.
+  return { title: "Travel", robots: { index: false, follow: false } };
 }
 
 function RenderContent({ content }: { content: ContentBlock[] }) {
@@ -75,9 +83,10 @@ export default async function CatchAllPage({ params }: { params: Promise<{ slug:
   }
   const lastSlug = resolvedParams.slug[resolvedParams.slug.length - 1].toLowerCase();
   
-  // 1. Is it a Blog Post? (mirrors generateMetadata above so legacy
-  //    prefixed paths render the post instead of falling through to 404)
-  const blog = fullBlogData[lastSlug] || fullBlogData[`blog__${lastSlug}`];
+  // 1. Is it a Blog Post passing the editorial gate? (mirrors
+  //    generateMetadata above so legacy prefixed paths render the post
+  //    instead of falling through to 404 — gated-out posts 404 here)
+  const blog = gatedBlog(lastSlug);
   if (blog) {
      return (
         <div className="bg-gray-50 min-h-screen pb-16">

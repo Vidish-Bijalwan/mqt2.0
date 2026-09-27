@@ -12,8 +12,21 @@ import { siteConfig } from "@/data/siteConfig";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: `${siteConfig.name} - India Tour Packages, Himachal, Dubai, Chardham Yatra & More`,
-  description: `${siteConfig.description} Browse our curated India tour packages including Himachal Tour Packages, Dubai Tour Packages, Chardham Yatra, Nainital holiday, Buddhist Tours India, Helicopter Tours India, Shimla honeymoon, Dehradun adventure and international destinations.`,
+  title: "India, Dubai & Chardham Tour Packages",
+  description: "Browse curated India and international tour packages — handpicked itineraries, best prices and 24/7 support from My Quick Trippers.",
+  alternates: {
+    canonical: `${siteConfig.domain}/packages`,
+  },
+  openGraph: {
+    title: "India, Dubai & Chardham Tour Packages",
+    description: "Browse curated India and international tour packages — handpicked itineraries, best prices and 24/7 support from My Quick Trippers.",
+    url: `${siteConfig.domain}/packages`,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "India, Dubai & Chardham Tour Packages",
+    description: "Browse curated India and international tour packages — handpicked itineraries, best prices and 24/7 support from My Quick Trippers.",
+  },
   keywords: [
     "My Quick Trippers tours",
     "India tour packages",

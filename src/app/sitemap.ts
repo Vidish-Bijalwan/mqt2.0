@@ -1,4 +1,6 @@
 import { MetadataRoute } from 'next';
+import fs from 'node:fs';
+import path from 'node:path';
 import { siteConfig } from '@/data/siteConfig';
 import { getPublicPackages } from '@/utils/packageCatalog';
 import { experiences } from '@/data/experiencesData';
@@ -15,9 +17,57 @@ const publicPackageSlugs = new Set(publicPackages.map((pkg) => pkg.slug));
 // sudden 1,000+ URL crawl queue and diluted Googlebot's attention away from
 // pages that customers can actually use to plan a trip.
 const curatedPackageSlugs = new Set(Object.keys(packageDetails).filter((slug) => publicPackageSlugs.has(slug)));
-// Do not regenerate every URL's lastmod on request. A stable timestamp tells
-// crawlers which URLs genuinely changed in this release.
-const SITE_CONTENT_UPDATED_AT = new Date('2026-09-21T00:00:00.000Z');
+
+// ── Per-source lastmod ──────────────────────────────────────────────
+// None of the data records carry their own date fields, so each URL group
+// takes the modification time of its source data file. Static routes have
+// no content source, so they fall back to the build time. All values are
+// computed once at build time, so the same input tree always produces the
+// same sitemap — crawlers can see exactly which groups changed release to
+// release instead of a frozen site-wide stamp.
+const BUILD_DATE = new Date();
+function dataFileMtime(...relativePath: string[]): Date {
+  try {
+    return fs.statSync(path.join(process.cwd(), ...relativePath)).mtime;
+  } catch {
+    return BUILD_DATE;
+  }
+}
+const PACKAGES_LASTMOD = dataFileMtime('src', 'data', 'packageDetails.json');
+const DESTINATIONS_LASTMOD = dataFileMtime('src', 'data', 'destinationsData.json');
+const EXPERIENCES_LASTMOD = dataFileMtime('src', 'data', 'experiencesData.ts');
+const BLOG_LASTMOD = dataFileMtime('src', 'data', 'blogIndex.generated.json');
+
+// ── Near-duplicate package families ────────────────────────────────
+// The same trip is sold under per-origin-city slugs (e.g.
+// "chardham-yatra-package-from-delhi"). Google crawls these families and
+// declines to index most of them, so the sitemap keeps exactly one primary
+// URL per family: the shortest slug (the base trip, never a -from-<city>
+// variant). Families are derived programmatically — strip the trailing
+// "-from-<city>" segment and group — so this stays correct as packages are
+// added or removed. The variant pages themselves are untouched; only
+// sitemap inclusion changes.
+const ORIGIN_CITY_SUFFIX = /-from-[a-z]+(?:-[a-z]+)*$/;
+function familyBaseSlug(slug: string): string {
+  return slug.replace(ORIGIN_CITY_SUFFIX, '');
+}
+const primaryPackageSlugs: string[] = (() => {
+  const families = new Map<string, string[]>();
+  for (const slug of curatedPackageSlugs) {
+    const base = familyBaseSlug(slug);
+    const members = families.get(base);
+    if (members) members.push(slug);
+    else families.set(base, [slug]);
+  }
+  return [...families.values()].map((members) => {
+    members.sort((a, b) => a.length - b.length || (a < b ? -1 : a > b ? 1 : 0));
+    return members[0];
+  });
+})();
+
+// Thin editorial page excluded from the sitemap (the page itself is
+// untouched — this only controls crawler inclusion).
+const EXCLUDED_DESTINATION_SLUGS = new Set(['blog']);
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.domain;
@@ -56,13 +106,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { route: '/campaigns/helicopter-tours-india', priority: 0.9, freq: 'weekly' as const },
     { route: '/campaigns/shimla-honeymoon', priority: 0.9, freq: 'weekly' as const },
     { route: '/campaigns/dehradun-adventure', priority: 0.9, freq: 'weekly' as const },
-  ].map(({ route, priority, freq }) => ({ url: `${baseUrl}${route}`, lastModified: SITE_CONTENT_UPDATED_AT, changeFrequency: freq, priority }));
-  const curatedPackageRoutes = [...curatedPackageSlugs].map((slug) => ({ url: `${baseUrl}/packages/${slug}`, lastModified: SITE_CONTENT_UPDATED_AT, changeFrequency: 'monthly' as const, priority: 0.9 }));
-  const destinationRoutes = Object.keys(destinationsData).map((slug) => ({ url: `${baseUrl}/destinations/${slug}`, lastModified: SITE_CONTENT_UPDATED_AT, changeFrequency: 'monthly' as const, priority: 0.85 }));
-  const experienceRoutes = experiences.map((exp) => ({ url: `${baseUrl}/experiences/${exp.slug}`, lastModified: SITE_CONTENT_UPDATED_AT, changeFrequency: 'weekly' as const, priority: 0.8 }));
+  ].map(({ route, priority, freq }) => ({ url: `${baseUrl}${route}`, lastModified: BUILD_DATE, changeFrequency: freq, priority }));
+  const curatedPackageRoutes = primaryPackageSlugs.map((slug) => ({ url: `${baseUrl}/packages/${slug}`, lastModified: PACKAGES_LASTMOD, changeFrequency: 'monthly' as const, priority: 0.9 }));
+  const destinationRoutes = Object.keys(destinationsData)
+    .filter((slug) => !EXCLUDED_DESTINATION_SLUGS.has(slug))
+    .map((slug) => ({ url: `${baseUrl}/destinations/${slug}`, lastModified: DESTINATIONS_LASTMOD, changeFrequency: 'monthly' as const, priority: 0.85 }));
+  const experienceRoutes = experiences.map((exp) => ({ url: `${baseUrl}/experiences/${exp.slug}`, lastModified: EXPERIENCES_LASTMOD, changeFrequency: 'weekly' as const, priority: 0.8 }));
   const blogRoutes = ALL_BLOGS.map((blog) => ({
     url: `${baseUrl}/blog/${blog.slug}`,
-    lastModified: SITE_CONTENT_UPDATED_AT,
+    lastModified: BLOG_LASTMOD,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));
