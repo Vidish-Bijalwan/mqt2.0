@@ -77,6 +77,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { route: '/blog', priority: 0.8, freq: 'daily' as const },
     { route: '/about-us', priority: 0.8, freq: 'monthly' as const },
     { route: '/contact-us', priority: 0.8, freq: 'monthly' as const },
+    { route: '/faq', priority: 0.8, freq: 'monthly' as const },
     { route: '/special-tours', priority: 0.8, freq: 'weekly' as const },
     // special-tours theme landing pages (slugs mirror src/data/themeConfig.ts;
     // "pilgrimage" is a /packages filter, not a special-tours page, so it is

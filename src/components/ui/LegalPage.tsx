@@ -111,7 +111,7 @@ export default function LegalPage({ title, subtitle, effectiveDate, sections }: 
               </p>
               <div className="flex flex-wrap gap-3">
                 <a
-                  href={`tel:${siteConfig.phoneRaw}`}
+                  href={`tel:${siteConfig.phoneTel}`}
                   className="inline-flex items-center gap-2 rounded-md bg-brand-orange hover:bg-brand-orange-dark text-white text-sm font-semibold px-4 py-2.5 transition-colors"
                 >
                   <Phone className="h-4 w-4" /> {siteConfig.phone}

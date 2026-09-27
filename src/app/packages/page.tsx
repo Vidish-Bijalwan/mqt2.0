@@ -1,13 +1,14 @@
 import PackageListCard from "@/components/ui/PackageListCard";
 import { getApprovedPackageImage } from "@/data/packageLocationMedia";
 import PackageCard from "@/components/ui/PackageCard";
-import { getPublicPackages, isInternationalPackage, packageDurationGroup } from "@/utils/packageCatalog";
+import { getPublicPackages, isInternationalPackage, packageDurationGroup, getTourDays } from "@/utils/packageCatalog";
 import { getPackageDestination, groupPackagesByDestination } from "@/utils/packageGroups";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import EnquiryForm from "@/components/forms/EnquiryForm";
 import { Fragment } from "react";
 import DestinationPackageOptions from "@/components/ui/DestinationPackageOptions";
+import DurationFilter from "@/components/packages/DurationFilter";
 import { siteConfig } from "@/data/siteConfig";
 import type { Metadata } from "next";
 
@@ -76,9 +77,18 @@ function normalizeDestination(value: string) {
     .toLowerCase();
 }
 
-function validateSearchParams(params: { category?: string; page?: string; filter?: string; q?: string; destination?: string; duration?: string; travelers?: string }) {
+function validateSearchParams(params: { category?: string; page?: string; filter?: string; q?: string; destination?: string; duration?: string; durationMin?: string; durationMax?: string; travelers?: string }) {
   const category = params.category && CATEGORIES.includes(params.category) ? params.category : "All";
   const duration = params.duration && DURATIONS.includes(params.duration) ? params.duration : "All";
+  const parsedMin = parseInt(params.durationMin || "", 10);
+  const parsedMax = parseInt(params.durationMax || "", 10);
+  // A custom range only applies when both bounds are sane; otherwise the
+  // legacy "custom" group (unparseable durations) is used.
+  const durationMin = Number.isFinite(parsedMin) ? Math.min(Math.max(parsedMin, 1), 90) : null;
+  const durationMax = Number.isFinite(parsedMax) ? Math.min(Math.max(parsedMax, 1), 90) : null;
+  const customRange = duration === "custom" && durationMin !== null && durationMax !== null && durationMin <= durationMax
+    ? { min: durationMin, max: durationMax }
+    : null;
   // Keep "&" meaningful for names like "Singapore & Bali": turn it into
   // "and" before the sanitizer strips punctuation, then collapse whitespace.
   const destination = (params.destination || "")
@@ -97,16 +107,16 @@ function validateSearchParams(params: { category?: string; page?: string; filter
   const travelers = Math.min(Math.max(parseInt(params.travelers || "2", 10) || 2, 1), 10);
   const page = Math.max(1, Math.min(parseInt(params.page || "1", 10) || 1, 1000));
 
-  return { category, duration, destination, filter, travelers, page };
+  return { category, duration, customRange, durationMin, durationMax, destination, filter, travelers, page };
 }
 
 export default async function PackagesPage({
   searchParams,
 }: {
-  searchParams: Promise<{ category?: string; page?: string; filter?: string; q?: string; destination?: string; duration?: string; travelers?: string }>;
+  searchParams: Promise<{ category?: string; page?: string; filter?: string; q?: string; destination?: string; duration?: string; durationMin?: string; durationMax?: string; travelers?: string }>;
 }) {
   const resolvedSearchParams = await searchParams;
-  const { category: selectedCategory, duration: selectedDuration, destination: selectedDestination, filter: selectedFilter, travelers: selectedTravelers, page: currentPage } = validateSearchParams(resolvedSearchParams);
+  const { category: selectedCategory, duration: selectedDuration, customRange, durationMin, durationMax, destination: selectedDestination, filter: selectedFilter, travelers: selectedTravelers, page: currentPage } = validateSearchParams(resolvedSearchParams);
   const PER_PAGE = 10;
   const publicPackages = getPublicPackages();
 
@@ -146,7 +156,12 @@ export default async function PackagesPage({
     : destinationFiltered;
   const filtered = selectedDuration === "All"
     ? textFiltered
-    : textFiltered.filter((pkg) => packageDurationGroup(pkg) === selectedDuration);
+    : customRange
+      ? textFiltered.filter((pkg) => {
+          const days = getTourDays(pkg.duration, pkg.title);
+          return days !== null && days >= customRange.min && days <= customRange.max;
+        })
+      : textFiltered.filter((pkg) => packageDurationGroup(pkg) === selectedDuration);
 
   const grouped = selectedFilter ? [] : groupPackagesByDestination(filtered);
   const resultCount = selectedFilter ? filtered.length : grouped.length;
@@ -172,6 +187,10 @@ export default async function PackagesPage({
     const params = new URLSearchParams();
     if (selectedCategory !== "All") params.set("category", selectedCategory);
     if (selectedDuration !== "All") params.set("duration", selectedDuration);
+    if (customRange) {
+      params.set("durationMin", String(customRange.min));
+      params.set("durationMax", String(customRange.max));
+    }
     if (selectedDestination) params.set("destination", selectedDestination);
     else if (selectedFilter) params.set("q", selectedFilter);
     if (selectedTravelers) params.set("travelers", String(selectedTravelers));
@@ -179,6 +198,11 @@ export default async function PackagesPage({
     const qs = params.toString();
     return qs ? `/packages?${qs}` : "/packages";
   };
+  const hasActiveFilters =
+    selectedCategory !== "All" ||
+    selectedDuration !== "All" ||
+    selectedDestination !== "" ||
+    selectedFilter !== "";
 
   return (
     <div className="min-h-screen bg-[#f8faf8]/94 pb-16">
@@ -224,6 +248,10 @@ export default async function PackagesPage({
                         const params = new URLSearchParams();
                         if (cat !== "All") params.set("category", cat);
                         if (selectedDuration !== "All") params.set("duration", selectedDuration);
+                        if (customRange) {
+                          params.set("durationMin", String(customRange.min));
+                          params.set("durationMax", String(customRange.max));
+                        }
                         if (selectedDestination) params.set("destination", selectedDestination);
                         else if (selectedFilter) params.set("q", selectedFilter);
                         const query = params.toString();
@@ -268,14 +296,7 @@ export default async function PackagesPage({
                   placeholder="Search a destination, theme, or tour"
                   className="min-h-11 w-full rounded-lg border border-brand-sage bg-white px-3 text-sm text-gray-800 outline-none transition focus:border-brand-river focus:ring-2 focus:ring-brand-river/20"
                 />
-                <label className="sr-only" htmlFor="package-duration">Trip duration</label>
-                <select id="package-duration" name="duration" defaultValue={selectedDuration} className="min-h-11 rounded-lg border border-brand-sage bg-white px-3 text-sm text-gray-800 outline-none transition focus:border-brand-river focus:ring-2 focus:ring-brand-river/20">
-                  <option value="All">Any duration</option>
-                  <option value="3-5">3 to 5 days</option>
-                  <option value="6-9">6 to 9 days</option>
-                  <option value="10+">10+ days</option>
-                  <option value="custom">Custom duration</option>
-                </select>
+                <DurationFilter value={selectedDuration} minDays={durationMin} maxDays={durationMax} />
                 <label className="sr-only" htmlFor="package-travelers">Travelers</label>
                 <select id="package-travelers" name="travelers" defaultValue={selectedTravelers} className="min-h-11 rounded-lg border border-brand-sage bg-white px-3 text-sm text-gray-800 outline-none transition focus:border-brand-river focus:ring-2 focus:ring-brand-river/20">
                   <option value="1">1 traveler</option>
@@ -293,14 +314,31 @@ export default async function PackagesPage({
               <p className="text-sm text-gray-500">
                 Showing <b className="text-gray-800">{selectedFilter ? paged.length : pagedGroups.length}</b> of <b className="text-gray-800">{resultCount}</b> {selectedFilter ? "packages" : "destinations"}
               </p>
-              <span className="hidden md:inline text-xs text-gray-400">
-                {selectedFilter ? `Search: "${selectedFilter}"` : `${selectedCategory} packages`}
-              </span>
+              <div className="flex items-center gap-3">
+                {hasActiveFilters && (
+                  <Link href="/packages" className="text-xs font-bold text-legacy-orange hover:underline">
+                    Reset all filters
+                  </Link>
+                )}
+                <span className="hidden md:inline text-xs text-gray-400">
+                  {selectedFilter ? `Search: "${selectedFilter}"` : `${selectedCategory} packages`}
+                </span>
+              </div>
             </div>
 
             {resultCount === 0 ? (
               <div className="text-center py-16 text-gray-500">
-                No packages found for this category.
+                <p className="text-lg font-semibold text-gray-700">
+                  {selectedFilter
+                    ? `No packages found for "${selectedFilter}".`
+                    : selectedDestination
+                      ? `No packages found for "${selectedDestination}".`
+                      : "No packages found for these filters."}
+                </p>
+                <p className="mt-2 text-sm">Try a different search term or clear your filters.</p>
+                <Link href="/packages" className="inline-block mt-4 bg-legacy-orange text-white px-6 py-2 rounded text-sm font-bold hover:bg-orange-600 transition-colors">
+                  Reset all filters
+                </Link>
               </div>
             ) : (
               <>
@@ -330,7 +368,16 @@ export default async function PackagesPage({
 
                 {/* Pagination */}
                 {totalPages > 1 && (
-                  <div className="flex justify-center mt-10 gap-2 flex-wrap">
+                  <nav aria-label="Package pages" className="flex justify-center mt-10 gap-2 flex-wrap items-center">
+                    {safePage > 1 && (
+                      <Link
+                        href={queryFor(safePage - 1)}
+                        aria-label="Go to previous page"
+                        className="px-4 py-2 border text-sm font-medium rounded transition-colors bg-white text-gray-600 border-gray-300 hover:border-legacy-orange hover:text-legacy-orange"
+                      >
+                        ← Prev
+                      </Link>
+                    )}
                     {visiblePages.map((pg, index) => (
                       <Fragment key={pg}>
                         {index > 0 && pg - visiblePages[index - 1] > 1 ? (
@@ -350,7 +397,16 @@ export default async function PackagesPage({
                         </Link>
                       </Fragment>
                     ))}
-                  </div>
+                    {safePage < totalPages && (
+                      <Link
+                        href={queryFor(safePage + 1)}
+                        aria-label="Go to next page"
+                        className="px-4 py-2 border text-sm font-medium rounded transition-colors bg-white text-gray-600 border-gray-300 hover:border-legacy-orange hover:text-legacy-orange"
+                      >
+                        Next →
+                      </Link>
+                    )}
+                  </nav>
                 )}
               </>
             )}

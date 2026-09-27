@@ -281,31 +281,56 @@ export function buildPackageViewModel(pkg: Package): PackageViewModel {
       ? (detailsV2 as RichPackageDetails).blocks as Block[]
       : null;
 
+  // Shared pricing model (D16/D17) — computed early because block tables below
+  // may need the public price substituted into "Tour Price: On Request" rows.
+  const priceInfo = getPriceInfo(pkg.mrp, pkg.dealPrice, pkg.slug);
+
+  // Root-cause fix: scraped V2/V3 "Price Details" tables sometimes say
+  // "On Request" even when the catalogue exposes a public price, contradicting
+  // the price card, sidebar and sticky CTA on the same page. When the package
+  // has a public price, substitute it into the table row instead.
+  const normalizeTourPriceRows = (items: Block[] | null | undefined): Block[] | null => {
+    if (!items || !priceInfo.hasPrice) return items ?? null;
+    return items.map((block) => {
+      if (block.type !== 'table' || !(block.rows || []).length) return block;
+      const rows = (block.rows || []).map((row) => {
+        const label = String(row[0] || '').trim().toLowerCase();
+        if ((label === 'tour price' || label === 'price') && /^on request$/i.test(String(row[1] || '').trim())) {
+          return [row[0], `INR ${priceInfo.display} (starting price)`];
+        }
+        return row;
+      });
+      return { ...block, rows };
+    });
+  };
+
+  const normalizedBlocks = normalizeTourPriceRows(blocks);
+
   const hasItinerarySection = (items: Block[] | null | undefined) =>
     Boolean(items?.some((block) =>
       block.type === 'heading' &&
       /(day-?by-?day itinerary|day-?wise itinerary|tour itinerary|^day\s*[-:]?\s*\d)/i.test(blockText(block)),
     ));
-  const itinerarySourceBlocks = hasItinerarySection(blocks)
-    ? blocks
+  const itinerarySourceBlocks = hasItinerarySection(normalizedBlocks)
+    ? normalizedBlocks
     : hasItinerarySection(detailsV2?.blocks)
-      ? detailsV2?.blocks || null
-      : blocks;
+      ? normalizeTourPriceRows(detailsV2?.blocks)
+      : normalizedBlocks;
 
   // Extract FAQ pairs from V3 blocks early (used by both sections and JSON-LD)
   // Two formats:
   // 1. Structured faq block: { type: 'faq', items: [{ q, a }] }
   // 2. Legacy heading+paragraph: "Q1. ..." + "Ans. ..."
   const faqPairs: { q: string; a: string }[] = [];
-  if (blocks) {
-    for (let i = 0; i < blocks.length; i++) {
-      const blk = blocks[i];
+  if (normalizedBlocks) {
+    for (let i = 0; i < normalizedBlocks.length; i++) {
+      const blk = normalizedBlocks[i];
       if (blk.type === 'faq' && Array.isArray(blk.items)) {
         for (const item of blk.items) {
           if (typeof item !== 'string' && item.q && item.a) faqPairs.push({ q: item.q, a: item.a });
         }
       } else if (blk.type === 'heading' && /^Q\d+\./i.test(blockText(blk))) {
-        const answer = blocks[i + 1];
+        const answer = normalizedBlocks[i + 1];
         if (answer?.type === 'paragraph' && /^Ans\./i.test(blockText(answer))) {
           faqPairs.push({
             q: blockText(blk).replace(/\s*See More\s*$/i, '').trim(),
@@ -316,8 +341,7 @@ export function buildPackageViewModel(pkg: Package): PackageViewModel {
     }
   }
 
-  // Shared pricing model (D16/D17): pkg.mrp = list price, pkg.dealPrice = the deal.
-  const priceInfo = getPriceInfo(pkg.mrp, pkg.dealPrice, pkg.slug);
+  // priceInfo is computed early (see above) because block tables may need it.
   const displayPrice = priceInfo.display;
   const crossedOutPrice = priceInfo.crossed;
   const saveAmount = priceInfo.save;
@@ -351,23 +375,23 @@ export function buildPackageViewModel(pkg: Package): PackageViewModel {
   const cleanList = (items: string[]) => Array.from(new Set(
     (items || []).map(cleanDisplayText).filter((item) => item.length > 2 && !/^see (more|less)$/i.test(item)),
   ));
-  const inclusions = cleanList(blocks ? extractInclusions(blocks) : []);
-  const exclusions = cleanList(blocks ? extractExclusions(blocks) : []);
+  const inclusions = cleanList(normalizedBlocks ? extractInclusions(normalizedBlocks) : []);
+  const exclusions = cleanList(normalizedBlocks ? extractExclusions(normalizedBlocks) : []);
   const highlights = cleanList(
     experienceOverride?.highlights?.length
       ? experienceOverride.highlights
       : details.highlights.length > 0
         ? details.highlights
-        : blocks
-          ? extractHighlights(blocks)
+        : normalizedBlocks
+          ? extractHighlights(normalizedBlocks)
           : [],
   ).slice(0, 8);
 
-  const overviewBoundary = (blocks || []).findIndex((block) =>
+  const overviewBoundary = (normalizedBlocks || []).findIndex((block) =>
     block.type === 'heading' && /(day-?by-?day itinerary|day-?wise itinerary|tour itinerary|^day\s*[-:]?\s*\d)/i.test(blockText(block)),
   );
-  const overviewParagraphs = (blocks || [])
-    .slice(0, overviewBoundary >= 0 ? overviewBoundary : blocks?.length)
+  const overviewParagraphs = (normalizedBlocks || [])
+    .slice(0, overviewBoundary >= 0 ? overviewBoundary : normalizedBlocks?.length)
     .filter((b) => b.type === 'paragraph')
     .map((b) => cleanDisplayText(blockText(b)))
     .filter((text: string) => text.length > 80 && !/related tour packages/i.test(text));
@@ -430,6 +454,7 @@ export function buildPackageViewModel(pkg: Package): PackageViewModel {
 
   if (galleryImages.length === 0) galleryImages.push(PACKAGE_MEDIA_PLACEHOLDER);
 
+
   // Aligned captions for the lightbox (from block image captions)
   const blockCaptions = new Map<string, string>();
   for (const item of locationMedia?.gallery || []) {
@@ -438,7 +463,7 @@ export function buildPackageViewModel(pkg: Package): PackageViewModel {
   for (const item of experienceOverride?.gallery || []) {
     blockCaptions.set(item.src, item.caption);
   }
-  for (const block of blocks || []) {
+  for (const block of normalizedBlocks || []) {
     if (block.type !== 'image' || !block.caption) continue;
     const imageUrl = resolveLocalPackageImage(block.url);
     if (imageUrl) blockCaptions.set(imageUrl, cleanDisplayText(block.caption));
@@ -457,7 +482,7 @@ export function buildPackageViewModel(pkg: Package): PackageViewModel {
   return {
     slug,
     pkg,
-    blocks,
+    blocks: normalizedBlocks,
     safeItineraryBlocks,
     faqPairs,
     allFaqs,

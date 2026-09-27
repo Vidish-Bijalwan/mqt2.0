@@ -45,6 +45,7 @@ export default function SiteMapPage() {
         { name: "Special Tours", href: "/special-tours" },
         { name: "About Us", href: "/about-us" },
         { name: "Contact Us", href: "/contact-us" },
+        { name: "FAQs", href: "/faq" },
       ],
     },
     {

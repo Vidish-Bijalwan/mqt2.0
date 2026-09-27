@@ -11406,12 +11406,7 @@
   },
   {
     "source": "/faq.html",
-    "destination": "/packages?filter=faq",
-    "permanent": true
-  },
-  {
-    "source": "/faq",
-    "destination": "/packages?filter=faq",
+    "destination": "/faq",
     "permanent": true
   },
   {

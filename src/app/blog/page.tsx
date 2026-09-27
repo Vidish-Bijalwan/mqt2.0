@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { ChevronRight, Calendar, BookOpen, Clock, Search, X, Filter } from "lucide-react";
-import { useEffect, useMemo, useState, Suspense } from "react";
+import { useMemo, useState, Suspense } from "react";
 import { ALL_BLOGS, CATEGORIES, categoryCounts } from "@/data/blogIndex";
 import BlogSidebar from "@/components/blog/BlogSidebar";
 import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
@@ -57,11 +57,15 @@ function BlogIndexContent() {
   const [searchQuery, setSearchQuery] = useState(validQuery);
   const [currentPage, setCurrentPage] = useState(1);
 
-  useEffect(() => {
+  // Sync local filter state when the URL params change (e.g. back/forward
+  // navigation). React-endorsed "adjust state during render" pattern — no effect needed.
+  const [prevParams, setPrevParams] = useState({ validCategory, validQuery });
+  if (prevParams.validCategory !== validCategory || prevParams.validQuery !== validQuery) {
+    setPrevParams({ validCategory, validQuery });
     setActiveCategory(validCategory);
     setSearchQuery(validQuery);
     setCurrentPage(1);
-  }, [validCategory, validQuery]);
+  }
 
   const updateUrl = (category: string, query: string) => {
     const next = new URLSearchParams();

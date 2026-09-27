@@ -47,7 +47,7 @@ export default function EmptyState({ titleName = 'these' }: EmptyStateProps) {
             Or speak to our travel experts directly:
           </p>
           <a 
-            href={`tel:${siteConfig.phoneRaw}`}
+            href={`tel:${siteConfig.phoneTel}`}
             className="text-xl font-bold text-legacy-orange hover:text-orange-700 block"
           >
             📱 {siteConfig.phone}

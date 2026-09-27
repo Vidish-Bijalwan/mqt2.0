@@ -50,7 +50,7 @@ export default function PackageSidebar({ vm }: { vm: PackageViewModel }) {
             <a href={packageWhatsappUrl} target="_blank" rel="noopener noreferrer" className="flex min-h-12 w-full items-center justify-center gap-2 rounded-xl border border-[#b9d7ce] bg-[#eef7f3] px-4 text-sm font-extrabold text-[#126348] transition hover:bg-[#e2f1eb]">
               <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
             </a>
-            <a href={`tel:${siteConfig.phoneRaw}`} className="flex min-h-11 w-full items-center justify-center gap-2 text-sm font-bold text-[#304b45] hover:text-[#0b4c43]">
+            <a href={`tel:${siteConfig.phoneTel}`} className="flex min-h-11 w-full items-center justify-center gap-2 text-sm font-bold text-[#304b45] hover:text-[#0b4c43]">
               <Phone className="h-4 w-4" /> {siteConfig.phone}
             </a>
           </div>
