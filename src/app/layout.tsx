@@ -9,7 +9,7 @@ import FloatingWhatsApp from "@/components/ui/FloatingWhatsApp";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 import ErrorBoundary from "@/components/ui/ErrorBoundary";
 import ClientRuntime from "@/components/layout/ClientRuntime";
-import "../lib/env";
+import { safeJsonLd } from "@/utils/jsonLd";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -51,11 +51,20 @@ export const metadata: Metadata = {
     title: `${siteConfig.name} | Curated Travel Experiences`,
     description: siteConfig.description,
     url: siteConfig.domain,
+    images: [
+      {
+        url: `${siteConfig.domain}/images/og-default.svg`,
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: `${siteConfig.name} | Curated Travel Experiences`,
     description: siteConfig.description,
+    images: [`${siteConfig.domain}/images/og-default.svg`],
   },
   robots: {
     index: true,
@@ -182,7 +191,7 @@ export default function RootLayout({
         <link rel="prefetch" href="/packages" />
         <link rel="prefetch" href="/blog" />
         <link rel="prefetch" href="/contact-us" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }} />
       </head>
       <body className={`${manrope.variable} ${bricolage.variable}`} suppressHydrationWarning>
         <ClientRuntime />

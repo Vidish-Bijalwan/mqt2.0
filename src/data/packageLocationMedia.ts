@@ -18571,7 +18571,21 @@ function withPreferredHero(media: PackageLocationMedia): PackageLocationMedia {
  * Manali package inherit the verified Himachal/Manali set without ever falling
  * back to a random image from /images/packages.
  */
+/** Module-level memoization for the 579-record token-scan fallback below.
+    Keyed on package slug; the function is pure with respect to the static
+    inventory, so results are safe to cache for the process lifetime. */
+const packageLocationMediaCache = new Map<string, PackageLocationMedia | undefined>();
+
 export function getPackageLocationMedia(input: PackageMediaInput): PackageLocationMedia | undefined {
+  if (packageLocationMediaCache.has(input.slug)) {
+    return packageLocationMediaCache.get(input.slug);
+  }
+  const result = resolvePackageLocationMedia(input);
+  packageLocationMediaCache.set(input.slug, result);
+  return result;
+}
+
+function resolvePackageLocationMedia(input: PackageMediaInput): PackageLocationMedia | undefined {
   const exact = packageLocationMedia[input.slug];
   if (exact) return withPreferredHero(exact);
 

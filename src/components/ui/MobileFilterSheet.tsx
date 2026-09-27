@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { X, ChevronDown } from 'lucide-react';
 import { destinations, categories, travelerTypes } from '@/data/reviews';
 
@@ -28,15 +28,45 @@ export default function MobileFilterSheet({
   onApply,
 }: MobileFilterSheetProps) {
   const [localFilters, setLocalFilters] = useState(filters);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+
+  // Re-sync local edits whenever the sheet opens, so stale state from a
+  // previous session can never leak in. Done during render (the endorsed
+  // "adjust state on prop change" pattern) rather than in an effect.
+  const [wasOpen, setWasOpen] = useState(isOpen);
+  if (isOpen && !wasOpen) {
+    setWasOpen(true);
+    setLocalFilters(filters);
+  } else if (!isOpen && wasOpen) {
+    setWasOpen(false);
+  }
 
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
+      const handleKeyDown = (e: KeyboardEvent) => {
+        if (e.key === 'Escape') onClose();
+      };
+      document.addEventListener('keydown', handleKeyDown);
+      return () => {
+        document.removeEventListener('keydown', handleKeyDown);
+        document.body.style.overflow = '';
+      };
     } else {
       document.body.style.overflow = '';
     }
     return () => {
       document.body.style.overflow = '';
+    };
+  }, [isOpen, onClose]);
+
+  // Move focus into the sheet on open; return it to the trigger on close.
+  useEffect(() => {
+    if (!isOpen) return;
+    const trigger = document.activeElement as HTMLElement | null;
+    closeButtonRef.current?.focus();
+    return () => {
+      trigger?.focus();
     };
   }, [isOpen]);
 
@@ -76,11 +106,16 @@ export default function MobileFilterSheet({
       />
 
       {/* Sheet */}
-      <div className="absolute bottom-0 inset-x-0 bg-white rounded-t-2xl max-h-[85vh] overflow-hidden flex flex-col animate-in slide-in-from-bottom duration-300">
+      <div
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="mobile-filters-title"
+        className="absolute bottom-0 inset-x-0 bg-white rounded-t-2xl max-h-[85vh] overflow-hidden flex flex-col animate-in slide-in-from-bottom duration-300"
+      >
         {/* Header */}
         <div className="flex items-center justify-between px-4 py-3 border-b border-gray-200">
           <div className="flex items-center gap-2">
-            <h3 className="font-semibold text-gray-900">Filters</h3>
+            <h3 id="mobile-filters-title" className="font-semibold text-gray-900">Filters</h3>
             {activeCount > 0 && (
               <span className="bg-legacy-orange text-white text-xs font-bold px-2 py-0.5 rounded-full">
                 {activeCount}
@@ -88,6 +123,7 @@ export default function MobileFilterSheet({
             )}
           </div>
           <button
+            ref={closeButtonRef}
             onClick={onClose}
             aria-label="Close filters"
             className="p-2 hover:bg-gray-100 rounded-full"
@@ -100,11 +136,12 @@ export default function MobileFilterSheet({
         <div className="flex-1 overflow-y-auto px-4 py-4 space-y-4">
           {/* Destination */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="mobile-filter-destination" className="block text-sm font-medium text-gray-700 mb-2">
               Destination
             </label>
             <div className="relative">
               <select
+                id="mobile-filter-destination"
                 value={localFilters.destination}
                 onChange={(e) => updateFilter('destination', e.target.value)}
                 className="w-full appearance-none px-4 py-3 border border-gray-200 rounded-xl bg-white text-gray-900 focus:ring-2 focus:ring-legacy-orange focus:border-transparent"
@@ -120,14 +157,15 @@ export default function MobileFilterSheet({
 
           {/* Rating */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
+            <label className="block text-sm font-medium text-gray-700 mb-2" id="mobile-filter-rating-label">
               Rating
             </label>
-            <div className="flex gap-2 flex-wrap">
+            <div className="flex gap-2 flex-wrap" role="group" aria-labelledby="mobile-filter-rating-label">
               {['', '5', '4', '3', '2', '1'].map((rating) => (
                 <button
                   key={rating}
                   onClick={() => updateFilter('rating', rating)}
+                  aria-pressed={localFilters.rating === rating}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                     localFilters.rating === rating
                       ? 'bg-legacy-orange text-white'
@@ -142,14 +180,15 @@ export default function MobileFilterSheet({
 
           {/* Traveler Type */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
+            <label className="block text-sm font-medium text-gray-700 mb-2" id="mobile-filter-traveler-label">
               Traveler Type
             </label>
-            <div className="flex gap-2 flex-wrap">
+            <div className="flex gap-2 flex-wrap" role="group" aria-labelledby="mobile-filter-traveler-label">
               {['', ...travelerTypes].map((type) => (
                 <button
                   key={type}
                   onClick={() => updateFilter('travelerType', type)}
+                  aria-pressed={localFilters.travelerType === type}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                     localFilters.travelerType === type
                       ? 'bg-legacy-orange text-white'
@@ -164,11 +203,12 @@ export default function MobileFilterSheet({
 
           {/* Category */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="mobile-filter-category" className="block text-sm font-medium text-gray-700 mb-2">
               Tour Category
             </label>
             <div className="relative">
               <select
+                id="mobile-filter-category"
                 value={localFilters.category}
                 onChange={(e) => updateFilter('category', e.target.value)}
                 className="w-full appearance-none px-4 py-3 border border-gray-200 rounded-xl bg-white text-gray-900 focus:ring-2 focus:ring-legacy-orange focus:border-transparent"

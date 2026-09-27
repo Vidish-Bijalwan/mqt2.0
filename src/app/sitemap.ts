@@ -28,12 +28,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { route: '/about-us', priority: 0.8, freq: 'monthly' as const },
     { route: '/contact-us', priority: 0.8, freq: 'monthly' as const },
     { route: '/special-tours', priority: 0.8, freq: 'weekly' as const },
-    { route: '/destinations/india-tours', priority: 0.8, freq: 'weekly' as const },
-    { route: '/destinations/international-tours', priority: 0.7, freq: 'weekly' as const },
+    // special-tours theme landing pages (slugs mirror src/data/themeConfig.ts;
+    // "pilgrimage" is a /packages filter, not a special-tours page, so it is
+    // excluded here)
+    { route: '/special-tours/family', priority: 0.7, freq: 'weekly' as const },
+    { route: '/special-tours/honeymoon', priority: 0.7, freq: 'weekly' as const },
+    { route: '/special-tours/cultural', priority: 0.7, freq: 'weekly' as const },
+    { route: '/special-tours/beaches', priority: 0.7, freq: 'weekly' as const },
+    { route: '/special-tours/adventure', priority: 0.7, freq: 'weekly' as const },
+    { route: '/special-tours/winter', priority: 0.7, freq: 'weekly' as const },
+    { route: '/special-tours/summer', priority: 0.7, freq: 'weekly' as const },
+    { route: '/special-tours/monsoon', priority: 0.7, freq: 'weekly' as const },
     { route: '/customer-center', priority: 0.6, freq: 'monthly' as const },
     { route: '/reviews', priority: 0.5, freq: 'monthly' as const },
-    { route: '/pay-online', priority: 0.6, freq: 'monthly' as const },
-    { route: '/my-booking', priority: 0.5, freq: 'monthly' as const },
     { route: '/careers', priority: 0.4, freq: 'monthly' as const },
     { route: '/group-tours', priority: 0.7, freq: 'weekly' as const },
     { route: '/experiences', priority: 0.85, freq: 'weekly' as const },

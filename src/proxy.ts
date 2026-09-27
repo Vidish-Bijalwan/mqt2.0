@@ -21,6 +21,10 @@ export function proxy(request: NextRequest) {
       maxAge: 60 * 60 * 24 * 30, // 30 days
       path: '/',
       sameSite: 'lax',
+      // No client-side JS reads this cookie (only the proxy reads it back),
+      // so it can be hardened to Secure + HttpOnly.
+      secure: true,
+      httpOnly: true,
     });
     return response;
   }

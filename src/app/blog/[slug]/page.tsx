@@ -15,6 +15,7 @@ function blogFor(slug: string) {
 import { getBlogImage } from "@/data/blogImageMap";
 import AutoLinker from "@/components/ui/AutoLinker";
 import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
+import { safeJsonLd } from "@/utils/jsonLd";
 
 // Pre-render a small set of entry articles. Long-tail posts render on demand
 // and are cached by ISR, keeping deployments compact without changing URLs.
@@ -150,8 +151,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(breadcrumbLd) }} />
       <div className="bg-gray-50 min-h-screen pb-16">
       <div className="bg-legacy-nav-blue text-white text-xs py-2 px-4">
         <div className="container mx-auto w-[95%] max-w-[1600px]">

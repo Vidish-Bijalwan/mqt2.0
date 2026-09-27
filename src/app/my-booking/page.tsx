@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'My Booking',
   description: 'Manage your My Quick Trippers tour package booking.',
+  robots: { index: false, follow: false },
 };
 
 export default function MyBookingPage() {

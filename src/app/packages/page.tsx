@@ -1,4 +1,5 @@
 import PackageListCard from "@/components/ui/PackageListCard";
+import { getApprovedPackageImage } from "@/data/packageLocationMedia";
 import PackageCard from "@/components/ui/PackageCard";
 import { getPublicPackages, isInternationalPackage, packageDurationGroup } from "@/utils/packageCatalog";
 import { getPackageDestination, groupPackagesByDestination } from "@/utils/packageGroups";
@@ -48,12 +49,30 @@ const CATEGORIES = [
 
 const DURATIONS = ["All", "3-5", "6-9", "10+", "custom"];
 
+/**
+ * Normalizes destination names for comparison: "&" -> "and", commas ->
+ * spaces, collapsed whitespace, lowercase. Applied to both the query param
+ * and the catalogue group labels so "Singapore & Bali" matches either way.
+ */
+function normalizeDestination(value: string) {
+  return value
+    .replace(/&/g, " and ")
+    .replace(/,/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
+}
+
 function validateSearchParams(params: { category?: string; page?: string; filter?: string; q?: string; destination?: string; duration?: string; travelers?: string }) {
   const category = params.category && CATEGORIES.includes(params.category) ? params.category : "All";
   const duration = params.duration && DURATIONS.includes(params.duration) ? params.duration : "All";
+  // Keep "&" meaningful for names like "Singapore & Bali": turn it into
+  // "and" before the sanitizer strips punctuation, then collapse whitespace.
   const destination = (params.destination || "")
+    .replace(/&/g, " and ")
     .replace(/[^\w\s-]/g, '')
     .replace(/-/g, " ")
+    .replace(/\s+/g, " ")
     .trim()
     .substring(0, 100);
   const filter = (params.q || params.filter || "")
@@ -87,7 +106,7 @@ export default async function PackagesPage({
   // empty/misleading catalogue view.
   const destinationGroup = selectedDestination
     ? groupPackagesByDestination(categoryFiltered).find(
-        (group) => group.label.toLowerCase() === selectedDestination.toLowerCase(),
+        (group) => normalizeDestination(group.label) === normalizeDestination(selectedDestination),
       )
     : undefined;
   const destinationTerms = selectedDestination
@@ -122,7 +141,13 @@ export default async function PackagesPage({
   const safePage = Math.min(currentPage, totalPages);
   const paged = filtered.slice((safePage - 1) * PER_PAGE, safePage * PER_PAGE);
   const pagedGroups = grouped.slice((safePage - 1) * PER_PAGE, safePage * PER_PAGE);
-  const destinationHero = selectedDestination ? groupPackagesByDestination(filtered)[0]?.representative : undefined;
+  // Prefer the representative of the group that actually matched the
+  // destination param; fall back to the first group of the filtered view.
+  const destinationHero = selectedDestination
+    ? (destinationGroup && destinationGroup.packages.length > 0
+        ? destinationGroup.representative
+        : groupPackagesByDestination(filtered)[0]?.representative)
+    : undefined;
   const visiblePages = Array.from(new Set([1, safePage - 1, safePage, safePage + 1, totalPages]))
     .filter((page) => page >= 1 && page <= totalPages)
     .sort((a, b) => a - b);
@@ -275,7 +300,7 @@ export default async function PackagesPage({
                   />
                 ) : selectedFilter ? (
                   <div className="space-y-4">
-                    {paged.map((pkg) => <PackageListCard key={pkg.slug} pkg={pkg} />)}
+                    {paged.map((pkg) => <PackageListCard key={pkg.slug} pkg={pkg} imageSrc={getApprovedPackageImage(pkg)} />)}
                   </div>
                 ) : (
                   <div className="nit-grid packages-group-grid">

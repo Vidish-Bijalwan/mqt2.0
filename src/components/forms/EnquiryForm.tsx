@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { siteConfig } from "@/data/siteConfig";
 import { buildEnquiryWhatsappUrl } from "@/utils/enquiry";
 
@@ -10,6 +10,15 @@ export default function EnquiryForm({ pkgName = "", destination, embedded = fals
   const enquiryName = pkgName || destination || "";
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [preparedUrl, setPreparedUrl] = useState("");
+  const successHeadingRef = useRef<HTMLHeadingElement>(null);
+
+  // On successful submit, move focus to the confirmation so screen-reader
+  // users are told what happened.
+  useEffect(() => {
+    if (status === "success") {
+      successHeadingRef.current?.focus();
+    }
+  }, [status]);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -51,7 +60,7 @@ export default function EnquiryForm({ pkgName = "", destination, embedded = fals
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <h3 className="mb-2 text-xl font-bold">Your WhatsApp message is ready</h3>
+        <h3 ref={successHeadingRef} tabIndex={-1} className="mb-2 text-xl font-bold">Your WhatsApp message is ready</h3>
         <p className="mb-5 text-green-700">Send the prepared message to our travel team. If WhatsApp did not open automatically, use the button below.</p>
         <div className="flex flex-col justify-center gap-3 sm:flex-row">
           <a
@@ -122,7 +131,7 @@ export default function EnquiryForm({ pkgName = "", destination, embedded = fals
         >
           {status === "loading" ? "Preparing your message..." : "Continue on WhatsApp"}
         </button>
-        <p className="mt-4 text-center text-xs leading-5 text-[#71817d]">
+        <p className="mt-4 text-center text-xs leading-5 text-[#6B7A77]">
           No payment required. Your details are used only to discuss this trip.
         </p>
       </form>

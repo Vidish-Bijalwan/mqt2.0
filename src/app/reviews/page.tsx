@@ -10,6 +10,7 @@ import DestinationReviewCard from '@/components/ui/DestinationReviewCard';
 import TourReviewCard from '@/components/ui/TourReviewCard';
 import WriteReviewModal from '@/components/ui/WriteReviewModal';
 import MobileFilterSheet from '@/components/ui/MobileFilterSheet';
+import { safeJsonLd } from '@/utils/jsonLd';
 import {
   reviews,
   destinationSummaries,
@@ -102,7 +103,7 @@ export default function ReviewsPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }} />
       {/* Breadcrumb */}
       <div className="bg-legacy-nav-blue text-white text-xs py-2 px-4">
         <div className="container mx-auto w-[95%] max-w-[1600px] flex items-center">

@@ -5,6 +5,7 @@ import { Compass, Headphones, MapPin, Route, ShieldCheck, Sparkles } from "lucid
 import SocialFollowLinks from "@/components/ui/SocialFollowLinks";
 import { siteConfig } from "@/data/siteConfig";
 import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
+import { safeJsonLd } from "@/utils/jsonLd";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -19,8 +20,37 @@ const values = [
 ];
 
 export default function AboutUsPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: siteConfig.name,
+    alternateName: siteConfig.shortName,
+    url: siteConfig.domain,
+    logo: `${siteConfig.domain}${siteConfig.logo}`,
+    description: siteConfig.description,
+    email: siteConfig.email,
+    telephone: siteConfig.phone,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: siteConfig.address.street,
+      addressLocality: siteConfig.address.city,
+      addressRegion: siteConfig.address.state,
+      postalCode: siteConfig.address.pin,
+      addressCountry: siteConfig.address.country,
+    },
+    sameAs: [
+      siteConfig.social.facebook,
+      siteConfig.social.instagram,
+      siteConfig.social.twitter,
+      siteConfig.social.youtube,
+      siteConfig.social.linkedin,
+    ],
+  };
+
   return (
-    <div className="heritage-surface min-h-screen">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }} />
+      <div className="heritage-surface min-h-screen">
       <section className="relative isolate overflow-hidden bg-[#0a332d] text-white">
         <Image src="/images/blog/royal-palaces-in-india.jpg" alt="Historic Indian palace representing the living heritage behind journeys across India" fill preload sizes="100vw" placeholder={IMAGE_SKELETON} className="z-0 object-cover object-center opacity-85" />
         <div className="absolute inset-0 z-10 bg-[linear-gradient(90deg,rgba(5,35,31,.94),rgba(5,35,31,.68)_55%,rgba(5,35,31,.2))]" />
@@ -83,5 +113,6 @@ export default function AboutUsPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

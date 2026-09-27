@@ -8,17 +8,36 @@ import { navLinks } from "@/data/navLinks";
 import { Menu, X, Phone, Mail, MessageCircle, ChevronDown, ChevronRight } from "lucide-react";
 import LanguageSelector from "@/components/layout/LanguageSelector";
 
+// Stable id for each desktop dropdown so the trigger's aria-controls always
+// points at the rendered submenu.
+const navSubmenuId = (title: string) =>
+  `nav-submenu-${title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")}`;
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [expandedMobile, setExpandedMobile] = useState<string | null>(null);
   const [expandedMobileRegion, setExpandedMobileRegion] = useState<string | null>(null);
   const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
   const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const desktopTriggerRefs = useRef<Record<string, HTMLButtonElement | null>>({});
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
   }, [isOpen]);
+
+  // Keyboard users: Escape closes any open desktop dropdown and returns
+  // focus to the trigger that opened it.
+  useEffect(() => {
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape" && hoveredMenu) {
+        setHoveredMenu(null);
+        desktopTriggerRefs.current[hoveredMenu]?.focus();
+      }
+    };
+    document.addEventListener("keydown", closeOnEscape);
+    return () => document.removeEventListener("keydown", closeOnEscape);
+  }, [hoveredMenu]);
 
   const handleMenuEnter = useCallback((title: string) => {
     if (hoverTimeoutRef.current) {
@@ -133,7 +152,15 @@ export default function Navbar() {
                 {item.submenus || item.links ? (
                   <button
                     type="button"
+                    ref={(el) => {
+                      if (el) desktopTriggerRefs.current[item.title] = el;
+                      else delete desktopTriggerRefs.current[item.title];
+                    }}
                     aria-label={`Open ${item.title} menu`}
+                    aria-expanded={hoveredMenu === item.title}
+                    aria-controls={navSubmenuId(item.title)}
+                    onClick={() => setHoveredMenu(hoveredMenu === item.title ? null : item.title)}
+                    onFocus={() => handleMenuEnter(item.title)}
                     className={`px-1.5 min-[1180px]:px-2 xl:px-3 h-[48px] whitespace-nowrap flex items-center cursor-pointer transition-all duration-150 ${
                       hoveredMenu === item.title 
                         ? 'text-brand-sage bg-white/10'
@@ -161,6 +188,7 @@ export default function Navbar() {
         const activeItem = navLinks.find(n => n.title === hoveredMenu)!;
         return (
           <div
+            id={navSubmenuId(activeItem.title)}
             className="absolute left-0 top-full z-[9999] hidden w-full lg:block"
             onMouseEnter={handleMenuStayOpen}
             onMouseLeave={handleMenuLeave}
@@ -203,6 +231,7 @@ export default function Navbar() {
         const activeItem = navLinks.find(n => n.title === hoveredMenu)!;
         return (
           <div
+            id={navSubmenuId(activeItem.title)}
             className="absolute left-0 top-full z-[9999] hidden w-full lg:block"
             onMouseEnter={handleMenuStayOpen}
             onMouseLeave={handleMenuLeave}
@@ -231,6 +260,7 @@ export default function Navbar() {
         const activeItem = navLinks.find(n => n.title === hoveredMenu)!;
         return (
           <div
+            id={navSubmenuId(activeItem.title)}
             className="absolute left-0 top-full z-[9999] hidden w-full lg:block"
             onMouseEnter={handleMenuStayOpen}
             onMouseLeave={handleMenuLeave}
@@ -271,6 +301,7 @@ export default function Navbar() {
                 <>
                   <button 
                     className="flex min-h-12 items-center justify-between w-full py-3 text-left font-medium text-[15px]"
+                    aria-expanded={expandedMobile === item.title}
                     onClick={() => setExpandedMobile(expandedMobile === item.title ? null : item.title)}
                   >
                     {item.title}
@@ -283,6 +314,7 @@ export default function Navbar() {
                         <div key={region.title} className="mb-1">
                           <button 
                             className="flex min-h-11 w-full items-center justify-between px-4 py-2.5 text-[14px] font-bold text-brand-sage"
+                            aria-expanded={expandedMobileRegion === region.title}
                             onClick={() => setExpandedMobileRegion(expandedMobileRegion === region.title ? null : region.title)}
                           >
                             {region.title}

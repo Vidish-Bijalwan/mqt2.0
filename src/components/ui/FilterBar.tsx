@@ -53,6 +53,7 @@ export default function FilterBar({ onFilterChange, activeFilters }: FilterBarPr
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
           <input
             type="text"
+            aria-label="Search reviews"
             placeholder="Search reviews, destinations, tours..."
             value={activeFilters.search}
             onChange={(e) => updateFilter('search', e.target.value)}
@@ -61,6 +62,7 @@ export default function FilterBar({ onFilterChange, activeFilters }: FilterBarPr
           {activeFilters.search && (
             <button
               onClick={() => updateFilter('search', '')}
+              aria-label="Clear search"
               className="absolute right-3 top-1/2 -translate-y-1/2 p-1 hover:bg-gray-100 rounded-full"
             >
               <X className="w-4 h-4 text-gray-400" />
@@ -69,6 +71,8 @@ export default function FilterBar({ onFilterChange, activeFilters }: FilterBarPr
         </div>
         <button
           onClick={() => setShowFilters(!showFilters)}
+          aria-expanded={showFilters}
+          aria-label="Toggle filters"
           className={`flex items-center gap-2 px-4 py-3 border rounded-xl transition-all ${
             showFilters || hasActiveFilters
               ? 'bg-blue-50 border-blue-200 text-blue-700'
@@ -89,9 +93,10 @@ export default function FilterBar({ onFilterChange, activeFilters }: FilterBarPr
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {/* Destination */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Destination</label>
+              <label htmlFor="filter-destination" className="block text-sm font-medium text-gray-700 mb-1">Destination</label>
               <div className="relative">
                 <select
+                  id="filter-destination"
                   value={activeFilters.destination}
                   onChange={(e) => updateFilter('destination', e.target.value)}
                   className="w-full appearance-none pl-3 pr-8 py-2 border border-gray-200 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 outline-none"
@@ -107,9 +112,10 @@ export default function FilterBar({ onFilterChange, activeFilters }: FilterBarPr
 
             {/* Rating */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Rating</label>
+              <label htmlFor="filter-rating" className="block text-sm font-medium text-gray-700 mb-1">Rating</label>
               <div className="relative">
                 <select
+                  id="filter-rating"
                   value={activeFilters.rating}
                   onChange={(e) => updateFilter('rating', e.target.value)}
                   className="w-full appearance-none pl-3 pr-8 py-2 border border-gray-200 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 outline-none"
@@ -127,9 +133,10 @@ export default function FilterBar({ onFilterChange, activeFilters }: FilterBarPr
 
             {/* Traveler Type */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Traveler Type</label>
+              <label htmlFor="filter-traveler-type" className="block text-sm font-medium text-gray-700 mb-1">Traveler Type</label>
               <div className="relative">
                 <select
+                  id="filter-traveler-type"
                   value={activeFilters.travelerType}
                   onChange={(e) => updateFilter('travelerType', e.target.value)}
                   className="w-full appearance-none pl-3 pr-8 py-2 border border-gray-200 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 outline-none"
@@ -145,9 +152,10 @@ export default function FilterBar({ onFilterChange, activeFilters }: FilterBarPr
 
             {/* Category */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Tour Category</label>
+              <label htmlFor="filter-category" className="block text-sm font-medium text-gray-700 mb-1">Tour Category</label>
               <div className="relative">
                 <select
+                  id="filter-category"
                   value={activeFilters.category}
                   onChange={(e) => updateFilter('category', e.target.value)}
                   className="w-full appearance-none pl-3 pr-8 py-2 border border-gray-200 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 outline-none"
@@ -188,7 +196,7 @@ export default function FilterBar({ onFilterChange, activeFilters }: FilterBarPr
           {activeFilters.destination && (
             <span className="inline-flex items-center gap-1 px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
               {activeFilters.destination}
-              <button onClick={() => updateFilter('destination', '')} className="hover:text-blue-900">
+              <button onClick={() => updateFilter('destination', '')} aria-label="Remove destination filter" className="hover:text-blue-900">
                 <X className="w-3 h-3" />
               </button>
             </span>
@@ -196,7 +204,7 @@ export default function FilterBar({ onFilterChange, activeFilters }: FilterBarPr
           {activeFilters.rating && (
             <span className="inline-flex items-center gap-1 px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">
               {activeFilters.rating} Stars
-              <button onClick={() => updateFilter('rating', '')} className="hover:text-yellow-900">
+              <button onClick={() => updateFilter('rating', '')} aria-label="Remove rating filter" className="hover:text-yellow-900">
                 <X className="w-3 h-3" />
               </button>
             </span>
@@ -204,7 +212,7 @@ export default function FilterBar({ onFilterChange, activeFilters }: FilterBarPr
           {activeFilters.travelerType && (
             <span className="inline-flex items-center gap-1 px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">
               {activeFilters.travelerType}
-              <button onClick={() => updateFilter('travelerType', '')} className="hover:text-purple-900">
+              <button onClick={() => updateFilter('travelerType', '')} aria-label="Remove traveler type filter" className="hover:text-purple-900">
                 <X className="w-3 h-3" />
               </button>
             </span>
@@ -212,7 +220,7 @@ export default function FilterBar({ onFilterChange, activeFilters }: FilterBarPr
           {activeFilters.category && (
             <span className="inline-flex items-center gap-1 px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">
               {activeFilters.category}
-              <button onClick={() => updateFilter('category', '')} className="hover:text-green-900">
+              <button onClick={() => updateFilter('category', '')} aria-label="Remove category filter" className="hover:text-green-900">
                 <X className="w-3 h-3" />
               </button>
             </span>
@@ -220,7 +228,7 @@ export default function FilterBar({ onFilterChange, activeFilters }: FilterBarPr
           {activeFilters.verified && (
             <span className="inline-flex items-center gap-1 px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">
               Verified Only
-              <button onClick={() => updateFilter('verified', false)} className="hover:text-green-900">
+              <button onClick={() => updateFilter('verified', false)} aria-label="Remove verified filter" className="hover:text-green-900">
                 <X className="w-3 h-3" />
               </button>
             </span>
@@ -240,7 +248,9 @@ export default function FilterBar({ onFilterChange, activeFilters }: FilterBarPr
           </span>
         </p>
         <div className="relative">
+          <label htmlFor="filter-sort" className="sr-only">Sort reviews</label>
           <select
+            id="filter-sort"
             value={activeFilters.sortBy}
             onChange={(e) => updateFilter('sortBy', e.target.value)}
             className="appearance-none pl-3 pr-8 py-1.5 border border-gray-200 rounded-lg text-sm bg-white focus:ring-2 focus:ring-blue-500 outline-none"

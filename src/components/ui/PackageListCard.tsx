@@ -3,10 +3,25 @@ import Image from 'next/image';
 import { Package } from '@/data/allPackages';
 import { getPriceInfo } from '@/utils/price';
 import { IMAGE_SKELETON } from '@/utils/imagePlaceholder';
-import { getApprovedPackageImage } from '@/data/packageLocationMedia';
 
-export default function PackageListCard({ pkg }: { pkg: Package }) {
-  const imageSrc = getApprovedPackageImage(pkg);
+/**
+ * Local fallback image. Deliberately a plain string (not imported from
+ * `@/data/packageLocationMedia`) so this "use client"-chain component never
+ * pulls the 815KB location-media module into the client bundle. Verified
+ * present on disk at public/images/hero/hero-bg-2.svg.
+ */
+const CARD_IMAGE_FALLBACK = "/images/hero/hero-bg-2.svg";
+
+interface PackageListCardProps {
+  pkg: Package;
+  /** Resolved approved image URL. Resolve server-side via
+      `getApprovedPackageImage(pkg)` and pass it down; when omitted the card
+      uses the local fallback above and never touches packageLocationMedia. */
+  imageSrc?: string;
+}
+
+export default function PackageListCard({ pkg, imageSrc }: PackageListCardProps) {
+  const resolvedImageSrc = imageSrc ?? CARD_IMAGE_FALLBACK;
 
   // Shared pricing model: pkg.mrp = list price, pkg.dealPrice = the deal.
   const { hasPrice, display, crossed } = getPriceInfo(pkg.mrp, pkg.dealPrice, pkg.slug);
@@ -25,7 +40,7 @@ export default function PackageListCard({ pkg }: { pkg: Package }) {
       <div className="package-list-image relative w-full md:w-[260px] h-[200px] md:h-auto md:min-h-[230px] shrink-0 overflow-hidden bg-gray-100">
         <Link href={`/packages/${pkg.slug}`} className="block w-full h-full relative">
           <Image
-            src={imageSrc}
+            src={resolvedImageSrc}
             alt={pkg.title}
             fill
             sizes="(max-width: 768px) 100vw, 260px"

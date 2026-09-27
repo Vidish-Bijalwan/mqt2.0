@@ -23,6 +23,11 @@ export default function GalleryLightbox({ images, title, captions = [] }: Galler
   const closeRef = useRef<HTMLButtonElement>(null);
   const touchStartX = useRef<number | null>(null);
 
+  // If the image list shrinks while the lightbox is open (e.g. the parent
+  // re-renders with fewer images), clamp so we never read images[index]
+  // as undefined.
+  const safeIndex = images.length > 0 ? Math.min(index, images.length - 1) : 0;
+
   useEffect(() => {
     if (!open) return;
     const previousOverflow = document.body.style.overflow;
@@ -103,9 +108,9 @@ export default function GalleryLightbox({ images, title, captions = [] }: Galler
       >
         <div className="relative mx-auto h-full w-full max-w-6xl overflow-hidden rounded-xl bg-black/25 sm:rounded-2xl">
           <Image
-            key={images[index]}
-            src={images[index]}
-            alt={captions[index] || `${title} - photo ${index + 1}`}
+            key={images[safeIndex]}
+            src={images[safeIndex]}
+            alt={captions[safeIndex] || `${title} - photo ${safeIndex + 1}`}
             fill
             priority
             sizes="100vw"
@@ -139,10 +144,10 @@ export default function GalleryLightbox({ images, title, captions = [] }: Galler
       <div className="shrink-0 border-t border-white/10 bg-[#061c19] px-4 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-3 sm:px-6 sm:pb-5">
         <div className="mx-auto flex max-w-6xl items-start justify-between gap-4">
           <p className="min-h-10 max-w-3xl text-xs leading-5 text-white/70 sm:text-sm">
-            {captions[index] || `A view from the ${title} journey`}
+            {captions[safeIndex] || `A view from the ${title} journey`}
           </p>
           <p className="shrink-0 rounded-full bg-white/10 px-3 py-1 text-xs font-bold tabular-nums text-white/85">
-            {index + 1} / {images.length}
+            {safeIndex + 1} / {images.length}
           </p>
         </div>
 
@@ -154,9 +159,9 @@ export default function GalleryLightbox({ images, title, captions = [] }: Galler
                 type="button"
                 onClick={() => setIndex(imageIndex)}
                 aria-label={`View photo ${imageIndex + 1}`}
-                aria-current={imageIndex === index ? "true" : undefined}
+                aria-current={imageIndex === safeIndex ? "true" : undefined}
                 className={`relative h-12 w-16 shrink-0 snap-start overflow-hidden rounded-lg transition sm:h-14 sm:w-20 ${
-                  imageIndex === index
+                  imageIndex === safeIndex
                     ? "ring-2 ring-[#ef7a2f] ring-offset-2 ring-offset-[#061c19]"
                     : "opacity-45 hover:opacity-80"
                 }`}

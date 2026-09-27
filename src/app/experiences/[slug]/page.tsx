@@ -9,6 +9,8 @@ import { experiencesWithCounts, matchPackages } from "@/utils/experienceCounts";
 import PackageListWithMore from "@/components/experiences/PackageListWithMore";
 import EnquiryForm from "@/components/forms/EnquiryForm";
 import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
+import { getApprovedPackageImage } from "@/data/packageLocationMedia";
+import { safeJsonLd } from "@/utils/jsonLd";
 
 interface Params {
   params: Promise<{ slug: string }>;
@@ -59,6 +61,13 @@ export default async function ExperiencePage({ params }: Params) {
   if (!exp) notFound();
 
   const packages = packagesForExperience(slug);
+
+  // Resolve approved card images once, server-side, so the client
+  // PackageListCard chain never imports the heavy packageLocationMedia module.
+  const imageSrcBySlug: Record<string, string> = {};
+  for (const pkg of packages) {
+    imageSrcBySlug[pkg.slug] = getApprovedPackageImage(pkg);
+  }
   const allItems = experiencesWithCounts();
   const related = allItems
     .filter((e) => e.slug !== exp.slug && e.group === exp.group)
@@ -96,7 +105,7 @@ export default async function ExperiencePage({ params }: Params) {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }} />
       <div className="bg-gray-50 min-h-screen pb-16">
         {/* Breadcrumb */}
         <div className="bg-white border-b border-gray-200 text-gray-600 text-[13px] py-2 px-4 shadow-sm">
@@ -167,7 +176,7 @@ export default async function ExperiencePage({ params }: Params) {
               </div>
 
               {packages.length > 0 ? (
-                <PackageListWithMore packages={packages} />
+                <PackageListWithMore packages={packages} imageSrcBySlug={imageSrcBySlug} />
               ) : (
                 <div className="rounded-card border border-dashed border-gray-300 bg-white py-14 text-center">
                   <p className="text-lg font-semibold text-gray-700">

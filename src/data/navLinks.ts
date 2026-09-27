@@ -1,7 +1,8 @@
 export const navLinks = [
   {
     title: "India Tours",
-    href: "/destinations/india-tours",
+    // Top-level hub link removed: /destinations/india-tours 404s. Navbar
+    // falls back to "#" (see Navbar.tsx) and the mega menu submenus remain.
     megaMenu: true, // Flag to render as mega menu
     submenus: [
       {
@@ -66,7 +67,9 @@ export const navLinks = [
   },
   {
     title: "International Tours",
-    href: "/destinations/international-tours",
+    // Top-level hub link removed: /destinations/international-tours 404s.
+    // Navbar falls back to "#" (see Navbar.tsx) and the mega menu submenus
+    // remain.
     megaMenu: true,
     submenus: [
       {

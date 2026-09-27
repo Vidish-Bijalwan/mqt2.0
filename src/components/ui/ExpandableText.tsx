@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useId } from "react";
 
 interface ExpandableTextProps {
   text: string;
@@ -18,6 +18,7 @@ export default function ExpandableText({
   className = "",
 }: ExpandableTextProps) {
   const [open, setOpen] = useState(false);
+  const regionId = useId();
 
   if (!text) return null;
 
@@ -33,11 +34,13 @@ export default function ExpandableText({
 
   return (
     <p className={className}>
-      {shown}
+      <span id={regionId}>{shown}</span>
       {!open && "… "}
       <button
         type="button"
         onClick={() => setOpen(!open)}
+        aria-expanded={open}
+        aria-controls={regionId}
         className="text-legacy-orange font-bold text-[13px] hover:underline inline align-baseline"
       >
         {open ? "See Less" : "See More"}

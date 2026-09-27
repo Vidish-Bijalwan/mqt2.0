@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { siteConfig } from "@/data/siteConfig";
 import { Phone, Mail, MessageCircle, ChevronRight } from "lucide-react";
+import { safeJsonLd } from "@/utils/jsonLd";
 
 export const metadata = {
   title: "Customer Center",
@@ -38,7 +39,7 @@ export default function CustomerCenterPage() {
 
   return (
     <div className="bg-gray-50 min-h-screen pb-16">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }} />
       {/* Breadcrumb */}
       <div className="bg-legacy-nav-blue text-white text-xs py-2 px-4">
         <div className="container mx-auto w-[95%] max-w-[1600px] flex items-center">
