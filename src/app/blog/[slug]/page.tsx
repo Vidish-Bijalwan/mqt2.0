@@ -196,10 +196,46 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     "description": contentText.substring(0, 200)
   };
 
+  // FAQ rich snippet: derive Q&A pairs from a trailing "Frequently Asked
+  // Questions" section (h2 followed by h3 question + p answer pairs).
+  const faqPairs: Array<{ question: string; answer: string }> = (() => {
+    const idx = editorialBlocks.findIndex(
+      (b) => b.type === "h2" && /frequently asked questions/i.test(b.text || "")
+    );
+    if (idx === -1) return [];
+    const pairs: Array<{ question: string; answer: string }> = [];
+    let current: { question: string; answer: string } | null = null;
+    for (let i = idx + 1; i < editorialBlocks.length; i++) {
+      const b = editorialBlocks[i];
+      if (b.type === "h2") break;
+      if (b.type === "h3") {
+        if (current) pairs.push(current);
+        current = { question: b.text || "", answer: "" };
+      } else if (b.type === "p" && current && !current.answer) {
+        current.answer = b.text || "";
+      }
+    }
+    if (current) pairs.push(current);
+    return pairs.filter((p) => p.question && p.answer);
+  })();
+
+  const faqLd = faqPairs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqPairs.map((p) => ({
+      "@type": "Question",
+      "name": p.question,
+      "acceptedAnswer": { "@type": "Answer", "text": p.answer },
+    })),
+  } : null;
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(breadcrumbLd) }} />
+      {faqLd && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(faqLd) }} />
+      )}
       <div className="bg-gray-50 min-h-screen pb-16">
       <div className="bg-legacy-nav-blue text-white text-xs py-2 px-4">
         <div className="container mx-auto w-[95%] max-w-[1600px] flex items-center">
