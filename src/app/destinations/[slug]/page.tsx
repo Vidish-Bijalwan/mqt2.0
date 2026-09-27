@@ -27,7 +27,15 @@ const keywords: Record<string, string[]> = {
   "tamil-nadu": ["chennai", "ooty", "kodaikanal", "madurai", "rameshwaram", "kanyakumari", "mahabalipuram"], karnataka: ["bangalore", "mysore", "coorg", "hampi", "bandipur", "gokarna"],
   "madhya-pradesh": ["khajuraho", "kanha", "bandhavgarh", "gwalior", "ujjain", "bhopal", "indore"], darjeeling: ["darjeeling", "kalimpong", "kurseong"], sikkim: ["gangtok", "pelling", "lachung", "nathula"], assam: ["guwahati", "kaziranga", "majuli"], ladakh: ["ladakh", "leh", "nubra", "pangong", "kargil", "sham valley"],
 };
-const heroImages: Record<string, string> = { uttarakhand: "/images/packages/hi-uttarakhand.webp", "himachal-pradesh": "/images/packages/hi-himachal-pradesh.webp", rajasthan: "/images/packages/hi-rajasthan.webp", kerala: "/images/packages/hi-kerala.webp", goa: "/images/packages/hi-goa.webp", ladakh: "/images/packages/ladakh-highres.jpg" };
+const heroImages: Record<string, string> = {
+  uttarakhand: "/images/location-library/uttarakhand-india/uttarakhand-india-01-lg.webp",
+  "himachal-pradesh": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-02-lg.webp",
+  "uttar-pradesh": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-04-lg.webp",
+  rajasthan: "/images/location-library/rajasthan-india/rajasthan-india-02-lg.webp",
+  kerala: "/images/location-library/kerala-india/kerala-india-03-lg.webp",
+  goa: "/images/location-library/goa-india/goa-india-01-lg.webp",
+  ladakh: "/images/location-library/ladakh-india/ladakh-india-02-lg.webp",
+};
 function legacy(slug: string): ContentDocument | undefined { const item = destinationData[slug]; return item ? { ...item, content: item.content?.map((html) => ({ type: "p", text: html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim() })) } : undefined; }
 function matches(pkg: { slug: string; title: string; category: string; route: string }, term: string) {
   const escaped = term.trim().replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/\\ /g, "[\\s-]");

@@ -64,13 +64,12 @@ export default function PackageCard({ pkg, href, variantCount }: PackageCardComp
           className="nit-pcard-img-el"
           style={{ objectFit: "cover" }}
         />
-        {/* ── Company watermark (top-left, bean shape, translucent) ── */}
         <span className="nit-pcard-watermark" aria-hidden="true">
           <Image
             src="/logo/mqt-watermark.png"
-            alt="My Quick Trippers"
-            width={120}
-            height={42}
+            alt=""
+            width={128}
+            height={47}
             className="nit-pcard-watermark-img"
             loading="lazy"
             unoptimized

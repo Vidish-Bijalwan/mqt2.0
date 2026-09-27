@@ -35,11 +35,6 @@ export default function PackageListCard({ pkg }: { pkg: Package }) {
             className="object-cover group-hover:scale-105 transition-transform duration-500"
           />
           
-          {/* Proper MQT Badge overlay */}
-          <div className="absolute top-0 left-0 bg-legacy-orange text-white text-[10px] font-bold px-3 py-1 rounded-br-lg shadow-sm z-10">
-            MQT
-          </div>
-
           {/* Proper Duration badge overlay without overlapping the center text */}
           {pkg.duration && (
             <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-10">

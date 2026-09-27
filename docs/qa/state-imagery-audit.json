@@ -1,0 +1,264 @@
+{
+  "source": "Survey of India district DBF + district-attribution review; stateTileManifest is authoritative for generated tiles",
+  "reconciliation": {
+    "uttarPradesh": "Raw file capacity was incorrectly treated as district coverage. Eight library locations are district-attributed; 27 reviewed illustrations are in stateTileManifest, leaving 40 gaps.",
+    "rajasthan": "Raw file capacity was incorrectly treated as district coverage. Manual attribution review found 12 verified districts and 29 gaps.",
+    "uttarakhandAndHimachalPradesh": "Their zero values are legacy raw-capacity results, not a closure. No generated UK/HP tiles have been added to stateTileManifest; their district-attribution audit remains open."
+  },
+  "rows": [
+    {
+      "slug": "uttarakhand",
+      "officialName": "UTTARAKHAND",
+      "districts": 13,
+      "approvedTiles": 95,
+      "minimumGaps": 0
+    },
+    {
+      "slug": "himachal-pradesh",
+      "officialName": "HIMACHAL PRADESH",
+      "districts": 12,
+      "approvedTiles": 48,
+      "minimumGaps": 0
+    },
+    {
+      "slug": "uttar-pradesh",
+      "officialName": "UTTAR PRADESH",
+      "districts": 75,
+      "approvedTiles": 35,
+      "minimumGaps": 40
+    },
+    {
+      "slug": "rajasthan",
+      "officialName": "RAJASTHAN",
+      "districts": 41,
+      "approvedTiles": 12,
+      "minimumGaps": 29
+    },
+    {
+      "slug": "kerala",
+      "officialName": "KERALA",
+      "districts": 14,
+      "approvedTiles": 36,
+      "minimumGaps": 0
+    },
+    {
+      "slug": "goa",
+      "officialName": "GOA",
+      "districts": 3,
+      "approvedTiles": 8,
+      "minimumGaps": 0
+    },
+    {
+      "slug": "maharashtra",
+      "officialName": "MAHARASHTRA",
+      "districts": 36,
+      "approvedTiles": 48,
+      "minimumGaps": 0
+    },
+    {
+      "slug": "karnataka",
+      "officialName": "KARNATAKA",
+      "districts": 31,
+      "approvedTiles": 32,
+      "minimumGaps": 0
+    },
+    {
+      "slug": "tamil-nadu",
+      "officialName": "TAMIL NADU",
+      "districts": 38,
+      "approvedTiles": 60,
+      "minimumGaps": 0
+    },
+    {
+      "slug": "west-bengal",
+      "officialName": "WEST BENGAL",
+      "districts": 23,
+      "approvedTiles": 20,
+      "minimumGaps": 3
+    },
+    {
+      "slug": "gujarat",
+      "officialName": "GUJARAT",
+      "districts": 33,
+      "approvedTiles": 52,
+      "minimumGaps": 0
+    },
+    {
+      "slug": "punjab",
+      "officialName": "PUNJAB",
+      "districts": 23,
+      "approvedTiles": 4,
+      "minimumGaps": 19
+    },
+    {
+      "slug": "haryana",
+      "officialName": "HARYANA",
+      "districts": 22,
+      "approvedTiles": 0,
+      "minimumGaps": 22
+    },
+    {
+      "slug": "madhya-pradesh",
+      "officialName": "MADHYA PRADESH",
+      "districts": 55,
+      "approvedTiles": 64,
+      "minimumGaps": 0
+    },
+    {
+      "slug": "bihar",
+      "officialName": "BIHAR",
+      "districts": 38,
+      "approvedTiles": 24,
+      "minimumGaps": 14
+    },
+    {
+      "slug": "jharkhand",
+      "officialName": "JHARKHAND",
+      "districts": 24,
+      "approvedTiles": 8,
+      "minimumGaps": 16
+    },
+    {
+      "slug": "chhattisgarh",
+      "officialName": "CHHATTISGARH",
+      "districts": 33,
+      "approvedTiles": 6,
+      "minimumGaps": 27
+    },
+    {
+      "slug": "odisha",
+      "officialName": "ODISHA",
+      "districts": 30,
+      "approvedTiles": 25,
+      "minimumGaps": 5
+    },
+    {
+      "slug": "assam",
+      "officialName": "ASSAM",
+      "districts": 35,
+      "approvedTiles": 20,
+      "minimumGaps": 15
+    },
+    {
+      "slug": "sikkim",
+      "officialName": "SIKKIM",
+      "districts": 6,
+      "approvedTiles": 12,
+      "minimumGaps": 0
+    },
+    {
+      "slug": "arunachal-pradesh",
+      "officialName": "ARUNACHAL PRADESH",
+      "districts": 27,
+      "approvedTiles": 8,
+      "minimumGaps": 19
+    },
+    {
+      "slug": "meghalaya",
+      "officialName": "MEGHALAYA",
+      "districts": 12,
+      "approvedTiles": 4,
+      "minimumGaps": 8
+    },
+    {
+      "slug": "mizoram",
+      "officialName": "MIZORAM",
+      "districts": 11,
+      "approvedTiles": 8,
+      "minimumGaps": 3
+    },
+    {
+      "slug": "manipur",
+      "officialName": "MANIPUR",
+      "districts": 16,
+      "approvedTiles": 0,
+      "minimumGaps": 16
+    },
+    {
+      "slug": "nagaland",
+      "officialName": "NAGALAND",
+      "districts": 16,
+      "approvedTiles": 0,
+      "minimumGaps": 16
+    },
+    {
+      "slug": "tripura",
+      "officialName": "TRIPURA",
+      "districts": 8,
+      "approvedTiles": 12,
+      "minimumGaps": 0
+    },
+    {
+      "slug": "andhra-pradesh",
+      "officialName": "ANDHRA PRADESH",
+      "districts": 26,
+      "approvedTiles": 11,
+      "minimumGaps": 15
+    },
+    {
+      "slug": "telangana",
+      "officialName": "TELANGANA",
+      "districts": 33,
+      "approvedTiles": 0,
+      "minimumGaps": 33
+    },
+    {
+      "slug": "delhi",
+      "officialName": "DELHI",
+      "districts": 12,
+      "approvedTiles": 0,
+      "minimumGaps": 12
+    },
+    {
+      "slug": "jammu-and-kashmir",
+      "officialName": "JAMMU AND KASHMIR",
+      "districts": 22,
+      "approvedTiles": 16,
+      "minimumGaps": 6
+    },
+    {
+      "slug": "ladakh",
+      "officialName": "LADAKH",
+      "districts": 2,
+      "approvedTiles": 4,
+      "minimumGaps": 0
+    },
+    {
+      "slug": "chandigarh",
+      "officialName": "CHANDIGARH",
+      "districts": 1,
+      "approvedTiles": 4,
+      "minimumGaps": 0
+    },
+    {
+      "slug": "puducherry",
+      "officialName": "PUDUCHERRY",
+      "districts": 2,
+      "approvedTiles": 4,
+      "minimumGaps": 0
+    },
+    {
+      "slug": "andaman-and-nicobar",
+      "officialName": "ANDAMAN AND NICOBAR ISLANDS",
+      "districts": 3,
+      "approvedTiles": 0,
+      "minimumGaps": 3
+    },
+    {
+      "slug": "lakshadweep",
+      "officialName": "LAKSHADWEEP",
+      "districts": 1,
+      "approvedTiles": 4,
+      "minimumGaps": 0
+    },
+    {
+      "slug": "dadra-nagar-haveli-daman-diu",
+      "officialName": "DADRA & NAGAR HAVELI & DAMAN & DIU",
+      "districts": 3,
+      "approvedTiles": 0,
+      "minimumGaps": 3
+    }
+  ],
+  "totalDistricts": 780,
+  "minimumGapTiles": 324
+}
