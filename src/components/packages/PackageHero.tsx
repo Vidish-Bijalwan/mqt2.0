@@ -1,8 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
+import { existsSync } from "node:fs";
+import { join } from "node:path";
+import { preload } from "react-dom";
 import { ArrowRight, Clock, MapPin } from "lucide-react";
 import GalleryLightbox from "@/components/ui/GalleryLightbox";
-import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
 import { cleanDisplayText, type PackageViewModel } from "@/utils/packageDetails";
 
 /**
@@ -19,6 +20,26 @@ export default function PackageHero({ vm }: { vm: PackageViewModel }) {
     journeyStops,
   } = vm;
 
+  const heroImage = galleryImages[0] ?? null;
+  /* Mobile hero variant follows the homepage's `-mobile` convention
+     (src/app/page.tsx: mqt-india-hero-mobile.webp): a ~828px-wide,
+     ~60–80KB cut served at (max-width: 768px), with the existing
+     full-weight 1600×900 file on desktop. The <source> and its preload are
+     only emitted while the variant file exists in /public, so mobile never
+     404s before the variants are generated. */
+  const heroImageMobile = heroImage ? heroImage.replace(/(\.[^./]+)$/, "-mobile$1") : null;
+  const heroImageMobilePath =
+    heroImageMobile && existsSync(join(process.cwd(), "public", heroImageMobile))
+      ? heroImageMobile
+      : null;
+
+  if (heroImage) {
+    preload(heroImage, { as: "image", media: "(min-width: 769px)", fetchPriority: "high" });
+  }
+  if (heroImageMobilePath) {
+    preload(heroImageMobilePath, { as: "image", media: "(max-width: 768px)", fetchPriority: "high" });
+  }
+
   return (
     <>
       <nav aria-label="Breadcrumb" className="border-b border-[#dfe9e6] bg-white px-4 py-3 text-xs text-[#63746f]">
@@ -33,16 +54,20 @@ export default function PackageHero({ vm }: { vm: PackageViewModel }) {
 
       <header className="mx-auto w-full max-w-[1320px] px-4 pb-10 pt-5 sm:pt-7 lg:px-6">
         <div className="relative min-h-[510px] overflow-hidden rounded-[28px] bg-[#0b302c] shadow-[0_24px_70px_rgba(7,38,34,0.24)] sm:min-h-[560px]">
-          {galleryImages[0] && (
-            <Image
-              src={galleryImages[0]}
-              alt={`${pkg.title} tour experience`}
-              fill
-              priority
-              sizes="(max-width: 768px) 100vw, 1320px"
-              placeholder={IMAGE_SKELETON}
-              className="object-cover"
-            />
+          {heroImage && (
+            <picture>
+              {heroImageMobilePath && (
+                <source media="(max-width: 768px)" srcSet={heroImageMobilePath} />
+              )}
+              <img
+                src={heroImage}
+                alt={`${pkg.title} tour experience`}
+                className="absolute inset-0 h-full w-full object-cover"
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+              />
+            </picture>
           )}
           <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(4,28,25,0.95)_0%,rgba(4,28,25,0.79)_43%,rgba(4,28,25,0.2)_78%),linear-gradient(0deg,rgba(4,28,25,0.82)_0%,transparent_62%)]" />
 

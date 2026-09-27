@@ -41,9 +41,9 @@ export const metadata: Metadata = {
     ],
     apple: '/apple-touch-icon.png',
   },
-  alternates: {
-    canonical: siteConfig.domain,
-  },
+  // No site-wide canonical here: a root `alternates.canonical` made every
+  // page (e.g. /special-tours) canonicalize to the homepage. Each route sets
+  // its own self-canonical instead. OG/Twitter stay as generic fallbacks.
   openGraph: {
     type: "website",
     locale: "en_IN",

@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/history-of-uttar-pradesh",
-      "destination": "/destinations/history-of-uttar-pradesh",
+      "destination": "/destinations/uttar-pradesh",
       "permanent": true
     },
     {
@@ -57,7 +57,7 @@
     },
     {
       "source": "/shopping-in-manali",
-      "destination": "/destinations/shopping-in-manali",
+      "destination": "/destinations/himachal-pradesh",
       "permanent": true
     },
     {
@@ -87,7 +87,7 @@
     },
     {
       "source": "/shopping-in-haridwar",
-      "destination": "/destinations/shopping-in-haridwar",
+      "destination": "/destinations/uttarakhand",
       "permanent": true
     },
     {
@@ -147,7 +147,7 @@
     },
     {
       "source": "/shopping-in-shimla",
-      "destination": "/destinations/shopping-in-shimla",
+      "destination": "/destinations/himachal-pradesh",
       "permanent": true
     },
     {
@@ -157,7 +157,7 @@
     },
     {
       "source": "/mathura-gokul-vrindavan-weekend-tour-from-delhi",
-      "destination": "/packages/mathura-gokul-vrindavan-weekend-tour-from-delhi",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -232,7 +232,7 @@
     },
     {
       "source": "/history-of-almora",
-      "destination": "/destinations/history-of-almora",
+      "destination": "/destinations/uttarakhand",
       "permanent": true
     },
     {
@@ -242,7 +242,7 @@
     },
     {
       "source": "/srisailam-mallikarjuna-jyotirlinga-darshan",
-      "destination": "/packages/srisailam-mallikarjuna-jyotirlinga-darshan",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -252,7 +252,7 @@
     },
     {
       "source": "/russia-tour-packages",
-      "destination": "/destinations/russia-tour-packages",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -267,7 +267,7 @@
     },
     {
       "source": "/best-time-to-visit-in-ahmedabad",
-      "destination": "/destinations/in-ahmedabad#best-time",
+      "destination": "/destinations/gujarat#best-time",
       "permanent": true
     },
     {
@@ -437,7 +437,7 @@
     },
     {
       "source": "/travel-guide__page__17",
-      "destination": "/destinations/travel-guide__page__17",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -452,7 +452,7 @@
     },
     {
       "source": "/nightlife-in-almora",
-      "destination": "/destinations/nightlife-in-almora",
+      "destination": "/destinations/uttarakhand",
       "permanent": true
     },
     {
@@ -522,7 +522,7 @@
     },
     {
       "source": "/travel-guide__page__18",
-      "destination": "/destinations/travel-guide__page__18",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -542,7 +542,7 @@
     },
     {
       "source": "/food-in-varanasi",
-      "destination": "/destinations/food-in-varanasi",
+      "destination": "/destinations/uttar-pradesh",
       "permanent": true
     },
     {
@@ -602,7 +602,7 @@
     },
     {
       "source": "/2-days-ayodhya-tour-package",
-      "destination": "/packages/2-days-ayodhya-tour-package",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -637,7 +637,7 @@
     },
     {
       "source": "/3-days-srisailam-mallikarjuna-jyotirlinga-tour",
-      "destination": "/packages/3-days-srisailam-mallikarjuna-jyotirlinga-tour",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -672,12 +672,12 @@
     },
     {
       "source": "/travel-guide__page__19",
-      "destination": "/destinations/travel-guide__page__19",
+      "destination": "/packages",
       "permanent": true
     },
     {
       "source": "/shopping-in-rishikesh",
-      "destination": "/destinations/shopping-in-rishikesh",
+      "destination": "/destinations/uttarakhand",
       "permanent": true
     },
     {
@@ -687,12 +687,12 @@
     },
     {
       "source": "/history-of-gujarat",
-      "destination": "/destinations/history-of-gujarat",
+      "destination": "/destinations/gujarat",
       "permanent": true
     },
     {
       "source": "/travel-tips-for-goa",
-      "destination": "/destinations/travel-tips-for-goa#travel-tips",
+      "destination": "/destinations/goa#travel-tips",
       "permanent": true
     },
     {
@@ -747,7 +747,7 @@
     },
     {
       "source": "/travel-tips-for-auli",
-      "destination": "/destinations/travel-tips-for-auli#travel-tips",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -797,7 +797,7 @@
     },
     {
       "source": "/nightlife-in-rishikesh",
-      "destination": "/destinations/nightlife-in-rishikesh",
+      "destination": "/destinations/uttarakhand",
       "permanent": true
     },
     {
@@ -817,7 +817,7 @@
     },
     {
       "source": "/how-to-reach-kailash-mansarovar",
-      "destination": "/destinations/kailash-mansarovar#how-to-reach",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -832,7 +832,7 @@
     },
     {
       "source": "/shopping-in-gujarat",
-      "destination": "/destinations/shopping-in-gujarat",
+      "destination": "/destinations/gujarat",
       "permanent": true
     },
     {
@@ -852,7 +852,7 @@
     },
     {
       "source": "/shopping-in-assam",
-      "destination": "/destinations/shopping-in-assam",
+      "destination": "/destinations/assam",
       "permanent": true
     },
     {
@@ -887,7 +887,7 @@
     },
     {
       "source": "/shopping-in-mussoorie",
-      "destination": "/destinations/shopping-in-mussoorie",
+      "destination": "/destinations/uttarakhand",
       "permanent": true
     },
     {
@@ -942,7 +942,7 @@
     },
     {
       "source": "/how-to-reach-andhra-pradesh",
-      "destination": "/destinations/andhra-pradesh#how-to-reach",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -997,7 +997,7 @@
     },
     {
       "source": "/nightlife-in-assam",
-      "destination": "/destinations/nightlife-in-assam",
+      "destination": "/destinations/assam",
       "permanent": true
     },
     {
@@ -1037,7 +1037,7 @@
     },
     {
       "source": "/history-of-gaya",
-      "destination": "/destinations/history-of-gaya",
+      "destination": "/destinations/gaya",
       "permanent": true
     },
     {
@@ -1087,7 +1087,7 @@
     },
     {
       "source": "/travel-guide__page__14",
-      "destination": "/destinations/travel-guide__page__14",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -1102,7 +1102,7 @@
     },
     {
       "source": "/shopping-in-darjeeling",
-      "destination": "/destinations/shopping-in-darjeeling",
+      "destination": "/destinations/darjeeling",
       "permanent": true
     },
     {
@@ -1127,7 +1127,7 @@
     },
     {
       "source": "/travel-tips-for-sri-lanka",
-      "destination": "/destinations/travel-tips-for-sri-lanka#travel-tips",
+      "destination": "/destinations/sri-lanka#travel-tips",
       "permanent": true
     },
     {
@@ -1152,7 +1152,7 @@
     },
     {
       "source": "/festivals-in-andhra-pradesh",
-      "destination": "/destinations/andhra-pradesh#festivals",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -1197,12 +1197,12 @@
     },
     {
       "source": "/nightlife-in-goa",
-      "destination": "/destinations/nightlife-in-goa",
+      "destination": "/destinations/goa",
       "permanent": true
     },
     {
       "source": "/nightlife-in-darjeeling",
-      "destination": "/destinations/nightlife-in-darjeeling",
+      "destination": "/destinations/darjeeling",
       "permanent": true
     },
     {
@@ -1247,7 +1247,7 @@
     },
     {
       "source": "/shopping-in-sri-lanka",
-      "destination": "/destinations/shopping-in-sri-lanka",
+      "destination": "/destinations/sri-lanka",
       "permanent": true
     },
     {
@@ -1282,7 +1282,7 @@
     },
     {
       "source": "/indore-to-ujjain-omkareshwar-tour",
-      "destination": "/packages/indore-to-ujjain-omkareshwar-tour",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -1297,7 +1297,7 @@
     },
     {
       "source": "/nightlife-in-nainital",
-      "destination": "/destinations/nightlife-in-nainital",
+      "destination": "/destinations/uttarakhand",
       "permanent": true
     },
     {
@@ -1312,7 +1312,7 @@
     },
     {
       "source": "/shopping-in-kashmir",
-      "destination": "/destinations/shopping-in-kashmir",
+      "destination": "/destinations/kashmir",
       "permanent": true
     },
     {
@@ -1342,7 +1342,7 @@
     },
     {
       "source": "/shopping-in-ahmedabad",
-      "destination": "/destinations/shopping-in-ahmedabad",
+      "destination": "/destinations/gujarat",
       "permanent": true
     },
     {
@@ -1367,12 +1367,12 @@
     },
     {
       "source": "/history-of-agra",
-      "destination": "/destinations/history-of-agra",
+      "destination": "/destinations/uttar-pradesh",
       "permanent": true
     },
     {
       "source": "/varanasi-sarnath-tour",
-      "destination": "/packages/varanasi-sarnath-tour",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -1427,7 +1427,7 @@
     },
     {
       "source": "/history-of-sikkim",
-      "destination": "/destinations/history-of-sikkim",
+      "destination": "/destinations/sikkim",
       "permanent": true
     },
     {
@@ -1437,7 +1437,7 @@
     },
     {
       "source": "/history-of-assam",
-      "destination": "/destinations/history-of-assam",
+      "destination": "/destinations/assam",
       "permanent": true
     },
     {
@@ -1457,7 +1457,7 @@
     },
     {
       "source": "/2-days-delhi-agra-mathura-vrindavan-tour",
-      "destination": "/packages/2-days-delhi-agra-mathura-vrindavan-tour",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -1477,7 +1477,7 @@
     },
     {
       "source": "/food-in-bhutan",
-      "destination": "/destinations/food-in-bhutan",
+      "destination": "/destinations/bhutan",
       "permanent": true
     },
     {
@@ -1637,7 +1637,7 @@
     },
     {
       "source": "/food-in-darjeeling",
-      "destination": "/destinations/food-in-darjeeling",
+      "destination": "/destinations/darjeeling",
       "permanent": true
     },
     {
@@ -1677,12 +1677,12 @@
     },
     {
       "source": "/travel-guide__page__16",
-      "destination": "/destinations/travel-guide__page__16",
+      "destination": "/packages",
       "permanent": true
     },
     {
       "source": "/travel-tips-for-haridwar",
-      "destination": "/destinations/travel-tips-for-haridwar#travel-tips",
+      "destination": "/destinations/uttarakhand#travel-tips",
       "permanent": true
     },
     {
@@ -1702,7 +1702,7 @@
     },
     {
       "source": "/nightlife-in-varanasi",
-      "destination": "/destinations/nightlife-in-varanasi",
+      "destination": "/destinations/uttar-pradesh",
       "permanent": true
     },
     {
@@ -1712,7 +1712,7 @@
     },
     {
       "source": "/shopping-in-vietnam",
-      "destination": "/destinations/shopping-in-vietnam",
+      "destination": "/destinations/vietnam",
       "permanent": true
     },
     {
@@ -1747,12 +1747,12 @@
     },
     {
       "source": "/food-in-mussoorie",
-      "destination": "/destinations/food-in-mussoorie",
+      "destination": "/destinations/uttarakhand",
       "permanent": true
     },
     {
       "source": "/best-time-to-visit-kailash-mansarovar",
-      "destination": "/destinations/kailash-mansarovar#best-time",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -1767,7 +1767,7 @@
     },
     {
       "source": "/food-in-ahmedabad",
-      "destination": "/destinations/food-in-ahmedabad",
+      "destination": "/destinations/gujarat",
       "permanent": true
     },
     {
@@ -1777,7 +1777,7 @@
     },
     {
       "source": "/char-dham-yatra-by-helicopter",
-      "destination": "/packages/char-dham-yatra-by-helicopter",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -1812,7 +1812,7 @@
     },
     {
       "source": "/history-of-sri-lanka",
-      "destination": "/destinations/history-of-sri-lanka",
+      "destination": "/destinations/sri-lanka",
       "permanent": true
     },
     {
@@ -1887,7 +1887,7 @@
     },
     {
       "source": "/history-of-shimla",
-      "destination": "/destinations/history-of-shimla",
+      "destination": "/destinations/himachal-pradesh",
       "permanent": true
     },
     {
@@ -2017,7 +2017,7 @@
     },
     {
       "source": "/history-of-uttarakhand",
-      "destination": "/destinations/history-of-uttarakhand",
+      "destination": "/destinations/uttarakhand",
       "permanent": true
     },
     {
@@ -2032,7 +2032,7 @@
     },
     {
       "source": "/history-of-nainital",
-      "destination": "/destinations/history-of-nainital",
+      "destination": "/destinations/uttarakhand",
       "permanent": true
     },
     {
@@ -2087,7 +2087,7 @@
     },
     {
       "source": "/food-in-almora",
-      "destination": "/destinations/food-in-almora",
+      "destination": "/destinations/uttarakhand",
       "permanent": true
     },
     {
@@ -2122,7 +2122,7 @@
     },
     {
       "source": "/nightlife-in-ahmedabad",
-      "destination": "/destinations/nightlife-in-ahmedabad",
+      "destination": "/destinations/gujarat",
       "permanent": true
     },
     {
@@ -2162,7 +2162,7 @@
     },
     {
       "source": "/agra-sightseeing-tour-from-delhi",
-      "destination": "/packages/agra-sightseeing-tour-from-delhi",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -2217,7 +2217,7 @@
     },
     {
       "source": "/2-days-khajuraho-tour",
-      "destination": "/packages/2-days-khajuraho-tour",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -2227,7 +2227,7 @@
     },
     {
       "source": "/shopping-in-goa",
-      "destination": "/destinations/shopping-in-goa",
+      "destination": "/destinations/goa",
       "permanent": true
     },
     {
@@ -2282,12 +2282,12 @@
     },
     {
       "source": "/nightlife-in-dehradun",
-      "destination": "/destinations/nightlife-in-dehradun",
+      "destination": "/destinations/uttarakhand",
       "permanent": true
     },
     {
       "source": "/food-in-sikkim",
-      "destination": "/destinations/food-in-sikkim",
+      "destination": "/destinations/sikkim",
       "permanent": true
     },
     {
@@ -2332,17 +2332,17 @@
     },
     {
       "source": "/do-dham-yatra-by-helicopter",
-      "destination": "/packages/do-dham-yatra-by-helicopter",
+      "destination": "/packages",
       "permanent": true
     },
     {
       "source": "/srisailam-weekend-trip",
-      "destination": "/packages/srisailam-weekend-trip",
+      "destination": "/packages",
       "permanent": true
     },
     {
       "source": "/baidyanath-dham-tour-2-days",
-      "destination": "/packages/baidyanath-dham-tour-2-days",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -2367,7 +2367,7 @@
     },
     {
       "source": "/india-tour-package",
-      "destination": "/destinations/india-tour-package",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -2427,7 +2427,7 @@
     },
     {
       "source": "/history-of-mussoorie",
-      "destination": "/destinations/history-of-mussoorie",
+      "destination": "/destinations/uttarakhand",
       "permanent": true
     },
     {
@@ -2482,7 +2482,7 @@
     },
     {
       "source": "/history-of-rishikesh",
-      "destination": "/destinations/history-of-rishikesh",
+      "destination": "/destinations/uttarakhand",
       "permanent": true
     },
     {
@@ -2497,7 +2497,7 @@
     },
     {
       "source": "/history-of-muktinath",
-      "destination": "/destinations/history-of-muktinath",
+      "destination": "/destinations/nepal",
       "permanent": true
     },
     {
@@ -2517,7 +2517,7 @@
     },
     {
       "source": "/shopping-in-dehradun",
-      "destination": "/destinations/shopping-in-dehradun",
+      "destination": "/destinations/uttarakhand",
       "permanent": true
     },
     {
@@ -2582,7 +2582,7 @@
     },
     {
       "source": "/nightlife-in-gaya",
-      "destination": "/destinations/nightlife-in-gaya",
+      "destination": "/destinations/gaya",
       "permanent": true
     },
     {
@@ -2597,7 +2597,7 @@
     },
     {
       "source": "/nightlife-in-agra",
-      "destination": "/destinations/nightlife-in-agra",
+      "destination": "/destinations/uttar-pradesh",
       "permanent": true
     },
     {
@@ -2637,7 +2637,7 @@
     },
     {
       "source": "/history-of-yamunotri",
-      "destination": "/destinations/history-of-yamunotri",
+      "destination": "/destinations/uttarakhand",
       "permanent": true
     },
     {
@@ -2657,12 +2657,12 @@
     },
     {
       "source": "/travel-guide__page__15",
-      "destination": "/destinations/travel-guide__page__15",
+      "destination": "/packages",
       "permanent": true
     },
     {
       "source": "/travel-guide__page__20",
-      "destination": "/destinations/travel-guide__page__20",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -2682,12 +2682,12 @@
     },
     {
       "source": "/shopping-in-agra",
-      "destination": "/destinations/shopping-in-agra",
+      "destination": "/destinations/uttar-pradesh",
       "permanent": true
     },
     {
       "source": "/history-of-haridwar",
-      "destination": "/destinations/history-of-haridwar",
+      "destination": "/destinations/uttarakhand",
       "permanent": true
     },
     {
@@ -2752,7 +2752,7 @@
     },
     {
       "source": "/history-of-dehradun",
-      "destination": "/destinations/history-of-dehradun",
+      "destination": "/destinations/uttarakhand",
       "permanent": true
     },
     {
@@ -2852,7 +2852,7 @@
     },
     {
       "source": "/rishikesh-haridwar-trip-from-delhi",
-      "destination": "/packages/rishikesh-haridwar-trip-from-delhi",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -2882,7 +2882,7 @@
     },
     {
       "source": "/travel-tips-for-nainital",
-      "destination": "/destinations/travel-tips-for-nainital#travel-tips",
+      "destination": "/destinations/uttarakhand#travel-tips",
       "permanent": true
     },
     {
@@ -2937,7 +2937,7 @@
     },
     {
       "source": "/kailash-mansarovar-aerial-darshan-by-flight",
-      "destination": "/packages/kailash-mansarovar-aerial-darshan-by-flight",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -2957,7 +2957,7 @@
     },
     {
       "source": "/history-of-bhutan",
-      "destination": "/destinations/history-of-bhutan",
+      "destination": "/destinations/bhutan",
       "permanent": true
     },
     {
@@ -2992,7 +2992,7 @@
     },
     {
       "source": "/history-of-somnath",
-      "destination": "/destinations/history-of-somnath",
+      "destination": "/destinations/gujarat",
       "permanent": true
     },
     {
@@ -3017,7 +3017,7 @@
     },
     {
       "source": "/nightlife-in-bhutan",
-      "destination": "/destinations/nightlife-in-bhutan",
+      "destination": "/destinations/bhutan",
       "permanent": true
     },
     {
@@ -3097,7 +3097,7 @@
     },
     {
       "source": "/food-in-rajasthan",
-      "destination": "/destinations/food-in-rajasthan",
+      "destination": "/destinations/rajasthan",
       "permanent": true
     },
     {
@@ -3137,7 +3137,7 @@
     },
     {
       "source": "/history-of-manali",
-      "destination": "/destinations/history-of-manali",
+      "destination": "/destinations/himachal-pradesh",
       "permanent": true
     },
     {
@@ -3147,7 +3147,7 @@
     },
     {
       "source": "/khatu-shyam-ji-salasar-balaji-yatra-by-helicopter",
-      "destination": "/packages/khatu-shyam-ji-salasar-balaji-yatra-by-helicopter",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -3182,12 +3182,12 @@
     },
     {
       "source": "/history-of-goa",
-      "destination": "/destinations/history-of-goa",
+      "destination": "/destinations/goa",
       "permanent": true
     },
     {
       "source": "/shopping-in-rajasthan",
-      "destination": "/destinations/shopping-in-rajasthan",
+      "destination": "/destinations/rajasthan",
       "permanent": true
     },
     {
@@ -3242,7 +3242,7 @@
     },
     {
       "source": "/history-of-ahmedabad",
-      "destination": "/destinations/history-of-ahmedabad",
+      "destination": "/destinations/gujarat",
       "permanent": true
     },
     {
@@ -3272,7 +3272,7 @@
     },
     {
       "source": "/history-of-rajasthan",
-      "destination": "/destinations/history-of-rajasthan",
+      "destination": "/destinations/rajasthan",
       "permanent": true
     },
     {
@@ -3397,7 +3397,7 @@
     },
     {
       "source": "/history-of-amarnath",
-      "destination": "/destinations/history-of-amarnath",
+      "destination": "/destinations/kashmir",
       "permanent": true
     },
     {
@@ -3482,7 +3482,7 @@
     },
     {
       "source": "/history-of-varanasi",
-      "destination": "/destinations/history-of-varanasi",
+      "destination": "/destinations/uttar-pradesh",
       "permanent": true
     },
     {
@@ -3497,7 +3497,7 @@
     },
     {
       "source": "/shopping-in-almora",
-      "destination": "/destinations/shopping-in-almora",
+      "destination": "/destinations/uttarakhand",
       "permanent": true
     },
     {
@@ -3537,7 +3537,7 @@
     },
     {
       "source": "/nightlife-in-mussoorie",
-      "destination": "/destinations/nightlife-in-mussoorie",
+      "destination": "/destinations/uttarakhand",
       "permanent": true
     },
     {
@@ -3572,7 +3572,7 @@
     },
     {
       "source": "/history-of-darjeeling",
-      "destination": "/destinations/history-of-darjeeling",
+      "destination": "/destinations/darjeeling",
       "permanent": true
     },
     {
@@ -3592,7 +3592,7 @@
     },
     {
       "source": "/shopping-in-somnath",
-      "destination": "/destinations/shopping-in-somnath",
+      "destination": "/destinations/gujarat",
       "permanent": true
     },
     {
@@ -3642,7 +3642,7 @@
     },
     {
       "source": "/travel-tips-for-kailash-mansarovar",
-      "destination": "/destinations/travel-tips-for-kailash-mansarovar#travel-tips",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -3652,7 +3652,7 @@
     },
     {
       "source": "/history-of-kashmir",
-      "destination": "/destinations/history-of-kashmir",
+      "destination": "/destinations/kashmir",
       "permanent": true
     },
     {
@@ -3692,7 +3692,7 @@
     },
     {
       "source": "/nightlife-in-haridwar",
-      "destination": "/destinations/nightlife-in-haridwar",
+      "destination": "/destinations/uttarakhand",
       "permanent": true
     },
     {
@@ -3702,7 +3702,7 @@
     },
     {
       "source": "/international-tours",
-      "destination": "/destinations/international-tours",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -3717,7 +3717,7 @@
     },
     {
       "source": "/shopping-in-gaya",
-      "destination": "/destinations/shopping-in-gaya",
+      "destination": "/destinations/gaya",
       "permanent": true
     },
     {
@@ -3732,7 +3732,7 @@
     },
     {
       "source": "/history-of-nepal",
-      "destination": "/destinations/history-of-nepal",
+      "destination": "/destinations/nepal",
       "permanent": true
     },
     {
@@ -3777,7 +3777,7 @@
     },
     {
       "source": "/history-of-chardham",
-      "destination": "/destinations/history-of-chardham",
+      "destination": "/destinations/uttarakhand",
       "permanent": true
     },
     {
@@ -3872,12 +3872,12 @@
     },
     {
       "source": "/haridwar-rishikesh-sightseeing-tour",
-      "destination": "/packages/haridwar-rishikesh-sightseeing-tour",
+      "destination": "/packages",
       "permanent": true
     },
     {
       "source": "/travel-tips-for-dehradun",
-      "destination": "/destinations/travel-tips-for-dehradun#travel-tips",
+      "destination": "/destinations/uttarakhand#travel-tips",
       "permanent": true
     },
     {
@@ -3922,7 +3922,7 @@
     },
     {
       "source": "/hue",
-      "destination": "/destinations/hue",
+      "destination": "/destinations/vietnam",
       "permanent": true
     },
     {
@@ -3962,7 +3962,7 @@
     },
     {
       "source": "/shopping-in-uttarakhand",
-      "destination": "/destinations/shopping-in-uttarakhand",
+      "destination": "/destinations/uttarakhand",
       "permanent": true
     },
     {
@@ -3992,7 +3992,7 @@
     },
     {
       "source": "/kamakhya-temple-tour-package",
-      "destination": "/packages/kamakhya-temple-tour-package",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -4007,12 +4007,12 @@
     },
     {
       "source": "/best-time-to-visit-andhra-pradesh",
-      "destination": "/destinations/andhra-pradesh#best-time",
+      "destination": "/packages",
       "permanent": true
     },
     {
       "source": "/india-tour-packages",
-      "destination": "/destinations/india-tour-packages",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -4022,7 +4022,7 @@
     },
     {
       "source": "/shopping-in-nainital",
-      "destination": "/destinations/shopping-in-nainital",
+      "destination": "/destinations/uttarakhand",
       "permanent": true
     },
     {
@@ -4067,7 +4067,7 @@
     },
     {
       "source": "/shopping-in-sikkim",
-      "destination": "/destinations/shopping-in-sikkim",
+      "destination": "/destinations/sikkim",
       "permanent": true
     },
     {
@@ -4082,12 +4082,12 @@
     },
     {
       "source": "/shopping-in-varanasi",
-      "destination": "/destinations/shopping-in-varanasi",
+      "destination": "/destinations/uttar-pradesh",
       "permanent": true
     },
     {
       "source": "/guruvayur-thrissur-athirapally-package",
-      "destination": "/packages/guruvayur-thrissur-athirapally-package",
+      "destination": "/packages",
       "permanent": true
     },
     {
@@ -4447,7 +4447,7 @@
     },
     {
       "source": "/india-tours",
-      "destination": "/destinations/india-tours",
+      "destination": "/packages",
       "permanent": true
     },
     {

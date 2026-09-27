@@ -33,6 +33,15 @@ export const revalidate = 86400;
 
 export const dynamicParams = true;
 
+// Truncate at a word boundary so meta descriptions never cut mid-word.
+function truncateAtWordBoundary(text: string, max = 160): string {
+  const clean = text.replace(/\s+/g, " ").trim();
+  if (clean.length <= max) return clean;
+  const cut = clean.slice(0, max);
+  const lastSpace = cut.lastIndexOf(" ");
+  return (lastSpace > 0 ? cut.slice(0, lastSpace) : cut).trim();
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
   const slug = resolvedParams.slug;
@@ -57,9 +66,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const scrapedTitle = seoSource.page_title || seoSource.title;
     const og = seoSource.og_tags || {};
     const cleanTitle = (t: string | undefined | null) => pkg?.title || (t ? cleanScrapedTitle(t) : slug.replace(/-/g, ' '));
+    const scrapedDescription = og['og:description'] ? replaceReferenceBrand(og['og:description']) : undefined;
+    const pageDescription = scrapedDescription || (seoSource.meta_description ? replaceReferenceBrand(seoSource.meta_description) : undefined);
+    const pageTitle = cleanTitle(og['og:title'] || scrapedTitle);
     return {
       title: cleanTitle(scrapedTitle),
-      description: seoSource.meta_description ? replaceReferenceBrand(seoSource.meta_description) : undefined,
+      description: pageDescription,
       alternates: {
         canonical: `${siteConfig.domain}/packages/${slug}`,
       },
@@ -68,18 +80,28 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         follow: true,
       },
       openGraph: {
-        title: cleanTitle(og['og:title'] || scrapedTitle),
-        description: og['og:description'] ? replaceReferenceBrand(og['og:description']) : undefined,
+        title: pageTitle,
+        description: pageDescription,
         url: `${siteConfig.domain}/packages/${slug}`,
         type: 'article',
-        images: [{ url: socialImage, alt: cleanTitle(og['og:title'] || scrapedTitle) }],
+        images: [{ url: socialImage, alt: pageTitle }],
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: pageTitle,
+        description: pageDescription,
+        images: [socialImage],
       },
     };
   }
 
   // No brand suffix here — the layout title template ("%s | My Quick Trippers") appends it.
   const title = pkg ? pkg.title : slug.replace(/-/g, ' ').toUpperCase();
-  const description = legacyDetails?.overview?.substring(0, 160) || pkg?.description || `Book the best ${title} with My Quick Trippers.`;
+  const priceRaw = pkg ? (pkg.dealPrice || pkg.mrp || "") : "";
+  const price = priceRaw.replace(/^[₹\s]+/, "");
+  const hook = pkg?.description || legacyDetails?.overview || "";
+  const templated = `${title}${pkg?.duration ? ` — ${pkg.duration}` : ""}${price ? `, from ₹${price}` : ""}${hook ? `. ${hook}` : ""}`;
+  const description = truncateAtWordBoundary(templated);
 
   return {
     title,
