@@ -55,25 +55,35 @@ export function getPriceInfo(mrp?: string, dealPrice?: string, slug?: string): P
   const override = slug ? (priceOverrides as Record<string, PriceOverride>)[slug] : undefined;
   const isInternational = Boolean(slug && internationalPackageSlugs.has(slug));
 
+  // Raw parsed prices, before any /1.5 division or 2.5x scaling.
+  const rawMrp = parseINR(override?.mrp || mrp);
+  const rawDeal = parseINR(override?.dealPrice || dealPrice);
+
   // Overrides are pre-adjusted for domestic tours. For international tours,
   // start from each entry's original base so the multiplier is exactly 2.5×,
   // never 2.5× on top of a previous 1.5× adjustment.
   const originalMrp = parseINR(override?.originalMrp || mrp);
   const originalDeal = parseINR(override?.originalDealPrice || dealPrice);
   const hasUsableOriginal = originalDeal >= MINIMUM_PUBLIC_PRICE / 2.5 && originalMrp >= originalDeal;
-  const estimatedBaseMrp = parseINR(override?.mrp || mrp) / 1.5;
-  const estimatedBaseDeal = parseINR(override?.dealPrice || dealPrice) / 1.5;
+  const estimatedBaseMrp = rawMrp / 1.5;
+  const estimatedBaseDeal = rawDeal / 1.5;
   const unscaledMrp = isInternational
     ? hasUsableOriginal ? originalMrp : estimatedBaseMrp
-    : parseINR(override?.mrp || mrp);
+    : rawMrp;
   const unscaledDeal = isInternational
     ? hasUsableOriginal ? originalDeal : estimatedBaseDeal
-    : parseINR(override?.dealPrice || dealPrice);
+    : rawDeal;
   const mrpValue = isInternational ? scaleInternationalPrice(unscaledMrp) : unscaledMrp;
   const dealValue = isInternational ? scaleInternationalPrice(unscaledDeal) : unscaledDeal;
 
   // Scraper fallback flags — treat as "no price" so we never show fake deals.
-  const isFallback = unscaledDeal === 2 || unscaledMrp === 2 || unscaledDeal === 24750;
+  // The sentinel check runs on the RAW parsed prices, before the /1.5
+  // division (international base estimate) and the 2.5x scaling: a raw
+  // 24750 would otherwise become (24750 / 1.5) * 2.5 = 41250 and leak
+  // through as a genuine-looking display price.
+  const isFallback = [rawMrp, rawDeal, originalMrp, originalDeal].some(
+    (value) => value === 2 || value === 24750,
+  );
   const deal = dealValue > 0 ? dealValue : mrpValue;
   const hasPrice = deal >= MINIMUM_PUBLIC_PRICE && !isFallback;
   const display = hasPrice ? deal.toLocaleString("en-IN") : "";

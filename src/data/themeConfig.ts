@@ -12,7 +12,13 @@ export const themeConfigs: ThemeConfig[] = [
   { name: "Family", href: "/special-tours/family", keywords: ["family", "kids", "leisure"] },
   { name: "Honeymoon", href: "/special-tours/honeymoon", keywords: ["honeymoon", "romantic", "couple"] },
   { name: "Cultural", href: "/special-tours/cultural", keywords: ["culture", "heritage", "temple", "historical", "fort"] },
-  { name: "Pilgrimage", href: "/packages?category=Pilgrimage", keywords: ["pilgrimage", "darshan", "yatra", "dham", "temple", "spiritual"] },
+  // NOTE: no "Pilgrimage" entry here. Including one would make
+  // /special-tours/[theme] serve /special-tours/pilgrimage as an orphan
+  // duplicate of the canonical /packages?category=Pilgrimage listing
+  // (still linked from the special-tours index page and site nav).
+  // Verified 2026-09-27: nothing links to /special-tours/pilgrimage.
+  // Side effect: the homepage ThemeFilter no longer renders a Pilgrimage
+  // tile (it mapped over this same config).
   { name: "Beaches", href: "/special-tours/beaches", keywords: ["beach", "goa", "andaman", "island", "sea"] },
   { name: "Adventure", href: "/special-tours/adventure", keywords: ["adventure", "trek", "safari", "rafting", "camping"] },
   { name: "Winter", href: "/special-tours/winter", keywords: ["winter", "snow", "ski", "kashmir", "auli"] },

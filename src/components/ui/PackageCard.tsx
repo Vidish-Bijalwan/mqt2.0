@@ -51,7 +51,7 @@ export default function PackageCard({ pkg, href, variantCount }: PackageCardComp
       <Link href={cardHref} className="nit-pcard-stretch" tabIndex={-1} aria-hidden="true" />
 
       {/* ── Image (5px inset, rounded, scale-on-hover like reference) ── */}
-      <Link href={cardHref} className="nit-pcard-img" tabIndex={-1}>
+      <Link href={cardHref} className="nit-pcard-img" tabIndex={-1} aria-hidden="true">
         <Image
           src={pkg.image}
           alt={pkg.title}
@@ -96,7 +96,7 @@ export default function PackageCard({ pkg, href, variantCount }: PackageCardComp
         <div className="nit-pcard-dest">
           <MapPin aria-hidden="true" strokeWidth={2} />
           <span className="nit-destinx">
-            {pkg.route ? pkg.route : <em style={{ color: "#999", fontStyle: "italic" }}>Route details on request</em>}
+            {pkg.route ? pkg.route : <em style={{ color: "#6B7A77", fontStyle: "italic" }}>Route details on request</em>}
           </span>
         </div>
 

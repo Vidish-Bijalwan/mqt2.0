@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Users, Heart, Landmark, Flame, Umbrella, Tent, Snowflake, Sun, CloudRain, ChevronRight } from "lucide-react";
 import Image from "next/image";
+import { siteConfig } from "@/data/siteConfig";
+import { safeJsonLd } from "@/utils/jsonLd";
 
 const THEMES = [
   { name: "Family", href: "/special-tours/family", icon: Users, desc: "Create unforgettable memories with your loved ones." },
@@ -20,8 +22,28 @@ export const metadata = {
 };
 
 export default function SpecialToursPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Special Tour Themes",
+    description: "Browse our handpicked tour themes. From family vacations to romantic honeymoons, find the perfect travel style for you.",
+    url: `${siteConfig.domain}/special-tours`,
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: THEMES.map((theme, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: `${theme.name} Tours`,
+        description: theme.desc,
+        url: theme.href.startsWith("http") ? theme.href : `${siteConfig.domain}${theme.href}`,
+      })),
+    },
+  };
+
   return (
-    <div className="bg-gray-50 min-h-screen pb-16">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }} />
+      <div className="bg-gray-50 min-h-screen pb-16">
       {/* Breadcrumb */}
       <div className="bg-legacy-nav-blue text-white text-xs py-2 px-4">
         <div className="container mx-auto w-[95%] max-w-[1600px] flex items-center">
@@ -58,5 +80,6 @@ export default function SpecialToursPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

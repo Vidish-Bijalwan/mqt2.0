@@ -54,6 +54,9 @@ const nextConfig: NextConfig = {
           { key: "X-Frame-Options", value: "DENY" },
           { key: "X-XSS-Protection", value: "1; mode=block" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          // HSTS: the site is served over HTTPS (www.myquicktrippers.com);
+          // enforce TLS for a year, including subdomains.
+          { key: "Strict-Transport-Security", value: "max-age=31536000; includeSubDomains" },
           { key: "Permissions-Policy", value: "geolocation=(), microphone=(), camera=()" },
           { 
             key: "Content-Security-Policy", 

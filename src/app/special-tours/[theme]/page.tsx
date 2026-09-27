@@ -5,6 +5,9 @@ import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import FilterSidebar from "@/components/ui/FilterSidebar";
 import { themeConfigs } from "@/data/themeConfig";
+import { siteConfig } from "@/data/siteConfig";
+import { safeJsonLd } from "@/utils/jsonLd";
+import { getApprovedPackageImage } from "@/data/packageLocationMedia";
 
 // Map theme slugs to keywords (reuses shared config)
 const THEME_KEYWORDS: Record<string, string[]> = {};
@@ -17,12 +20,32 @@ export const dynamicParams = true;
 export async function generateMetadata({ params }: { params: Promise<{ theme: string }> }) {
   const resolvedParams = await params;
   const theme = resolvedParams?.theme?.toLowerCase();
-  
+
   if (!THEME_KEYWORDS[theme]) return { title: "Special Tours" };
-  
-  return { 
-    title: `${theme.charAt(0).toUpperCase() + theme.slice(1)} Tour Packages`,
-    description: `Explore our handpicked ${theme} tour packages. Find the perfect itinerary for your next trip.`
+
+  const displayTheme = theme.charAt(0).toUpperCase() + theme.slice(1);
+  const title = `${displayTheme} Tour Packages`;
+  const description = `Explore our handpicked ${theme} tour packages. Find the perfect itinerary for your next trip.`;
+  const url = `${siteConfig.domain}/special-tours/${theme}`;
+  const ogImage = `${siteConfig.domain}/images/hero/hero-bg-2.svg`;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "website",
+      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [ogImage],
+    },
   };
 }
 
@@ -51,8 +74,45 @@ export default async function ThemePage({ params }: { params: Promise<{ theme: s
 
   const displayTheme = theme.charAt(0).toUpperCase() + theme.slice(1);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: `${displayTheme} Tour Packages`,
+    description: `Explore our handpicked ${theme} tour packages. Find the perfect itinerary for your next trip.`,
+    url: `${siteConfig.domain}/special-tours/${theme}`,
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: matchedPackages.map((pkg, i) => {
+        const imageSrc = getApprovedPackageImage(pkg);
+        const price = pkg.dealPrice || pkg.mrp;
+        return {
+          "@type": "ListItem",
+          position: i + 1,
+          item: {
+            "@type": ["TouristTrip", "Product"],
+            name: pkg.title,
+            url: `${siteConfig.domain}/packages/${pkg.slug}`,
+            image: `${siteConfig.domain}${imageSrc}`,
+            ...(price
+              ? {
+                  offers: {
+                    "@type": "Offer",
+                    priceCurrency: "INR",
+                    price: String(price),
+                    availability: "https://schema.org/InStock",
+                    url: `${siteConfig.domain}/packages/${pkg.slug}`,
+                  },
+                }
+              : {}),
+          },
+        };
+      }),
+    },
+  };
+
   return (
     <div className="bg-gray-50 min-h-screen pb-16">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }} />
       {/* Breadcrumb */}
       <div className="bg-legacy-nav-blue text-white text-xs py-2 px-4">
         <div className="container mx-auto w-[95%] max-w-[1600px] flex items-center">
@@ -96,7 +156,7 @@ export default async function ThemePage({ params }: { params: Promise<{ theme: s
 
           {matchedPackages.length > 0 ? (
             matchedPackages.map((pkg, idx) => (
-              <PackageListCard key={pkg.slug + idx} pkg={pkg} />
+              <PackageListCard key={pkg.slug + idx} pkg={pkg} imageSrc={getApprovedPackageImage(pkg)} />
             ))
           ) : (
             <div className="bg-white p-12 text-center border border-gray-200 rounded shadow-sm">

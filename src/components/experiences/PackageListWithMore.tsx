@@ -9,11 +9,20 @@ import PackageListCard from "@/components/ui/PackageListCard";
    PackageListWithMore — renders the first N matched packages on an
    experience category page and reveals the rest via a "Show More" button.
    Keeps the full (often large) match set server-rendered and serializable.
+
+   imageSrcBySlug is resolved server-side (see the experience page) so this
+   client component never imports the heavy packageLocationMedia module.
    ───────────────────────────────────────────────────────────────────────── */
 
 const INITIAL = 6;
 
-export default function PackageListWithMore({ packages }: { packages: Package[] }) {
+export default function PackageListWithMore({
+  packages,
+  imageSrcBySlug,
+}: {
+  packages: Package[];
+  imageSrcBySlug?: Record<string, string>;
+}) {
   const [count, setCount] = useState(INITIAL);
   const shown = packages.slice(0, count);
 
@@ -21,7 +30,11 @@ export default function PackageListWithMore({ packages }: { packages: Package[] 
     <div>
       <div className="flex flex-col gap-4">
         {shown.map((pkg, idx) => (
-          <PackageListCard key={`${pkg.slug}-${idx}`} pkg={pkg} />
+          <PackageListCard
+            key={`${pkg.slug}-${idx}`}
+            pkg={pkg}
+            imageSrc={imageSrcBySlug?.[pkg.slug]}
+          />
         ))}
       </div>
 

@@ -8,8 +8,35 @@ import { useEffect, useMemo, useState, Suspense } from "react";
 import { ALL_BLOGS, CATEGORIES, categoryCounts } from "@/data/blogIndex";
 import BlogSidebar from "@/components/blog/BlogSidebar";
 import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
+import { siteConfig } from "@/data/siteConfig";
+import { safeJsonLd } from "@/utils/jsonLd";
 
 const ITEMS_PER_PAGE = 24;
+
+// Static structured data for the blog index (module scope: ALL_BLOGS is static)
+const blogIndexJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: `${siteConfig.name} Travel Blog`,
+  description:
+    `Explore destination guides, practical travel tips, pilgrimage advice and trip inspiration from ${siteConfig.name}.`,
+  url: `${siteConfig.domain}/blog`,
+  mainEntity: {
+    "@type": "ItemList",
+    itemListElement: ALL_BLOGS.slice(0, 12).map((blog, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "BlogPosting",
+        headline: blog.title,
+        description: blog.snippet,
+        url: `${siteConfig.domain}/blog/${blog.slug}`,
+        image: blog.image?.startsWith("http") ? blog.image : `${siteConfig.domain}${blog.image}`,
+        author: { "@type": "Organization", name: siteConfig.name, url: siteConfig.domain },
+      },
+    })),
+  },
+};
 
 function validateBlogSearchParams(cat: string | null, q: string | null) {
   const validCategories = ['All Articles', ...CATEGORIES];
@@ -99,6 +126,7 @@ function BlogIndexContent() {
 
   return (
     <div className="bg-gray-50 min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(blogIndexJsonLd) }} />
       {/* Breadcrumb */}
       <div className="bg-legacy-nav-blue text-white text-xs py-2 px-4">
         <div className="container mx-auto w-[95%] max-w-[1600px] flex items-center">

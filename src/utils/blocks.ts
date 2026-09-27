@@ -25,27 +25,6 @@ export interface Block {
   rows?: string[][];
 }
 
-// Keep in sync with scripts/parity/clean-package-blocks.mjs.
-const JUNK_HEADING_RE =
-  /^(Top Trending Tour Packages|Our Popular (India|International) Tour Packages|Book International Tour Packages From India|Choose Your Style Of Themes Holiday|Experience the Best of India|Best Travel Company in Delhi|Top Holiday Destinations in India|.*(Trade|Travel) Mart|.*ITB Asia|.*QTM 20|.*Fair Malaysia|.*Exhibition)/i;
-
-const REAL_SECTION_RE = /Tour Overview|Itinerar|Highlight|Inclusion|Exclusion|^Day\s*\d|^Q\d/i;
-
-/** Drop a leading run of scraped homepage junk (defense-in-depth). */
-export function stripLeadingJunk(blocks: Block[]): Block[] {
-  const firstHeading = blocks.findIndex((b) => b.type === "heading");
-  if (firstHeading < 0) return blocks;
-  if (!JUNK_HEADING_RE.test(blocks[firstHeading].text || "")) return blocks;
-  const realIdx = blocks.findIndex(
-    (b, i) =>
-      i > firstHeading &&
-      b.type === "heading" &&
-      !JUNK_HEADING_RE.test(b.text || "") &&
-      REAL_SECTION_RE.test(b.text || ""),
-  );
-  return realIdx > 0 ? blocks.slice(realIdx) : [];
-}
-
 // Scraped lists carry literal "See More"/"See Less" toggle artifacts — drop them.
 function cleanItems(items: string[]): string[] {
   return (items || [])

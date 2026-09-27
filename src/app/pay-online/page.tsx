@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Pay Online',
   description: 'Secure online payment portal for My Quick Trippers tour packages.',
+  robots: { index: false, follow: false },
 };
 
 export default function PayOnlinePage() {

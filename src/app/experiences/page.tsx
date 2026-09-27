@@ -6,6 +6,7 @@ import { experiencesWithCounts } from "@/utils/experienceCounts";
 import { experiences } from "@/data/experiencesData";
 import ExperienceExplorer from "@/components/home/ExperienceExplorer";
 import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
+import { safeJsonLd } from "@/utils/jsonLd";
 
 export const metadata = {
   title: "Experiences in India | Adventure, Spiritual, Luxury & More",
@@ -46,7 +47,7 @@ export default function ExperiencesPage() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }} />
       <div className="bg-gray-50 min-h-screen pb-16">
         {/* Breadcrumb */}
         <div className="bg-white border-b border-gray-200 text-gray-600 text-[13px] py-2 px-4 shadow-sm">

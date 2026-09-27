@@ -62,6 +62,7 @@ export default function LanguageSelector({ mobile = false }: { mobile?: boolean 
   const [navigating, setNavigating] = useState(false);
   const [open, setOpen] = useState(false);
   const selectorRef = useRef<HTMLDivElement>(null);
+  const triggerRef = useRef<HTMLButtonElement>(null);
   const menuId = useId();
 
   useEffect(() => {
@@ -73,8 +74,12 @@ export default function LanguageSelector({ mobile = false }: { mobile?: boolean 
     const closeOnOutsidePress = (event: MouseEvent) => {
       if (!selectorRef.current?.contains(event.target as Node)) setOpen(false);
     };
+    // Escape closes the menu and returns focus to the trigger.
     const closeOnEscape = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setOpen(false);
+      if (event.key === "Escape" && open) {
+        setOpen(false);
+        triggerRef.current?.focus();
+      }
     };
 
     document.addEventListener("mousedown", closeOnOutsidePress);
@@ -83,7 +88,7 @@ export default function LanguageSelector({ mobile = false }: { mobile?: boolean 
       document.removeEventListener("mousedown", closeOnOutsidePress);
       document.removeEventListener("keydown", closeOnEscape);
     };
-  }, []);
+  }, [open]);
 
   const handleLanguageChange = (nextLanguage: LanguageCode) => {
     const current = new URL(window.location.href);
@@ -121,6 +126,7 @@ export default function LanguageSelector({ mobile = false }: { mobile?: boolean 
     >
       <button
         type="button"
+        ref={triggerRef}
         aria-label="Choose website language"
         aria-expanded={open}
         aria-controls={menuId}

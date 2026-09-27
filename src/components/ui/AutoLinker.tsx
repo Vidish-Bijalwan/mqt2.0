@@ -13,6 +13,13 @@ const publicPackageSlugs = new Set(getPublicPackages().map((pkg) => pkg.slug));
 // Cache the keyword map so we don't build it on every render
 let keywordMap: { keyword: string; url: string; regex: RegExp; priority: number }[] | null = null;
 
+// Keywords come from data (slugs, titles) and may contain regex
+// metacharacters (parentheses, "+", "?", ".", ...). Escape them so the
+// generated RegExp matches the literal text and can never throw.
+function escapeRegExp(value: string) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
 function buildKeywordMap() {
   if (keywordMap) return keywordMap;
 
@@ -47,7 +54,7 @@ function buildKeywordMap() {
   keywordMap = map.map(item => ({
     ...item,
     // Word boundary regex, case insensitive
-    regex: new RegExp(`\\b(${item.keyword})\\b`, 'i'),
+    regex: new RegExp(`\\b(${escapeRegExp(item.keyword)})\\b`, 'i'),
   }));
 
   return keywordMap;
