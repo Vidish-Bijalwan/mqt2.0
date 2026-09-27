@@ -33,13 +33,15 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   icons: {
+    // ?v=2 cache-bust: the previous favicon.ico was the Vercel triangle and
+    // browsers cache favicons aggressively — the query string forces a refetch.
     icon: [
-      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png?v=2', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png?v=2', sizes: '32x32', type: 'image/png' },
       { url: '/images/mqt-logo-256.webp', sizes: '256x256', type: 'image/webp' },
-      { url: '/favicon.ico', sizes: 'any' }
+      { url: '/favicon.ico?v=2', sizes: 'any' }
     ],
-    apple: '/apple-touch-icon.png',
+    apple: '/apple-touch-icon.png?v=2',
   },
   // No site-wide canonical here: a root `alternates.canonical` made every
   // page (e.g. /special-tours) canonicalize to the homepage. Each route sets
