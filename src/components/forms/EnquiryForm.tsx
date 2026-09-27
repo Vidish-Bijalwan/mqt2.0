@@ -98,57 +98,57 @@ export default function EnquiryForm({ pkgName = "", destination, embedded = fals
 
   return (
     <div className={embedded ? "bg-white p-4 sm:p-6 lg:p-7" : "rounded-lg border border-gray-100 bg-white p-6 shadow-card"}>
-      <h3 className="font-display mb-3 text-[26px] font-bold leading-tight text-[#123b35] sm:text-3xl">Start with a free trip consultation</h3>
-      <p className="mb-7 max-w-2xl text-[15px] leading-6 text-[#687a75]">
+      <h3 className="font-display mb-3 text-[26px] font-bold leading-tight text--brand-primary sm:text-3xl">Start with a free trip consultation</h3>
+      <p className="mb-7 max-w-2xl text-[15px] leading-6 text--ink-muted">
         Add the essentials now. You can discuss hotels, transport, meals, and special requirements directly with the travel team.
       </p>
       
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label htmlFor="enquiry-name" className="mb-1.5 block text-sm font-bold text-[#2d4741]">Full Name *</label>
-            <input id="enquiry-name" name="name" required autoComplete="name" enterKeyHint="next" type="text" className="min-h-13 w-full rounded-xl border border-[#cad9d5] bg-[#fbfdfc] px-4 text-base outline-none transition focus:border-[#28796b] focus:ring-2 focus:ring-[#28796b]/20" placeholder="Enter your name" />
+          <label htmlFor="enquiry-name" className="mb-1.5 block text-sm font-bold text--brand-primary">Full Name *</label>
+            <input id="enquiry-name" name="name" required autoComplete="name" enterKeyHint="next" type="text" className="min-h-13 w-full rounded-xl border border--line bg--surface-card px-4 text-base outline-none transition focus:border--brand-secondary focus:ring-2 focus:ring--brand-secondary/20" placeholder="Enter your name" />
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label htmlFor="enquiry-email" className="mb-1.5 block text-sm font-bold text-[#2d4741]">Email Address *</label>
-            <input id="enquiry-email" name="email" required autoComplete="email" enterKeyHint="next" spellCheck={false} type="email" className="min-h-13 w-full rounded-xl border border-[#cad9d5] bg-[#fbfdfc] px-4 text-base outline-none transition focus:border-[#28796b] focus:ring-2 focus:ring-[#28796b]/20" placeholder="name@example.com" />
+            <label htmlFor="enquiry-email" className="mb-1.5 block text-sm font-bold text--brand-primary">Email Address *</label>
+            <input id="enquiry-email" name="email" required autoComplete="email" enterKeyHint="next" spellCheck={false} type="email" className="min-h-13 w-full rounded-xl border border--line bg--surface-card px-4 text-base outline-none transition focus:border--brand-secondary focus:ring-2 focus:ring--brand-secondary/20" placeholder="name@example.com" />
           </div>
           <div>
-            <label htmlFor="enquiry-phone" className="mb-1.5 block text-sm font-bold text-[#2d4741]">Phone Number *</label>
-            <input ref={phoneInputRef} id="enquiry-phone" name="phone" required autoComplete="tel" enterKeyHint="next" inputMode="tel" type="tel" pattern="[0-9+()\s.-]{8,20}" title="Enter a valid phone number with 8–15 digits" aria-describedby="enquiry-phone-error" aria-invalid={phoneError ? true : undefined} onChange={() => phoneError && setPhoneError("")} className="min-h-13 w-full rounded-xl border border-[#cad9d5] bg-[#fbfdfc] px-4 text-base outline-none transition focus:border-[#28796b] focus:ring-2 focus:ring-[#28796b]/20" placeholder="98765 43210" />
+            <label htmlFor="enquiry-phone" className="mb-1.5 block text-sm font-bold text--brand-primary">Phone Number *</label>
+            <input ref={phoneInputRef} id="enquiry-phone" name="phone" required autoComplete="tel" enterKeyHint="next" inputMode="tel" type="tel" pattern="[0-9+()\s.-]{8,20}" title="Enter a valid phone number with 8–15 digits" aria-describedby="enquiry-phone-error" aria-invalid={phoneError ? true : undefined} onChange={() => phoneError && setPhoneError("")} className="min-h-13 w-full rounded-xl border border--line bg--surface-card px-4 text-base outline-none transition focus:border--brand-secondary focus:ring-2 focus:ring--brand-secondary/20" placeholder="98765 43210" />
             {phoneError ? (
               <p id="enquiry-phone-error" role="alert" className="mt-1.5 text-xs font-semibold text-red-600">{phoneError}</p>
             ) : (
-              <p id="enquiry-phone-error" className="mt-1.5 text-xs text-[#6B7A77]">Include your country code if you are outside India (e.g. +91).</p>
+              <p id="enquiry-phone-error" className="mt-1.5 text-xs text--ink-muted">Include your country code if you are outside India (e.g. +91).</p>
             )}
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label htmlFor="enquiry-travel-date" className="mb-1.5 block text-sm font-bold text-[#2d4741]">Travel Date</label>
-            <input id="enquiry-travel-date" name="travelDate" type="date" className="min-h-13 w-full rounded-xl border border-[#cad9d5] bg-[#fbfdfc] px-4 text-base outline-none transition focus:border-[#28796b] focus:ring-2 focus:ring-[#28796b]/20" />
+            <label htmlFor="enquiry-travel-date" className="mb-1.5 block text-sm font-bold text--brand-primary">Travel Date</label>
+            <input id="enquiry-travel-date" name="travelDate" type="date" className="min-h-13 w-full rounded-xl border border--line bg--surface-card px-4 text-base outline-none transition focus:border--brand-secondary focus:ring-2 focus:ring--brand-secondary/20" />
           </div>
           <div>
-            <label htmlFor="enquiry-travellers" className="mb-1.5 block text-sm font-bold text-[#2d4741]">No. of Travellers</label>
-            <input id="enquiry-travellers" name="travellers" type="number" min="1" inputMode="numeric" className="min-h-13 w-full rounded-xl border border-[#cad9d5] bg-[#fbfdfc] px-4 text-base outline-none transition focus:border-[#28796b] focus:ring-2 focus:ring-[#28796b]/20" placeholder="E.g. 2" />
+            <label htmlFor="enquiry-travellers" className="mb-1.5 block text-sm font-bold text--brand-primary">No. of Travellers</label>
+            <input id="enquiry-travellers" name="travellers" type="number" min="1" inputMode="numeric" className="min-h-13 w-full rounded-xl border border--line bg--surface-card px-4 text-base outline-none transition focus:border--brand-secondary focus:ring-2 focus:ring--brand-secondary/20" placeholder="E.g. 2" />
           </div>
         </div>
 
         <div>
-          <label htmlFor="enquiry-message" className="mb-1.5 block text-sm font-bold text-[#2d4741]">Message (Optional)</label>
-          <textarea id="enquiry-message" name="message" rows={4} className="w-full rounded-xl border border-[#cad9d5] bg-[#fbfdfc] p-4 text-base leading-6 outline-none transition focus:border-[#28796b] focus:ring-2 focus:ring-[#28796b]/20" placeholder="Share hotel preferences, accessibility needs, or anything else"></textarea>
+          <label htmlFor="enquiry-message" className="mb-1.5 block text-sm font-bold text--brand-primary">Message (Optional)</label>
+          <textarea id="enquiry-message" name="message" rows={4} className="w-full rounded-xl border border--line bg--surface-card p-4 text-base leading-6 outline-none transition focus:border--brand-secondary focus:ring-2 focus:ring--brand-secondary/20" placeholder="Share hotel preferences, accessibility needs, or anything else"></textarea>
         </div>
         
         <button 
           type="submit" 
           disabled={status === "loading"}
-          className="min-h-13 w-full rounded-xl bg-[#e96822] px-5 py-3 text-base font-extrabold text-white shadow-[0_10px_24px_rgba(233,104,34,0.24)] transition hover:-translate-y-0.5 hover:bg-[#ce5515] hover:shadow-[0_14px_28px_rgba(206,85,21,0.3)] disabled:bg-gray-400"
+          className="min-h-13 w-full rounded-xl bg-brand-cta px-5 py-3 text-base font-extrabold text-ink shadow-[0_10px_24px_rgba(242,157,56,0.28)] transition hover:-translate-y-0.5 hover:bg-brand-cta-deep hover:shadow-[0_14px_28px_rgba(217,135,35,0.32)] disabled:bg-gray-400"
         >
           {status === "loading" ? "Preparing your message..." : "Continue on WhatsApp"}
         </button>
-        <p className="mt-4 text-center text-xs leading-5 text-[#6B7A77]">
+        <p className="mt-4 text-center text-xs leading-5 text--ink-muted">
           No payment required. Your details are used only to discuss this trip.
         </p>
       </form>

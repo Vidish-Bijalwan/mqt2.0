@@ -42,18 +42,18 @@ export default function PackageHero({ vm }: { vm: PackageViewModel }) {
 
   return (
     <>
-      <nav aria-label="Breadcrumb" className="border-b border-[#dfe9e6] bg-white px-4 py-3 text-xs text-[#63746f]">
+      <nav aria-label="Breadcrumb" className="border-b border-line bg-white px-4 py-3 text-xs text-ink-muted">
         <div className="mx-auto flex w-full max-w-[1320px] items-center gap-2 overflow-hidden">
-          <Link href="/" className="shrink-0 font-semibold hover:text-[#0b4c43]">Home</Link>
+          <Link href="/" className="shrink-0 font-semibold hover:text--brand-primary">Home</Link>
           <span aria-hidden="true">/</span>
-          <Link href={`/packages?category=${encodeURIComponent(pkg.category)}`} className="shrink-0 font-semibold hover:text-[#0b4c43]">{pkg.category}</Link>
+          <Link href={`/packages?category=${encodeURIComponent(pkg.category)}`} className="shrink-0 font-semibold hover:text--brand-primary">{pkg.category}</Link>
           <span aria-hidden="true">/</span>
-          <span className="truncate text-[#8a9995]">{pkg.title}</span>
+          <span className="truncate text-ink-muted">{pkg.title}</span>
         </div>
       </nav>
 
       <header className="mx-auto w-full max-w-[1320px] px-4 pb-10 pt-5 sm:pt-7 lg:px-6">
-        <div className="relative min-h-[510px] overflow-hidden rounded-[28px] bg-[#0b302c] shadow-[0_24px_70px_rgba(7,38,34,0.24)] sm:min-h-[560px]">
+        <div className="relative min-h-[510px] overflow-hidden rounded-[28px] bg-brand-primary-deep shadow-[0_24px_70px_rgba(7,38,34,0.24)] sm:min-h-[560px]">
           {heroImage && (
             <picture>
               {heroImageMobilePath && (
@@ -84,33 +84,33 @@ export default function PackageHero({ vm }: { vm: PackageViewModel }) {
             <div className="mt-7 flex flex-wrap gap-3">
               {hasDuration && (
                 <span className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/25 bg-black/20 px-4 text-sm font-semibold backdrop-blur-sm">
-                  <Clock className="h-4 w-4 text-[#f3a25b]" /> {pkg.duration}
+                  <Clock className="h-4 w-4 text-brand-secondary-pale" /> {pkg.duration}
                 </span>
               )}
               {hasStartPoint && (
                 <span className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/25 bg-black/20 px-4 text-sm font-semibold backdrop-blur-sm">
-                  <MapPin className="h-4 w-4 text-[#f3a25b]" /> Starts in {vm.startPoint}
+                  <MapPin className="h-4 w-4 text-brand-secondary-pale" /> Starts in {vm.startPoint}
                 </span>
               )}
             </div>
-            <a href="#enquiry-form" className="mt-8 inline-flex min-h-13 w-fit items-center gap-2 rounded-full bg-[#e96822] px-6 text-sm font-extrabold text-white shadow-[0_12px_28px_rgba(0,0,0,0.2)] transition hover:-translate-y-0.5 hover:bg-[#ce5515] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white">
+            <a href="#enquiry-form" className="mt-8 inline-flex min-h-13 w-fit items-center gap-2 rounded-full bg-brand-cta px-6 text-sm font-extrabold text-ink shadow-[0_12px_28px_rgba(0,0,0,0.2)] transition hover:-translate-y-0.5 hover:bg-brand-cta-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white">
               Build my version of this trip <ArrowRight className="h-4 w-4" />
             </a>
           </div>
         </div>
 
         {journeyStops.length > 0 && (
-          <div className="relative z-20 mx-3 -mt-6 rounded-[22px] border border-[#dce8e5] bg-white px-5 py-5 shadow-[0_16px_45px_rgba(11,48,44,0.12)] sm:mx-8 sm:px-7">
+          <div className="relative z-20 mx-3 -mt-6 rounded-[22px] border border-line bg-white px-5 py-5 shadow-[0_16px_45px_rgba(11,31,51,0.12)] sm:mx-8 sm:px-7">
             <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-7">
               <div className="shrink-0">
                 <p className="text-[10px] font-extrabold uppercase tracking-[0.22em] text-brand-orange-text">Your journey</p>
-                <p className="mt-1 text-sm font-bold text-[#153a34]">Route at a glance</p>
+                <p className="mt-1 text-sm font-bold text-ink">Route at a glance</p>
               </div>
-              <ol className="flex min-w-0 flex-1 items-center gap-2 overflow-x-auto pb-1 text-sm text-[#445d57]">
+              <ol className="flex min-w-0 flex-1 items-center gap-2 overflow-x-auto pb-1 text-sm text-ink-muted">
                 {journeyStops.map((stop, index) => (
                   <li key={`${stop}-${index}`} className="flex shrink-0 items-center gap-2">
-                    <span className="rounded-full bg-[#eef5f3] px-3 py-2 font-semibold">{stop}</span>
-                    {index < journeyStops.length - 1 && <ArrowRight aria-hidden="true" className="h-4 w-4 shrink-0 text-[#e57a37]" />}
+                    <span className="rounded-full bg-surface-canvas px-3 py-2 font-semibold">{stop}</span>
+                    {index < journeyStops.length - 1 && <ArrowRight aria-hidden="true" className="h-4 w-4 shrink-0 text--brand-secondary" />}
                   </li>
                 ))}
               </ol>
