@@ -8756,24 +8756,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "jama-masjid-agra": {
-    "primary": "/images/location-library/jama-masjid-delhi/jama-masjid-delhi-01-lg.webp",
+    "primary": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/jama-masjid-delhi/jama-masjid-delhi-01-lg.webp",
-        "caption": "Jama Masjid — Jakub Hałun, CC BY-SA 4.0"
-      },
-      {
-        "src": "/images/location-library/jama-masjid-delhi/jama-masjid-delhi-02-lg.webp",
-        "caption": "Jama Masjid — Jakub Hałun, CC BY-SA 4.0"
-      },
-      {
-        "src": "/images/location-library/jama-masjid-delhi/jama-masjid-delhi-03-lg.webp",
-        "caption": "Jama Masjid — Indrajit Das, CC BY-SA 3.0"
-      },
-      {
-        "src": "/images/location-library/jama-masjid-delhi/jama-masjid-delhi-04-lg.webp",
-        "caption": "Jama Masjid — Sripathroy, CC0"
-      },
       {
         "src": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-01-lg.webp",
         "caption": "Agra — Yann ( talk ), CC BY-SA 4.0"
