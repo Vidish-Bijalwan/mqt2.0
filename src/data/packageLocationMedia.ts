@@ -6361,22 +6361,22 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "gaya-tour-packages": {
-    "primary": "/images/location-library/gaya-uttar-pradesh-india/gaya-uttar-pradesh-india-01-lg.webp",
+    "primary": "/images/location-library/gaya-bihar-india/gaya-bihar-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/gaya-uttar-pradesh-india/gaya-uttar-pradesh-india-01-lg.webp",
+        "src": "/images/location-library/gaya-bihar-india/gaya-bihar-india-01-lg.webp",
         "caption": "Gaya — Amitabha Gupta, CC BY 4.0"
       },
       {
-        "src": "/images/location-library/gaya-uttar-pradesh-india/gaya-uttar-pradesh-india-02-lg.webp",
+        "src": "/images/location-library/gaya-bihar-india/gaya-bihar-india-02-lg.webp",
         "caption": "Gaya — Amitabha Gupta, CC BY 4.0"
       },
       {
-        "src": "/images/location-library/gaya-uttar-pradesh-india/gaya-uttar-pradesh-india-03-lg.webp",
+        "src": "/images/location-library/gaya-bihar-india/gaya-bihar-india-03-lg.webp",
         "caption": "Gaya — Amitabha Gupta, CC BY 4.0"
       },
       {
-        "src": "/images/location-library/gaya-uttar-pradesh-india/gaya-uttar-pradesh-india-04-lg.webp",
+        "src": "/images/location-library/gaya-bihar-india/gaya-bihar-india-04-lg.webp",
         "caption": "Gaya — Amitabha Gupta, CC BY 4.0"
       },
       {
@@ -6402,22 +6402,22 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "gaya": {
-    "primary": "/images/location-library/gaya-uttar-pradesh-india/gaya-uttar-pradesh-india-01-lg.webp",
+    "primary": "/images/location-library/gaya-bihar-india/gaya-bihar-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/gaya-uttar-pradesh-india/gaya-uttar-pradesh-india-01-lg.webp",
+        "src": "/images/location-library/gaya-bihar-india/gaya-bihar-india-01-lg.webp",
         "caption": "Gaya — Amitabha Gupta, CC BY 4.0"
       },
       {
-        "src": "/images/location-library/gaya-uttar-pradesh-india/gaya-uttar-pradesh-india-02-lg.webp",
+        "src": "/images/location-library/gaya-bihar-india/gaya-bihar-india-02-lg.webp",
         "caption": "Gaya — Amitabha Gupta, CC BY 4.0"
       },
       {
-        "src": "/images/location-library/gaya-uttar-pradesh-india/gaya-uttar-pradesh-india-03-lg.webp",
+        "src": "/images/location-library/gaya-bihar-india/gaya-bihar-india-03-lg.webp",
         "caption": "Gaya — Amitabha Gupta, CC BY 4.0"
       },
       {
-        "src": "/images/location-library/gaya-uttar-pradesh-india/gaya-uttar-pradesh-india-04-lg.webp",
+        "src": "/images/location-library/gaya-bihar-india/gaya-bihar-india-04-lg.webp",
         "caption": "Gaya — Amitabha Gupta, CC BY 4.0"
       }
     ],
@@ -7909,19 +7909,19 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Dalhousie — Nilesh.shintre, CC BY-SA 3.0"
       },
       {
-        "src": "/images/location-library/katra-himachal-pradesh-india/katra-himachal-pradesh-india-01-lg.webp",
+        "src": "/images/location-library/katra-jammu-and-kashmir-india/katra-jammu-and-kashmir-india-01-lg.webp",
         "caption": "Katra — Rangan Datta Wiki, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/katra-himachal-pradesh-india/katra-himachal-pradesh-india-02-lg.webp",
+        "src": "/images/location-library/katra-jammu-and-kashmir-india/katra-jammu-and-kashmir-india-02-lg.webp",
         "caption": "Katra — Anubhav Sinha, CC BY-SA 2.0"
       },
       {
-        "src": "/images/location-library/katra-himachal-pradesh-india/katra-himachal-pradesh-india-03-lg.webp",
+        "src": "/images/location-library/katra-jammu-and-kashmir-india/katra-jammu-and-kashmir-india-03-lg.webp",
         "caption": "Katra — Anubhav Sinha, CC BY-SA 2.0"
       },
       {
-        "src": "/images/location-library/katra-himachal-pradesh-india/katra-himachal-pradesh-india-04-lg.webp",
+        "src": "/images/location-library/katra-jammu-and-kashmir-india/katra-jammu-and-kashmir-india-04-lg.webp",
         "caption": "Katra — Bittudubeyji, CC BY-SA 4.0"
       }
     ],
@@ -17479,22 +17479,22 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "vaishno-devi-tour": {
-    "primary": "/images/location-library/katra-himachal-pradesh-india/katra-himachal-pradesh-india-01-lg.webp",
+    "primary": "/images/location-library/katra-jammu-and-kashmir-india/katra-jammu-and-kashmir-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/katra-himachal-pradesh-india/katra-himachal-pradesh-india-01-lg.webp",
+        "src": "/images/location-library/katra-jammu-and-kashmir-india/katra-jammu-and-kashmir-india-01-lg.webp",
         "caption": "Katra — Rangan Datta Wiki, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/katra-himachal-pradesh-india/katra-himachal-pradesh-india-02-lg.webp",
+        "src": "/images/location-library/katra-jammu-and-kashmir-india/katra-jammu-and-kashmir-india-02-lg.webp",
         "caption": "Katra — Anubhav Sinha, CC BY-SA 2.0"
       },
       {
-        "src": "/images/location-library/katra-himachal-pradesh-india/katra-himachal-pradesh-india-03-lg.webp",
+        "src": "/images/location-library/katra-jammu-and-kashmir-india/katra-jammu-and-kashmir-india-03-lg.webp",
         "caption": "Katra — Anubhav Sinha, CC BY-SA 2.0"
       },
       {
-        "src": "/images/location-library/katra-himachal-pradesh-india/katra-himachal-pradesh-india-04-lg.webp",
+        "src": "/images/location-library/katra-jammu-and-kashmir-india/katra-jammu-and-kashmir-india-04-lg.webp",
         "caption": "Katra — Bittudubeyji, CC BY-SA 4.0"
       }
     ],
