@@ -18496,6 +18496,4342 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     "locations": [
       "Yamunotri"
     ]
+  },
+  "12-jyotirlinga-tour-package": {
+    "primary": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-01-lg.webp",
+        "caption": "Somnath — TeshTesh, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-02-lg.webp",
+        "caption": "Somnath — TeshTesh, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-03-lg.webp",
+        "caption": "Somnath — TeshTesh, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-04-lg.webp",
+        "caption": "Somnath — TeshTesh, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Somnath"
+    ]
+  },
+  "2nights-3days-orissa-tour-package": {
+    "primary": "/images/location-library/puri-odisha-india/puri-odisha-india-02-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/puri-odisha-india/puri-odisha-india-02-lg.webp",
+        "caption": "Puri — Joydeep, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/puri-odisha-india/puri-odisha-india-03-lg.webp",
+        "caption": "Puri — Joydeep, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/puri-odisha-india/puri-odisha-india-04-lg.webp",
+        "caption": "Puri — Joydeep, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Puri"
+    ]
+  },
+  "3-days-baidyanath-dham-tour": {
+    "primary": "/images/location-library/jharkhand-india/jharkhand-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/jharkhand-india/jharkhand-india-01-lg.webp",
+        "caption": "Jharkhand — Bikash Lakra, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/jharkhand-india/jharkhand-india-02-lg.webp",
+        "caption": "Jharkhand — 456legend, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/jharkhand-india/jharkhand-india-03-lg.webp",
+        "caption": "Jharkhand — Ank Kumar, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/jharkhand-india/jharkhand-india-04-lg.webp",
+        "caption": "Jharkhand — AlexR.L., CC BY-SA 3.0"
+      }
+    ],
+    "locations": [
+      "Jharkhand"
+    ]
+  },
+  "adventure-tour-packages": {
+    "primary": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
+        "caption": "Rishikesh — Dorelal Singh, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-02-lg.webp",
+        "caption": "Rishikesh — Billjones94, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-03-lg.webp",
+        "caption": "Rishikesh — Dan Searle, CC BY-SA 2.0"
+      },
+      {
+        "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-04-lg.webp",
+        "caption": "Rishikesh — Travel & Shit from Brighton, UK, CC BY-SA 2.0"
+      }
+    ],
+    "locations": [
+      "Rishikesh"
+    ]
+  },
+  "alappuzha-tour-packages": {
+    "primary": "/images/location-library/alleppey-kerala-india/alleppey-kerala-india-02-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/alleppey-kerala-india/alleppey-kerala-india-02-lg.webp",
+        "caption": "Alleppey — Harvinder Chandigarh, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/alleppey-kerala-india/alleppey-kerala-india-03-lg.webp",
+        "caption": "Alleppey — Harvinder Chandigarh, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/alleppey-kerala-india/alleppey-kerala-india-01-lg.webp",
+        "caption": "Alleppey — Harvinder Chandigarh, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Alleppey"
+    ]
+  },
+  "amarnath": {
+    "primary": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-01-lg.webp",
+        "caption": "Kashmir — Harvinder Chandigarh, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-02-lg.webp",
+        "caption": "Kashmir — Dashrathgoyal85, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-03-lg.webp",
+        "caption": "Kashmir — Kasisripada17, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-04-lg.webp",
+        "caption": "Kashmir — Sauood07, CC BY 4.0"
+      }
+    ],
+    "locations": [
+      "Kashmir"
+    ]
+  },
+  "amarnath-yatra": {
+    "primary": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-01-lg.webp",
+        "caption": "Kashmir — Harvinder Chandigarh, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-02-lg.webp",
+        "caption": "Kashmir — Dashrathgoyal85, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-03-lg.webp",
+        "caption": "Kashmir — Kasisripada17, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-04-lg.webp",
+        "caption": "Kashmir — Sauood07, CC BY 4.0"
+      }
+    ],
+    "locations": [
+      "Kashmir"
+    ]
+  },
+  "amravati": {
+    "primary": "/images/location-library/maharashtra-india/maharashtra-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/maharashtra-india/maharashtra-india-01-lg.webp",
+        "caption": "Maharashtra — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/maharashtra-india/maharashtra-india-02-lg.webp",
+        "caption": "Maharashtra — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/maharashtra-india/maharashtra-india-03-lg.webp",
+        "caption": "Maharashtra — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/maharashtra-india/maharashtra-india-04-lg.webp",
+        "caption": "Maharashtra — Nikhil More, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Amravati"
+    ]
+  },
+  "amritsar-tour-packages": {
+    "primary": "/images/location-library/punjab-india/punjab-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/punjab-india/punjab-india-01-lg.webp",
+        "caption": "Punjab — Satdeep Gill, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/punjab-india/punjab-india-02-lg.webp",
+        "caption": "Punjab — Satdeep Gill, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/punjab-india/punjab-india-03-lg.webp",
+        "caption": "Punjab — Satdeep Gill, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/punjab-india/punjab-india-04-lg.webp",
+        "caption": "Punjab — Satdeep Gill, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Amritsar"
+    ]
+  },
+  "andaman": {
+    "primary": "/images/location-library/neil-island-andaman-and-nicobar-islands-india/neil-island-andaman-and-nicobar-islands-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/neil-island-andaman-and-nicobar-islands-india/neil-island-andaman-and-nicobar-islands-india-01-lg.webp",
+        "caption": "Neil Island — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/neil-island-andaman-and-nicobar-islands-india/neil-island-andaman-and-nicobar-islands-india-02-lg.webp",
+        "caption": "Neil Island — Vyacheslav Argenberg, CC BY 4.0"
+      }
+    ],
+    "locations": [
+      "Andaman"
+    ]
+  },
+  "andaman-cheap-tour-packages": {
+    "primary": "/images/location-library/port-blair-andaman-and-nicobar-islands-india/port-blair-andaman-and-nicobar-islands-india-04-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/port-blair-andaman-and-nicobar-islands-india/port-blair-andaman-and-nicobar-islands-india-04-lg.webp",
+        "caption": "Port Blair — jpaul211, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/port-blair-andaman-and-nicobar-islands-india/port-blair-andaman-and-nicobar-islands-india-01-lg.webp",
+        "caption": "Port Blair — Anil Kaushik, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/port-blair-andaman-and-nicobar-islands-india/port-blair-andaman-and-nicobar-islands-india-02-lg.webp",
+        "caption": "Port Blair — Anil Kaushik, CC BY-SA 3.0"
+      }
+    ],
+    "locations": [
+      "Port Blair"
+    ]
+  },
+  "andaman-nicobar-holiday-packages": {
+    "primary": "/images/location-library/havelock-island-andaman-and-nicobar-islands-india/havelock-island-andaman-and-nicobar-islands-india-04-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/havelock-island-andaman-and-nicobar-islands-india/havelock-island-andaman-and-nicobar-islands-india-04-lg.webp",
+        "caption": "Havelock Island — Shristi Shreyasi, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/havelock-island-andaman-and-nicobar-islands-india/havelock-island-andaman-and-nicobar-islands-india-01-lg.webp",
+        "caption": "Havelock Island — Harvinder Chandigarh, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/havelock-island-andaman-and-nicobar-islands-india/havelock-island-andaman-and-nicobar-islands-india-02-lg.webp",
+        "caption": "Havelock Island — Harvinder Chandigarh, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Havelock Island"
+    ]
+  },
+  "asia-tour-packages": {
+    "primary": "/images/location-library/bangkok-thailand/bangkok-thailand-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/bangkok-thailand/bangkok-thailand-01-lg.webp",
+        "caption": "Bangkok — Basile Morin, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bangkok-thailand/bangkok-thailand-02-lg.webp",
+        "caption": "Bangkok — Don Ramey Logan, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/bangkok-thailand/bangkok-thailand-03-lg.webp",
+        "caption": "Bangkok — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/bangkok-thailand/bangkok-thailand-04-lg.webp",
+        "caption": "Bangkok — This Photo was taken by Supanut Arunoprayote . Feel free to use any of my images, but please mention me as the author and may send me a message. (สามารถใช้ภาพได้อิสระ แต่กรุณาใส่เครดิตผู้ถ่ายและอาจส่ง ข้อความบอกกล่าวด้วย ) Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved. Please if you think that any changes should be required, please inform the author. Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract ., CC BY 4.0"
+      }
+    ],
+    "locations": [
+      "Asia"
+    ]
+  },
+  "baidyanath-dham-tour-2-days": {
+    "primary": "/images/location-library/jharkhand-india/jharkhand-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/jharkhand-india/jharkhand-india-01-lg.webp",
+        "caption": "Jharkhand — Bikash Lakra, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/jharkhand-india/jharkhand-india-02-lg.webp",
+        "caption": "Jharkhand — 456legend, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/jharkhand-india/jharkhand-india-03-lg.webp",
+        "caption": "Jharkhand — Ank Kumar, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/jharkhand-india/jharkhand-india-04-lg.webp",
+        "caption": "Jharkhand — AlexR.L., CC BY-SA 3.0"
+      }
+    ],
+    "locations": [
+      "Jharkhand"
+    ]
+  },
+  "bali-honeymoon-package": {
+    "primary": "/images/location-library/tanjung-benoa-beach-bali/tanjung-benoa-beach-bali-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/tanjung-benoa-beach-bali/tanjung-benoa-beach-bali-01-lg.webp",
+        "caption": "Tanjung Benoa Beach — Simon_sees from Australia, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/tanjung-benoa-beach-bali/tanjung-benoa-beach-bali-02-lg.webp",
+        "caption": "Tanjung Benoa Beach — Hoedhud, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/tanjung-benoa-beach-bali/tanjung-benoa-beach-bali-03-lg.webp",
+        "caption": "Tanjung Benoa Beach — Sabung.hamster, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/tanjung-benoa-beach-bali/tanjung-benoa-beach-bali-04-lg.webp",
+        "caption": "Tanjung Benoa Beach — Sabung.hamster aka Everyone Sinks Starco, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Bali"
+    ]
+  },
+  "bali-tour-packages": {
+    "primary": "/images/location-library/tegenungan-waterfall-bali/tegenungan-waterfall-bali-02-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/tegenungan-waterfall-bali/tegenungan-waterfall-bali-02-lg.webp",
+        "caption": "Tegenungan Waterfall — Artem Beliaikin from Moscow, Russia, CC0"
+      },
+      {
+        "src": "/images/location-library/tegenungan-waterfall-bali/tegenungan-waterfall-bali-01-lg.webp",
+        "caption": "Tegenungan Waterfall — Michelle Maria, CC BY 3.0"
+      }
+    ],
+    "locations": [
+      "Bali"
+    ]
+  },
+  "beach-vacation": {
+    "primary": "/images/location-library/goa-india/goa-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/goa-india/goa-india-01-lg.webp",
+        "caption": "Goa — Original: Vyacheslav Argenberg Derivative work: UnpetitproleX, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/goa-india/goa-india-02-lg.webp",
+        "caption": "Goa — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/goa-india/goa-india-03-lg.webp",
+        "caption": "Goa — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/goa-india/goa-india-04-lg.webp",
+        "caption": "Goa — Vyacheslav Argenberg, CC BY 4.0"
+      }
+    ],
+    "locations": [
+      "Goa"
+    ]
+  },
+  "buddhism-india": {
+    "primary": "/images/location-library/bodhgaya-bihar-india/bodhgaya-bihar-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/bodhgaya-bihar-india/bodhgaya-bihar-india-01-lg.webp",
+        "caption": "Bodhgaya — Amitabha Gupta, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/bodhgaya-bihar-india/bodhgaya-bihar-india-02-lg.webp",
+        "caption": "Bodhgaya — Amitabha Gupta, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/bodhgaya-bihar-india/bodhgaya-bihar-india-03-lg.webp",
+        "caption": "Bodhgaya — Amitabha Gupta, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/bodhgaya-bihar-india/bodhgaya-bihar-india-04-lg.webp",
+        "caption": "Bodhgaya — Amitabha Gupta, CC BY 4.0"
+      }
+    ],
+    "locations": [
+      "Bodh Gaya"
+    ]
+  },
+  "bungee-jumping": {
+    "primary": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
+        "caption": "Rishikesh — Dorelal Singh, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-02-lg.webp",
+        "caption": "Rishikesh — Billjones94, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-03-lg.webp",
+        "caption": "Rishikesh — Dan Searle, CC BY-SA 2.0"
+      },
+      {
+        "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-04-lg.webp",
+        "caption": "Rishikesh — Travel & Shit from Brighton, UK, CC BY-SA 2.0"
+      }
+    ],
+    "locations": [
+      "Rishikesh"
+    ]
+  },
+  "camping": {
+    "primary": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-03-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-03-lg.webp",
+        "caption": "Manali — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-01-lg.webp",
+        "caption": "Manali — Trippysoul, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Manali"
+    ]
+  },
+  "chardham": {
+    "primary": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
+        "caption": "Badrinath — Billjones94, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-02-lg.webp",
+        "caption": "Badrinath — Billjones94, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-03-lg.webp",
+        "caption": "Badrinath — Guptaele, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-04-lg.webp",
+        "caption": "Badrinath — Guptaele, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Badrinath"
+    ]
+  },
+  "chardham-yatra-registration": {
+    "primary": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-01-lg.webp",
+        "caption": "Kedarnath — Rohit Sharma, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-02-lg.webp",
+        "caption": "Kedarnath — Paul Hamilton, CC BY-SA 2.0"
+      },
+      {
+        "src": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-03-lg.webp",
+        "caption": "Kedarnath — Paul Hamilton, CC BY-SA 2.0"
+      },
+      {
+        "src": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-04-lg.webp",
+        "caption": "Kedarnath — Photos Worldwide, CC0"
+      }
+    ],
+    "locations": [
+      "Kedarnath"
+    ]
+  },
+  "cordelia-cruise-packages": {
+    "primary": "/images/location-library/coral-island-thailand/coral-island-thailand-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/coral-island-thailand/coral-island-thailand-01-lg.webp",
+        "caption": "Coral Island — Supachaiv, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/coral-island-thailand/coral-island-thailand-02-lg.webp",
+        "caption": "Coral Island — Phuket@photographer.net from Phuket, Thailand, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/coral-island-thailand/coral-island-thailand-03-lg.webp",
+        "caption": "Coral Island — Phuket@photographer.net from Phuket, Thailand, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/coral-island-thailand/coral-island-thailand-04-lg.webp",
+        "caption": "Coral Island — Phuket@photographer.net from Phuket, Thailand, CC BY 2.0"
+      }
+    ],
+    "locations": [
+      "Coral Island"
+    ]
+  },
+  "cruise-holidays-packages": {
+    "primary": "/images/location-library/maldives-international/maldives-international-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/maldives-international/maldives-international-01-lg.webp",
+        "caption": "Maldives — Laika ac from UK, CC BY-SA 2.0"
+      },
+      {
+        "src": "/images/location-library/maldives-international/maldives-international-02-lg.webp",
+        "caption": "Maldives — Gzzz, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/maldives-international/maldives-international-03-lg.webp",
+        "caption": "Maldives — The President's Office, Maldives, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/maldives-international/maldives-international-04-lg.webp",
+        "caption": "Maldives — john mchugh, CC BY 2.0"
+      }
+    ],
+    "locations": [
+      "Maldives"
+    ]
+  },
+  "cultural-tour-packages": {
+    "primary": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-03-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-03-lg.webp",
+        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-01-lg.webp",
+        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-04-lg.webp",
+        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Jaipur"
+    ]
+  },
+  "ek-dham-tour-packages": {
+    "primary": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-01-lg.webp",
+        "caption": "Kedarnath — Rohit Sharma, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-02-lg.webp",
+        "caption": "Kedarnath — Paul Hamilton, CC BY-SA 2.0"
+      },
+      {
+        "src": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-03-lg.webp",
+        "caption": "Kedarnath — Paul Hamilton, CC BY-SA 2.0"
+      },
+      {
+        "src": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-04-lg.webp",
+        "caption": "Kedarnath — Photos Worldwide, CC0"
+      }
+    ],
+    "locations": [
+      "Kedarnath"
+    ]
+  },
+  "galle": {
+    "primary": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
+        "caption": "Sri Lanka — Satdeep Gill, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-02-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-03-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-04-lg.webp",
+        "caption": "Sri Lanka — Pierre André Leclercq, CC BY 4.0"
+      }
+    ],
+    "locations": [
+      "Galle"
+    ]
+  },
+  "gauteng-tour-packages": {
+    "primary": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
+        "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-02-lg.webp",
+        "caption": "South Africa — Andy Morffew from Itchen Abbas, Hampshire, UK, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-03-lg.webp",
+        "caption": "South Africa — Heaton Mint ( Birmingham ), for the South African Republic (coin); National Numismatic Collection (image), Public domain"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-04-lg.webp",
+        "caption": "South Africa — Luca Galuzzi ( Lucag ), CC BY-SA 2.5"
+      }
+    ],
+    "locations": [
+      "Gauteng"
+    ]
+  },
+  "ghana-tour-packages": {
+    "primary": "/images/location-library/africa-various-countries/africa-various-countries-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-01-lg.webp",
+        "caption": "Africa — Internet Archive Book Images, No restrictions"
+      },
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-02-lg.webp",
+        "caption": "Africa — Clarke, Edward Daniel, 1769-1822, No restrictions"
+      },
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-03-lg.webp",
+        "caption": "Africa — Internet Archive Book Images, No restrictions"
+      },
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-04-lg.webp",
+        "caption": "Africa — Internet Archive Book Images, No restrictions"
+      }
+    ],
+    "locations": [
+      "Ghana"
+    ]
+  },
+  "golden-triangle-tour-packages": {
+    "primary": "/images/location-library/taj-mahal-agra/taj-mahal-agra-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/taj-mahal-agra/taj-mahal-agra-01-lg.webp",
+        "caption": "Taj Mahal — Asitjain, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/taj-mahal-agra/taj-mahal-agra-02-lg.webp",
+        "caption": "Taj Mahal — Jakub Hałun, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/taj-mahal-agra/taj-mahal-agra-03-lg.webp",
+        "caption": "Taj Mahal — Jakub Hałun, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/taj-mahal-agra/taj-mahal-agra-04-lg.webp",
+        "caption": "Taj Mahal — Jakub Hałun, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Agra"
+    ]
+  },
+  "group-tour": {
+    "primary": "/images/location-library/north-india/north-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/north-india/north-india-01-lg.webp",
+        "caption": "North India — Takshashila7977, by-sa"
+      },
+      {
+        "src": "/images/location-library/north-india/north-india-02-lg.webp",
+        "caption": "North India — Adarsh Patel, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/north-india/north-india-03-lg.webp",
+        "caption": "North India — NASA, Public domain"
+      },
+      {
+        "src": "/images/location-library/north-india/north-india-04-lg.webp",
+        "caption": "North India — William Baffin, Public domain"
+      }
+    ],
+    "locations": [
+      "North India"
+    ]
+  },
+  "ha-long-bay": {
+    "primary": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+        "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-02-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-03-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-04-lg.webp",
+        "caption": "Vietnam — Ngọt band, CC0"
+      }
+    ],
+    "locations": [
+      "Ha Long Bay"
+    ]
+  },
+  "hai-phong": {
+    "primary": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+        "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-02-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-03-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-04-lg.webp",
+        "caption": "Vietnam — Ngọt band, CC0"
+      }
+    ],
+    "locations": [
+      "Hai Phong"
+    ]
+  },
+  "hampi-tour-packages": {
+    "primary": "/images/location-library/hospet-karnataka-india/hospet-karnataka-india-04-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/hospet-karnataka-india/hospet-karnataka-india-04-lg.webp",
+        "caption": "Hospet — Dineshkannambadi, by-sa"
+      },
+      {
+        "src": "/images/location-library/hospet-karnataka-india/hospet-karnataka-india-01-lg.webp",
+        "caption": "Hospet — A.Murali, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/hospet-karnataka-india/hospet-karnataka-india-02-lg.webp",
+        "caption": "Hospet — A.Murali, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/hospet-karnataka-india/hospet-karnataka-india-03-lg.webp",
+        "caption": "Hospet — A.Murali, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+        "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-02-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-03-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-04-lg.webp",
+        "caption": "Vietnam — Ngọt band, CC0"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+        "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-02-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-03-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-04-lg.webp",
+        "caption": "Vietnam — Ngọt band, CC0"
+      },
+      {
+        "src": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-01-lg.webp",
+        "caption": "Himachal Pradesh — UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-02-lg.webp",
+        "caption": "Himachal Pradesh — UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-03-lg.webp",
+        "caption": "Himachal Pradesh — UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-04-lg.webp",
+        "caption": "Himachal Pradesh — UnpetitproleX, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
+        "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-02-lg.webp",
+        "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-03-lg.webp",
+        "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-04-lg.webp",
+        "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-01-lg.webp",
+        "caption": "Bandhavgarh National Park — Anuj shree, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-02-lg.webp",
+        "caption": "Bandhavgarh National Park — JP Bennett, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-03-lg.webp",
+        "caption": "Bandhavgarh National Park — Goleisureintl, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-04-lg.webp",
+        "caption": "Bandhavgarh National Park — Tom Thai, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-01-lg.webp",
+        "caption": "Madhya Pradesh — Suyash Dwivedi, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-02-lg.webp",
+        "caption": "Madhya Pradesh — Yann ( talk ), CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-03-lg.webp",
+        "caption": "Madhya Pradesh — Yann ( talk ), CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-04-lg.webp",
+        "caption": "Madhya Pradesh — Hariya1234, by"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-01-lg.webp",
+        "caption": "Madhya Pradesh — Suyash Dwivedi, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-02-lg.webp",
+        "caption": "Madhya Pradesh — Yann ( talk ), CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-03-lg.webp",
+        "caption": "Madhya Pradesh — Yann ( talk ), CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-04-lg.webp",
+        "caption": "Madhya Pradesh — Hariya1234, by"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
+        "caption": "Sri Lanka — Satdeep Gill, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-02-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-03-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-04-lg.webp",
+        "caption": "Sri Lanka — Pierre André Leclercq, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-01-lg.webp",
+        "caption": "Nepal — Bijay Chaurasia, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-02-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-03-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-04-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/guwahati-assam-india/guwahati-assam-india-01-lg.webp",
+        "caption": "Guwahati — Timothy A. Gonsalves, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/guwahati-assam-india/guwahati-assam-india-02-lg.webp",
+        "caption": "Guwahati — Timothy A. Gonsalves, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/guwahati-assam-india/guwahati-assam-india-03-lg.webp",
+        "caption": "Guwahati — Timothy A. Gonsalves, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/guwahati-assam-india/guwahati-assam-india-04-lg.webp",
+        "caption": "Guwahati — BhuyanBhaskar, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/manikaran-himachal-pradesh-india/manikaran-himachal-pradesh-india-01-lg.webp",
+        "caption": "Manikaran — Aksh Patial, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/manikaran-himachal-pradesh-india/manikaran-himachal-pradesh-india-02-lg.webp",
+        "caption": "Manikaran — Pinakpani, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/manikaran-himachal-pradesh-india/manikaran-himachal-pradesh-india-03-lg.webp",
+        "caption": "Manikaran — Manu moudgil, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/manikaran-himachal-pradesh-india/manikaran-himachal-pradesh-india-04-lg.webp",
+        "caption": "Manikaran — Param6536, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
+        "caption": "Sri Lanka — Satdeep Gill, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-02-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-03-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-04-lg.webp",
+        "caption": "Sri Lanka — Pierre André Leclercq, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-01-lg.webp",
+        "caption": "East Africa — Poppingrids, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-02-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-03-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-04-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
+        "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-02-lg.webp",
+        "caption": "Rajasthan — Hirumon, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-03-lg.webp",
+        "caption": "Rajasthan — Ihsanwayfarer, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-04-lg.webp",
+        "caption": "Rajasthan — Paramanu Sarkar, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-02-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-03-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-04-lg.webp",
+        "caption": "Kerala — Vengolis, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
+        "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-02-lg.webp",
+        "caption": "Rajasthan — Hirumon, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-03-lg.webp",
+        "caption": "Rajasthan — Ihsanwayfarer, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-04-lg.webp",
+        "caption": "Rajasthan — Paramanu Sarkar, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-02-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-03-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-04-lg.webp",
+        "caption": "Kerala — Vengolis, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
+        "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-02-lg.webp",
+        "caption": "South Africa — Andy Morffew from Itchen Abbas, Hampshire, UK, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-03-lg.webp",
+        "caption": "South Africa — Heaton Mint ( Birmingham ), for the South African Republic (coin); National Numismatic Collection (image), Public domain"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-04-lg.webp",
+        "caption": "South Africa — Luca Galuzzi ( Lucag ), CC BY-SA 2.5"
+      },
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-01-lg.webp",
+        "caption": "Africa — Internet Archive Book Images, No restrictions"
+      },
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-02-lg.webp",
+        "caption": "Africa — Clarke, Edward Daniel, 1769-1822, No restrictions"
+      },
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-03-lg.webp",
+        "caption": "Africa — Internet Archive Book Images, No restrictions"
+      },
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-04-lg.webp",
+        "caption": "Africa — Internet Archive Book Images, No restrictions"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
+        "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-02-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-03-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-04-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-03-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-02-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-04-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-02-lg.webp",
+        "caption": "Ayodhya — Prime Minister's Office, GODL-India"
+      },
+      {
+        "src": "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-04-lg.webp",
+        "caption": "Ayodhya — Prime Minister's Office, GODL-India"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+        "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
+        "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-01-lg.webp",
+        "caption": "Gulmarg — Harvinder Chandigarh, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-04-lg.webp",
+        "caption": "Bhaktapur — Göran Höglund (Kartläsarn), CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-03-lg.webp",
+        "caption": "Bhaktapur — Goutam1962, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-01-lg.webp",
+        "caption": "Bhaktapur — jafsegal (Thanks for the 5 million views), CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-02-lg.webp",
+        "caption": "Bhaktapur — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/oceania/oceania-01-lg.webp",
+        "caption": "Oceania — Anonymous Unknown author, Public domain"
+      },
+      {
+        "src": "/images/location-library/coral-island-thailand/coral-island-thailand-01-lg.webp",
+        "caption": "Coral Island — Supachaiv, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
+        "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
+        "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/da-nang-vietnam/da-nang-vietnam-01-lg.webp",
+        "caption": "Da Nang — Quangpraha, CC0"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-04-lg.webp",
+        "caption": "Madhya Pradesh — Hariya1234, by"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-03-lg.webp",
+        "caption": "Madhya Pradesh — Yann ( talk ), CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-02-lg.webp",
+        "caption": "Madhya Pradesh — Yann ( talk ), CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/maharashtra-india/maharashtra-india-01-lg.webp",
+        "caption": "Maharashtra — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-01-lg.webp",
+        "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-02-lg.webp",
+        "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves. Used with attribution, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-03-lg.webp",
+        "caption": "Karnataka — Dey.sandip, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-04-lg.webp",
+        "caption": "Karnataka — Muhammad Mahdi Karim Facebook The making of this document was supported by Wikimedia CH . ( Submit your project! ) For all the files concerned, please see the category Supported by Wikimedia CH . العربية ∙ বাংলা ∙ čeština ∙ Deutsch ∙ English ∙ Esperanto ∙ español ∙ français ∙ galego ∙ हिन्दी ∙ magyar ∙ italiano ∙ 日本語 ∙ македонски ∙ Nederlands ∙ português do Brasil ∙ rumantsch ∙ русский ∙ sicilianu ∙ slovenščina ∙ தமிழ் ∙ українська ∙ 中文 ∙ +/−, GFDL 1.2"
+      },
+      {
+        "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-01-lg.webp",
+        "caption": "Auli — Amit Shaw, CC0"
+      },
+      {
+        "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-02-lg.webp",
+        "caption": "Auli — nanda devi institute of adventure sports and outdoor education, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-03-lg.webp",
+        "caption": "Auli — Bibek Raj Pandeya, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-04-lg.webp",
+        "caption": "Auli — Dinesh Valke from Thane, India, CC BY-SA 2.0"
+      },
+      {
+        "src": "/images/location-library/sonamarg-jammu-and-kashmir-india/sonamarg-jammu-and-kashmir-india-01-lg.webp",
+        "caption": "Sonamarg — Original: Ganesh Mohan T Derivative work: UnpetitproleX, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/sonamarg-jammu-and-kashmir-india/sonamarg-jammu-and-kashmir-india-02-lg.webp",
+        "caption": "Sonamarg — Gannu03, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sonamarg-jammu-and-kashmir-india/sonamarg-jammu-and-kashmir-india-03-lg.webp",
+        "caption": "Sonamarg — SRISHTI RAWAT, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sonamarg-jammu-and-kashmir-india/sonamarg-jammu-and-kashmir-india-04-lg.webp",
+        "caption": "Sonamarg — Rajani Gairshail, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-01-lg.webp",
+        "caption": "East Africa — Poppingrids, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-02-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-03-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-04-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-02-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-03-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-04-lg.webp",
+        "caption": "Kerala — Vengolis, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-01-lg.webp",
+        "caption": "Nepal — Bijay Chaurasia, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-02-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-03-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-04-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-01-lg.webp",
+        "caption": "Uttarakhand — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-02-lg.webp",
+        "caption": "Uttarakhand — Original: Harshit SR Derivative work: UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-03-lg.webp",
+        "caption": "Uttarakhand — Original: Rohit Sharma Derivative work: UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-04-lg.webp",
+        "caption": "Uttarakhand — Rohit Sharma, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
+        "caption": "Sri Lanka — Satdeep Gill, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-02-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-03-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-04-lg.webp",
+        "caption": "Sri Lanka — Pierre André Leclercq, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-01-lg.webp",
+        "caption": "Kovalam — Fabrice Florin from Mill Valley, USA, CC BY-SA 2.0"
+      },
+      {
+        "src": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-02-lg.webp",
+        "caption": "Kovalam — Nikhilb239, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-03-lg.webp",
+        "caption": "Kovalam — Raman Patel, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-04-lg.webp",
+        "caption": "Kovalam — mehul.antani, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-01-lg.webp",
+        "caption": "Tamil Nadu — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-02-lg.webp",
+        "caption": "Tamil Nadu — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-03-lg.webp",
+        "caption": "Tamil Nadu — Timothy A. Gonsalves, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-04-lg.webp",
+        "caption": "Tamil Nadu — Timothy A. Gonsalves, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-01-lg.webp",
+        "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-02-lg.webp",
+        "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves. Used with attribution, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-03-lg.webp",
+        "caption": "Karnataka — Dey.sandip, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-04-lg.webp",
+        "caption": "Karnataka — Muhammad Mahdi Karim Facebook The making of this document was supported by Wikimedia CH . ( Submit your project! ) For all the files concerned, please see the category Supported by Wikimedia CH . العربية ∙ বাংলা ∙ čeština ∙ Deutsch ∙ English ∙ Esperanto ∙ español ∙ français ∙ galego ∙ हिन्दी ∙ magyar ∙ italiano ∙ 日本語 ∙ македонски ∙ Nederlands ∙ português do Brasil ∙ rumantsch ∙ русский ∙ sicilianu ∙ slovenščina ∙ தமிழ் ∙ українська ∙ 中文 ∙ +/−, GFDL 1.2"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+        "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-02-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-03-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-04-lg.webp",
+        "caption": "Vietnam — Ngọt band, CC0"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+        "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-02-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-03-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-04-lg.webp",
+        "caption": "Vietnam — Ngọt band, CC0"
+      },
+      {
+        "src": "/images/location-library/rudraprayag-uttarakhand-india/rudraprayag-uttarakhand-india-01-lg.webp",
+        "caption": "Rudraprayag — Ministry of Defence, GODL-India"
+      },
+      {
+        "src": "/images/location-library/rudraprayag-uttarakhand-india/rudraprayag-uttarakhand-india-02-lg.webp",
+        "caption": "Rudraprayag — Photos Worldwide, CC0"
+      },
+      {
+        "src": "/images/location-library/rudraprayag-uttarakhand-india/rudraprayag-uttarakhand-india-03-lg.webp",
+        "caption": "Rudraprayag — Karunamay Mukhopadhyay, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rudraprayag-uttarakhand-india/rudraprayag-uttarakhand-india-04-lg.webp",
+        "caption": "Rudraprayag — Fowler&fowler «Talk», CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
+        "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-02-lg.webp",
+        "caption": "South Africa — Andy Morffew from Itchen Abbas, Hampshire, UK, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-03-lg.webp",
+        "caption": "South Africa — Heaton Mint ( Birmingham ), for the South African Republic (coin); National Numismatic Collection (image), Public domain"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-04-lg.webp",
+        "caption": "South Africa — Luca Galuzzi ( Lucag ), CC BY-SA 2.5"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-01-lg.webp",
+        "caption": "Bandhavgarh National Park — Anuj shree, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-02-lg.webp",
+        "caption": "Bandhavgarh National Park — JP Bennett, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-03-lg.webp",
+        "caption": "Bandhavgarh National Park — Goleisureintl, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-04-lg.webp",
+        "caption": "Bandhavgarh National Park — Tom Thai, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-01-lg.webp",
+        "caption": "Gulmarg — Harvinder Chandigarh, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-02-lg.webp",
+        "caption": "Gulmarg — Harvinder Chandigarh, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-03-lg.webp",
+        "caption": "Gulmarg — Gaurav Pattnaik, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-04-lg.webp",
+        "caption": "Gulmarg — Harvinder Chandigarh, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-01-lg.webp",
+        "caption": "Mathura — Sandeepni, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-02-lg.webp",
+        "caption": "Mathura — Shikher Singh, by-sa"
+      },
+      {
+        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-03-lg.webp",
+        "caption": "Mathura — Guptaele, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-04-lg.webp",
+        "caption": "Mathura — Guptaele, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Hampi"
+    ]
+  },
+  "hanoi": {
+    "primary": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+        "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-02-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-03-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-04-lg.webp",
+        "caption": "Vietnam — Ngọt band, CC0"
+      }
+    ],
+    "locations": [
+      "Hanoi"
+    ]
+  },
+  "hanoi-halong-saigon-my-tho-tour": {
+    "primary": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+        "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-02-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-03-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-04-lg.webp",
+        "caption": "Vietnam — Ngọt band, CC0"
+      }
+    ],
+    "locations": [
+      "Hanoi"
+    ]
+  },
+  "himachal-tour-packages": {
+    "primary": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-01-lg.webp",
+        "caption": "Himachal Pradesh — UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-02-lg.webp",
+        "caption": "Himachal Pradesh — UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-03-lg.webp",
+        "caption": "Himachal Pradesh — UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-04-lg.webp",
+        "caption": "Himachal Pradesh — UnpetitproleX, CC BY 4.0"
+      }
+    ],
+    "locations": [
+      "Himachal Pradesh"
+    ]
+  },
+  "hindu-tour-packages": {
+    "primary": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
+        "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-02-lg.webp",
+        "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-03-lg.webp",
+        "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-04-lg.webp",
+        "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Varanasi"
+    ]
+  },
+  "india-wildlife-tour-packages": {
+    "primary": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-01-lg.webp",
+        "caption": "Bandhavgarh National Park — Anuj shree, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-02-lg.webp",
+        "caption": "Bandhavgarh National Park — JP Bennett, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-03-lg.webp",
+        "caption": "Bandhavgarh National Park — Goleisureintl, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-04-lg.webp",
+        "caption": "Bandhavgarh National Park — Tom Thai, CC BY 2.0"
+      }
+    ],
+    "locations": [
+      "Bandhavgarh National Park"
+    ]
+  },
+  "indore-sightseeing-tour": {
+    "primary": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-03-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-03-lg.webp",
+        "caption": "Madhya Pradesh — Yann ( talk ), CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-03-lg.webp",
+        "caption": "Madhya Pradesh — Yann ( talk ), CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-03-lg.webp",
+        "caption": "Madhya Pradesh — Yann ( talk ), CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-01-lg.webp",
+        "caption": "Madhya Pradesh — Suyash Dwivedi, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-02-lg.webp",
+        "caption": "Madhya Pradesh — Yann ( talk ), CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-04-lg.webp",
+        "caption": "Madhya Pradesh — Hariya1234, by"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-01-lg.webp",
+        "caption": "Madhya Pradesh — Suyash Dwivedi, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-02-lg.webp",
+        "caption": "Madhya Pradesh — Yann ( talk ), CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-04-lg.webp",
+        "caption": "Madhya Pradesh — Hariya1234, by"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
+        "caption": "Sri Lanka — Satdeep Gill, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-02-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-03-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-04-lg.webp",
+        "caption": "Sri Lanka — Pierre André Leclercq, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-01-lg.webp",
+        "caption": "Nepal — Bijay Chaurasia, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-02-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-03-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-04-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/guwahati-assam-india/guwahati-assam-india-01-lg.webp",
+        "caption": "Guwahati — Timothy A. Gonsalves, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/guwahati-assam-india/guwahati-assam-india-02-lg.webp",
+        "caption": "Guwahati — Timothy A. Gonsalves, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/guwahati-assam-india/guwahati-assam-india-03-lg.webp",
+        "caption": "Guwahati — Timothy A. Gonsalves, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/guwahati-assam-india/guwahati-assam-india-04-lg.webp",
+        "caption": "Guwahati — BhuyanBhaskar, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/manikaran-himachal-pradesh-india/manikaran-himachal-pradesh-india-01-lg.webp",
+        "caption": "Manikaran — Aksh Patial, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/manikaran-himachal-pradesh-india/manikaran-himachal-pradesh-india-02-lg.webp",
+        "caption": "Manikaran — Pinakpani, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/manikaran-himachal-pradesh-india/manikaran-himachal-pradesh-india-03-lg.webp",
+        "caption": "Manikaran — Manu moudgil, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/manikaran-himachal-pradesh-india/manikaran-himachal-pradesh-india-04-lg.webp",
+        "caption": "Manikaran — Param6536, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
+        "caption": "Sri Lanka — Satdeep Gill, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-02-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-03-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-04-lg.webp",
+        "caption": "Sri Lanka — Pierre André Leclercq, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-01-lg.webp",
+        "caption": "East Africa — Poppingrids, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-02-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-03-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-04-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
+        "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-02-lg.webp",
+        "caption": "Rajasthan — Hirumon, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-03-lg.webp",
+        "caption": "Rajasthan — Ihsanwayfarer, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-04-lg.webp",
+        "caption": "Rajasthan — Paramanu Sarkar, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-02-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-03-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-04-lg.webp",
+        "caption": "Kerala — Vengolis, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
+        "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-02-lg.webp",
+        "caption": "Rajasthan — Hirumon, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-03-lg.webp",
+        "caption": "Rajasthan — Ihsanwayfarer, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-04-lg.webp",
+        "caption": "Rajasthan — Paramanu Sarkar, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-02-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-03-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-04-lg.webp",
+        "caption": "Kerala — Vengolis, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
+        "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-02-lg.webp",
+        "caption": "South Africa — Andy Morffew from Itchen Abbas, Hampshire, UK, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-03-lg.webp",
+        "caption": "South Africa — Heaton Mint ( Birmingham ), for the South African Republic (coin); National Numismatic Collection (image), Public domain"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-04-lg.webp",
+        "caption": "South Africa — Luca Galuzzi ( Lucag ), CC BY-SA 2.5"
+      },
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-01-lg.webp",
+        "caption": "Africa — Internet Archive Book Images, No restrictions"
+      },
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-02-lg.webp",
+        "caption": "Africa — Clarke, Edward Daniel, 1769-1822, No restrictions"
+      },
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-03-lg.webp",
+        "caption": "Africa — Internet Archive Book Images, No restrictions"
+      },
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-04-lg.webp",
+        "caption": "Africa — Internet Archive Book Images, No restrictions"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
+        "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-02-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-03-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-04-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-03-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-02-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-04-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-02-lg.webp",
+        "caption": "Ayodhya — Prime Minister's Office, GODL-India"
+      },
+      {
+        "src": "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-04-lg.webp",
+        "caption": "Ayodhya — Prime Minister's Office, GODL-India"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+        "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
+        "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-01-lg.webp",
+        "caption": "Gulmarg — Harvinder Chandigarh, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-04-lg.webp",
+        "caption": "Bhaktapur — Göran Höglund (Kartläsarn), CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-03-lg.webp",
+        "caption": "Bhaktapur — Goutam1962, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-01-lg.webp",
+        "caption": "Bhaktapur — jafsegal (Thanks for the 5 million views), CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-02-lg.webp",
+        "caption": "Bhaktapur — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/oceania/oceania-01-lg.webp",
+        "caption": "Oceania — Anonymous Unknown author, Public domain"
+      },
+      {
+        "src": "/images/location-library/coral-island-thailand/coral-island-thailand-01-lg.webp",
+        "caption": "Coral Island — Supachaiv, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
+        "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
+        "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/da-nang-vietnam/da-nang-vietnam-01-lg.webp",
+        "caption": "Da Nang — Quangpraha, CC0"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-04-lg.webp",
+        "caption": "Madhya Pradesh — Hariya1234, by"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-02-lg.webp",
+        "caption": "Madhya Pradesh — Yann ( talk ), CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/maharashtra-india/maharashtra-india-01-lg.webp",
+        "caption": "Maharashtra — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-01-lg.webp",
+        "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-02-lg.webp",
+        "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves. Used with attribution, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-03-lg.webp",
+        "caption": "Karnataka — Dey.sandip, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-04-lg.webp",
+        "caption": "Karnataka — Muhammad Mahdi Karim Facebook The making of this document was supported by Wikimedia CH . ( Submit your project! ) For all the files concerned, please see the category Supported by Wikimedia CH . العربية ∙ বাংলা ∙ čeština ∙ Deutsch ∙ English ∙ Esperanto ∙ español ∙ français ∙ galego ∙ हिन्दी ∙ magyar ∙ italiano ∙ 日本語 ∙ македонски ∙ Nederlands ∙ português do Brasil ∙ rumantsch ∙ русский ∙ sicilianu ∙ slovenščina ∙ தமிழ் ∙ українська ∙ 中文 ∙ +/−, GFDL 1.2"
+      },
+      {
+        "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-01-lg.webp",
+        "caption": "Auli — Amit Shaw, CC0"
+      },
+      {
+        "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-02-lg.webp",
+        "caption": "Auli — nanda devi institute of adventure sports and outdoor education, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-03-lg.webp",
+        "caption": "Auli — Bibek Raj Pandeya, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-04-lg.webp",
+        "caption": "Auli — Dinesh Valke from Thane, India, CC BY-SA 2.0"
+      },
+      {
+        "src": "/images/location-library/sonamarg-jammu-and-kashmir-india/sonamarg-jammu-and-kashmir-india-01-lg.webp",
+        "caption": "Sonamarg — Original: Ganesh Mohan T Derivative work: UnpetitproleX, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/sonamarg-jammu-and-kashmir-india/sonamarg-jammu-and-kashmir-india-02-lg.webp",
+        "caption": "Sonamarg — Gannu03, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sonamarg-jammu-and-kashmir-india/sonamarg-jammu-and-kashmir-india-03-lg.webp",
+        "caption": "Sonamarg — SRISHTI RAWAT, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sonamarg-jammu-and-kashmir-india/sonamarg-jammu-and-kashmir-india-04-lg.webp",
+        "caption": "Sonamarg — Rajani Gairshail, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-01-lg.webp",
+        "caption": "East Africa — Poppingrids, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-02-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-03-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-04-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-02-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-03-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-04-lg.webp",
+        "caption": "Kerala — Vengolis, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-01-lg.webp",
+        "caption": "Nepal — Bijay Chaurasia, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-02-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-03-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-04-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-01-lg.webp",
+        "caption": "Uttarakhand — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-02-lg.webp",
+        "caption": "Uttarakhand — Original: Harshit SR Derivative work: UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-03-lg.webp",
+        "caption": "Uttarakhand — Original: Rohit Sharma Derivative work: UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-04-lg.webp",
+        "caption": "Uttarakhand — Rohit Sharma, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
+        "caption": "Sri Lanka — Satdeep Gill, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-02-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-03-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-04-lg.webp",
+        "caption": "Sri Lanka — Pierre André Leclercq, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-01-lg.webp",
+        "caption": "Kovalam — Fabrice Florin from Mill Valley, USA, CC BY-SA 2.0"
+      },
+      {
+        "src": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-02-lg.webp",
+        "caption": "Kovalam — Nikhilb239, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-03-lg.webp",
+        "caption": "Kovalam — Raman Patel, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-04-lg.webp",
+        "caption": "Kovalam — mehul.antani, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-01-lg.webp",
+        "caption": "Tamil Nadu — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-02-lg.webp",
+        "caption": "Tamil Nadu — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-03-lg.webp",
+        "caption": "Tamil Nadu — Timothy A. Gonsalves, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-04-lg.webp",
+        "caption": "Tamil Nadu — Timothy A. Gonsalves, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-01-lg.webp",
+        "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-02-lg.webp",
+        "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves. Used with attribution, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-03-lg.webp",
+        "caption": "Karnataka — Dey.sandip, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-04-lg.webp",
+        "caption": "Karnataka — Muhammad Mahdi Karim Facebook The making of this document was supported by Wikimedia CH . ( Submit your project! ) For all the files concerned, please see the category Supported by Wikimedia CH . العربية ∙ বাংলা ∙ čeština ∙ Deutsch ∙ English ∙ Esperanto ∙ español ∙ français ∙ galego ∙ हिन्दी ∙ magyar ∙ italiano ∙ 日本語 ∙ македонски ∙ Nederlands ∙ português do Brasil ∙ rumantsch ∙ русский ∙ sicilianu ∙ slovenščina ∙ தமிழ் ∙ українська ∙ 中文 ∙ +/−, GFDL 1.2"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+        "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-02-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-03-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-04-lg.webp",
+        "caption": "Vietnam — Ngọt band, CC0"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+        "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-02-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-03-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-04-lg.webp",
+        "caption": "Vietnam — Ngọt band, CC0"
+      },
+      {
+        "src": "/images/location-library/rudraprayag-uttarakhand-india/rudraprayag-uttarakhand-india-01-lg.webp",
+        "caption": "Rudraprayag — Ministry of Defence, GODL-India"
+      },
+      {
+        "src": "/images/location-library/rudraprayag-uttarakhand-india/rudraprayag-uttarakhand-india-02-lg.webp",
+        "caption": "Rudraprayag — Photos Worldwide, CC0"
+      },
+      {
+        "src": "/images/location-library/rudraprayag-uttarakhand-india/rudraprayag-uttarakhand-india-03-lg.webp",
+        "caption": "Rudraprayag — Karunamay Mukhopadhyay, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rudraprayag-uttarakhand-india/rudraprayag-uttarakhand-india-04-lg.webp",
+        "caption": "Rudraprayag — Fowler&fowler «Talk», CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
+        "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-02-lg.webp",
+        "caption": "South Africa — Andy Morffew from Itchen Abbas, Hampshire, UK, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-03-lg.webp",
+        "caption": "South Africa — Heaton Mint ( Birmingham ), for the South African Republic (coin); National Numismatic Collection (image), Public domain"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-04-lg.webp",
+        "caption": "South Africa — Luca Galuzzi ( Lucag ), CC BY-SA 2.5"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-01-lg.webp",
+        "caption": "Bandhavgarh National Park — Anuj shree, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-02-lg.webp",
+        "caption": "Bandhavgarh National Park — JP Bennett, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-03-lg.webp",
+        "caption": "Bandhavgarh National Park — Goleisureintl, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-04-lg.webp",
+        "caption": "Bandhavgarh National Park — Tom Thai, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-01-lg.webp",
+        "caption": "Gulmarg — Harvinder Chandigarh, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-02-lg.webp",
+        "caption": "Gulmarg — Harvinder Chandigarh, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-03-lg.webp",
+        "caption": "Gulmarg — Gaurav Pattnaik, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-04-lg.webp",
+        "caption": "Gulmarg — Harvinder Chandigarh, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-01-lg.webp",
+        "caption": "Mathura — Sandeepni, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-02-lg.webp",
+        "caption": "Mathura — Shikher Singh, by-sa"
+      },
+      {
+        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-03-lg.webp",
+        "caption": "Mathura — Guptaele, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-04-lg.webp",
+        "caption": "Mathura — Guptaele, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Madhya Pradesh"
+    ]
+  },
+  "indore-tour-packages": {
+    "primary": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-03-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-03-lg.webp",
+        "caption": "Madhya Pradesh — Yann ( talk ), CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-03-lg.webp",
+        "caption": "Madhya Pradesh — Yann ( talk ), CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-01-lg.webp",
+        "caption": "Madhya Pradesh — Suyash Dwivedi, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-02-lg.webp",
+        "caption": "Madhya Pradesh — Yann ( talk ), CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-04-lg.webp",
+        "caption": "Madhya Pradesh — Hariya1234, by"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
+        "caption": "Sri Lanka — Satdeep Gill, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-02-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-03-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-04-lg.webp",
+        "caption": "Sri Lanka — Pierre André Leclercq, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-01-lg.webp",
+        "caption": "Nepal — Bijay Chaurasia, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-02-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-03-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-04-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/guwahati-assam-india/guwahati-assam-india-01-lg.webp",
+        "caption": "Guwahati — Timothy A. Gonsalves, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/guwahati-assam-india/guwahati-assam-india-02-lg.webp",
+        "caption": "Guwahati — Timothy A. Gonsalves, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/guwahati-assam-india/guwahati-assam-india-03-lg.webp",
+        "caption": "Guwahati — Timothy A. Gonsalves, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/guwahati-assam-india/guwahati-assam-india-04-lg.webp",
+        "caption": "Guwahati — BhuyanBhaskar, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/manikaran-himachal-pradesh-india/manikaran-himachal-pradesh-india-01-lg.webp",
+        "caption": "Manikaran — Aksh Patial, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/manikaran-himachal-pradesh-india/manikaran-himachal-pradesh-india-02-lg.webp",
+        "caption": "Manikaran — Pinakpani, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/manikaran-himachal-pradesh-india/manikaran-himachal-pradesh-india-03-lg.webp",
+        "caption": "Manikaran — Manu moudgil, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/manikaran-himachal-pradesh-india/manikaran-himachal-pradesh-india-04-lg.webp",
+        "caption": "Manikaran — Param6536, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
+        "caption": "Sri Lanka — Satdeep Gill, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-02-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-03-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-04-lg.webp",
+        "caption": "Sri Lanka — Pierre André Leclercq, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-01-lg.webp",
+        "caption": "East Africa — Poppingrids, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-02-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-03-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-04-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
+        "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-02-lg.webp",
+        "caption": "Rajasthan — Hirumon, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-03-lg.webp",
+        "caption": "Rajasthan — Ihsanwayfarer, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-04-lg.webp",
+        "caption": "Rajasthan — Paramanu Sarkar, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-02-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-03-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-04-lg.webp",
+        "caption": "Kerala — Vengolis, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
+        "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-02-lg.webp",
+        "caption": "Rajasthan — Hirumon, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-03-lg.webp",
+        "caption": "Rajasthan — Ihsanwayfarer, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-04-lg.webp",
+        "caption": "Rajasthan — Paramanu Sarkar, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-02-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-03-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-04-lg.webp",
+        "caption": "Kerala — Vengolis, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
+        "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-02-lg.webp",
+        "caption": "South Africa — Andy Morffew from Itchen Abbas, Hampshire, UK, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-03-lg.webp",
+        "caption": "South Africa — Heaton Mint ( Birmingham ), for the South African Republic (coin); National Numismatic Collection (image), Public domain"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-04-lg.webp",
+        "caption": "South Africa — Luca Galuzzi ( Lucag ), CC BY-SA 2.5"
+      },
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-01-lg.webp",
+        "caption": "Africa — Internet Archive Book Images, No restrictions"
+      },
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-02-lg.webp",
+        "caption": "Africa — Clarke, Edward Daniel, 1769-1822, No restrictions"
+      },
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-03-lg.webp",
+        "caption": "Africa — Internet Archive Book Images, No restrictions"
+      },
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-04-lg.webp",
+        "caption": "Africa — Internet Archive Book Images, No restrictions"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
+        "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-02-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-03-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-04-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-03-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-02-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-04-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-02-lg.webp",
+        "caption": "Ayodhya — Prime Minister's Office, GODL-India"
+      },
+      {
+        "src": "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-04-lg.webp",
+        "caption": "Ayodhya — Prime Minister's Office, GODL-India"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+        "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
+        "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-01-lg.webp",
+        "caption": "Gulmarg — Harvinder Chandigarh, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-04-lg.webp",
+        "caption": "Bhaktapur — Göran Höglund (Kartläsarn), CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-03-lg.webp",
+        "caption": "Bhaktapur — Goutam1962, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-01-lg.webp",
+        "caption": "Bhaktapur — jafsegal (Thanks for the 5 million views), CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-02-lg.webp",
+        "caption": "Bhaktapur — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/oceania/oceania-01-lg.webp",
+        "caption": "Oceania — Anonymous Unknown author, Public domain"
+      },
+      {
+        "src": "/images/location-library/coral-island-thailand/coral-island-thailand-01-lg.webp",
+        "caption": "Coral Island — Supachaiv, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
+        "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
+        "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/da-nang-vietnam/da-nang-vietnam-01-lg.webp",
+        "caption": "Da Nang — Quangpraha, CC0"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-04-lg.webp",
+        "caption": "Madhya Pradesh — Hariya1234, by"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-02-lg.webp",
+        "caption": "Madhya Pradesh — Yann ( talk ), CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/maharashtra-india/maharashtra-india-01-lg.webp",
+        "caption": "Maharashtra — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-01-lg.webp",
+        "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-02-lg.webp",
+        "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves. Used with attribution, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-03-lg.webp",
+        "caption": "Karnataka — Dey.sandip, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-04-lg.webp",
+        "caption": "Karnataka — Muhammad Mahdi Karim Facebook The making of this document was supported by Wikimedia CH . ( Submit your project! ) For all the files concerned, please see the category Supported by Wikimedia CH . العربية ∙ বাংলা ∙ čeština ∙ Deutsch ∙ English ∙ Esperanto ∙ español ∙ français ∙ galego ∙ हिन्दी ∙ magyar ∙ italiano ∙ 日本語 ∙ македонски ∙ Nederlands ∙ português do Brasil ∙ rumantsch ∙ русский ∙ sicilianu ∙ slovenščina ∙ தமிழ் ∙ українська ∙ 中文 ∙ +/−, GFDL 1.2"
+      },
+      {
+        "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-01-lg.webp",
+        "caption": "Auli — Amit Shaw, CC0"
+      },
+      {
+        "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-02-lg.webp",
+        "caption": "Auli — nanda devi institute of adventure sports and outdoor education, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-03-lg.webp",
+        "caption": "Auli — Bibek Raj Pandeya, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-04-lg.webp",
+        "caption": "Auli — Dinesh Valke from Thane, India, CC BY-SA 2.0"
+      },
+      {
+        "src": "/images/location-library/sonamarg-jammu-and-kashmir-india/sonamarg-jammu-and-kashmir-india-01-lg.webp",
+        "caption": "Sonamarg — Original: Ganesh Mohan T Derivative work: UnpetitproleX, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/sonamarg-jammu-and-kashmir-india/sonamarg-jammu-and-kashmir-india-02-lg.webp",
+        "caption": "Sonamarg — Gannu03, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sonamarg-jammu-and-kashmir-india/sonamarg-jammu-and-kashmir-india-03-lg.webp",
+        "caption": "Sonamarg — SRISHTI RAWAT, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sonamarg-jammu-and-kashmir-india/sonamarg-jammu-and-kashmir-india-04-lg.webp",
+        "caption": "Sonamarg — Rajani Gairshail, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-01-lg.webp",
+        "caption": "East Africa — Poppingrids, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-02-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-03-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-04-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-02-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-03-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-04-lg.webp",
+        "caption": "Kerala — Vengolis, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-01-lg.webp",
+        "caption": "Nepal — Bijay Chaurasia, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-02-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-03-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-04-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-01-lg.webp",
+        "caption": "Uttarakhand — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-02-lg.webp",
+        "caption": "Uttarakhand — Original: Harshit SR Derivative work: UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-03-lg.webp",
+        "caption": "Uttarakhand — Original: Rohit Sharma Derivative work: UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-04-lg.webp",
+        "caption": "Uttarakhand — Rohit Sharma, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
+        "caption": "Sri Lanka — Satdeep Gill, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-02-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-03-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-04-lg.webp",
+        "caption": "Sri Lanka — Pierre André Leclercq, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-01-lg.webp",
+        "caption": "Kovalam — Fabrice Florin from Mill Valley, USA, CC BY-SA 2.0"
+      },
+      {
+        "src": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-02-lg.webp",
+        "caption": "Kovalam — Nikhilb239, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-03-lg.webp",
+        "caption": "Kovalam — Raman Patel, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-04-lg.webp",
+        "caption": "Kovalam — mehul.antani, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-01-lg.webp",
+        "caption": "Tamil Nadu — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-02-lg.webp",
+        "caption": "Tamil Nadu — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-03-lg.webp",
+        "caption": "Tamil Nadu — Timothy A. Gonsalves, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-04-lg.webp",
+        "caption": "Tamil Nadu — Timothy A. Gonsalves, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-01-lg.webp",
+        "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-02-lg.webp",
+        "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves. Used with attribution, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-03-lg.webp",
+        "caption": "Karnataka — Dey.sandip, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-04-lg.webp",
+        "caption": "Karnataka — Muhammad Mahdi Karim Facebook The making of this document was supported by Wikimedia CH . ( Submit your project! ) For all the files concerned, please see the category Supported by Wikimedia CH . العربية ∙ বাংলা ∙ čeština ∙ Deutsch ∙ English ∙ Esperanto ∙ español ∙ français ∙ galego ∙ हिन्दी ∙ magyar ∙ italiano ∙ 日本語 ∙ македонски ∙ Nederlands ∙ português do Brasil ∙ rumantsch ∙ русский ∙ sicilianu ∙ slovenščina ∙ தமிழ் ∙ українська ∙ 中文 ∙ +/−, GFDL 1.2"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+        "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-02-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-03-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-04-lg.webp",
+        "caption": "Vietnam — Ngọt band, CC0"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+        "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-02-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-03-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-04-lg.webp",
+        "caption": "Vietnam — Ngọt band, CC0"
+      },
+      {
+        "src": "/images/location-library/rudraprayag-uttarakhand-india/rudraprayag-uttarakhand-india-01-lg.webp",
+        "caption": "Rudraprayag — Ministry of Defence, GODL-India"
+      },
+      {
+        "src": "/images/location-library/rudraprayag-uttarakhand-india/rudraprayag-uttarakhand-india-02-lg.webp",
+        "caption": "Rudraprayag — Photos Worldwide, CC0"
+      },
+      {
+        "src": "/images/location-library/rudraprayag-uttarakhand-india/rudraprayag-uttarakhand-india-03-lg.webp",
+        "caption": "Rudraprayag — Karunamay Mukhopadhyay, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rudraprayag-uttarakhand-india/rudraprayag-uttarakhand-india-04-lg.webp",
+        "caption": "Rudraprayag — Fowler&fowler «Talk», CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
+        "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-02-lg.webp",
+        "caption": "South Africa — Andy Morffew from Itchen Abbas, Hampshire, UK, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-03-lg.webp",
+        "caption": "South Africa — Heaton Mint ( Birmingham ), for the South African Republic (coin); National Numismatic Collection (image), Public domain"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-04-lg.webp",
+        "caption": "South Africa — Luca Galuzzi ( Lucag ), CC BY-SA 2.5"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-01-lg.webp",
+        "caption": "Bandhavgarh National Park — Anuj shree, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-02-lg.webp",
+        "caption": "Bandhavgarh National Park — JP Bennett, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-03-lg.webp",
+        "caption": "Bandhavgarh National Park — Goleisureintl, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-04-lg.webp",
+        "caption": "Bandhavgarh National Park — Tom Thai, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-01-lg.webp",
+        "caption": "Gulmarg — Harvinder Chandigarh, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-02-lg.webp",
+        "caption": "Gulmarg — Harvinder Chandigarh, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-03-lg.webp",
+        "caption": "Gulmarg — Gaurav Pattnaik, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-04-lg.webp",
+        "caption": "Gulmarg — Harvinder Chandigarh, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-01-lg.webp",
+        "caption": "Mathura — Sandeepni, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-02-lg.webp",
+        "caption": "Mathura — Shikher Singh, by-sa"
+      },
+      {
+        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-03-lg.webp",
+        "caption": "Mathura — Guptaele, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-04-lg.webp",
+        "caption": "Mathura — Guptaele, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Madhya Pradesh"
+    ]
+  },
+  "jaffna": {
+    "primary": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
+        "caption": "Sri Lanka — Satdeep Gill, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-02-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-03-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-04-lg.webp",
+        "caption": "Sri Lanka — Pierre André Leclercq, CC BY 4.0"
+      }
+    ],
+    "locations": [
+      "Jaffna"
+    ]
+  },
+  "janakpur": {
+    "primary": "/images/location-library/nepal-international/nepal-international-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-01-lg.webp",
+        "caption": "Nepal — Bijay Chaurasia, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-02-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-03-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-04-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      }
+    ],
+    "locations": [
+      "Janakpur"
+    ]
+  },
+  "kamakhya-temple-tour-package": {
+    "primary": "/images/location-library/guwahati-assam-india/guwahati-assam-india-04-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/guwahati-assam-india/guwahati-assam-india-04-lg.webp",
+        "caption": "Guwahati — BhuyanBhaskar, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/guwahati-assam-india/guwahati-assam-india-01-lg.webp",
+        "caption": "Guwahati — Timothy A. Gonsalves, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/guwahati-assam-india/guwahati-assam-india-02-lg.webp",
+        "caption": "Guwahati — Timothy A. Gonsalves, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/guwahati-assam-india/guwahati-assam-india-03-lg.webp",
+        "caption": "Guwahati — Timothy A. Gonsalves, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/manikaran-himachal-pradesh-india/manikaran-himachal-pradesh-india-01-lg.webp",
+        "caption": "Manikaran — Aksh Patial, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/manikaran-himachal-pradesh-india/manikaran-himachal-pradesh-india-02-lg.webp",
+        "caption": "Manikaran — Pinakpani, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/manikaran-himachal-pradesh-india/manikaran-himachal-pradesh-india-03-lg.webp",
+        "caption": "Manikaran — Manu moudgil, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/manikaran-himachal-pradesh-india/manikaran-himachal-pradesh-india-04-lg.webp",
+        "caption": "Manikaran — Param6536, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
+        "caption": "Sri Lanka — Satdeep Gill, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-02-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-03-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-04-lg.webp",
+        "caption": "Sri Lanka — Pierre André Leclercq, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-01-lg.webp",
+        "caption": "East Africa — Poppingrids, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-02-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-03-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-04-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
+        "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-02-lg.webp",
+        "caption": "Rajasthan — Hirumon, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-03-lg.webp",
+        "caption": "Rajasthan — Ihsanwayfarer, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-04-lg.webp",
+        "caption": "Rajasthan — Paramanu Sarkar, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-02-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-03-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-04-lg.webp",
+        "caption": "Kerala — Vengolis, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
+        "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-02-lg.webp",
+        "caption": "Rajasthan — Hirumon, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-03-lg.webp",
+        "caption": "Rajasthan — Ihsanwayfarer, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-04-lg.webp",
+        "caption": "Rajasthan — Paramanu Sarkar, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-02-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-03-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-04-lg.webp",
+        "caption": "Kerala — Vengolis, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
+        "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-02-lg.webp",
+        "caption": "South Africa — Andy Morffew from Itchen Abbas, Hampshire, UK, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-03-lg.webp",
+        "caption": "South Africa — Heaton Mint ( Birmingham ), for the South African Republic (coin); National Numismatic Collection (image), Public domain"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-04-lg.webp",
+        "caption": "South Africa — Luca Galuzzi ( Lucag ), CC BY-SA 2.5"
+      },
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-01-lg.webp",
+        "caption": "Africa — Internet Archive Book Images, No restrictions"
+      },
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-02-lg.webp",
+        "caption": "Africa — Clarke, Edward Daniel, 1769-1822, No restrictions"
+      },
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-03-lg.webp",
+        "caption": "Africa — Internet Archive Book Images, No restrictions"
+      },
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-04-lg.webp",
+        "caption": "Africa — Internet Archive Book Images, No restrictions"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
+        "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-02-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-03-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-04-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-03-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-02-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-04-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-02-lg.webp",
+        "caption": "Ayodhya — Prime Minister's Office, GODL-India"
+      },
+      {
+        "src": "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-04-lg.webp",
+        "caption": "Ayodhya — Prime Minister's Office, GODL-India"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+        "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
+        "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-01-lg.webp",
+        "caption": "Gulmarg — Harvinder Chandigarh, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-04-lg.webp",
+        "caption": "Bhaktapur — Göran Höglund (Kartläsarn), CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-03-lg.webp",
+        "caption": "Bhaktapur — Goutam1962, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-01-lg.webp",
+        "caption": "Bhaktapur — jafsegal (Thanks for the 5 million views), CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-02-lg.webp",
+        "caption": "Bhaktapur — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/oceania/oceania-01-lg.webp",
+        "caption": "Oceania — Anonymous Unknown author, Public domain"
+      },
+      {
+        "src": "/images/location-library/coral-island-thailand/coral-island-thailand-01-lg.webp",
+        "caption": "Coral Island — Supachaiv, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
+        "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
+        "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/da-nang-vietnam/da-nang-vietnam-01-lg.webp",
+        "caption": "Da Nang — Quangpraha, CC0"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-04-lg.webp",
+        "caption": "Madhya Pradesh — Hariya1234, by"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-03-lg.webp",
+        "caption": "Madhya Pradesh — Yann ( talk ), CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-02-lg.webp",
+        "caption": "Madhya Pradesh — Yann ( talk ), CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/maharashtra-india/maharashtra-india-01-lg.webp",
+        "caption": "Maharashtra — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-01-lg.webp",
+        "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-02-lg.webp",
+        "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves. Used with attribution, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-03-lg.webp",
+        "caption": "Karnataka — Dey.sandip, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-04-lg.webp",
+        "caption": "Karnataka — Muhammad Mahdi Karim Facebook The making of this document was supported by Wikimedia CH . ( Submit your project! ) For all the files concerned, please see the category Supported by Wikimedia CH . العربية ∙ বাংলা ∙ čeština ∙ Deutsch ∙ English ∙ Esperanto ∙ español ∙ français ∙ galego ∙ हिन्दी ∙ magyar ∙ italiano ∙ 日本語 ∙ македонски ∙ Nederlands ∙ português do Brasil ∙ rumantsch ∙ русский ∙ sicilianu ∙ slovenščina ∙ தமிழ் ∙ українська ∙ 中文 ∙ +/−, GFDL 1.2"
+      },
+      {
+        "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-01-lg.webp",
+        "caption": "Auli — Amit Shaw, CC0"
+      },
+      {
+        "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-02-lg.webp",
+        "caption": "Auli — nanda devi institute of adventure sports and outdoor education, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-03-lg.webp",
+        "caption": "Auli — Bibek Raj Pandeya, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-04-lg.webp",
+        "caption": "Auli — Dinesh Valke from Thane, India, CC BY-SA 2.0"
+      },
+      {
+        "src": "/images/location-library/sonamarg-jammu-and-kashmir-india/sonamarg-jammu-and-kashmir-india-01-lg.webp",
+        "caption": "Sonamarg — Original: Ganesh Mohan T Derivative work: UnpetitproleX, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/sonamarg-jammu-and-kashmir-india/sonamarg-jammu-and-kashmir-india-02-lg.webp",
+        "caption": "Sonamarg — Gannu03, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sonamarg-jammu-and-kashmir-india/sonamarg-jammu-and-kashmir-india-03-lg.webp",
+        "caption": "Sonamarg — SRISHTI RAWAT, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sonamarg-jammu-and-kashmir-india/sonamarg-jammu-and-kashmir-india-04-lg.webp",
+        "caption": "Sonamarg — Rajani Gairshail, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-01-lg.webp",
+        "caption": "East Africa — Poppingrids, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-02-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-03-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-04-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-02-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-03-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-04-lg.webp",
+        "caption": "Kerala — Vengolis, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-01-lg.webp",
+        "caption": "Nepal — Bijay Chaurasia, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-02-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-03-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-04-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-01-lg.webp",
+        "caption": "Uttarakhand — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-02-lg.webp",
+        "caption": "Uttarakhand — Original: Harshit SR Derivative work: UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-03-lg.webp",
+        "caption": "Uttarakhand — Original: Rohit Sharma Derivative work: UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-04-lg.webp",
+        "caption": "Uttarakhand — Rohit Sharma, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
+        "caption": "Sri Lanka — Satdeep Gill, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-02-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-03-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-04-lg.webp",
+        "caption": "Sri Lanka — Pierre André Leclercq, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-01-lg.webp",
+        "caption": "Kovalam — Fabrice Florin from Mill Valley, USA, CC BY-SA 2.0"
+      },
+      {
+        "src": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-02-lg.webp",
+        "caption": "Kovalam — Nikhilb239, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-03-lg.webp",
+        "caption": "Kovalam — Raman Patel, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-04-lg.webp",
+        "caption": "Kovalam — mehul.antani, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-01-lg.webp",
+        "caption": "Tamil Nadu — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-02-lg.webp",
+        "caption": "Tamil Nadu — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-03-lg.webp",
+        "caption": "Tamil Nadu — Timothy A. Gonsalves, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-04-lg.webp",
+        "caption": "Tamil Nadu — Timothy A. Gonsalves, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-01-lg.webp",
+        "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-02-lg.webp",
+        "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves. Used with attribution, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-03-lg.webp",
+        "caption": "Karnataka — Dey.sandip, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-04-lg.webp",
+        "caption": "Karnataka — Muhammad Mahdi Karim Facebook The making of this document was supported by Wikimedia CH . ( Submit your project! ) For all the files concerned, please see the category Supported by Wikimedia CH . العربية ∙ বাংলা ∙ čeština ∙ Deutsch ∙ English ∙ Esperanto ∙ español ∙ français ∙ galego ∙ हिन्दी ∙ magyar ∙ italiano ∙ 日本語 ∙ македонски ∙ Nederlands ∙ português do Brasil ∙ rumantsch ∙ русский ∙ sicilianu ∙ slovenščina ∙ தமிழ் ∙ українська ∙ 中文 ∙ +/−, GFDL 1.2"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+        "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-02-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-03-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-04-lg.webp",
+        "caption": "Vietnam — Ngọt band, CC0"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+        "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-02-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-03-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-04-lg.webp",
+        "caption": "Vietnam — Ngọt band, CC0"
+      },
+      {
+        "src": "/images/location-library/rudraprayag-uttarakhand-india/rudraprayag-uttarakhand-india-01-lg.webp",
+        "caption": "Rudraprayag — Ministry of Defence, GODL-India"
+      },
+      {
+        "src": "/images/location-library/rudraprayag-uttarakhand-india/rudraprayag-uttarakhand-india-02-lg.webp",
+        "caption": "Rudraprayag — Photos Worldwide, CC0"
+      },
+      {
+        "src": "/images/location-library/rudraprayag-uttarakhand-india/rudraprayag-uttarakhand-india-03-lg.webp",
+        "caption": "Rudraprayag — Karunamay Mukhopadhyay, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rudraprayag-uttarakhand-india/rudraprayag-uttarakhand-india-04-lg.webp",
+        "caption": "Rudraprayag — Fowler&fowler «Talk», CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
+        "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-02-lg.webp",
+        "caption": "South Africa — Andy Morffew from Itchen Abbas, Hampshire, UK, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-03-lg.webp",
+        "caption": "South Africa — Heaton Mint ( Birmingham ), for the South African Republic (coin); National Numismatic Collection (image), Public domain"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-04-lg.webp",
+        "caption": "South Africa — Luca Galuzzi ( Lucag ), CC BY-SA 2.5"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-01-lg.webp",
+        "caption": "Bandhavgarh National Park — Anuj shree, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-02-lg.webp",
+        "caption": "Bandhavgarh National Park — JP Bennett, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-03-lg.webp",
+        "caption": "Bandhavgarh National Park — Goleisureintl, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-04-lg.webp",
+        "caption": "Bandhavgarh National Park — Tom Thai, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-01-lg.webp",
+        "caption": "Gulmarg — Harvinder Chandigarh, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-02-lg.webp",
+        "caption": "Gulmarg — Harvinder Chandigarh, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-03-lg.webp",
+        "caption": "Gulmarg — Gaurav Pattnaik, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-04-lg.webp",
+        "caption": "Gulmarg — Harvinder Chandigarh, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-01-lg.webp",
+        "caption": "Mathura — Sandeepni, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-02-lg.webp",
+        "caption": "Mathura — Shikher Singh, by-sa"
+      },
+      {
+        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-03-lg.webp",
+        "caption": "Mathura — Guptaele, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-04-lg.webp",
+        "caption": "Mathura — Guptaele, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Guwahati"
+    ]
+  },
+  "kasol-tour-packages": {
+    "primary": "/images/location-library/manikaran-himachal-pradesh-india/manikaran-himachal-pradesh-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/manikaran-himachal-pradesh-india/manikaran-himachal-pradesh-india-01-lg.webp",
+        "caption": "Manikaran — Aksh Patial, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/manikaran-himachal-pradesh-india/manikaran-himachal-pradesh-india-02-lg.webp",
+        "caption": "Manikaran — Pinakpani, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/manikaran-himachal-pradesh-india/manikaran-himachal-pradesh-india-03-lg.webp",
+        "caption": "Manikaran — Manu moudgil, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/manikaran-himachal-pradesh-india/manikaran-himachal-pradesh-india-04-lg.webp",
+        "caption": "Manikaran — Param6536, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Kasol"
+    ]
+  },
+  "kegalle": {
+    "primary": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
+        "caption": "Sri Lanka — Satdeep Gill, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-02-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-03-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-04-lg.webp",
+        "caption": "Sri Lanka — Pierre André Leclercq, CC BY 4.0"
+      }
+    ],
+    "locations": [
+      "Kegalle"
+    ]
+  },
+  "kenya-tour-packages": {
+    "primary": "/images/location-library/east-africa-international/east-africa-international-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-01-lg.webp",
+        "caption": "East Africa — Poppingrids, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-02-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-03-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-04-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Kenya"
+    ]
+  },
+  "khatu-shyam-ji-salasar-balaji-yatra-by-helicopter": {
+    "primary": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
+        "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-02-lg.webp",
+        "caption": "Rajasthan — Hirumon, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-03-lg.webp",
+        "caption": "Rajasthan — Ihsanwayfarer, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-04-lg.webp",
+        "caption": "Rajasthan — Paramanu Sarkar, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Rajasthan"
+    ]
+  },
+  "kollam-tour-packages": {
+    "primary": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-02-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-03-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-04-lg.webp",
+        "caption": "Kerala — Vengolis, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Kollam"
+    ]
+  },
+  "kota-tour-packages": {
+    "primary": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
+        "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-02-lg.webp",
+        "caption": "Rajasthan — Hirumon, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-03-lg.webp",
+        "caption": "Rajasthan — Ihsanwayfarer, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-04-lg.webp",
+        "caption": "Rajasthan — Paramanu Sarkar, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Kota"
+    ]
+  },
+  "kottayam-tour-packages": {
+    "primary": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-02-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-03-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-04-lg.webp",
+        "caption": "Kerala — Vengolis, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Kottayam"
+    ]
+  },
+  "kwazulu-natal-tour-packages": {
+    "primary": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
+        "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-02-lg.webp",
+        "caption": "South Africa — Andy Morffew from Itchen Abbas, Hampshire, UK, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-03-lg.webp",
+        "caption": "South Africa — Heaton Mint ( Birmingham ), for the South African Republic (coin); National Numismatic Collection (image), Public domain"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-04-lg.webp",
+        "caption": "South Africa — Luca Galuzzi ( Lucag ), CC BY-SA 2.5"
+      }
+    ],
+    "locations": [
+      "KwaZulu-Natal"
+    ]
+  },
+  "libya-tour-packages": {
+    "primary": "/images/location-library/africa-various-countries/africa-various-countries-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-01-lg.webp",
+        "caption": "Africa — Internet Archive Book Images, No restrictions"
+      },
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-02-lg.webp",
+        "caption": "Africa — Clarke, Edward Daniel, 1769-1822, No restrictions"
+      },
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-03-lg.webp",
+        "caption": "Africa — Internet Archive Book Images, No restrictions"
+      },
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-04-lg.webp",
+        "caption": "Africa — Internet Archive Book Images, No restrictions"
+      }
+    ],
+    "locations": [
+      "Libya"
+    ]
+  },
+  "monsoon-tour-packages": {
+    "primary": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      }
+    ],
+    "locations": [
+      "Kerala"
+    ]
+  },
+  "mpumalanga-tour-packages": {
+    "primary": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
+        "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Mpumalanga"
+    ]
+  },
+  "muktinath": {
+    "primary": "/images/location-library/nepal-international/nepal-international-02-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-02-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-03-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-04-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      }
+    ],
+    "locations": [
+      "Muktinath"
+    ]
+  },
+  "nagarkot": {
+    "primary": "/images/location-library/nepal-international/nepal-international-03-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-03-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-02-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-04-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      }
+    ],
+    "locations": [
+      "Nagarkot"
+    ]
+  },
+  "naimisharanya-tour-packages": {
+    "primary": "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-02-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-02-lg.webp",
+        "caption": "Ayodhya — Prime Minister's Office, GODL-India"
+      },
+      {
+        "src": "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-04-lg.webp",
+        "caption": "Ayodhya — Prime Minister's Office, GODL-India"
+      }
+    ],
+    "locations": [
+      "Naimisharanya"
+    ]
+  },
+  "nha-trang": {
+    "primary": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+        "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Nha Trang"
+    ]
+  },
+  "northern-cape-tour-packages": {
+    "primary": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
+        "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Northern Cape"
+    ]
+  },
+  "pahalgam-tour-packages": {
+    "primary": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-01-lg.webp",
+        "caption": "Gulmarg — Harvinder Chandigarh, CC BY 4.0"
+      }
+    ],
+    "locations": [
+      "Pahalgam"
+    ]
+  },
+  "palakkad-tour-packages": {
+    "primary": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      }
+    ],
+    "locations": [
+      "Palakkad"
+    ]
+  },
+  "panauti": {
+    "primary": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-04-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-04-lg.webp",
+        "caption": "Bhaktapur — Göran Höglund (Kartläsarn), CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-03-lg.webp",
+        "caption": "Bhaktapur — Goutam1962, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-01-lg.webp",
+        "caption": "Bhaktapur — jafsegal (Thanks for the 5 million views), CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-02-lg.webp",
+        "caption": "Bhaktapur — Vyacheslav Argenberg, CC BY 4.0"
+      }
+    ],
+    "locations": [
+      "Panauti"
+    ]
+  },
+  "papua-new-guinea-tour-packages": {
+    "primary": "/images/location-library/oceania/oceania-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/oceania/oceania-01-lg.webp",
+        "caption": "Oceania — Anonymous Unknown author, Public domain"
+      }
+    ],
+    "locations": [
+      "Papua New Guinea"
+    ]
+  },
+  "phuket-tour-packages": {
+    "primary": "/images/location-library/coral-island-thailand/coral-island-thailand-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/coral-island-thailand/coral-island-thailand-01-lg.webp",
+        "caption": "Coral Island — Supachaiv, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Phuket"
+    ]
+  },
+  "pilgrimage-tour-package": {
+    "primary": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
+        "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Varanasi"
+    ]
+  },
+  "pilgrimage-tours": {
+    "primary": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
+        "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Varanasi"
+    ]
+  },
+  "quy-nhon": {
+    "primary": "/images/location-library/da-nang-vietnam/da-nang-vietnam-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/da-nang-vietnam/da-nang-vietnam-01-lg.webp",
+        "caption": "Da Nang — Quangpraha, CC0"
+      }
+    ],
+    "locations": [
+      "Quy Nhon"
+    ]
+  },
+  "rewa-tour-packages": {
+    "primary": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-04-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-04-lg.webp",
+        "caption": "Madhya Pradesh — Hariya1234, by"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-03-lg.webp",
+        "caption": "Madhya Pradesh — Yann ( talk ), CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-02-lg.webp",
+        "caption": "Madhya Pradesh — Yann ( talk ), CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Rewa"
+    ]
+  },
+  "satara": {
+    "primary": "/images/location-library/maharashtra-india/maharashtra-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/maharashtra-india/maharashtra-india-01-lg.webp",
+        "caption": "Maharashtra — Didier Descouens, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Satara"
+    ]
+  },
+  "shimoga-tour-packages": {
+    "primary": "/images/location-library/karnataka-india/karnataka-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-01-lg.webp",
+        "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-02-lg.webp",
+        "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves. Used with attribution, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-03-lg.webp",
+        "caption": "Karnataka — Dey.sandip, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-04-lg.webp",
+        "caption": "Karnataka — Muhammad Mahdi Karim Facebook The making of this document was supported by Wikimedia CH . ( Submit your project! ) For all the files concerned, please see the category Supported by Wikimedia CH . العربية ∙ বাংলা ∙ čeština ∙ Deutsch ∙ English ∙ Esperanto ∙ español ∙ français ∙ galego ∙ हिन्दी ∙ magyar ∙ italiano ∙ 日本語 ∙ македонски ∙ Nederlands ∙ português do Brasil ∙ rumantsch ∙ русский ∙ sicilianu ∙ slovenščina ∙ தமிழ் ∙ українська ∙ 中文 ∙ +/−, GFDL 1.2"
+      }
+    ],
+    "locations": [
+      "Shimoga"
+    ]
+  },
+  "skiing": {
+    "primary": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-01-lg.webp",
+        "caption": "Auli — Amit Shaw, CC0"
+      },
+      {
+        "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-02-lg.webp",
+        "caption": "Auli — nanda devi institute of adventure sports and outdoor education, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-03-lg.webp",
+        "caption": "Auli — Bibek Raj Pandeya, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-04-lg.webp",
+        "caption": "Auli — Dinesh Valke from Thane, India, CC BY-SA 2.0"
+      }
+    ],
+    "locations": [
+      "Auli"
+    ]
+  },
+  "sonamarg-tour-packages": {
+    "primary": "/images/location-library/sonamarg-jammu-and-kashmir-india/sonamarg-jammu-and-kashmir-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/sonamarg-jammu-and-kashmir-india/sonamarg-jammu-and-kashmir-india-01-lg.webp",
+        "caption": "Sonamarg — Original: Ganesh Mohan T Derivative work: UnpetitproleX, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/sonamarg-jammu-and-kashmir-india/sonamarg-jammu-and-kashmir-india-02-lg.webp",
+        "caption": "Sonamarg — Gannu03, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sonamarg-jammu-and-kashmir-india/sonamarg-jammu-and-kashmir-india-03-lg.webp",
+        "caption": "Sonamarg — SRISHTI RAWAT, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sonamarg-jammu-and-kashmir-india/sonamarg-jammu-and-kashmir-india-04-lg.webp",
+        "caption": "Sonamarg — Rajani Gairshail, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Sonamarg"
+    ]
+  },
+  "tanzania-tour-packages": {
+    "primary": "/images/location-library/east-africa-international/east-africa-international-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-01-lg.webp",
+        "caption": "East Africa — Poppingrids, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-02-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-03-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-04-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Tanzania"
+    ]
+  },
+  "thrissur-tour-packages": {
+    "primary": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-02-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-03-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-04-lg.webp",
+        "caption": "Kerala — Vengolis, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Thrissur"
+    ]
+  },
+  "thyangboche": {
+    "primary": "/images/location-library/nepal-international/nepal-international-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-01-lg.webp",
+        "caption": "Nepal — Bijay Chaurasia, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-02-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-03-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-04-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Thyangboche"
+    ]
+  },
+  "trekking": {
+    "primary": "/images/location-library/uttarakhand-india/uttarakhand-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-01-lg.webp",
+        "caption": "Uttarakhand — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-02-lg.webp",
+        "caption": "Uttarakhand — Original: Harshit SR Derivative work: UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-03-lg.webp",
+        "caption": "Uttarakhand — Original: Rohit Sharma Derivative work: UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-04-lg.webp",
+        "caption": "Uttarakhand — Rohit Sharma, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Uttarakhand"
+    ]
+  },
+  "trincomalee": {
+    "primary": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
+        "caption": "Sri Lanka — Satdeep Gill, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-02-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-03-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-04-lg.webp",
+        "caption": "Sri Lanka — Pierre André Leclercq, CC BY 4.0"
+      }
+    ],
+    "locations": [
+      "Trincomalee"
+    ]
+  },
+  "trivandrum-tour-packages": {
+    "primary": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-01-lg.webp",
+        "caption": "Kovalam — Fabrice Florin from Mill Valley, USA, CC BY-SA 2.0"
+      },
+      {
+        "src": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-02-lg.webp",
+        "caption": "Kovalam — Nikhilb239, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-03-lg.webp",
+        "caption": "Kovalam — Raman Patel, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-04-lg.webp",
+        "caption": "Kovalam — mehul.antani, CC BY 2.0"
+      }
+    ],
+    "locations": [
+      "Trivandrum"
+    ]
+  },
+  "vellore-tour-packages": {
+    "primary": "/images/location-library/tamil-nadu-india/tamil-nadu-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-01-lg.webp",
+        "caption": "Tamil Nadu — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-02-lg.webp",
+        "caption": "Tamil Nadu — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-03-lg.webp",
+        "caption": "Tamil Nadu — Timothy A. Gonsalves, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-04-lg.webp",
+        "caption": "Tamil Nadu — Timothy A. Gonsalves, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Vellore"
+    ]
+  },
+  "vijayapura-tour-packages": {
+    "primary": "/images/location-library/karnataka-india/karnataka-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-01-lg.webp",
+        "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-02-lg.webp",
+        "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves. Used with attribution, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-03-lg.webp",
+        "caption": "Karnataka — Dey.sandip, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-04-lg.webp",
+        "caption": "Karnataka — Muhammad Mahdi Karim Facebook The making of this document was supported by Wikimedia CH . ( Submit your project! ) For all the files concerned, please see the category Supported by Wikimedia CH . العربية ∙ বাংলা ∙ čeština ∙ Deutsch ∙ English ∙ Esperanto ∙ español ∙ français ∙ galego ∙ हिन्दी ∙ magyar ∙ italiano ∙ 日本語 ∙ македонски ∙ Nederlands ∙ português do Brasil ∙ rumantsch ∙ русский ∙ sicilianu ∙ slovenščina ∙ தமிழ் ∙ українська ∙ 中文 ∙ +/−, GFDL 1.2"
+      }
+    ],
+    "locations": [
+      "Vijayapura"
+    ]
+  },
+  "vinh-long": {
+    "primary": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+        "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-02-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-03-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-04-lg.webp",
+        "caption": "Vietnam — Ngọt band, CC0"
+      }
+    ],
+    "locations": [
+      "Vinh Long"
+    ]
+  },
+  "vung-tau": {
+    "primary": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
+        "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-02-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-03-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-04-lg.webp",
+        "caption": "Vietnam — Ngọt band, CC0"
+      }
+    ],
+    "locations": [
+      "Vung Tau"
+    ]
+  },
+  "wedding-at-triyuginarayan-temple": {
+    "primary": "/images/location-library/rudraprayag-uttarakhand-india/rudraprayag-uttarakhand-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/rudraprayag-uttarakhand-india/rudraprayag-uttarakhand-india-01-lg.webp",
+        "caption": "Rudraprayag — Ministry of Defence, GODL-India"
+      },
+      {
+        "src": "/images/location-library/rudraprayag-uttarakhand-india/rudraprayag-uttarakhand-india-02-lg.webp",
+        "caption": "Rudraprayag — Photos Worldwide, CC0"
+      },
+      {
+        "src": "/images/location-library/rudraprayag-uttarakhand-india/rudraprayag-uttarakhand-india-03-lg.webp",
+        "caption": "Rudraprayag — Karunamay Mukhopadhyay, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rudraprayag-uttarakhand-india/rudraprayag-uttarakhand-india-04-lg.webp",
+        "caption": "Rudraprayag — Fowler&fowler «Talk», CC BY-SA 3.0"
+      }
+    ],
+    "locations": [
+      "Triyuginarayan"
+    ]
+  },
+  "western-cape-tour-packages": {
+    "primary": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
+        "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-02-lg.webp",
+        "caption": "South Africa — Andy Morffew from Itchen Abbas, Hampshire, UK, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-03-lg.webp",
+        "caption": "South Africa — Heaton Mint ( Birmingham ), for the South African Republic (coin); National Numismatic Collection (image), Public domain"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-04-lg.webp",
+        "caption": "South Africa — Luca Galuzzi ( Lucag ), CC BY-SA 2.5"
+      }
+    ],
+    "locations": [
+      "Western Cape"
+    ]
+  },
+  "wildlife": {
+    "primary": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-01-lg.webp",
+        "caption": "Bandhavgarh National Park — Anuj shree, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-02-lg.webp",
+        "caption": "Bandhavgarh National Park — JP Bennett, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-03-lg.webp",
+        "caption": "Bandhavgarh National Park — Goleisureintl, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-04-lg.webp",
+        "caption": "Bandhavgarh National Park — Tom Thai, CC BY 2.0"
+      }
+    ],
+    "locations": [
+      "Bandhavgarh National Park"
+    ]
+  },
+  "winter-tour-packages": {
+    "primary": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-01-lg.webp",
+        "caption": "Gulmarg — Harvinder Chandigarh, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-02-lg.webp",
+        "caption": "Gulmarg — Harvinder Chandigarh, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-03-lg.webp",
+        "caption": "Gulmarg — Gaurav Pattnaik, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-04-lg.webp",
+        "caption": "Gulmarg — Harvinder Chandigarh, CC BY 4.0"
+      }
+    ],
+    "locations": [
+      "Gulmarg"
+    ]
+  },
+  "yamuna-pushkaralu-yatra-packages": {
+    "primary": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-01-lg.webp",
+    "gallery": [
+      {
+        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-01-lg.webp",
+        "caption": "Mathura — Sandeepni, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-02-lg.webp",
+        "caption": "Mathura — Shikher Singh, by-sa"
+      },
+      {
+        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-03-lg.webp",
+        "caption": "Mathura — Guptaele, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-04-lg.webp",
+        "caption": "Mathura — Guptaele, CC BY-SA 4.0"
+      }
+    ],
+    "locations": [
+      "Mathura"
+    ]
   }
 };
 
