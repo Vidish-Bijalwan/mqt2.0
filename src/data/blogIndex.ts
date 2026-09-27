@@ -1,5 +1,11 @@
 import blogIndexRaw from "@/data/blogIndex.generated.json";
 import { getBlogCategory, getBlogTags, getEditorialSnippet, isPublishedBlog } from "@/data/blogEditorial";
+import { BLOG_POST_SEEDS_BATCH_1 } from "@/data/blogPosts/seeds/batch-1";
+import { BLOG_POST_SEEDS_BATCH_2 } from "@/data/blogPosts/seeds/batch-2";
+import { BLOG_POST_SEEDS_BATCH_3 } from "@/data/blogPosts/seeds/batch-3";
+import { BLOG_POST_SEEDS_BATCH_4 } from "@/data/blogPosts/seeds/batch-4";
+import { BLOG_POST_SEEDS_BATCH_5 } from "@/data/blogPosts/seeds/batch-5";
+import type { BlogPostSeed } from "@/data/blogPosts/types";
 
 export interface BlogIndexEntry {
   slug: string;
@@ -10,20 +16,58 @@ export interface BlogIndexEntry {
   tags: string[];
   readingTime: number;
   wordCount: number;
+  /** Factory posts only: unique meta description (also used as the snippet). */
+  metaDescription?: string;
+  /** Factory posts only: ISO publish timestamp; drives the drip schedule. */
+  publishedAt?: string;
 }
 
 // Keep article bodies out of client bundles used by the listing and sidebar.
 // Only publish articles that pass the editorial quality and relevance gate.
 // The legacy scrape remains available as a migration source, but never drives
 // the catalogue, search results, or XML sitemap.
-export const ALL_BLOGS: BlogIndexEntry[] = (blogIndexRaw as Omit<BlogIndexEntry, "tags">[])
+//
+// Factory seeds carry metadata only (no bodies — those live in
+// blogPosts/bodies/*, imported server-side by the post page). Seeds whose
+// publishedAt is in the future are excluded: every consumer (listing,
+// search, sitemap, sidebar, post route, slug status) reads ALL_BLOGS, so a
+// future-dated post 404s until its slot and appears via ISR afterwards.
+const FACTORY_SEEDS: BlogPostSeed[] = [
+  ...BLOG_POST_SEEDS_BATCH_1,
+  ...BLOG_POST_SEEDS_BATCH_2,
+  ...BLOG_POST_SEEDS_BATCH_3,
+  ...BLOG_POST_SEEDS_BATCH_4,
+  ...BLOG_POST_SEEDS_BATCH_5,
+];
+
+function isLiveSeed(seed: BlogPostSeed) {
+  return new Date(seed.publishedAt).getTime() <= Date.now();
+}
+
+type RawEntry = Omit<BlogIndexEntry, "tags" | "metaDescription" | "publishedAt">;
+
+export const ALL_BLOGS: BlogIndexEntry[] = (
+  [
+    ...(blogIndexRaw as RawEntry[]),
+    ...FACTORY_SEEDS.filter(isLiveSeed),
+  ] as (RawEntry | BlogPostSeed)[]
+)
   .filter((blog) => isPublishedBlog(blog))
-  .map((blog) => ({
-    ...blog,
-    category: getBlogCategory(blog),
-    tags: getBlogTags(blog),
-    snippet: getEditorialSnippet(blog),
-  }));
+  .map((blog) => {
+    const seed = blog as Partial<BlogPostSeed>;
+    return {
+      slug: blog.slug,
+      title: blog.title,
+      snippet: seed.metaDescription ?? getEditorialSnippet(blog),
+      image: blog.image,
+      category: seed.category ?? getBlogCategory(blog),
+      tags: seed.tags ?? getBlogTags(blog),
+      readingTime: blog.readingTime,
+      wordCount: blog.wordCount,
+      ...(seed.metaDescription ? { metaDescription: seed.metaDescription } : {}),
+      ...(seed.publishedAt ? { publishedAt: seed.publishedAt } : {}),
+    };
+  });
 
 // Get unique categories with counts
 export const CATEGORIES = ['All Articles', ...Array.from(new Set(ALL_BLOGS.map(b => b.category))).sort()];

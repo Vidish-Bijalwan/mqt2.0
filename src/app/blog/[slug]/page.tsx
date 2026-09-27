@@ -27,6 +27,7 @@ export function getBlogSlugStatus(rawSlug: string): BlogSlugStatus {
 }
 
 import { getBlogImage } from "@/data/blogImageMap";
+import { getBlogPostContent } from "@/data/blogPosts/content";
 import AutoLinker from "@/components/ui/AutoLinker";
 import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
 import { safeJsonLd } from "@/utils/jsonLd";
@@ -57,7 +58,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const blog = blogFor(slug);
   if (!blog) return { title: { absolute: "Travel Blog | My Quick Trippers" } };
 
-  const image = getBlogImage(slug);
+  const image = blog.image || getBlogImage(slug);
   const contentText = blog.snippet;
 
   return {
@@ -96,6 +97,13 @@ function RenderContent({ content }: { content: ContentBlock[] }) {
             ))}
           </ul>
         );
+        if (block.type === 'ol') return (
+          <ol key={idx} className="list-decimal pl-6 mb-6 space-y-2">
+            {(block.items || []).map((item, i) => (
+              <li key={i} className="mb-1 pl-1">{item}</li>
+            ))}
+          </ol>
+        );
         return null;
       })}
     </div>
@@ -119,12 +127,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     notFound();
   }
 
-  // Determine reading time
-  const editorialBlocks = getEditorialBlocks(blog);
+  // Determine reading time. Factory posts carry their own counted values;
+  // legacy posts keep the template-content computation.
+  const factoryContent = getBlogPostContent(slug);
+  const editorialBlocks = factoryContent ?? getEditorialBlocks(blog);
   const contentText = editorialBlocks.filter((block) => block.type === 'p').map((block) => block.text || '').join(' ');
   const wordCount = contentText.split(/\s+/).filter(Boolean).length;
-  const readingTime = Math.max(1, Math.ceil(wordCount / 200));
-  const image = getBlogImage(slug);
+  const readingTime = factoryContent && blog.readingTime ? blog.readingTime : Math.max(1, Math.ceil(wordCount / 200));
+  const image = blog.image || getBlogImage(slug);
 
   // Related posts are ranked by the same category/tag taxonomy used by search.
   const currentWords = new Set(
@@ -175,8 +185,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         "url": `${siteConfig.domain}/logo/mqt-india-logo.png`
       }
     },
-    "datePublished": "2026-09-21",
-    "dateModified": "2026-09-21",
+    "datePublished": blog.publishedAt ?? "2026-09-21",
+    "dateModified": blog.publishedAt ?? "2026-09-21",
     "description": contentText.substring(0, 200)
   };
 
@@ -200,7 +210,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <h1 className="text-3xl font-bold text-gray-800 mb-4">{blog.title}</h1>
         <div className="flex items-center text-gray-500 text-sm mb-8 pb-4 border-b">
           <Calendar className="w-4 h-4 mr-2" />
-          <span>Published on My Quick Trippers</span>
+          <span>{blog.publishedAt ? `Published ${new Date(blog.publishedAt).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" })}` : "Published on My Quick Trippers"}</span>
           <span className="mx-2">•</span>
           <span>{readingTime} min read</span>
         </div>
