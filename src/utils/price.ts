@@ -17,6 +17,15 @@ import { isInternationalPackage } from "@/utils/packageCatalog";
 /** Prices below this amount are handled personally rather than advertised. */
 export const MINIMUM_PUBLIC_PRICE = 10_000;
 
+/**
+ * A scraped "original" price that implies a discount deeper than this is
+ * corrupt data, not a real deal — e.g. Bhutan showed INR 11,25,000 → 86,248
+ * (92% off) and Kailash Mansarovar 8,81,250 → 18,750 (98% off). Such
+ * originals are rejected so the normalized override value is used instead
+ * (~20% off).
+ */
+const MAX_PLAUSIBLE_DISCOUNT = 0.5;
+
 type PriceOverride = {
   mrp: string;
   dealPrice: string;
@@ -64,7 +73,10 @@ export function getPriceInfo(mrp?: string, dealPrice?: string, slug?: string): P
   // never 2.5× on top of a previous 1.5× adjustment.
   const originalMrp = parseINR(override?.originalMrp || mrp);
   const originalDeal = parseINR(override?.originalDealPrice || dealPrice);
-  const hasUsableOriginal = originalDeal >= MINIMUM_PUBLIC_PRICE / 2.5 && originalMrp >= originalDeal;
+  const hasUsableOriginal =
+    originalDeal >= MINIMUM_PUBLIC_PRICE / 2.5 &&
+    originalMrp >= originalDeal &&
+    originalDeal >= originalMrp * (1 - MAX_PLAUSIBLE_DISCOUNT);
   const estimatedBaseMrp = rawMrp / 1.5;
   const estimatedBaseDeal = rawDeal / 1.5;
   const unscaledMrp = isInternational

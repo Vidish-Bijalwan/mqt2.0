@@ -10,7 +10,9 @@ export default function EnquiryForm({ pkgName = "", destination, embedded = fals
   const enquiryName = pkgName || destination || "";
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [preparedUrl, setPreparedUrl] = useState("");
+  const [phoneError, setPhoneError] = useState("");
   const successHeadingRef = useRef<HTMLHeadingElement>(null);
+  const phoneInputRef = useRef<HTMLInputElement>(null);
 
   // On successful submit, move focus to the confirmation so screen-reader
   // users are told what happened.
@@ -25,6 +27,17 @@ export default function EnquiryForm({ pkgName = "", destination, embedded = fals
     setStatus("loading");
 
     const form = new FormData(e.currentTarget);
+    const phone = String(form.get("phone") || "");
+    // Reject phone numbers that are too short or mostly non-digits; keep
+    // "+" for country codes and strip common separators for the digit count.
+    const phoneDigits = phone.replace(/[^\d]/g, "");
+    if (phoneDigits.length < 8 || phoneDigits.length > 15) {
+      setPhoneError("Please enter a valid phone number (8–15 digits, e.g. 98765 43210).");
+      phoneInputRef.current?.focus();
+      setStatus("idle");
+      return;
+    }
+    setPhoneError("");
     const whatsappUrl = buildEnquiryWhatsappUrl(siteConfig.social.whatsapp, {
       packageName: enquiryName,
       name: String(form.get("name") || ""),
@@ -103,7 +116,12 @@ export default function EnquiryForm({ pkgName = "", destination, embedded = fals
           </div>
           <div>
             <label htmlFor="enquiry-phone" className="mb-1.5 block text-sm font-bold text-[#2d4741]">Phone Number *</label>
-            <input id="enquiry-phone" name="phone" required autoComplete="tel" enterKeyHint="next" inputMode="tel" type="tel" className="min-h-13 w-full rounded-xl border border-[#cad9d5] bg-[#fbfdfc] px-4 text-base outline-none transition focus:border-[#28796b] focus:ring-2 focus:ring-[#28796b]/20" placeholder="98765 43210" />
+            <input ref={phoneInputRef} id="enquiry-phone" name="phone" required autoComplete="tel" enterKeyHint="next" inputMode="tel" type="tel" pattern="[0-9+()\s.-]{8,20}" title="Enter a valid phone number with 8–15 digits" aria-describedby="enquiry-phone-error" aria-invalid={phoneError ? true : undefined} onChange={() => phoneError && setPhoneError("")} className="min-h-13 w-full rounded-xl border border-[#cad9d5] bg-[#fbfdfc] px-4 text-base outline-none transition focus:border-[#28796b] focus:ring-2 focus:ring-[#28796b]/20" placeholder="98765 43210" />
+            {phoneError ? (
+              <p id="enquiry-phone-error" role="alert" className="mt-1.5 text-xs font-semibold text-red-600">{phoneError}</p>
+            ) : (
+              <p id="enquiry-phone-error" className="mt-1.5 text-xs text-[#6B7A77]">Include your country code if you are outside India (e.g. +91).</p>
+            )}
           </div>
         </div>
 
@@ -126,7 +144,6 @@ export default function EnquiryForm({ pkgName = "", destination, embedded = fals
         <button 
           type="submit" 
           disabled={status === "loading"}
-          aria-label="Submit enquiry form"
           className="min-h-13 w-full rounded-xl bg-[#e96822] px-5 py-3 text-base font-extrabold text-white shadow-[0_10px_24px_rgba(233,104,34,0.24)] transition hover:-translate-y-0.5 hover:bg-[#ce5515] hover:shadow-[0_14px_28px_rgba(206,85,21,0.3)] disabled:bg-gray-400"
         >
           {status === "loading" ? "Preparing your message..." : "Continue on WhatsApp"}

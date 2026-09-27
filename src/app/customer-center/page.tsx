@@ -70,7 +70,7 @@ export default function CustomerCenterPage() {
             </div>
             <h2 className="text-lg font-bold text-gray-800 mb-1">Call Us</h2>
             <p className="text-gray-500 text-sm mb-3">Our support team is available during business hours.</p>
-            <a href={`tel:${siteConfig.phoneRaw}`} className="text-legacy-orange font-bold hover:underline">
+            <a href={`tel:${siteConfig.phoneTel}`} className="text-legacy-orange font-bold hover:underline">
               {siteConfig.phone}
             </a>
           </div>

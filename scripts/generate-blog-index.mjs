@@ -33,9 +33,16 @@ const blogs = Object.entries(fullBlogData)
         .join(" ") || "";
     const wordCount = contentText.split(/\s+/).filter(Boolean).length;
     const combined = `${data.title} ${contentText.slice(0, 300)}`.toLowerCase();
+    // Title carries more weight than the opening paragraph: intros often
+    // name-drop unrelated themes ("temples", "pilgrimage") that previously
+    // misfiled adventure and beach posts under Pilgrimage.
+    const titleLower = String(data.title || "").toLowerCase();
     let category = "Travel";
 
-    if (/pilgrim|yatra|temple|dham|jyotirlinga|spiritual|shrine/.test(combined)) category = "Pilgrimage";
+    if (/buddhis|meditat|monastery/.test(combined)) category = "Buddhist";
+    else if (/adventure|trek|safari|rafting|camping|bungee/.test(titleLower)) category = "Adventure";
+    else if (/beach|island|\bsea\b|goa|andaman|maldives/.test(titleLower)) category = "Beaches";
+    else if (/pilgrim|yatra|temple|dham|jyotirlinga|spiritual|shrine/.test(combined)) category = "Pilgrimage";
     else if (/adventure|trek|safari|rafting|camping|bungee|sport/.test(combined)) category = "Adventure";
     else if (/beach|island|sea|coastal|cruise|goa|andaman|maldives/.test(combined)) category = "Beaches";
     else if (/hill station|mountain|glacier|snowfall|valley|shimla|manali|ooty|munnar/.test(combined)) category = "Hill Stations";

@@ -152,7 +152,7 @@ export default function BlogSidebar({
           </p>
           <div className="space-y-2.5">
             <a
-              href={`tel:${siteConfig.phoneRaw}`}
+              href={`tel:${siteConfig.phoneTel}`}
               className="w-full flex items-center justify-center gap-2 bg-brand-green hover:bg-green-700 text-white text-sm font-bold py-2.5 rounded-lg transition-colors"
             >
               <Phone className="w-4 h-4" /> {siteConfig.phone}

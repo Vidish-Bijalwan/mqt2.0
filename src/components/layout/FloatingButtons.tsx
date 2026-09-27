@@ -21,7 +21,7 @@ export default function FloatingButtons() {
         <MessageCircle className="w-6 h-6" />
       </a>
       <a 
-        href={`tel:${siteConfig.phoneRaw}`}
+        href={`tel:${siteConfig.phoneTel}`}
         data-track="floating_call"
         className="bg-brand-green hover:bg-green-700 text-white p-4 rounded-full shadow-lg transition-transform hover:scale-110 flex items-center justify-center"
         aria-label="Call Us"

@@ -1,9 +1,8 @@
 import { getPublicPackages } from "@/utils/packageCatalog";
 import { notFound } from "next/navigation";
-import PackageListCard from "@/components/ui/PackageListCard";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
-import FilterSidebar from "@/components/ui/FilterSidebar";
+import ThemePackageList from "@/components/special-tours/ThemePackageList";
 import { themeConfigs } from "@/data/themeConfig";
 import { siteConfig } from "@/data/siteConfig";
 import { safeJsonLd } from "@/utils/jsonLd";
@@ -135,38 +134,13 @@ export default async function ThemePage({ params }: { params: Promise<{ theme: s
         </div>
       </div>
 
-      {/* Content Layout */}
-      <div className="container mx-auto w-[95%] max-w-[1600px] flex flex-col lg:flex-row gap-6">
-        {/* Sidebar */}
-        <div className="w-full lg:w-1/4">
-          <FilterSidebar />
-        </div>
-
-        {/* Package List */}
-        <div className="w-full lg:w-3/4 flex flex-col gap-4">
-          <div className="bg-white p-3 border border-gray-200 rounded shadow-sm mb-2 flex justify-between items-center">
-            <span className="text-sm font-semibold text-gray-700">Found {matchedPackages.length} Tours</span>
-            <select className="border border-gray-300 rounded text-sm px-3 py-1.5 focus:outline-none focus:border-legacy-orange text-gray-600">
-              <option>Sort By: Recommended</option>
-              <option>Price: Low to High</option>
-              <option>Price: High to Low</option>
-              <option>Duration: Short to Long</option>
-            </select>
-          </div>
-
-          {matchedPackages.length > 0 ? (
-            matchedPackages.map((pkg, idx) => (
-              <PackageListCard key={pkg.slug + idx} pkg={pkg} imageSrc={getApprovedPackageImage(pkg)} />
-            ))
-          ) : (
-            <div className="bg-white p-12 text-center border border-gray-200 rounded shadow-sm">
-              <p className="text-gray-500 text-lg">No {displayTheme.toLowerCase()} packages found matching your criteria.</p>
-              <Link href="/" className="inline-block mt-4 bg-legacy-orange text-white px-6 py-2 rounded hover:bg-orange-600 transition-colors">
-                Browse All Tours
-              </Link>
-            </div>
-          )}
-        </div>
+      {/* Content Layout — filters and sort are live (ThemePackageList) */}
+      <div className="container mx-auto w-[95%] max-w-[1600px]">
+        <ThemePackageList
+          packages={matchedPackages}
+          images={Object.fromEntries(matchedPackages.map((pkg) => [pkg.slug, getApprovedPackageImage(pkg)]))}
+          displayTheme={displayTheme}
+        />
       </div>
     </div>
   );

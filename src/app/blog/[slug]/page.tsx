@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Calendar, Phone } from "lucide-react";
+import { Calendar, Phone, User, ChevronRight } from "lucide-react";
 import BlogSidebar from "@/components/blog/BlogSidebar";
+import BlogShareButtons from "@/components/blog/BlogShareButtons";
 import { siteConfig } from "@/data/siteConfig";
 import { notFound } from "next/navigation";
 import type { ContentBlock } from "@/types/content";
@@ -127,14 +128,19 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     notFound();
   }
 
-  // Determine reading time. Factory posts carry their own counted values;
-  // legacy posts keep the template-content computation.
+  // Determine reading time. Prefer the editorially counted value when it
+  // exists so the post page matches the Recent Posts sidebar; fall back to
+  // a word-count estimate for legacy posts.
   const factoryContent = getBlogPostContent(slug);
   const editorialBlocks = factoryContent ?? getEditorialBlocks(blog);
   const contentText = editorialBlocks.filter((block) => block.type === 'p').map((block) => block.text || '').join(' ');
   const wordCount = contentText.split(/\s+/).filter(Boolean).length;
-  const readingTime = factoryContent && blog.readingTime ? blog.readingTime : Math.max(1, Math.ceil(wordCount / 200));
+  const readingTime = blog.readingTime ?? Math.max(1, Math.ceil(wordCount / 200));
   const image = blog.image || getBlogImage(slug);
+  // Visible publish date: legacy posts without a stored date fall back to the
+  // same default used in the JSON-LD so the meta line always shows a date.
+  const publishedDate = blog.publishedAt ?? "2026-09-21";
+  const publishedLabel = new Date(publishedDate).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" });
 
   // Related posts are ranked by the same category/tag taxonomy used by search.
   const currentWords = new Set(
@@ -196,21 +202,24 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(breadcrumbLd) }} />
       <div className="bg-gray-50 min-h-screen pb-16">
       <div className="bg-legacy-nav-blue text-white text-xs py-2 px-4">
-        <div className="container mx-auto w-[95%] max-w-[1600px]">
+        <div className="container mx-auto w-[95%] max-w-[1600px] flex items-center">
           <Link href="/" className="hover:text-legacy-orange">Home</Link>
-          {" » "}
+          <ChevronRight className="w-3 h-3 mx-1 opacity-70" />
           <Link href="/blog" className="hover:text-legacy-orange">Blog</Link>
-          {" » "}
-          <span className="text-legacy-orange">{blog.title}</span>
+          <ChevronRight className="w-3 h-3 mx-1 opacity-70" />
+          <span className="text-legacy-orange truncate">{blog.title}</span>
         </div>
       </div>
       <div className="container mx-auto px-4 max-w-6xl mt-10">
       <div className="lg:grid lg:grid-cols-[1fr_320px] lg:gap-8">
       <div className="bg-white p-6 md:p-8 rounded shadow-sm border border-gray-200 mb-8 lg:mb-0">
         <h1 className="text-3xl font-bold text-gray-800 mb-4">{blog.title}</h1>
-        <div className="flex items-center text-gray-500 text-sm mb-8 pb-4 border-b">
+        <div className="flex flex-wrap items-center text-gray-500 text-sm mb-8 pb-4 border-b">
+          <User className="w-4 h-4 mr-2" />
+          <span>By My Quick Trippers</span>
+          <span className="mx-2">•</span>
           <Calendar className="w-4 h-4 mr-2" />
-          <span>{blog.publishedAt ? `Published ${new Date(blog.publishedAt).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" })}` : "Published on My Quick Trippers"}</span>
+          <span>Published {publishedLabel}</span>
           <span className="mx-2">•</span>
           <span>{readingTime} min read</span>
         </div>
@@ -218,6 +227,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
            <Image src={getBlogImage(slug)} alt={blog.title} fill sizes="(max-width: 768px) 100vw, 800px" className="object-cover" priority placeholder={IMAGE_SKELETON} />
         </div>
         <RenderContent content={editorialBlocks} />
+        <BlogShareButtons title={blog.title} url={`${siteConfig.domain}/blog/${slug}`} />
 
         {/* Related posts (U24) — cross-links readers to more content instead of dead-ending */}
         {related.length > 0 && (
@@ -245,7 +255,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
              <Link href="/packages" className="inline-flex items-center bg-legacy-orange hover:bg-orange-600 text-white font-bold px-8 py-3 rounded transition-colors">
                Browse Tour Packages
              </Link>
-             <a href={`tel:${siteConfig.phoneRaw}`} className="inline-flex items-center bg-brand-green hover:bg-green-700 text-white font-bold px-8 py-3 rounded transition-colors">
+             <a href={`tel:${siteConfig.phoneTel}`} className="inline-flex items-center bg-brand-green hover:bg-green-700 text-white font-bold px-8 py-3 rounded transition-colors">
                <Phone className="w-5 h-5 mr-2" /> Call Now: {siteConfig.phone}
              </a>
            </div>

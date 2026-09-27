@@ -114,7 +114,7 @@ export default async function CatchAllPage({ params }: { params: Promise<{ slug:
               {(!blog.content || blog.content.length === 0) && (
                  <div className="text-center py-10">
                     <p className="text-gray-600 mb-8">This page is currently being updated by the My Quick Trippers team. Please contact us directly for any inquiries.</p>
-                    <a href={`tel:${siteConfig.phoneRaw}`} className="inline-flex items-center bg-legacy-orange hover:bg-orange-600 text-white font-bold px-8 py-3 rounded transition-colors">
+                    <a href={`tel:${siteConfig.phoneTel}`} className="inline-flex items-center bg-legacy-orange hover:bg-orange-600 text-white font-bold px-8 py-3 rounded transition-colors">
                      <Phone className="w-5 h-5 mr-2" /> Contact Us
                    </a>
                  </div>
@@ -151,7 +151,7 @@ export default async function CatchAllPage({ params }: { params: Promise<{ slug:
               {(!staticPage.content || staticPage.content.length === 0) && (
                  <div className="text-center py-10">
                     <p className="text-gray-600 mb-8">This page is currently being updated by the My Quick Trippers team. Please contact us directly for any inquiries.</p>
-                    <a href={`tel:${siteConfig.phoneRaw}`} className="inline-flex items-center bg-legacy-orange hover:bg-orange-600 text-white font-bold px-8 py-3 rounded transition-colors">
+                    <a href={`tel:${siteConfig.phoneTel}`} className="inline-flex items-center bg-legacy-orange hover:bg-orange-600 text-white font-bold px-8 py-3 rounded transition-colors">
                      <Phone className="w-5 h-5 mr-2" /> Contact Us
                    </a>
                  </div>

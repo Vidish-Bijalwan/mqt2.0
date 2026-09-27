@@ -64,10 +64,10 @@
   },
   {
     "slug": "adventure-places-in-india",
-    "title": "Top 10 Adventure Adventure Destinations in India",
+    "title": "Top 10 Adventure Destinations in India",
     "snippet": "India is well-known for providing a variety of treats to its tourists, whether it’s a romantic holiday or a pilgrimage . It also has a treasure trove of places...",
     "image": "/images/blog/adventure-places-in-india.jpg",
-    "category": "Pilgrimage",
+    "category": "Adventure",
     "readingTime": 6,
     "wordCount": 1149
   },
@@ -217,10 +217,10 @@
   },
   {
     "slug": "buddhist-pilgrimage-sites-in-india",
-    "title": "Buddhist Pilgrimage Paces in India – Temples & Monasteries",
+    "title": "Buddhist Pilgrimage Places in India – Temples & Monasteries",
     "snippet": "Gautam Buddha, a great spiritual Guru and God incarnate had number of disciples during his lifetime. He founded a new religion ‘Buddhism’ which now is a major r...",
     "image": "/images/blog/buddhist-pilgrimage-sites-in-india.jpg",
-    "category": "Pilgrimage",
+    "category": "Buddhist",
     "readingTime": 14,
     "wordCount": 2690
   },
@@ -274,7 +274,7 @@
     "title": "Top 10 Most Famous Beaches in Kerala - Beaches in Kerala",
     "snippet": "Kerala is a land of mesmerizing natural beauty. Be its hill stations or its backwaters or its temples, the land always beckons a passionate traveller. And if yo...",
     "image": "/images/blog/top-10-beaches-to-visit-in-kerala.jpg",
-    "category": "Pilgrimage",
+    "category": "Beaches",
     "readingTime": 6,
     "wordCount": 1122
   },
@@ -652,7 +652,7 @@
     "title": "Top 5 Most Popular Buddhist Temple in the World",
     "snippet": "Buddhism is one of the most peaceful religions on earth, and though I don’t happen to follow that path myself, I have a deep respect for those who do. One of th...",
     "image": "/images/blog/buddhist-temples-in-world.jpg",
-    "category": "Pilgrimage",
+    "category": "Buddhist",
     "readingTime": 5,
     "wordCount": 827
   },
@@ -805,7 +805,7 @@
     "title": "Buddhist Festivals in India – Complete Travel & Celebration Guide",
     "snippet": "India, with its rich cultural image, organizes a variety of festivals that reflect the diverse religious traditions thriving in the country. Among these, Buddhi...",
     "image": "/images/blog/buddhist-festivals-in-india.jpg",
-    "category": "Food & Cuisine",
+    "category": "Buddhist",
     "readingTime": 6,
     "wordCount": 1121
   },
@@ -841,7 +841,7 @@
     "title": "Kailash Mansarovar Yatra by Helicopter Essential Guide 2026",
     "snippet": "The Kailash Mansarovar Yatra by helicopter is a sacred pilgrimage of profound spiritual significance for followers of Hinduism, Buddhism, Jainism, and Bon. Moun...",
     "image": "/images/blog/kailash-mansarovar-yatra-by-helicopter-essential-guide.webp",
-    "category": "Pilgrimage",
+    "category": "Buddhist",
     "readingTime": 9,
     "wordCount": 1708
   },
@@ -895,7 +895,7 @@
     "title": "Hemis Festival 2026 – Mask Dance & Monastery Guide",
     "snippet": "Hemis monastery, known as one of the most ancient monastery in Ladakh . Hemis monastery representative reincarnate of Buddha. Hemis Gompa is one of the most imp...",
     "image": "/images/blog/tourists-places-to-visit-in-uttar-pradesh.jpg",
-    "category": "Cultural",
+    "category": "Buddhist",
     "readingTime": 6,
     "wordCount": 1051
   },
@@ -1048,7 +1048,7 @@
     "title": "Kailash Mansarovar Yatra Archives",
     "snippet": "As the name suggests, the Kailash Mansarovar Yatra is a pilgrimage to Mount Kailash, a home to Mahadev, and Mansarovar is a lake near it, which is believed to w...",
     "image": "/images/blog/kailash-mansarovar-yatra.webp",
-    "category": "Pilgrimage",
+    "category": "Buddhist",
     "readingTime": 2,
     "wordCount": 332
   },
@@ -1075,7 +1075,7 @@
     "title": "Rumtek Monastery, Gangtok - History, Architecture, Timings",
     "snippet": "Situated amidst the breathtaking landscapes of the Himalayas, Rumtek Monastery is the epitome of spiritual peace and cultural heritage. Located in the Indian st...",
     "image": "/images/blog/rumtek-monastery.jpg",
-    "category": "Pilgrimage",
+    "category": "Buddhist",
     "readingTime": 4,
     "wordCount": 760
   },
@@ -1147,7 +1147,7 @@
     "title": "A Comprehensive Guide to Choosing the India Buddhist Tour",
     "snippet": "India’s rich Buddhist heritage offers a profound journey into spirituality, history, and culture. From the sacred Bodh Gaya where Gautama Buddha attained enligh...",
     "image": "/images/blog/guide-for-choosing-best-india-buddhist-tour-package.jpg",
-    "category": "Pilgrimage",
+    "category": "Buddhist",
     "readingTime": 6,
     "wordCount": 1106
   },
@@ -1183,7 +1183,7 @@
     "title": "7 Popular Buddhist Meditation Retreats in India",
     "snippet": "India, the birthplace of Buddhism , is home to numerous meditation retreats that cater to those seeking spiritual growth, inner peace, and a deeper understandin...",
     "image": "/images/blog/buddhist-meditation-retreats-in-india.jpg",
-    "category": "Pilgrimage",
+    "category": "Buddhist",
     "readingTime": 5,
     "wordCount": 865
   },
@@ -1219,7 +1219,7 @@
     "title": "Popular Buddhist Pilgrimage Places in Delhi",
     "snippet": "Delhi, the bustling capital city of India, holds within its borders a rich tapestry of cultural, historical, and religious heritage. Among its many treasures ar...",
     "image": "/images/blog/buddhist-pilgrimage-places-in-delhi.jpg",
-    "category": "Pilgrimage",
+    "category": "Buddhist",
     "readingTime": 4,
     "wordCount": 654
   },
@@ -1453,7 +1453,7 @@
     "title": "List of the Top 14 Famous Buddhist Monastery in Ladakh",
     "snippet": "Ladakh, nestled in the picturesque landscapes of the Indian Himalayas, is renowned for its rich Buddhist heritage. The region is dotted with numerous monasterie...",
     "image": "/images/blog/buddhist-monasteries-in-ladakh.jpg",
-    "category": "Pilgrimage",
+    "category": "Buddhist",
     "readingTime": 6,
     "wordCount": 1077
   },
@@ -1516,7 +1516,7 @@
     "title": "Bhaja Caves (Khandala) - Travel Guide & Places to Visit",
     "snippet": "Bhaja Caves are group of 22 rock cut carved beautiful caves. Located on a hill near Bhaja, Karli near Lonavala in Maharashtra. Represents finest ancient rock cu...",
     "image": "/images/blog/bhaja-caves.jpg",
-    "category": "Beaches",
+    "category": "Buddhist",
     "readingTime": 5,
     "wordCount": 838
   },
@@ -1777,7 +1777,7 @@
     "title": "Discovering the Best Tour Itinerary for the Indian Buddhist Circuit",
     "snippet": "The Indian Buddhist Circuit stands as a testament to the profound spiritual legacy of Lord Buddha, tracing his footsteps through the landscapes of India and Nep...",
     "image": "/images/blog/best-tour-itinerary-for-indian-buddhist-circuit.jpg",
-    "category": "Pilgrimage",
+    "category": "Buddhist",
     "readingTime": 7,
     "wordCount": 1362
   },
@@ -2083,7 +2083,7 @@
     "title": "Basgo Monastery (Bazgo Gompa) in Leh, Ladakh - Buddhist",
     "snippet": "Everything about the ancient Himalayan kingdom of Ladakh, cradled amidst spectacularly jagged, barren mountains, screams grandeur – be it the range of endless m...",
     "image": "/images/blog/historical-places-to-visit-in-south-india.jpg",
-    "category": "Hill Stations",
+    "category": "Buddhist",
     "readingTime": 5,
     "wordCount": 880
   },
@@ -2110,7 +2110,7 @@
     "title": "What is Buddhism? – History, Teachings & Philosophy",
     "snippet": "Buddhism, one of the world’s major religions, originated in ancient India around the 6th century BCE. Founded by Siddhartha Gautama, known as the Buddha, it off...",
     "image": "/images/packages/what-is-buddhism.jpg",
-    "category": "Food & Cuisine",
+    "category": "Buddhist",
     "readingTime": 7,
     "wordCount": 1284
   },
@@ -2245,7 +2245,7 @@
     "title": "A Detailed Guide On Kailash Mansarovar Aerial Darshan",
     "snippet": "Nestled deep within the Tibetan Plateau in the Trans-Himalayan range, Mount Kailash stands as a symbol of divine power and eternal sanctity. This majestic, snow...",
     "image": "/images/packages/detailed-guide-on-kailash-mansarovar-aerial-darshan.jpg",
-    "category": "Food & Cuisine",
+    "category": "Buddhist",
     "readingTime": 4,
     "wordCount": 718
   },
@@ -2254,7 +2254,7 @@
     "title": "13 Popular Buddhist Pilgrimage Sites in Bihar",
     "snippet": "The Buddhist Circuit in Bihar is not a sightseeing route. It is not a box-ticking pilgrimage either. It is a living historical landscape where philosophy, suffe...",
     "image": "/images/packages/buddhist-circuit-in-bihar.jpg",
-    "category": "Pilgrimage",
+    "category": "Buddhist",
     "readingTime": 8,
     "wordCount": 1441
   },
@@ -2317,7 +2317,7 @@
     "title": "Kedarnath New Trek Route | Updated Travel & Trekking Info",
     "snippet": "One of the most sacred pilgrimage destinations in North India, Kedarnath is heavily crowded with millions of devotees coming from all across the globe. Kedarnat...",
     "image": "/images/blog/kedarnath.jpg",
-    "category": "Pilgrimage",
+    "category": "Adventure",
     "readingTime": 5,
     "wordCount": 923
   },
@@ -2380,7 +2380,7 @@
     "title": "Kailash Mansarovar Yatra from India – Registration, Cost & Route",
     "snippet": "As the name suggests, the Kailash Mansarovar Yatra is a pilgrimage to Mount Kailash, a home to Mahadev, and Mansarovar is a lake near it, which is believed to w...",
     "image": "/images/packages/how-to-plan-kailash-mansarovar-yatra-from-india.webp",
-    "category": "Pilgrimage",
+    "category": "Buddhist",
     "readingTime": 6,
     "wordCount": 1198
   },
@@ -2443,7 +2443,7 @@
     "title": "Bodh Gaya - Bodh Gaya Travel Guide - Bodhgaya Temple",
     "snippet": "The centre of the Buddhist Universe, Bodh Gaya helps one understand the message of the enlightened one. We stood amid the ruins of an ancient Stupa that rested...",
     "image": "/images/blog/places-to-visit-in-india-in-april.jpg",
-    "category": "Pilgrimage",
+    "category": "Buddhist",
     "readingTime": 5,
     "wordCount": 828
   },
@@ -2641,7 +2641,7 @@
     "title": "List of the 14 Most Beautiful Buddhist Caves in India",
     "snippet": "India, the birthplace of Buddhism, is home to a wealth of ancient Buddhist caves that showcase the rich spiritual heritage and artistic excellence of the religi...",
     "image": "/images/packages/buddhist-caves-in-india.jpg",
-    "category": "Pilgrimage",
+    "category": "Buddhist",
     "readingTime": 8,
     "wordCount": 1412
   },
@@ -2659,7 +2659,7 @@
     "title": "Dhamek Stupa Sarnath – Explore the Iconic Buddhist Monument",
     "snippet": "There are monuments that impress with scale. Some with ornamentation. Others with historical drama. Dhamek Stupa does none of these loudly. It stands quietly in...",
     "image": "/images/packages/dhamek-stupa.jpg",
-    "category": "Pilgrimage",
+    "category": "Buddhist",
     "readingTime": 7,
     "wordCount": 1301
   },
@@ -2739,7 +2739,7 @@
     "slug": "experience-an-authentic-indian-wedding",
     "title": "Authentic Indian Wedding Experience for Foreign Travelers",
     "snippet": "Indian weddings are not only ceremonies, but they are festivals, colored celebrations with rituals, colors, music, emotions, and profound cultural significance,...",
-    "image": "/images/packages/experience-an-authentic-indian-wedding.webp",
+    "image": "/images/packages/experience-an-authentic-indian-wedding-v2.webp",
     "category": "Cultural",
     "readingTime": 15,
     "wordCount": 2968
@@ -2920,7 +2920,7 @@
     "title": "Calangute Beach Goa | Best Things to Do & Attractions",
     "snippet": "Calangute is one of the most popular beach towns in Goa . It is easily accessible from Vasco and Panjim housing nearest airport and railway station respectively...",
     "image": "/images/blog/plan-a-trip-to-kangaroo-island.jpg",
-    "category": "Adventure",
+    "category": "Beaches",
     "readingTime": 5,
     "wordCount": 814
   },
@@ -3055,7 +3055,7 @@
     "title": "Exploring the Architecture of the Ellora Caves, Maharashtra",
     "snippet": "Undoubtedly recognized as a UNESCO World Heritage site, the Ellora caves and the Elephanta Caves , India are situated close to the old village of Ellora in the...",
     "image": "/images/packages/ellora-caves-architecture.jpg",
-    "category": "Pilgrimage",
+    "category": "Buddhist",
     "readingTime": 6,
     "wordCount": 1087
   },
@@ -3100,7 +3100,7 @@
     "title": "Namdroling Monastery - Timings, Location & Tickets Price",
     "snippet": "Namdroling Monastery, also known as the Golden Temple, is a prominent Buddhist monastery in the southern state of Karnataka , India. Nestled amidst the serene l...",
     "image": "/images/packages/namdroling-monastery.jpg",
-    "category": "Pilgrimage",
+    "category": "Buddhist",
     "readingTime": 5,
     "wordCount": 933
   },
@@ -3127,7 +3127,7 @@
     "title": "Mahabodhi Temple Complex at Bodh Gaya, Bihar, India",
     "snippet": "There are very few places in the world where history, faith, silence, and human vulnerability come together so naturally. The Mahabodhi Temple Complex at Bodh G...",
     "image": "/images/packages/mahabodhi-temple.jpg",
-    "category": "Pilgrimage",
+    "category": "Buddhist",
     "readingTime": 8,
     "wordCount": 1451
   },
@@ -3163,7 +3163,7 @@
     "title": "Helipads in Uttarakhand: Connecting Temples & Treks",
     "snippet": "In 2026, Chardham Yatra opens on 19 April – the earliest start in years. Helicopter demand is expected to be the highest ever. Kedarnath Dham alone recorded ove...",
     "image": "/images/packages/helipads-in-uttarakhand.webp",
-    "category": "Pilgrimage",
+    "category": "Adventure",
     "readingTime": 8,
     "wordCount": 1555
   },
@@ -3172,7 +3172,7 @@
     "title": "A Detailed Tour Guide to Yamunotri Dham Trek",
     "snippet": "Yamunotri trek, a trail of spirituality, is located amid the raw beauty of the Himalayan landscapes. As the name reflects, this majestic trek leads to the beaut...",
     "image": "/images/packages/a-guide-for-yamunotri-trek.webp",
-    "category": "Pilgrimage",
+    "category": "Adventure",
     "readingTime": 14,
     "wordCount": 2686
   },
@@ -3369,7 +3369,7 @@
     "slug": "meaning-of-namaste",
     "title": "Meaning of Namaste Greeting - Definition of Namaste",
     "snippet": "You can greet a person in about 2,790 languages. Greetings are the first point of contact and can be a defining moment in a relationship. They can express your...",
-    "image": "/images/packages/meaning-of-namaste.jpg",
+    "image": "/images/packages/buddhist-meditation-retreats-in-india.jpg",
     "category": "Travel",
     "readingTime": 4,
     "wordCount": 772
@@ -3469,7 +3469,7 @@
     "title": "Gaya Tourist Guide – Top Places, Significance & Travel Tips",
     "snippet": "Gaya is an important tourist destination dotted with various relics and manifestations of Lord Buddha’s omnipresence out there once upon a time. For Buddhists,...",
     "image": "/images/packages/bihar.jpg",
-    "category": "Pilgrimage",
+    "category": "Buddhist",
     "readingTime": 7,
     "wordCount": 1266
   },
@@ -3496,7 +3496,7 @@
     "title": "25 Most Famous Tourist Places to Visit in Varanasi",
     "snippet": "Varanasi does not ease you in. It hits you all at once — the incense, the bells, the burning pyres, the chai, the silk shops, the pilgrims, and the Ganga flowin...",
     "image": "/images/packages/tourist-places-to-visit-in-varanasi.webp",
-    "category": "Pilgrimage",
+    "category": "Buddhist",
     "readingTime": 19,
     "wordCount": 3786
   },
@@ -3514,7 +3514,7 @@
     "title": "How to Plan Muktinath Yatra from India (2026 Guide)",
     "snippet": "Muktinath Temple , a sacred Lord Vishnu temple, is situated in the Himalayan foothills of Nepal. Holding spiritual significance for both Hindu and Buddhist trav...",
     "image": "/images/packages/how-to-plan-muktinath-yatra-from-india.webp",
-    "category": "Pilgrimage",
+    "category": "Buddhist",
     "readingTime": 5,
     "wordCount": 897
   },
@@ -3577,7 +3577,7 @@
     "title": "Buddhism Archives",
     "snippet": "India, the birthplace of Buddhism, is home to numerous meditation retreats that cater to those seeking spiritual growth, inner peace, and a deeper understanding...",
     "image": "/images/packages/buddhism.jpg",
-    "category": "Pilgrimage",
+    "category": "Buddhist",
     "readingTime": 3,
     "wordCount": 453
   },
@@ -3604,7 +3604,7 @@
     "title": "Sarnath Tourism - Sarnath Travel Guide - Tourist Attractions",
     "snippet": "Welcome to this site of sacred deer park where Gautama Buddha taught Dharma for the first time following his enlightenment. Situated at 12 km from the Hindu pio...",
     "image": "/images/packages/sarnath-tourism.jpg",
-    "category": "Travel Tips",
+    "category": "Buddhist",
     "readingTime": 6,
     "wordCount": 1003
   },
@@ -3649,7 +3649,7 @@
     "title": "Kedarnath Trek Trip Guide | Distance, Route & Tips",
     "snippet": "Kedarnath Trek is not the trip through the Himalayas only; it is a religious pilgrimage to one of 12 Jyotirlinga of Lord Shiva . Kedarnath Temple is located in...",
     "image": "/images/packages/kedarnath-trek-guide.webp",
-    "category": "Pilgrimage",
+    "category": "Adventure",
     "readingTime": 6,
     "wordCount": 1039
   },

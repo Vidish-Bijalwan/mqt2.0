@@ -351,14 +351,17 @@ export const chardhamYatraConfig: CampaignConfig = {
   },
   packages: {
     filter: (pkg) =>
+      // Chardham only: the four dhams plus "do dham" combos. The old
+      // `includes('pilgrimage')` / `category === 'Pilgrimage'` fallback
+      // pulled in Amarnath, Buddhist and Tripura Sundari packages.
       pkg.title.toLowerCase().includes('char dham') ||
       pkg.title.toLowerCase().includes('chardham') ||
+      pkg.title.toLowerCase().includes('do dham') ||
+      pkg.title.toLowerCase().includes('dodham') ||
       pkg.title.toLowerCase().includes('yamunotri') ||
       pkg.title.toLowerCase().includes('gangotri') ||
       pkg.title.toLowerCase().includes('kedarnath') ||
-      pkg.title.toLowerCase().includes('badrinath') ||
-      pkg.title.toLowerCase().includes('pilgrimage') ||
-      pkg.category === 'Pilgrimage',
+      pkg.title.toLowerCase().includes('badrinath'),
     title: "Chardham Yatra Tour Packages",
     subtitle: "Choose from our carefully curated pilgrimage packages - road trips, helicopter tours, and custom itineraries",
     emptyText: "No Chardham packages currently available. Check back soon!",

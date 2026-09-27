@@ -53,7 +53,7 @@ export default function ContactUsPage() {
             {/* Quick Contact Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <a
-                href={`tel:${siteConfig.phoneRaw}`}
+                href={`tel:${siteConfig.phoneTel}`}
                 className="flex items-center gap-4 bg-white rounded-xl shadow-sm border border-gray-100 p-5 hover:shadow-md transition-shadow"
               >
                 <div className="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center shrink-0">

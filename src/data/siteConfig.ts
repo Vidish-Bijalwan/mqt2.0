@@ -11,6 +11,8 @@ export const siteConfig = {
   email: "info@myquicktrippers.com",
   phone: "+91-8171158569",
   phoneRaw: "8171158569",
+  /** Country-code form for tel: links (iOS ignores numbers without a "+"). */
+  phoneTel: "+918171158569",
   whatsapp: "+918171158569",
   whatsappDisplay: "+91-8171158569",
   address: {

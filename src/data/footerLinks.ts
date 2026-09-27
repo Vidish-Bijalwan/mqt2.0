@@ -23,6 +23,7 @@ export const footerLinks = {
   "Customer Center": [
     { name: "About Us", href: "/about-us" },
     { name: "Contact Us", href: "/contact-us" },
+    { name: "FAQs", href: "/faq" },
     { name: "Careers", href: "/careers" },
     { name: "Payment Guide", href: "/pay-online" },
     { name: "Privacy Policy", href: "/privacy-policy" },
