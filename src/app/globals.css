@@ -56,9 +56,9 @@
   --color-mqt-navy: var(--color-brand-navy);
   --color-mqt-navy-soft: var(--color-brand-navy-light);
   --color-mqt-green: var(--color-brand-green);
-  --color-mqt-bg: #fbfaf6;
-  --color-mqt-text: #24332F;
-  --color-mqt-border: #E2E8E1;
+  --color-mqt-bg: #F4F7F6;
+  --color-mqt-text: #15212B;
+  --color-mqt-border: #DEE7E4;
 
   --font-sans: var(--font-manrope), "Segoe UI", sans-serif;
   --font-display: var(--font-bricolage), var(--font-manrope), sans-serif;
@@ -72,6 +72,31 @@
   --shadow-card-lift: 0 20px 50px -12px rgba(15, 23, 42, 0.25);
   --shadow-cta-orange: 0 8px 20px -6px rgba(181, 132, 61, 0.38);
   --shadow-cta-orange-hover: 0 12px 24px -6px rgba(117, 85, 34, 0.38);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   ALPINE NOIR semantic theme layer (theme-switchable)
+   Utilities like bg-brand-primary resolve to var(--theme-*) at
+   runtime, so a [data-theme="..."] override on <html> swaps the
+   whole palette without touching components. Default = Alpine Noir.
+   ───────────────────────────────────────────────────────────── */
+@theme inline {
+  --color-brand-primary: var(--theme-primary);
+  --color-brand-primary-deep: var(--theme-primary-deep);
+  --color-brand-secondary: var(--theme-secondary);
+  --color-brand-secondary-deep: var(--theme-secondary-deep);
+  --color-brand-secondary-pale: var(--theme-secondary-pale);
+  --color-brand-cta: var(--theme-cta);
+  --color-brand-cta-deep: var(--theme-cta-deep);
+  --color-surface-canvas: var(--theme-canvas);
+  --color-surface-card: var(--theme-card);
+  --color-ink: var(--theme-ink);
+  --color-ink-muted: var(--theme-ink-muted);
+  --color-ink-inverse: var(--theme-ink-inverse);
+  --color-line: var(--theme-line);
+  --color-state-success: var(--theme-success);
+  --color-state-warning: var(--theme-warning);
+  --color-state-danger: var(--theme-danger);
 }
 
 @layer base {
@@ -91,13 +116,33 @@
   }
   /* Focus-visible for accessibility */
   :focus-visible {
-    outline: 2px solid var(--color-brand-orange);
+    outline: 2px solid var(--color-brand-secondary);
     outline-offset: 2px;
   }
 }
 
 /* Design System Tokens */
 :root {
+  /* ── Active theme values: Alpine Noir (default).
+     Override via [data-theme="monsoon-luxe"] on <html> to switch
+     palettes without touching components. ── */
+  --theme-primary: #0B1F33;
+  --theme-primary-deep: #071525;
+  --theme-secondary: #127C82;
+  --theme-secondary-deep: #0C5B60;
+  --theme-secondary-pale: #9FD8DC;
+  --theme-cta: #F29D38;
+  --theme-cta-deep: #D98723;
+  --theme-canvas: #F4F7F6;
+  --theme-card: #FFFFFF;
+  --theme-ink: #15212B;
+  --theme-ink-muted: #5B6B76;
+  --theme-ink-inverse: #FFFFFF;
+  --theme-line: #DEE7E4;
+  --theme-success: #237A57;
+  --theme-warning: #A65E12;
+  --theme-danger: #B33232;
+
   /* Border Radius Scale */
   --radius-sm: 0.25rem;    /* 4px - badges, tags */
   --radius-md: 0.375rem;   /* 6px - inputs, small buttons */
@@ -124,6 +169,27 @@
   --space-10: 2.5rem;   /* 40px */
   --space-12: 3rem;     /* 48px */
   --space-16: 4rem;     /* 64px */
+}
+
+/* ── Alternate theme: Monsoon Luxe (dormant; activate by setting
+   data-theme="monsoon-luxe" on <html>) ── */
+[data-theme="monsoon-luxe"] {
+  --theme-primary: #083F46;
+  --theme-primary-deep: #052E33;
+  --theme-secondary: #2E7D68;
+  --theme-secondary-deep: #1F5C4C;
+  --theme-secondary-pale: #A9D4C6;
+  --theme-cta: #C8943E;
+  --theme-cta-deep: #A67A2E;
+  --theme-canvas: #F3F1E8;
+  --theme-card: #FFFFFF;
+  --theme-ink: #17312F;
+  --theme-ink-muted: #5E6F6B;
+  --theme-ink-inverse: #FFFFFF;
+  --theme-line: #E0DCCB;
+  --theme-success: #237A57;
+  --theme-warning: #A65E12;
+  --theme-danger: #B33232;
 }
 
 @layer utilities {
@@ -177,19 +243,19 @@
     line-height: 1.12;
     font-weight: 750;
     letter-spacing: -0.035em;
-    color: #123d37;
+    color: var(--color-brand-primary);
     text-transform: capitalize;
     padding-bottom: 10px;
     margin-bottom: 8px;
-    border-bottom: 1px solid rgba(18, 61, 55, 0.18);
+    border-bottom: 1px solid color-mix(in srgb, var(--color-brand-primary) 18%, transparent);
     display: inline-block;
   }
   .nit-middle-hr {
     width: 80px;
     height: 5px;
     margin: 0 auto;
-    border-bottom: 5px solid var(--color-brand-orange);
-    background: linear-gradient(90deg, #d39a3b, #14825c);
+    border-bottom: 5px solid var(--color-brand-secondary);
+    background: linear-gradient(90deg, var(--color-brand-secondary), var(--color-brand-secondary-deep));
     border-radius: 5px;
   }
   .nit-head-sub {
@@ -396,7 +462,7 @@
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
-    color: var(--color-brand-indigo);
+    color: var(--color-brand-primary);
     display: block;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -890,7 +956,7 @@
   pointer-events: none;
 }
 .packages-catalog-hero__inner { position: relative; max-width: 760px; text-align: center; }
-.packages-catalog-hero__inner > p { color: #f2bd62; font-size: 11px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
+.packages-catalog-hero__inner > p { color: var(--color-brand-secondary-pale); font-size: 11px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
 .packages-catalog-hero h1 { margin-top: 10px; font-family: var(--font-display); font-size: clamp(36px, 5vw, 68px); font-weight: 750; line-height: .98; letter-spacing: -.05em; }
 .packages-catalog-hero__inner > span { display: block; margin-top: 14px; color: rgba(255,255,255,.68); font-size: 14px; }
 .packages-group-grid { grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
@@ -899,7 +965,7 @@
 .destination-options-hero { position: relative; min-height: 300px; display: flex; align-items: end; overflow: hidden; background: #0b3d34; }
 .destination-options-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(3,24,21,.05) 20%, rgba(3,24,21,.9) 100%); }
 .destination-options-hero > div { position: relative; z-index: 1; max-width: 680px; padding: clamp(26px, 5vw, 54px); color: white; }
-.destination-options-hero p { color: #f2bd62; font-size: 10px; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; }
+.destination-options-hero p { color: var(--color-brand-secondary-pale); font-size: 10px; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; }
 .destination-options-hero h2 { margin-top: 10px; font-family: var(--font-display); font-size: clamp(28px, 4vw, 48px); font-weight: 740; line-height: 1; letter-spacing: -.045em; }
 .destination-options-hero span { display: block; margin-top: 12px; color: rgba(255,255,255,.68); font-size: 13px; }
 .destination-options-list { padding: 8px clamp(18px, 3vw, 34px) 24px; }
@@ -914,14 +980,14 @@
 .destination-option-action { display: flex; flex-direction: column; align-items: end; text-align: right; }
 .destination-option-action small { color: #7d8985; font-size: 9px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .destination-option-action strong { margin-top: 3px; color: #102d28; font-size: 16px; }
-.destination-option-action a { display: inline-flex; align-items: center; gap: 6px; margin-top: 10px; color: #127a58; font-size: 11px; font-weight: 800; }
-.destination-option-action a:hover { color: #bd8734; }
+.destination-option-action a { display: inline-flex; align-items: center; gap: 6px; margin-top: 10px; color: var(--color-brand-secondary); font-size: 11px; font-weight: 800; }
+.destination-option-action a:hover { color: var(--color-brand-secondary-deep); }
 .destination-option-action svg { width: 14px; height: 14px; }
 
 .premium-footer {
   position: relative;
   overflow: hidden;
-  background: #052f2b;
+  background: var(--color-brand-primary-deep);
   font-family: var(--font-sans);
 }
 .premium-footer::before {
@@ -930,33 +996,33 @@
   inset: auto -8% -45px;
   height: 130px;
   opacity: .34;
-  background: #0d5b47;
+  background: var(--color-brand-secondary-deep);
   clip-path: polygon(0 76%, 8% 42%, 16% 65%, 26% 20%, 36% 61%, 46% 30%, 56% 72%, 67% 24%, 78% 61%, 89% 13%, 100% 58%, 100% 100%, 0 100%);
 }
 .premium-footer-cta { position: relative; display: flex; align-items: end; justify-content: space-between; gap: 36px; padding: 68px 0 54px; border-bottom: 1px solid rgba(255,255,255,.12); }
-.premium-footer-kicker { color: #f2bd62; font-size: 10px; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; }
+.premium-footer-kicker { color: var(--color-brand-secondary-pale); font-size: 10px; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; }
 .premium-footer-cta h2 { max-width: 700px; margin-top: 12px; font-family: var(--font-display); font-size: clamp(32px, 4.3vw, 62px); font-weight: 720; line-height: 1; letter-spacing: -.05em; }
 .premium-footer-cta p { max-width: 650px; margin-top: 14px; color: rgba(255,255,255,.62); font-size: 14px; line-height: 1.65; }
 .premium-footer-actions { display: flex; flex-direction: column; gap: 10px; min-width: 220px; }
 .premium-footer-actions a { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; gap: 9px; border: 1px solid rgba(255,255,255,.22); border-radius: 999px; padding: 0 18px; font-size: 12px; font-weight: 800; transition: background .2s ease, border-color .2s ease; }
 .premium-footer-actions a:first-child { border-color: #1fad6c; background: #15915a; }
-.premium-footer-actions a:hover { border-color: #f2bd62; background: rgba(255,255,255,.08); }
+.premium-footer-actions a:hover { border-color: var(--color-brand-secondary-pale); background: rgba(255,255,255,.08); }
 .premium-footer-actions svg { width: 16px; height: 16px; }
 .premium-footer-grid { position: relative; display: grid; grid-template-columns: 1.65fr repeat(4, 1fr); gap: clamp(24px, 4vw, 66px); padding: 52px 0 46px; }
 .premium-footer-brand > a span { display: flex; flex-direction: column; }
 .premium-footer-brand > a strong { font-family: var(--font-display); font-size: 19px; }
-.premium-footer-brand > a small { margin-top: 2px; color: #f2bd62; font-size: 8px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+.premium-footer-brand > a small { margin-top: 2px; color: var(--color-brand-secondary-pale); font-size: 8px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
 .premium-footer-brand > p { max-width: 330px; margin-top: 18px; color: rgba(255,255,255,.56); font-size: 11px; line-height: 1.7; }
 .premium-footer-trust { display: flex; align-items: center; gap: 10px; margin-top: 18px; color: rgba(255,255,255,.72); font-size: 10px; line-height: 1.5; }
-.premium-footer-trust svg { width: 22px; color: #f2bd62; }
+.premium-footer-trust svg { width: 22px; color: var(--color-brand-secondary-pale); }
 .premium-footer nav h3 { margin-bottom: 18px; color: white; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 .premium-footer nav ul { display: grid; gap: 10px; }
 .premium-footer nav a { color: rgba(255,255,255,.58); font-size: 11px; transition: color .2s ease; }
-.premium-footer nav a:hover { color: #f2bd62; }
+.premium-footer nav a:hover { color: var(--color-brand-secondary-pale); }
 .premium-footer-contact { position: relative; display: grid; grid-template-columns: 1fr 1fr 1.2fr; border-top: 1px solid rgba(255,255,255,.12); border-bottom: 1px solid rgba(255,255,255,.12); }
 .premium-footer-contact > * { min-height: 86px; display: grid; grid-template-columns: auto 1fr; align-content: center; column-gap: 12px; padding: 15px 28px; border-right: 1px solid rgba(255,255,255,.12); }
 .premium-footer-contact > *:last-child { border-right: 0; }
-.premium-footer-contact svg { grid-row: 1 / 3; width: 18px; color: #f2bd62; flex-shrink: 0; }
+.premium-footer-contact svg { grid-row: 1 / 3; width: 18px; color: var(--color-brand-secondary-pale); flex-shrink: 0; }
 .premium-footer-contact span { color: rgba(255,255,255,.45); font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
 .premium-footer-contact a, .premium-footer-contact strong { color: white; font-size: 12px; font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .premium-footer-bottom { position: relative; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 24px; padding: 24px 0 34px; color: rgba(255,255,255,.42); font-size: 9px; }
