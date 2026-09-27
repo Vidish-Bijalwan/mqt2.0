@@ -22,10 +22,16 @@ const LOOP_DURATION_S = 46;
 /* ─────────────── Main Marquee component ─────────────── */
 export default function PosterMarquee() {
   const trackRef = useRef<HTMLDivElement>(null);
+  const maskRef = useRef<HTMLDivElement>(null);
   const [isInteractionPaused, setIsInteractionPaused] = useState(false);
   const [isDocumentHidden, setIsDocumentHidden] = useState(false);
   const [selectedPoster, setSelectedPoster] = useState<PosterItem | null>(null);
   const [isInView, setIsInView] = useState(true);
+  /* True when the touch CSS branch applies (native swipe rail instead of the
+     CSS marquee) and the user hasn't asked for reduced motion — then the rail
+     also auto-advances so phones get the same "scrolling carousel" feel. */
+  const [autoAdvance, setAutoAdvance] = useState(false);
+  const resumeTimer = useRef<number | null>(null);
 
   useEffect(() => {
     const track = trackRef.current;
@@ -50,6 +56,48 @@ export default function PosterMarquee() {
     return () => { document.body.style.overflow = ""; };
   }, [selectedPoster]);
 
+  // Detect the touch swipe-rail branch (mirrors the CSS media query).
+  useEffect(() => {
+    const touch = window.matchMedia("(hover: none) and (pointer: coarse)");
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const update = () => setAutoAdvance(touch.matches && !reduced.matches);
+    update();
+    touch.addEventListener("change", update);
+    reduced.addEventListener("change", update);
+    return () => {
+      touch.removeEventListener("change", update);
+      reduced.removeEventListener("change", update);
+      if (resumeTimer.current) window.clearTimeout(resumeTimer.current);
+    };
+  }, []);
+
+  // On touch devices the CSS marquee is replaced by a native swipe rail.
+  // Auto-advance it one card at a time so phones get visible motion too;
+  // any touch pauses it, and it resumes after 5s idle.
+  useEffect(() => {
+    if (!autoAdvance) return;
+    const mask = maskRef.current;
+    if (!mask) return;
+    if (isInteractionPaused || isDocumentHidden || !isInView) return;
+    const id = window.setInterval(() => {
+      const card = mask.querySelector<HTMLElement>(".pm-card");
+      const step = card ? card.offsetWidth + 10 : 280;
+      const nearEnd = mask.scrollLeft + mask.clientWidth >= mask.scrollWidth - 24;
+      if (nearEnd) mask.scrollTo({ left: 0, behavior: "smooth" });
+      else mask.scrollBy({ left: step, behavior: "smooth" });
+    }, 3400);
+    return () => window.clearInterval(id);
+  }, [autoAdvance, isInteractionPaused, isDocumentHidden, isInView]);
+
+  const pauseForTouch = () => {
+    setIsInteractionPaused(true);
+    if (resumeTimer.current) window.clearTimeout(resumeTimer.current);
+  };
+  const resumeAfterTouch = () => {
+    if (resumeTimer.current) window.clearTimeout(resumeTimer.current);
+    resumeTimer.current = window.setTimeout(() => setIsInteractionPaused(false), 5000);
+  };
+
   // Two identical groups make the CSS loop mathematically exact. The group padding
   // carries the inter-group gap, so the reset never reveals a half-gap jump.
   const loopItems = posterItems.slice(0, 12);
@@ -62,7 +110,13 @@ export default function PosterMarquee() {
         aria-label="Featured tour destinations"
         role="region"
       >
-        <div className="pm-mask">
+        <div
+          className="pm-mask"
+          ref={maskRef}
+          onTouchStart={pauseForTouch}
+          onTouchEnd={resumeAfterTouch}
+          onTouchCancel={resumeAfterTouch}
+        >
           <div
             ref={trackRef}
             className="pm-track"

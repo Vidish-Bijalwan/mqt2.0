@@ -1187,6 +1187,10 @@
     overscroll-behavior-inline: contain;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
+    /* Belt-and-braces: guarantee the browser lets finger drags pan this rail
+       even if an ancestor ever constrains touch-action. */
+    touch-action: pan-x pan-y;
+    -webkit-overflow-scrolling: touch;
     -webkit-mask-image: none;
     mask-image: none;
   }
@@ -1229,6 +1233,8 @@
     overscroll-behavior-inline: contain;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
+    touch-action: pan-x pan-y;
+    -webkit-overflow-scrolling: touch;
     -webkit-mask-image: none;
     mask-image: none;
   }
