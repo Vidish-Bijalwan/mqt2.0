@@ -114,7 +114,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const experienceRoutes = experiences.map((exp) => ({ url: `${baseUrl}/experiences/${exp.slug}`, lastModified: EXPERIENCES_LASTMOD, changeFrequency: 'weekly' as const, priority: 0.8 }));
   const blogRoutes = ALL_BLOGS.map((blog) => ({
     url: `${baseUrl}/blog/${blog.slug}`,
-    lastModified: BLOG_LASTMOD,
+    lastModified: blog.publishedAt ? new Date(blog.publishedAt) : BLOG_LASTMOD,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));
