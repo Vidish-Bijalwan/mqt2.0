@@ -16,6 +16,7 @@
     "report:contentless": "node scripts/parity/contentless-report.mjs"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^0.10.4",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
     "clsx": "^2.1.1",
