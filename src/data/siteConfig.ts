@@ -37,13 +37,6 @@ export const siteConfig = {
     head: "Delhi, India",
     branches: ["Delhi", "Bangalore", "Chennai", "Dehradun", "Kolkata"],
   },
-  stats: {
-    yearsExperience: 10,
-    happyTravellers: "50,000+",
-    tourPackages: "500+",
-    destinations: "100+",
-    teamMembers: "100+",
-  },
 } as const;
 
 export type SiteConfig = typeof siteConfig;
