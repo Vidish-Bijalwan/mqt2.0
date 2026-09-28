@@ -96,7 +96,7 @@ export const experiences: Experience[] = [
     slug: "wildlife-safari",
     name: "Wildlife Safari",
     group: "Nature",
-    image: "/images/packages/wildlife.jpg",
+    image: "/images/packages/wildlife.webp",
     tagline: "Spot tigers, leopards & more",
     keywords: ["wildlife", "safari", "national park", "tiger", "gir", "corbett", "ranthambore", "kaziranga", "periyar", "bandhavgarh", "kanha", "wild"],
     description:
@@ -112,7 +112,7 @@ export const experiences: Experience[] = [
     slug: "cruise-packages",
     name: "Cruise Packages",
     group: "Luxury",
-    image: "/images/packages/cordelia-cruise-packages.jpg",
+    image: "/images/packages/cordelia-cruise-packages.webp",
     tagline: "Sail the high seas in style",
     keywords: ["cruise", "cruises", "ship", "sea cruise"],
     description:
@@ -144,7 +144,7 @@ export const experiences: Experience[] = [
     slug: "skiing",
     name: "Skiing",
     group: "Adventure",
-    image: "/images/packages/auli-skiing-tour.jpg",
+    image: "/images/packages/auli-skiing-tour.webp",
     tagline: "Glide down powdery slopes",
     keywords: ["ski", "skiing", "auli", "snow", "gulmarg"],
     description:
@@ -160,7 +160,7 @@ export const experiences: Experience[] = [
     slug: "luxury-tours",
     name: "Luxury Tours",
     group: "Luxury",
-    image: "/images/packages/5-star-hotels-in-goa.jpg",
+    image: "/images/packages/5-star-hotels-in-goa.webp",
     tagline: "Five-star escapes & palatial stays",
     keywords: ["luxury", "5-star", "five star", "premium", "deluxe", "palace"],
     description:
@@ -176,7 +176,7 @@ export const experiences: Experience[] = [
     slug: "corporate-tours",
     name: "Corporate Tours",
     group: "Corporate",
-    image: "/images/packages/5-star-hotels-in-bangalore.jpg",
+    image: "/images/packages/5-star-hotels-in-bangalore.webp",
     tagline: "Offsites, retreats & team bonding",
     keywords: ["corporate", "business", "meeting", "team", "offsite", "retreat"],
     description:
@@ -192,7 +192,7 @@ export const experiences: Experience[] = [
     slug: "mice-tours",
     name: "MICE Tours",
     group: "Corporate",
-    image: "/images/packages/5-star-hotels-in-delhi.jpg",
+    image: "/images/packages/5-star-hotels-in-delhi.webp",
     tagline: "Meetings, incentives, conferences & events",
     keywords: ["mice", "conference", "exhibition", "incentive", "seminar"],
     description:
@@ -224,7 +224,7 @@ export const experiences: Experience[] = [
     slug: "helicopter-tours",
     name: "Helicopter Tours",
     group: "Luxury",
-    image: "/images/packages/chardham-helicopter-yatra-faqs.jpg",
+    image: "/images/packages/chardham-helicopter-yatra-faqs.webp",
     tagline: "Soar to sacred & scenic peaks",
     keywords: ["helicopter", "heli", "aerial", "chopper"],
     description:
@@ -288,7 +288,7 @@ export const experiences: Experience[] = [
     slug: "photography-tours",
     name: "Photography Tours",
     group: "Nature",
-    image: "/images/packages/enchanting-himachal.jpg",
+    image: "/images/packages/enchanting-himachal.webp",
     tagline: "Capture India's finest frames",
     keywords: ["photography", "photo", "scenic", "landscape"],
     description:
@@ -336,7 +336,7 @@ export const experiences: Experience[] = [
     slug: "bike-tours",
     name: "Bike Tours",
     group: "Adventure",
-    image: "/images/packages/endless-fun-in-himachal.png",
+    image: "/images/packages/endless-fun-in-himachal.webp",
     tagline: "Ride India's greatest roads",
     keywords: ["bike", "biking", "cycling", "motorbike", "royal enfield"],
     description:
@@ -384,7 +384,7 @@ export const experiences: Experience[] = [
     slug: "yoga-retreats",
     name: "Yoga Retreats",
     group: "Medical",
-    image: "/images/packages/himalayan-sojourn-ayurveda.jpg",
+    image: "/images/packages/himalayan-sojourn-ayurveda.webp",
     tagline: "Reconnect body & mind",
     keywords: ["yoga", "retreat", "meditation", "ashram", "pranayama"],
     description:
@@ -496,7 +496,7 @@ export const experiences: Experience[] = [
     slug: "heritage-walks",
     name: "Heritage Walks",
     group: "Family",
-    image: "/images/packages/darjeeling-heritage-tour.jpg",
+    image: "/images/packages/darjeeling-heritage-tour.webp",
     tagline: "Step back through history",
     keywords: ["heritage", "fort", "palace", "walk", "old city", "architecture", "history"],
     description:
@@ -560,7 +560,7 @@ export const experiences: Experience[] = [
     slug: "custom-holiday-packages",
     name: "Custom Holiday Packages",
     group: "Family",
-    image: "/images/packages/exotic-himachal-pardesh.jpg",
+    image: "/images/packages/exotic-himachal-pardesh.webp",
     tagline: "Designed around you",
     keywords: ["custom", "bespoke", "tailor", "holiday", "family", "group"],
     description:

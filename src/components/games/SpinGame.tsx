@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useMemo, useRef, useState, useSyncExternalStore } from "react";
+import Image from "next/image";
 import {
   BadgeCheck,
   Copy,
@@ -9,6 +10,7 @@ import {
   Flame,
   Gift,
   ListOrdered,
+  MessageCircle,
   RotateCcw,
   ShieldCheck,
   Volume2,
@@ -33,6 +35,13 @@ import { trackEvent } from "@/lib/analytics";
 
 const SPIN_TURNS = 6;
 const SPIN_MS = 5400;
+
+/** Existing repo photography (location-library). Attribution follows the
+ *  repo's "Name — Author, License" caption convention. */
+const WHEEL_BAND_IMAGE = {
+  src: "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-01-lg.webp",
+  caption: "Kedarnath — Rohit Sharma, CC BY-SA 4.0",
+};
 
 /** Local YYYY-MM-DD. */
 function todayLocal(): string {
@@ -93,6 +102,11 @@ export default function SpinGame() {
   const odds = useMemo(() => effectiveProbabilities(prizes), [prizes]);
   const anyExhausted = prizes.some((p) => p.claimedExhausted);
   const oddsFor = (id: string) => odds.find((o) => o.id === id)?.percent ?? 0;
+  const maxVoucher = useMemo(
+    () => Math.max(...prizes.filter((p) => p.value > 0).map((p) => p.value)),
+    [prizes],
+  );
+  const stepIcons = [Copy, MessageCircle, BadgeCheck];
 
   /* ── tick sound (created on the user's spin gesture — never autoplayed) ── */
   const playTick = useCallback(() => {
@@ -248,251 +262,318 @@ export default function SpinGame() {
     : null;
 
   return (
-    <div className="mx-auto w-full max-w-md px-4 pb-16 pt-8 sm:pt-12">
-      {/* ── Header ── */}
-      <div className="text-center">
-        <div
-          aria-hidden="true"
-          className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-brand-secondary/15 text-brand-secondary"
-        >
-          <Dices className="h-8 w-8" />
-        </div>
-        <p className="mt-4 text-xs font-bold uppercase tracking-[0.2em] text-brand-secondary">
-          Pilot game · Win real travel vouchers
+    <div className="mx-auto w-full max-w-6xl px-4 pb-14 pt-8 sm:pt-10">
+      {streak >= 2 && (
+        <p className="mx-auto mb-6 flex w-fit items-center gap-1.5 rounded-full bg-brand-cta/15 px-4 py-1.5 text-sm font-bold text-ink">
+          <Flame className="h-4 w-4 text-brand-cta-deep" aria-hidden="true" />
+          {streak}-day spin streak
         </p>
-        <h1 className="mt-2 font-display text-4xl font-extrabold leading-tight text-ink">
-          {cfg.name}
-        </h1>
-        <p className="mx-auto mt-3 max-w-sm text-[15px] leading-relaxed text-ink-muted">
-          {cfg.tagline}
-        </p>
-        {streak >= 2 && (
-          <p className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-brand-cta/15 px-3 py-1 text-sm font-bold text-ink">
-            <Flame className="h-4 w-4 text-brand-cta-deep" aria-hidden="true" />
-            {streak}-day spin streak
-          </p>
-        )}
-      </div>
+      )}
 
-      {/* ── Wheel card ── */}
-      <section
-        aria-label="Prize wheel"
-        className="relative mt-8 overflow-hidden rounded-3xl border border-line bg-surface-card p-5 shadow-[var(--shadow-card)]"
-      >
-        {celebrating && <Confetti />}
-        <div className="relative mx-auto max-w-[320px]" ref={containerRef}>
-          {/* pointer */}
-          <div
-            aria-hidden="true"
-            className="absolute -top-1 left-1/2 z-10 -translate-x-1/2"
-            style={{ filter: "drop-shadow(0 2px 2px rgba(0,0,0,0.25))" }}
-          >
-            <div
-              className="h-0 w-0 border-x-[13px] border-t-[22px] border-x-transparent border-t-[#F29D38]"
-            />
-          </div>
-          <div aria-hidden="true">
-            <WheelSvg prizes={prizes} wheelRef={wheelRef} />
-          </div>
-        </div>
-
-        <button
-          type="button"
-          onClick={spin}
-          disabled={phase === "spinning" || spunToday}
-          className="mt-5 flex w-full items-center justify-center gap-2 rounded-2xl bg-brand-cta px-6 py-4 font-display text-xl font-extrabold text-[#0B1F33] shadow-[var(--shadow-cta-orange)] transition-transform active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50 disabled:shadow-none"
-        >
-          {phase === "spinning" ? (
-            <>
-              <RotateCcw className="h-5 w-5 animate-spin" aria-hidden="true" />
-              Spinning…
-            </>
-          ) : spunToday ? (
-            "Today's spin used — come back tomorrow"
-          ) : (
-            <>
-              <Dices className="h-6 w-6" aria-hidden="true" />
-              SPIN NOW
-            </>
-          )}
-        </button>
-
-        <div className="mt-3 flex items-center justify-between text-sm">
-          <p className="font-semibold text-ink-muted">
-            {spunToday
-              ? "You've used today's spin on this device."
-              : `1 free spin per day · no sign-up needed`}
-          </p>
-          <button
-            type="button"
-            onClick={() => setSoundOn((s) => !s)}
-            aria-pressed={soundOn}
-            aria-label={soundOn ? "Mute tick sounds" : "Unmute tick sounds"}
-            className="rounded-full p-2 text-ink-muted transition-colors hover:bg-surface-canvas hover:text-ink"
-          >
-            {soundOn ? <Volume2 className="h-4 w-4" /> : <VolumeX className="h-4 w-4" />}
-          </button>
-        </div>
-      </section>
-
-      {/* ── Result (announced to screen readers) ── */}
-      <div aria-live="polite" className="mt-6">
-        {phase === "done" && result && result.tier.value > 0 && (
+      {/* ── Wheel + odds: two-column on desktop, stacked on mobile ── */}
+      <div className="grid gap-6 lg:grid-cols-5 lg:gap-8">
+        {/* Left: wheel, spin CTA, result */}
+        <div className="lg:col-span-3">
           <section
-            aria-label="You won a voucher"
-            className="rounded-3xl border-2 border-brand-cta bg-surface-card p-5 shadow-[var(--shadow-card)]"
+            aria-label="Prize wheel"
+            className="relative overflow-hidden rounded-3xl border border-line bg-surface-card shadow-[var(--shadow-card)]"
           >
-            <div className="flex items-center gap-2 text-brand-cta-deep">
-              <Gift className="h-5 w-5" aria-hidden="true" />
-              <p className="font-display text-lg font-extrabold">You won {result.tier.label}!</p>
+            {celebrating && <Confetti />}
+
+            {/* Himalayan photo band */}
+            <div className="relative h-36 sm:h-44">
+              <Image
+                src={WHEEL_BAND_IMAGE.src}
+                alt=""
+                fill
+                sizes="(max-width: 1024px) 100vw, 60vw"
+                loading="lazy"
+                decoding="async"
+                className="object-cover"
+              />
+              <div
+                aria-hidden="true"
+                className="absolute inset-0 bg-gradient-to-t from-[#071525]/90 via-[#071525]/15 to-transparent"
+              />
+              <p className="absolute bottom-2 left-4 text-[11px] text-white/70">
+                {WHEEL_BAND_IMAGE.caption}
+              </p>
             </div>
-            <p className="mt-1 text-sm text-ink-muted">
-              A real discount, applied to a qualifying booking by our team.
-            </p>
 
-            <button
-              type="button"
-              onClick={copyCode}
-              className="mt-4 flex w-full items-center justify-between gap-3 rounded-2xl border-2 border-dashed border-brand-secondary bg-brand-secondary/5 px-4 py-3"
-              aria-label={`Copy voucher code ${result.code}`}
-            >
-              <code className="font-mono text-2xl font-bold tracking-widest text-brand-primary">
-                {result.code}
-              </code>
-              {copied ? (
-                <span className="flex items-center gap-1 text-sm font-bold text-state-success">
-                  <Check className="h-4 w-4" aria-hidden="true" /> Copied
-                </span>
-              ) : (
-                <span className="flex items-center gap-1 text-sm font-bold text-brand-secondary">
-                  <Copy className="h-4 w-4" aria-hidden="true" /> Copy
-                </span>
-              )}
-            </button>
+            <div className="p-5 sm:p-6">
+              {/* Dark wheel stage */}
+              <div className="relative overflow-hidden rounded-3xl bg-brand-primary-deep px-4 py-6">
+                <div
+                  aria-hidden="true"
+                  className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,rgba(18,124,130,0.38),transparent_68%)]"
+                />
+                <div className="relative mx-auto max-w-[340px]" ref={containerRef}>
+                  {/* pointer */}
+                  <div
+                    aria-hidden="true"
+                    className="absolute -top-1 left-1/2 z-10 -translate-x-1/2"
+                    style={{ filter: "drop-shadow(0 2px 2px rgba(0,0,0,0.25))" }}
+                  >
+                    <div
+                      className="h-0 w-0 border-x-[13px] border-t-[22px] border-x-transparent border-t-[#F29D38]"
+                    />
+                  </div>
+                  <div aria-hidden="true">
+                    <WheelSvg prizes={prizes} wheelRef={wheelRef} />
+                  </div>
+                </div>
+                <p className="relative mt-4 text-center text-xs font-semibold uppercase tracking-[0.18em] text-brand-secondary-pale/80">
+                  {cfg.spinsPerDay} free spin per day · no sign-up needed
+                </p>
+              </div>
 
-            <dl className="mt-4 space-y-1.5 text-sm">
-              <div className="flex justify-between">
-                <dt className="text-ink-muted">Minimum booking value</dt>
-                <dd className="font-bold text-ink">{formatRupees(result.tier.minSpend)}</dd>
+              <button
+                type="button"
+                onClick={spin}
+                disabled={phase === "spinning" || spunToday}
+                className="btn-shine mt-5 flex w-full items-center justify-center gap-2 rounded-2xl bg-brand-cta px-6 py-4 font-display text-xl font-extrabold text-[#0B1F33] shadow-[var(--shadow-cta-orange)] transition-transform active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50 disabled:shadow-none"
+              >
+                {phase === "spinning" ? (
+                  <>
+                    <RotateCcw className="h-5 w-5 animate-spin" aria-hidden="true" />
+                    Spinning…
+                  </>
+                ) : spunToday ? (
+                  "Today's spin used — come back tomorrow"
+                ) : (
+                  <>
+                    <Dices className="h-6 w-6" aria-hidden="true" />
+                    SPIN NOW
+                  </>
+                )}
+              </button>
+
+              <div className="mt-3 flex items-center justify-between text-sm">
+                <p className="font-semibold text-ink-muted">
+                  {spunToday
+                    ? "You've used today's spin on this device."
+                    : `1 free spin per day · no sign-up needed`}
+                </p>
+                <button
+                  type="button"
+                  onClick={() => setSoundOn((s) => !s)}
+                  aria-pressed={soundOn}
+                  aria-label={soundOn ? "Mute tick sounds" : "Unmute tick sounds"}
+                  className="rounded-full p-2 text-ink-muted transition-colors hover:bg-surface-canvas hover:text-ink"
+                >
+                  {soundOn ? <Volume2 className="h-4 w-4" /> : <VolumeX className="h-4 w-4" />}
+                </button>
               </div>
-              <div className="flex justify-between">
-                <dt className="text-ink-muted">Valid until</dt>
-                <dd className="font-bold text-ink">{expiryLabel}</dd>
+            </div>
+          </section>
+
+          {/* ── Result (announced to screen readers) ── */}
+          <div aria-live="polite" className="mt-6">
+            {phase === "done" && result && result.tier.value > 0 && (
+              <section
+                aria-label="You won a voucher"
+                className="rounded-3xl border-2 border-brand-cta bg-surface-card p-5 shadow-[var(--shadow-card)]"
+              >
+                <div className="flex items-center gap-2 text-brand-cta-deep">
+                  <Gift className="h-5 w-5" aria-hidden="true" />
+                  <p className="font-display text-lg font-extrabold">You won {result.tier.label}!</p>
+                </div>
+                <p className="mt-1 text-sm text-ink-muted">
+                  A real discount, applied to a qualifying booking by our team.
+                </p>
+
+                <button
+                  type="button"
+                  onClick={copyCode}
+                  className="mt-4 flex w-full items-center justify-between gap-3 rounded-2xl border-2 border-dashed border-brand-secondary bg-brand-secondary/5 px-4 py-3"
+                  aria-label={`Copy voucher code ${result.code}`}
+                >
+                  <code className="font-mono text-2xl font-bold tracking-widest text-brand-primary">
+                    {result.code}
+                  </code>
+                  {copied ? (
+                    <span className="flex items-center gap-1 text-sm font-bold text-state-success">
+                      <Check className="h-4 w-4" aria-hidden="true" /> Copied
+                    </span>
+                  ) : (
+                    <span className="flex items-center gap-1 text-sm font-bold text-brand-secondary">
+                      <Copy className="h-4 w-4" aria-hidden="true" /> Copy
+                    </span>
+                  )}
+                </button>
+
+                <dl className="mt-4 space-y-1.5 text-sm">
+                  <div className="flex justify-between">
+                    <dt className="text-ink-muted">Minimum booking value</dt>
+                    <dd className="font-bold text-ink">{formatRupees(result.tier.minSpend)}</dd>
+                  </div>
+                  <div className="flex justify-between">
+                    <dt className="text-ink-muted">Valid until</dt>
+                    <dd className="font-bold text-ink">{expiryLabel}</dd>
+                  </div>
+                  <div className="flex justify-between">
+                    <dt className="text-ink-muted">Odds of this prize</dt>
+                    <dd className="font-bold text-ink">
+                      {formatOdds(oddsFor(result.tier.id))}
+                    </dd>
+                  </div>
+                </dl>
+
+                <a
+                  href={whatsappHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 flex w-full items-center justify-center gap-2 rounded-2xl bg-brand-primary px-6 py-3.5 font-display text-lg font-bold text-white transition-transform active:scale-[0.98]"
+                >
+                  <BadgeCheck className="h-5 w-5" aria-hidden="true" />
+                  Redeem on WhatsApp
+                </a>
+                <p className="mt-2 text-center text-xs text-ink-muted">
+                  Mention your code in the chat — our team verifies and applies it to your quote before you pay.
+                </p>
+              </section>
+            )}
+
+            {phase === "done" && result && result.tier.value === 0 && (
+              <section
+                aria-label="No prize this time"
+                className="rounded-3xl border border-line bg-surface-card p-5 text-center shadow-[var(--shadow-card)]"
+              >
+                <p className="font-display text-xl font-extrabold text-ink">No voucher this time</p>
+                <p className="mt-2 text-sm leading-relaxed text-ink-muted">
+                  That was a fair spin — 40 of every 100 spins land here. Your free spin
+                  for tomorrow is waiting.
+                </p>
+              </section>
+            )}
+          </div>
+        </div>
+
+        {/* Right: published odds panel */}
+        <aside
+          aria-label="Published odds"
+          className="self-start rounded-3xl border border-line bg-surface-card shadow-[var(--shadow-card)] lg:sticky lg:top-6 lg:col-span-2"
+        >
+          <div className="border-b border-line p-5 sm:p-6">
+            <h2 className="flex items-center gap-2 font-display text-xl font-extrabold text-ink">
+              <ListOrdered className="h-5 w-5 text-brand-secondary" aria-hidden="true" />
+              Published odds
+            </h2>
+            <dl className="mt-4 grid grid-cols-3 gap-2 text-center">
+              <div className="rounded-xl bg-surface-canvas px-2 py-2.5">
+                <dt className="text-[10px] font-bold uppercase tracking-wide text-ink-muted">
+                  Top prize
+                </dt>
+                <dd className="mt-0.5 font-display text-sm font-extrabold text-ink">
+                  {formatRupees(maxVoucher)}
+                </dd>
               </div>
-              <div className="flex justify-between">
-                <dt className="text-ink-muted">Odds of this prize</dt>
-                <dd className="font-bold text-ink">
-                  {formatOdds(oddsFor(result.tier.id))}
+              <div className="rounded-xl bg-surface-canvas px-2 py-2.5">
+                <dt className="text-[10px] font-bold uppercase tracking-wide text-ink-muted">
+                  Monthly budget
+                </dt>
+                <dd className="mt-0.5 font-display text-sm font-extrabold text-ink">
+                  {formatRupees(cfg.monthlyPrizeBudget)}
+                </dd>
+              </div>
+              <div className="rounded-xl bg-surface-canvas px-2 py-2.5">
+                <dt className="text-[10px] font-bold uppercase tracking-wide text-ink-muted">
+                  Spins
+                </dt>
+                <dd className="mt-0.5 font-display text-sm font-extrabold text-ink">
+                  {cfg.spinsPerDay}/day
                 </dd>
               </div>
             </dl>
+          </div>
 
-            <a
-              href={whatsappHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 flex w-full items-center justify-center gap-2 rounded-2xl bg-brand-primary px-6 py-3.5 font-display text-lg font-bold text-white transition-transform active:scale-[0.98]"
-            >
-              <BadgeCheck className="h-5 w-5" aria-hidden="true" />
-              Redeem on WhatsApp
-            </a>
-            <p className="mt-2 text-center text-xs text-ink-muted">
-              Mention your code in the chat — our team verifies and applies it to your quote before you pay.
-            </p>
-          </section>
-        )}
+          <div className="overflow-hidden">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-line bg-surface-canvas text-left text-xs uppercase tracking-wide text-ink-muted">
+                  <th scope="col" className="px-4 py-2.5 font-bold">Prize</th>
+                  <th scope="col" className="px-4 py-2.5 text-right font-bold">Odds</th>
+                  <th scope="col" className="px-4 py-2.5 text-right font-bold">Max winners / month</th>
+                </tr>
+              </thead>
+              <tbody>
+                {prizes.map((p) => {
+                  const eff = oddsFor(p.id);
+                  return (
+                    <tr key={p.id} className="border-b border-line last:border-0">
+                      <td className="px-4 py-2.5 font-semibold text-ink">
+                        {p.label}
+                        {p.claimedExhausted && (
+                          <span className="ml-2 rounded-full bg-ink-muted/15 px-2 py-0.5 text-xs font-bold text-ink-muted">
+                            Fully claimed
+                          </span>
+                        )}
+                        {p.value > 0 && (
+                          <span className="block text-xs font-normal text-ink-muted">
+                            min. booking {formatRupees(p.minSpend)}
+                          </span>
+                        )}
+                      </td>
+                      <td className="px-4 py-2.5 text-right font-bold text-ink">
+                        {p.claimedExhausted ? "—" : formatOdds(eff)}
+                      </td>
+                      <td className="px-4 py-2.5 text-right text-ink-muted">
+                        {p.value === 0 ? "—" : p.maxWinners.toLocaleString("en-IN")}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
 
-        {phase === "done" && result && result.tier.value === 0 && (
-          <section
-            aria-label="No prize this time"
-            className="rounded-3xl border border-line bg-surface-card p-5 text-center shadow-[var(--shadow-card)]"
-          >
-            <p className="font-display text-xl font-extrabold text-ink">No voucher this time</p>
-            <p className="mt-2 text-sm leading-relaxed text-ink-muted">
-              That was a fair spin — 40 of every 100 spins land here. Your free spin
-              for tomorrow is waiting.
-            </p>
-          </section>
-        )}
+          <p className="border-t border-line p-5 text-xs leading-relaxed text-ink-muted sm:p-6">
+            {anyExhausted
+              ? "A prize tier is fully claimed this month, so the odds above are recalculated across the remaining tiers."
+              : "Odds are fixed. They don't change based on who's spinning, how many people spun, or what time it is."}{" "}
+            Total monthly prize budget: {formatRupees(cfg.monthlyPrizeBudget)}.
+          </p>
+
+          <p className="mx-5 mb-5 rounded-2xl bg-brand-primary/5 p-4 text-xs leading-relaxed text-ink-muted sm:mx-6 sm:mb-6">
+            {cfg.fairnessNote}
+          </p>
+        </aside>
       </div>
 
-      {/* ── Published odds ── */}
-      <section aria-label="Published odds" className="mt-8">
-        <h2 className="flex items-center gap-2 font-display text-xl font-extrabold text-ink">
-          <ListOrdered className="h-5 w-5 text-brand-secondary" aria-hidden="true" />
-          Published odds
-        </h2>
-        <div className="mt-3 overflow-hidden rounded-2xl border border-line bg-surface-card">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-line bg-surface-canvas text-left text-xs uppercase tracking-wide text-ink-muted">
-                <th scope="col" className="px-4 py-2.5 font-bold">Prize</th>
-                <th scope="col" className="px-4 py-2.5 text-right font-bold">Odds</th>
-                <th scope="col" className="px-4 py-2.5 text-right font-bold">Max winners / month</th>
-              </tr>
-            </thead>
-            <tbody>
-              {prizes.map((p) => {
-                const eff = oddsFor(p.id);
-                return (
-                  <tr key={p.id} className="border-b border-line last:border-0">
-                    <td className="px-4 py-2.5 font-semibold text-ink">
-                      {p.label}
-                      {p.claimedExhausted && (
-                        <span className="ml-2 rounded-full bg-ink-muted/15 px-2 py-0.5 text-xs font-bold text-ink-muted">
-                          Fully claimed
-                        </span>
-                      )}
-                      {p.value > 0 && (
-                        <span className="block text-xs font-normal text-ink-muted">
-                          min. booking {formatRupees(p.minSpend)}
-                        </span>
-                      )}
-                    </td>
-                    <td className="px-4 py-2.5 text-right font-bold text-ink">
-                      {p.claimedExhausted ? "—" : formatOdds(eff)}
-                    </td>
-                    <td className="px-4 py-2.5 text-right text-ink-muted">
-                      {p.value === 0 ? "—" : p.maxWinners.toLocaleString("en-IN")}
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
-        <p className="mt-2 text-xs leading-relaxed text-ink-muted">
-          {anyExhausted
-            ? "A prize tier is fully claimed this month, so the odds above are recalculated across the remaining tiers."
-            : "Odds are fixed. They don't change based on who's spinning, how many people spun, or what time it is."}{" "}
-          Total monthly prize budget: {formatRupees(cfg.monthlyPrizeBudget)}.
-        </p>
-      </section>
-
-      {/* ── How redemption works ── */}
-      <section aria-label="How to redeem your voucher" className="mt-8">
-        <h2 className="flex items-center gap-2 font-display text-xl font-extrabold text-ink">
-          <ShieldCheck className="h-5 w-5 text-brand-secondary" aria-hidden="true" />
+      {/* ── How redemption works: horizontal step cards ── */}
+      <section aria-label="How to redeem your voucher" className="mt-10">
+        <h2 className="flex items-center gap-2 font-display text-xl font-extrabold text-ink sm:text-2xl">
+          <ShieldCheck className="h-6 w-6 text-brand-secondary" aria-hidden="true" />
           How redemption works
         </h2>
-        <ol className="mt-3 space-y-2.5">
-          {cfg.redemptionSteps.map((step, i) => (
-            <li key={i} className="flex gap-3 rounded-2xl border border-line bg-surface-card p-4 text-sm leading-relaxed text-ink">
-              <span
-                aria-hidden="true"
-                className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand-primary font-display text-sm font-extrabold text-white"
+        <ol className="mt-4 grid gap-4 md:grid-cols-3">
+          {cfg.redemptionSteps.map((step, i) => {
+            const StepIcon = stepIcons[i] ?? BadgeCheck;
+            return (
+              <li
+                key={i}
+                className="relative rounded-3xl border border-line bg-surface-card p-5 shadow-[var(--shadow-card)]"
               >
-                {i + 1}
-              </span>
-              {step}
-            </li>
-          ))}
+                <div className="flex items-center gap-3">
+                  <span
+                    aria-hidden="true"
+                    className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-brand-primary text-white"
+                  >
+                    <StepIcon className="h-5 w-5" />
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="font-display text-sm font-extrabold uppercase tracking-[0.18em] text-ink-muted"
+                  >
+                    Step {i + 1}
+                  </span>
+                </div>
+                <p className="mt-3 text-sm leading-relaxed text-ink">{step}</p>
+              </li>
+            );
+          })}
         </ol>
       </section>
-
-      <p className="mt-8 rounded-2xl bg-brand-primary/5 p-4 text-center text-xs leading-relaxed text-ink-muted">
-        {cfg.fairnessNote}
-      </p>
     </div>
   );
 }

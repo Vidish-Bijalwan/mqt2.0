@@ -6,7 +6,6 @@ import { getPublicPackages } from '@/utils/packageCatalog';
 import { experiences } from '@/data/experiencesData';
 import packageDetailsRaw from '@/data/packageDetails.json';
 import destinationsDataRaw from '@/data/destinationsData.json';
-import { destinations as contentDestinations } from '@/data/contentData';
 import { ALL_BLOGS } from '@/data/blogIndex';
 
 const packageDetails = packageDetailsRaw as Record<string, unknown>;
@@ -36,10 +35,6 @@ function dataFileMtime(...relativePath: string[]): Date {
 }
 const PACKAGES_LASTMOD = dataFileMtime('src', 'data', 'packageDetails.json');
 const DESTINATIONS_LASTMOD = dataFileMtime('src', 'data', 'destinationsData.json');
-const CONTENT_DATA_LASTMOD = dataFileMtime('src', 'data', 'contentData.ts');
-// The destination URL group is a union of two data files, so its lastmod is
-// the newer of the two sources.
-const DEST_HUB_LASTMOD = new Date(Math.max(+DESTINATIONS_LASTMOD, +CONTENT_DATA_LASTMOD));
 const EXPERIENCES_LASTMOD = dataFileMtime('src', 'data', 'experiencesData.ts');
 const BLOG_LASTMOD = dataFileMtime('src', 'data', 'blogIndex.generated.json');
 
@@ -70,28 +65,9 @@ const primaryPackageSlugs: string[] = (() => {
   });
 })();
 
-// ── Destination URL list ────────────────────────────────────────────
-// The [slug] destination page resolves from three sources, so the sitemap
-// must union them — the previous version only read destinationsData.json,
-// which silently dropped every page resolved from the other sources:
-//   1. destinationsData.json keys (legacy destination documents)
-//   2. contentData `destinations` slugs (editorial destination entries)
-//   3. catalogue-resolved slugs: not keys in either data file — the page
-//      renders them from package-catalogue keyword matches. Only the
-//      verified, footer-linked, indexable ones are listed here explicitly;
-//      arbitrary catalogue-matching slugs are not enumerated.
-// The 'blog' exclusion is preserved.
 // Thin editorial page excluded from the sitemap (the page itself is
 // untouched — this only controls crawler inclusion).
 const EXCLUDED_DESTINATION_SLUGS = new Set(['blog']);
-const CATALOGUE_DESTINATION_SLUGS = ['bali', 'dubai', 'europe', 'singapore', 'thailand'];
-const destinationSlugs: string[] = Array.from(
-  new Set([
-    ...Object.keys(destinationsData),
-    ...contentDestinations.map((d) => d.slug.toLowerCase()),
-    ...CATALOGUE_DESTINATION_SLUGS,
-  ])
-).filter((slug) => !EXCLUDED_DESTINATION_SLUGS.has(slug));
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.domain;
@@ -119,13 +95,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { route: '/careers', priority: 0.4, freq: 'monthly' as const },
     { route: '/group-tours', priority: 0.7, freq: 'weekly' as const },
     { route: '/experiences', priority: 0.85, freq: 'weekly' as const },
-    // Destination hub + high-traffic interactive pages. These routes are
-    // indexable and were previously absent from the sitemap, so crawlers had
-    // no signal they existed.
-    { route: '/destinations', priority: 0.9, freq: 'weekly' as const },
-    { route: '/games', priority: 0.7, freq: 'weekly' as const },
-    { route: '/trip-twin', priority: 0.7, freq: 'weekly' as const },
-    { route: '/trip-room', priority: 0.7, freq: 'weekly' as const },
     { route: '/privacy-policy', priority: 0.3, freq: 'yearly' as const },
     { route: '/terms-and-conditions', priority: 0.3, freq: 'yearly' as const },
     { route: '/site-map', priority: 0.3, freq: 'yearly' as const },
@@ -140,8 +109,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { route: '/campaigns/dehradun-adventure', priority: 0.9, freq: 'weekly' as const },
   ].map(({ route, priority, freq }) => ({ url: `${baseUrl}${route}`, lastModified: BUILD_DATE, changeFrequency: freq, priority }));
   const curatedPackageRoutes = primaryPackageSlugs.map((slug) => ({ url: `${baseUrl}/packages/${slug}`, lastModified: PACKAGES_LASTMOD, changeFrequency: 'monthly' as const, priority: 0.9 }));
-  const destinationRoutes = destinationSlugs
-    .map((slug) => ({ url: `${baseUrl}/destinations/${slug}`, lastModified: DEST_HUB_LASTMOD, changeFrequency: 'monthly' as const, priority: 0.85 }));
+  const destinationRoutes = Object.keys(destinationsData)
+    .filter((slug) => !EXCLUDED_DESTINATION_SLUGS.has(slug))
+    .map((slug) => ({ url: `${baseUrl}/destinations/${slug}`, lastModified: DESTINATIONS_LASTMOD, changeFrequency: 'monthly' as const, priority: 0.85 }));
   const experienceRoutes = experiences.map((exp) => ({ url: `${baseUrl}/experiences/${exp.slug}`, lastModified: EXPERIENCES_LASTMOD, changeFrequency: 'weekly' as const, priority: 0.8 }));
   const blogRoutes = ALL_BLOGS.map((blog) => ({
     url: `${baseUrl}/blog/${blog.slug}`,

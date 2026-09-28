@@ -11,26 +11,26 @@ export const destinations: Destination[] = [
   {
     "slug": "badrinath-kedarnath-tour",
     "name": "Badrinath Kedarnath Do Dham Yatra from Delhi",
-    "image": "/images/packages/chardham.jpg"
+    "image": "/images/packages/chardham.webp"
   },
   {
     "slug": "uttar-pradesh-tour",
     "name": "Best of Uttar Pradesh Tour Package",
-    "image": "/images/packages/uttar-pradesh-tour.jpg"
+    "image": "/images/packages/uttar-pradesh-tour.webp"
   },
   
   
   {
     "slug": "kerala-cultural-tour",
     "name": "Kerala Cultural Tour Package",
-    "image": "/images/packages/chardham.jpg"
+    "image": "/images/packages/chardham.webp"
   },
   
   
   {
     "slug": "traditional-dress-of-madhya-pradesh",
     "name": "Traditional Dress of Madhya Pradesh",
-    "image": "/images/packages/chardham.jpg"
+    "image": "/images/packages/chardham.webp"
   },
   {
     "slug": "muktinath-kathmandu-tour",
@@ -47,34 +47,34 @@ export const destinations: Destination[] = [
   {
     "slug": "buddhist-uttar-pradesh",
     "name": "Buddhist Tourism of Uttar Pradesh",
-    "image": "/images/packages/chardham.jpg"
+    "image": "/images/packages/chardham.webp"
   },
   
   
   {
     "slug": "phuket-honeymoon-tour",
     "name": "Phuket Honeymoon Tour Package",
-    "image": "/images/packages/chardham.jpg"
+    "image": "/images/packages/chardham.webp"
   },
   {
     "slug": "fruits-of-sikkim",
     "name": "Famous Fruits of Sikkim",
-    "image": "/images/packages/chardham.jpg"
+    "image": "/images/packages/chardham.webp"
   },
   {
     "slug": "kurumba-resort-maldives-tour",
     "name": "Kurumba Resort Maldives Tour",
-    "image": "/images/packages/chardham.jpg"
+    "image": "/images/packages/chardham.webp"
   },
   {
     "slug": "polonnaruwa",
     "name": "Polonnaruwa",
-    "image": "/images/packages/polonnaruwa.jpg"
+    "image": "/images/packages/polonnaruwa.webp"
   },
   {
     "slug": "raj-ghat-delhi",
     "name": "Raj Ghat, Delhi",
-    "image": "/images/packages/raj-ghat-delhi.jpg"
+    "image": "/images/packages/raj-ghat-delhi.webp"
   },
   
   {
@@ -90,22 +90,22 @@ export const destinations: Destination[] = [
   {
     "slug": "shimla-manali-honeymoon-package",
     "name": "Shimla Manali Honeymoon Package",
-    "image": "/images/packages/chardham.jpg"
+    "image": "/images/packages/chardham.webp"
   },
   {
     "slug": "muktinath-pashupatinath-tour",
     "name": "Muktinath Pashupatinath Tour Package",
-    "image": "/images/packages/chardham.jpg"
+    "image": "/images/packages/chardham.webp"
   },
   {
     "slug": "gandhi-smriti-delhi",
     "name": "Gandhi Smriti, Delhi",
-    "image": "/images/packages/gandhi-smriti-delhi.jpg"
+    "image": "/images/packages/gandhi-smriti-delhi.webp"
   },
   {
     "slug": "khajuraho-orchha-tour",
     "name": "3 Days Khajuraho Orchha Tour",
-    "image": "/images/packages/chardham.jpg"
+    "image": "/images/packages/chardham.webp"
   },
   
   
@@ -123,12 +123,12 @@ export const destinations: Destination[] = [
   {
     "slug": "gujarat-dekho",
     "name": "Gujarat Dekho – A Short Trip to Gujarat",
-    "image": "/images/packages/gujarat-dekho.jpg"
+    "image": "/images/packages/gujarat-dekho.webp"
   },
   {
     "slug": "glimpses-of-ladakh-tour",
     "name": "Glimpses of Ladakh Tour",
-    "image": "/images/packages/chardham.jpg"
+    "image": "/images/packages/chardham.webp"
   },
   {
     "slug": "pancha-bhoota-sthalam-navagraha-package",
@@ -138,12 +138,12 @@ export const destinations: Destination[] = [
   {
     "slug": "helicopter-ride-at-kumbh-mela",
     "name": "Mahakumbh 2025: Helicopter Ride at Kumbh Mela",
-    "image": "/images/packages/chardham.jpg"
+    "image": "/images/packages/chardham.webp"
   },
   {
     "slug": "traditional-dress-of-sikkim",
     "name": "Traditional Dress of Sikkim",
-    "image": "/images/packages/chardham.jpg"
+    "image": "/images/packages/chardham.webp"
   },
   {
     "slug": "sikkim",
@@ -153,17 +153,17 @@ export const destinations: Destination[] = [
   {
     "slug": "india-nepal-wildlife-tour",
     "name": "India Nepal Wildlife Tour Package",
-    "image": "/images/packages/chardham.jpg"
+    "image": "/images/packages/chardham.webp"
   },
   {
     "slug": "chardham-opening-closing-dates",
     "name": "Opening and Closing Dates for Chardham Yatra 2026",
-    "image": "/images/packages/chardham.jpg"
+    "image": "/images/packages/chardham.webp"
   },
   {
     "slug": "satopanth-swargarohini-trek",
     "name": "Satopanth Swargarohini Trek",
-    "image": "/images/packages/chardham.jpg"
+    "image": "/images/packages/chardham.webp"
   },
   {
     "slug": "tirupati-rameshwaram-kanyakumari-madurai-tour",
@@ -178,12 +178,12 @@ export const destinations: Destination[] = [
   {
     "slug": "himanchal-with-vaishno-devi-darshan",
     "name": "Himachal with Vaishno Devi Darshan",
-    "image": "/images/packages/himanchal-with-vaishno-devi-darshan.jpg"
+    "image": "/images/packages/himanchal-with-vaishno-devi-darshan.webp"
   },
   {
     "slug": "buddhist-tour-with-golden-triangle",
     "name": "Buddhist Tour with Golden Triangle",
-    "image": "/images/packages/buddhist-tour-with-golden-triangle.jpg"
+    "image": "/images/packages/buddhist-tour-with-golden-triangle.webp"
   },
   {
     "slug": "enchanting-orissa-tour",
@@ -193,14 +193,14 @@ export const destinations: Destination[] = [
   {
     "slug": "kainchi-dham-dunagiri-patal-bhuvaneshwar-package",
     "name": "Kainchi Dham Dunagiri Cave Patal Bhuvaneshwar Package",
-    "image": "/images/packages/chardham.jpg"
+    "image": "/images/packages/chardham.webp"
   },
   
   
   {
     "slug": "ladakh",
     "name": "Ladakh",
-    "image": "/images/packages/chardham.jpg"
+    "image": "/images/packages/chardham.webp"
   },
   {
     "slug": "varanasi",
@@ -210,6 +210,6 @@ export const destinations: Destination[] = [
   {
     "slug": "kedarnath",
     "name": "Kedarnath",
-    "image": "/images/packages/kedarnath-highres.jpg"
+    "image": "/images/packages/kedarnath-highres.webp"
   }
 ];

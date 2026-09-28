@@ -145,14 +145,14 @@ function BlogIndexContent() {
         {/* Collage Background */}
         <div className="absolute inset-0 grid grid-cols-4 grid-rows-2 gap-0">
           {[
-            '/images/blog/kashmir-places-to-visit.jpg',
-            '/images/blog/best-beaches-in-india.jpg',
-            '/images/blog/famous-indian-hill-stations.jpg',
-            '/images/blog/temples-in-india.jpg',
-            '/images/blog/adventure-places-in-india.jpg',
+            '/images/blog/kashmir-places-to-visit.webp',
+            '/images/blog/best-beaches-in-india.webp',
+            '/images/blog/famous-indian-hill-stations.webp',
+            '/images/blog/temples-in-india.webp',
+            '/images/blog/adventure-places-in-india.webp',
             '/images/blog/waterfalls-in-kerala.webp',
-            '/images/blog/12-jyotirlingas-in-india.jpg',
-            '/images/blog/stepwells-in-gujarat.jpg',
+            '/images/blog/12-jyotirlingas-in-india.webp',
+            '/images/blog/stepwells-in-gujarat.webp',
           ].map((src, i) => (
             <div key={i} className="relative w-full h-full">
               <Image src={src} alt="Travel blog hero image" fill className="object-cover" sizes="25vw" placeholder={IMAGE_SKELETON} />
