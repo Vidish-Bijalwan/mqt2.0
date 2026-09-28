@@ -255,7 +255,7 @@ export const rajasthanArtwork: StateArtwork = {
   id: "rajasthan",
   themes: "Forts • Desert • Palaces • Wildlife",
   geometry: rajasthanGeometry,
-  background: rjPhoto("jaipur", "02"),
+  background: "/images/location-library/mehrangarh-fort-jodhpur/mehrangarh-fort-jodhpur-01-lg.webp",
   baseImage: rjPhoto("jaisalmer", "01"),
   identity: { accent: "#f2a63b", ink: "#0a2f2a" },
   motif: "fort-arches",
