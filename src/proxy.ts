@@ -147,10 +147,16 @@ const DEAD_TARGET_FIXES: Record<string, string> = {
 };
 
 // Confirmed-dead legacy path patterns from the robots-blocked bucket.
-// Verified: zero such routes exist in src/ (no api/ route handlers, no
-// admin/ or thank-you pages — robots.ts only Disallows them). 410 drains
-// them from Google's memory faster than a 404.
+// Verified: the only api/ route handlers in src/ are the two live currency
+// routes allowlisted in LIVE_API_ROUTES (no admin/ or thank-you pages —
+// robots.ts only Disallows them). 410 drains the dead ones from Google's
+// memory faster than a 404.
+// Live API routes — display-only currency localization. Never 410 these;
+// they are real route handlers under src/app/api/.
+const LIVE_API_ROUTES = new Set(["/api/fx-rates", "/api/display-currency"]);
+
 function isGonePath(lowerPathname: string): boolean {
+  if (LIVE_API_ROUTES.has(lowerPathname)) return false;
   return (
     lowerPathname === '/api' ||
     lowerPathname.startsWith('/api/') ||
@@ -314,10 +320,10 @@ export function proxy(request: NextRequest) {
 // See "Matching Paths" below to learn more
 export const config = {
   // Only run the proxy on non-internal routes to save execution time.
-  // /api/:path* is matched deliberately: no API routes exist in the app
-  // (verified), so every /api/* hit is legacy residue and gets a 410.
+  // Note: /api/:path* is intentionally NOT excluded — the two live currency
+  // API routes (/api/fx-rates, /api/display-currency) are allowlisted in
+  // isGonePath above; every other /api/* hit is legacy residue and gets a 410.
   matcher: [
-    '/api/:path*',
     '/((?!_next/static|_next/image|favicon.ico|images|logo|public).*)',
   ],
 };

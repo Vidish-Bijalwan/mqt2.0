@@ -4,6 +4,7 @@ import { ArrowUpRight, CalendarDays, MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
+import ConvertedPrice from "@/components/currency/ConvertedPrice";
 
 interface DestinationPackageOptionsProps {
   destination: string;
@@ -53,6 +54,9 @@ export default function DestinationPackageOptions({
               <div className="destination-option-action">
                 <small>{price.hasPrice ? "Starting from" : "Personalised quote"}</small>
                 <strong>{price.hasPrice ? `INR ${price.display}` : "On request"}</strong>
+                {price.hasPrice && (
+                  <ConvertedPrice amountInr={price.deal} className="text-[11px] font-semibold opacity-70" />
+                )}
                 <Link href={`/packages/${pkg.slug}`}>
                   View itinerary <ArrowUpRight aria-hidden="true" />
                 </Link>

@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Package } from '@/data/allPackages';
 import { getPriceInfo } from '@/utils/price';
 import { IMAGE_SKELETON } from '@/utils/imagePlaceholder';
+import ConvertedPrice from '@/components/currency/ConvertedPrice';
 
 /**
  * Local fallback image. Deliberately a plain string (not imported from
@@ -24,7 +25,7 @@ export default function PackageListCard({ pkg, imageSrc }: PackageListCardProps)
   const resolvedImageSrc = imageSrc ?? CARD_IMAGE_FALLBACK;
 
   // Shared pricing model: pkg.mrp = list price, pkg.dealPrice = the deal.
-  const { hasPrice, display, crossed } = getPriceInfo(pkg.mrp, pkg.dealPrice, pkg.slug);
+  const { hasPrice, display, crossed, deal: dealInr } = getPriceInfo(pkg.mrp, pkg.dealPrice, pkg.slug);
   const displayPrice = hasPrice ? display : "On Request";
   const crossedOut = crossed;
 
@@ -131,6 +132,11 @@ export default function PackageListCard({ pkg, imageSrc }: PackageListCardProps)
                  </div>
                  {crossedOut && (
                    <span className="text-[11px] text-gray-400 line-through mt-0.5">INR {crossedOut}</span>
+                 )}
+                 {hasPrice && (
+                   <span className="mt-0.5 min-h-[14px]">
+                     <ConvertedPrice amountInr={dealInr} className="text-[11px] font-semibold text-gray-500" />
+                   </span>
                  )}
                </>
             ) : (
