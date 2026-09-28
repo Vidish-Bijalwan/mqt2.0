@@ -20,6 +20,7 @@ export const footerLinks = {
     { name: "Adventure Tours", href: "/special-tours/adventure" },
     { name: "Helicopter Tours", href: "/packages?category=Helicopter" },
     { name: "Find your Trip Twin", href: "/trip-twin" },
+    { name: "Plan a group trip", href: "/trip-room" },
   ],
   "Customer Center": [
     { name: "About Us", href: "/about-us" },
