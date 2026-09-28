@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { siteConfig } from "@/data/siteConfig";
 import { buildEnquiryWhatsappUrl } from "@/utils/enquiry";
+import { trackEvent } from "@/lib/analytics";
 
 export default function EnquiryForm({ pkgName = "", destination, embedded = false }: { pkgName?: string; destination?: string; embedded?: boolean }) {
   // `destination` is retained for campaign pages authored before `pkgName`
@@ -13,6 +14,31 @@ export default function EnquiryForm({ pkgName = "", destination, embedded = fals
   const [phoneError, setPhoneError] = useState("");
   const successHeadingRef = useRef<HTMLHeadingElement>(null);
   const phoneInputRef = useRef<HTMLInputElement>(null);
+  const messageRef = useRef<HTMLTextAreaElement>(null);
+
+  // Tier prefill: the package tier selector stores the visitor's choice in
+  // sessionStorage before scrolling here. Carry it into the message so the
+  // travel team sees which configuration was requested. One-shot read.
+  useEffect(() => {
+    try {
+      const raw = sessionStorage.getItem("mqt-tier");
+      if (!raw) return;
+      const stored = JSON.parse(raw) as { packageTitle?: string; tier?: string; at?: number };
+      sessionStorage.removeItem("mqt-tier");
+      if (
+        stored?.tier &&
+        stored?.packageTitle &&
+        stored.packageTitle === enquiryName &&
+        messageRef.current &&
+        !messageRef.current.value
+      ) {
+        messageRef.current.value = `I'm interested in the "${stored.tier}" option. `;
+      }
+    } catch {
+      // Storage unavailable or malformed — form works normally.
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // On successful submit, move focus to the confirmation so screen-reader
   // users are told what happened.
@@ -25,6 +51,7 @@ export default function EnquiryForm({ pkgName = "", destination, embedded = fals
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("loading");
+    trackEvent("enquiry_started", { package: enquiryName || "general" });
 
     const form = new FormData(e.currentTarget);
     const phone = String(form.get("phone") || "");
@@ -62,6 +89,7 @@ export default function EnquiryForm({ pkgName = "", destination, embedded = fals
     // was submitted and then discarded.
     setPreparedUrl(whatsappUrl);
     window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+    trackEvent("enquiry_completed", { package: enquiryName || "general" });
     setStatus("success");
   };
 
@@ -138,7 +166,7 @@ export default function EnquiryForm({ pkgName = "", destination, embedded = fals
 
         <div>
           <label htmlFor="enquiry-message" className="mb-1.5 block text-sm font-bold text--brand-primary">Message (Optional)</label>
-          <textarea id="enquiry-message" name="message" rows={4} className="w-full rounded-xl border border--line bg--surface-card p-4 text-base leading-6 outline-none transition focus:border--brand-secondary focus:ring-2 focus:ring--brand-secondary/20" placeholder="Share hotel preferences, accessibility needs, or anything else"></textarea>
+          <textarea ref={messageRef} id="enquiry-message" name="message" rows={4} className="w-full rounded-xl border border--line bg--surface-card p-4 text-base leading-6 outline-none transition focus:border--brand-secondary focus:ring-2 focus:ring--brand-secondary/20" placeholder="Share hotel preferences, accessibility needs, or anything else"></textarea>
         </div>
         
         <button 
