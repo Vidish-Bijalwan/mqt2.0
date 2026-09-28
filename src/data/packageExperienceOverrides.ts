@@ -42,23 +42,23 @@ export const packageExperienceOverrides: Record<string, PackageExperienceOverrid
         caption: "The richly sculpted gopuram of Meenakshi Amman Temple in Madurai",
       },
       {
-        src: "/images/packages/curated/madurai-rameswaram/thirumalai-nayakkar-palace.jpg",
+        src: "/images/packages/curated/madurai-rameswaram/thirumalai-nayakkar-palace.webp",
         caption: "The grand interior arches of Thirumalai Nayakkar Palace — Vinay Mundhada, CC BY-SA 3.0",
       },
       {
-        src: "/images/packages/curated/madurai-rameswaram/ramanathaswamy-temple-corridor.jpg",
+        src: "/images/packages/curated/madurai-rameswaram/ramanathaswamy-temple-corridor.webp",
         caption: "Ramanathaswamy Temple's painted corridor in Rameswaram — Vensatry, CC BY-SA 3.0",
       },
       {
-        src: "/images/packages/curated/madurai-rameswaram/pamban-rail-bridge.jpg",
+        src: "/images/packages/curated/madurai-rameswaram/pamban-rail-bridge.webp",
         caption: "The historic Pamban railway bridge crossing the sea — N. Vivekananthamoorthy, CC BY-SA 4.0",
       },
       {
-        src: "/images/packages/curated/madurai-rameswaram/dhanushkodi-beach.jpg",
+        src: "/images/packages/curated/madurai-rameswaram/dhanushkodi-beach.webp",
         caption: "The open coastline at Dhanushkodi — Keerthi murugan 005, CC BY 4.0",
       },
       {
-        src: "/images/packages/curated/madurai-rameswaram/agni-theertham.jpg",
+        src: "/images/packages/curated/madurai-rameswaram/agni-theertham.webp",
         caption: "Pilgrims at Agni Theertham on the Rameswaram waterfront — S. P. Krishnamurthy, CC BY-SA 3.0",
       },
     ],
@@ -108,7 +108,7 @@ export const packageExperienceOverrides: Record<string, PackageExperienceOverrid
         caption: "A one-horned rhinoceros in the forest habitat of Kaziranga, Assam",
       },
       {
-        src: "/images/packages/interesting-facts-about-kaziranga-national-park.jpg",
+        src: "/images/packages/interesting-facts-about-kaziranga-national-park.webp",
         caption: "Kaziranga's one-horned rhinos moving across open grassland",
       },
       {
@@ -116,7 +116,7 @@ export const packageExperienceOverrides: Record<string, PackageExperienceOverrid
         caption: "Tawang Monastery set high in the mountains of Arunachal Pradesh",
       },
       {
-        src: "/images/packages/tawang-monastery.jpg",
+        src: "/images/packages/tawang-monastery.webp",
         caption: "A wide mountain view of the Tawang monastery complex",
       },
       {

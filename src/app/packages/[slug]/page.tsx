@@ -85,7 +85,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         title: pageTitle,
         description: pageDescription,
         url: `${siteConfig.domain}/packages/${slug}`,
-        type: 'website',
+        type: 'article',
         images: [{ url: socialImage, alt: pageTitle }],
       },
       twitter: {
@@ -119,7 +119,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title,
       description,
       url: `${siteConfig.domain}/packages/${slug}`,
-      type: 'website',
+      type: 'article',
       images: [{ url: socialImage, alt: title }],
     },
     twitter: {

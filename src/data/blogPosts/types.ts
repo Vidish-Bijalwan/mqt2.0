@@ -13,7 +13,7 @@ export interface BlogPostSeed {
   title: string;
   /** Unique meta description, <=160 chars, includes the target keyword. */
   metaDescription: string;
-  /** Existing image path, e.g. "/images/blog/kedarnath.jpg". Verify with ls. */
+  /** Existing image path, e.g. "/images/blog/kedarnath.webp". Verify with ls. */
   image: string;
   /** One of the 8 BlogCategory names in src/data/blogEditorial.ts. */
   category: string;

@@ -5,7 +5,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "how-to-plan-char-dham-yatra-step-by-step-guide",
     "title": "How to Plan Char Dham Yatra: Step-by-Step Guide",
     "metaDescription": "How to plan Char Dham Yatra step by step: route, registration, best time, fitness, packing and practical tips for Uttarakhand's great pilgrimage.",
-    "image": "/images/blog/how-to-plan-your-chardham-yatra.jpg",
+    "image": "/images/blog/how-to-plan-your-chardham-yatra.webp",
     "category": "Travel Planning",
     "tags": [
       "char dham",
@@ -24,7 +24,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "char-dham-yatra-budget-planning-guide",
     "title": "Char Dham Yatra Budget: Planning Guide Without the Guesswork",
     "metaDescription": "A practical Char Dham Yatra budget guide: the real cost components, what drives the price up, and smart ways to save without cutting corners.",
-    "image": "/images/blog/budget-friendly-holidays-tips.jpg",
+    "image": "/images/blog/budget-friendly-holidays-tips.webp",
     "category": "Travel Planning",
     "tags": [
       "char dham",
@@ -43,7 +43,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "kedarnath-yatra-registration-2027-what-to-know",
     "title": "Kedarnath Yatra Registration 2027: What to Know",
     "metaDescription": "Kedarnath registration 2027: when registrations open, how to register online, documents needed, biometric verification and tips for the yatra season.",
-    "image": "/images/blog/kedarnath.jpg",
+    "image": "/images/blog/kedarnath.webp",
     "category": "Travel Planning",
     "tags": [
       "kedarnath",
@@ -62,7 +62,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "helicopter-yatra-uttarakhand-how-it-works",
     "title": "Helicopter Yatra in Uttarakhand: How It Works",
     "metaDescription": "Helicopter yatra in Uttarakhand explained: routes, booking, luggage rules, weather delays, medical fitness and who should fly to the dhams.",
-    "image": "/images/blog/how-to-plan-chardham-yatra-by-helicopter-from-delhi.jpg",
+    "image": "/images/blog/how-to-plan-chardham-yatra-by-helicopter-from-delhi.webp",
     "category": "Travel Planning",
     "tags": [
       "helicopter yatra",
@@ -100,7 +100,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "how-to-choose-right-travel-agency-india",
     "title": "How to Choose the Right Travel Agency in India",
     "metaDescription": "How to choose a travel agency in India: 10 checks for credentials, reviews, transparent pricing and on-trip support before you book.",
-    "image": "/images/blog/guide-for-choosing-best-india-buddhist-tour-package.jpg",
+    "image": "/images/blog/guide-for-choosing-best-india-buddhist-tour-package.webp",
     "category": "Travel Planning",
     "tags": [
       "travel agency",
@@ -118,7 +118,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "group-tour-vs-private-tour-which-is-better",
     "title": "Group Tour vs Private Tour: Which Is Better",
     "metaDescription": "Group tour vs private tour compared on cost, flexibility, pace and experience, so you can pick the right travel style for your India trip.",
-    "image": "/images/packages/group-tour.jpg",
+    "image": "/images/packages/group-tour.webp",
     "category": "Travel Planning",
     "tags": [
       "group tour",
@@ -155,7 +155,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "delhi-to-manali-road-trip-route-stops",
     "title": "Delhi to Manali Road Trip: Route & Stops",
     "metaDescription": "Delhi to Manali road trip guide: route options, stopovers at Chandigarh and Kullu, drive time, Atal Tunnel and practical driving tips.",
-    "image": "/images/packages/manali.jpg",
+    "image": "/images/packages/manali.webp",
     "category": "Travel Planning",
     "tags": [
       "manali",
@@ -211,7 +211,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "senior-citizen-travel-india-tips-destinations",
     "title": "Senior Citizen Travel in India: Tips & Destinations",
     "metaDescription": "Senior citizen travel in India: comfortable destinations, health and safety tips, pacing advice and how to plan a relaxed, stress-free trip.",
-    "image": "/images/blog/tips-to-plan-your-dream-vacation-your-family.jpg",
+    "image": "/images/blog/tips-to-plan-your-dream-vacation-your-family.webp",
     "category": "Travel Planning",
     "tags": [
       "senior citizens",
@@ -230,7 +230,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "family-trip-planning-travel-with-kids-india",
     "title": "Family Trip Planning: How to Travel with Kids in India",
     "metaDescription": "Family trip planning in India: kid-friendly destinations, pacing, packing and practical tips for travelling with children of all ages.",
-    "image": "/images/blog/tips-to-plan-your-dream-vacation-your-family.jpg",
+    "image": "/images/blog/tips-to-plan-your-dream-vacation-your-family.webp",
     "category": "Travel Planning",
     "tags": [
       "family travel",
@@ -249,7 +249,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "how-to-plan-honeymoon-india-complete-guide",
     "title": "How to Plan a Honeymoon in India: Complete Guide",
     "metaDescription": "How to plan a honeymoon in India: best destinations, timing, budgets and planning tips for a romantic first trip together.",
-    "image": "/images/packages/honeymoon.jpg",
+    "image": "/images/packages/honeymoon.webp",
     "category": "Travel Planning",
     "tags": [
       "honeymoon",
@@ -268,7 +268,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "best-time-to-book-flights-india-money-saving-tips",
     "title": "Best Time to Book Flights in India: Money-Saving Tips",
     "metaDescription": "Best time to book flights in India: how far ahead to book, fare patterns, festival surges and money-saving tips for domestic tickets.",
-    "image": "/images/packages/weekend-gateway.jpg",
+    "image": "/images/packages/weekend-gateway.webp",
     "category": "Travel Planning",
     "tags": [
       "flights",
@@ -305,7 +305,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "what-to-pack-for-dubai-checklist-indians",
     "title": "What to Pack for Dubai: Checklist for Indians",
     "metaDescription": "Packing for Dubai: a complete checklist for Indian travellers covering clothes, documents, money, electronics and cultural etiquette.",
-    "image": "/images/packages/dubai.jpg",
+    "image": "/images/packages/dubai.webp",
     "category": "Travel Planning",
     "tags": [
       "dubai",
@@ -342,7 +342,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "how-to-plan-kerala-trip-6-day-itinerary",
     "title": "How to Plan a Kerala Trip: 6-Day Itinerary",
     "metaDescription": "How to plan a Kerala trip with a practical 6-day itinerary: Kochi, Munnar, Thekkady, Alleppey houseboat and the best time to visit.",
-    "image": "/images/blog/kerala-tourist-attractions.jpg",
+    "image": "/images/blog/kerala-tourist-attractions.webp",
     "category": "Travel Planning",
     "tags": [
       "kerala",
@@ -380,7 +380,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "hidden-gems-uttarakhand-12-offbeat-places",
     "title": "Hidden Gems of Uttarakhand: 12 Offbeat Places",
     "metaDescription": "12 offbeat places in Uttarakhand: hidden villages, quiet valleys and lesser-known trails beyond Nainital and Mussoorie.",
-    "image": "/images/blog/binsar-hill-station-in-uttarakhand.jpg",
+    "image": "/images/blog/binsar-hill-station-in-uttarakhand.webp",
     "category": "Destination Guides",
     "tags": [
       "uttarakhand",
@@ -418,7 +418,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "mukteshwar-apples-views-weekend-guide",
     "title": "Mukteshwar: Apples, Views & Weekend Guide",
     "metaDescription": "Mukteshwar travel guide: apple orchards, Himalayan views, things to do, best time to visit and a weekend itinerary from Delhi.",
-    "image": "/images/packages/wonders-of-kumaon-tour.jpg",
+    "image": "/images/packages/wonders-of-kumaon-tour.webp",
     "category": "Destination Guides",
     "tags": [
       "mukteshwar",
@@ -437,7 +437,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "peora-kumaon-villages-slow-travel-guide",
     "title": "Peora & the Kumaon Villages: Slow Travel Guide",
     "metaDescription": "A slow travel guide to Peora and the Kumaon villages: homestays, forest walks, orchards and the unhurried side of Uttarakhand.",
-    "image": "/images/packages/majestic-kumaon-tour.jpg",
+    "image": "/images/packages/majestic-kumaon-tour.webp",
     "category": "Destination Guides",
     "tags": [
       "kumaon",
@@ -456,7 +456,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "chatpal-kashmirs-hidden-meadow",
     "title": "Chatpal: Kashmir's Hidden Meadow",
     "metaDescription": "Chatpal, Kashmir's hidden meadow: how to reach, what to see, best time to visit and tips for this offbeat valley near Srinagar.",
-    "image": "/images/blog/kashmir-places-to-visit.jpg",
+    "image": "/images/blog/kashmir-places-to-visit.webp",
     "category": "Destination Guides",
     "tags": [
       "chatpal",
@@ -475,7 +475,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "warwan-valley-remote-kashmir-trek-guide",
     "title": "Warwan Valley: Remote Kashmir Trek Guide",
     "metaDescription": "Warwan Valley trek guide: a remote Kashmir trail through meadows and glaciers, with route, difficulty, best time and preparation tips.",
-    "image": "/images/blog/things-to-do-in-kashmir.jpg",
+    "image": "/images/blog/things-to-do-in-kashmir.webp",
     "category": "Mountains & Adventure",
     "tags": [
       "warwan valley",
@@ -513,7 +513,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "patnitop-sanasar-jammu-hills-guide",
     "title": "Patnitop & Sanasar: Jammu Hills Guide",
     "metaDescription": "Patnitop and Sanasar guide: paragliding, meadows, Nathatop views, how to reach and plan a trip to the Jammu hills.",
-    "image": "/images/blog/famous-indian-hill-stations.jpg",
+    "image": "/images/blog/famous-indian-hill-stations.webp",
     "category": "Destination Guides",
     "tags": [
       "patnitop",
@@ -551,7 +551,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "tawang-monasteries-sela-pass-guide",
     "title": "Tawang: Monasteries & Sela Pass Guide",
     "metaDescription": "Tawang guide: monasteries, Sela Pass, Madhuri Lake, permits, best time to visit and how to reach Arunachal's mountain town.",
-    "image": "/images/packages/tawang-monastery.jpg",
+    "image": "/images/packages/tawang-monastery.webp",
     "category": "Destination Guides",
     "tags": [
       "tawang",
@@ -570,7 +570,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "mechuka-arunachals-hidden-valley",
     "title": "Mechuka: Arunachal's Hidden Valley",
     "metaDescription": "Mechuka, Arunachal's hidden valley: monasteries, wooden bridges, the Siyom river, permits and how to reach this remote frontier.",
-    "image": "/images/blog/northeast-india.jpg",
+    "image": "/images/blog/northeast-india.webp",
     "category": "Destination Guides",
     "tags": [
       "mechuka",
@@ -589,7 +589,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "dzukou-valley-trek-complete-guide",
     "title": "Dzukou Valley Trek: Complete Guide",
     "metaDescription": "Dzukou Valley trek complete guide: route from Kohima, difficulty, best season, permits and what to pack for Nagaland's flower valley.",
-    "image": "/images/packages/india-top-hidden-destinations.jpg",
+    "image": "/images/packages/india-top-hidden-destinations.webp",
     "category": "Mountains & Adventure",
     "tags": [
       "dzukou valley",
@@ -608,7 +608,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "hidden-beaches-goa-beyond-baga",
     "title": "Hidden Beaches of Goa Beyond Baga",
     "metaDescription": "Hidden beaches of Goa beyond Baga: quiet coves in the south and north for travellers seeking calm, clean shores.",
-    "image": "/images/blog/best-beaches-in-india.jpg",
+    "image": "/images/blog/best-beaches-in-india.webp",
     "category": "Beaches & Backwaters",
     "tags": [
       "goa",
@@ -627,7 +627,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "secret-spots-kerala-tourists-miss",
     "title": "Secret Spots in Kerala Tourists Miss",
     "metaDescription": "Hidden places in Kerala most tourists miss: quiet backwaters, hill villages and beaches off the usual Kochi-Munnar circuit.",
-    "image": "/images/blog/top-10-beaches-to-visit-in-kerala.jpg",
+    "image": "/images/blog/top-10-beaches-to-visit-in-kerala.webp",
     "category": "Destination Guides",
     "tags": [
       "kerala",
@@ -646,7 +646,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "unexplored-northeast-7-day-itinerary",
     "title": "Unexplored Northeast: 7-Day Itinerary",
     "metaDescription": "A 7-day unexplored Northeast India itinerary: Shillong, Kaziranga, living root bridges and practical tips for the region.",
-    "image": "/images/blog/northeast-india.jpg",
+    "image": "/images/blog/northeast-india.webp",
     "category": "Destination Guides",
     "tags": [
       "northeast india",
@@ -665,7 +665,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "ziro-valley-music-pines-apatani-culture",
     "title": "Ziro Valley: Music, Pines & Apatani Culture",
     "metaDescription": "Ziro Valley guide: Apatani culture, pine hills, the music festival, how to reach, best time and what to experience.",
-    "image": "/images/blog/festivals-of-india.jpg",
+    "image": "/images/blog/festivals-of-india.webp",
     "category": "Culture & Heritage",
     "tags": [
       "ziro valley",
@@ -684,7 +684,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "khonoma-indias-first-green-village",
     "title": "Khonoma: India's First Green Village",
     "metaDescription": "Khonoma, India's first green village: Angami heritage, terraced fields, birding and a guide to Nagaland's eco-village.",
-    "image": "/images/packages/india-top-hidden-destinations.jpg",
+    "image": "/images/packages/india-top-hidden-destinations.webp",
     "category": "Destination Guides",
     "tags": [
       "khonoma",
@@ -703,7 +703,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "sandakphu-trek-sleeping-buddha-views",
     "title": "Sandakphu Trek: Sleeping Buddha Views",
     "metaDescription": "Sandakphu trek guide: the Sleeping Buddha panorama of four 8000m peaks, with route, best season, permits and fitness prep.",
-    "image": "/images/blog/highest-mountains-in-the-world.jpg",
+    "image": "/images/blog/highest-mountains-in-the-world.webp",
     "category": "Mountains & Adventure",
     "tags": [
       "sandakphu",
@@ -741,7 +741,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "astro-tourism-india-best-stargazing-spots",
     "title": "Astro-Tourism in India: Best Stargazing Spots",
     "metaDescription": "Astro-tourism: the best stargazing in India, from Ladakh to Spiti, plus tips for dark-sky travel and night photography.",
-    "image": "/images/blog/best-places-to-see-the-northern-lights.jpg",
+    "image": "/images/blog/best-places-to-see-the-northern-lights.webp",
     "category": "Destination Guides",
     "tags": [
       "stargazing",

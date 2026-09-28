@@ -10,7 +10,7 @@ export const BLOG_POST_SEEDS_BATCH_6: BlogPostSeed[] = [
     "slug": "kedarnath-opening-date-2026",
     "title": "Kedarnath Opening Date 2026: Kapat Opening & Closing Dates, Timings and Yatra Guide",
     "metaDescription": "Kedarnath opening date 2026: kapat opened 22 April at 8:00 AM. Opening/closing dates, how BKTC announces them, registration, trek and helicopter guide.",
-    "image": "/images/blog/kedarnath.jpg",
+    "image": "/images/blog/kedarnath.webp",
     "category": "Pilgrimage",
     "tags": [
       "kedarnath",
@@ -29,7 +29,7 @@ export const BLOG_POST_SEEDS_BATCH_6: BlogPostSeed[] = [
     "slug": "amarnath-yatra-2026-dates-registration-guide",
     "title": "Amarnath Yatra 2026: Dates, Registration, Routes and Complete Travel Guide",
     "metaDescription": "Amarnath Yatra 2026: 3 July to 28 August (57 days). Registration process, CHC, Baltal vs Pahalgam routes, helicopter booking, fees and safety tips.",
-    "image": "/images/blog/kashmir-places-to-visit.jpg",
+    "image": "/images/blog/kashmir-places-to-visit.webp",
     "category": "Pilgrimage",
     "tags": [
       "amarnath yatra",
@@ -49,7 +49,7 @@ export const BLOG_POST_SEEDS_BATCH_6: BlogPostSeed[] = [
     "slug": "jyotirlinga-in-maharashtra",
     "title": "Jyotirlinga in Maharashtra: The 5 Sacred Shrines and Complete Darshan Guide",
     "metaDescription": "Maharashtra is home to 5 of India's 12 Jyotirlingas: Trimbakeshwar, Bhimashankar, Grishneshwar, Aundha Nagnath and Parli Vaijnath. Darshan guide and routes.",
-    "image": "/images/blog/12-jyotirlingas-in-india.jpg",
+    "image": "/images/blog/12-jyotirlingas-in-india.webp",
     "category": "Pilgrimage",
     "tags": [
       "jyotirlinga",
@@ -69,7 +69,7 @@ export const BLOG_POST_SEEDS_BATCH_6: BlogPostSeed[] = [
     "slug": "chardham-yatra-registration-online-process",
     "title": "Chardham Yatra Registration: Online Process, Documents and Biometric Guide",
     "metaDescription": "Chardham Yatra registration is mandatory for all pilgrims. Step-by-step online process, documents needed, biometric verification and common mistakes.",
-    "image": "/images/blog/how-to-plan-your-chardham-yatra.jpg",
+    "image": "/images/blog/how-to-plan-your-chardham-yatra.webp",
     "category": "Travel Planning",
     "tags": [
       "chardham yatra registration",
@@ -89,7 +89,7 @@ export const BLOG_POST_SEEDS_BATCH_6: BlogPostSeed[] = [
     "slug": "bharat-ki-sabse-lambi-nadi",
     "title": "Bharat Ki Sabse Lambi Nadi: Ganga and India's 10 Longest Rivers",
     "metaDescription": "भारत की सबसे लंबी नदी गंगा है (2,525 km). India's 10 longest rivers with lengths, origins and states — the complete, exam-ready guide.",
-    "image": "/images/blog/longest-rivers-in-india.jpg",
+    "image": "/images/blog/longest-rivers-in-india.webp",
     "category": "Destination Guides",
     "tags": [
       "longest river in india",

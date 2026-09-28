@@ -153,5 +153,16 @@ export const navLinks = [
   {
     title: "Contact Us",
     href: "/contact-us",
+  },
+  {
+    // Interactive discoverability hub: these routes exist but were
+    // invisible outside search; a dedicated group keeps them out of the
+    // tour-category nav while surfacing them on desktop + mobile.
+    title: "Play & Plan",
+    links: [
+      { name: "Spin the Himalayas", href: "/games" },
+      { name: "Find Your Trip Twin", href: "/trip-twin" },
+      { name: "Plan a Group Trip", href: "/trip-room" },
+    ]
   }
 ];

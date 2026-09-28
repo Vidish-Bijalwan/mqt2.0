@@ -558,7 +558,7 @@ export function buildPackageJsonLd(vm: PackageViewModel): JsonLdDocument {
           "@type": "ListItem",
           "position": 2,
           "name": pkg.category || "Packages",
-          "item": `${siteConfig.domain}/packages`
+          "item": `${siteConfig.domain}/packages?category=${encodeURIComponent(pkg.category || 'all')}`
         },
         {
           "@type": "ListItem",

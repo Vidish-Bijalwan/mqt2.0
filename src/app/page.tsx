@@ -8,6 +8,7 @@ import Link from "next/link";
 import PosterMarquee from "@/components/ui/PosterMarquee";
 import DeferredThemeFilter from "@/components/home/DeferredThemeFilter";
 import ExperienceExplorer from "@/components/home/ExperienceExplorer";
+import PlayPlanBand from "@/components/home/PlayPlanBand";
 import { experiencesWithCounts } from "@/utils/experienceCounts";
 import { groupPackagesByDestination } from "@/utils/packageGroups";
 import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
@@ -101,12 +102,12 @@ const HELICOPTER_PACKAGES = validPackages.filter(p => p.category === "Helicopter
 
 const DESTINATIONS = [
   { name: "Uttarakhand", sub: "Land of the Gods", href: "/destinations/uttarakhand", img: "/images/packages/hi-uttarakhand.webp" },
-  { name: "Uttar Pradesh", sub: "Heritage of India", href: "/destinations/uttar-pradesh", img: "/images/packages/taj-mahal.jpg" },
+  { name: "Uttar Pradesh", sub: "Heritage of India", href: "/destinations/uttar-pradesh", img: "/images/packages/taj-mahal.webp" },
   { name: "Rajasthan", sub: "The Royal State", href: "/destinations/rajasthan", img: "/images/packages/rajasthan.jpg" },
   { name: "Gujarat", sub: "Vibrant culture", href: "/destinations/gujarat", img: "/images/packages/gujarat.jpg" },
-  { name: "Kashmir", sub: "Paradise on Earth", href: "/destinations/kashmir", img: "/images/packages/kashmir.jpg" },
+  { name: "Kashmir", sub: "Paradise on Earth", href: "/destinations/kashmir", img: "/images/packages/kashmir-hq.webp" },
   { name: "Kerala", sub: "God's Own Country", href: "/destinations/kerala", img: "/images/packages/kerala.jpg" },
-  { name: "Tamil Nadu", sub: "Temple country", href: "/destinations/tamil-nadu", img: "/images/packages/south-india.jpg" },
+  { name: "Tamil Nadu", sub: "Temple country", href: "/destinations/tamil-nadu", img: "/images/packages/south-india.webp" },
   { name: "Karnataka", sub: "Heritage and nature", href: "/destinations/karnataka", img: "/images/packages/karnataka.jpg" },
   { name: "Odisha", sub: "Coast and culture", href: "/destinations/orissa", img: "/images/packages/odisha.jpg" },
   { name: "Madhya Pradesh", sub: "The heart of India", href: "/destinations/madhya-pradesh", img: "/images/packages/madhya-pradesh.jpg" },
@@ -335,6 +336,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* 13. Play & Plan — discoverability band for /games, /trip-twin, /trip-room */}
+      <PlayPlanBand />
 
       {/* View All CTA */}
         <section className="home-deferred-section bg-[#fbfaf6]/96 py-10">
