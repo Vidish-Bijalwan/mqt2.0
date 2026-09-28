@@ -25,7 +25,9 @@ export type AnalyticsEvent =
   | "trip_room_invite"
   | "trip_room_vote"
   | "package_shared"
-  | "booking_started";
+  | "booking_started"
+  | "voucher_game_spin"
+  | "voucher_game_won";
 
 export type AnalyticsProps = Record<string, string | number | boolean | undefined>;
 
