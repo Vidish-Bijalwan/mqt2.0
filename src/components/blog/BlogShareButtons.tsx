@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Share2, Check, Link2 } from 'lucide-react';
+import { trackEvent } from "@/lib/analytics";
 
 /**
  * Article share row: X, Facebook, WhatsApp and copy-link. Client-only so the
@@ -23,6 +24,13 @@ export default function BlogShareButtons({ title, url }: { title: string; url: s
     }
   };
 
+  const trackShare = (channel: "x" | "facebook" | "whatsapp" | "copy_link") => () => {
+    trackEvent("content_shared", {
+      channel,
+      page: typeof window !== "undefined" ? window.location.pathname : "",
+    });
+  };
+
   const buttonClass =
     "inline-flex min-h-10 items-center gap-2 rounded-lg border border-gray-200 bg-white px-3 py-2 text-xs font-bold text-gray-600 transition hover:border-legacy-orange hover:text-legacy-orange";
 
@@ -38,6 +46,7 @@ export default function BlogShareButtons({ title, url }: { title: string; url: s
           target="_blank"
           rel="noopener noreferrer"
           className={buttonClass}
+          onClick={trackShare("x")}
           aria-label="Share on X"
         >
           Share on X
@@ -47,6 +56,7 @@ export default function BlogShareButtons({ title, url }: { title: string; url: s
           target="_blank"
           rel="noopener noreferrer"
           className={buttonClass}
+          onClick={trackShare("facebook")}
           aria-label="Share on Facebook"
         >
           Share on Facebook
@@ -56,11 +66,12 @@ export default function BlogShareButtons({ title, url }: { title: string; url: s
           target="_blank"
           rel="noopener noreferrer"
           className={buttonClass}
+          onClick={trackShare("whatsapp")}
           aria-label="Share on WhatsApp"
         >
           Share on WhatsApp
         </a>
-        <button type="button" onClick={copyLink} className={buttonClass} aria-label="Copy article link">
+        <button type="button" onClick={() => { trackShare("copy_link")(); copyLink(); }} className={buttonClass} aria-label="Copy article link">
           {copied ? <Check className="w-4 h-4 text-green-600" /> : <Link2 className="w-4 h-4" />}
           {copied ? "Copied!" : "Copy link"}
         </button>

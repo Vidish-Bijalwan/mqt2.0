@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { siteConfig } from "@/data/siteConfig";
 import { buildEnquiryWhatsappUrl } from "@/utils/enquiry";
-import { trackEvent } from "@/lib/analytics";
+import { trackEvent, getUtmProps } from "@/lib/analytics";
 
 export default function EnquiryForm({ pkgName = "", destination, embedded = false }: { pkgName?: string; destination?: string; embedded?: boolean }) {
   // `destination` is retained for campaign pages authored before `pkgName`
@@ -15,6 +15,14 @@ export default function EnquiryForm({ pkgName = "", destination, embedded = fals
   const successHeadingRef = useRef<HTMLHeadingElement>(null);
   const phoneInputRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
+  const startFiredRef = useRef(false);
+  // `enquiry_start` marks the first real interaction with the form (focus or
+  // change), once per page view — a truer "started" signal than submit.
+  const fireStartOnce = () => {
+    if (startFiredRef.current) return;
+    startFiredRef.current = true;
+    trackEvent("enquiry_start", { package: enquiryName || "general" });
+  };
 
   // Tier prefill: the package tier selector stores the visitor's choice in
   // sessionStorage before scrolling here. Carry it into the message so the
@@ -81,7 +89,6 @@ export default function EnquiryForm({ pkgName = "", destination, embedded = fals
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("loading");
-    trackEvent("enquiry_started", { package: enquiryName || "general" });
 
     const form = new FormData(e.currentTarget);
     const phone = String(form.get("phone") || "");
@@ -105,21 +112,12 @@ export default function EnquiryForm({ pkgName = "", destination, embedded = fals
       message: String(form.get("message") || ""),
     });
     
-    // Track enquiry submission (analytics)
-    const analytics = window as Window & { gtag?: (event: string, action: string, params: Record<string, string>) => void };
-    if (analytics.gtag) {
-      analytics.gtag("event", "enquiry_submit", {
-        event_category: "engagement",
-        event_label: enquiryName || "general",
-      });
-    }
-    
     // There is no lead-capture API configured in this static site. Open the
     // prefilled business WhatsApp thread instead of falsely claiming a lead
     // was submitted and then discarded.
     setPreparedUrl(whatsappUrl);
     window.open(whatsappUrl, "_blank", "noopener,noreferrer");
-    trackEvent("enquiry_completed", { package: enquiryName || "general" });
+    trackEvent("enquiry_submit", { package: enquiryName || "general", ...getUtmProps() });
     setStatus("success");
   };
 
@@ -161,7 +159,7 @@ export default function EnquiryForm({ pkgName = "", destination, embedded = fals
         Add the essentials now. You can discuss hotels, transport, meals, and special requirements directly with the travel team.
       </p>
       
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} onFocus={fireStartOnce} onChange={fireStartOnce} className="space-y-4">
         <div>
           <label htmlFor="enquiry-name" className="mb-1.5 block text-sm font-bold text--brand-primary">Full Name *</label>
             <input id="enquiry-name" name="name" required autoComplete="name" enterKeyHint="next" type="text" className="min-h-13 w-full rounded-xl border border--line bg--surface-card px-4 text-base outline-none transition focus:border--brand-secondary focus:ring-2 focus:ring--brand-secondary/20" placeholder="Enter your name" />
