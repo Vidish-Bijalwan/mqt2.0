@@ -32,6 +32,16 @@ const keywords: Record<string, string[]> = {
   maharashtra: ["mumbai", "pune", "lonavala", "mahabaleshwar", "shirdi", "aurangabad", "ajanta", "ellora"], kerala: ["munnar", "thekkady", "alleppey", "kovalam", "kumarakom", "wayanad", "cochin", "trivandrum"],
   "tamil-nadu": ["chennai", "ooty", "kodaikanal", "madurai", "rameshwaram", "kanyakumari", "mahabalipuram"], karnataka: ["bangalore", "mysore", "coorg", "hampi", "bandipur", "gokarna"],
   "madhya-pradesh": ["khajuraho", "kanha", "bandhavgarh", "gwalior", "ujjain", "bhopal", "indore"], darjeeling: ["darjeeling", "kalimpong", "kurseong"], sikkim: ["gangtok", "pelling", "lachung", "nathula"], assam: ["guwahati", "kaziranga", "majuli"], ladakh: ["ladakh", "leh", "nubra", "pangong", "kargil", "sham valley"],
+  "andhra-pradesh": ["andhra", "tirupati", "tirumala", "visakhapatnam", "vizag", "araku", "vijayawada", "amaravati", "lepakshi", "srisailam"],
+  "arunachal-pradesh": ["arunachal", "tawang", "bomdila", "dirang", "ziro", "itanagar", "mechuka", "sela"],
+  haryana: ["haryana", "kurukshetra", "pinjore", "sultanpur", "morni", "panipat", "gurugram"],
+  manipur: ["manipur", "imphal", "loktak", "keibul", "moirang", "ukhrul", "kangla"],
+  nagaland: ["nagaland", "kohima", "dzukou", "dzuko", "hornbill", "kisama", "konyak", "mokukchung", "khonoma"],
+  telangana: ["telangana", "hyderabad", "charminar", "golconda", "warangal", "ramappa", "secunderabad", "bhadrachalam"],
+  "west-bengal": ["kolkata", "howrah", "darjeeling", "sundarbans", "kalimpong", "shantiniketan", "digha", "murshidabad", "bengal"],
+  "andaman-and-nicobar-islands": ["andaman", "nicobar", "port blair", "havelock", "swaraj dweep", "neil island", "shaheed dweep", "radhanagar", "cellular jail", "baratang"],
+  "dadra-and-nagar-haveli-and-daman-and-diu": ["dadra", "nagar haveli", "silvassa", "daman", "diu", "nagoa"],
+  "jammu-and-kashmir": ["jammu", "katra", "vaishno devi", "trikuta", "patnitop", "sanasar", "bhaderwah", "raghunath", "amar mahal", "dogra"],
 };
 const heroImages: Record<string, string> = {
   uttarakhand: "/images/location-library/uttarakhand-india/uttarakhand-india-01-lg.webp",
@@ -41,6 +51,16 @@ const heroImages: Record<string, string> = {
   kerala: "/images/location-library/kerala-india/kerala-india-03-lg.webp",
   goa: "/images/location-library/goa-india/goa-india-01-lg.webp",
   ladakh: "/images/location-library/ladakh-india/ladakh-india-02-lg.webp",
+  "andhra-pradesh": "/images/location-library/tirupati-andhra-pradesh-india/tirupati-andhra-pradesh-india-01-lg.webp",
+  "arunachal-pradesh": "/images/location-library/tawang-arunachal-pradesh-india/tawang-arunachal-pradesh-india-01-lg.webp",
+  telangana: "/images/location-library/hyderabad-andhra-pradesh-india/hyderabad-andhra-pradesh-india-01-lg.webp",
+  "west-bengal": "/images/location-library/west-bengal-india/west-bengal-india-01-lg.webp",
+  "andaman-and-nicobar-islands": "/images/location-library/havelock-island-andaman-and-nicobar-islands-india/havelock-island-andaman-and-nicobar-islands-india-03-lg.webp",
+  "dadra-and-nagar-haveli-and-daman-and-diu": "/images/location-library/diu-gujarat-india/diu-gujarat-india-01-lg.webp",
+  "jammu-and-kashmir": "/images/location-library/katra-jammu-and-kashmir-india/katra-jammu-and-kashmir-india-01-lg.webp",
+  haryana: "/images/location-library/haryana-india/haryana-india-01-lg.webp",
+  manipur: "/images/location-library/manipur-india/manipur-india-01-lg.webp",
+  nagaland: "/images/location-library/nagaland-india/nagaland-india-01-lg.webp",
 };
 function legacy(slug: string): ContentDocument | undefined { const item = destinationData[slug]; return item ? { ...item, content: item.content?.map((html) => ({ type: "p", text: html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim() })) } : undefined; }
 function matches(pkg: { slug: string; title: string; category: string; route: string }, term: string) {

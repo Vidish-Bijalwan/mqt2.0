@@ -1,4 +1,4 @@
-import { himachalPradeshArtwork, uttarakhandArtwork, uttarPradeshArtwork, rajasthanArtwork, keralaArtwork, goaArtwork, gujaratArtwork, maharashtraArtwork, tamilNaduArtwork, karnatakaArtwork, madhyaPradeshArtwork, assamArtwork, sikkimArtwork, ladakhArtwork, kashmirArtwork, type StateArtwork } from "./stateArtwork";
+import { himachalPradeshArtwork, uttarakhandArtwork, uttarPradeshArtwork, rajasthanArtwork, keralaArtwork, goaArtwork, gujaratArtwork, maharashtraArtwork, tamilNaduArtwork, karnatakaArtwork, madhyaPradeshArtwork, assamArtwork, sikkimArtwork, ladakhArtwork, kashmirArtwork, andhraPradeshArtwork, arunachalPradeshArtwork, telanganaArtwork, westBengalArtwork, andamanNicobarArtwork, dadraNagarHaveliDamanDiuArtwork, jammuKashmirArtwork, haryanaArtwork, manipurArtwork, nagalandArtwork, type StateArtwork } from "./stateArtwork";
 
 export interface ExplorerPlace {
   name: string;
@@ -342,6 +342,128 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
       { name: "Gangtok", image: "/images/location-library/gangtok-sikkim-india/gangtok-sikkim-india-01-lg.webp", themes: ["Towns", "Views"] },
       { name: "Lachung", image: "/images/location-library/lachung-sikkim-india/lachung-sikkim-india-01-lg.webp", themes: ["Valleys", "Flowers"] },
       { name: "Pelling", image: "/images/location-library/sikkim-india/sikkim-india-01-lg.webp", themes: ["Monasteries", "Views"] },
+    ],
+  },
+
+  "andhra-pradesh": {
+    artwork: andhraPradeshArtwork,
+    eyebrow: "Temple country",
+    tagline: "Pilgrimage towns, sacred hills and a storied coastline.",
+    description: "Move between Tirupati's temple town, the port-city beaches of Visakhapatnam and the coffee hills of Araku — sacred hills on one side, the Bay of Bengal on the other.",
+    bestTime: "Oct–Mar",
+    themes: ["Pilgrimage", "Heritage", "Beaches", "Culture", "Family"],
+    places: [
+      { name: "Tirupati", image: "/images/location-library/tirupati-andhra-pradesh-india/tirupati-andhra-pradesh-india-02-lg.webp", themes: ["Temples", "Heritage"] },
+      { name: "Chandragiri", image: "/images/location-library/tirupati-andhra-pradesh-india/tirupati-andhra-pradesh-india-01-lg.webp", themes: ["History", "Forts"] },
+      { name: "Vijayawada", image: "/images/location-library/andhra-pradesh-india/andhra-pradesh-india-01-lg.webp", themes: ["Temples", "River"] },
+    ],
+  },
+  "arunachal-pradesh": {
+    artwork: arunachalPradeshArtwork,
+    eyebrow: "The last frontier",
+    tagline: "Monasteries, high passes and valleys that time kept.",
+    description: "India's easternmost Himalaya — Tawang's great monastery, the road over Sela Pass and valleys where Monpa and Apatani life continues much as it always has. An Inner Line Permit is required.",
+    bestTime: "Oct–Apr",
+    themes: ["Mountains", "Monasteries", "Adventure", "Culture", "Nature"],
+    places: [
+      { name: "Tawang", image: "/images/location-library/tawang-arunachal-pradesh-india/tawang-arunachal-pradesh-india-01-lg.webp", themes: ["Monasteries", "Lakes"] },
+      { name: "Sela Pass", image: "/images/location-library/tawang-arunachal-pradesh-india/tawang-arunachal-pradesh-india-02-lg.webp", themes: ["High passes", "Lakes"] },
+      { name: "Mechuka", image: "/images/location-library/arunachal-pradesh-india/arunachal-pradesh-india-01-lg.webp", themes: ["Valleys", "Culture"] },
+    ],
+  },
+  haryana: {
+    artwork: haryanaArtwork,
+    eyebrow: "Land of the Gita",
+    tagline: "Epic battlefields and quiet green escapes.",
+    description: "The land of the Mahabharata — Kurukshetra's Brahma Sarovar and Jyotisar carry that weight — with Pinjore's Mughal gardens, winter birding at Sultanpur and the Morni Hills as quieter counters.",
+    bestTime: "Oct–Mar",
+    themes: ["Pilgrimage", "History", "Culture", "Weekend", "Nature"],
+    places: [
+      { name: "Kurukshetra", image: "/images/location-library/haryana-india/haryana-india-01-lg.webp", themes: ["Pilgrimage", "History"] },
+    ],
+  },
+  manipur: {
+    artwork: manipurArtwork,
+    eyebrow: "The floating lake",
+    tagline: "A valley ringed by blue hills.",
+    description: "Manipur moves at the pace of Loktak Lake — floating phumdi islands, Imphal's Kangla Fort and Ima Keithel women's market, and Keibul Lamjao, the sangai's last home.",
+    bestTime: "Oct–Mar",
+    themes: ["Lakes", "Culture", "Nature", "Heritage", "Valleys"],
+    places: [
+      { name: "Loktak Lake", image: "/images/location-library/manipur-india/manipur-india-01-lg.webp", themes: ["Lakes", "Nature"] },
+    ],
+  },
+  nagaland: {
+    artwork: nagalandArtwork,
+    eyebrow: "Hill tribes",
+    tagline: "Sixteen tribes, one green highland.",
+    description: "Hill country shaped by its tribes — Kohima's war cemetery, the Hornbill Festival at Kisama and the rolling green ridges of Dzukou Valley. An Inner Line Permit is required.",
+    bestTime: "Oct–May",
+    themes: ["Mountains", "Culture", "Treks", "Festivals", "Adventure"],
+    places: [
+      { name: "Dzukou Valley", image: "/images/location-library/nagaland-india/nagaland-india-01-lg.webp", themes: ["Treks", "Valleys"] },
+    ],
+  },
+  telangana: {
+    artwork: telanganaArtwork,
+    eyebrow: "Deccan heritage",
+    tagline: "Forts, old cities and living craft.",
+    description: "Hyderabad's old-city grandeur and Kakatiya temple country — Charminar and Golconda, Warangal's Thousand Pillar Temple and the Godavari's ghats at Bhadrachalam.",
+    bestTime: "Oct–Mar",
+    themes: ["Heritage", "Culture", "Cities", "Food", "Family"],
+    places: [
+      { name: "Hyderabad", image: "/images/location-library/hyderabad-andhra-pradesh-india/hyderabad-andhra-pradesh-india-02-lg.webp", themes: ["Heritage", "Forts"] },
+      { name: "Old City", image: "/images/location-library/hyderabad-andhra-pradesh-india/hyderabad-andhra-pradesh-india-01-lg.webp", themes: ["Culture", "Bazaars"] },
+    ],
+  },
+  "west-bengal": {
+    artwork: westBengalArtwork,
+    eyebrow: "City of joy and beyond",
+    tagline: "From Howrah Bridge to Himalayan tea.",
+    description: "A continent in one state — Kolkata's colonial streets, the Darjeeling Himalaya, the Sundarbans' mangrove waterways and Shantiniketan's artistic soul.",
+    bestTime: "Oct–Mar",
+    themes: ["Cities", "Mountains", "Culture", "Nature", "Heritage"],
+    places: [
+      { name: "Kolkata", image: "/images/location-library/kolkata-west-bengal-india/kolkata-west-bengal-india-01-lg.webp", themes: ["Cities", "Culture"] },
+      { name: "Darjeeling", image: "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-01-lg.webp", themes: ["Mountains", "Tea country"] },
+      { name: "Howrah Bridge", image: "/images/location-library/west-bengal-india/west-bengal-india-01-lg.webp", themes: ["Landmarks", "Rivers"] },
+    ],
+  },
+  "andaman-and-nicobar-islands": {
+    artwork: andamanNicobarArtwork,
+    eyebrow: "Island time",
+    tagline: "White sand, clear water, deep history.",
+    description: "An archipelago in the Bay of Bengal — Radhanagar's famous beach, dive reefs off Havelock and the Cellular Jail's sobering history in Port Blair.",
+    bestTime: "Nov–Apr",
+    themes: ["Beaches", "Diving", "History", "Honeymoon", "Nature"],
+    places: [
+      { name: "Havelock Island", image: "/images/location-library/havelock-island-andaman-and-nicobar-islands-india/havelock-island-andaman-and-nicobar-islands-india-03-lg.webp", themes: ["Beaches", "Diving"] },
+      { name: "Neil Island", image: "/images/location-library/neil-island-andaman-and-nicobar-islands-india/neil-island-andaman-and-nicobar-islands-india-01-lg.webp", themes: ["Beaches", "Nature"] },
+      { name: "Port Blair", image: "/images/location-library/port-blair-andaman-and-nicobar-islands-india/port-blair-andaman-and-nicobar-islands-india-01-lg.webp", themes: ["History", "Towns"] },
+    ],
+  },
+  "dadra-and-nagar-haveli-and-daman-and-diu": {
+    artwork: dadraNagarHaveliDamanDiuArtwork,
+    eyebrow: "Portuguese coast",
+    tagline: "Sea forts, old churches and quiet beaches.",
+    description: "Two coasts in one territory — Diu and Daman's Portuguese forts and churches on the Arabian Sea, and the forested tribal heartland around Silvassa.",
+    bestTime: "Oct–Mar",
+    themes: ["Heritage", "Beaches", "Forts", "Culture", "Weekend"],
+    places: [
+      { name: "Diu", image: "/images/location-library/diu-gujarat-india/diu-gujarat-india-03-lg.webp", themes: ["Forts", "Heritage"] },
+      { name: "St. Paul's Church", image: "/images/location-library/diu-gujarat-india/diu-gujarat-india-01-lg.webp", themes: ["Churches", "History"] },
+    ],
+  },
+  "jammu-and-kashmir": {
+    artwork: jammuKashmirArtwork,
+    eyebrow: "Two regions, one territory",
+    tagline: "Jammu's temples and the road to the valley.",
+    description: "A union territory of two regions — Dogra Jammu's temples and the Vaishno Devi pilgrimage in the Trikuta hills, with the Kashmir Valley beyond. For the valley in depth, see our Kashmir guide.",
+    bestTime: "Mar–Oct",
+    themes: ["Pilgrimage", "Mountains", "Culture", "Adventure", "Family"],
+    places: [
+      { name: "Katra", image: "/images/location-library/katra-jammu-and-kashmir-india/katra-jammu-and-kashmir-india-01-lg.webp", themes: ["Pilgrimage", "Towns"] },
+      { name: "Vaishno Devi", image: "/images/location-library/vaishno-devi-temple-katra/vaishno-devi-temple-katra-01-lg.webp", themes: ["Pilgrimage", "Mountains"] },
     ],
   },
 };

@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { CSSProperties } from "react";
 import type { ExplorerProfile, ExplorerMapMarker } from "@/data/destinationExplorer";
 import { projectDestination } from "@/utils/stateMapProjection";
-import { DEFAULT_STATE_IDENTITY } from "@/data/stateArtwork";
+import { isFullStateArtwork } from "@/data/stateArtwork";
 import StateMotif from "./StateMotif";
 
 interface StateSilhouetteHeroProps {
@@ -19,10 +19,12 @@ interface StateSilhouetteHeroProps {
 
 export default function StateSilhouetteHero({ title, profile, packageCount, startingPrice, markers, experienceLinks, activeFilters }: StateSilhouetteHeroProps) {
   const artwork = profile.artwork;
-  if (!artwork) return null;
+  // Identity-only artworks have no validated boundary geometry: the map hero
+  // is omitted entirely and the page falls back to the discovery canvas.
+  if (!artwork || !isFullStateArtwork(artwork)) return null;
 
   const { geometry } = artwork;
-  const identity = artwork.identity ?? DEFAULT_STATE_IDENTITY;
+  const identity = artwork.identity;
   const responsiveMapVars = {
     "--state-tablet-hero-height": `${artwork.layout?.tabletHeroHeight ?? 760}px`,
     "--state-tablet-map-top": `${artwork.layout?.tabletMapTop ?? 152}px`,
