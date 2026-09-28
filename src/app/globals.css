@@ -961,6 +961,42 @@
 .packages-catalog-hero__inner > span { display: block; margin-top: 14px; color: rgba(255,255,255,.68); font-size: 14px; }
 .packages-group-grid { grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
 
+/* ── Packages listing grid: dedicated column system ──────────────────────
+   Scoped to .packages-group-grid, which is used ONLY on /packages
+   (src/app/packages/page.tsx). These rules neutralize the generic .nit-grid
+   !important overrides in the 768–1360px range (higher specificity wins),
+   so the listing keeps its own rhythm: larger cards, and column counts
+   chosen so the 10-per-page rows fill as evenly as possible.
+   auto-fill is kept (not auto-fit) so a short final row never stretches a
+   lone card full-width. Mobile single-column behavior is preserved. */
+.nit-grid.packages-group-grid {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+/* Tablet + small laptop: 2 columns → 10 items = 5 full rows */
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .nit-grid.packages-group-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+/* Desktop: 4 columns */
+@media only screen and (min-width: 1280px) and (max-width: 1691px) {
+  .nit-grid.packages-group-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+}
+/* Ultra-wide: 5 columns → 10 items = 2 full rows, no ragged last row */
+@media only screen and (min-width: 1692px) {
+  .nit-grid.packages-group-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+/* Mobile: single column (matches .nit-grid's existing mobile behavior) */
+@media (max-width: 767px) {
+  .nit-grid.packages-group-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)) !important;
+  }
+}
+
 .destination-options { overflow: hidden; border: 1px solid rgba(18,79,65,.16); border-radius: 22px; background: #fff; box-shadow: 0 18px 55px rgba(8,43,36,.09); }
 .destination-options-hero { position: relative; min-height: 300px; display: flex; align-items: end; overflow: hidden; background: #0b3d34; }
 .destination-options-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(3,24,21,.05) 20%, rgba(3,24,21,.9) 100%); }
