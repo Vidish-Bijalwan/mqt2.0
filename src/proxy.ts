@@ -146,11 +146,16 @@ const DEAD_TARGET_FIXES: Record<string, string> = {
   '/packages/varanasi-sarnath-tour': '/packages',
 };
 
+// Live API routes (lead capture). Everything else under /api/* is legacy
+// residue and gets a 410.
+const LIVE_API_PATHS = new Set(["/api/enquiries"]);
+
 // Confirmed-dead legacy path patterns from the robots-blocked bucket.
-// Verified: zero such routes exist in src/ (no api/ route handlers, no
+// Verified: zero such routes exist in src/ except LIVE_API_PATHS above (no
 // admin/ or thank-you pages — robots.ts only Disallows them). 410 drains
 // them from Google's memory faster than a 404.
 function isGonePath(lowerPathname: string): boolean {
+  if (LIVE_API_PATHS.has(lowerPathname)) return false;
   return (
     lowerPathname === '/api' ||
     lowerPathname.startsWith('/api/') ||
@@ -314,8 +319,8 @@ export function proxy(request: NextRequest) {
 // See "Matching Paths" below to learn more
 export const config = {
   // Only run the proxy on non-internal routes to save execution time.
-  // /api/:path* is matched deliberately: no API routes exist in the app
-  // (verified), so every /api/* hit is legacy residue and gets a 410.
+  // /api/:path* is matched deliberately: every /api/* hit except the live
+  // lead-capture routes (see LIVE_API_PATHS) is legacy residue and gets a 410.
   matcher: [
     '/api/:path*',
     '/((?!_next/static|_next/image|favicon.ico|images|logo|public).*)',
