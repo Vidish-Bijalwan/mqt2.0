@@ -114,7 +114,7 @@ export default async function ThemePage({ params }: { params: Promise<{ theme: s
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }} />
       {/* Breadcrumb */}
       <div className="bg-legacy-nav-blue text-white text-xs py-2 px-4">
-        <div className="container mx-auto w-[95%] max-w-[1600px] flex items-center">
+        <div className="mx-auto w-[95%] max-w-[1600px] flex items-center">
           <Link href="/" className="hover:text-legacy-orange transition-colors">Home</Link>
           <ChevronRight className="w-3 h-3 mx-1 opacity-70" />
           <Link href="/special-tours" className="hover:text-legacy-orange transition-colors">Special Tours</Link>
@@ -125,7 +125,7 @@ export default async function ThemePage({ params }: { params: Promise<{ theme: s
 
       {/* Header */}
       <div className="bg-white border-b border-gray-200 py-8 mb-8">
-        <div className="container mx-auto w-[95%] max-w-[1600px]">
+        <div className="mx-auto w-[95%] max-w-[1600px]">
           <h1 className="text-3xl font-bold text-gray-800 mb-2">{displayTheme} Tour Packages</h1>
           <p className="text-gray-600 max-w-3xl">
             Discover our curated collection of {matchedPackages.length} {displayTheme.toLowerCase()} packages. 
@@ -135,7 +135,7 @@ export default async function ThemePage({ params }: { params: Promise<{ theme: s
       </div>
 
       {/* Content Layout — filters and sort are live (ThemePackageList) */}
-      <div className="container mx-auto w-[95%] max-w-[1600px]">
+      <div className="mx-auto w-[95%] max-w-[1600px]">
         <ThemePackageList
           packages={matchedPackages}
           images={Object.fromEntries(matchedPackages.map((pkg) => [pkg.slug, getApprovedPackageImage(pkg)]))}

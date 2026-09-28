@@ -219,7 +219,7 @@ export default async function PackagesPage({
         </div>
       </div>
 
-      <div className="container mx-auto px-4 w-full max-w-[1920px] px-2 md:px-4 mt-8">
+      <div className="mx-auto w-full max-w-[1600px] px-4 md:px-6 mt-8">
         <div className="flex flex-col lg:flex-row gap-8">
           
           {/* Sidebar */}
