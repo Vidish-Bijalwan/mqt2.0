@@ -171,7 +171,7 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
     geography: { boundarySource: "Natural Earth", boundaryVersion: "Admin 1 States/Provinces, 1:10m (2022)", lastVerified: "2026-09-28", boundaryLevel: "state" },
     mapMarkers: [
       { name: "Leh", slug: "leh", tagline: "High desert", latitude: 34.1526, longitude: 77.5771, priority: 1, mobilePriority: 1, labelDirection: "right", coordVerified: true, coordinateSource: "Nominatim" },
-      { name: "Nubra Valley", slug: "nubra-valley", latitude: 34.5511, longitude: 77.0967, priority: 2, mobilePriority: 2, labelDirection: "right", coordVerified: false, coordinateSource: "MQT curated" },
+      { name: "Nubra Valley", slug: "nubra-valley", latitude: 34.55123, longitude: 77.55065, priority: 2, mobilePriority: 2, labelDirection: "right", coordVerified: true, coordinateSource: "Nominatim: Diskit, Nubra Valley" },
       { name: "Pangong Lake", slug: "pangong-lake", latitude: 33.9456, longitude: 78.6569, priority: 3, mobilePriority: 3, labelDirection: "left", coordVerified: true, coordinateSource: "Nominatim" },
       { name: "Tso Moriri", slug: "tso-moriri", latitude: 32.9113, longitude: 78.3118, priority: 4, mobilePriority: 4, labelDirection: "right", coordVerified: true, coordinateSource: "Nominatim" },
     ],

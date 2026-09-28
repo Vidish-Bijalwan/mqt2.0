@@ -109,7 +109,7 @@ export const himachalPradeshArtwork: StateArtwork = {
   id: "himachal-pradesh",
   themes: "Mountains • Valleys • Adventure • Honeymoon",
   geometry: himachalPradeshGeometry,
-  background: himachalPhoto("himachal-pradesh", "02"),
+  background: "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-02-lg.webp",
   baseImage: himachalPhoto("manali", "01"),
   layout: { tabletHeroHeight: 840, tabletMapTop: 225 },
   districts: attachDistrictImages(himachalPradeshDistrictGeometry.districts, {
