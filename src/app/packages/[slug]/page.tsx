@@ -8,6 +8,8 @@ import PackageHero from "@/components/packages/PackageHero";
 import PackageTabSections from "@/components/packages/PackageTabSections";
 import PackageEnquirySection from "@/components/packages/PackageEnquirySection";
 import PackageSidebar from "@/components/packages/PackageSidebar";
+import CommercialSection from "@/components/pricing/CommercialSection";
+import PackageViewTracker from "@/components/packages/PackageViewTracker";
 import { siteConfig } from "@/data/siteConfig";
 import { getPackageLocationMedia, PACKAGE_MEDIA_PLACEHOLDER } from "@/data/packageLocationMedia";
 import { cleanScrapedTitle, replaceReferenceBrand } from "@/utils/branding";
@@ -146,6 +148,7 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }} />
       {/* Sticky mobile CTA (U21) — price + call + WhatsApp + Send Query always visible */}
       <StickyMobileCTA price={vm.displayPrice} showPrice={vm.showPrice} packageName={pkg.title} />
+      <PackageViewTracker slug={pkg.slug} category={pkg.category || "general"} />
       <div
         className="package-page-shell min-h-screen pb-24 font-sans lg:pb-16"
         style={{ "--package-backdrop": vm.galleryImages[0] ? `url(${vm.galleryImages[0]})` : "none" } as CSSProperties}
@@ -155,6 +158,17 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
         <main className="mx-auto grid w-full max-w-[1320px] grid-cols-1 gap-7 px-4 lg:grid-cols-[minmax(0,1fr)_350px] lg:px-6">
           <div className="min-w-0 space-y-8">
             <PackageTabSections vm={vm} />
+
+            {/* Commercial UI (value stack + tiers + offers) renders only for
+                packages with a config in src/data/commercial/packages.ts. */}
+            {vm.showPrice && (
+              <CommercialSection
+                slug={pkg.slug}
+                packageTitle={pkg.title}
+                publicPrice={vm.priceInfo.deal}
+                crossedPrice={vm.crossedOutPrice}
+              />
+            )}
 
             <PackageEnquirySection pkgTitle={pkg.title} />
           </div>
