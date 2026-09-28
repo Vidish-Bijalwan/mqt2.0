@@ -266,7 +266,7 @@ export const rajasthanArtwork: StateArtwork = {
     description: "Rajasthan is best done as a circuit of fort cities — each with its own colour, cuisine and after-dark story.",
     stops: [
     { name: "Jaipur", note: "Pink City palaces and bazaar lanes.",
-      image: "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-01-lg.webp",
+      image: "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-01-lg.webp",
       href: "/destinations/rajasthan?destination=jaipur" },
     { name: "Udaipur", note: "Lake palaces and rooftop sunsets.",
       image: "/images/location-library/udaipur-rajasthan-india/udaipur-rajasthan-india-01-lg.webp",
