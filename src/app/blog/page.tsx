@@ -10,6 +10,7 @@ import BlogSidebar from "@/components/blog/BlogSidebar";
 import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
 import { siteConfig } from "@/data/siteConfig";
 import { safeJsonLd } from "@/utils/jsonLd";
+import { trackEvent } from "@/lib/analytics";
 
 const ITEMS_PER_PAGE = 24;
 
@@ -109,6 +110,10 @@ function BlogIndexContent() {
     setSearchQuery(validated);
     setCurrentPage(1);
     updateUrl(activeCategory, validated);
+    // Query is sanitized above (word chars/spaces/hyphens, max 100) — never raw PII.
+    if (validated) {
+      trackEvent("search_query", { query: validated, page: "/blog" });
+    }
   };
 
   // Generate page numbers with ellipsis

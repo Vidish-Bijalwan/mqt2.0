@@ -42,6 +42,8 @@ export default function StickyMobileCTA({ price, showPrice, packageName }: Stick
         <a
           href="#enquiry-form"
           data-track="cta_send_query"
+          data-analytics-event="booking_cta_click"
+          data-analytics-placement="sticky_mobile_cta"
           className="flex min-h-11 shrink-0 items-center justify-center rounded-xl bg-brand-cta px-4 text-center text-sm font-extrabold text-ink transition-colors hover:bg-brand-cta-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-cta focus-visible:ring-offset-2"
         >
           Personalise trip

@@ -31,6 +31,7 @@ import { getBlogImage } from "@/data/blogImageMap";
 import { getBlogPostContent } from "@/data/blogPosts/content";
 import AutoLinker from "@/components/ui/AutoLinker";
 import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
+import AttentionTracker from "@/components/analytics/AttentionTracker";
 import { safeJsonLd } from "@/utils/jsonLd";
 
 // Pre-render a small set of entry articles. Long-tail posts render on demand
@@ -231,6 +232,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   return (
     <>
+      <AttentionTracker event="blog_attention" page={`/blog/${slug}`} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(breadcrumbLd) }} />
       {faqLd && (
