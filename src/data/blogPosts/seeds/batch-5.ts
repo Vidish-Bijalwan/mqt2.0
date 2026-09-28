@@ -287,7 +287,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "forex-card-vs-cash-international-travel",
     "title": "Forex Card vs Cash for International Travel",
     "metaDescription": "Forex card vs cash for international travel: fees, exchange rates, safety and when each makes sense for Indian travellers.",
-    "image": "/images/packages/visiting-enjoying-singapore.jpg",
+    "image": "/images/packages/visiting-enjoying-singapore.webp",
     "category": "Travel Planning",
     "tags": [
       "forex",
@@ -494,7 +494,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "bhaderwah-jammus-mini-kashmir",
     "title": "Bhaderwah: Jammu's Mini Kashmir",
     "metaDescription": "Bhaderwah, Jammu's mini Kashmir: meadows, temples, festivals, how to reach and what to do in this offbeat hill destination.",
-    "image": "/images/packages/daringbadi-the-kashmir-of-odisha.jpg",
+    "image": "/images/packages/daringbadi-the-kashmir-of-odisha.webp",
     "category": "Destination Guides",
     "tags": [
       "bhaderwah",
@@ -722,7 +722,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "chadar-trek-walking-frozen-zanskar",
     "title": "Chadar Trek: Walking on the Frozen Zanskar",
     "metaDescription": "Chadar trek guide: walking on the frozen Zanskar river, with route, difficulty, best time and preparation for Ladakh's winter trek.",
-    "image": "/images/packages/winter-experience-in-kashmir.jpg",
+    "image": "/images/packages/winter-experience-in-kashmir.webp",
     "category": "Mountains & Adventure",
     "tags": [
       "chadar trek",
