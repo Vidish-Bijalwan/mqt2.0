@@ -40,6 +40,36 @@ export default function EnquiryForm({ pkgName = "", destination, embedded = fals
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // Trip Room prefill: the group trip room stores its consensus summary in
+  // sessionStorage before navigating here. Carry it into the message so the
+  // travel team sees the group's agreed destination/dates/budget. One-shot.
+  useEffect(() => {
+    try {
+      const raw = sessionStorage.getItem("mqt-room");
+      if (!raw) return;
+      const stored = JSON.parse(raw) as {
+        destination?: string;
+        dates?: string;
+        budget?: string;
+        partySize?: number;
+      };
+      sessionStorage.removeItem("mqt-room");
+      if (messageRef.current && !messageRef.current.value) {
+        const bits = [
+          stored?.destination ? `destination: ${stored.destination}` : "",
+          stored?.dates ? `dates: ${stored.dates}` : "",
+          stored?.budget ? `budget: ${stored.budget}` : "",
+          stored?.partySize ? `group of ~${stored.partySize}` : "",
+        ].filter(Boolean);
+        if (bits.length > 0) {
+          messageRef.current.value = `We're planning a group trip (${bits.join(", ")}). `;
+        }
+      }
+    } catch {
+      // Storage unavailable or malformed — form works normally.
+    }
+  }, []);
+
   // On successful submit, move focus to the confirmation so screen-reader
   // users are told what happened.
   useEffect(() => {
