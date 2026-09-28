@@ -49,7 +49,7 @@ export default function SpecialToursPage() {
       <div className="bg-gray-50 min-h-screen pb-16">
       {/* Breadcrumb */}
       <div className="bg-legacy-nav-blue text-white text-xs py-2 px-4">
-        <div className="container mx-auto w-[95%] max-w-[1600px] flex items-center">
+        <div className="mx-auto w-[95%] max-w-[1600px] flex items-center">
           <Link href="/" className="hover:text-legacy-orange transition-colors">Home</Link>
           <ChevronRight className="w-3 h-3 mx-1 opacity-70" />
           <span className="text-legacy-orange">Special Tours</span>
@@ -66,7 +66,7 @@ export default function SpecialToursPage() {
       </div>
 
       {/* Themes Grid */}
-      <div className="container mx-auto w-[95%] max-w-[1200px]">
+      <div className="mx-auto w-[95%] max-w-[1200px]">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {THEMES.map((theme, i) => (
             <Link key={i} href={theme.href} className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md hover:border-legacy-orange transition-all group flex flex-col items-center text-center">
