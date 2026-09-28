@@ -34,6 +34,11 @@ never in components.
    `minimumMarginPct` is rejected by the engine and never displayed.
 8. Cost fields (`supplierCost`, reserves) are operator-confidential and are
    never sent to the browser in rendered output.
+9. **Strikethrough prices need a real, labeled basis.** The legacy
+   `priceOverrides.json` `mrp` renders as an unlabeled strikethrough + "Save"
+   badge. Until a package has a real comparison basis (a genuine previous or
+   list price you can label), set `mrp` equal to `dealPrice` so no
+   strikethrough renders. Never invent an MRP to imply a discount.
 
 ## Turning on a tier price / offer
 

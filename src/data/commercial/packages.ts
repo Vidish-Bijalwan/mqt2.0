@@ -31,7 +31,7 @@ const badrinathKedarnathCommercial: PackageCommercial = {
   includes: [
     { label: "4 nights in checked, clean hotels", detail: "Handpicked stays on the Haridwar – Guptkashi – Kedarnath – Badrinath route" },
     { label: "Private car with mountain-experienced drivers", detail: "Drivers with years of experience on Himalayan roads" },
-    { label: "Fresh, tasty meals on the route", detail: "As per the published meal plan" },
+    { label: "Fresh, tasty meals on the route" },
     { label: "Completely guided yatra", detail: "From Haridwar departure to return" },
     { label: "Darshan assistance with quick entry passes" },
     { label: "Senior-friendly pacing with planned rest stops", detail: "Extra buffer hours built in for weather delays" },
