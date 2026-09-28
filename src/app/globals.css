@@ -1637,7 +1637,7 @@
   background:
     /* Semi-transparent overlay so the heritage wallpaper is subtly visible */
     linear-gradient(rgba(247, 245, 237, 0.82), rgba(239, 246, 243, 0.88)),
-    url("/images/blog/royal-palaces-in-india.jpg") top center / 1280px auto repeat-y;
+    url("/images/blog/royal-palaces-in-india.webp") top center / 1280px auto repeat-y;
 }
 
 .heritage-surface {

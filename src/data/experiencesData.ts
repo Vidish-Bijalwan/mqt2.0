@@ -48,7 +48,7 @@ export const experiences: Experience[] = [
     slug: "medical-tourism",
     name: "Medical Tourism",
     group: "Medical",
-    image: "/images/packages/india-best-ayurveda-destinations.jpg",
+    image: "/images/packages/india-best-ayurveda-destinations.webp",
     tagline: "World-class healthcare & healing",
     keywords: ["medical", "treatment", "hospital", "health", "surgery", "ayurveda", "wellness"],
     description:
@@ -208,7 +208,7 @@ export const experiences: Experience[] = [
     slug: "private-jet-charter",
     name: "Private Jet Travel",
     group: "Luxury",
-    image: "/images/packages/private-jet-travel-myths-busted.jpg",
+    image: "/images/packages/private-jet-travel-myths-busted.webp",
     tagline: "Fly on your own schedule",
     keywords: ["private jet", "jet", "charter", "private flight"],
     description:
@@ -480,7 +480,7 @@ export const experiences: Experience[] = [
     slug: "tea-plantation-tours",
     name: "Tea Plantation Tours",
     group: "Nature",
-    image: "/images/packages/indian-tea-culture.jpg",
+    image: "/images/packages/indian-tea-culture.webp",
     tagline: "Wander emerald tea gardens",
     keywords: ["tea", "plantation", "munnar", "darjeeling", "tea garden", "estate"],
     description:
