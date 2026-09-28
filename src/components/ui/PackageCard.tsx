@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Sun, MapPin } from "lucide-react";
 import { getPriceInfo } from "@/utils/price";
 import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
-import ConvertedPrice from "@/components/currency/ConvertedPrice";
 
 export interface PackageCardProps {
   slug: string;
@@ -43,7 +42,7 @@ export default function PackageCard({ pkg, href, variantCount }: PackageCardComp
   const durationPill = days + (nights ? ` / ${nights}` : "");
 
   /* ─── Pricing (shared model): pkg.mrp = list price, pkg.dealPrice = the deal ─── */
-  const { display: displayPrice, crossed: crossedOutPrice, save: discountAmount, hasPrice: showPrice, deal: dealInr } = getPriceInfo(pkg.mrp, pkg.dealPrice, pkg.slug);
+  const { display: displayPrice, crossed: crossedOutPrice, save: discountAmount, hasPrice: showPrice } = getPriceInfo(pkg.mrp, pkg.dealPrice, pkg.slug);
 
   return (
     <div className="nit-pcard">
@@ -129,9 +128,6 @@ export default function PackageCard({ pkg, href, variantCount }: PackageCardComp
             <>
               <span style={{ fontSize: 12, fontWeight: 400, color: '#666', display: 'block', lineHeight: '16px' }}>Starting from</span>
               INR <b>{displayPrice}</b>
-              <span style={{ display: 'block', marginTop: 2, minHeight: 14 }}>
-                <ConvertedPrice amountInr={showPrice ? dealInr : null} className="text-[11px] font-semibold text-gray-500" />
-              </span>
             </>
           ) : (
             <b style={{ fontSize: 18, color: "#fb4d00" }}>Contact for Price</b>

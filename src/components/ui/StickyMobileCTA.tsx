@@ -3,17 +3,14 @@
 import { siteConfig } from "@/data/siteConfig";
 import { MessageCircle } from "lucide-react";
 import { useEffect } from "react";
-import ConvertedPrice from "@/components/currency/ConvertedPrice";
 
 interface StickyMobileCTAProps {
   price: string; // already formatted display price (e.g. "95,000")
   showPrice: boolean;
   packageName: string;
-  /** Numeric INR deal price for the indicative currency hint. */
-  priceInr?: number | null;
 }
 
-export default function StickyMobileCTA({ price, showPrice, packageName, priceInr }: StickyMobileCTAProps) {
+export default function StickyMobileCTA({ price, showPrice, packageName }: StickyMobileCTAProps) {
   useEffect(() => {
     document.body.classList.add("has-sticky-mobile-cta");
     return () => document.body.classList.remove("has-sticky-mobile-cta");
@@ -31,9 +28,6 @@ export default function StickyMobileCTA({ price, showPrice, packageName, priceIn
           <p className="truncate text-base font-black leading-tight text--brand-primary">
             {showPrice ? <>INR {price}</> : "Tailored quote"}
           </p>
-          {showPrice && (
-            <ConvertedPrice amountInr={priceInr} className="text-[10px] font-semibold text--ink-muted" />
-          )}
         </div>
         <a
           href={whatsappUrl}
