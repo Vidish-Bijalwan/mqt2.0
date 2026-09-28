@@ -2,6 +2,8 @@ import Link from "next/link";
 import type { CSSProperties } from "react";
 import type { ExplorerProfile, ExplorerMapMarker } from "@/data/destinationExplorer";
 import { projectDestination } from "@/utils/stateMapProjection";
+import { DEFAULT_STATE_IDENTITY } from "@/data/stateArtwork";
+import StateMotif from "./StateMotif";
 
 interface StateSilhouetteHeroProps {
   title: string;
@@ -13,14 +15,14 @@ interface StateSilhouetteHeroProps {
   activeFilters: Array<{ label: string; href: string }>;
 }
 
-const DEFAULT_IDENTITY = { accent: "#f2ae55", ink: "#09342d" };
+
 
 export default function StateSilhouetteHero({ title, profile, packageCount, startingPrice, markers, experienceLinks, activeFilters }: StateSilhouetteHeroProps) {
   const artwork = profile.artwork;
   if (!artwork) return null;
 
   const { geometry } = artwork;
-  const identity = artwork.identity ?? DEFAULT_IDENTITY;
+  const identity = artwork.identity ?? DEFAULT_STATE_IDENTITY;
   const responsiveMapVars = {
     "--state-tablet-hero-height": `${artwork.layout?.tabletHeroHeight ?? 760}px`,
     "--state-tablet-map-top": `${artwork.layout?.tabletMapTop ?? 152}px`,
@@ -36,6 +38,7 @@ export default function StateSilhouetteHero({ title, profile, packageCount, star
       <div className="mb-3 flex items-center gap-2 text-xs text-[#587069]"><Link href="/" className="hover:text-[#164b40]">Home</Link><span>›</span><Link href="/packages" className="hover:text-[#164b40]">India</Link><span>›</span><strong className="text-[#164b40]">{title}</strong></div>
       <div className="relative isolate overflow-hidden rounded-[28px] bg-[#082f2a] shadow-[0_24px_56px_rgba(8,47,42,.20)]">
         <div className="absolute inset-0 opacity-70" style={{ backgroundImage: `linear-gradient(115deg, rgba(1,27,24,.94), rgba(4,58,50,.50)), url(${artwork.background})`, backgroundSize: "cover", backgroundPosition: "center" }} />
+        {artwork.motif && <StateMotif motif={artwork.motif} className="absolute inset-0 z-[5] h-full w-full text-[color-mix(in_srgb,var(--state-accent)_24%,transparent)] [mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_75%)]" />}
         <div className="relative min-h-[610px] px-5 pb-5 pt-6 sm:min-h-[var(--state-tablet-hero-height)] sm:px-9 sm:pt-9 lg:min-h-[670px]" style={responsiveMapVars}>
           <div className="relative z-20 max-w-[390px] text-white"><p className="text-[10px] font-black uppercase tracking-[.28em] text-[var(--state-accent)]">{profile.eyebrow}</p><h1 className="font-display mt-2 text-4xl font-bold tracking-[-.055em] sm:text-6xl">{title}</h1><p className="mt-2 text-sm font-semibold text-white/88">{artwork.themes}</p><p className="mt-2 text-xs text-white/70">{packageCount} packages · {profile.geography?.districtCount || profile.places.length} districts · {startingPrice ? `From ₹${startingPrice.toLocaleString("en-IN")}` : "Tailored prices"}</p></div>
           <div className="absolute inset-x-0 bottom-[46px] top-[118px] z-10 sm:bottom-[48px] sm:top-[var(--state-tablet-map-top)] lg:bottom-[45px] lg:left-[18%] lg:right-[3%] lg:top-[24px]" aria-label={`Tourism imagery inside the accurate ${title} boundary`}>

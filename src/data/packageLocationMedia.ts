@@ -497,12 +497,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "5-days-nepal-tour-package": {
-    "primary": "/images/location-library/nepal-international/nepal-international-04-lg.webp",
+    "primary": "/images/location-library/nepal-international/nepal-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/nepal-international/nepal-international-04-lg.webp",
-        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/nepal-international/nepal-international-01-lg.webp",
         "caption": "Nepal — Bijay Chaurasia, CC BY-SA 4.0"
@@ -514,6 +510,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/nepal-international/nepal-international-03-lg.webp",
         "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/nepal-international/nepal-international-04-lg.webp",
+        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
       }
     ],
     "locations": [
@@ -521,12 +521,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "7-days-nepal-tour-packages": {
-    "primary": "/images/location-library/nepal-international/nepal-international-01-crop1-lg.webp",
+    "primary": "/images/location-library/nepal-international/nepal-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/nepal-international/nepal-international-01-crop1-lg.webp",
-        "caption": "Nepal — Bijay Chaurasia, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/nepal-international/nepal-international-01-lg.webp",
         "caption": "Nepal — Bijay Chaurasia, CC BY-SA 4.0"
@@ -573,14 +569,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "adi-kailash-yatra-tour-packages": {
-    "primary": "/images/location-library/pithoragarh-uttarakhand-india/pithoragarh-uttarakhand-india-02-lg.webp",
+    "primary": "/images/location-library/pithoragarh-uttarakhand-india/pithoragarh-uttarakhand-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/pithoragarh-uttarakhand-india/pithoragarh-uttarakhand-india-02-lg.webp",
+        "src": "/images/location-library/pithoragarh-uttarakhand-india/pithoragarh-uttarakhand-india-01-lg.webp",
         "caption": "Pithoragarh — Abhijit Kar Gupta from Kolkata, India, CC BY 2.0"
       },
       {
-        "src": "/images/location-library/pithoragarh-uttarakhand-india/pithoragarh-uttarakhand-india-01-lg.webp",
+        "src": "/images/location-library/pithoragarh-uttarakhand-india/pithoragarh-uttarakhand-india-02-lg.webp",
         "caption": "Pithoragarh — Abhijit Kar Gupta from Kolkata, India, CC BY 2.0"
       },
       {
@@ -686,14 +682,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "agra-tour-packages": {
-    "primary": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-02-lg.webp",
+    "primary": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-02-lg.webp",
+        "src": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-01-lg.webp",
         "caption": "Agra — Yann ( talk ), CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-01-lg.webp",
+        "src": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-02-lg.webp",
         "caption": "Agra — Yann ( talk ), CC BY-SA 4.0"
       },
       {
@@ -710,12 +706,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "agra": {
-    "primary": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-03-lg.webp",
+    "primary": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-03-lg.webp",
-        "caption": "Agra — Dan Searle, by-sa"
-      },
       {
         "src": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-01-lg.webp",
         "caption": "Agra — Yann ( talk ), CC BY-SA 4.0"
@@ -723,6 +715,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-02-lg.webp",
         "caption": "Agra — Yann ( talk ), CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-03-lg.webp",
+        "caption": "Agra — Dan Searle, by-sa"
       },
       {
         "src": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-04-lg.webp",
@@ -758,15 +754,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "ahmedabad-tour-packages": {
-    "primary": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-02-lg.webp",
+    "primary": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-02-lg.webp",
-        "caption": "Ahmedabad — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-01-lg.webp",
         "caption": "Ahmedabad — Honzasoukup, Public domain"
+      },
+      {
+        "src": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-02-lg.webp",
+        "caption": "Ahmedabad — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-03-lg.webp",
@@ -782,18 +778,18 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "ahmedabad": {
-    "primary": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-03-lg.webp",
+    "primary": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-03-lg.webp",
-        "caption": "Ahmedabad — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-01-lg.webp",
         "caption": "Ahmedabad — Honzasoukup, Public domain"
       },
       {
         "src": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-02-lg.webp",
+        "caption": "Ahmedabad — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-03-lg.webp",
         "caption": "Ahmedabad — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
       },
       {
@@ -871,14 +867,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "ajanta-ellora-caves-tour": {
-    "primary": "/images/location-library/ajanta-maharashtra-india/ajanta-maharashtra-india-02-lg.webp",
+    "primary": "/images/location-library/ajanta-maharashtra-india/ajanta-maharashtra-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/ajanta-maharashtra-india/ajanta-maharashtra-india-02-lg.webp",
+        "src": "/images/location-library/ajanta-maharashtra-india/ajanta-maharashtra-india-01-lg.webp",
         "caption": "Ajanta — Amitabha Gupta, CC BY 4.0"
       },
       {
-        "src": "/images/location-library/ajanta-maharashtra-india/ajanta-maharashtra-india-01-lg.webp",
+        "src": "/images/location-library/ajanta-maharashtra-india/ajanta-maharashtra-india-02-lg.webp",
         "caption": "Ajanta — Amitabha Gupta, CC BY 4.0"
       },
       {
@@ -936,12 +932,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "akbar-tomb-agra": {
-    "primary": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-04-lg.webp",
+    "primary": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-04-lg.webp",
-        "caption": "Agra — Dan Searle, by-sa"
-      },
       {
         "src": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-01-lg.webp",
         "caption": "Agra — Yann ( talk ), CC BY-SA 4.0"
@@ -952,6 +944,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       },
       {
         "src": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-03-lg.webp",
+        "caption": "Agra — Dan Searle, by-sa"
+      },
+      {
+        "src": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-04-lg.webp",
         "caption": "Agra — Dan Searle, by-sa"
       }
     ],
@@ -1025,12 +1021,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "allahabad-varanasi-puri-tour": {
-    "primary": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-03-lg.webp",
+    "primary": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-03-lg.webp",
-        "caption": "Prayagraj — Ar.anujgupta, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-01-lg.webp",
         "caption": "Prayagraj — Ar.anujgupta, CC BY-SA 4.0"
@@ -1038,6 +1030,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-02-lg.webp",
         "caption": "Prayagraj — Arpita1308, by-sa"
+      },
+      {
+        "src": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-03-lg.webp",
+        "caption": "Prayagraj — Ar.anujgupta, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-04-lg.webp",
@@ -1066,12 +1062,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "allahabad-varanasi-tour": {
-    "primary": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-04-lg.webp",
+    "primary": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-04-lg.webp",
-        "caption": "Prayagraj — Ar.anujgupta, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-01-lg.webp",
         "caption": "Prayagraj — Ar.anujgupta, CC BY-SA 4.0"
@@ -1082,6 +1074,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       },
       {
         "src": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-03-lg.webp",
+        "caption": "Prayagraj — Ar.anujgupta, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-04-lg.webp",
         "caption": "Prayagraj — Ar.anujgupta, CC BY-SA 4.0"
       },
       {
@@ -1131,14 +1127,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "almora": {
-    "primary": "/images/location-library/almora-uttarakhand-india/almora-uttarakhand-india-02-lg.webp",
+    "primary": "/images/location-library/almora-uttarakhand-india/almora-uttarakhand-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/almora-uttarakhand-india/almora-uttarakhand-india-02-lg.webp",
+        "src": "/images/location-library/almora-uttarakhand-india/almora-uttarakhand-india-01-lg.webp",
         "caption": "Almora — Rajarshi MITRA from Mumbai, India, CC BY 2.0"
       },
       {
-        "src": "/images/location-library/almora-uttarakhand-india/almora-uttarakhand-india-01-lg.webp",
+        "src": "/images/location-library/almora-uttarakhand-india/almora-uttarakhand-india-02-lg.webp",
         "caption": "Almora — Rajarshi MITRA from Mumbai, India, CC BY 2.0"
       },
       {
@@ -1203,12 +1199,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "amarnath-yatra-helicopter": {
-    "primary": "/images/location-library/srinagar-jammu-and-kashmir-india/srinagar-jammu-and-kashmir-india-03-lg.webp",
+    "primary": "/images/location-library/srinagar-jammu-and-kashmir-india/srinagar-jammu-and-kashmir-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/srinagar-jammu-and-kashmir-india/srinagar-jammu-and-kashmir-india-03-lg.webp",
-        "caption": "Srinagar — Dashrathgoyal85, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/srinagar-jammu-and-kashmir-india/srinagar-jammu-and-kashmir-india-01-lg.webp",
         "caption": "Srinagar — Harvinder Chandigarh, by"
@@ -1216,6 +1208,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/srinagar-jammu-and-kashmir-india/srinagar-jammu-and-kashmir-india-02-lg.webp",
         "caption": "Srinagar — Harvinder Chandigarh, by"
+      },
+      {
+        "src": "/images/location-library/srinagar-jammu-and-kashmir-india/srinagar-jammu-and-kashmir-india-03-lg.webp",
+        "caption": "Srinagar — Dashrathgoyal85, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/srinagar-jammu-and-kashmir-india/srinagar-jammu-and-kashmir-india-04-lg.webp",
@@ -1362,18 +1358,18 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "andaman-beach-tour": {
-    "primary": "/images/location-library/neil-island-andaman-and-nicobar-islands-india/neil-island-andaman-and-nicobar-islands-india-02-lg.webp",
+    "primary": "/images/location-library/andaman-scuba-diving-snorkeling/andaman-scuba-diving-snorkeling-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/neil-island-andaman-and-nicobar-islands-india/neil-island-andaman-and-nicobar-islands-india-02-lg.webp",
-        "caption": "Neil Island — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/andaman-scuba-diving-snorkeling/andaman-scuba-diving-snorkeling-01-lg.webp",
         "caption": "Andaman — Anshul Arora, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/neil-island-andaman-and-nicobar-islands-india/neil-island-andaman-and-nicobar-islands-india-01-lg.webp",
+        "caption": "Neil Island — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/neil-island-andaman-and-nicobar-islands-india/neil-island-andaman-and-nicobar-islands-india-02-lg.webp",
         "caption": "Neil Island — Vyacheslav Argenberg, CC BY 4.0"
       },
       {
@@ -1411,15 +1407,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "andhra-pradesh": {
-    "primary": "/images/location-library/andhra-pradesh-india/andhra-pradesh-india-02-lg.webp",
+    "primary": "/images/location-library/andhra-pradesh-india/andhra-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/andhra-pradesh-india/andhra-pradesh-india-02-lg.webp",
-        "caption": "Andhra Pradesh — Purshi, by-sa"
-      },
       {
         "src": "/images/location-library/andhra-pradesh-india/andhra-pradesh-india-01-lg.webp",
         "caption": "Andhra Pradesh — Depy Spyratos, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/andhra-pradesh-india/andhra-pradesh-india-02-lg.webp",
+        "caption": "Andhra Pradesh — Purshi, by-sa"
       },
       {
         "src": "/images/location-library/andhra-pradesh-india/andhra-pradesh-india-03-lg.webp",
@@ -1455,15 +1451,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "arunachal-pradesh-tour-packages": {
-    "primary": "/images/location-library/arunachal-pradesh-india/arunachal-pradesh-india-02-lg.webp",
+    "primary": "/images/location-library/arunachal-pradesh-india/arunachal-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/arunachal-pradesh-india/arunachal-pradesh-india-02-lg.webp",
-        "caption": "Arunachal Pradesh — Survey of India, Public domain"
-      },
       {
         "src": "/images/location-library/arunachal-pradesh-india/arunachal-pradesh-india-01-lg.webp",
         "caption": "Arunachal Pradesh — Rohit Sharma, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/arunachal-pradesh-india/arunachal-pradesh-india-02-lg.webp",
+        "caption": "Arunachal Pradesh — Survey of India, Public domain"
       },
       {
         "src": "/images/location-library/arunachal-pradesh-india/arunachal-pradesh-india-03-lg.webp",
@@ -1544,14 +1540,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "assam": {
-    "primary": "/images/location-library/assam-india/assam-india-02-lg.webp",
+    "primary": "/images/location-library/assam-india/assam-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/assam-india/assam-india-02-lg.webp",
+        "src": "/images/location-library/assam-india/assam-india-01-lg.webp",
         "caption": "Assam — Didier Descouens, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/assam-india/assam-india-01-lg.webp",
+        "src": "/images/location-library/assam-india/assam-india-02-lg.webp",
         "caption": "Assam — Didier Descouens, CC BY-SA 4.0"
       },
       {
@@ -1650,15 +1646,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "auli-tour-packages": {
-    "primary": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-02-lg.webp",
+    "primary": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-02-lg.webp",
-        "caption": "Auli — nanda devi institute of adventure sports and outdoor education, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-01-lg.webp",
         "caption": "Auli — Amit Shaw, CC0"
+      },
+      {
+        "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-02-lg.webp",
+        "caption": "Auli — nanda devi institute of adventure sports and outdoor education, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-03-lg.webp",
@@ -1674,12 +1670,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "auli": {
-    "primary": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-03-lg.webp",
+    "primary": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-03-lg.webp",
-        "caption": "Auli — Bibek Raj Pandeya, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-01-lg.webp",
         "caption": "Auli — Amit Shaw, CC0"
@@ -1687,6 +1679,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-02-lg.webp",
         "caption": "Auli — nanda devi institute of adventure sports and outdoor education, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-03-lg.webp",
+        "caption": "Auli — Bibek Raj Pandeya, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-04-lg.webp",
@@ -1722,18 +1718,18 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "ayodhya-tour-packages": {
-    "primary": "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-03-lg.webp",
+    "primary": "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-03-lg.webp",
-        "caption": "Ayodhya — Prime Minister's Office, GODL-India"
-      },
       {
         "src": "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-01-lg.webp",
         "caption": "Ayodhya — William Hodges, Public domain"
       },
       {
         "src": "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-02-lg.webp",
+        "caption": "Ayodhya — Prime Minister's Office, GODL-India"
+      },
+      {
+        "src": "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-03-lg.webp",
         "caption": "Ayodhya — Prime Minister's Office, GODL-India"
       },
       {
@@ -1746,12 +1742,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "ayodhya": {
-    "primary": "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-04-lg.webp",
+    "primary": "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-04-lg.webp",
-        "caption": "Ayodhya — Prime Minister's Office, GODL-India"
-      },
       {
         "src": "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-01-lg.webp",
         "caption": "Ayodhya — William Hodges, Public domain"
@@ -1762,6 +1754,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       },
       {
         "src": "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-03-lg.webp",
+        "caption": "Ayodhya — Prime Minister's Office, GODL-India"
+      },
+      {
+        "src": "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-04-lg.webp",
         "caption": "Ayodhya — Prime Minister's Office, GODL-India"
       }
     ],
@@ -1811,14 +1807,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "badrinath-kedarnath-yatra-from-haridwar": {
-    "primary": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-02-lg.webp",
+    "primary": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-02-lg.webp",
+        "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
         "caption": "Badrinath — Billjones94, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
+        "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-02-lg.webp",
         "caption": "Badrinath — Billjones94, CC BY-SA 4.0"
       },
       {
@@ -1852,12 +1848,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "badrinath-tour-packages": {
-    "primary": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-03-lg.webp",
+    "primary": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-03-lg.webp",
-        "caption": "Badrinath — Guptaele, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
         "caption": "Badrinath — Billjones94, CC BY-SA 4.0"
@@ -1865,6 +1857,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-02-lg.webp",
         "caption": "Badrinath — Billjones94, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-03-lg.webp",
+        "caption": "Badrinath — Guptaele, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-04-lg.webp",
@@ -1893,12 +1889,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "badrinath": {
-    "primary": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-04-lg.webp",
+    "primary": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-04-lg.webp",
-        "caption": "Badrinath — Guptaele, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
         "caption": "Badrinath — Billjones94, CC BY-SA 4.0"
@@ -1909,6 +1901,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       },
       {
         "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-03-lg.webp",
+        "caption": "Badrinath — Guptaele, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-04-lg.webp",
         "caption": "Badrinath — Guptaele, CC BY-SA 4.0"
       }
     ],
@@ -2071,15 +2067,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "bangalore-tour-packages": {
-    "primary": "/images/location-library/bengaluru-karnataka-india/bengaluru-karnataka-india-02-lg.webp",
+    "primary": "/images/location-library/bengaluru-karnataka-india/bengaluru-karnataka-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/bengaluru-karnataka-india/bengaluru-karnataka-india-02-lg.webp",
-        "caption": "Bengaluru — Ank Kumar, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/bengaluru-karnataka-india/bengaluru-karnataka-india-01-lg.webp",
         "caption": "Bengaluru — Vraj Acharya, WELL Labs, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bengaluru-karnataka-india/bengaluru-karnataka-india-02-lg.webp",
+        "caption": "Bengaluru — Ank Kumar, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/bengaluru-karnataka-india/bengaluru-karnataka-india-03-lg.webp",
@@ -2095,15 +2091,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "bangkok-tour-packages": {
-    "primary": "/images/location-library/bangkok-thailand/bangkok-thailand-02-lg.webp",
+    "primary": "/images/location-library/bangkok-thailand/bangkok-thailand-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/bangkok-thailand/bangkok-thailand-02-lg.webp",
-        "caption": "Bangkok — Don Ramey Logan, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/bangkok-thailand/bangkok-thailand-01-lg.webp",
         "caption": "Bangkok — Basile Morin, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bangkok-thailand/bangkok-thailand-02-lg.webp",
+        "caption": "Bangkok — Don Ramey Logan, CC BY 4.0"
       },
       {
         "src": "/images/location-library/bangkok-thailand/bangkok-thailand-03-lg.webp",
@@ -2119,15 +2115,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "banke-bihari-temple-vrindavan": {
-    "primary": "/images/location-library/vrindavan-uttar-pradesh-india/vrindavan-uttar-pradesh-india-02-lg.webp",
+    "primary": "/images/location-library/vrindavan-uttar-pradesh-india/vrindavan-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/vrindavan-uttar-pradesh-india/vrindavan-uttar-pradesh-india-02-lg.webp",
-        "caption": "Vrindavan — Shikher Singh, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/vrindavan-uttar-pradesh-india/vrindavan-uttar-pradesh-india-01-lg.webp",
         "caption": "Vrindavan — Gannu03, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/vrindavan-uttar-pradesh-india/vrindavan-uttar-pradesh-india-02-lg.webp",
+        "caption": "Vrindavan — Shikher Singh, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/vrindavan-uttar-pradesh-india/vrindavan-uttar-pradesh-india-03-lg.webp",
@@ -2434,15 +2430,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "bhaktapur": {
-    "primary": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-02-lg.webp",
+    "primary": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-02-lg.webp",
-        "caption": "Bhaktapur — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-01-lg.webp",
         "caption": "Bhaktapur — jafsegal (Thanks for the 5 million views), CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-02-lg.webp",
+        "caption": "Bhaktapur — Vyacheslav Argenberg, CC BY 4.0"
       },
       {
         "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-03-lg.webp",
@@ -2506,15 +2502,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "bhopal-tour-packages": {
-    "primary": "/images/location-library/bhopal-madhya-pradesh-india/bhopal-madhya-pradesh-india-02-lg.webp",
+    "primary": "/images/location-library/bhopal-madhya-pradesh-india/bhopal-madhya-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/bhopal-madhya-pradesh-india/bhopal-madhya-pradesh-india-02-lg.webp",
-        "caption": "Bhopal — shivanjan choudhury, by"
-      },
       {
         "src": "/images/location-library/bhopal-madhya-pradesh-india/bhopal-madhya-pradesh-india-01-lg.webp",
         "caption": "Bhopal — Gupta.abhishekm, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bhopal-madhya-pradesh-india/bhopal-madhya-pradesh-india-02-lg.webp",
+        "caption": "Bhopal — shivanjan choudhury, by"
       },
       {
         "src": "/images/location-library/bhopal-madhya-pradesh-india/bhopal-madhya-pradesh-india-03-lg.webp",
@@ -2571,15 +2567,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "bhubaneswar-konark-puri-gopalpur-package": {
-    "primary": "/images/location-library/bhubaneswar-odisha-india/bhubaneswar-odisha-india-02-lg.webp",
+    "primary": "/images/location-library/bhubaneswar-odisha-india/bhubaneswar-odisha-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/bhubaneswar-odisha-india/bhubaneswar-odisha-india-02-lg.webp",
-        "caption": "Bhubaneswar — Krupasindhu Muduli, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/bhubaneswar-odisha-india/bhubaneswar-odisha-india-01-lg.webp",
         "caption": "Bhubaneswar — Joydeep, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bhubaneswar-odisha-india/bhubaneswar-odisha-india-02-lg.webp",
+        "caption": "Bhubaneswar — Krupasindhu Muduli, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/bhubaneswar-odisha-india/bhubaneswar-odisha-india-03-lg.webp",
@@ -2612,12 +2608,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "bhubaneswar-tour-packages": {
-    "primary": "/images/location-library/bhubaneswar-odisha-india/bhubaneswar-odisha-india-03-lg.webp",
+    "primary": "/images/location-library/bhubaneswar-odisha-india/bhubaneswar-odisha-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/bhubaneswar-odisha-india/bhubaneswar-odisha-india-03-lg.webp",
-        "caption": "Bhubaneswar — Billjones94, by-sa"
-      },
       {
         "src": "/images/location-library/bhubaneswar-odisha-india/bhubaneswar-odisha-india-01-lg.webp",
         "caption": "Bhubaneswar — Joydeep, CC BY-SA 4.0"
@@ -2625,6 +2617,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/bhubaneswar-odisha-india/bhubaneswar-odisha-india-02-lg.webp",
         "caption": "Bhubaneswar — Krupasindhu Muduli, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bhubaneswar-odisha-india/bhubaneswar-odisha-india-03-lg.webp",
+        "caption": "Bhubaneswar — Billjones94, by-sa"
       },
       {
         "src": "/images/location-library/bhubaneswar-odisha-india/bhubaneswar-odisha-india-04-lg.webp",
@@ -2660,14 +2656,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "bhutan": {
-    "primary": "/images/location-library/bhutan-international/bhutan-international-02-lg.webp",
+    "primary": "/images/location-library/bhutan-international/bhutan-international-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/bhutan-international/bhutan-international-02-lg.webp",
+        "src": "/images/location-library/bhutan-international/bhutan-international-01-lg.webp",
         "caption": "Bhutan — Bernard Gagnon, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/bhutan-international/bhutan-international-01-lg.webp",
+        "src": "/images/location-library/bhutan-international/bhutan-international-02-lg.webp",
         "caption": "Bhutan — Bernard Gagnon, CC BY-SA 4.0"
       },
       {
@@ -2780,18 +2776,18 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "buddhist-circuit-train-tour": {
-    "primary": "/images/location-library/bodhgaya-bihar-india/bodhgaya-bihar-india-03-lg.webp",
+    "primary": "/images/location-library/bodhgaya-bihar-india/bodhgaya-bihar-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/bodhgaya-bihar-india/bodhgaya-bihar-india-03-lg.webp",
-        "caption": "Bodhgaya — Amitabha Gupta, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/bodhgaya-bihar-india/bodhgaya-bihar-india-01-lg.webp",
         "caption": "Bodhgaya — Amitabha Gupta, CC BY 4.0"
       },
       {
         "src": "/images/location-library/bodhgaya-bihar-india/bodhgaya-bihar-india-02-lg.webp",
+        "caption": "Bodhgaya — Amitabha Gupta, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/bodhgaya-bihar-india/bodhgaya-bihar-india-03-lg.webp",
         "caption": "Bodhgaya — Amitabha Gupta, CC BY 4.0"
       },
       {
@@ -2862,15 +2858,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "buddhist-pilgrimage-tour-packages": {
-    "primary": "/images/location-library/kushinagar-uttar-pradesh-india/kushinagar-uttar-pradesh-india-02-lg.webp",
+    "primary": "/images/location-library/kushinagar-uttar-pradesh-india/kushinagar-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kushinagar-uttar-pradesh-india/kushinagar-uttar-pradesh-india-02-lg.webp",
-        "caption": "Kushinagar — Rangan Datta Wiki, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/kushinagar-uttar-pradesh-india/kushinagar-uttar-pradesh-india-01-lg.webp",
         "caption": "Kushinagar — กิตติ เลขะกุล, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/kushinagar-uttar-pradesh-india/kushinagar-uttar-pradesh-india-02-lg.webp",
+        "caption": "Kushinagar — Rangan Datta Wiki, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/kushinagar-uttar-pradesh-india/kushinagar-uttar-pradesh-india-03-lg.webp",
@@ -3211,12 +3207,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "chardham-tour-packages": {
-    "primary": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-02-lg.webp",
+    "primary": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-02-lg.webp",
-        "caption": "Kedarnath — Paul Hamilton, CC BY-SA 2.0"
-      },
       {
         "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
         "caption": "Badrinath — Billjones94, CC BY-SA 4.0"
@@ -3236,6 +3228,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-01-lg.webp",
         "caption": "Kedarnath — Rohit Sharma, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-02-lg.webp",
+        "caption": "Kedarnath — Paul Hamilton, CC BY-SA 2.0"
       },
       {
         "src": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-03-lg.webp",
@@ -3252,12 +3248,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "chardham-yatra-by-helicopter": {
-    "primary": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-03-lg.webp",
+    "primary": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-03-lg.webp",
-        "caption": "Kedarnath — Paul Hamilton, CC BY-SA 2.0"
-      },
       {
         "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
         "caption": "Badrinath — Billjones94, CC BY-SA 4.0"
@@ -3283,6 +3275,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Kedarnath — Paul Hamilton, CC BY-SA 2.0"
       },
       {
+        "src": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-03-lg.webp",
+        "caption": "Kedarnath — Paul Hamilton, CC BY-SA 2.0"
+      },
+      {
         "src": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-04-lg.webp",
         "caption": "Kedarnath — Photos Worldwide, CC0"
       }
@@ -3293,12 +3289,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "chardham-yatra-from-delhi": {
-    "primary": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-03-lg.webp",
+    "primary": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-03-lg.webp",
-        "caption": "Rishikesh — Dan Searle, CC BY-SA 2.0"
-      },
       {
         "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
         "caption": "Rishikesh — Dorelal Singh, CC BY-SA 3.0"
@@ -3306,6 +3298,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-02-lg.webp",
         "caption": "Rishikesh — Billjones94, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-03-lg.webp",
+        "caption": "Rishikesh — Dan Searle, CC BY-SA 2.0"
       },
       {
         "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-04-lg.webp",
@@ -3375,12 +3371,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "chardham-yatra-package-from-ahmedabad": {
-    "primary": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-04-lg.webp",
+    "primary": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-04-lg.webp",
-        "caption": "Ahmedabad — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-01-lg.webp",
         "caption": "Ahmedabad — Honzasoukup, Public domain"
@@ -3391,6 +3383,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       },
       {
         "src": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-03-lg.webp",
+        "caption": "Ahmedabad — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-04-lg.webp",
         "caption": "Ahmedabad — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
       },
       {
@@ -3416,12 +3412,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "chardham-yatra-package-from-bangalore": {
-    "primary": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-04-lg.webp",
+    "primary": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-04-lg.webp",
-        "caption": "Rishikesh — Travel & Shit from Brighton, UK, CC BY-SA 2.0"
-      },
       {
         "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
         "caption": "Rishikesh — Dorelal Singh, CC BY-SA 3.0"
@@ -3433,6 +3425,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-03-lg.webp",
         "caption": "Rishikesh — Dan Searle, CC BY-SA 2.0"
+      },
+      {
+        "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-04-lg.webp",
+        "caption": "Rishikesh — Travel & Shit from Brighton, UK, CC BY-SA 2.0"
       },
       {
         "src": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-01-lg.webp",
@@ -3457,14 +3453,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "chardham-yatra-package-from-dehradun": {
-    "primary": "/images/location-library/dehradun-uttarakhand-india/dehradun-uttarakhand-india-02-lg.webp",
+    "primary": "/images/location-library/dehradun-uttarakhand-india/dehradun-uttarakhand-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/dehradun-uttarakhand-india/dehradun-uttarakhand-india-02-lg.webp",
+        "src": "/images/location-library/dehradun-uttarakhand-india/dehradun-uttarakhand-india-01-lg.webp",
         "caption": "Dehradun — Paul Hamilton, CC BY-SA 2.0"
       },
       {
-        "src": "/images/location-library/dehradun-uttarakhand-india/dehradun-uttarakhand-india-01-lg.webp",
+        "src": "/images/location-library/dehradun-uttarakhand-india/dehradun-uttarakhand-india-02-lg.webp",
         "caption": "Dehradun — Paul Hamilton, CC BY-SA 2.0"
       },
       {
@@ -3498,18 +3494,18 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "chardham-yatra-package-from-kolkata": {
-    "primary": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-03-lg.webp",
+    "primary": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-03-lg.webp",
-        "caption": "Yamunotri — Paul Hamilton, by-sa"
-      },
       {
         "src": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-01-lg.webp",
         "caption": "Yamunotri — AaS, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-02-lg.webp",
+        "caption": "Yamunotri — Paul Hamilton, by-sa"
+      },
+      {
+        "src": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-03-lg.webp",
         "caption": "Yamunotri — Paul Hamilton, by-sa"
       },
       {
@@ -3539,12 +3535,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "chardham-yatra-package-from-mumbai": {
-    "primary": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-04-lg.webp",
+    "primary": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-04-lg.webp",
-        "caption": "Yamunotri — Paul Hamilton, by-sa"
-      },
       {
         "src": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-01-lg.webp",
         "caption": "Yamunotri — AaS, CC BY-SA 4.0"
@@ -3555,6 +3547,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       },
       {
         "src": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-03-lg.webp",
+        "caption": "Yamunotri — Paul Hamilton, by-sa"
+      },
+      {
+        "src": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-04-lg.webp",
         "caption": "Yamunotri — Paul Hamilton, by-sa"
       },
       {
@@ -3621,15 +3617,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "chardham-yatra-package-from-pune": {
-    "primary": "/images/location-library/pune-maharashtra-india/pune-maharashtra-india-02-lg.webp",
+    "primary": "/images/location-library/pune-maharashtra-india/pune-maharashtra-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/pune-maharashtra-india/pune-maharashtra-india-02-lg.webp",
-        "caption": "Pune — Dilip Somani, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/pune-maharashtra-india/pune-maharashtra-india-01-lg.webp",
         "caption": "Pune — Udaykumar PR, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/pune-maharashtra-india/pune-maharashtra-india-02-lg.webp",
+        "caption": "Pune — Dilip Somani, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/pune-maharashtra-india/pune-maharashtra-india-03-lg.webp",
@@ -3662,12 +3658,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "chardham-yatra-package-from-rishikesh": {
-    "primary": "/images/location-library/guptkashi-uttarakhand-india/guptkashi-uttarakhand-india-02-lg.webp",
+    "primary": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/guptkashi-uttarakhand-india/guptkashi-uttarakhand-india-02-lg.webp",
-        "caption": "Guptkashi — James St. John, CC BY 2.0"
-      },
       {
         "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
         "caption": "Rishikesh — Dorelal Singh, CC BY-SA 3.0"
@@ -3689,6 +3681,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Guptkashi — James St. John, CC BY 2.0"
       },
       {
+        "src": "/images/location-library/guptkashi-uttarakhand-india/guptkashi-uttarakhand-india-02-lg.webp",
+        "caption": "Guptkashi — James St. John, CC BY 2.0"
+      },
+      {
         "src": "/images/location-library/guptkashi-uttarakhand-india/guptkashi-uttarakhand-india-03-lg.webp",
         "caption": "Guptkashi — James St. John, CC BY 2.0"
       },
@@ -3703,12 +3699,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "chardham-yatra-package-from-surat": {
-    "primary": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-02-lg.webp",
+    "primary": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-02-lg.webp",
-        "caption": "Yamunotri — Paul Hamilton, by-sa"
-      },
       {
         "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
         "caption": "Rishikesh — Dorelal Singh, CC BY-SA 3.0"
@@ -3728,6 +3720,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-01-lg.webp",
         "caption": "Yamunotri — AaS, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-02-lg.webp",
+        "caption": "Yamunotri — Paul Hamilton, by-sa"
       },
       {
         "src": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-03-lg.webp",
@@ -3932,15 +3928,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "chennai-tour-packages": {
-    "primary": "/images/location-library/chennai-tamil-nadu-india/chennai-tamil-nadu-india-02-lg.webp",
+    "primary": "/images/location-library/chennai-tamil-nadu-india/chennai-tamil-nadu-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/chennai-tamil-nadu-india/chennai-tamil-nadu-india-02-lg.webp",
-        "caption": "Chennai — Timothy A. Gonsalves, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/chennai-tamil-nadu-india/chennai-tamil-nadu-india-01-lg.webp",
         "caption": "Chennai — Helppublic, by-sa"
+      },
+      {
+        "src": "/images/location-library/chennai-tamil-nadu-india/chennai-tamil-nadu-india-02-lg.webp",
+        "caption": "Chennai — Timothy A. Gonsalves, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/chennai-tamil-nadu-india/chennai-tamil-nadu-india-03-lg.webp",
@@ -3996,12 +3992,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "chini-ka-rauza": {
-    "primary": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-01-crop1-lg.webp",
-        "caption": "Agra — Yann ( talk ), CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-01-lg.webp",
         "caption": "Agra — Yann ( talk ), CC BY-SA 4.0"
@@ -4356,12 +4348,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "corbett-nainital-weekend": {
-    "primary": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-03-lg.webp",
+    "primary": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-03-lg.webp",
-        "caption": "Nainital — Photographer Praveen Singh Bisht, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-01-lg.webp",
         "caption": "Nainital — Didier Descouens, CC BY-SA 4.0"
@@ -4369,6 +4357,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-02-lg.webp",
         "caption": "Nainital — Vib.hu, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-03-lg.webp",
+        "caption": "Nainital — Photographer Praveen Singh Bisht, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-04-lg.webp",
@@ -4462,14 +4454,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "dalhousie-tour-packages": {
-    "primary": "/images/location-library/dalhousie-himachal-pradesh-india/dalhousie-himachal-pradesh-india-02-lg.webp",
+    "primary": "/images/location-library/dalhousie-himachal-pradesh-india/dalhousie-himachal-pradesh-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/dalhousie-himachal-pradesh-india/dalhousie-himachal-pradesh-india-02-lg.webp",
+        "src": "/images/location-library/dalhousie-himachal-pradesh-india/dalhousie-himachal-pradesh-india-01-lg.webp",
         "caption": "Dalhousie — Piyush Tripathi, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/dalhousie-himachal-pradesh-india/dalhousie-himachal-pradesh-india-01-lg.webp",
+        "src": "/images/location-library/dalhousie-himachal-pradesh-india/dalhousie-himachal-pradesh-india-02-lg.webp",
         "caption": "Dalhousie — Piyush Tripathi, CC BY-SA 4.0"
       },
       {
@@ -4486,14 +4478,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "darjeeling-gangtok-tour": {
-    "primary": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-02-lg.webp",
+    "primary": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-02-lg.webp",
+        "src": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-01-lg.webp",
         "caption": "Darjeeling — Didier Descouens, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-01-lg.webp",
+        "src": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-02-lg.webp",
         "caption": "Darjeeling — Didier Descouens, CC BY-SA 4.0"
       },
       {
@@ -4527,12 +4519,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "darjeeling-heritage-tour": {
-    "primary": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-03-lg.webp",
+    "primary": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-03-lg.webp",
-        "caption": "Darjeeling — Didier Descouens, by-sa"
-      },
       {
         "src": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-01-lg.webp",
         "caption": "Darjeeling — Didier Descouens, CC BY-SA 4.0"
@@ -4540,6 +4528,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-02-lg.webp",
         "caption": "Darjeeling — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-03-lg.webp",
+        "caption": "Darjeeling — Didier Descouens, by-sa"
       },
       {
         "src": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-04-lg.webp",
@@ -4551,12 +4543,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "darjeeling-honeymoon-package": {
-    "primary": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-04-lg.webp",
+    "primary": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-04-lg.webp",
-        "caption": "Darjeeling — Shahnoor Habib Munmun, by"
-      },
       {
         "src": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-01-lg.webp",
         "caption": "Darjeeling — Didier Descouens, CC BY-SA 4.0"
@@ -4568,6 +4556,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-03-lg.webp",
         "caption": "Darjeeling — Didier Descouens, by-sa"
+      },
+      {
+        "src": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-04-lg.webp",
+        "caption": "Darjeeling — Shahnoor Habib Munmun, by"
       }
     ],
     "locations": [
@@ -4575,12 +4567,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "darjeeling-kalimpong-gangtok": {
-    "primary": "/images/location-library/kalimpong-west-bengal-india/kalimpong-west-bengal-india-01-lg.webp",
+    "primary": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kalimpong-west-bengal-india/kalimpong-west-bengal-india-01-lg.webp",
-        "caption": "Kalimpong — Biswajit Majumdar, CC BY-SA 3.0"
-      },
       {
         "src": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-01-lg.webp",
         "caption": "Darjeeling — Didier Descouens, CC BY-SA 4.0"
@@ -4596,6 +4584,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-04-lg.webp",
         "caption": "Darjeeling — Shahnoor Habib Munmun, by"
+      },
+      {
+        "src": "/images/location-library/kalimpong-west-bengal-india/kalimpong-west-bengal-india-01-lg.webp",
+        "caption": "Kalimpong — Biswajit Majumdar, CC BY-SA 3.0"
       },
       {
         "src": "/images/location-library/kalimpong-west-bengal-india/kalimpong-west-bengal-india-02-lg.webp",
@@ -4616,12 +4608,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "darjeeling-tour-packages": {
-    "primary": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-01-crop1-lg.webp",
-        "caption": "Darjeeling — Didier Descouens, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-01-lg.webp",
         "caption": "Darjeeling — Didier Descouens, CC BY-SA 4.0"
@@ -4644,12 +4632,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "darjeeling": {
-    "primary": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-02-crop1-lg.webp",
+    "primary": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-02-crop1-lg.webp",
-        "caption": "Darjeeling — Didier Descouens, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-01-lg.webp",
         "caption": "Darjeeling — Didier Descouens, CC BY-SA 4.0"
@@ -4672,12 +4656,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "dehradun-tour-packages": {
-    "primary": "/images/location-library/dehradun-uttarakhand-india/dehradun-uttarakhand-india-03-lg.webp",
+    "primary": "/images/location-library/dehradun-uttarakhand-india/dehradun-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/dehradun-uttarakhand-india/dehradun-uttarakhand-india-03-lg.webp",
-        "caption": "Dehradun — Daniel Romanson, CC0"
-      },
       {
         "src": "/images/location-library/dehradun-uttarakhand-india/dehradun-uttarakhand-india-01-lg.webp",
         "caption": "Dehradun — Paul Hamilton, CC BY-SA 2.0"
@@ -4685,6 +4665,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/dehradun-uttarakhand-india/dehradun-uttarakhand-india-02-lg.webp",
         "caption": "Dehradun — Paul Hamilton, CC BY-SA 2.0"
+      },
+      {
+        "src": "/images/location-library/dehradun-uttarakhand-india/dehradun-uttarakhand-india-03-lg.webp",
+        "caption": "Dehradun — Daniel Romanson, CC0"
       },
       {
         "src": "/images/location-library/dehradun-uttarakhand-india/dehradun-uttarakhand-india-04-lg.webp",
@@ -4696,12 +4680,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "dehradun": {
-    "primary": "/images/location-library/dehradun-uttarakhand-india/dehradun-uttarakhand-india-04-lg.webp",
+    "primary": "/images/location-library/dehradun-uttarakhand-india/dehradun-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/dehradun-uttarakhand-india/dehradun-uttarakhand-india-04-lg.webp",
-        "caption": "Dehradun — Daniel Romanson, CC0"
-      },
       {
         "src": "/images/location-library/dehradun-uttarakhand-india/dehradun-uttarakhand-india-01-lg.webp",
         "caption": "Dehradun — Paul Hamilton, CC BY-SA 2.0"
@@ -4713,6 +4693,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/dehradun-uttarakhand-india/dehradun-uttarakhand-india-03-lg.webp",
         "caption": "Dehradun — Daniel Romanson, CC0"
+      },
+      {
+        "src": "/images/location-library/dehradun-uttarakhand-india/dehradun-uttarakhand-india-04-lg.webp",
+        "caption": "Dehradun — Daniel Romanson, CC0"
       }
     ],
     "locations": [
@@ -4720,12 +4704,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "delhi-agra-tour-package": {
-    "primary": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-02-lg.webp",
+    "primary": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-02-lg.webp",
-        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-01-lg.webp",
         "caption": "Agra — Yann ( talk ), CC BY-SA 4.0"
@@ -4747,6 +4727,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
       },
       {
+        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-02-lg.webp",
+        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
+      },
+      {
         "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-03-lg.webp",
         "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
       },
@@ -4761,15 +4745,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "delhi-sightseeing-tour": {
-    "primary": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-02-lg.webp",
+    "primary": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-02-lg.webp",
-        "caption": "Delhi — Burn & Trauma Research Center, CC BY-SA 3.0"
-      },
       {
         "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-01-lg.webp",
         "caption": "Delhi — Ravi Dwivedi, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-02-lg.webp",
+        "caption": "Delhi — Burn & Trauma Research Center, CC BY-SA 3.0"
       },
       {
         "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-03-lg.webp",
@@ -4785,12 +4769,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "delhi-tour-packages": {
-    "primary": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-03-lg.webp",
+    "primary": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-03-lg.webp",
-        "caption": "Delhi — Santulan Mahanta from Golaghat (GLGT), Guwahati (GHY), Lucknow (LKO), New Delhi (NDLS), INDIA, CC BY 2.0"
-      },
       {
         "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-01-lg.webp",
         "caption": "Delhi — Ravi Dwivedi, CC BY-SA 4.0"
@@ -4798,6 +4778,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-02-lg.webp",
         "caption": "Delhi — Burn & Trauma Research Center, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-03-lg.webp",
+        "caption": "Delhi — Santulan Mahanta from Golaghat (GLGT), Guwahati (GHY), Lucknow (LKO), New Delhi (NDLS), INDIA, CC BY 2.0"
       },
       {
         "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-04-lg.webp",
@@ -4809,12 +4793,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "delhi-weekend-getaways": {
-    "primary": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-04-lg.webp",
+    "primary": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-04-lg.webp",
-        "caption": "Delhi — Swati Daftuar, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-01-lg.webp",
         "caption": "Delhi — Ravi Dwivedi, CC BY-SA 4.0"
@@ -4826,6 +4806,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-03-lg.webp",
         "caption": "Delhi — Santulan Mahanta from Golaghat (GLGT), Guwahati (GHY), Lucknow (LKO), New Delhi (NDLS), INDIA, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-04-lg.webp",
+        "caption": "Delhi — Swati Daftuar, CC BY-SA 4.0"
       }
     ],
     "locations": [
@@ -4833,12 +4817,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "delhi": {
-    "primary": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-01-crop1-lg.webp",
-        "caption": "Delhi — Ravi Dwivedi, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-01-lg.webp",
         "caption": "Delhi — Ravi Dwivedi, CC BY-SA 4.0"
@@ -4861,14 +4841,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "desert-beach-tour-of-gujarat": {
-    "primary": "/images/location-library/gujarat-india/gujarat-india-02-lg.webp",
+    "primary": "/images/location-library/gujarat-india/gujarat-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/gujarat-india/gujarat-india-02-lg.webp",
+        "src": "/images/location-library/gujarat-india/gujarat-india-01-lg.webp",
         "caption": "Gujarat — Yann Forget, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/gujarat-india/gujarat-india-01-lg.webp",
+        "src": "/images/location-library/gujarat-india/gujarat-india-02-lg.webp",
         "caption": "Gujarat — Yann Forget, CC BY-SA 4.0"
       },
       {
@@ -4926,15 +4906,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "dharamshala-weekend-tour": {
-    "primary": "/images/location-library/dharamshala-himachal-pradesh-india/dharamshala-himachal-pradesh-india-02-lg.webp",
+    "primary": "/images/location-library/dharamshala-himachal-pradesh-india/dharamshala-himachal-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/dharamshala-himachal-pradesh-india/dharamshala-himachal-pradesh-india-02-lg.webp",
-        "caption": "Dharamshala — Aapar singh, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/dharamshala-himachal-pradesh-india/dharamshala-himachal-pradesh-india-01-lg.webp",
         "caption": "Dharamshala — Jamamasjid,Dharamshala,HimachalPradesh,India, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/dharamshala-himachal-pradesh-india/dharamshala-himachal-pradesh-india-02-lg.webp",
+        "caption": "Dharamshala — Aapar singh, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/dharamshala-himachal-pradesh-india/dharamshala-himachal-pradesh-india-03-lg.webp",
@@ -4950,15 +4930,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "discover-majestic-rajasthan": {
-    "primary": "/images/location-library/rajasthan-india/rajasthan-india-02-lg.webp",
+    "primary": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/rajasthan-india/rajasthan-india-02-lg.webp",
-        "caption": "Rajasthan — Hirumon, CC BY 3.0"
-      },
       {
         "src": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
         "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-02-lg.webp",
+        "caption": "Rajasthan — Hirumon, CC BY 3.0"
       },
       {
         "src": "/images/location-library/rajasthan-india/rajasthan-india-03-lg.webp",
@@ -4991,12 +4971,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "do-dham-tour-packages": {
-    "primary": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-04-lg.webp",
+    "primary": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-04-lg.webp",
-        "caption": "Kedarnath — Photos Worldwide, CC0"
-      },
       {
         "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
         "caption": "Badrinath — Billjones94, CC BY-SA 4.0"
@@ -5024,6 +5000,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-03-lg.webp",
         "caption": "Kedarnath — Paul Hamilton, CC BY-SA 2.0"
+      },
+      {
+        "src": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-04-lg.webp",
+        "caption": "Kedarnath — Photos Worldwide, CC0"
       }
     ],
     "locations": [
@@ -5032,12 +5012,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "do-dham-yatra-by-helicopter": {
-    "primary": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-02-crop1-lg.webp",
+    "primary": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-02-crop1-lg.webp",
-        "caption": "Badrinath — Billjones94, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
         "caption": "Badrinath — Billjones94, CC BY-SA 4.0"
@@ -5077,12 +5053,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "do-dham-yatra-gangotri-yamunotri": {
-    "primary": "/images/location-library/gangotri-uttarakhand-india/gangotri-uttarakhand-india-04-lg.webp",
+    "primary": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/gangotri-uttarakhand-india/gangotri-uttarakhand-india-04-lg.webp",
-        "caption": "Gangotri — European Space Agency, CC BY-SA 3.0 igo"
-      },
       {
         "src": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-01-lg.webp",
         "caption": "Yamunotri — AaS, CC BY-SA 4.0"
@@ -5110,6 +5082,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/gangotri-uttarakhand-india/gangotri-uttarakhand-india-03-lg.webp",
         "caption": "Gangotri — Surajit Das, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/gangotri-uttarakhand-india/gangotri-uttarakhand-india-04-lg.webp",
+        "caption": "Gangotri — European Space Agency, CC BY-SA 3.0 igo"
       }
     ],
     "locations": [
@@ -5118,15 +5094,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "dubai-tour-packages": {
-    "primary": "/images/location-library/dubai-uae/dubai-uae-02-lg.webp",
+    "primary": "/images/location-library/dubai-uae/dubai-uae-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/dubai-uae/dubai-uae-02-lg.webp",
-        "caption": "Dubai — Stefano Vigorelli, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/dubai-uae/dubai-uae-01-lg.webp",
         "caption": "Dubai — Donaldytong, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/dubai-uae/dubai-uae-02-lg.webp",
+        "caption": "Dubai — Stefano Vigorelli, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/dubai-uae/dubai-uae-03-lg.webp",
@@ -5142,18 +5118,18 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "dwarka-somnath-gir-diu-tour": {
-    "primary": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-03-lg.webp",
+    "primary": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-03-lg.webp",
-        "caption": "Somnath — TeshTesh, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-01-lg.webp",
         "caption": "Somnath — TeshTesh, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-02-lg.webp",
+        "caption": "Somnath — TeshTesh, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-03-lg.webp",
         "caption": "Somnath — TeshTesh, CC BY-SA 4.0"
       },
       {
@@ -5183,12 +5159,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "dwarka-somnath-tour-from-ahmedabad": {
-    "primary": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-02-lg.webp",
+    "primary": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-02-lg.webp",
-        "caption": "Somnath — TeshTesh, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-01-lg.webp",
         "caption": "Ahmedabad — Honzasoukup, Public domain"
@@ -5210,6 +5182,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Somnath — TeshTesh, CC BY-SA 4.0"
       },
       {
+        "src": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-02-lg.webp",
+        "caption": "Somnath — TeshTesh, CC BY-SA 4.0"
+      },
+      {
         "src": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-03-lg.webp",
         "caption": "Somnath — TeshTesh, CC BY-SA 4.0"
       },
@@ -5224,12 +5200,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "dwarka-somnath-tour": {
-    "primary": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-04-lg.webp",
+    "primary": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-04-lg.webp",
-        "caption": "Somnath — TeshTesh, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-01-lg.webp",
         "caption": "Somnath — TeshTesh, CC BY-SA 4.0"
@@ -5240,6 +5212,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       },
       {
         "src": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-03-lg.webp",
+        "caption": "Somnath — TeshTesh, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-04-lg.webp",
         "caption": "Somnath — TeshTesh, CC BY-SA 4.0"
       },
       {
@@ -5306,14 +5282,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "dwarka": {
-    "primary": "/images/location-library/dwarka-gujarat-india/dwarka-gujarat-india-02-lg.webp",
+    "primary": "/images/location-library/dwarka-gujarat-india/dwarka-gujarat-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/dwarka-gujarat-india/dwarka-gujarat-india-02-lg.webp",
+        "src": "/images/location-library/dwarka-gujarat-india/dwarka-gujarat-india-01-lg.webp",
         "caption": "Dwarka — Emmanuel DYAN from Paris, France, CC BY 2.0"
       },
       {
-        "src": "/images/location-library/dwarka-gujarat-india/dwarka-gujarat-india-01-lg.webp",
+        "src": "/images/location-library/dwarka-gujarat-india/dwarka-gujarat-india-02-lg.webp",
         "caption": "Dwarka — Emmanuel DYAN from Paris, France, CC BY 2.0"
       },
       {
@@ -5583,18 +5559,18 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "enchanting-kerala": {
-    "primary": "/images/location-library/kerala-india/kerala-india-03-lg.webp",
+    "primary": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kerala-india/kerala-india-03-lg.webp",
-        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
         "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
       },
       {
         "src": "/images/location-library/kerala-india/kerala-india-02-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-03-lg.webp",
         "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
       },
       {
@@ -5607,12 +5583,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "enchanting-orissa-tour": {
-    "primary": "/images/location-library/bhubaneswar-odisha-india/bhubaneswar-odisha-india-04-lg.webp",
+    "primary": "/images/location-library/bhubaneswar-odisha-india/bhubaneswar-odisha-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/bhubaneswar-odisha-india/bhubaneswar-odisha-india-04-lg.webp",
-        "caption": "Bhubaneswar — Subhashish Panigrahi, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/bhubaneswar-odisha-india/bhubaneswar-odisha-india-01-lg.webp",
         "caption": "Bhubaneswar — Joydeep, CC BY-SA 4.0"
@@ -5624,6 +5596,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/bhubaneswar-odisha-india/bhubaneswar-odisha-india-03-lg.webp",
         "caption": "Bhubaneswar — Billjones94, by-sa"
+      },
+      {
+        "src": "/images/location-library/bhubaneswar-odisha-india/bhubaneswar-odisha-india-04-lg.webp",
+        "caption": "Bhubaneswar — Subhashish Panigrahi, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/chandragiri-odisha-india/chandragiri-odisha-india-01-lg.webp",
@@ -5807,12 +5783,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "explore-gujarat": {
-    "primary": "/images/location-library/gujarat-india/gujarat-india-03-lg.webp",
+    "primary": "/images/location-library/gujarat-india/gujarat-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/gujarat-india/gujarat-india-03-lg.webp",
-        "caption": "Gujarat — Brihaspati, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/gujarat-india/gujarat-india-01-lg.webp",
         "caption": "Gujarat — Yann Forget, CC BY-SA 4.0"
@@ -5820,6 +5792,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/gujarat-india/gujarat-india-02-lg.webp",
         "caption": "Gujarat — Yann Forget, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/gujarat-india/gujarat-india-03-lg.webp",
+        "caption": "Gujarat — Brihaspati, CC BY 4.0"
       },
       {
         "src": "/images/location-library/gujarat-india/gujarat-india-04-lg.webp",
@@ -5889,12 +5865,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "fascinating-himachal": {
-    "primary": "/images/location-library/rohtang-pass-himachal-pradesh-india/rohtang-pass-himachal-pradesh-india-03-lg.webp",
+    "primary": "/images/location-library/rohtang-pass-himachal-pradesh-india/rohtang-pass-himachal-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/rohtang-pass-himachal-pradesh-india/rohtang-pass-himachal-pradesh-india-03-lg.webp",
-        "caption": "Rohtang Pass — Ajisi, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/rohtang-pass-himachal-pradesh-india/rohtang-pass-himachal-pradesh-india-01-lg.webp",
         "caption": "Rohtang Pass — Maxzameer, CC BY-SA 4.0"
@@ -5902,6 +5874,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/rohtang-pass-himachal-pradesh-india/rohtang-pass-himachal-pradesh-india-02-lg.webp",
         "caption": "Rohtang Pass — B Balaji from Chennai, India, CC0"
+      },
+      {
+        "src": "/images/location-library/rohtang-pass-himachal-pradesh-india/rohtang-pass-himachal-pradesh-india-03-lg.webp",
+        "caption": "Rohtang Pass — Ajisi, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/rohtang-pass-himachal-pradesh-india/rohtang-pass-himachal-pradesh-india-04-lg.webp",
@@ -5930,12 +5906,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "fascinating-kerala": {
-    "primary": "/images/location-library/kerala-india/kerala-india-04-lg.webp",
+    "primary": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kerala-india/kerala-india-04-lg.webp",
-        "caption": "Kerala — Vengolis, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
         "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
@@ -5947,6 +5919,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/kerala-india/kerala-india-03-lg.webp",
         "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kerala-india/kerala-india-04-lg.webp",
+        "caption": "Kerala — Vengolis, CC BY-SA 4.0"
       }
     ],
     "locations": [
@@ -6019,14 +5995,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "footsteps-of-buddha-1": {
-    "primary": "/images/location-library/aurangabad-maharashtra-india/aurangabad-maharashtra-india-02-lg.webp",
+    "primary": "/images/location-library/aurangabad-maharashtra-india/aurangabad-maharashtra-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/aurangabad-maharashtra-india/aurangabad-maharashtra-india-02-lg.webp",
+        "src": "/images/location-library/aurangabad-maharashtra-india/aurangabad-maharashtra-india-01-lg.webp",
         "caption": "Aurangabad — Didier Descouens, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/aurangabad-maharashtra-india/aurangabad-maharashtra-india-01-lg.webp",
+        "src": "/images/location-library/aurangabad-maharashtra-india/aurangabad-maharashtra-india-02-lg.webp",
         "caption": "Aurangabad — Didier Descouens, CC BY-SA 4.0"
       },
       {
@@ -6060,12 +6036,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "forts-palaces-tour-rajasthan": {
-    "primary": "/images/location-library/rajasthan-india/rajasthan-india-03-lg.webp",
+    "primary": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/rajasthan-india/rajasthan-india-03-lg.webp",
-        "caption": "Rajasthan — Ihsanwayfarer, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
         "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
@@ -6073,6 +6045,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/rajasthan-india/rajasthan-india-02-lg.webp",
         "caption": "Rajasthan — Hirumon, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-03-lg.webp",
+        "caption": "Rajasthan — Ihsanwayfarer, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/rajasthan-india/rajasthan-india-04-lg.webp",
@@ -6149,12 +6125,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "gandhi-smriti-delhi": {
-    "primary": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-02-crop1-lg.webp",
+    "primary": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-02-crop1-lg.webp",
-        "caption": "Delhi — Burn & Trauma Research Center, CC BY-SA 3.0"
-      },
       {
         "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-01-lg.webp",
         "caption": "Delhi — Ravi Dwivedi, CC BY-SA 4.0"
@@ -6218,14 +6190,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "ganges-northern-india": {
-    "primary": "/images/location-library/khajuraho-madhya-pradesh-india/khajuraho-madhya-pradesh-india-02-lg.webp",
+    "primary": "/images/location-library/khajuraho-madhya-pradesh-india/khajuraho-madhya-pradesh-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/khajuraho-madhya-pradesh-india/khajuraho-madhya-pradesh-india-02-lg.webp",
+        "src": "/images/location-library/khajuraho-madhya-pradesh-india/khajuraho-madhya-pradesh-india-01-lg.webp",
         "caption": "Khajuraho — WarmaFiesta, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/khajuraho-madhya-pradesh-india/khajuraho-madhya-pradesh-india-01-lg.webp",
+        "src": "/images/location-library/khajuraho-madhya-pradesh-india/khajuraho-madhya-pradesh-india-02-lg.webp",
         "caption": "Khajuraho — WarmaFiesta, CC BY-SA 4.0"
       },
       {
@@ -6300,14 +6272,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "gangotri": {
-    "primary": "/images/location-library/gangotri-uttarakhand-india/gangotri-uttarakhand-india-02-lg.webp",
+    "primary": "/images/location-library/gangotri-uttarakhand-india/gangotri-uttarakhand-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/gangotri-uttarakhand-india/gangotri-uttarakhand-india-02-lg.webp",
+        "src": "/images/location-library/gangotri-uttarakhand-india/gangotri-uttarakhand-india-01-lg.webp",
         "caption": "Gangotri — Surajit Das, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/gangotri-uttarakhand-india/gangotri-uttarakhand-india-01-lg.webp",
+        "src": "/images/location-library/gangotri-uttarakhand-india/gangotri-uttarakhand-india-02-lg.webp",
         "caption": "Gangotri — Surajit Das, CC BY-SA 4.0"
       },
       {
@@ -6430,14 +6402,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "gaya": {
-    "primary": "/images/location-library/gaya-bihar-india/gaya-bihar-india-02-lg.webp",
+    "primary": "/images/location-library/gaya-bihar-india/gaya-bihar-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/gaya-bihar-india/gaya-bihar-india-02-lg.webp",
+        "src": "/images/location-library/gaya-bihar-india/gaya-bihar-india-01-lg.webp",
         "caption": "Gaya — Amitabha Gupta, CC BY 4.0"
       },
       {
-        "src": "/images/location-library/gaya-bihar-india/gaya-bihar-india-01-lg.webp",
+        "src": "/images/location-library/gaya-bihar-india/gaya-bihar-india-02-lg.webp",
         "caption": "Gaya — Amitabha Gupta, CC BY 4.0"
       },
       {
@@ -6454,12 +6426,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "glimpses-of-assam": {
-    "primary": "/images/location-library/assam-india/assam-india-03-lg.webp",
+    "primary": "/images/location-library/assam-india/assam-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/assam-india/assam-india-03-lg.webp",
-        "caption": "Assam — Timothy A. Gonsalves, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/assam-india/assam-india-01-lg.webp",
         "caption": "Assam — Didier Descouens, CC BY-SA 4.0"
@@ -6467,6 +6435,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/assam-india/assam-india-02-lg.webp",
         "caption": "Assam — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/assam-india/assam-india-03-lg.webp",
+        "caption": "Assam — Timothy A. Gonsalves, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/assam-india/assam-india-04-lg.webp",
@@ -6495,15 +6467,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "goa-tour-package-5-days": {
-    "primary": "/images/location-library/goa-india/goa-india-02-lg.webp",
+    "primary": "/images/location-library/goa-india/goa-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/goa-india/goa-india-02-lg.webp",
-        "caption": "Goa — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/goa-india/goa-india-01-lg.webp",
         "caption": "Goa — Original: Vyacheslav Argenberg Derivative work: UnpetitproleX, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/goa-india/goa-india-02-lg.webp",
+        "caption": "Goa — Vyacheslav Argenberg, CC BY 4.0"
       },
       {
         "src": "/images/location-library/goa-india/goa-india-03-lg.webp",
@@ -6519,18 +6491,18 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "goa-tour-packages": {
-    "primary": "/images/location-library/goa-india/goa-india-03-lg.webp",
+    "primary": "/images/location-library/goa-india/goa-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/goa-india/goa-india-03-lg.webp",
-        "caption": "Goa — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/goa-india/goa-india-01-lg.webp",
         "caption": "Goa — Original: Vyacheslav Argenberg Derivative work: UnpetitproleX, CC BY 4.0"
       },
       {
         "src": "/images/location-library/goa-india/goa-india-02-lg.webp",
+        "caption": "Goa — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/goa-india/goa-india-03-lg.webp",
         "caption": "Goa — Vyacheslav Argenberg, CC BY 4.0"
       },
       {
@@ -6560,12 +6532,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "goa-weekend-trip": {
-    "primary": "/images/location-library/goa-india/goa-india-04-lg.webp",
+    "primary": "/images/location-library/goa-india/goa-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/goa-india/goa-india-04-lg.webp",
-        "caption": "Goa — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/goa-india/goa-india-01-lg.webp",
         "caption": "Goa — Original: Vyacheslav Argenberg Derivative work: UnpetitproleX, CC BY 4.0"
@@ -6576,6 +6544,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       },
       {
         "src": "/images/location-library/goa-india/goa-india-03-lg.webp",
+        "caption": "Goa — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/goa-india/goa-india-04-lg.webp",
         "caption": "Goa — Vyacheslav Argenberg, CC BY 4.0"
       },
       {
@@ -6601,12 +6573,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "goa": {
-    "primary": "/images/location-library/goa-india/goa-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/goa-india/goa-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/goa-india/goa-india-01-crop1-lg.webp",
-        "caption": "Goa — Original: Vyacheslav Argenberg Derivative work: UnpetitproleX, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/goa-india/goa-india-01-lg.webp",
         "caption": "Goa — Original: Vyacheslav Argenberg Derivative work: UnpetitproleX, CC BY 4.0"
@@ -6629,12 +6597,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "golden-triangle-sea-side-tour": {
-    "primary": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-03-crop1-lg.webp",
+    "primary": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-03-crop1-lg.webp",
-        "caption": "Delhi — Santulan Mahanta from Golaghat (GLGT), Guwahati (GHY), Lucknow (LKO), New Delhi (NDLS), INDIA, CC BY 2.0"
-      },
       {
         "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-01-lg.webp",
         "caption": "Delhi — Ravi Dwivedi, CC BY-SA 4.0"
@@ -6657,12 +6621,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "golden-triangle-sea-side": {
-    "primary": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-04-lg.webp",
+    "primary": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-04-lg.webp",
-        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-01-lg.webp",
         "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
@@ -6673,6 +6633,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       },
       {
         "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-03-lg.webp",
+        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-04-lg.webp",
         "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
       },
       {
@@ -6698,12 +6662,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "golden-triangle-tour-5-days": {
-    "primary": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-01-crop1-lg.webp",
-        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-01-lg.webp",
         "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
@@ -6743,12 +6703,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "golden-triangle-tour": {
-    "primary": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-02-crop1-lg.webp",
+    "primary": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-02-crop1-lg.webp",
-        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-01-lg.webp",
         "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
@@ -6788,12 +6744,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "grand-gujarat-tour": {
-    "primary": "/images/location-library/gujarat-india/gujarat-india-04-lg.webp",
+    "primary": "/images/location-library/gujarat-india/gujarat-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/gujarat-india/gujarat-india-04-lg.webp",
-        "caption": "Gujarat — Bernard Gagnon, CC BY-SA 3.0"
-      },
       {
         "src": "/images/location-library/gujarat-india/gujarat-india-01-lg.webp",
         "caption": "Gujarat — Yann Forget, CC BY-SA 4.0"
@@ -6805,6 +6757,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/gujarat-india/gujarat-india-03-lg.webp",
         "caption": "Gujarat — Brihaspati, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/gujarat-india/gujarat-india-04-lg.webp",
+        "caption": "Gujarat — Bernard Gagnon, CC BY-SA 3.0"
       },
       {
         "src": "/images/location-library/gir-national-park-gujarat/gir-national-park-gujarat-01-lg.webp",
@@ -6829,12 +6785,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "gujarat-dekho": {
-    "primary": "/images/location-library/gujarat-india/gujarat-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/gujarat-india/gujarat-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/gujarat-india/gujarat-india-01-crop1-lg.webp",
-        "caption": "Gujarat — Yann Forget, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/gujarat-india/gujarat-india-01-lg.webp",
         "caption": "Gujarat — Yann Forget, CC BY-SA 4.0"
@@ -6915,12 +6867,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "gujarat-fairs-festivals": {
-    "primary": "/images/location-library/gujarat-india/gujarat-india-02-crop1-lg.webp",
+    "primary": "/images/location-library/gujarat-india/gujarat-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/gujarat-india/gujarat-india-02-crop1-lg.webp",
-        "caption": "Gujarat — Yann Forget, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/gujarat-india/gujarat-india-01-lg.webp",
         "caption": "Gujarat — Yann Forget, CC BY-SA 4.0"
@@ -6943,12 +6891,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "gujarat-historic-architecture-tour": {
-    "primary": "/images/location-library/gujarat-india/gujarat-india-03-crop1-lg.webp",
+    "primary": "/images/location-library/gujarat-india/gujarat-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/gujarat-india/gujarat-india-03-crop1-lg.webp",
-        "caption": "Gujarat — Brihaspati, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/gujarat-india/gujarat-india-01-lg.webp",
         "caption": "Gujarat — Yann Forget, CC BY-SA 4.0"
@@ -6988,12 +6932,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "gujarat-tour-packages": {
-    "primary": "/images/location-library/gujarat-india/gujarat-india-04-crop1-lg.webp",
+    "primary": "/images/location-library/gujarat-india/gujarat-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/gujarat-india/gujarat-india-04-crop1-lg.webp",
-        "caption": "Gujarat — Bernard Gagnon, CC BY-SA 3.0"
-      },
       {
         "src": "/images/location-library/gujarat-india/gujarat-india-01-lg.webp",
         "caption": "Gujarat — Yann Forget, CC BY-SA 4.0"
@@ -7033,12 +6973,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "gujarat-wildlife-tour": {
-    "primary": "/images/location-library/gir-national-park-gujarat/gir-national-park-gujarat-01-lg.webp",
+    "primary": "/images/location-library/gujarat-india/gujarat-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/gir-national-park-gujarat/gir-national-park-gujarat-01-lg.webp",
-        "caption": "Gir National Park — Shovik 14, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/gujarat-india/gujarat-india-01-lg.webp",
         "caption": "Gujarat — Yann Forget, CC BY-SA 4.0"
@@ -7054,6 +6990,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/gujarat-india/gujarat-india-04-lg.webp",
         "caption": "Gujarat — Bernard Gagnon, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/gir-national-park-gujarat/gir-national-park-gujarat-01-lg.webp",
+        "caption": "Gir National Park — Shovik 14, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/gir-national-park-gujarat/gir-national-park-gujarat-02-lg.webp",
@@ -7074,12 +7014,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "gujarat": {
-    "primary": "/images/location-library/gujarat-india/gujarat-india-01-crop2-lg.webp",
+    "primary": "/images/location-library/gujarat-india/gujarat-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/gujarat-india/gujarat-india-01-crop2-lg.webp",
-        "caption": "Gujarat — Yann Forget, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/gujarat-india/gujarat-india-01-lg.webp",
         "caption": "Gujarat — Yann Forget, CC BY-SA 4.0"
@@ -7102,12 +7038,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "gujarati-cuisine": {
-    "primary": "/images/location-library/gujarat-india/gujarat-india-02-crop2-lg.webp",
+    "primary": "/images/location-library/gujarat-india/gujarat-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/gujarat-india/gujarat-india-02-crop2-lg.webp",
-        "caption": "Gujarat — Yann Forget, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/gujarat-india/gujarat-india-01-lg.webp",
         "caption": "Gujarat — Yann Forget, CC BY-SA 4.0"
@@ -7130,12 +7062,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "gujrat-somnath-tour": {
-    "primary": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-01-crop1-lg.webp",
-        "caption": "Somnath — TeshTesh, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-01-lg.webp",
         "caption": "Somnath — TeshTesh, CC BY-SA 4.0"
@@ -7247,14 +7175,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "guwahati-tour-packages": {
-    "primary": "/images/location-library/guwahati-assam-india/guwahati-assam-india-02-lg.webp",
+    "primary": "/images/location-library/guwahati-assam-india/guwahati-assam-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/guwahati-assam-india/guwahati-assam-india-02-lg.webp",
+        "src": "/images/location-library/guwahati-assam-india/guwahati-assam-india-01-lg.webp",
         "caption": "Guwahati — Timothy A. Gonsalves, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/guwahati-assam-india/guwahati-assam-india-01-lg.webp",
+        "src": "/images/location-library/guwahati-assam-india/guwahati-assam-india-02-lg.webp",
         "caption": "Guwahati — Timothy A. Gonsalves, CC BY-SA 4.0"
       },
       {
@@ -7319,15 +7247,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "hanoi-halong-da-nang-hoi-an-tour": {
-    "primary": "/images/location-library/da-nang-vietnam/da-nang-vietnam-02-lg.webp",
+    "primary": "/images/location-library/da-nang-vietnam/da-nang-vietnam-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/da-nang-vietnam/da-nang-vietnam-02-lg.webp",
-        "caption": "Da Nang — Unknown author Unknown author or not provided, Public domain"
-      },
       {
         "src": "/images/location-library/da-nang-vietnam/da-nang-vietnam-01-lg.webp",
         "caption": "Da Nang — Quangpraha, CC0"
+      },
+      {
+        "src": "/images/location-library/da-nang-vietnam/da-nang-vietnam-02-lg.webp",
+        "caption": "Da Nang — Unknown author Unknown author or not provided, Public domain"
       },
       {
         "src": "/images/location-library/da-nang-vietnam/da-nang-vietnam-03-lg.webp",
@@ -7343,12 +7271,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "hanoi-ninh-binh-halong-da-nang-hoi-an-tour": {
-    "primary": "/images/location-library/da-nang-vietnam/da-nang-vietnam-03-lg.webp",
+    "primary": "/images/location-library/da-nang-vietnam/da-nang-vietnam-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/da-nang-vietnam/da-nang-vietnam-03-lg.webp",
-        "caption": "Da Nang — CEphoto, Uwe Aranas, CC BY-SA 3.0"
-      },
       {
         "src": "/images/location-library/da-nang-vietnam/da-nang-vietnam-01-lg.webp",
         "caption": "Da Nang — Quangpraha, CC0"
@@ -7356,6 +7280,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/da-nang-vietnam/da-nang-vietnam-02-lg.webp",
         "caption": "Da Nang — Unknown author Unknown author or not provided, Public domain"
+      },
+      {
+        "src": "/images/location-library/da-nang-vietnam/da-nang-vietnam-03-lg.webp",
+        "caption": "Da Nang — CEphoto, Uwe Aranas, CC BY-SA 3.0"
       },
       {
         "src": "/images/location-library/da-nang-vietnam/da-nang-vietnam-04-lg.webp",
@@ -7367,12 +7295,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "har-ki-pauri-haridwar": {
-    "primary": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-01-crop1-lg.webp",
-        "caption": "Haridwar — Dan Searle, CC BY-SA 2.0"
-      },
       {
         "src": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-01-lg.webp",
         "caption": "Haridwar — Dan Searle, CC BY-SA 2.0"
@@ -7436,12 +7360,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "haridwar-rishikesh-sightseeing-tour": {
-    "primary": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-crop1-lg.webp",
-        "caption": "Rishikesh — Dorelal Singh, CC BY-SA 3.0"
-      },
       {
         "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
         "caption": "Rishikesh — Dorelal Singh, CC BY-SA 3.0"
@@ -7481,14 +7401,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "haridwar-rishikesh-with-mussoorie-tour": {
-    "primary": "/images/location-library/mussoorie-uttarakhand-india/mussoorie-uttarakhand-india-02-lg.webp",
+    "primary": "/images/location-library/mussoorie-uttarakhand-india/mussoorie-uttarakhand-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/mussoorie-uttarakhand-india/mussoorie-uttarakhand-india-02-lg.webp",
+        "src": "/images/location-library/mussoorie-uttarakhand-india/mussoorie-uttarakhand-india-01-lg.webp",
         "caption": "Mussoorie — Paul Hamilton, CC BY-SA 2.0"
       },
       {
-        "src": "/images/location-library/mussoorie-uttarakhand-india/mussoorie-uttarakhand-india-01-lg.webp",
+        "src": "/images/location-library/mussoorie-uttarakhand-india/mussoorie-uttarakhand-india-02-lg.webp",
         "caption": "Mussoorie — Paul Hamilton, CC BY-SA 2.0"
       },
       {
@@ -7522,12 +7442,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "haridwar-sightseeing-tour": {
-    "primary": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-02-crop1-lg.webp",
+    "primary": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-02-crop1-lg.webp",
-        "caption": "Haridwar — Gannu03, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-01-lg.webp",
         "caption": "Haridwar — Dan Searle, CC BY-SA 2.0"
@@ -7550,12 +7466,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "haridwar-tour-packages": {
-    "primary": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-03-crop1-lg.webp",
+    "primary": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-03-crop1-lg.webp",
-        "caption": "Haridwar — Gannu03, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-01-lg.webp",
         "caption": "Haridwar — Dan Searle, CC BY-SA 2.0"
@@ -7595,12 +7507,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "haridwar": {
-    "primary": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-04-crop1-lg.webp",
+    "primary": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-04-crop1-lg.webp",
-        "caption": "Haridwar — Gannu03, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-01-lg.webp",
         "caption": "Haridwar — Dan Searle, CC BY-SA 2.0"
@@ -7729,15 +7637,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "heritage-tour-of-madhya-pradesh": {
-    "primary": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-02-lg.webp",
+    "primary": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-02-lg.webp",
-        "caption": "Madhya Pradesh — Yann ( talk ), CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-01-lg.webp",
         "caption": "Madhya Pradesh — Suyash Dwivedi, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-02-lg.webp",
+        "caption": "Madhya Pradesh — Yann ( talk ), CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-03-lg.webp",
@@ -7770,12 +7678,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "hills-of-kumaon-tour": {
-    "primary": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-04-lg.webp",
+    "primary": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-04-lg.webp",
-        "caption": "Nainital — Praveen Singh Bisht, CC BY 2.0"
-      },
       {
         "src": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-01-lg.webp",
         "caption": "Nainital — Didier Descouens, CC BY-SA 4.0"
@@ -7787,6 +7691,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-03-lg.webp",
         "caption": "Nainital — Photographer Praveen Singh Bisht, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-04-lg.webp",
+        "caption": "Nainital — Praveen Singh Bisht, CC BY 2.0"
       },
       {
         "src": "/images/location-library/ranikhet-uttarakhand-india/ranikhet-uttarakhand-india-01-lg.webp",
@@ -7811,12 +7719,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "himachal-lovers-paradise": {
-    "primary": "/images/location-library/rohtang-pass-himachal-pradesh-india/rohtang-pass-himachal-pradesh-india-04-lg.webp",
+    "primary": "/images/location-library/rohtang-pass-himachal-pradesh-india/rohtang-pass-himachal-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/rohtang-pass-himachal-pradesh-india/rohtang-pass-himachal-pradesh-india-04-lg.webp",
-        "caption": "Rohtang Pass — Sai Subhang Boorlagadda, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/rohtang-pass-himachal-pradesh-india/rohtang-pass-himachal-pradesh-india-01-lg.webp",
         "caption": "Rohtang Pass — Maxzameer, CC BY-SA 4.0"
@@ -7828,6 +7732,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/rohtang-pass-himachal-pradesh-india/rohtang-pass-himachal-pradesh-india-03-lg.webp",
         "caption": "Rohtang Pass — Ajisi, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rohtang-pass-himachal-pradesh-india/rohtang-pass-himachal-pradesh-india-04-lg.webp",
+        "caption": "Rohtang Pass — Sai Subhang Boorlagadda, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/dalhousie-himachal-pradesh-india/dalhousie-himachal-pradesh-india-01-lg.webp",
@@ -7852,14 +7760,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "himachal-pradesh-honeymoon-packages": {
-    "primary": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-02-lg.webp",
+    "primary": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-02-lg.webp",
+        "src": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-01-lg.webp",
         "caption": "Himachal Pradesh — UnpetitproleX, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-01-lg.webp",
+        "src": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-02-lg.webp",
         "caption": "Himachal Pradesh — UnpetitproleX, CC BY-SA 4.0"
       },
       {
@@ -7876,18 +7784,18 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "himachal-pradesh-with-delhi-darshan": {
-    "primary": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-03-lg.webp",
+    "primary": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-03-lg.webp",
-        "caption": "Himachal Pradesh — UnpetitproleX, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-01-lg.webp",
         "caption": "Himachal Pradesh — UnpetitproleX, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-02-lg.webp",
+        "caption": "Himachal Pradesh — UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-03-lg.webp",
         "caption": "Himachal Pradesh — UnpetitproleX, CC BY-SA 4.0"
       },
       {
@@ -7917,12 +7825,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "himachal-pradesh": {
-    "primary": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-04-lg.webp",
+    "primary": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-04-lg.webp",
-        "caption": "Himachal Pradesh — UnpetitproleX, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-01-lg.webp",
         "caption": "Himachal Pradesh — UnpetitproleX, CC BY-SA 4.0"
@@ -7934,6 +7838,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-03-lg.webp",
         "caption": "Himachal Pradesh — UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-04-lg.webp",
+        "caption": "Himachal Pradesh — UnpetitproleX, CC BY 4.0"
       }
     ],
     "locations": [
@@ -7941,12 +7849,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "himalayan-sojourn-ayurveda": {
-    "primary": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-02-crop1-lg.webp",
+    "primary": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-02-crop1-lg.webp",
-        "caption": "Rishikesh — Billjones94, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
         "caption": "Rishikesh — Dorelal Singh, CC BY-SA 3.0"
@@ -7986,18 +7890,18 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "himanchal-with-vaishno-devi-darshan": {
-    "primary": "/images/location-library/dalhousie-himachal-pradesh-india/dalhousie-himachal-pradesh-india-03-lg.webp",
+    "primary": "/images/location-library/dalhousie-himachal-pradesh-india/dalhousie-himachal-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/dalhousie-himachal-pradesh-india/dalhousie-himachal-pradesh-india-03-lg.webp",
-        "caption": "Dalhousie — Piyush Tripathi, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/dalhousie-himachal-pradesh-india/dalhousie-himachal-pradesh-india-01-lg.webp",
         "caption": "Dalhousie — Piyush Tripathi, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/dalhousie-himachal-pradesh-india/dalhousie-himachal-pradesh-india-02-lg.webp",
+        "caption": "Dalhousie — Piyush Tripathi, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/dalhousie-himachal-pradesh-india/dalhousie-himachal-pradesh-india-03-lg.webp",
         "caption": "Dalhousie — Piyush Tripathi, CC BY-SA 4.0"
       },
       {
@@ -8027,14 +7931,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "ho-chi-minh-city": {
-    "primary": "/images/location-library/ho-chi-minh-city-vietnam/ho-chi-minh-city-vietnam-02-lg.webp",
+    "primary": "/images/location-library/ho-chi-minh-city-vietnam/ho-chi-minh-city-vietnam-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/ho-chi-minh-city-vietnam/ho-chi-minh-city-vietnam-02-lg.webp",
+        "src": "/images/location-library/ho-chi-minh-city-vietnam/ho-chi-minh-city-vietnam-01-lg.webp",
         "caption": "Ho Chi Minh City — Diego Delso, CC BY-SA 3.0"
       },
       {
-        "src": "/images/location-library/ho-chi-minh-city-vietnam/ho-chi-minh-city-vietnam-01-lg.webp",
+        "src": "/images/location-library/ho-chi-minh-city-vietnam/ho-chi-minh-city-vietnam-02-lg.webp",
         "caption": "Ho Chi Minh City — Diego Delso, CC BY-SA 3.0"
       },
       {
@@ -8075,15 +7979,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "holidays-in-maldives": {
-    "primary": "/images/location-library/maldives-international/maldives-international-02-lg.webp",
+    "primary": "/images/location-library/maldives-international/maldives-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/maldives-international/maldives-international-02-lg.webp",
-        "caption": "Maldives — Gzzz, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/maldives-international/maldives-international-01-lg.webp",
         "caption": "Maldives — Laika ac from UK, CC BY-SA 2.0"
+      },
+      {
+        "src": "/images/location-library/maldives-international/maldives-international-02-lg.webp",
+        "caption": "Maldives — Gzzz, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/maldives-international/maldives-international-03-lg.webp",
@@ -8147,12 +8051,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "honeymoon-in-goa": {
-    "primary": "/images/location-library/north-goa-goa-india/north-goa-goa-india-01-lg.webp",
+    "primary": "/images/location-library/goa-india/goa-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/north-goa-goa-india/north-goa-goa-india-01-lg.webp",
-        "caption": "North Goa — Alexkom000, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/goa-india/goa-india-01-lg.webp",
         "caption": "Goa — Original: Vyacheslav Argenberg Derivative work: UnpetitproleX, CC BY 4.0"
@@ -8168,6 +8068,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/goa-india/goa-india-04-lg.webp",
         "caption": "Goa — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/north-goa-goa-india/north-goa-goa-india-01-lg.webp",
+        "caption": "North Goa — Alexkom000, CC BY 4.0"
       },
       {
         "src": "/images/location-library/north-goa-goa-india/north-goa-goa-india-02-lg.webp",
@@ -8188,12 +8092,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "honeymoon-in-kashmir": {
-    "primary": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-04-lg.webp",
+    "primary": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-04-lg.webp",
-        "caption": "Kashmir — Sauood07, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-01-lg.webp",
         "caption": "Kashmir — Harvinder Chandigarh, CC BY 4.0"
@@ -8205,6 +8105,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-03-lg.webp",
         "caption": "Kashmir — Kasisripada17, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-04-lg.webp",
+        "caption": "Kashmir — Sauood07, CC BY 4.0"
       },
       {
         "src": "/images/location-library/srinagar-jammu-and-kashmir-india/srinagar-jammu-and-kashmir-india-01-lg.webp",
@@ -8301,18 +8205,18 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "hotels-in-gangotri": {
-    "primary": "/images/location-library/gangotri-uttarakhand-india/gangotri-uttarakhand-india-03-lg.webp",
+    "primary": "/images/location-library/gangotri-uttarakhand-india/gangotri-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/gangotri-uttarakhand-india/gangotri-uttarakhand-india-03-lg.webp",
-        "caption": "Gangotri — Surajit Das, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/gangotri-uttarakhand-india/gangotri-uttarakhand-india-01-lg.webp",
         "caption": "Gangotri — Surajit Das, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/gangotri-uttarakhand-india/gangotri-uttarakhand-india-02-lg.webp",
+        "caption": "Gangotri — Surajit Das, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/gangotri-uttarakhand-india/gangotri-uttarakhand-india-03-lg.webp",
         "caption": "Gangotri — Surajit Das, CC BY-SA 4.0"
       },
       {
@@ -8325,12 +8229,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "hotels-in-kedarnath": {
-    "primary": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-02-crop1-lg.webp",
+    "primary": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-02-crop1-lg.webp",
-        "caption": "Kedarnath — Paul Hamilton, CC BY-SA 2.0"
-      },
       {
         "src": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-01-lg.webp",
         "caption": "Kedarnath — Rohit Sharma, CC BY-SA 4.0"
@@ -8401,15 +8301,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "hyderabad-weekend-getaways": {
-    "primary": "/images/location-library/hyderabad-andhra-pradesh-india/hyderabad-andhra-pradesh-india-02-lg.webp",
+    "primary": "/images/location-library/hyderabad-andhra-pradesh-india/hyderabad-andhra-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/hyderabad-andhra-pradesh-india/hyderabad-andhra-pradesh-india-02-lg.webp",
-        "caption": "Hyderabad — Sandeepsea, CC BY-SA 3.0"
-      },
       {
         "src": "/images/location-library/hyderabad-andhra-pradesh-india/hyderabad-andhra-pradesh-india-01-lg.webp",
         "caption": "Hyderabad — Ontheway Advice, CC0"
+      },
+      {
+        "src": "/images/location-library/hyderabad-andhra-pradesh-india/hyderabad-andhra-pradesh-india-02-lg.webp",
+        "caption": "Hyderabad — Sandeepsea, CC BY-SA 3.0"
       },
       {
         "src": "/images/location-library/hyderabad-andhra-pradesh-india/hyderabad-andhra-pradesh-india-03-lg.webp",
@@ -8425,12 +8325,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "increasable-kerala": {
-    "primary": "/images/location-library/munnar-kerala-india/munnar-kerala-india-02-lg.webp",
+    "primary": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/munnar-kerala-india/munnar-kerala-india-02-lg.webp",
-        "caption": "Munnar — Arun Muralidhar, CC BY-SA 3.0"
-      },
       {
         "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
         "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
@@ -8452,6 +8348,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Munnar — Arun Muralidhar, CC BY-SA 3.0"
       },
       {
+        "src": "/images/location-library/munnar-kerala-india/munnar-kerala-india-02-lg.webp",
+        "caption": "Munnar — Arun Muralidhar, CC BY-SA 3.0"
+      },
+      {
         "src": "/images/location-library/munnar-kerala-india/munnar-kerala-india-03-lg.webp",
         "caption": "Munnar — Charles J. Sharp, CC BY-SA 4.0"
       },
@@ -8466,12 +8366,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "incredible-himachal-tour": {
-    "primary": "/images/location-library/dharamshala-himachal-pradesh-india/dharamshala-himachal-pradesh-india-03-lg.webp",
+    "primary": "/images/location-library/rohtang-pass-himachal-pradesh-india/rohtang-pass-himachal-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/dharamshala-himachal-pradesh-india/dharamshala-himachal-pradesh-india-03-lg.webp",
-        "caption": "Dharamshala — Aapar singh, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/rohtang-pass-himachal-pradesh-india/rohtang-pass-himachal-pradesh-india-01-lg.webp",
         "caption": "Rohtang Pass — Maxzameer, CC BY-SA 4.0"
@@ -8497,6 +8393,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Dharamshala — Aapar singh, CC BY-SA 4.0"
       },
       {
+        "src": "/images/location-library/dharamshala-himachal-pradesh-india/dharamshala-himachal-pradesh-india-03-lg.webp",
+        "caption": "Dharamshala — Aapar singh, CC BY-SA 4.0"
+      },
+      {
         "src": "/images/location-library/dharamshala-himachal-pradesh-india/dharamshala-himachal-pradesh-india-04-lg.webp",
         "caption": "Dharamshala — Aapar singh, CC BY-SA 4.0"
       }
@@ -8507,12 +8407,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "incredible-rajasthan": {
-    "primary": "/images/location-library/rajasthan-india/rajasthan-india-04-lg.webp",
+    "primary": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/rajasthan-india/rajasthan-india-04-lg.webp",
-        "caption": "Rajasthan — Paramanu Sarkar, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
         "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
@@ -8524,6 +8420,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/rajasthan-india/rajasthan-india-03-lg.webp",
         "caption": "Rajasthan — Ihsanwayfarer, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rajasthan-india/rajasthan-india-04-lg.webp",
+        "caption": "Rajasthan — Paramanu Sarkar, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/jaisalmer-rajasthan-india/jaisalmer-rajasthan-india-01-lg.webp",
@@ -8548,12 +8448,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "india-chardham-yatra": {
-    "primary": "/images/location-library/devprayag-uttarakhand-india/devprayag-uttarakhand-india-01-lg.webp",
+    "primary": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/devprayag-uttarakhand-india/devprayag-uttarakhand-india-01-lg.webp",
-        "caption": "Devprayag — Ms Sarah Welch, CC0"
-      },
       {
         "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
         "caption": "Badrinath — Billjones94, CC BY-SA 4.0"
@@ -8569,6 +8465,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-04-lg.webp",
         "caption": "Badrinath — Guptaele, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/devprayag-uttarakhand-india/devprayag-uttarakhand-india-01-lg.webp",
+        "caption": "Devprayag — Ms Sarah Welch, CC0"
       },
       {
         "src": "/images/location-library/devprayag-uttarakhand-india/devprayag-uttarakhand-india-02-lg.webp",
@@ -8613,12 +8513,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "india-nepal-buddhist-tour": {
-    "primary": "/images/location-library/nepal-international/nepal-international-02-crop1-lg.webp",
+    "primary": "/images/location-library/nepal-international/nepal-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/nepal-international/nepal-international-02-crop1-lg.webp",
-        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/nepal-international/nepal-international-01-lg.webp",
         "caption": "Nepal — Bijay Chaurasia, CC BY-SA 4.0"
@@ -8658,12 +8554,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "indore-to-ujjain-omkareshwar-tour": {
-    "primary": "/images/location-library/omkareshwar-madhya-pradesh-india/omkareshwar-madhya-pradesh-india-03-lg.webp",
+    "primary": "/images/location-library/omkareshwar-madhya-pradesh-india/omkareshwar-madhya-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/omkareshwar-madhya-pradesh-india/omkareshwar-madhya-pradesh-india-03-lg.webp",
-        "caption": "Omkareshwar — Jean-Pierre Dalbéra, CC BY 2.0"
-      },
       {
         "src": "/images/location-library/omkareshwar-madhya-pradesh-india/omkareshwar-madhya-pradesh-india-01-lg.webp",
         "caption": "Omkareshwar — Lokesh Mundra, CC BY 3.0"
@@ -8671,6 +8563,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/omkareshwar-madhya-pradesh-india/omkareshwar-madhya-pradesh-india-02-lg.webp",
         "caption": "Omkareshwar — Lokesh Mundra, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/omkareshwar-madhya-pradesh-india/omkareshwar-madhya-pradesh-india-03-lg.webp",
+        "caption": "Omkareshwar — Jean-Pierre Dalbéra, CC BY 2.0"
       },
       {
         "src": "/images/location-library/omkareshwar-madhya-pradesh-india/omkareshwar-madhya-pradesh-india-04-lg.webp",
@@ -8764,12 +8660,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "jaipur-sightseeing-tour": {
-    "primary": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-03-crop1-lg.webp",
+    "primary": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-03-crop1-lg.webp",
-        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-01-lg.webp",
         "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
@@ -8792,12 +8684,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "jaipur-tour-packages": {
-    "primary": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-04-crop1-lg.webp",
+    "primary": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-04-crop1-lg.webp",
-        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-01-lg.webp",
         "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
@@ -8820,12 +8708,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "jaipur": {
-    "primary": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-01-crop2-lg.webp",
+    "primary": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-01-crop2-lg.webp",
-        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-01-lg.webp",
         "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
@@ -8872,12 +8756,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "jama-masjid-agra": {
-    "primary": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-02-crop1-lg.webp",
+    "primary": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-02-crop1-lg.webp",
-        "caption": "Agra — Yann ( talk ), CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-01-lg.webp",
         "caption": "Agra — Yann ( talk ), CC BY-SA 4.0"
@@ -9031,12 +8911,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "jharkhand-tour-packages": {
-    "primary": "/images/location-library/jharkhand-india/jharkhand-india-03-lg.webp",
+    "primary": "/images/location-library/jharkhand-india/jharkhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/jharkhand-india/jharkhand-india-03-lg.webp",
-        "caption": "Jharkhand — Ank Kumar, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/jharkhand-india/jharkhand-india-01-lg.webp",
         "caption": "Jharkhand — Bikash Lakra, CC BY-SA 3.0"
@@ -9044,6 +8920,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/jharkhand-india/jharkhand-india-02-lg.webp",
         "caption": "Jharkhand — 456legend, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/jharkhand-india/jharkhand-india-03-lg.webp",
+        "caption": "Jharkhand — Ank Kumar, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/jharkhand-india/jharkhand-india-04-lg.webp",
@@ -9120,12 +9000,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "junagadh-tour-packages": {
-    "primary": "/images/location-library/porbandar-gujarat-india/porbandar-gujarat-india-02-lg.webp",
+    "primary": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/porbandar-gujarat-india/porbandar-gujarat-india-02-lg.webp",
-        "caption": "Porbandar — Raj Odedra, CC BY 3.0"
-      },
       {
         "src": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-01-lg.webp",
         "caption": "Ahmedabad — Honzasoukup, Public domain"
@@ -9144,6 +9020,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       },
       {
         "src": "/images/location-library/porbandar-gujarat-india/porbandar-gujarat-india-01-lg.webp",
+        "caption": "Porbandar — Raj Odedra, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/porbandar-gujarat-india/porbandar-gujarat-india-02-lg.webp",
         "caption": "Porbandar — Raj Odedra, CC BY 3.0"
       },
       {
@@ -9185,15 +9065,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kailash-mansarovar-yatra-form-nepalganj": {
-    "primary": "/images/location-library/lucknow-uttar-pradesh-india/lucknow-uttar-pradesh-india-02-lg.webp",
+    "primary": "/images/location-library/lucknow-uttar-pradesh-india/lucknow-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/lucknow-uttar-pradesh-india/lucknow-uttar-pradesh-india-02-lg.webp",
-        "caption": "Lucknow — Aggarwalmanish191, CC BY-SA 3.0"
-      },
       {
         "src": "/images/location-library/lucknow-uttar-pradesh-india/lucknow-uttar-pradesh-india-01-lg.webp",
         "caption": "Lucknow — Jagannath Saragadam, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/lucknow-uttar-pradesh-india/lucknow-uttar-pradesh-india-02-lg.webp",
+        "caption": "Lucknow — Aggarwalmanish191, CC BY-SA 3.0"
       },
       {
         "src": "/images/location-library/lucknow-uttar-pradesh-india/lucknow-uttar-pradesh-india-03-lg.webp",
@@ -9233,15 +9113,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kainchi-dham-dunagiri-patal-bhuvaneshwar-package": {
-    "primary": "/images/location-library/kainchi-dham-uttarakhand-india/kainchi-dham-uttarakhand-india-02-lg.webp",
+    "primary": "/images/location-library/kainchi-dham-uttarakhand-india/kainchi-dham-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kainchi-dham-uttarakhand-india/kainchi-dham-uttarakhand-india-02-lg.webp",
-        "caption": "Kainchi Dham — 25 Cents FC, by-sa"
-      },
       {
         "src": "/images/location-library/kainchi-dham-uttarakhand-india/kainchi-dham-uttarakhand-india-01-lg.webp",
         "caption": "Kainchi Dham — Lalit.bhandari86, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kainchi-dham-uttarakhand-india/kainchi-dham-uttarakhand-india-02-lg.webp",
+        "caption": "Kainchi Dham — 25 Cents FC, by-sa"
       },
       {
         "src": "/images/location-library/kainchi-dham-uttarakhand-india/kainchi-dham-uttarakhand-india-03-lg.webp",
@@ -9270,12 +9150,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kainchi-dham-tour-package": {
-    "primary": "/images/location-library/kainchi-dham-uttarakhand-india/kainchi-dham-uttarakhand-india-03-lg.webp",
+    "primary": "/images/location-library/kainchi-dham-uttarakhand-india/kainchi-dham-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kainchi-dham-uttarakhand-india/kainchi-dham-uttarakhand-india-03-lg.webp",
-        "caption": "Kainchi Dham — Nickk Bisht, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/kainchi-dham-uttarakhand-india/kainchi-dham-uttarakhand-india-01-lg.webp",
         "caption": "Kainchi Dham — Lalit.bhandari86, CC BY-SA 4.0"
@@ -9283,6 +9159,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/kainchi-dham-uttarakhand-india/kainchi-dham-uttarakhand-india-02-lg.webp",
         "caption": "Kainchi Dham — 25 Cents FC, by-sa"
+      },
+      {
+        "src": "/images/location-library/kainchi-dham-uttarakhand-india/kainchi-dham-uttarakhand-india-03-lg.webp",
+        "caption": "Kainchi Dham — Nickk Bisht, CC BY-SA 4.0"
       }
     ],
     "locations": [
@@ -9290,12 +9170,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kainchi-dham-tour-packages": {
-    "primary": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-02-lg.webp",
+    "primary": "/images/location-library/kainchi-dham-uttarakhand-india/kainchi-dham-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-02-lg.webp",
-        "caption": "Nainital — Vib.hu, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/kainchi-dham-uttarakhand-india/kainchi-dham-uttarakhand-india-01-lg.webp",
         "caption": "Kainchi Dham — Lalit.bhandari86, CC BY-SA 4.0"
@@ -9311,6 +9187,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-01-lg.webp",
         "caption": "Nainital — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-02-lg.webp",
+        "caption": "Nainital — Vib.hu, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-03-lg.webp",
@@ -9351,14 +9231,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kanha-pench-wildlife-tour": {
-    "primary": "/images/location-library/nagpur-maharashtra-india/nagpur-maharashtra-india-02-lg.webp",
+    "primary": "/images/location-library/nagpur-maharashtra-india/nagpur-maharashtra-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/nagpur-maharashtra-india/nagpur-maharashtra-india-02-lg.webp",
+        "src": "/images/location-library/nagpur-maharashtra-india/nagpur-maharashtra-india-01-lg.webp",
         "caption": "Nagpur — Yann Forget, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/nagpur-maharashtra-india/nagpur-maharashtra-india-01-lg.webp",
+        "src": "/images/location-library/nagpur-maharashtra-india/nagpur-maharashtra-india-02-lg.webp",
         "caption": "Nagpur — Yann Forget, CC BY-SA 4.0"
       },
       {
@@ -9464,14 +9344,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "karnataka-tour-package": {
-    "primary": "/images/location-library/karnataka-india/karnataka-india-02-lg.webp",
+    "primary": "/images/location-library/karnataka-india/karnataka-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/karnataka-india/karnataka-india-02-lg.webp",
+        "src": "/images/location-library/karnataka-india/karnataka-india-01-lg.webp",
         "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/karnataka-india/karnataka-india-01-lg.webp",
+        "src": "/images/location-library/karnataka-india/karnataka-india-02-lg.webp",
         "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
       },
       {
@@ -9488,12 +9368,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "karnataka": {
-    "primary": "/images/location-library/karnataka-india/karnataka-india-03-lg.webp",
+    "primary": "/images/location-library/karnataka-india/karnataka-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/karnataka-india/karnataka-india-03-lg.webp",
-        "caption": "Karnataka — Dey.sandip, CC BY-SA 3.0"
-      },
       {
         "src": "/images/location-library/karnataka-india/karnataka-india-01-lg.webp",
         "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
@@ -9501,6 +9377,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/karnataka-india/karnataka-india-02-lg.webp",
         "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-03-lg.webp",
+        "caption": "Karnataka — Dey.sandip, CC BY-SA 3.0"
       },
       {
         "src": "/images/location-library/karnataka-india/karnataka-india-04-lg.webp",
@@ -9536,12 +9416,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kashi-gaya-prayagraj-ayodhya-naimisharanya-package": {
-    "primary": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-01-crop1-lg.webp",
-        "caption": "Prayagraj — Ar.anujgupta, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-01-lg.webp",
         "caption": "Prayagraj — Ar.anujgupta, CC BY-SA 4.0"
@@ -9581,12 +9457,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kashmir-tour-packages": {
-    "primary": "/images/location-library/srinagar-jammu-and-kashmir-india/srinagar-jammu-and-kashmir-india-02-lg.webp",
+    "primary": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/srinagar-jammu-and-kashmir-india/srinagar-jammu-and-kashmir-india-02-lg.webp",
-        "caption": "Srinagar — Harvinder Chandigarh, by"
-      },
       {
         "src": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-01-lg.webp",
         "caption": "Kashmir — Harvinder Chandigarh, CC BY 4.0"
@@ -9608,6 +9480,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Srinagar — Harvinder Chandigarh, by"
       },
       {
+        "src": "/images/location-library/srinagar-jammu-and-kashmir-india/srinagar-jammu-and-kashmir-india-02-lg.webp",
+        "caption": "Srinagar — Harvinder Chandigarh, by"
+      },
+      {
         "src": "/images/location-library/srinagar-jammu-and-kashmir-india/srinagar-jammu-and-kashmir-india-03-lg.webp",
         "caption": "Srinagar — Dashrathgoyal85, CC BY-SA 4.0"
       },
@@ -9622,12 +9498,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kashmir": {
-    "primary": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-01-crop1-lg.webp",
+    "primary": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-01-crop1-lg.webp",
-        "caption": "Kashmir — Harvinder Chandigarh, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-01-lg.webp",
         "caption": "Kashmir — Harvinder Chandigarh, CC BY 4.0"
@@ -9650,15 +9522,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kathmandu-tour-packages": {
-    "primary": "/images/location-library/kathmandu-nepal/kathmandu-nepal-02-lg.webp",
+    "primary": "/images/location-library/kathmandu-nepal/kathmandu-nepal-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kathmandu-nepal/kathmandu-nepal-02-lg.webp",
-        "caption": "Kathmandu — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/kathmandu-nepal/kathmandu-nepal-01-lg.webp",
         "caption": "Kathmandu — Bijay Chaurasia, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kathmandu-nepal/kathmandu-nepal-02-lg.webp",
+        "caption": "Kathmandu — Vyacheslav Argenberg, CC BY 4.0"
       },
       {
         "src": "/images/location-library/kathmandu-nepal/kathmandu-nepal-03-lg.webp",
@@ -9674,18 +9546,18 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kathmandu": {
-    "primary": "/images/location-library/kathmandu-nepal/kathmandu-nepal-03-lg.webp",
+    "primary": "/images/location-library/kathmandu-nepal/kathmandu-nepal-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kathmandu-nepal/kathmandu-nepal-03-lg.webp",
-        "caption": "Kathmandu — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/kathmandu-nepal/kathmandu-nepal-01-lg.webp",
         "caption": "Kathmandu — Bijay Chaurasia, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/kathmandu-nepal/kathmandu-nepal-02-lg.webp",
+        "caption": "Kathmandu — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kathmandu-nepal/kathmandu-nepal-03-lg.webp",
         "caption": "Kathmandu — Vyacheslav Argenberg, CC BY 4.0"
       },
       {
@@ -9722,12 +9594,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kedarnath-tour-packages": {
-    "primary": "/images/location-library/guptkashi-uttarakhand-india/guptkashi-uttarakhand-india-01-lg.webp",
+    "primary": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/guptkashi-uttarakhand-india/guptkashi-uttarakhand-india-01-lg.webp",
-        "caption": "Guptkashi — James St. John, CC BY 2.0"
-      },
       {
         "src": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-01-lg.webp",
         "caption": "Kedarnath — Rohit Sharma, CC BY-SA 4.0"
@@ -9743,6 +9611,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-04-lg.webp",
         "caption": "Kedarnath — Photos Worldwide, CC0"
+      },
+      {
+        "src": "/images/location-library/guptkashi-uttarakhand-india/guptkashi-uttarakhand-india-01-lg.webp",
+        "caption": "Guptkashi — James St. John, CC BY 2.0"
       },
       {
         "src": "/images/location-library/guptkashi-uttarakhand-india/guptkashi-uttarakhand-india-02-lg.webp",
@@ -9763,12 +9635,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kedarnath": {
-    "primary": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-03-crop1-lg.webp",
+    "primary": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-03-crop1-lg.webp",
-        "caption": "Kedarnath — Paul Hamilton, CC BY-SA 2.0"
-      },
       {
         "src": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-01-lg.webp",
         "caption": "Kedarnath — Rohit Sharma, CC BY-SA 4.0"
@@ -9791,12 +9659,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kerala-beaches-tour": {
-    "primary": "/images/location-library/kumarakom-kerala-india/kumarakom-kerala-india-02-lg.webp",
+    "primary": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kumarakom-kerala-india/kumarakom-kerala-india-02-lg.webp",
-        "caption": "Kumarakom — Geyo John, CC BY-SA 3.0"
-      },
       {
         "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
         "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
@@ -9818,6 +9682,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Kumarakom — Geyo John, CC BY-SA 3.0"
       },
       {
+        "src": "/images/location-library/kumarakom-kerala-india/kumarakom-kerala-india-02-lg.webp",
+        "caption": "Kumarakom — Geyo John, CC BY-SA 3.0"
+      },
+      {
         "src": "/images/location-library/kumarakom-kerala-india/kumarakom-kerala-india-03-lg.webp",
         "caption": "Kumarakom — Geyo John, CC BY-SA 3.0"
       },
@@ -9832,12 +9700,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kerala-honeymoon-package": {
-    "primary": "/images/location-library/kerala-india/kerala-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kerala-india/kerala-india-01-crop1-lg.webp",
-        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
         "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
@@ -9860,12 +9724,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kerala-spa-ayurveda-holidays": {
-    "primary": "/images/location-library/thekkady-tamil-nadu-india/thekkady-tamil-nadu-india-01-lg.webp",
+    "primary": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/thekkady-tamil-nadu-india/thekkady-tamil-nadu-india-01-lg.webp",
-        "caption": "Thekkady — SHYAMAL CHANDRA GHOSH, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
         "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
@@ -9881,6 +9741,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/kerala-india/kerala-india-04-lg.webp",
         "caption": "Kerala — Vengolis, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/thekkady-tamil-nadu-india/thekkady-tamil-nadu-india-01-lg.webp",
+        "caption": "Thekkady — SHYAMAL CHANDRA GHOSH, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/thekkady-tamil-nadu-india/thekkady-tamil-nadu-india-02-lg.webp",
@@ -9901,14 +9765,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kerala-tamil-nadu-tour-package": {
-    "primary": "/images/location-library/tamil-nadu-india/tamil-nadu-india-02-lg.webp",
+    "primary": "/images/location-library/tamil-nadu-india/tamil-nadu-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-02-lg.webp",
+        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-01-lg.webp",
         "caption": "Tamil Nadu — Didier Descouens, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-01-lg.webp",
+        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-02-lg.webp",
         "caption": "Tamil Nadu — Didier Descouens, CC BY-SA 4.0"
       },
       {
@@ -9942,12 +9806,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kerala-temples-tour-package": {
-    "primary": "/images/location-library/kerala-india/kerala-india-02-crop1-lg.webp",
+    "primary": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kerala-india/kerala-india-02-crop1-lg.webp",
-        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
         "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
@@ -9970,12 +9830,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kerala-tour-packages-from-ahmedabad": {
-    "primary": "/images/location-library/kerala-india/kerala-india-02-lg.webp",
+    "primary": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kerala-india/kerala-india-02-lg.webp",
-        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-01-lg.webp",
         "caption": "Ahmedabad — Honzasoukup, Public domain"
@@ -9997,6 +9853,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
       },
       {
+        "src": "/images/location-library/kerala-india/kerala-india-02-lg.webp",
+        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
         "src": "/images/location-library/kerala-india/kerala-india-03-lg.webp",
         "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
       },
@@ -10011,12 +9871,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kerala-tour-packages-from-chennai": {
-    "primary": "/images/location-library/kochi-kerala-india/kochi-kerala-india-02-lg.webp",
+    "primary": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kochi-kerala-india/kochi-kerala-india-02-lg.webp",
-        "caption": "Kochi — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
         "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
@@ -10035,6 +9891,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       },
       {
         "src": "/images/location-library/kochi-kerala-india/kochi-kerala-india-01-lg.webp",
+        "caption": "Kochi — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kochi-kerala-india/kochi-kerala-india-02-lg.webp",
         "caption": "Kochi — Vyacheslav Argenberg, CC BY 4.0"
       },
       {
@@ -10052,12 +9912,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kerala-tour-packages-from-delhi": {
-    "primary": "/images/location-library/kochi-kerala-india/kochi-kerala-india-03-lg.webp",
+    "primary": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kochi-kerala-india/kochi-kerala-india-03-lg.webp",
-        "caption": "Kochi — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
         "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
@@ -10080,6 +9936,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       },
       {
         "src": "/images/location-library/kochi-kerala-india/kochi-kerala-india-02-lg.webp",
+        "caption": "Kochi — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kochi-kerala-india/kochi-kerala-india-03-lg.webp",
         "caption": "Kochi — Vyacheslav Argenberg, CC BY 4.0"
       },
       {
@@ -10093,12 +9953,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kerala-tour-packages-from-hyderabad": {
-    "primary": "/images/location-library/kochi-kerala-india/kochi-kerala-india-04-lg.webp",
+    "primary": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kochi-kerala-india/kochi-kerala-india-04-lg.webp",
-        "caption": "Kochi — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
         "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
@@ -10126,6 +9982,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/kochi-kerala-india/kochi-kerala-india-03-lg.webp",
         "caption": "Kochi — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kochi-kerala-india/kochi-kerala-india-04-lg.webp",
+        "caption": "Kochi — Vyacheslav Argenberg, CC BY 4.0"
       }
     ],
     "locations": [
@@ -10134,12 +9994,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kerala-tour-packages-from-mumbai": {
-    "primary": "/images/location-library/kerala-india/kerala-india-03-crop1-lg.webp",
+    "primary": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kerala-india/kerala-india-03-crop1-lg.webp",
-        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
         "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
@@ -10179,12 +10035,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kerala-tour-packages-from-nagpur": {
-    "primary": "/images/location-library/nagpur-maharashtra-india/nagpur-maharashtra-india-03-lg.webp",
+    "primary": "/images/location-library/nagpur-maharashtra-india/nagpur-maharashtra-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/nagpur-maharashtra-india/nagpur-maharashtra-india-03-lg.webp",
-        "caption": "Nagpur — bbrijesh.ptl, CC BY 3.0"
-      },
       {
         "src": "/images/location-library/nagpur-maharashtra-india/nagpur-maharashtra-india-01-lg.webp",
         "caption": "Nagpur — Yann Forget, CC BY-SA 4.0"
@@ -10192,6 +10044,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/nagpur-maharashtra-india/nagpur-maharashtra-india-02-lg.webp",
         "caption": "Nagpur — Yann Forget, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/nagpur-maharashtra-india/nagpur-maharashtra-india-03-lg.webp",
+        "caption": "Nagpur — bbrijesh.ptl, CC BY 3.0"
       },
       {
         "src": "/images/location-library/nagpur-maharashtra-india/nagpur-maharashtra-india-04-lg.webp",
@@ -10220,12 +10076,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kerala-tour-packages-from-pune": {
-    "primary": "/images/location-library/pune-maharashtra-india/pune-maharashtra-india-03-lg.webp",
+    "primary": "/images/location-library/pune-maharashtra-india/pune-maharashtra-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/pune-maharashtra-india/pune-maharashtra-india-03-lg.webp",
-        "caption": "Pune — Udaykumar PR, CC BY 3.0"
-      },
       {
         "src": "/images/location-library/pune-maharashtra-india/pune-maharashtra-india-01-lg.webp",
         "caption": "Pune — Udaykumar PR, CC BY 3.0"
@@ -10233,6 +10085,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/pune-maharashtra-india/pune-maharashtra-india-02-lg.webp",
         "caption": "Pune — Dilip Somani, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/pune-maharashtra-india/pune-maharashtra-india-03-lg.webp",
+        "caption": "Pune — Udaykumar PR, CC BY 3.0"
       },
       {
         "src": "/images/location-library/pune-maharashtra-india/pune-maharashtra-india-04-lg.webp",
@@ -10261,12 +10117,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kerala-tour-packages-from-surat": {
-    "primary": "/images/location-library/kerala-india/kerala-india-04-crop1-lg.webp",
+    "primary": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kerala-india/kerala-india-04-crop1-lg.webp",
-        "caption": "Kerala — Vengolis, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
         "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
@@ -10306,12 +10158,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kerala-tour-packages": {
-    "primary": "/images/location-library/kochi-kerala-india/kochi-kerala-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kochi-kerala-india/kochi-kerala-india-01-crop1-lg.webp",
-        "caption": "Kochi — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
         "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
@@ -10351,15 +10199,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kerala-with-kanyakumari": {
-    "primary": "/images/location-library/kanyakumari-tamil-nadu-india/kanyakumari-tamil-nadu-india-02-lg.webp",
+    "primary": "/images/location-library/kanyakumari-tamil-nadu-india/kanyakumari-tamil-nadu-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kanyakumari-tamil-nadu-india/kanyakumari-tamil-nadu-india-02-lg.webp",
-        "caption": "Kanyakumari — Raman Patel, CC BY 3.0"
-      },
       {
         "src": "/images/location-library/kanyakumari-tamil-nadu-india/kanyakumari-tamil-nadu-india-01-lg.webp",
         "caption": "Kanyakumari — Omar AV, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/kanyakumari-tamil-nadu-india/kanyakumari-tamil-nadu-india-02-lg.webp",
+        "caption": "Kanyakumari — Raman Patel, CC BY 3.0"
       },
       {
         "src": "/images/location-library/kanyakumari-tamil-nadu-india/kanyakumari-tamil-nadu-india-03-lg.webp",
@@ -10392,12 +10240,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kerala": {
-    "primary": "/images/location-library/kerala-india/kerala-india-01-crop2-lg.webp",
+    "primary": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kerala-india/kerala-india-01-crop2-lg.webp",
-        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
         "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
@@ -10444,18 +10288,18 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "khajuraho-dance-festival-tour": {
-    "primary": "/images/location-library/khajuraho-madhya-pradesh-india/khajuraho-madhya-pradesh-india-03-lg.webp",
+    "primary": "/images/location-library/khajuraho-madhya-pradesh-india/khajuraho-madhya-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/khajuraho-madhya-pradesh-india/khajuraho-madhya-pradesh-india-03-lg.webp",
-        "caption": "Khajuraho — WarmaFiesta, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/khajuraho-madhya-pradesh-india/khajuraho-madhya-pradesh-india-01-lg.webp",
         "caption": "Khajuraho — WarmaFiesta, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/khajuraho-madhya-pradesh-india/khajuraho-madhya-pradesh-india-02-lg.webp",
+        "caption": "Khajuraho — WarmaFiesta, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/khajuraho-madhya-pradesh-india/khajuraho-madhya-pradesh-india-03-lg.webp",
         "caption": "Khajuraho — WarmaFiesta, CC BY-SA 4.0"
       },
       {
@@ -10485,12 +10329,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "khajuraho-orchha-tour": {
-    "primary": "/images/location-library/khajuraho-madhya-pradesh-india/khajuraho-madhya-pradesh-india-04-lg.webp",
+    "primary": "/images/location-library/khajuraho-madhya-pradesh-india/khajuraho-madhya-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/khajuraho-madhya-pradesh-india/khajuraho-madhya-pradesh-india-04-lg.webp",
-        "caption": "Khajuraho — WarmaFiesta, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/khajuraho-madhya-pradesh-india/khajuraho-madhya-pradesh-india-01-lg.webp",
         "caption": "Khajuraho — WarmaFiesta, CC BY-SA 4.0"
@@ -10501,6 +10341,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       },
       {
         "src": "/images/location-library/khajuraho-madhya-pradesh-india/khajuraho-madhya-pradesh-india-03-lg.webp",
+        "caption": "Khajuraho — WarmaFiesta, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/khajuraho-madhya-pradesh-india/khajuraho-madhya-pradesh-india-04-lg.webp",
         "caption": "Khajuraho — WarmaFiesta, CC BY-SA 4.0"
       },
       {
@@ -10526,12 +10370,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "khajuraho-tour-packages": {
-    "primary": "/images/location-library/khajuraho-madhya-pradesh-india/khajuraho-madhya-pradesh-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/khajuraho-madhya-pradesh-india/khajuraho-madhya-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/khajuraho-madhya-pradesh-india/khajuraho-madhya-pradesh-india-01-crop1-lg.webp",
-        "caption": "Khajuraho — WarmaFiesta, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/khajuraho-madhya-pradesh-india/khajuraho-madhya-pradesh-india-01-lg.webp",
         "caption": "Khajuraho — WarmaFiesta, CC BY-SA 4.0"
@@ -10746,15 +10586,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kumbh-mela-tour-package-from-mumbai": {
-    "primary": "/images/location-library/kumbh-mela-prayagraj-allahabad/kumbh-mela-prayagraj-allahabad-02-lg.webp",
+    "primary": "/images/location-library/kumbh-mela-prayagraj-allahabad/kumbh-mela-prayagraj-allahabad-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kumbh-mela-prayagraj-allahabad/kumbh-mela-prayagraj-allahabad-02-lg.webp",
-        "caption": "Kumbh Mela — Seba Della y Sole Bossio from Cordoba, Argentina, CC BY 2.0"
-      },
       {
         "src": "/images/location-library/kumbh-mela-prayagraj-allahabad/kumbh-mela-prayagraj-allahabad-01-lg.webp",
         "caption": "Kumbh Mela — Michael T Balonek, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kumbh-mela-prayagraj-allahabad/kumbh-mela-prayagraj-allahabad-02-lg.webp",
+        "caption": "Kumbh Mela — Seba Della y Sole Bossio from Cordoba, Argentina, CC BY 2.0"
       },
       {
         "src": "/images/location-library/kumbh-mela-prayagraj-allahabad/kumbh-mela-prayagraj-allahabad-03-lg.webp",
@@ -10770,12 +10610,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kushinagar-tour-packages": {
-    "primary": "/images/location-library/kushinagar-uttar-pradesh-india/kushinagar-uttar-pradesh-india-03-lg.webp",
+    "primary": "/images/location-library/kushinagar-uttar-pradesh-india/kushinagar-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kushinagar-uttar-pradesh-india/kushinagar-uttar-pradesh-india-03-lg.webp",
-        "caption": "Kushinagar — Asitjain, CC BY-SA 3.0"
-      },
       {
         "src": "/images/location-library/kushinagar-uttar-pradesh-india/kushinagar-uttar-pradesh-india-01-lg.webp",
         "caption": "Kushinagar — กิตติ เลขะกุล, CC BY 3.0"
@@ -10783,6 +10619,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/kushinagar-uttar-pradesh-india/kushinagar-uttar-pradesh-india-02-lg.webp",
         "caption": "Kushinagar — Rangan Datta Wiki, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kushinagar-uttar-pradesh-india/kushinagar-uttar-pradesh-india-03-lg.webp",
+        "caption": "Kushinagar — Asitjain, CC BY-SA 3.0"
       },
       {
         "src": "/images/location-library/kushinagar-uttar-pradesh-india/kushinagar-uttar-pradesh-india-04-lg.webp",
@@ -10794,12 +10634,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kushinagar": {
-    "primary": "/images/location-library/kushinagar-uttar-pradesh-india/kushinagar-uttar-pradesh-india-04-lg.webp",
+    "primary": "/images/location-library/kushinagar-uttar-pradesh-india/kushinagar-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kushinagar-uttar-pradesh-india/kushinagar-uttar-pradesh-india-04-lg.webp",
-        "caption": "Kushinagar — Percy Brown (1872-1955), Public domain"
-      },
       {
         "src": "/images/location-library/kushinagar-uttar-pradesh-india/kushinagar-uttar-pradesh-india-01-lg.webp",
         "caption": "Kushinagar — กิตติ เลขะกุล, CC BY 3.0"
@@ -10811,6 +10647,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/kushinagar-uttar-pradesh-india/kushinagar-uttar-pradesh-india-03-lg.webp",
         "caption": "Kushinagar — Asitjain, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/kushinagar-uttar-pradesh-india/kushinagar-uttar-pradesh-india-04-lg.webp",
+        "caption": "Kushinagar — Percy Brown (1872-1955), Public domain"
       }
     ],
     "locations": [
@@ -10900,15 +10740,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "ladakh": {
-    "primary": "/images/location-library/ladakh-india/ladakh-india-02-lg.webp",
+    "primary": "/images/location-library/ladakh-india/ladakh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/ladakh-india/ladakh-india-02-lg.webp",
-        "caption": "Ladakh — Ville Hyvönen, CC BY-SA 2.0"
-      },
       {
         "src": "/images/location-library/ladakh-india/ladakh-india-01-lg.webp",
         "caption": "Ladakh — Chris Hunkeler from Carlsbad, California, USA Derivative work: UnpetitproleX, CC BY-SA 2.0"
+      },
+      {
+        "src": "/images/location-library/ladakh-india/ladakh-india-02-lg.webp",
+        "caption": "Ladakh — Ville Hyvönen, CC BY-SA 2.0"
       },
       {
         "src": "/images/location-library/ladakh-india/ladakh-india-03-lg.webp",
@@ -10948,12 +10788,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "lakshman-jhula-rishikesh": {
-    "primary": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-03-crop1-lg.webp",
+    "primary": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-03-crop1-lg.webp",
-        "caption": "Rishikesh — Dan Searle, CC BY-SA 2.0"
-      },
       {
         "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
         "caption": "Rishikesh — Dorelal Singh, CC BY-SA 3.0"
@@ -11000,12 +10836,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "lucknow-sightseeing-tour": {
-    "primary": "/images/location-library/lucknow-uttar-pradesh-india/lucknow-uttar-pradesh-india-03-lg.webp",
+    "primary": "/images/location-library/lucknow-uttar-pradesh-india/lucknow-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/lucknow-uttar-pradesh-india/lucknow-uttar-pradesh-india-03-lg.webp",
-        "caption": "Lucknow — AKASH SINGH. 654, by-sa"
-      },
       {
         "src": "/images/location-library/lucknow-uttar-pradesh-india/lucknow-uttar-pradesh-india-01-lg.webp",
         "caption": "Lucknow — Jagannath Saragadam, CC BY-SA 4.0"
@@ -11013,6 +10845,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/lucknow-uttar-pradesh-india/lucknow-uttar-pradesh-india-02-lg.webp",
         "caption": "Lucknow — Aggarwalmanish191, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/lucknow-uttar-pradesh-india/lucknow-uttar-pradesh-india-03-lg.webp",
+        "caption": "Lucknow — AKASH SINGH. 654, by-sa"
       },
       {
         "src": "/images/location-library/lucknow-uttar-pradesh-india/lucknow-uttar-pradesh-india-04-lg.webp",
@@ -11024,12 +10860,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "lucknow-tour-packages": {
-    "primary": "/images/location-library/lucknow-uttar-pradesh-india/lucknow-uttar-pradesh-india-04-lg.webp",
+    "primary": "/images/location-library/lucknow-uttar-pradesh-india/lucknow-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/lucknow-uttar-pradesh-india/lucknow-uttar-pradesh-india-04-lg.webp",
-        "caption": "Lucknow — Kumud Kant, CC BY-SA 3.0"
-      },
       {
         "src": "/images/location-library/lucknow-uttar-pradesh-india/lucknow-uttar-pradesh-india-01-lg.webp",
         "caption": "Lucknow — Jagannath Saragadam, CC BY-SA 4.0"
@@ -11041,6 +10873,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/lucknow-uttar-pradesh-india/lucknow-uttar-pradesh-india-03-lg.webp",
         "caption": "Lucknow — AKASH SINGH. 654, by-sa"
+      },
+      {
+        "src": "/images/location-library/lucknow-uttar-pradesh-india/lucknow-uttar-pradesh-india-04-lg.webp",
+        "caption": "Lucknow — Kumud Kant, CC BY-SA 3.0"
       }
     ],
     "locations": [
@@ -11048,12 +10884,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "lucknow": {
-    "primary": "/images/location-library/lucknow-uttar-pradesh-india/lucknow-uttar-pradesh-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/lucknow-uttar-pradesh-india/lucknow-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/lucknow-uttar-pradesh-india/lucknow-uttar-pradesh-india-01-crop1-lg.webp",
-        "caption": "Lucknow — Jagannath Saragadam, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/lucknow-uttar-pradesh-india/lucknow-uttar-pradesh-india-01-lg.webp",
         "caption": "Lucknow — Jagannath Saragadam, CC BY-SA 4.0"
@@ -11100,15 +10932,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "lumbini": {
-    "primary": "/images/location-library/lumbini-nepal/lumbini-nepal-02-lg.webp",
+    "primary": "/images/location-library/lumbini-nepal/lumbini-nepal-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/lumbini-nepal/lumbini-nepal-02-lg.webp",
-        "caption": "Lumbini — Bijay Chaurasia, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/lumbini-nepal/lumbini-nepal-01-lg.webp",
         "caption": "Lumbini — Shadow Ayush, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/lumbini-nepal/lumbini-nepal-02-lg.webp",
+        "caption": "Lumbini — Bijay Chaurasia, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/lumbini-nepal/lumbini-nepal-03-lg.webp",
@@ -11124,12 +10956,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "madhya-pradesh-tour-packages": {
-    "primary": "/images/location-library/omkareshwar-madhya-pradesh-india/omkareshwar-madhya-pradesh-india-02-lg.webp",
+    "primary": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/omkareshwar-madhya-pradesh-india/omkareshwar-madhya-pradesh-india-02-lg.webp",
-        "caption": "Omkareshwar — Lokesh Mundra, CC BY 3.0"
-      },
       {
         "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-01-lg.webp",
         "caption": "Madhya Pradesh — Suyash Dwivedi, CC BY-SA 4.0"
@@ -11151,6 +10979,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Omkareshwar — Lokesh Mundra, CC BY 3.0"
       },
       {
+        "src": "/images/location-library/omkareshwar-madhya-pradesh-india/omkareshwar-madhya-pradesh-india-02-lg.webp",
+        "caption": "Omkareshwar — Lokesh Mundra, CC BY 3.0"
+      },
+      {
         "src": "/images/location-library/omkareshwar-madhya-pradesh-india/omkareshwar-madhya-pradesh-india-03-lg.webp",
         "caption": "Omkareshwar — Jean-Pierre Dalbéra, CC BY 2.0"
       },
@@ -11165,12 +10997,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "madhya-pradesh-tour": {
-    "primary": "/images/location-library/bhopal-madhya-pradesh-india/bhopal-madhya-pradesh-india-03-lg.webp",
+    "primary": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/bhopal-madhya-pradesh-india/bhopal-madhya-pradesh-india-03-lg.webp",
-        "caption": "Bhopal — Marjolein Katsma, by-sa"
-      },
       {
         "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-01-lg.webp",
         "caption": "Madhya Pradesh — Suyash Dwivedi, CC BY-SA 4.0"
@@ -11196,6 +11024,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Bhopal — shivanjan choudhury, by"
       },
       {
+        "src": "/images/location-library/bhopal-madhya-pradesh-india/bhopal-madhya-pradesh-india-03-lg.webp",
+        "caption": "Bhopal — Marjolein Katsma, by-sa"
+      },
+      {
         "src": "/images/location-library/bhopal-madhya-pradesh-india/bhopal-madhya-pradesh-india-04-lg.webp",
         "caption": "Bhopal — Ranjit78, by-sa"
       }
@@ -11206,12 +11038,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "madhya-pradesh-wildlife-tour": {
-    "primary": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-04-lg.webp",
+    "primary": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-04-lg.webp",
-        "caption": "Bandhavgarh National Park — Tom Thai, CC BY 2.0"
-      },
       {
         "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-01-lg.webp",
         "caption": "Madhya Pradesh — Suyash Dwivedi, CC BY-SA 4.0"
@@ -11239,6 +11067,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-03-lg.webp",
         "caption": "Bandhavgarh National Park — Goleisureintl, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-04-lg.webp",
+        "caption": "Bandhavgarh National Park — Tom Thai, CC BY 2.0"
       }
     ],
     "locations": [
@@ -11247,12 +11079,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "madhya-pradesh": {
-    "primary": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-01-crop1-lg.webp",
-        "caption": "Madhya Pradesh — Suyash Dwivedi, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-01-lg.webp",
         "caption": "Madhya Pradesh — Suyash Dwivedi, CC BY-SA 4.0"
@@ -11275,15 +11103,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "madurai-rameshwaram-tour-package": {
-    "primary": "/images/location-library/rameshwaram-tamil-nadu-india/rameshwaram-tamil-nadu-india-02-lg.webp",
+    "primary": "/images/location-library/rameshwaram-tamil-nadu-india/rameshwaram-tamil-nadu-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/rameshwaram-tamil-nadu-india/rameshwaram-tamil-nadu-india-02-lg.webp",
-        "caption": "Rameshwaram — P Jeganathan, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/rameshwaram-tamil-nadu-india/rameshwaram-tamil-nadu-india-01-lg.webp",
         "caption": "Rameshwaram — Artly2001, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/rameshwaram-tamil-nadu-india/rameshwaram-tamil-nadu-india-02-lg.webp",
+        "caption": "Rameshwaram — P Jeganathan, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/rameshwaram-tamil-nadu-india/rameshwaram-tamil-nadu-india-03-lg.webp",
@@ -11340,12 +11168,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "magical-golden-triangle": {
-    "primary": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-04-crop1-lg.webp",
+    "primary": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-04-crop1-lg.webp",
-        "caption": "Agra — Dan Searle, by-sa"
-      },
       {
         "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-01-lg.webp",
         "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
@@ -11385,14 +11209,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "maharashtra-5-jyotirlinga-package": {
-    "primary": "/images/location-library/maharashtra-india/maharashtra-india-02-lg.webp",
+    "primary": "/images/location-library/maharashtra-india/maharashtra-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/maharashtra-india/maharashtra-india-02-lg.webp",
+        "src": "/images/location-library/maharashtra-india/maharashtra-india-01-lg.webp",
         "caption": "Maharashtra — Didier Descouens, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/maharashtra-india/maharashtra-india-01-lg.webp",
+        "src": "/images/location-library/maharashtra-india/maharashtra-india-02-lg.webp",
         "caption": "Maharashtra — Didier Descouens, CC BY-SA 4.0"
       },
       {
@@ -11426,12 +11250,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "maharashtra-jyotirlinga-yatra-package": {
-    "primary": "/images/location-library/maharashtra-india/maharashtra-india-03-lg.webp",
+    "primary": "/images/location-library/maharashtra-india/maharashtra-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/maharashtra-india/maharashtra-india-03-lg.webp",
-        "caption": "Maharashtra — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/maharashtra-india/maharashtra-india-01-lg.webp",
         "caption": "Maharashtra — Didier Descouens, CC BY-SA 4.0"
@@ -11439,6 +11259,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/maharashtra-india/maharashtra-india-02-lg.webp",
         "caption": "Maharashtra — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/maharashtra-india/maharashtra-india-03-lg.webp",
+        "caption": "Maharashtra — Vyacheslav Argenberg, CC BY 4.0"
       },
       {
         "src": "/images/location-library/maharashtra-india/maharashtra-india-04-lg.webp",
@@ -11467,12 +11291,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "maharashtra-tour-packages": {
-    "primary": "/images/location-library/maharashtra-india/maharashtra-india-04-lg.webp",
+    "primary": "/images/location-library/maharashtra-india/maharashtra-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/maharashtra-india/maharashtra-india-04-lg.webp",
-        "caption": "Maharashtra — Nikhil More, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/maharashtra-india/maharashtra-india-01-lg.webp",
         "caption": "Maharashtra — Didier Descouens, CC BY-SA 4.0"
@@ -11484,6 +11304,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/maharashtra-india/maharashtra-india-03-lg.webp",
         "caption": "Maharashtra — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/maharashtra-india/maharashtra-india-04-lg.webp",
+        "caption": "Maharashtra — Nikhil More, CC BY-SA 4.0"
       }
     ],
     "locations": [
@@ -11491,12 +11315,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "maharashtra": {
-    "primary": "/images/location-library/maharashtra-india/maharashtra-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/maharashtra-india/maharashtra-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/maharashtra-india/maharashtra-india-01-crop1-lg.webp",
-        "caption": "Maharashtra — Didier Descouens, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/maharashtra-india/maharashtra-india-01-lg.webp",
         "caption": "Maharashtra — Didier Descouens, CC BY-SA 4.0"
@@ -11519,12 +11339,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "mahavatar-babaji-cave-tour-from-chennai": {
-    "primary": "/images/location-library/chennai-tamil-nadu-india/chennai-tamil-nadu-india-03-lg.webp",
+    "primary": "/images/location-library/chennai-tamil-nadu-india/chennai-tamil-nadu-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/chennai-tamil-nadu-india/chennai-tamil-nadu-india-03-lg.webp",
-        "caption": "Chennai — Helppublic, by-sa"
-      },
       {
         "src": "/images/location-library/chennai-tamil-nadu-india/chennai-tamil-nadu-india-01-lg.webp",
         "caption": "Chennai — Helppublic, by-sa"
@@ -11532,6 +11348,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/chennai-tamil-nadu-india/chennai-tamil-nadu-india-02-lg.webp",
         "caption": "Chennai — Timothy A. Gonsalves, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/chennai-tamil-nadu-india/chennai-tamil-nadu-india-03-lg.webp",
+        "caption": "Chennai — Helppublic, by-sa"
       },
       {
         "src": "/images/location-library/chennai-tamil-nadu-india/chennai-tamil-nadu-india-04-lg.webp",
@@ -11543,12 +11363,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "majestic-kumaon-tour": {
-    "primary": "/images/location-library/ranikhet-uttarakhand-india/ranikhet-uttarakhand-india-01-lg.webp",
+    "primary": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/ranikhet-uttarakhand-india/ranikhet-uttarakhand-india-01-lg.webp",
-        "caption": "Ranikhet — Harshit SR, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-01-lg.webp",
         "caption": "Nainital — Didier Descouens, CC BY-SA 4.0"
@@ -11564,6 +11380,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-04-lg.webp",
         "caption": "Nainital — Praveen Singh Bisht, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/ranikhet-uttarakhand-india/ranikhet-uttarakhand-india-01-lg.webp",
+        "caption": "Ranikhet — Harshit SR, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/ranikhet-uttarakhand-india/ranikhet-uttarakhand-india-02-lg.webp",
@@ -11584,14 +11404,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "malaysia-singapore-combo-tour": {
-    "primary": "/images/location-library/singapore-international/singapore-international-02-lg.webp",
+    "primary": "/images/location-library/singapore-international/singapore-international-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/singapore-international/singapore-international-02-lg.webp",
+        "src": "/images/location-library/singapore-international/singapore-international-01-lg.webp",
         "caption": "Singapore — Basile Morin, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/singapore-international/singapore-international-01-lg.webp",
+        "src": "/images/location-library/singapore-international/singapore-international-02-lg.webp",
         "caption": "Singapore — Basile Morin, CC BY-SA 4.0"
       },
       {
@@ -11625,15 +11445,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "malaysia-tour-packages": {
-    "primary": "/images/location-library/malaysia-international/malaysia-international-02-lg.webp",
+    "primary": "/images/location-library/malaysia-international/malaysia-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/malaysia-international/malaysia-international-02-lg.webp",
-        "caption": "Malaysia — CEphoto, Uwe Aranas, CC BY-SA 3.0"
-      },
       {
         "src": "/images/location-library/malaysia-international/malaysia-international-01-lg.webp",
         "caption": "Malaysia — GerifalteDelSabana, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/malaysia-international/malaysia-international-02-lg.webp",
+        "caption": "Malaysia — CEphoto, Uwe Aranas, CC BY-SA 3.0"
       },
       {
         "src": "/images/location-library/malaysia-international/malaysia-international-03-lg.webp",
@@ -11666,15 +11486,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "manali-honeymoon-packages": {
-    "primary": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-02-lg.webp",
+    "primary": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-02-lg.webp",
-        "caption": "Manali — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-01-lg.webp",
         "caption": "Manali — Trippysoul, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-02-lg.webp",
+        "caption": "Manali — Vyacheslav Argenberg, CC BY 4.0"
       },
       {
         "src": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-03-lg.webp",
@@ -11690,12 +11510,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "manali-tour-packages": {
-    "primary": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-04-lg.webp",
+    "primary": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-04-lg.webp",
-        "caption": "Manali — Adam Jones from Kelowna, BC, Canada, CC BY-SA 2.0"
-      },
       {
         "src": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-01-lg.webp",
         "caption": "Manali — Trippysoul, CC BY-SA 4.0"
@@ -11707,6 +11523,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-03-lg.webp",
         "caption": "Manali — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-04-lg.webp",
+        "caption": "Manali — Adam Jones from Kelowna, BC, Canada, CC BY-SA 2.0"
       }
     ],
     "locations": [
@@ -11714,12 +11534,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "manali-volvo-package": {
-    "primary": "/images/location-library/rohtang-pass-himachal-pradesh-india/rohtang-pass-himachal-pradesh-india-02-lg.webp",
+    "primary": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/rohtang-pass-himachal-pradesh-india/rohtang-pass-himachal-pradesh-india-02-lg.webp",
-        "caption": "Rohtang Pass — B Balaji from Chennai, India, CC0"
-      },
       {
         "src": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-01-lg.webp",
         "caption": "Manali — Trippysoul, CC BY-SA 4.0"
@@ -11741,6 +11557,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Rohtang Pass — Maxzameer, CC BY-SA 4.0"
       },
       {
+        "src": "/images/location-library/rohtang-pass-himachal-pradesh-india/rohtang-pass-himachal-pradesh-india-02-lg.webp",
+        "caption": "Rohtang Pass — B Balaji from Chennai, India, CC0"
+      },
+      {
         "src": "/images/location-library/rohtang-pass-himachal-pradesh-india/rohtang-pass-himachal-pradesh-india-03-lg.webp",
         "caption": "Rohtang Pass — Ajisi, CC BY-SA 4.0"
       },
@@ -11755,12 +11575,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "manali-weekend-tour": {
-    "primary": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-01-crop1-lg.webp",
-        "caption": "Manali — Trippysoul, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-01-lg.webp",
         "caption": "Manali — Trippysoul, CC BY-SA 4.0"
@@ -11783,12 +11599,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "manali": {
-    "primary": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-02-crop1-lg.webp",
+    "primary": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-02-crop1-lg.webp",
-        "caption": "Manali — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-01-lg.webp",
         "caption": "Manali — Trippysoul, CC BY-SA 4.0"
@@ -11835,12 +11647,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "mathura-gokul-barsana-vrindavan-tour": {
-    "primary": "/images/location-library/vrindavan-uttar-pradesh-india/vrindavan-uttar-pradesh-india-03-lg.webp",
+    "primary": "/images/location-library/vrindavan-uttar-pradesh-india/vrindavan-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/vrindavan-uttar-pradesh-india/vrindavan-uttar-pradesh-india-03-lg.webp",
-        "caption": "Vrindavan — Guptaele, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/vrindavan-uttar-pradesh-india/vrindavan-uttar-pradesh-india-01-lg.webp",
         "caption": "Vrindavan — Gannu03, CC BY-SA 4.0"
@@ -11848,6 +11656,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/vrindavan-uttar-pradesh-india/vrindavan-uttar-pradesh-india-02-lg.webp",
         "caption": "Vrindavan — Shikher Singh, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/vrindavan-uttar-pradesh-india/vrindavan-uttar-pradesh-india-03-lg.webp",
+        "caption": "Vrindavan — Guptaele, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/vrindavan-uttar-pradesh-india/vrindavan-uttar-pradesh-india-04-lg.webp",
@@ -11876,15 +11688,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "mathura-gokul-vrindavan-weekend-tour-from-delhi": {
-    "primary": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-02-lg.webp",
+    "primary": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-02-lg.webp",
-        "caption": "Mathura — Shikher Singh, by-sa"
-      },
       {
         "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-01-lg.webp",
         "caption": "Mathura — Sandeepni, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-02-lg.webp",
+        "caption": "Mathura — Shikher Singh, by-sa"
       },
       {
         "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-03-lg.webp",
@@ -11917,12 +11729,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "mathura-tour-packages": {
-    "primary": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-03-lg.webp",
+    "primary": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-03-lg.webp",
-        "caption": "Mathura — Guptaele, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-01-lg.webp",
         "caption": "Mathura — Sandeepni, CC BY-SA 4.0"
@@ -11930,6 +11738,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-02-lg.webp",
         "caption": "Mathura — Shikher Singh, by-sa"
+      },
+      {
+        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-03-lg.webp",
+        "caption": "Mathura — Guptaele, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-04-lg.webp",
@@ -11941,12 +11753,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "mathura-vrindavan-tour": {
-    "primary": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-04-lg.webp",
+    "primary": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-04-lg.webp",
-        "caption": "Mathura — Guptaele, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-01-lg.webp",
         "caption": "Mathura — Sandeepni, CC BY-SA 4.0"
@@ -11957,6 +11765,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       },
       {
         "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-03-lg.webp",
+        "caption": "Mathura — Guptaele, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-04-lg.webp",
         "caption": "Mathura — Guptaele, CC BY-SA 4.0"
       },
       {
@@ -11982,12 +11794,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "mathura": {
-    "primary": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-01-crop1-lg.webp",
-        "caption": "Mathura — Sandeepni, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-01-lg.webp",
         "caption": "Mathura — Sandeepni, CC BY-SA 4.0"
@@ -12082,12 +11890,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "muktinath-kathmandu-tour": {
-    "primary": "/images/location-library/kathmandu-nepal/kathmandu-nepal-04-lg.webp",
+    "primary": "/images/location-library/kathmandu-nepal/kathmandu-nepal-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kathmandu-nepal/kathmandu-nepal-04-lg.webp",
-        "caption": "Kathmandu — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/kathmandu-nepal/kathmandu-nepal-01-lg.webp",
         "caption": "Kathmandu — Bijay Chaurasia, CC BY-SA 4.0"
@@ -12098,6 +11902,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       },
       {
         "src": "/images/location-library/kathmandu-nepal/kathmandu-nepal-03-lg.webp",
+        "caption": "Kathmandu — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kathmandu-nepal/kathmandu-nepal-04-lg.webp",
         "caption": "Kathmandu — Vyacheslav Argenberg, CC BY 4.0"
       },
       {
@@ -12123,12 +11931,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "muktinath-tour-packages": {
-    "primary": "/images/location-library/kathmandu-nepal/kathmandu-nepal-01-crop1-lg.webp",
+    "primary": "/images/location-library/kathmandu-nepal/kathmandu-nepal-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kathmandu-nepal/kathmandu-nepal-01-crop1-lg.webp",
-        "caption": "Kathmandu — Bijay Chaurasia, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/kathmandu-nepal/kathmandu-nepal-01-lg.webp",
         "caption": "Kathmandu — Bijay Chaurasia, CC BY-SA 4.0"
@@ -12175,15 +11979,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "mumbai-tour-packages": {
-    "primary": "/images/location-library/mumbai-maharashtra-india/mumbai-maharashtra-india-02-lg.webp",
+    "primary": "/images/location-library/mumbai-maharashtra-india/mumbai-maharashtra-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/mumbai-maharashtra-india/mumbai-maharashtra-india-02-lg.webp",
-        "caption": "Mumbai — Ivar Leidus, by-sa"
-      },
       {
         "src": "/images/location-library/mumbai-maharashtra-india/mumbai-maharashtra-india-01-lg.webp",
         "caption": "Mumbai — N. Vivekananthamoorthy, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/mumbai-maharashtra-india/mumbai-maharashtra-india-02-lg.webp",
+        "caption": "Mumbai — Ivar Leidus, by-sa"
       },
       {
         "src": "/images/location-library/mumbai-maharashtra-india/mumbai-maharashtra-india-03-lg.webp",
@@ -12199,12 +12003,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "mumbai-weekend-getaways": {
-    "primary": "/images/location-library/mumbai-maharashtra-india/mumbai-maharashtra-india-03-lg.webp",
+    "primary": "/images/location-library/mumbai-maharashtra-india/mumbai-maharashtra-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/mumbai-maharashtra-india/mumbai-maharashtra-india-03-lg.webp",
-        "caption": "Mumbai — iMahesh, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/mumbai-maharashtra-india/mumbai-maharashtra-india-01-lg.webp",
         "caption": "Mumbai — N. Vivekananthamoorthy, CC BY 4.0"
@@ -12212,6 +12012,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/mumbai-maharashtra-india/mumbai-maharashtra-india-02-lg.webp",
         "caption": "Mumbai — Ivar Leidus, by-sa"
+      },
+      {
+        "src": "/images/location-library/mumbai-maharashtra-india/mumbai-maharashtra-india-03-lg.webp",
+        "caption": "Mumbai — iMahesh, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/mumbai-maharashtra-india/mumbai-maharashtra-india-04-lg.webp",
@@ -12223,12 +12027,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "mumbai": {
-    "primary": "/images/location-library/mumbai-maharashtra-india/mumbai-maharashtra-india-04-lg.webp",
+    "primary": "/images/location-library/mumbai-maharashtra-india/mumbai-maharashtra-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/mumbai-maharashtra-india/mumbai-maharashtra-india-04-lg.webp",
-        "caption": "Mumbai — A.Savin, FAL"
-      },
       {
         "src": "/images/location-library/mumbai-maharashtra-india/mumbai-maharashtra-india-01-lg.webp",
         "caption": "Mumbai — N. Vivekananthamoorthy, CC BY 4.0"
@@ -12240,6 +12040,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/mumbai-maharashtra-india/mumbai-maharashtra-india-03-lg.webp",
         "caption": "Mumbai — iMahesh, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/mumbai-maharashtra-india/mumbai-maharashtra-india-04-lg.webp",
+        "caption": "Mumbai — A.Savin, FAL"
       }
     ],
     "locations": [
@@ -12288,12 +12092,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "mussoorie-tour-packages": {
-    "primary": "/images/location-library/mussoorie-uttarakhand-india/mussoorie-uttarakhand-india-03-lg.webp",
+    "primary": "/images/location-library/mussoorie-uttarakhand-india/mussoorie-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/mussoorie-uttarakhand-india/mussoorie-uttarakhand-india-03-lg.webp",
-        "caption": "Mussoorie — Anoushka Trivedi, by-sa"
-      },
       {
         "src": "/images/location-library/mussoorie-uttarakhand-india/mussoorie-uttarakhand-india-01-lg.webp",
         "caption": "Mussoorie — Paul Hamilton, CC BY-SA 2.0"
@@ -12301,6 +12101,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/mussoorie-uttarakhand-india/mussoorie-uttarakhand-india-02-lg.webp",
         "caption": "Mussoorie — Paul Hamilton, CC BY-SA 2.0"
+      },
+      {
+        "src": "/images/location-library/mussoorie-uttarakhand-india/mussoorie-uttarakhand-india-03-lg.webp",
+        "caption": "Mussoorie — Anoushka Trivedi, by-sa"
       },
       {
         "src": "/images/location-library/mussoorie-uttarakhand-india/mussoorie-uttarakhand-india-04-lg.webp",
@@ -12312,12 +12116,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "mussoorie": {
-    "primary": "/images/location-library/mussoorie-uttarakhand-india/mussoorie-uttarakhand-india-04-lg.webp",
+    "primary": "/images/location-library/mussoorie-uttarakhand-india/mussoorie-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/mussoorie-uttarakhand-india/mussoorie-uttarakhand-india-04-lg.webp",
-        "caption": "Mussoorie — Paul Hamilton, by-sa"
-      },
       {
         "src": "/images/location-library/mussoorie-uttarakhand-india/mussoorie-uttarakhand-india-01-lg.webp",
         "caption": "Mussoorie — Paul Hamilton, CC BY-SA 2.0"
@@ -12329,6 +12129,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/mussoorie-uttarakhand-india/mussoorie-uttarakhand-india-03-lg.webp",
         "caption": "Mussoorie — Anoushka Trivedi, by-sa"
+      },
+      {
+        "src": "/images/location-library/mussoorie-uttarakhand-india/mussoorie-uttarakhand-india-04-lg.webp",
+        "caption": "Mussoorie — Paul Hamilton, by-sa"
       }
     ],
     "locations": [
@@ -12336,12 +12140,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "myriad-india-highlights-tour": {
-    "primary": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-04-crop1-lg.webp",
+    "primary": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-04-crop1-lg.webp",
-        "caption": "Delhi — Swati Daftuar, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-01-lg.webp",
         "caption": "Delhi — Ravi Dwivedi, CC BY-SA 4.0"
@@ -12364,12 +12164,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "myriad-india-highlights": {
-    "primary": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-02-crop2-lg.webp",
+    "primary": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-02-crop2-lg.webp",
-        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-01-lg.webp",
         "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
@@ -12433,12 +12229,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "nagpur": {
-    "primary": "/images/location-library/nagpur-maharashtra-india/nagpur-maharashtra-india-04-lg.webp",
+    "primary": "/images/location-library/nagpur-maharashtra-india/nagpur-maharashtra-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/nagpur-maharashtra-india/nagpur-maharashtra-india-04-lg.webp",
-        "caption": "Nagpur — bbrijesh.ptl, CC BY 3.0"
-      },
       {
         "src": "/images/location-library/nagpur-maharashtra-india/nagpur-maharashtra-india-01-lg.webp",
         "caption": "Nagpur — Yann Forget, CC BY-SA 4.0"
@@ -12450,6 +12242,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/nagpur-maharashtra-india/nagpur-maharashtra-india-03-lg.webp",
         "caption": "Nagpur — bbrijesh.ptl, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/nagpur-maharashtra-india/nagpur-maharashtra-india-04-lg.webp",
+        "caption": "Nagpur — bbrijesh.ptl, CC BY 3.0"
       }
     ],
     "locations": [
@@ -12457,12 +12253,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "nainital-tour-packages": {
-    "primary": "/images/location-library/ghaziabad-delhi-ncr-india/ghaziabad-delhi-ncr-india-01-lg.webp",
+    "primary": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/ghaziabad-delhi-ncr-india/ghaziabad-delhi-ncr-india-01-lg.webp",
-        "caption": "Ghaziabad — Ravi Dwivedi, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-01-lg.webp",
         "caption": "Nainital — Didier Descouens, CC BY-SA 4.0"
@@ -12478,6 +12270,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-04-lg.webp",
         "caption": "Nainital — Praveen Singh Bisht, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/ghaziabad-delhi-ncr-india/ghaziabad-delhi-ncr-india-01-lg.webp",
+        "caption": "Ghaziabad — Ravi Dwivedi, CC BY-SA 4.0"
       }
     ],
     "locations": [
@@ -12486,12 +12282,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "nainital": {
-    "primary": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-01-crop1-lg.webp",
-        "caption": "Nainital — Didier Descouens, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-01-lg.webp",
         "caption": "Nainital — Didier Descouens, CC BY-SA 4.0"
@@ -12562,12 +12354,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "nepal-tour-packages": {
-    "primary": "/images/location-library/nepal-international/nepal-international-04-crop1-lg.webp",
+    "primary": "/images/location-library/nepal-international/nepal-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/nepal-international/nepal-international-04-crop1-lg.webp",
-        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/nepal-international/nepal-international-01-lg.webp",
         "caption": "Nepal — Bijay Chaurasia, CC BY-SA 4.0"
@@ -12607,12 +12395,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "nepal": {
-    "primary": "/images/location-library/nepal-international/nepal-international-01-crop2-lg.webp",
+    "primary": "/images/location-library/nepal-international/nepal-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/nepal-international/nepal-international-01-crop2-lg.webp",
-        "caption": "Nepal — Bijay Chaurasia, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/nepal-international/nepal-international-01-lg.webp",
         "caption": "Nepal — Bijay Chaurasia, CC BY-SA 4.0"
@@ -12635,12 +12419,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "north-africa-tour-packages": {
-    "primary": "/images/location-library/africa-various-countries/africa-various-countries-04-lg.webp",
+    "primary": "/images/location-library/africa-various-countries/africa-various-countries-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/africa-various-countries/africa-various-countries-04-lg.webp",
-        "caption": "Africa — Internet Archive Book Images, No restrictions"
-      },
       {
         "src": "/images/location-library/africa-various-countries/africa-various-countries-01-lg.webp",
         "caption": "Africa — Internet Archive Book Images, No restrictions"
@@ -12651,6 +12431,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       },
       {
         "src": "/images/location-library/africa-various-countries/africa-various-countries-03-lg.webp",
+        "caption": "Africa — Internet Archive Book Images, No restrictions"
+      },
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-04-lg.webp",
         "caption": "Africa — Internet Archive Book Images, No restrictions"
       },
       {
@@ -12717,15 +12501,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "north-asia-tour-packages": {
-    "primary": "/images/location-library/north-india/north-india-02-lg.webp",
+    "primary": "/images/location-library/north-india/north-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/north-india/north-india-02-lg.webp",
-        "caption": "North India — Adarsh Patel, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/north-india/north-india-01-lg.webp",
         "caption": "North India — Takshashila7977, by-sa"
+      },
+      {
+        "src": "/images/location-library/north-india/north-india-02-lg.webp",
+        "caption": "North India — Adarsh Patel, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/north-india/north-india-03-lg.webp",
@@ -12741,14 +12525,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "north-east-india-wildlife-tour": {
-    "primary": "/images/location-library/north-east-india/north-east-india-02-lg.webp",
+    "primary": "/images/location-library/north-east-india/north-east-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/north-east-india/north-east-india-02-lg.webp",
+        "src": "/images/location-library/north-east-india/north-east-india-01-lg.webp",
         "caption": "North East India — Pinakpani, CC BY 4.0"
       },
       {
-        "src": "/images/location-library/north-east-india/north-east-india-01-lg.webp",
+        "src": "/images/location-library/north-east-india/north-east-india-02-lg.webp",
         "caption": "North East India — Pinakpani, CC BY 4.0"
       },
       {
@@ -12782,18 +12566,18 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "north-east-tour": {
-    "primary": "/images/location-library/north-east-india/north-east-india-03-lg.webp",
+    "primary": "/images/location-library/north-east-india/north-east-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/north-east-india/north-east-india-03-lg.webp",
-        "caption": "North East India — Pinakpani, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/north-east-india/north-east-india-01-lg.webp",
         "caption": "North East India — Pinakpani, CC BY 4.0"
       },
       {
         "src": "/images/location-library/north-east-india/north-east-india-02-lg.webp",
+        "caption": "North East India — Pinakpani, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/north-east-india/north-east-india-03-lg.webp",
         "caption": "North East India — Pinakpani, CC BY 4.0"
       },
       {
@@ -12823,15 +12607,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "north-europe-tour-packages": {
-    "primary": "/images/location-library/europe-various-countries/europe-various-countries-02-lg.webp",
+    "primary": "/images/location-library/europe-various-countries/europe-various-countries-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/europe-various-countries/europe-various-countries-02-lg.webp",
-        "caption": "Europe — Clarke, Edward Daniel, 1769-1822, No restrictions"
-      },
       {
         "src": "/images/location-library/europe-various-countries/europe-various-countries-01-lg.webp",
         "caption": "Europe — Internet Archive Book Images, No restrictions"
+      },
+      {
+        "src": "/images/location-library/europe-various-countries/europe-various-countries-02-lg.webp",
+        "caption": "Europe — Clarke, Edward Daniel, 1769-1822, No restrictions"
       },
       {
         "src": "/images/location-library/europe-various-countries/europe-various-countries-03-lg.webp",
@@ -12864,12 +12648,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "north-india-tour-packages": {
-    "primary": "/images/location-library/north-india/north-india-03-lg.webp",
+    "primary": "/images/location-library/north-india/north-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/north-india/north-india-03-lg.webp",
-        "caption": "North India — NASA, Public domain"
-      },
       {
         "src": "/images/location-library/north-india/north-india-01-lg.webp",
         "caption": "North India — Takshashila7977, by-sa"
@@ -12877,6 +12657,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/north-india/north-india-02-lg.webp",
         "caption": "North India — Adarsh Patel, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/north-india/north-india-03-lg.webp",
+        "caption": "North India — NASA, Public domain"
       },
       {
         "src": "/images/location-library/north-india/north-india-04-lg.webp",
@@ -12888,12 +12672,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "north-to-south-india-tour": {
-    "primary": "/images/location-library/north-india/north-india-04-lg.webp",
+    "primary": "/images/location-library/north-india/north-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/north-india/north-india-04-lg.webp",
-        "caption": "North India — William Baffin, Public domain"
-      },
       {
         "src": "/images/location-library/north-india/north-india-01-lg.webp",
         "caption": "North India — Takshashila7977, by-sa"
@@ -12905,6 +12685,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/north-india/north-india-03-lg.webp",
         "caption": "North India — NASA, Public domain"
+      },
+      {
+        "src": "/images/location-library/north-india/north-india-04-lg.webp",
+        "caption": "North India — William Baffin, Public domain"
       },
       {
         "src": "/images/location-library/south-india/south-india-01-lg.webp",
@@ -12977,14 +12761,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "odisha": {
-    "primary": "/images/location-library/odisha-india/odisha-india-02-lg.webp",
+    "primary": "/images/location-library/odisha-india/odisha-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/odisha-india/odisha-india-02-lg.webp",
+        "src": "/images/location-library/odisha-india/odisha-india-01-lg.webp",
         "caption": "Odisha — Joydeep, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/odisha-india/odisha-india-01-lg.webp",
+        "src": "/images/location-library/odisha-india/odisha-india-02-lg.webp",
         "caption": "Odisha — Joydeep, CC BY-SA 4.0"
       },
       {
@@ -13001,12 +12785,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "omkareshwar-mahakaleshwar-helicopter-tour": {
-    "primary": "/images/location-library/omkareshwar-madhya-pradesh-india/omkareshwar-madhya-pradesh-india-04-lg.webp",
+    "primary": "/images/location-library/omkareshwar-madhya-pradesh-india/omkareshwar-madhya-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/omkareshwar-madhya-pradesh-india/omkareshwar-madhya-pradesh-india-04-lg.webp",
-        "caption": "Omkareshwar — manishjoshimanish@gm…, CC BY-SA 3.0"
-      },
       {
         "src": "/images/location-library/omkareshwar-madhya-pradesh-india/omkareshwar-madhya-pradesh-india-01-lg.webp",
         "caption": "Omkareshwar — Lokesh Mundra, CC BY 3.0"
@@ -13018,6 +12798,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/omkareshwar-madhya-pradesh-india/omkareshwar-madhya-pradesh-india-03-lg.webp",
         "caption": "Omkareshwar — Jean-Pierre Dalbéra, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/omkareshwar-madhya-pradesh-india/omkareshwar-madhya-pradesh-india-04-lg.webp",
+        "caption": "Omkareshwar — manishjoshimanish@gm…, CC BY-SA 3.0"
       },
       {
         "src": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-01-lg.webp",
@@ -13042,15 +12826,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "ooty-kodaikanal-tour": {
-    "primary": "/images/location-library/kodaikanal-tamil-nadu-india/kodaikanal-tamil-nadu-india-02-lg.webp",
+    "primary": "/images/location-library/kodaikanal-tamil-nadu-india/kodaikanal-tamil-nadu-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kodaikanal-tamil-nadu-india/kodaikanal-tamil-nadu-india-02-lg.webp",
-        "caption": "Kodaikanal — Anandha adhithyan, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/kodaikanal-tamil-nadu-india/kodaikanal-tamil-nadu-india-01-lg.webp",
         "caption": "Kodaikanal — Thangaraj Kumaravel, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/kodaikanal-tamil-nadu-india/kodaikanal-tamil-nadu-india-02-lg.webp",
+        "caption": "Kodaikanal — Anandha adhithyan, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/kodaikanal-tamil-nadu-india/kodaikanal-tamil-nadu-india-03-lg.webp",
@@ -13083,15 +12867,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "ooty-tour-packages": {
-    "primary": "/images/location-library/ooty-tamil-nadu-india/ooty-tamil-nadu-india-02-lg.webp",
+    "primary": "/images/location-library/ooty-tamil-nadu-india/ooty-tamil-nadu-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/ooty-tamil-nadu-india/ooty-tamil-nadu-india-02-lg.webp",
-        "caption": "Ooty — Partha Majumdar, by-sa"
-      },
       {
         "src": "/images/location-library/ooty-tamil-nadu-india/ooty-tamil-nadu-india-01-lg.webp",
         "caption": "Ooty — Arindambasu2, by-sa"
+      },
+      {
+        "src": "/images/location-library/ooty-tamil-nadu-india/ooty-tamil-nadu-india-02-lg.webp",
+        "caption": "Ooty — Partha Majumdar, by-sa"
       },
       {
         "src": "/images/location-library/ooty-tamil-nadu-india/ooty-tamil-nadu-india-03-lg.webp",
@@ -13107,12 +12891,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "orissa-beaches-tour": {
-    "primary": "/images/location-library/gopalpur-odisha-india/gopalpur-odisha-india-02-lg.webp",
+    "primary": "/images/location-library/bhubaneswar-odisha-india/bhubaneswar-odisha-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/gopalpur-odisha-india/gopalpur-odisha-india-02-lg.webp",
-        "caption": "Gopalpur — Sneha G Gupta, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/bhubaneswar-odisha-india/bhubaneswar-odisha-india-01-lg.webp",
         "caption": "Bhubaneswar — Joydeep, CC BY-SA 4.0"
@@ -13134,6 +12914,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Gopalpur — Ministry of Defence, GODL-India"
       },
       {
+        "src": "/images/location-library/gopalpur-odisha-india/gopalpur-odisha-india-02-lg.webp",
+        "caption": "Gopalpur — Sneha G Gupta, CC BY-SA 4.0"
+      },
+      {
         "src": "/images/location-library/gopalpur-odisha-india/gopalpur-odisha-india-03-lg.webp",
         "caption": "Gopalpur — Sneha G Gupta, CC BY-SA 4.0"
       },
@@ -13148,18 +12932,18 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "orissa-tour-packages": {
-    "primary": "/images/location-library/odisha-india/odisha-india-03-lg.webp",
+    "primary": "/images/location-library/odisha-india/odisha-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/odisha-india/odisha-india-03-lg.webp",
-        "caption": "Odisha — Joydeep, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/odisha-india/odisha-india-01-lg.webp",
         "caption": "Odisha — Joydeep, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/odisha-india/odisha-india-02-lg.webp",
+        "caption": "Odisha — Joydeep, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/odisha-india/odisha-india-03-lg.webp",
         "caption": "Odisha — Joydeep, CC BY-SA 4.0"
       },
       {
@@ -13237,12 +13021,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "panch-dwaraka-tour": {
-    "primary": "/images/location-library/porbandar-gujarat-india/porbandar-gujarat-india-03-lg.webp",
+    "primary": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/porbandar-gujarat-india/porbandar-gujarat-india-03-lg.webp",
-        "caption": "Porbandar — Raj Odedra, CC BY 3.0"
-      },
       {
         "src": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-01-lg.webp",
         "caption": "Ahmedabad — Honzasoukup, Public domain"
@@ -13268,6 +13048,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Porbandar — Raj Odedra, CC BY 3.0"
       },
       {
+        "src": "/images/location-library/porbandar-gujarat-india/porbandar-gujarat-india-03-lg.webp",
+        "caption": "Porbandar — Raj Odedra, CC BY 3.0"
+      },
+      {
         "src": "/images/location-library/porbandar-gujarat-india/porbandar-gujarat-india-04-lg.webp",
         "caption": "Porbandar — Sivaprasadsujatha, CC BY-SA 4.0"
       }
@@ -13278,12 +13062,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "panch-kedar-yatra-trek-package": {
-    "primary": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-04-crop1-lg.webp",
+    "primary": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-04-crop1-lg.webp",
-        "caption": "Rishikesh — Travel & Shit from Brighton, UK, CC BY-SA 2.0"
-      },
       {
         "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
         "caption": "Rishikesh — Dorelal Singh, CC BY-SA 3.0"
@@ -13347,12 +13127,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "parliament-house-delhi": {
-    "primary": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-01-crop2-lg.webp",
+    "primary": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-01-crop2-lg.webp",
-        "caption": "Delhi — Ravi Dwivedi, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-01-lg.webp",
         "caption": "Delhi — Ravi Dwivedi, CC BY-SA 4.0"
@@ -13399,15 +13175,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "pokhara": {
-    "primary": "/images/location-library/pokhara-nepal/pokhara-nepal-02-lg.webp",
+    "primary": "/images/location-library/pokhara-nepal/pokhara-nepal-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/pokhara-nepal/pokhara-nepal-02-lg.webp",
-        "caption": "Pokhara — Didier Descouens, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/pokhara-nepal/pokhara-nepal-01-lg.webp",
         "caption": "Pokhara — Timothy A. Gonsalves, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/pokhara-nepal/pokhara-nepal-02-lg.webp",
+        "caption": "Pokhara — Didier Descouens, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/pokhara-nepal/pokhara-nepal-03-lg.webp",
@@ -13570,14 +13346,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "port-blair-tour-packages": {
-    "primary": "/images/location-library/port-blair-andaman-and-nicobar-islands-india/port-blair-andaman-and-nicobar-islands-india-02-lg.webp",
+    "primary": "/images/location-library/port-blair-andaman-and-nicobar-islands-india/port-blair-andaman-and-nicobar-islands-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/port-blair-andaman-and-nicobar-islands-india/port-blair-andaman-and-nicobar-islands-india-02-lg.webp",
+        "src": "/images/location-library/port-blair-andaman-and-nicobar-islands-india/port-blair-andaman-and-nicobar-islands-india-01-lg.webp",
         "caption": "Port Blair — Anil Kaushik, CC BY-SA 3.0"
       },
       {
-        "src": "/images/location-library/port-blair-andaman-and-nicobar-islands-india/port-blair-andaman-and-nicobar-islands-india-01-lg.webp",
+        "src": "/images/location-library/port-blair-andaman-and-nicobar-islands-india/port-blair-andaman-and-nicobar-islands-india-02-lg.webp",
         "caption": "Port Blair — Anil Kaushik, CC BY-SA 3.0"
       },
       {
@@ -13594,12 +13370,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "prayagraj-kumbh-mela-tour-packages": {
-    "primary": "/images/location-library/kumbh-mela-prayagraj-allahabad/kumbh-mela-prayagraj-allahabad-03-lg.webp",
+    "primary": "/images/location-library/kumbh-mela-prayagraj-allahabad/kumbh-mela-prayagraj-allahabad-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kumbh-mela-prayagraj-allahabad/kumbh-mela-prayagraj-allahabad-03-lg.webp",
-        "caption": "Kumbh Mela — Michael T Balonek, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/kumbh-mela-prayagraj-allahabad/kumbh-mela-prayagraj-allahabad-01-lg.webp",
         "caption": "Kumbh Mela — Michael T Balonek, CC BY-SA 4.0"
@@ -13607,6 +13379,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/kumbh-mela-prayagraj-allahabad/kumbh-mela-prayagraj-allahabad-02-lg.webp",
         "caption": "Kumbh Mela — Seba Della y Sole Bossio from Cordoba, Argentina, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/kumbh-mela-prayagraj-allahabad/kumbh-mela-prayagraj-allahabad-03-lg.webp",
+        "caption": "Kumbh Mela — Michael T Balonek, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/kumbh-mela-prayagraj-allahabad/kumbh-mela-prayagraj-allahabad-04-lg.webp",
@@ -13635,12 +13411,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "prayagraj": {
-    "primary": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-02-crop1-lg.webp",
+    "primary": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-02-crop1-lg.webp",
-        "caption": "Prayagraj — Arpita1308, by-sa"
-      },
       {
         "src": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-01-lg.webp",
         "caption": "Prayagraj — Ar.anujgupta, CC BY-SA 4.0"
@@ -13663,12 +13435,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "prem-mandir": {
-    "primary": "/images/location-library/vrindavan-uttar-pradesh-india/vrindavan-uttar-pradesh-india-04-lg.webp",
+    "primary": "/images/location-library/vrindavan-uttar-pradesh-india/vrindavan-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/vrindavan-uttar-pradesh-india/vrindavan-uttar-pradesh-india-04-lg.webp",
-        "caption": "Vrindavan — Saminathan Suresh, CC BY-SA 3.0"
-      },
       {
         "src": "/images/location-library/vrindavan-uttar-pradesh-india/vrindavan-uttar-pradesh-india-01-lg.webp",
         "caption": "Vrindavan — Gannu03, CC BY-SA 4.0"
@@ -13680,6 +13448,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/vrindavan-uttar-pradesh-india/vrindavan-uttar-pradesh-india-03-lg.webp",
         "caption": "Vrindavan — Guptaele, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/vrindavan-uttar-pradesh-india/vrindavan-uttar-pradesh-india-04-lg.webp",
+        "caption": "Vrindavan — Saminathan Suresh, CC BY-SA 3.0"
       }
     ],
     "locations": [
@@ -13687,12 +13459,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "pune-weekend-getaways": {
-    "primary": "/images/location-library/pune-maharashtra-india/pune-maharashtra-india-04-lg.webp",
+    "primary": "/images/location-library/pune-maharashtra-india/pune-maharashtra-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/pune-maharashtra-india/pune-maharashtra-india-04-lg.webp",
-        "caption": "Pune — Udaykumar PR, CC BY 3.0"
-      },
       {
         "src": "/images/location-library/pune-maharashtra-india/pune-maharashtra-india-01-lg.webp",
         "caption": "Pune — Udaykumar PR, CC BY 3.0"
@@ -13704,6 +13472,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/pune-maharashtra-india/pune-maharashtra-india-03-lg.webp",
         "caption": "Pune — Udaykumar PR, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/pune-maharashtra-india/pune-maharashtra-india-04-lg.webp",
+        "caption": "Pune — Udaykumar PR, CC BY 3.0"
       }
     ],
     "locations": [
@@ -13711,14 +13483,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "punjab-tour-packages": {
-    "primary": "/images/location-library/punjab-india/punjab-india-02-lg.webp",
+    "primary": "/images/location-library/punjab-india/punjab-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/punjab-india/punjab-india-02-lg.webp",
+        "src": "/images/location-library/punjab-india/punjab-india-01-lg.webp",
         "caption": "Punjab — Satdeep Gill, CC BY 4.0"
       },
       {
-        "src": "/images/location-library/punjab-india/punjab-india-01-lg.webp",
+        "src": "/images/location-library/punjab-india/punjab-india-02-lg.webp",
         "caption": "Punjab — Satdeep Gill, CC BY 4.0"
       },
       {
@@ -13735,14 +13507,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "puri-konark-tour-packages": {
-    "primary": "/images/location-library/konark-odisha-india/konark-odisha-india-02-lg.webp",
+    "primary": "/images/location-library/konark-odisha-india/konark-odisha-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/konark-odisha-india/konark-odisha-india-02-lg.webp",
+        "src": "/images/location-library/konark-odisha-india/konark-odisha-india-01-lg.webp",
         "caption": "Konark — Joydeep, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/konark-odisha-india/konark-odisha-india-01-lg.webp",
+        "src": "/images/location-library/konark-odisha-india/konark-odisha-india-02-lg.webp",
         "caption": "Konark — Joydeep, CC BY-SA 4.0"
       },
       {
@@ -13776,18 +13548,18 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "puri-tour-packages": {
-    "primary": "/images/location-library/puri-odisha-india/puri-odisha-india-03-lg.webp",
+    "primary": "/images/location-library/puri-odisha-india/puri-odisha-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/puri-odisha-india/puri-odisha-india-03-lg.webp",
-        "caption": "Puri — Joydeep, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/puri-odisha-india/puri-odisha-india-01-lg.webp",
         "caption": "Puri — Joydeep, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/puri-odisha-india/puri-odisha-india-02-lg.webp",
+        "caption": "Puri — Joydeep, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/puri-odisha-india/puri-odisha-india-03-lg.webp",
         "caption": "Puri — Joydeep, CC BY-SA 4.0"
       },
       {
@@ -13848,12 +13620,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "raj-ghat-delhi": {
-    "primary": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-02-crop2-lg.webp",
+    "primary": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-02-crop2-lg.webp",
-        "caption": "Delhi — Burn & Trauma Research Center, CC BY-SA 3.0"
-      },
       {
         "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-01-lg.webp",
         "caption": "Delhi — Ravi Dwivedi, CC BY-SA 4.0"
@@ -13876,12 +13644,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "rajasthan-cultural-tour": {
-    "primary": "/images/location-library/kumbhalgarh-rajasthan-india/kumbhalgarh-rajasthan-india-01-lg.webp",
+    "primary": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kumbhalgarh-rajasthan-india/kumbhalgarh-rajasthan-india-01-lg.webp",
-        "caption": "Kumbhalgarh — Bhawana Gururani, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
         "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
@@ -13897,6 +13661,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/rajasthan-india/rajasthan-india-04-lg.webp",
         "caption": "Rajasthan — Paramanu Sarkar, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kumbhalgarh-rajasthan-india/kumbhalgarh-rajasthan-india-01-lg.webp",
+        "caption": "Kumbhalgarh — Bhawana Gururani, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/kumbhalgarh-rajasthan-india/kumbhalgarh-rajasthan-india-02-lg.webp",
@@ -13917,12 +13685,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "rajasthan-group-tour": {
-    "primary": "/images/location-library/jaisalmer-rajasthan-india/jaisalmer-rajasthan-india-02-lg.webp",
+    "primary": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/jaisalmer-rajasthan-india/jaisalmer-rajasthan-india-02-lg.webp",
-        "caption": "Jaisalmer — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
         "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
@@ -13944,6 +13708,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Jaisalmer — Vyacheslav Argenberg, CC BY 4.0"
       },
       {
+        "src": "/images/location-library/jaisalmer-rajasthan-india/jaisalmer-rajasthan-india-02-lg.webp",
+        "caption": "Jaisalmer — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
         "src": "/images/location-library/jaisalmer-rajasthan-india/jaisalmer-rajasthan-india-03-lg.webp",
         "caption": "Jaisalmer — Vyacheslav Argenberg, CC BY 4.0"
       },
@@ -13958,12 +13726,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "rajasthan-heritage-tour": {
-    "primary": "/images/location-library/mehrangarh-fort-jodhpur/mehrangarh-fort-jodhpur-01-lg.webp",
+    "primary": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/mehrangarh-fort-jodhpur/mehrangarh-fort-jodhpur-01-lg.webp",
-        "caption": "Mehrangarh Fort — Jakub Hałun, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
         "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
@@ -13979,6 +13743,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/rajasthan-india/rajasthan-india-04-lg.webp",
         "caption": "Rajasthan — Paramanu Sarkar, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/mehrangarh-fort-jodhpur/mehrangarh-fort-jodhpur-01-lg.webp",
+        "caption": "Mehrangarh Fort — Jakub Hałun, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/mehrangarh-fort-jodhpur/mehrangarh-fort-jodhpur-02-lg.webp",
@@ -13999,12 +13767,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "rajasthan-honeymoon-tour-package": {
-    "primary": "/images/location-library/rajasthan-india/rajasthan-india-03-crop1-lg.webp",
+    "primary": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/rajasthan-india/rajasthan-india-03-crop1-lg.webp",
-        "caption": "Rajasthan — Ihsanwayfarer, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
         "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
@@ -14027,12 +13791,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "rajasthan-safari-tour": {
-    "primary": "/images/location-library/jaisalmer-rajasthan-india/jaisalmer-rajasthan-india-03-lg.webp",
+    "primary": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/jaisalmer-rajasthan-india/jaisalmer-rajasthan-india-03-lg.webp",
-        "caption": "Jaisalmer — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
         "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
@@ -14058,6 +13818,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Jaisalmer — Vyacheslav Argenberg, CC BY 4.0"
       },
       {
+        "src": "/images/location-library/jaisalmer-rajasthan-india/jaisalmer-rajasthan-india-03-lg.webp",
+        "caption": "Jaisalmer — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
         "src": "/images/location-library/jaisalmer-rajasthan-india/jaisalmer-rajasthan-india-04-lg.webp",
         "caption": "Jaisalmer — Vyacheslav Argenberg, CC BY 4.0"
       }
@@ -14068,12 +13832,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "rajasthan-tour-packages": {
-    "primary": "/images/location-library/rajasthan-india/rajasthan-india-04-crop1-lg.webp",
+    "primary": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/rajasthan-india/rajasthan-india-04-crop1-lg.webp",
-        "caption": "Rajasthan — Paramanu Sarkar, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
         "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
@@ -14096,12 +13856,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "rajasthan-wildlife-tour": {
-    "primary": "/images/location-library/ranthambore-rajasthan-india/ranthambore-rajasthan-india-02-lg.webp",
+    "primary": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/ranthambore-rajasthan-india/ranthambore-rajasthan-india-02-lg.webp",
-        "caption": "Ranthambore — Rohit Sharma, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
         "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
@@ -14123,6 +13879,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Ranthambore — Rohit Sharma, CC BY-SA 4.0"
       },
       {
+        "src": "/images/location-library/ranthambore-rajasthan-india/ranthambore-rajasthan-india-02-lg.webp",
+        "caption": "Ranthambore — Rohit Sharma, CC BY-SA 4.0"
+      },
+      {
         "src": "/images/location-library/ranthambore-rajasthan-india/ranthambore-rajasthan-india-03-lg.webp",
         "caption": "Ranthambore — User:Rakesh bhat29, CC BY-SA 3.0"
       },
@@ -14137,12 +13897,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "rajasthan": {
-    "primary": "/images/location-library/rajasthan-india/rajasthan-india-01-crop2-lg.webp",
+    "primary": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/rajasthan-india/rajasthan-india-01-crop2-lg.webp",
-        "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
         "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
@@ -14230,12 +13986,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "ram-bagh-agra": {
-    "primary": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-03-crop1-lg.webp",
+    "primary": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-03-crop1-lg.webp",
-        "caption": "Agra — Dan Searle, by-sa"
-      },
       {
         "src": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-01-lg.webp",
         "caption": "Agra — Yann ( talk ), CC BY-SA 4.0"
@@ -14258,18 +14010,18 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "rameshwaram-madurai-tour": {
-    "primary": "/images/location-library/rameshwaram-tamil-nadu-india/rameshwaram-tamil-nadu-india-03-lg.webp",
+    "primary": "/images/location-library/rameshwaram-tamil-nadu-india/rameshwaram-tamil-nadu-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/rameshwaram-tamil-nadu-india/rameshwaram-tamil-nadu-india-03-lg.webp",
-        "caption": "Rameshwaram — P Jeganathan, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/rameshwaram-tamil-nadu-india/rameshwaram-tamil-nadu-india-01-lg.webp",
         "caption": "Rameshwaram — Artly2001, CC BY 3.0"
       },
       {
         "src": "/images/location-library/rameshwaram-tamil-nadu-india/rameshwaram-tamil-nadu-india-02-lg.webp",
+        "caption": "Rameshwaram — P Jeganathan, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/rameshwaram-tamil-nadu-india/rameshwaram-tamil-nadu-india-03-lg.webp",
         "caption": "Rameshwaram — P Jeganathan, CC BY-SA 4.0"
       },
       {
@@ -14364,12 +14116,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "rashtrapati-bhavan-delhi": {
-    "primary": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-03-crop2-lg.webp",
+    "primary": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-03-crop2-lg.webp",
-        "caption": "Delhi — Santulan Mahanta from Golaghat (GLGT), Guwahati (GHY), Lucknow (LKO), New Delhi (NDLS), INDIA, CC BY 2.0"
-      },
       {
         "src": "/images/location-library/delhi-delhi-ncr-india/delhi-delhi-ncr-india-01-lg.webp",
         "caption": "Delhi — Ravi Dwivedi, CC BY-SA 4.0"
@@ -14440,12 +14188,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "rishikesh-haridwar-trip-from-delhi": {
-    "primary": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-crop2-lg.webp",
+    "primary": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-crop2-lg.webp",
-        "caption": "Rishikesh — Dorelal Singh, CC BY-SA 3.0"
-      },
       {
         "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
         "caption": "Rishikesh — Dorelal Singh, CC BY-SA 3.0"
@@ -14485,12 +14229,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "rishikesh-river-rafting-tour": {
-    "primary": "/images/location-library/shivpuri-madhya-pradesh-india/shivpuri-madhya-pradesh-india-02-lg.webp",
+    "primary": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/shivpuri-madhya-pradesh-india/shivpuri-madhya-pradesh-india-02-lg.webp",
-        "caption": "Shivpuri — Nagarjun Kandukuru from Bangalore, India, CC BY 2.0"
-      },
       {
         "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
         "caption": "Rishikesh — Dorelal Singh, CC BY-SA 3.0"
@@ -14512,6 +14252,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Shivpuri — Pawan Singh Baish, CC BY-SA 4.0"
       },
       {
+        "src": "/images/location-library/shivpuri-madhya-pradesh-india/shivpuri-madhya-pradesh-india-02-lg.webp",
+        "caption": "Shivpuri — Nagarjun Kandukuru from Bangalore, India, CC BY 2.0"
+      },
+      {
         "src": "/images/location-library/shivpuri-madhya-pradesh-india/shivpuri-madhya-pradesh-india-03-lg.webp",
         "caption": "Shivpuri — Teacher1943, CC BY-SA 4.0"
       },
@@ -14526,12 +14270,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "rishikesh-tour-packages": {
-    "primary": "/images/location-library/ghaziabad-delhi-ncr-india/ghaziabad-delhi-ncr-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/ghaziabad-delhi-ncr-india/ghaziabad-delhi-ncr-india-01-crop1-lg.webp",
-        "caption": "Ghaziabad — Ravi Dwivedi, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
         "caption": "Rishikesh — Dorelal Singh, CC BY-SA 3.0"
@@ -14559,12 +14299,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "rishikesh": {
-    "primary": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-02-crop2-lg.webp",
+    "primary": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-02-crop2-lg.webp",
-        "caption": "Rishikesh — Billjones94, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
         "caption": "Rishikesh — Dorelal Singh, CC BY-SA 3.0"
@@ -14587,12 +14323,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "romance-in-rajasthan": {
-    "primary": "/images/location-library/pushkar-rajasthan-india/pushkar-rajasthan-india-01-lg.webp",
+    "primary": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/pushkar-rajasthan-india/pushkar-rajasthan-india-01-lg.webp",
-        "caption": "Pushkar — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
         "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
@@ -14608,6 +14340,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/rajasthan-india/rajasthan-india-04-lg.webp",
         "caption": "Rajasthan — Paramanu Sarkar, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/pushkar-rajasthan-india/pushkar-rajasthan-india-01-lg.webp",
+        "caption": "Pushkar — Vyacheslav Argenberg, CC BY 4.0"
       },
       {
         "src": "/images/location-library/pushkar-rajasthan-india/pushkar-rajasthan-india-02-lg.webp",
@@ -14628,18 +14364,18 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "romantic-andman": {
-    "primary": "/images/location-library/havelock-island-andaman-and-nicobar-islands-india/havelock-island-andaman-and-nicobar-islands-india-02-lg.webp",
+    "primary": "/images/location-library/andaman-scuba-diving-snorkeling/andaman-scuba-diving-snorkeling-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/havelock-island-andaman-and-nicobar-islands-india/havelock-island-andaman-and-nicobar-islands-india-02-lg.webp",
-        "caption": "Havelock Island — Harvinder Chandigarh, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/andaman-scuba-diving-snorkeling/andaman-scuba-diving-snorkeling-01-lg.webp",
         "caption": "Andaman — Anshul Arora, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/havelock-island-andaman-and-nicobar-islands-india/havelock-island-andaman-and-nicobar-islands-india-01-lg.webp",
+        "caption": "Havelock Island — Harvinder Chandigarh, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/havelock-island-andaman-and-nicobar-islands-india/havelock-island-andaman-and-nicobar-islands-india-02-lg.webp",
         "caption": "Havelock Island — Harvinder Chandigarh, CC BY-SA 4.0"
       },
       {
@@ -14657,12 +14393,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "romantic-kerala": {
-    "primary": "/images/location-library/munnar-kerala-india/munnar-kerala-india-03-lg.webp",
+    "primary": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/munnar-kerala-india/munnar-kerala-india-03-lg.webp",
-        "caption": "Munnar — Charles J. Sharp, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
         "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
@@ -14686,6 +14418,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/munnar-kerala-india/munnar-kerala-india-02-lg.webp",
         "caption": "Munnar — Arun Muralidhar, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/munnar-kerala-india/munnar-kerala-india-03-lg.webp",
+        "caption": "Munnar — Charles J. Sharp, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/munnar-kerala-india/munnar-kerala-india-04-lg.webp",
@@ -14722,12 +14458,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "sangam-darshan": {
-    "primary": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-03-crop1-lg.webp",
+    "primary": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-03-crop1-lg.webp",
-        "caption": "Prayagraj — Ar.anujgupta, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-01-lg.webp",
         "caption": "Prayagraj — Ar.anujgupta, CC BY-SA 4.0"
@@ -14767,12 +14499,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "saraswati-pushkaralu-yatra-from-haridwar": {
-    "primary": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-03-crop1-lg.webp",
+    "primary": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-03-crop1-lg.webp",
-        "caption": "Badrinath — Guptaele, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-01-lg.webp",
         "caption": "Haridwar — Dan Searle, CC BY-SA 2.0"
@@ -14812,12 +14540,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "saraswati-pushkaram-tour-packages": {
-    "primary": "/images/location-library/devprayag-uttarakhand-india/devprayag-uttarakhand-india-02-lg.webp",
+    "primary": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/devprayag-uttarakhand-india/devprayag-uttarakhand-india-02-lg.webp",
-        "caption": "Devprayag — Donvikro, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
         "caption": "Badrinath — Billjones94, CC BY-SA 4.0"
@@ -14837,6 +14561,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/devprayag-uttarakhand-india/devprayag-uttarakhand-india-01-lg.webp",
         "caption": "Devprayag — Ms Sarah Welch, CC0"
+      },
+      {
+        "src": "/images/location-library/devprayag-uttarakhand-india/devprayag-uttarakhand-india-02-lg.webp",
+        "caption": "Devprayag — Donvikro, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/devprayag-uttarakhand-india/devprayag-uttarakhand-india-03-lg.webp",
@@ -14877,12 +14605,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "satopanth-swargarohini-trek": {
-    "primary": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-02-lg.webp",
+    "primary": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-02-lg.webp",
-        "caption": "Haridwar — Gannu03, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
         "caption": "Badrinath — Billjones94, CC BY-SA 4.0"
@@ -14902,6 +14626,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-01-lg.webp",
         "caption": "Haridwar — Dan Searle, CC BY-SA 2.0"
+      },
+      {
+        "src": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-02-lg.webp",
+        "caption": "Haridwar — Gannu03, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-03-lg.webp",
@@ -14918,12 +14646,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "satopanth-swargarohini-yatra": {
-    "primary": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-03-lg.webp",
+    "primary": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-03-lg.webp",
-        "caption": "Haridwar — Gannu03, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
         "caption": "Badrinath — Billjones94, CC BY-SA 4.0"
@@ -14949,6 +14673,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Haridwar — Gannu03, CC BY-SA 4.0"
       },
       {
+        "src": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-03-lg.webp",
+        "caption": "Haridwar — Gannu03, CC BY-SA 4.0"
+      },
+      {
         "src": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-04-lg.webp",
         "caption": "Haridwar — Gannu03, CC BY-SA 4.0"
       }
@@ -14959,12 +14687,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "scenic-himachal": {
-    "primary": "/images/location-library/dalhousie-himachal-pradesh-india/dalhousie-himachal-pradesh-india-04-lg.webp",
+    "primary": "/images/location-library/rohtang-pass-himachal-pradesh-india/rohtang-pass-himachal-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/dalhousie-himachal-pradesh-india/dalhousie-himachal-pradesh-india-04-lg.webp",
-        "caption": "Dalhousie — Nilesh.shintre, CC BY-SA 3.0"
-      },
       {
         "src": "/images/location-library/rohtang-pass-himachal-pradesh-india/rohtang-pass-himachal-pradesh-india-01-lg.webp",
         "caption": "Rohtang Pass — Maxzameer, CC BY-SA 4.0"
@@ -14992,6 +14716,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/dalhousie-himachal-pradesh-india/dalhousie-himachal-pradesh-india-03-lg.webp",
         "caption": "Dalhousie — Piyush Tripathi, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/dalhousie-himachal-pradesh-india/dalhousie-himachal-pradesh-india-04-lg.webp",
+        "caption": "Dalhousie — Nilesh.shintre, CC BY-SA 3.0"
       }
     ],
     "locations": [
@@ -15000,12 +14728,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "scuba-diving-andaman": {
-    "primary": "/images/location-library/havelock-island-andaman-and-nicobar-islands-india/havelock-island-andaman-and-nicobar-islands-india-03-lg.webp",
+    "primary": "/images/location-library/andaman-scuba-diving-snorkeling/andaman-scuba-diving-snorkeling-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/havelock-island-andaman-and-nicobar-islands-india/havelock-island-andaman-and-nicobar-islands-india-03-lg.webp",
-        "caption": "Havelock Island — Harvinder Chandigarh, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/andaman-scuba-diving-snorkeling/andaman-scuba-diving-snorkeling-01-lg.webp",
         "caption": "Andaman — Anshul Arora, CC BY-SA 4.0"
@@ -15019,6 +14743,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Havelock Island — Harvinder Chandigarh, CC BY-SA 4.0"
       },
       {
+        "src": "/images/location-library/havelock-island-andaman-and-nicobar-islands-india/havelock-island-andaman-and-nicobar-islands-india-03-lg.webp",
+        "caption": "Havelock Island — Harvinder Chandigarh, CC BY-SA 4.0"
+      },
+      {
         "src": "/images/location-library/havelock-island-andaman-and-nicobar-islands-india/havelock-island-andaman-and-nicobar-islands-india-04-lg.webp",
         "caption": "Havelock Island — Shristi Shreyasi, CC BY-SA 4.0"
       }
@@ -15029,12 +14757,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "shimla-manali-tour": {
-    "primary": "/images/location-library/shimla-himachal-pradesh-india/shimla-himachal-pradesh-india-02-lg.webp",
+    "primary": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/shimla-himachal-pradesh-india/shimla-himachal-pradesh-india-02-lg.webp",
-        "caption": "Shimla — Navneet Sharma, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-01-lg.webp",
         "caption": "Manali — Trippysoul, CC BY-SA 4.0"
@@ -15054,6 +14778,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/shimla-himachal-pradesh-india/shimla-himachal-pradesh-india-01-lg.webp",
         "caption": "Shimla — Adam Jones from Kelowna, BC, Canada, CC BY-SA 2.0"
+      },
+      {
+        "src": "/images/location-library/shimla-himachal-pradesh-india/shimla-himachal-pradesh-india-02-lg.webp",
+        "caption": "Shimla — Navneet Sharma, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/shimla-himachal-pradesh-india/shimla-himachal-pradesh-india-03-lg.webp",
@@ -15094,12 +14822,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "shimla-tour": {
-    "primary": "/images/location-library/shimla-himachal-pradesh-india/shimla-himachal-pradesh-india-03-lg.webp",
+    "primary": "/images/location-library/shimla-himachal-pradesh-india/shimla-himachal-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/shimla-himachal-pradesh-india/shimla-himachal-pradesh-india-03-lg.webp",
-        "caption": "Shimla — Siddharthpandey87, by-sa"
-      },
       {
         "src": "/images/location-library/shimla-himachal-pradesh-india/shimla-himachal-pradesh-india-01-lg.webp",
         "caption": "Shimla — Adam Jones from Kelowna, BC, Canada, CC BY-SA 2.0"
@@ -15107,6 +14831,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/shimla-himachal-pradesh-india/shimla-himachal-pradesh-india-02-lg.webp",
         "caption": "Shimla — Navneet Sharma, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/shimla-himachal-pradesh-india/shimla-himachal-pradesh-india-03-lg.webp",
+        "caption": "Shimla — Siddharthpandey87, by-sa"
       },
       {
         "src": "/images/location-library/shimla-himachal-pradesh-india/shimla-himachal-pradesh-india-04-lg.webp",
@@ -15118,12 +14846,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "shimla-volvo-package": {
-    "primary": "/images/location-library/shimla-himachal-pradesh-india/shimla-himachal-pradesh-india-04-lg.webp",
+    "primary": "/images/location-library/shimla-himachal-pradesh-india/shimla-himachal-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/shimla-himachal-pradesh-india/shimla-himachal-pradesh-india-04-lg.webp",
-        "caption": "Shimla — Adam Jones from Kelowna, BC, Canada, by-sa"
-      },
       {
         "src": "/images/location-library/shimla-himachal-pradesh-india/shimla-himachal-pradesh-india-01-lg.webp",
         "caption": "Shimla — Adam Jones from Kelowna, BC, Canada, CC BY-SA 2.0"
@@ -15135,6 +14859,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/shimla-himachal-pradesh-india/shimla-himachal-pradesh-india-03-lg.webp",
         "caption": "Shimla — Siddharthpandey87, by-sa"
+      },
+      {
+        "src": "/images/location-library/shimla-himachal-pradesh-india/shimla-himachal-pradesh-india-04-lg.webp",
+        "caption": "Shimla — Adam Jones from Kelowna, BC, Canada, by-sa"
       }
     ],
     "locations": [
@@ -15142,12 +14870,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "shimla": {
-    "primary": "/images/location-library/shimla-himachal-pradesh-india/shimla-himachal-pradesh-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/shimla-himachal-pradesh-india/shimla-himachal-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/shimla-himachal-pradesh-india/shimla-himachal-pradesh-india-01-crop1-lg.webp",
-        "caption": "Shimla — Adam Jones from Kelowna, BC, Canada, CC BY-SA 2.0"
-      },
       {
         "src": "/images/location-library/shimla-himachal-pradesh-india/shimla-himachal-pradesh-india-01-lg.webp",
         "caption": "Shimla — Adam Jones from Kelowna, BC, Canada, CC BY-SA 2.0"
@@ -15170,12 +14894,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "shining-rajasthan": {
-    "primary": "/images/location-library/jaisalmer-rajasthan-india/jaisalmer-rajasthan-india-04-lg.webp",
+    "primary": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/jaisalmer-rajasthan-india/jaisalmer-rajasthan-india-04-lg.webp",
-        "caption": "Jaisalmer — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
         "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
@@ -15202,6 +14922,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       },
       {
         "src": "/images/location-library/jaisalmer-rajasthan-india/jaisalmer-rajasthan-india-03-lg.webp",
+        "caption": "Jaisalmer — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/jaisalmer-rajasthan-india/jaisalmer-rajasthan-india-04-lg.webp",
         "caption": "Jaisalmer — Vyacheslav Argenberg, CC BY 4.0"
       }
     ],
@@ -15235,15 +14959,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "shirdi": {
-    "primary": "/images/location-library/shirdi-maharashtra-india/shirdi-maharashtra-india-02-lg.webp",
+    "primary": "/images/location-library/shirdi-maharashtra-india/shirdi-maharashtra-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/shirdi-maharashtra-india/shirdi-maharashtra-india-02-lg.webp",
-        "caption": "Shirdi — Prime Minister's Office, GODL-India"
-      },
       {
         "src": "/images/location-library/shirdi-maharashtra-india/shirdi-maharashtra-india-01-lg.webp",
         "caption": "Shirdi — Udaykumar PR, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/shirdi-maharashtra-india/shirdi-maharashtra-india-02-lg.webp",
+        "caption": "Shirdi — Prime Minister's Office, GODL-India"
       },
       {
         "src": "/images/location-library/shirdi-maharashtra-india/shirdi-maharashtra-india-03-lg.webp",
@@ -15283,12 +15007,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "shree-krishna-janambhoomi": {
-    "primary": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-02-crop1-lg.webp",
+    "primary": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-02-crop1-lg.webp",
-        "caption": "Mathura — Shikher Singh, by-sa"
-      },
       {
         "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-01-lg.webp",
         "caption": "Mathura — Sandeepni, CC BY-SA 4.0"
@@ -15335,15 +15055,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "sikkim": {
-    "primary": "/images/location-library/sikkim-india/sikkim-india-02-lg.webp",
+    "primary": "/images/location-library/sikkim-india/sikkim-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/sikkim-india/sikkim-india-02-lg.webp",
-        "caption": "Sikkim — Subhrajyoti07, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/sikkim-india/sikkim-india-01-lg.webp",
         "caption": "Sikkim — Original: Yoghya Derivative work: UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sikkim-india/sikkim-india-02-lg.webp",
+        "caption": "Sikkim — Subhrajyoti07, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/sikkim-india/sikkim-india-03-lg.webp",
@@ -15359,12 +15079,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "singapore-tour-packages": {
-    "primary": "/images/location-library/singapore-international/singapore-international-03-lg.webp",
+    "primary": "/images/location-library/singapore-international/singapore-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/singapore-international/singapore-international-03-lg.webp",
-        "caption": "Singapore — Dietmar Rabich, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/singapore-international/singapore-international-01-lg.webp",
         "caption": "Singapore — Basile Morin, CC BY-SA 4.0"
@@ -15372,6 +15088,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/singapore-international/singapore-international-02-lg.webp",
         "caption": "Singapore — Basile Morin, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/singapore-international/singapore-international-03-lg.webp",
+        "caption": "Singapore — Dietmar Rabich, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/singapore-international/singapore-international-04-lg.webp",
@@ -15400,12 +15120,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "somnath-tour-packages": {
-    "primary": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-02-crop1-lg.webp",
+    "primary": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-02-crop1-lg.webp",
-        "caption": "Somnath — TeshTesh, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-01-lg.webp",
         "caption": "Somnath — TeshTesh, CC BY-SA 4.0"
@@ -15445,12 +15161,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "somnath": {
-    "primary": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-03-crop1-lg.webp",
+    "primary": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-03-crop1-lg.webp",
-        "caption": "Somnath — TeshTesh, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/somnath-gujarat-india/somnath-gujarat-india-01-lg.webp",
         "caption": "Somnath — TeshTesh, CC BY-SA 4.0"
@@ -15473,12 +15185,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "south-africa-tour-packages": {
-    "primary": "/images/location-library/south-africa-international/south-africa-international-01-crop1-lg.webp",
+    "primary": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/south-africa-international/south-africa-international-01-crop1-lg.webp",
-        "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
         "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
@@ -15600,12 +15308,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "south-europe-tour-packages": {
-    "primary": "/images/location-library/europe-various-countries/europe-various-countries-03-lg.webp",
+    "primary": "/images/location-library/europe-various-countries/europe-various-countries-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/europe-various-countries/europe-various-countries-03-lg.webp",
-        "caption": "Europe — Internet Archive Book Images, No restrictions"
-      },
       {
         "src": "/images/location-library/europe-various-countries/europe-various-countries-01-lg.webp",
         "caption": "Europe — Internet Archive Book Images, No restrictions"
@@ -15613,6 +15317,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/europe-various-countries/europe-various-countries-02-lg.webp",
         "caption": "Europe — Clarke, Edward Daniel, 1769-1822, No restrictions"
+      },
+      {
+        "src": "/images/location-library/europe-various-countries/europe-various-countries-03-lg.webp",
+        "caption": "Europe — Internet Archive Book Images, No restrictions"
       },
       {
         "src": "/images/location-library/europe-various-countries/europe-various-countries-04-lg.webp",
@@ -15641,12 +15349,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "south-india-temple-tour-from-ahmedabad": {
-    "primary": "/images/location-library/south-india/south-india-02-lg.webp",
+    "primary": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/south-india/south-india-02-lg.webp",
-        "caption": "South India — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-01-lg.webp",
         "caption": "Ahmedabad — Honzasoukup, Public domain"
@@ -15668,6 +15372,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "South India — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
       },
       {
+        "src": "/images/location-library/south-india/south-india-02-lg.webp",
+        "caption": "South India — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
+      },
+      {
         "src": "/images/location-library/south-india/south-india-03-lg.webp",
         "caption": "South India — Mamichaelraj, by-sa"
       },
@@ -15682,12 +15390,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "south-india-temple-tour-from-bangalore": {
-    "primary": "/images/location-library/south-india/south-india-03-lg.webp",
+    "primary": "/images/location-library/south-india/south-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/south-india/south-india-03-lg.webp",
-        "caption": "South India — Mamichaelraj, by-sa"
-      },
       {
         "src": "/images/location-library/south-india/south-india-01-lg.webp",
         "caption": "South India — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
@@ -15695,6 +15399,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/south-india/south-india-02-lg.webp",
         "caption": "South India — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/south-india/south-india-03-lg.webp",
+        "caption": "South India — Mamichaelraj, by-sa"
       },
       {
         "src": "/images/location-library/south-india/south-india-04-lg.webp",
@@ -15723,12 +15431,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "south-india-temple-tour-from-hyderabad": {
-    "primary": "/images/location-library/south-india/south-india-04-lg.webp",
+    "primary": "/images/location-library/south-india/south-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/south-india/south-india-04-lg.webp",
-        "caption": "South India — Survey of India, Government of India, Public domain"
-      },
       {
         "src": "/images/location-library/south-india/south-india-01-lg.webp",
         "caption": "South India — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
@@ -15740,6 +15444,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/south-india/south-india-03-lg.webp",
         "caption": "South India — Mamichaelraj, by-sa"
+      },
+      {
+        "src": "/images/location-library/south-india/south-india-04-lg.webp",
+        "caption": "South India — Survey of India, Government of India, Public domain"
       },
       {
         "src": "/images/location-library/chidambaram-tamil-nadu-india/chidambaram-tamil-nadu-india-01-lg.webp",
@@ -15764,12 +15472,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "south-india-tour": {
-    "primary": "/images/location-library/south-india/south-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/south-india/south-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/south-india/south-india-01-crop1-lg.webp",
-        "caption": "South India — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/south-india/south-india-01-lg.webp",
         "caption": "South India — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
@@ -15792,12 +15496,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "special-group-tour-package-for-karnataka": {
-    "primary": "/images/location-library/karnataka-india/karnataka-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/karnataka-india/karnataka-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/karnataka-india/karnataka-india-01-crop1-lg.webp",
-        "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/karnataka-india/karnataka-india-01-lg.webp",
         "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
@@ -15861,12 +15561,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "special-package-for-karnataka": {
-    "primary": "/images/location-library/mysore-karnataka-india/mysore-karnataka-india-02-lg.webp",
+    "primary": "/images/location-library/karnataka-india/karnataka-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/mysore-karnataka-india/mysore-karnataka-india-02-lg.webp",
-        "caption": "Mysore — Gpkp, by-sa"
-      },
       {
         "src": "/images/location-library/karnataka-india/karnataka-india-01-lg.webp",
         "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
@@ -15888,6 +15584,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Mysore — Gpkp, by-sa"
       },
       {
+        "src": "/images/location-library/mysore-karnataka-india/mysore-karnataka-india-02-lg.webp",
+        "caption": "Mysore — Gpkp, by-sa"
+      },
+      {
         "src": "/images/location-library/mysore-karnataka-india/mysore-karnataka-india-03-lg.webp",
         "caption": "Mysore — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
       },
@@ -15902,14 +15602,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "spiritual-uttar-pradesh": {
-    "primary": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-02-lg.webp",
+    "primary": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-02-lg.webp",
+        "src": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-01-lg.webp",
         "caption": "Uttar Pradesh — Buiobuione, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-01-lg.webp",
+        "src": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-02-lg.webp",
         "caption": "Uttar Pradesh — Buiobuione, CC BY-SA 4.0"
       },
       {
@@ -15943,12 +15643,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "sri-lanka-honeymoon-tour": {
-    "primary": "/images/location-library/nuwara-eliya-sri-lanka/nuwara-eliya-sri-lanka-02-lg.webp",
+    "primary": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/nuwara-eliya-sri-lanka/nuwara-eliya-sri-lanka-02-lg.webp",
-        "caption": "Nuwara Eliya — žába, CC BY 3.0"
-      },
       {
         "src": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
         "caption": "Sri Lanka — Satdeep Gill, CC BY 4.0"
@@ -15970,6 +15666,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Nuwara Eliya — žába, CC BY 3.0"
       },
       {
+        "src": "/images/location-library/nuwara-eliya-sri-lanka/nuwara-eliya-sri-lanka-02-lg.webp",
+        "caption": "Nuwara Eliya — žába, CC BY 3.0"
+      },
+      {
         "src": "/images/location-library/nuwara-eliya-sri-lanka/nuwara-eliya-sri-lanka-03-lg.webp",
         "caption": "Nuwara Eliya — Vyacheslav Argenberg, CC BY 4.0"
       },
@@ -15984,12 +15684,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "sri-lanka-ramayana-tour": {
-    "primary": "/images/location-library/anuradhapura-sri-lanka/anuradhapura-sri-lanka-02-lg.webp",
+    "primary": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/anuradhapura-sri-lanka/anuradhapura-sri-lanka-02-lg.webp",
-        "caption": "Anuradhapura — Daibo Taku, CC BY 3.0"
-      },
       {
         "src": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
         "caption": "Sri Lanka — Satdeep Gill, CC BY 4.0"
@@ -16011,6 +15707,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Anuradhapura — Philip Nalangan, CC BY-SA 4.0"
       },
       {
+        "src": "/images/location-library/anuradhapura-sri-lanka/anuradhapura-sri-lanka-02-lg.webp",
+        "caption": "Anuradhapura — Daibo Taku, CC BY 3.0"
+      },
+      {
         "src": "/images/location-library/anuradhapura-sri-lanka/anuradhapura-sri-lanka-03-lg.webp",
         "caption": "Anuradhapura — Daibo Taku, CC BY 3.0"
       },
@@ -16025,12 +15725,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "sri-lanka-visa": {
-    "primary": "/images/location-library/sri-lanka-international/sri-lanka-international-01-crop1-lg.webp",
+    "primary": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-01-crop1-lg.webp",
-        "caption": "Sri Lanka — Satdeep Gill, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
         "caption": "Sri Lanka — Satdeep Gill, CC BY 4.0"
@@ -16053,12 +15749,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "sri-lanka": {
-    "primary": "/images/location-library/sri-lanka-international/sri-lanka-international-02-crop1-lg.webp",
+    "primary": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-02-crop1-lg.webp",
-        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
         "caption": "Sri Lanka — Satdeep Gill, CC BY 4.0"
@@ -16081,12 +15773,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "srilanka-tour-packages": {
-    "primary": "/images/location-library/anuradhapura-sri-lanka/anuradhapura-sri-lanka-03-lg.webp",
+    "primary": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/anuradhapura-sri-lanka/anuradhapura-sri-lanka-03-lg.webp",
-        "caption": "Anuradhapura — Daibo Taku, CC BY 3.0"
-      },
       {
         "src": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
         "caption": "Sri Lanka — Satdeep Gill, CC BY 4.0"
@@ -16112,6 +15800,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Anuradhapura — Daibo Taku, CC BY 3.0"
       },
       {
+        "src": "/images/location-library/anuradhapura-sri-lanka/anuradhapura-sri-lanka-03-lg.webp",
+        "caption": "Anuradhapura — Daibo Taku, CC BY 3.0"
+      },
+      {
         "src": "/images/location-library/anuradhapura-sri-lanka/anuradhapura-sri-lanka-04-lg.webp",
         "caption": "Anuradhapura — Daibo Taku, CC BY 3.0"
       }
@@ -16122,12 +15814,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "srinagar-tour-packages": {
-    "primary": "/images/location-library/srinagar-jammu-and-kashmir-india/srinagar-jammu-and-kashmir-india-04-lg.webp",
+    "primary": "/images/location-library/srinagar-jammu-and-kashmir-india/srinagar-jammu-and-kashmir-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/srinagar-jammu-and-kashmir-india/srinagar-jammu-and-kashmir-india-04-lg.webp",
-        "caption": "Srinagar — Snakeseye123, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/srinagar-jammu-and-kashmir-india/srinagar-jammu-and-kashmir-india-01-lg.webp",
         "caption": "Srinagar — Harvinder Chandigarh, by"
@@ -16139,6 +15827,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/srinagar-jammu-and-kashmir-india/srinagar-jammu-and-kashmir-india-03-lg.webp",
         "caption": "Srinagar — Dashrathgoyal85, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/srinagar-jammu-and-kashmir-india/srinagar-jammu-and-kashmir-india-04-lg.webp",
+        "caption": "Srinagar — Snakeseye123, CC BY-SA 4.0"
       }
     ],
     "locations": [
@@ -16146,15 +15838,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "srisailam-mallikarjuna-jyotirlinga-darshan": {
-    "primary": "/images/location-library/mallikarjuna-srisailam/mallikarjuna-srisailam-02-lg.webp",
+    "primary": "/images/location-library/mallikarjuna-srisailam/mallikarjuna-srisailam-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/mallikarjuna-srisailam/mallikarjuna-srisailam-02-lg.webp",
-        "caption": "Mallikarjuna — Dineshkannambadi, CC BY-SA 3.0"
-      },
       {
         "src": "/images/location-library/mallikarjuna-srisailam/mallikarjuna-srisailam-01-lg.webp",
         "caption": "Mallikarjuna — Kaushikkshinde, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/mallikarjuna-srisailam/mallikarjuna-srisailam-02-lg.webp",
+        "caption": "Mallikarjuna — Dineshkannambadi, CC BY-SA 3.0"
       },
       {
         "src": "/images/location-library/mallikarjuna-srisailam/mallikarjuna-srisailam-03-lg.webp",
@@ -16170,12 +15862,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "srisailam-temple-tour-from-hyderabad": {
-    "primary": "/images/location-library/hyderabad-andhra-pradesh-india/hyderabad-andhra-pradesh-india-03-lg.webp",
+    "primary": "/images/location-library/hyderabad-andhra-pradesh-india/hyderabad-andhra-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/hyderabad-andhra-pradesh-india/hyderabad-andhra-pradesh-india-03-lg.webp",
-        "caption": "Hyderabad — Akshay.paramatmuni1987, CC BY-SA 3.0"
-      },
       {
         "src": "/images/location-library/hyderabad-andhra-pradesh-india/hyderabad-andhra-pradesh-india-01-lg.webp",
         "caption": "Hyderabad — Ontheway Advice, CC0"
@@ -16183,6 +15871,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/hyderabad-andhra-pradesh-india/hyderabad-andhra-pradesh-india-02-lg.webp",
         "caption": "Hyderabad — Sandeepsea, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/hyderabad-andhra-pradesh-india/hyderabad-andhra-pradesh-india-03-lg.webp",
+        "caption": "Hyderabad — Akshay.paramatmuni1987, CC BY-SA 3.0"
       },
       {
         "src": "/images/location-library/hyderabad-andhra-pradesh-india/hyderabad-andhra-pradesh-india-04-lg.webp",
@@ -16194,12 +15886,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "srisailam-weekend-trip": {
-    "primary": "/images/location-library/mallikarjuna-srisailam/mallikarjuna-srisailam-03-lg.webp",
+    "primary": "/images/location-library/mallikarjuna-srisailam/mallikarjuna-srisailam-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/mallikarjuna-srisailam/mallikarjuna-srisailam-03-lg.webp",
-        "caption": "Mallikarjuna — VasuVR, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/mallikarjuna-srisailam/mallikarjuna-srisailam-01-lg.webp",
         "caption": "Mallikarjuna — Kaushikkshinde, CC BY-SA 4.0"
@@ -16207,6 +15895,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/mallikarjuna-srisailam/mallikarjuna-srisailam-02-lg.webp",
         "caption": "Mallikarjuna — Dineshkannambadi, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/mallikarjuna-srisailam/mallikarjuna-srisailam-03-lg.webp",
+        "caption": "Mallikarjuna — VasuVR, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/mallikarjuna-srisailam/mallikarjuna-srisailam-04-lg.webp",
@@ -16259,15 +15951,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "taj-mahal": {
-    "primary": "/images/location-library/taj-mahal-agra/taj-mahal-agra-02-lg.webp",
+    "primary": "/images/location-library/taj-mahal-agra/taj-mahal-agra-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/taj-mahal-agra/taj-mahal-agra-02-lg.webp",
-        "caption": "Taj Mahal — Jakub Hałun, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/taj-mahal-agra/taj-mahal-agra-01-lg.webp",
         "caption": "Taj Mahal — Asitjain, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/taj-mahal-agra/taj-mahal-agra-02-lg.webp",
+        "caption": "Taj Mahal — Jakub Hałun, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/taj-mahal-agra/taj-mahal-agra-03-lg.webp",
@@ -16300,14 +15992,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "tamil-nadu-pondicherry-tour": {
-    "primary": "/images/location-library/pondicherry-tamil-nadu-india/pondicherry-tamil-nadu-india-02-lg.webp",
+    "primary": "/images/location-library/pondicherry-tamil-nadu-india/pondicherry-tamil-nadu-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/pondicherry-tamil-nadu-india/pondicherry-tamil-nadu-india-02-lg.webp",
+        "src": "/images/location-library/pondicherry-tamil-nadu-india/pondicherry-tamil-nadu-india-01-lg.webp",
         "caption": "Pondicherry — Matthew T Rader, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/pondicherry-tamil-nadu-india/pondicherry-tamil-nadu-india-01-lg.webp",
+        "src": "/images/location-library/pondicherry-tamil-nadu-india/pondicherry-tamil-nadu-india-02-lg.webp",
         "caption": "Pondicherry — Matthew T Rader, CC BY-SA 4.0"
       },
       {
@@ -16341,12 +16033,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "tamil-nadu-tour-packages": {
-    "primary": "/images/location-library/tamil-nadu-india/tamil-nadu-india-03-lg.webp",
+    "primary": "/images/location-library/tamil-nadu-india/tamil-nadu-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-03-lg.webp",
-        "caption": "Tamil Nadu — Timothy A. Gonsalves, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-01-lg.webp",
         "caption": "Tamil Nadu — Didier Descouens, CC BY-SA 4.0"
@@ -16354,6 +16042,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-02-lg.webp",
         "caption": "Tamil Nadu — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-03-lg.webp",
+        "caption": "Tamil Nadu — Timothy A. Gonsalves, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-04-lg.webp",
@@ -16382,12 +16074,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "tamil-nadu": {
-    "primary": "/images/location-library/tamil-nadu-india/tamil-nadu-india-04-lg.webp",
+    "primary": "/images/location-library/tamil-nadu-india/tamil-nadu-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-04-lg.webp",
-        "caption": "Tamil Nadu — Timothy A. Gonsalves, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-01-lg.webp",
         "caption": "Tamil Nadu — Didier Descouens, CC BY-SA 4.0"
@@ -16399,6 +16087,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-03-lg.webp",
         "caption": "Tamil Nadu — Timothy A. Gonsalves, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-04-lg.webp",
+        "caption": "Tamil Nadu — Timothy A. Gonsalves, CC BY-SA 4.0"
       }
     ],
     "locations": [
@@ -16406,12 +16098,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "tamilnadu-pilgrimage-tour": {
-    "primary": "/images/location-library/mahabalipuram-tamil-nadu-india/mahabalipuram-tamil-nadu-india-02-lg.webp",
+    "primary": "/images/location-library/tamil-nadu-india/tamil-nadu-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/mahabalipuram-tamil-nadu-india/mahabalipuram-tamil-nadu-india-02-lg.webp",
-        "caption": "Mahabalipuram — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-01-lg.webp",
         "caption": "Tamil Nadu — Didier Descouens, CC BY-SA 4.0"
@@ -16431,6 +16119,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/mahabalipuram-tamil-nadu-india/mahabalipuram-tamil-nadu-india-01-lg.webp",
         "caption": "Mahabalipuram — Timothy A. Gonsalves, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/mahabalipuram-tamil-nadu-india/mahabalipuram-tamil-nadu-india-02-lg.webp",
+        "caption": "Mahabalipuram — Vyacheslav Argenberg, CC BY 4.0"
       },
       {
         "src": "/images/location-library/mahabalipuram-tamil-nadu-india/mahabalipuram-tamil-nadu-india-03-lg.webp",
@@ -16447,12 +16139,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "tamilnadu-tour": {
-    "primary": "/images/location-library/mahabalipuram-tamil-nadu-india/mahabalipuram-tamil-nadu-india-03-lg.webp",
+    "primary": "/images/location-library/tamil-nadu-india/tamil-nadu-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/mahabalipuram-tamil-nadu-india/mahabalipuram-tamil-nadu-india-03-lg.webp",
-        "caption": "Mahabalipuram — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-01-lg.webp",
         "caption": "Tamil Nadu — Didier Descouens, CC BY-SA 4.0"
@@ -16476,6 +16164,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/mahabalipuram-tamil-nadu-india/mahabalipuram-tamil-nadu-india-02-lg.webp",
         "caption": "Mahabalipuram — Vyacheslav Argenberg, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/mahabalipuram-tamil-nadu-india/mahabalipuram-tamil-nadu-india-03-lg.webp",
+        "caption": "Mahabalipuram — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/mahabalipuram-tamil-nadu-india/mahabalipuram-tamil-nadu-india-04-lg.webp",
@@ -16512,15 +16204,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "thailand-tour-packages": {
-    "primary": "/images/location-library/thailand-international/thailand-international-02-lg.webp",
+    "primary": "/images/location-library/thailand-international/thailand-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/thailand-international/thailand-international-02-lg.webp",
-        "caption": "Thailand — CEphoto, Uwe Aranas, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/thailand-international/thailand-international-01-lg.webp",
         "caption": "Thailand — Don Ramey Logan, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/thailand-international/thailand-international-02-lg.webp",
+        "caption": "Thailand — CEphoto, Uwe Aranas, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/thailand-international/thailand-international-03-lg.webp",
@@ -16577,15 +16269,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "tiger-trail-tours-india": {
-    "primary": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-02-lg.webp",
+    "primary": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-02-lg.webp",
-        "caption": "Bandhavgarh National Park — JP Bennett, CC BY 2.0"
-      },
       {
         "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-01-lg.webp",
         "caption": "Bandhavgarh National Park — Anuj shree, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-02-lg.webp",
+        "caption": "Bandhavgarh National Park — JP Bennett, CC BY 2.0"
       },
       {
         "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-03-lg.webp",
@@ -16642,18 +16334,18 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "tirupati-rameshwaram-kanyakumari-madurai-tour": {
-    "primary": "/images/location-library/kanyakumari-tamil-nadu-india/kanyakumari-tamil-nadu-india-03-lg.webp",
+    "primary": "/images/location-library/kanyakumari-tamil-nadu-india/kanyakumari-tamil-nadu-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kanyakumari-tamil-nadu-india/kanyakumari-tamil-nadu-india-03-lg.webp",
-        "caption": "Kanyakumari — Raman Patel, CC BY 3.0"
-      },
       {
         "src": "/images/location-library/kanyakumari-tamil-nadu-india/kanyakumari-tamil-nadu-india-01-lg.webp",
         "caption": "Kanyakumari — Omar AV, CC BY 3.0"
       },
       {
         "src": "/images/location-library/kanyakumari-tamil-nadu-india/kanyakumari-tamil-nadu-india-02-lg.webp",
+        "caption": "Kanyakumari — Raman Patel, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/kanyakumari-tamil-nadu-india/kanyakumari-tamil-nadu-india-03-lg.webp",
         "caption": "Kanyakumari — Raman Patel, CC BY 3.0"
       },
       {
@@ -16683,12 +16375,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "tirupati-thanjavur-kanyakumari-madurai-tour": {
-    "primary": "/images/location-library/kanyakumari-tamil-nadu-india/kanyakumari-tamil-nadu-india-04-lg.webp",
+    "primary": "/images/location-library/kanyakumari-tamil-nadu-india/kanyakumari-tamil-nadu-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kanyakumari-tamil-nadu-india/kanyakumari-tamil-nadu-india-04-lg.webp",
-        "caption": "Kanyakumari — Raman Patel, CC BY 3.0"
-      },
       {
         "src": "/images/location-library/kanyakumari-tamil-nadu-india/kanyakumari-tamil-nadu-india-01-lg.webp",
         "caption": "Kanyakumari — Omar AV, CC BY 3.0"
@@ -16699,6 +16387,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       },
       {
         "src": "/images/location-library/kanyakumari-tamil-nadu-india/kanyakumari-tamil-nadu-india-03-lg.webp",
+        "caption": "Kanyakumari — Raman Patel, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/kanyakumari-tamil-nadu-india/kanyakumari-tamil-nadu-india-04-lg.webp",
         "caption": "Kanyakumari — Raman Patel, CC BY 3.0"
       },
       {
@@ -16765,14 +16457,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "tirupati-tour": {
-    "primary": "/images/location-library/tirupati-andhra-pradesh-india/tirupati-andhra-pradesh-india-02-lg.webp",
+    "primary": "/images/location-library/tirupati-andhra-pradesh-india/tirupati-andhra-pradesh-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/tirupati-andhra-pradesh-india/tirupati-andhra-pradesh-india-02-lg.webp",
+        "src": "/images/location-library/tirupati-andhra-pradesh-india/tirupati-andhra-pradesh-india-01-lg.webp",
         "caption": "Tirupati — Raju Vegesna (RVClicks), CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/tirupati-andhra-pradesh-india/tirupati-andhra-pradesh-india-01-lg.webp",
+        "src": "/images/location-library/tirupati-andhra-pradesh-india/tirupati-andhra-pradesh-india-02-lg.webp",
         "caption": "Tirupati — Raju Vegesna (RVClicks), CC BY-SA 4.0"
       },
       {
@@ -16789,15 +16481,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "trip-to-heart-of-india": {
-    "primary": "/images/location-library/central-india/central-india-02-lg.webp",
+    "primary": "/images/location-library/central-india/central-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/central-india/central-india-02-lg.webp",
-        "caption": "Central India — Davidvraju, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/central-india/central-india-01-lg.webp",
         "caption": "Central India — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/central-india/central-india-02-lg.webp",
+        "caption": "Central India — Davidvraju, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/central-india/central-india-03-lg.webp",
@@ -16854,12 +16546,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "ujjain-omkareshwar-mandu-tour-from-indore": {
-    "primary": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-03-lg.webp",
+    "primary": "/images/location-library/omkareshwar-madhya-pradesh-india/omkareshwar-madhya-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-03-lg.webp",
-        "caption": "Ujjain — Suyash Dwivedi, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/omkareshwar-madhya-pradesh-india/omkareshwar-madhya-pradesh-india-01-lg.webp",
         "caption": "Omkareshwar — Lokesh Mundra, CC BY 3.0"
@@ -16882,6 +16570,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       },
       {
         "src": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-02-lg.webp",
+        "caption": "Ujjain — Suyash Dwivedi, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-03-lg.webp",
         "caption": "Ujjain — Suyash Dwivedi, CC BY-SA 4.0"
       },
       {
@@ -16895,12 +16587,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "ujjain-omkareshwar-tour": {
-    "primary": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-04-lg.webp",
+    "primary": "/images/location-library/omkareshwar-madhya-pradesh-india/omkareshwar-madhya-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-04-lg.webp",
-        "caption": "Ujjain — Suyash Dwivedi, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/omkareshwar-madhya-pradesh-india/omkareshwar-madhya-pradesh-india-01-lg.webp",
         "caption": "Omkareshwar — Lokesh Mundra, CC BY 3.0"
@@ -16928,6 +16616,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-03-lg.webp",
         "caption": "Ujjain — Suyash Dwivedi, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-04-lg.webp",
+        "caption": "Ujjain — Suyash Dwivedi, CC BY-SA 4.0"
       }
     ],
     "locations": [
@@ -16936,12 +16628,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "ujjain-tour-packages-from-ahmedabad": {
-    "primary": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-02-lg.webp",
+    "primary": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-02-lg.webp",
-        "caption": "Ujjain — Suyash Dwivedi, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-01-lg.webp",
         "caption": "Ahmedabad — Honzasoukup, Public domain"
@@ -16960,6 +16648,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       },
       {
         "src": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-01-lg.webp",
+        "caption": "Ujjain — Suyash Dwivedi, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-02-lg.webp",
         "caption": "Ujjain — Suyash Dwivedi, CC BY-SA 4.0"
       },
       {
@@ -17018,12 +16710,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "ujjain-tour-packages-from-chennai": {
-    "primary": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-01-crop1-lg.webp",
-        "caption": "Ujjain — Suyash Dwivedi, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-01-lg.webp",
         "caption": "Ujjain — Suyash Dwivedi, CC BY-SA 4.0"
@@ -17063,12 +16751,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "ujjain-tour-packages-from-delhi": {
-    "primary": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-02-crop1-lg.webp",
+    "primary": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-02-crop1-lg.webp",
-        "caption": "Ujjain — Suyash Dwivedi, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-01-lg.webp",
         "caption": "Ujjain — Suyash Dwivedi, CC BY-SA 4.0"
@@ -17108,12 +16792,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "ujjain-tour-packages-from-hyderabad": {
-    "primary": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-03-crop1-lg.webp",
+    "primary": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-03-crop1-lg.webp",
-        "caption": "Ujjain — Suyash Dwivedi, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-01-lg.webp",
         "caption": "Ujjain — Suyash Dwivedi, CC BY-SA 4.0"
@@ -17153,12 +16833,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "ujjain-tour-packages-from-kolkata": {
-    "primary": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-04-crop1-lg.webp",
+    "primary": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-04-crop1-lg.webp",
-        "caption": "Ujjain — Suyash Dwivedi, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-01-lg.webp",
         "caption": "Ujjain — Suyash Dwivedi, CC BY-SA 4.0"
@@ -17198,12 +16874,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "ujjain-tour-packages-from-mumbai": {
-    "primary": "/images/location-library/nashik-maharashtra-india/nashik-maharashtra-india-02-lg.webp",
+    "primary": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/nashik-maharashtra-india/nashik-maharashtra-india-02-lg.webp",
-        "caption": "Nashik — Satishkulkarniwtn, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-01-lg.webp",
         "caption": "Ujjain — Suyash Dwivedi, CC BY-SA 4.0"
@@ -17225,6 +16897,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Nashik — Satishkulkarniwtn, CC BY-SA 4.0"
       },
       {
+        "src": "/images/location-library/nashik-maharashtra-india/nashik-maharashtra-india-02-lg.webp",
+        "caption": "Nashik — Satishkulkarniwtn, CC BY-SA 4.0"
+      },
+      {
         "src": "/images/location-library/nashik-maharashtra-india/nashik-maharashtra-india-03-lg.webp",
         "caption": "Nashik — Satishkulkarniwtn, CC BY-SA 4.0"
       },
@@ -17239,12 +16915,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "ujjain-tour-packages-from-nagpur": {
-    "primary": "/images/location-library/nagpur-maharashtra-india/nagpur-maharashtra-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/nagpur-maharashtra-india/nagpur-maharashtra-india-01-crop1-lg.webp",
-        "caption": "Nagpur — Yann Forget, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-01-lg.webp",
         "caption": "Ujjain — Suyash Dwivedi, CC BY-SA 4.0"
@@ -17284,12 +16956,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "ujjain-tour-packages-from-pune": {
-    "primary": "/images/location-library/pune-maharashtra-india/pune-maharashtra-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/pune-maharashtra-india/pune-maharashtra-india-01-crop1-lg.webp",
-        "caption": "Pune — Udaykumar PR, CC BY 3.0"
-      },
       {
         "src": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-01-lg.webp",
         "caption": "Ujjain — Suyash Dwivedi, CC BY-SA 4.0"
@@ -17329,14 +16997,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "ujjain-tour-packages-from-rajkot": {
-    "primary": "/images/location-library/rajkot-gujarat-india/rajkot-gujarat-india-02-lg.webp",
+    "primary": "/images/location-library/rajkot-gujarat-india/rajkot-gujarat-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/rajkot-gujarat-india/rajkot-gujarat-india-02-lg.webp",
+        "src": "/images/location-library/rajkot-gujarat-india/rajkot-gujarat-india-01-lg.webp",
         "caption": "Rajkot — Jashu Ram, CC BY-SA 3.0"
       },
       {
-        "src": "/images/location-library/rajkot-gujarat-india/rajkot-gujarat-india-01-lg.webp",
+        "src": "/images/location-library/rajkot-gujarat-india/rajkot-gujarat-india-02-lg.webp",
         "caption": "Rajkot — Jashu Ram, CC BY-SA 3.0"
       },
       {
@@ -17370,12 +17038,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "ujjain-tour-packages-from-surat": {
-    "primary": "/images/location-library/omkareshwar-madhya-pradesh-india/omkareshwar-madhya-pradesh-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/omkareshwar-madhya-pradesh-india/omkareshwar-madhya-pradesh-india-01-crop1-lg.webp",
-        "caption": "Omkareshwar — Lokesh Mundra, CC BY 3.0"
-      },
       {
         "src": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-01-lg.webp",
         "caption": "Ujjain — Suyash Dwivedi, CC BY-SA 4.0"
@@ -17415,12 +17079,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "ujjain-tour-packages": {
-    "primary": "/images/location-library/omkareshwar-madhya-pradesh-india/omkareshwar-madhya-pradesh-india-02-crop1-lg.webp",
+    "primary": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/omkareshwar-madhya-pradesh-india/omkareshwar-madhya-pradesh-india-02-crop1-lg.webp",
-        "caption": "Omkareshwar — Lokesh Mundra, CC BY 3.0"
-      },
       {
         "src": "/images/location-library/ujjain-madhya-pradesh-india/ujjain-madhya-pradesh-india-01-lg.webp",
         "caption": "Ujjain — Suyash Dwivedi, CC BY-SA 4.0"
@@ -17460,18 +17120,18 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "uttar-pradesh-darshan-tour": {
-    "primary": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-03-lg.webp",
+    "primary": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-03-lg.webp",
-        "caption": "Uttar Pradesh — Buiobuione, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-01-lg.webp",
         "caption": "Uttar Pradesh — Buiobuione, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-02-lg.webp",
+        "caption": "Uttar Pradesh — Buiobuione, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-03-lg.webp",
         "caption": "Uttar Pradesh — Buiobuione, CC BY-SA 4.0"
       },
       {
@@ -17501,12 +17161,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "uttar-pradesh-tour-packages": {
-    "primary": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-04-lg.webp",
+    "primary": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-04-lg.webp",
-        "caption": "Uttar Pradesh — Buiobuione, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-01-lg.webp",
         "caption": "Uttar Pradesh — Buiobuione, CC BY-SA 4.0"
@@ -17517,6 +17173,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       },
       {
         "src": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-03-lg.webp",
+        "caption": "Uttar Pradesh — Buiobuione, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-04-lg.webp",
         "caption": "Uttar Pradesh — Buiobuione, CC BY-SA 4.0"
       },
       {
@@ -17542,12 +17202,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "uttar-pradesh-tour": {
-    "primary": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-01-crop1-lg.webp",
-        "caption": "Uttar Pradesh — Buiobuione, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-01-lg.webp",
         "caption": "Uttar Pradesh — Buiobuione, CC BY-SA 4.0"
@@ -17587,12 +17243,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "uttar-pradesh": {
-    "primary": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-02-crop1-lg.webp",
+    "primary": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-02-crop1-lg.webp",
-        "caption": "Uttar Pradesh — Buiobuione, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/uttar-pradesh-india/uttar-pradesh-india-01-lg.webp",
         "caption": "Uttar Pradesh — Buiobuione, CC BY-SA 4.0"
@@ -17615,12 +17267,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "uttarakhand-bird-watching-tour": {
-    "primary": "/images/location-library/uttarakhand-india/uttarakhand-india-03-lg.webp",
+    "primary": "/images/location-library/uttarakhand-india/uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-03-lg.webp",
-        "caption": "Uttarakhand — Original: Rohit Sharma Derivative work: UnpetitproleX, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/uttarakhand-india/uttarakhand-india-01-lg.webp",
         "caption": "Uttarakhand — Didier Descouens, CC BY-SA 4.0"
@@ -17628,6 +17276,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/uttarakhand-india/uttarakhand-india-02-lg.webp",
         "caption": "Uttarakhand — Original: Harshit SR Derivative work: UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-03-lg.webp",
+        "caption": "Uttarakhand — Original: Rohit Sharma Derivative work: UnpetitproleX, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/uttarakhand-india/uttarakhand-india-04-lg.webp",
@@ -17656,12 +17308,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "uttarakhand-delights-tour": {
-    "primary": "/images/location-library/uttarakhand-india/uttarakhand-india-04-lg.webp",
+    "primary": "/images/location-library/uttarakhand-india/uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-04-lg.webp",
-        "caption": "Uttarakhand — Rohit Sharma, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/uttarakhand-india/uttarakhand-india-01-lg.webp",
         "caption": "Uttarakhand — Didier Descouens, CC BY-SA 4.0"
@@ -17673,6 +17321,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/uttarakhand-india/uttarakhand-india-03-lg.webp",
         "caption": "Uttarakhand — Original: Rohit Sharma Derivative work: UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-04-lg.webp",
+        "caption": "Uttarakhand — Rohit Sharma, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/mussoorie-uttarakhand-india/mussoorie-uttarakhand-india-01-lg.webp",
@@ -17697,12 +17349,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "uttarakhand-tour-packages": {
-    "primary": "/images/location-library/uttarakhand-india/uttarakhand-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/uttarakhand-india/uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-01-crop1-lg.webp",
-        "caption": "Uttarakhand — Didier Descouens, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/uttarakhand-india/uttarakhand-india-01-lg.webp",
         "caption": "Uttarakhand — Didier Descouens, CC BY-SA 4.0"
@@ -17742,12 +17390,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "uttarakhand": {
-    "primary": "/images/location-library/uttarakhand-india/uttarakhand-india-02-crop1-lg.webp",
+    "primary": "/images/location-library/uttarakhand-india/uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-02-crop1-lg.webp",
-        "caption": "Uttarakhand — Original: Harshit SR Derivative work: UnpetitproleX, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/uttarakhand-india/uttarakhand-india-01-lg.webp",
         "caption": "Uttarakhand — Didier Descouens, CC BY-SA 4.0"
@@ -17770,12 +17414,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "vadodara-tour-packages": {
-    "primary": "/images/location-library/porbandar-gujarat-india/porbandar-gujarat-india-04-lg.webp",
+    "primary": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/porbandar-gujarat-india/porbandar-gujarat-india-04-lg.webp",
-        "caption": "Porbandar — Sivaprasadsujatha, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/ahmedabad-gujarat-india/ahmedabad-gujarat-india-01-lg.webp",
         "caption": "Ahmedabad — Honzasoukup, Public domain"
@@ -17803,6 +17443,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/porbandar-gujarat-india/porbandar-gujarat-india-03-lg.webp",
         "caption": "Porbandar — Raj Odedra, CC BY 3.0"
+      },
+      {
+        "src": "/images/location-library/porbandar-gujarat-india/porbandar-gujarat-india-04-lg.webp",
+        "caption": "Porbandar — Sivaprasadsujatha, CC BY-SA 4.0"
       }
     ],
     "locations": [
@@ -17859,14 +17503,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "valley-of-flowers-tour": {
-    "primary": "/images/location-library/joshimath-uttarakhand-india/joshimath-uttarakhand-india-02-lg.webp",
+    "primary": "/images/location-library/joshimath-uttarakhand-india/joshimath-uttarakhand-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/joshimath-uttarakhand-india/joshimath-uttarakhand-india-02-lg.webp",
+        "src": "/images/location-library/joshimath-uttarakhand-india/joshimath-uttarakhand-india-01-lg.webp",
         "caption": "Joshimath — James St. John, CC BY 2.0"
       },
       {
-        "src": "/images/location-library/joshimath-uttarakhand-india/joshimath-uttarakhand-india-01-lg.webp",
+        "src": "/images/location-library/joshimath-uttarakhand-india/joshimath-uttarakhand-india-02-lg.webp",
         "caption": "Joshimath — James St. John, CC BY 2.0"
       },
       {
@@ -17900,12 +17544,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "varanasi-allahabad-ayodhya-naimisharanya-tour": {
-    "primary": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-02-lg.webp",
+    "primary": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-02-lg.webp",
-        "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-01-lg.webp",
         "caption": "Prayagraj — Ar.anujgupta, CC BY-SA 4.0"
@@ -17927,6 +17567,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
       },
       {
+        "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-02-lg.webp",
+        "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
+      },
+      {
         "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-03-lg.webp",
         "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
       },
@@ -17941,12 +17585,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "varanasi-bodhgaya-chitrakoot-trip": {
-    "primary": "/images/location-library/bodhgaya-bihar-india/bodhgaya-bihar-india-04-lg.webp",
+    "primary": "/images/location-library/bodhgaya-bihar-india/bodhgaya-bihar-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/bodhgaya-bihar-india/bodhgaya-bihar-india-04-lg.webp",
-        "caption": "Bodhgaya — Amitabha Gupta, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/bodhgaya-bihar-india/bodhgaya-bihar-india-01-lg.webp",
         "caption": "Bodhgaya — Amitabha Gupta, CC BY 4.0"
@@ -17957,6 +17597,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       },
       {
         "src": "/images/location-library/bodhgaya-bihar-india/bodhgaya-bihar-india-03-lg.webp",
+        "caption": "Bodhgaya — Amitabha Gupta, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/bodhgaya-bihar-india/bodhgaya-bihar-india-04-lg.webp",
         "caption": "Bodhgaya — Amitabha Gupta, CC BY 4.0"
       },
       {
@@ -17982,12 +17626,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "varanasi-bodhgaya-prayagraj-package": {
-    "primary": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-04-crop1-lg.webp",
+    "primary": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-04-crop1-lg.webp",
-        "caption": "Prayagraj — Ar.anujgupta, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-01-lg.webp",
         "caption": "Prayagraj — Ar.anujgupta, CC BY-SA 4.0"
@@ -18027,12 +17667,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "varanasi-city-tour": {
-    "primary": "/images/location-library/sarnath-uttar-pradesh-india/sarnath-uttar-pradesh-india-02-lg.webp",
+    "primary": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/sarnath-uttar-pradesh-india/sarnath-uttar-pradesh-india-02-lg.webp",
-        "caption": "Sarnath — K.Venkataramana, CC0"
-      },
       {
         "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
         "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
@@ -18054,6 +17690,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Sarnath — Sharmaambuj, CC BY-SA 4.0"
       },
       {
+        "src": "/images/location-library/sarnath-uttar-pradesh-india/sarnath-uttar-pradesh-india-02-lg.webp",
+        "caption": "Sarnath — K.Venkataramana, CC0"
+      },
+      {
         "src": "/images/location-library/sarnath-uttar-pradesh-india/sarnath-uttar-pradesh-india-03-lg.webp",
         "caption": "Sarnath — Sharmaambuj, CC BY-SA 4.0"
       },
@@ -18068,12 +17708,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "varanasi-prayagraj-ayodhya-vindhyachal-tour": {
-    "primary": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-03-lg.webp",
+    "primary": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-03-lg.webp",
-        "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-01-lg.webp",
         "caption": "Prayagraj — Ar.anujgupta, CC BY-SA 4.0"
@@ -18099,6 +17735,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
       },
       {
+        "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-03-lg.webp",
+        "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
+      },
+      {
         "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-04-lg.webp",
         "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
       }
@@ -18109,12 +17749,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "varanasi-prayagraj-bodhgaya-ayodhya-tour": {
-    "primary": "/images/location-library/bodhgaya-bihar-india/bodhgaya-bihar-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/bodhgaya-bihar-india/bodhgaya-bihar-india-01-crop1-lg.webp",
-        "caption": "Bodhgaya — Amitabha Gupta, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-01-lg.webp",
         "caption": "Prayagraj — Ar.anujgupta, CC BY-SA 4.0"
@@ -18154,12 +17790,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "varanasi-sarnath-tour": {
-    "primary": "/images/location-library/sarnath-uttar-pradesh-india/sarnath-uttar-pradesh-india-03-lg.webp",
+    "primary": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/sarnath-uttar-pradesh-india/sarnath-uttar-pradesh-india-03-lg.webp",
-        "caption": "Sarnath — Sharmaambuj, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
         "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
@@ -18185,6 +17817,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Sarnath — K.Venkataramana, CC0"
       },
       {
+        "src": "/images/location-library/sarnath-uttar-pradesh-india/sarnath-uttar-pradesh-india-03-lg.webp",
+        "caption": "Sarnath — Sharmaambuj, CC BY-SA 4.0"
+      },
+      {
         "src": "/images/location-library/sarnath-uttar-pradesh-india/sarnath-uttar-pradesh-india-04-lg.webp",
         "caption": "Sarnath — Paramanu Sarkar, CC BY-SA 4.0"
       }
@@ -18195,12 +17831,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "varanasi-travel-packages": {
-    "primary": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-02-crop1-lg.webp",
+    "primary": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-02-crop1-lg.webp",
-        "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
         "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
@@ -18223,12 +17855,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "varanasi": {
-    "primary": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-03-crop1-lg.webp",
+    "primary": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-03-crop1-lg.webp",
-        "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
         "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
@@ -18251,12 +17879,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "vietnam-adventure-tour": {
-    "primary": "/images/location-library/vietnam-international/vietnam-international-02-crop1-lg.webp",
+    "primary": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/vietnam-international/vietnam-international-02-crop1-lg.webp",
-        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
-      },
       {
         "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
         "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
@@ -18279,12 +17903,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "vietnam-tour-packages-from-delhi": {
-    "primary": "/images/location-library/vietnam-international/vietnam-international-03-crop1-lg.webp",
+    "primary": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/vietnam-international/vietnam-international-03-crop1-lg.webp",
-        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
-      },
       {
         "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
         "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
@@ -18307,12 +17927,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "vietnam-tour-packages": {
-    "primary": "/images/location-library/ho-chi-minh-city-vietnam/ho-chi-minh-city-vietnam-03-lg.webp",
+    "primary": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/ho-chi-minh-city-vietnam/ho-chi-minh-city-vietnam-03-lg.webp",
-        "caption": "Ho Chi Minh City — Diego Delso, CC BY-SA 3.0"
-      },
       {
         "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
         "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
@@ -18338,6 +17954,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Ho Chi Minh City — Diego Delso, CC BY-SA 3.0"
       },
       {
+        "src": "/images/location-library/ho-chi-minh-city-vietnam/ho-chi-minh-city-vietnam-03-lg.webp",
+        "caption": "Ho Chi Minh City — Diego Delso, CC BY-SA 3.0"
+      },
+      {
         "src": "/images/location-library/ho-chi-minh-city-vietnam/ho-chi-minh-city-vietnam-04-lg.webp",
         "caption": "Ho Chi Minh City — Diego Delso, CC BY-SA 3.0"
       }
@@ -18348,12 +17968,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "vietnam": {
-    "primary": "/images/location-library/vietnam-international/vietnam-international-04-crop1-lg.webp",
+    "primary": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/vietnam-international/vietnam-international-04-crop1-lg.webp",
-        "caption": "Vietnam — Ngọt band, CC0"
-      },
       {
         "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
         "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
@@ -18376,12 +17992,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "west-africa-tour-packages": {
-    "primary": "/images/location-library/west-india/west-india-02-lg.webp",
+    "primary": "/images/location-library/africa-various-countries/africa-various-countries-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/west-india/west-india-02-lg.webp",
-        "caption": "West India — Joydeep Chakraborty, CC BY-SA 3.0"
-      },
       {
         "src": "/images/location-library/africa-various-countries/africa-various-countries-01-lg.webp",
         "caption": "Africa — Internet Archive Book Images, No restrictions"
@@ -18403,6 +18015,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "West India — Joydeep, CC BY-SA 3.0"
       },
       {
+        "src": "/images/location-library/west-india/west-india-02-lg.webp",
+        "caption": "West India — Joydeep Chakraborty, CC BY-SA 3.0"
+      },
+      {
         "src": "/images/location-library/west-india/west-india-03-lg.webp",
         "caption": "West India — Joydeep, CC BY-SA 3.0"
       },
@@ -18417,14 +18033,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "west-america-tour-packages": {
-    "primary": "/images/location-library/america-usa/america-usa-02-lg.webp",
+    "primary": "/images/location-library/america-usa/america-usa-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/america-usa/america-usa-02-lg.webp",
+        "src": "/images/location-library/america-usa/america-usa-01-lg.webp",
         "caption": "America — Dietmar Rabich, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/america-usa/america-usa-01-lg.webp",
+        "src": "/images/location-library/america-usa/america-usa-02-lg.webp",
         "caption": "America — Dietmar Rabich, CC BY-SA 4.0"
       },
       {
@@ -18523,12 +18139,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "west-europe-tour-packages": {
-    "primary": "/images/location-library/europe-various-countries/europe-various-countries-04-lg.webp",
+    "primary": "/images/location-library/europe-various-countries/europe-various-countries-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/europe-various-countries/europe-various-countries-04-lg.webp",
-        "caption": "Europe — Internet Archive Book Images, No restrictions"
-      },
       {
         "src": "/images/location-library/europe-various-countries/europe-various-countries-01-lg.webp",
         "caption": "Europe — Internet Archive Book Images, No restrictions"
@@ -18539,6 +18151,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       },
       {
         "src": "/images/location-library/europe-various-countries/europe-various-countries-03-lg.webp",
+        "caption": "Europe — Internet Archive Book Images, No restrictions"
+      },
+      {
+        "src": "/images/location-library/europe-various-countries/europe-various-countries-04-lg.webp",
         "caption": "Europe — Internet Archive Book Images, No restrictions"
       },
       {
@@ -18564,12 +18180,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "west-india-tour-packages": {
-    "primary": "/images/location-library/west-india/west-india-03-lg.webp",
+    "primary": "/images/location-library/west-india/west-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/west-india/west-india-03-lg.webp",
-        "caption": "West India — Joydeep, CC BY-SA 3.0"
-      },
       {
         "src": "/images/location-library/west-india/west-india-01-lg.webp",
         "caption": "West India — Joydeep, CC BY-SA 3.0"
@@ -18577,6 +18189,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/west-india/west-india-02-lg.webp",
         "caption": "West India — Joydeep Chakraborty, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/west-india/west-india-03-lg.webp",
+        "caption": "West India — Joydeep, CC BY-SA 3.0"
       },
       {
         "src": "/images/location-library/west-india/west-india-04-lg.webp",
@@ -18588,12 +18204,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "wonders-of-kumaon-tour": {
-    "primary": "/images/location-library/ranikhet-uttarakhand-india/ranikhet-uttarakhand-india-02-lg.webp",
+    "primary": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/ranikhet-uttarakhand-india/ranikhet-uttarakhand-india-02-lg.webp",
-        "caption": "Ranikhet — Original: Harshit SR Derivative work: UnpetitproleX, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/nainital-uttarakhand-india/nainital-uttarakhand-india-01-lg.webp",
         "caption": "Nainital — Didier Descouens, CC BY-SA 4.0"
@@ -18615,6 +18227,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Ranikhet — Harshit SR, CC BY-SA 4.0"
       },
       {
+        "src": "/images/location-library/ranikhet-uttarakhand-india/ranikhet-uttarakhand-india-02-lg.webp",
+        "caption": "Ranikhet — Original: Harshit SR Derivative work: UnpetitproleX, CC BY-SA 4.0"
+      },
+      {
         "src": "/images/location-library/ranikhet-uttarakhand-india/ranikhet-uttarakhand-india-03-lg.webp",
         "caption": "Ranikhet — Harshit SR, CC BY-SA 4.0"
       },
@@ -18629,12 +18245,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "yamuna-pushkaralu-tour-from-delhi": {
-    "primary": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-01-crop1-lg.webp",
-        "caption": "Yamunotri — AaS, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-01-lg.webp",
         "caption": "Yamunotri — AaS, CC BY-SA 4.0"
@@ -18674,12 +18286,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "yamuna-pushkaralu-yatra-from-dehradun": {
-    "primary": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-04-lg.webp",
+    "primary": "/images/location-library/dehradun-uttarakhand-india/dehradun-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-04-lg.webp",
-        "caption": "Haridwar — Gannu03, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/dehradun-uttarakhand-india/dehradun-uttarakhand-india-01-lg.webp",
         "caption": "Dehradun — Paul Hamilton, CC BY-SA 2.0"
@@ -18707,6 +18315,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-03-lg.webp",
         "caption": "Haridwar — Gannu03, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-04-lg.webp",
+        "caption": "Haridwar — Gannu03, CC BY-SA 4.0"
       }
     ],
     "locations": [
@@ -18715,12 +18327,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "yamuna-pushkaralu-yatra-to-kashi-ayodhya": {
-    "primary": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-02-lg.webp",
+    "primary": "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-02-lg.webp",
-        "caption": "Prayagraj — Arpita1308, by-sa"
-      },
       {
         "src": "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-01-lg.webp",
         "caption": "Ayodhya — William Hodges, Public domain"
@@ -18742,6 +18350,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Prayagraj — Ar.anujgupta, CC BY-SA 4.0"
       },
       {
+        "src": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-02-lg.webp",
+        "caption": "Prayagraj — Arpita1308, by-sa"
+      },
+      {
         "src": "/images/location-library/prayagraj-uttar-pradesh-india/prayagraj-uttar-pradesh-india-03-lg.webp",
         "caption": "Prayagraj — Ar.anujgupta, CC BY-SA 4.0"
       },
@@ -18756,12 +18368,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "yamuna-pushkaralu-yatra-to-yamunotri": {
-    "primary": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-02-crop1-lg.webp",
+    "primary": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-02-crop1-lg.webp",
-        "caption": "Yamunotri — Paul Hamilton, by-sa"
-      },
       {
         "src": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-01-lg.webp",
         "caption": "Yamunotri — AaS, CC BY-SA 4.0"
@@ -18801,12 +18409,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "yamuna-pushkaralu-yatra-with-kurukshetra-haridwar": {
-    "primary": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-01-crop2-lg.webp",
+    "primary": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-01-crop2-lg.webp",
-        "caption": "Haridwar — Dan Searle, CC BY-SA 2.0"
-      },
       {
         "src": "/images/location-library/haridwar-uttarakhand-india/haridwar-uttarakhand-india-01-lg.webp",
         "caption": "Haridwar — Dan Searle, CC BY-SA 2.0"
@@ -18829,12 +18433,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "yamunotri-tour-packages": {
-    "primary": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-03-crop1-lg.webp",
+    "primary": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-03-crop1-lg.webp",
-        "caption": "Yamunotri — Paul Hamilton, by-sa"
-      },
       {
         "src": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-01-lg.webp",
         "caption": "Yamunotri — AaS, CC BY-SA 4.0"
@@ -18874,12 +18474,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "yamunotri": {
-    "primary": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-04-crop1-lg.webp",
+    "primary": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-04-crop1-lg.webp",
-        "caption": "Yamunotri — Paul Hamilton, by-sa"
-      },
       {
         "src": "/images/location-library/yamunotri-uttarakhand-india/yamunotri-uttarakhand-india-01-lg.webp",
         "caption": "Yamunotri — AaS, CC BY-SA 4.0"
@@ -19014,12 +18610,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "amarnath": {
-    "primary": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-03-lg.webp",
+    "primary": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-03-lg.webp",
-        "caption": "Kashmir — Kasisripada17, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-01-lg.webp",
         "caption": "Kashmir — Harvinder Chandigarh, CC BY 4.0"
@@ -19027,6 +18619,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-02-lg.webp",
         "caption": "Kashmir — Dashrathgoyal85, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-03-lg.webp",
+        "caption": "Kashmir — Kasisripada17, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-04-lg.webp",
@@ -19038,15 +18634,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "amarnath-yatra": {
-    "primary": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-02-lg.webp",
+    "primary": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-02-lg.webp",
-        "caption": "Kashmir — Dashrathgoyal85, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-01-lg.webp",
         "caption": "Kashmir — Harvinder Chandigarh, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-02-lg.webp",
+        "caption": "Kashmir — Dashrathgoyal85, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-03-lg.webp",
@@ -19190,15 +18786,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "baidyanath-dham-tour-2-days": {
-    "primary": "/images/location-library/jharkhand-india/jharkhand-india-02-lg.webp",
+    "primary": "/images/location-library/jharkhand-india/jharkhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/jharkhand-india/jharkhand-india-02-lg.webp",
-        "caption": "Jharkhand — 456legend, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/jharkhand-india/jharkhand-india-01-lg.webp",
         "caption": "Jharkhand — Bikash Lakra, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/jharkhand-india/jharkhand-india-02-lg.webp",
+        "caption": "Jharkhand — 456legend, CC BY 4.0"
       },
       {
         "src": "/images/location-library/jharkhand-india/jharkhand-india-03-lg.webp",
@@ -19278,14 +18874,14 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "buddhism-india": {
-    "primary": "/images/location-library/bodhgaya-bihar-india/bodhgaya-bihar-india-02-lg.webp",
+    "primary": "/images/location-library/bodhgaya-bihar-india/bodhgaya-bihar-india-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/bodhgaya-bihar-india/bodhgaya-bihar-india-02-lg.webp",
+        "src": "/images/location-library/bodhgaya-bihar-india/bodhgaya-bihar-india-01-lg.webp",
         "caption": "Bodhgaya — Amitabha Gupta, CC BY 4.0"
       },
       {
-        "src": "/images/location-library/bodhgaya-bihar-india/bodhgaya-bihar-india-01-lg.webp",
+        "src": "/images/location-library/bodhgaya-bihar-india/bodhgaya-bihar-india-02-lg.webp",
         "caption": "Bodhgaya — Amitabha Gupta, CC BY 4.0"
       },
       {
@@ -19302,15 +18898,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "bungee-jumping": {
-    "primary": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-02-lg.webp",
+    "primary": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-02-lg.webp",
-        "caption": "Rishikesh — Billjones94, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-01-lg.webp",
         "caption": "Rishikesh — Dorelal Singh, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-02-lg.webp",
+        "caption": "Rishikesh — Billjones94, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/rishikesh-uttarakhand-india/rishikesh-uttarakhand-india-03-lg.webp",
@@ -19342,12 +18938,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "chardham": {
-    "primary": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-crop1-lg.webp",
-        "caption": "Badrinath — Billjones94, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/badrinath-uttarakhand-india/badrinath-uttarakhand-india-01-lg.webp",
         "caption": "Badrinath — Billjones94, CC BY-SA 4.0"
@@ -19462,12 +19054,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "ek-dham-tour-packages": {
-    "primary": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-01-crop1-lg.webp",
-        "caption": "Kedarnath — Rohit Sharma, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/kedarnath-uttarakhand-india/kedarnath-uttarakhand-india-01-lg.webp",
         "caption": "Kedarnath — Rohit Sharma, CC BY-SA 4.0"
@@ -19490,15 +19078,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "galle": {
-    "primary": "/images/location-library/sri-lanka-international/sri-lanka-international-02-lg.webp",
+    "primary": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-02-lg.webp",
-        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
         "caption": "Sri Lanka — Satdeep Gill, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-02-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/sri-lanka-international/sri-lanka-international-03-lg.webp",
@@ -19538,15 +19126,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "ghana-tour-packages": {
-    "primary": "/images/location-library/africa-various-countries/africa-various-countries-02-lg.webp",
+    "primary": "/images/location-library/africa-various-countries/africa-various-countries-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/africa-various-countries/africa-various-countries-02-lg.webp",
-        "caption": "Africa — Clarke, Edward Daniel, 1769-1822, No restrictions"
-      },
       {
         "src": "/images/location-library/africa-various-countries/africa-various-countries-01-lg.webp",
         "caption": "Africa — Internet Archive Book Images, No restrictions"
+      },
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-02-lg.webp",
+        "caption": "Africa — Clarke, Edward Daniel, 1769-1822, No restrictions"
       },
       {
         "src": "/images/location-library/africa-various-countries/africa-various-countries-03-lg.webp",
@@ -19634,15 +19222,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "hai-phong": {
-    "primary": "/images/location-library/vietnam-international/vietnam-international-02-lg.webp",
+    "primary": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/vietnam-international/vietnam-international-02-lg.webp",
-        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
-      },
       {
         "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
         "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-02-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
       },
       {
         "src": "/images/location-library/vietnam-international/vietnam-international-03-lg.webp",
@@ -20382,12 +19970,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "hanoi": {
-    "primary": "/images/location-library/vietnam-international/vietnam-international-04-lg.webp",
+    "primary": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/vietnam-international/vietnam-international-04-lg.webp",
-        "caption": "Vietnam — Ngọt band, CC0"
-      },
       {
         "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
         "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
@@ -20399,6 +19983,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/vietnam-international/vietnam-international-03-lg.webp",
         "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-04-lg.webp",
+        "caption": "Vietnam — Ngọt band, CC0"
       }
     ],
     "locations": [
@@ -20406,18 +19994,18 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "hanoi-halong-saigon-my-tho-tour": {
-    "primary": "/images/location-library/vietnam-international/vietnam-international-03-lg.webp",
+    "primary": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/vietnam-international/vietnam-international-03-lg.webp",
-        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
-      },
       {
         "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
         "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/vietnam-international/vietnam-international-02-lg.webp",
+        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
+      },
+      {
+        "src": "/images/location-library/vietnam-international/vietnam-international-03-lg.webp",
         "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
       },
       {
@@ -20430,12 +20018,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "himachal-tour-packages": {
-    "primary": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-01-crop1-lg.webp",
-        "caption": "Himachal Pradesh — UnpetitproleX, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/himachal-pradesh-india/himachal-pradesh-india-01-lg.webp",
         "caption": "Himachal Pradesh — UnpetitproleX, CC BY-SA 4.0"
@@ -21134,12 +20718,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "indore-tour-packages": {
-    "primary": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-03-lg.webp",
+    "primary": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-03-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-03-lg.webp",
-        "caption": "Bhaktapur — Goutam1962, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/madhya-pradesh-india/madhya-pradesh-india-03-lg.webp",
         "caption": "Madhya Pradesh — Yann ( talk ), CC BY-SA 4.0"
@@ -21411,6 +20991,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-04-lg.webp",
         "caption": "Bhaktapur — Göran Höglund (Kartläsarn), CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-03-lg.webp",
+        "caption": "Bhaktapur — Goutam1962, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/bhaktapur-nepal/bhaktapur-nepal-01-lg.webp",
@@ -21746,18 +21330,18 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "jaffna": {
-    "primary": "/images/location-library/sri-lanka-international/sri-lanka-international-03-lg.webp",
+    "primary": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-03-lg.webp",
-        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
         "caption": "Sri Lanka — Satdeep Gill, CC BY 4.0"
       },
       {
         "src": "/images/location-library/sri-lanka-international/sri-lanka-international-02-lg.webp",
+        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-03-lg.webp",
         "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
       },
       {
@@ -21770,12 +21354,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "janakpur": {
-    "primary": "/images/location-library/nepal-international/nepal-international-03-crop1-lg.webp",
+    "primary": "/images/location-library/nepal-international/nepal-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/nepal-international/nepal-international-03-crop1-lg.webp",
-        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/nepal-international/nepal-international-01-lg.webp",
         "caption": "Nepal — Bijay Chaurasia, CC BY-SA 4.0"
@@ -22386,12 +21966,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kegalle": {
-    "primary": "/images/location-library/sri-lanka-international/sri-lanka-international-04-lg.webp",
+    "primary": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-04-lg.webp",
-        "caption": "Sri Lanka — Pierre André Leclercq, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
         "caption": "Sri Lanka — Satdeep Gill, CC BY 4.0"
@@ -22403,6 +21979,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/sri-lanka-international/sri-lanka-international-03-lg.webp",
         "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-04-lg.webp",
+        "caption": "Sri Lanka — Pierre André Leclercq, CC BY 4.0"
       }
     ],
     "locations": [
@@ -22410,15 +21990,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kenya-tour-packages": {
-    "primary": "/images/location-library/east-africa-international/east-africa-international-02-lg.webp",
+    "primary": "/images/location-library/east-africa-international/east-africa-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/east-africa-international/east-africa-international-02-lg.webp",
-        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/east-africa-international/east-africa-international-01-lg.webp",
         "caption": "East Africa — Poppingrids, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-02-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/east-africa-international/east-africa-international-03-lg.webp",
@@ -22434,12 +22014,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "khatu-shyam-ji-salasar-balaji-yatra-by-helicopter": {
-    "primary": "/images/location-library/rajasthan-india/rajasthan-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/rajasthan-india/rajasthan-india-01-crop1-lg.webp",
-        "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
         "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
@@ -22462,12 +22038,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kollam-tour-packages": {
-    "primary": "/images/location-library/kerala-india/kerala-india-02-crop2-lg.webp",
+    "primary": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kerala-india/kerala-india-02-crop2-lg.webp",
-        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
         "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
@@ -22490,12 +22062,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kota-tour-packages": {
-    "primary": "/images/location-library/rajasthan-india/rajasthan-india-02-crop1-lg.webp",
+    "primary": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/rajasthan-india/rajasthan-india-02-crop1-lg.webp",
-        "caption": "Rajasthan — Hirumon, CC BY 3.0"
-      },
       {
         "src": "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
         "caption": "Rajasthan — UnpetitproleX, CC BY-SA 4.0"
@@ -22518,12 +22086,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kottayam-tour-packages": {
-    "primary": "/images/location-library/kerala-india/kerala-india-03-crop2-lg.webp",
+    "primary": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kerala-india/kerala-india-03-crop2-lg.webp",
-        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
         "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
@@ -22546,15 +22110,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "kwazulu-natal-tour-packages": {
-    "primary": "/images/location-library/south-africa-international/south-africa-international-02-lg.webp",
+    "primary": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/south-africa-international/south-africa-international-02-lg.webp",
-        "caption": "South Africa — Andy Morffew from Itchen Abbas, Hampshire, UK, CC BY 2.0"
-      },
       {
         "src": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
         "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/south-africa-international/south-africa-international-02-lg.webp",
+        "caption": "South Africa — Andy Morffew from Itchen Abbas, Hampshire, UK, CC BY 2.0"
       },
       {
         "src": "/images/location-library/south-africa-international/south-africa-international-03-lg.webp",
@@ -22570,12 +22134,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "libya-tour-packages": {
-    "primary": "/images/location-library/africa-various-countries/africa-various-countries-03-lg.webp",
+    "primary": "/images/location-library/africa-various-countries/africa-various-countries-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/africa-various-countries/africa-various-countries-03-lg.webp",
-        "caption": "Africa — Internet Archive Book Images, No restrictions"
-      },
       {
         "src": "/images/location-library/africa-various-countries/africa-various-countries-01-lg.webp",
         "caption": "Africa — Internet Archive Book Images, No restrictions"
@@ -22583,6 +22143,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/africa-various-countries/africa-various-countries-02-lg.webp",
         "caption": "Africa — Clarke, Edward Daniel, 1769-1822, No restrictions"
+      },
+      {
+        "src": "/images/location-library/africa-various-countries/africa-various-countries-03-lg.webp",
+        "caption": "Africa — Internet Archive Book Images, No restrictions"
       },
       {
         "src": "/images/location-library/africa-various-countries/africa-various-countries-04-lg.webp",
@@ -22594,12 +22158,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "monsoon-tour-packages": {
-    "primary": "/images/location-library/kerala-india/kerala-india-04-crop2-lg.webp",
+    "primary": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kerala-india/kerala-india-04-crop2-lg.webp",
-        "caption": "Kerala — Vengolis, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
         "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
@@ -22610,12 +22170,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "mpumalanga-tour-packages": {
-    "primary": "/images/location-library/south-africa-international/south-africa-international-03-lg.webp",
+    "primary": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/south-africa-international/south-africa-international-03-lg.webp",
-        "caption": "South Africa — Heaton Mint ( Birmingham ), for the South African Republic (coin); National Numismatic Collection (image), Public domain"
-      },
       {
         "src": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
         "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
@@ -22682,12 +22238,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "nha-trang": {
-    "primary": "/images/location-library/vietnam-international/vietnam-international-01-crop1-lg.webp",
+    "primary": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/vietnam-international/vietnam-international-01-crop1-lg.webp",
-        "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
         "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
@@ -22698,12 +22250,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "northern-cape-tour-packages": {
-    "primary": "/images/location-library/south-africa-international/south-africa-international-04-lg.webp",
+    "primary": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/south-africa-international/south-africa-international-04-lg.webp",
-        "caption": "South Africa — Luca Galuzzi ( Lucag ), CC BY-SA 2.5"
-      },
       {
         "src": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
         "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
@@ -22714,12 +22262,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "pahalgam-tour-packages": {
-    "primary": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-02-lg.webp",
+    "primary": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-02-lg.webp",
-        "caption": "Gulmarg — Harvinder Chandigarh, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-01-lg.webp",
         "caption": "Gulmarg — Harvinder Chandigarh, CC BY 4.0"
@@ -22730,12 +22274,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "palakkad-tour-packages": {
-    "primary": "/images/location-library/kerala-india/kerala-india-01-crop3-lg.webp",
+    "primary": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kerala-india/kerala-india-01-crop3-lg.webp",
-        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
         "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
@@ -22770,12 +22310,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "papua-new-guinea-tour-packages": {
-    "primary": "/images/location-library/oceania/oceania-02-lg.webp",
+    "primary": "/images/location-library/oceania/oceania-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/oceania/oceania-02-lg.webp",
-        "caption": "Oceania — User:Shadowfox, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/oceania/oceania-01-lg.webp",
         "caption": "Oceania — Anonymous Unknown author, Public domain"
@@ -22786,12 +22322,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "phuket-tour-packages": {
-    "primary": "/images/location-library/coral-island-thailand/coral-island-thailand-02-lg.webp",
+    "primary": "/images/location-library/coral-island-thailand/coral-island-thailand-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/coral-island-thailand/coral-island-thailand-02-lg.webp",
-        "caption": "Coral Island — Phuket@photographer.net from Phuket, Thailand, CC BY 2.0"
-      },
       {
         "src": "/images/location-library/coral-island-thailand/coral-island-thailand-01-lg.webp",
         "caption": "Coral Island — Supachaiv, CC BY-SA 4.0"
@@ -22802,12 +22334,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "pilgrimage-tour-package": {
-    "primary": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-04-lg.webp",
+    "primary": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-04-lg.webp",
-        "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
         "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
@@ -22818,12 +22346,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "pilgrimage-tours": {
-    "primary": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-crop1-lg.webp",
-        "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp",
         "caption": "Varanasi — Buiobuione, CC BY-SA 4.0"
@@ -22834,12 +22358,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "quy-nhon": {
-    "primary": "/images/location-library/da-nang-vietnam/da-nang-vietnam-04-lg.webp",
+    "primary": "/images/location-library/da-nang-vietnam/da-nang-vietnam-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/da-nang-vietnam/da-nang-vietnam-04-lg.webp",
-        "caption": "Da Nang — CEphoto, Uwe Aranas, CC BY-SA 3.0"
-      },
       {
         "src": "/images/location-library/da-nang-vietnam/da-nang-vietnam-01-lg.webp",
         "caption": "Da Nang — Quangpraha, CC0"
@@ -22870,12 +22390,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "satara": {
-    "primary": "/images/location-library/maharashtra-india/maharashtra-india-02-crop1-lg.webp",
+    "primary": "/images/location-library/maharashtra-india/maharashtra-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/maharashtra-india/maharashtra-india-02-crop1-lg.webp",
-        "caption": "Maharashtra — Didier Descouens, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/maharashtra-india/maharashtra-india-01-lg.webp",
         "caption": "Maharashtra — Didier Descouens, CC BY-SA 4.0"
@@ -22886,12 +22402,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "shimoga-tour-packages": {
-    "primary": "/images/location-library/karnataka-india/karnataka-india-04-lg.webp",
+    "primary": "/images/location-library/karnataka-india/karnataka-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/karnataka-india/karnataka-india-04-lg.webp",
-        "caption": "Karnataka — Muhammad Mahdi Karim Facebook The making of this document was supported by Wikimedia CH . ( Submit your project! ) For all the files concerned, please see the category Supported by Wikimedia CH . العربية ∙ বাংলা ∙ čeština ∙ Deutsch ∙ English ∙ Esperanto ∙ español ∙ français ∙ galego ∙ हिन्दी ∙ magyar ∙ italiano ∙ 日本語 ∙ македонски ∙ Nederlands ∙ português do Brasil ∙ rumantsch ∙ русский ∙ sicilianu ∙ slovenščina ∙ தமிழ் ∙ українська ∙ 中文 ∙ +/−, GFDL 1.2"
-      },
       {
         "src": "/images/location-library/karnataka-india/karnataka-india-01-lg.webp",
         "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
@@ -22903,6 +22415,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/karnataka-india/karnataka-india-03-lg.webp",
         "caption": "Karnataka — Dey.sandip, CC BY-SA 3.0"
+      },
+      {
+        "src": "/images/location-library/karnataka-india/karnataka-india-04-lg.webp",
+        "caption": "Karnataka — Muhammad Mahdi Karim Facebook The making of this document was supported by Wikimedia CH . ( Submit your project! ) For all the files concerned, please see the category Supported by Wikimedia CH . العربية ∙ বাংলা ∙ čeština ∙ Deutsch ∙ English ∙ Esperanto ∙ español ∙ français ∙ galego ∙ हिन्दी ∙ magyar ∙ italiano ∙ 日本語 ∙ македонски ∙ Nederlands ∙ português do Brasil ∙ rumantsch ∙ русский ∙ sicilianu ∙ slovenščina ∙ தமிழ் ∙ українська ∙ 中文 ∙ +/−, GFDL 1.2"
       }
     ],
     "locations": [
@@ -22910,12 +22426,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "skiing": {
-    "primary": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-04-lg.webp",
+    "primary": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-04-lg.webp",
-        "caption": "Auli — Dinesh Valke from Thane, India, CC BY-SA 2.0"
-      },
       {
         "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-01-lg.webp",
         "caption": "Auli — Amit Shaw, CC0"
@@ -22927,6 +22439,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-03-lg.webp",
         "caption": "Auli — Bibek Raj Pandeya, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/auli-uttarakhand-india/auli-uttarakhand-india-04-lg.webp",
+        "caption": "Auli — Dinesh Valke from Thane, India, CC BY-SA 2.0"
       }
     ],
     "locations": [
@@ -22958,18 +22474,18 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "tanzania-tour-packages": {
-    "primary": "/images/location-library/east-africa-international/east-africa-international-03-lg.webp",
+    "primary": "/images/location-library/east-africa-international/east-africa-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/east-africa-international/east-africa-international-03-lg.webp",
-        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/east-africa-international/east-africa-international-01-lg.webp",
         "caption": "East Africa — Poppingrids, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/east-africa-international/east-africa-international-02-lg.webp",
+        "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/east-africa-international/east-africa-international-03-lg.webp",
         "caption": "East Africa — Michael Barera, CC BY-SA 4.0"
       },
       {
@@ -22982,12 +22498,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "thrissur-tour-packages": {
-    "primary": "/images/location-library/kerala-india/kerala-india-02-crop3-lg.webp",
+    "primary": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kerala-india/kerala-india-02-crop3-lg.webp",
-        "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/kerala-india/kerala-india-01-lg.webp",
         "caption": "Kerala — Vyacheslav Argenberg, CC BY 4.0"
@@ -23010,12 +22522,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "thyangboche": {
-    "primary": "/images/location-library/nepal-international/nepal-international-02-crop2-lg.webp",
+    "primary": "/images/location-library/nepal-international/nepal-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/nepal-international/nepal-international-02-crop2-lg.webp",
-        "caption": "Nepal — Vyacheslav Argenberg, CC BY 4.0"
-      },
       {
         "src": "/images/location-library/nepal-international/nepal-international-01-lg.webp",
         "caption": "Nepal — Bijay Chaurasia, CC BY-SA 4.0"
@@ -23038,15 +22546,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "trekking": {
-    "primary": "/images/location-library/uttarakhand-india/uttarakhand-india-02-lg.webp",
+    "primary": "/images/location-library/uttarakhand-india/uttarakhand-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-02-lg.webp",
-        "caption": "Uttarakhand — Original: Harshit SR Derivative work: UnpetitproleX, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/uttarakhand-india/uttarakhand-india-01-lg.webp",
         "caption": "Uttarakhand — Didier Descouens, CC BY-SA 4.0"
+      },
+      {
+        "src": "/images/location-library/uttarakhand-india/uttarakhand-india-02-lg.webp",
+        "caption": "Uttarakhand — Original: Harshit SR Derivative work: UnpetitproleX, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/uttarakhand-india/uttarakhand-india-03-lg.webp",
@@ -23062,12 +22570,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "trincomalee": {
-    "primary": "/images/location-library/sri-lanka-international/sri-lanka-international-03-crop1-lg.webp",
+    "primary": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/sri-lanka-international/sri-lanka-international-03-crop1-lg.webp",
-        "caption": "Sri Lanka — Charles J. Sharp, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/sri-lanka-international/sri-lanka-international-01-lg.webp",
         "caption": "Sri Lanka — Satdeep Gill, CC BY 4.0"
@@ -23090,15 +22594,15 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "trivandrum-tour-packages": {
-    "primary": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-02-lg.webp",
+    "primary": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-02-lg.webp",
-        "caption": "Kovalam — Nikhilb239, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-01-lg.webp",
         "caption": "Kovalam — Fabrice Florin from Mill Valley, USA, CC BY-SA 2.0"
+      },
+      {
+        "src": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-02-lg.webp",
+        "caption": "Kovalam — Nikhilb239, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/kovalam-kerala-india/kovalam-kerala-india-03-lg.webp",
@@ -23114,12 +22618,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "vellore-tour-packages": {
-    "primary": "/images/location-library/tamil-nadu-india/tamil-nadu-india-01-crop1-lg.webp",
+    "primary": "/images/location-library/tamil-nadu-india/tamil-nadu-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-01-crop1-lg.webp",
-        "caption": "Tamil Nadu — Didier Descouens, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/tamil-nadu-india/tamil-nadu-india-01-lg.webp",
         "caption": "Tamil Nadu — Didier Descouens, CC BY-SA 4.0"
@@ -23142,12 +22642,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "vijayapura-tour-packages": {
-    "primary": "/images/location-library/karnataka-india/karnataka-india-02-crop1-lg.webp",
+    "primary": "/images/location-library/karnataka-india/karnataka-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/karnataka-india/karnataka-india-02-crop1-lg.webp",
-        "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/karnataka-india/karnataka-india-01-lg.webp",
         "caption": "Karnataka — This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract ., CC BY-SA 4.0"
@@ -23170,12 +22666,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "vinh-long": {
-    "primary": "/images/location-library/vietnam-international/vietnam-international-01-crop2-lg.webp",
+    "primary": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/vietnam-international/vietnam-international-01-crop2-lg.webp",
-        "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
         "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
@@ -23198,12 +22690,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "vung-tau": {
-    "primary": "/images/location-library/vietnam-international/vietnam-international-02-crop2-lg.webp",
+    "primary": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/vietnam-international/vietnam-international-02-crop2-lg.webp",
-        "caption": "Vietnam — U.S. Army photo by Spc. Lilly Ekberg, Public domain"
-      },
       {
         "src": "/images/location-library/vietnam-international/vietnam-international-01-lg.webp",
         "caption": "Vietnam — Trantuanviet, CC BY-SA 4.0"
@@ -23250,12 +22738,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "western-cape-tour-packages": {
-    "primary": "/images/location-library/south-africa-international/south-africa-international-02-crop1-lg.webp",
+    "primary": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/south-africa-international/south-africa-international-02-crop1-lg.webp",
-        "caption": "South Africa — Andy Morffew from Itchen Abbas, Hampshire, UK, CC BY 2.0"
-      },
       {
         "src": "/images/location-library/south-africa-international/south-africa-international-01-lg.webp",
         "caption": "South Africa — Andy Morffew, CC BY-SA 4.0"
@@ -23278,12 +22762,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "wildlife": {
-    "primary": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-03-lg.webp",
+    "primary": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-03-lg.webp",
-        "caption": "Bandhavgarh National Park — Goleisureintl, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-01-lg.webp",
         "caption": "Bandhavgarh National Park — Anuj shree, CC BY-SA 4.0"
@@ -23291,6 +22771,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-02-lg.webp",
         "caption": "Bandhavgarh National Park — JP Bennett, CC BY 2.0"
+      },
+      {
+        "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-03-lg.webp",
+        "caption": "Bandhavgarh National Park — Goleisureintl, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/bandhavgarh-national-park-madhya-pradesh-india/bandhavgarh-national-park-madhya-pradesh-india-04-lg.webp",
@@ -23302,12 +22786,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "winter-tour-packages": {
-    "primary": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-03-lg.webp",
+    "primary": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-03-lg.webp",
-        "caption": "Gulmarg — Gaurav Pattnaik, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-01-lg.webp",
         "caption": "Gulmarg — Harvinder Chandigarh, CC BY 4.0"
@@ -23315,6 +22795,10 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-02-lg.webp",
         "caption": "Gulmarg — Harvinder Chandigarh, CC BY 4.0"
+      },
+      {
+        "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-03-lg.webp",
+        "caption": "Gulmarg — Gaurav Pattnaik, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-04-lg.webp",
@@ -23326,12 +22810,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "yamuna-pushkaralu-yatra-packages": {
-    "primary": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-03-crop1-lg.webp",
+    "primary": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-03-crop1-lg.webp",
-        "caption": "Mathura — Guptaele, CC BY-SA 4.0"
-      },
       {
         "src": "/images/location-library/mathura-uttar-pradesh-india/mathura-uttar-pradesh-india-01-lg.webp",
         "caption": "Mathura — Sandeepni, CC BY-SA 4.0"
