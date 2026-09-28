@@ -2910,8 +2910,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-02-lg.webp",
-        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
+        "src": "/images/location-library/city-palace-jaipur/city-palace-jaipur-02-lg.webp",
+        "caption": "City Palace — Jakub Hałun, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-03-lg.webp",
@@ -4143,8 +4143,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-02-lg.webp",
-        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
+        "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-01-lg.webp",
+        "caption": "Hawa Mahal — A.Savin, FAL"
       },
       {
         "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-03-lg.webp",
@@ -4720,11 +4720,11 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "delhi-agra-tour-package": {
-    "primary": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-02-lg.webp",
+    "primary": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-02-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-02-lg.webp",
-        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
+        "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-02-lg.webp",
+        "caption": "Hawa Mahal — A.Savin, FAL"
       },
       {
         "src": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-01-lg.webp",
@@ -6668,8 +6668,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-02-lg.webp",
-        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
+        "src": "/images/location-library/city-palace-jaipur/city-palace-jaipur-01-lg.webp",
+        "caption": "City Palace — A.Savin, FAL"
       },
       {
         "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-03-lg.webp",
@@ -6709,8 +6709,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-02-lg.webp",
-        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
+        "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-01-lg.webp",
+        "caption": "Hawa Mahal — A.Savin, FAL"
       },
       {
         "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-03-lg.webp",
@@ -6743,19 +6743,19 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "golden-triangle-tour": {
-    "primary": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-02-crop1-lg.webp",
+    "primary": "/images/location-library/city-palace-jaipur/city-palace-jaipur-01-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-02-crop1-lg.webp",
-        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
+        "src": "/images/location-library/city-palace-jaipur/city-palace-jaipur-01-lg.webp",
+        "caption": "City Palace — A.Savin, FAL"
       },
       {
         "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-01-lg.webp",
         "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-02-lg.webp",
-        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
+        "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-01-lg.webp",
+        "caption": "Hawa Mahal — A.Savin, FAL"
       },
       {
         "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-03-lg.webp",
@@ -7670,8 +7670,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-02-lg.webp",
-        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
+        "src": "/images/location-library/city-palace-jaipur/city-palace-jaipur-01-lg.webp",
+        "caption": "City Palace — A.Savin, FAL"
       },
       {
         "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-03-lg.webp",
@@ -8775,8 +8775,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-02-lg.webp",
-        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
+        "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-02-lg.webp",
+        "caption": "Hawa Mahal — A.Savin, FAL"
       },
       {
         "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-03-lg.webp",
@@ -8803,8 +8803,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-02-lg.webp",
-        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
+        "src": "/images/location-library/city-palace-jaipur/city-palace-jaipur-02-lg.webp",
+        "caption": "City Palace — Jakub Hałun, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-03-lg.webp",
@@ -8831,8 +8831,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-02-lg.webp",
-        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
+        "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-01-lg.webp",
+        "caption": "Hawa Mahal — A.Savin, FAL"
       },
       {
         "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-03-lg.webp",
@@ -8989,8 +8989,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-02-lg.webp",
-        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
+        "src": "/images/location-library/city-palace-jaipur/city-palace-jaipur-01-lg.webp",
+        "caption": "City Palace — A.Savin, FAL"
       },
       {
         "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-03-lg.webp",
@@ -11351,8 +11351,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-02-lg.webp",
-        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
+        "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-01-lg.webp",
+        "caption": "Hawa Mahal — A.Savin, FAL"
       },
       {
         "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-03-lg.webp",
@@ -12364,19 +12364,19 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "myriad-india-highlights": {
-    "primary": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-02-crop2-lg.webp",
+    "primary": "/images/location-library/city-palace-jaipur/city-palace-jaipur-02-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-02-crop2-lg.webp",
-        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
+        "src": "/images/location-library/city-palace-jaipur/city-palace-jaipur-02-lg.webp",
+        "caption": "City Palace — Jakub Hałun, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-01-lg.webp",
         "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
       },
       {
-        "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-02-lg.webp",
-        "caption": "Jaipur — Yann Forget, CC BY-SA 4.0"
+        "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-02-lg.webp",
+        "caption": "Hawa Mahal — A.Savin, FAL"
       },
       {
         "src": "/images/location-library/jaipur-rajasthan-india/jaipur-rajasthan-india-03-lg.webp",
