@@ -1,6 +1,7 @@
 import { ArrowRight, BadgePercent, CheckCircle2, MessageCircle, Phone } from "lucide-react";
 import { siteConfig } from "@/data/siteConfig";
 import type { PackageViewModel } from "@/utils/packageDetails";
+import ConvertedPrice from "@/components/currency/ConvertedPrice";
 
 /** Sticky pricing / quote sidebar card. */
 export default function PackageSidebar({ vm }: { vm: PackageViewModel }) {
@@ -25,6 +26,11 @@ export default function PackageSidebar({ vm }: { vm: PackageViewModel }) {
         <div className="bg-brand-primary-deep p-6 text-white">
           <p className="text-[10px] font-extrabold uppercase tracking-[0.22em] text-brand-secondary-pale">Plan this journey</p>
           <div className="mt-3 text-3xl font-black tracking-tight">{showPrice ? <>INR {displayPrice}</> : 'Tailored pricing'}</div>
+          {showPrice && (
+            <div className="mt-1 min-h-[16px]">
+              <ConvertedPrice amountInr={vm.priceInfo.deal} className="text-xs font-semibold text-white/60" />
+            </div>
+          )}
           <p className="mt-1 text-xs leading-5 text-white/65">{showPrice ? 'Starting price per adult' : 'Based on your dates, group size, and preferences'}</p>
           {crossedOutPrice && (
             <div className="mt-3 flex flex-wrap items-center gap-2">

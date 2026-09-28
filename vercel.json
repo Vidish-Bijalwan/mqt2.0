@@ -1,4 +1,10 @@
 {
+  "crons": [
+    {
+      "path": "/api/fx-rates",
+      "schedule": "30 1 * * *"
+    }
+  ],
   "redirects": [
     {
       "source": "/history-of-uttar-pradesh",
