@@ -4145,10 +4145,6 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       {
         "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-01-lg.webp",
         "caption": "Hawa Mahal — A.Savin, FAL"
-      },
-      {
-        "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-02-lg.webp",
-        "caption": "Hawa Mahal — A.Savin, FAL"
       }
     ],
     "locations": [
@@ -4716,11 +4712,11 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
     ]
   },
   "delhi-agra-tour-package": {
-    "primary": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-02-lg.webp",
+    "primary": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-04-lg.webp",
     "gallery": [
       {
-        "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-02-lg.webp",
-        "caption": "Hawa Mahal — A.Savin, FAL"
+        "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-04-lg.webp",
+        "caption": "Hawa Mahal — Wander-earth, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-01-lg.webp",
@@ -6660,8 +6656,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "City Palace — A.Savin, FAL"
       },
       {
-        "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-02-lg.webp",
-        "caption": "Hawa Mahal — A.Savin, FAL"
+        "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-04-lg.webp",
+        "caption": "Hawa Mahal — Wander-earth, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/city-palace-jaipur/city-palace-jaipur-01-lg.webp",
@@ -7645,14 +7641,6 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
   "hawa-mahal-jaipur": {
     "primary": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-01-lg.webp",
     "gallery": [
-      {
-        "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-01-lg.webp",
-        "caption": "Hawa Mahal — A.Savin, FAL"
-      },
-      {
-        "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-02-lg.webp",
-        "caption": "Hawa Mahal — A.Savin, FAL"
-      },
       {
         "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-01-lg.webp",
         "caption": "Hawa Mahal — A.Savin, FAL"
@@ -8771,8 +8759,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "City Palace — A.Savin, FAL"
       },
       {
-        "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-02-lg.webp",
-        "caption": "Hawa Mahal — A.Savin, FAL"
+        "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-04-lg.webp",
+        "caption": "Hawa Mahal — Wander-earth, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/city-palace-jaipur/city-palace-jaipur-02-lg.webp",
@@ -8807,8 +8795,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "City Palace — A.Savin, FAL"
       },
       {
-        "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-02-lg.webp",
-        "caption": "Hawa Mahal — A.Savin, FAL"
+        "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-04-lg.webp",
+        "caption": "Hawa Mahal — Wander-earth, CC BY-SA 4.0"
       }
     ],
     "locations": [
@@ -8823,8 +8811,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "City Palace — A.Savin, FAL"
       },
       {
-        "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-02-lg.webp",
-        "caption": "Hawa Mahal — A.Savin, FAL"
+        "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-04-lg.webp",
+        "caption": "Hawa Mahal — Wander-earth, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-01-lg.webp",
@@ -11355,8 +11343,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "City Palace — A.Savin, FAL"
       },
       {
-        "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-02-lg.webp",
-        "caption": "Hawa Mahal — A.Savin, FAL"
+        "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-04-lg.webp",
+        "caption": "Hawa Mahal — Wander-earth, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-01-lg.webp",
@@ -12371,8 +12359,8 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
         "caption": "Hawa Mahal — A.Savin, FAL"
       },
       {
-        "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-02-lg.webp",
-        "caption": "Hawa Mahal — A.Savin, FAL"
+        "src": "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-04-lg.webp",
+        "caption": "Hawa Mahal — Wander-earth, CC BY-SA 4.0"
       },
       {
         "src": "/images/location-library/city-palace-jaipur/city-palace-jaipur-03-lg.webp",
