@@ -14,19 +14,19 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "India, Dubai & Chardham Tour Packages",
-  description: "Browse curated India and international tour packages — handpicked itineraries, best prices and 24/7 support from My Quick Trippers.",
+  description: "Browse curated India and international tour packages — handpicked itineraries, best prices and dedicated support from My Quick Trippers.",
   alternates: {
     canonical: `${siteConfig.domain}/packages`,
   },
   openGraph: {
     title: "India, Dubai & Chardham Tour Packages",
-    description: "Browse curated India and international tour packages — handpicked itineraries, best prices and 24/7 support from My Quick Trippers.",
+    description: "Browse curated India and international tour packages — handpicked itineraries, best prices and dedicated support from My Quick Trippers.",
     url: `${siteConfig.domain}/packages`,
   },
   twitter: {
     card: "summary_large_image",
     title: "India, Dubai & Chardham Tour Packages",
-    description: "Browse curated India and international tour packages — handpicked itineraries, best prices and 24/7 support from My Quick Trippers.",
+    description: "Browse curated India and international tour packages — handpicked itineraries, best prices and dedicated support from My Quick Trippers.",
   },
   keywords: [
     "My Quick Trippers tours",

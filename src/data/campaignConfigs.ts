@@ -596,7 +596,7 @@ export const dubaiTourPackagesConfig: CampaignConfig = {
   theme: "blue",
   metadata: {
     title: "Dubai Tour Packages - Best Dubai Travel Deals | My Quick Trippers",
-    description: "Book premium Dubai tour packages with My Quick Trippers. Best Dubai travel deals, Burj Khalifa, desert safari, shopping tours. Visa assistance, best prices, 24/7 support.",
+    description: "Book premium Dubai tour packages with My Quick Trippers. Best Dubai travel deals, Burj Khalifa, desert safari, shopping tours. Visa assistance, best prices, dedicated support.",
     keywords: [
       "Dubai tour packages",
       "Dubai travel packages",
@@ -894,7 +894,7 @@ export const himachalTourPackagesConfig: CampaignConfig = {
   theme: "green",
   metadata: {
     title: "Himachal Tour Packages - Best Shimla Manali Tours | My Quick Trippers",
-    description: "Explore best Himachal Tour Packages with My Quick Trippers. Book Shimla Manali tours, Dharamshala trips, Kullu Manali honeymoon packages. Expert guidance, best prices, 24/7 support.",
+    description: "Explore best Himachal Tour Packages with My Quick Trippers. Book Shimla Manali tours, Dharamshala trips, Kullu Manali honeymoon packages. Expert guidance, best prices, dedicated support.",
     keywords: [
       "Himachal Tour Packages",
       "Shimla Manali tour packages",

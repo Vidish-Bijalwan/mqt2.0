@@ -137,8 +137,8 @@ export default function PackageCard({ pkg, href, variantCount }: PackageCardComp
         <span className="nit-prCap">Starting price per person</span>
 
         <div className="nit-prcEnq">
-          <Link href={variantCount && variantCount > 1 ? cardHref : `${cardHref}#enquiry-form`} title="Get a Best Deal Quick Enquiry">
-            Quick enquiry
+          <Link href={variantCount && variantCount > 1 ? cardHref : `${cardHref}#enquiry-form`} title="Enquire about this tour">
+            Enquire now
           </Link>
           <Link href={cardHref} title={pkg.title}>
             {variantCount && variantCount > 1 ? "View options" : "View Tour"}
