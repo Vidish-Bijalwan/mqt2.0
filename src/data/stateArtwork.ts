@@ -73,31 +73,56 @@ export interface StateSignature {
   stops: StateSignatureStop[];
 };
 
-export interface StateArtwork {
+export interface StateArtworkZone {
+  id: string;
+  image: string;
+  description: string;
+  // Percentages of the geographic canvas, independent of viewport size.
+  x: number; y: number; width: number; height: number;
+  focus?: string;
+  feather?: number;
+}
+
+/**
+ * Identity-only artwork: no validated administrative boundary geometry exists
+ * yet, so map markers and the silhouette hero are omitted (StateSilhouetteHero
+ * returns null) and the page falls back to the discovery canvas. Identity,
+ * motif and signature are always present — every state gets a distinct look.
+ */
+export interface IdentityOnlyStateArtwork {
   id: string;
   themes: string;
-  geometry: StateGeometry;
   background: string;
   baseImage: string;
+  /** Per-state accent identity; hero pins, rules and active states. Alpine Noir family. */
+  identity: StateIdentity;
+  /** Subtle SVG texture key, rendered by StateMotif. */
+  motif: StateMotifKey;
+  /** Signature content block, rendered by StateSignatureModule. */
+  signature: StateSignature;
+  zones: StateArtworkZone[];
+}
+
+/**
+ * Full artwork with validated boundary geometry for the silhouette hero and
+ * map pins. Never fabricate geometry — a state graduates to this type only
+ * when an authoritative boundary exists.
+ */
+export interface FullStateArtwork extends IdentityOnlyStateArtwork {
+  /** Official boundary geometry. */
+  geometry: StateGeometry;
   /** Data-only responsive clearance for unusually tall state titles. */
   layout?: { tabletHeroHeight: number; tabletMapTop: number };
-  /** Per-state accent identity; hero pins, rules and active states. Alpine Noir family. */
-  identity?: StateIdentity;
-  /** Subtle SVG texture key, rendered by StateMotif. */
-  motif?: StateMotifKey;
-  /** Signature content block, rendered by StateSignatureModule. */
-  signature?: StateSignature;
   /** Individually clipped tourism photos. Every district gets its own SVG clip path. */
   districts?: StateDistrictArtwork[];
-  zones: Array<{
-    id: string;
-    image: string;
-    description: string;
-    // Percentages of the geographic canvas, independent of viewport size.
-    x: number; y: number; width: number; height: number;
-    focus?: string;
-    feather?: number;
-  }>;
+}
+
+/** Union of the two artwork grades. */
+export type StateArtwork = IdentityOnlyStateArtwork | FullStateArtwork;
+
+/** Narrowing guard: only full artworks carry validated geometry. */
+export function isFullStateArtwork(artwork: StateArtwork): artwork is FullStateArtwork {
+  return "geometry" in artwork && artwork.geometry !== undefined;
 }
 
 function attachDistrictImages(
@@ -668,4 +693,268 @@ export const kashmirArtwork: StateArtwork = {
     { id: "nishat", image: ksPhoto("kashmir-dal-lake", "01"), description: "Mughal gardens along the lake", x: -6, y: 56, width: 58, height: 50, feather: .66 },
     { id: "pahalgam", image: ksPhoto("kashmir-dal-lake", "02"), description: "Pine valleys around Pahalgam", x: 48, y: 58, width: 60, height: 50, feather: .66 },
   ],
+};
+
+/* These states/UTs do not yet have an officially validated            */
+/* administrative boundary in the artwork library, so they carry real  */
+/* verified imagery, a distinct Alpine Noir accent, a motif and        */
+/* signature content — but no fabricated map geometry.                 */
+/* StateSilhouetteHero returns null without geometry, and the          */
+/* destination page falls back to the discovery-canvas hero, which     */
+/* states the geometry position explicitly.                            */
+/* ------------------------------------------------------------------ */
+
+const lib = (path: string) => `/images/location-library/${path}`;
+
+/**
+ * Hero: Chandragiri palace, near Tirupati — pre-existing MQT location-library asset (tirupati-andhra-pradesh-india-01). Visually verified 2026-09-28. Original source/license not recorded.
+ */
+export const andhraPradeshArtwork: StateArtwork = {
+  id: "andhra-pradesh",
+  themes: "Temples • Coast • Heritage • Hills",
+  background: lib("tirupati-andhra-pradesh-india/tirupati-andhra-pradesh-india-01-lg.webp"),
+  baseImage: lib("tirupati-andhra-pradesh-india/tirupati-andhra-pradesh-india-02-lg.webp"),
+  identity: { accent: "#b34a2e", ink: "#ffffff" },
+  motif: "mandala",
+  signature: {
+    layout: "route",
+    eyebrow: "Temple country",
+    title: "Pilgrimage towns and a storied coastline",
+    description:
+      "Andhra Pradesh moves between sacred hills and the Bay of Bengal — Tirupati's temple town, the port-city beaches of Visakhapatnam and the coffee hills of Araku.",
+    stops: [
+      { name: "Tirupati", note: "The Venkateswara temple town at the foot of the Tirumala hills.", href: "/destinations/andhra-pradesh?destination=tirupati" },
+      { name: "Visakhapatnam", note: "Port-city beaches with the Eastern Ghats rising behind them.", href: "/destinations/andhra-pradesh?destination=visakhapatnam" },
+      { name: "Araku Valley", note: "Coffee country, waterfalls and tribal hamlets in the Eastern Ghats.", href: "/destinations/andhra-pradesh?destination=araku" },
+    ],
+  },
+  zones: [],
+};
+
+/**
+ * Hero: Shungatser (Madhuri) Lake, Tawang — pre-existing MQT location-library asset (tawang-arunachal-pradesh-india-01). Visually verified 2026-09-28. Original source/license not recorded.
+ */
+export const arunachalPradeshArtwork: StateArtwork = {
+  id: "arunachal-pradesh",
+  themes: "Monasteries • High Passes • Valleys • Tribal Culture",
+  background: lib("tawang-arunachal-pradesh-india/tawang-arunachal-pradesh-india-01-lg.webp"),
+  baseImage: lib("tawang-arunachal-pradesh-india/tawang-arunachal-pradesh-india-02-lg.webp"),
+  identity: { accent: "#2a739c", ink: "#ffffff" },
+  motif: "pennants",
+  signature: {
+    layout: "route",
+    eyebrow: "The last frontier",
+    title: "Monasteries above the clouds",
+    description:
+      "India's easternmost Himalaya — Tawang's great monastery, high passes like Sela and valleys where Apatani and Monpa life continues much as it always has.",
+    stops: [
+      { name: "Tawang", note: "The great monastery town, high lakes and the road over Sela Pass.", href: "/destinations/arunachal-pradesh?destination=tawang" },
+      { name: "Ziro Valley", note: "Apatani rice valleys ringed by pine-covered hills.", href: "/destinations/arunachal-pradesh?destination=ziro" },
+      { name: "Bomdila & Dirang", note: "Monasteries, apple orchards and slow mountain days.", href: "/destinations/arunachal-pradesh?destination=bomdila" },
+    ],
+  },
+  zones: [],
+};
+
+/**
+ * Hero: Golconda Fort, Hyderabad — pre-existing MQT location-library asset (hyderabad-andhra-pradesh-india-01). Visually verified 2026-09-28. Original source/license not recorded.
+ */
+export const telanganaArtwork: StateArtwork = {
+  id: "telangana",
+  themes: "Heritage • Forts • Cities • Culture",
+  background: lib("hyderabad-andhra-pradesh-india/hyderabad-andhra-pradesh-india-01-lg.webp"),
+  baseImage: lib("hyderabad-andhra-pradesh-india/hyderabad-andhra-pradesh-india-01-lg.webp"),
+  identity: { accent: "#8a5a9e", ink: "#ffffff" },
+  motif: "fort-arches",
+  signature: {
+    layout: "route",
+    eyebrow: "Deccan heritage",
+    title: "Forts, old cities and living craft",
+    description:
+      "Telangana pairs Hyderabad's old-city grandeur with Kakatiya temple country — Golconda's ramparts, Warangal's stone temples and the Godavari's ghats.",
+    stops: [
+      { name: "Hyderabad", note: "Charminar, Golconda Fort and the old city's bazaars.", href: "/destinations/telangana?destination=hyderabad" },
+      { name: "Warangal", note: "Kakatiya capital — the Thousand Pillar Temple and Ramappa.", href: "/destinations/telangana?destination=warangal" },
+      { name: "Bhadrachalam", note: "The Sita Ramachandra temple on the Godavari's banks.", href: "/destinations/telangana?destination=bhadrachalam" },
+    ],
+  },
+  zones: [],
+};
+
+/**
+ * Hero: Howrah Bridge, Kolkata — pre-existing MQT location-library asset (west-bengal-india-01). Visually verified 2026-09-28. Original source/license not recorded.
+ */
+export const westBengalArtwork: StateArtwork = {
+  id: "west-bengal",
+  themes: "Cities • Himalaya • Rivers • Culture",
+  background: lib("west-bengal-india/west-bengal-india-01-lg.webp"),
+  baseImage: lib("kolkata-west-bengal-india/kolkata-west-bengal-india-01-lg.webp"),
+  identity: { accent: "#7a2e2e", ink: "#ffffff" },
+  motif: "lanterns",
+  signature: {
+    layout: "route",
+    eyebrow: "City of joy and beyond",
+    title: "From Howrah Bridge to Himalayan tea",
+    description:
+      "West Bengal packs a continent into one state — Kolkata's colonial streets, the Darjeeling Himalaya, the Sundarbans' mangrove waterways and Tagore's Shantiniketan.",
+    stops: [
+      { name: "Kolkata", note: "Howrah Bridge, Victoria Memorial and the yellow-taxi streets.", href: "/destinations/west-bengal?destination=kolkata" },
+      { name: "Darjeeling", note: "The toy train, tea gardens and Kanchenjunga mornings.", href: "/destinations/west-bengal?destination=darjeeling" },
+      { name: "Sundarbans", note: "Mangrove creeks and boat safaris in tiger country.", href: "/destinations/west-bengal?destination=sundarbans" },
+    ],
+  },
+  zones: [],
+};
+
+/**
+ * Hero: Radhanagar Beach, Havelock — pre-existing MQT location-library asset (havelock-island-andaman-and-nicobar-islands-india-03). Visually verified 2026-09-28. Original source/license not recorded.
+ */
+export const andamanNicobarArtwork: StateArtwork = {
+  id: "andaman-and-nicobar-islands",
+  themes: "Beaches • Diving • Islands • History",
+  background: lib("havelock-island-andaman-and-nicobar-islands-india/havelock-island-andaman-and-nicobar-islands-india-03-lg.webp"),
+  baseImage: lib("neil-island-andaman-and-nicobar-islands-india/neil-island-andaman-and-nicobar-islands-india-01-lg.webp"),
+  identity: { accent: "#1b6ca8", ink: "#ffffff" },
+  motif: "fronds",
+  signature: {
+    layout: "route",
+    eyebrow: "Island time",
+    title: "White sand, clear water, deep history",
+    description:
+      "An archipelago in the Bay of Bengal — Radhanagar's famous beach, dive reefs off Havelock and the Cellular Jail's sobering history in Port Blair.",
+    stops: [
+      { name: "Havelock Island", note: "Radhanagar Beach and the islands' best dive sites.", href: "/destinations/andaman-and-nicobar-islands?destination=havelock" },
+      { name: "Port Blair", note: "The Cellular Jail and the islands' colonial history.", href: "/destinations/andaman-and-nicobar-islands?destination=port+blair" },
+      { name: "Neil Island", note: "Quiet beaches, coral shallows and village lanes.", href: "/destinations/andaman-and-nicobar-islands?destination=neil+island" },
+    ],
+  },
+  zones: [],
+};
+
+/**
+ * Hero: St. Paul's Church, Diu — pre-existing MQT location-library asset (diu-gujarat-india-01). Visually verified 2026-09-28. Original source/license not recorded.
+ */
+export const dadraNagarHaveliDamanDiuArtwork: StateArtwork = {
+  id: "dadra-and-nagar-haveli-and-daman-and-diu",
+  themes: "Heritage • Beaches • Forts • Tribal Culture",
+  background: lib("diu-gujarat-india/diu-gujarat-india-01-lg.webp"),
+  baseImage: lib("diu-gujarat-india/diu-gujarat-india-03-lg.webp"),
+  identity: { accent: "#4a7c59", ink: "#ffffff" },
+  motif: "coast-arcs",
+  signature: {
+    layout: "route",
+    eyebrow: "Portuguese coast",
+    title: "Sea forts, old churches and quiet beaches",
+    description:
+      "A union territory of two coasts — Diu and Daman's Portuguese forts and churches on the Arabian Sea, and the forested tribal heartland of Dadra and Nagar Haveli around Silvassa.",
+    stops: [
+      { name: "Diu", note: "The sea fort, St. Paul's Church and Nagoa Beach.", href: "/destinations/dadra-and-nagar-haveli-and-daman-and-diu?destination=diu" },
+      { name: "Daman", note: "Moti Daman fort and the Jampore shoreline.", href: "/destinations/dadra-and-nagar-haveli-and-daman-and-diu?destination=daman" },
+      { name: "Silvassa", note: "Tribal museums, Dudhni lake and forest trails.", href: "/destinations/dadra-and-nagar-haveli-and-daman-and-diu?destination=silvassa" },
+    ],
+  },
+  zones: [],
+};
+
+/**
+ * Hero: Katra / Trikuta approach, Jammu — pre-existing MQT location-library asset (katra-jammu-and-kashmir-india-01). Visually verified 2026-09-28. Original source/license not recorded.
+ */
+export const jammuKashmirArtwork: StateArtwork = {
+  id: "jammu-and-kashmir",
+  themes: "Pilgrimage • Mountains • Meadows • Culture",
+  background: lib("katra-jammu-and-kashmir-india/katra-jammu-and-kashmir-india-01-lg.webp"),
+  baseImage: lib("vaishno-devi-temple-katra/vaishno-devi-temple-katra-01-lg.webp"),
+  identity: { accent: "#2e5d4b", ink: "#ffffff" },
+  motif: "peaks",
+  signature: {
+    layout: "route",
+    eyebrow: "Two regions, one territory",
+    title: "Jammu's temples and the road to the valley",
+    description:
+      "The union territory spans Dogra Jammu and the Kashmir Valley — the Vaishno Devi pilgrimage in the Trikuta hills, Patnitop's meadows and the valley beyond. For the valley in depth, see our Kashmir guide.",
+    stops: [
+      { name: "Katra & Vaishno Devi", note: "The pilgrim town at the foot of the Trikuta hills.", href: "/destinations/jammu-and-kashmir?destination=katra" },
+      { name: "Jammu", note: "Raghunath Temple, Amar Mahal and the old Dogra city.", href: "/destinations/jammu-and-kashmir?destination=jammu" },
+      { name: "Patnitop", note: "Pine meadows and Sanasar's high pastures.", href: "/destinations/jammu-and-kashmir?destination=patnitop" },
+    ],
+  },
+  zones: [],
+};
+
+/**
+ * Hero: Brahma Sarovar, Kurukshetra — Ashish Bhatnagar, CC BY-SA 3.0,
+ * via Wikimedia Commons (File:Brahma_Sarovar,_Kurukshetra.jpg).
+ */
+export const haryanaArtwork: StateArtwork = {
+  id: "haryana",
+  themes: "Pilgrimage • History • Gardens • Birding",
+  background: lib("haryana-india/haryana-india-01-lg.webp"),
+  baseImage: lib("haryana-india/haryana-india-01-lg.webp"),
+  identity: { accent: "#9c6b1e", ink: "#ffffff" },
+  motif: "jaali",
+  signature: {
+    layout: "route",
+    eyebrow: "Land of the Gita",
+    title: "Epic battlefields and quiet escapes",
+    description:
+      "Haryana is where the Mahabharata was fought — Kurukshetra's Brahma Sarovar and Jyotisar carry that weight — with Mughal gardens, winter birding and the Morni Hills as quieter counters.",
+    stops: [
+      { name: "Kurukshetra", note: "Brahma Sarovar and the Mahabharata battlefield.", href: "/destinations/haryana?destination=kurukshetra" },
+      { name: "Pinjore Gardens", note: "Terraced Mughal gardens below the hills.", href: "/destinations/haryana?destination=pinjore" },
+      { name: "Morni Hills", note: "Forested ridges and a lake within reach of Chandigarh.", href: "/destinations/haryana?destination=morni" },
+    ],
+  },
+  zones: [],
+};
+
+/**
+ * Hero: Loktak Lake with Sendra Island — ch_15march, CC BY 2.0,
+ * via Wikimedia Commons (File:Loktak_Lake_Manipur_01.jpg).
+ */
+export const manipurArtwork: StateArtwork = {
+  id: "manipur",
+  themes: "Lakes • Culture • Valleys • Heritage",
+  background: lib("manipur-india/manipur-india-01-lg.webp"),
+  baseImage: lib("manipur-india/manipur-india-01-lg.webp"),
+  identity: { accent: "#7a3b69", ink: "#ffffff" },
+  motif: "petals",
+  signature: {
+    layout: "route",
+    eyebrow: "The floating lake",
+    title: "A valley ringed by blue hills",
+    description:
+      "Manipur moves at the pace of Loktak Lake — floating phumdi islands, the women's market of Imphal and the INA Memorial at Moirang.",
+    stops: [
+      { name: "Imphal", note: "Kangla Fort and Ima Keithel, the women's market.", href: "/destinations/manipur?destination=imphal" },
+      { name: "Loktak Lake", note: "Floating phumdi islands and Keibul Lamjao.", href: "/destinations/manipur?destination=loktak" },
+      { name: "Moirang", note: "The INA Memorial and the lake's southern shore.", href: "/destinations/manipur?destination=moirang" },
+    ],
+  },
+  zones: [],
+};
+
+/**
+ * Hero: Dzukou Valley rolling hills — UnpetitproleX, CC BY-SA 4.0,
+ * via Wikimedia Commons (File:Breathtaking beauty of Dzukou Valley in Manipur-Nagaland border (edit).jpg).
+ */
+export const nagalandArtwork: StateArtwork = {
+  id: "nagaland",
+  themes: "Treks • Tribal Culture • Valleys • Festivals",
+  background: lib("nagaland-india/nagaland-india-01-lg.webp"),
+  baseImage: lib("nagaland-india/nagaland-india-01-lg.webp"),
+  identity: { accent: "#3e6b4f", ink: "#ffffff" },
+  motif: "stripes",
+  signature: {
+    layout: "route",
+    eyebrow: "Hill tribes",
+    title: "Sixteen tribes, one green highland",
+    description:
+      "Nagaland is hill country shaped by its tribes — Kohima's war cemetery, the Hornbill Festival at Kisama and the rolling green ridges of Dzukou.",
+    stops: [
+      { name: "Kohima", note: "The war cemetery and Kisama's Hornbill Festival.", href: "/destinations/nagaland?destination=kohima" },
+      { name: "Dzukou Valley", note: "Rolling green ridges and seasonal lilies.", href: "/destinations/nagaland?destination=dzukou" },
+      { name: "Khonoma", note: "A warrior village turned conservation model.", href: "/destinations/nagaland?destination=khonoma" },
+    ],
+  },
+  zones: [],
 };

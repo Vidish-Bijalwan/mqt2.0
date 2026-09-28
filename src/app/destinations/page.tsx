@@ -26,6 +26,16 @@ const STATE_SLUGS = [
   "sikkim",
   "assam",
   "ladakh",
+  "andhra-pradesh",
+  "arunachal-pradesh",
+  "haryana",
+  "manipur",
+  "nagaland",
+  "telangana",
+  "west-bengal",
+  "andaman-and-nicobar-islands",
+  "dadra-and-nagar-haveli-and-daman-and-diu",
+  "jammu-and-kashmir",
 ];
 
 const FALLBACK_HERO: Record<string, string> = {
