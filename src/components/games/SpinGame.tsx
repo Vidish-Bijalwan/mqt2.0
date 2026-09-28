@@ -29,6 +29,7 @@ import {
   streakDays,
   type DrawnPrize,
 } from "@/lib/games/gameEngine";
+import { saveVoucher } from "@/lib/games/voucherWallet";
 import { spinTheHimalayas } from "@/data/commercial/games";
 import { siteConfig } from "@/data/siteConfig";
 import { trackEvent } from "@/lib/analytics";
@@ -158,6 +159,20 @@ export default function SpinGame() {
         issuedAtIso: issuedAt,
         expiresAtIso: tier.value > 0 ? expiryIso(issuedAt, cfg.expiryDays) : issuedAt,
       };
+      // Persist won vouchers to this device's wallet. Storage only — the
+      // engine already decided the prize above; nothing here re-rolls or
+      // alters it.
+      if (drawn.code) {
+        saveVoucher(window.localStorage, {
+          code: drawn.code,
+          tierId: tier.id,
+          label: tier.label,
+          value: tier.value,
+          minSpend: tier.minSpend,
+          issuedAtIso: drawn.issuedAtIso,
+          expiresAtIso: drawn.expiresAtIso,
+        });
+      }
       const today = todayLocal();
       recordSpin(window.localStorage, today, tier.id);
       setSpunToday(true);

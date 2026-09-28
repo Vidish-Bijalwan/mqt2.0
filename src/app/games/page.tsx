@@ -1,19 +1,22 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Dices, Gift, PiggyBank } from "lucide-react";
 import SpinGame from "@/components/games/SpinGame";
+import VoucherWallet from "@/components/games/VoucherWallet";
+import ComingSoonGames from "@/components/games/ComingSoonGames";
+import NextSpinCountdown from "@/components/games/NextSpinCountdown";
 import { spinTheHimalayas } from "@/data/commercial/games";
 import { formatRupees } from "@/lib/games/gameEngine";
 import { siteConfig } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Spin the Himalayas — Win Real Travel Vouchers",
+  title: "MQT Game Zone — Win Real Travel Vouchers",
   description:
-    "Spin the wheel once a day and win real MyQuickTrippers travel vouchers — up to ₹5,000 off your booking. Published odds, honest terms, no sign-up.",
+    "Play Spin the Himalayas once a day and win real MyQuickTrippers travel vouchers — up to ₹5,000 off your booking. Published odds, honest terms, no sign-up.",
   alternates: { canonical: `${siteConfig.domain}/games` },
   openGraph: {
-    title: "Spin the Himalayas | MyQuickTrippers",
+    title: "MQT Game Zone | MyQuickTrippers",
     description:
       "One spin a day. Win real travel vouchers up to ₹5,000 — with published odds and honest terms.",
     type: "website",
@@ -31,10 +34,29 @@ const HERO_IMAGE = {
 export default function GamesPage() {
   const cfg = spinTheHimalayas;
   const voucherTiers = cfg.prizes.filter((p) => p.value > 0);
+  const topPrize = Math.max(...voucherTiers.map((p) => p.value));
+
+  const stats = [
+    {
+      icon: Gift,
+      label: "Top prize",
+      value: formatRupees(topPrize),
+    },
+    {
+      icon: PiggyBank,
+      label: "Prizes every month",
+      value: formatRupees(cfg.monthlyPrizeBudget),
+    },
+    {
+      icon: Dices,
+      label: "Free spin",
+      value: `${cfg.spinsPerDay} / day`,
+    },
+  ];
 
   return (
     <main className="min-h-screen bg-surface-canvas">
-      {/* ── Hero: Himalayan photo band ── */}
+      {/* ── Hero: arcade band ── */}
       <header className="relative overflow-hidden">
         <div aria-hidden="true" className="absolute inset-0">
           <Image
@@ -46,10 +68,10 @@ export default function GamesPage() {
             sizes="100vw"
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#071525] via-[#071525]/60 to-[#071525]/15" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#071525] via-[#071525]/72 to-[#071525]/25" />
         </div>
 
-        <div className="relative mx-auto w-full max-w-6xl px-4 pb-12 pt-5 sm:pb-16">
+        <div className="relative mx-auto w-full max-w-6xl px-4 pb-10 pt-5 sm:pb-14">
           <nav aria-label="Breadcrumb" className="text-sm">
             <ol className="flex items-center gap-1 text-white/70">
               <li>
@@ -61,20 +83,52 @@ export default function GamesPage() {
                 <ChevronRight className="h-3.5 w-3.5" />
               </li>
               <li aria-current="page" className="font-semibold text-white">
-                Games
+                Game Zone
               </li>
             </ol>
           </nav>
 
-          <p className="mt-8 inline-flex items-center rounded-full border border-white/25 bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.2em] text-white backdrop-blur-sm">
-            Pilot game · Win real travel vouchers
+          <p className="mt-8 inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.2em] text-white backdrop-blur-sm">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-300 opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-300" />
+            </span>
+            MQT Game Zone · Pilot
           </p>
           <h1 className="mt-3 max-w-2xl font-display text-4xl font-extrabold leading-[1.05] text-white sm:text-5xl lg:text-6xl">
-            {cfg.name}
+            Play games. Win real travel vouchers.
           </h1>
           <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-white/85 sm:text-base">
-            {cfg.tagline}
+            {cfg.tagline} Every prize is a genuine discount on a real booking —
+            applied by our team before you pay.
           </p>
+
+          <dl className="mt-6 flex flex-wrap gap-3">
+            {stats.map((s) => (
+              <div
+                key={s.label}
+                className="flex items-center gap-3 rounded-2xl border border-white/20 bg-white/10 px-4 py-2.5 backdrop-blur-sm"
+              >
+                <s.icon className="h-5 w-5 text-amber-300" aria-hidden="true" />
+                <div>
+                  <dt className="text-[10px] font-bold uppercase tracking-[0.14em] text-white/65">
+                    {s.label}
+                  </dt>
+                  <dd className="font-display text-lg font-extrabold leading-tight text-white">
+                    {s.value}
+                  </dd>
+                </div>
+              </div>
+            ))}
+          </dl>
+
+          <Link
+            href="#play"
+            className="btn-shine mt-6 inline-flex items-center gap-2 rounded-2xl bg-brand-cta px-7 py-3.5 font-display text-lg font-extrabold text-[#0B1F33] shadow-[var(--shadow-cta-orange)] transition-transform active:scale-[0.98]"
+          >
+            <Dices className="h-5 w-5" aria-hidden="true" />
+            Play now — it&apos;s free
+          </Link>
         </div>
 
         <p className="absolute bottom-2 right-4 text-[11px] text-white/60">
@@ -82,12 +136,34 @@ export default function GamesPage() {
         </p>
       </header>
 
-      <SpinGame />
+      {/* ── Game arena ── */}
+      <div id="play" className="scroll-mt-24">
+        <div className="mx-auto flex w-full max-w-6xl items-center gap-3 px-4 pt-10">
+          <span className="rounded-full bg-emerald-500/15 px-3 py-1 text-xs font-extrabold uppercase tracking-[0.14em] text-emerald-700">
+            ● Live
+          </span>
+          <h2 className="font-display text-2xl font-extrabold text-ink sm:text-3xl">
+            Game 01 — {cfg.name}
+          </h2>
+        </div>
+        <NextSpinCountdown />
+        <SpinGame />
+      </div>
+
+      {/* ── Voucher wallet ── */}
+      <div className="mt-4">
+        <VoucherWallet />
+      </div>
+
+      {/* ── Coming soon ── */}
+      <div className="mt-12">
+        <ComingSoonGames />
+      </div>
 
       {/* ── Full terms (server-rendered, same source of truth as the game) ── */}
       <section
         aria-label="Game terms and conditions"
-        className="mx-auto w-full max-w-6xl px-4 pb-16"
+        className="mx-auto w-full max-w-6xl px-4 py-14"
       >
         <h2 className="font-display text-2xl font-extrabold text-ink sm:text-3xl">
           Terms &amp; prize budget
