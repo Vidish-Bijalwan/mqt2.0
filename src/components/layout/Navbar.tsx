@@ -77,8 +77,6 @@ export default function Navbar() {
             <Link href="/careers" className="hover:text-white/80 transition-colors text-xs font-bold uppercase tracking-wider">We Are Hiring!</Link>
             <span className="text-white/40">|</span>
             <Link href="/reviews" className="hover:text-white/80 transition-colors text-xs font-bold uppercase tracking-wider">Write A Review</Link>
-            <Link href="/pay-online" className="bg-white/15 hover:bg-white/25 px-4 py-1.5 rounded-full backdrop-blur-sm transition-colors text-xs font-bold uppercase tracking-wider">Pay Online</Link>
-            <Link href="/my-booking" className="bg-gray-900 hover:bg-black text-white px-4 py-1.5 rounded-full transition-colors text-xs font-bold uppercase tracking-wider">My Booking</Link>
             <LanguageSelector />
           </div>
         </div>

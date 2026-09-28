@@ -6,7 +6,7 @@ export const siteConfig = {
   shortName: "MQT India",
   tagline: "India Tour Packages, Himachal, Dubai, Chardham Yatra & More",
   description:
-    "Best India tour packages: Himachal, Dubai, Chardham Yatra, Nainital, Buddhist Tours, Helicopter Tours, Shimla honeymoon, Dehradun adventure. Expert guidance, best prices, 24/7 support.",
+    "Best India tour packages: Himachal, Dubai, Chardham Yatra, Nainital, Buddhist Tours, Helicopter Tours, Shimla honeymoon, Dehradun adventure. Expert guidance, best prices, dedicated support.",
   domain: "https://www.myquicktrippers.com",
   email: "info@myquicktrippers.com",
   phone: "+91-8171158569",

@@ -170,7 +170,7 @@ export default function Home() {
                <source media="(max-width: 767px)" srcSet="/images/home/mqt-india-hero-mobile.webp" />
                <img
                  src="/images/home/mqt-india-hero.webp"
-                 alt="My Quick Trippers India Tour Packages - Explore Himachal Tour Packages, Dubai Tour Packages, Chardham Yatra, Nainital Holiday, Buddhist Tours India, Helicopter Tours India, Shimla Honeymoon, Dehradun Adventure with mountains, heritage, wildlife, beaches and adventure journeys"
+                 alt="India tour packages collage: Himalayan mountains, heritage palaces, wildlife, beaches and adventure journeys"
                  width="2056"
                  height="765"
                  loading="eager"

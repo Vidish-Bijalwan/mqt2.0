@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowUpRight, Mail, MessageCircle, Phone, ShieldCheck } from "lucide-react";
+import { ArrowUpRight, Mail, MessageCircle, Phone } from "lucide-react";
 import { siteConfig } from "@/data/siteConfig";
 import { footerLinks } from "@/data/footerLinks";
 
@@ -42,7 +42,6 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-            <div className="premium-footer-trust"><ShieldCheck aria-hidden="true" /><span>Government approved<br />ISO 9001 certified</span></div>
           </div>
 
           {Object.entries(footerLinks).map(([title, links]) => (
@@ -70,7 +69,6 @@ export default function Footer() {
             <Link href="/terms-and-conditions">Terms</Link>
             <Link href="/site-map">Sitemap</Link>
           </div>
-          <p>Recognized by the Ministry of Tourism, Government of India</p>
         </div>
       </div>
     </footer>

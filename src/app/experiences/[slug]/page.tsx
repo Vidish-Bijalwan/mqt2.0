@@ -205,7 +205,7 @@ export default async function ExperiencePage({ params }: Params) {
                 <div className="rounded-card border border-gray-200 bg-white p-5 shadow-card-soft">
                   <h3 className="text-base font-bold text-gray-900 mb-3">Why Book With Us</h3>
                   <ul className="space-y-2.5 text-sm text-gray-600">
-                    {["Govt. approved & ISO 9001 certified", "Customizable itineraries, 24×7 support", "Best price guarantee & transparent billing", "Trusted by 10,000+ happy travellers"].map((item) => (
+                    {["Customizable itineraries, dedicated trip support", "Best price guarantee & transparent billing"].map((item) => (
                       <li key={item} className="flex items-start gap-2">
                         <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-brand-green" aria-hidden="true" />
                         {item}
