@@ -147,16 +147,23 @@ const DEAD_TARGET_FIXES: Record<string, string> = {
 };
 
 // Confirmed-dead legacy path patterns from the robots-blocked bucket.
-// Verified: the only api/ route handlers in src/ are the two live currency
-// routes allowlisted in LIVE_API_ROUTES (no admin/ or thank-you pages —
-// robots.ts only Disallows them). 410 drains the dead ones from Google's
-// memory faster than a 404.
-// Live API routes — display-only currency localization. Never 410 these;
-// they are real route handlers under src/app/api/.
+// Verified 2026-09-29: the live api/ route handlers in src/ are the two
+// currency routes allowlisted below PLUS the blog engagement + CMS routes
+// (/api/blog/*: stats, view, like, comments, posts; /api/admin/*: login,
+// logout, blog). 410 drains the dead ones from Google's memory faster
+// than a 404.
+// Live API routes — never 410 these; they are real route handlers under
+// src/app/api/.
 const LIVE_API_ROUTES = new Set(["/api/fx-rates", "/api/display-currency"]);
+const LIVE_API_PREFIXES = ["/api/blog/", "/api/admin/"];
+// Live admin pages (the blog creator at /admin/blog/new). The bare /admin
+// index and any other /admin/* path stay 410'd legacy residue.
+const LIVE_ADMIN_PREFIXES = ["/admin/blog/"];
 
 function isGonePath(lowerPathname: string): boolean {
   if (LIVE_API_ROUTES.has(lowerPathname)) return false;
+  if (LIVE_API_PREFIXES.some((p) => lowerPathname.startsWith(p))) return false;
+  if (LIVE_ADMIN_PREFIXES.some((p) => lowerPathname.startsWith(p))) return false;
   return (
     lowerPathname === '/api' ||
     lowerPathname.startsWith('/api/') ||
@@ -320,9 +327,10 @@ export function proxy(request: NextRequest) {
 // See "Matching Paths" below to learn more
 export const config = {
   // Only run the proxy on non-internal routes to save execution time.
-  // Note: /api/:path* is intentionally NOT excluded — the two live currency
-  // API routes (/api/fx-rates, /api/display-currency) are allowlisted in
-  // isGonePath above; every other /api/* hit is legacy residue and gets a 410.
+  // Note: /api/:path* is intentionally NOT excluded — the live API routes
+  // (the two currency routes + the blog engagement/CMS routes under
+  // /api/blog/* and /api/admin/*) are allowlisted in isGonePath above;
+  // every other /api/* hit is legacy residue and gets a 410.
   matcher: [
     '/((?!_next/static|_next/image|favicon.ico|images|logo|public).*)',
   ],
