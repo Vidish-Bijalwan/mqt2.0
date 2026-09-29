@@ -8,8 +8,8 @@ export const BLOG_POST_SEEDS_BATCH_12: BlogPostSeed[] = [
     "image": "/images/blog/what-is-upi-mdr-0-4-charge-oct-15.webp",
     "category": "Travel Planning",
     "tags": ["UPI", "MDR charges", "digital payments", "Supreme Court", "NPCI", "money tips"],
-    "readingTime": 8,
-    "wordCount": 1402,
+    "readingTime": 9,
+    "wordCount": 1619,
     "publishedAt": "2026-09-29T18:00:00+05:30",
     "targetKeyword": "what is UPI MDR"
   },
@@ -21,8 +21,8 @@ export const BLOG_POST_SEEDS_BATCH_12: BlogPostSeed[] = [
     "category": "Culture & Heritage",
     "tags": ["GPT-6.1 Astra", "OpenAI", "AI safety", "ChatGPT", "artificial intelligence", "tech news"],
     "readingTime": 8,
-    "wordCount": 1425,
-    "publishedAt": "2026-09-30T18:00:00+05:30",
+    "wordCount": 1599,
+    "publishedAt": "2026-09-30T00:00:00+05:30",
     "targetKeyword": "GPT-6.1 Astra explained"
   },
   {
@@ -32,9 +32,9 @@ export const BLOG_POST_SEEDS_BATCH_12: BlogPostSeed[] = [
     "image": "/images/blog/kedarnath-pilgrims-viral-video-rescue-explained.webp",
     "category": "Travel Planning",
     "tags": ["Kedarnath", "Char Dham Yatra", "Uttarakhand", "pilgrimage safety", "monsoon", "rescue"],
-    "readingTime": 8,
-    "wordCount": 1424,
-    "publishedAt": "2026-10-01T09:00:00+05:30",
+    "readingTime": 9,
+    "wordCount": 1635,
+    "publishedAt": "2026-09-30T00:00:00+05:30",
     "targetKeyword": "Kedarnath pilgrims rescue viral video"
   },
   {
@@ -44,9 +44,9 @@ export const BLOG_POST_SEEDS_BATCH_12: BlogPostSeed[] = [
     "image": "/images/blog/indus-waters-treaty-explained-act-of-war.webp",
     "category": "Culture & Heritage",
     "tags": ["Indus Waters Treaty", "India Pakistan", "UNGA", "Shehbaz Sharif", "water dispute", "foreign policy"],
-    "readingTime": 7,
-    "wordCount": 1391,
-    "publishedAt": "2026-10-01T18:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1557,
+    "publishedAt": "2026-09-30T00:00:00+05:30",
     "targetKeyword": "what is the Indus Waters Treaty"
   },
   {
@@ -56,9 +56,9 @@ export const BLOG_POST_SEEDS_BATCH_12: BlogPostSeed[] = [
     "image": "/images/blog/anthropic-ipo-existential-risk-warning-explained.webp",
     "category": "Culture & Heritage",
     "tags": ["Anthropic IPO", "AI safety", "Claude", "artificial intelligence", "tech news", "Dario Amodei"],
-    "readingTime": 7,
-    "wordCount": 1310,
-    "publishedAt": "2026-10-02T09:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1454,
+    "publishedAt": "2026-09-30T00:00:00+05:30",
     "targetKeyword": "Anthropic IPO explained"
   },
   {
@@ -68,9 +68,9 @@ export const BLOG_POST_SEEDS_BATCH_12: BlogPostSeed[] = [
     "image": "/images/blog/dupahiya-season-2-release-date-cast-story.webp",
     "category": "Culture & Heritage",
     "tags": ["Dupahiya Season 2", "Prime Video", "OTT releases", "Gajraj Rao", "Nirahua", "web series"],
-    "readingTime": 7,
-    "wordCount": 1311,
-    "publishedAt": "2026-10-02T18:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1465,
+    "publishedAt": "2026-09-30T00:00:00+05:30",
     "targetKeyword": "Dupahiya Season 2 release date"
   },
   {
@@ -80,9 +80,9 @@ export const BLOG_POST_SEEDS_BATCH_12: BlogPostSeed[] = [
     "image": "/images/blog/bharat-taxi-drive-a-taxi-row-explained.webp",
     "category": "Culture & Heritage",
     "tags": ["Bharat Taxi", "Brajesh Pathak", "Uttar Pradesh", "ride hailing", "self employment", "jobs debate"],
-    "readingTime": 7,
-    "wordCount": 1358,
-    "publishedAt": "2026-10-03T09:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1555,
+    "publishedAt": "2026-09-30T00:00:00+05:30",
     "targetKeyword": "what is Bharat Taxi"
   },
   {
@@ -92,9 +92,9 @@ export const BLOG_POST_SEEDS_BATCH_12: BlogPostSeed[] = [
     "image": "/images/blog/ek-kachori-do-samosa-meme-meaning.webp",
     "category": "Culture & Heritage",
     "tags": ["ek kachori do samosa", "viral meme", "Instagram reels", "internet culture", "Hindi slang", "feminist meme"],
-    "readingTime": 7,
-    "wordCount": 1279,
-    "publishedAt": "2026-10-03T18:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1446,
+    "publishedAt": "2026-09-30T00:00:00+05:30",
     "targetKeyword": "ek kachori do samosa meaning"
   },
   {
@@ -104,9 +104,9 @@ export const BLOG_POST_SEEDS_BATCH_12: BlogPostSeed[] = [
     "image": "/images/blog/67-meaning-slang-explained.webp",
     "category": "Culture & Heritage",
     "tags": ["67 meaning", "Gen Alpha slang", "internet meme", "Skrilla", "brainrot", "teen slang"],
-    "readingTime": 7,
-    "wordCount": 1226,
-    "publishedAt": "2026-10-04T09:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1429,
+    "publishedAt": "2026-09-30T00:00:00+05:30",
     "targetKeyword": "67 meaning slang"
   },
   {
@@ -116,9 +116,9 @@ export const BLOG_POST_SEEDS_BATCH_12: BlogPostSeed[] = [
     "image": "/images/blog/vithya-ramraj-pt-usha-record-explained.webp",
     "category": "Culture & Heritage",
     "tags": ["Vithya Ramraj", "PT Usha", "Asian Games 2026", "athletics", "400m hurdles", "Indian sports"],
-    "readingTime": 7,
-    "wordCount": 1318,
-    "publishedAt": "2026-10-04T18:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1536,
+    "publishedAt": "2026-09-30T00:00:00+05:30",
     "targetKeyword": "who is Vithya Ramraj"
   }
 ];

@@ -8,9 +8,9 @@ export const BLOG_POST_SEEDS_BATCH_8: BlogPostSeed[] = [
     "image": "/images/blog/vaishno-devi-yatra-october-2026-guide.webp",
     "category": "Pilgrimage",
     "tags": ["vaishno devi yatra october 2026", "vaishno devi registration", "katra to bhawan trek", "vaishno devi helicopter booking", "rfid yatra card", "navratri yatra guide", "mata vaishno devi darshan"],
-    "readingTime": 8,
-    "wordCount": 1445,
-    "publishedAt": "2026-10-11T09:00:00+05:30",
+    "readingTime": 9,
+    "wordCount": 1644,
+    "publishedAt": "2026-09-30T12:00:00+05:30",
     "targetKeyword": "vaishno devi yatra october 2026"
   },
   {
@@ -21,8 +21,8 @@ export const BLOG_POST_SEEDS_BATCH_8: BlogPostSeed[] = [
     "category": "Culture & Heritage",
     "tags": ["theyyam season 2026", "theyyam kannur", "kerala theyyam calendar", "theyyam ritual guide", "north kerala travel", "kannur sightseeing", "theyyam etiquette"],
     "readingTime": 7,
-    "wordCount": 1209,
-    "publishedAt": "2026-10-12T09:00:00+05:30",
+    "wordCount": 1360,
+    "publishedAt": "2026-09-30T18:00:00+05:30",
     "targetKeyword": "theyyam season 2026-27"
   },
   {
@@ -33,8 +33,8 @@ export const BLOG_POST_SEEDS_BATCH_8: BlogPostSeed[] = [
     "category": "Mountains & Adventure",
     "tags": ["darjeeling 2 day itinerary", "darjeeling family trip", "tiger hill sunrise", "darjeeling toy train booking", "darjeeling in october", "darjeeling himalayan railway", "ghoom monastery"],
     "readingTime": 7,
-    "wordCount": 1238,
-    "publishedAt": "2026-10-13T09:00:00+05:30",
+    "wordCount": 1395,
+    "publishedAt": "2026-09-30T18:00:00+05:30",
     "targetKeyword": "darjeeling 2 day itinerary"
   },
   {
@@ -45,8 +45,8 @@ export const BLOG_POST_SEEDS_BATCH_8: BlogPostSeed[] = [
     "category": "Mountains & Adventure",
     "tags": ["shillong cherrapunji dawki itinerary", "shillong 3 day itinerary", "sohra waterfalls", "dawki umngot boating", "mawlynnong village", "nongriat root bridge", "meghalaya trip plan"],
     "readingTime": 7,
-    "wordCount": 1205,
-    "publishedAt": "2026-10-14T09:00:00+05:30",
+    "wordCount": 1386,
+    "publishedAt": "2026-09-30T18:00:00+05:30",
     "targetKeyword": "shillong cherrapunji dawki 3 day itinerary"
   },
   {
@@ -57,8 +57,8 @@ export const BLOG_POST_SEEDS_BATCH_8: BlogPostSeed[] = [
     "category": "Mountains & Adventure",
     "tags": ["gangtok tsomgo lake itinerary", "tsomgo lake permit", "nathula pass permit", "gangtok 3 day itinerary", "sikkim travel guide", "rumtek monastery", "sikkimese food"],
     "readingTime": 7,
-    "wordCount": 1237,
-    "publishedAt": "2026-10-15T09:00:00+05:30",
+    "wordCount": 1392,
+    "publishedAt": "2026-09-30T18:00:00+05:30",
     "targetKeyword": "gangtok tsomgo lake 3 day itinerary"
   },
   {
@@ -69,8 +69,8 @@ export const BLOG_POST_SEEDS_BATCH_8: BlogPostSeed[] = [
     "category": "Destination Guides",
     "tags": ["puri 3 day itinerary", "jagannath temple darshan", "konark sun temple", "chilika lake dolphins", "raghurajpur village", "odisha travel guide", "puri beach"],
     "readingTime": 7,
-    "wordCount": 1226,
-    "publishedAt": "2026-10-16T09:00:00+05:30",
+    "wordCount": 1358,
+    "publishedAt": "2026-09-30T18:00:00+05:30",
     "targetKeyword": "puri 3 day itinerary"
   },
   {
@@ -81,8 +81,8 @@ export const BLOG_POST_SEEDS_BATCH_8: BlogPostSeed[] = [
     "category": "Pilgrimage",
     "tags": ["ujjain omkareshwar maheshwar", "mahakaleshwar bhasma aarti booking", "omkareshwar jyotirlinga", "maheshwar travel guide", "jyotirlinga road trip", "madhya pradesh pilgrimage"],
     "readingTime": 7,
-    "wordCount": 1203,
-    "publishedAt": "2026-10-17T09:00:00+05:30",
+    "wordCount": 1349,
+    "publishedAt": "2026-09-30T18:00:00+05:30",
     "targetKeyword": "ujjain omkareshwar maheshwar circuit"
   },
   {
@@ -93,8 +93,8 @@ export const BLOG_POST_SEEDS_BATCH_8: BlogPostSeed[] = [
     "category": "Pilgrimage",
     "tags": ["ayodhya 2 day itinerary", "ram mandir darshan booking", "sugam darshan pass", "hanuman garhi", "saryu aarti", "kanak bhawan", "ayodhya travel guide"],
     "readingTime": 7,
-    "wordCount": 1226,
-    "publishedAt": "2026-10-18T09:00:00+05:30",
+    "wordCount": 1394,
+    "publishedAt": "2026-09-30T18:00:00+05:30",
     "targetKeyword": "ayodhya 2 day itinerary"
   },
   {
@@ -105,8 +105,8 @@ export const BLOG_POST_SEEDS_BATCH_8: BlogPostSeed[] = [
     "category": "Pilgrimage",
     "tags": ["varanasi 3 day itinerary", "ganga aarti varanasi", "kashi vishwanath darshan", "varanasi boat ride", "sarnath day trip", "banarasi food", "dashashwamedh ghat"],
     "readingTime": 7,
-    "wordCount": 1234,
-    "publishedAt": "2026-10-19T09:00:00+05:30",
+    "wordCount": 1382,
+    "publishedAt": "2026-09-30T18:00:00+05:30",
     "targetKeyword": "varanasi 3 day itinerary"
   },
   {
@@ -117,8 +117,8 @@ export const BLOG_POST_SEEDS_BATCH_8: BlogPostSeed[] = [
     "category": "Pilgrimage",
     "tags": ["sarnath bodh gaya circuit", "buddhist circuit india", "mahabodhi temple guide", "sarnath museum", "bodh gaya monasteries", "nalanda rajgir day trip", "dalai lama teachings"],
     "readingTime": 7,
-    "wordCount": 1206,
-    "publishedAt": "2026-10-20T09:00:00+05:30",
+    "wordCount": 1345,
+    "publishedAt": "2026-09-30T18:00:00+05:30",
     "targetKeyword": "sarnath bodh gaya buddhist circuit"
   }
 ];
