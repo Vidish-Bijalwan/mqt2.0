@@ -154,11 +154,13 @@ const DEAD_TARGET_FIXES: Record<string, string> = {
 // than a 404.
 // Live API routes — never 410 these; they are real route handlers under
 // src/app/api/. /api/enquiries added for lead capture (PR #37).
+// /api/analytics/* added for first-party cookieless analytics (PR #57).
 const LIVE_API_ROUTES = new Set(["/api/fx-rates", "/api/display-currency", "/api/enquiries"]);
-const LIVE_API_PREFIXES = ["/api/blog/", "/api/admin/"];
-// Live admin pages (the blog creator at /admin/blog/new). The bare /admin
-// index and any other /admin/* path stay 410'd legacy residue.
-const LIVE_ADMIN_PREFIXES = ["/admin/blog/"];
+const LIVE_API_PREFIXES = ["/api/blog/", "/api/admin/", "/api/analytics/"];
+// Live admin pages (the blog creator at /admin/blog/new, the analytics
+// dashboard at /admin/analytics). The bare /admin index and any other
+// /admin/* path stay 410'd legacy residue.
+const LIVE_ADMIN_PREFIXES = ["/admin/blog/", "/admin/analytics"];
 
 function isGonePath(lowerPathname: string): boolean {
   if (LIVE_API_ROUTES.has(lowerPathname)) return false;

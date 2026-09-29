@@ -156,6 +156,14 @@ export default function RootLayout({
           <ScrollToTop />
           <Analytics />
           <SpeedInsights />
+          {/* First-party cookieless pageview beacon (src/lib/analyticsDb.ts).
+              Inline on purpose: no extra request, fires once per page load,
+              respects Do-Not-Track, skips /admin/*, bots filtered server-side. */}
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `(function(){try{if(navigator.doNotTrack==="1"||window.doNotTrack==="1")return;var p=location.pathname;if(p==="/admin"||p.indexOf("/admin/")===0)return;var q=new URLSearchParams(location.search);var d={path:p.slice(0,500),referrer:document.referrer||"",utm_source:q.get("utm_source")||"",utm_medium:q.get("utm_medium")||"",utm_campaign:q.get("utm_campaign")||""};var b=new Blob([JSON.stringify(d)],{type:"application/json"});if(navigator.sendBeacon){navigator.sendBeacon("/api/analytics/track",b)}else{fetch("/api/analytics/track",{method:"POST",body:JSON.stringify(d),headers:{"content-type":"application/json"},keepalive:true})}}catch(e){}})();`,
+            }}
+          />
         </div>
       </body>
     </html>

@@ -42,7 +42,7 @@ const sections: LegalSection[] = [
   {
     title: "Cookies",
     body: [
-      "Our website may use cookies and analytics technologies to enhance user experience and improve website performance.",
+      "Our website may use cookies and analytics technologies to enhance user experience and improve website performance. We also run our own cookieless pageview analytics: each page load sends one anonymous ping (page path, referrer site, device type, country) with no cookies, no cross-day tracking, and no stored IP addresses. Do-Not-Track requests are respected and no ping is sent.",
     ],
   },
   {
