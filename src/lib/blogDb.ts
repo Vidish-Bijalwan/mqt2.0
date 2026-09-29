@@ -162,7 +162,9 @@ const DDL_STATEMENTS: string[] = [
      created_at timestamptz DEFAULT now(),
      approved boolean DEFAULT true
    )`,
+  `ALTER TABLE blog_comments ADD COLUMN IF NOT EXISTS author_ip text`,
   `CREATE INDEX IF NOT EXISTS blog_comments_slug_created_idx ON blog_comments (slug, created_at DESC)`,
+  `CREATE INDEX IF NOT EXISTS blog_comments_ip_created_idx ON blog_comments (author_ip, created_at DESC)`,
   `CREATE INDEX IF NOT EXISTS blog_views_slug_idx ON blog_views (slug)`,
   `CREATE INDEX IF NOT EXISTS blog_likes_slug_idx ON blog_likes (slug)`,
 ];
@@ -337,15 +339,36 @@ export async function addComment(
   name: string,
   email: string | null,
   body: string,
+  authorIp: string | null = null,
 ): Promise<PublicComment | null> {
   const sql = getDb();
   if (!sql) return null;
   await ensureSchema();
   const rows = await sql<PublicComment[]>`
-    INSERT INTO blog_comments (slug, author_name, author_email, body)
-    VALUES (${slug}, ${name}, ${email}, ${body})
+    INSERT INTO blog_comments (slug, author_name, author_email, body, author_ip)
+    VALUES (${slug}, ${name}, ${email}, ${body}, ${authorIp})
     RETURNING id, author_name, body, created_at`;
   return rows[0] ?? null;
+}
+
+/**
+ * Anti-spam: how many comments this IP has submitted in the trailing window.
+ * Backs the per-IP daily cap in the comments route. Unknown IPs ("") return 0
+ * so the cap never groups unidentifiable clients together.
+ */
+export async function countRecentCommentsByIp(
+  ip: string,
+  windowHours = 24,
+): Promise<number> {
+  const sql = getDb();
+  if (!sql || !ip) return 0;
+  await ensureSchema();
+  const rows = await sql<{ n: number }[]>`
+    SELECT COUNT(*)::int AS n
+    FROM blog_comments
+    WHERE author_ip = ${ip}
+      AND created_at > now() - make_interval(hours => ${windowHours})`;
+  return rows[0]?.n ?? 0;
 }
 
 /* ------------------------------------------------------------------ */

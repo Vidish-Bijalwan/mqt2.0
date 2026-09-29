@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { addComment, listComments } from "@/lib/blogDb";
+import { addComment, countRecentCommentsByIp, listComments } from "@/lib/blogDb";
 import {
   SLUG_RE,
   asRecord,
@@ -47,7 +47,8 @@ export async function GET(req: NextRequest) {
 /**
  * POST /api/blog/comments {slug, author_name, body, website?}
  * Honeypot `website` must be empty; name 2–40 chars; body 2–2000 chars;
- * 3/min/IP rate limit. -> {comment} / 400 / 429.
+ * 3/min/IP rate limit, 10 comments/day/IP DB cap, >3 links rejected.
+ * -> {comment} / 400 / 429.
  */
 export async function POST(req: NextRequest) {
   let body: unknown;
@@ -83,6 +84,11 @@ export async function POST(req: NextRequest) {
       { status: 400 },
     );
   }
+  // Link-count heuristic: real travellers rarely drop >3 URLs in a comment.
+  const linkCount = (text.match(/https?:\/\/|www\./gi) ?? []).length;
+  if (linkCount > 3) {
+    return NextResponse.json({ error: "Spam detected" }, { status: 400 });
+  }
 
   const ip = getClientIp(req);
   if (isRateLimited(ip)) {
@@ -91,8 +97,17 @@ export async function POST(req: NextRequest) {
       { status: 429 },
     );
   }
+  // Per-IP daily cap backed by the DB (the in-memory limiter above is
+  // per-instance on serverless). Keeps approved-by-default comments safe.
+  const commentsToday = await countRecentCommentsByIp(ip, 24);
+  if (commentsToday >= 10) {
+    return NextResponse.json(
+      { error: "Daily comment limit reached — please try again tomorrow" },
+      { status: 429 },
+    );
+  }
 
-  const comment = await addComment(slug, name, null, text);
+  const comment = await addComment(slug, name, null, text, ip || null);
   if (!comment) {
     return NextResponse.json(
       { error: "Comments are temporarily unavailable" },

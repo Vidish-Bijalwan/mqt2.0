@@ -194,6 +194,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       url: `${siteConfig.domain}/blog/${slug}`,
       type: 'article',
       images: [{ url: image, width: 1200, height: 630, alt: post.title }],
+      publishedTime: post.publishedAt,
+      modifiedTime: post.publishedAt,
+      authors: ['My Quick Trippers'],
+      section: post.category,
+      tags: post.tags,
     },
     twitter: {
       card: 'summary_large_image',
