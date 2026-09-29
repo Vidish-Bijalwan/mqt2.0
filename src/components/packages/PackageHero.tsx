@@ -44,9 +44,9 @@ export default function PackageHero({ vm }: { vm: PackageViewModel }) {
     <>
       <nav aria-label="Breadcrumb" className="border-b border-line bg-white px-4 py-3 text-xs text-ink-muted">
         <div className="mx-auto flex w-full max-w-[1320px] items-center gap-2 overflow-hidden">
-          <Link href="/" className="shrink-0 font-semibold hover:text--brand-primary">Home</Link>
+          <Link href="/" className="shrink-0 font-semibold hover:text-brand-primary">Home</Link>
           <span aria-hidden="true">/</span>
-          <Link href={`/packages?category=${encodeURIComponent(pkg.category)}`} className="shrink-0 font-semibold hover:text--brand-primary">{pkg.category}</Link>
+          <Link href={`/packages?category=${encodeURIComponent(pkg.category)}`} className="shrink-0 font-semibold hover:text-brand-primary">{pkg.category}</Link>
           <span aria-hidden="true">/</span>
           <span className="truncate text-ink-muted">{pkg.title}</span>
         </div>
@@ -110,7 +110,7 @@ export default function PackageHero({ vm }: { vm: PackageViewModel }) {
                 {journeyStops.map((stop, index) => (
                   <li key={`${stop}-${index}`} className="flex shrink-0 items-center gap-2">
                     <span className="rounded-full bg-surface-canvas px-3 py-2 font-semibold">{stop}</span>
-                    {index < journeyStops.length - 1 && <ArrowRight aria-hidden="true" className="h-4 w-4 shrink-0 text--brand-secondary" />}
+                    {index < journeyStops.length - 1 && <ArrowRight aria-hidden="true" className="h-4 w-4 shrink-0 text-brand-secondary" />}
                   </li>
                 ))}
               </ol>
