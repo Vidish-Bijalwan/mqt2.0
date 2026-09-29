@@ -1,15 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
-import { RotateCw, Sparkles, Users } from "lucide-react";
+import { CalendarDays, RotateCw, Sparkles, Users } from "lucide-react";
 import SectionHeader from "@/components/ui/SectionHeader";
 import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
 
 /**
- * Play & Plan — homepage discoverability band for the three interactive
+ * Play & Plan — homepage discoverability band for the interactive
  * routes that live outside the tour-category nav:
  *   /games      Spin the Himalayas — daily voucher wheel
  *   /trip-twin  Find Your Trip Twin — 8-question travel personality quiz
  *   /trip-room  Plan a Group Trip — shared voting room for groups
+ *   /tools/best-time-to-visit  Best Time to Visit — season finder tool
  *
  * Imagery reuses the site's existing destination photography (same files as
  * the homepage tiles). Copy is factual, taken from each route's own title
@@ -46,6 +47,16 @@ const CARDS = [
     copy: "Create a trip room, share one link with your group, collect votes on destination, dates and budget — then see real package matches.",
     cta: "Create a room",
   },
+  {
+    href: "/tools/best-time-to-visit",
+    img: "/images/packages/kerala.jpg",
+    alt: "Kerala backwaters and palm trees",
+    icon: CalendarDays,
+    eyebrow: "Tool",
+    title: "Best Time to Visit",
+    copy: "Pick any of 15 top Indian destinations to see its best months — with honest notes on weather, crowds and costs — or browse the month-by-month season guide.",
+    cta: "Check the seasons",
+  },
 ];
 
 export default function PlayPlanBand() {
@@ -54,10 +65,10 @@ export default function PlayPlanBand() {
       <div className="nit-page">
         <SectionHeader
           title="Play & Plan"
-          subtitle="Spin the voucher wheel, discover your travel personality, or plan a group trip together."
+          subtitle="Spin the voucher wheel, discover your travel personality, plan a group trip — or find the best season to travel."
           marginTop
         />
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {CARDS.map((card) => (
             <Link
               key={card.href}
