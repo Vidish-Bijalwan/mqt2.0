@@ -3,6 +3,7 @@ import PackageTabs, { type PackageTabSection } from "@/components/ui/PackageTabs
 import ItineraryAccordion from "@/components/ui/ItineraryAccordion";
 import BlockRenderer from "@/components/ui/BlockRenderer";
 import ExpandableText from "@/components/ui/ExpandableText";
+import PackageTripTruth from "@/components/packages/PackageTripTruth";
 import type { PackageViewModel } from "@/utils/packageDetails";
 
 /**
@@ -123,6 +124,13 @@ export default function PackageTabSections({ vm }: { vm: PackageViewModel }) {
         </section>
       ),
     }] : []),
+    // Feature A — Trip essentials (price clarity, cancellation, logistics)
+    // always has the MQT standard policy + price terms, so it always renders.
+    {
+      id: "essentials",
+      label: "Trip essentials",
+      content: <PackageTripTruth vm={vm} />,
+    },
     ...(allFaqs.length > 0 ? [{
       id: "faqs",
       label: "FAQs",

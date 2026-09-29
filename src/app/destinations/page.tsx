@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ChevronRight, MapPin } from "lucide-react";
+import { CalendarDays, ChevronRight, MapPin } from "lucide-react";
 import { destinations } from "@/data/contentData";
 import { destinationExplorerProfiles } from "@/data/destinationExplorer";
 import { getPublicPackages } from "@/utils/packageCatalog";
@@ -111,6 +111,22 @@ export default function DestinationsIndexPage() {
         <p className="mt-3 max-w-2xl text-sm leading-6 text-[#61766f]">
           Pick a region to browse its travel guide, top places and every curated journey we run there.
         </p>
+
+        <Link
+          href="/tools/best-time-to-visit"
+          className="group mt-6 flex items-center gap-4 rounded-2xl border border-[#d9e3dc] bg-white/85 p-5 shadow-sm transition hover:shadow-md"
+        >
+          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#16453d] text-[#f0ad58]">
+            <CalendarDays className="h-5 w-5" />
+          </span>
+          <span className="min-w-0 flex-1">
+            <span className="block text-sm font-extrabold text-[#143a35]">Not sure when to go?</span>
+            <span className="mt-0.5 block truncate text-xs text-[#61766f]">
+              Use the Best Time to Visit tool — pick a destination, see its best months, and browse the month-by-month season guide.
+            </span>
+          </span>
+          <span className="shrink-0 text-xs font-bold text-[#b57830] group-hover:underline">Check the seasons →</span>
+        </Link>
 
         <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {cards.map((card) => (
