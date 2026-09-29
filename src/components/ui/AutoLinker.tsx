@@ -66,13 +66,81 @@ interface AutoLinkerProps {
   maxLinks?: number; // Limit number of links per paragraph to avoid spammy look
 }
 
+// Matches inline markdown links: [link text](https://example.com) or
+// [link text](/relative-path). The URL may not contain whitespace or ")".
+// Image syntax ![alt](url) is deliberately left as literal text (see below).
+const MARKDOWN_LINK_PATTERN = /\[([^\]]+)\]\(([^)\s]+)\)/g;
+
+const linkClasses = (className: string) =>
+  `text-brand-blue font-medium hover:underline ${className}`;
+
+/** Render one writer-supplied markdown link: absolute URLs open in a new
+ * tab, site-relative URLs use Next.js client-side navigation. */
+function renderMarkdownLink(linkText: string, url: string, key: string, className: string) {
+  const cls = linkClasses(className);
+  if (/^https?:\/\//i.test(url)) {
+    return (
+      <a
+        key={key}
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={cls}
+        title={linkText}
+      >
+        {linkText}
+      </a>
+    );
+  }
+  if (url.startsWith('/')) {
+    return (
+      <Link key={key} href={url} className={cls} title={linkText}>
+        {linkText}
+      </Link>
+    );
+  }
+  return (
+    <a key={key} href={url} className={cls} title={linkText}>
+      {linkText}
+    </a>
+  );
+}
+
 export default function AutoLinker({ text, className = '', maxLinks = 4 }: AutoLinkerProps) {
   const map = useMemo(() => buildKeywordMap(), []);
 
   const elements = useMemo(() => {
-    let result: (string | React.ReactNode)[] = [text];
+    // Pass 1 — markdown links first: split the raw text on [text](url) and
+    // render those segments as real links immediately. The remaining
+    // plain-text segments are the only ones eligible for keyword
+    // auto-linking below, so a writer's explicit link is never linked over.
+    let result: (string | React.ReactNode)[] = [];
     let linksAdded = 0;
 
+    MARKDOWN_LINK_PATTERN.lastIndex = 0;
+    let cursor = 0;
+    let mdIndex = 0;
+    let match: RegExpExecArray | null;
+    while ((match = MARKDOWN_LINK_PATTERN.exec(text)) !== null) {
+      const isImageSyntax = match.index > 0 && text[match.index - 1] === '!';
+      if (isImageSyntax) {
+        // Leave ![alt](url) as literal text — images are not this component's job.
+        continue;
+      }
+      if (match.index > cursor) {
+        result.push(text.substring(cursor, match.index));
+      }
+      result.push(renderMarkdownLink(match[1], match[2], `md-${mdIndex++}`, className));
+      linksAdded++;
+      cursor = match.index + match[0].length;
+    }
+    if (cursor < text.length) {
+      result.push(text.substring(cursor));
+    }
+
+    // Pass 2 — keyword auto-linking, plain-text segments only. React nodes
+    // (the markdown links above, plus links added in earlier passes) are
+    // skipped, so nothing ever gets double-linked.
     for (const { url, regex } of map) {
       if (linksAdded >= maxLinks) break;
 
@@ -92,7 +160,7 @@ export default function AutoLinker({ text, className = '', maxLinks = 4 }: AutoL
               <Link 
                 key={`${url}-${linksAdded}`} 
                 href={url} 
-                className={`text-brand-blue font-medium hover:underline ${className}`}
+                className={linkClasses(className)}
                 title={`Explore ${matchedText}`}
               >
                 {matchedText}
