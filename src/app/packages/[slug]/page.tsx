@@ -147,7 +147,7 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }} />
       {/* Sticky mobile CTA (U21) — price + call + WhatsApp + Send Query always visible */}
-      <StickyMobileCTA price={vm.displayPrice} showPrice={vm.showPrice} packageName={pkg.title} />
+      <StickyMobileCTA price={vm.displayPrice} showPrice={vm.showPrice} packageName={pkg.title} priceInr={vm.priceInfo.deal} />
       <PackageViewTracker slug={pkg.slug} category={pkg.category || "general"} />
       <div
         className="package-page-shell min-h-screen pb-24 font-sans lg:pb-16"
