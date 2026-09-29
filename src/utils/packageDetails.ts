@@ -232,6 +232,14 @@ export interface PackageViewModel {
   galleryImages: string[];
   galleryCaptions: string[];
   legacyDetails: LegacyPackageDetails;
+  /** Package-specific scraped cancellation/refund notes (may be empty). */
+  cancellationNotes: string[];
+  /** Cancellation/refund FAQ Q&A from the package's own records (may be empty). */
+  cancellationFaqs: FaqItem[];
+  /** Package-specific scraped pickup / reporting-point notes (may be empty). */
+  logisticsNotes: string[];
+  /** Pickup / transfer FAQ Q&A from the package's own records (may be empty). */
+  logisticsFaqs: FaqItem[];
 }
 
 /**
@@ -439,6 +447,60 @@ export function buildPackageViewModel(pkg: Package): PackageViewModel {
     : [];
   const allFaqs = details.faqs && details.faqs.length > 0 ? details.faqs : faqPairs;
 
+  // --- Feature A: trip truth (cancellation terms + pickup/logistics) ---
+  // Scraped block sections under "Cancellation ..."/"Refund Policy" and
+  // "Pick up point / Reporting Point"/"Meet & Greet on Arrival" headings,
+  // sanitized with the same cleanDisplayText path as inclusions. A package
+  // with no such sections gets the official MQT standard policy instead
+  // (rendered by the component), so the UI always stays truthful.
+  const collectAfterHeadings = (headingRe: RegExp, maxChars = 600): string[] => {
+    const items = normalizedBlocks || [];
+    const collected: string[] = [];
+    const consumed = new Set<number>();
+    items.forEach((block, i) => {
+      if (block.type !== "heading" || !headingRe.test(blockText(block))) return;
+      for (let j = i + 1; j < items.length; j++) {
+        const next = items[j];
+        if (next.type === "heading") break;
+        if (consumed.has(j)) continue;
+        consumed.add(j);
+        if (next.type === "list") {
+          (next.items || [])
+            .filter((it): it is string => typeof it === "string")
+            .map(cleanDisplayText)
+            .filter((t) => t.length > 3)
+            .forEach((t) => collected.push(t.slice(0, maxChars)));
+        } else if (next.type === "paragraph") {
+          const t = cleanDisplayText(blockText(next)).replace(/^Ans[.:]\s*/i, "");
+          if (t.length > 30) collected.push(t.slice(0, maxChars));
+        }
+      }
+    });
+    return Array.from(new Set(collected)).slice(0, 8);
+  };
+
+  const faqsMatching = (re: RegExp): FaqItem[] =>
+    (allFaqs || [])
+      .filter((f) => re.test(f.q || ""))
+      .slice(0, 4)
+      .map((f) => ({
+        q: cleanDisplayText(f.q || ""),
+        a: cleanDisplayText(f.a || "").slice(0, 500),
+      }))
+      .filter((f) => f.a.length > 20);
+
+  const cancellationNotes = collectAfterHeadings(/cancell|refund/i, 400);
+  const cancellationFaqs = faqsMatching(/cancell|refund/i);
+  // Pickup/logistics: "Pick up point / Reporting Point" and
+  // "Meet & Greet on Arrival" headings. Deliberately excludes "Day N: ..."
+  // arrival headings, which are itinerary, not logistics.
+  const logisticsNotes = collectAfterHeadings(
+    /pick[\s-]?up point|reporting point|meet[\s\S]{0,15}greet on arrival/i,
+  );
+  const logisticsFaqs = faqsMatching(
+    /pick[\s-]?up|airport.{0,15}drop|drop.{0,15}airport|meet[\s\S]{0,15}greet|reporting point/i,
+  );
+
   const locationMedia = getPackageLocationMedia(pkg);
   // Location-inventory media is the only approved source for package heroes
   // and galleries. Scraped package images remain available as historical
@@ -513,6 +575,10 @@ export function buildPackageViewModel(pkg: Package): PackageViewModel {
     galleryImages,
     galleryCaptions,
     legacyDetails: details,
+    cancellationNotes,
+    cancellationFaqs,
+    logisticsNotes,
+    logisticsFaqs,
   };
 }
 
