@@ -153,8 +153,8 @@ const DEAD_TARGET_FIXES: Record<string, string> = {
 // logout, blog). 410 drains the dead ones from Google's memory faster
 // than a 404.
 // Live API routes — never 410 these; they are real route handlers under
-// src/app/api/.
-const LIVE_API_ROUTES = new Set(["/api/fx-rates", "/api/display-currency"]);
+// src/app/api/. /api/enquiries added for lead capture (PR #37).
+const LIVE_API_ROUTES = new Set(["/api/fx-rates", "/api/display-currency", "/api/enquiries"]);
 const LIVE_API_PREFIXES = ["/api/blog/", "/api/admin/"];
 // Live admin pages (the blog creator at /admin/blog/new). The bare /admin
 // index and any other /admin/* path stay 410'd legacy residue.
