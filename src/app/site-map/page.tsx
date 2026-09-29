@@ -49,12 +49,6 @@ export default function SiteMapPage() {
       ],
     },
     {
-      title: "Travel Tools",
-      links: [
-        { name: "Best Time to Visit India", href: "/tools/best-time-to-visit" },
-      ],
-    },
-    {
       title: "Website Support",
       links: [
         { name: "Privacy Policy", href: "/privacy-policy" },
