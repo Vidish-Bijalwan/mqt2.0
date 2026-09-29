@@ -117,11 +117,17 @@ export default function AutoLinker({ text, className = '', maxLinks = 4 }: AutoL
     let result: (string | React.ReactNode)[] = [];
     let linksAdded = 0;
 
-    MARKDOWN_LINK_PATTERN.lastIndex = 0;
+    // Local regex instance (not the module-level one) — the /g pattern keeps
+    // mutable lastIndex state, and mutating module-level values from a
+    // component is disallowed (react-hooks/immutability).
+    const mdLinkPattern = new RegExp(
+      MARKDOWN_LINK_PATTERN.source,
+      MARKDOWN_LINK_PATTERN.flags,
+    );
     let cursor = 0;
     let mdIndex = 0;
     let match: RegExpExecArray | null;
-    while ((match = MARKDOWN_LINK_PATTERN.exec(text)) !== null) {
+    while ((match = mdLinkPattern.exec(text)) !== null) {
       const isImageSyntax = match.index > 0 && text[match.index - 1] === '!';
       if (isImageSyntax) {
         // Leave ![alt](url) as literal text — images are not this component's job.

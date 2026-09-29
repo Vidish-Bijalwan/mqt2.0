@@ -4,15 +4,70 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { ChevronRight, Calendar, BookOpen, Clock, Search, X, Filter } from "lucide-react";
-import { useMemo, useState, Suspense } from "react";
+import { useEffect, useMemo, useState, Suspense } from "react";
 import { ALL_BLOGS, CATEGORIES, categoryCounts } from "@/data/blogIndex";
+import type { BlogIndexEntry } from "@/data/blogIndex";
 import BlogSidebar from "@/components/blog/BlogSidebar";
+import BlogCardStats, { BlogCardStat } from "@/components/blog/BlogCardStats";
 import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
 import { siteConfig } from "@/data/siteConfig";
 import { safeJsonLd } from "@/utils/jsonLd";
 import { trackEvent } from "@/lib/analytics";
 
 const ITEMS_PER_PAGE = 24;
+
+/** CMS post summary from GET /api/blog/posts (published only, newest first). */
+interface DbPostSummary {
+  slug: string;
+  title: string;
+  meta_description: string;
+  cover_image: string;
+  category: string;
+  tags: string[];
+  target_keyword: string;
+  published_at: string;
+}
+
+/** Card-ready shape shared by static catalogue entries and CMS posts. */
+interface CardBlog {
+  slug: string;
+  title: string;
+  snippet: string;
+  image: string;
+  category: string;
+  tags: string[];
+  /** Static posts always carry one; CMS summaries don't ship body text. */
+  readingTime?: number;
+  /** ISO date used for newest-first sorting. */
+  publishedAt: string;
+}
+
+const LEGACY_DEFAULT_DATE = "2026-09-21";
+
+function staticToCard(blog: BlogIndexEntry): CardBlog {
+  return {
+    slug: blog.slug,
+    title: blog.title,
+    snippet: blog.snippet,
+    image: blog.image,
+    category: blog.category,
+    tags: blog.tags,
+    readingTime: blog.readingTime,
+    publishedAt: blog.publishedAt ?? LEGACY_DEFAULT_DATE,
+  };
+}
+
+function dbToCard(post: DbPostSummary): CardBlog {
+  return {
+    slug: post.slug,
+    title: post.title,
+    snippet: post.meta_description,
+    image: post.cover_image,
+    category: post.category,
+    tags: post.tags ?? [],
+    publishedAt: post.published_at,
+  };
+}
 
 // Static structured data for the blog index (module scope: ALL_BLOGS is static)
 const blogIndexJsonLd = {
@@ -57,6 +112,41 @@ function BlogIndexContent() {
   const [activeCategory, setActiveCategory] = useState(validCategory);
   const [searchQuery, setSearchQuery] = useState(validQuery);
   const [currentPage, setCurrentPage] = useState(1);
+  // null = not loaded yet; [] = fetch failed or no CMS posts (static only).
+  const [dbPosts, setDbPosts] = useState<DbPostSummary[] | null>(null);
+
+  // Merge CMS posts client-side: DB wins on slug collision, newest first.
+  // Any failure falls back to the static catalogue silently.
+  useEffect(() => {
+    let cancelled = false;
+    fetch("/api/blog/posts")
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data) => {
+        if (cancelled) return;
+        const posts =
+          data && typeof data === "object" && Array.isArray((data as { posts?: unknown }).posts)
+            ? ((data as { posts: DbPostSummary[] }).posts.filter(
+                (p) => p && typeof p.slug === "string" && typeof p.title === "string"
+              ))
+            : [];
+        setDbPosts(posts);
+      })
+      .catch(() => {
+        if (!cancelled) setDbPosts([]);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const mergedBlogs = useMemo<CardBlog[]>(() => {
+    const bySlug = new Map<string, CardBlog>();
+    for (const blog of ALL_BLOGS) bySlug.set(blog.slug, staticToCard(blog));
+    for (const post of dbPosts ?? []) bySlug.set(post.slug, dbToCard(post));
+    return Array.from(bySlug.values()).sort(
+      (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+    );
+  }, [dbPosts]);
 
   // Sync local filter state when the URL params change (e.g. back/forward
   // navigation). React-endorsed "adjust state during render" pattern — no effect needed.
@@ -77,7 +167,7 @@ function BlogIndexContent() {
   };
 
   const filteredBlogs = useMemo(() => {
-    let result = ALL_BLOGS;
+    let result = mergedBlogs;
     if (activeCategory !== 'All Articles') {
       result = result.filter(b => b.category === activeCategory);
     }
@@ -92,12 +182,18 @@ function BlogIndexContent() {
       });
     }
     return result;
-  }, [activeCategory, searchQuery]);
+  }, [mergedBlogs, activeCategory, searchQuery]);
 
   const totalPages = Math.ceil(filteredBlogs.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const currentBlogs = filteredBlogs.slice(startIndex, startIndex + ITEMS_PER_PAGE);
   const featuredBlogs = filteredBlogs.slice(0, 3);
+
+  // One batched stats fetch covers every visible card (featured + grid).
+  const statSlugs = useMemo(
+    () => Array.from(new Set([...featuredBlogs, ...currentBlogs].map((b) => b.slug))),
+    [featuredBlogs, currentBlogs]
+  );
 
   const handleCategoryChange = (cat: string) => {
     setActiveCategory(cat);
@@ -173,7 +269,7 @@ function BlogIndexContent() {
             MQT Travel Blog
           </h1>
           <p className="text-white/80 text-lg md:text-xl mb-8">
-            Discover guides, tips, and inspiration across our {ALL_BLOGS.length} articles.
+            Discover guides, tips, and inspiration across our {mergedBlogs.length} articles.
           </p>
 
           {/* Search Bar */}
@@ -181,7 +277,7 @@ function BlogIndexContent() {
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
             <input
               type="text"
-              placeholder={`Search ${ALL_BLOGS.length}+ travel articles...`}
+              placeholder={`Search ${mergedBlogs.length}+ travel articles...`}
               value={searchQuery}
               onChange={(e) => handleSearch(e.target.value)}
               maxLength={100}
@@ -214,6 +310,7 @@ function BlogIndexContent() {
         </div>
       </section>
 
+      <BlogCardStats slugs={statSlugs}>
       {/* ===== FEATURED ARTICLES ===== */}
       {activeCategory === 'All Articles' && !searchQuery && currentPage === 1 && (
         <section className="bg-slate-100 py-12 border-b border-gray-200">
@@ -234,10 +331,12 @@ function BlogIndexContent() {
                     </div>
                   </div>
                   <div className="p-5 flex-grow flex flex-col">
-                    <div className="flex items-center text-xs text-gray-400 mb-3">
-                      <Calendar className="w-3 h-3 mr-1" /> My Quick Trippers
-                      <span className="mx-2">•</span>
-                      <Clock className="w-3 h-3 mr-1" /> {blog.readingTime} min read
+                    <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-gray-400 mb-3">
+                      <span className="inline-flex items-center"><Calendar className="w-3 h-3 mr-1" /> My Quick Trippers</span>
+                      {typeof blog.readingTime === "number" && (
+                        <span className="inline-flex items-center"><span className="mx-1">•</span><Clock className="w-3 h-3 mr-1" /> {blog.readingTime} min read</span>
+                      )}
+                      <span className="inline-flex items-center"><span className="mx-1">•</span><BlogCardStat slug={blog.slug} /></span>
                     </div>
                     <p className="text-gray-600 text-sm line-clamp-3 mb-4 flex-grow">{blog.snippet}</p>
                     <span className="text-legacy-orange text-sm font-semibold flex items-center group-hover:translate-x-1 transition-transform">
@@ -322,12 +421,12 @@ function BlogIndexContent() {
                   {/* Content */}
                   <div className="p-5 flex-grow flex flex-col">
                     {/* Metadata */}
-                    <div className="flex items-center text-xs text-gray-400 mb-2.5">
-                      <Calendar className="w-3 h-3 mr-1" />
-                      <span>MQT</span>
-                      <span className="mx-1.5">•</span>
-                      <Clock className="w-3 h-3 mr-1" />
-                      <span>{blog.readingTime} min read</span>
+                    <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-gray-400 mb-2.5">
+                      <span className="inline-flex items-center"><Calendar className="w-3 h-3 mr-1" /> MQT</span>
+                      {typeof blog.readingTime === "number" && (
+                        <span className="inline-flex items-center"><span className="mx-1">•</span><Clock className="w-3 h-3 mr-1" /> {blog.readingTime} min read</span>
+                      )}
+                      <span className="inline-flex items-center"><span className="mx-1">•</span><BlogCardStat slug={blog.slug} /></span>
                     </div>
 
                     {/* Title */}
@@ -431,6 +530,7 @@ function BlogIndexContent() {
           </div>
         </div>
       </section>
+      </BlogCardStats>
     </div>
   );
 }

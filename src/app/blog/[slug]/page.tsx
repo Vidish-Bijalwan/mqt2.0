@@ -1,13 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
+import { cache } from "react";
 import { Calendar, Phone, User, ChevronRight } from "lucide-react";
 import BlogSidebar from "@/components/blog/BlogSidebar";
 import BlogShareButtons from "@/components/blog/BlogShareButtons";
+import BlogEngagement from "@/components/blog/BlogEngagement";
 import { siteConfig } from "@/data/siteConfig";
 import { notFound } from "next/navigation";
 import type { ContentBlock } from "@/types/content";
 import { ALL_BLOGS, GONE_BLOG_SLUGS } from "@/data/blogIndex";
+import type { BlogIndexEntry } from "@/data/blogIndex";
 import { getEditorialBlocks } from "@/data/blogEditorial";
+import { getBlogImage } from "@/data/blogImageMap";
+import { getBlogPostContent } from "@/data/blogPosts/content";
+import AutoLinker from "@/components/ui/AutoLinker";
+import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
+import AttentionTracker from "@/components/analytics/AttentionTracker";
+import { safeJsonLd } from "@/utils/jsonLd";
+import { markdownToBlocks } from "@/lib/blogMarkdown";
 
 function blogFor(slug: string) {
   return ALL_BLOGS.find((blog) => blog.slug === slug);
@@ -19,7 +29,7 @@ export type BlogSlugStatus = "live" | "gone" | "missing";
 // - "live":    passes the editorial gate (in ALL_BLOGS) → render.
 // - "gone":    exists in the legacy scrape but failed the editorial gate —
 //             a confirmed-dead, de-listed post → HTTP 410 Gone.
-// - "missing": never existed → normal 404.
+// - "missing": never existed → normal 404 (or a CMS post — checked below).
 export function getBlogSlugStatus(rawSlug: string): BlogSlugStatus {
   const slug = rawSlug.toLowerCase();
   if (ALL_BLOGS.some((blog) => blog.slug === slug)) return "live";
@@ -27,12 +37,123 @@ export function getBlogSlugStatus(rawSlug: string): BlogSlugStatus {
   return "missing";
 }
 
-import { getBlogImage } from "@/data/blogImageMap";
-import { getBlogPostContent } from "@/data/blogPosts/content";
-import AutoLinker from "@/components/ui/AutoLinker";
-import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
-import AttentionTracker from "@/components/analytics/AttentionTracker";
-import { safeJsonLd } from "@/utils/jsonLd";
+/** CMS-authored post row shape from src/lib/blogDb. */
+interface DbBlogPost {
+  id: string;
+  slug: string;
+  title: string;
+  meta_description: string;
+  cover_image: string;
+  category: string;
+  tags: string[];
+  target_keyword: string;
+  body_md: string;
+  published_at: string | null;
+  created_at?: string;
+  updated_at?: string;
+}
+
+/**
+ * Fetch a CMS-authored post from Neon. Skipped entirely when DATABASE_URL is
+ * absent, so `next build` never touches the DB. Drafts (published_at null)
+ * and future-dated posts stay invisible. Cached per request so
+ * generateMetadata and the page share a single lookup.
+ */
+const getDbBlogPost = cache(async (slug: string): Promise<DbBlogPost | null> => {
+  if (!process.env.DATABASE_URL) return null;
+  try {
+    // Supports both backend shapes: getDb() returning a client with
+    // getPostBySlug, or a standalone getPostBySlug export.
+    const mod = (await import("@/lib/blogDb")) as {
+      getDb?: () => { getPostBySlug?: (slug: string) => Promise<DbBlogPost | null> } | null | undefined;
+      getPostBySlug?: (slug: string) => Promise<DbBlogPost | null>;
+    };
+    let post: DbBlogPost | null = null;
+    const db = typeof mod.getDb === "function" ? mod.getDb() : null;
+    if (db && typeof db.getPostBySlug === "function") {
+      post = await db.getPostBySlug(slug);
+    } else if (typeof mod.getPostBySlug === "function") {
+      post = await mod.getPostBySlug(slug);
+    }
+    if (!post || !post.published_at) return null;
+    if (new Date(post.published_at).getTime() > Date.now()) return null;
+    return post;
+  } catch {
+    return null;
+  }
+});
+
+/** Normalized post view shared by the static catalogue and CMS posts. */
+interface ResolvedPost {
+  slug: string;
+  title: string;
+  snippet: string;
+  /** Image for metadata/JSON-LD (blog.image || getBlogImage fallback). */
+  image: string;
+  /** Exact cover src for the hero (static posts use getBlogImage(slug)). */
+  coverImage: string;
+  category: string;
+  tags: string[];
+  publishedAt: string;
+  readingTime: number;
+  blocks: ContentBlock[];
+}
+
+function staticPostView(blog: BlogIndexEntry, slug: string): ResolvedPost {
+  const factoryContent = getBlogPostContent(slug);
+  const blocks = factoryContent ?? getEditorialBlocks(blog);
+  const contentText = blocks
+    .filter((block) => block.type === "p")
+    .map((block) => block.text || "")
+    .join(" ");
+  const wordCount = contentText.split(/\s+/).filter(Boolean).length;
+  return {
+    slug,
+    title: blog.title,
+    snippet: blog.snippet,
+    image: blog.image || getBlogImage(slug),
+    coverImage: getBlogImage(slug),
+    category: blog.category,
+    tags: blog.tags,
+    publishedAt: blog.publishedAt ?? "2026-09-21",
+    readingTime: blog.readingTime ?? Math.max(1, Math.ceil(wordCount / 200)),
+    blocks,
+  };
+}
+
+function dbPostView(post: DbBlogPost): ResolvedPost {
+  const blocks = markdownToBlocks(post.body_md);
+  const contentText = blocks
+    .filter((block) => block.type === "p")
+    .map((block) => block.text || "")
+    .join(" ");
+  const wordCount = contentText.split(/\s+/).filter(Boolean).length;
+  return {
+    slug: post.slug,
+    title: post.title,
+    snippet: post.meta_description,
+    image: post.cover_image,
+    coverImage: post.cover_image,
+    category: post.category,
+    tags: post.tags ?? [],
+    publishedAt: post.published_at as string,
+    readingTime: Math.max(1, Math.ceil(wordCount / 200)),
+    blocks,
+  };
+}
+
+async function resolvePost(slug: string): Promise<ResolvedPost | null> {
+  const status = getBlogSlugStatus(slug);
+  if (status === "live") {
+    const blog = blogFor(slug);
+    return blog ? staticPostView(blog, slug) : null;
+  }
+  if (status === "missing") {
+    const dbPost = await getDbBlogPost(slug);
+    return dbPost ? dbPostView(dbPost) : null;
+  }
+  return null; // "gone": the proxy serves HTTP 410 upstream
+}
 
 // Pre-render a small set of entry articles. Long-tail posts render on demand
 // and are cached by ISR, keeping deployments compact without changing URLs.
@@ -49,38 +170,36 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const slug = resolvedParams.slug.toLowerCase();
 
   // Gated-out slugs get no canonical and no indexable metadata.
-  // ("gone" slugs are served as HTTP 410 by the proxy; "missing" as 404.)
-  if (getBlogSlugStatus(slug) !== "live") {
+  // ("gone" slugs are served as HTTP 410 by the proxy; "missing" as 404
+  // unless a published CMS post exists under that slug.)
+  const post = await resolvePost(slug);
+  if (!post) {
     return {
       title: { absolute: "Travel Blog | My Quick Trippers" },
       robots: { index: false, follow: false },
     };
   }
 
-  const blog = blogFor(slug);
-  if (!blog) return { title: { absolute: "Travel Blog | My Quick Trippers" } };
-
-  const image = blog.image || getBlogImage(slug);
-  const contentText = blog.snippet;
+  const image = post.image.startsWith("http") ? post.image : `${siteConfig.domain}${post.image}`;
 
   return {
-    title: { absolute: `${blog.title} | My Quick Trippers` },
-    description: contentText,
+    title: { absolute: `${post.title} | My Quick Trippers` },
+    description: post.snippet,
     alternates: {
       canonical: `${siteConfig.domain}/blog/${slug}`,
     },
     openGraph: {
-      title: blog.title,
-      description: contentText,
+      title: post.title,
+      description: post.snippet,
       url: `${siteConfig.domain}/blog/${slug}`,
       type: 'article',
-      images: [{ url: `${siteConfig.domain}${image}`, width: 1200, height: 630, alt: blog.title }],
+      images: [{ url: image, width: 1200, height: 630, alt: post.title }],
     },
     twitter: {
       card: 'summary_large_image',
-      title: blog.title,
-      description: contentText,
-      images: [`${siteConfig.domain}${image}`],
+      title: post.title,
+      description: post.snippet,
+      images: [image],
     }
   };
 }
@@ -116,39 +235,25 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const resolvedParams = await params;
   const slug = resolvedParams.slug.toLowerCase();
 
-  const status = getBlogSlugStatus(slug);
-  if (status !== "live") {
+  const post = await resolvePost(slug);
+  if (!post) {
     // "gone" slugs are intercepted upstream by the proxy with a real
-    // HTTP 410; "missing" slugs were never real. Either way this render
-    // path must not serve content — fall back to the 404 page.
+    // HTTP 410; "missing" slugs were never real (or are unpublished CMS
+    // posts). Either way this render path must not serve content —
+    // fall back to the 404 page.
     notFound();
   }
 
-  const blog = blogFor(slug);
-  if (!blog) {
-    notFound();
-  }
-
-  // Determine reading time. Prefer the editorially counted value when it
-  // exists so the post page matches the Recent Posts sidebar; fall back to
-  // a word-count estimate for legacy posts.
-  const factoryContent = getBlogPostContent(slug);
-  const editorialBlocks = factoryContent ?? getEditorialBlocks(blog);
-  const contentText = editorialBlocks.filter((block) => block.type === 'p').map((block) => block.text || '').join(' ');
-  const wordCount = contentText.split(/\s+/).filter(Boolean).length;
-  const readingTime = blog.readingTime ?? Math.max(1, Math.ceil(wordCount / 200));
-  const image = blog.image || getBlogImage(slug);
   // Visible publish date: legacy posts without a stored date fall back to the
   // same default used in the JSON-LD so the meta line always shows a date.
-  const publishedDate = blog.publishedAt ?? "2026-09-21";
-  const publishedLabel = new Date(publishedDate).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" });
+  const publishedLabel = new Date(post.publishedAt).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" });
 
   // Related posts are ranked by the same category/tag taxonomy used by search.
   const currentWords = new Set(
-    `${blog.title} ${blog.category} ${blog.tags.join(' ')}`.toLowerCase().replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter((w: string) => w.length > 3)
+    `${post.title} ${post.category} ${post.tags.join(' ')}`.toLowerCase().replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter((w: string) => w.length > 3)
   );
   const related = ALL_BLOGS
-    .filter((candidate) => candidate.slug !== slug)
+    .filter((candidate) => candidate.slug !== post.slug)
     .map((candidate) => {
       const words = new Set(
         `${candidate.title} ${candidate.category} ${candidate.tags.join(' ')}`.toLowerCase().replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter((w: string) => w.length > 3)
@@ -167,9 +272,15 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": siteConfig.domain },
       { "@type": "ListItem", "position": 2, "name": "Blog", "item": `${siteConfig.domain}/blog` },
-      { "@type": "ListItem", "position": 3, "name": blog.title, "item": `${siteConfig.domain}/blog/${slug}` },
+      { "@type": "ListItem", "position": 3, "name": post.title, "item": `${siteConfig.domain}/blog/${slug}` },
     ],
   };
+
+  const contentText = post.blocks
+    .filter((block) => block.type === 'p')
+    .map((block) => block.text || '')
+    .join(' ');
+  const jsonLdImage = post.image.startsWith("http") ? post.image : `${siteConfig.domain}${post.image}`;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -178,8 +289,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       "@type": "WebPage",
       "@id": `${siteConfig.domain}/blog/${slug}`
     },
-    "headline": blog.title,
-    "image": `${siteConfig.domain}${image}`,
+    "headline": post.title,
+    "image": jsonLdImage,
     "author": {
       "@type": "Organization",
       "name": siteConfig.name
@@ -192,22 +303,22 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         "url": `${siteConfig.domain}/logo/mqt-india-logo.png`
       }
     },
-    "datePublished": blog.publishedAt ?? "2026-09-21",
-    "dateModified": blog.publishedAt ?? "2026-09-21",
-    "description": contentText.substring(0, 200)
+    "datePublished": post.publishedAt,
+    "dateModified": post.publishedAt,
+    "description": contentText.substring(0, 200) || post.snippet
   };
 
   // FAQ rich snippet: derive Q&A pairs from a trailing "Frequently Asked
   // Questions" section (h2 followed by h3 question + p answer pairs).
   const faqPairs: Array<{ question: string; answer: string }> = (() => {
-    const idx = editorialBlocks.findIndex(
+    const idx = post.blocks.findIndex(
       (b) => b.type === "h2" && /frequently asked questions/i.test(b.text || "")
     );
     if (idx === -1) return [];
     const pairs: Array<{ question: string; answer: string }> = [];
     let current: { question: string; answer: string } | null = null;
-    for (let i = idx + 1; i < editorialBlocks.length; i++) {
-      const b = editorialBlocks[i];
+    for (let i = idx + 1; i < post.blocks.length; i++) {
+      const b = post.blocks[i];
       if (b.type === "h2") break;
       if (b.type === "h3") {
         if (current) pairs.push(current);
@@ -245,13 +356,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <ChevronRight className="w-3 h-3 mx-1 opacity-70" />
           <Link href="/blog" className="hover:text-legacy-orange">Blog</Link>
           <ChevronRight className="w-3 h-3 mx-1 opacity-70" />
-          <span className="text-legacy-orange truncate">{blog.title}</span>
+          <span className="text-legacy-orange truncate">{post.title}</span>
         </div>
       </div>
       <div className="container mx-auto px-4 max-w-6xl mt-10">
       <div className="lg:grid lg:grid-cols-[1fr_320px] lg:gap-8">
       <div className="bg-white p-6 md:p-8 rounded shadow-sm border border-gray-200 mb-8 lg:mb-0">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">{blog.title}</h1>
+        <h1 className="text-3xl font-bold text-gray-800 mb-4">{post.title}</h1>
         <div className="flex flex-wrap items-center text-gray-500 text-sm mb-8 pb-4 border-b">
           <User className="w-4 h-4 mr-2" />
           <span>By My Quick Trippers</span>
@@ -259,13 +370,15 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <Calendar className="w-4 h-4 mr-2" />
           <span>Published {publishedLabel}</span>
           <span className="mx-2">•</span>
-          <span>{readingTime} min read</span>
+          <span>{post.readingTime} min read</span>
         </div>
         <div className="relative w-full h-[400px] mb-8 rounded overflow-hidden bg-gray-200">
-           <Image src={getBlogImage(slug)} alt={blog.title} fill sizes="(max-width: 768px) 100vw, 800px" className="object-cover" priority placeholder={IMAGE_SKELETON} />
+           <Image src={post.coverImage} alt={post.title} fill sizes="(max-width: 768px) 100vw, 800px" className="object-cover" priority placeholder={IMAGE_SKELETON} />
         </div>
-        <RenderContent content={editorialBlocks} />
-        <BlogShareButtons title={blog.title} url={`${siteConfig.domain}/blog/${slug}`} />
+        <RenderContent content={post.blocks} />
+        <BlogShareButtons title={post.title} url={`${siteConfig.domain}/blog/${slug}`} />
+
+        <BlogEngagement key={slug} slug={slug} />
 
         {/* Related posts (U24) — cross-links readers to more content instead of dead-ending */}
         {related.length > 0 && (
