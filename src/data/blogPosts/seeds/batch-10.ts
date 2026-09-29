@@ -8,9 +8,9 @@ export const BLOG_POST_SEEDS_BATCH_10: BlogPostSeed[] = [
     "image": "/images/blog/gokarna-beach-trek-coastal-hopping-guide.webp",
     "category": "Beaches & Backwaters",
     "tags": ["gokarna", "beach trek", "karnataka", "coastal trek", "paradise beach", "backpacking india"],
-    "readingTime": 7,
-    "wordCount": 1222,
-    "publishedAt": "2026-10-31T09:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1429,
+    "publishedAt": "2026-10-01T00:00:00+05:30",
     "targetKeyword": "gokarna beach trek guide"
   },
   {
@@ -20,9 +20,9 @@ export const BLOG_POST_SEEDS_BATCH_10: BlogPostSeed[] = [
     "image": "/images/blog/tarkarli-malvan-diving-sindhudurg-guide.webp",
     "category": "Beaches & Backwaters",
     "tags": ["tarkarli", "malvan", "scuba diving", "snorkelling", "konkan", "sindhudurg fort"],
-    "readingTime": 7,
-    "wordCount": 1225,
-    "publishedAt": "2026-11-01T09:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1420,
+    "publishedAt": "2026-10-01T06:00:00+05:30",
     "targetKeyword": "tarkarli scuba diving malvan travel guide"
   },
   {
@@ -32,9 +32,9 @@ export const BLOG_POST_SEEDS_BATCH_10: BlogPostSeed[] = [
     "image": "/images/blog/st-marys-island-udupi-day-trip.webp",
     "category": "Beaches & Backwaters",
     "tags": ["st marys island", "udupi", "malpe", "karnataka", "day trip", "basalt columns"],
-    "readingTime": 7,
-    "wordCount": 1211,
-    "publishedAt": "2026-11-02T09:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1406,
+    "publishedAt": "2026-10-01T06:00:00+05:30",
     "targetKeyword": "st marys island udupi day trip ferry"
   },
   {
@@ -44,9 +44,9 @@ export const BLOG_POST_SEEDS_BATCH_10: BlogPostSeed[] = [
     "image": "/images/blog/swaraj-dweep-havelock-ferry-planning-guide.webp",
     "category": "Beaches & Backwaters",
     "tags": ["havelock", "swaraj dweep", "andaman", "ferry booking", "port blair", "neil island"],
-    "readingTime": 7,
-    "wordCount": 1256,
-    "publishedAt": "2026-11-03T09:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1447,
+    "publishedAt": "2026-10-01T06:00:00+05:30",
     "targetKeyword": "swaraj dweep havelock ferry booking guide"
   },
   {
@@ -56,9 +56,9 @@ export const BLOG_POST_SEEDS_BATCH_10: BlogPostSeed[] = [
     "image": "/images/blog/lucknow-food-trail-morning-to-night.webp",
     "category": "Food & Cuisine",
     "tags": ["lucknow", "awadhi food", "kebabs", "biryani", "chaat", "uttar pradesh", "food trail"],
-    "readingTime": 7,
-    "wordCount": 1247,
-    "publishedAt": "2026-11-04T09:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1479,
+    "publishedAt": "2026-10-01T06:00:00+05:30",
     "targetKeyword": "lucknow food trail one day itinerary"
   },
   {
@@ -68,9 +68,9 @@ export const BLOG_POST_SEEDS_BATCH_10: BlogPostSeed[] = [
     "image": "/images/blog/hyderabad-48-hour-food-guide.webp",
     "category": "Food & Cuisine",
     "tags": ["hyderabad", "biryani", "irani chai", "haleem", "telangana", "food guide"],
-    "readingTime": 7,
-    "wordCount": 1222,
-    "publishedAt": "2026-11-05T09:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1405,
+    "publishedAt": "2026-10-01T06:00:00+05:30",
     "targetKeyword": "hyderabad food guide 2 days biryani"
   },
   {
@@ -80,9 +80,9 @@ export const BLOG_POST_SEEDS_BATCH_10: BlogPostSeed[] = [
     "image": "/images/blog/amritsar-winter-food-trail.webp",
     "category": "Food & Cuisine",
     "tags": ["amritsar", "punjabi food", "golden temple", "kulcha", "langar", "winter travel"],
-    "readingTime": 7,
-    "wordCount": 1207,
-    "publishedAt": "2026-11-06T09:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1432,
+    "publishedAt": "2026-10-01T06:00:00+05:30",
     "targetKeyword": "amritsar food trail winter"
   },
   {
@@ -92,9 +92,9 @@ export const BLOG_POST_SEEDS_BATCH_10: BlogPostSeed[] = [
     "image": "/images/blog/indore-sarafa-night-food-itinerary.webp",
     "category": "Food & Cuisine",
     "tags": ["indore", "sarafa", "night market", "street food", "madhya pradesh", "poha jalebi"],
-    "readingTime": 6,
-    "wordCount": 1200,
-    "publishedAt": "2026-11-07T09:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1425,
+    "publishedAt": "2026-10-01T06:00:00+05:30",
     "targetKeyword": "indore sarafa night food itinerary"
   },
   {
@@ -104,9 +104,9 @@ export const BLOG_POST_SEEDS_BATCH_10: BlogPostSeed[] = [
     "image": "/images/blog/kolkata-park-street-food-walk.webp",
     "category": "Food & Cuisine",
     "tags": ["kolkata", "park street", "kathi roll", "flurys", "street food", "food walk"],
-    "readingTime": 7,
-    "wordCount": 1218,
-    "publishedAt": "2026-11-08T09:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1406,
+    "publishedAt": "2026-10-01T06:00:00+05:30",
     "targetKeyword": "kolkata park street food walk"
   },
   {
@@ -116,9 +116,9 @@ export const BLOG_POST_SEEDS_BATCH_10: BlogPostSeed[] = [
     "image": "/images/blog/varanasi-food-day-guide.webp",
     "category": "Food & Cuisine",
     "tags": ["varanasi", "banaras", "street food", "kachori", "lassi", "chaat", "uttar pradesh"],
-    "readingTime": 7,
-    "wordCount": 1209,
-    "publishedAt": "2026-11-09T09:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1430,
+    "publishedAt": "2026-10-01T06:00:00+05:30",
     "targetKeyword": "varanasi food guide one day"
   }
 ];

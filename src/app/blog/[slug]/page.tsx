@@ -225,6 +225,36 @@ function RenderContent({ content }: { content: ContentBlock[] }) {
             ))}
           </ol>
         );
+        if (block.type === 'takeaways') return (
+          <aside key={idx} className="not-prose my-6 rounded-xl border border-amber-200 bg-amber-50 p-6">
+            <p className="text-sm font-bold uppercase tracking-widest text-amber-800 mb-3">Key takeaways</p>
+            <ul className="space-y-2.5">
+              {(block.items || []).map((item, i) => (
+                <li key={i} className="flex gap-2.5 text-gray-800 leading-relaxed">
+                  <span aria-hidden="true" className="mt-0.5 font-bold text-amber-600">✓</span>
+                  <span><AutoLinker text={item} /></span>
+                </li>
+              ))}
+            </ul>
+          </aside>
+        );
+        if (block.type === 'pullquote') return (
+          <blockquote key={idx} className="not-prose my-8 border-l-4 border-amber-500 pl-6 py-1">
+            <p className="text-2xl font-medium italic leading-snug text-gray-900">&ldquo;{block.text}&rdquo;</p>
+          </blockquote>
+        );
+        if (block.type === 'sources') return (
+          <div key={idx} className="not-prose mt-6 rounded-xl border border-gray-200 bg-gray-50 p-6">
+            <ul className="space-y-2.5">
+              {(block.items || []).map((item, i) => (
+                <li key={i} className="flex gap-2.5 text-gray-700 leading-relaxed">
+                  <span aria-hidden="true" className="font-bold text-gray-400">{i + 1}.</span>
+                  <span><AutoLinker text={item} /></span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        );
         return null;
       })}
     </div>

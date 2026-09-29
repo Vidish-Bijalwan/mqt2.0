@@ -8,9 +8,9 @@ export const BLOG_POST_SEEDS_BATCH_7: BlogPostSeed[] = [
     "image": "/images/blog/diwali-2026-train-booking-special-trains-strategy.webp",
     "category": "Travel Planning",
     "tags": ["diwali train booking", "chhath special trains", "irctc tatkal", "festival trains india", "train ticket booking tips", "diwali 2026 travel", "indian railways"],
-    "readingTime": 8,
-    "wordCount": 1431,
-    "publishedAt": "2026-10-01T09:00:00+05:30",
+    "readingTime": 9,
+    "wordCount": 1621,
+    "publishedAt": "2026-09-30T06:00:00+05:30",
     "targetKeyword": "diwali 2026 train booking special trains"
   },
   {
@@ -20,9 +20,9 @@ export const BLOG_POST_SEEDS_BATCH_7: BlogPostSeed[] = [
     "image": "/images/blog/ayodhya-deepotsav-2026-visitor-guide.webp",
     "category": "Culture & Heritage",
     "tags": ["ayodhya deepotsav", "deepotsav 2026 dates", "ram ki paidi", "ayodhya travel guide", "diwali ayodhya", "ram mandir darshan", "saryu ghat"],
-    "readingTime": 7,
-    "wordCount": 1228,
-    "publishedAt": "2026-10-02T09:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1405,
+    "publishedAt": "2026-09-30T12:00:00+05:30",
     "targetKeyword": "ayodhya deepotsav 2026 dates"
   },
   {
@@ -32,9 +32,9 @@ export const BLOG_POST_SEEDS_BATCH_7: BlogPostSeed[] = [
     "image": "/images/blog/post-monsoon-hill-road-safety-driving-guide.webp",
     "category": "Travel Planning",
     "tags": ["hill road safety", "post monsoon driving tips", "fog driving india", "landslide safety driving", "himalayan road trip", "october hill stations road trip", "driving in hills"],
-    "readingTime": 7,
-    "wordCount": 1256,
-    "publishedAt": "2026-10-03T09:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1447,
+    "publishedAt": "2026-09-30T12:00:00+05:30",
     "targetKeyword": "hill road safety monsoon driving tips india"
   },
   {
@@ -44,9 +44,9 @@ export const BLOG_POST_SEEDS_BATCH_7: BlogPostSeed[] = [
     "image": "/images/blog/sandakphu-phalut-autumn-trek-guide.webp",
     "category": "Mountains & Adventure",
     "tags": ["sandakphu phalut trek", "sandakphu itinerary october", "singalila national park", "sandakphu trek permits", "darjeeling trek", "phalut trek guide", "autumn trek india"],
-    "readingTime": 7,
-    "wordCount": 1210,
-    "publishedAt": "2026-10-04T09:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1430,
+    "publishedAt": "2026-09-30T12:00:00+05:30",
     "targetKeyword": "sandakphu phalut trek itinerary october"
   },
   {
@@ -57,8 +57,8 @@ export const BLOG_POST_SEEDS_BATCH_7: BlogPostSeed[] = [
     "category": "Destination Guides",
     "tags": ["pachmarhi itinerary", "pachmarhi 2 day trip", "bee falls pachmarhi", "dhupgarh sunset", "pachmarhi family trip", "satpura hill station", "things to do in pachmarhi"],
     "readingTime": 7,
-    "wordCount": 1216,
-    "publishedAt": "2026-10-05T09:00:00+05:30",
+    "wordCount": 1384,
+    "publishedAt": "2026-09-30T12:00:00+05:30",
     "targetKeyword": "pachmarhi 2 day itinerary family"
   },
   {
@@ -68,9 +68,9 @@ export const BLOG_POST_SEEDS_BATCH_7: BlogPostSeed[] = [
     "image": "/images/blog/ujjain-mahakal-2-day-itinerary-bhasma-aarti.webp",
     "category": "Pilgrimage",
     "tags": ["ujjain itinerary", "mahakal bhasma aarti", "ujjain 2 day trip", "mahakaleshwar temple", "kal bhairav ujjain", "harsiddhi temple", "ujjain darshan guide"],
-    "readingTime": 7,
-    "wordCount": 1225,
-    "publishedAt": "2026-10-06T09:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1427,
+    "publishedAt": "2026-09-30T12:00:00+05:30",
     "targetKeyword": "ujjain 2 day itinerary mahakal bhasma aarti"
   },
   {
@@ -81,8 +81,8 @@ export const BLOG_POST_SEEDS_BATCH_7: BlogPostSeed[] = [
     "category": "Destination Guides",
     "tags": ["kashmir october", "chinar trees kashmir", "pampore saffron", "kashmir autumn", "srinagar pahalgam", "saffron harvest kashmir", "kashmir in autumn"],
     "readingTime": 7,
-    "wordCount": 1215,
-    "publishedAt": "2026-10-07T09:00:00+05:30",
+    "wordCount": 1385,
+    "publishedAt": "2026-09-30T12:00:00+05:30",
     "targetKeyword": "kashmir october chinar saffron pampore travel"
   },
   {
@@ -92,9 +92,9 @@ export const BLOG_POST_SEEDS_BATCH_7: BlogPostSeed[] = [
     "image": "/images/blog/munnar-neelakurinji-october-2026-live-status-guide.webp",
     "category": "Destination Guides",
     "tags": ["neelakurinji 2026", "munnar neelakurinji", "chokramudi bloom", "kurinji garden timings", "munnar october", "neelakurinji bloom status", "kerala travel"],
-    "readingTime": 7,
-    "wordCount": 1242,
-    "publishedAt": "2026-10-08T09:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1436,
+    "publishedAt": "2026-09-30T12:00:00+05:30",
     "targetKeyword": "neelakurinji 2026 munnar bloom status october"
   },
   {
@@ -105,8 +105,8 @@ export const BLOG_POST_SEEDS_BATCH_7: BlogPostSeed[] = [
     "category": "Destination Guides",
     "tags": ["chikmagalur itinerary", "chikmagalur 3 day trip", "hebbe falls", "mullayanagiri", "baba budangiri", "chikmagalur coffee estates", "weekend trip from bangalore"],
     "readingTime": 7,
-    "wordCount": 1208,
-    "publishedAt": "2026-10-09T09:00:00+05:30",
+    "wordCount": 1389,
+    "publishedAt": "2026-09-30T12:00:00+05:30",
     "targetKeyword": "chikmagalur 3 day itinerary post monsoon"
   },
   {
@@ -117,8 +117,8 @@ export const BLOG_POST_SEEDS_BATCH_7: BlogPostSeed[] = [
     "category": "Destination Guides",
     "tags": ["analogue travel", "digital detox india", "phone free travel", "off grid travel india", "slow travel india", "travel without phone", "jolo travel"],
     "readingTime": 7,
-    "wordCount": 1205,
-    "publishedAt": "2026-10-10T09:00:00+05:30",
+    "wordCount": 1364,
+    "publishedAt": "2026-09-30T12:00:00+05:30",
     "targetKeyword": "analogue travel india digital detox itinerary"
   }
 ];

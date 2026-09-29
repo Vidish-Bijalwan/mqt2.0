@@ -9,8 +9,8 @@ export const BLOG_POST_SEEDS_BATCH_9: BlogPostSeed[] = [
     "category": "Pilgrimage",
     "tags": ["Nalanda", "Rajgir", "Bodh Gaya", "Bihar travel", "Buddhist circuit", "day trips"],
     "readingTime": 8,
-    "wordCount": 1411,
-    "publishedAt": "2026-10-21T09:00:00+05:30",
+    "wordCount": 1576,
+    "publishedAt": "2026-09-30T18:00:00+05:30",
     "targetKeyword": "nalanda rajgir day trip from bodh gaya"
   },
   {
@@ -20,9 +20,9 @@ export const BLOG_POST_SEEDS_BATCH_9: BlogPostSeed[] = [
     "image": "/images/blog/tawang-6-day-monastery-sela-pass-bumla-itinerary.webp",
     "category": "Mountains & Adventure",
     "tags": ["Tawang", "Arunachal Pradesh", "Sela Pass", "Bumla Pass", "Madhuri Lake", "Himalaya itinerary"],
-    "readingTime": 8,
-    "wordCount": 1583,
-    "publishedAt": "2026-10-22T09:00:00+05:30",
+    "readingTime": 9,
+    "wordCount": 1780,
+    "publishedAt": "2026-10-01T00:00:00+05:30",
     "targetKeyword": "tawang itinerary 6 days sela pass bumla"
   },
   {
@@ -32,9 +32,9 @@ export const BLOG_POST_SEEDS_BATCH_9: BlogPostSeed[] = [
     "image": "/images/blog/mechuka-valley-arunachal-travel-guide.webp",
     "category": "Mountains & Adventure",
     "tags": ["Mechuka", "Arunachal Pradesh", "offbeat Himalaya", "how to reach", "homestays", "ILP"],
-    "readingTime": 7,
-    "wordCount": 1258,
-    "publishedAt": "2026-10-23T09:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1423,
+    "publishedAt": "2026-10-01T00:00:00+05:30",
     "targetKeyword": "mechuka travel guide how to reach best time"
   },
   {
@@ -44,9 +44,9 @@ export const BLOG_POST_SEEDS_BATCH_9: BlogPostSeed[] = [
     "image": "/images/blog/pondicherry-2-day-itinerary.webp",
     "category": "Destination Guides",
     "tags": ["Pondicherry", "Puducherry", "Auroville", "White Town", "weekend trips", "itinerary"],
-    "readingTime": 7,
-    "wordCount": 1349,
-    "publishedAt": "2026-10-24T09:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1543,
+    "publishedAt": "2026-10-01T00:00:00+05:30",
     "targetKeyword": "pondicherry 2 day itinerary"
   },
   {
@@ -56,9 +56,9 @@ export const BLOG_POST_SEEDS_BATCH_9: BlogPostSeed[] = [
     "image": "/images/blog/kanha-tiger-safari-booking-guide.webp",
     "category": "Wildlife",
     "tags": ["Kanha", "tiger safari", "Madhya Pradesh", "safari booking", "wildlife", "winter travel"],
-    "readingTime": 7,
-    "wordCount": 1296,
-    "publishedAt": "2026-10-25T09:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1491,
+    "publishedAt": "2026-10-01T00:00:00+05:30",
     "targetKeyword": "kanha safari booking guide zones"
   },
   {
@@ -69,8 +69,8 @@ export const BLOG_POST_SEEDS_BATCH_9: BlogPostSeed[] = [
     "category": "Wildlife",
     "tags": ["Pench", "tiger safari", "Madhya Pradesh", "Maharashtra", "safari booking", "Jungle Book"],
     "readingTime": 7,
-    "wordCount": 1218,
-    "publishedAt": "2026-10-26T09:00:00+05:30",
+    "wordCount": 1380,
+    "publishedAt": "2026-10-01T00:00:00+05:30",
     "targetKeyword": "pench safari booking mp maharashtra gates"
   },
   {
@@ -80,9 +80,9 @@ export const BLOG_POST_SEEDS_BATCH_9: BlogPostSeed[] = [
     "image": "/images/blog/gir-jungle-trail-vs-devalia-lion-safari.webp",
     "category": "Wildlife",
     "tags": ["Gir", "Asiatic lion", "Gujarat", "lion safari", "safari booking", "Devalia"],
-    "readingTime": 7,
-    "wordCount": 1366,
-    "publishedAt": "2026-10-27T09:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1555,
+    "publishedAt": "2026-10-01T00:00:00+05:30",
     "targetKeyword": "gir jungle trail vs devalia safari booking"
   },
   {
@@ -92,9 +92,9 @@ export const BLOG_POST_SEEDS_BATCH_9: BlogPostSeed[] = [
     "image": "/images/blog/keoladeo-bharatpur-winter-birding-guide.webp",
     "category": "Wildlife",
     "tags": ["Keoladeo", "Bharatpur", "birding", "Rajasthan", "migratory birds", "winter travel"],
-    "readingTime": 7,
-    "wordCount": 1286,
-    "publishedAt": "2026-10-28T09:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1472,
+    "publishedAt": "2026-10-01T00:00:00+05:30",
     "targetKeyword": "keoladeo bharatpur birding winter guide"
   },
   {
@@ -104,9 +104,9 @@ export const BLOG_POST_SEEDS_BATCH_9: BlogPostSeed[] = [
     "image": "/images/blog/satpura-day-safari-formats-guide.webp",
     "category": "Wildlife",
     "tags": ["Satpura", "tiger safari", "Madhya Pradesh", "safari booking", "night safari ban", "walking safari"],
-    "readingTime": 7,
-    "wordCount": 1271,
-    "publishedAt": "2026-10-29T09:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1460,
+    "publishedAt": "2026-10-01T00:00:00+05:30",
     "targetKeyword": "satpura safari types day safari booking"
   },
   {
@@ -116,9 +116,9 @@ export const BLOG_POST_SEEDS_BATCH_9: BlogPostSeed[] = [
     "image": "/images/blog/diu-island-weekend-guide.webp",
     "category": "Beaches & Backwaters",
     "tags": ["Diu", "beaches", "weekend trips", "Gujarat", "Portuguese heritage", "forts"],
-    "readingTime": 7,
-    "wordCount": 1221,
-    "publishedAt": "2026-10-30T09:00:00+05:30",
+    "readingTime": 8,
+    "wordCount": 1407,
+    "publishedAt": "2026-10-01T00:00:00+05:30",
     "targetKeyword": "diu island weekend trip guide"
   }
 ];
