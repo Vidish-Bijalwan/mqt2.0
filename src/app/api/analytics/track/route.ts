@@ -1,8 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import {
   browserFromUserAgent,
+  countRecentEventsByIpHash,
   deviceFromUserAgent,
   getDb,
+  ipHashFor,
   isBotUserAgent,
   recordEvent,
   referrerHost,
@@ -14,9 +16,13 @@ export const dynamic = "force-dynamic";
 
 /* In-memory rate limit: 60 beacon posts per minute per IP. The beacon fires
  * once per page load, so honest traffic never trips this; it only blunts
- * floods from a single source. */
+ * floods from a single source.
+ * DB-backed rate limit: 1000 events per day per IP hash (added below).
+ * In-memory is per-instance on Vercel serverless, so the DB cap is the real
+ * flood protection. */
 const RATE_LIMIT = 60;
 const WINDOW_MS = 60_000;
+const DAILY_CAP = 1000;
 const hits = new Map<string, number[]>();
 
 function isRateLimited(ip: string): boolean {
@@ -42,7 +48,8 @@ function cleanStr(value: unknown, max: number): string | null {
  * Cookieless first-party pageview beacon. Always 204 (never break the page):
  *   - respects Do-Not-Track (header checked server-side too)
  *   - skips /admin/* paths and obvious bot user-agents
- *   - 60/min/IP in-memory rate limit
+ *   - 60/min/IP in-memory rate limit + 1000/day/IP DB-backed cap
+ *     (daily salted IP hash; raw IP is never stored)
  *   - raw IP is never stored; session_hash rotates daily
  * The DB layer degrades to a no-op when DATABASE_URL is missing, so this
  * stays 204 in every environment.
@@ -60,6 +67,14 @@ export async function POST(req: NextRequest) {
 
   const ip = getClientIp(req);
   if (isRateLimited(ip)) return noContent();
+
+  // DB-backed daily cap: survives Vercel serverless instance resets, unlike
+  // the in-memory limiter above. Counted before the body parse so a flood of
+  // malformed posts still counts against the cap.
+  const ipHash = ipHashFor(ip);
+  if (ipHash && (await countRecentEventsByIpHash(ipHash)) >= DAILY_CAP) {
+    return noContent();
+  }
 
   let body: unknown;
   try {
@@ -88,6 +103,7 @@ export async function POST(req: NextRequest) {
       browser: browserFromUserAgent(ua),
       country: req.headers.get("x-vercel-ip-country")?.slice(0, 2) ?? null,
       sessionHash: sessionHashFor(ip, ua),
+      ipHash: ipHash || null,
     });
   } catch {
     // Never fail the beacon on a DB error.

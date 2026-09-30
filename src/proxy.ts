@@ -154,7 +154,7 @@ const DEAD_TARGET_FIXES: Record<string, string> = {
 // than a 404.
 // Live API routes — never 410 these; they are real route handlers under
 // src/app/api/. /api/enquiries added for lead capture (PR #37).
-// /api/analytics/* added for first-party cookieless analytics (PR #57).
+// /api/analytics/* added for first-party cookieless analytics (PR #58).
 const LIVE_API_ROUTES = new Set(["/api/fx-rates", "/api/display-currency", "/api/enquiries"]);
 const LIVE_API_PREFIXES = ["/api/blog/", "/api/admin/", "/api/analytics/"];
 // Live admin pages (the blog creator at /admin/blog/new, the analytics
@@ -330,8 +330,9 @@ export function proxy(request: NextRequest) {
 export const config = {
   // Only run the proxy on non-internal routes to save execution time.
   // Note: /api/:path* is intentionally NOT excluded — the live API routes
-  // (the two currency routes + the blog engagement/CMS routes under
-  // /api/blog/* and /api/admin/*) are allowlisted in isGonePath above;
+  // (the currency routes, lead capture, blog engagement/CMS, and analytics
+  // under /api/fx-rates, /api/display-currency, /api/enquiries, /api/blog/*,
+  // /api/admin/*, and /api/analytics/*) are allowlisted in isGonePath above;
   // every other /api/* hit is legacy residue and gets a 410.
   matcher: [
     '/((?!_next/static|_next/image|favicon.ico|images|logo|public).*)',
