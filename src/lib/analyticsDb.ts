@@ -56,6 +56,8 @@ export interface AnalyticsEventInput {
   browser: string | null;
   country: string | null;
   sessionHash: string;
+  /** Daily-rotating salted hash of the client IP (raw IP is never stored). */
+  ipHash: string | null;
 }
 
 export interface AnalyticsBucket {
@@ -135,6 +137,8 @@ const DDL_STATEMENTS: string[] = [
    )`,
   `CREATE INDEX IF NOT EXISTS analytics_events_ts_idx ON analytics_events (ts)`,
   `CREATE INDEX IF NOT EXISTS analytics_events_path_ts_idx ON analytics_events (path, ts)`,
+  `ALTER TABLE analytics_events ADD COLUMN IF NOT EXISTS ip_hash text`,
+  `CREATE INDEX IF NOT EXISTS analytics_events_ip_hash_ts_idx ON analytics_events (ip_hash, ts DESC)`,
 ];
 
 let schemaPromise: Promise<void> | null = null;
@@ -166,6 +170,21 @@ export function sessionHashFor(ip: string, userAgent: string): string {
   const salt = process.env.ANALYTICS_SALT ?? "mqt-analytics-salt";
   return createHash("sha256")
     .update(`${ip}|${userAgent}|${date}|${salt}`, "utf8")
+    .digest("hex");
+}
+
+/**
+ * Daily-rotating salted hash of the client IP only (no UA mixed in, unlike
+ * session_hash). Raw IP is never stored; this backs the per-IP daily cap on
+ * the track endpoint so a distributed flood can't grow the events table.
+ * Empty for unknown IPs ("") so the cap never groups unidentifiable clients.
+ */
+export function ipHashFor(ip: string): string {
+  if (!ip) return "";
+  const date = new Date().toISOString().slice(0, 10); // UTC date
+  const salt = process.env.ANALYTICS_SALT ?? "mqt-analytics-salt";
+  return createHash("sha256")
+    .update(`${ip}|${date}|${salt}`, "utf8")
     .digest("hex");
 }
 
@@ -216,10 +235,30 @@ export async function recordEvent(input: AnalyticsEventInput): Promise<void> {
   await ensureSchema();
   await sql`
     INSERT INTO analytics_events
-      (path, referrer, utm_source, utm_medium, utm_campaign, device, browser, country, session_hash)
+      (path, referrer, utm_source, utm_medium, utm_campaign, device, browser, country, session_hash, ip_hash)
     VALUES
       (${input.path}, ${input.referrer}, ${input.utmSource}, ${input.utmMedium},
-       ${input.utmCampaign}, ${input.device}, ${input.browser}, ${input.country}, ${input.sessionHash})`;
+       ${input.utmCampaign}, ${input.device}, ${input.browser}, ${input.country}, ${input.sessionHash}, ${input.ipHash})`;
+}
+
+/**
+ * Anti-spam: how many events this IP hash recorded in the trailing window.
+ * Backs the per-IP daily cap in the track route. Empty hashes return 0 so
+ * the cap never groups unidentifiable clients together.
+ */
+export async function countRecentEventsByIpHash(
+  ipHash: string,
+  windowHours = 24,
+): Promise<number> {
+  const sql = getDb();
+  if (!sql || !ipHash) return 0;
+  await ensureSchema();
+  const rows = await sql<{ n: number }[]>`
+    SELECT COUNT(*)::int AS n
+    FROM analytics_events
+    WHERE ip_hash = ${ipHash}
+      AND ts > now() - make_interval(hours => ${windowHours})`;
+  return rows[0]?.n ?? 0;
 }
 
 /* ------------------------------------------------------------------ */
