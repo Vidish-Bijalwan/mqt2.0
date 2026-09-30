@@ -30,8 +30,14 @@ CREATE TABLE IF NOT EXISTS enquiries (
 
   -- Ops
   status TEXT NOT NULL DEFAULT 'new',           -- new | contacted | booked | spam | closed
-  whatsapp_notified BOOLEAN NOT NULL DEFAULT FALSE
+  whatsapp_notified BOOLEAN NOT NULL DEFAULT FALSE,
+
+  -- Anti-spam: daily-rotating salted IP hash backing the per-IP daily cap
+  -- (raw IPs are never stored). Added 2026-10-01; also applied idempotently
+  -- at runtime by src/lib/leadStore.ts ensureSchema().
+  ip_hash TEXT
 );
 
 CREATE INDEX IF NOT EXISTS idx_enquiries_created_at ON enquiries (created_at DESC);
 CREATE INDEX IF NOT EXISTS idx_enquiries_status ON enquiries (status);
+CREATE INDEX IF NOT EXISTS idx_enquiries_ip_hash_created ON enquiries (ip_hash, created_at DESC);
