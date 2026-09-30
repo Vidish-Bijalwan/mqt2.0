@@ -170,7 +170,7 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
               />
             )}
 
-            <PackageEnquirySection pkgTitle={pkg.title} />
+            <PackageEnquirySection pkgTitle={pkg.title} pkgSlug={pkg.slug} />
           </div>
 
           <PackageSidebar vm={vm} />

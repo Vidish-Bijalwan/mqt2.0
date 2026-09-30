@@ -5,16 +5,18 @@ import { siteConfig } from "@/data/siteConfig";
 import { buildEnquiryWhatsappUrl } from "@/utils/enquiry";
 import { trackEvent, getUtmProps } from "@/lib/analytics";
 
-export default function EnquiryForm({ pkgName = "", destination, embedded = false }: { pkgName?: string; destination?: string; embedded?: boolean }) {
+export default function EnquiryForm({ pkgName = "", pkgSlug, destination, embedded = false }: { pkgName?: string; pkgSlug?: string; destination?: string; embedded?: boolean }) {
   // `destination` is retained for campaign pages authored before `pkgName`
   // became the shared form API.
   const enquiryName = pkgName || destination || "";
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [preparedUrl, setPreparedUrl] = useState("");
   const [phoneError, setPhoneError] = useState("");
+  const [nameError, setNameError] = useState("");
   const [refId, setRefId] = useState<string | null>(null);
   const [fallbackNotice, setFallbackNotice] = useState(false);
   const successHeadingRef = useRef<HTMLHeadingElement>(null);
+  const nameInputRef = useRef<HTMLInputElement>(null);
   const phoneInputRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
   const startFiredRef = useRef(false);
@@ -124,9 +126,12 @@ export default function EnquiryForm({ pkgName = "", destination, embedded = fals
       message: String(data.get("message") || ""),
     };
     if (details.name.length < 2) {
+      setNameError("Please enter your full name (at least 2 characters).");
+      nameInputRef.current?.focus();
       setStatus("idle");
       return;
     }
+    setNameError("");
 
     // Submit to the real lead-capture API FIRST. The team is notified
     // server-side; the visitor still gets the WhatsApp thread to continue
@@ -142,6 +147,7 @@ export default function EnquiryForm({ pkgName = "", destination, embedded = fals
           phone: details.phone,
           email: details.email || null,
           packageName: details.packageName || null,
+          packageSlug: pkgSlug || null,
           travelDate: details.travelDate || null,
           travellers: details.travellers || null,
           message: details.message || null,
@@ -249,7 +255,10 @@ export default function EnquiryForm({ pkgName = "", destination, embedded = fals
         </div>
         <div>
           <label htmlFor="enquiry-name" className="mb-1.5 block text-sm font-bold text-brand-primary">Full Name *</label>
-            <input id="enquiry-name" name="name" required autoComplete="name" enterKeyHint="next" type="text" className="min-h-13 w-full rounded-xl border border-line bg-surface-card px-4 text-base outline-none transition focus:border-brand-secondary focus:ring-2 focus:ring-brand-secondary/20" placeholder="Enter your name" />
+            <input ref={nameInputRef} id="enquiry-name" name="name" required autoComplete="name" enterKeyHint="next" type="text" aria-describedby="enquiry-name-error" aria-invalid={nameError ? true : undefined} onChange={() => nameError && setNameError("")} className="min-h-13 w-full rounded-xl border border-line bg-surface-card px-4 text-base outline-none transition focus:border-brand-secondary focus:ring-2 focus:ring-brand-secondary/20" placeholder="Enter your name" />
+            {nameError ? (
+              <p id="enquiry-name-error" role="alert" className="mt-1.5 text-xs font-semibold text-red-600">{nameError}</p>
+            ) : null}
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
