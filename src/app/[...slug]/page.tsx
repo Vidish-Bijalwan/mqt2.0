@@ -101,7 +101,7 @@ export default async function CatchAllPage({ params }: { params: Promise<{ slug:
            </div>
 
            <div className="relative h-[250px] w-full mb-8">
-             <Image src={blog.image || "/images/packages/kerala.png"} alt={blog.title} fill sizes="100vw" className="object-cover" priority placeholder={IMAGE_SKELETON} />
+             <Image src={blog.image || "/images/packages/kerala.jpg"} alt={blog.title} fill sizes="100vw" className="object-cover" priority placeholder={IMAGE_SKELETON} />
              <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center text-center px-4">
                 <h1 className="text-3xl md:text-5xl font-bold text-white capitalize">{blog.title}</h1>
              </div>
@@ -138,7 +138,7 @@ export default async function CatchAllPage({ params }: { params: Promise<{ slug:
            </div>
            
            <div className="relative h-[250px] w-full mb-8">
-             <Image src="/images/packages/kerala.png" alt={staticPage.title} fill sizes="100vw" className="object-cover" priority placeholder={IMAGE_SKELETON} />
+             <Image src="/images/packages/kerala.jpg" alt={staticPage.title} fill sizes="100vw" className="object-cover" priority placeholder={IMAGE_SKELETON} />
              <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center text-center px-4">
                 <h1 className="text-3xl md:text-5xl font-bold text-white capitalize">{staticPage.title}</h1>
              </div>

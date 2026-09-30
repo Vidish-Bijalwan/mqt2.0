@@ -80,7 +80,7 @@ export const experiences: Experience[] = [
     slug: "camping",
     name: "Camping",
     group: "Adventure",
-    image: "/images/packages/adventure-tour-packages.jpg",
+    image: "/images/packages/f5eeeb83abd6.jpg",
     tagline: "Sleep under a million stars",
     keywords: ["camping", "camps", "glamping", "tent", "camp"],
     description:
@@ -176,7 +176,7 @@ export const experiences: Experience[] = [
     slug: "corporate-tours",
     name: "Corporate Tours",
     group: "Corporate",
-    image: "/images/packages/5-star-hotels-in-bangalore.webp",
+    image: "/images/blog/tourist-places-in-bangalore.webp",
     tagline: "Offsites, retreats & team bonding",
     keywords: ["corporate", "business", "meeting", "team", "offsite", "retreat"],
     description:
@@ -224,7 +224,7 @@ export const experiences: Experience[] = [
     slug: "helicopter-tours",
     name: "Helicopter Tours",
     group: "Luxury",
-    image: "/images/packages/chardham-helicopter-yatra-faqs.webp",
+    image: "/images/blog/temples-in-india.webp",
     tagline: "Soar to sacred & scenic peaks",
     keywords: ["helicopter", "heli", "aerial", "chopper"],
     description:
@@ -512,7 +512,7 @@ export const experiences: Experience[] = [
     slug: "festival-tours",
     name: "Festival Tours",
     group: "Family",
-    image: "/images/packages/3-days-kumbh-mela-package.jpg",
+    image: "/images/packages/2c2a426cd7b1.jpg",
     tagline: "Celebrate India's grand festivals",
     keywords: ["festival", "kumbh", "mela", "celebration", "diwali", "holi", "puja"],
     description:
@@ -528,7 +528,7 @@ export const experiences: Experience[] = [
     slug: "monsoon-tours",
     name: "Monsoon Tours",
     group: "Nature",
-    image: "/images/packages/enchanting-kerala.webp",
+    image: "/images/packages/9259c97c7f25.webp",
     tagline: "Chase waterfalls & green valleys",
     keywords: ["monsoon", "rain", "waterfall", "green", "meghalaya", "seasonal"],
     description:

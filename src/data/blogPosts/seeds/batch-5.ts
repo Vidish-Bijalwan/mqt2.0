@@ -5,7 +5,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "how-to-plan-char-dham-yatra-step-by-step-guide",
     "title": "How to Plan Char Dham Yatra: Step-by-Step Guide",
     "metaDescription": "How to plan Char Dham Yatra step by step: route, registration, best time, fitness, packing and practical tips for Uttarakhand's great pilgrimage.",
-    "image": "/images/blog/how-to-plan-your-chardham-yatra.webp",
+    "image": "/images/blog/kedarnath.webp",
     "category": "Travel Planning",
     "tags": [
       "char dham",
@@ -24,7 +24,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "char-dham-yatra-budget-planning-guide",
     "title": "Char Dham Yatra Budget: Planning Guide Without the Guesswork",
     "metaDescription": "A practical Char Dham Yatra budget guide: the real cost components, what drives the price up, and smart ways to save without cutting corners.",
-    "image": "/images/blog/budget-friendly-holidays-tips.webp",
+    "image": "/images/packages/how-to-travel-on-budget.webp",
     "category": "Travel Planning",
     "tags": [
       "char dham",
@@ -62,7 +62,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "helicopter-yatra-uttarakhand-how-it-works",
     "title": "Helicopter Yatra in Uttarakhand: How It Works",
     "metaDescription": "Helicopter yatra in Uttarakhand explained: routes, booking, luggage rules, weather delays, medical fitness and who should fly to the dhams.",
-    "image": "/images/blog/how-to-plan-chardham-yatra-by-helicopter-from-delhi.webp",
+    "image": "/images/blog/tourist-places-in-kedarnath.webp",
     "category": "Travel Planning",
     "tags": [
       "helicopter yatra",
@@ -100,7 +100,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "how-to-choose-right-travel-agency-india",
     "title": "How to Choose the Right Travel Agency in India",
     "metaDescription": "How to choose a travel agency in India: 10 checks for credentials, reviews, transparent pricing and on-trip support before you book.",
-    "image": "/images/blog/guide-for-choosing-best-india-buddhist-tour-package.webp",
+    "image": "/images/blog/buddhist-temples-in-world.webp",
     "category": "Travel Planning",
     "tags": [
       "travel agency",
@@ -211,7 +211,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "senior-citizen-travel-india-tips-destinations",
     "title": "Senior Citizen Travel in India: Tips & Destinations",
     "metaDescription": "Senior citizen travel in India: comfortable destinations, health and safety tips, pacing advice and how to plan a relaxed, stress-free trip.",
-    "image": "/images/blog/tips-to-plan-your-dream-vacation-your-family.webp",
+    "image": "/images/packages/tourist-attractions-in-dubai.webp",
     "category": "Travel Planning",
     "tags": [
       "senior citizens",
@@ -230,7 +230,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "family-trip-planning-travel-with-kids-india",
     "title": "Family Trip Planning: How to Travel with Kids in India",
     "metaDescription": "Family trip planning in India: kid-friendly destinations, pacing, packing and practical tips for travelling with children of all ages.",
-    "image": "/images/blog/tips-to-plan-your-dream-vacation-your-family.webp",
+    "image": "/images/packages/tourist-attractions-in-dubai.webp",
     "category": "Travel Planning",
     "tags": [
       "family travel",
@@ -399,7 +399,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "offbeat-himachal-10-places-beyond-shimla-manali",
     "title": "Offbeat Himachal: 10 Places Beyond Shimla-Manali",
     "metaDescription": "10 offbeat Himachal destinations beyond Shimla and Manali: quiet valleys, heritage villages and uncrowded trails.",
-    "image": "/images/blog/places-to-visit-in-himachal.webp",
+    "image": "/images/blog/best-places-to-travel-alone.webp",
     "category": "Destination Guides",
     "tags": [
       "himachal pradesh",
@@ -456,7 +456,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "chatpal-kashmirs-hidden-meadow",
     "title": "Chatpal: Kashmir's Hidden Meadow",
     "metaDescription": "Chatpal, Kashmir's hidden meadow: how to reach, what to see, best time to visit and tips for this offbeat valley near Srinagar.",
-    "image": "/images/blog/kashmir-places-to-visit.webp",
+    "image": "/images/packages/kashmir-hq.webp",
     "category": "Destination Guides",
     "tags": [
       "chatpal",
@@ -475,7 +475,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "warwan-valley-remote-kashmir-trek-guide",
     "title": "Warwan Valley: Remote Kashmir Trek Guide",
     "metaDescription": "Warwan Valley trek guide: a remote Kashmir trail through meadows and glaciers, with route, difficulty, best time and preparation tips.",
-    "image": "/images/blog/things-to-do-in-kashmir.webp",
+    "image": "/images/blog/spas-in-india.webp",
     "category": "Mountains & Adventure",
     "tags": [
       "warwan valley",
@@ -627,7 +627,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "secret-spots-kerala-tourists-miss",
     "title": "Secret Spots in Kerala Tourists Miss",
     "metaDescription": "Hidden places in Kerala most tourists miss: quiet backwaters, hill villages and beaches off the usual Kochi-Munnar circuit.",
-    "image": "/images/blog/top-10-beaches-to-visit-in-kerala.webp",
+    "image": "/images/packages/best-trips-in-india.webp",
     "category": "Destination Guides",
     "tags": [
       "kerala",

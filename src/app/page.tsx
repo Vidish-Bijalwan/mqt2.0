@@ -101,7 +101,7 @@ const WEST_INDIA_PACKAGES = validPackages.filter(p => p.category === "West India
 const HELICOPTER_PACKAGES = validPackages.filter(p => p.category === "Helicopter");
 
 const DESTINATIONS = [
-  { name: "Uttarakhand", sub: "Land of the Gods", href: "/destinations/uttarakhand", img: "/images/packages/hi-uttarakhand.webp" },
+  { name: "Uttarakhand", sub: "Land of the Gods", href: "/destinations/uttarakhand", img: "/images/packages/corbett-nainital-tour-package-from-delhi.webp" },
   { name: "Uttar Pradesh", sub: "Heritage of India", href: "/destinations/uttar-pradesh", img: "/images/packages/taj-mahal.webp" },
   { name: "Rajasthan", sub: "The Royal State", href: "/destinations/rajasthan", img: "/images/packages/rajasthan.jpg" },
   { name: "Gujarat", sub: "Vibrant culture", href: "/destinations/gujarat", img: "/images/packages/gujarat.jpg" },

@@ -38,7 +38,7 @@ export const packageExperienceOverrides: Record<string, PackageExperienceOverrid
     ],
     gallery: [
       {
-        src: "/images/packages/hi-3-days-madurai-rameshwaram-tour.webp",
+        src: "/images/packages/hi-tamil-nadu.webp",
         caption: "The richly sculpted gopuram of Meenakshi Amman Temple in Madurai",
       },
       {
@@ -104,7 +104,7 @@ export const packageExperienceOverrides: Record<string, PackageExperienceOverrid
     ],
     gallery: [
       {
-        src: "/images/packages/hi-10-days-assam-meghalaya-arunachal-pradesh-tour-packages.webp",
+        src: "/images/packages/hi-kaziranga-tour-package.webp",
         caption: "A one-horned rhinoceros in the forest habitat of Kaziranga, Assam",
       },
       {
@@ -112,7 +112,7 @@ export const packageExperienceOverrides: Record<string, PackageExperienceOverrid
         caption: "Kaziranga's one-horned rhinos moving across open grassland",
       },
       {
-        src: "/images/packages/hi-arunachal-pradesh-tour-packages.webp",
+        src: "/images/packages/hi-tawang-tour-packages.webp",
         caption: "Tawang Monastery set high in the mountains of Arunachal Pradesh",
       },
       {
@@ -124,7 +124,7 @@ export const packageExperienceOverrides: Record<string, PackageExperienceOverrid
         caption: "Nohkalikai Falls dropping through Meghalaya's forested cliffs",
       },
       {
-        src: "/images/packages/hi-assam-tour-packages.webp",
+        src: "/images/packages/hi-assam.webp",
         caption: "Kamakhya Temple, one of Guwahati's most important landmarks",
       },
       {

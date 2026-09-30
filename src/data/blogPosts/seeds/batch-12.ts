@@ -41,7 +41,7 @@ export const BLOG_POST_SEEDS_BATCH_12: BlogPostSeed[] = [
     "slug": "indus-waters-treaty-explained-act-of-war",
     "title": "What Is the Indus Waters Treaty? Why Pakistan Called It an 'Act of War' at the UN",
     "metaDescription": "What is the Indus Waters Treaty? Pakistan's PM called blocking Indus waters an 'act of war' at the UN — the 1960 treaty and the standoff explained.",
-    "image": "/images/blog/indus-waters-treaty-explained-act-of-war.webp",
+    "image": "/images/blog/mechuka-valley-arunachal-travel-guide.webp",
     "category": "Culture & Heritage",
     "tags": ["Indus Waters Treaty", "India Pakistan", "UNGA", "Shehbaz Sharif", "water dispute", "foreign policy"],
     "readingTime": 8,

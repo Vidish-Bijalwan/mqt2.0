@@ -79,7 +79,7 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
     places: [
       { name: "Rishikesh", image: "/images/packages/hi-rishikesh.webp", themes: ["Adventure", "Wellness"] },
       { name: "Auli", image: "/images/packages/hi-auli.webp", themes: ["Mountains", "Snow"] },
-      { name: "Nainital", image: "/images/packages/hi-nainital.webp", themes: ["Lakes", "Family"] },
+      { name: "Nainital", image: "/images/packages/corbett-nainital-tour-package-from-delhi.webp", themes: ["Lakes", "Family"] },
       { name: "Mussoorie", image: "/images/packages/hi-mussoorie.webp", themes: ["Mountains", "Weekend"] },
       { name: "Haridwar", image: "/images/packages/hi-haridwar.webp", themes: ["Pilgrimage", "Culture"] },
     ],
@@ -112,9 +112,9 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
       { name: "Manikaran", slug: "manikaran", latitude: 32.0260, longitude: 77.3430, priority: 10, labelDirection: "right", coordVerified: true, coordinateSource: "Nominatim" },
     ],
     places: [
-      { name: "Manali", image: "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-03-lg.webp", themes: ["Mountains", "Adventure"] },
-      { name: "Shimla", image: "/images/location-library/shimla-himachal-pradesh-india/shimla-himachal-pradesh-india-02-lg.webp", themes: ["Heritage", "Family"] },
-      { name: "Kasauli", image: "/images/location-library/kasauli-himachal-pradesh-india/kasauli-himachal-pradesh-india-01-lg.webp", themes: ["Weekend", "Mountains"] },
+      { name: "Manali", image: "/images/location-library/manali-himachal-pradesh-india/manali-himachal-pradesh-india-03-sm.webp", themes: ["Mountains", "Adventure"] },
+      { name: "Shimla", image: "/images/location-library/shimla-himachal-pradesh-india/shimla-himachal-pradesh-india-02-sm.webp", themes: ["Heritage", "Family"] },
+      { name: "Kasauli", image: "/images/location-library/kasauli-himachal-pradesh-india/kasauli-himachal-pradesh-india-01-sm.webp", themes: ["Weekend", "Mountains"] },
     ],
   },
   "uttar-pradesh": {
@@ -129,7 +129,7 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
       { name: "Prayagraj", slug: "prayagraj", latitude: 25.4358, longitude: 81.8463, priority: 6, labelDirection: "right", coordVerified: true, coordinateSource: "Nominatim" },
       { name: "Sarnath", slug: "sarnath", latitude: 25.3811, longitude: 82.9933, priority: 7, labelDirection: "right", coordVerified: true, coordinateSource: "Nominatim" },
     ],
-    eyebrow: "Living heritage", tagline: "River cities, temples and monuments that shaped India's story.", description: "Move through sacred ghats, Mughal landmarks and pilgrimage towns with routes built around history and devotion.", bestTime: "Oct–Mar", themes: ["Heritage", "Pilgrimage", "Family", "Culture", "Weekend"], places: [{ name: "Agra", image: "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-01-lg.webp", themes: ["Heritage", "Monuments"] }, { name: "Varanasi", image: "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-lg.webp", themes: ["Pilgrimage", "River"] }, { name: "Ayodhya", image: "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-01-lg.webp", themes: ["Temples", "Family"] }] },
+    eyebrow: "Living heritage", tagline: "River cities, temples and monuments that shaped India's story.", description: "Move through sacred ghats, Mughal landmarks and pilgrimage towns with routes built around history and devotion.", bestTime: "Oct–Mar", themes: ["Heritage", "Pilgrimage", "Family", "Culture", "Weekend"], places: [{ name: "Agra", image: "/images/location-library/agra-uttar-pradesh-india/agra-uttar-pradesh-india-01-sm.webp", themes: ["Heritage", "Monuments"] }, { name: "Varanasi", image: "/images/location-library/varanasi-uttar-pradesh-india/varanasi-uttar-pradesh-india-01-sm.webp", themes: ["Pilgrimage", "River"] }, { name: "Ayodhya", image: "/images/location-library/ayodhya-uttar-pradesh-india/ayodhya-uttar-pradesh-india-01-sm.webp", themes: ["Temples", "Family"] }] },
   rajasthan: {
     artwork: rajasthanArtwork,
     geography: { boundarySource: "Survey of India", boundaryVersion: "Administrative Boundary Data Base, 2026", lastVerified: "2026-09-28", boundaryLevel: "state", districtCount: 41 },
@@ -142,7 +142,7 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
       { name: "Bikaner", slug: "bikaner", latitude: 28.0229, longitude: 73.3119, priority: 6, labelDirection: "right", coordVerified: true, coordinateSource: "Nominatim" },
       { name: "Ranthambore", slug: "ranthambore", latitude: 26.0173, longitude: 76.5026, priority: 7, labelDirection: "left", coordVerified: true, coordinateSource: "Nominatim" },
     ],
-    eyebrow: "Royal Rajasthan", tagline: "Fort cities, desert horizons and stories after sundown.", description: "Build a journey around palace cities, living heritage, desert camps and wildlife country.", bestTime: "Oct–Mar", themes: ["Heritage", "Desert", "Wildlife", "Family", "Luxury"], places: [{ name: "Jaipur", image: "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-01-lg.webp", themes: ["Heritage", "Culture"] }, { name: "Udaipur", image: "/images/location-library/udaipur-rajasthan-india/udaipur-rajasthan-india-01-lg.webp", themes: ["Lakes", "Romance"] }, { name: "Jaisalmer", image: "/images/location-library/jaisalmer-rajasthan-india/jaisalmer-rajasthan-india-01-lg.webp", themes: ["Desert", "Adventure"] }] },
+    eyebrow: "Royal Rajasthan", tagline: "Fort cities, desert horizons and stories after sundown.", description: "Build a journey around palace cities, living heritage, desert camps and wildlife country.", bestTime: "Oct–Mar", themes: ["Heritage", "Desert", "Wildlife", "Family", "Luxury"], places: [{ name: "Jaipur", image: "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-01-sm.webp", themes: ["Heritage", "Culture"] }, { name: "Udaipur", image: "/images/location-library/udaipur-rajasthan-india/udaipur-rajasthan-india-01-sm.webp", themes: ["Lakes", "Romance"] }, { name: "Jaisalmer", image: "/images/location-library/jaisalmer-rajasthan-india/jaisalmer-rajasthan-india-01-sm.webp", themes: ["Desert", "Adventure"] }] },
   kerala: {
     artwork: keralaArtwork,
     geography: { boundarySource: "Survey of India", boundaryVersion: "Administrative Boundary Data Base, 2026", lastVerified: "2026-09-28", boundaryLevel: "state", districtCount: 14 },
@@ -154,7 +154,7 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
       { name: "Wayanad", slug: "wayanad", latitude: 11.685, longitude: 76.132, priority: 5, mobilePriority: 5, labelDirection: "right", coordVerified: true, coordinateSource: "Nominatim" },
       { name: "Thekkady", slug: "thekkady", latitude: 9.6031, longitude: 77.1615, priority: 6, labelDirection: "left", coordVerified: true, coordinateSource: "Nominatim" },
     ],
-    eyebrow: "God's own country", tagline: "Backwaters, tea hills and coastlines with room to breathe.", description: "Move from cool plantations to spice country and water-bound villages at an unhurried pace.", bestTime: "Sep–Mar", themes: ["Backwaters", "Honeymoon", "Wellness", "Beaches", "Family"], places: [{ name: "Munnar", image: "/images/location-library/munnar-kerala-india/munnar-kerala-india-01-lg.webp", themes: ["Hills", "Tea country"] }, { name: "Kochi", image: "/images/location-library/kochi-kerala-india/kochi-kerala-india-01-lg.webp", themes: ["Culture", "Coast"] }, { name: "Alleppey", image: "/images/location-library/alleppey-kerala-india/alleppey-kerala-india-01-lg.webp", themes: ["Backwaters", "Houseboats"] }] },
+    eyebrow: "God's own country", tagline: "Backwaters, tea hills and coastlines with room to breathe.", description: "Move from cool plantations to spice country and water-bound villages at an unhurried pace.", bestTime: "Sep–Mar", themes: ["Backwaters", "Honeymoon", "Wellness", "Beaches", "Family"], places: [{ name: "Munnar", image: "/images/location-library/munnar-kerala-india/munnar-kerala-india-01-sm.webp", themes: ["Hills", "Tea country"] }, { name: "Kochi", image: "/images/location-library/kochi-kerala-india/kochi-kerala-india-01-sm.webp", themes: ["Culture", "Coast"] }, { name: "Alleppey", image: "/images/location-library/alleppey-kerala-india/alleppey-kerala-india-01-sm.webp", themes: ["Backwaters", "Houseboats"] }] },
   goa: {
     artwork: goaArtwork,
     geography: { boundarySource: "Survey of India", boundaryVersion: "Administrative Boundary Data Base, 2026", lastVerified: "2026-09-28", boundaryLevel: "state", districtCount: 3 },
@@ -165,7 +165,7 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
       { name: "Old Goa", slug: "old-goa", latitude: 15.5007, longitude: 73.9113, priority: 4, mobilePriority: 4, labelDirection: "right", coordVerified: true, coordinateSource: "Nominatim" },
       { name: "Dudhsagar", slug: "dudhsagar", latitude: 15.3144, longitude: 74.3143, priority: 5, mobilePriority: 5, labelDirection: "left", coordVerified: true, coordinateSource: "Nominatim" },
     ],
-    eyebrow: "Coastal Goa", tagline: "Beach days, old quarters and the easy rhythm of the coast.", description: "Find the right balance of shoreline, heritage streets, food and time to simply slow down.", bestTime: "Nov–Feb", themes: ["Beaches", "Honeymoon", "Family", "Weekend", "Culture"], places: [{ name: "North Goa", image: "/images/location-library/north-goa-goa-india/north-goa-goa-india-01-lg.webp", themes: ["Beaches", "Nightlife"] }, { name: "South Goa", image: "/images/location-library/goa-india/goa-india-01-lg.webp", themes: ["Beaches", "Leisure"] }, { name: "Panaji", image: "/images/location-library/goa-india/goa-india-04-lg.webp", themes: ["Culture", "Food"] }] },
+    eyebrow: "Coastal Goa", tagline: "Beach days, old quarters and the easy rhythm of the coast.", description: "Find the right balance of shoreline, heritage streets, food and time to simply slow down.", bestTime: "Nov–Feb", themes: ["Beaches", "Honeymoon", "Family", "Weekend", "Culture"], places: [{ name: "North Goa", image: "/images/location-library/north-goa-goa-india/north-goa-goa-india-01-sm.webp", themes: ["Beaches", "Nightlife"] }, { name: "South Goa", image: "/images/location-library/goa-india/goa-india-01-sm.webp", themes: ["Beaches", "Leisure"] }, { name: "Panaji", image: "/images/location-library/goa-india/goa-india-04-sm.webp", themes: ["Culture", "Food"] }] },
   ladakh: {
     artwork: ladakhArtwork,
     geography: { boundarySource: "Natural Earth", boundaryVersion: "Admin 1 States/Provinces, 1:10m (2022)", lastVerified: "2026-09-28", boundaryLevel: "state" },
@@ -175,7 +175,7 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
       { name: "Pangong Lake", slug: "pangong-lake", latitude: 33.9456, longitude: 78.6569, priority: 3, mobilePriority: 3, labelDirection: "left", coordVerified: true, coordinateSource: "Nominatim" },
       { name: "Tso Moriri", slug: "tso-moriri", latitude: 32.9113, longitude: 78.3118, priority: 4, mobilePriority: 4, labelDirection: "right", coordVerified: true, coordinateSource: "Nominatim" },
     ],
-    eyebrow: "High Himalaya", tagline: "Monasteries, high passes and landscapes that reset your scale.", description: "Plan for acclimatisation and allow the roads, lakes and monasteries to set the pace.", bestTime: "May–Sep", themes: ["Adventure", "Road trip", "Monasteries", "Nature", "Photography"], places: [{ name: "Leh", image: "/images/location-library/leh-jammu-and-kashmir-india/leh-jammu-and-kashmir-india-01-lg.webp", themes: ["Culture", "Monasteries"] }, { name: "Nubra Valley", image: "/images/location-library/ladakh-india/ladakh-india-02-lg.webp", themes: ["Adventure", "Nature"] }, { name: "Pangong", image: "/images/location-library/ladakh-india/ladakh-india-03-lg.webp", themes: ["Lakes", "Photography"] }] },
+    eyebrow: "High Himalaya", tagline: "Monasteries, high passes and landscapes that reset your scale.", description: "Plan for acclimatisation and allow the roads, lakes and monasteries to set the pace.", bestTime: "May–Sep", themes: ["Adventure", "Road trip", "Monasteries", "Nature", "Photography"], places: [{ name: "Leh", image: "/images/location-library/leh-jammu-and-kashmir-india/leh-jammu-and-kashmir-india-01-sm.webp", themes: ["Culture", "Monasteries"] }, { name: "Nubra Valley", image: "/images/location-library/ladakh-india/ladakh-india-02-sm.webp", themes: ["Adventure", "Nature"] }, { name: "Pangong", image: "/images/location-library/ladakh-india/ladakh-india-03-sm.webp", themes: ["Lakes", "Photography"] }] },
   kashmir: {
     artwork: kashmirArtwork,
     geography: { boundarySource: "Natural Earth", boundaryVersion: "Admin 1 States/Provinces, 1:10m (2022)", lastVerified: "2026-09-28", boundaryLevel: "state" },
@@ -185,7 +185,7 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
       { name: "Pahalgam", slug: "pahalgam", latitude: 34.0162, longitude: 75.3152, priority: 3, mobilePriority: 3, labelDirection: "right", coordVerified: true, coordinateSource: "Nominatim" },
       { name: "Sonamarg", slug: "sonamarg", latitude: 34.3057, longitude: 75.2902, priority: 4, mobilePriority: 4, labelDirection: "right", coordVerified: true, coordinateSource: "Nominatim" },
     ],
-    eyebrow: "Paradise on earth", tagline: "Houseboats, meadows and Himalayan calm.", description: "Drift on Dal Lake, walk through saffron fields and pine meadows, and take the meadow towns at an unhurried pace.", bestTime: "Mar–Oct", themes: ["Mountains", "Honeymoon", "Family", "Houseboats", "Adventure"], places: [{ name: "Srinagar", image: "/images/location-library/srinagar-jammu-and-kashmir-india/srinagar-jammu-and-kashmir-india-01-lg.webp", themes: ["Lakes", "Houseboats"] }, { name: "Gulmarg", image: "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-01-lg.webp", themes: ["Snow", "Skiing"] }, { name: "Pahalgam", image: "/images/packages/hi-pahalgam-tour-packages.webp", themes: ["Valleys", "Adventure"] }, { name: "Dal Lake", image: "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-01-lg.webp", themes: ["Houseboats", "Sunsets"] }] },
+    eyebrow: "Paradise on earth", tagline: "Houseboats, meadows and Himalayan calm.", description: "Drift on Dal Lake, walk through saffron fields and pine meadows, and take the meadow towns at an unhurried pace.", bestTime: "Mar–Oct", themes: ["Mountains", "Honeymoon", "Family", "Houseboats", "Adventure"], places: [{ name: "Srinagar", image: "/images/location-library/srinagar-jammu-and-kashmir-india/srinagar-jammu-and-kashmir-india-01-sm.webp", themes: ["Lakes", "Houseboats"] }, { name: "Gulmarg", image: "/images/location-library/gulmarg-jammu-and-kashmir-india/gulmarg-jammu-and-kashmir-india-01-sm.webp", themes: ["Snow", "Skiing"] }, { name: "Pahalgam", image: "/images/packages/hi-pahalgam-tour-packages.webp", themes: ["Valleys", "Adventure"] }, { name: "Dal Lake", image: "/images/location-library/kashmir-dal-lake/kashmir-dal-lake-01-sm.webp", themes: ["Houseboats", "Sunsets"] }] },
   "gujarat": {
     // Gujarat: WGS84 destination coordinates, Nominatim-verified 2026-09-28.
     artwork: gujaratArtwork,
@@ -204,9 +204,9 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
     bestTime: "Oct–Mar",
     themes: ["Desert", "Pilgrimage", "Wildlife", "Culture", "Family"],
     places: [
-      { name: "Dwarka", image: "/images/location-library/dwarka-gujarat-india/dwarka-gujarat-india-01-lg.webp", themes: ["Pilgrimage", "Coast"] },
-      { name: "Kutch", image: "/images/location-library/kutch-gujarat-india/kutch-gujarat-india-01-lg.webp", themes: ["Desert", "Crafts"] },
-      { name: "Gir", image: "/images/location-library/gir-national-park-gujarat/gir-national-park-gujarat-01-lg.webp", themes: ["Wildlife", "Nature"] },
+      { name: "Dwarka", image: "/images/location-library/dwarka-gujarat-india/dwarka-gujarat-india-01-sm.webp", themes: ["Pilgrimage", "Coast"] },
+      { name: "Kutch", image: "/images/location-library/kutch-gujarat-india/kutch-gujarat-india-01-sm.webp", themes: ["Desert", "Crafts"] },
+      { name: "Gir", image: "/images/location-library/gir-national-park-gujarat/gir-national-park-gujarat-01-sm.webp", themes: ["Wildlife", "Nature"] },
     ],
   },
   "maharashtra": {
@@ -228,9 +228,9 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
     bestTime: "Oct–Mar",
     themes: ["Heritage", "Cities", "Hills", "Culture", "Weekend"],
     places: [
-      { name: "Ajanta", image: "/images/location-library/ajanta-maharashtra-india/ajanta-maharashtra-india-01-lg.webp", themes: ["Heritage", "Art"] },
-      { name: "Mumbai", image: "/images/location-library/mumbai-maharashtra-india/mumbai-maharashtra-india-01-lg.webp", themes: ["Cities", "Food"] },
-      { name: "Sahyadris", image: "/images/location-library/maharashtra-india/maharashtra-india-01-lg.webp", themes: ["Hills", "Monsoon"] },
+      { name: "Ajanta", image: "/images/location-library/ajanta-maharashtra-india/ajanta-maharashtra-india-01-sm.webp", themes: ["Heritage", "Art"] },
+      { name: "Mumbai", image: "/images/location-library/mumbai-maharashtra-india/mumbai-maharashtra-india-01-sm.webp", themes: ["Cities", "Food"] },
+      { name: "Sahyadris", image: "/images/location-library/maharashtra-india/maharashtra-india-01-sm.webp", themes: ["Hills", "Monsoon"] },
     ],
   },
   "tamil-nadu": {
@@ -252,9 +252,9 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
     bestTime: "Nov–Mar",
     themes: ["Temples", "Hills", "Culture", "Beaches", "Family"],
     places: [
-      { name: "Madurai", image: "/images/location-library/madurai-tamil-nadu-india/madurai-tamil-nadu-india-01-lg.webp", themes: ["Temples", "Culture"] },
-      { name: "Ooty", image: "/images/location-library/ooty-tamil-nadu-india/ooty-tamil-nadu-india-01-lg.webp", themes: ["Hills", "Tea country"] },
-      { name: "Mahabalipuram", image: "/images/location-library/mahabalipuram-tamil-nadu-india/mahabalipuram-tamil-nadu-india-01-lg.webp", themes: ["Heritage", "Coast"] },
+      { name: "Madurai", image: "/images/location-library/madurai-tamil-nadu-india/madurai-tamil-nadu-india-01-sm.webp", themes: ["Temples", "Culture"] },
+      { name: "Ooty", image: "/images/location-library/ooty-tamil-nadu-india/ooty-tamil-nadu-india-01-sm.webp", themes: ["Hills", "Tea country"] },
+      { name: "Mahabalipuram", image: "/images/location-library/mahabalipuram-tamil-nadu-india/mahabalipuram-tamil-nadu-india-01-sm.webp", themes: ["Heritage", "Coast"] },
     ],
   },
   "karnataka": {
@@ -274,9 +274,9 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
     bestTime: "Oct–Mar",
     themes: ["Heritage", "Hills", "Wildlife", "Culture", "Weekend"],
     places: [
-      { name: "Hampi", image: "/images/location-library/hospet-karnataka-india/hospet-karnataka-india-01-lg.webp", themes: ["Heritage", "Ruins"] },
-      { name: "Coorg", image: "/images/location-library/coorg-karnataka-india/coorg-karnataka-india-01-lg.webp", themes: ["Hills", "Coffee"] },
-      { name: "Mysuru", image: "/images/location-library/mysore-karnataka-india/mysore-karnataka-india-01-lg.webp", themes: ["Palaces", "Culture"] },
+      { name: "Hampi", image: "/images/location-library/hospet-karnataka-india/hospet-karnataka-india-01-sm.webp", themes: ["Heritage", "Ruins"] },
+      { name: "Coorg", image: "/images/location-library/coorg-karnataka-india/coorg-karnataka-india-01-sm.webp", themes: ["Hills", "Coffee"] },
+      { name: "Mysuru", image: "/images/location-library/mysore-karnataka-india/mysore-karnataka-india-01-sm.webp", themes: ["Palaces", "Culture"] },
     ],
   },
   "madhya-pradesh": {
@@ -297,9 +297,9 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
     bestTime: "Oct–Mar",
     themes: ["Wildlife", "Heritage", "Temples", "Family", "Adventure"],
     places: [
-      { name: "Khajuraho", image: "/images/location-library/khajuraho-madhya-pradesh-india/khajuraho-madhya-pradesh-india-01-lg.webp", themes: ["Temples", "Heritage"] },
-      { name: "Kanha", image: "/images/location-library/kanha-national-park-madhya-pradesh-india/kanha-national-park-madhya-pradesh-india-01-lg.webp", themes: ["Wildlife", "Tigers"] },
-      { name: "Orchha", image: "/images/location-library/orchha-madhya-pradesh-india/orchha-madhya-pradesh-india-01-lg.webp", themes: ["Heritage", "Rivers"] },
+      { name: "Khajuraho", image: "/images/location-library/khajuraho-madhya-pradesh-india/khajuraho-madhya-pradesh-india-01-sm.webp", themes: ["Temples", "Heritage"] },
+      { name: "Kanha", image: "/images/location-library/kanha-national-park-madhya-pradesh-india/kanha-national-park-madhya-pradesh-india-01-sm.webp", themes: ["Wildlife", "Tigers"] },
+      { name: "Orchha", image: "/images/location-library/orchha-madhya-pradesh-india/orchha-madhya-pradesh-india-01-sm.webp", themes: ["Heritage", "Rivers"] },
     ],
   },
   "assam": {
@@ -318,9 +318,9 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
     bestTime: "Nov–Apr",
     themes: ["Wildlife", "River", "Tea", "Culture", "Nature"],
     places: [
-      { name: "Kaziranga", image: "/images/location-library/kaziranga-national-park-assam-india/kaziranga-national-park-assam-india-01-lg.webp", themes: ["Wildlife", "Rhinos"] },
-      { name: "Majuli", image: "/images/location-library/majuli-assam-india/majuli-assam-india-01-lg.webp", themes: ["River", "Culture"] },
-      { name: "Guwahati", image: "/images/location-library/guwahati-assam-india/guwahati-assam-india-01-lg.webp", themes: ["Temples", "River"] },
+      { name: "Kaziranga", image: "/images/location-library/kaziranga-national-park-assam-india/kaziranga-national-park-assam-india-01-sm.webp", themes: ["Wildlife", "Rhinos"] },
+      { name: "Majuli", image: "/images/location-library/majuli-assam-india/majuli-assam-india-01-sm.webp", themes: ["River", "Culture"] },
+      { name: "Guwahati", image: "/images/location-library/guwahati-assam-india/guwahati-assam-india-01-sm.webp", themes: ["Temples", "River"] },
     ],
   },
   "sikkim": {
@@ -339,9 +339,9 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
     bestTime: "Mar–Jun · Oct–Dec",
     themes: ["Mountains", "Monasteries", "Adventure", "Honeymoon", "Nature"],
     places: [
-      { name: "Gangtok", image: "/images/location-library/gangtok-sikkim-india/gangtok-sikkim-india-01-lg.webp", themes: ["Towns", "Views"] },
-      { name: "Lachung", image: "/images/location-library/lachung-sikkim-india/lachung-sikkim-india-01-lg.webp", themes: ["Valleys", "Flowers"] },
-      { name: "Pelling", image: "/images/location-library/sikkim-india/sikkim-india-01-lg.webp", themes: ["Monasteries", "Views"] },
+      { name: "Gangtok", image: "/images/location-library/gangtok-sikkim-india/gangtok-sikkim-india-01-sm.webp", themes: ["Towns", "Views"] },
+      { name: "Lachung", image: "/images/location-library/lachung-sikkim-india/lachung-sikkim-india-01-sm.webp", themes: ["Valleys", "Flowers"] },
+      { name: "Pelling", image: "/images/location-library/sikkim-india/sikkim-india-01-sm.webp", themes: ["Monasteries", "Views"] },
     ],
   },
 
@@ -353,9 +353,9 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
     bestTime: "Oct–Mar",
     themes: ["Pilgrimage", "Heritage", "Beaches", "Culture", "Family"],
     places: [
-      { name: "Tirupati", image: "/images/location-library/tirupati-andhra-pradesh-india/tirupati-andhra-pradesh-india-02-lg.webp", themes: ["Temples", "Heritage"] },
-      { name: "Chandragiri", image: "/images/location-library/tirupati-andhra-pradesh-india/tirupati-andhra-pradesh-india-01-lg.webp", themes: ["History", "Forts"] },
-      { name: "Vijayawada", image: "/images/location-library/andhra-pradesh-india/andhra-pradesh-india-01-lg.webp", themes: ["Temples", "River"] },
+      { name: "Tirupati", image: "/images/location-library/tirupati-andhra-pradesh-india/tirupati-andhra-pradesh-india-02-sm.webp", themes: ["Temples", "Heritage"] },
+      { name: "Chandragiri", image: "/images/location-library/tirupati-andhra-pradesh-india/tirupati-andhra-pradesh-india-01-sm.webp", themes: ["History", "Forts"] },
+      { name: "Vijayawada", image: "/images/location-library/andhra-pradesh-india/andhra-pradesh-india-01-sm.webp", themes: ["Temples", "River"] },
     ],
   },
   "arunachal-pradesh": {
@@ -366,9 +366,9 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
     bestTime: "Oct–Apr",
     themes: ["Mountains", "Monasteries", "Adventure", "Culture", "Nature"],
     places: [
-      { name: "Tawang", image: "/images/location-library/tawang-arunachal-pradesh-india/tawang-arunachal-pradesh-india-01-lg.webp", themes: ["Monasteries", "Lakes"] },
-      { name: "Sela Pass", image: "/images/location-library/tawang-arunachal-pradesh-india/tawang-arunachal-pradesh-india-02-lg.webp", themes: ["High passes", "Lakes"] },
-      { name: "Mechuka", image: "/images/location-library/arunachal-pradesh-india/arunachal-pradesh-india-01-lg.webp", themes: ["Valleys", "Culture"] },
+      { name: "Tawang", image: "/images/location-library/tawang-arunachal-pradesh-india/tawang-arunachal-pradesh-india-01-sm.webp", themes: ["Monasteries", "Lakes"] },
+      { name: "Sela Pass", image: "/images/location-library/tawang-arunachal-pradesh-india/tawang-arunachal-pradesh-india-02-sm.webp", themes: ["High passes", "Lakes"] },
+      { name: "Mechuka", image: "/images/location-library/arunachal-pradesh-india/arunachal-pradesh-india-01-sm.webp", themes: ["Valleys", "Culture"] },
     ],
   },
   haryana: {
@@ -379,7 +379,7 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
     bestTime: "Oct–Mar",
     themes: ["Pilgrimage", "History", "Culture", "Weekend", "Nature"],
     places: [
-      { name: "Kurukshetra", image: "/images/location-library/haryana-india/haryana-india-01-lg.webp", themes: ["Pilgrimage", "History"] },
+      { name: "Kurukshetra", image: "/images/location-library/haryana-india/haryana-india-01-sm.webp", themes: ["Pilgrimage", "History"] },
     ],
   },
   manipur: {
@@ -390,7 +390,7 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
     bestTime: "Oct–Mar",
     themes: ["Lakes", "Culture", "Nature", "Heritage", "Valleys"],
     places: [
-      { name: "Loktak Lake", image: "/images/location-library/manipur-india/manipur-india-01-lg.webp", themes: ["Lakes", "Nature"] },
+      { name: "Loktak Lake", image: "/images/location-library/manipur-india/manipur-india-01-sm.webp", themes: ["Lakes", "Nature"] },
     ],
   },
   nagaland: {
@@ -401,7 +401,7 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
     bestTime: "Oct–May",
     themes: ["Mountains", "Culture", "Treks", "Festivals", "Adventure"],
     places: [
-      { name: "Dzukou Valley", image: "/images/location-library/nagaland-india/nagaland-india-01-lg.webp", themes: ["Treks", "Valleys"] },
+      { name: "Dzukou Valley", image: "/images/location-library/nagaland-india/nagaland-india-01-sm.webp", themes: ["Treks", "Valleys"] },
     ],
   },
   telangana: {
@@ -412,8 +412,8 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
     bestTime: "Oct–Mar",
     themes: ["Heritage", "Culture", "Cities", "Food", "Family"],
     places: [
-      { name: "Hyderabad", image: "/images/location-library/hyderabad-andhra-pradesh-india/hyderabad-andhra-pradesh-india-02-lg.webp", themes: ["Heritage", "Forts"] },
-      { name: "Old City", image: "/images/location-library/hyderabad-andhra-pradesh-india/hyderabad-andhra-pradesh-india-01-lg.webp", themes: ["Culture", "Bazaars"] },
+      { name: "Hyderabad", image: "/images/location-library/hyderabad-andhra-pradesh-india/hyderabad-andhra-pradesh-india-01-sm.webp", themes: ["Heritage", "Forts"] },
+      { name: "Old City", image: "/images/location-library/hyderabad-andhra-pradesh-india/hyderabad-andhra-pradesh-india-01-sm.webp", themes: ["Culture", "Bazaars"] },
     ],
   },
   "west-bengal": {
@@ -424,9 +424,9 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
     bestTime: "Oct–Mar",
     themes: ["Cities", "Mountains", "Culture", "Nature", "Heritage"],
     places: [
-      { name: "Kolkata", image: "/images/location-library/kolkata-west-bengal-india/kolkata-west-bengal-india-01-lg.webp", themes: ["Cities", "Culture"] },
-      { name: "Darjeeling", image: "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-01-lg.webp", themes: ["Mountains", "Tea country"] },
-      { name: "Howrah Bridge", image: "/images/location-library/west-bengal-india/west-bengal-india-01-lg.webp", themes: ["Landmarks", "Rivers"] },
+      { name: "Kolkata", image: "/images/location-library/kolkata-west-bengal-india/kolkata-west-bengal-india-01-sm.webp", themes: ["Cities", "Culture"] },
+      { name: "Darjeeling", image: "/images/location-library/darjeeling-west-bengal-india/darjeeling-west-bengal-india-01-sm.webp", themes: ["Mountains", "Tea country"] },
+      { name: "Howrah Bridge", image: "/images/location-library/west-bengal-india/west-bengal-india-01-sm.webp", themes: ["Landmarks", "Rivers"] },
     ],
   },
   "andaman-and-nicobar-islands": {
@@ -437,9 +437,9 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
     bestTime: "Nov–Apr",
     themes: ["Beaches", "Diving", "History", "Honeymoon", "Nature"],
     places: [
-      { name: "Havelock Island", image: "/images/location-library/havelock-island-andaman-and-nicobar-islands-india/havelock-island-andaman-and-nicobar-islands-india-03-lg.webp", themes: ["Beaches", "Diving"] },
-      { name: "Neil Island", image: "/images/location-library/neil-island-andaman-and-nicobar-islands-india/neil-island-andaman-and-nicobar-islands-india-01-lg.webp", themes: ["Beaches", "Nature"] },
-      { name: "Port Blair", image: "/images/location-library/port-blair-andaman-and-nicobar-islands-india/port-blair-andaman-and-nicobar-islands-india-01-lg.webp", themes: ["History", "Towns"] },
+      { name: "Havelock Island", image: "/images/location-library/havelock-island-andaman-and-nicobar-islands-india/havelock-island-andaman-and-nicobar-islands-india-03-sm.webp", themes: ["Beaches", "Diving"] },
+      { name: "Neil Island", image: "/images/location-library/neil-island-andaman-and-nicobar-islands-india/neil-island-andaman-and-nicobar-islands-india-01-sm.webp", themes: ["Beaches", "Nature"] },
+      { name: "Port Blair", image: "/images/location-library/port-blair-andaman-and-nicobar-islands-india/port-blair-andaman-and-nicobar-islands-india-01-sm.webp", themes: ["History", "Towns"] },
     ],
   },
   "dadra-and-nagar-haveli-and-daman-and-diu": {
@@ -450,8 +450,8 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
     bestTime: "Oct–Mar",
     themes: ["Heritage", "Beaches", "Forts", "Culture", "Weekend"],
     places: [
-      { name: "Diu", image: "/images/location-library/diu-gujarat-india/diu-gujarat-india-03-lg.webp", themes: ["Forts", "Heritage"] },
-      { name: "St. Paul's Church", image: "/images/location-library/diu-gujarat-india/diu-gujarat-india-01-lg.webp", themes: ["Churches", "History"] },
+      { name: "Diu", image: "/images/location-library/diu-gujarat-india/diu-gujarat-india-03-sm.webp", themes: ["Forts", "Heritage"] },
+      { name: "St. Paul's Church", image: "/images/location-library/diu-gujarat-india/diu-gujarat-india-01-sm.webp", themes: ["Churches", "History"] },
     ],
   },
   "jammu-and-kashmir": {
@@ -462,8 +462,8 @@ export const destinationExplorerProfiles: Record<string, ExplorerProfile> = {
     bestTime: "Mar–Oct",
     themes: ["Pilgrimage", "Mountains", "Culture", "Adventure", "Family"],
     places: [
-      { name: "Katra", image: "/images/location-library/katra-jammu-and-kashmir-india/katra-jammu-and-kashmir-india-01-lg.webp", themes: ["Pilgrimage", "Towns"] },
-      { name: "Vaishno Devi", image: "/images/location-library/vaishno-devi-temple-katra/vaishno-devi-temple-katra-01-lg.webp", themes: ["Pilgrimage", "Mountains"] },
+      { name: "Katra", image: "/images/location-library/katra-jammu-and-kashmir-india/katra-jammu-and-kashmir-india-01-sm.webp", themes: ["Pilgrimage", "Towns"] },
+      { name: "Vaishno Devi", image: "/images/location-library/vaishno-devi-temple-katra/vaishno-devi-temple-katra-01-sm.webp", themes: ["Pilgrimage", "Mountains"] },
     ],
   },
 };

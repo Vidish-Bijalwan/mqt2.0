@@ -22,6 +22,10 @@ const nextConfig: NextConfig = {
     // on-demand image transformation allowance and prevents a quota error
     // from turning otherwise valid blog and package images into broken media.
     unoptimized: true,
+    // NOTE: `formats`, `qualities` and `minimumCacheTTL` below are DEAD config
+    // while `unoptimized: true` is set — Next.js skips its image optimizer
+    // entirely in that mode, so these values have no effect. They only apply
+    // if optimization is ever re-enabled (remove `unoptimized: true`).
     // Use modern image formats for better performance
     formats: ["image/avif", "image/webp"],
     qualities: [55, 60, 65, 68, 75],
