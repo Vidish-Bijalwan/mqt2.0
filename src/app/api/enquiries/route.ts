@@ -10,8 +10,9 @@
  * dropped. Nothing here logs PII.
  */
 
-import { storeEnquiry, isLeadStoreConfigured, markWhatsappNotified } from "@/lib/leadStore";
+import { storeEnquiry, isLeadStoreConfigured, markWhatsappNotified, countRecentEnquiriesByIpHash } from "@/lib/leadStore";
 import { notifyTeamOnWhatsapp, isWhatsappConfigured } from "@/lib/leadNotify";
+import { ipHashFor } from "@/lib/analyticsDb";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -21,6 +22,10 @@ export const dynamic = "force-dynamic";
 // not a global guarantee. Honeypot + timing checks back it up.
 const RATE_LIMIT = 10;
 const WINDOW_MS = 60 * 60 * 1000;
+// DB-backed cap (5 enquiries / day / IP hash): survives Vercel serverless
+// instance resets, unlike the in-memory limiter above. The hash is
+// daily-rotating + salted (see ipHashFor) — raw IPs are never stored.
+const DAILY_CAP = 5;
 const hits = new Map<string, number[]>();
 
 function isRateLimited(ip: string): boolean {
@@ -80,6 +85,14 @@ export async function POST(req: Request) {
   const ip = clientIp(req);
   if (isRateLimited(ip)) {
     return bad("Too many enquiries from this address. Please try again later.", 429);
+  }
+  // DB-backed daily cap: survives serverless instance resets, unlike the
+  // in-memory limiter above. Counted before validation so a flood of
+  // malformed posts still counts against the cap. Unknown IPs are skipped
+  // so the cap never groups unidentifiable clients together.
+  const enquiryIpHash = ip === "unknown" ? "" : ipHashFor(ip);
+  if (enquiryIpHash && (await countRecentEnquiriesByIpHash(enquiryIpHash)) >= DAILY_CAP) {
+    return bad("Too many enquiries from this address today. Please try again tomorrow.", 429);
   }
 
   // 3. Parse + validate.
@@ -160,6 +173,7 @@ export async function POST(req: Request) {
       utmTerm: utmStr("utm_term"),
       utmContent: utmStr("utm_content"),
       gclid: utmStr("gclid"),
+      ipHash: enquiryIpHash || null,
     });
   } catch (err) {
     console.error(
