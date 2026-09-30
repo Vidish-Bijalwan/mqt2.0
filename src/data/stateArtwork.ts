@@ -294,7 +294,7 @@ export const rajasthanArtwork: StateArtwork = {
       image: "/images/location-library/hawa-mahal-jaipur/hawa-mahal-jaipur-01-lg.webp",
       href: "/destinations/rajasthan?destination=jaipur" },
     { name: "Udaipur", note: "Lake palaces and rooftop sunsets.",
-      image: "/images/location-library/udaipur-rajasthan-india/udaipur-rajasthan-india-01-lg.webp",
+      image: "/images/location-library/rajasthan-india/rajasthan-india-01-lg.webp",
       href: "/destinations/rajasthan?destination=udaipur" },
     { name: "Jaisalmer", note: "The golden fort, and dune nights beyond.",
       image: "/images/location-library/jaisalmer-rajasthan-india/jaisalmer-rajasthan-india-01-lg.webp",

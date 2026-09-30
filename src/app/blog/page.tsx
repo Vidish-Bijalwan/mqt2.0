@@ -246,7 +246,7 @@ function BlogIndexContent() {
         {/* Collage Background */}
         <div className="absolute inset-0 grid grid-cols-4 grid-rows-2 gap-0">
           {[
-            '/images/blog/kashmir-places-to-visit.webp',
+            '/images/packages/kashmir-hq.webp',
             '/images/blog/best-beaches-in-india.webp',
             '/images/blog/famous-indian-hill-stations.webp',
             '/images/blog/temples-in-india.webp',

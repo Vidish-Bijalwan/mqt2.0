@@ -29,7 +29,7 @@ export const BLOG_POST_SEEDS_BATCH_6: BlogPostSeed[] = [
     "slug": "amarnath-yatra-2026-dates-registration-guide",
     "title": "Amarnath Yatra 2026: Dates, Registration, Routes and Complete Travel Guide",
     "metaDescription": "Amarnath Yatra 2026: 3 July to 28 August (57 days). Registration process, CHC, Baltal vs Pahalgam routes, helicopter booking, fees and safety tips.",
-    "image": "/images/blog/kashmir-places-to-visit.webp",
+    "image": "/images/packages/kashmir-hq.webp",
     "category": "Pilgrimage",
     "tags": [
       "amarnath yatra",
@@ -69,7 +69,7 @@ export const BLOG_POST_SEEDS_BATCH_6: BlogPostSeed[] = [
     "slug": "chardham-yatra-registration-online-process",
     "title": "Chardham Yatra Registration: Online Process, Documents and Biometric Guide",
     "metaDescription": "Chardham Yatra registration is mandatory for all pilgrims. Step-by-step online process, documents needed, biometric verification and common mistakes.",
-    "image": "/images/blog/how-to-plan-your-chardham-yatra.webp",
+    "image": "/images/blog/kedarnath.webp",
     "category": "Travel Planning",
     "tags": [
       "chardham yatra registration",
