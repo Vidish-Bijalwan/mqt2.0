@@ -199,7 +199,7 @@ export default async function ExperiencePage({ params }: Params) {
             {/* Right: sticky sidebar */}
             <div className="w-full lg:w-1/4 shrink-0">
               <div id="enquiry" className="lg:sticky lg:top-6 space-y-6">
-                <EnquiryForm pkgName={`${exp.name} Tours`} />
+                <EnquiryForm pkgName={`${exp.name} Tours`} pkgSlug={slug} />
 
                 {/* Why book with us */}
                 <div className="rounded-card border border-gray-200 bg-white p-5 shadow-card-soft">

@@ -610,7 +610,11 @@
   }
   .nit-prcEnq a {
     flex: 1;
-    padding: 3px 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 10px 8px;
     border: 1px solid #ddd;
     font-size: 13px;
     border-radius: 5px;
