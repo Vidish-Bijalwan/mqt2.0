@@ -18238,5 +18238,10 @@
     "destination": "/packages",
     "permanent": true,
     "source": "/services/trek-booking"
+  },
+  {
+    "source": "/blog/kedarnath-opening-date-2026",
+    "destination": "/blog/tourist-places-in-kedarnath",
+    "permanent": true
   }
 ]
