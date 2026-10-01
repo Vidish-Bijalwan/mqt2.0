@@ -17,6 +17,14 @@ export const metadata: Metadata = {
       "Answers to common questions about booking tour packages with My Quick Trippers.",
     url: `${siteConfig.domain}/faq`,
     type: "website",
+    images: [
+      {
+        url: `${siteConfig.domain}/images/og-default.png`,
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
   },
 };
 

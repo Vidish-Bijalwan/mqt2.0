@@ -60,6 +60,14 @@ export const metadata: Metadata = {
     description: "Explore every destination we cover, with curated tour packages for each.",
     url: `${siteConfig.domain}/destinations`,
     type: "website",
+    images: [
+      {
+        url: `${siteConfig.domain}/images/og-default.png`,
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
   },
 };
 

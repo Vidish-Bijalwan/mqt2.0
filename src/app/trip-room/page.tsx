@@ -15,6 +15,14 @@ export const metadata: Metadata = {
     description:
       "Create a trip room, share one link with your group, collect votes on destination, dates, budget and more.",
     url: `${siteConfig.domain}/trip-room`,
+    images: [
+      {
+        url: `${siteConfig.domain}/images/og-default.png`,
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
   },
 };
 
