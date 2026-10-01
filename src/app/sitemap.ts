@@ -8,6 +8,7 @@ import packageDetailsRaw from '@/data/packageDetails.json';
 import destinationsDataRaw from '@/data/destinationsData.json';
 import { destinations as contentDestinations } from '@/data/contentData';
 import { ALL_BLOGS } from '@/data/blogIndex';
+import { listPublishedPosts } from '@/lib/blogDb';
 
 const packageDetails = packageDetailsRaw as Record<string, unknown>;
 const destinationsData = destinationsDataRaw as Record<string, unknown>;
@@ -93,7 +94,33 @@ const destinationSlugs: string[] = Array.from(
   ])
 ).filter((slug) => !EXCLUDED_DESTINATION_SLUGS.has(slug));
 
-export default function sitemap(): MetadataRoute.Sitemap {
+// ── CMS-authored blog posts ─────────────────────────────────────────
+// Posts written in /admin/blog/new live in Neon (blog_posts) and are served
+// by /blog/[slug] (DB wins on slug collision). They were previously absent
+// from sitemap.xml, the blog-index ItemList JSON-LD and related-posts
+// ranking — and with the /blog index being client-rendered, crawlers had no
+// discovery path at all. listPublishedPosts() only returns rows with
+// published_at set and <= now() (drafts/future posts stay invisible), and it
+// returns [] when DATABASE_URL is unset, so `next build` never fails on it.
+// A DB outage must not 500 the sitemap, so the lookup is guarded.
+async function cmsBlogRoutes(baseUrl: string): Promise<MetadataRoute.Sitemap> {
+  const staticSlugs = new Set(ALL_BLOGS.map((blog) => blog.slug));
+  try {
+    const cmsPosts = await listPublishedPosts();
+    return cmsPosts
+      .filter((post) => !staticSlugs.has(post.slug))
+      .map((post) => ({
+        url: `${baseUrl}/blog/${post.slug}`,
+        lastModified: post.published_at ? new Date(post.published_at) : BLOG_LASTMOD,
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+      }));
+  } catch {
+    return [];
+  }
+}
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = siteConfig.domain;
   const staticRoutes = [
     { route: '', priority: 1.0, freq: 'daily' as const },
@@ -149,5 +176,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));
-  return [...staticRoutes, ...destinationRoutes, ...experienceRoutes, ...curatedPackageRoutes, ...blogRoutes];
+  const cmsBlogRouteEntries = await cmsBlogRoutes(baseUrl);
+  return [...staticRoutes, ...destinationRoutes, ...experienceRoutes, ...curatedPackageRoutes, ...blogRoutes, ...cmsBlogRouteEntries];
 }

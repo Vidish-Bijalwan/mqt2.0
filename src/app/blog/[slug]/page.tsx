@@ -37,6 +37,30 @@ export function getBlogSlugStatus(rawSlug: string): BlogSlugStatus {
   return "missing";
 }
 
+/** CMS-authored post summaries for related-post ranking (Neon blog_posts). */
+interface DbPostSummary {
+  slug: string;
+  title: string;
+  category: string;
+  tags: string[];
+}
+
+/**
+ * Fetch published CMS post summaries for the related-posts pool. Same guards
+ * as getDbBlogPost: skipped entirely when DATABASE_URL is absent so
+ * `next build` never touches the DB; drafts and future-dated posts are
+ * filtered by listPublishedPosts itself.
+ */
+const getCmsPostSummaries = cache(async (): Promise<DbPostSummary[]> => {
+  if (!process.env.DATABASE_URL) return [];
+  try {
+    const { listPublishedPosts } = await import("@/lib/blogDb");
+    return listPublishedPosts();
+  } catch {
+    return [];
+  }
+});
+
 /** CMS-authored post row shape from src/lib/blogDb. */
 interface DbBlogPost {
   id: string;
@@ -287,7 +311,23 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const currentWords = new Set(
     `${post.title} ${post.category} ${post.tags.join(' ')}`.toLowerCase().replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter((w: string) => w.length > 3)
   );
-  const related = ALL_BLOGS
+  // The pool unions the static catalogue with published CMS posts (Neon), so
+  // CMS-authored posts appear as related posts and cross-link into the static
+  // catalogue instead of sitting orphaned.
+  const cmsSummaries = await getCmsPostSummaries();
+  const staticSlugSet = new Set(ALL_BLOGS.map((blog) => blog.slug));
+  const relatedPool: { slug: string; title: string; category: string; tags: string[] }[] = [
+    ...ALL_BLOGS,
+    ...cmsSummaries
+      .filter((candidate) => !staticSlugSet.has(candidate.slug))
+      .map((candidate) => ({
+        slug: candidate.slug,
+        title: candidate.title,
+        category: candidate.category,
+        tags: candidate.tags ?? [],
+      })),
+  ];
+  const related = relatedPool
     .filter((candidate) => candidate.slug !== post.slug)
     .map((candidate) => {
       const words = new Set(
