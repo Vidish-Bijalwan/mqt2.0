@@ -55,7 +55,10 @@ export const metadata: Metadata = {
     url: siteConfig.domain,
     images: [
       {
-        url: `${siteConfig.domain}/images/og-default.svg`,
+        // Raster PNG (1200x630): FB/X/WhatsApp/LinkedIn do not render SVG
+        // og:images, so the old og-default.svg produced broken share cards.
+        // Regenerate via scripts/gen-og-card.py if the brand treatment changes.
+        url: `${siteConfig.domain}/images/og-default.png`,
         width: 1200,
         height: 630,
         alt: siteConfig.name,
@@ -66,7 +69,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${siteConfig.name} | Curated Travel Experiences`,
     description: siteConfig.description,
-    images: [`${siteConfig.domain}/images/og-default.svg`],
+    images: [`${siteConfig.domain}/images/og-default.png`],
   },
   robots: {
     index: true,
