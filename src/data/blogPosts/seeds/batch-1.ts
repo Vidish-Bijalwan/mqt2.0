@@ -40,10 +40,10 @@ export const BLOG_POST_SEEDS_BATCH_1: BlogPostSeed[] = [
   {
     slug: "yamunotri-dham-trek-guide-best-time-how-to-reach",
     title: "Yamunotri Dham: Trek Guide, Best Time & How to Reach",
-    metaDescription: "Yamunotri dham trek guide: the 6 km Janki Chatti trail, best time to visit, how to reach from Delhi and Dehradun, Yamunotri temple tips and itinerary.",
+    metaDescription: "Yamunotri dham trek guide: the 6 km Janki Chatti trail, best time to visit, how to reach from Delhi and Dehradun, Champasar Glacier (source of the Yamuna), Yamunotri temple tips and itinerary.",
     image: "/images/blog/religious-places-of-uttarakhand.webp",
     category: "Pilgrimage",
-    tags: ["Yamunotri", "Char Dham", "Uttarakhand", "Trekking", "Pilgrimage", "Yamuna"],
+    tags: ["Yamunotri", "Char Dham", "Uttarakhand", "Trekking", "Pilgrimage", "Yamuna", "Champasar Glacier"],
     readingTime: 7,
     wordCount: 1348,
     publishedAt: "2026-09-29T18:43:00+05:30",

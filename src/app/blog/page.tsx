@@ -47,6 +47,11 @@ export default async function BlogIndexPage() {
     .sort((a, b) => new Date(b[1].publishedAt).getTime() - new Date(a[1].publishedAt).getTime())
     .slice(0, 12);
 
+  // Full crawlable link list: the grid itself is client-rendered, so raw HTML
+  // previously carried zero article <a> tags and discovery leaned entirely on
+  // the sitemap. This nav is visually hidden (sr-only) but present in initial
+  // HTML, giving crawlers direct <a href> links to every article.
+
   const blogIndexJsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
@@ -73,6 +78,17 @@ export default async function BlogIndexPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(blogIndexJsonLd) }} />
+      <nav aria-label="All blog articles" className="sr-only">
+        <ul>
+          {Array.from(bySlug.entries())
+            .sort((a, b) => new Date(b[1].publishedAt).getTime() - new Date(a[1].publishedAt).getTime())
+            .map(([slug, post]) => (
+              <li key={slug}>
+                <a href={`/blog/${slug}`}>{post.title}</a>
+              </li>
+            ))}
+        </ul>
+      </nav>
       <Suspense fallback={<div className="min-h-screen bg-gray-50" />}>
         <BlogIndexContent initialCmsPosts={cmsPosts} />
       </Suspense>
