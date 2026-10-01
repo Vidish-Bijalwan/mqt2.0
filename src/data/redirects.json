@@ -10771,12 +10771,12 @@
   },
   {
     "source": "/kedarnath-opening-closing-dates.html",
-    "destination": "/packages",
+    "destination": "/blog/kedarnath-opening-date-2026",
     "permanent": true
   },
   {
     "source": "/kedarnath-opening-closing-dates",
-    "destination": "/packages",
+    "destination": "/blog/kedarnath-opening-date-2026",
     "permanent": true
   },
   {
@@ -18238,10 +18238,5 @@
     "destination": "/packages",
     "permanent": true,
     "source": "/services/trek-booking"
-  },
-  {
-    "source": "/blog/kedarnath-opening-date-2026",
-    "destination": "/blog/tourist-places-in-kedarnath",
-    "permanent": true
   }
 ]
