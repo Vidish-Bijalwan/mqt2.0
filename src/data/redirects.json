@@ -17963,5 +17963,280 @@
     "source": "/india-tours.html",
     "destination": "/destinations/india-tours",
     "permanent": true
+  },
+  {
+    "destination": "/blog/things-to-do-in-jaipur",
+    "permanent": true,
+    "source": "/blog/5-star-hotels-in-jaipur"
+  },
+  {
+    "destination": "/blog/tourist-places-in-kedarnath",
+    "permanent": true,
+    "source": "/blog/best-time-to-visit-kedarnath-2025"
+  },
+  {
+    "destination": "/packages/honeymoon",
+    "permanent": true,
+    "source": "/blog/indian-honeymoon-destinations"
+  },
+  {
+    "destination": "/blog/dubai-travel-guide",
+    "permanent": true,
+    "source": "/blog/tips-to-design-dubai-trip"
+  },
+  {
+    "destination": "/blog/unexplored-destinations-in-uttarakhand",
+    "permanent": true,
+    "source": "/blog/uttarakhand-holistic-tourism-master-plan-new-destinations"
+  },
+  {
+    "destination": "/blog/best-night-clubs-in-bangalore",
+    "permanent": true,
+    "source": "/top-night-clubs-in-bangalore"
+  },
+  {
+    "destination": "/destinations",
+    "permanent": true,
+    "source": "/destinations/andaman-and-nicobar-islands/ross-island"
+  },
+  {
+    "destination": "/destinations",
+    "permanent": true,
+    "source": "/destinations/andaman/andaman"
+  },
+  {
+    "destination": "/destinations/assam",
+    "permanent": true,
+    "source": "/destinations/assam/kaziranga-national-park"
+  },
+  {
+    "destination": "/destinations/assam",
+    "permanent": true,
+    "source": "/destinations/assam/majuli"
+  },
+  {
+    "destination": "/destinations",
+    "permanent": true,
+    "source": "/destinations/chhattisgarh/bhilai"
+  },
+  {
+    "destination": "/destinations/gujarat",
+    "permanent": true,
+    "source": "/destinations/gujarat/godhra-beach-attraction"
+  },
+  {
+    "destination": "/destinations/gujarat",
+    "permanent": true,
+    "source": "/destinations/gujarat/morbi-trekking-attraction"
+  },
+  {
+    "destination": "/destinations/haryana",
+    "permanent": true,
+    "source": "/destinations/haryana/kurukshetra"
+  },
+  {
+    "destination": "/destinations/haryana",
+    "permanent": true,
+    "source": "/destinations/haryana/pinjore"
+  },
+  {
+    "destination": "/destinations/haryana",
+    "permanent": true,
+    "source": "/destinations/haryana/surajkund"
+  },
+  {
+    "destination": "/destinations",
+    "permanent": true,
+    "source": "/destinations/india-tours"
+  },
+  {
+    "destination": "/destinations/ladakh",
+    "permanent": true,
+    "source": "/destinations/ladakh/magnetic-hill"
+  },
+  {
+    "destination": "/destinations",
+    "permanent": true,
+    "source": "/destinations/lakshadweep/andrott"
+  },
+  {
+    "destination": "/destinations",
+    "permanent": true,
+    "source": "/destinations/odisha/puri"
+  },
+  {
+    "destination": "/destinations",
+    "permanent": true,
+    "source": "/destinations/odisha/rourkela"
+  },
+  {
+    "destination": "/destinations",
+    "permanent": true,
+    "source": "/destinations/sikkim/zuluk"
+  },
+  {
+    "destination": "/destinations/tamil-nadu",
+    "permanent": true,
+    "source": "/destinations/tamil-nadu/coimbatore"
+  },
+  {
+    "destination": "/destinations/tamil-nadu",
+    "permanent": true,
+    "source": "/destinations/tamil-nadu/madurai"
+  },
+  {
+    "destination": "/destinations",
+    "permanent": true,
+    "source": "/destinations/tripura/jampui-hill"
+  },
+  {
+    "destination": "/destinations/varanasi",
+    "permanent": true,
+    "source": "/destinations/uttar-pradesh/varanasi"
+  },
+  {
+    "destination": "/packages",
+    "permanent": true,
+    "source": "/packages/adventure/rishikesh-adventure-2-nights-3-days"
+  },
+  {
+    "destination": "/packages",
+    "permanent": true,
+    "source": "/packages/beach-escapes"
+  },
+  {
+    "destination": "/packages",
+    "permanent": true,
+    "source": "/packages/exclusive/gangotri-4-day-package"
+  },
+  {
+    "destination": "/packages",
+    "permanent": true,
+    "source": "/packages/exclusive/harshil-valley-4-day-package"
+  },
+  {
+    "destination": "/packages",
+    "permanent": true,
+    "source": "/packages/exclusive/nelang-valley-day-trip"
+  },
+  {
+    "destination": "/packages",
+    "permanent": true,
+    "source": "/packages/family"
+  },
+  {
+    "destination": "/packages",
+    "permanent": true,
+    "source": "/packages/heritage-trails/hampi-heritage-trail"
+  },
+  {
+    "destination": "/destinations/rajasthan",
+    "permanent": true,
+    "source": "/packages/heritage-trails/rajasthan-heritage-trail"
+  },
+  {
+    "destination": "/packages/honeymoon",
+    "permanent": true,
+    "source": "/packages/honeymoon-journeys/udaipur-couple-retreat"
+  },
+  {
+    "destination": "/packages/honeymoon",
+    "permanent": true,
+    "source": "/packages/honeymoon-journeys/udaipur-palace-experience"
+  },
+  {
+    "destination": "/packages/honeymoon",
+    "permanent": true,
+    "source": "/packages/honeymoon/kashmir-honeymoon-5-nights-6-days"
+  },
+  {
+    "destination": "/packages",
+    "permanent": true,
+    "source": "/packages/luxury"
+  },
+  {
+    "destination": "/packages",
+    "permanent": true,
+    "source": "/packages/luxury/ladakh-luxury-8-nights-9-days"
+  },
+  {
+    "destination": "/packages/pilgrimage",
+    "permanent": true,
+    "source": "/packages/pilgrimage-tours/char-dham-yatra"
+  },
+  {
+    "destination": "/packages/pilgrimage",
+    "permanent": true,
+    "source": "/packages/pilgrimage-tours/kedarnath-yatra-5-nights-6-days"
+  },
+  {
+    "destination": "/packages/pilgrimage",
+    "permanent": true,
+    "source": "/packages/pilgrimage-tours/mathura-vrindavan-yatra"
+  },
+  {
+    "destination": "/packages/pilgrimage",
+    "permanent": true,
+    "source": "/packages/pilgrimage-tours/rameswaram-temple-trail"
+  },
+  {
+    "destination": "/packages/pilgrimage",
+    "permanent": true,
+    "source": "/packages/pilgrimage-tours/tirupati-darshan-trip"
+  },
+  {
+    "destination": "/packages/pilgrimage",
+    "permanent": true,
+    "source": "/packages/pilgrimage/gangotri-4-day-package"
+  },
+  {
+    "destination": "/packages",
+    "permanent": true,
+    "source": "/packages/undefined/char-dham-yatra-10-nights-11-days"
+  },
+  {
+    "destination": "/packages",
+    "permanent": true,
+    "source": "/packages/undefined/himalayan-grand-circuit-12-nights-13-days"
+  },
+  {
+    "destination": "/packages/honeymoon",
+    "permanent": true,
+    "source": "/packages/undefined/kashmir-honeymoon-5-nights-6-days"
+  },
+  {
+    "destination": "/packages",
+    "permanent": true,
+    "source": "/packages/weekend"
+  },
+  {
+    "destination": "/contact-us",
+    "permanent": true,
+    "source": "/contact"
+  },
+  {
+    "destination": "/",
+    "permanent": true,
+    "source": "/profile"
+  },
+  {
+    "destination": "/",
+    "permanent": true,
+    "source": "/login"
+  },
+  {
+    "destination": "/packages",
+    "permanent": true,
+    "source": "/itineraries"
+  },
+  {
+    "destination": "/packages",
+    "permanent": true,
+    "source": "/services/custom-itinerary"
+  },
+  {
+    "destination": "/packages",
+    "permanent": true,
+    "source": "/services/trek-booking"
   }
 ]

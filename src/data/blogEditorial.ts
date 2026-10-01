@@ -23,6 +23,13 @@ const ARCHIVE_PATTERN = /\barchives?\b|^travel-theme__/i;
 const OFF_BRAND_PATTERN = /(?:carnival\s+valor|repositioning\s+cruise|liveaboard|travel\s+alarm\s+clock|private\s+jet\s+myth|new\s+york\s+city|pink\s+lakes?\s+(?:from|in)\s+the\s+world|best\s+exercises?\s+for\s+(?:a\s+)?long\s+road|night\s*clubs?|nightlife|travel\s+insurance|5-star\s+hotels?|camping\s+trip\s+accessories|casino|party\s+places?)/i;
 const MINIMUM_INDEXABLE_WORDS = 800;
 
+// Explicit restores: slugs that fail the patterns above but are restored
+// anyway because measured search traffic justifies keeping them. 2026-10-01:
+// "best-night-clubs-in-bangalore" drove 1,092 impressions / 22 clicks
+// (~23% of all site clicks) at avg position 8.84 in the GSC window
+// 2026-06-29→2026-09-28; de-listing it destroyed proven rankings.
+const EDITORIAL_ALLOWLIST = new Set(["best-night-clubs-in-bangalore"]);
+
 const CATEGORY_RULES: Array<{ category: BlogCategory; pattern: RegExp; tags: string[] }> = [
   { category: "Food & Cuisine", pattern: /\b(?:foods?|cuisine|restaurants?|cafes?|coffee|tea|street\s+foods?|dish(?:es)?|culinary|eat(?:ing)?)\b/i, tags: ["food", "cuisine", "restaurants", "local food", "travel dining"] },
   { category: "Pilgrimage", pattern: /yatra|temple|dham|jyotirlinga|spiritual|shrine|pilgrim|monastery|buddh(?:ist|ism)|church|mosque|gurdwara|kailash|darshan/i, tags: ["pilgrimage", "temples", "spiritual travel", "faith journeys"] },
@@ -82,6 +89,7 @@ function hash(value: string) {
 
 export function isPublishedBlog(seed: EditorialBlogSeed) {
   const source = `${seed.slug} ${seed.title}`;
+  if (EDITORIAL_ALLOWLIST.has(seed.slug.toLowerCase())) return true;
   const wordCount = "wordCount" in seed && typeof seed.wordCount === "number" ? seed.wordCount : undefined;
   return !ARCHIVE_PATTERN.test(source)
     && !OFF_BRAND_PATTERN.test(source)
