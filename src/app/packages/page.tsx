@@ -192,7 +192,7 @@ export default async function PackagesPage({
       params.set("durationMax", String(customRange.max));
     }
     if (selectedDestination) params.set("destination", selectedDestination);
-    else if (selectedFilter) params.set("q", selectedFilter);
+    if (selectedFilter) params.set("q", selectedFilter);
     if (selectedTravelers) params.set("travelers", String(selectedTravelers));
     if (page > 1) params.set("page", String(page));
     const qs = params.toString();
@@ -253,7 +253,7 @@ export default async function PackagesPage({
                           params.set("durationMax", String(customRange.max));
                         }
                         if (selectedDestination) params.set("destination", selectedDestination);
-                        else if (selectedFilter) params.set("q", selectedFilter);
+                        if (selectedFilter) params.set("q", selectedFilter);
                         const query = params.toString();
                         return query ? `/packages?${query}` : "/packages";
                       })()}
