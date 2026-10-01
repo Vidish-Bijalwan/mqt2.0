@@ -220,21 +220,13 @@ export function proxy(request: NextRequest) {
     return new NextResponse('Gone', { status: 410 });
   }
 
-  // 1b. De-listed blog posts -> 410 Gone. These slugs exist in the legacy
-  //     scrape but failed the editorial gate (confirmed dead, not missing):
-  //     a 410 tells search engines to de-list fast, where a 404 reads as
-  //     "maybe temporary". Decision set: GONE_BLOG_SLUGS in @/data/blogIndex;
-  //     the page-level twin is getBlogSlugStatus() in
-  //     src/app/blog/[slug]/page.tsx (which 404s anything not "live").
-  //     Verified 2026-09-27: no overlap with the legacy redirect table below.
-  const goneBlogMatch = pathname.match(/^\/blog\/([^/]+)\/?$/);
-  if (goneBlogMatch && GONE_BLOG_SLUGS.has(goneBlogMatch[1].toLowerCase())) {
-    return new NextResponse('Gone', { status: 410 });
-  }
-
-  // 2. Legacy redirect table (src/data/redirects.json), matched BEFORE the
-  //    extension stripper so .html/.htm variants hit their mapped target
-  //    (e.g. /gujrat-somnath-tour.html) instead of 404ing on the bare path.
+  // 1b. Legacy redirect table (src/data/redirects.json), matched BEFORE the
+  //    de-listed-blog 410 below and BEFORE the extension stripper, so
+  //    .html/.htm variants hit their mapped target (e.g.
+  //    /gujrat-somnath-tour.html) instead of 404ing on the bare path, and
+  //    dead URLs with an explicit rescue mapping 308 to their live
+  //    equivalent instead of being swallowed by the 410 (2026-10-01:
+  //    GSC showed 67 indexed URLs 404/410 with zero redirect coverage).
   const mapped = LEGACY_REDIRECT_MAP[lower];
   if (mapped) {
     const url = request.nextUrl.clone();
@@ -247,6 +239,19 @@ export function proxy(request: NextRequest) {
       return NextResponse.redirect(url, 308);
     }
     // Falls through to the rules below when the mapping is a no-op.
+  }
+
+  // 1c. De-listed blog posts -> 410 Gone. These slugs exist in the legacy
+  //     scrape but failed the editorial gate (confirmed dead, not missing):
+  //     a 410 tells search engines to de-list fast, where a 404 reads as
+  //     "maybe temporary". Decision set: GONE_BLOG_SLUGS in @/data/blogIndex;
+  //     the page-level twin is getBlogSlugStatus() in
+  //     src/app/blog/[slug]/page.tsx (which 404s anything not "live").
+  //     Runs AFTER the redirect table so an explicit rescue mapping always
+  //     wins over the 410.
+  const goneBlogMatch = pathname.match(/^\/blog\/([^/]+)\/?$/);
+  if (goneBlogMatch && GONE_BLOG_SLUGS.has(goneBlogMatch[1].toLowerCase())) {
+    return new NextResponse('Gone', { status: 410 });
   }
 
   // 3. Legacy static-site URLs (foo.html / foo.htm / foo.html/ / foo.htm/)

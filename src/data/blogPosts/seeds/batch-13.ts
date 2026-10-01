@@ -120,5 +120,17 @@ export const BLOG_POST_SEEDS_BATCH_13: BlogPostSeed[] = [
     "wordCount": 1483,
     "publishedAt": "2026-09-30T06:00:00+05:30",
     "targetKeyword": "that's so AI meaning"
+  },
+  {
+    "slug": "best-night-clubs-in-bangalore",
+    "title": "Top 20 Night Clubs in Bangalore for Ultimate Nightlife Fun",
+    "metaDescription": "The 20 best night clubs in Bangalore for an unforgettable night out — Skyye, Toit, Hard Rock Cafe and more, with vibe, music and what to expect.",
+    "image": "/images/blog/best-night-clubs-in-bangalore.webp",
+    "category": "Culture & Heritage",
+    "tags": ["Bangalore nightlife", "night clubs in Bangalore", "Bangalore", "party places", "things to do in Bangalore", "nightlife guide"],
+    "readingTime": 13,
+    "wordCount": 2473,
+    "publishedAt": "2026-10-01T12:00:00+05:30",
+    "targetKeyword": "best night clubs in bangalore"
   }
 ];
