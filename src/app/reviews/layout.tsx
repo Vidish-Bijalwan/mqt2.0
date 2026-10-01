@@ -19,6 +19,14 @@ export const metadata: Metadata = {
       "Honest reviews from real travellers — how My Quick Trippers collects and publishes customer feedback.",
     url: `${siteConfig.domain}/reviews`,
     type: "website",
+    images: [
+      {
+        url: `${siteConfig.domain}/images/og-default.png`,
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
   },
   twitter: {
     card: "summary",

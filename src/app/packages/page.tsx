@@ -22,6 +22,14 @@ export const metadata: Metadata = {
     title: "India, Dubai & Chardham Tour Packages",
     description: "Browse curated India and international tour packages — handpicked itineraries, best prices and dedicated support from My Quick Trippers.",
     url: `${siteConfig.domain}/packages`,
+    images: [
+      {
+        url: `${siteConfig.domain}/images/og-default.png`,
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",

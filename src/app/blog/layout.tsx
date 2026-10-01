@@ -27,6 +27,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     url: `${siteConfig.domain}/blog`,
+    // Segment-level openGraph replaces (not merges) the root openGraph, so
+    // the site-wide og-default.png fallback must be re-declared here.
+    images: [
+      {
+        url: `${siteConfig.domain}/images/og-default.png`,
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
   },
 };
 

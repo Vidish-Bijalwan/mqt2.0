@@ -20,6 +20,14 @@ export const metadata: Metadata = {
     description:
       "One spin a day. Win real travel vouchers up to ₹5,000 — with published odds and honest terms.",
     type: "website",
+    images: [
+      {
+        url: `${siteConfig.domain}/images/og-default.png`,
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
   },
 };
 
