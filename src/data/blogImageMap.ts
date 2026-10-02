@@ -225,7 +225,7 @@ export const blogImageMap: Record<string, string> = {
   "largest-statues-in-the-world": "/images/packages/largest-statues-in-the-world.webp",
   "lesser-known-places-to-visit-in-trivandrum": "/images/blog/lesser-known-places-to-visit-in-trivandrum.webp",
   "list-of-towns-in-kashmir": "/images/packages/kashmir-hq.webp",
-  "lohagarh-fort": "/images/packages/tourist-attractions-in-dubai.webp",
+  "lohagarh-fort": "/images/blog/lohagarh-fort-bharatpur.webp",
   "longest-bridges-in-india": "/images/packages/longest-bridges-in-india.webp",
   "longest-rivers-in-india": "/images/blog/longest-rivers-in-india.webp",
   "longest-tunnel-in-india": "/images/packages/longest-tunnel-in-india.webp",
@@ -419,4 +419,15 @@ export function getBlogImage(slug: string, index: number = 0): string {
   // Fallback to random if not found
   const allImages = Object.values(blogImageMap);
   return allImages[index % allImages.length];
+}
+
+// Photo credits for CC-licensed blog images, matching the "Place — Photographer, License"
+// caption convention used in packageExperienceOverrides.ts / packageLocationMedia.ts.
+// Rendered as a figcaption under the blog hero when present.
+export const blogImageCredits: Record<string, string> = {
+  "lohagarh-fort": "Lohagarh Fort, Bharatpur — Sainiikshank1410, CC BY-SA 4.0 (via Wikimedia Commons)",
+};
+
+export function getBlogImageCredit(slug: string): string | undefined {
+  return blogImageCredits[slug];
 }

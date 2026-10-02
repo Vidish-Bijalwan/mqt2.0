@@ -11,7 +11,7 @@ import type { ContentBlock } from "@/types/content";
 import { ALL_BLOGS, GONE_BLOG_SLUGS } from "@/data/blogIndex";
 import type { BlogIndexEntry } from "@/data/blogIndex";
 import { getEditorialBlocks } from "@/data/blogEditorial";
-import { getBlogImage } from "@/data/blogImageMap";
+import { getBlogImage, getBlogImageCredit } from "@/data/blogImageMap";
 import { getBlogPostContent } from "@/data/blogPosts/content";
 import AutoLinker from "@/components/ui/AutoLinker";
 import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
@@ -116,6 +116,8 @@ interface ResolvedPost {
   image: string;
   /** Exact cover src for the hero (static posts use getBlogImage(slug)). */
   coverImage: string;
+  /** Optional CC photo credit for the hero, rendered as a figcaption. */
+  coverCredit?: string;
   category: string;
   tags: string[];
   publishedAt: string;
@@ -137,6 +139,7 @@ function staticPostView(blog: BlogIndexEntry, slug: string): ResolvedPost {
     snippet: blog.snippet,
     image: blog.image || getBlogImage(slug),
     coverImage: getBlogImage(slug),
+    coverCredit: getBlogImageCredit(slug),
     category: blog.category,
     tags: blog.tags,
     publishedAt: blog.publishedAt ?? "2026-09-21",
@@ -447,9 +450,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <span className="mx-2">•</span>
           <span>{post.readingTime} min read</span>
         </div>
-        <div className="relative w-full h-[400px] mb-8 rounded overflow-hidden bg-gray-200">
-           <Image src={post.coverImage} alt={post.title} fill sizes="(max-width: 768px) 100vw, 800px" className="object-cover" priority placeholder={IMAGE_SKELETON} />
-        </div>
+        <figure className="mb-8">
+          <div className="relative w-full h-[400px] rounded overflow-hidden bg-gray-200">
+            <Image src={post.coverImage} alt={post.title} fill sizes="(max-width: 768px) 100vw, 800px" className="object-cover" priority placeholder={IMAGE_SKELETON} />
+          </div>
+          {post.coverCredit && (
+            <figcaption className="mt-2 text-xs text-gray-500">Photo: {post.coverCredit}</figcaption>
+          )}
+        </figure>
         <RenderContent content={post.blocks} />
         <BlogShareButtons title={post.title} url={`${siteConfig.domain}/blog/${slug}`} />
 
