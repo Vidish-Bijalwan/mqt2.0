@@ -5,7 +5,7 @@ import { GONE_BLOG_SLUGS } from '@/data/blogIndex';
 
 // Individual redirects (~891 rules) are in vercel.json — they run at CDN
 // level with no function-size limit. This proxy handles:
-//  - the 3,594-entry legacy redirect table (src/data/redirects.json),
+//  - the 3,648-entry legacy redirect table (src/data/redirects.json),
 //    including .html/.htm variants, matched BEFORE the extension stripper;
 //  - HTTP 410 for confirmed-dead legacy path patterns;
 //  - pattern-based rules that can't be expressed as static redirect entries.
@@ -17,7 +17,7 @@ interface LegacyRedirect {
 }
 
 // Parsed once at cold start. O(1) lookup keyed on the lowercased source path,
-// so .html variants and case variants resolve without scanning 3,594 entries.
+// so .html variants and case variants resolve without scanning 3,648 entries.
 const LEGACY_REDIRECT_MAP: Record<string, string> = {};
 for (const entry of legacyRedirectsRaw as LegacyRedirect[]) {
   LEGACY_REDIRECT_MAP[entry.source.toLowerCase()] = entry.destination;
