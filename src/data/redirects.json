@@ -17961,7 +17961,7 @@
   },
   {
     "source": "/india-tours.html",
-    "destination": "/destinations/india-tours",
+    "destination": "/destinations",
     "permanent": true
   },
   {
@@ -17975,7 +17975,7 @@
     "source": "/blog/best-time-to-visit-kedarnath-2025"
   },
   {
-    "destination": "/packages/honeymoon",
+    "destination": "/packages/honeymoon-tour-package",
     "permanent": true,
     "source": "/blog/indian-honeymoon-destinations"
   },
@@ -18135,17 +18135,17 @@
     "source": "/packages/heritage-trails/rajasthan-heritage-trail"
   },
   {
-    "destination": "/packages/honeymoon",
+    "destination": "/packages/rajasthan-honeymoon-tour-package",
     "permanent": true,
     "source": "/packages/honeymoon-journeys/udaipur-couple-retreat"
   },
   {
-    "destination": "/packages/honeymoon",
+    "destination": "/packages/rajasthan-honeymoon-tour-package",
     "permanent": true,
     "source": "/packages/honeymoon-journeys/udaipur-palace-experience"
   },
   {
-    "destination": "/packages/honeymoon",
+    "destination": "/packages/honeymoon-in-kashmir",
     "permanent": true,
     "source": "/packages/honeymoon/kashmir-honeymoon-5-nights-6-days"
   },
@@ -18160,32 +18160,32 @@
     "source": "/packages/luxury/ladakh-luxury-8-nights-9-days"
   },
   {
-    "destination": "/packages/pilgrimage",
+    "destination": "/packages/badrinath-kedarnath-yatra-from-delhi",
     "permanent": true,
     "source": "/packages/pilgrimage-tours/char-dham-yatra"
   },
   {
-    "destination": "/packages/pilgrimage",
+    "destination": "/packages/kedarnath-tour-packages",
     "permanent": true,
     "source": "/packages/pilgrimage-tours/kedarnath-yatra-5-nights-6-days"
   },
   {
-    "destination": "/packages/pilgrimage",
+    "destination": "/packages/mathura-gokul-barsana-vrindavan-tour",
     "permanent": true,
     "source": "/packages/pilgrimage-tours/mathura-vrindavan-yatra"
   },
   {
-    "destination": "/packages/pilgrimage",
+    "destination": "/packages/tirupati-rameshwaram-kanyakumari-madurai-tour",
     "permanent": true,
     "source": "/packages/pilgrimage-tours/rameswaram-temple-trail"
   },
   {
-    "destination": "/packages/pilgrimage",
+    "destination": "/packages/tirupati-tour-packages",
     "permanent": true,
     "source": "/packages/pilgrimage-tours/tirupati-darshan-trip"
   },
   {
-    "destination": "/packages/pilgrimage",
+    "destination": "/packages/gangotri-tour-packages",
     "permanent": true,
     "source": "/packages/pilgrimage/gangotri-4-day-package"
   },
@@ -18200,7 +18200,7 @@
     "source": "/packages/undefined/himalayan-grand-circuit-12-nights-13-days"
   },
   {
-    "destination": "/packages/honeymoon",
+    "destination": "/packages/honeymoon-in-kashmir",
     "permanent": true,
     "source": "/packages/undefined/kashmir-honeymoon-5-nights-6-days"
   },
