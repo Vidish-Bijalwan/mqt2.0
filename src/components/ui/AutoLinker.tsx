@@ -99,10 +99,22 @@ function renderMarkdownLink(linkText: string, url: string, key: string, classNam
       </Link>
     );
   }
+  // Safe non-web schemes still get a real link (mailto:/tel: for contact
+  // CTAs, # for in-page anchors).
+  if (/^(mailto:|tel:|#)/i.test(url)) {
+    return (
+      <a key={key} href={url} className={cls} title={linkText}>
+        {linkText}
+      </a>
+    );
+  }
+  // Anything else (javascript:, data:, vbscript:, …) is a stored-XSS vector
+  // through CMS-authored content — render the label as plain text so no
+  // clickable href is emitted.
   return (
-    <a key={key} href={url} className={cls} title={linkText}>
+    <span key={key} title={linkText}>
       {linkText}
-    </a>
+    </span>
   );
 }
 

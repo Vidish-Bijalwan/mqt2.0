@@ -6,6 +6,7 @@ import {
   mqtStandardPriceTerms,
 } from "@/data/tripEssentials";
 import type { PackageViewModel } from "@/utils/packageDetails";
+import ConvertedPrice from "@/components/currency/ConvertedPrice";
 
 /**
  * Feature A — "Trip essentials": the honest fine print on every package page.
@@ -29,6 +30,7 @@ export default function PackageTripTruth({ vm }: { vm: PackageViewModel }) {
     displayPrice,
     crossedOutPrice,
     saveAmount,
+    priceInfo,
     inclusions,
     cancellationNotes,
     cancellationFaqs,
@@ -70,15 +72,22 @@ export default function PackageTripTruth({ vm }: { vm: PackageViewModel }) {
                 <p className="text-3xl font-extrabold tracking-tight text-[#102b28]">
                   ₹{displayPrice}
                 </p>
+                {/* Indicative conversion for visitors with a non-INR display
+                    currency; renders nothing while INR is selected. */}
+                <ConvertedPrice amountInr={priceInfo.deal} className="mt-1 text-sm font-semibold text-[#355e54]" />
                 <p className="mt-1 text-xs font-semibold uppercase tracking-[0.14em] text-[#16815f]">
                   per person · starting price
                 </p>
                 {crossedOutPrice && (
                   <p className="mt-2 text-sm text-[#536763]">
                     List price{" "}
-                    <span className="line-through">₹{crossedOutPrice}</span>
+                    <span className="line-through">₹{crossedOutPrice}</span>{" "}
+                    <ConvertedPrice amountInr={priceInfo.mrp} className="text-xs font-semibold" />
                     {saveAmount && (
-                      <span className="ml-2 font-bold text-[#16815f]">You save ₹{saveAmount}</span>
+                      <span className="ml-2 font-bold text-[#16815f]">
+                        You save ₹{saveAmount}{" "}
+                        <ConvertedPrice amountInr={priceInfo.mrp - priceInfo.deal} className="text-xs font-semibold" />
+                      </span>
                     )}
                   </p>
                 )}
