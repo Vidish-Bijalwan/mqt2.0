@@ -172,7 +172,7 @@ export default function Navbar() {
                     <ChevronDown className={`ml-1.5 w-3.5 h-3.5 transition-transform duration-200 ${hoveredMenu === item.title ? 'rotate-180' : ''}`} />
                   </button>
                 ) : (
-                  <Link href={item.href || "#"} className="px-1.5 min-[1180px]:px-2 xl:px-3 h-[48px] whitespace-nowrap flex items-center hover:text-brand-secondary-pale hover:bg-white/5 transition-all duration-150">
+                  <Link href={item.href || "/destinations"} className="px-1.5 min-[1180px]:px-2 xl:px-3 h-[48px] whitespace-nowrap flex items-center hover:text-brand-secondary-pale hover:bg-white/5 transition-all duration-150">
                     {item.title}
                   </Link>
                 )}
@@ -213,7 +213,7 @@ export default function Navbar() {
                           </li>
                         ))}
                       </ul>
-                      <Link href={activeItem.href || "#"} className="mt-4 inline-block rounded border-2 border-brand-secondary px-4 py-2 text-[11px] font-bold uppercase tracking-wider text-brand-secondary transition-all hover:bg-brand-secondary hover:text-white">
+                      <Link href={activeItem.href || "/destinations"} className="mt-4 inline-block rounded border-2 border-brand-secondary px-4 py-2 text-[11px] font-bold uppercase tracking-wider text-brand-secondary transition-all hover:bg-brand-secondary hover:text-white">
                         View More →
                       </Link>
                     </div>
@@ -343,7 +343,7 @@ export default function Navbar() {
                   )}
                 </>
               ) : (
-                <Link href={item.href || "#"} className="block py-3.5 font-medium text-[15px]" onClick={() => setIsOpen(false)}>
+                <Link href={item.href || "/destinations"} className="block py-3.5 font-medium text-[15px]" onClick={() => setIsOpen(false)}>
                   {item.title}
                 </Link>
               )}
