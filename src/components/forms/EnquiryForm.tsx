@@ -5,6 +5,11 @@ import { siteConfig } from "@/data/siteConfig";
 import { buildEnquiryWhatsappUrl } from "@/utils/enquiry";
 import { trackEvent, getUtmProps } from "@/lib/analytics";
 
+// Same email pattern the /api/enquiries route validates against — kept in
+// sync so the client flags a typo before the fetch, instead of the server
+// 400 dropping the form into the "couldn't save" fallback.
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
 export default function EnquiryForm({ pkgName = "", pkgSlug, destination, embedded = false }: { pkgName?: string; pkgSlug?: string; destination?: string; embedded?: boolean }) {
   // `destination` is retained for campaign pages authored before `pkgName`
   // became the shared form API.
@@ -13,11 +18,15 @@ export default function EnquiryForm({ pkgName = "", pkgSlug, destination, embedd
   const [preparedUrl, setPreparedUrl] = useState("");
   const [phoneError, setPhoneError] = useState("");
   const [nameError, setNameError] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [travellersError, setTravellersError] = useState("");
   const [refId, setRefId] = useState<string | null>(null);
   const [fallbackNotice, setFallbackNotice] = useState(false);
   const successHeadingRef = useRef<HTMLHeadingElement>(null);
   const nameInputRef = useRef<HTMLInputElement>(null);
   const phoneInputRef = useRef<HTMLInputElement>(null);
+  const emailInputRef = useRef<HTMLInputElement>(null);
+  const travellersInputRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
   const startFiredRef = useRef(false);
   // Bot-speed check: the form was rendered at mount; submissions faster
@@ -132,6 +141,30 @@ export default function EnquiryForm({ pkgName = "", pkgSlug, destination, embedd
       return;
     }
     setNameError("");
+
+    // Email is optional, but a typo'd address fails server-side validation and
+    // the form would drop into the "couldn't save" fallback instead of
+    // flagging the typo — catch it here with the same pattern the API uses.
+    if (details.email && !EMAIL_RE.test(details.email)) {
+      setEmailError("That email address doesn't look right — please check it.");
+      emailInputRef.current?.focus();
+      setStatus("idle");
+      return;
+    }
+    setEmailError("");
+
+    // The API caps travellers at 50; a larger value fails server-side with
+    // the same misleading fallback — flag the range before the fetch.
+    if (details.travellers) {
+      const n = Number(details.travellers);
+      if (!Number.isInteger(n) || n < 1 || n > 50) {
+        setTravellersError("Please enter between 1 and 50 travellers.");
+        travellersInputRef.current?.focus();
+        setStatus("idle");
+        return;
+      }
+    }
+    setTravellersError("");
 
     // Submit to the real lead-capture API FIRST. The team is notified
     // server-side; the visitor still gets the WhatsApp thread to continue
@@ -258,13 +291,20 @@ export default function EnquiryForm({ pkgName = "", pkgSlug, destination, embedd
             <input ref={nameInputRef} id="enquiry-name" name="name" required autoComplete="name" enterKeyHint="next" type="text" aria-describedby="enquiry-name-error" aria-invalid={nameError ? true : undefined} onChange={() => nameError && setNameError("")} className="min-h-13 w-full rounded-xl border border-line bg-surface-card px-4 text-base outline-none transition focus:border-brand-secondary focus:ring-2 focus:ring-brand-secondary/20" placeholder="Enter your name" />
             {nameError ? (
               <p id="enquiry-name-error" role="alert" className="mt-1.5 text-xs font-semibold text-red-600">{nameError}</p>
-            ) : null}
+            ) : (
+              <p id="enquiry-name-error" className="mt-1.5 text-xs text-ink-muted">Enter your full name as it should appear on your booking.</p>
+            )}
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <label htmlFor="enquiry-email" className="mb-1.5 block text-sm font-bold text-brand-primary">Email Address <span className="font-normal text-ink-muted">(optional)</span></label>
-            <input id="enquiry-email" name="email" autoComplete="email" enterKeyHint="next" spellCheck={false} type="email" className="min-h-13 w-full rounded-xl border border-line bg-surface-card px-4 text-base outline-none transition focus:border-brand-secondary focus:ring-2 focus:ring-brand-secondary/20" placeholder="name@example.com" />
+            <input ref={emailInputRef} id="enquiry-email" name="email" autoComplete="email" enterKeyHint="next" spellCheck={false} type="email" aria-describedby="enquiry-email-error" aria-invalid={emailError ? true : undefined} onChange={() => emailError && setEmailError("")} className="min-h-13 w-full rounded-xl border border-line bg-surface-card px-4 text-base outline-none transition focus:border-brand-secondary focus:ring-2 focus:ring-brand-secondary/20" placeholder="name@example.com" />
+            {emailError ? (
+              <p id="enquiry-email-error" role="alert" className="mt-1.5 text-xs font-semibold text-red-600">{emailError}</p>
+            ) : (
+              <p id="enquiry-email-error" className="mt-1.5 text-xs text-ink-muted">We&apos;ll use this only to send your trip details.</p>
+            )}
           </div>
           <div>
             <label htmlFor="enquiry-phone" className="mb-1.5 block text-sm font-bold text-brand-primary">Phone Number *</label>
@@ -284,7 +324,12 @@ export default function EnquiryForm({ pkgName = "", pkgSlug, destination, embedd
           </div>
           <div>
             <label htmlFor="enquiry-travellers" className="mb-1.5 block text-sm font-bold text-brand-primary">No. of Travellers</label>
-            <input id="enquiry-travellers" name="travellers" type="number" min="1" inputMode="numeric" className="min-h-13 w-full rounded-xl border border-line bg-surface-card px-4 text-base outline-none transition focus:border-brand-secondary focus:ring-2 focus:ring-brand-secondary/20" placeholder="E.g. 2" />
+            <input ref={travellersInputRef} id="enquiry-travellers" name="travellers" type="number" min="1" max="50" inputMode="numeric" aria-describedby="enquiry-travellers-error" aria-invalid={travellersError ? true : undefined} onChange={() => travellersError && setTravellersError("")} className="min-h-13 w-full rounded-xl border border-line bg-surface-card px-4 text-base outline-none transition focus:border-brand-secondary focus:ring-2 focus:ring-brand-secondary/20" placeholder="E.g. 2" />
+            {travellersError ? (
+              <p id="enquiry-travellers-error" role="alert" className="mt-1.5 text-xs font-semibold text-red-600">{travellersError}</p>
+            ) : (
+              <p id="enquiry-travellers-error" className="mt-1.5 text-xs text-ink-muted">Adults + children travelling (max 50).</p>
+            )}
           </div>
         </div>
 
