@@ -48,7 +48,10 @@ export async function GET(req: NextRequest) {
  * POST /api/blog/comments {slug, author_name, body, website?}
  * Honeypot `website` must be empty; name 2–40 chars; body 2–2000 chars;
  * 3/min/IP rate limit, 10 comments/day/IP DB cap, >3 links rejected.
- * -> {comment} / 400 / 429.
+ * Spam verdicts (honeypot / link-count) return a fake 201 {ok:true, spam:true}
+ * so bots can't probe the defence — same posture as /api/enquiries. The
+ * client clears the form on any 2xx, so nothing renders for the "success".
+ * Real posts -> {comment} 201 / validation 400 / 429 / 503.
  */
 export async function POST(req: NextRequest) {
   let body: unknown;
@@ -67,8 +70,9 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Invalid slug" }, { status: 400 });
   }
   // Honeypot: bots fill this hidden field; real users never see it.
+  // Pretend success so bots can't probe the defence (matches /api/enquiries).
   if (typeof website === "string" && website.trim().length > 0) {
-    return NextResponse.json({ error: "Spam detected" }, { status: 400 });
+    return NextResponse.json({ ok: true, spam: true }, { status: 201 });
   }
   const name = typeof authorName === "string" ? authorName.trim() : "";
   const text = typeof commentBody === "string" ? commentBody.trim() : "";
@@ -85,9 +89,11 @@ export async function POST(req: NextRequest) {
     );
   }
   // Link-count heuristic: real travellers rarely drop >3 URLs in a comment.
+  // Fake success here too — a 400 "Spam detected" tells bots exactly where
+  // the tripwire is.
   const linkCount = (text.match(/https?:\/\/|www\./gi) ?? []).length;
   if (linkCount > 3) {
-    return NextResponse.json({ error: "Spam detected" }, { status: 400 });
+    return NextResponse.json({ ok: true, spam: true }, { status: 201 });
   }
 
   const ip = getClientIp(req);

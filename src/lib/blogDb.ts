@@ -10,6 +10,7 @@
  *   bound params). No raw SQL interpolation anywhere.
  */
 import { neon } from "@neondatabase/serverless";
+import { ipHashFor } from "./analyticsDb";
 
 /**
  * Typed facade over the Neon serverless client.
@@ -344,9 +345,14 @@ export async function addComment(
   const sql = getDb();
   if (!sql) return null;
   await ensureSchema();
+  // Privacy: never store the raw client IP. author_ip holds the
+  // daily-rotating salted hash from ipHashFor (same posture as the analytics
+  // and lead-capture tables). Rows written before this change may hold raw
+  // IPs; they simply won't match future hashed lookups.
+  const storedIp = authorIp ? ipHashFor(authorIp) : null;
   const rows = await sql<PublicComment[]>`
     INSERT INTO blog_comments (slug, author_name, author_email, body, author_ip)
-    VALUES (${slug}, ${name}, ${email}, ${body}, ${authorIp})
+    VALUES (${slug}, ${name}, ${email}, ${body}, ${storedIp})
     RETURNING id, author_name, body, created_at`;
   return rows[0] ?? null;
 }
@@ -354,7 +360,10 @@ export async function addComment(
 /**
  * Anti-spam: how many comments this IP has submitted in the trailing window.
  * Backs the per-IP daily cap in the comments route. Unknown IPs ("") return 0
- * so the cap never groups unidentifiable clients together.
+ * so the cap never groups unidentifiable clients together. `ip` is the raw
+ * client IP — it is hashed with ipHashFor before the lookup, matching what
+ * addComment stores. (The salt rotates daily, so the trailing window is
+ * effectively "since UTC midnight", matching the documented daily cap.)
  */
 export async function countRecentCommentsByIp(
   ip: string,
@@ -363,10 +372,12 @@ export async function countRecentCommentsByIp(
   const sql = getDb();
   if (!sql || !ip) return 0;
   await ensureSchema();
+  const hash = ipHashFor(ip);
+  if (!hash) return 0;
   const rows = await sql<{ n: number }[]>`
     SELECT COUNT(*)::int AS n
     FROM blog_comments
-    WHERE author_ip = ${ip}
+    WHERE author_ip = ${hash}
       AND created_at > now() - make_interval(hours => ${windowHours})`;
   return rows[0]?.n ?? 0;
 }
