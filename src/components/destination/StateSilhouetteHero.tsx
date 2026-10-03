@@ -38,7 +38,7 @@ export default function StateSilhouetteHero({ title, profile, packageCount, star
 
   return <section className="overflow-hidden border-b border-[#d7e0da] bg-[#f6f5ee] text-[#103a33]">
     <div className="mx-auto max-w-[1440px] px-4 pb-5 pt-4 sm:px-6 lg:px-8">
-      <div className="mb-3 flex items-center gap-2 text-xs text-[#587069]"><Link href="/" className="hover:text-[#164b40]">Home</Link><span>›</span><Link href="/packages" className="hover:text-[#164b40]">India</Link><span>›</span><strong className="text-[#164b40]">{title}</strong></div>
+      <div className="mb-3 flex items-center gap-2 text-xs text-[#587069]"><Link href="/" className="hover:text-[#164b40]">Home</Link><span>›</span><Link href="/destinations" className="hover:text-[#164b40]">Destinations</Link><span>›</span><strong className="text-[#164b40]">{title}</strong></div>
       <div className="relative isolate overflow-hidden rounded-[28px] bg-[#082f2a] shadow-[0_24px_56px_rgba(8,47,42,.20)]">
         <div className="absolute inset-0 opacity-70" style={{ backgroundImage: `linear-gradient(115deg, rgba(1,27,24,.94), rgba(4,58,50,.50)), url(${artwork.background})`, backgroundSize: "cover", backgroundPosition: "center" }} />
         {artwork.motif && <StateMotif motif={artwork.motif} className="absolute inset-0 z-[5] h-full w-full text-[color-mix(in_srgb,var(--state-accent)_24%,transparent)] [mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_75%)]" />}

@@ -5,6 +5,7 @@ import { destinations } from "@/data/contentData";
 import { destinationExplorerProfiles } from "@/data/destinationExplorer";
 import { getPublicPackages } from "@/utils/packageCatalog";
 import { siteConfig } from "@/data/siteConfig";
+import { safeJsonLd } from "@/utils/jsonLd";
 import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
 import type { Metadata } from "next";
 
@@ -101,8 +102,22 @@ export default function DestinationsIndexPage() {
     };
   });
 
+  const itemListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Destinations in India",
+    itemListElement: cards.map((card, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: card.name,
+      url: `${siteConfig.domain}/destinations/${card.slug}`,
+      image: card.image.startsWith("http") ? card.image : `${siteConfig.domain}${card.image}`,
+    })),
+  };
+
   return (
     <main className="min-h-screen bg-[#f5f4ee] pb-16 text-[#102f2b]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(itemListJsonLd) }} />
       <div className="border-b border-[#d9e3dc] bg-white/85">
         <div className="mx-auto flex max-w-7xl items-center gap-1 px-4 py-3 text-xs text-[#5e746d] sm:px-6">
           <Link href="/" className="hover:text-[#16453d]">Home</Link>
