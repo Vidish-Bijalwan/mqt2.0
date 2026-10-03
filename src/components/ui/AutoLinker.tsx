@@ -92,7 +92,10 @@ function renderMarkdownLink(linkText: string, url: string, key: string, classNam
       </a>
     );
   }
-  if (url.startsWith('/')) {
+  // Site-relative URLs use Next.js client-side navigation — but a leading
+  // "//" is a protocol-relative EXTERNAL URL (//evil.com/phish), not
+  // site-relative, so it must not land here.
+  if (url.startsWith('/') && !url.startsWith('//')) {
     return (
       <Link key={key} href={url} className={cls} title={linkText}>
         {linkText}

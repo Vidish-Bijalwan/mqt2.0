@@ -61,6 +61,24 @@ function secureRng(): () => number {
   return Math.random;
 }
 
+/** Random bytes for voucher codes: crypto.getRandomValues on secure
+ * contexts, Math.random otherwise. A failed code-gen must degrade to the
+ * fallback, never throw mid-spin (that would leave phase stuck at
+ * "spinning" forever and skip recordSpin). */
+function voucherRandomBytes(n: number): Uint8Array {
+  const bytes = new Uint8Array(n);
+  try {
+    if (typeof crypto !== "undefined" && "getRandomValues" in crypto) {
+      crypto.getRandomValues(bytes);
+      return bytes;
+    }
+  } catch {
+    /* fall through to the insecure fallback */
+  }
+  for (let i = 0; i < n; i++) bytes[i] = Math.floor(Math.random() * 256);
+  return bytes;
+}
+
 function usePrefersReducedMotion(): boolean {
   const subscribe = useCallback((onChange: () => void) => {
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -151,7 +169,7 @@ export default function SpinGame() {
       const issuedAt = new Date().toISOString();
       const code =
         tier.value > 0
-          ? generateVoucherCode((n) => crypto.getRandomValues(new Uint8Array(n)))
+          ? generateVoucherCode(voucherRandomBytes)
           : null;
       const drawn: DrawnPrize = {
         tier,
