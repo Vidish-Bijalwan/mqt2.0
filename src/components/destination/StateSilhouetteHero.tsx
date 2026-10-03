@@ -3,6 +3,7 @@ import type { CSSProperties } from "react";
 import type { ExplorerProfile, ExplorerMapMarker } from "@/data/destinationExplorer";
 import { projectDestination } from "@/utils/stateMapProjection";
 import { isFullStateArtwork } from "@/data/stateArtwork";
+import ConvertedPrice from "@/components/currency/ConvertedPrice";
 import StateMotif from "./StateMotif";
 
 interface StateSilhouetteHeroProps {
@@ -42,7 +43,7 @@ export default function StateSilhouetteHero({ title, profile, packageCount, star
         <div className="absolute inset-0 opacity-70" style={{ backgroundImage: `linear-gradient(115deg, rgba(1,27,24,.94), rgba(4,58,50,.50)), url(${artwork.background})`, backgroundSize: "cover", backgroundPosition: "center" }} />
         {artwork.motif && <StateMotif motif={artwork.motif} className="absolute inset-0 z-[5] h-full w-full text-[color-mix(in_srgb,var(--state-accent)_24%,transparent)] [mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_75%)]" />}
         <div className="relative min-h-[610px] px-5 pb-5 pt-6 sm:min-h-[var(--state-tablet-hero-height)] sm:px-9 sm:pt-9 lg:min-h-[670px]" style={responsiveMapVars}>
-          <div className="relative z-20 max-w-[390px] text-white"><p className="text-[10px] font-black uppercase tracking-[.28em] text-[var(--state-accent)]">{profile.eyebrow}</p><h1 className="font-display mt-2 text-4xl font-bold tracking-[-.055em] sm:text-6xl">{title}</h1><p className="mt-2 text-sm font-semibold text-white/88">{artwork.themes}</p><p className="mt-2 text-xs text-white/70">{packageCount} packages · {profile.geography?.districtCount || profile.places.length} districts · {startingPrice ? `From ₹${startingPrice.toLocaleString("en-IN")}` : "Tailored prices"}</p></div>
+          <div className="relative z-20 max-w-[390px] text-white"><p className="text-[10px] font-black uppercase tracking-[.28em] text-[var(--state-accent)]">{profile.eyebrow}</p><h1 className="font-display mt-2 text-4xl font-bold tracking-[-.055em] sm:text-6xl">{title}</h1><p className="mt-2 text-sm font-semibold text-white/88">{artwork.themes}</p><p className="mt-2 text-xs text-white/70">{packageCount} packages · {profile.geography?.districtCount || profile.places.length} districts · {startingPrice ? <>From ₹{startingPrice.toLocaleString("en-IN")}{" "}{/* Indicative conversion for non-INR display currency; renders nothing while INR is selected (PR #55 pattern). */}<ConvertedPrice amountInr={startingPrice} className="font-semibold text-white/60" /></> : "Tailored prices"}</p></div>
           <div className="absolute inset-x-0 bottom-[46px] top-[118px] z-10 sm:bottom-[48px] sm:top-[var(--state-tablet-map-top)] lg:bottom-[45px] lg:left-[18%] lg:right-[3%] lg:top-[24px]" aria-label={`Tourism imagery inside the accurate ${title} boundary`}>
             <div className="relative mx-auto h-full max-w-full" style={{ aspectRatio: `${geometry.width} / ${geometry.height}` }}>
             <svg className="h-full w-full overflow-visible drop-shadow-[0_26px_28px_rgba(0,0,0,.42)]" viewBox={`0 0 ${geometry.width} ${geometry.height}`} preserveAspectRatio="xMidYMid meet" role="img" aria-label={`${title} tourism map`}>
