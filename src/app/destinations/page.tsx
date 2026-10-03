@@ -109,9 +109,12 @@ export default function DestinationsIndexPage() {
     itemListElement: cards.map((card, i) => ({
       "@type": "ListItem",
       position: i + 1,
-      name: card.name,
-      url: `${siteConfig.domain}/destinations/${card.slug}`,
-      image: card.image.startsWith("http") ? card.image : `${siteConfig.domain}${card.image}`,
+      item: {
+        "@type": "TouristDestination",
+        name: card.name,
+        url: `${siteConfig.domain}/destinations/${card.slug}`,
+        image: card.image.startsWith("http") ? card.image : `${siteConfig.domain}${card.image}`,
+      },
     })),
   };
 
