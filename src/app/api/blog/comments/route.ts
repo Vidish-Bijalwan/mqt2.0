@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { addComment, countRecentCommentsByIp, listComments } from "@/lib/blogDb";
+import { addComment, blogSlugKnown, countRecentCommentsByIp, listComments } from "@/lib/blogDb";
 import {
   SLUG_RE,
   asRecord,
@@ -68,6 +68,12 @@ export async function POST(req: NextRequest) {
 
   if (typeof slug !== "string" || !SLUG_RE.test(slug)) {
     return NextResponse.json({ error: "Invalid slug" }, { status: 400 });
+  }
+  // Unknown slugs can't render comments anywhere — don't mint orphan rows
+  // (same posture as view/like via blogSlugKnown). Fake success so bots
+  // cycling random slugs can't probe which slugs are live.
+  if (!(await blogSlugKnown(slug))) {
+    return NextResponse.json({ ok: true }, { status: 201 });
   }
   // Honeypot: bots fill this hidden field; real users never see it.
   // Pretend success so bots can't probe the defence (matches /api/enquiries).

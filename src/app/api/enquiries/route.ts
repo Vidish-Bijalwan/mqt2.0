@@ -140,6 +140,15 @@ export async function POST(req: Request) {
   let travelDate: string | null = null;
   if (travelDateRaw !== "") {
     if (!DATE_RE.test(travelDateRaw)) return bad("Invalid travel date.");
+    // Past travel dates are a data-quality bug downstream — compare against
+    // "today" in IST (the team's operating timezone), not the server clock.
+    const todayIst = new Intl.DateTimeFormat("en-CA", {
+      timeZone: "Asia/Kolkata",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    }).format(new Date());
+    if (travelDateRaw < todayIst) return bad("Travel date can't be in the past.");
     travelDate = travelDateRaw;
   }
 
