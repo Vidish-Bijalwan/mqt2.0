@@ -8,9 +8,28 @@ import { IMAGE_SKELETON } from "@/utils/imagePlaceholder";
 import { safeJsonLd } from "@/utils/jsonLd";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "About Us | My Quick Trippers",
   description: "Meet My Quick Trippers and learn how our India-based travel team designs thoughtful, personalised journeys.",
   alternates: { canonical: `${siteConfig.domain}/about-us` },
+  openGraph: {
+    title: "About Us | My Quick Trippers",
+    description: "Meet My Quick Trippers and learn how our India-based travel team designs thoughtful, personalised journeys.",
+    url: `${siteConfig.domain}/about-us`,
+    type: "website",
+    images: [
+      {
+        url: `${siteConfig.domain}/images/og-default.png`,
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "About Us | My Quick Trippers",
+    description: "Meet My Quick Trippers and learn how our India-based travel team designs thoughtful, personalised journeys.",
+  },
 };
 
 const values = [

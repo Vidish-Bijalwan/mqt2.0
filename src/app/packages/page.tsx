@@ -313,6 +313,7 @@ export default async function PackagesPage({
                   <option value="4">4+ travelers</option>
                 </select>
                 {selectedCategory !== "All" && <input type="hidden" name="category" value={selectedCategory} />}
+                {selectedDestination && <input type="hidden" name="destination" value={selectedDestination} />}
                 <button type="submit" className="min-h-11 rounded-lg bg-brand-forest px-4 text-sm font-bold text-white transition hover:bg-brand-forest-deep focus:outline-none focus:ring-2 focus:ring-brand-river focus:ring-offset-2">
                   Apply filters
                 </button>

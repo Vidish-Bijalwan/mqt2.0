@@ -197,6 +197,7 @@ export default function EnquiryForm({ pkgName = "", pkgSlug, destination, embedd
     // the conversation.
     let apiOk = false;
     let ref: string | null = null;
+    let spamVerdict = false;
     try {
       const res = await fetch("/api/enquiries", {
         method: "POST",
@@ -217,9 +218,10 @@ export default function EnquiryForm({ pkgName = "", pkgSlug, destination, embedd
         }),
       });
       if (res.ok) {
-        const json = (await res.json()) as { ok?: boolean; ref?: string | null };
+        const json = (await res.json()) as { ok?: boolean; ref?: string | null; spam?: boolean };
         apiOk = json.ok === true;
         ref = typeof json.ref === "string" ? json.ref : null;
+        spamVerdict = json.spam === true;
       }
     } catch {
       apiOk = false;
@@ -232,9 +234,15 @@ export default function EnquiryForm({ pkgName = "", pkgSlug, destination, embedd
     setPreparedUrl(whatsappUrl);
 
     if (apiOk) {
-      // Honest conversion event: the lead is genuinely stored now — this no
-      // longer fires on a mere WhatsApp-open.
-      trackEvent("enquiry_submit", { package: enquiryName || "general", ...getUtmProps() });
+      if (!spamVerdict) {
+        // Honest conversion event: the lead is genuinely stored now — this no
+        // longer fires on a mere WhatsApp-open. Spam verdicts are deliberately
+        // excluded: the anti-probing fake-201 must not inflate first-party
+        // conversion counts.
+        trackEvent("enquiry_submit", { package: enquiryName || "general", ...getUtmProps() });
+      }
+      // Spam verdicts still render the neutral success UI below so the defence
+      // is not revealed to the submitter.
       form.reset(); // clear PII — nothing persists client-side after submit
       setRefId(ref);
       // Best effort: popup blockers may stop this; the success panel below

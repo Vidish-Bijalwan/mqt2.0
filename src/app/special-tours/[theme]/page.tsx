@@ -26,7 +26,9 @@ export async function generateMetadata({ params }: { params: Promise<{ theme: st
   const title = `${displayTheme} Tour Packages`;
   const description = `Explore our handpicked ${theme} tour packages. Find the perfect itinerary for your next trip.`;
   const url = `${siteConfig.domain}/special-tours/${theme}`;
-  const ogImage = `${siteConfig.domain}/images/hero/hero-bg-2.svg`;
+  // Share-card image: 1200x630 PNG — X/Facebook cannot render SVG og:images,
+  // so the hero gradient placeholder is never used here.
+  const ogImage = `${siteConfig.domain}/images/og-default.png`;
 
   return {
     title,

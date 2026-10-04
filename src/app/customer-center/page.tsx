@@ -4,9 +4,31 @@ import { Phone, Mail, MessageCircle, ChevronRight } from "lucide-react";
 import { safeJsonLd } from "@/utils/jsonLd";
 
 export const metadata = {
-  title: "Customer Center",
+  title: "Customer Center | My Quick Trippers",
   description:
     "Need help with booking, payments, or your trip? Contact My Quick Trippers customer support by phone, email, or WhatsApp.",
+  alternates: { canonical: `${siteConfig.domain}/customer-center` },
+  openGraph: {
+    title: "Customer Center | My Quick Trippers",
+    description:
+      "Need help with booking, payments, or your trip? Contact My Quick Trippers customer support by phone, email, or WhatsApp.",
+    url: `${siteConfig.domain}/customer-center`,
+    type: "website",
+    images: [
+      {
+        url: `${siteConfig.domain}/images/og-default.png`,
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "Customer Center | My Quick Trippers",
+    description:
+      "Need help with booking, payments, or your trip? Contact My Quick Trippers customer support by phone, email, or WhatsApp.",
+  },
 };
 
 const QUICK_LINKS = [
