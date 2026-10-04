@@ -48,7 +48,7 @@ export const experiences: Experience[] = [
     slug: "medical-tourism",
     name: "Medical Tourism",
     group: "Medical",
-    image: "/images/packages/india-best-ayurveda-destinations.webp",
+    image: "/images/packages/kerala-spa-ayurveda-holidays.jpg",
     tagline: "World-class healthcare & healing",
     keywords: ["medical", "treatment", "hospital", "health", "surgery", "ayurveda", "wellness"],
     description:

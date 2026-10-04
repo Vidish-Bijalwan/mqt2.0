@@ -242,8 +242,12 @@ export default function EnquiryForm({ pkgName = "", pkgSlug, destination, embedd
         trackEvent("enquiry_submit", { package: enquiryName || "general", ...getUtmProps() });
       }
       // Spam verdicts still render the neutral success UI below so the defence
-      // is not revealed to the submitter.
+      // is not revealed to the submitter — but show the honest WhatsApp
+      // nudge: nothing was stored server-side, so the lead survives only if
+      // the visitor actually presses send. A real human can trip the 500ms
+      // bot-speed gate (browser autofill + Enter).
       form.reset(); // clear PII — nothing persists client-side after submit
+      setFallbackNotice(spamVerdict);
       setRefId(ref);
       // Best effort: popup blockers may stop this; the success panel below
       // carries an explicit "Open WhatsApp" button as backup.
