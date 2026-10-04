@@ -10,6 +10,18 @@ import { trackEvent, getUtmProps } from "@/lib/analytics";
 // 400 dropping the form into the "couldn't save" fallback.
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
+// "Today" in the team's operating timezone (Asia/Kolkata), as YYYY-MM-DD.
+// Date inputs and the server-side past-date guard both compare against this,
+// so the boundary is consistent no matter where the visitor's browser is.
+function todayIst(): string {
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Kolkata",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(new Date());
+}
+
 export default function EnquiryForm({ pkgName = "", pkgSlug, destination, embedded = false }: { pkgName?: string; pkgSlug?: string; destination?: string; embedded?: boolean }) {
   // `destination` is retained for campaign pages authored before `pkgName`
   // became the shared form API.
@@ -20,6 +32,7 @@ export default function EnquiryForm({ pkgName = "", pkgSlug, destination, embedd
   const [nameError, setNameError] = useState("");
   const [emailError, setEmailError] = useState("");
   const [travellersError, setTravellersError] = useState("");
+  const [travelDateError, setTravelDateError] = useState("");
   const [refId, setRefId] = useState<string | null>(null);
   const [fallbackNotice, setFallbackNotice] = useState(false);
   const successHeadingRef = useRef<HTMLHeadingElement>(null);
@@ -27,6 +40,7 @@ export default function EnquiryForm({ pkgName = "", pkgSlug, destination, embedd
   const phoneInputRef = useRef<HTMLInputElement>(null);
   const emailInputRef = useRef<HTMLInputElement>(null);
   const travellersInputRef = useRef<HTMLInputElement>(null);
+  const travelDateInputRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
   const startFiredRef = useRef(false);
   // Bot-speed check: the form was rendered at mount; submissions faster
@@ -165,6 +179,18 @@ export default function EnquiryForm({ pkgName = "", pkgSlug, destination, embedd
       }
     }
     setTravellersError("");
+
+    // A past travel date fails server-side with the same misleading fallback
+    // as the other fields — flag it before the fetch, mirroring that pattern.
+    // Native date inputs respect `min`, but users can still type/force a past
+    // date, so validate the value as well.
+    if (details.travelDate && (details.travelDate < todayIst())) {
+      setTravelDateError("Please pick a travel date from today onwards.");
+      travelDateInputRef.current?.focus();
+      setStatus("idle");
+      return;
+    }
+    setTravelDateError("");
 
     // Submit to the real lead-capture API FIRST. The team is notified
     // server-side; the visitor still gets the WhatsApp thread to continue
@@ -308,11 +334,11 @@ export default function EnquiryForm({ pkgName = "", pkgSlug, destination, embedd
           </div>
           <div>
             <label htmlFor="enquiry-phone" className="mb-1.5 block text-sm font-bold text-brand-primary">Phone Number *</label>
-            <input ref={phoneInputRef} id="enquiry-phone" name="phone" required autoComplete="tel" enterKeyHint="next" inputMode="tel" type="tel" pattern="[0-9+()\s.-]{8,20}" title="Enter a valid phone number with 8–15 digits" aria-describedby="enquiry-phone-error enquiry-phone-hint" aria-invalid={phoneError ? true : undefined} onChange={() => phoneError && setPhoneError("")} className="min-h-13 w-full rounded-xl border border-line bg-surface-card px-4 text-base outline-none transition focus:border-brand-secondary focus:ring-2 focus:ring-brand-secondary/20" placeholder="98765 43210" />
+            <input ref={phoneInputRef} id="enquiry-phone" name="phone" required autoComplete="tel" enterKeyHint="next" inputMode="tel" type="tel" pattern="[0-9+()\s.-]{8,20}" title="Enter a valid phone number with 8–15 digits" aria-describedby="enquiry-phone-error" aria-invalid={phoneError ? true : undefined} onChange={() => phoneError && setPhoneError("")} className="min-h-13 w-full rounded-xl border border-line bg-surface-card px-4 text-base outline-none transition focus:border-brand-secondary focus:ring-2 focus:ring-brand-secondary/20" placeholder="98765 43210" />
             {phoneError ? (
               <p id="enquiry-phone-error" role="alert" className="mt-1.5 text-xs font-semibold text-red-600">{phoneError}</p>
             ) : (
-              <p id="enquiry-phone-hint" className="mt-1.5 text-xs text-ink-muted">Include your country code if you are outside India (e.g. +91).</p>
+              <p id="enquiry-phone-error" className="mt-1.5 text-xs text-ink-muted">Include your country code if you are outside India (e.g. +91).</p>
             )}
           </div>
         </div>
@@ -320,7 +346,12 @@ export default function EnquiryForm({ pkgName = "", pkgSlug, destination, embedd
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <label htmlFor="enquiry-travel-date" className="mb-1.5 block text-sm font-bold text-brand-primary">Travel Date</label>
-            <input id="enquiry-travel-date" name="travelDate" type="date" className="min-h-13 w-full rounded-xl border border-line bg-surface-card px-4 text-base outline-none transition focus:border-brand-secondary focus:ring-2 focus:ring-brand-secondary/20" />
+            <input ref={travelDateInputRef} id="enquiry-travel-date" name="travelDate" type="date" min={todayIst()} aria-describedby="enquiry-travel-date-error" aria-invalid={travelDateError ? true : undefined} onChange={() => travelDateError && setTravelDateError("")} className="min-h-13 w-full rounded-xl border border-line bg-surface-card px-4 text-base outline-none transition focus:border-brand-secondary focus:ring-2 focus:ring-brand-secondary/20" />
+            {travelDateError ? (
+              <p id="enquiry-travel-date-error" role="alert" className="mt-1.5 text-xs font-semibold text-red-600">{travelDateError}</p>
+            ) : (
+              <p id="enquiry-travel-date-error" className="mt-1.5 text-xs text-ink-muted">When do you plan to travel?</p>
+            )}
           </div>
           <div>
             <label htmlFor="enquiry-travellers" className="mb-1.5 block text-sm font-bold text-brand-primary">No. of Travellers</label>
