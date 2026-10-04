@@ -22,6 +22,10 @@ import { BLOG_POST_BODIES_BATCH_11 } from "./bodies/batch-11";
 import { BLOG_POST_BODIES_BATCH_12 } from "./bodies/batch-12";
 import { BLOG_POST_BODIES_BATCH_13 } from "./bodies/batch-13";
 import { BLOG_POST_BODIES_BATCH_14 } from "./bodies/batch-14";
+import { BLOG_POST_BODIES_BATCH_15D } from "./bodies/batch-15d";
+import { BLOG_POST_BODIES_BATCH_15C } from "./bodies/batch-15c";
+import { BLOG_POST_BODIES_BATCH_15B } from "./bodies/batch-15b";
+import { BLOG_POST_BODIES_BATCH_15A } from "./bodies/batch-15a";
 
 const BODIES: Record<string, ContentBlock[]> = {
   ...BLOG_POST_BODIES_BATCH_1A,
@@ -43,6 +47,10 @@ const BODIES: Record<string, ContentBlock[]> = {
   ...BLOG_POST_BODIES_BATCH_12,
   ...BLOG_POST_BODIES_BATCH_13,
   ...BLOG_POST_BODIES_BATCH_14,
+  ...BLOG_POST_BODIES_BATCH_15A,
+  ...BLOG_POST_BODIES_BATCH_15B,
+  ...BLOG_POST_BODIES_BATCH_15C,
+  ...BLOG_POST_BODIES_BATCH_15D,
 };
 
 /** Full article body for a factory post, or null for legacy/template posts. */
