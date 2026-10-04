@@ -287,7 +287,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "forex-card-vs-cash-international-travel",
     "title": "Forex Card vs Cash for International Travel",
     "metaDescription": "Forex card vs cash for international travel: fees, exchange rates, safety and when each makes sense for Indian travellers.",
-    "image": "/images/packages/visiting-enjoying-singapore.webp",
+    "image": "/images/packages/hi-singapore-tour-packages.webp",
     "category": "Travel Planning",
     "tags": [
       "forex",
@@ -722,7 +722,7 @@ export const BLOG_POST_SEEDS_BATCH_5: BlogPostSeed[] = [
     "slug": "chadar-trek-walking-frozen-zanskar",
     "title": "Chadar Trek: Walking on the Frozen Zanskar",
     "metaDescription": "Chadar trek guide: walking on the frozen Zanskar river, with route, difficulty, best time and preparation for Ladakh's winter trek.",
-    "image": "/images/packages/winter-experience-in-kashmir.webp",
+    "image": "/images/packages/hi-gulmarg-tour-packages.webp",
     "category": "Mountains & Adventure",
     "tags": [
       "chadar trek",
