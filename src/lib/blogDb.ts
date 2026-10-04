@@ -259,10 +259,47 @@ export async function upsertPost(input: UpsertPostInput): Promise<string | null>
 /* Views                                                               */
 /* ------------------------------------------------------------------ */
 
+/* Known-slug gate: a slug is "known" when it is a live static-catalogue
+ * slug (ALL_BLOGS) or a published CMS row in blog_posts. CMS-only
+ * slugExists() would silently drop views/likes for every static post —
+ * static slugs live in the data layer, not the DB — so both must be
+ * consulted. recordView/toggleLike write NOTHING for unknown slugs:
+ * without this, cycling random slugs at 60/min/IP creates orphan rows
+ * in blog_views/blog_likes that nothing ever reads. */
+let staticSlugCache: Set<string> | null = null;
+
+async function getStaticBlogSlugs(): Promise<Set<string>> {
+  if (!staticSlugCache) {
+    // Dynamic import keeps the ~500KB blog-index module out of every
+    // blogDb consumer's cold-start graph; the Set is built once per
+    // serverless instance and reused for every engagement write.
+    const { ALL_BLOGS } = (await import("@/data/blogIndex")) as {
+      ALL_BLOGS: { slug: string }[];
+    };
+    staticSlugCache = new Set(ALL_BLOGS.map((b) => b.slug));
+  }
+  return staticSlugCache;
+}
+
+export async function blogSlugKnown(slug: string): Promise<boolean> {
+  if ((await getStaticBlogSlugs()).has(slug)) return true;
+  const sql = getDb();
+  if (!sql) return false;
+  await ensureSchema();
+  // Published-only: drafts/unpublished rows have no public page, so
+  // engagement for them would be orphan rows too.
+  const rows = await sql`
+    SELECT 1 FROM blog_posts
+    WHERE slug = ${slug} AND published_at IS NOT NULL AND published_at <= now()
+    LIMIT 1`;
+  return rows.length > 0;
+}
+
 export async function recordView(slug: string, viewerHash: string): Promise<void> {
   const sql = getDb();
   if (!sql) return;
   await ensureSchema();
+  if (!(await blogSlugKnown(slug))) return; // no orphan rows for unknown slugs
   await sql`
     INSERT INTO blog_views (slug, viewer_hash)
     VALUES (${slug}, ${viewerHash})
@@ -289,21 +326,27 @@ export async function toggleLike(
   const sql = getDb();
   if (!sql) return { likes: 0, liked: false };
   await ensureSchema();
-  const existing = await sql`
-    SELECT 1 FROM blog_likes
+  if (!(await blogSlugKnown(slug))) return { likes: 0, liked: false };
+
+  // Atomic toggle: the verdict is driven by the write outcome (rowCount),
+  // not by a prior SELECT, so two concurrent toggles from the same liker
+  // can't both read "no row" and both claim liked:true. The ON CONFLICT
+  // guard absorbs the lost race where a concurrent request inserts between
+  // our DELETE and INSERT.
+  const deleted = await sql<{ one: number }[]>`
+    DELETE FROM blog_likes
     WHERE slug = ${slug} AND liker_hash = ${likerHash}
-    LIMIT 1`;
+    RETURNING 1 AS one`;
   let liked: boolean;
-  if (existing.length > 0) {
-    await sql`
-      DELETE FROM blog_likes
-      WHERE slug = ${slug} AND liker_hash = ${likerHash}`;
+  if (deleted.length > 0) {
     liked = false;
   } else {
     await sql`
       INSERT INTO blog_likes (slug, liker_hash)
       VALUES (${slug}, ${likerHash})
       ON CONFLICT (slug, liker_hash) DO NOTHING`;
+    // A row now exists for (slug, likerHash) — either we inserted it or a
+    // concurrent toggle won the race — so the like is on either way.
     liked = true;
   }
   const likes = await getLikeCount(slug);

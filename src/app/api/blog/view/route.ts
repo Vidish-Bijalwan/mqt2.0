@@ -37,7 +37,9 @@ function isRateLimited(ip: string): boolean {
 /**
  * POST /api/blog/view {slug} -> {views}
  * Dedupes by viewer_hash = sha256(mqt_vid cookie || ip+ua); sets the mqt_vid
- * cookie (1y, httpOnly, SameSite=Lax) when absent.
+ * cookie (1y, httpOnly, SameSite=Lax) when absent. Unknown slugs (no live
+ * static post, no published CMS post) record nothing — slug-cycling floods
+ * can't grow orphan rows.
  */
 export async function POST(req: NextRequest) {
   let body: unknown;
