@@ -308,11 +308,11 @@ export default function EnquiryForm({ pkgName = "", pkgSlug, destination, embedd
           </div>
           <div>
             <label htmlFor="enquiry-phone" className="mb-1.5 block text-sm font-bold text-brand-primary">Phone Number *</label>
-            <input ref={phoneInputRef} id="enquiry-phone" name="phone" required autoComplete="tel" enterKeyHint="next" inputMode="tel" type="tel" pattern="[0-9+()\s.-]{8,20}" title="Enter a valid phone number with 8–15 digits" aria-describedby="enquiry-phone-error" aria-invalid={phoneError ? true : undefined} onChange={() => phoneError && setPhoneError("")} className="min-h-13 w-full rounded-xl border border-line bg-surface-card px-4 text-base outline-none transition focus:border-brand-secondary focus:ring-2 focus:ring-brand-secondary/20" placeholder="98765 43210" />
+            <input ref={phoneInputRef} id="enquiry-phone" name="phone" required autoComplete="tel" enterKeyHint="next" inputMode="tel" type="tel" pattern="[0-9+()\s.-]{8,20}" title="Enter a valid phone number with 8–15 digits" aria-describedby="enquiry-phone-error enquiry-phone-hint" aria-invalid={phoneError ? true : undefined} onChange={() => phoneError && setPhoneError("")} className="min-h-13 w-full rounded-xl border border-line bg-surface-card px-4 text-base outline-none transition focus:border-brand-secondary focus:ring-2 focus:ring-brand-secondary/20" placeholder="98765 43210" />
             {phoneError ? (
               <p id="enquiry-phone-error" role="alert" className="mt-1.5 text-xs font-semibold text-red-600">{phoneError}</p>
             ) : (
-              <p id="enquiry-phone-error" className="mt-1.5 text-xs text-ink-muted">Include your country code if you are outside India (e.g. +91).</p>
+              <p id="enquiry-phone-hint" className="mt-1.5 text-xs text-ink-muted">Include your country code if you are outside India (e.g. +91).</p>
             )}
           </div>
         </div>

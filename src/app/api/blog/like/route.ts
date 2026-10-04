@@ -35,7 +35,8 @@ function isRateLimited(ip: string): boolean {
 
 /**
  * POST /api/blog/like {slug} -> {likes, liked}
- * Toggles by liker_hash (same hashing as views).
+ * Toggles by liker_hash (same hashing as views). Unknown slugs record
+ * nothing and return {likes: 0, liked: false}.
  */
 export async function POST(req: NextRequest) {
   let body: unknown;
