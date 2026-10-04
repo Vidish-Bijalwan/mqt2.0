@@ -17,10 +17,29 @@ const THEMES = [
 ];
 
 export const metadata = {
-  title: "Special Tour Themes",
+  title: "Special Tour Themes | My Quick Trippers",
   description: "Browse our handpicked tour themes. From family vacations to romantic honeymoons, find the perfect travel style for you.",
   alternates: {
     canonical: `${siteConfig.domain}/special-tours`,
+  },
+  openGraph: {
+    title: "Special Tour Themes | My Quick Trippers",
+    description: "Browse our handpicked tour themes. From family vacations to romantic honeymoons, find the perfect travel style for you.",
+    url: `${siteConfig.domain}/special-tours`,
+    type: "website",
+    images: [
+      {
+        url: `${siteConfig.domain}/images/og-default.png`,
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "Special Tour Themes | My Quick Trippers",
+    description: "Browse our handpicked tour themes. From family vacations to romantic honeymoons, find the perfect travel style for you.",
   },
 };
 
