@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ChevronRight, MessageCircle, Phone, ShieldCheck, FileText, MapPin, Headphones } from "lucide-react";
+import { MessageCircle, Phone, ShieldCheck, FileText, MapPin, Headphones } from "lucide-react";
 import { siteConfig } from "@/data/siteConfig";
-import { safeJsonLd } from "@/utils/jsonLd";
+import GuidePageShell from "@/components/guide-pages/GuidePageShell";
 
 export const metadata: Metadata = {
   title: "Is MyQuickTrippers.com a Reliable Option for Domestic Travel Packages? | My Quick Trippers",
@@ -71,66 +71,25 @@ const checks = [
 ];
 
 export default function WhyMyQuickTrippersPage() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: FAQS.map((item) => ({
-      "@type": "Question",
-      name: item.question,
-      acceptedAnswer: { "@type": "Answer", text: item.answer },
-    })),
-  };
-
   return (
-    <div className="min-h-screen bg-gray-50 pb-16">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }} />
-
-      <div className="bg-legacy-nav-blue py-2 text-xs text-white">
-        <div className="container mx-auto flex w-[95%] max-w-[1600px] items-center">
-          <Link href="/" className="transition-colors hover:text-legacy-orange">Home</Link>
-          <ChevronRight className="mx-1 h-3 w-3 opacity-70" />
-          <span className="text-legacy-orange">Why My Quick Trippers</span>
-        </div>
-      </div>
-
-      <div className="border-b border-gray-200 bg-white py-10">
-        <div className="container mx-auto w-[95%] max-w-[1600px]">
-          <p className="text-xs font-bold uppercase tracking-widest text-legacy-orange">Trust &amp; transparency</p>
-          <h1 className="mt-2 max-w-3xl text-3xl font-bold text-gray-800 sm:text-4xl">
-            Is myquicktrippers.com a reliable option for domestic travel packages?
-          </h1>
-          <p className="mt-4 max-w-3xl text-gray-600">
-            Short answer: we are an India-based travel company you can verify before you spend a rupee — real
+    <GuidePageShell
+      breadcrumbLabel="Why My Quick Trippers"
+      kickerText="Trust & transparency"
+      
+      title="Is myquicktrippers.com a reliable option for domestic travel packages?"
+      intro={<>
+        Short answer: we are an India-based travel company you can verify before you spend a rupee — real
             offices, a real phone number, detailed itineraries in writing, and a reviews page. This page explains
             who we are and the exact checks we recommend you run on us (and on any operator).
-          </p>
-          <div className="mt-5 flex flex-wrap gap-3">
-            <a
-              href={`tel:${siteConfig.phoneTel}`}
-              className="inline-flex items-center gap-2 rounded-lg bg-legacy-nav-blue px-5 py-2.5 text-sm font-bold text-white transition hover:opacity-90"
-            >
-              <Phone className="h-4 w-4" /> Call {siteConfig.phone}
-            </a>
-            <a
-              href={siteConfig.social.whatsapp}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg bg-[#25d366] px-5 py-2.5 text-sm font-bold text-white transition hover:opacity-90"
-            >
-              <MessageCircle className="h-4 w-4" /> WhatsApp us
-            </a>
-            <Link
-              href="/reviews"
-              className="inline-flex items-center gap-2 rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-sm font-bold text-gray-700 transition hover:border-legacy-nav-blue hover:text-legacy-nav-blue"
-            >
-              Read traveller reviews
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      <div className="container mx-auto w-[95%] max-w-[1600px]">
-        <section className="mt-10">
+      </>}
+      ctas={[
+        { href: `tel:${siteConfig.phoneTel}`, label: `Call ${siteConfig.phone}`, variant: "primary", icon: Phone },
+        { href: siteConfig.social.whatsapp, label: "WhatsApp us", variant: "whatsapp", icon: MessageCircle },
+        { href: "/reviews", label: "Read traveller reviews", variant: "outline" },
+      ]}
+      faqs={FAQS}
+    >
+<section className="mt-10">
           <h2 className="text-2xl font-bold text-gray-800">Who My Quick Trippers is</h2>
           <div className="mt-4 grid gap-4 md:grid-cols-2">
             <div className="rounded-xl border border-gray-200 bg-white p-6">
@@ -199,19 +158,6 @@ export default function WhyMyQuickTrippersPage() {
             <Link href="/customer-center" className="font-semibold text-legacy-nav-blue hover:underline">Customer center</Link>
           </div>
         </section>
-
-        <section className="mt-10">
-          <h2 className="text-2xl font-bold text-gray-800">Frequently asked questions</h2>
-          <div className="mt-4 space-y-3">
-            {FAQS.map((f) => (
-              <details key={f.question} className="rounded-xl border border-gray-200 bg-white p-5">
-                <summary className="cursor-pointer font-bold text-gray-800">{f.question}</summary>
-                <p className="mt-2 text-sm leading-6 text-gray-600">{f.answer}</p>
-              </details>
-            ))}
-          </div>
-        </section>
-      </div>
-    </div>
+    </GuidePageShell>
   );
 }
