@@ -64,9 +64,9 @@ const circuits = [
     copy: "The same sacred circuit without the treks — helicopter sectors for travellers short on time or unable to walk long distances.",
   },
   {
-    name: "Ayodhya (2 days)",
-    href: "/packages/2-days-ayodhya-tour-package",
-    copy: "Ram Janmabhoomi, Hanuman Garhi and the Saryu aarti — a focused two-day Ramayana circuit, easy to combine with Varanasi.",
+    name: "Ayodhya",
+    href: "/packages/ayodhya",
+    copy: "Ram Janmabhoomi, Hanuman Garhi and the Saryu aarti — the Ramayana circuit's heart, easy to combine with Varanasi.",
   },
   {
     name: "Ujjain–Omkareshwar (3 days)",
