@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ChevronRight, MessageCircle, Phone, Compass } from "lucide-react";
+import { MessageCircle, Phone, Compass } from "lucide-react";
 import { siteConfig } from "@/data/siteConfig";
-import { safeJsonLd } from "@/utils/jsonLd";
+import GuidePageShell from "@/components/guide-pages/GuidePageShell";
 
 export const metadata: Metadata = {
   title: "Best Travel Packages for Exploring India (2026 Guide) | My Quick Trippers",
@@ -87,68 +87,25 @@ const picks = [
 ];
 
 export default function BestTravelPackagesIndiaPage() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: FAQS.map((item) => ({
-      "@type": "Question",
-      name: item.question,
-      acceptedAnswer: { "@type": "Answer", text: item.answer },
-    })),
-  };
-
   return (
-    <div className="min-h-screen bg-gray-50 pb-16">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }} />
-
-      <div className="bg-legacy-nav-blue py-2 text-xs text-white">
-        <div className="container mx-auto flex w-[95%] max-w-[1600px] items-center">
-          <Link href="/" className="transition-colors hover:text-legacy-orange">Home</Link>
-          <ChevronRight className="mx-1 h-3 w-3 opacity-70" />
-          <span className="text-legacy-orange">Best Travel Packages India</span>
-        </div>
-      </div>
-
-      <div className="border-b border-gray-200 bg-white py-10">
-        <div className="container mx-auto w-[95%] max-w-[1600px]">
-          <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-legacy-orange">
-            <Compass className="h-4 w-4" /> 2026 guide
-          </p>
-          <h1 className="mt-2 max-w-3xl text-3xl font-bold text-gray-800 sm:text-4xl">
-            The best travel packages for exploring India
-          </h1>
-          <p className="mt-4 max-w-3xl text-gray-600">
-            There is no single &ldquo;best&rdquo; India package — there is the best package <em>for you</em>. This
+    <GuidePageShell
+      breadcrumbLabel="Best Travel Packages India"
+      kickerText="2026 guide"
+      kickerIcon={Compass}
+      title="The best travel packages for exploring India"
+      intro={<>
+        There is no single &ldquo;best&rdquo; India package — there is the best package <em>for you</em>. This
             guide maps traveller types to real, bookable itineraries. Every pick links to its detailed package page
             with a day-wise plan, so you can compare substance, not slogans.
-          </p>
-          <div className="mt-5 flex flex-wrap gap-3">
-            <Link
-              href="/packages"
-              className="inline-flex items-center gap-2 rounded-lg bg-legacy-nav-blue px-5 py-2.5 text-sm font-bold text-white transition hover:opacity-90"
-            >
-              Browse all packages
-            </Link>
-            <a
-              href={siteConfig.social.whatsapp}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg bg-[#25d366] px-5 py-2.5 text-sm font-bold text-white transition hover:opacity-90"
-            >
-              <MessageCircle className="h-4 w-4" /> Get a recommendation
-            </a>
-            <a
-              href={`tel:${siteConfig.phoneTel}`}
-              className="inline-flex items-center gap-2 rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-sm font-bold text-gray-700 transition hover:border-legacy-nav-blue hover:text-legacy-nav-blue"
-            >
-              <Phone className="h-4 w-4" /> {siteConfig.phone}
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div className="container mx-auto w-[95%] max-w-[1600px]">
-        <section className="mt-10">
+      </>}
+      ctas={[
+        { href: "/packages", label: "Browse all packages", variant: "primary" },
+        { href: siteConfig.social.whatsapp, label: "Get a recommendation", variant: "whatsapp", icon: MessageCircle },
+        { href: `tel:${siteConfig.phoneTel}`, label: siteConfig.phone, variant: "outline", icon: Phone },
+      ]}
+      faqs={FAQS}
+    >
+<section className="mt-10">
           <h2 className="text-2xl font-bold text-gray-800">Best packages by traveller type</h2>
           <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {picks.map((p) => (
@@ -181,19 +138,6 @@ export default function BestTravelPackagesIndiaPage() {
             <Link href="/why-myquicktrippers" className="font-semibold text-legacy-nav-blue hover:underline">why book with us</Link>
           </p>
         </section>
-
-        <section className="mt-10">
-          <h2 className="text-2xl font-bold text-gray-800">Frequently asked questions</h2>
-          <div className="mt-4 space-y-3">
-            {FAQS.map((f) => (
-              <details key={f.question} className="rounded-xl border border-gray-200 bg-white p-5">
-                <summary className="cursor-pointer font-bold text-gray-800">{f.question}</summary>
-                <p className="mt-2 text-sm leading-6 text-gray-600">{f.answer}</p>
-              </details>
-            ))}
-          </div>
-        </section>
-      </div>
-    </div>
+    </GuidePageShell>
   );
 }

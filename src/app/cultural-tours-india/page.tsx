@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ChevronRight, MessageCircle, Phone, Landmark } from "lucide-react";
+import { MessageCircle, Phone, Landmark } from "lucide-react";
 import { siteConfig } from "@/data/siteConfig";
-import { safeJsonLd } from "@/utils/jsonLd";
+import GuidePageShell from "@/components/guide-pages/GuidePageShell";
 
 export const metadata: Metadata = {
   title: "Premium Cultural Tours in India | Heritage, Art & Living Traditions | My Quick Trippers",
@@ -71,68 +71,25 @@ const tours = [
 ];
 
 export default function CulturalToursIndiaPage() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: FAQS.map((item) => ({
-      "@type": "Question",
-      name: item.question,
-      acceptedAnswer: { "@type": "Answer", text: item.answer },
-    })),
-  };
-
   return (
-    <div className="min-h-screen bg-gray-50 pb-16">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }} />
-
-      <div className="bg-legacy-nav-blue py-2 text-xs text-white">
-        <div className="container mx-auto flex w-[95%] max-w-[1600px] items-center">
-          <Link href="/" className="transition-colors hover:text-legacy-orange">Home</Link>
-          <ChevronRight className="mx-1 h-3 w-3 opacity-70" />
-          <span className="text-legacy-orange">Cultural Tours India</span>
-        </div>
-      </div>
-
-      <div className="border-b border-gray-200 bg-white py-10">
-        <div className="container mx-auto w-[95%] max-w-[1600px]">
-          <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-legacy-orange">
-            <Landmark className="h-4 w-4" /> Heritage · Art · Living traditions
-          </p>
-          <h1 className="mt-2 max-w-3xl text-3xl font-bold text-gray-800 sm:text-4xl">
-            Premium cultural tours in India
-          </h1>
-          <p className="mt-4 max-w-3xl text-gray-600">
-            India&apos;s culture is not a museum exhibit — it is carved in rock at Ellora, danced in Kerala&apos;s
+    <GuidePageShell
+      breadcrumbLabel="Cultural Tours India"
+      kickerText="Heritage · Art · Living traditions"
+      kickerIcon={Landmark}
+      title="Premium cultural tours in India"
+      intro={<>
+        India&apos;s culture is not a museum exhibit — it is carved in rock at Ellora, danced in Kerala&apos;s
             temple courtyards, and sung in Vrindavan&apos;s lanes. These tours pair the great heritage sites with
             the living traditions around them, each with a full day-wise itinerary you can read before you decide.
-          </p>
-          <div className="mt-5 flex flex-wrap gap-3">
-            <Link
-              href="/special-tours/cultural"
-              className="inline-flex items-center gap-2 rounded-lg bg-legacy-nav-blue px-5 py-2.5 text-sm font-bold text-white transition hover:opacity-90"
-            >
-              Browse all cultural tours
-            </Link>
-            <a
-              href={siteConfig.social.whatsapp}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg bg-[#25d366] px-5 py-2.5 text-sm font-bold text-white transition hover:opacity-90"
-            >
-              <MessageCircle className="h-4 w-4" /> Plan on WhatsApp
-            </a>
-            <a
-              href={`tel:${siteConfig.phoneTel}`}
-              className="inline-flex items-center gap-2 rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-sm font-bold text-gray-700 transition hover:border-legacy-nav-blue hover:text-legacy-nav-blue"
-            >
-              <Phone className="h-4 w-4" /> {siteConfig.phone}
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div className="container mx-auto w-[95%] max-w-[1600px]">
-        <section className="mt-10">
+      </>}
+      ctas={[
+        { href: "/special-tours/cultural", label: "Browse all cultural tours", variant: "primary" },
+        { href: siteConfig.social.whatsapp, label: "Plan on WhatsApp", variant: "whatsapp", icon: MessageCircle },
+        { href: `tel:${siteConfig.phoneTel}`, label: siteConfig.phone, variant: "outline", icon: Phone },
+      ]}
+      faqs={FAQS}
+    >
+<section className="mt-10">
           <h2 className="text-2xl font-bold text-gray-800">Cultural tours with full itineraries</h2>
           <p className="mt-2 max-w-3xl text-sm text-gray-600">
             Every tour below links to its detailed package page — day-wise plan, inclusions and an enquiry form.
@@ -169,19 +126,6 @@ export default function CulturalToursIndiaPage() {
             <Link href="/why-myquicktrippers" className="font-semibold text-legacy-nav-blue hover:underline">why book with us</Link>
           </p>
         </section>
-
-        <section className="mt-10">
-          <h2 className="text-2xl font-bold text-gray-800">Frequently asked questions</h2>
-          <div className="mt-4 space-y-3">
-            {FAQS.map((f) => (
-              <details key={f.question} className="rounded-xl border border-gray-200 bg-white p-5">
-                <summary className="cursor-pointer font-bold text-gray-800">{f.question}</summary>
-                <p className="mt-2 text-sm leading-6 text-gray-600">{f.answer}</p>
-              </details>
-            ))}
-          </div>
-        </section>
-      </div>
-    </div>
+    </GuidePageShell>
   );
 }

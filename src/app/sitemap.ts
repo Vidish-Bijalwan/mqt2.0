@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { siteConfig } from '@/data/siteConfig';
 import { getPublicPackages } from '@/utils/packageCatalog';
-import { experiences } from '@/data/experiencesData';
+import { experiencesWithCounts } from '@/utils/experienceCounts';
 import packageDetailsRaw from '@/data/packageDetails.json';
 import destinationsDataRaw from '@/data/destinationsData.json';
 import { destinations as contentDestinations } from '@/data/contentData';
@@ -176,7 +176,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const curatedPackageRoutes = primaryPackageSlugs.map((slug) => ({ url: `${baseUrl}/packages/${slug}`, lastModified: PACKAGES_LASTMOD, changeFrequency: 'monthly' as const, priority: 0.9 }));
   const destinationRoutes = destinationSlugs
     .map((slug) => ({ url: `${baseUrl}/destinations/${slug}`, lastModified: DEST_HUB_LASTMOD, changeFrequency: 'monthly' as const, priority: 0.85 }));
-  const experienceRoutes = experiences.map((exp) => ({ url: `${baseUrl}/experiences/${exp.slug}`, lastModified: EXPERIENCES_LASTMOD, changeFrequency: 'weekly' as const, priority: 0.8 }));
+  // Only experiences with at least one matching package are submitted —
+  // the hub deliberately hides zero-match categories as thin empty pages
+  // (experiencesWithCounts() filter), so the sitemap matches the hub.
+  const experienceRoutes = experiencesWithCounts().map((exp) => ({ url: `${baseUrl}/experiences/${exp.slug}`, lastModified: EXPERIENCES_LASTMOD, changeFrequency: 'weekly' as const, priority: 0.8 }));
   const blogRoutes = ALL_BLOGS.map((blog) => ({
     url: `${baseUrl}/blog/${blog.slug}`,
     lastModified: blog.publishedAt ? new Date(blog.publishedAt) : BLOG_LASTMOD,
