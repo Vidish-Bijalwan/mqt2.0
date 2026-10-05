@@ -114,7 +114,7 @@ interface ResolvedPost {
   snippet: string;
   /** Image for metadata/JSON-LD (blog.image || getBlogImage fallback). */
   image: string;
-  /** Exact cover src for the hero (static posts use getBlogImage(slug)). */
+  /** Exact cover src for the hero (blog.image, falling back to getBlogImage(slug)). */
   coverImage: string;
   /** Optional CC photo credit for the hero, rendered as a figcaption. */
   coverCredit?: string;
@@ -138,7 +138,7 @@ function staticPostView(blog: BlogIndexEntry, slug: string): ResolvedPost {
     title: blog.title,
     snippet: blog.snippet,
     image: blog.image || getBlogImage(slug),
-    coverImage: getBlogImage(slug),
+    coverImage: blog.image || getBlogImage(slug),
     coverCredit: getBlogImageCredit(slug),
     category: blog.category,
     tags: blog.tags,
