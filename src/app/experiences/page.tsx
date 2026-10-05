@@ -26,7 +26,10 @@ export const metadata = {
 };
 
 export default function ExperiencesPage() {
+  // Zero-match experiences (e.g. mice-tours, private-jet-charter) are thin
+  // empty category pages — experiencesWithCounts() already excludes them.
   const items = experiencesWithCounts();
+  const listed = experiences.filter((exp) => items.some((e) => e.slug === exp.slug));
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -36,7 +39,7 @@ export default function ExperiencesPage() {
     url: `${siteConfig.domain}/experiences`,
     mainEntity: {
       "@type": "ItemList",
-      itemListElement: experiences.map((exp, i) => ({
+      itemListElement: listed.map((exp, i) => ({
         "@type": "ListItem",
         position: i + 1,
         name: exp.name,
@@ -74,7 +77,7 @@ export default function ExperiencesPage() {
             <p className="text-xs font-bold uppercase tracking-[0.25em] text-amber-300">What can you experience in India?</p>
             <h1 className="mt-2 text-3xl md:text-5xl font-extrabold text-white">Experience The Best Of India</h1>
             <p className="mt-3 max-w-2xl text-sm md:text-base text-gray-200">
-              {experiences.length} curated categories — adventures, spiritual journeys, luxury escapes, wellness
+              {items.length} curated categories — adventures, spiritual journeys, luxury escapes, wellness
               retreats, wildlife safaris, cruises and more. Find yours and start exploring.
             </p>
           </div>

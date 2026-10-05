@@ -13141,12 +13141,22 @@
   },
   {
     "source": "/increasable-kerala.html",
-    "destination": "/packages/increasable-kerala",
+    "destination": "/packages/incredible-kerala",
     "permanent": true
   },
   {
     "source": "/increasable-kerala",
-    "destination": "/packages/increasable-kerala",
+    "destination": "/packages/incredible-kerala",
+    "permanent": true
+  },
+  {
+    "source": "/packages/increasable-kerala.html",
+    "destination": "/packages/incredible-kerala",
+    "permanent": true
+  },
+  {
+    "source": "/packages/increasable-kerala",
+    "destination": "/packages/incredible-kerala",
     "permanent": true
   },
   {

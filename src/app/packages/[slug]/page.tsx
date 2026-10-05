@@ -21,6 +21,8 @@ import {
   detailsV3For,
   packageDetails,
 } from "@/utils/packageDetails";
+import { PACKAGE_SEO_OVERRIDES } from "@/data/packageSeoOverrides";
+import { canonicalUrlForPackage } from "@/data/canonicalOverrides";
 
 export function generateStaticParams() {
   // Popular catalogue pages are linked from the home page and warm quickly.
@@ -69,13 +71,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const og = seoSource.og_tags || {};
     const cleanTitle = (t: string | undefined | null) => pkg?.title || (t ? cleanScrapedTitle(t) : slug.replace(/-/g, ' '));
     const scrapedDescription = og['og:description'] ? replaceReferenceBrand(og['og:description']) : undefined;
-    const pageDescription = scrapedDescription || (seoSource.meta_description ? replaceReferenceBrand(seoSource.meta_description) : undefined);
-    const pageTitle = cleanTitle(og['og:title'] || scrapedTitle);
+    const seoOverride = PACKAGE_SEO_OVERRIDES[slug];
+    const pageDescription = seoOverride?.description
+      ?? scrapedDescription
+      ?? (seoSource.meta_description ? replaceReferenceBrand(seoSource.meta_description) : undefined);
+    const pageTitle = seoOverride?.title ?? cleanTitle(og['og:title'] || scrapedTitle);
     return {
-      title: cleanTitle(scrapedTitle),
+      title: seoOverride?.title ?? cleanTitle(scrapedTitle),
       description: pageDescription,
       alternates: {
-        canonical: `${siteConfig.domain}/packages/${slug}`,
+        canonical: canonicalUrlForPackage(slug),
       },
       robots: {
         index: shouldIndex,
@@ -109,7 +114,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title,
     description,
     alternates: {
-      canonical: `${siteConfig.domain}/packages/${slug}`,
+      canonical: canonicalUrlForPackage(slug),
     },
     robots: {
       index: shouldIndex,
