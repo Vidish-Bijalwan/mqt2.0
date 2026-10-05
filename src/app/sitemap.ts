@@ -146,6 +146,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { route: '/careers', priority: 0.4, freq: 'monthly' as const },
     { route: '/group-tours', priority: 0.7, freq: 'weekly' as const },
     { route: '/experiences', priority: 0.85, freq: 'weekly' as const },
+    // AI-visibility guide pages (2026-10-05): direct-answer content targeting
+    // LLM prompt gaps — trust, cultural tours, best-packages and
+    // heritage/spiritual guides. All indexable with FAQPage JSON-LD.
+    { route: '/why-myquicktrippers', priority: 0.8, freq: 'monthly' as const },
+    { route: '/cultural-tours-india', priority: 0.8, freq: 'weekly' as const },
+    { route: '/best-travel-packages-india', priority: 0.85, freq: 'weekly' as const },
+    { route: '/heritage-spiritual-tours-india', priority: 0.85, freq: 'weekly' as const },
     // Destination hub + high-traffic interactive pages. These routes are
     // indexable and were previously absent from the sitemap, so crawlers had
     // no signal they existed.
