@@ -34,3 +34,10 @@ export default function robots(): MetadataRoute.Robots {
     sitemap: `${siteConfig.domain}/sitemap.xml`,
   };
 }
+
+// NOTE (2026-10-05): the llms.txt discovery comment could not be emitted
+// from this file — Next 16's robots special-file pipeline only accepts a
+// MetadataRoute.Robots object and crashes the build on a raw Response.
+// /llms.txt is instead advertised via a <link> tag in the root layout head
+// (the other standard llms.txt discovery mechanism) and is listed in the
+// sitemap-adjacent docs. See src/app/layout.tsx.

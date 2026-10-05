@@ -143,6 +143,9 @@ export default function RootLayout({
         <link rel="prefetch" href="/packages" />
         <link rel="prefetch" href="/blog" />
         <link rel="prefetch" href="/contact-us" />
+        {/* llms.txt discovery for AI systems (Next 16's robots special file
+            cannot emit the comment line, so this head link is the mechanism). */}
+        <link rel="alternate" type="text/plain" title="llms.txt" href="/llms.txt" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }} />
       </head>
       <body className={`${manrope.variable} ${bricolage.variable}`} suppressHydrationWarning>
