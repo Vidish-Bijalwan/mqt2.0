@@ -27,6 +27,12 @@ const curatedPackageSlugs = new Set(Object.keys(packageDetails).filter((slug) =>
 // computed once at build time, so the same input tree always produces the
 // same sitemap — crawlers can see exactly which groups changed release to
 // release instead of a frozen site-wide stamp.
+
+// 1h ISR: the only per-request dynamic input is the published-CMS-post query
+// (failure-guarded, DB-less safe). Without revalidate every /sitemap.xml hit
+// ran a Neon query, and crawlers can hit this repeatedly. One hour is plenty
+// fresh for a sitemap.
+export const revalidate = 3600;
 const BUILD_DATE = new Date();
 function dataFileMtime(...relativePath: string[]): Date {
   try {

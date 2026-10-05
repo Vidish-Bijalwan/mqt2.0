@@ -140,9 +140,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="prefetch" href="/packages" />
-        <link rel="prefetch" href="/blog" />
-        <link rel="prefetch" href="/contact-us" />
+        {/* Manual prefetch hints for /packages, /blog, /contact-us were
+            dropped (2026-10-06): they fired full SSR page fetches on EVERY
+            page view — /packages is searchParams-dynamic and /blog ran an
+            un-cached Neon query per render — so visitors who never visited
+            those pages still burned the queries. /blog now carries 24h ISR,
+            and Next's own in-viewport <Link> prefetching covers the intent. */}
         {/* llms.txt discovery for AI systems (Next 16's robots special file
             cannot emit the comment line, so this head link is the mechanism). */}
         <link rel="alternate" type="text/plain" title="llms.txt" href="/llms.txt" />

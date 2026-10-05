@@ -25,6 +25,47 @@ const WINDOW_MS = 60_000;
 const DAILY_CAP = 1000;
 const hits = new Map<string, number[]>();
 
+/* Daily-cap COUNT cache: the DB-backed cap (PR #59) ran a COUNT(*) over the
+ * trailing-24h window on EVERY pageview before the INSERT, doubling DB query
+ * volume per beacon on the Neon free plan. This small per-instance map
+ * remembers the last COUNT per ipHash for the current UTC day: cached counts
+ * comfortably below the cap skip the COUNT query entirely (the cached count
+ * is bumped after each successful insert below). The COUNT query re-runs on
+ * cache miss and when the cached count nears the cap, where a stale
+ * fast-path read could over-admit. ipHashFor's salt rotates daily, so a new
+ * day's hashes never collide with stale keys. */
+const COUNT_CACHE_REVERIFY_MARGIN = 100;
+const countCache = new Map<string, { date: string; count: number }>();
+
+function utcDay(): string {
+  return new Date().toISOString().slice(0, 10);
+}
+
+/** True when the DB-backed daily cap is known (or freshly confirmed) to be hit. */
+async function isDailyCapped(ipHash: string): Promise<boolean> {
+  const today = utcDay();
+  const cached = countCache.get(ipHash);
+  if (cached && cached.date === today && cached.count < DAILY_CAP - COUNT_CACHE_REVERIFY_MARGIN) {
+    return false; // comfortably below cap — skip the COUNT query
+  }
+  let count: number;
+  try {
+    count = await countRecentEventsByIpHash(ipHash);
+  } catch {
+    // Never break the beacon on a DB error — degrade open for this beacon.
+    return false;
+  }
+  countCache.set(ipHash, { date: today, count });
+  // Prune idle entries so the map can't grow without bound (yesterday's
+  // salted hashes never match again, so stale-date rows are unreachable).
+  if (countCache.size > 5000) {
+    for (const [k, v] of countCache) {
+      if (v.date !== today) countCache.delete(k);
+    }
+  }
+  return count >= DAILY_CAP;
+}
+
 function isRateLimited(ip: string): boolean {
   const now = Date.now();
   const recent = (hits.get(ip) ?? []).filter((t) => now - t < WINDOW_MS);
@@ -76,9 +117,10 @@ export async function POST(req: NextRequest) {
 
   // DB-backed daily cap: survives Vercel serverless instance resets, unlike
   // the in-memory limiter above. Counted before the body parse so a flood of
-  // malformed posts still counts against the cap.
+  // malformed posts still counts against the cap. The COUNT query itself is
+  // cached per ipHash (see isDailyCapped) so honest beacons skip it.
   const ipHash = ipHashFor(ip);
-  if (ipHash && (await countRecentEventsByIpHash(ipHash)) >= DAILY_CAP) {
+  if (ipHash && (await isDailyCapped(ipHash))) {
     return noContent();
   }
 
@@ -111,6 +153,12 @@ export async function POST(req: NextRequest) {
       sessionHash: sessionHashFor(ip, ua),
       ipHash: ipHash || null,
     });
+    // Keep the daily-cap COUNT cache current without another query.
+    if (ipHash) {
+      const today = utcDay();
+      const cached = countCache.get(ipHash);
+      if (cached && cached.date === today) cached.count += 1;
+    }
   } catch {
     // Never fail the beacon on a DB error.
   }

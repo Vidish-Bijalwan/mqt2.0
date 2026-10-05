@@ -14,6 +14,14 @@ import { BlogIndexContent, type DbPostSummary } from "./BlogIndexClient";
  * client component as initialCmsPosts, so the browser skips its own
  * /api/blog/posts fetch on the first paint.
  */
+
+// 24h ISR: the only dynamic input is the published-CMS-post list (failure-
+// guarded, DB-less safe). Without revalidate every /blog hit forced a dynamic
+// render + a Neon query. Matches the 24h ISR on the sibling [slug]/page.tsx;
+// newly published CMS posts can take up to a day to surface in the
+// server-rendered JSON-LD/nav (the client grid still merges them live).
+export const revalidate = 86400;
+
 export default async function BlogIndexPage() {
   let cmsPosts: DbPostSummary[] = [];
   try {
