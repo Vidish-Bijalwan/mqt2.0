@@ -4254,10 +4254,10 @@ export const allPackages: Package[] = [
     "discount": ""
   },
   {
-    "slug": "increasable-kerala",
+    "slug": "incredible-kerala",
     "title": "Incredible Kerala Tour Package",
     "category": "South India",
-    "image": "/images/packages/increasable-kerala.webp",
+    "image": "/images/packages/incredible-kerala.webp",
     "duration": "4 Days / 3 Nights",
     "route": "Cochin- Munnar",
     "description": "If you think you’ve explored everything, then visit Kerala’s beautiful lagoons, traditional dances, calm backwaters, and welcoming people.",

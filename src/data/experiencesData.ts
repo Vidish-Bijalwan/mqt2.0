@@ -24,8 +24,32 @@ export interface Experience {
   image: string;
   /** Short subtitle shown on the card, e.g. "Thrill seekers' playground" */
   tagline: string;
-  /** Keywords matched against package title/category/description for counts + listings */
+  /**
+   * Keywords matched against package title/category/description for counts + listings.
+   * Single-word keywords match on word boundaries (\bkw\b), not substrings;
+   * multi-word phrases match as phrases.
+   *
+   * Tiered matching (preferred): when `strongKeywords`/`weakKeywords` are set,
+   * a package matches if ANY strong keyword matches OR at least TWO distinct
+   * weak keywords match. `keywords` then holds the legacy flat set (kept as
+   * the strong fallback).
+   */
   keywords: string[];
+  /** Strong keywords: a single match qualifies the package. Falls back to `keywords`. */
+  strongKeywords?: string[];
+  /** Weak keywords: at least two distinct weak matches are required to qualify. */
+  weakKeywords?: string[];
+  /**
+   * When true, strong keywords must match in the package title/category —
+   * description-only mentions (e.g. "rich history" in a generic itinerary)
+   * do not qualify. Use for broad terms whose description mentions are
+   * contamination rather than intent.
+   */
+  strongTitleOnly?: boolean;
+  /** Optional <title> override for the category page (before brand suffix). */
+  metaTitle?: string;
+  /** Optional meta description override for the category page. */
+  metaDescription?: string;
   /** 2–3 sentence intro used on the hub + category page */
   description: string;
   bestSeason: string;
@@ -51,6 +75,8 @@ export const experiences: Experience[] = [
     image: "/images/packages/kerala-spa-ayurveda-holidays.jpg",
     tagline: "World-class healthcare & healing",
     keywords: ["medical", "treatment", "hospital", "health", "surgery", "ayurveda", "wellness"],
+    strongKeywords: ["ayurveda", "wellness", "surgery", "treatment"],
+    weakKeywords: ["hospital", "health", "medical"],
     description:
       "India is a global hub for affordable, world-class medical care — from complex surgeries and dental procedures to wellness and preventive health retreats. Combine treatment with a recuperative holiday in some of the country's most soothing destinations.",
     bestSeason: "October – March (pleasant climate for recovery)",
@@ -67,6 +93,8 @@ export const experiences: Experience[] = [
     image: "/images/packages/adventure.jpg",
     tagline: "Take the leap of a lifetime",
     keywords: ["bungee", "adventure", "jump", "extreme"],
+    strongKeywords: ["bungee"],
+    weakKeywords: ["adventure", "jump", "extreme"],
     description:
       "Feel the adrenaline rush of India's highest bungee platforms — from the iconic Rishikesh jump to Himachal's mountain cliffs. Safe, certified and absolutely unforgettable.",
     bestSeason: "October – April",
@@ -163,6 +191,8 @@ export const experiences: Experience[] = [
     image: "/images/packages/5-star-hotels-in-goa.webp",
     tagline: "Five-star escapes & palatial stays",
     keywords: ["luxury", "5-star", "five star", "premium", "deluxe", "palace"],
+    strongKeywords: ["luxury", "5-star", "premium"],
+    weakKeywords: ["palace", "deluxe"],
     description:
       "Indulge in India's finest — heritage palaces in Rajasthan, private pool villas in Goa and Kerala, luxury trains and curated fine-dining experiences. Every detail is tailored for the discerning traveller.",
     bestSeason: "October – March",
@@ -307,6 +337,9 @@ export const experiences: Experience[] = [
     image: "/images/packages/adventure-sports-in-manali-shimla.webp",
     tagline: "Rafting, paragliding, scuba & more",
     keywords: ["adventure", "paragliding", "scuba", "rafting", "bungee", "zip", "sports", "watersports"],
+    // Deduped vs bungee-jumping: "bungee" belongs to the bungee tier only.
+    strongKeywords: ["paragliding", "scuba", "rafting", "zip", "watersports"],
+    weakKeywords: ["adventure", "sports"],
     description:
       "India is an adventure playground — white-water rafting in Rishikesh, paragliding in Bir Billing, scuba diving in the Andamans, and more. Certified operators and full safety briefings on every activity.",
     bestSeason: "Varies by activity (summer for rivers, winter for snow sports)",
@@ -371,6 +404,8 @@ export const experiences: Experience[] = [
     image: "/images/packages/chennai-temple-tour.jpg",
     tagline: "Architecture, faith & heritage",
     keywords: ["temple", "darshan", "mandir", "jyotirlinga", "shrine", "devotional"],
+    strongKeywords: ["darshan", "mandir", "jyotirlinga", "shrine", "devotional"],
+    weakKeywords: ["temple"],
     description:
       "Explore India's magnificent temples — the gopurams of Tamil Nadu, Varanasi's ghats, Khajuraho's carvings and the sacred Jyotirlingas. Guided tours blend devotion, architecture and local stories.",
     bestSeason: "October – March",
@@ -419,6 +454,8 @@ export const experiences: Experience[] = [
     image: "/images/packages/andaman-beach-tour.jpg",
     tagline: "Sun, sand & turquoise waters",
     keywords: ["beach", "island", "andaman", "goa", "sea", "coast", "lake"],
+    strongKeywords: ["beach", "island", "andaman", "goa", "coast"],
+    weakKeywords: ["sea", "lake"],
     description:
       "India's coastline has a beach for every mood — Goa's parties, Kerala's quiet shores, Andaman's coral reefs and Lakshadweep's lagoons. Water sports, beach shacks and sunset cruises included.",
     bestSeason: "October – March (Andaman: November – May)",
@@ -432,6 +469,9 @@ export const experiences: Experience[] = [
     slug: "desert-safaris",
     name: "Desert Safaris",
     group: "Nature",
+    metaTitle: "Desert Safari in India: Jaisalmer Camel Rides, Dune Camps & Rann of Kutch",
+    metaDescription:
+      "Ride camels into the Thar's golden dunes at sunset, sleep in a desert camp near Jaisalmer with folk music and Rajasthani food, and walk the white Rann of Kutch. Browse desert safari packages.",
     image: "/images/packages/rajasthan-safari-tour.jpg",
     tagline: "Camel rides & golden dunes",
     keywords: ["desert", "safari", "jaisalmer", "camel", "kutch", "dunes", "thar"],
@@ -467,6 +507,8 @@ export const experiences: Experience[] = [
     image: "/images/packages/food.jpg",
     tagline: "Taste India, street to thali",
     keywords: ["food", "cuisine", "street food", "culinary", "taste", "thali"],
+    strongKeywords: ["cuisine", "culinary", "thali"],
+    weakKeywords: ["food", "taste"],
     description:
       "A gastronomic journey through India's kitchens — Delhi's street food, Lucknow's kebabs, Amritsar's langar, Hyderabad's biryani and South India's thalis. Guided tastings, cooking classes and market walks.",
     bestSeason: "Year-round (October – March preferred)",
@@ -499,6 +541,11 @@ export const experiences: Experience[] = [
     image: "/images/packages/darjeeling-heritage-tour.webp",
     tagline: "Step back through history",
     keywords: ["heritage", "fort", "palace", "walk", "old city", "architecture", "history"],
+    strongKeywords: ["heritage", "architecture", "history"],
+    weakKeywords: ["fort", "walk"],
+    // "history"/"heritage" appear in passing in ~160 generic itineraries;
+    // only title/category mentions signal a real heritage-walk product.
+    strongTitleOnly: true,
     description:
       "Guided walking tours through old cities, forts and palaces — Jaipur's walled city, Varanasi's ghats, Old Delhi's lanes and the stepwells of Gujarat. Stories, architecture and local life in every step.",
     bestSeason: "October – March",

@@ -8408,7 +8408,7 @@ export const packageLocationMedia: Record<string, PackageLocationMedia> = {
       "Hyderabad"
     ]
   },
-  "increasable-kerala": {
+  "incredible-kerala": {
     "primary": "/images/location-library/munnar-kerala-india/munnar-kerala-india-02-lg.webp",
     "gallery": [
       {

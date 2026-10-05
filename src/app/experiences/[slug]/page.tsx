@@ -41,13 +41,15 @@ export async function generateMetadata({ params }: Params) {
   const exp = getExperienceBySlug(slug);
   if (!exp) return { title: "Travel Experience" };
 
+  const title = exp.metaTitle ?? `${exp.name} in India | Packages & Tours`;
+  const description = exp.metaDescription ?? exp.description;
   return {
-    title: `${exp.name} in India | Packages & Tours`,
-    description: exp.description,
+    title,
+    description,
     alternates: { canonical: `${siteConfig.domain}/experiences/${exp.slug}` },
     openGraph: {
-      title: `${exp.name} in India | My Quick Trippers`,
-      description: exp.description,
+      title: exp.metaTitle ?? `${exp.name} in India | My Quick Trippers`,
+      description,
       url: `${siteConfig.domain}/experiences/${exp.slug}`,
       type: "website",
       images: [{ url: `${siteConfig.domain}${exp.image}`, width: 1200, height: 630, alt: exp.name }],
