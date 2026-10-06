@@ -35,8 +35,9 @@ function isRateLimited(ip: string): boolean {
 
 /**
  * POST /api/blog/like {slug} -> {likes, liked}
- * Toggles by liker_hash (same hashing as views). Unknown slugs record
- * nothing and return {likes: 0, liked: false}.
+ * Toggles by liker_hash (same hashing as views: mqt_vid cookie || ip+ua, and
+ * ip+ua only when the cookie is absent so cookie-refusing visitors dedupe by
+ * IP+browser). Unknown slugs record nothing and return {likes: 0, liked: false}.
  */
 export async function POST(req: NextRequest) {
   let body: unknown;
@@ -54,13 +55,17 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Too many requests" }, { status: 429 });
   }
 
-  let vid = req.cookies.get(VID_COOKIE)?.value;
+  const vid = req.cookies.get(VID_COOKIE)?.value;
   let setCookie: string | null = null;
   if (!vid) {
-    vid = newViewerId();
+    // Still mint + set a cookie for cookie-accepting visitors, but hash THIS
+    // request without the throwaway id: hashing a fresh random UUID per
+    // request would make every cookie-refusing page load count as unique.
+    // Hashing ip+ua only matches the privacy policy's "IP-and-browser-based
+    // estimate" fallback for cookie refusers.
     const secure = process.env.NODE_ENV === "production" ? "; Secure" : "";
     setCookie =
-      `${VID_COOKIE}=${vid}; Path=/; HttpOnly${secure}; SameSite=Lax; ` +
+      `${VID_COOKIE}=${newViewerId()}; Path=/; HttpOnly${secure}; SameSite=Lax; ` +
       `Max-Age=${VID_MAX_AGE}`;
   }
 

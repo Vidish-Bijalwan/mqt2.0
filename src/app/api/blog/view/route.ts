@@ -37,7 +37,9 @@ function isRateLimited(ip: string): boolean {
 /**
  * POST /api/blog/view {slug} -> {views}
  * Dedupes by viewer_hash = sha256(mqt_vid cookie || ip+ua); sets the mqt_vid
- * cookie (1y, httpOnly, SameSite=Lax) when absent. Unknown slugs (no live
+ * cookie (1y, httpOnly, SameSite=Lax) when absent. With no cookie the hash is
+ * computed WITHOUT a throwaway id (ip+ua only) so cookie-refusing visitors
+ * dedupe by IP+browser as the privacy policy states. Unknown slugs (no live
  * static post, no published CMS post) record nothing — slug-cycling floods
  * can't grow orphan rows.
  */
@@ -57,13 +59,17 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Too many requests" }, { status: 429 });
   }
 
-  let vid = req.cookies.get(VID_COOKIE)?.value;
+  const vid = req.cookies.get(VID_COOKIE)?.value;
   let setCookie: string | null = null;
   if (!vid) {
-    vid = newViewerId();
+    // Still mint + set a cookie for cookie-accepting visitors, but hash THIS
+    // request without the throwaway id: hashing a fresh random UUID per
+    // request would make every cookie-refusing page load count as unique.
+    // Hashing ip+ua only matches the privacy policy's "IP-and-browser-based
+    // estimate" fallback for cookie refusers.
     const secure = process.env.NODE_ENV === "production" ? "; Secure" : "";
     setCookie =
-      `${VID_COOKIE}=${vid}; Path=/; HttpOnly${secure}; SameSite=Lax; ` +
+      `${VID_COOKIE}=${newViewerId()}; Path=/; HttpOnly${secure}; SameSite=Lax; ` +
       `Max-Age=${VID_MAX_AGE}`;
   }
 

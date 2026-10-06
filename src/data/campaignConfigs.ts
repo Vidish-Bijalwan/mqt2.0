@@ -16,6 +16,13 @@ export interface CampaignDestination {
   name: string;
   description: string;
   image: string;
+  /**
+   * Explicit /destinations/<slug> for overlay-link cards. When absent the href
+   * is derived from the name — brittle for names with punctuation or extra
+   * words (e.g. "Spiti Valley" derives "spiti-valley", but the live slug is
+   * "spiti"). Prefer explicit slugs for overlayLinks campaigns.
+   */
+  slug?: string;
   /** Badge text rendered top-right over the image (e.g. location, altitude, difficulty). */
   badge?: string;
   /** Rendered as "📍 {location}" grey line under the description (chardham). */
@@ -946,12 +953,12 @@ export const himachalTourPackagesConfig: CampaignConfig = {
     subtitle: "Explore the most sought-after hill stations and valleys",
     overlayLinks: true,
     items: [
-      { name: "Shimla", description: "Queen of Hills - colonial charm and scenic beauty", image: "/images/packages/shimla.jpg" },
-      { name: "Manali", description: "Adventure hub - Rohtang Pass, Solang Valley", image: "/images/packages/manali.webp" },
-      { name: "Dharamshala", description: "Spiritual capital - Tibetan culture and monasteries", image: "/images/packages/dharamshala-weekend-tour.webp" },
-      { name: "Kullu", description: "Valley of Gods - apple orchards and river rafting", image: "/images/packages/hi-kullu-tour-packages.webp" },
-      { name: "Dalhousie", description: "Colonial hill station - pine forests and churches", image: "/images/packages/hi-dalhousie-khajjiar-tour.webp" },
-      { name: "Spiti Valley", description: "Cold desert - monasteries and high altitude lakes", image: "/images/packages/spiti.jpg" },
+      { slug: "shimla", name: "Shimla", description: "Queen of Hills - colonial charm and scenic beauty", image: "/images/packages/shimla.jpg" },
+      { slug: "manali", name: "Manali", description: "Adventure hub - Rohtang Pass, Solang Valley", image: "/images/packages/manali.webp" },
+      { slug: "dharamshala", name: "Dharamshala", description: "Spiritual capital - Tibetan culture and monasteries", image: "/images/packages/dharamshala-weekend-tour.webp" },
+      { slug: "kullu", name: "Kullu", description: "Valley of Gods - apple orchards and river rafting", image: "/images/packages/hi-kullu-tour-packages.webp" },
+      { slug: "dalhousie", name: "Dalhousie", description: "Colonial hill station - pine forests and churches", image: "/images/packages/hi-dalhousie-khajjiar-tour.webp" },
+      { slug: "spiti", name: "Spiti Valley", description: "Cold desert - monasteries and high altitude lakes", image: "/images/packages/spiti.jpg" },
     ],
   },
   packages: {
