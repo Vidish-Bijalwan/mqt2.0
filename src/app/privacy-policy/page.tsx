@@ -43,6 +43,7 @@ const sections: LegalSection[] = [
     title: "Cookies",
     body: [
       "Our website may use cookies and analytics technologies to enhance user experience and improve website performance. We also run our own cookieless pageview analytics: each page load sends one anonymous ping (page path, referrer site, device type, country) with no cookies, no cross-day tracking, and no stored IP addresses. Do-Not-Track requests are respected and no ping is sent.",
+      "The blog section sets one first-party functional cookie, mqt_vid, when you read articles or use the like button. It holds a random identifier used only to count each reader's view or like once (so repeated page loads don't inflate counts); it is not used for tracking, advertising, or cross-site purposes, and it expires after one year. Refusing cookies does not break the site — view/like counts simply fall back to an IP-and-browser-based estimate.",
     ],
   },
   {
