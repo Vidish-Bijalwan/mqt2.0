@@ -154,7 +154,7 @@ function BlogIndexContent({ initialCmsPosts }: { initialCmsPosts?: DbPostSummary
         .filter((term) => term.length > 1 && !['blog', 'article', 'travel'].includes(term));
       result = result.filter((blog) => {
         const searchable = [blog.title, blog.category, blog.snippet, ...blog.tags].join(' ').toLowerCase();
-        return (terms.length ? terms : [searchQuery.toLowerCase()]).every((term) => searchable.includes(term));
+        return (terms.length ? terms : [searchQuery.trim().toLowerCase()]).every((term) => searchable.includes(term));
       });
     }
     return result;
@@ -178,13 +178,18 @@ function BlogIndexContent({ initialCmsPosts }: { initialCmsPosts?: DbPostSummary
   };
 
   const handleSearch = (q: string) => {
-    const validated = q.replace(/[^\w\s-]/g, '').trim().substring(0, 100);
-    setSearchQuery(validated);
+    // Sanitize but keep spaces in state: trimming here would erase a trailing
+    // space the moment the user types it, so typed multi-word queries collapse
+    // ("kedarnath " -> "kedarnath" -> next char appends as "kedarnathyatra").
+    // Trim only where the trimmed value is consumed (filter/URL/tracking).
+    const sanitized = q.replace(/[^\w\s-]/g, '').substring(0, 100);
+    setSearchQuery(sanitized);
     setCurrentPage(1);
-    updateUrl(activeCategory, validated);
+    const trimmed = sanitized.trim();
+    updateUrl(activeCategory, trimmed);
     // Query is sanitized above (word chars/spaces/hyphens, max 100) — never raw PII.
-    if (validated) {
-      trackEvent("search_query", { query: validated, page: "/blog" });
+    if (trimmed) {
+      trackEvent("search_query", { query: trimmed, page: "/blog" });
     }
   };
 

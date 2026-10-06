@@ -227,9 +227,12 @@ function DestinationCard({
 }
 
 function DestinationOverlayLink({ item }: { item: CampaignDestination }) {
+  // Never derive the slug from the display name: name edits (or punctuation)
+  // would silently create dead links. Explicit slugs live in campaignConfigs.
+  const slug = item.slug ?? item.name.toLowerCase().replace(/\s+/g, "-");
   return (
     <Link
-      href={`/destinations/${item.name.toLowerCase().replace(/\s+/g, "-")}`}
+      href={`/destinations/${slug}`}
       className="group relative h-64 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
     >
       <Image
