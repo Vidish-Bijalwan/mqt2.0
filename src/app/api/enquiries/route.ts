@@ -28,6 +28,11 @@ const WINDOW_MS = 60 * 60 * 1000;
 const DAILY_CAP = 5;
 const hits = new Map<string, number[]>();
 
+// WhatsApp team-notification config is Vidish's pending action, so
+// "not configured" is the expected steady state today — log it once per
+// serverless instance instead of erroring on every successful enquiry.
+let whatsappNotConfiguredWarned = false;
+
 function isRateLimited(ip: string): boolean {
   const now = Date.now();
   const times = (hits.get(ip) || []).filter((t) => now - t < WINDOW_MS);
@@ -205,7 +210,10 @@ export async function POST(req: Request) {
       await markWhatsappNotified(stored.id);
     }
   } else {
-    console.error("[enquiries] WhatsApp not configured — team notification skipped");
+    if (!whatsappNotConfiguredWarned) {
+      whatsappNotConfiguredWarned = true;
+      console.warn("[enquiries] WhatsApp not configured — team notification skipped");
+    }
   }
 
   const ref = stored.id.replace(/-/g, "").slice(0, 8).toUpperCase();

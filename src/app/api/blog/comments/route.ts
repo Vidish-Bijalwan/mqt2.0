@@ -23,6 +23,14 @@ function isRateLimited(ip: string): boolean {
   }
   recent.push(now);
   hits.set(ip, recent);
+  // Prune idle entries so the map can't grow without bound — the same
+  // >5000-entry pattern as the login / blog view+like / analytics /
+  // enquiries limiters.
+  if (hits.size > 5000) {
+    for (const [k, v] of hits) {
+      if (v.length === 0 || now - v[v.length - 1] > WINDOW_MS) hits.delete(k);
+    }
+  }
   return false;
 }
 
