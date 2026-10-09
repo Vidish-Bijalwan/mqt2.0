@@ -1,0 +1,40 @@
+import type { BlogPostSeed } from "../types";
+
+export const BLOG_POST_SEEDS_VISA_BATCH_3: BlogPostSeed[] = [
+  {
+    slug: "thailand-visa-for-indians-2026",
+    title: "Thailand Visa for Indians 2026: The New 30-Day Rule, TDAC & E-Visa Explained",
+    metaDescription: "Thailand visa for Indians 2026: the 60-day exemption is gone — now 30 days visa-free from 15 Sept. TDAC rules, e-visa option, fees and overstay fines explained.",
+    image: "/images/blog/thailand-visa-for-indians-2026.webp",
+    category: "Travel Planning",
+    tags: ["thailand", "thailand visa", "tdac", "bangkok", "phuket", "indian travellers", "thailand travel guide"],
+    readingTime: 7,
+    wordCount: 1392,
+    publishedAt: "2026-10-17T09:00:00+05:30",
+    targetKeyword: "thailand visa for indians",
+  },
+  {
+    slug: "singapore-visa-for-indians-2026",
+    title: "Singapore Visa for Indians 2026: Fees, Documents & the Agent-Only Process",
+    metaDescription: "Singapore visa for Indians 2026: no VOA — apply via authorised agents only. SGD 30 fee, documents, Form 14A/V39A and the free SG Arrival Card explained.",
+    image: "/images/blog/singapore-visa-for-indians-2026.webp",
+    category: "Travel Planning",
+    tags: ["singapore", "singapore visa", "sg arrival card", "marina bay", "indian travellers", "travel documents"],
+    readingTime: 7,
+    wordCount: 1266,
+    publishedAt: "2026-10-18T09:00:00+05:30",
+    targetKeyword: "singapore visa for indians",
+  },
+  {
+    slug: "malaysia-visa-for-indians-2026",
+    title: "Malaysia Visa for Indians 2026: Visa-Free Entry Till 31 December + MDAC Guide",
+    metaDescription: "Malaysia visa for Indians 2026: 30 days visa-free only till 31 December 2026. MDAC guide, documents, non-extendable stay and what happens after the deadline.",
+    image: "/images/blog/malaysia-visa-for-indians-2026.webp",
+    category: "Travel Planning",
+    tags: ["malaysia", "malaysia visa", "mdac", "kuala lumpur", "langkawi", "indian travellers", "visa-free travel"],
+    readingTime: 7,
+    wordCount: 1232,
+    publishedAt: "2026-10-19T09:00:00+05:30",
+    targetKeyword: "malaysia visa for indians",
+  },
+];

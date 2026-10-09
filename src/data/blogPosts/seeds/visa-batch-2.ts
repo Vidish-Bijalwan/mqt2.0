@@ -1,0 +1,40 @@
+import type { BlogPostSeed } from "../types";
+
+export const BLOG_POST_SEEDS_VISA_BATCH_2: BlogPostSeed[] = [
+  {
+    slug: "us-tourist-visa-b1b2-indians-2026",
+    title: "US Tourist Visa (B1/B2) for Indians 2026: DS-160, Interview & Wait Times",
+    metaDescription: "US tourist visa for Indians: $185 fee, DS-160 steps, interview tips, 2026 wait times by city, and the new $250 fee to budget for.",
+    image: "/images/blog/us-tourist-visa-b1b2-indians-2026.webp",
+    category: "Travel Planning",
+    tags: ["US visa", "B1/B2 visa", "DS-160", "US visa interview", "visa wait times", "visa fees", "Indian travellers"],
+    readingTime: 7,
+    wordCount: 1359,
+    publishedAt: "2026-10-14T09:00:00+05:30",
+    targetKeyword: "us tourist visa for indians",
+  },
+  {
+    slug: "uk-visitor-visa-for-indians-2026",
+    title: "UK Visitor Visa for Indians 2026: Digital eVisa Change, Fees & Documents",
+    metaDescription: "UK visitor visa for Indians 2026: the digital eVisa change, £135 fee, documents checklist, processing times, and how to apply step by step.",
+    image: "/images/blog/uk-visitor-visa-for-indians-2026.webp",
+    category: "Travel Planning",
+    tags: ["UK visa", "UK visitor visa", "UK eVisa", "visa fees", "VFS Global", "Indian travellers"],
+    readingTime: 7,
+    wordCount: 1213,
+    publishedAt: "2026-10-15T09:00:00+05:30",
+    targetKeyword: "uk visitor visa for indians",
+  },
+  {
+    slug: "dubai-uae-tourist-visa-for-indians-2026",
+    title: "Dubai & UAE Tourist Visa for Indians 2026: Types, Fees & How to Apply",
+    metaDescription: "Dubai tourist visa for Indians 2026: official GDRFA fees vs agent prices, visa types, visa-on-arrival rules, documents, and how to apply.",
+    image: "/images/blog/dubai-uae-tourist-visa-for-indians-2026.webp",
+    category: "Travel Planning",
+    tags: ["Dubai visa", "UAE tourist visa", "visa on arrival", "GDRFA", "visa fees", "Indian travellers"],
+    readingTime: 7,
+    wordCount: 1253,
+    publishedAt: "2026-10-16T09:00:00+05:30",
+    targetKeyword: "dubai tourist visa for indians",
+  },
+];

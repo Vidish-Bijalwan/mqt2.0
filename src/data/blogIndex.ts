@@ -17,6 +17,10 @@ import { BLOG_POST_SEEDS_BATCH_15D } from "@/data/blogPosts/seeds/batch-15d";
 import { BLOG_POST_SEEDS_BATCH_15C } from "@/data/blogPosts/seeds/batch-15c";
 import { BLOG_POST_SEEDS_BATCH_15B } from "@/data/blogPosts/seeds/batch-15b";
 import { BLOG_POST_SEEDS_BATCH_15A } from "@/data/blogPosts/seeds/batch-15a";
+import { BLOG_POST_SEEDS_VISA_BATCH_1 } from "@/data/blogPosts/seeds/visa-batch-1";
+import { BLOG_POST_SEEDS_VISA_BATCH_2 } from "@/data/blogPosts/seeds/visa-batch-2";
+import { BLOG_POST_SEEDS_VISA_BATCH_3 } from "@/data/blogPosts/seeds/visa-batch-3";
+import { BLOG_POST_SEEDS_VISA_BATCH_4 } from "@/data/blogPosts/seeds/visa-batch-4";
 import type { BlogPostSeed } from "@/data/blogPosts/types";
 
 export interface BlogIndexEntry {
@@ -62,6 +66,10 @@ const FACTORY_SEEDS: BlogPostSeed[] = [
   ...BLOG_POST_SEEDS_BATCH_15B,
   ...BLOG_POST_SEEDS_BATCH_15C,
   ...BLOG_POST_SEEDS_BATCH_15D,
+  ...BLOG_POST_SEEDS_VISA_BATCH_1,
+  ...BLOG_POST_SEEDS_VISA_BATCH_2,
+  ...BLOG_POST_SEEDS_VISA_BATCH_3,
+  ...BLOG_POST_SEEDS_VISA_BATCH_4,
 ];
 
 function isLiveSeed(seed: BlogPostSeed) {
