@@ -15,12 +15,11 @@ import { BlogIndexContent, type DbPostSummary } from "./BlogIndexClient";
  * /api/blog/posts fetch on the first paint.
  */
 
-// 24h ISR: the only dynamic input is the published-CMS-post list (failure-
-// guarded, DB-less safe). Without revalidate every /blog hit forced a dynamic
-// render + a Neon query. Matches the 24h ISR on the sibling [slug]/page.tsx;
-// newly published CMS posts can take up to a day to surface in the
-// server-rendered JSON-LD/nav (the client grid still merges them live).
-export const revalidate = 86400;
+// 1h ISR: the daily drip releases one post per day, so a 24h window could
+// hide a newly-live post from the listing for a full day. 1h keeps the
+// server-rendered list fresh while still caching (the client grid also
+// merges published CMS posts live).
+export const revalidate = 3600;
 
 export default async function BlogIndexPage() {
   let cmsPosts: DbPostSummary[] = [];
