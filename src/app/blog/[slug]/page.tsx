@@ -190,7 +190,7 @@ export function generateStaticParams() {
 
 export const dynamicParams = true;
 
-export const revalidate = 86400; // 24h ISR
+export const revalidate = 3600; // 1h ISR: bounds stale 404s for time-gated drip posts
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
